@@ -169,6 +169,9 @@ no seeded cells.
     **Install app** menu item.
 - **Stable app identity:** the manifest uses the unique id `/ECEDefinitions/`, so the
   installation cannot collide with another app on the same origin.
+- If you installed a pre-release build from before the id was added, remove that old entry
+  from `chrome://apps` and install once more. Progress is stored per origin, so your study
+  data is unaffected.
 - **Self-hosted Inter** (variable WOFF2) — no external font request, no flash of the wrong
   typeface offline.
 - **Theme:** always light by default, even when the OS is dark. Once you choose dark, it
