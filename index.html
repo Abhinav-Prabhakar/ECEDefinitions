@@ -377,7 +377,8 @@ button{color:inherit}
   background:#fff;cursor:pointer;
   transition:border-color .45s,box-shadow .45s,transform .45s cubic-bezier(.22,1,.36,1);
   animation:cardIn .7s cubic-bezier(.22,1,.36,1) backwards;
-  text-align:left;
+  text-align:left;font:inherit;color:inherit;letter-spacing:inherit;
+  width:100%;appearance:none;
 }
 @keyframes cardIn{
   from{opacity:0;transform:translateY(14px)}
@@ -1797,11 +1798,13 @@ SUBJECTS.forEach((s, i) => {
     }
   }
 
-  const card = document.createElement('article');
+  const card = document.createElement('button');
+  card.type = 'button';
   card.className = 'card';
   card.style.setProperty('--accent', s.color);
   card.style.setProperty('--accent-line', rgba(s.color, .45));
   card.style.animationDelay = (i * 70) + 'ms';
+  card.setAttribute('aria-label', `${s.name}, ${s.defs.length} definitions`);
   card.innerHTML = `
     <svg class="motif" viewBox="0 0 240 240" preserveAspectRatio="xMidYMid slice"
          fill="none" stroke="currentColor" stroke-width="1"
@@ -2111,18 +2114,24 @@ function showEnd(){
   });
 
   const target = st.correct;
-  const t0 = performance.now();
-  qScoreNum.textContent = '0';
-  const tick = now => {
-    const p = Math.min(1, (now - t0) / 700);
-    qScoreNum.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
-    if (p < 1) requestAnimationFrame(tick);
-  };
-  requestAnimationFrame(tick);
-
-  requestAnimationFrame(() => {
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce){
+    qScoreNum.textContent = target;
     qArc.style.strokeDashoffset = (Q_CIRC * (1 - st.correct / st.qs.length)).toFixed(2);
-  });
+  } else {
+    const t0 = performance.now();
+    qScoreNum.textContent = '0';
+    const tick = now => {
+      const p = Math.min(1, (now - t0) / 700);
+      qScoreNum.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+
+    requestAnimationFrame(() => {
+      qArc.style.strokeDashoffset = (Q_CIRC * (1 - st.correct / st.qs.length)).toFixed(2);
+    });
+  }
 
   quizEl.scrollTop = 0;
 }
