@@ -12,8 +12,9 @@ Work in the existing repository:
 ```
 
 Create a branch named `seed/real-curriculum` from `main`. Do not push to `main`.
-Do not edit `index.html`, `design.md`, `README.md`, `manifest.webmanifest`, `sw.js`, or
-`assets/`. Only add data and data tooling under `data/` and `scripts/`.
+Do not edit `index.html`, `design.md`, the root `README.md`, `manifest.webmanifest`,
+`sw.js`, or `assets/`. Only add data and data tooling under `data/` and `scripts/`
+(including the allowed `data/README.md` coverage report).
 
 If you have git/gh access, commit the generated data and open a **draft PR** against `main`.
 If you do not, leave the branch/worktree in place and report the paths.
@@ -59,7 +60,7 @@ The final dataset must:
 2. **No raw source files in the repo.** Download them only to a temporary work directory
    such as `/tmp/ece-seed-sources/`. Commit only derived JSON, metadata, reports and the
    validator. Do not commit PDFs, PPTX, DOCX, images or copyrighted source text.
-3. **No app changes.** Do not touch UI, styles, PWA, README or design.md.
+3. **No app changes.** Do not touch UI, styles, PWA, the root README or design.md.
 4. **Source traceability.** Every definition has one or more `sourceIds` pointing to
    entries in `data/sources.json`, with a page/slide/paragraph locator.
 5. **Access is not guaranteed.** Parts of this Drive may require the operator’s signed-in
@@ -68,7 +69,7 @@ The final dataset must:
 6. **Quality over quota.** A smaller accurate set is better than padded low-quality
    entries. Do not duplicate the same idea across units to hit a count.
 7. **No UI decisions.** Do not assign colours or write taglines. The app owns visuals.
-8. **Definition shape.** One sentence, 8–30 words, standalone, technical, and readable
+8. **Definition shape.** One sentence, 8–28 words, standalone, technical, and readable
    without the slide/page. No “as shown above”, “this”, “the following”, author names,
    dates, university names, textbook citations, lab instructions or exam instructions.
 
@@ -90,7 +91,7 @@ The link is a shared ECE A22 folder. The root has seven semester folders:
 **Access caveat:** the root and semester listings are reachable, but some nested subject
 folder pages can render empty in a headless browser, and the
 `embeddedfolderview?id=…#list` endpoint returns 404 for child folders. The Engineering
-Physics subtree was fully reachable and its files downloadable without auth. Do not
+Physics folder and two of its files were reachable without auth. Do not
 assume an empty-looking nested folder has no files. Use the Drive web UI in a focused
 browser tab and, where available, the operator’s authenticated session. If a folder truly
 cannot be read, log it as `inaccessible`.
@@ -383,7 +384,7 @@ Definition field rules:
   Preserve acronyms and conventional capitalisation (`MOSFET`, `PN junction`, `CMRR`,
   `Fourier transform`). Title case for named concepts; sentence case for generic
   descriptive terms, consistent within a subject.
-- `definition`: one sentence, 8–30 words, standalone. Define the thing, not its formula or
+- `definition`: one sentence, 8–28 words, standalone. Define the thing, not its formula or
   an example. Use Indian/British spelling where the course does (`quantisation`,
   `polarisation`, `characteristic`), and be consistent.
 - `formula`: optional. Empty string if none. ≤ 48 characters. Use real Unicode
@@ -559,12 +560,12 @@ Give each subject subagent a prompt equivalent to this (fill the placeholders):
 > **Syllabus units:** `<unit titles / scope>`.
 >
 > **Task:** read every supplied source carefully and extract quiz-ready one-line
-> definitions for this subject. Aim for 30–50 high-quality definitions, covering every
+> definitions for this subject. Aim for 30–50 high-quality definitions (or 20–30 when the material is thin), covering every
 > unit that has usable material. Quality and traceability matter more than count.
 >
 > **Rules:**
 > - Every definition must be supported by a source locator; no general knowledge.
-> - One sentence, 8–30 words; standalone; no “this”, “above”, author names, dates, URLs,
+> - One sentence, 8–28 words; standalone; no “this”, “above”, author names, dates, URLs,
 >   exam instructions, lab steps, or textbook citations.
 > - `term` is the canonical course term, ≤48 chars, no trailing colon; `id` is a stable
 >   slug; `formula` is optional, from the source, ≤48 chars, Unicode not LaTeX.
@@ -592,7 +593,7 @@ check:
 - unique subject ids across the dataset; every subject file path resolves; index counts
   match the file;
 - unique definition ids and terms within each subject;
-- definition word count 8–30; term ≤48 chars; formula ≤48 chars or empty;
+- definition word count 8–28; term ≤48 chars; formula ≤48 chars or empty;
 - `unit` integer 1–6 or null; `unitTitle` string or null;
 - every source locator prefix exists in `data/sources.json` and has status not
   `inaccessible` for cited definitions;

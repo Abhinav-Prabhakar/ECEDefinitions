@@ -481,7 +481,7 @@ Terse, technical, warm. Lowercase structural labels (`today`, `activity`, `focus
 `quiz`). No exclamation marks. No motivational poster copy. One quiet line at the end of
 a quiz is allowed: *every miss is a definition worth re-reading*.
 
-Definitions are one sentence, ≤ 24 words, present tense, no filler.
+Definitions are one sentence, ≤ 28 words, present tense, no filler.
 Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
 
 ---
