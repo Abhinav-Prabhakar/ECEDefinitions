@@ -124,11 +124,16 @@ subject dots right. Dots are 7px, scale on hover, reveal a name pill.
 White, 1px hairline, radius 18px, generous padding. A panel head pairs an uppercase
 label with a control or legend. Never nest panels.
 
+### Hero
+Display title left, one metadata line. On wide screens, a faint 440×260 signal trace sits
+top-right: three hairline curves, six subject-coloured nodes, and a coloured comet
+travelling each curve. It hides below 980px.
+
 ### Contribution graph
-53 weeks × 7 days, 13px cells (responsive down to 7px), 3px gap, 2.5px radius.
-One cell = one subject, alpha encodes volume. Cells animate in with a diagonal stagger.
-Hovering the legend isolates one subject; hovering a cell reveals a hairline tooltip.
-Clicking a cell opens its subject.
+53 weeks × 7 days, 16px cells at full width (responsive down to 7px), 3px gap, 2.5px
+radius. One cell = one subject, alpha encodes volume. Cells animate in with a diagonal
+stagger. Hovering the legend isolates one subject; hovering a cell reveals a hairline
+tooltip. Clicking a cell opens its subject. The graph scrolls inside its panel on phones.
 
 ### Subject card
 White, hairline, 16px radius, min-height 196px. A large thin-line motif sits behind the
@@ -138,12 +143,12 @@ the bottom.
 
 ### Daily progress stack
 The day's questions as one continuous stacked bar — one segment per subject, 2px white
-gaps, height 26px, radius 3px. The remaining part of the goal is a track with a faint
+gaps, height 28px, radius 3px. The remaining part of the goal is a track with a faint
 diagonal hairline hatch.
 
 - Left readout: `done / goal` (200 weight), `left today`, `%` pill, 7-day sparkline.
 - Right: the stack, a 0–25–50–75–goal scale, and a six-subject legend with counts.
-- Hover/focus a segment **or its legend row**: siblings fade to 28%, the segment lifts
+- Hover/focus a segment **or its legend row**: siblings fade to 26%, the segment lifts
   2px, and a floating card reports subject, count, share of goal, and a mini bar.
 - Clicking a segment opens that subject.
 - Goal is editable inline (typed or ±10). Default 100. Clamp 10–999. The top-bar ring
@@ -227,7 +232,7 @@ same information through always-visible counts or tap equivalents.
 
 ## 09 · Responsive
 
-Breakpoints: **1100 / 960 / 900 / 820 / 700 / 620 / 560 / 520px**.
+Breakpoints: **1140 / 1040 / 980 / 960 / 900 / 820 / 700 / 620 / 600 / 520 / 380px**.
 
 - 3 subject columns → 2 → 1.
 - Daily panel 230px readout + chart → single column; readout becomes one row.
