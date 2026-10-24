@@ -407,6 +407,8 @@ Breakpoints: **1140 / 1040 / 980 / 960 / 900 / 820 / 700 / 680 / 620 / 600 / 520
   Accent text only where contrast permits.
 - Every interactive element is a real `button`/`input`/`select`, keyboard reachable,
   with `:focus-visible` (1px ink outline, 3px offset).
+- Focus is restored to the trigger when the subject or quiz closes. Tab cycles within
+  the open subject/quiz sheet; the shortcuts dialog keeps focus on its close control.
 - Quiz options expose numeric and letter shortcuts through `aria-keyshortcuts`.
 - Explanations sit in an `aria-live="polite"` region; the result block is visible.
 - Tooltips are supplementary; values are also in the DOM or accessible names.

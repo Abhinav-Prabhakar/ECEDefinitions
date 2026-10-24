@@ -2656,6 +2656,7 @@ const defsCount = $('#defsCount');
 
 let currentId = null;
 let currentFilter = 'all';
+let subjectTrigger = null;
 
 function buildSpDay(s){
   const n = subjectToday(s.id);
@@ -2800,6 +2801,8 @@ function refreshSubject(){
 function openSubject(id){
   const s = SUBJECT_BY_ID[id];
   if (!s) return;
+  subjectTrigger = document.activeElement && document.activeElement !== document.body
+    ? document.activeElement : null;
   currentId = id;
   currentFilter = 'all';
 
@@ -2834,7 +2837,7 @@ function openSubject(id){
 }
 
 function closeSubject(){
-  closeQuiz();
+  closeQuiz(false);
   sp.classList.remove('open');
   sp.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
@@ -2844,6 +2847,11 @@ function closeSubject(){
   hideHeat();
   currentId = null;
   refreshHome();
+  if (subjectTrigger && document.contains(subjectTrigger)){
+    const target = subjectTrigger;
+    setTimeout(() => target.focus({ preventScroll: true }), 80);
+  }
+  subjectTrigger = null;
 }
 
 function refreshHome(){
@@ -2917,6 +2925,7 @@ const quizMotif = $('#quizMotif');
 
 let quizState = null;
 let quizOpen = false;
+let quizTrigger = null;
 
 const CHECK_ICON = `<svg viewBox="0 0 20 20" width="18" height="18" fill="none"
   stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
@@ -3006,6 +3015,11 @@ function renderQuestion(){
   void qCard.offsetWidth;
   qCard.classList.add('in');
   updateTicks();
+  requestAnimationFrame(() => {
+    if (!quizOpen) return;
+    const first = qOpts.querySelector('.opt');
+    if (first) first.focus({ preventScroll: true });
+  });
 }
 
 function answer(index){
@@ -3096,6 +3110,10 @@ function startQuiz(){
     return { d, type: typeSlots[i], opts };
   });
 
+  if (!quizOpen){
+    quizTrigger = document.activeElement && document.activeElement !== document.body
+      ? document.activeElement : quizBtn;
+  }
   quizState = {
     s, qs, i: 0, answered: false, correct: 0, log: [],
     before: subjectStats(s).avg
@@ -3118,7 +3136,7 @@ function startQuiz(){
   renderQuestion();
 }
 
-function closeQuiz(){
+function closeQuiz(restoreFocus = true){
   if (!quizOpen) return;
   quizEl.classList.remove('open', 'done');
   quizEl.setAttribute('aria-hidden', 'true');
@@ -3130,6 +3148,11 @@ function closeQuiz(){
   } else {
     document.body.style.overflow = '';
   }
+  if (restoreFocus && quizTrigger && document.contains(quizTrigger)){
+    const target = quizTrigger;
+    setTimeout(() => target.focus({ preventScroll: true }), 80);
+  }
+  quizTrigger = null;
 }
 
 function showEnd(){
@@ -3181,6 +3204,9 @@ function showEnd(){
 
   setHint('results');
   quizEl.scrollTop = 0;
+  requestAnimationFrame(() => {
+    if (quizOpen) qAgain.focus({ preventScroll: true });
+  });
 }
 
 function nextQuestion(){
@@ -3280,6 +3306,29 @@ document.addEventListener('keydown', e => {
 
   if (keysModal.classList.contains('open')){
     if (e.key === '?'){ e.preventDefault(); closeKeys(); }
+    return;
+  }
+
+  if (e.key === 'Tab' && (quizOpen || currentId)){
+    const scope = quizOpen ? quizEl : sp;
+    const focusables = [...scope.querySelectorAll(
+      'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )].filter(el => el.offsetParent !== null && !el.closest('[hidden]'));
+    if (focusables.length){
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      const activeInside = scope.contains(document.activeElement);
+      if (!activeInside){
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus();
+      } else if (e.shiftKey && document.activeElement === first){
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last){
+        e.preventDefault();
+        first.focus();
+      }
+    }
     return;
   }
 
