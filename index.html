@@ -18,12 +18,63 @@
 })();
 </script>
 <title>one·liners — ECE</title>
-<meta name="description" content="One-line ECE definitions, persistent mastery, a daily practice stack, and a quiet two-way quiz. Signals, digital, analog, electromagnetics, communication, microprocessors." />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cg fill='none' stroke='%2314161a' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M2 14h6l4-7h6'/%3E%3Cpath d='M8 14h6l4 7h6'/%3E%3Ccircle cx='22' cy='7' r='2'/%3E%3Ccircle cx='22' cy='21' r='2'/%3E%3Ccircle cx='2' cy='14' r='1.3' fill='%2314161a' stroke='none'/%3E%3C/g%3E%3C/svg%3E" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..700&display=swap" rel="stylesheet">
+<meta name="description" content="A quiet ECE study instrument. One-line definitions, persistent mastery, adaptive two-way quizzes, dark mode, and a local-first practice trail." />
+<meta name="application-name" content="one·liners" />
+<meta name="author" content="Abhinav Prabhakar" />
+<meta name="robots" content="index,follow" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-TileColor" content="#12151b" />
+<meta name="msapplication-TileImage" content="assets/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="one·liners" />
+<link rel="canonical" href="https://abhinav-prabhakar.github.io/ECEDefinitions/" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
+<link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="one·liners" />
+<meta property="og:title" content="one·liners — Electronics, in one line." />
+<meta property="og:description" content="Definitions, mastery and a two-way quiz for ECE. Local-first, offline-ready, dark-mode native." />
+<meta property="og:url" content="https://abhinav-prabhakar.github.io/ECEDefinitions/" />
+<meta property="og:image" content="https://abhinav-prabhakar.github.io/ECEDefinitions/assets/og.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="one·liners — a quiet ECE study instrument" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="one·liners — Electronics, in one line." />
+<meta name="twitter:description" content="One-line ECE definitions, adaptive two-way quizzes, per-definition mastery, offline PWA and dark mode." />
+<meta name="twitter:image" content="https://abhinav-prabhakar.github.io/ECEDefinitions/assets/og.png" />
+<meta name="twitter:image:alt" content="one·liners — a quiet ECE study instrument" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "one·liners",
+  "url": "https://abhinav-prabhakar.github.io/ECEDefinitions/",
+  "description": "A quiet ECE study instrument with one-line definitions, persistent mastery, adaptive two-way quizzes and a local-first practice trail.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "screenshot": "https://abhinav-prabhakar.github.io/ECEDefinitions/assets/screenshot-home-light.png",
+  "image": "https://abhinav-prabhakar.github.io/ECEDefinitions/assets/og.png",
+  "creator": { "@type": "Person", "name": "Abhinav Prabhakar", "url": "https://github.com/Abhinav-Prabhakar" }
+}
+</script>
 <style>
+@font-face{
+  font-family:'Inter';
+  font-style:normal;
+  font-weight:100 700;
+  font-display:swap;
+  src:url('assets/fonts/inter-latin-var.woff2') format('woff2');
+}
 /* ============================================================
    BASE
    ============================================================ */
@@ -1367,7 +1418,7 @@ html[data-theme="dark"] .week-bars b.today{background:var(--ink-2)}
     margin-top:9px;text-align:left;
   }
   .def-side .formula{display:none}
-  .def-side .mstat{position:static;opacity:1;transform:none;order:2;min-width:30px;text-align:right;font-size:9px}
+  .def-side .mstat{position:static;width:auto;flex:0 0 auto;opacity:1;transform:none;order:2;min-width:30px;text-align:right;font-size:9px}
   .def:hover .def-side .mstat{opacity:1;transform:none}
   .def-side .mbar{flex:1 1 auto;margin:0;order:1}
   .search{width:70px}
@@ -3632,6 +3683,15 @@ setInterval(() => {
   refreshHome();
   if (currentId) refreshSubject();
 }, 30000);
+
+/* ============================================================
+   PWA — register the offline shell. Never shows an install prompt.
+   ============================================================ */
+if ('serviceWorker' in navigator && (location.protocol === 'http:' || location.protocol === 'https:')){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  });
+}
 
 /* ============================================================
    INIT

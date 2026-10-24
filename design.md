@@ -385,10 +385,28 @@ the close button and Tab is held inside. Reachable from the top bar and the foot
 No account, no cloud.
 
 ### Tooltips
-Hairline white pills for graph cells, week bars, card mastery ticks, definition rails,
+Hairline surface pills for graph cells, week bars, card mastery ticks, definition rails,
 and quiz ticks. The activity heatmap and daily stack use richer floating cards described
 above. Tooltips never take pointer events, and never contain the only copy of important
 information.
+
+### PWA shell
+- `manifest.webmanifest` — standalone display, scope `./`, light launch colours, 192/512
+  icons, a maskable 512, and install screenshots (wide home, wide quiz, narrow phone).
+- `sw.js` — precaches the app shell (`index.html`, manifest, icons, Inter), uses
+  network-first navigation with a cached-index fallback, and stale-while-revalidate for
+  same-origin assets. It works fully offline after one visit.
+- **No install dialog is ever shown.** No `beforeinstallprompt` handler exists. Installation
+  is left to the browser/OS menu.
+- **Self-hosted Inter** (variable WOFF2) so typography survives offline and there is no
+  third-party font request. OFL text ships with it.
+- Metadata: canonical URL, Open Graph 1200×630 image, Twitter large card, JSON-LD
+  `WebApplication`, favicon set, Apple touch icon and standalone metadata, `msapplication`
+  tile colour.
+- `<meta name="theme-color">` follows the active theme (`#ffffff` / `#0d0f13`). Theme is
+  restored by an inline head script before first paint.
+- The subject toolbar hides its theme toggle below 380px to protect the title; the top-bar
+  toggle and the `t` shortcut remain.
 
 ---
 
@@ -471,6 +489,9 @@ Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
 ## 14 · Scope & build rules
 
 - Static HTML/CSS/JS. No frameworks, no build step, no backend.
+- Ships as a PWA: manifest, offline service worker, maskable icons and complete social
+  metadata. Any change to a precached asset requires a service-worker cache bump.
+- No install prompts, no OS-theme override, no analytics, no third-party runtime requests.
 - State lives in localStorage only. No network writes, no accounts.
 - Data constants are clear (`SUBJECTS`) so more subjects can be added without layout
   changes. Anything subject-coloured must degrade gracefully at 30 subjects:
@@ -494,3 +515,5 @@ Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
 - [ ] Counts are tabular; numbers align.
 - [ ] Scales to 30 subjects without adding colour noise.
 - [ ] Persists or reads state through the documented store, never ad-hoc keys.
+- [ ] Works in both themes, with all dynamic colours re-rendered on toggle.
+- [ ] Works offline, and any new asset is added to the service-worker cache list.
