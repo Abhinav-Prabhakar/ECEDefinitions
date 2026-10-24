@@ -53,6 +53,39 @@ decorative for its own sake.
 | `--hair-2` | `#f2f3f6` | empty graph cells, tracks |
 | paper | `#ffffff` | every full surface |
 
+### Dark paper
+
+Dark mode is a full second palette, not an inverted filter. It ships with the same
+hairline discipline and a slightly lifted surface for panels and cards.
+
+| Token | Value | Use |
+| --- | --- | --- |
+| `--paper` | `#0d0f13` | full sheets, page |
+| `--surface` | `#12151b` | panels, cards, quiz card |
+| `--surface-soft` | `#171b22` | keycaps, cue chips |
+| `--ink` | `#f0f3f8` | primary text |
+| `--ink-2` | `#b2bac5` | definitions, body |
+| `--ink-3` | `#7d8794` | metadata, mastery stats |
+| `--ink-4` | `#505965` | faint labels, empty tracks |
+| `--hair` | `#252a33` | rules, borders |
+| `--hair-2` | `#1a1e25` | tracks, empty graph cells |
+| `--ok` | `#45d99d` | correct, met |
+| `--no` | `#ff7e9e` | incorrect |
+
+- **Default is always light**, even when the OS is dark.
+- The choice is stored under `oneliners.theme` (`light` / `dark`) and restored before
+  first paint by an inline head script. There is no flash of the wrong theme.
+- There is no install prompt and no OS-preference override. The theme is a manual,
+  remembered choice.
+- A day/night toggle lives in the top bar and in the subject toolbar; `t` toggles it
+  anywhere. The subject toolbar hides its toggle only below 380px, where the header
+  must keep the title legible.
+- Subject colours have a separate dark variant (lighter, more luminous) so accents,
+  mastery bars, heatmap filters, and the daily stack remain legible on ink.
+- The `<meta name="theme-color">` is updated live to `#0d0f13` or `#ffffff`.
+- The neutral heatmap, ring, tooltips, overlays, keycaps, shadows, and semantic tints
+  all have dark counterparts. `color-scheme` switches so native selects/scrollbars match.
+
 ### Subjects (fixed identity)
 
 | Subject | Colour | Id |
@@ -178,10 +211,11 @@ micro-labels.
 
 ## 07 · Data & persistence
 
-Everything is client-side. The static HTML app uses one localStorage key:
+Everything is client-side. The static HTML app uses two localStorage keys:
 
 ```
-oneliners.state.v1
+oneliners.state.v1    // goal, mastery, history
+oneliners.theme       // "light" | "dark"; default light
 ```
 
 Shape:
@@ -213,6 +247,7 @@ Shape:
 - Reset clears mastery and history but preserves the chosen goal. The footer action is
   two-step: `reset progress` → `click again to erase`.
 - `storage` events from another tab reload the state and refresh the UI.
+- Theme changes are remembered separately from progress; reset progress does not reset theme.
 - No backend, no accounts, no network writes.
 
 ### Derived statistics
@@ -232,8 +267,9 @@ Shape:
 ## 08 · Components
 
 ### Top bar
-64px, translucent white with 14px blur, hairline bottom. Brand left. Right: daily ring,
-a scalable **subjects jump** pill (3×3 dot grid, count), and a keyboard `?` button.
+64px, translucent paper with 14px blur, hairline bottom. Brand left. Right: daily ring,
+a scalable **subjects jump** pill (3×3 dot grid, count), a theme toggle (sun / moon), and
+a keyboard `?` button. The theme toggle also appears in the subject toolbar.
 The old six nav dots are gone — the design must survive 30 subjects. The subjects jump
 scrolls to the subject index and focuses its search on pointer devices.
 
@@ -360,7 +396,7 @@ information.
 
 | Context | Keys |
 | --- | --- |
-| Anywhere | `?` shortcuts · `Esc` close/back |
+| Anywhere | `?` shortcuts · `Esc` close/back · `t` toggle theme |
 | Home | `/` find subject · `j` subjects · `g` daily goal |
 | Subject | `q` quiz · `/` filter · `s` study mode · `Esc` back |
 | Quiz | `1–4` / `A–D` answer · `Enter` next · `Esc` leave |

@@ -2,7 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" id="themeColorMeta" content="#ffffff" />
+<script>
+/* Apply the saved theme before paint. Default is always light. */
+(() => {
+  try {
+    const theme = localStorage.getItem('oneliners.theme');
+    document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'light';
+    if (theme === 'dark') {
+      const meta = document.getElementById('themeColorMeta');
+      if (meta) meta.setAttribute('content', '#0d0f13');
+    }
+  } catch (e) {}
+})();
+</script>
 <title>one·liners — ECE</title>
 <meta name="description" content="One-line ECE definitions, persistent mastery, a daily practice stack, and a quiet two-way quiz. Signals, digital, analog, electromagnetics, communication, microprocessors." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cg fill='none' stroke='%2314161a' stroke-width='1' stroke-linecap='round'%3E%3Cpath d='M2 14h6l4-7h6'/%3E%3Cpath d='M8 14h6l4 7h6'/%3E%3Ccircle cx='22' cy='7' r='2'/%3E%3Ccircle cx='22' cy='21' r='2'/%3E%3Ccircle cx='2' cy='14' r='1.3' fill='%2314161a' stroke='none'/%3E%3C/g%3E%3C/svg%3E" />
@@ -28,11 +42,57 @@
   --heat-2:rgba(20,22,26,.22);
   --heat-3:rgba(20,22,26,.38);
   --heat-4:rgba(20,22,26,.58);
+  --paper:#ffffff;
+  --surface:#ffffff;
+  --surface-soft:#fafbfc;
+  --top-bg:rgba(255,255,255,.84);
+  --sticky-bg:rgba(255,255,255,.9);
+  --backdrop:rgba(255,255,255,.66);
+  --selection:#e9ecff;
+  --grid-line:#f7f8fa;
+  --cell-empty:#eff1f4;
+  --cell-future:#fbfcfe;
+  --hair-strong:#dcdfe5;
+  --scroll-thumb:#e8eaee;
+  --scroll-thumb-hover:#dcdfe5;
+  --hatch:#f2f3f6;
+  --on-accent:#ffffff;
+  --on-ok:#ffffff;
+  --on-no:#ffffff;
+  color-scheme:light;
+}
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --ink:#f0f3f8;
+  --ink-2:#b2bac5;
+  --ink-3:#7d8794;
+  --ink-4:#505965;
+  --hair:#252a33;
+  --hair-2:#1a1e25;
+  --hair-strong:#3a424d;
+  --paper:#0d0f13;
+  --surface:#12151b;
+  --surface-soft:#171b22;
+  --top-bg:rgba(13,15,19,.84);
+  --sticky-bg:rgba(13,15,19,.9);
+  --backdrop:rgba(13,15,19,.68);
+  --selection:#232b47;
+  --grid-line:#181c23;
+  --cell-empty:#1a1e25;
+  --cell-future:#12151b;
+  --scroll-thumb:#2b323c;
+  --scroll-thumb-hover:#39414d;
+  --hatch:#29303a;
+  --ok:#45d99d;
+  --no:#ff7e9e;
+  --on-accent:#101318;
+  --on-ok:#0b2017;
+  --on-no:#2a0b14;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{
-  background:#fff;
+  background:var(--paper);
   color:var(--ink);
   font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   font-weight:300;
@@ -41,7 +101,7 @@ body{
   text-rendering:optimizeLegibility;
   overflow-x:hidden;
 }
-::selection{background:#e9ecff;color:#14161a}
+::selection{background:var(--selection);color:var(--ink)}
 button,input,select{font-family:inherit}
 button{color:inherit}
 [hidden]{display:none !important}
@@ -49,8 +109,8 @@ button{color:inherit}
 
 ::-webkit-scrollbar{width:9px;height:9px}
 ::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:#e8eaee;border-radius:99px;border:3px solid #fff}
-::-webkit-scrollbar-thumb:hover{background:#dcdfe5}
+::-webkit-scrollbar-thumb{background:var(--scroll-thumb);border-radius:99px;border:3px solid var(--paper)}
+::-webkit-scrollbar-thumb:hover{background:var(--scroll-thumb-hover)}
 
 /* ============================================================
    TOP BAR
@@ -59,10 +119,10 @@ button{color:inherit}
   position:fixed;top:0;left:0;right:0;height:64px;z-index:40;
   display:flex;align-items:center;justify-content:space-between;
   padding:0 clamp(20px,4vw,48px);
-  background:rgba(255,255,255,.84);
+  background:var(--top-bg);
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(232,234,238,.7);
+  border-bottom:1px solid var(--hair);
 }
 .brand{
   display:flex;align-items:center;gap:10px;
@@ -88,7 +148,7 @@ button{color:inherit}
   position:absolute;top:156%;right:-10px;
   white-space:nowrap;
   font-size:9.5px;letter-spacing:.05em;color:var(--ink-2);
-  background:#fff;border:1px solid var(--hair);border-radius:99px;
+  background:var(--surface);border:1px solid var(--hair);border-radius:99px;
   padding:3px 8px;box-shadow:0 6px 18px -10px rgba(20,22,26,.3);
   opacity:0;transform:translateY(3px);pointer-events:none;
   transition:opacity .25s,transform .25s;font-variant-numeric:tabular-nums;
@@ -98,7 +158,7 @@ button{color:inherit}
 .nav-jump{
   display:flex;align-items:center;gap:8px;
   height:28px;padding:0 9px 0 8px;
-  border:1px solid var(--hair);border-radius:99px;background:#fff;
+  border:1px solid var(--hair);border-radius:99px;background:var(--surface);
   color:var(--ink-3);cursor:pointer;
   transition:border-color .3s,color .3s,transform .35s var(--ease);
   font-size:9px;letter-spacing:.16em;text-transform:uppercase;
@@ -113,11 +173,25 @@ button{color:inherit}
 .nav-jump:hover svg{transform:rotate(45deg)}
 .keys-btn{
   width:28px;height:28px;border-radius:50%;
-  border:1px solid var(--hair);background:#fff;color:var(--ink-3);
+  border:1px solid var(--hair);background:var(--surface);color:var(--ink-3);
   font-size:11px;cursor:pointer;display:grid;place-items:center;
   transition:.3s var(--ease);padding:0;
 }
 .keys-btn:hover{border-color:var(--ink-4);color:var(--ink);transform:scale(1.06)}
+
+.theme-btn{
+  width:28px;height:28px;border-radius:50%;
+  border:1px solid var(--hair);background:var(--surface);color:var(--ink-3);
+  display:grid;place-items:center;padding:0;cursor:pointer;
+  transition:border-color .3s,color .3s,transform .45s var(--ease),background .3s;
+}
+.theme-btn:hover{border-color:var(--ink-4);color:var(--ink);transform:rotate(-14deg) scale(1.06)}
+.theme-btn svg{display:block}
+.theme-btn .moon{display:none}
+html[data-theme="dark"] .theme-btn .sun{display:none}
+html[data-theme="dark"] .theme-btn .moon{display:block}
+.theme-btn.sp-theme{width:34px;height:34px}
+.theme-btn.sp-theme svg{width:15px;height:15px}
 
 /* ============================================================
    HOME
@@ -161,7 +235,7 @@ button{color:inherit}
   border:1px solid var(--hair);
   border-radius:18px;
   padding:22px clamp(16px,2.4vw,28px) 20px;
-  background:#fff;
+  background:var(--surface);
   position:relative;
 }
 .panel-head{
@@ -187,7 +261,7 @@ button{color:inherit}
 .goal-label{margin-right:3px}
 .goal-step{
   width:20px;height:20px;border-radius:50%;
-  border:1px solid var(--hair);background:#fff;
+  border:1px solid var(--hair);background:var(--surface);
   color:var(--ink-3);cursor:pointer;display:grid;place-items:center;
   font-size:12px;line-height:1;padding:0;
   transition:.3s var(--ease);
@@ -250,8 +324,8 @@ button{color:inherit}
 .stack-track{
   position:absolute;inset:0;border-radius:3px;
   border:1px solid var(--hair);
-  background-image:repeating-linear-gradient(-45deg,#f2f3f6 0 1px,transparent 1px 6px);
-  background-color:#fff;
+  background-image:repeating-linear-gradient(-45deg,var(--hatch) 0 1px,transparent 1px 6px);
+  background-color:var(--surface);
 }
 .stack-fill{
   position:absolute;left:0;top:0;bottom:0;
@@ -303,7 +377,7 @@ button{color:inherit}
 /* floating segment card */
 .seg-card{
   position:fixed;z-index:210;width:196px;
-  background:#fff;border:1px solid var(--hair);border-radius:11px;
+  background:var(--surface);border:1px solid var(--hair);border-radius:11px;
   padding:12px 13px 11px;
   box-shadow:0 18px 40px -24px rgba(20,22,26,.32);
   opacity:0;transform:translate(-50%,-100%) translateY(5px);
@@ -365,13 +439,13 @@ button{color:inherit}
   gap:var(--gap);
 }
 .cell{
-  border-radius:2.5px;background:#f0f2f5;
+  border-radius:2.5px;background:var(--hair-2);
   animation:cellIn .55s cubic-bezier(.22,1,.36,1) backwards;
   transition:opacity .3s ease,transform .2s ease,background .4s;
   will-change:transform;
 }
 .cell:hover{transform:scale(1.4);z-index:3;position:relative}
-.cell.future{background:#fbfcfe !important;opacity:.55;pointer-events:none}
+.cell.future{background:var(--cell-future) !important;opacity:.55;pointer-events:none}
 @keyframes cellIn{
   from{opacity:0;transform:scale(.35)}
   to{opacity:1;transform:scale(1)}
@@ -401,7 +475,7 @@ button{color:inherit}
 /* heat tooltip */
 .heat-tip{
   position:fixed;z-index:215;width:216px;
-  background:#fff;border:1px solid var(--hair);border-radius:11px;
+  background:var(--surface);border:1px solid var(--hair);border-radius:11px;
   padding:11px 12px;
   box-shadow:0 18px 40px -24px rgba(20,22,26,.32);
   opacity:0;transform:translate(-50%,-100%) translateY(6px);
@@ -472,7 +546,7 @@ button{color:inherit}
   border:1px solid var(--hair);border-radius:16px;
   padding:20px;min-height:196px;
   display:flex;flex-direction:column;justify-content:space-between;
-  background:#fff;cursor:pointer;
+  background:var(--surface);cursor:pointer;
   transition:border-color .45s,box-shadow .45s,transform .45s var(--ease);
   animation:cardIn .7s var(--ease) backwards;
   text-align:left;font:inherit;color:inherit;letter-spacing:inherit;
@@ -535,7 +609,7 @@ button{color:inherit}
 .tip{
   position:fixed;z-index:220;pointer-events:none;
   display:flex;align-items:center;gap:7px;
-  background:#fff;border:1px solid var(--hair);
+  background:var(--surface);border:1px solid var(--hair);
   box-shadow:0 12px 30px -14px rgba(20,22,26,.22);
   color:var(--ink);font-size:10.5px;font-weight:300;letter-spacing:.02em;
   padding:6px 10px;border-radius:8px;white-space:nowrap;
@@ -551,7 +625,7 @@ button{color:inherit}
    ============================================================ */
 .sp{
   position:fixed;inset:0;z-index:60;
-  background:#fff;overflow-y:auto;overflow-x:hidden;
+  background:var(--paper);overflow-y:auto;overflow-x:hidden;
   overscroll-behavior:contain;
   opacity:0;pointer-events:none;transform:translateY(18px);
   transition:opacity .4s ease,transform .55s var(--ease);
@@ -583,14 +657,14 @@ button{color:inherit}
   position:sticky;top:0;z-index:6;
   display:flex;align-items:center;gap:16px;
   padding:18px 0 16px;
-  background:rgba(255,255,255,.9);
+  background:var(--sticky-bg);
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);
 }
 .back{
   width:34px;height:34px;flex:0 0 auto;
   border-radius:50%;border:1px solid var(--hair);
-  background:#fff;cursor:pointer;display:grid;place-items:center;
+  background:var(--surface);cursor:pointer;display:grid;place-items:center;
   color:var(--ink-2);transition:.35s var(--ease);
   padding:0;
 }
@@ -618,14 +692,14 @@ button{color:inherit}
 .search:focus{border-color:var(--accent);width:170px}
 .toggle{
   width:34px;height:34px;border-radius:50%;
-  border:1px solid var(--hair);background:#fff;
+  border:1px solid var(--hair);background:var(--surface);
   display:grid;place-items:center;cursor:pointer;
   color:var(--ink-3);transition:.35s var(--ease);
   padding:0;
 }
 .toggle:hover{color:var(--ink-2);border-color:#dcdfe5}
 .toggle.on{
-  background:var(--accent);border-color:var(--accent);color:#fff;
+  background:var(--accent);border-color:var(--accent);color:var(--on-accent);
   box-shadow:0 8px 20px -12px var(--accent);
 }
 .toggle svg{display:block}
@@ -669,7 +743,7 @@ button{color:inherit}
   opacity:.7;margin-left:2px;
 }
 .quiz-cta:hover{
-  background:var(--accent);border-color:var(--accent);color:#fff;
+  background:var(--accent);border-color:var(--accent);color:var(--on-accent);
   box-shadow:0 14px 30px -18px var(--accent);
 }
 .quiz-cta:hover svg{transform:translateX(-1px)}
@@ -746,7 +820,7 @@ button{color:inherit}
 .node{
   position:absolute;left:-28px;top:19px;
   width:9px;height:9px;border-radius:50%;
-  border:1px solid var(--accent);background:#fff;
+  border:1px solid var(--accent);background:var(--surface);
   transition:.4s var(--ease);
 }
 .def:hover .node{
@@ -821,7 +895,7 @@ button{color:inherit}
    ============================================================ */
 .quiz{
   position:fixed;inset:0;z-index:80;
-  background:#fff;overflow-y:auto;overflow-x:hidden;
+  background:var(--paper);overflow-y:auto;overflow-x:hidden;
   overscroll-behavior:contain;
   opacity:0;pointer-events:none;transform:translateY(12px) scale(.996);
   transition:opacity .4s ease,transform .55s var(--ease);
@@ -833,8 +907,8 @@ button{color:inherit}
 .quiz-grid{
   position:fixed;inset:0;pointer-events:none;z-index:0;
   background-image:
-    linear-gradient(#f7f8fa 1px,transparent 1px),
-    linear-gradient(90deg,#f7f8fa 1px,transparent 1px);
+    linear-gradient(var(--grid-line) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid-line) 1px,transparent 1px);
   background-size:48px 48px;
   -webkit-mask-image:radial-gradient(ellipse at 72% 6%,#000 0%,transparent 68%);
   mask-image:radial-gradient(ellipse at 72% 6%,#000 0%,transparent 68%);
@@ -870,7 +944,7 @@ button{color:inherit}
   position:sticky;top:0;z-index:8;
   display:flex;align-items:center;gap:14px;
   padding:18px 0 14px;
-  background:rgba(255,255,255,.9);
+  background:var(--sticky-bg);
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);
 }
@@ -909,7 +983,7 @@ button{color:inherit}
   position:relative;
   border:1px solid var(--hair);border-radius:20px;
   padding:clamp(24px,4vw,42px);
-  background:#fff;
+  background:var(--surface);
   box-shadow:0 40px 90px -70px rgba(20,22,26,.42);
   transition:border-color .5s ease;
 }
@@ -952,7 +1026,7 @@ button{color:inherit}
 .opt{
   display:flex;align-items:center;gap:12px;
   min-height:54px;padding:12px 14px;
-  border:1px solid var(--hair);border-radius:11px;background:#fff;
+  border:1px solid var(--hair);border-radius:11px;background:var(--surface);
   font-size:13px;font-weight:300;letter-spacing:-.005em;color:var(--ink);
   text-align:left;cursor:pointer;
   transition:border-color .3s,transform .35s var(--ease),box-shadow .35s,background .3s,opacity .3s;
@@ -970,7 +1044,7 @@ button{color:inherit}
   transition:.3s;margin-top:1px;
 }
 .opt:hover:not(:disabled) .key{
-  background:var(--accent);border-color:var(--accent);color:#fff;
+  background:var(--accent);border-color:var(--accent);color:var(--on-accent);
 }
 .opt .o-term{flex:1 1 auto;line-height:1.4}
 .q-opts.long .o-term{line-height:1.5}
@@ -978,14 +1052,14 @@ button{color:inherit}
 
 .q-card.answered .opt:not(.correct):not(.wrong){opacity:.42}
 .opt.correct{border-color:rgba(31,157,107,.45);background:rgba(31,157,107,.045)}
-.opt.correct .key{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.correct .key{background:var(--ok);border-color:var(--ok);color:var(--on-ok)}
 .opt.correct .o-mark::before{
   content:'';position:absolute;left:1px;top:5px;width:9px;height:5px;
   border-left:1.2px solid var(--ok);border-bottom:1.2px solid var(--ok);
   transform:rotate(-45deg);animation:markIn .35s var(--ease) backwards;
 }
 .opt.wrong{border-color:rgba(217,83,118,.4);background:rgba(217,83,118,.04)}
-.opt.wrong .key{background:var(--no);border-color:var(--no);color:#fff}
+.opt.wrong .key{background:var(--no);border-color:var(--no);color:var(--on-no)}
 .opt.wrong .o-mark::before,
 .opt.wrong .o-mark::after{
   content:'';position:absolute;left:2px;top:7px;width:11px;height:1.2px;
@@ -1028,7 +1102,7 @@ button{color:inherit}
 .q-cue{
   display:inline-block;margin-left:6px;padding:1px 6px;
   border:1px solid var(--hair);border-radius:4px;
-  font-size:10px;color:var(--ink-2);background:#fafbfc;
+  font-size:10px;color:var(--ink-2);background:var(--surface-soft);
   font-variant-numeric:tabular-nums;white-space:nowrap;
 }
 .q-cue b{
@@ -1070,7 +1144,7 @@ button{color:inherit}
   flex:0 0 auto;
   display:inline-flex;align-items:center;gap:8px;
   height:36px;padding:0 16px;border-radius:99px;
-  border:1px solid var(--accent);background:var(--accent);color:#fff;
+  border:1px solid var(--accent);background:var(--accent);color:var(--on-accent);
   font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:400;
   cursor:pointer;transition:.35s var(--ease);
 }
@@ -1136,7 +1210,7 @@ button{color:inherit}
 .q-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
 .btn{
   height:38px;padding:0 16px;border-radius:99px;
-  border:1px solid var(--hair);background:#fff;color:var(--ink-2);
+  border:1px solid var(--hair);background:var(--surface);color:var(--ink-2);
   font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:400;
   cursor:pointer;transition:.35s var(--ease);
   display:inline-flex;align-items:center;gap:8px;
@@ -1148,8 +1222,8 @@ button{color:inherit}
 }
 .btn:hover{border-color:var(--ink-4);color:var(--ink);transform:translateY(-1px)}
 .btn:hover kbd{border-color:var(--ink-4);color:var(--ink-3)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
-.btn.primary:hover{box-shadow:0 14px 30px -16px var(--accent);color:#fff}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{box-shadow:0 14px 30px -16px var(--accent);color:var(--on-accent)}
 .btn.primary kbd{border-color:rgba(255,255,255,.35);color:rgba(255,255,255,.75)}
 .q-note{margin-top:24px;font-size:10px;letter-spacing:.06em;color:var(--ink-4)}
 .q-end-keys{
@@ -1172,13 +1246,13 @@ button{color:inherit}
 }
 .keys-modal.open{opacity:1;pointer-events:auto}
 .keys-backdrop{
-  position:absolute;inset:0;background:rgba(255,255,255,.66);
+  position:absolute;inset:0;background:var(--backdrop);
   backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);
 }
 .keys-card{
   position:relative;width:min(530px,100%);
   max-height:calc(100dvh - 48px);overflow-y:auto;
-  background:#fff;border:1px solid var(--hair);border-radius:16px;
+  background:var(--surface);border:1px solid var(--hair);border-radius:16px;
   padding:22px 24px 20px;
   box-shadow:0 40px 100px -50px rgba(20,22,26,.48);
   transform:translateY(8px);transition:transform .35s var(--ease);
@@ -1191,7 +1265,7 @@ button{color:inherit}
 }
 .keys-close{
   width:26px;height:26px;border-radius:50%;border:1px solid var(--hair);
-  background:#fff;color:var(--ink-3);cursor:pointer;display:grid;place-items:center;
+  background:var(--surface);color:var(--ink-3);cursor:pointer;display:grid;place-items:center;
   font-size:13px;line-height:1;padding:0;transition:.3s;
 }
 .keys-close:hover{border-color:var(--ink-4);color:var(--ink)}
@@ -1211,7 +1285,7 @@ button{color:inherit}
 .kk kbd{
   font:inherit;font-size:9px;line-height:1;color:var(--ink-3);
   border:1px solid var(--hair);border-radius:4px;padding:3px 5px;
-  background:#fafbfc;min-width:20px;text-align:center;
+  background:var(--surface-soft);min-width:20px;text-align:center;
 }
 .keys-note{margin-top:14px;font-size:9.5px;letter-spacing:.04em;color:var(--ink-4)}
 .keys-note kbd{
@@ -1238,6 +1312,27 @@ button{color:inherit}
 }
 .foot-link:hover{color:var(--ink);border-color:var(--ink-4)}
 .foot-link.armed{color:var(--no);border-color:rgba(217,83,118,.4)}
+
+/* ============================================================
+   DARK DETAILS
+   ============================================================ */
+html[data-theme="dark"] .opt.correct{
+  border-color:rgba(69,217,157,.45);
+  background:rgba(69,217,157,.075);
+}
+html[data-theme="dark"] .opt.wrong{
+  border-color:rgba(255,126,158,.42);
+  background:rgba(255,126,158,.065);
+}
+html[data-theme="dark"] .q-card.is-ok{border-color:rgba(69,217,157,.35)}
+html[data-theme="dark"] .q-card.is-no{border-color:rgba(255,126,158,.32)}
+html[data-theme="dark"] .day.met{border-color:rgba(69,217,157,.3)}
+html[data-theme="dark"] .quiz-cta:hover .qk{border-color:rgba(16,19,24,.28);opacity:.9}
+html[data-theme="dark"] .btn.primary kbd{border-color:rgba(16,19,24,.28);color:rgba(16,19,24,.65)}
+html[data-theme="dark"] .q-next:hover{box-shadow:0 12px 26px -14px rgba(0,0,0,.6)}
+html[data-theme="dark"] .week-bars b{background:var(--ink-3)}
+html[data-theme="dark"] .week-bars b.zero{background:var(--hair-2)}
+html[data-theme="dark"] .week-bars b.today{background:var(--ink-2)}
 
 /* ============================================================
    RESPONSIVE
@@ -1328,6 +1423,7 @@ button{color:inherit}
   .q-title em{display:none}
   .nav-jump b{display:none}
   .defs-count{display:none}
+  .sp-tools .theme-btn.sp-theme{display:none}
 }
 
 /* ============================================================
@@ -1375,6 +1471,17 @@ button{color:inherit}
       <span class="nav-label">subjects</span>
       <b id="navCount">6</b>
     </button>
+    <button class="theme-btn" id="themeBtn" aria-label="switch to dark theme" title="theme (t)">
+      <svg class="sun" viewBox="0 0 20 20" width="13" height="13" fill="none"
+           stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="10" cy="10" r="3.4"/>
+        <path d="M10 1.8v2.2M10 16v2.2M1.8 10h2.2M16 10h2.2M4.2 4.2l1.5 1.5M14.3 14.3l1.5 1.5M15.8 4.2l-1.5 1.5M5.7 14.3l-1.5 1.5"/>
+      </svg>
+      <svg class="moon" viewBox="0 0 20 20" width="13" height="13" fill="none"
+           stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M16.5 12.7A7 7 0 0 1 7.3 3.5a7 7 0 1 0 9.2 9.2z"/>
+      </svg>
+    </button>
     <button class="keys-btn" id="keysBtn" aria-label="keyboard shortcuts" aria-keyshortcuts="?">?</button>
   </div>
 </header>
@@ -1392,7 +1499,7 @@ button{color:inherit}
       </p>
     </div>
     <svg class="hero-trace" viewBox="0 0 440 260" fill="none" aria-hidden="true">
-      <g stroke="#e8eaee" stroke-width="1">
+      <g stroke="var(--hair)" stroke-width="1">
         <path d="M-10 76 C 60 76, 86 26, 158 26 S 286 118, 360 118 S 424 66, 470 66"/>
         <path d="M-10 158 C 66 158, 92 112, 166 112 S 294 198, 372 198 S 432 148, 470 148"/>
         <path d="M-10 218 C 80 218, 112 182, 186 182 S 318 242, 396 242" opacity=".55"/>
@@ -1410,7 +1517,7 @@ button{color:inherit}
         <circle cx="186" cy="182" r="2.2" fill="#22a06b"/>
         <circle cx="396" cy="242" r="2.2" fill="#9b6ae0"/>
       </g>
-      <g stroke="#c3c8d1" stroke-width="1" opacity=".35" stroke-dasharray="2 5">
+      <g stroke="var(--ink-4)" stroke-width="1" opacity=".35" stroke-dasharray="2 5">
         <path d="M158 26 V70"/>
         <path d="M360 118 V162"/>
         <path d="M166 112 V152"/>
@@ -1538,6 +1645,17 @@ button{color:inherit}
       <div class="sp-tools">
         <input class="search" id="search" placeholder="filter" autocomplete="off"
                spellcheck="false" aria-label="filter definitions" aria-keyshortcuts="/" />
+        <button class="theme-btn sp-theme" id="spThemeBtn" aria-label="switch to dark theme" title="theme (t)">
+          <svg class="sun" viewBox="0 0 20 20" width="15" height="15" fill="none"
+               stroke="currentColor" stroke-width="1.2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="10" cy="10" r="3.4"/>
+            <path d="M10 1.8v2.2M10 16v2.2M1.8 10h2.2M16 10h2.2M4.2 4.2l1.5 1.5M14.3 14.3l1.5 1.5M15.8 4.2l-1.5 1.5M5.7 14.3l-1.5 1.5"/>
+          </svg>
+          <svg class="moon" viewBox="0 0 20 20" width="15" height="15" fill="none"
+               stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16.5 12.7A7 7 0 0 1 7.3 3.5a7 7 0 1 0 9.2 9.2z"/>
+          </svg>
+        </button>
         <button class="toggle" id="studyBtn" title="study mode — hide definitions (s)"
                 aria-label="toggle study mode" aria-keyshortcuts="s">
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none"
@@ -1697,6 +1815,7 @@ button{color:inherit}
     <div class="keys-row"><span>find a subject</span><span class="kk"><kbd>/</kbd></span></div>
     <div class="keys-row"><span>browse subjects</span><span class="kk"><kbd>j</kbd></span></div>
     <div class="keys-row"><span>jump to daily goal</span><span class="kk"><kbd>g</kbd></span></div>
+    <div class="keys-row"><span>toggle dark mode</span><span class="kk"><kbd>t</kbd></span></div>
     <div class="keys-scope">subject</div>
     <div class="keys-row"><span>start a quiz</span><span class="kk"><kbd>q</kbd></span></div>
     <div class="keys-row"><span>filter definitions</span><span class="kk"><kbd>/</kbd></span></div>
@@ -1947,7 +2066,7 @@ const MOTIFS = {
    ============================================================ */
 const SUBJECTS = [
   {
-    id: 'signals', name: 'Signals & Systems', color: '#5b6ee1',
+    id: 'signals', name: 'Signals & Systems', color: '#5b6ee1', dark: '#8a9bff',
     defs: [
       ['Signal', 'A function that conveys information about the state of a system over time.', 'x(t)'],
       ['System', 'An entity that maps an input signal to an output signal.', 'T{x(t)}'],
@@ -1964,7 +2083,7 @@ const SUBJECTS = [
     ]
   },
   {
-    id: 'digital', name: 'Digital Electronics', color: '#12b3a6',
+    id: 'digital', name: 'Digital Electronics', color: '#12b3a6', dark: '#3bd6c7',
     defs: [
       ['Logic gate', 'A physical device implementing a Boolean function.', 'Y = f(A,B)'],
       ['Boolean algebra', 'The algebra of binary variables under AND, OR and NOT.', '{0, 1}'],
@@ -1981,7 +2100,7 @@ const SUBJECTS = [
     ]
   },
   {
-    id: 'analog', name: 'Analog Electronics', color: '#eaa22b',
+    id: 'analog', name: 'Analog Electronics', color: '#eaa22b', dark: '#f3b552',
     defs: [
       ['Diode', 'A two-terminal device that conducts current in one direction only.', 'I = I₀(e^{V/V_T} − 1)'],
       ['Depletion region', 'The charge-free zone formed at a PN junction.', 'W'],
@@ -1998,7 +2117,7 @@ const SUBJECTS = [
     ]
   },
   {
-    id: 'em', name: 'Electromagnetics', color: '#e0567f',
+    id: 'em', name: 'Electromagnetics', color: '#e0567f', dark: '#ff7f9f',
     defs: [
       ['Electric field', 'Force per unit charge experienced by a test charge.', 'E = F/q'],
       ["Gauss's law", 'Net electric flux through a closed surface equals enclosed charge over ε₀.', '∮E·dA = Q/ε₀'],
@@ -2015,7 +2134,7 @@ const SUBJECTS = [
     ]
   },
   {
-    id: 'comm', name: 'Communication Systems', color: '#22a06b',
+    id: 'comm', name: 'Communication Systems', color: '#22a06b', dark: '#4bd399',
     defs: [
       ['Modulation', 'Superimposing information onto a carrier wave.', 'm(t)·c(t)'],
       ['Bandwidth', 'The range of frequencies a signal or channel occupies.', 'B'],
@@ -2032,7 +2151,7 @@ const SUBJECTS = [
     ]
   },
   {
-    id: 'micro', name: 'Microprocessors', color: '#9b6ae0',
+    id: 'micro', name: 'Microprocessors', color: '#9b6ae0', dark: '#bb95ff',
     defs: [
       ['Microprocessor', 'A CPU integrated onto a single chip.', 'μP'],
       ['Von Neumann architecture', 'Instructions and data share one memory and one bus.', '1 bus'],
@@ -2051,6 +2170,13 @@ const SUBJECTS = [
 ];
 
 const SUBJECT_BY_ID = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+const THEME_KEY = 'oneliners.theme';
+const isDark = () => document.documentElement.dataset.theme === 'dark';
+const accentOf = s => (isDark() && s.dark) ? s.dark : s.color;
+const accentLine = c => rgba(c, isDark() ? .58 : .45);
+const accentTint = c => rgba(c, isDark() ? .11 : .055);
+const themeOk = () => isDark() ? '#45d99d' : '#1f9d6b';
+const themeNo = () => isDark() ? '#ff7e9e' : '#d95376';
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const Q_COUNT = 10;
 const Q_CIRC = 2 * Math.PI * 52;
@@ -2096,9 +2222,9 @@ function renderRing(done){
   const goal = store.goal;
   const pct = clamp(done / Math.max(goal, 1), 0, 1);
   const len = pct * C;
-  const col = done >= goal ? '#1f9d6b' : '#5b6270';
+  const col = done >= goal ? themeOk() : (isDark() ? '#8b95a3' : '#5b6270');
   dayRing.innerHTML = `
-    <circle cx="20" cy="20" r="${R}" fill="none" stroke="#eef0f3" stroke-width="2.4"/>
+    <circle cx="20" cy="20" r="${R}" fill="none" stroke="var(--hair-2)" stroke-width="2.4"/>
     ${done > 0 ? `<circle cx="20" cy="20" r="${R}" fill="none" stroke="${col}"
       stroke-width="2.4" stroke-linecap="round"
       stroke-dasharray="${Math.max(.6, len - .8).toFixed(2)} ${(C - Math.max(.6, len - .8)).toFixed(2)}"
@@ -2106,6 +2232,68 @@ function renderRing(done){
   dayRingBtn.setAttribute('aria-label', `${done} of ${goal} questions today, ${Math.max(0, goal - done)} left`);
   dayRingTip.textContent = `${done} / ${goal} today`;
 }
+
+/* ============================================================
+   THEME
+   ============================================================ */
+const themeBtn = $('#themeBtn');
+const spThemeBtn = $('#spThemeBtn');
+const themeColorMeta = $('#themeColorMeta');
+
+function updateThemeUI(){
+  const dark = isDark();
+  const label = dark ? 'switch to light theme' : 'switch to dark theme';
+  [themeBtn, spThemeBtn].forEach(btn => {
+    if (!btn) return;
+    btn.setAttribute('aria-label', label);
+    btn.setAttribute('title', `${dark ? 'light' : 'dark'} mode (t)`);
+  });
+  if (themeColorMeta) themeColorMeta.setAttribute('content', dark ? '#0d0f13' : '#ffffff');
+}
+
+function refreshThemeColors(){
+  hideSeg();
+  hideHeat();
+  tipEl.classList.remove('on');
+  renderToday();
+  updateCards();
+  paintActivity();
+  if (currentId){
+    const s = SUBJECT_BY_ID[currentId];
+    if (s){
+      sp.style.setProperty('--accent', accentOf(s));
+      sp.style.setProperty('--accent-line', accentLine(accentOf(s)));
+      sp.style.setProperty('--accent-tint', accentTint(accentOf(s)));
+      refreshSubjectStats(s);
+      refreshDefSides(s);
+    }
+  }
+  if (quizOpen){
+    if (quizState && quizState.s){
+      const s = quizState.s;
+      quizEl.style.setProperty('--accent', accentOf(s));
+      quizEl.style.setProperty('--accent-line', accentLine(accentOf(s)));
+      quizEl.style.setProperty('--accent-tint', accentTint(accentOf(s)));
+    }
+    updateTicks();
+  }
+  updateThemeUI();
+}
+
+function setTheme(theme){
+  const next = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = next;
+  try { localStorage.setItem(THEME_KEY, next); } catch (e){}
+  updateThemeUI();
+  refreshThemeColors();
+}
+
+function toggleTheme(){
+  setTheme(isDark() ? 'light' : 'dark');
+}
+
+themeBtn.addEventListener('click', toggleTheme);
+if (spThemeBtn) spThemeBtn.addEventListener('click', toggleTheme);
 
 /* ============================================================
    TODAY PANEL
@@ -2168,15 +2356,15 @@ function showSeg(key, anchor){
       <div class="seg-card-mid"><b>${seg.count}</b><span>of ${goal}</span></div>
       <div class="seg-card-bar"><i style="width:${clamp(seg.count / goal * 100, 0, 100)}%;background:var(--ink-4)"></i></div>
       <div class="seg-card-list">
-        ${top.map(x => `<span><i style="background:${x.s.color}"></i>${esc(x.s.name)}<b>${x.n}</b></span>`).join('')}
+        ${top.map(x => `<span><i style="background:${accentOf(x.s)}"></i>${esc(x.s.name)}<b>${x.n}</b></span>`).join('')}
       </div>
       <div class="seg-card-foot"><span>${share}% of goal</span><span>${seg.items.length} subjects</span></div>`;
   } else {
     const s = seg.s;
     segCard.innerHTML = `
-      <div class="seg-card-top"><i style="background:${s.color}"></i><span>${esc(s.name)}</span></div>
+      <div class="seg-card-top"><i style="background:${accentOf(s)}"></i><span>${esc(s.name)}</span></div>
       <div class="seg-card-mid"><b>${seg.count}</b><span>of ${goal}</span></div>
-      <div class="seg-card-bar"><i style="width:${clamp(seg.count / goal * 100, 0, 100)}%;background:${s.color}"></i></div>
+      <div class="seg-card-bar"><i style="width:${clamp(seg.count / goal * 100, 0, 100)}%;background:${accentOf(s)}"></i></div>
       <div class="seg-card-foot"><span>${share}% of goal</span><span>open →</span></div>`;
   }
   positionSegCard(anchor);
@@ -2203,7 +2391,7 @@ function renderWeek(){
     if (i === vals.length - 1) b.classList.add('today');
     b.dataset.tip = JSON.stringify({
       n: days[i].toLocaleDateString('en-US', { weekday: 'short' }),
-      c: i === vals.length - 1 ? '#5b6270' : '#c3c8d1',
+      c: i === vals.length - 1 ? (isDark() ? '#c3c8d1' : '#5b6270') : (isDark() ? '#5f6875' : '#c3c8d1'),
       v: v + (v === 1 ? ' q' : ' q')
     });
     frag.appendChild(b);
@@ -2262,7 +2450,7 @@ function renderToday(){
       const el = document.createElement('button');
       el.className = 'seg';
       el.type = 'button';
-      el.style.background = s.color;
+      el.style.background = accentOf(s);
       el.setAttribute('aria-label', `${s.name}: ${seg.count} questions today`);
       el.addEventListener('click', () => openSubject(s.id));
       el.addEventListener('mouseenter', () => showSeg(seg.key, el));
@@ -2290,7 +2478,7 @@ function renderToday(){
       const el = document.createElement('button');
       el.className = 'leg day-leg';
       el.type = 'button';
-      el.innerHTML = `<i style="--c:${x.s.color}"></i><span>${esc(x.s.name)}</span><b>${x.n}</b>`;
+      el.innerHTML = `<i style="--c:${accentOf(x.s)}"></i><span>${esc(x.s.name)}</span><b>${x.n}</b>`;
       el.addEventListener('click', () => openSubject(x.s.id));
       el.addEventListener('mouseenter', () => showSeg(x.s.id, el));
       el.addEventListener('focus', () => showSeg(x.s.id, el));
@@ -2361,8 +2549,12 @@ const heatLegend = $('#heatLegend');
 const heatTip = $('#heatTip');
 const graphWrap = $('#graphWrap');
 
-const HEAT_ALL = [null, 'rgba(20,22,26,.13)', 'rgba(20,22,26,.26)', 'rgba(20,22,26,.43)', 'rgba(20,22,26,.62)'];
-const HEAT_SUBJ = [null, .16, .30, .48, .68, .90];
+const HEAT_ALL_LIGHT = [null, 'rgba(20,22,26,.13)', 'rgba(20,22,26,.26)', 'rgba(20,22,26,.43)', 'rgba(20,22,26,.62)'];
+const HEAT_ALL_DARK = [null, 'rgba(240,244,250,.14)', 'rgba(240,244,250,.28)', 'rgba(240,244,250,.46)', 'rgba(240,244,250,.68)'];
+const HEAT_SUBJ = [null, .18, .32, .50, .70, .92];
+const heatAll = () => isDark() ? HEAT_ALL_DARK : HEAT_ALL_LIGHT;
+const heatEmpty = () => isDark() ? '#1a1e25' : '#eff1f4';
+const heatFuture = () => isDark() ? '#12151b' : '#fbfcfe';
 const graphCells = [];
 let graphStart = null;
 let heatPinned = false;
@@ -2424,7 +2616,7 @@ function paintActivity(){
 
   graphCells.forEach(el => {
     if (el.classList.contains('future')){
-      el.style.background = '#fbfcfe';
+      el.style.background = '';
       return;
     }
     const v = activityValue(el.dataset.date, filter);
@@ -2433,8 +2625,8 @@ function paintActivity(){
       lvl = v <= max * .25 ? 1 : v <= max * .5 ? 2 : v <= max * .75 ? 3 : 4;
     }
     el.style.background = lvl === 0
-      ? '#eff1f4'
-      : (filter === 'all' ? HEAT_ALL[lvl] : rgba(subj.color, HEAT_SUBJ[lvl]));
+      ? heatEmpty()
+      : (filter === 'all' ? heatAll()[lvl] : rgba(accentOf(subj), HEAT_SUBJ[lvl]));
   });
 
   const total = totalAnswered(filter);
@@ -2446,8 +2638,8 @@ function paintActivity(){
   [...heatLegend.querySelectorAll('i')].forEach((el, i) => {
     const lvl = i + 1;
     el.style.background = filter === 'all'
-      ? HEAT_ALL[lvl]
-      : rgba(subj.color, HEAT_SUBJ[lvl]);
+      ? heatAll()[lvl]
+      : rgba(accentOf(subj), HEAT_SUBJ[lvl]);
   });
 }
 
@@ -2474,7 +2666,7 @@ function showHeat(cell){
   const list = all.slice(0, 4);
   const breakdown = list.length
     ? `<div class="ht-list">${list.map(x => `
-        <div class="ht-row"><i style="background:${x.s.color}"></i><span>${esc(x.s.name)}</span><b>${x.n}</b></div>`).join('')}
+        <div class="ht-row"><i style="background:${accentOf(x.s)}"></i><span>${esc(x.s.name)}</span><b>${x.n}</b></div>`).join('')}
         ${all.length > 4 ? `<div class="ht-row ht-more"><span>+${all.length - 4} more subject${all.length - 4 === 1 ? '' : 's'}</span></div>` : ''}</div>`
     : '';
 
@@ -2543,15 +2735,15 @@ SUBJECTS.forEach((s, i) => {
   card.className = 'card';
   card.dataset.id = s.id;
   card.dataset.name = s.name.toLowerCase();
-  card.style.setProperty('--accent', s.color);
-  card.style.setProperty('--accent-line', rgba(s.color, .45));
+  card.style.setProperty('--accent', accentOf(s));
+  card.style.setProperty('--accent-line', accentLine(accentOf(s)));
   card.style.animationDelay = (i * 55) + 'ms';
   card.innerHTML = `
     <svg class="motif" viewBox="0 0 240 240" preserveAspectRatio="xMidYMid slice"
          fill="none" stroke="currentColor" stroke-width="1"
          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${MOTIFS[s.id]}</svg>
     <div class="card-top">
-      <i style="background:${s.color}"></i>
+      <i style="background:${accentOf(s)}"></i>
       <h3>${esc(s.name)}</h3>
       <span class="card-pct">0%</span>
     </div>
@@ -2570,6 +2762,8 @@ function updateCards(){
     if (!card) return;
     const st = subjectStats(s);
     const pct = Math.round(st.avg * 100);
+    card.style.setProperty('--accent', accentOf(s));
+    card.style.setProperty('--accent-line', accentLine(accentOf(s)));
     card.querySelector('.card-pct').textContent = pct + '%';
     const bars = [...card.querySelectorAll('.mticks i')];
     s.defs.forEach((d, i) => {
@@ -2577,12 +2771,12 @@ function updateCards(){
       const bar = bars[i];
       if (!bar) return;
       bar.style.height = (4 + sc * 16) + 'px';
-      bar.style.background = sc > 0 ? rgba(s.color, .25 + sc * .75) : '#e3e6eb';
+      bar.style.background = sc > 0 ? rgba(accentOf(s), .25 + sc * .75) : 'var(--hair)';
     });
     const ticks = card.querySelector('.mticks');
     ticks.dataset.tip = JSON.stringify({
       n: s.name,
-      c: s.color,
+      c: accentOf(s),
       v: `${pct}% · ${st.solid}/${s.defs.length} solid`
     });
     card.querySelector('.card-known').textContent = `${st.solid}/${s.defs.length} solid`;
@@ -2667,7 +2861,7 @@ function buildSpDay(s){
     const t = document.createElement('i');
     if (i < Math.min(n, cap)){
       t.className = 'on';
-      t.style.background = s.color;
+      t.style.background = accentOf(s);
     }
     frag.appendChild(t);
   }
@@ -2675,7 +2869,7 @@ function buildSpDay(s){
   spToday.textContent = `${n} today`;
   spDay.dataset.tip = JSON.stringify({
     n: `${s.name} · today`,
-    c: s.color,
+    c: accentOf(s),
     v: `${n} of ${store.goal}`
   });
 }
@@ -2716,7 +2910,7 @@ function defMarkup(s, d, i){
   const pct = Math.round(score * 100);
   const search = (d[0] + ' ' + d[1]).toLowerCase();
   const shown = rec && rec.attempts;
-  const tip = esc(JSON.stringify(defTip(rec, score, s.color)));
+  const tip = esc(JSON.stringify(defTip(rec, score, accentOf(s))));
   return `<div class="def" data-term="${esc(d[0])}" data-score="${score}" data-seen="${rec ? (rec.attempts || 0) : 0}"
       data-search="${esc(search)}" data-key="${esc(defKey(s.id, d[0]))}" style="animation-delay:${i * 24}ms">
     <span class="node"></span>
@@ -2785,7 +2979,7 @@ function refreshDefSides(s){
     if (stat) stat.textContent = seen ? pct + '%' : 'new';
     if (bar) bar.style.width = pct + '%';
     const side = el.querySelector('.def-side');
-    if (side) side.dataset.tip = JSON.stringify(defTip(rec, score, s.color));
+    if (side) side.dataset.tip = JSON.stringify(defTip(rec, score, accentOf(s)));
   });
 }
 
@@ -2806,9 +3000,9 @@ function openSubject(id){
   currentId = id;
   currentFilter = 'all';
 
-  sp.style.setProperty('--accent', s.color);
-  sp.style.setProperty('--accent-line', rgba(s.color, .45));
-  sp.style.setProperty('--accent-tint', rgba(s.color, .055));
+  sp.style.setProperty('--accent', accentOf(s));
+  sp.style.setProperty('--accent-line', accentLine(accentOf(s)));
+  sp.style.setProperty('--accent-tint', accentTint(accentOf(s)));
 
   spName.textContent = s.name;
   spTitle.textContent = s.name;
@@ -2954,12 +3148,12 @@ function updateTicks(){
     const log = st.log[i];
     if (log){
       t.classList.add(log.ok ? 'ok' : 'no');
-      c = log.ok ? '#1f9d6b' : '#d95376';
+      c = log.ok ? themeOk() : themeNo();
       v = log.ok ? 'correct' : 'missed';
     }
     if (i === st.i && !st.answered){
       t.classList.add('cur');
-      c = st.s.color;
+      c = accentOf(st.s);
       v = 'in progress';
     }
     t.dataset.tip = JSON.stringify({
@@ -3119,9 +3313,9 @@ function startQuiz(){
     before: subjectStats(s).avg
   };
 
-  quizEl.style.setProperty('--accent', s.color);
-  quizEl.style.setProperty('--accent-line', rgba(s.color, .45));
-  quizEl.style.setProperty('--accent-tint', rgba(s.color, .055));
+  quizEl.style.setProperty('--accent', accentOf(s));
+  quizEl.style.setProperty('--accent-line', accentLine(accentOf(s)));
+  quizEl.style.setProperty('--accent-tint', accentTint(accentOf(s)));
   qSubject.textContent = s.name;
   quizMotif.innerHTML = MOTIFS[s.id];
 
@@ -3178,7 +3372,7 @@ function showEnd(){
     b.style.animationDelay = (i * 45) + 'ms';
     b.dataset.tip = JSON.stringify({
       n: `${q.d[0]} · ${q.type === 'term' ? 'term → definition' : 'definition → term'}`,
-      c: ok ? '#1f9d6b' : '#d95376',
+      c: ok ? themeOk() : themeNo(),
       v: ok ? 'correct' : 'missed'
     });
     qRibbon.appendChild(b);
@@ -3338,6 +3532,12 @@ document.addEventListener('keydown', e => {
     return;
   }
 
+  if (e.key.toLowerCase() === 't' && !inField && !e.metaKey && !e.ctrlKey && !e.altKey){
+    e.preventDefault();
+    toggleTheme();
+    return;
+  }
+
   if (quizOpen){
     if (inField) return;
     if (quizEl.classList.contains('done')){
@@ -3396,6 +3596,12 @@ document.addEventListener('keydown', e => {
    STORAGE SYNC + MISC
    ============================================================ */
 window.addEventListener('storage', e => {
+  if (e.key === THEME_KEY){
+    const next = e.newValue === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    refreshThemeColors();
+    return;
+  }
   if (e.key !== STORE_KEY) return;
   store = loadStore();
   refreshHome();
@@ -3443,6 +3649,7 @@ setInterval(() => {
   });
 
   goalInput.value = store.goal;
+  updateThemeUI();
   filterCards();
   refreshHome();
   alignGraphToEnd();
