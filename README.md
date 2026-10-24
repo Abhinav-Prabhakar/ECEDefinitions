@@ -158,8 +158,17 @@ no seeded cells.
 
 - **Full PWA:** `manifest.webmanifest`, a service worker, maskable icons, Apple touch icon,
   safe Apple metadata, and a cached app shell. It works offline after the first load.
-- **No install dialog inside the app.** Install from Chrome/Edge's install control, Firefox
-  Android's “Install”, or iOS Safari's Share → *Add to Home Screen*.
+- **No install dialog inside the app.** Install from the browser/OS UI:
+  - **macOS Chrome:** in a normal (non-Incognito) window, use the install icon at the right
+    of the address bar (a monitor with a down arrow) or **⋮ → Cast, save, and share →
+    Install page as app**. If it is already installed, launch it from `chrome://apps`.
+  - **macOS Safari:** **File → Add to Dock**.
+  - **iOS Safari:** **Share → Add to Home Screen**.
+  - **Android Chrome:** **⋮ → Install app** (or “Add to Home screen”).
+  - **Windows/Linux Chrome or Edge:** install icon in the address bar, or the browser's
+    **Install app** menu item.
+- **Stable app identity:** the manifest uses the unique id `/ECEDefinitions/`, so the
+  installation cannot collide with another app on the same origin.
 - **Self-hosted Inter** (variable WOFF2) — no external font request, no flash of the wrong
   typeface offline.
 - **Theme:** always light by default, even when the OS is dark. Once you choose dark, it

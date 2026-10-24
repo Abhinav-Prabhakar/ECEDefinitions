@@ -397,7 +397,9 @@ information.
   network-first navigation with a cached-index fallback, and stale-while-revalidate for
   same-origin assets. It works fully offline after one visit.
 - **No install dialog is ever shown.** No `beforeinstallprompt` handler exists. Installation
-  is left to the browser/OS menu.
+  is left to the browser/OS menu. The manifest has the stable id `/ECEDefinitions/` so it
+  cannot collide with another app on the same origin; macOS Chrome exposes install from the
+  omnibox or **⋮ → Cast, save, and share → Install page as app**.
 - **Self-hosted Inter** (variable WOFF2) so typography survives offline and there is no
   third-party font request. OFL text ships with it.
 - Metadata: canonical URL, Open Graph 1200×630 image, Twitter large card, JSON-LD
