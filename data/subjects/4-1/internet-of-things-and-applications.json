@@ -618,7 +618,7 @@
     {
       "id": "iot-level-specification",
       "term": "IoT Level Specification",
-      "definition": "Design step that fixes which of the five deployment levels the system will use.",
+      "definition": "Design step that fixes which of the six reference deployment levels the system will use, from a single local node to cloud-connected distributed nodes.",
       "formula": "",
       "unit": 5,
       "unitTitle": "IoT Design Methodology",

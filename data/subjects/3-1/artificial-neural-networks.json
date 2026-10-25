@@ -219,7 +219,7 @@
     {
       "id": "instar",
       "term": "Instar",
-      "definition": "Grossberg learning scheme, introduced in 1976, for training adaptive filters; Kohonen later used the same equation in self-organizing maps.",
+      "definition": "Grossberg learning rule that moves a unit's incoming weight vector toward the input pattern that activates it, so the unit learns to recognise that pattern.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Network Topologies and Architectures",
@@ -230,7 +230,7 @@
     {
       "id": "outstar",
       "term": "Outstar",
-      "definition": "Grossberg learning scheme, introduced from 1967 onward, used for learning spatial patterns.",
+      "definition": "Grossberg learning rule that moves a unit's outgoing weights toward a target output pattern, so activating the unit later recalls that pattern.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Network Topologies and Architectures",

@@ -480,7 +480,7 @@
     {
       "id": "time-between-purchases",
       "term": "Time between purchases",
-      "definition": "Measure of sales made to a consumer in a year, useful for preparing the customer for the next big sale.",
+      "definition": "Average interval between a customer's consecutive purchases, used to time offers that prompt the next sale.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",

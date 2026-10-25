@@ -357,7 +357,7 @@
     {
       "id": "dynamic-timing-analysis",
       "term": "Dynamic timing analysis",
-      "definition": "Timing verification method often used for specific functional validation, in contrast to the sign-off standard method.",
+      "definition": "Timing verification that simulates the circuit with input vectors and measures delays, used for specific functional checks rather than sign-off.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",

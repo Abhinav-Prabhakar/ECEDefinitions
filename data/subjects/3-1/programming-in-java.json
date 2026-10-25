@@ -245,7 +245,7 @@
     {
       "id": "interface-versus-abstract-class",
       "term": "Interface versus abstract class",
-      "definition": "Unlike an abstract class, it has only public static final fields, and a class can implement any number of them but extend only one class.",
+      "definition": "Distinction that interfaces hold only public static final fields and a class may implement many, whereas it can extend only one abstract parent.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Inheritance and Interfaces",

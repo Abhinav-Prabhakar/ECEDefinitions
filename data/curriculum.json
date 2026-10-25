@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2448,
-    "completeSubjects": 41,
-    "partialSubjects": 8,
-    "inaccessibleSubjects": 7
+    "definitions": 2773,
+    "completeSubjects": 51,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 1
   }
 }

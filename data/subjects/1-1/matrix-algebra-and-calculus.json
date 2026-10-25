@@ -68,7 +68,7 @@
     {
       "id": "row-echelon-form",
       "term": "Row echelon form",
-      "definition": "Matrix shape in which zero lines lie at the bottom and the leading entry of each nonzero line sits strictly right of the one above.",
+      "definition": "Matrix shape in which all-zero rows lie at the bottom and the leading entry of each nonzero row sits strictly right of the one above.",
       "formula": "",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
@@ -79,7 +79,7 @@
     {
       "id": "elementary-row-operations",
       "term": "Elementary row operations",
-      "definition": "Three reversible steps on a matrix: interchanging two lines, multiplying a line by a nonzero scalar, or adding a multiple of one line to another.",
+      "definition": "Three reversible steps on a matrix: interchanging two rows, multiplying a row by a nonzero scalar, or adding a multiple of one row to another.",
       "formula": "",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
@@ -90,7 +90,7 @@
     {
       "id": "rank-of-a-matrix",
       "term": "Rank of a matrix",
-      "definition": "Dimension of the space spanned by the columns, equal to the maximum number of linearly independent columns or lines.",
+      "definition": "Dimension of the space spanned by the columns, equal to the maximum number of linearly independent columns or rows.",
       "formula": "",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
