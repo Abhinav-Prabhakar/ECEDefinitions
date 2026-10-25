@@ -1,5 +1,5 @@
 /* one·liners — offline app shell */
-const CACHE = 'oneliners-v6';
+const CACHE = 'oneliners-v7';
 const ASSETS = [
   './',
   './index.html',
@@ -53,7 +53,8 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
-        keys.filter(k => k.startsWith('oneliners-') && k !== CACHE)
+        // Sibling one·liners apps share this origin; only clear this app's caches.
+        keys.filter(k => /^oneliners-v\d+$/.test(k) && k !== CACHE)
             .map(k => caches.delete(k))
       ))
       .then(() => self.clients.claim())
