@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "topic": "Nursing and NCLEX-RN preparation",
+  "collectionId": "nursing-and-nclex",
+  "type": "exam",
+  "audience": "NCLEX-RN candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "examVersion": "NCLEX-RN Test Plan, effective April 2023 (based on 2021 RN Practice Analysis)",
+  "includes": [
+    "fundamentals of nursing",
+    "health assessment",
+    "safety and infection control",
+    "medical-surgical nursing",
+    "maternal and child health",
+    "mental health nursing"
+  ],
+  "excludes": [
+    "drug dosing and patient-specific regimens",
+    "prescribing and clinical decision-making",
+    "advanced pathophysiology",
+    "NCLEX item practice and question banks",
+    "state-specific nurse practice act detail"
+  ],
+  "assumptions": [
+    "US clinical usage and NCLEX-RN 2023 test plan",
+    "introductory level; entry-level RN preparation",
+    "vocabulary only, not clinical training or licensure advice"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "fundamentals",
+          "name": "Fundamentals of Nursing",
+          "shortName": "Fundamentals",
+          "units": ["Nursing process", "Vital signs", "Hygiene and comfort", "Mobility and safety", "Nutrition and elimination", "Documentation and communication"],
+          "targetDefinitions": 60,
+          "sourceQueries": [
+            "Open RN Nursing Fundamentals textbook",
+            "OpenStax Fundamentals of Nursing"
+          ]
+        },
+        {
+          "id": "health-assessment",
+          "name": "Health Assessment",
+          "shortName": "Health assessment",
+          "units": ["Health history", "Physical exam techniques", "Head and neck", "Thorax and lungs", "Abdomen", "Extremities and skin"],
+          "targetDefinitions": 56,
+          "sourceQueries": [
+            "Open RN Nursing Skills physical assessment",
+            "OpenStax Clinical Nursing Skills"
+          ]
+        },
+        {
+          "id": "safety-and-infection-control",
+          "name": "Safety and Infection Control",
+          "shortName": "Safety and infection",
+          "units": ["Infection control principles", "Hand hygiene and PPE", "Isolation precautions", "Medication safety", "Fall and restraint safety", "Emergency preparedness"],
+          "targetDefinitions": 56,
+          "sourceQueries": [
+            "Open RN Nursing Fundamentals safety infection control",
+            "CDC standard precautions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "Clinical",
+      "subjects": [
+        {
+          "id": "medical-surgical",
+          "name": "Medical-Surgical Nursing",
+          "shortName": "Med-surg",
+          "units": ["Cardiovascular", "Respiratory", "Endocrine", "Gastrointestinal and renal", "Neurological and musculoskeletal", "Fluids and electrolytes"],
+          "targetDefinitions": 60,
+          "sourceQueries": [
+            "OpenStax Medical-Surgical Nursing",
+            "Open RN Nursing Advanced Skills"
+          ]
+        },
+        {
+          "id": "maternal-and-child",
+          "name": "Maternal and Child Health",
+          "shortName": "Maternal and child",
+          "units": ["Antepartum", "Intrapartum", "Postpartum", "Newborn", "Pediatric growth and development", "Pediatric illness"],
+          "targetDefinitions": 56,
+          "sourceQueries": [
+            "OpenStax Maternal Newborn Nursing",
+            "Open RN Nursing Fundamentals maternal"
+          ]
+        },
+        {
+          "id": "mental-health",
+          "name": "Mental Health Nursing",
+          "shortName": "Mental health",
+          "units": ["Therapeutic communication", "Mood disorders", "Psychotic disorders", "Anxiety and trauma", "Substance use", "Crisis and suicide"],
+          "targetDefinitions": 56,
+          "sourceQueries": [
+            "OpenStax Psychiatric-Mental Health Nursing",
+            "Open RN Nursing Mental Health and Community Concepts"
+          ]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 300, "max": 380 },
+  "disclaimer": "Educational vocabulary only; not medical advice, clinical training, or licensure guidance."
+}
