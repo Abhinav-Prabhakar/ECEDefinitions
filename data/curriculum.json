@@ -430,16 +430,138 @@
       "label": "III Year · II Semester",
       "year": 3,
       "term": 2,
-      "status": "pending",
-      "subjects": []
+      "status": "partial",
+      "subjects": [
+        {
+          "id": "microprocessors-and-microcontrollers",
+          "name": "Microprocessors and Microcontrollers",
+          "shortName": "MPMC",
+          "code": "9CC15",
+          "courseType": "PC",
+          "folderId": "1ja783fNGAuoP9gRxtvzCqxrXNUDX7vpO",
+          "folderUrl": "https://drive.google.com/drive/folders/1ja783fNGAuoP9gRxtvzCqxrXNUDX7vpO",
+          "data": "data/subjects/3-2/microprocessors-and-microcontrollers.json",
+          "definitionCount": 59,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 5
+        },
+        {
+          "id": "vlsi-technology-and-design",
+          "name": "VLSI Technology and Design",
+          "shortName": "VLSITD",
+          "code": "9C612",
+          "courseType": "PC",
+          "folderId": "1QCzsKSV2gp_IjYXLEirUw_SUg8v_oNrN",
+          "folderUrl": "https://drive.google.com/drive/folders/1QCzsKSV2gp_IjYXLEirUw_SUg8v_oNrN",
+          "data": "data/subjects/3-2/vlsi-technology-and-design.json",
+          "definitionCount": 50,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 6
+        },
+        {
+          "id": "microwave-and-optical-communications",
+          "name": "Microwave and Optical Communications",
+          "shortName": "MWOC",
+          "code": "9C611",
+          "courseType": "PC",
+          "folderId": "18ef3701IoNh_jhCRGX012jOFnorpejTm",
+          "folderUrl": "https://drive.google.com/drive/folders/18ef3701IoNh_jhCRGX012jOFnorpejTm",
+          "data": "data/subjects/3-2/microwave-and-optical-communications.json",
+          "definitionCount": 50,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 8
+        },
+        {
+          "id": "cyber-security",
+          "name": "Cyber Security",
+          "shortName": "CYS",
+          "code": "9FC78",
+          "courseType": "MC",
+          "folderId": "1hov_jUcf0Zy2K-CJkFboCHwH8kFVDyke",
+          "folderUrl": "https://drive.google.com/drive/folders/1hov_jUcf0Zy2K-CJkFboCHwH8kFVDyke",
+          "data": "data/subjects/3-2/cyber-security.json",
+          "definitionCount": 50,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 6
+        },
+        {
+          "id": "python-programming",
+          "name": "Python Programming",
+          "shortName": "PP",
+          "code": "8FC22",
+          "courseType": "",
+          "folderId": "1TbCKnWWIMcdAuvJsO-DNCDk0VZI2yWLu",
+          "folderUrl": "https://drive.google.com/drive/folders/1TbCKnWWIMcdAuvJsO-DNCDk0VZI2yWLu",
+          "data": "data/subjects/3-2/python-programming.json",
+          "definitionCount": 40,
+          "unitCount": 3,
+          "coveredUnits": 3,
+          "status": "unresolved",
+          "sourceCount": 3
+        }
+      ]
     },
     {
       "id": "4-1",
       "label": "IV Year · I Semester",
       "year": 4,
       "term": 1,
-      "status": "pending",
-      "subjects": []
+      "status": "partial",
+      "subjects": [
+        {
+          "id": "advanced-communications-and-networks",
+          "name": "Advanced Communications and Networks",
+          "shortName": "ACN",
+          "code": "9C714",
+          "courseType": "PC",
+          "folderId": "1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
+          "folderUrl": "https://drive.google.com/drive/folders/1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
+          "data": "data/subjects/4-1/advanced-communications-and-networks.json",
+          "definitionCount": 43,
+          "unitCount": 3,
+          "coveredUnits": 3,
+          "status": "partial",
+          "sourceCount": 0
+        },
+        {
+          "id": "internet-of-things-and-applications",
+          "name": "Internet of Things and Applications",
+          "shortName": "IOTA",
+          "code": "9C713",
+          "courseType": "PC",
+          "folderId": "1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
+          "folderUrl": "https://drive.google.com/drive/folders/1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
+          "data": "data/subjects/4-1/internet-of-things-and-applications.json",
+          "definitionCount": 40,
+          "unitCount": 3,
+          "coveredUnits": 3,
+          "status": "partial",
+          "sourceCount": 0
+        },
+        {
+          "id": "computer-networks",
+          "name": "Computer Networks",
+          "shortName": "CN",
+          "code": "9EC05",
+          "courseType": "ES",
+          "folderId": "1wyUHctxgd6_sN-1Ik_00kpbf58fqHSQR",
+          "folderUrl": "https://drive.google.com/drive/folders/1wyUHctxgd6_sN-1Ik_00kpbf58fqHSQR",
+          "data": "data/subjects/4-1/computer-networks.json",
+          "definitionCount": 50,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 0
+        }
+      ]
     },
     {
       "id": "4-2",
@@ -450,13 +572,33 @@
       "subjects": []
     }
   ],
+  "inaccessible": [
+    {
+      "id": "embedded-real-time-operating-systems",
+      "name": "Embedded Real Time Operating Systems",
+      "shortName": "ERTOS",
+      "code": "9C731",
+      "semester": "4-1",
+      "data": "data/subjects/4-1/embedded-real-time-operating-systems.json",
+      "status": "inaccessible"
+    },
+    {
+      "id": "system-on-chip-architecture",
+      "name": "System on Chip Architecture",
+      "shortName": "SOCA",
+      "code": "9C835",
+      "semester": "4-1",
+      "data": "data/subjects/4-1/system-on-chip-architecture.json",
+      "status": "inaccessible"
+    }
+  ],
   "coverage": {
     "semesters": 8,
-    "semestersWithMaterials": 5,
-    "subjects": 24,
-    "definitions": 1113,
-    "completeSubjects": 22,
-    "partialSubjects": 2,
-    "inaccessibleSubjects": 0
+    "semestersWithMaterials": 7,
+    "subjects": 32,
+    "definitions": 1495,
+    "completeSubjects": 27,
+    "partialSubjects": 4,
+    "inaccessibleSubjects": 2
   }
 }

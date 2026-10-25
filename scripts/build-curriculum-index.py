@@ -148,6 +148,7 @@ def main() -> int:
         return 1
 
     by_semester: dict[str, list[dict]] = {sid: [] for sid, *_ in SEMESTERS}
+    inaccessible: list[dict] = []
     for path in sorted(SUBJECTS_DIR.glob("*/*.json")):
         semester = path.parent.name
         if semester not in by_semester:
@@ -156,6 +157,21 @@ def main() -> int:
         subject = read_subject(path, semester)
         if subject:
             by_semester[semester].append(subject)
+        else:
+            try:
+                raw = json.loads(path.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+            if raw.get("status") == "inaccessible":
+                inaccessible.append({
+                    "id": raw.get("id") or path.stem,
+                    "name": raw.get("name") or path.stem.replace("-", " ").title(),
+                    "shortName": raw.get("shortName") or "",
+                    "code": raw.get("code") or "",
+                    "semester": semester,
+                    "data": path.relative_to(ROOT).as_posix(),
+                    "status": "inaccessible",
+                })
 
     semesters = []
     for sid, label, year, term in SEMESTERS:
@@ -187,7 +203,7 @@ def main() -> int:
         "definitions": sum(s["definitionCount"] for s in all_subjects),
         "completeSubjects": sum(1 for s in all_subjects if s["status"] == "complete"),
         "partialSubjects": sum(1 for s in all_subjects if s["status"] == "partial"),
-        "inaccessibleSubjects": sum(1 for s in all_subjects if s["status"] == "inaccessible"),
+        "inaccessibleSubjects": len(inaccessible),
     }
 
     payload = {
@@ -195,6 +211,7 @@ def main() -> int:
         "generatedAt": date.today().isoformat(),
         "source": SOURCE,
         "semesters": semesters,
+        "inaccessible": inaccessible,
         "coverage": coverage,
     }
 

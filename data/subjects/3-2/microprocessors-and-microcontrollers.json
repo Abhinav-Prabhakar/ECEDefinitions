@@ -1,0 +1,669 @@
+{
+  "version": 1,
+  "id": "microprocessors-and-microcontrollers",
+  "semester": "3-2",
+  "name": "Microprocessors and Microcontrollers",
+  "shortName": "MPMC",
+  "code": "9CC15",
+  "courseType": "PC",
+  "folderId": "1ja783fNGAuoP9gRxtvzCqxrXNUDX7vpO",
+  "folderUrl": "https://drive.google.com/drive/folders/1ja783fNGAuoP9gRxtvzCqxrXNUDX7vpO",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "microprocessor",
+      "term": "Microprocessor",
+      "definition": "Multipurpose, programmable device that incorporates the CPU of a computer on a single IC and processes digital data according to instructions stored in memory.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.2"
+      ]
+    },
+    {
+      "id": "pipelined-architecture",
+      "term": "Pipelined architecture",
+      "definition": "8086 architecture in which the BIU fetches instructions while the EU executes them, so the two operations overlap.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.10"
+      ]
+    },
+    {
+      "id": "execution-unit",
+      "term": "Execution Unit (EU)",
+      "definition": "Part of the 8086 that decodes and executes instructions; contains ALU, flag register, instruction decoder and general-purpose, pointer and index registers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.12",
+        "mpmc-unit-1a#slide.13"
+      ]
+    },
+    {
+      "id": "bus-interface-unit",
+      "term": "Bus Interface Unit (BIU)",
+      "definition": "Part of the 8086 that handles data and address transfers with memory and I/O devices, computes physical addresses and prefetches instructions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.14",
+        "mpmc-unit-1a#slide.15"
+      ]
+    },
+    {
+      "id": "instruction-queue",
+      "term": "Instruction queue",
+      "definition": "Six-byte FIFO register set inside the BIU that stores prefetched instructions for the EU.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.16"
+      ]
+    },
+    {
+      "id": "flag-register",
+      "term": "Flag register (PSW)",
+      "definition": "16-bit register, also called PSW, that reflects the status of ALU computations; it holds 9 active flags, 6 conditional and 3 control flags.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.18"
+      ]
+    },
+    {
+      "id": "carry-flag",
+      "term": "Carry flag (CF)",
+      "definition": "Set when addition generates a carry out of the MSB or subtraction requires a borrow.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.20"
+      ]
+    },
+    {
+      "id": "zero-flag",
+      "term": "Zero flag (ZF)",
+      "definition": "Set to 1 when the result of an operation is zero and cleared when the result is nonzero.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.21"
+      ]
+    },
+    {
+      "id": "sign-flag",
+      "term": "Sign flag (SF)",
+      "definition": "Copies the MSB of the result, indicating whether the result is positive or negative.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.21"
+      ]
+    },
+    {
+      "id": "overflow-flag",
+      "term": "Overflow flag (OF)",
+      "definition": "Set when carry into the MSB differs from carry out of the MSB, i.e. the result exceeds the available capacity.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.21"
+      ]
+    },
+    {
+      "id": "segment-registers",
+      "term": "Segment registers",
+      "definition": "CS, DS, ES and SS: 16-bit registers holding the starting addresses of the code, data, extra and stack memory segments.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.28"
+      ]
+    },
+    {
+      "id": "physical-address",
+      "term": "Physical address",
+      "definition": "20-bit actual address of a memory location, computed by a dedicated adder in the BIU from the segment and offset registers.",
+      "formula": "PA = 10H × segment address + offset",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.30",
+        "mpmc-unit-1a#slide.31"
+      ]
+    },
+    {
+      "id": "minimum-mode",
+      "term": "Minimum mode",
+      "definition": "8086 configuration with MN/MX = 1 in which a single microprocessor generates all control signals itself.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.45"
+      ]
+    },
+    {
+      "id": "maximum-mode",
+      "term": "Maximum mode",
+      "definition": "8086 configuration with MN/MX = 0 in which status signals S0–S2 are decoded by an external bus controller.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "8086 Microprocessor Architecture",
+      "sources": [
+        "mpmc-unit-1a#slide.48"
+      ]
+    },
+    {
+      "id": "addressing-mode",
+      "term": "Addressing mode",
+      "definition": "Specifies a way of locating the data or operands that an instruction operates on.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.2"
+      ]
+    },
+    {
+      "id": "immediate-addressing",
+      "term": "Immediate addressing",
+      "definition": "Mode in which the operand is part of the instruction itself, stored in successive bytes; e.g. MOV AX, 0005H.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.4"
+      ]
+    },
+    {
+      "id": "register-addressing",
+      "term": "Register addressing",
+      "definition": "Mode in which the operand is stored in a register and referred to using that register; e.g. MOV AX, BX.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.4"
+      ]
+    },
+    {
+      "id": "direct-addressing",
+      "term": "Direct addressing",
+      "definition": "Mode in which the memory address of the operand is specified directly in the instruction; e.g. MOV AX, [5000].",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.5"
+      ]
+    },
+    {
+      "id": "register-indirect-addressing",
+      "term": "Register indirect addressing",
+      "definition": "Mode in which the operand address is stored indirectly in an offset register such as BX, SI or DI; e.g. MOV AX, [BX].",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.5"
+      ]
+    },
+    {
+      "id": "based-indexed-addressing",
+      "term": "Based indexed addressing",
+      "definition": "Mode in which the physical address is formed by adding base register contents (BX/BP) to index register contents (SI/DI).",
+      "formula": "PA = 10H × DS + [BX] + [SI]",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.6"
+      ]
+    },
+    {
+      "id": "push-instruction",
+      "term": "PUSH",
+      "definition": "Pushes the contents of a register or memory location onto the stack; SP is decremented by 2.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.15"
+      ]
+    },
+    {
+      "id": "pop-instruction",
+      "term": "POP",
+      "definition": "Copies a word from the top of the stack into the specified register or memory location; SP is incremented by 2.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.16"
+      ]
+    },
+    {
+      "id": "cmp-instruction",
+      "term": "CMP",
+      "definition": "Subtracts the source operand from the destination only to update flags; the result is not stored anywhere.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.33"
+      ]
+    },
+    {
+      "id": "mul-instruction",
+      "term": "MUL",
+      "definition": "Unsigned multiplication of AL (or AX) with a byte (or word) operand; the result goes to AX (or DX:AX).",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.43"
+      ]
+    },
+    {
+      "id": "int-n",
+      "term": "INT N",
+      "definition": "Software interrupt instruction with a type number 0–255 that calls the corresponding interrupt service routine; INT 3 is the break-point interrupt.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.82"
+      ]
+    },
+    {
+      "id": "loop-instruction",
+      "term": "LOOP",
+      "definition": "Executes a labelled block of code the number of times specified in CX, decrementing CX automatically at each iteration.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Instruction Set of 8086",
+      "sources": [
+        "mpmc-unit-1b#slide.86"
+      ]
+    },
+    {
+      "id": "assembler-directive",
+      "term": "Assembler directive",
+      "definition": "Predefined alphabetical strings (e.g. ASSUME, ORG, EQU) that give hints to the assembler to understand the program correctly.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Assembly Language Programming",
+      "sources": [
+        "mpmc-unit-1b#slide.90"
+      ]
+    },
+    {
+      "id": "procedure",
+      "term": "Procedure",
+      "definition": "Group of repetitive instructions stored as a separate program in memory and invoked with CALL; near if in the same code segment, far otherwise.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Assembly Language Programming",
+      "sources": [
+        "mpmc-unit-1b#slide.100"
+      ]
+    },
+    {
+      "id": "macro",
+      "term": "Macro",
+      "definition": "Group of repetitive instructions defined with MACRO and ENDM whose machine code is generated each time the macro is called, hence uses more memory.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Assembly Language Programming",
+      "sources": [
+        "mpmc-unit-1b#slide.102"
+      ]
+    },
+    {
+      "id": "8255-ppi",
+      "term": "8255 PPI",
+      "definition": "Programmable peripheral interface used to control communication between the microprocessor and I/O devices through programmable ports A, B and C.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.4"
+      ]
+    },
+    {
+      "id": "bsr-mode",
+      "term": "BSR mode (8255)",
+      "definition": "Bit set/reset mode used to set or reset individual bits of port C; selected when control word bit D7 = 0.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.10"
+      ]
+    },
+    {
+      "id": "8255-mode-0",
+      "term": "8255 Mode 0",
+      "definition": "Simple I/O mode that provides plain input/output capability for all three ports, with outputs latched and no handshaking.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.16"
+      ]
+    },
+    {
+      "id": "8255-mode-1",
+      "term": "8255 Mode 1",
+      "definition": "Strobed I/O mode in which handshake signals taken from port C lines control the I/O action of ports A and B.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.17"
+      ]
+    },
+    {
+      "id": "8255-mode-2",
+      "term": "8255 Mode 2",
+      "definition": "Strobed bidirectional mode in which data is transmitted and received on 8-bit port A with handshaking on PC3–PC7.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.22"
+      ]
+    },
+    {
+      "id": "adc-0808",
+      "term": "ADC 0808/0809",
+      "definition": "8-bit CMOS successive-approximation ADC with an internal 3:8 analog multiplexer for eight analog inputs; conversion delay 100 µs at a 640 kHz clock.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.27"
+      ]
+    },
+    {
+      "id": "ad-7523",
+      "term": "AD7523 (DAC)",
+      "definition": "16-pin 8-bit multiplying digital-to-analog converter containing an R-2R ladder network for D-A conversion.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.38"
+      ]
+    },
+    {
+      "id": "stepper-motor",
+      "term": "Stepper motor",
+      "definition": "Device for accurate position control of rotating shafts that rotates in steps when a pulse sequence is applied to its windings.",
+      "formula": "Step angle x = 360°/rotor teeth",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.43"
+      ]
+    },
+    {
+      "id": "key-debouncing",
+      "term": "Key debouncing",
+      "definition": "Making the processor wait (~10 ms) for a pressed key's mechanical bounce to settle, so a single press is not read as multiple presses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.34"
+      ]
+    },
+    {
+      "id": "8259-pic",
+      "term": "8259 PIC",
+      "definition": "Programmable interrupt controller that manages interrupt requests with masking and programmed priority; 8 interrupt inputs per chip, cascadable up to 64.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interfacing with 8086",
+      "sources": [
+        "mpmc-unit-2#slide.61"
+      ]
+    },
+    {
+      "id": "microcontroller",
+      "term": "Microcontroller",
+      "definition": "A computer present in a single integrated circuit dedicated to one task, containing processor, memory and programmable I/O peripherals on one chip.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.2"
+      ]
+    },
+    {
+      "id": "8051",
+      "term": "8051 microcontroller",
+      "definition": "8-bit microcontroller with 4 KB on-chip ROM, 128 bytes RAM, four 8-bit I/O ports, two 16-bit timers/counters and one serial port.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.3"
+      ]
+    },
+    {
+      "id": "8051-io-ports",
+      "term": "8051 I/O ports",
+      "definition": "Four 8-bit bidirectional ports P0–P3; P0 needs external pull-ups and multiplexes low address/data, P2 supplies the high address byte, P3 bits have alternate functions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.9"
+      ]
+    },
+    {
+      "id": "psen",
+      "term": "PSEN",
+      "definition": "Program Store Enable — active-low output pin that acts as the read strobe for external program memory.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.19"
+      ]
+    },
+    {
+      "id": "ea-pin",
+      "term": "EA (External Access)",
+      "definition": "Pin tied low to fetch code from external ROM as in the 8031, and connected to VCC in the 8051 to use internal ROM.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.19",
+        "mpmc-unit-3#slide.24"
+      ]
+    },
+    {
+      "id": "register-banks",
+      "term": "Register banks",
+      "definition": "Four banks of eight registers R0–R7 in internal RAM, selected by PSW bits RS1 and RS0, permitting fast context switching in ISRs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.26",
+        "mpmc-unit-3#slide.27"
+      ]
+    },
+    {
+      "id": "dptr",
+      "term": "DPTR",
+      "definition": "16-bit data pointer register of the 8051 used to address external data memory.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.29"
+      ]
+    },
+    {
+      "id": "tmod",
+      "term": "TMOD",
+      "definition": "Timer mode register that selects timer or counter operation and the operating mode (0–3) for timer 0 and timer 1.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.34"
+      ]
+    },
+    {
+      "id": "tcon",
+      "term": "TCON",
+      "definition": "Timer control register holding run-control bits TR0/TR1, overflow flags TF0/TF1 and external-interrupt type/edge bits IT0, IT1, IE0, IE1.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.37",
+        "mpmc-unit-3#slide.38"
+      ]
+    },
+    {
+      "id": "ie-register",
+      "term": "IE register",
+      "definition": "Interrupt Enable register through which 8051 interrupts, all disabled after reset, are individually enabled and disabled.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "8051 Microcontroller",
+      "sources": [
+        "mpmc-unit-3#slide.54"
+      ]
+    },
+    {
+      "id": "lcd",
+      "term": "LCD",
+      "definition": "Display with a built-in refreshing controller that can show numbers, characters and graphics, relieving the CPU of the refresh task.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.13"
+      ]
+    },
+    {
+      "id": "baud-rate",
+      "term": "Baud rate",
+      "definition": "Rate at which bits are transmitted in serial communication, in bits per second; at 9600 baud one bit takes 0.104 ms.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.32"
+      ]
+    },
+    {
+      "id": "synchronous-serial-communication",
+      "term": "Synchronous transmission",
+      "definition": "Serial communication in which transmitter and receiver are synchronized by a common clock; a sync character is sent before the data.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.23"
+      ]
+    },
+    {
+      "id": "asynchronous-serial-communication",
+      "term": "Asynchronous transmission",
+      "definition": "Serial communication using independent clocks, with each byte framed by a start bit, data bits and a stop bit.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.23"
+      ]
+    },
+    {
+      "id": "rs232",
+      "term": "RS232",
+      "definition": "EIA serial I/O interfacing standard in which logic 1 is −3 to −25 V and logic 0 is +3 to +25 V.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.26"
+      ]
+    },
+    {
+      "id": "max232",
+      "term": "MAX232",
+      "definition": "IC commonly used to convert the TTL logic levels of a microcontroller to RS232 voltage levels.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.27"
+      ]
+    },
+    {
+      "id": "uart",
+      "term": "UART",
+      "definition": "Universal asynchronous receiver/transmitter — hardware that translates data between parallel and serial forms.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.29"
+      ]
+    },
+    {
+      "id": "sbuf",
+      "term": "SBUF",
+      "definition": "Serial buffer register of the 8051; two registers share the name — one write-only for transmission and one read-only for reception.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.33"
+      ]
+    },
+    {
+      "id": "scon",
+      "term": "SCON",
+      "definition": "Serial control register holding the mode-selection bits, REN and the serial-port interrupt flags TI and RI.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.34"
+      ]
+    },
+    {
+      "id": "pcon",
+      "term": "PCON",
+      "definition": "Power control register; its SMOD bit modifies the baud rate of serial communication, while other bits set power-down and idle modes.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Peripherals and Serial Communication",
+      "sources": [
+        "mpmc-unit-4#slide.51"
+      ]
+    }
+  ]
+}

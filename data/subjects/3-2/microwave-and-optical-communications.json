@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "microwave-and-optical-communications",
+  "semester": "3-2",
+  "name": "Microwave and Optical Communications",
+  "shortName": "MWOC",
+  "code": "9C611",
+  "courseType": "PC",
+  "folderId": "18ef3701IoNh_jhCRGX012jOFnorpejTm",
+  "folderUrl": "https://drive.google.com/drive/folders/18ef3701IoNh_jhCRGX012jOFnorpejTm",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "microwave",
+      "term": "Microwave",
+      "definition": "Electromagnetic waves with frequencies roughly in the 300 MHz to 300 GHz range.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.8"
+      ]
+    },
+    {
+      "id": "waveguide",
+      "term": "Waveguide",
+      "definition": "A hollow metallic pipe or tube that guides electromagnetic waves by total internal reflection.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.5"
+      ]
+    },
+    {
+      "id": "rectangular-waveguide",
+      "term": "Rectangular waveguide",
+      "definition": "A hollow metallic waveguide with a rectangular cross-section used at microwave frequencies.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.6"
+      ]
+    },
+    {
+      "id": "circular-waveguide",
+      "term": "Circular waveguide",
+      "definition": "A hollow metallic tube with a uniform circular cross-section used to guide microwaves.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.6"
+      ]
+    },
+    {
+      "id": "coaxial-cable",
+      "term": "Coaxial cable",
+      "definition": "A cable with inner and outer conductors sharing a common axis used for high-frequency applications.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.2"
+      ]
+    },
+    {
+      "id": "te-wave",
+      "term": "TE wave",
+      "definition": "An electromagnetic wave whose electric field is transverse to the direction of propagation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.32"
+      ]
+    },
+    {
+      "id": "tm-wave",
+      "term": "TM wave",
+      "definition": "An electromagnetic wave whose magnetic field is transverse to the direction of propagation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.32"
+      ]
+    },
+    {
+      "id": "dominant-mode",
+      "term": "Dominant mode",
+      "definition": "The propagation mode with the lowest cutoff frequency in a waveguide.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.60"
+      ]
+    },
+    {
+      "id": "cutoff-frequency",
+      "term": "Cutoff frequency",
+      "definition": "The minimum frequency below which a wave cannot propagate in a waveguide.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1a#p.41"
+      ]
+    },
+    {
+      "id": "phase-velocity",
+      "term": "Phase velocity",
+      "definition": "The rate at which the wave changes its phase in terms of the guide wavelength.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1b#slide.1"
+      ]
+    },
+    {
+      "id": "group-velocity",
+      "term": "Group velocity",
+      "definition": "The speed at which the modulation envelope of a wave travels through a waveguide.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Microwaves and Waveguides",
+      "sources": [
+        "mwoc-unit-1b#slide.6"
+      ]
+    },
+    {
+      "id": "microstrip-line",
+      "term": "Microstrip line",
+      "definition": "A conductor on a dielectric substrate with a ground plane used at microwave frequencies.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.3"
+      ]
+    },
+    {
+      "id": "scattering-matrix",
+      "term": "Scattering matrix",
+      "definition": "A matrix relating reflected and incident wave amplitudes at the ports of a network.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.43"
+      ]
+    },
+    {
+      "id": "h-plane-tee",
+      "term": "H-plane tee",
+      "definition": "A three-port waveguide junction formed by a slot cut along the width of the main guide.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.49"
+      ]
+    },
+    {
+      "id": "magic-tee",
+      "term": "Magic tee",
+      "definition": "A four-port E-H plane tee junction used to split or combine microwave power.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.60"
+      ]
+    },
+    {
+      "id": "directional-coupler",
+      "term": "Directional coupler",
+      "definition": "A four-port waveguide junction that couples power from a primary to a secondary guide.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.72"
+      ]
+    },
+    {
+      "id": "isolator",
+      "term": "Isolator",
+      "definition": "A nonreciprocal unidirectional ferrite device that allows transmission in one direction.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.89"
+      ]
+    },
+    {
+      "id": "circulator",
+      "term": "Circulator",
+      "definition": "A passive nonreciprocal multiport device that routes signals in a cyclic direction.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.93"
+      ]
+    },
+    {
+      "id": "ferrite",
+      "term": "Ferrite",
+      "definition": "A nonmetallic material with high resistivity and strong magnetic properties.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microstrip Lines and Waveguide Components",
+      "sources": [
+        "mwoc-unit-2#p.80"
+      ]
+    },
+    {
+      "id": "klystron",
+      "term": "Klystron",
+      "definition": "A velocity-modulated microwave tube that amplifies RF signals using cavity resonators.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Microwave Tubes",
+      "sources": [
+        "mwoc-unit-3a#p.26"
+      ]
+    },
+    {
+      "id": "velocity-modulation",
+      "term": "Velocity modulation",
+      "definition": "The process of varying electron velocity using an RF field in a microwave tube.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Microwave Tubes",
+      "sources": [
+        "mwoc-unit-3a#p.36"
+      ]
+    },
+    {
+      "id": "bunching",
+      "term": "Bunching",
+      "definition": "The grouping of electrons into bunches as they drift after velocity modulation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Microwave Tubes",
+      "sources": [
+        "mwoc-unit-3a#p.44"
+      ]
+    },
+    {
+      "id": "reentrant-cavity",
+      "term": "Reentrant cavity",
+      "definition": "A cavity resonator with a gap for interaction between the electron beam and RF field.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Microwave Tubes",
+      "sources": [
+        "mwoc-unit-3a#p.28"
+      ]
+    },
+    {
+      "id": "two-cavity-klystron",
+      "term": "Two-cavity klystron",
+      "definition": "A klystron amplifier with a buncher cavity and a catcher cavity.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Microwave Tubes",
+      "sources": [
+        "mwoc-unit-3a#p.27"
+      ]
+    },
+    {
+      "id": "reflex-klystron",
+      "term": "Reflex klystron",
+      "definition": "A single-cavity klystron oscillator that uses a reflector to bunch electrons.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Microwave Tubes",
+      "sources": [
+        "mwoc-unit-3b#p.1"
+      ]
+    },
+    {
+      "id": "traveling-wave-tube",
+      "term": "Traveling wave tube",
+      "definition": "A wideband microwave amplifier using a slow wave structure for distributed interaction.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Travelling Wave Tube and Magnetron",
+      "sources": [
+        "mwoc-unit-4#p.7"
+      ]
+    },
+    {
+      "id": "slow-wave-structure",
+      "term": "Slow wave structure",
+      "definition": "A non-resonant transmission line that reduces wave velocity for beam interaction.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Travelling Wave Tube and Magnetron",
+      "sources": [
+        "mwoc-unit-4#p.4"
+      ]
+    },
+    {
+      "id": "m-type-tube",
+      "term": "M-type tube",
+      "definition": "A microwave tube with perpendicular DC electric and magnetic fields.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Travelling Wave Tube and Magnetron",
+      "sources": [
+        "mwoc-unit-4#p.24"
+      ]
+    },
+    {
+      "id": "magnetron",
+      "term": "Magnetron",
+      "definition": "An M-type cross-field microwave tube used as an oscillator.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Travelling Wave Tube and Magnetron",
+      "sources": [
+        "mwoc-unit-4#p.26"
+      ]
+    },
+    {
+      "id": "optical-fiber",
+      "term": "Optical fiber",
+      "definition": "A thin strand of glass or plastic that guides light for communication.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.1"
+      ]
+    },
+    {
+      "id": "refractive-index",
+      "term": "Refractive index",
+      "definition": "The ratio of the speed of light in vacuum to its speed in a material.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.6"
+      ]
+    },
+    {
+      "id": "total-internal-reflection",
+      "term": "Total internal reflection",
+      "definition": "Complete reflection of light at an interface when incidence exceeds the critical angle.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.8"
+      ]
+    },
+    {
+      "id": "numerical-aperture",
+      "term": "Numerical aperture",
+      "definition": "A measure of the light-gathering ability of an optical fiber.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.11"
+      ]
+    },
+    {
+      "id": "single-mode-fiber",
+      "term": "Single-mode fiber",
+      "definition": "An optical fiber that allows only one electromagnetic mode to propagate.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.19"
+      ]
+    },
+    {
+      "id": "multimode-fiber",
+      "term": "Multimode fiber",
+      "definition": "An optical fiber that supports multiple propagation modes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.19"
+      ]
+    },
+    {
+      "id": "step-index-fiber",
+      "term": "Step-index fiber",
+      "definition": "A fiber with uniform core index and an abrupt change at the cladding.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.17"
+      ]
+    },
+    {
+      "id": "graded-index-fiber",
+      "term": "Graded-index fiber",
+      "definition": "A fiber whose core refractive index varies radially from center to cladding.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.19"
+      ]
+    },
+    {
+      "id": "led",
+      "term": "Light emitting diode",
+      "definition": "A forward-biased semiconductor p-n junction that emits light by recombination.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.26"
+      ]
+    },
+    {
+      "id": "laser-diode",
+      "term": "Laser diode",
+      "definition": "A coherent optical source based on stimulated emission in a semiconductor.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.33"
+      ]
+    },
+    {
+      "id": "population-inversion",
+      "term": "Population inversion",
+      "definition": "A condition where more electrons occupy an excited state than the ground state.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Optical Fibers and Optical Sources",
+      "sources": [
+        "mwoc-unit-5#p.34"
+      ]
+    },
+    {
+      "id": "attenuation",
+      "term": "Attenuation",
+      "definition": "The decay of signal strength as light travels along an optical fiber.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.5"
+      ]
+    },
+    {
+      "id": "absorption",
+      "term": "Absorption",
+      "definition": "Conversion of optical energy into another form such as heat in the fiber.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.8"
+      ]
+    },
+    {
+      "id": "scattering-loss",
+      "term": "Scattering loss",
+      "definition": "Loss caused by interaction of light with inhomogeneities in the fiber.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.13"
+      ]
+    },
+    {
+      "id": "rayleigh-scattering",
+      "term": "Rayleigh scattering",
+      "definition": "Scattering by small-scale inhomogeneities produced during fiber fabrication.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.16"
+      ]
+    },
+    {
+      "id": "bending-loss",
+      "term": "Bending loss",
+      "definition": "Attenuation caused by bending an optical fiber during installation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.22"
+      ]
+    },
+    {
+      "id": "dispersion",
+      "term": "Dispersion",
+      "definition": "The spreading of light pulses in time as they propagate along a fiber.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.24"
+      ]
+    },
+    {
+      "id": "intramodal-dispersion",
+      "term": "Intramodal dispersion",
+      "definition": "Pulse broadening within a single mode of an optical fiber.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.27"
+      ]
+    },
+    {
+      "id": "intermodal-dispersion",
+      "term": "Intermodal dispersion",
+      "definition": "Pulse broadening between different modes in a multimode fiber.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.29"
+      ]
+    },
+    {
+      "id": "fusion-splice",
+      "term": "Fusion splice",
+      "definition": "A permanent joint formed by thermally bonding two fiber ends.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.36"
+      ]
+    },
+    {
+      "id": "fiber-coupler",
+      "term": "Fiber coupler",
+      "definition": "A passive device that distributes light from one fiber to others.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transmission Characteristics of Optical Fibre",
+      "sources": [
+        "mwoc-unit-6#p.43"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "version": 1,
+  "id": "vlsi-technology-and-design",
+  "semester": "3-2",
+  "name": "VLSI Technology and Design",
+  "shortName": "VLSITD",
+  "code": "9C612",
+  "courseType": "PC",
+  "folderId": "1QCzsKSV2gp_IjYXLEirUw_SUg8v_oNrN",
+  "folderUrl": "https://drive.google.com/drive/folders/1QCzsKSV2gp_IjYXLEirUw_SUg8v_oNrN",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "vlsi-design-flow",
+      "term": "VLSI design flow",
+      "definition": "A systematic VLSI design methodology covering specification, design entry, synthesis, verification, layout and fabrication, aimed at minimising design cycle time and maximising chip quality and reliability.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.21"
+      ]
+    },
+    {
+      "id": "full-custom-design",
+      "term": "Full-custom design",
+      "definition": "Design approach in which every transistor is individually drawn and all layers are customised; gives highest density and performance but is expensive with a long design time.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.5"
+      ]
+    },
+    {
+      "id": "semi-custom-design",
+      "term": "Semi-custom design",
+      "definition": "Design approach based on the standard cell methodology, in which cells designed and verified once for a given technology are reused many times across chip designs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.8"
+      ]
+    },
+    {
+      "id": "standard-cell-library",
+      "term": "Standard cell library",
+      "definition": "Collection of commonly used cells such as NANDs, NORs, AOIs, MUXes, adders and memory elements that are developed, characterised and stored once, then reused in many designs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.9"
+      ]
+    },
+    {
+      "id": "gate-array",
+      "term": "Gate array",
+      "definition": "Array-based ASIC approach with pre-diffused base cells of fixed device size - channeled, channel-less (sea-of-gates) or structured/embedded - in which only the interconnect is customised.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.14",
+        "vlsitd-unit-1-vlsi-td#slide.17"
+      ]
+    },
+    {
+      "id": "verilog-module",
+      "term": "Verilog module",
+      "definition": "The basic unit of description in Verilog HDL, describing the functionality or structure of a digital design through its I/O ports and internal structural or behavioural statements.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.35"
+      ]
+    },
+    {
+      "id": "verilog-wire",
+      "term": "Verilog wire",
+      "definition": "Net data type representing the physical connection between structural entities; it stores no value and continuously follows the value of its driving circuit.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.50"
+      ]
+    },
+    {
+      "id": "verilog-reg",
+      "term": "Verilog reg",
+      "definition": "Register data type that stores a value from one procedural assignment to the next; it can be assigned values only within initial or always blocks.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.51"
+      ]
+    },
+    {
+      "id": "verilog-value-set",
+      "term": "Verilog value set",
+      "definition": "Four basic logic values in Verilog: 0 (logic zero or false condition), 1 (logic one or true condition), x (unknown logic value) and z (high impedance or floating state).",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.43"
+      ]
+    },
+    {
+      "id": "verilog-built-in-primitives",
+      "term": "Verilog built-in primitives",
+      "definition": "Standard gate set such as and, nand, or, nor and not, provided as part of the Verilog language for switch- and gate-level modelling.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.70"
+      ]
+    },
+    {
+      "id": "verilog-testbench",
+      "term": "Verilog testbench",
+      "definition": "A Verilog module used only for simulation and never synthesised; it instantiates the module under test and applies stimulus signals to verify its behaviour.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-1-vlsi-td#slide.38"
+      ]
+    },
+    {
+      "id": "nmos-technology",
+      "term": "NMOS technology",
+      "definition": "MOS technology in which n-channel MOSFETs are fabricated on a p-type substrate through epitaxy, oxidation, photolithography, etching, doping and metallisation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.5"
+      ]
+    },
+    {
+      "id": "cmos-technology",
+      "term": "CMOS technology",
+      "definition": "Technology that fabricates both NMOS and PMOS transistors on the same silicon wafer, giving low power dissipation per gate, high component density and fast switching.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.44"
+      ]
+    },
+    {
+      "id": "p-well-process",
+      "term": "p-well process",
+      "definition": "CMOS fabrication approach in which a deep p-well is implanted in an n-substrate, with the nMOS transistors formed inside this well.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.47"
+      ]
+    },
+    {
+      "id": "n-well-process",
+      "term": "n-well process",
+      "definition": "CMOS fabrication approach in which a deep n-well is diffused into a p-substrate to host the pMOS transistors, using around eight process masks.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.60"
+      ]
+    },
+    {
+      "id": "twin-tub-process",
+      "term": "Twin-tub process",
+      "definition": "CMOS process using separate deep p-well and n-well diffusions in an epitaxial layer, so both device types can be optimised independently.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.63"
+      ]
+    },
+    {
+      "id": "bicmos-technology",
+      "term": "BiCMOS technology",
+      "definition": "Technology combining BJTs and MOSFETs on one monolithic chip by extending CMOS processing with a few extra masks, used to speed up VLSI circuits driving large loads.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.81"
+      ]
+    },
+    {
+      "id": "buried-n-plus-layer",
+      "term": "Buried n+ layer",
+      "definition": "n+ layer diffused into the substrate before epitaxy that lowers collector resistance and minimises parasitic collector-to-substrate current in npn transistors.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
+      "sources": [
+        "vlsitd-unit-3-vlsi-td#slide.101"
+      ]
+    },
+    {
+      "id": "synthesis",
+      "term": "Synthesis",
+      "definition": "Process of transforming an HDL design into a gate-level netlist under specified constraints, via translation, optimisation and technology mapping to a target library.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.42"
+      ]
+    },
+    {
+      "id": "continuous-assignment",
+      "term": "Continuous assignment",
+      "definition": "Dataflow modelling mechanism in which a value is assigned to a net using assign [delay] LHS_net = RHS_expression; such assignments execute concurrently and are order-independent.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.2"
+      ]
+    },
+    {
+      "id": "ids-vds-relationship",
+      "term": "Ids–Vds relationship",
+      "definition": "MOS transistor behaviour in which gate-induced channel charge Qc is moved from drain to source by Vds, so Ids depends on both Vgs and Vds.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.10"
+      ]
+    },
+    {
+      "id": "threshold-voltage-vt",
+      "term": "Threshold voltage (Vt)",
+      "definition": "Minimum gate voltage needed to neutralise stored charges in the dielectric and invert the silicon beneath the gate, switching an enhancement-mode transistor on.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.14"
+      ]
+    },
+    {
+      "id": "body-effect",
+      "term": "Body effect",
+      "definition": "Increase in threshold voltage of a MOS transistor as its source-to-substrate bias VSB rises, caused by depletion of charge carriers from the channel.",
+      "formula": "ΔVt = ±γ (√(2ΦF + |VSB|) − √(2ΦF))",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.17"
+      ]
+    },
+    {
+      "id": "figure-of-merit-w0",
+      "term": "Figure of merit ω₀",
+      "definition": "Parameter indicating the frequency response of a MOS circuit, given by the transconductance-to-gate-capacitance ratio; fast circuits need the highest possible gm.",
+      "formula": "ω₀ = gm / Cg",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.18"
+      ]
+    },
+    {
+      "id": "latch-up",
+      "term": "Latch-up",
+      "definition": "Hazardous CMOS condition in which the parasitic two-transistor structure forms a self-sustaining low-resistance path between VDD and VSS; it can occur when β1 × β2 > 1.",
+      "formula": "β₁ × β₂ > 1",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.19",
+        "vlsitd-unit-4#slide.21"
+      ]
+    },
+    {
+      "id": "pass-transistor",
+      "term": "Pass transistor",
+      "definition": "A MOS transistor used as a switch in series with lines carrying logic levels, like relay contacts, enabling compact switching-logic arrays.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.25"
+      ]
+    },
+    {
+      "id": "nmos-inverter",
+      "term": "NMOS inverter",
+      "definition": "Inverter in which a pull-down nMOS and a transistor pull-up (depletion or enhancement) sit in series between VDD and ground; it restores logic levels for gates, sequential and memory circuits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.28"
+      ]
+    },
+    {
+      "id": "cmos-inverter",
+      "term": "CMOS inverter",
+      "definition": "Inverter with an NMOS pull-down and PMOS pull-up in series between VDD and VSS; only one device conducts at a time, giving fully restored logic levels and near-zero static power.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.35",
+        "vlsitd-unit-3-vlsi-td#slide.45"
+      ]
+    },
+    {
+      "id": "nmos-saturation-region",
+      "term": "NMOS saturation region",
+      "definition": "Operating region in which the channel pinches off near the drain, so Ids becomes independent of Vds and the device acts like a current source.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-4#slide.9"
+      ]
+    },
+    {
+      "id": "initial-statement",
+      "term": "Initial statement",
+      "definition": "Verilog procedural construct that starts execution at time 0 and executes only once; typically used for stimulus and waveform generation in testbenches.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.55"
+      ]
+    },
+    {
+      "id": "always-statement",
+      "term": "Always statement",
+      "definition": "Verilog procedural construct that starts at time 0 and executes repeatedly in a loop; it must include some form of timing control to avoid endless zero-delay looping.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.66"
+      ]
+    },
+    {
+      "id": "blocking-assignment",
+      "term": "Blocking assignment",
+      "definition": "Verilog procedural assignment using '=' that completes execution before the next statement runs, so statements take effect one after another.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.80"
+      ]
+    },
+    {
+      "id": "non-blocking-assignment",
+      "term": "Non-blocking assignment",
+      "definition": "Verilog procedural assignment using '<=' in which the right-hand side is evaluated and the assignment is scheduled, normally for the end of the current time step, letting following statements execute at once.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.84"
+      ]
+    },
+    {
+      "id": "full-adder",
+      "term": "Full adder",
+      "definition": "Combinational circuit that adds two input bits and a carry-in to produce a sum and carry-out.  ",
+      "formula": "Sum = a ⊕ b ⊕ c; Cout = ab + bc + ca",
+      "unit": 3,
+      "unitTitle": "Combinational & Sequential Blocks",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.136"
+      ]
+    },
+    {
+      "id": "3-to-8-decoder",
+      "term": "3-to-8 decoder",
+      "definition": "Decoder that converts a 3-bit input code into one of 8 mutually exclusive one-hot output lines.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Combinational & Sequential Blocks",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.149"
+      ]
+    },
+    {
+      "id": "8x3-encoder",
+      "term": "8×3 encoder",
+      "definition": "Encoder that converts one of 8 active input lines into a 3-bit binary output code.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Combinational & Sequential Blocks",
+      "sources": [
+        "vlsitd-unit-2-vlsi-td#slide.138"
+      ]
+    },
+    {
+      "id": "stick-diagram",
+      "term": "Stick diagram",
+      "definition": "A colour-coded cartoon of a layout that captures topology and layer information, showing all components, vias and their relative placement as an interface between symbolic circuit and actual layout.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Circuit Design Processes & Layout",
+      "sources": [
+        "vlsitd-unit-5#slide.3",
+        "vlsitd-unit-5#slide.4"
+      ]
+    },
+    {
+      "id": "demarcation-line",
+      "term": "Demarcation line",
+      "definition": "Line drawn in a CMOS stick layout to separate p-transistors from n-transistors so p-diff never touches n-diff; it represents the p-well boundary.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Circuit Design Processes & Layout",
+      "sources": [
+        "vlsitd-unit-5#slide.10"
+      ]
+    },
+    {
+      "id": "lambda-based-design-rules",
+      "term": "Lambda-based design rules",
+      "definition": "Design rules expressed in a single parameter λ that set out mask dimensions in a process- and feature-size-independent way, valid over a range of λ values.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Circuit Design Processes & Layout",
+      "sources": [
+        "vlsitd-unit-5#slide.16"
+      ]
+    },
+    {
+      "id": "scaling-of-mos-circuits",
+      "term": "Scaling of MOS circuits",
+      "definition": "Shrinking transistor dimensions, interconnect and separations (typically 10–20% linearly) to get smaller, faster, lower-power chips; common models are constant-field and constant-voltage scaling.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Circuit Design Processes & Layout",
+      "sources": [
+        "vlsitd-unit-5#slide.22",
+        "vlsitd-unit-5#slide.24"
+      ]
+    },
+    {
+      "id": "oxidation",
+      "term": "Oxidation",
+      "definition": "Fabrication step in which silicon reacts with oxygen to form SiO2 in 1000–1200 °C ultra-clean furnaces; dry oxidation uses high-purity O2 gas and wet oxidation uses steam.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.15"
+      ]
+    },
+    {
+      "id": "lithography",
+      "term": "Lithography",
+      "definition": "Process of transferring a mask pattern to a layer on the chip by spinning photoresist, exposing it to light, developing and then etching, similar to a printing process.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.17"
+      ]
+    },
+    {
+      "id": "diffusion",
+      "term": "Diffusion",
+      "definition": "High-temperature fabrication step in which impurity atoms move from a high-concentration to a low-concentration region through the silicon crystal, setting the desired doping profile.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.18"
+      ]
+    },
+    {
+      "id": "ion-implantation",
+      "term": "Ion implantation",
+      "definition": "Fabrication step where dopant ions are produced in an implanter, accelerated by 20–250 kV electric fields and embedded in the crystal lattice, giving accurate reproducible doping at room temperature.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.20"
+      ]
+    },
+    {
+      "id": "metallization",
+      "term": "Metallization",
+      "definition": "Fabrication step of depositing metal, normally aluminium via sputtering, over the whole wafer and then selectively etching it to interconnect the circuit components.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.22"
+      ]
+    },
+    {
+      "id": "probe-testing",
+      "term": "Probe testing",
+      "definition": "Wafer-level electrical test in which probe needles contact each die's bonding pads and the whole die is tested; failed dice are marked with a drop of ink.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.23"
+      ]
+    },
+    {
+      "id": "encapsulation",
+      "term": "Encapsulation",
+      "definition": "Packaging step in which tested dice are connected to package pins with fine gold wires and sealed in plastic or epoxy under vacuum or an inert atmosphere.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.24"
+      ]
+    },
+    {
+      "id": "mos-capacitor",
+      "term": "MOS capacitor",
+      "definition": "Integrated capacitor formed from the gate-to-source capacitance of a MOSFET; its value depends on gate area but shows large voltage dependence unless an n+ implant forms the bottom plate.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.27"
+      ]
+    },
+    {
+      "id": "interpoly-capacitor",
+      "term": "Interpoly capacitor",
+      "definition": "Near-ideal integrated capacitor formed between two polysilicon layers on thick field oxide, so parasitic effects are minimal but a second poly layer is required.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.28"
+      ]
+    },
+    {
+      "id": "junction-capacitor",
+      "term": "Junction capacitor",
+      "definition": "Integrated capacitor formed by a reverse-biased PN junction whose depletion region acts as the dielectric; used as a varactor and works only under reverse bias.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "IC Technology & Fabrication Process",
+      "sources": [
+        "vlsitd-unit-3#slide.29"
+      ]
+    }
+  ]
+}
