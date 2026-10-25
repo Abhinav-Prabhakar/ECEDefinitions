@@ -1,0 +1,747 @@
+{
+  "version": 1,
+  "id": "electrical-controls",
+  "collectionId": "hvac-licensing",
+  "section": "core",
+  "name": "Electrical Controls",
+  "shortName": "Electrical controls",
+  "code": "EC",
+  "courseType": "hvac",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Control basics"
+    },
+    {
+      "number": 2,
+      "title": "Switches and relays"
+    },
+    {
+      "number": 3,
+      "title": "Motors and starters"
+    },
+    {
+      "number": 4,
+      "title": "Thermostats"
+    },
+    {
+      "number": 5,
+      "title": "Safety controls"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "ec-001",
+      "term": "circuit",
+      "definition": "A complete path for electric current to flow from a source through a load and back to the source.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [],
+      "confusables": [
+        "power circuit",
+        "control circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-1"
+      ]
+    },
+    {
+      "id": "ec-002",
+      "term": "power circuit",
+      "definition": "A circuit that carries high current to operate loads such as motors or compressors in an HVAC system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [],
+      "confusables": [
+        "control circuit",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-2"
+      ]
+    },
+    {
+      "id": "ec-003",
+      "term": "control circuit",
+      "definition": "A low current circuit that uses switches and relays to operate and sequence components in an HVAC system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [],
+      "confusables": [
+        "power circuit",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-3"
+      ]
+    },
+    {
+      "id": "ec-004",
+      "term": "line voltage",
+      "definition": "The supply voltage directly from the power source used to feed power circuits in most HVAC equipment.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [
+        "line voltage power"
+      ],
+      "confusables": [
+        "low voltage",
+        "control voltage"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-4"
+      ]
+    },
+    {
+      "id": "ec-005",
+      "term": "low voltage",
+      "definition": "A reduced voltage level typically used for control circuits to allow safer operation and smaller wiring.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [
+        "control voltage"
+      ],
+      "confusables": [
+        "line voltage",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-5"
+      ]
+    },
+    {
+      "id": "ec-006",
+      "term": "series circuit",
+      "definition": "A circuit in which current flows through each component in a single path with no branching connections.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [],
+      "confusables": [
+        "parallel circuit",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-6"
+      ]
+    },
+    {
+      "id": "ec-007",
+      "term": "parallel circuit",
+      "definition": "A circuit in which components are connected across the same voltage source providing multiple paths for current.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [],
+      "confusables": [
+        "series circuit",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-7"
+      ]
+    },
+    {
+      "id": "ec-008",
+      "term": "control voltage",
+      "definition": "The voltage used to energize control devices such as thermostats relays and contactor coils in HVAC systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Control basics",
+      "aliases": [
+        "low voltage"
+      ],
+      "confusables": [
+        "line voltage",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-8"
+      ]
+    },
+    {
+      "id": "ec-009",
+      "term": "limit switch",
+      "definition": "A safety switch that opens a circuit when temperature or position exceeds a preset limit in an HVAC system.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "high limit switch"
+      ],
+      "confusables": [
+        "pressure switch",
+        "flow switch"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-9"
+      ]
+    },
+    {
+      "id": "ec-010",
+      "term": "pressure switch",
+      "definition": "A switch that opens or closes a circuit based on system pressure to protect or control HVAC equipment.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "pressure control switch"
+      ],
+      "confusables": [
+        "limit switch",
+        "flow switch"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-10"
+      ]
+    },
+    {
+      "id": "ec-011",
+      "term": "flow switch",
+      "definition": "A switch that detects the presence or absence of fluid flow and opens or closes a control circuit.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "air flow switch"
+      ],
+      "confusables": [
+        "pressure switch",
+        "limit switch"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-11"
+      ]
+    },
+    {
+      "id": "ec-012",
+      "term": "toggle switch",
+      "definition": "A manually operated switch that opens or closes a circuit by moving a lever between positions.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "manual switch"
+      ],
+      "confusables": [
+        "circuit",
+        "power circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-12"
+      ]
+    },
+    {
+      "id": "ec-013",
+      "term": "relay",
+      "definition": "An electromechanical device that uses a small control current to open or close one or more sets of contacts.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "control relay"
+      ],
+      "confusables": [
+        "contactor",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-13"
+      ]
+    },
+    {
+      "id": "ec-014",
+      "term": "contactor",
+      "definition": "A heavy duty relay with larger contacts used to switch high current loads such as compressors or motors.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "motor contactor"
+      ],
+      "confusables": [
+        "relay",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-14"
+      ]
+    },
+    {
+      "id": "ec-015",
+      "term": "normally open",
+      "definition": "A contact condition in which the circuit is open with no power to the coil and closes when energized.",
+      "formula": "NO",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "NO contact"
+      ],
+      "confusables": [
+        "normally closed",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-15"
+      ]
+    },
+    {
+      "id": "ec-016",
+      "term": "normally closed",
+      "definition": "A contact condition in which the circuit is closed with no power to the coil and opens when energized.",
+      "formula": "NC",
+      "unit": 2,
+      "unitTitle": "Switches and relays",
+      "aliases": [
+        "NC contact"
+      ],
+      "confusables": [
+        "normally open",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-16"
+      ]
+    },
+    {
+      "id": "ec-017",
+      "term": "permanent split capacitor motor",
+      "definition": "A single phase motor with a run capacitor permanently in the circuit providing quiet operation and good efficiency.",
+      "formula": "PSC",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "PSC motor"
+      ],
+      "confusables": [
+        "capacitor start motor",
+        "shaded pole motor"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-17"
+      ]
+    },
+    {
+      "id": "ec-018",
+      "term": "capacitor start motor",
+      "definition": "A single phase motor using a start capacitor in series with the start winding for high starting torque.",
+      "formula": "CS motor",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "capacitor start"
+      ],
+      "confusables": [
+        "permanent split capacitor motor",
+        "split phase motor"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-18"
+      ]
+    },
+    {
+      "id": "ec-019",
+      "term": "shaded pole motor",
+      "definition": "A simple single phase motor with low starting torque used in small fans and light duty applications.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "shaded pole"
+      ],
+      "confusables": [
+        "split phase motor",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-19"
+      ]
+    },
+    {
+      "id": "ec-020",
+      "term": "split phase motor",
+      "definition": "A single phase induction motor using a start winding and run winding with a phase shift for starting torque.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "resistance start motor"
+      ],
+      "confusables": [
+        "capacitor start motor",
+        "shaded pole motor"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-20"
+      ]
+    },
+    {
+      "id": "ec-021",
+      "term": "run capacitor",
+      "definition": "A capacitor connected in the circuit during motor operation to improve efficiency and power factor of a motor.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "operating capacitor"
+      ],
+      "confusables": [
+        "start capacitor",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-21"
+      ]
+    },
+    {
+      "id": "ec-022",
+      "term": "start capacitor",
+      "definition": "A capacitor used only during motor starting to increase starting torque then removed from the circuit.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "starting capacitor"
+      ],
+      "confusables": [
+        "run capacitor",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-22"
+      ]
+    },
+    {
+      "id": "ec-023",
+      "term": "motor starter",
+      "definition": "A combination of contactor and overload protection used to start and protect a motor from excessive current.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "magnetic starter"
+      ],
+      "confusables": [
+        "contactor",
+        "overload relay"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-23"
+      ]
+    },
+    {
+      "id": "ec-024",
+      "term": "overload relay",
+      "definition": "A protective device that opens the control circuit when motor current exceeds a safe value for a period of time.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Motors and starters",
+      "aliases": [
+        "thermal overload relay"
+      ],
+      "confusables": [
+        "motor starter",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-24"
+      ]
+    },
+    {
+      "id": "ec-025",
+      "term": "thermostat",
+      "definition": "A temperature sensing control device that opens or closes circuits to maintain a desired space temperature.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "room thermostat"
+      ],
+      "confusables": [
+        "circuit",
+        "power circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-25"
+      ]
+    },
+    {
+      "id": "ec-026",
+      "term": "setpoint",
+      "definition": "The desired temperature value that a thermostat is set to maintain in a conditioned space.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "temperature setpoint"
+      ],
+      "confusables": [
+        "differential",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-26"
+      ]
+    },
+    {
+      "id": "ec-027",
+      "term": "differential",
+      "definition": "The temperature difference between thermostat cut-in and cut-out points before the next heating or cooling cycle starts.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "thermostat differential"
+      ],
+      "confusables": [
+        "anticipator",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-27"
+      ]
+    },
+    {
+      "id": "ec-028",
+      "term": "heat anticipator",
+      "definition": "A small resistor in a thermostat that adds heat to the bimetal element to shorten heating cycles.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "heating anticipator"
+      ],
+      "confusables": [
+        "cooling anticipator",
+        "differential"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-28"
+      ]
+    },
+    {
+      "id": "ec-029",
+      "term": "cooling anticipator",
+      "definition": "A device in some thermostats that delays or controls cooling cycles by anticipating system operation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "cool anticipator"
+      ],
+      "confusables": [
+        "heat anticipator",
+        "differential"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-29"
+      ]
+    },
+    {
+      "id": "ec-030",
+      "term": "anticipator",
+      "definition": "A component in older thermostats that artificially heats or affects the sensing element to improve cycle timing.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "thermostat anticipator"
+      ],
+      "confusables": [
+        "heat anticipator",
+        "differential"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-30"
+      ]
+    },
+    {
+      "id": "ec-031",
+      "term": "programmable thermostat",
+      "definition": "A thermostat that automatically changes temperature setpoints at different times of day to save energy.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "setback thermostat"
+      ],
+      "confusables": [
+        "digital thermostat",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-31"
+      ]
+    },
+    {
+      "id": "ec-032",
+      "term": "digital thermostat",
+      "definition": "An electronic thermostat using solid state components to sense temperature and control system operation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thermostats",
+      "aliases": [
+        "electronic thermostat"
+      ],
+      "confusables": [
+        "programmable thermostat",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-32"
+      ]
+    },
+    {
+      "id": "ec-033",
+      "term": "high pressure switch",
+      "definition": "A safety control that opens the compressor circuit when refrigerant pressure exceeds a safe maximum value.",
+      "formula": "HP switch",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "high pressure cutout"
+      ],
+      "confusables": [
+        "low pressure switch",
+        "pressure switch"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-33"
+      ]
+    },
+    {
+      "id": "ec-034",
+      "term": "low pressure switch",
+      "definition": "A safety control that opens the compressor circuit when refrigerant pressure falls below a safe minimum value.",
+      "formula": "LP switch",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "low pressure cutout"
+      ],
+      "confusables": [
+        "high pressure switch",
+        "pressure switch"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-34"
+      ]
+    },
+    {
+      "id": "ec-035",
+      "term": "rollout switch",
+      "definition": "A safety switch that opens the burner circuit if flames roll out of a furnace combustion chamber.",
+      "formula": "flame rollout switch",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "flame rollout switch"
+      ],
+      "confusables": [
+        "limit switch",
+        "fusible link"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-35"
+      ]
+    },
+    {
+      "id": "ec-036",
+      "term": "fusible link",
+      "definition": "A heat sensitive safety device that melts at a set temperature to open a circuit and stop equipment operation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "thermal fuse link"
+      ],
+      "confusables": [
+        "rollout switch",
+        "limit switch"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-36"
+      ]
+    },
+    {
+      "id": "ec-037",
+      "term": "high limit switch",
+      "definition": "A temperature safety control that shuts down the heat source if furnace temperature exceeds a preset limit.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "furnace limit switch"
+      ],
+      "confusables": [
+        "rollout switch",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-37"
+      ]
+    },
+    {
+      "id": "ec-038",
+      "term": "freeze stat",
+      "definition": "A temperature control that protects against freezing by shutting down or operating equipment at low temperatures.",
+      "formula": "freeze protection stat",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "low temperature switch"
+      ],
+      "confusables": [
+        "high limit switch",
+        "thermostat"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-38"
+      ]
+    },
+    {
+      "id": "ec-039",
+      "term": "safety control",
+      "definition": "A device designed to shut down or prevent operation of HVAC equipment when unsafe conditions are detected.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "protective control"
+      ],
+      "confusables": [
+        "operating control",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-acca#sec.p-39"
+      ]
+    },
+    {
+      "id": "ec-040",
+      "term": "operating control",
+      "definition": "A control device that regulates normal system operation based on conditions like temperature or pressure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety controls",
+      "aliases": [
+        "normal control"
+      ],
+      "confusables": [
+        "safety control",
+        "circuit"
+      ],
+      "sources": [
+        "hvac-glossary-rses#sec.p-40"
+      ]
+    }
+  ]
+}

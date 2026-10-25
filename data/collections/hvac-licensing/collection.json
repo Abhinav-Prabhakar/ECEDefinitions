@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "id": "hvac-licensing",
+  "name": "HVAC Licensing",
+  "tagline": "HVAC, in one line.",
+  "topic": "HVAC licensing for HVAC apprentices and licensing candidates",
+  "audience": "HVAC apprentices and licensing candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "refrigeration cycle",
+      "superheat and subcooling",
+      "psychrometrics",
+      "electrical controls",
+      "codes and safety"
+    ],
+    "excludes": [
+      "commercial refrigeration design",
+      "hydronics advanced",
+      "controls programming",
+      "equipment sizing software",
+      "installation procedures"
+    ]
+  },
+  "assumptions": [
+    "US HVAC/R terminology",
+    "focus on definitions and core concepts",
+    "exam-oriented vocabulary"
+  ],
+  "disclaimer": "Educational vocabulary only; not HVAC advice or code compliance guidance.",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "refrigeration-cycle",
+          "name": "Refrigeration Cycle",
+          "shortName": "Refrigeration cycle",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/hvac-licensing/subjects/refrigeration-cycle.json",
+          "definitionCount": 45,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 4
+        },
+        {
+          "id": "superheat-subcooling",
+          "name": "Superheat and Subcooling",
+          "shortName": "Superheat and subcooling",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/hvac-licensing/subjects/superheat-subcooling.json",
+          "definitionCount": 40,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "psychrometrics",
+          "name": "Psychrometrics",
+          "shortName": "Psychrometrics",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/hvac-licensing/subjects/psychrometrics.json",
+          "definitionCount": 41,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "electrical-controls",
+          "name": "Electrical Controls",
+          "shortName": "Electrical controls",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/hvac-licensing/subjects/electrical-controls.json",
+          "definitionCount": 40,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "codes-safety",
+          "name": "Codes and Safety",
+          "shortName": "Codes and safety",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/hvac-licensing/subjects/codes-safety.json",
+          "definitionCount": 40,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 15
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 1,
+    "subjects": 5,
+    "definitions": 206,
+    "completeSubjects": 5,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

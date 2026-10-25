@@ -1,0 +1,1083 @@
+{
+  "version": 1,
+  "id": "hvac-licensing",
+  "name": "HVAC Licensing",
+  "short": "HVAC",
+  "subjects": [
+    {
+      "id": "refrigeration-cycle",
+      "name": "Refrigeration Cycle",
+      "short": "Refrigeration cycle",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "British thermal unit",
+          "The amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit.",
+          "Btu"
+        ],
+        [
+          "Cooling capacity",
+          "The total rate of heat removal from the conditioned space by a refrigeration system.",
+          ""
+        ],
+        [
+          "Heat transfer",
+          "The movement of thermal energy from a warmer substance to a cooler substance by conduction, convection, or radiation.",
+          ""
+        ],
+        [
+          "Latent heat",
+          "Heat absorbed or released during a phase change at constant temperature and pressure.",
+          ""
+        ],
+        [
+          "Refrigeration cycle",
+          "A closed loop process that transfers heat from a low-temperature space to a high-temperature space.",
+          ""
+        ],
+        [
+          "Refrigeration effect",
+          "The amount of heat absorbed in the evaporator per unit mass of refrigerant circulated.",
+          ""
+        ],
+        [
+          "Sensible heat",
+          "Heat that causes a change in temperature of a substance without a change in phase.",
+          ""
+        ],
+        [
+          "Ton of refrigeration",
+          "A rate of heat removal equal to 12,000 British thermal units per hour.",
+          "12000 Btu/h"
+        ],
+        [
+          "Volumetric efficiency",
+          "The ratio of the volume of vapor actually drawn into a compressor to its theoretical displacement.",
+          "ηv = actual / theoretical"
+        ],
+        [
+          "Accumulator",
+          "A vessel on the low side that prevents liquid refrigerant from entering the compressor.",
+          ""
+        ],
+        [
+          "Capillary tube",
+          "A fixed-length small-diameter tube that creates a pressure drop to meter refrigerant flow.",
+          ""
+        ],
+        [
+          "Compressor",
+          "A component that increases refrigerant pressure and temperature by reducing its volume.",
+          ""
+        ],
+        [
+          "Condenser",
+          "A heat exchanger that rejects heat from hot refrigerant vapor to a cooler medium, causing condensation.",
+          ""
+        ],
+        [
+          "Electronic expansion valve",
+          "A metering device whose opening is adjusted by a stepper motor in response to sensor signals.",
+          "EEV"
+        ],
+        [
+          "Evaporator",
+          "A heat exchanger that absorbs heat into refrigerant, causing liquid to evaporate into vapor.",
+          ""
+        ],
+        [
+          "Filter-drier",
+          "A device that removes moisture and particulate contaminants from the refrigerant circuit.",
+          ""
+        ],
+        [
+          "Liquid line",
+          "The tubing that carries liquid refrigerant from the condenser outlet to the metering device.",
+          ""
+        ],
+        [
+          "Metering device",
+          "A component that restricts refrigerant flow, creating a pressure drop between high and low sides.",
+          ""
+        ],
+        [
+          "Oil separator",
+          "A device that removes lubricating oil from hot discharge gas and returns it to the compressor crankcase.",
+          ""
+        ],
+        [
+          "Receiver",
+          "A vessel on the high side that stores liquid refrigerant between the condenser and metering device.",
+          ""
+        ],
+        [
+          "Sight glass",
+          "A transparent window in the liquid line used to observe refrigerant flow and moisture indication.",
+          ""
+        ],
+        [
+          "Suction line",
+          "The tubing that carries low-pressure refrigerant vapor from the evaporator outlet back to the compressor.",
+          ""
+        ],
+        [
+          "Thermostatic expansion valve",
+          "A metering device that modulates refrigerant flow based on evaporator outlet superheat.",
+          "TXV"
+        ],
+        [
+          "Azeotrope",
+          "A refrigerant blend that evaporates and condenses at a constant temperature like a pure compound.",
+          ""
+        ],
+        [
+          "Global warming potential",
+          "A relative measure of how much heat a greenhouse gas traps compared to carbon dioxide over a time horizon.",
+          "GWP"
+        ],
+        [
+          "Ozone depletion potential",
+          "A relative measure of a substance's ability to destroy stratospheric ozone compared to R-11.",
+          "ODP"
+        ],
+        [
+          "R-134a",
+          "A hydrofluorocarbon refrigerant used in automotive and some commercial refrigeration applications.",
+          "HFC-134a"
+        ],
+        [
+          "R-22",
+          "A hydrochlorofluorocarbon refrigerant phased out in many applications due to ozone depletion potential.",
+          "HCFC-22"
+        ],
+        [
+          "R-410A",
+          "A near-azeotropic hydrofluorocarbon blend refrigerant commonly used in residential air conditioning.",
+          "HFC blend"
+        ],
+        [
+          "Refrigerant",
+          "A working fluid that changes phase to absorb and release heat in a refrigeration cycle.",
+          ""
+        ],
+        [
+          "Refrigerant oil",
+          "Lubricant circulated with refrigerant that protects the compressor and seals internal clearances.",
+          ""
+        ],
+        [
+          "Zeotrope",
+          "A refrigerant blend whose components evaporate and condense at different temperatures, creating a temperature glide.",
+          ""
+        ],
+        [
+          "Condensation",
+          "The phase change of a vapor to liquid by rejecting heat, occurring in the condenser.",
+          ""
+        ],
+        [
+          "Evaporation",
+          "The phase change of a liquid to vapor by absorbing heat, occurring in the evaporator.",
+          ""
+        ],
+        [
+          "Flash gas",
+          "Vapor that forms when liquid refrigerant pressure drops abruptly through the metering device.",
+          ""
+        ],
+        [
+          "Pressure-temperature relationship",
+          "The correlation showing how a refrigerant's saturation pressure and temperature change together.",
+          "P-T chart"
+        ],
+        [
+          "Compression ratio",
+          "The ratio of absolute discharge pressure to absolute suction pressure in a compressor.",
+          "Pd/Ps"
+        ],
+        [
+          "Discharge pressure",
+          "The refrigerant pressure in the high side at the compressor discharge outlet.",
+          ""
+        ],
+        [
+          "Four-way valve",
+          "A reversing valve that changes refrigerant direction to switch a heat pump between heating and cooling modes.",
+          ""
+        ],
+        [
+          "Heat of compression",
+          "The heat added to refrigerant vapor by mechanical work during compression.",
+          ""
+        ],
+        [
+          "High side",
+          "The portion of a refrigeration system operating at condenser pressure between compressor discharge and metering device inlet.",
+          ""
+        ],
+        [
+          "Low side",
+          "The portion of a refrigeration system operating at evaporator pressure between metering device outlet and compressor suction.",
+          ""
+        ],
+        [
+          "Reversed cycle",
+          "A refrigeration system operating as a heat pump by reversing refrigerant flow to heat the conditioned space.",
+          ""
+        ],
+        [
+          "Suction pressure",
+          "The refrigerant pressure in the low side at the compressor suction inlet.",
+          ""
+        ],
+        [
+          "Total heat of rejection",
+          "The sum of refrigeration effect and heat of compression rejected by the condenser.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "superheat-subcooling",
+      "name": "Superheat and Subcooling",
+      "short": "Superheat and subcooling",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Condensing Temperature",
+          "Saturation temperature of refrigerant in the condenser at a given pressure.",
+          ""
+        ],
+        [
+          "Evaporating Temperature",
+          "Saturation temperature of refrigerant in the evaporator at a given pressure.",
+          ""
+        ],
+        [
+          "Saturated Liquid",
+          "Refrigerant liquid at saturation temperature and pressure with no vapor present.",
+          ""
+        ],
+        [
+          "Saturated Refrigerant",
+          "Refrigerant existing as a mixture of liquid and vapor in equilibrium at saturation conditions.",
+          ""
+        ],
+        [
+          "Saturated Vapor",
+          "Refrigerant vapor at saturation temperature and pressure with no liquid present.",
+          ""
+        ],
+        [
+          "Saturation Pressure",
+          "The pressure at which a refrigerant changes phase at a given temperature.",
+          ""
+        ],
+        [
+          "Saturation Temperature",
+          "The temperature at which a refrigerant changes phase at a given pressure.",
+          ""
+        ],
+        [
+          "Wet Vapor",
+          "A saturated mixture containing both liquid and vapor refrigerant.",
+          ""
+        ],
+        [
+          "Discharge Superheat",
+          "Difference between compressor discharge temperature and condensing saturation temperature.",
+          ""
+        ],
+        [
+          "Suction Superheat",
+          "Temperature difference between suction line and evaporator saturation temperature.",
+          ""
+        ],
+        [
+          "Superheat",
+          "The amount by which refrigerant vapor temperature exceeds its saturation temperature.",
+          ""
+        ],
+        [
+          "Superheated Vapor",
+          "Refrigerant vapor heated above its saturation temperature at a given pressure.",
+          ""
+        ],
+        [
+          "Total Superheat",
+          "Superheat measured at the evaporator outlet comparing suction line temperature to saturation.",
+          ""
+        ],
+        [
+          "Useful Superheat",
+          "Superheat in the evaporator that contributes to sensible heat absorption of refrigerant.",
+          ""
+        ],
+        [
+          "Liquid Subcooling",
+          "Temperature difference between condensing saturation and actual liquid line temperature.",
+          ""
+        ],
+        [
+          "Subcooled Liquid",
+          "Refrigerant liquid cooled below its saturation temperature at a given pressure.",
+          ""
+        ],
+        [
+          "Subcooling",
+          "The amount by which refrigerant liquid temperature falls below its saturation temperature.",
+          ""
+        ],
+        [
+          "Total Subcooling",
+          "Subcooling measured at the condenser outlet comparing liquid line temperature to saturation.",
+          ""
+        ],
+        [
+          "Approach Temperature",
+          "Difference between condensing temperature and the temperature of air leaving the condenser coil.",
+          "Condensing Temp - Leaving Air Temp"
+        ],
+        [
+          "Bubble Point",
+          "The saturation temperature where a refrigerant blend first begins to vaporize.",
+          ""
+        ],
+        [
+          "Condensing Saturation Temperature",
+          "Saturation temperature corresponding to head pressure from a P-T chart.",
+          ""
+        ],
+        [
+          "Delta-T",
+          "Air temperature difference between the return air entering and the supply air leaving the evaporator coil.",
+          "Return Air Temp - Supply Air Temp"
+        ],
+        [
+          "Dew Point",
+          "The saturation temperature where a refrigerant blend first begins to condense.",
+          ""
+        ],
+        [
+          "Digital Manifold",
+          "Electronic gauge set that displays pressure, saturation, superheat, and subcooling values.",
+          ""
+        ],
+        [
+          "Liquid Line Temperature",
+          "Actual temperature of refrigerant liquid in the liquid line at a measured point.",
+          ""
+        ],
+        [
+          "Pressure-Temperature Chart",
+          "A chart correlating saturation pressure and temperature for a specific refrigerant.",
+          ""
+        ],
+        [
+          "Subcooling Calculation",
+          "Subtracting actual liquid line temperature from condensing saturation temperature.",
+          "Condensing Sat Temp - Liquid Line Temp"
+        ],
+        [
+          "Suction Line Temperature",
+          "Actual temperature of refrigerant vapor in the suction line at a measured point.",
+          ""
+        ],
+        [
+          "Suction Saturation Temperature",
+          "Saturation temperature corresponding to suction pressure from a P-T chart.",
+          ""
+        ],
+        [
+          "Superheat Calculation",
+          "Subtracting suction saturation temperature from actual suction line temperature.",
+          "Suction Line Temp - Suction Sat Temp"
+        ],
+        [
+          "Temperature Glide",
+          "The range of temperatures over which a zeotropic blend evaporates or condenses.",
+          ""
+        ],
+        [
+          "Charging by Subcooling",
+          "Adding or removing refrigerant based on target subcooling for thermostatic expansion valves.",
+          ""
+        ],
+        [
+          "Charging by Superheat",
+          "Adding or removing refrigerant based on target superheat for fixed orifice metering devices.",
+          ""
+        ],
+        [
+          "Fractionation",
+          "The tendency of a zeotropic blend's components to vaporize at different rates, changing liquid composition.",
+          ""
+        ],
+        [
+          "Non-Condensables",
+          "Air or other gases that cannot condense, raising head pressure and liquid subcooling.",
+          ""
+        ],
+        [
+          "Overcharge",
+          "Excess refrigerant in the system resulting in higher subcooling and pressure.",
+          ""
+        ],
+        [
+          "Target Subcooling",
+          "Desired subcooling value specified by equipment manufacturer for proper charging.",
+          ""
+        ],
+        [
+          "Target Superheat",
+          "Desired superheat value based on ambient conditions and metering device type.",
+          ""
+        ],
+        [
+          "Undercharge",
+          "Insufficient refrigerant in the system resulting in low subcooling or high superheat.",
+          ""
+        ],
+        [
+          "Weighing-In Charge",
+          "Adding refrigerant until a scale shows the nameplate charge plus line set adjustment.",
+          "Nameplate Charge + Line Set Adjustment"
+        ]
+      ]
+    },
+    {
+      "id": "psychrometrics",
+      "name": "Psychrometrics",
+      "short": "Psychrometrics",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Atmospheric Pressure",
+          "The pressure exerted by the weight of the atmosphere; standard sea level pressure is 29.92 in. Hg.",
+          "in. Hg (US)"
+        ],
+        [
+          "Density of Air",
+          "The mass of air per unit volume, typically expressed in pounds per cubic foot.",
+          "lb/ft³"
+        ],
+        [
+          "Dew-Point Temperature",
+          "The temperature at which air becomes saturated and moisture begins to condense when cooled at constant pressure.",
+          "°F (US)"
+        ],
+        [
+          "Dry-Bulb Temperature",
+          "The temperature of air measured by a standard thermometer with a dry sensing element.",
+          "°F (US)"
+        ],
+        [
+          "Psychrometrics",
+          "The study of the thermodynamic properties of moist air and the use of those properties to analyze air-conditioning processes.",
+          ""
+        ],
+        [
+          "Saturation",
+          "The condition of air when it contains the maximum amount of water vapor possible at a given temperature and pressure.",
+          ""
+        ],
+        [
+          "Saturation temperature (moist air)",
+          "The temperature at which moist air reaches saturation at a given pressure and holds the maximum water vapor possible.",
+          "°F (US)"
+        ],
+        [
+          "Specific Heat of Air",
+          "The amount of heat required to raise the temperature of one pound of air by one degree Fahrenheit.",
+          "Btu/lb·°F"
+        ],
+        [
+          "Specific Volume",
+          "The volume occupied by a unit mass of dry air, usually expressed in cubic feet per pound of dry air.",
+          "ft³/lb dry air"
+        ],
+        [
+          "Wet-Bulb Depression",
+          "The difference between dry-bulb temperature and wet-bulb temperature.",
+          "DB - WB"
+        ],
+        [
+          "Wet-Bulb Temperature",
+          "The temperature read by a thermometer whose bulb is covered by a wetted wick, measured in moving air.",
+          "°F (US)"
+        ],
+        [
+          "Absolute Humidity",
+          "The mass of water vapor per unit volume of moist air.",
+          "grains/ft³ or lb/ft³"
+        ],
+        [
+          "Degree of Saturation",
+          "The ratio of the actual humidity ratio to the humidity ratio of saturated air at the same temperature and pressure.",
+          ""
+        ],
+        [
+          "Dehumidification",
+          "The process of removing water vapor from air to lower its humidity ratio.",
+          ""
+        ],
+        [
+          "Grains of Moisture",
+          "A unit of mass for water vapor; 7,000 grains equal 1 pound.",
+          "grains/lb dry air"
+        ],
+        [
+          "Humidification",
+          "The process of adding water vapor to air to raise its humidity ratio.",
+          ""
+        ],
+        [
+          "Humidity Ratio",
+          "The ratio of the mass of water vapor to the mass of dry air in a moist air mixture.",
+          "lb water vapor/lb dry air"
+        ],
+        [
+          "Relative Humidity",
+          "The ratio of the actual vapor pressure to the saturation vapor pressure at the same temperature, expressed as a percent.",
+          "%"
+        ],
+        [
+          "Saturation vapor pressure",
+          "The partial pressure exerted by water vapor in saturated moist air at a given temperature.",
+          "psia/in. Hg"
+        ],
+        [
+          "Vapor Pressure",
+          "The partial pressure exerted by water vapor in a moist air mixture.",
+          "psia/in. Hg"
+        ],
+        [
+          "Adiabatic Saturation",
+          "A process in which air is cooled and humidified by evaporation of water with no heat exchange to the surroundings.",
+          ""
+        ],
+        [
+          "Apparent Sensible Heat Ratio",
+          "The ratio of sensible heat removal to total heat removal based on measured entering and leaving air conditions.",
+          "ASHR = Qs / Qt"
+        ],
+        [
+          "Enthalpy",
+          "The total heat content of moist air per unit mass of dry air, including sensible and latent heat.",
+          "Btu/lb dry air"
+        ],
+        [
+          "Sensible Heat Ratio",
+          "The ratio of sensible heat load to total heat load for a process.",
+          "SHR = Qs / Qt"
+        ],
+        [
+          "Total Heat",
+          "The sum of sensible heat and latent heat; equivalent to enthalpy change for air-water vapor mixtures.",
+          "Btu"
+        ],
+        [
+          "Constant Dry-Bulb Line",
+          "A vertical line on a standard psychrometric chart representing constant dry-bulb temperature.",
+          "°F"
+        ],
+        [
+          "Constant Humidity Ratio Line",
+          "A horizontal line on a standard psychrometric chart representing constant moisture content.",
+          "lb/lb dry air"
+        ],
+        [
+          "Enthalpy Line",
+          "A line on the psychrometric chart representing constant total heat content of moist air.",
+          "Btu/lb dry air"
+        ],
+        [
+          "Psychrometric Chart",
+          "A graphical representation of the thermodynamic properties of moist air used to analyze air-conditioning processes.",
+          ""
+        ],
+        [
+          "Saturation Line",
+          "The curved line on a psychrometric chart representing 100 percent relative humidity.",
+          ""
+        ],
+        [
+          "Wet-Bulb Line",
+          "A line on the psychrometric chart representing constant wet-bulb temperature.",
+          ""
+        ],
+        [
+          "Apparatus Dew Point",
+          "The effective dew-point temperature of a cooling coil surface representing the condition of air leaving an ideal coil.",
+          "°F"
+        ],
+        [
+          "Bypass Factor",
+          "The fraction of air that passes through a coil without being fully conditioned.",
+          ""
+        ],
+        [
+          "Contact Factor",
+          "The fraction of air that comes into contact with the coil surface and is conditioned.",
+          "CF = 1 - BF"
+        ],
+        [
+          "Cooling with Dehumidification",
+          "Cooling air below its dew point, causing condensation and removing moisture while lowering temperature.",
+          ""
+        ],
+        [
+          "Evaporative Cooling",
+          "Adiabatic cooling process in which water is evaporated into air, lowering dry-bulb temperature and increasing humidity.",
+          ""
+        ],
+        [
+          "Heating with Humidification",
+          "Heating air while adding moisture, typically increasing both dry-bulb temperature and humidity ratio.",
+          ""
+        ],
+        [
+          "Mixing",
+          "The process of combining two or more air streams to form a third air stream with properties determined by mass and energy balance.",
+          ""
+        ],
+        [
+          "Sensible Cooling",
+          "Cooling air at constant humidity ratio, resulting in a decrease in dry-bulb temperature.",
+          ""
+        ],
+        [
+          "Sensible Heating",
+          "Heating air at constant humidity ratio, resulting in an increase in dry-bulb temperature.",
+          ""
+        ],
+        [
+          "Supply Air Temperature",
+          "The dry-bulb temperature of air delivered from a conditioning unit into the conditioned space.",
+          "°F"
+        ]
+      ]
+    },
+    {
+      "id": "electrical-controls",
+      "name": "Electrical Controls",
+      "short": "Electrical controls",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "circuit",
+          "A complete path for electric current to flow from a source through a load and back to the source.",
+          ""
+        ],
+        [
+          "control circuit",
+          "A low current circuit that uses switches and relays to operate and sequence components in an HVAC system.",
+          ""
+        ],
+        [
+          "control voltage",
+          "The voltage used to energize control devices such as thermostats relays and contactor coils in HVAC systems.",
+          ""
+        ],
+        [
+          "line voltage",
+          "The supply voltage directly from the power source used to feed power circuits in most HVAC equipment.",
+          ""
+        ],
+        [
+          "low voltage",
+          "A reduced voltage level typically used for control circuits to allow safer operation and smaller wiring.",
+          ""
+        ],
+        [
+          "parallel circuit",
+          "A circuit in which components are connected across the same voltage source providing multiple paths for current.",
+          ""
+        ],
+        [
+          "power circuit",
+          "A circuit that carries high current to operate loads such as motors or compressors in an HVAC system.",
+          ""
+        ],
+        [
+          "series circuit",
+          "A circuit in which current flows through each component in a single path with no branching connections.",
+          ""
+        ],
+        [
+          "contactor",
+          "A heavy duty relay with larger contacts used to switch high current loads such as compressors or motors.",
+          ""
+        ],
+        [
+          "flow switch",
+          "A switch that detects the presence or absence of fluid flow and opens or closes a control circuit.",
+          ""
+        ],
+        [
+          "limit switch",
+          "A safety switch that opens a circuit when temperature or position exceeds a preset limit in an HVAC system.",
+          ""
+        ],
+        [
+          "normally closed",
+          "A contact condition in which the circuit is closed with no power to the coil and opens when energized.",
+          "NC"
+        ],
+        [
+          "normally open",
+          "A contact condition in which the circuit is open with no power to the coil and closes when energized.",
+          "NO"
+        ],
+        [
+          "pressure switch",
+          "A switch that opens or closes a circuit based on system pressure to protect or control HVAC equipment.",
+          ""
+        ],
+        [
+          "relay",
+          "An electromechanical device that uses a small control current to open or close one or more sets of contacts.",
+          ""
+        ],
+        [
+          "toggle switch",
+          "A manually operated switch that opens or closes a circuit by moving a lever between positions.",
+          ""
+        ],
+        [
+          "capacitor start motor",
+          "A single phase motor using a start capacitor in series with the start winding for high starting torque.",
+          "CS motor"
+        ],
+        [
+          "motor starter",
+          "A combination of contactor and overload protection used to start and protect a motor from excessive current.",
+          ""
+        ],
+        [
+          "overload relay",
+          "A protective device that opens the control circuit when motor current exceeds a safe value for a period of time.",
+          ""
+        ],
+        [
+          "permanent split capacitor motor",
+          "A single phase motor with a run capacitor permanently in the circuit providing quiet operation and good efficiency.",
+          "PSC"
+        ],
+        [
+          "run capacitor",
+          "A capacitor connected in the circuit during motor operation to improve efficiency and power factor of a motor.",
+          ""
+        ],
+        [
+          "shaded pole motor",
+          "A simple single phase motor with low starting torque used in small fans and light duty applications.",
+          ""
+        ],
+        [
+          "split phase motor",
+          "A single phase induction motor using a start winding and run winding with a phase shift for starting torque.",
+          ""
+        ],
+        [
+          "start capacitor",
+          "A capacitor used only during motor starting to increase starting torque then removed from the circuit.",
+          ""
+        ],
+        [
+          "anticipator",
+          "A component in older thermostats that artificially heats or affects the sensing element to improve cycle timing.",
+          ""
+        ],
+        [
+          "cooling anticipator",
+          "A device in some thermostats that delays or controls cooling cycles by anticipating system operation.",
+          ""
+        ],
+        [
+          "differential",
+          "The temperature difference between thermostat cut-in and cut-out points before the next heating or cooling cycle starts.",
+          ""
+        ],
+        [
+          "digital thermostat",
+          "An electronic thermostat using solid state components to sense temperature and control system operation.",
+          ""
+        ],
+        [
+          "heat anticipator",
+          "A small resistor in a thermostat that adds heat to the bimetal element to shorten heating cycles.",
+          ""
+        ],
+        [
+          "programmable thermostat",
+          "A thermostat that automatically changes temperature setpoints at different times of day to save energy.",
+          ""
+        ],
+        [
+          "setpoint",
+          "The desired temperature value that a thermostat is set to maintain in a conditioned space.",
+          ""
+        ],
+        [
+          "thermostat",
+          "A temperature sensing control device that opens or closes circuits to maintain a desired space temperature.",
+          ""
+        ],
+        [
+          "freeze stat",
+          "A temperature control that protects against freezing by shutting down or operating equipment at low temperatures.",
+          "freeze protection stat"
+        ],
+        [
+          "fusible link",
+          "A heat sensitive safety device that melts at a set temperature to open a circuit and stop equipment operation.",
+          ""
+        ],
+        [
+          "high limit switch",
+          "A temperature safety control that shuts down the heat source if furnace temperature exceeds a preset limit.",
+          ""
+        ],
+        [
+          "high pressure switch",
+          "A safety control that opens the compressor circuit when refrigerant pressure exceeds a safe maximum value.",
+          "HP switch"
+        ],
+        [
+          "low pressure switch",
+          "A safety control that opens the compressor circuit when refrigerant pressure falls below a safe minimum value.",
+          "LP switch"
+        ],
+        [
+          "operating control",
+          "A control device that regulates normal system operation based on conditions like temperature or pressure.",
+          ""
+        ],
+        [
+          "rollout switch",
+          "A safety switch that opens the burner circuit if flames roll out of a furnace combustion chamber.",
+          "flame rollout switch"
+        ],
+        [
+          "safety control",
+          "A device designed to shut down or prevent operation of HVAC equipment when unsafe conditions are detected.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "codes-safety",
+      "name": "Codes and Safety",
+      "short": "Codes and safety",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Approved",
+          "Acceptable to the AHJ based on investigation, tests, or evidence demonstrating compliance with applicable codes or standards.",
+          ""
+        ],
+        [
+          "Authority Having Jurisdiction",
+          "The organization, office, or individual responsible for enforcing codes, standards, or regulations in a given jurisdiction.",
+          "AHJ"
+        ],
+        [
+          "Building code",
+          "A legally adopted set of rules that establishes minimum requirements for the design, construction, installation, and alteration of buildings and systems.",
+          ""
+        ],
+        [
+          "International Mechanical Code",
+          "A model code developed by ICC that establishes minimum regulations for mechanical systems, including HVAC, used by many US jurisdictions.",
+          "IMC"
+        ],
+        [
+          "Listed equipment",
+          "Equipment that has been evaluated by a Nationally Recognized Testing Laboratory and found to conform to applicable product safety standards.",
+          ""
+        ],
+        [
+          "National Electrical Code",
+          "A widely adopted US standard (NFPA 70) for electrical wiring and equipment installation to safeguard persons and property from electrical hazards.",
+          "NEC"
+        ],
+        [
+          "Standard",
+          "A documented set of criteria, methods, or practices developed by consensus that may be referenced by codes for compliance.",
+          ""
+        ],
+        [
+          "A2L refrigerant",
+          "A refrigerant classified as mildly flammable under ASHRAE 34, requiring charge limits, ignition-source controls, and ventilation provisions during installation and service.",
+          "A2L"
+        ],
+        [
+          "EPA Section 608",
+          "US EPA regulations under the Clean Air Act requiring certification for technicians who maintain, service, repair, or dispose of equipment that could release regulated refrigerants.",
+          ""
+        ],
+        [
+          "Machinery room",
+          "A dedicated space that meets ASHRAE 15 construction and ventilation requirements for refrigerant-containing equipment whose charge exceeds defined limits.",
+          ""
+        ],
+        [
+          "Refrigerant Safety Data Sheet",
+          "A document providing hazard information, handling precautions, first aid, exposure limits, and spill response for a specific refrigerant.",
+          "SDS"
+        ],
+        [
+          "Refrigerant asphyxiation hazard",
+          "The risk that heavier-than-air refrigerants can displace oxygen in low or confined spaces, creating a suffocation hazard.",
+          ""
+        ],
+        [
+          "Refrigerant detection system",
+          "Fixed sensors that monitor a machinery room or occupied space for refrigerant concentration and trigger alarms, ventilation, or equipment shutdown at set thresholds.",
+          ""
+        ],
+        [
+          "Refrigerant reclaim",
+          "Processing used refrigerant to meet ARI-700 (or equivalent) purity specifications, usually performed by a EPA-certified reclaimer off-site.",
+          ""
+        ],
+        [
+          "Refrigerant recovery",
+          "The process of removing refrigerant from a system and storing it in an approved recovery container without necessarily processing it.",
+          ""
+        ],
+        [
+          "Refrigerant recycling",
+          "Cleaning refrigerant for reuse by oil separation and single or multiple passes through filter-driers, typically done on-site with approved equipment.",
+          ""
+        ],
+        [
+          "Refrigerant venting prohibition",
+          "Under EPA Section 608, knowingly releasing regulated refrigerants into the atmosphere during service, maintenance, repair, or disposal is prohibited except in limited, allowable cases.",
+          ""
+        ],
+        [
+          "Arc flash",
+          "A dangerous release of energy caused by an electric arc, producing intense heat, light, pressure, and risk of serious injury.",
+          ""
+        ],
+        [
+          "Arc flash boundary",
+          "The distance from energized equipment within which a person could receive a second-degree burn from an arc flash, set by an incident energy analysis.",
+          ""
+        ],
+        [
+          "Disconnect means",
+          "A device or group of devices used to disconnect equipment from its power supply, required by the NEC for service and maintenance.",
+          ""
+        ],
+        [
+          "Electrical working clearance",
+          "The minimum unobstructed space required in front of electrical equipment for safe inspection, testing, and servicing per NEC requirements.",
+          ""
+        ],
+        [
+          "Equipment grounding",
+          "The intentional connection of conductive equipment parts to earth or an equipment grounding conductor to reduce shock and fire hazards.",
+          ""
+        ],
+        [
+          "Ground-Fault Circuit Interrupter",
+          "A device that detects imbalances between hot and neutral conductors and quickly interrupts power to protect against electric shock.",
+          "GFCI"
+        ],
+        [
+          "Lockout/Tagout",
+          "OSHA-required procedures to shut off and isolate energy sources and prevent re-energization while servicing or repairing equipment.",
+          "LOTO"
+        ],
+        [
+          "Overcurrent protection",
+          "Devices such as fuses or circuit breakers that interrupt current when it exceeds safe levels to prevent overheating or fire.",
+          "OCPD"
+        ],
+        [
+          "Carbon monoxide hazard",
+          "The risk posed by odorless, colorless carbon monoxide produced by incomplete combustion, which can be fatal in poorly ventilated spaces.",
+          "CO"
+        ],
+        [
+          "Combustion air",
+          "Air provided to fuel-burning appliances to support proper combustion and prevent negative pressure issues, as required by mechanical and fuel gas codes.",
+          ""
+        ],
+        [
+          "Makeup air",
+          "Outdoor air introduced to replace air exhausted by mechanical systems to maintain pressure balance in a building.",
+          ""
+        ],
+        [
+          "Mechanical ventilation",
+          "Ventilation provided by powered equipment, such as fans or blowers, to supply or exhaust air as required by code.",
+          ""
+        ],
+        [
+          "Natural ventilation",
+          "Air movement into and out of a space by natural forces such as wind or temperature difference, without powered ventilation equipment.",
+          ""
+        ],
+        [
+          "Outdoor air",
+          "Air taken from outside the building envelope, used for ventilation, dilution, or combustion purposes.",
+          "OA"
+        ],
+        [
+          "Ventilation rate",
+          "The amount of outdoor air required to be provided to a space, often expressed in cubic feet per minute (cfm) per person or per unit area.",
+          ""
+        ],
+        [
+          "Asphyxiation",
+          "Suffocation resulting from lack of oxygen or displacement of breathable air, a risk in confined spaces or areas with heavy refrigerant leaks.",
+          ""
+        ],
+        [
+          "Cold burn (frostbite)",
+          "Tissue damage caused by contact with extremely cold refrigerants or surfaces, which can cause burns similar to thermal burns.",
+          ""
+        ],
+        [
+          "Confined space",
+          "A space large enough to enter but with limited means of entry/exit and not designed for continuous occupancy, which may present atmospheric or physical hazards.",
+          ""
+        ],
+        [
+          "Fall protection",
+          "Systems or equipment, including harnesses, guardrails, or warning lines, used to prevent or arrest falls from heights.",
+          ""
+        ],
+        [
+          "Permit-required confined space",
+          "A confined space containing a hazardous atmosphere, engulfment risk, or other serious hazard that requires a written entry permit, atmospheric testing, and an attendant.",
+          ""
+        ],
+        [
+          "Personal Protective Equipment",
+          "Equipment worn by workers to minimize exposure to hazards, such as eye protection, gloves, footwear, hearing protection, or respiratory protection.",
+          "PPE"
+        ],
+        [
+          "Respiratory protection",
+          "Equipment and procedures used to protect against inhalation of harmful dusts, vapors, gases, or oxygen-deficient atmospheres.",
+          ""
+        ],
+        [
+          "Safety Data Sheet",
+          "A standardized document (16 sections) that communicates chemical hazards, safe handling, PPE, and emergency procedures for a substance or mixture.",
+          "SDS"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,742 @@
+{
+  "version": 1,
+  "id": "superheat-subcooling",
+  "collectionId": "hvac-licensing",
+  "section": "core",
+  "name": "Superheat and Subcooling",
+  "shortName": "Superheat and subcooling",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Saturation"
+    },
+    {
+      "number": 2,
+      "title": "Superheat"
+    },
+    {
+      "number": 3,
+      "title": "Subcooling"
+    },
+    {
+      "number": 4,
+      "title": "Measurements"
+    },
+    {
+      "number": 5,
+      "title": "Charging"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "condensing-temperature",
+      "term": "Condensing Temperature",
+      "definition": "Saturation temperature of refrigerant in the condenser at a given pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "cond temp"
+      ],
+      "confusables": [
+        "Evaporating Temperature",
+        "Liquid Line Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "evaporating-temperature",
+      "term": "Evaporating Temperature",
+      "definition": "Saturation temperature of refrigerant in the evaporator at a given pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "coil temp",
+        "evap temp"
+      ],
+      "confusables": [
+        "Condensing Temperature",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "saturated-liquid",
+      "term": "Saturated Liquid",
+      "definition": "Refrigerant liquid at saturation temperature and pressure with no vapor present.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [],
+      "confusables": [
+        "Saturated Vapor",
+        "Subcooled Liquid"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "saturated-refrigerant",
+      "term": "Saturated Refrigerant",
+      "definition": "Refrigerant existing as a mixture of liquid and vapor in equilibrium at saturation conditions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "saturated state"
+      ],
+      "confusables": [
+        "Superheated Vapor",
+        "Subcooled Liquid",
+        "Wet Vapor"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "saturated-vapor",
+      "term": "Saturated Vapor",
+      "definition": "Refrigerant vapor at saturation temperature and pressure with no liquid present.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "dry saturated vapor"
+      ],
+      "confusables": [
+        "Wet Vapor",
+        "Superheated Vapor",
+        "Saturated Liquid"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "saturation-pressure",
+      "term": "Saturation Pressure",
+      "definition": "The pressure at which a refrigerant changes phase at a given temperature.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "sat pressure"
+      ],
+      "confusables": [
+        "Saturation Temperature",
+        "Saturated Refrigerant"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "saturation-temperature",
+      "term": "Saturation Temperature",
+      "definition": "The temperature at which a refrigerant changes phase at a given pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "sat temp"
+      ],
+      "confusables": [
+        "Condensing Temperature",
+        "Evaporating Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "wet-vapor",
+      "term": "Wet Vapor",
+      "definition": "A saturated mixture containing both liquid and vapor refrigerant.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Saturation",
+      "aliases": [
+        "two-phase mixture"
+      ],
+      "confusables": [
+        "Saturated Vapor",
+        "Superheated Vapor"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "discharge-superheat",
+      "term": "Discharge Superheat",
+      "definition": "Difference between compressor discharge temperature and condensing saturation temperature.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Superheat",
+      "aliases": [],
+      "confusables": [
+        "Suction Superheat",
+        "Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "suction-superheat",
+      "term": "Suction Superheat",
+      "definition": "Temperature difference between suction line and evaporator saturation temperature.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Superheat",
+      "aliases": [],
+      "confusables": [
+        "Total Superheat",
+        "Superheat",
+        "Discharge Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "superheat",
+      "term": "Superheat",
+      "definition": "The amount by which refrigerant vapor temperature exceeds its saturation temperature.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Superheat",
+      "aliases": [],
+      "confusables": [
+        "Subcooling",
+        "Total Superheat",
+        "Useful Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "superheated-vapor",
+      "term": "Superheated Vapor",
+      "definition": "Refrigerant vapor heated above its saturation temperature at a given pressure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Superheat",
+      "aliases": [],
+      "confusables": [
+        "Saturated Vapor",
+        "Subcooled Liquid",
+        "Wet Vapor"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "total-superheat",
+      "term": "Total Superheat",
+      "definition": "Superheat measured at the evaporator outlet comparing suction line temperature to saturation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Superheat",
+      "aliases": [
+        "system superheat"
+      ],
+      "confusables": [
+        "Superheat",
+        "Useful Superheat",
+        "Suction Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "useful-superheat",
+      "term": "Useful Superheat",
+      "definition": "Superheat in the evaporator that contributes to sensible heat absorption of refrigerant.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Superheat",
+      "aliases": [
+        "active superheat"
+      ],
+      "confusables": [
+        "Total Superheat",
+        "Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "liquid-subcooling",
+      "term": "Liquid Subcooling",
+      "definition": "Temperature difference between condensing saturation and actual liquid line temperature.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Subcooling",
+      "aliases": [],
+      "confusables": [
+        "Total Subcooling",
+        "Subcooling",
+        "Suction Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "subcooled-liquid",
+      "term": "Subcooled Liquid",
+      "definition": "Refrigerant liquid cooled below its saturation temperature at a given pressure.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Subcooling",
+      "aliases": [],
+      "confusables": [
+        "Saturated Liquid",
+        "Superheated Vapor"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "subcooling",
+      "term": "Subcooling",
+      "definition": "The amount by which refrigerant liquid temperature falls below its saturation temperature.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Subcooling",
+      "aliases": [],
+      "confusables": [
+        "Superheat",
+        "Total Subcooling",
+        "Liquid Subcooling"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "total-subcooling",
+      "term": "Total Subcooling",
+      "definition": "Subcooling measured at the condenser outlet comparing liquid line temperature to saturation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Subcooling",
+      "aliases": [
+        "system subcooling"
+      ],
+      "confusables": [
+        "Subcooling",
+        "Liquid Subcooling"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "approach-temperature",
+      "term": "Approach Temperature",
+      "definition": "Difference between condensing temperature and the temperature of air leaving the condenser coil.",
+      "formula": "Condensing Temp - Leaving Air Temp",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "condenser approach"
+      ],
+      "confusables": [
+        "Condensing Temperature",
+        "Delta-T"
+      ],
+      "sources": [
+        "acca-manual-j#sec.4.3"
+      ]
+    },
+    {
+      "id": "bubble-point",
+      "term": "Bubble Point",
+      "definition": "The saturation temperature where a refrigerant blend first begins to vaporize.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [],
+      "confusables": [
+        "Dew Point",
+        "Temperature Glide",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "condensing-saturation-temperature",
+      "term": "Condensing Saturation Temperature",
+      "definition": "Saturation temperature corresponding to head pressure from a P-T chart.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "condenser saturation temp"
+      ],
+      "confusables": [
+        "Liquid Line Temperature",
+        "Condensing Temperature",
+        "Suction Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "delta-t",
+      "term": "Delta-T",
+      "definition": "Air temperature difference between the return air entering and the supply air leaving the evaporator coil.",
+      "formula": "Return Air Temp - Supply Air Temp",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "air temperature split",
+        "temperature split"
+      ],
+      "confusables": [
+        "Approach Temperature",
+        "Total Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.4.4"
+      ]
+    },
+    {
+      "id": "dew-point",
+      "term": "Dew Point",
+      "definition": "The saturation temperature where a refrigerant blend first begins to condense.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [],
+      "confusables": [
+        "Bubble Point",
+        "Temperature Glide",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "digital-manifold",
+      "term": "Digital Manifold",
+      "definition": "Electronic gauge set that displays pressure, saturation, superheat, and subcooling values.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "digital gauge set"
+      ],
+      "confusables": [
+        "Saturation Temperature",
+        "Saturation Pressure"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "liquid-line-temperature",
+      "term": "Liquid Line Temperature",
+      "definition": "Actual temperature of refrigerant liquid in the liquid line at a measured point.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [],
+      "confusables": [
+        "Condensing Temperature",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "pressure-temperature-chart",
+      "term": "Pressure-Temperature Chart",
+      "definition": "A chart correlating saturation pressure and temperature for a specific refrigerant.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "P-T chart",
+        "PT chart"
+      ],
+      "confusables": [
+        "Saturation Temperature",
+        "Saturation Pressure"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "subcooling-calculation",
+      "term": "Subcooling Calculation",
+      "definition": "Subtracting actual liquid line temperature from condensing saturation temperature.",
+      "formula": "Condensing Sat Temp - Liquid Line Temp",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [],
+      "confusables": [
+        "Superheat Calculation",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "suction-line-temperature",
+      "term": "Suction Line Temperature",
+      "definition": "Actual temperature of refrigerant vapor in the suction line at a measured point.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [],
+      "confusables": [
+        "Suction Saturation Temperature",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "suction-saturation-temperature",
+      "term": "Suction Saturation Temperature",
+      "definition": "Saturation temperature corresponding to suction pressure from a P-T chart.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "evaporator saturation temp"
+      ],
+      "confusables": [
+        "Suction Line Temperature",
+        "Evaporating Temperature",
+        "Condensing Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "superheat-calculation",
+      "term": "Superheat Calculation",
+      "definition": "Subtracting suction saturation temperature from actual suction line temperature.",
+      "formula": "Suction Line Temp - Suction Sat Temp",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [],
+      "confusables": [
+        "Subcooling Calculation",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "temperature-glide",
+      "term": "Temperature Glide",
+      "definition": "The range of temperatures over which a zeotropic blend evaporates or condenses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Measurements",
+      "aliases": [
+        "glide"
+      ],
+      "confusables": [
+        "Bubble Point",
+        "Dew Point"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "charging-by-subcooling",
+      "term": "Charging by Subcooling",
+      "definition": "Adding or removing refrigerant based on target subcooling for thermostatic expansion valves.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "subcooling charging"
+      ],
+      "confusables": [
+        "Charging by Superheat",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "charging-by-superheat",
+      "term": "Charging by Superheat",
+      "definition": "Adding or removing refrigerant based on target superheat for fixed orifice metering devices.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "superheat charging"
+      ],
+      "confusables": [
+        "Charging by Subcooling",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "fractionation",
+      "term": "Fractionation",
+      "definition": "The tendency of a zeotropic blend's components to vaporize at different rates, changing liquid composition.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "blend fractionation"
+      ],
+      "confusables": [
+        "Temperature Glide",
+        "Dew Point"
+      ],
+      "sources": [
+        "acca-manual-j#sec.5.3"
+      ]
+    },
+    {
+      "id": "non-condensables",
+      "term": "Non-Condensables",
+      "definition": "Air or other gases that cannot condense, raising head pressure and liquid subcooling.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "noncondensable gases",
+        "air in the system"
+      ],
+      "confusables": [
+        "Overcharge",
+        "Undercharge"
+      ],
+      "sources": [
+        "acca-manual-j#sec.5.4"
+      ]
+    },
+    {
+      "id": "overcharge",
+      "term": "Overcharge",
+      "definition": "Excess refrigerant in the system resulting in higher subcooling and pressure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [],
+      "confusables": [
+        "Undercharge",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "target-subcooling",
+      "term": "Target Subcooling",
+      "definition": "Desired subcooling value specified by equipment manufacturer for proper charging.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "ideal subcooling"
+      ],
+      "confusables": [
+        "Total Subcooling",
+        "Liquid Subcooling"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "target-superheat",
+      "term": "Target Superheat",
+      "definition": "Desired superheat value based on ambient conditions and metering device type.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "ideal superheat"
+      ],
+      "confusables": [
+        "Total Superheat",
+        "Suction Superheat"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "undercharge",
+      "term": "Undercharge",
+      "definition": "Insufficient refrigerant in the system resulting in low subcooling or high superheat.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [],
+      "confusables": [
+        "Overcharge",
+        "Saturation Temperature"
+      ],
+      "sources": [
+        "acca-manual-j#sec.glossary"
+      ]
+    },
+    {
+      "id": "weighing-in-charge",
+      "term": "Weighing-In Charge",
+      "definition": "Adding refrigerant until a scale shows the nameplate charge plus line set adjustment.",
+      "formula": "Nameplate Charge + Line Set Adjustment",
+      "unit": 5,
+      "unitTitle": "Charging",
+      "aliases": [
+        "charge by weight",
+        "weigh-in charging"
+      ],
+      "confusables": [
+        "Charging by Superheat",
+        "Charging by Subcooling"
+      ],
+      "sources": [
+        "acca-manual-j#sec.5.5"
+      ]
+    }
+  ]
+}

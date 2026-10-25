@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "topic": "HVAC licensing for HVAC apprentices and licensing candidates",
+  "collectionId": "hvac-licensing",
+  "type": "exam",
+  "audience": "HVAC apprentices and licensing candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "includes": [
+    "refrigeration cycle",
+    "superheat and subcooling",
+    "psychrometrics",
+    "electrical controls",
+    "codes and safety"
+  ],
+  "excludes": [
+    "commercial refrigeration design",
+    "hydronics advanced",
+    "controls programming",
+    "equipment sizing software",
+    "installation procedures"
+  ],
+  "assumptions": [
+    "US HVAC/R terminology",
+    "focus on definitions and core concepts",
+    "exam-oriented vocabulary"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "refrigeration-cycle",
+          "name": "Refrigeration Cycle",
+          "shortName": "Refrigeration cycle",
+          "units": ["Cycle basics", "Components", "Refrigerants", "State changes", "System operation"],
+          "targetDefinitions": 40,
+          "sourceQueries": ["HVAC refrigeration cycle glossary"]
+        },
+        {
+          "id": "superheat-subcooling",
+          "name": "Superheat and Subcooling",
+          "shortName": "Superheat and subcooling",
+          "units": ["Saturation", "Superheat", "Subcooling", "Measurements", "Charging"],
+          "targetDefinitions": 35,
+          "sourceQueries": ["HVAC superheat subcooling glossary"]
+        },
+        {
+          "id": "psychrometrics",
+          "name": "Psychrometrics",
+          "shortName": "Psychrometrics",
+          "units": ["Air properties", "Humidity", "Enthalpy", "Charts", "Processes"],
+          "targetDefinitions": 40,
+          "sourceQueries": ["HVAC psychrometrics glossary"]
+        },
+        {
+          "id": "electrical-controls",
+          "name": "Electrical Controls",
+          "shortName": "Electrical controls",
+          "units": ["Control basics", "Switches and relays", "Motors and starters", "Thermostats", "Safety controls"],
+          "targetDefinitions": 40,
+          "sourceQueries": ["HVAC electrical controls glossary"]
+        },
+        {
+          "id": "codes-safety",
+          "name": "Codes and Safety",
+          "shortName": "Codes and safety",
+          "units": ["Codes and standards", "Refrigerant safety", "Electrical safety", "Ventilation", "PPE and hazards"],
+          "targetDefinitions": 35,
+          "sourceQueries": ["HVAC codes safety glossary"]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 180, "max": 240 },
+  "disclaimer": "Educational vocabulary only; not HVAC advice or code compliance guidance."
+}

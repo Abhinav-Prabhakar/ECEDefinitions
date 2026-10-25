@@ -1,0 +1,745 @@
+{
+  "version": 1,
+  "id": "codes-safety",
+  "collectionId": "hvac-licensing",
+  "section": "core",
+  "name": "Codes and Safety",
+  "shortName": "Codes and safety",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "Codes and standards"
+    },
+    {
+      "number": 2,
+      "title": "Refrigerant safety"
+    },
+    {
+      "number": 3,
+      "title": "Electrical safety"
+    },
+    {
+      "number": 4,
+      "title": "Ventilation"
+    },
+    {
+      "number": 5,
+      "title": "PPE and hazards"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "approved",
+      "term": "Approved",
+      "definition": "Acceptable to the AHJ based on investigation, tests, or evidence demonstrating compliance with applicable codes or standards.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.definitions",
+        "nfpa-70#sec.art-100"
+      ]
+    },
+    {
+      "id": "authority-having-jurisdiction",
+      "term": "Authority Having Jurisdiction",
+      "definition": "The organization, office, or individual responsible for enforcing codes, standards, or regulations in a given jurisdiction.",
+      "formula": "AHJ",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [
+        "AHJ"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.definitions",
+        "nfpa-70#sec.art-100"
+      ]
+    },
+    {
+      "id": "building-code",
+      "term": "Building code",
+      "definition": "A legally adopted set of rules that establishes minimum requirements for the design, construction, installation, and alteration of buildings and systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [],
+      "confusables": [
+        "International Mechanical Code",
+        "National Electrical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.general"
+      ]
+    },
+    {
+      "id": "international-mechanical-code",
+      "term": "International Mechanical Code",
+      "definition": "A model code developed by ICC that establishes minimum regulations for mechanical systems, including HVAC, used by many US jurisdictions.",
+      "formula": "IMC",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [
+        "IMC"
+      ],
+      "confusables": [
+        "Building code",
+        "National Electrical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.scope"
+      ]
+    },
+    {
+      "id": "listed-equipment",
+      "term": "Listed equipment",
+      "definition": "Equipment that has been evaluated by a Nationally Recognized Testing Laboratory and found to conform to applicable product safety standards.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [
+        "listed"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-100",
+        "ul-standards#sec.general"
+      ]
+    },
+    {
+      "id": "national-electrical-code",
+      "term": "National Electrical Code",
+      "definition": "A widely adopted US standard (NFPA 70) for electrical wiring and equipment installation to safeguard persons and property from electrical hazards.",
+      "formula": "NEC",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [
+        "NEC",
+        "NFPA 70"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-90"
+      ]
+    },
+    {
+      "id": "standard",
+      "term": "Standard",
+      "definition": "A documented set of criteria, methods, or practices developed by consensus that may be referenced by codes for compliance.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Codes and standards",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-90"
+      ]
+    },
+    {
+      "id": "a2l-refrigerant",
+      "term": "A2L refrigerant",
+      "definition": "A refrigerant classified as mildly flammable under ASHRAE 34, requiring charge limits, ignition-source controls, and ventilation provisions during installation and service.",
+      "formula": "A2L",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [
+        "mildly flammable refrigerant"
+      ],
+      "confusables": [
+        "Refrigerant asphyxiation hazard",
+        "Refrigerant Safety Data Sheet"
+      ],
+      "sources": [
+        "ashrae-15#sec.flammability"
+      ]
+    },
+    {
+      "id": "epa-section-608",
+      "term": "EPA Section 608",
+      "definition": "US EPA regulations under the Clean Air Act requiring certification for technicians who maintain, service, repair, or dispose of equipment that could release regulated refrigerants.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [
+        "Section 608"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "epa-608#sec.overview"
+      ]
+    },
+    {
+      "id": "machinery-room",
+      "term": "Machinery room",
+      "definition": "A dedicated space that meets ASHRAE 15 construction and ventilation requirements for refrigerant-containing equipment whose charge exceeds defined limits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [],
+      "confusables": [
+        "Mechanical ventilation",
+        "Refrigerant detection system"
+      ],
+      "sources": [
+        "ashrae-15#sec.machinery-room"
+      ]
+    },
+    {
+      "id": "refrigerant-safety-data-sheet",
+      "term": "Refrigerant Safety Data Sheet",
+      "definition": "A document providing hazard information, handling precautions, first aid, exposure limits, and spill response for a specific refrigerant.",
+      "formula": "SDS",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [
+        "SDS",
+        "MSDS"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-hazcom#sec.1910-1200",
+        "ashrae-15#sec.safety"
+      ]
+    },
+    {
+      "id": "refrigerant-asphyxiation-hazard",
+      "term": "Refrigerant asphyxiation hazard",
+      "definition": "The risk that heavier-than-air refrigerants can displace oxygen in low or confined spaces, creating a suffocation hazard.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [
+        "oxygen displacement"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "ashrae-15#sec.ventilation",
+        "osha-1910.146#sec.definitions"
+      ]
+    },
+    {
+      "id": "refrigerant-detection-system",
+      "term": "Refrigerant detection system",
+      "definition": "Fixed sensors that monitor a machinery room or occupied space for refrigerant concentration and trigger alarms, ventilation, or equipment shutdown at set thresholds.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [
+        "gas detection system"
+      ],
+      "confusables": [
+        "Machinery room",
+        "Refrigerant asphyxiation hazard"
+      ],
+      "sources": [
+        "ashrae-15#sec.detection"
+      ]
+    },
+    {
+      "id": "refrigerant-reclaim",
+      "term": "Refrigerant reclaim",
+      "definition": "Processing used refrigerant to meet ARI-700 (or equivalent) purity specifications, usually performed by a EPA-certified reclaimer off-site.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "epa-608#sec.reclaim"
+      ]
+    },
+    {
+      "id": "refrigerant-recovery",
+      "term": "Refrigerant recovery",
+      "definition": "The process of removing refrigerant from a system and storing it in an approved recovery container without necessarily processing it.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "epa-608#sec.recovery"
+      ]
+    },
+    {
+      "id": "refrigerant-recycling",
+      "term": "Refrigerant recycling",
+      "definition": "Cleaning refrigerant for reuse by oil separation and single or multiple passes through filter-driers, typically done on-site with approved equipment.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "epa-608#sec.recycling"
+      ]
+    },
+    {
+      "id": "refrigerant-venting-prohibition",
+      "term": "Refrigerant venting prohibition",
+      "definition": "Under EPA Section 608, knowingly releasing regulated refrigerants into the atmosphere during service, maintenance, repair, or disposal is prohibited except in limited, allowable cases.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Refrigerant safety",
+      "aliases": [
+        "venting prohibition"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "epa-608#sec.venting"
+      ]
+    },
+    {
+      "id": "arc-flash",
+      "term": "Arc flash",
+      "definition": "A dangerous release of energy caused by an electric arc, producing intense heat, light, pressure, and risk of serious injury.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70e#sec.130"
+      ]
+    },
+    {
+      "id": "arc-flash-boundary",
+      "term": "Arc flash boundary",
+      "definition": "The distance from energized equipment within which a person could receive a second-degree burn from an arc flash, set by an incident energy analysis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "AFB"
+      ],
+      "confusables": [
+        "Arc flash",
+        "Electrical working clearance"
+      ],
+      "sources": [
+        "nfpa-70e#sec.130"
+      ]
+    },
+    {
+      "id": "disconnect-means",
+      "term": "Disconnect means",
+      "definition": "A device or group of devices used to disconnect equipment from its power supply, required by the NEC for service and maintenance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "disconnect",
+        "service disconnect"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-100",
+        "nfpa-70#sec.art-440"
+      ]
+    },
+    {
+      "id": "electrical-working-clearance",
+      "term": "Electrical working clearance",
+      "definition": "The minimum unobstructed space required in front of electrical equipment for safe inspection, testing, and servicing per NEC requirements.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "working space"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-110-26"
+      ]
+    },
+    {
+      "id": "equipment-grounding",
+      "term": "Equipment grounding",
+      "definition": "The intentional connection of conductive equipment parts to earth or an equipment grounding conductor to reduce shock and fire hazards.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "grounding"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-100",
+        "nfpa-70#sec.art-250"
+      ]
+    },
+    {
+      "id": "ground-fault-circuit-interrupter",
+      "term": "Ground-Fault Circuit Interrupter",
+      "definition": "A device that detects imbalances between hot and neutral conductors and quickly interrupts power to protect against electric shock.",
+      "formula": "GFCI",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "GFCI"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-100",
+        "nfpa-70#sec.art-210"
+      ]
+    },
+    {
+      "id": "lockout-tagout",
+      "term": "Lockout/Tagout",
+      "definition": "OSHA-required procedures to shut off and isolate energy sources and prevent re-energization while servicing or repairing equipment.",
+      "formula": "LOTO",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "LOTO",
+        "lockout",
+        "tagout"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-1910.147#sec.scope"
+      ]
+    },
+    {
+      "id": "overcurrent-protection",
+      "term": "Overcurrent protection",
+      "definition": "Devices such as fuses or circuit breakers that interrupt current when it exceeds safe levels to prevent overheating or fire.",
+      "formula": "OCPD",
+      "unit": 3,
+      "unitTitle": "Electrical safety",
+      "aliases": [
+        "OCPD"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "nfpa-70#sec.art-100",
+        "nfpa-70#sec.art-240"
+      ]
+    },
+    {
+      "id": "carbon-monoxide-hazard",
+      "term": "Carbon monoxide hazard",
+      "definition": "The risk posed by odorless, colorless carbon monoxide produced by incomplete combustion, which can be fatal in poorly ventilated spaces.",
+      "formula": "CO",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [
+        "CO hazard"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "ashrae-62.2#sec.hazards",
+        "nfpa-54#sec.safety"
+      ]
+    },
+    {
+      "id": "combustion-air",
+      "term": "Combustion air",
+      "definition": "Air provided to fuel-burning appliances to support proper combustion and prevent negative pressure issues, as required by mechanical and fuel gas codes.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.combustion-air",
+        "nfpa-54#sec.combustion"
+      ]
+    },
+    {
+      "id": "makeup-air",
+      "term": "Makeup air",
+      "definition": "Outdoor air introduced to replace air exhausted by mechanical systems to maintain pressure balance in a building.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.ventilation"
+      ]
+    },
+    {
+      "id": "mechanical-ventilation",
+      "term": "Mechanical ventilation",
+      "definition": "Ventilation provided by powered equipment, such as fans or blowers, to supply or exhaust air as required by code.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.ventilation"
+      ]
+    },
+    {
+      "id": "natural-ventilation",
+      "term": "Natural ventilation",
+      "definition": "Air movement into and out of a space by natural forces such as wind or temperature difference, without powered ventilation equipment.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "icc-imc#sec.ventilation"
+      ]
+    },
+    {
+      "id": "outdoor-air",
+      "term": "Outdoor air",
+      "definition": "Air taken from outside the building envelope, used for ventilation, dilution, or combustion purposes.",
+      "formula": "OA",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [
+        "OA"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "ashrae-62.1#sec.definitions"
+      ]
+    },
+    {
+      "id": "ventilation-rate",
+      "term": "Ventilation rate",
+      "definition": "The amount of outdoor air required to be provided to a space, often expressed in cubic feet per minute (cfm) per person or per unit area.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Ventilation",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "ashrae-62.1#sec.ventilation"
+      ]
+    },
+    {
+      "id": "asphyxiation",
+      "term": "Asphyxiation",
+      "definition": "Suffocation resulting from lack of oxygen or displacement of breathable air, a risk in confined spaces or areas with heavy refrigerant leaks.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [
+        "suffocation"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-1910.146#sec.hazards",
+        "ashrae-15#sec.safety"
+      ]
+    },
+    {
+      "id": "cold-burn-frostbite",
+      "term": "Cold burn (frostbite)",
+      "definition": "Tissue damage caused by contact with extremely cold refrigerants or surfaces, which can cause burns similar to thermal burns.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [
+        "frostbite",
+        "refrigerant-burn"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "ashrae-15#sec.first-aid",
+        "osha-hazcom#sec.1910-1200"
+      ]
+    },
+    {
+      "id": "confined-space",
+      "term": "Confined space",
+      "definition": "A space large enough to enter but with limited means of entry/exit and not designed for continuous occupancy, which may present atmospheric or physical hazards.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-1910.146#sec.definitions"
+      ]
+    },
+    {
+      "id": "fall-protection",
+      "term": "Fall protection",
+      "definition": "Systems or equipment, including harnesses, guardrails, or warning lines, used to prevent or arrest falls from heights.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-1926.501#sec.scope"
+      ]
+    },
+    {
+      "id": "permit-required-confined-space",
+      "term": "Permit-required confined space",
+      "definition": "A confined space containing a hazardous atmosphere, engulfment risk, or other serious hazard that requires a written entry permit, atmospheric testing, and an attendant.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [
+        "PRCS"
+      ],
+      "confusables": [
+        "Confined space",
+        "Asphyxiation"
+      ],
+      "sources": [
+        "osha-1910.146#sec.permit-space"
+      ]
+    },
+    {
+      "id": "personal-protective-equipment",
+      "term": "Personal Protective Equipment",
+      "definition": "Equipment worn by workers to minimize exposure to hazards, such as eye protection, gloves, footwear, hearing protection, or respiratory protection.",
+      "formula": "PPE",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [
+        "PPE"
+      ],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-1910.132#sec.scope"
+      ]
+    },
+    {
+      "id": "respiratory-protection",
+      "term": "Respiratory protection",
+      "definition": "Equipment and procedures used to protect against inhalation of harmful dusts, vapors, gases, or oxygen-deficient atmospheres.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [],
+      "confusables": [
+        "Building code",
+        "International Mechanical Code"
+      ],
+      "sources": [
+        "osha-1910.134#sec.scope"
+      ]
+    },
+    {
+      "id": "safety-data-sheet",
+      "term": "Safety Data Sheet",
+      "definition": "A standardized document (16 sections) that communicates chemical hazards, safe handling, PPE, and emergency procedures for a substance or mixture.",
+      "formula": "SDS",
+      "unit": 5,
+      "unitTitle": "PPE and hazards",
+      "aliases": [
+        "SDS",
+        "Safety Data Sheet"
+      ],
+      "confusables": [
+        "Refrigerant asphyxiation hazard",
+        "Carbon monoxide hazard"
+      ],
+      "sources": [
+        "osha-hazcom#sec.1910-1200"
+      ]
+    }
+  ]
+}

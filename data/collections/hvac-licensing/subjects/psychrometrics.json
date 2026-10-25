@@ -1,0 +1,782 @@
+{
+  "version": 1,
+  "id": "psychrometrics",
+  "collectionId": "hvac-licensing",
+  "section": "core",
+  "name": "Psychrometrics",
+  "shortName": "Psychrometrics",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Air properties"
+    },
+    {
+      "number": 2,
+      "title": "Humidity"
+    },
+    {
+      "number": 3,
+      "title": "Enthalpy"
+    },
+    {
+      "number": 4,
+      "title": "Charts"
+    },
+    {
+      "number": 5,
+      "title": "Processes"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "atmospheric-pressure",
+      "term": "Atmospheric Pressure",
+      "definition": "The pressure exerted by the weight of the atmosphere; standard sea level pressure is 29.92 in. Hg.",
+      "aliases": [
+        "Barometric pressure"
+      ],
+      "confusables": [
+        "Vapor Pressure",
+        "Psychrometrics"
+      ],
+      "formula": "in. Hg (US)",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "density-of-air",
+      "term": "Density of Air",
+      "definition": "The mass of air per unit volume, typically expressed in pounds per cubic foot.",
+      "aliases": [
+        "Air density"
+      ],
+      "confusables": [
+        "Specific Volume",
+        "Humidity Ratio"
+      ],
+      "formula": "lb/ft³",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "dew-point-temperature",
+      "term": "Dew-Point Temperature",
+      "definition": "The temperature at which air becomes saturated and moisture begins to condense when cooled at constant pressure.",
+      "aliases": [
+        "DP",
+        "Dew point"
+      ],
+      "confusables": [
+        "Wet-Bulb Temperature",
+        "Saturation temperature (moist air)"
+      ],
+      "formula": "°F (US)",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "dry-bulb-temperature",
+      "term": "Dry-Bulb Temperature",
+      "definition": "The temperature of air measured by a standard thermometer with a dry sensing element.",
+      "aliases": [
+        "DB",
+        "Dry bulb"
+      ],
+      "confusables": [
+        "Wet-Bulb Temperature",
+        "Dew-Point Temperature"
+      ],
+      "formula": "°F (US)",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "psychrometrics",
+      "term": "Psychrometrics",
+      "definition": "The study of the thermodynamic properties of moist air and the use of those properties to analyze air-conditioning processes.",
+      "aliases": [],
+      "confusables": [
+        "Dry-Bulb Temperature",
+        "Wet-Bulb Temperature"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "saturation",
+      "term": "Saturation",
+      "definition": "The condition of air when it contains the maximum amount of water vapor possible at a given temperature and pressure.",
+      "aliases": [
+        "Saturated air"
+      ],
+      "confusables": [
+        "Relative Humidity",
+        "Psychrometrics"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "saturation-temperature-moist-air",
+      "term": "Saturation temperature (moist air)",
+      "definition": "The temperature at which moist air reaches saturation at a given pressure and holds the maximum water vapor possible.",
+      "aliases": [
+        "T_sat"
+      ],
+      "confusables": [
+        "Dew-Point Temperature",
+        "Wet-Bulb Temperature"
+      ],
+      "formula": "°F (US)",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "specific-heat-of-air",
+      "term": "Specific Heat of Air",
+      "definition": "The amount of heat required to raise the temperature of one pound of air by one degree Fahrenheit.",
+      "aliases": [
+        "cp"
+      ],
+      "confusables": [
+        "Sensible heat",
+        "Enthalpy"
+      ],
+      "formula": "Btu/lb·°F",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "specific-volume",
+      "term": "Specific Volume",
+      "definition": "The volume occupied by a unit mass of dry air, usually expressed in cubic feet per pound of dry air.",
+      "aliases": [
+        "v"
+      ],
+      "confusables": [
+        "Humidity Ratio",
+        "Psychrometrics"
+      ],
+      "formula": "ft³/lb dry air",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "wet-bulb-depression",
+      "term": "Wet-Bulb Depression",
+      "definition": "The difference between dry-bulb temperature and wet-bulb temperature.",
+      "aliases": [],
+      "confusables": [
+        "Enthalpy",
+        "Psychrometrics"
+      ],
+      "formula": "DB - WB",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "wet-bulb-temperature",
+      "term": "Wet-Bulb Temperature",
+      "definition": "The temperature read by a thermometer whose bulb is covered by a wetted wick, measured in moving air.",
+      "aliases": [
+        "WB",
+        "Wet bulb"
+      ],
+      "confusables": [
+        "Dry-Bulb Temperature",
+        "Dew-Point Temperature"
+      ],
+      "formula": "°F (US)",
+      "unit": 1,
+      "unitTitle": "Air properties",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "absolute-humidity",
+      "term": "Absolute Humidity",
+      "definition": "The mass of water vapor per unit volume of moist air.",
+      "aliases": [
+        "Vapor density"
+      ],
+      "confusables": [
+        "Humidity Ratio",
+        "Relative Humidity"
+      ],
+      "formula": "grains/ft³ or lb/ft³",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "degree-of-saturation",
+      "term": "Degree of Saturation",
+      "definition": "The ratio of the actual humidity ratio to the humidity ratio of saturated air at the same temperature and pressure.",
+      "aliases": [
+        "μ"
+      ],
+      "confusables": [
+        "Relative Humidity",
+        "Humidity Ratio"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "dehumidification",
+      "term": "Dehumidification",
+      "definition": "The process of removing water vapor from air to lower its humidity ratio.",
+      "aliases": [],
+      "confusables": [
+        "Humidification",
+        "Condensation"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "grains-of-moisture",
+      "term": "Grains of Moisture",
+      "definition": "A unit of mass for water vapor; 7,000 grains equal 1 pound.",
+      "aliases": [
+        "Grains"
+      ],
+      "confusables": [
+        "Humidity Ratio",
+        "Psychrometrics"
+      ],
+      "formula": "grains/lb dry air",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "humidification",
+      "term": "Humidification",
+      "definition": "The process of adding water vapor to air to raise its humidity ratio.",
+      "aliases": [],
+      "confusables": [
+        "Dehumidification",
+        "Evaporative Cooling"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "humidity-ratio",
+      "term": "Humidity Ratio",
+      "definition": "The ratio of the mass of water vapor to the mass of dry air in a moist air mixture.",
+      "aliases": [
+        "Mixing ratio",
+        "W",
+        "Specific humidity (approx.)"
+      ],
+      "confusables": [
+        "Relative Humidity",
+        "Absolute Humidity"
+      ],
+      "formula": "lb water vapor/lb dry air",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "relative-humidity",
+      "term": "Relative Humidity",
+      "definition": "The ratio of the actual vapor pressure to the saturation vapor pressure at the same temperature, expressed as a percent.",
+      "aliases": [
+        "RH",
+        "%RH"
+      ],
+      "confusables": [
+        "Humidity Ratio",
+        "Absolute Humidity"
+      ],
+      "formula": "%",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "saturation-vapor-pressure",
+      "term": "Saturation vapor pressure",
+      "definition": "The partial pressure exerted by water vapor in saturated moist air at a given temperature.",
+      "aliases": [
+        "P_sat"
+      ],
+      "confusables": [
+        "Vapor Pressure",
+        "Relative Humidity"
+      ],
+      "formula": "psia/in. Hg",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "vapor-pressure",
+      "term": "Vapor Pressure",
+      "definition": "The partial pressure exerted by water vapor in a moist air mixture.",
+      "aliases": [
+        "Pv"
+      ],
+      "confusables": [
+        "Saturation vapor pressure",
+        "Atmospheric Pressure"
+      ],
+      "formula": "psia/in. Hg",
+      "unit": 2,
+      "unitTitle": "Humidity",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "adiabatic-saturation",
+      "term": "Adiabatic Saturation",
+      "definition": "A process in which air is cooled and humidified by evaporation of water with no heat exchange to the surroundings.",
+      "aliases": [
+        "Evaporative cooling process"
+      ],
+      "confusables": [
+        "Evaporative Cooling",
+        "Psychrometrics"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Enthalpy",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "apparent-sensible-heat-ratio",
+      "term": "Apparent Sensible Heat Ratio",
+      "definition": "The ratio of sensible heat removal to total heat removal based on measured entering and leaving air conditions.",
+      "aliases": [
+        "ASHR"
+      ],
+      "confusables": [
+        "Sensible Heat Ratio",
+        "Bypass Factor"
+      ],
+      "formula": "ASHR = Qs / Qt",
+      "unit": 3,
+      "unitTitle": "Enthalpy",
+      "sources": [
+        "acca-manual-n#sec.general",
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "enthalpy",
+      "term": "Enthalpy",
+      "definition": "The total heat content of moist air per unit mass of dry air, including sensible and latent heat.",
+      "aliases": [
+        "h",
+        "Total heat"
+      ],
+      "confusables": [
+        "Sensible heat",
+        "Latent heat"
+      ],
+      "formula": "Btu/lb dry air",
+      "unit": 3,
+      "unitTitle": "Enthalpy",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "sensible-heat-ratio",
+      "term": "Sensible Heat Ratio",
+      "definition": "The ratio of sensible heat load to total heat load for a process.",
+      "aliases": [
+        "SHR",
+        "Sensible heat factor"
+      ],
+      "confusables": [
+        "Bypass Factor",
+        "Apparatus Dew Point"
+      ],
+      "formula": "SHR = Qs / Qt",
+      "unit": 3,
+      "unitTitle": "Enthalpy",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "total-heat",
+      "term": "Total Heat",
+      "definition": "The sum of sensible heat and latent heat; equivalent to enthalpy change for air-water vapor mixtures.",
+      "aliases": [
+        "Enthalpy difference"
+      ],
+      "confusables": [
+        "Sensible heat",
+        "Latent heat"
+      ],
+      "formula": "Btu",
+      "unit": 3,
+      "unitTitle": "Enthalpy",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "constant-dry-bulb-line",
+      "term": "Constant Dry-Bulb Line",
+      "definition": "A vertical line on a standard psychrometric chart representing constant dry-bulb temperature.",
+      "aliases": [],
+      "confusables": [
+        "Constant Humidity Ratio Line",
+        "Psychrometrics"
+      ],
+      "formula": "°F",
+      "unit": 4,
+      "unitTitle": "Charts",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "constant-humidity-ratio-line",
+      "term": "Constant Humidity Ratio Line",
+      "definition": "A horizontal line on a standard psychrometric chart representing constant moisture content.",
+      "aliases": [
+        "Constant W line"
+      ],
+      "confusables": [
+        "Psychrometrics",
+        "Dry-Bulb Temperature"
+      ],
+      "formula": "lb/lb dry air",
+      "unit": 4,
+      "unitTitle": "Charts",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "enthalpy-line",
+      "term": "Enthalpy Line",
+      "definition": "A line on the psychrometric chart representing constant total heat content of moist air.",
+      "aliases": [
+        "Constant enthalpy line"
+      ],
+      "confusables": [
+        "Wet-Bulb Line",
+        "Psychrometrics"
+      ],
+      "formula": "Btu/lb dry air",
+      "unit": 4,
+      "unitTitle": "Charts",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "psychrometric-chart",
+      "term": "Psychrometric Chart",
+      "definition": "A graphical representation of the thermodynamic properties of moist air used to analyze air-conditioning processes.",
+      "aliases": [
+        "Psych chart"
+      ],
+      "confusables": [
+        "Psychrometrics",
+        "Dry-Bulb Temperature"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Charts",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "saturation-line",
+      "term": "Saturation Line",
+      "definition": "The curved line on a psychrometric chart representing 100 percent relative humidity.",
+      "aliases": [
+        "100% RH line"
+      ],
+      "confusables": [
+        "Wet-Bulb Line",
+        "Enthalpy Line"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Charts",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "wet-bulb-line",
+      "term": "Wet-Bulb Line",
+      "definition": "A line on the psychrometric chart representing constant wet-bulb temperature.",
+      "aliases": [],
+      "confusables": [
+        "Saturation Line",
+        "Enthalpy Line"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Charts",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "apparatus-dew-point",
+      "term": "Apparatus Dew Point",
+      "definition": "The effective dew-point temperature of a cooling coil surface representing the condition of air leaving an ideal coil.",
+      "aliases": [
+        "ADP",
+        "Coil ADP"
+      ],
+      "confusables": [
+        "Dew-Point Temperature",
+        "Bypass Factor"
+      ],
+      "formula": "°F",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "bypass-factor",
+      "term": "Bypass Factor",
+      "definition": "The fraction of air that passes through a coil without being fully conditioned.",
+      "aliases": [
+        "BF"
+      ],
+      "confusables": [
+        "Apparatus Dew Point",
+        "Contact Factor"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "contact-factor",
+      "term": "Contact Factor",
+      "definition": "The fraction of air that comes into contact with the coil surface and is conditioned.",
+      "aliases": [
+        "CF"
+      ],
+      "confusables": [
+        "Bypass Factor",
+        "Apparatus Dew Point"
+      ],
+      "formula": "CF = 1 - BF",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general"
+      ]
+    },
+    {
+      "id": "cooling-with-dehumidification",
+      "term": "Cooling with Dehumidification",
+      "definition": "Cooling air below its dew point, causing condensation and removing moisture while lowering temperature.",
+      "aliases": [
+        "Coil cooling"
+      ],
+      "confusables": [
+        "Sensible Cooling",
+        "Dehumidification"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "evaporative-cooling",
+      "term": "Evaporative Cooling",
+      "definition": "Adiabatic cooling process in which water is evaporated into air, lowering dry-bulb temperature and increasing humidity.",
+      "aliases": [
+        "Direct evaporative cooling",
+        "Swamp cooling"
+      ],
+      "confusables": [
+        "Adiabatic Saturation",
+        "Sensible Cooling"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "heating-with-humidification",
+      "term": "Heating with Humidification",
+      "definition": "Heating air while adding moisture, typically increasing both dry-bulb temperature and humidity ratio.",
+      "aliases": [],
+      "confusables": [
+        "Sensible Heating",
+        "Humidification"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "mixing",
+      "term": "Mixing",
+      "definition": "The process of combining two or more air streams to form a third air stream with properties determined by mass and energy balance.",
+      "aliases": [
+        "Air mixing"
+      ],
+      "confusables": [
+        "Psychrometrics",
+        "Dry-Bulb Temperature"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "sensible-cooling",
+      "term": "Sensible Cooling",
+      "definition": "Cooling air at constant humidity ratio, resulting in a decrease in dry-bulb temperature.",
+      "aliases": [],
+      "confusables": [
+        "Cooling with Dehumidification",
+        "Sensible Heating"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "sensible-heating",
+      "term": "Sensible Heating",
+      "definition": "Heating air at constant humidity ratio, resulting in an increase in dry-bulb temperature.",
+      "aliases": [],
+      "confusables": [
+        "Sensible Cooling",
+        "Heating with Humidification"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    },
+    {
+      "id": "supply-air-temperature",
+      "term": "Supply Air Temperature",
+      "definition": "The dry-bulb temperature of air delivered from a conditioning unit into the conditioned space.",
+      "aliases": [
+        "SAT"
+      ],
+      "confusables": [
+        "Delta-T",
+        "Dry-Bulb Temperature"
+      ],
+      "formula": "°F",
+      "unit": 5,
+      "unitTitle": "Processes",
+      "sources": [
+        "ashrae-handbook-fundamentals#sec.general",
+        "acca-manual-n#sec.general"
+      ]
+    }
+  ]
+}

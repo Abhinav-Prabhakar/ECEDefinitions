@@ -1,0 +1,795 @@
+{
+  "version": 1,
+  "id": "refrigeration-cycle",
+  "collectionId": "hvac-licensing",
+  "section": "core",
+  "name": "Refrigeration Cycle",
+  "shortName": "Refrigeration cycle",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Cycle basics"
+    },
+    {
+      "number": 2,
+      "title": "Components"
+    },
+    {
+      "number": 3,
+      "title": "Refrigerants"
+    },
+    {
+      "number": 4,
+      "title": "State changes"
+    },
+    {
+      "number": 5,
+      "title": "System operation"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "british-thermal-unit",
+      "term": "British thermal unit",
+      "definition": "The amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit.",
+      "formula": "Btu",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [
+        "Btu"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.british-thermal-unit"
+      ]
+    },
+    {
+      "id": "cooling-capacity",
+      "term": "Cooling capacity",
+      "definition": "The total rate of heat removal from the conditioned space by a refrigeration system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "nate-glossary#sec.cooling-capacity"
+      ]
+    },
+    {
+      "id": "heat-transfer",
+      "term": "Heat transfer",
+      "definition": "The movement of thermal energy from a warmer substance to a cooler substance by conduction, convection, or radiation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Sensible heat"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.heat-transfer"
+      ]
+    },
+    {
+      "id": "latent-heat",
+      "term": "Latent heat",
+      "definition": "Heat absorbed or released during a phase change at constant temperature and pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.latent-heat"
+      ]
+    },
+    {
+      "id": "refrigeration-cycle",
+      "term": "Refrigeration cycle",
+      "definition": "A closed loop process that transfers heat from a low-temperature space to a high-temperature space.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [],
+      "confusables": [
+        "Heat transfer",
+        "Sensible heat"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.refrigeration-cycle"
+      ]
+    },
+    {
+      "id": "refrigeration-effect",
+      "term": "Refrigeration effect",
+      "definition": "The amount of heat absorbed in the evaporator per unit mass of refrigerant circulated.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "rse-glossary#sec.refrigeration-effect"
+      ]
+    },
+    {
+      "id": "sensible-heat",
+      "term": "Sensible heat",
+      "definition": "Heat that causes a change in temperature of a substance without a change in phase.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.sensible-heat"
+      ]
+    },
+    {
+      "id": "ton-of-refrigeration",
+      "term": "Ton of refrigeration",
+      "definition": "A rate of heat removal equal to 12,000 British thermal units per hour.",
+      "formula": "12000 Btu/h",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [
+        "ton"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.ton-of-refrigeration"
+      ]
+    },
+    {
+      "id": "volumetric-efficiency",
+      "term": "Volumetric efficiency",
+      "definition": "The ratio of the volume of vapor actually drawn into a compressor to its theoretical displacement.",
+      "formula": "ηv = actual / theoretical",
+      "unit": 1,
+      "unitTitle": "Cycle basics",
+      "aliases": [
+        "VE"
+      ],
+      "confusables": [
+        "Compression ratio",
+        "Refrigeration effect"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "accumulator",
+      "term": "Accumulator",
+      "definition": "A vessel on the low side that prevents liquid refrigerant from entering the compressor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.accumulator"
+      ]
+    },
+    {
+      "id": "capillary-tube",
+      "term": "Capillary tube",
+      "definition": "A fixed-length small-diameter tube that creates a pressure drop to meter refrigerant flow.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "rse-glossary#sec.capillary-tube"
+      ]
+    },
+    {
+      "id": "compressor",
+      "term": "Compressor",
+      "definition": "A component that increases refrigerant pressure and temperature by reducing its volume.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.compressor"
+      ]
+    },
+    {
+      "id": "condenser",
+      "term": "Condenser",
+      "definition": "A heat exchanger that rejects heat from hot refrigerant vapor to a cooler medium, causing condensation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.condenser"
+      ]
+    },
+    {
+      "id": "electronic-expansion-valve",
+      "term": "Electronic expansion valve",
+      "definition": "A metering device whose opening is adjusted by a stepper motor in response to sensor signals.",
+      "formula": "EEV",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [
+        "EEV"
+      ],
+      "confusables": [
+        "Thermostatic expansion valve",
+        "Capillary tube"
+      ],
+      "sources": [
+        "nate-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "evaporator",
+      "term": "Evaporator",
+      "definition": "A heat exchanger that absorbs heat into refrigerant, causing liquid to evaporate into vapor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.evaporator"
+      ]
+    },
+    {
+      "id": "filter-drier",
+      "term": "Filter-drier",
+      "definition": "A device that removes moisture and particulate contaminants from the refrigerant circuit.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [
+        "filter dryer"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "rse-glossary#sec.filter-drier"
+      ]
+    },
+    {
+      "id": "liquid-line",
+      "term": "Liquid line",
+      "definition": "The tubing that carries liquid refrigerant from the condenser outlet to the metering device.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Suction line",
+        "Liquid Line Temperature"
+      ],
+      "sources": [
+        "rse-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "metering-device",
+      "term": "Metering device",
+      "definition": "A component that restricts refrigerant flow, creating a pressure drop between high and low sides.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [
+        "expansion-device"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.metering-device"
+      ]
+    },
+    {
+      "id": "oil-separator",
+      "term": "Oil separator",
+      "definition": "A device that removes lubricating oil from hot discharge gas and returns it to the compressor crankcase.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Accumulator",
+        "Filter-drier"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "receiver",
+      "term": "Receiver",
+      "definition": "A vessel on the high side that stores liquid refrigerant between the condenser and metering device.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.receiver"
+      ]
+    },
+    {
+      "id": "sight-glass",
+      "term": "Sight glass",
+      "definition": "A transparent window in the liquid line used to observe refrigerant flow and moisture indication.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "nate-glossary#sec.sight-glass"
+      ]
+    },
+    {
+      "id": "suction-line",
+      "term": "Suction line",
+      "definition": "The tubing that carries low-pressure refrigerant vapor from the evaporator outlet back to the compressor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [],
+      "confusables": [
+        "Liquid line",
+        "Suction Line Temperature"
+      ],
+      "sources": [
+        "rse-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "thermostatic-expansion-valve",
+      "term": "Thermostatic expansion valve",
+      "definition": "A metering device that modulates refrigerant flow based on evaporator outlet superheat.",
+      "formula": "TXV",
+      "unit": 2,
+      "unitTitle": "Components",
+      "aliases": [
+        "TXV"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "nate-glossary#sec.thermostatic-expansion-valve"
+      ]
+    },
+    {
+      "id": "azeotrope",
+      "term": "Azeotrope",
+      "definition": "A refrigerant blend that evaporates and condenses at a constant temperature like a pure compound.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.azeotrope"
+      ]
+    },
+    {
+      "id": "global-warming-potential",
+      "term": "Global warming potential",
+      "definition": "A relative measure of how much heat a greenhouse gas traps compared to carbon dioxide over a time horizon.",
+      "formula": "GWP",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [
+        "GWP"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "epa-608#sec.gwp"
+      ]
+    },
+    {
+      "id": "ozone-depletion-potential",
+      "term": "Ozone depletion potential",
+      "definition": "A relative measure of a substance's ability to destroy stratospheric ozone compared to R-11.",
+      "formula": "ODP",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [
+        "ODP"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "epa-608#sec.odp"
+      ]
+    },
+    {
+      "id": "r-134a",
+      "term": "R-134a",
+      "definition": "A hydrofluorocarbon refrigerant used in automotive and some commercial refrigeration applications.",
+      "formula": "HFC-134a",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [
+        "HFC-134a"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "epa-608#sec.refrigerants"
+      ]
+    },
+    {
+      "id": "r-22",
+      "term": "R-22",
+      "definition": "A hydrochlorofluorocarbon refrigerant phased out in many applications due to ozone depletion potential.",
+      "formula": "HCFC-22",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [
+        "HCFC-22"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "epa-608#sec.refrigerants"
+      ]
+    },
+    {
+      "id": "r-410a",
+      "term": "R-410A",
+      "definition": "A near-azeotropic hydrofluorocarbon blend refrigerant commonly used in residential air conditioning.",
+      "formula": "HFC blend",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "epa-608#sec.refrigerants"
+      ]
+    },
+    {
+      "id": "refrigerant",
+      "term": "Refrigerant",
+      "definition": "A working fluid that changes phase to absorb and release heat in a refrigeration cycle.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.refrigerant"
+      ]
+    },
+    {
+      "id": "refrigerant-oil",
+      "term": "Refrigerant oil",
+      "definition": "Lubricant circulated with refrigerant that protects the compressor and seals internal clearances.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [
+        "compressor oil"
+      ],
+      "confusables": [
+        "Refrigerant",
+        "Accumulator"
+      ],
+      "sources": [
+        "rse-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "zeotrope",
+      "term": "Zeotrope",
+      "definition": "A refrigerant blend whose components evaporate and condense at different temperatures, creating a temperature glide.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Refrigerants",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.zeotrope"
+      ]
+    },
+    {
+      "id": "condensation",
+      "term": "Condensation",
+      "definition": "The phase change of a vapor to liquid by rejecting heat, occurring in the condenser.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "State changes",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.condensation"
+      ]
+    },
+    {
+      "id": "evaporation",
+      "term": "Evaporation",
+      "definition": "The phase change of a liquid to vapor by absorbing heat, occurring in the evaporator.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "State changes",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.evaporation"
+      ]
+    },
+    {
+      "id": "flash-gas",
+      "term": "Flash gas",
+      "definition": "Vapor that forms when liquid refrigerant pressure drops abruptly through the metering device.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "State changes",
+      "aliases": [],
+      "confusables": [
+        "Evaporation",
+        "Subcooled Liquid"
+      ],
+      "sources": [
+        "rse-glossary#sec.general"
+      ]
+    },
+    {
+      "id": "pressure-temperature-relationship",
+      "term": "Pressure-temperature relationship",
+      "definition": "The correlation showing how a refrigerant's saturation pressure and temperature change together.",
+      "formula": "P-T chart",
+      "unit": 4,
+      "unitTitle": "State changes",
+      "aliases": [
+        "P-T relationship"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "rse-glossary#sec.pressure-temperature-relationship"
+      ]
+    },
+    {
+      "id": "compressor-ratio",
+      "term": "Compression ratio",
+      "definition": "The ratio of absolute discharge pressure to absolute suction pressure in a compressor.",
+      "formula": "Pd/Ps",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "rse-glossary#sec.compression-ratio"
+      ]
+    },
+    {
+      "id": "discharge-pressure",
+      "term": "Discharge pressure",
+      "definition": "The refrigerant pressure in the high side at the compressor discharge outlet.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [
+        "head pressure"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "nate-glossary#sec.discharge-pressure"
+      ]
+    },
+    {
+      "id": "four-way-valve",
+      "term": "Four-way valve",
+      "definition": "A reversing valve that changes refrigerant direction to switch a heat pump between heating and cooling modes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [
+        "reversing valve"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "nate-glossary#sec.four-way-valve"
+      ]
+    },
+    {
+      "id": "heat-of-compression",
+      "term": "Heat of compression",
+      "definition": "The heat added to refrigerant vapor by mechanical work during compression.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.heat-of-compression"
+      ]
+    },
+    {
+      "id": "high-side",
+      "term": "High side",
+      "definition": "The portion of a refrigeration system operating at condenser pressure between compressor discharge and metering device inlet.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [
+        "discharge side"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.high-side"
+      ]
+    },
+    {
+      "id": "low-side",
+      "term": "Low side",
+      "definition": "The portion of a refrigeration system operating at evaporator pressure between metering device outlet and compressor suction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [
+        "suction side"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.low-side"
+      ]
+    },
+    {
+      "id": "reversed-cycle",
+      "term": "Reversed cycle",
+      "definition": "A refrigeration system operating as a heat pump by reversing refrigerant flow to heat the conditioned space.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [
+        "heat pump cycle"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "ashrae-glossary#sec.reversed-cycle"
+      ]
+    },
+    {
+      "id": "suction-pressure",
+      "term": "Suction pressure",
+      "definition": "The refrigerant pressure in the low side at the compressor suction inlet.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "nate-glossary#sec.suction-pressure"
+      ]
+    },
+    {
+      "id": "total-heat-of-rejection",
+      "term": "Total heat of rejection",
+      "definition": "The sum of refrigeration effect and heat of compression rejected by the condenser.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "System operation",
+      "aliases": [
+        "THR"
+      ],
+      "confusables": [
+        "Refrigeration cycle",
+        "Heat transfer"
+      ],
+      "sources": [
+        "rse-glossary#sec.total-heat-of-rejection"
+      ]
+    }
+  ]
+}

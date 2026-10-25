@@ -21,6 +21,15 @@
       "generatedAt": "2026-10-25"
     },
     {
+      "id": "hvac-licensing",
+      "name": "HVAC Licensing",
+      "tagline": "HVAC, in one line.",
+      "path": "data/collections/hvac-licensing",
+      "subjects": 5,
+      "definitions": 206,
+      "generatedAt": "2026-10-25"
+    },
+    {
       "id": "medical-terminology",
       "name": "Medical Terminology",
       "tagline": "Medicine, in one line.",
