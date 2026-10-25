@@ -4063,6 +4063,66 @@
       "locatorScheme": "section slug"
     },
     {
+      "id": "soca-web-soc",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "System on a chip (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/System_on_a_chip",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-amba",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Advanced Microcontroller Bus Architecture (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Microcontroller_Bus_Architecture",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-reconfigurable-computing",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Reconfigurable computing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reconfigurable_computing",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-soft-microprocessor",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Soft microprocessor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soft_microprocessor",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-aes",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Advanced Encryption Standard (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Encryption_Standard",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-jpeg",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "JPEG (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/JPEG",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
       "id": "vlsitd-web-sheet-resistance",
       "semester": "3-2",
       "subjectId": "vlsi-technology-and-design",

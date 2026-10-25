@@ -12,7 +12,10 @@
   "coveredUnits": [
     1,
     2,
-    3
+    3,
+    4,
+    5,
+    6
   ],
   "definitions": [
     {
@@ -454,6 +457,304 @@
       ],
       "id": "strecker-ravi-model",
       "formula": ""
+    },
+    {
+      "id": "bus-based-interconnect",
+      "term": "Bus-Based Interconnect",
+      "definition": "Traditional on-chip communication in which a shared global bus connects the blocks of a chip, scaling poorly as core counts grow.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-soc#Bus-based-communication"
+      ]
+    },
+    {
+      "id": "amba",
+      "term": "AMBA",
+      "definition": "Royalty-free open on-chip interconnect specification from Arm, widely used as the standard bus for connecting functional blocks on a chip.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#Introduction",
+        "soca-web-soc#Bus-based-communication"
+      ]
+    },
+    {
+      "id": "ahb",
+      "term": "AHB",
+      "definition": "Bus protocol with 64 to 1024-bit data paths in which a multiplexer grants access to one master at a time.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#Advanced-High-performance-Bus-AHB"
+      ]
+    },
+    {
+      "id": "ahb-lite",
+      "term": "AHB-Lite",
+      "definition": "Subset of a high-performance on-chip bus protocol for designs with a single master.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#Advanced-High-performance-Bus-AHB"
+      ]
+    },
+    {
+      "id": "apb",
+      "term": "APB",
+      "definition": "Low-complexity bus for low-bandwidth control accesses, such as peripheral register interfaces, with no bursts and 32-bit low-frequency operation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#Advanced-Peripheral-Bus-APB"
+      ]
+    },
+    {
+      "id": "axi",
+      "term": "AXI",
+      "definition": "Third-generation Arm bus interface for high-frequency designs, separating address and data phases, supporting bursts and out-of-order responses to multiple outstanding addresses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#Advanced-eXtensible-Interface-AXI"
+      ]
+    },
+    {
+      "id": "ace",
+      "term": "ACE",
+      "definition": "Extension of the third-generation Arm interface adding signalling for system-wide cache coherency, so several processors can share memory.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#AXI-Coherency-Extensions-ACE-and-ACE-Lite"
+      ]
+    },
+    {
+      "id": "coherent-hub-interface",
+      "term": "Coherent Hub Interface",
+      "definition": "Fifth-generation Arm interconnect protocol with a redesigned high-speed transport layer meant to reduce congestion in highly scalable chips.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Interconnect Customization and Configuration",
+      "sources": [
+        "soca-web-amba#AMBA-protocol-specifications"
+      ]
+    },
+    {
+      "id": "reconfigurable-computing",
+      "term": "Reconfigurable Computing",
+      "definition": "Architecture combining some of the flexibility of software with the performance of hardware by using flexible platforms such as FPGAs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#Introduction"
+      ]
+    },
+    {
+      "id": "partial-reconfiguration",
+      "term": "Partial Reconfiguration",
+      "definition": "Changing one part of reconfigurable hardware while the rest of the device keeps its existing configuration.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#Partial-re-configuration"
+      ]
+    },
+    {
+      "id": "dynamic-partial-reconfiguration",
+      "term": "Dynamic Partial Reconfiguration",
+      "definition": "Form of partial reconfiguration in which the rest of the device keeps running while one region is reloaded.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#Partial-re-configuration"
+      ]
+    },
+    {
+      "id": "static-partial-reconfiguration",
+      "term": "Static Partial Reconfiguration",
+      "definition": "Form of partial reconfiguration in which the device pauses while the changed region is reloaded.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#Partial-re-configuration"
+      ]
+    },
+    {
+      "id": "coarse-grained-architecture",
+      "term": "Coarse-Grained Architecture",
+      "definition": "Reconfigurable design using larger functional blocks such as word-wide ALUs, efficient for word-width algorithms but wasteful when operand sizes mismatch.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#Granularity"
+      ]
+    },
+    {
+      "id": "reconfiguration-rate",
+      "term": "Reconfiguration Rate",
+      "definition": "Frequency of reloading the hardware, which carries a configuration time and energy cost that is spread more thinly when changes are slower.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#Rate-of-reconfiguration"
+      ]
+    },
+    {
+      "id": "spatial-parallelism",
+      "term": "Spatial Parallelism",
+      "definition": "Replicating an algorithm across one or more FPGAs so several computing units process different data at the same time.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-reconfigurable-computing#High-performance-computing"
+      ]
+    },
+    {
+      "id": "soft-microprocessor",
+      "term": "Soft Microprocessor",
+      "definition": "Processor core implemented wholly by logic synthesis on programmable logic such as FPGAs, with a count limited only by device size.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-soft-microprocessor#Introduction"
+      ]
+    },
+    {
+      "id": "asic",
+      "term": "ASIC",
+      "definition": "Custom chip built for a specific purpose that runs faster and uses less power than programmable logic but cannot be reprogrammed and is costly to make.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
+      "sources": [
+        "soca-web-soc#Fabrication"
+      ]
+    },
+    {
+      "id": "aes",
+      "term": "AES",
+      "definition": "Symmetric-key encryption standard from NIST, published in 2001 as a restricted variant of Rijndael, processing 128-bit blocks with 128, 192 or 256-bit keys.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-aes#Lead-section"
+      ]
+    },
+    {
+      "id": "subbytes",
+      "term": "SubBytes",
+      "definition": "Non-linear cipher step replacing each state byte through a fixed 8-bit lookup table derived from a finite-field inverse and an affine transformation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-aes#High-level-description-of-the-algorithm"
+      ]
+    },
+    {
+      "id": "shiftrows",
+      "term": "ShiftRows",
+      "definition": "Cipher step rotating the bytes of each state row by a different offset, so columns are not encrypted independently.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-aes#High-level-description-of-the-algorithm"
+      ]
+    },
+    {
+      "id": "mixcolumns",
+      "term": "MixColumns",
+      "definition": "Cipher step applying an invertible linear transformation to each state column using a fixed finite-field matrix, spreading changes across the block.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-aes#High-level-description-of-the-algorithm"
+      ]
+    },
+    {
+      "id": "addroundkey",
+      "term": "AddRoundKey",
+      "definition": "Cipher step that XORs each state byte with the corresponding byte of the current round key, the only step using the key directly.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-aes#High-level-description-of-the-algorithm"
+      ]
+    },
+    {
+      "id": "jpeg",
+      "term": "JPEG",
+      "definition": "Widely used lossy image compression method with adjustable quality-versus-size trade-off, typically reaching about 10:1 compression with acceptable loss.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-jpeg#Lead-section"
+      ]
+    },
+    {
+      "id": "discrete-cosine-transform",
+      "term": "Discrete Cosine Transform",
+      "definition": "Operation converting each 8×8 pixel block from spatial values into frequency components, on which lossy image compression is built.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-jpeg#JPEG-compression"
+      ]
+    },
+    {
+      "id": "jpeg-quantization",
+      "term": "JPEG Quantization",
+      "definition": "Division of each frequency coefficient by a constant followed by rounding to an integer, the main lossy step in the pipeline.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-jpeg#JPEG-compression"
+      ]
+    },
+    {
+      "id": "chroma-subsampling",
+      "term": "Chroma Subsampling",
+      "definition": "Reducing the resolution of the colour-difference components, commonly 4:2:0, because the eye is less sensitive to fine colour detail.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-jpeg#JPEG-compression"
+      ]
+    },
+    {
+      "id": "soc-design-flow",
+      "term": "SoC Design Flow",
+      "definition": "Joint development of chip hardware and software, assembling pre-qualified IP blocks with EDA tools, then synthesis, place and route, and tape-out, with heavy verification.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Application Studies: AES and JPEG",
+      "sources": [
+        "soca-web-soc#Design-flow"
+      ]
     }
   ]
 }
