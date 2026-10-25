@@ -67,7 +67,8 @@ def main():
         for sub in sem.get("subjects",[]):
             need={"id","name","shortName","code","courseType","folderId","folderUrl","data","definitionCount","unitCount","coveredUnits","status","sourceCount"}
             if need-set(sub.keys()): err(f"subject {sub.get('id')}: missing key(s) {sorted(need-set(sub.keys()))}")
-            if set(sub.keys())-need: err(f"subject {sub.get('id')}: extra keys {sorted(set(sub.keys())-need)}")
+            extra=set(sub.keys())-need-{'elective'}  # optional slot name for elective options
+            if extra: err(f"subject {sub.get('id')}: extra keys {sorted(extra)}")
             sid=sub["id"]
             sid_list.append(sid)
             if sid in subj_ids: err(f"duplicate subject id {sid}")
@@ -157,6 +158,7 @@ def check_defs(sid, d, src_ids):
             if st.get("subjectId")!=sid:
                 err(f"{sid} def#{i} '{term}': source {srcid} belongs to {st.get('subjectId')}")
             mm=re.fullmatch(r"p\.\d+", locpart) or re.fullmatch(r"slide\.\d+", locpart) or re.fullmatch(r"para\.\d+", locpart)
+            if not mm and st.get("kind")=="web": mm=re.fullmatch(r"[a-z][a-z0-9-]*", locpart)  # section slug of a web page
             if not mm: err(f"{sid} def#{i} '{term}': locator {locpart!r} not p.N / slide.N / para.N")
         if defn["id"] in seen_ids: err(f"{sid}: dup definition id {defn['id']}")
         if term.lower() in seen_terms: err(f"{sid}: dup term '{term}'")

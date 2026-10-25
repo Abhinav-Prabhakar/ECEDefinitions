@@ -1,0 +1,887 @@
+{
+  "version": 1,
+  "id": "computer-organization-and-architecture",
+  "semester": "3-1",
+  "name": "Computer Organization and Architecture",
+  "shortName": "COA",
+  "code": "9C519",
+  "courseType": "PE",
+  "elective": "Professional Elective I",
+  "folderId": "1NJLrUnzy3UZ9q6NlgvXU5t37yqeB9wyE",
+  "folderUrl": "https://drive.google.com/drive/folders/1NJLrUnzy3UZ9q6NlgvXU5t37yqeB9wyE",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "digital-computer",
+      "term": "Digital computer",
+      "definition": "A fast electronic machine that accepts digitised input, processes it by a list of internally stored instructions and produces output information.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.4"
+      ]
+    },
+    {
+      "id": "functional-units",
+      "term": "Functional units",
+      "definition": "The five independent parts of a digital computer: input, output, memory unit, arithmetic and logic unit, and control unit.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.6"
+      ]
+    },
+    {
+      "id": "register-transfer-language",
+      "term": "Register transfer language",
+      "definition": "Symbolic notation used to describe the microoperation transfers among registers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.7"
+      ]
+    },
+    {
+      "id": "bus",
+      "term": "Bus",
+      "definition": "A group of wires forming a path over which information moves from any of several sources to any of several destinations.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.14"
+      ]
+    },
+    {
+      "id": "memory-address-register",
+      "term": "Memory address register",
+      "definition": "Special register that holds the address of the memory word being accessed, set before the memory is read or written.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.18"
+      ]
+    },
+    {
+      "id": "microoperation",
+      "term": "Microoperation",
+      "definition": "An elementary operation on binary data held in registers, of four kinds: register transfer, arithmetic, logic and shift.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.22"
+      ]
+    },
+    {
+      "id": "logic-microoperations",
+      "term": "Logic microoperations",
+      "definition": "Bit-wise operations on strings of bits held in registers, useful for manipulating binary data and making decisions from bit values.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.26"
+      ]
+    },
+    {
+      "id": "selective-set",
+      "term": "Selective set",
+      "definition": "Operation in which each 1 in a second register forces the matching bit of the first register to 1, leaving other bits unchanged.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.30"
+      ]
+    },
+    {
+      "id": "selective-complement",
+      "term": "Selective complement",
+      "definition": "Operation in which each 1 in a second register inverts the matching bit of the first register, leaving other bits unchanged.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.31"
+      ]
+    },
+    {
+      "id": "mask-operation",
+      "term": "Mask operation",
+      "definition": "Operation in which each 0 in a second register clears the matching bit of the first register to 0, leaving other bits unchanged.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.33"
+      ]
+    },
+    {
+      "id": "insert-operation",
+      "term": "Insert operation",
+      "definition": "Operation that introduces a specific bit pattern into a register while leaving the other bit positions unchanged.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.35"
+      ]
+    },
+    {
+      "id": "logical-shift",
+      "term": "Logical shift",
+      "definition": "Shift in which the serial input bit fed into the register is always zero.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.38"
+      ]
+    },
+    {
+      "id": "circular-shift",
+      "term": "Circular shift",
+      "definition": "Shift in which the bit shifted out at one end of the register is fed back as the serial input at the other end.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.39"
+      ]
+    },
+    {
+      "id": "arithmetic-shift",
+      "term": "Arithmetic shift",
+      "definition": "Shift meant for signed binary numbers that keeps the sign of the number unchanged while performing multiplication or division.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1a#slide.40"
+      ]
+    },
+    {
+      "id": "machine-instruction",
+      "term": "Machine instruction",
+      "definition": "A group of bits that tells the computer to perform a specific operation, made up of a sequence of microoperations.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1b#slide.5"
+      ]
+    },
+    {
+      "id": "opcode",
+      "term": "Opcode",
+      "definition": "The part of an instruction that specifies the operation to be performed.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1b#slide.6"
+      ]
+    },
+    {
+      "id": "control-unit",
+      "term": "Control unit",
+      "definition": "Processor part that translates machine instructions into the control signals for the microoperations that implement them.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1b#slide.15"
+      ]
+    },
+    {
+      "id": "hardwired-control",
+      "term": "Hardwired control",
+      "definition": "Control unit implementation made up of sequential and combinational circuits that generate the control signals.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1b#slide.15"
+      ]
+    },
+    {
+      "id": "instruction-cycle",
+      "term": "Instruction cycle",
+      "definition": "Repeating sequence of fetching an instruction, decoding it, reading any indirect effective address and executing it before starting again.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1b#slide.18"
+      ]
+    },
+    {
+      "id": "interrupt",
+      "term": "Interrupt",
+      "definition": "Request raised by an interface when its device is ready, making the CPU branch to a service routine and then return to its task.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digital Computers",
+      "sources": [
+        "coa-unit-1b#slide.29"
+      ]
+    },
+    {
+      "id": "stack",
+      "term": "Stack",
+      "definition": "Storage accessed in last-in first-out order through a pointer, on which only push and pop operations are applicable.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.7"
+      ]
+    },
+    {
+      "id": "reverse-polish-notation",
+      "term": "Reverse Polish notation",
+      "definition": "Postfix way of writing arithmetic expressions, with operators after operands and no parentheses, that suits stack-based evaluation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.9"
+      ]
+    },
+    {
+      "id": "addressing-mode",
+      "term": "Addressing mode",
+      "definition": "Rule for interpreting or modifying the address field of an instruction before the operand is actually referenced.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.13"
+      ]
+    },
+    {
+      "id": "implied-mode",
+      "term": "Implied mode",
+      "definition": "Mode in which the operand addresses are specified implicitly in the definition of the instruction itself.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.14"
+      ]
+    },
+    {
+      "id": "immediate-mode",
+      "term": "Immediate mode",
+      "definition": "Mode in which the operand itself is given in the instruction instead of its address, so the operand is fast to acquire.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.14"
+      ]
+    },
+    {
+      "id": "register-indirect-mode",
+      "term": "Register indirect mode",
+      "definition": "Mode in which the instruction names a register that holds the memory address of the operand, saving instruction bits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.15"
+      ]
+    },
+    {
+      "id": "direct-address-mode",
+      "term": "Direct address mode",
+      "definition": "Mode in which the address field of the instruction gives the physical memory address used directly for the operand.",
+      "formula": "EA = IR(address)",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.16"
+      ]
+    },
+    {
+      "id": "indirect-addressing-mode",
+      "term": "Indirect addressing mode",
+      "definition": "Mode in which the address field points to a memory location that contains the operand address, needing an extra memory access.",
+      "formula": "EA = M[IR(address)]",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.16"
+      ]
+    },
+    {
+      "id": "indexed-addressing-mode",
+      "term": "Indexed addressing mode",
+      "definition": "Mode that forms the operand address by adding the address field of the instruction to the contents of an index register.",
+      "formula": "EA = XR + IR(address)",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.17"
+      ]
+    },
+    {
+      "id": "external-interrupt",
+      "term": "External interrupt",
+      "definition": "Request raised from outside the CPU and memory, such as an I/O transfer request, timeout or power failure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.24"
+      ]
+    },
+    {
+      "id": "internal-interrupt",
+      "term": "Internal interrupt",
+      "definition": "Request caused by the program currently running, such as stack overflow, divide by zero, op-code violation or protection violation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.24"
+      ]
+    },
+    {
+      "id": "software-interrupt",
+      "term": "Software interrupt",
+      "definition": "Request initiated by executing an instruction, for example a supervisor call that switches from user mode to supervisor mode.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.24"
+      ]
+    },
+    {
+      "id": "cisc",
+      "term": "CISC",
+      "definition": "Processor design with a large instruction set of 100-250 instructions, many addressing modes, variable-length formats and instructions that manipulate memory operands.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.26"
+      ]
+    },
+    {
+      "id": "risc",
+      "term": "RISC",
+      "definition": "Processor design with few instructions and addressing modes, memory access only by load and store, fixed-length single-cycle instructions and hardwired control.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.27"
+      ]
+    },
+    {
+      "id": "microprogram",
+      "term": "Microprogram",
+      "definition": "Program stored in memory that generates all the control signals required to execute the instruction set correctly.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.28"
+      ]
+    },
+    {
+      "id": "microinstruction",
+      "term": "Microinstruction",
+      "definition": "Control-memory entry holding a control word with all control information for one clock cycle and a sequencing word giving the next address.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.28"
+      ]
+    },
+    {
+      "id": "writeable-control-storage",
+      "term": "Writeable control storage",
+      "definition": "Control store whose contents can be modified, so the microprogram and even the instruction set can be changed.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.28"
+      ]
+    },
+    {
+      "id": "microprogram-sequencer",
+      "term": "Microprogram sequencer",
+      "definition": "Microprogram control unit that determines the microinstruction address to be executed in the next clock cycle.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.29"
+      ]
+    },
+    {
+      "id": "op-code-mapping",
+      "term": "Op-code mapping",
+      "definition": "Mapping from the op-code of an instruction to the address of the first microinstruction of its routine, implemented by ROM or PLA.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Microprogrammed Control",
+      "sources": [
+        "coa-unit-2#slide.32"
+      ]
+    },
+    {
+      "id": "base-r-number-system",
+      "term": "Base r number system",
+      "definition": "Number system that uses r distinct digit symbols, where each digit is multiplied by an integer power of r.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3a#slide.2"
+      ]
+    },
+    {
+      "id": "r-s-complement",
+      "term": "r's complement",
+      "definition": "Result of subtracting an n-digit number N from rⁿ, where r is the base.",
+      "formula": "rⁿ − N",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3a#slide.6"
+      ]
+    },
+    {
+      "id": "r-1-s-complement",
+      "term": "(r−1)'s complement",
+      "definition": "Result of subtracting an n-digit number N from rⁿ − 1, where r is the base.",
+      "formula": "(rⁿ − 1) − N",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3a#slide.6"
+      ]
+    },
+    {
+      "id": "fixed-point-representation",
+      "term": "Fixed-point representation",
+      "definition": "Scheme in which the binary point always sits in one position, so the stored number is treated as a fraction or an integer.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3a#slide.8"
+      ]
+    },
+    {
+      "id": "floating-point-representation",
+      "term": "Floating-point representation",
+      "definition": "Scheme storing a number as a mantissa times a radix raised to an exponent, widening the range a register can hold.",
+      "formula": "m × rᵉ",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3b#slide.35"
+      ]
+    },
+    {
+      "id": "normalized-number",
+      "term": "Normalized number",
+      "definition": "Floating-point number whose mantissa has a nonzero most significant digit; the number zero cannot be put in this form.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3b#slide.35"
+      ]
+    },
+    {
+      "id": "alignment",
+      "term": "Alignment",
+      "definition": "Shifting one mantissa while adjusting its exponent until both exponents are equal, needed before adding or subtracting floating-point numbers.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3b#slide.36"
+      ]
+    },
+    {
+      "id": "overflow",
+      "term": "Overflow",
+      "definition": "Condition in which an addition result needs more digits than the register holds, detected when the last two carries differ.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3b#slide.12"
+      ]
+    },
+    {
+      "id": "booth-multiplication",
+      "term": "Booth multiplication",
+      "definition": "Multiplication method that subtracts the multiplicand at the first 1 of a string of 1s in the multiplier and adds it after the string.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Data Representation",
+      "sources": [
+        "coa-unit-3b#slide.25"
+      ]
+    },
+    {
+      "id": "memory-bus",
+      "term": "Memory bus",
+      "definition": "Path for information transfers between the CPU and the main memory.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.7"
+      ]
+    },
+    {
+      "id": "i-o-bus",
+      "term": "I/O bus",
+      "definition": "Path for information transfers between the CPU and input-output devices through their interfaces.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.7"
+      ]
+    },
+    {
+      "id": "asynchronous-data-transfer",
+      "term": "Asynchronous data transfer",
+      "definition": "Transfer between two independent units that requires control signals to indicate the time at which data is being sent.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.10"
+      ]
+    },
+    {
+      "id": "strobe",
+      "term": "Strobe",
+      "definition": "Pulse supplied by one unit to tell the other unit when a transfer is to occur.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.10"
+      ]
+    },
+    {
+      "id": "handshaking",
+      "term": "Handshaking",
+      "definition": "Transfer method in which a control signal accompanies each data item, so the transfer rate follows the slower unit.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.10",
+        "coa-unit-4a#slide.13"
+      ]
+    },
+    {
+      "id": "asynchronous-serial-transfer",
+      "term": "Asynchronous serial transfer",
+      "definition": "Character-by-character transmission in which each character is framed by a start bit of 0, data bits and stop bits, with the idle line at 1.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.15"
+      ]
+    },
+    {
+      "id": "interrupt-initiated-i-o",
+      "term": "Interrupt-initiated I/O",
+      "definition": "Transfer mode in which the interface requests service when its device is ready, and the CPU pauses its task to run a service routine.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.19"
+      ]
+    },
+    {
+      "id": "priority-interrupt",
+      "term": "Priority interrupt",
+      "definition": "Mechanism deciding which request is served first when several arrive together and which may break in while another is being serviced.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.21"
+      ]
+    },
+    {
+      "id": "dma-controller",
+      "term": "DMA controller",
+      "definition": "Interface that lets data move directly between an I/O device and memory without passing through the CPU.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4a#slide.27"
+      ]
+    },
+    {
+      "id": "memory-hierarchy",
+      "term": "Memory hierarchy",
+      "definition": "Organisation of memory levels meant to obtain the highest possible access speed while minimising the total cost of the memory system.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4b#slide.3"
+      ]
+    },
+    {
+      "id": "cache-memory",
+      "term": "Cache memory",
+      "definition": "Fast, small-capacity memory that holds the information most likely to be accessed.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4b#slide.8"
+      ]
+    },
+    {
+      "id": "locality-of-reference",
+      "term": "Locality of reference",
+      "definition": "Tendency of programs to reuse recently used information, as in loops, and to access words adjacent to those just accessed.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4b#slide.8"
+      ]
+    },
+    {
+      "id": "write-through",
+      "term": "Write-through",
+      "definition": "Cache write policy that updates both the cache and main memory in parallel when the word is found in the cache.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4b#slide.14"
+      ]
+    },
+    {
+      "id": "page",
+      "term": "Page",
+      "definition": "Fixed-size group of words into which the address space and the memory space are each divided.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Input-Output Organization",
+      "sources": [
+        "coa-unit-4b#slide.17"
+      ]
+    },
+    {
+      "id": "parallel-processing",
+      "term": "Parallel processing",
+      "definition": "Execution of concurrent events in the computing process to achieve faster computational speed.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.3"
+      ]
+    },
+    {
+      "id": "flynn-s-classification",
+      "term": "Flynn's classification",
+      "definition": "Architectural classification of parallel computers by the number of instruction streams and data streams, each single or multiple.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.4"
+      ]
+    },
+    {
+      "id": "instruction-stream",
+      "term": "Instruction stream",
+      "definition": "Sequence of instructions read from memory, one of the two stream types used in Flynn's classification.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.4"
+      ]
+    },
+    {
+      "id": "structural-hazard",
+      "term": "Structural hazard",
+      "definition": "Pipeline conflict that occurs when hardware resources needed by overlapped instructions cannot be provided, as with a single memory port.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.25"
+      ]
+    },
+    {
+      "id": "data-hazard",
+      "term": "Data hazard",
+      "definition": "Pipeline conflict that occurs when the execution of an instruction depends on the result of a previous instruction not yet available.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.26"
+      ]
+    },
+    {
+      "id": "control-hazard",
+      "term": "Control hazard",
+      "definition": "Pipeline delay caused by branches and other instructions that change the program counter, which postpone fetching the next instruction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.24"
+      ]
+    },
+    {
+      "id": "forwarding",
+      "term": "Forwarding",
+      "definition": "Data path that routes a value from its source, usually an ALU, straight to a user, bypassing a designated register.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.26"
+      ]
+    },
+    {
+      "id": "branch-target-buffer",
+      "term": "Branch target buffer",
+      "definition": "Associative memory whose entries hold addresses of earlier branches with their target instruction and the next few instructions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.30"
+      ]
+    },
+    {
+      "id": "loop-buffer",
+      "term": "Loop buffer",
+      "definition": "High-speed register file that stores an entire loop so it can execute without accessing memory.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.30"
+      ]
+    },
+    {
+      "id": "branch-prediction",
+      "term": "Branch prediction",
+      "definition": "Guessing the branch condition and fetching an instruction stream based on the guess, so a correct guess removes the branch penalty.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.30"
+      ]
+    },
+    {
+      "id": "pipeline-interlock",
+      "term": "Pipeline interlock",
+      "definition": "Hardware action that detects a hazard and stalls the pipeline until the hazard is cleared.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Reduced Instruction Set Computer",
+      "sources": [
+        "coa-unit-5a#slide.24"
+      ]
+    },
+    {
+      "id": "multiprocessor-system",
+      "term": "Multiprocessor system",
+      "definition": "Interconnection of two or more CPUs with memory and I/O equipment.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multi Processors",
+      "sources": [
+        "coa-unit-6#slide.3"
+      ]
+    },
+    {
+      "id": "multicomputer-system",
+      "term": "Multicomputer system",
+      "definition": "Several computers connected together by means of communication lines.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multi Processors",
+      "sources": [
+        "coa-unit-6#slide.3"
+      ]
+    },
+    {
+      "id": "crossbar-switch",
+      "term": "Crossbar switch",
+      "definition": "Non-blocking switch with crosspoints at the intersections of processor buses and memory module paths, giving a separate path to each module.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multi Processors",
+      "sources": [
+        "coa-unit-6#slide.10",
+        "coa-unit-6#slide.13"
+      ]
+    },
+    {
+      "id": "multistage-interconnection-network",
+      "term": "Multistage interconnection network",
+      "definition": "High-speed network made of successive switching stages, with processing elements on one end and memory elements on the other.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multi Processors",
+      "sources": [
+        "coa-unit-6#slide.17"
+      ]
+    },
+    {
+      "id": "omega-network",
+      "term": "Omega network",
+      "definition": "Multistage network of 2×2 switching elements joined by perfect shuffle, with exactly one path from each source to each destination.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multi Processors",
+      "sources": [
+        "coa-unit-6#slide.26",
+        "coa-unit-6#slide.27"
+      ]
+    },
+    {
+      "id": "hypercube",
+      "term": "Hypercube",
+      "definition": "Loosely coupled structure of 2ⁿ processors joined as an n-dimensional binary cube, each directly linked to n neighbours.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multi Processors",
+      "sources": [
+        "coa-unit-6#slide.31"
+      ]
+    }
+  ]
+}

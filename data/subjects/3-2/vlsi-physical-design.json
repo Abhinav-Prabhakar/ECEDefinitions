@@ -1,0 +1,679 @@
+{
+  "version": 1,
+  "id": "vlsi-physical-design",
+  "semester": "3-2",
+  "name": "VLSI Physical Design",
+  "shortName": "VLSIPD",
+  "code": "9C622",
+  "courseType": "PE",
+  "elective": "Professional Elective II",
+  "folderId": "1BoTRdZk1tei1mGA8vlS7As4G2ejJfMJz",
+  "folderUrl": "https://drive.google.com/drive/folders/1BoTRdZk1tei1mGA8vlS7As4G2ejJfMJz",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "tapeout",
+      "term": "Tapeout",
+      "definition": "Official handover of the design data from the design team to the silicon foundry for manufacturing.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.21"
+      ]
+    },
+    {
+      "id": "rtl-verification",
+      "term": "RTL verification",
+      "definition": "Functional verification of the RTL design by applying test cases, sending the design back to the RTL designers if mistakes are found.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.27"
+      ]
+    },
+    {
+      "id": "logic-synthesis",
+      "term": "Logic synthesis",
+      "definition": "Process of converting the technology-independent RTL code into a technology-dependent gate-level netlist.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.28"
+      ]
+    },
+    {
+      "id": "design-for-testability",
+      "term": "Design for testability",
+      "definition": "Design technique that facilitates a design becoming testable, listed as a step of the physical design flow.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.28"
+      ]
+    },
+    {
+      "id": "floorplan",
+      "term": "Floorplan",
+      "definition": "Step that determines the die and core area, creates wire tracks for standard cells, creates power straps and places ports, pads and macros.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.28"
+      ]
+    },
+    {
+      "id": "clock-tree-synthesis",
+      "term": "Clock tree synthesis",
+      "definition": "Process of building the clock tree with inverters and buffers, balancing clock skew and minimising insertion delay to meet timing.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.28"
+      ]
+    },
+    {
+      "id": "asic",
+      "term": "ASIC",
+      "definition": "Non-standard integrated circuit designed for a specific use or application.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.42"
+      ]
+    },
+    {
+      "id": "full-custom-asic",
+      "term": "Full custom ASIC",
+      "definition": "Chip in which some or all logic cells and all mask layers are customised, avoiding pretested and pre-characterised cells.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.45"
+      ]
+    },
+    {
+      "id": "semi-custom-asic",
+      "term": "Semi custom ASIC",
+      "definition": "Chip in which all logic cells are predesigned and some or all mask layers are customised.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.47"
+      ]
+    },
+    {
+      "id": "cell-based-asic",
+      "term": "Cell-based ASIC",
+      "definition": "Chip built from predesigned logic cells such as gates, multiplexers and flip-flops, generally taken to mean a standard-cell based design.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.47"
+      ]
+    },
+    {
+      "id": "standard-cells",
+      "term": "Standard cells",
+      "definition": "Predesigned logic cells such as AND gates, OR gates, multiplexers and flip-flops, arranged in rows like bricks in a wall.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.47",
+        "vlsipd-unit-1-vlsipd#slide.48"
+      ]
+    },
+    {
+      "id": "mega-cells",
+      "term": "Mega cells",
+      "definition": "Large predesigned blocks such as microcontrollers or microprocessors that are used in combination with standard-cell areas.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.48"
+      ]
+    },
+    {
+      "id": "base-array",
+      "term": "Base array",
+      "definition": "Predefined pattern of transistors on a gate array, made by replicating the smallest repeated element.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.50"
+      ]
+    },
+    {
+      "id": "base-cell",
+      "term": "Base cell",
+      "definition": "Smallest element replicated to make the predefined transistor pattern of a gate array, sometimes called a primitive cell.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.50"
+      ]
+    },
+    {
+      "id": "masked-rom",
+      "term": "Masked ROM",
+      "definition": "Regular array of transistors permanently programmed using custom mask patterns, which can be embedded on any ASIC as a large specialised logic cell.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.60"
+      ]
+    },
+    {
+      "id": "fpga",
+      "term": "FPGA",
+      "definition": "Newest member of the ASIC family, with a core of programmable basic logic cells and interconnect that can implement combinational and sequential logic.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.61"
+      ]
+    },
+    {
+      "id": "clock-gating",
+      "term": "Clock gating",
+      "definition": "Inserting logic to disable the clock for idle modules, the most effective technique for reducing dynamic power.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.65"
+      ]
+    },
+    {
+      "id": "static-timing-analysis",
+      "term": "Static timing analysis",
+      "definition": "Method of verifying that a digital circuit meets all timing requirements such as speed, setup and hold without simulating with input vectors.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction",
+      "sources": [
+        "vlsipd-unit-1-vlsipd#slide.67",
+        "vlsipd-unit-3-vlsipd#slide.2"
+      ]
+    },
+    {
+      "id": "implementation",
+      "term": "Implementation",
+      "definition": "Process of converting a logical specification into a physical layout.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.5"
+      ]
+    },
+    {
+      "id": "pitch",
+      "term": "Pitch",
+      "definition": "The distance between two adjacent tracks of the routing grid used for layout.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.8"
+      ]
+    },
+    {
+      "id": "via",
+      "term": "Via",
+      "definition": "Structure used to connect two different metal layers, for example M1 and M2.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.8"
+      ]
+    },
+    {
+      "id": "isolation-cell",
+      "term": "Isolation cell",
+      "definition": "Cell that isolates the output of a powered-off domain so a floating value does not reach the powered-on domain, also called a clamp cell.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.14"
+      ]
+    },
+    {
+      "id": "power-gating",
+      "term": "Power gating",
+      "definition": "Technique that reduces power consumption by shutting off the power to blocks of the circuit that are not in use.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.18"
+      ]
+    },
+    {
+      "id": "ramp-up-time",
+      "term": "Ramp up time",
+      "definition": "Time required to power up a component that was switched off.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.18"
+      ]
+    },
+    {
+      "id": "retention-flop",
+      "term": "Retention flop",
+      "definition": "Combination of a regular flop and a state-saving latch.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.20"
+      ]
+    },
+    {
+      "id": "metal-eco-able-cells",
+      "term": "Metal eco-able cells",
+      "definition": "Filler cells that are converted to attain a required functionality.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.23"
+      ]
+    },
+    {
+      "id": "antenna-effect",
+      "term": "Antenna effect",
+      "definition": "Rupture of a gate caused when stray charges accumulated in metal layers during fabrication exceed a threshold set by the metal-to-gate area ratio.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.25"
+      ]
+    },
+    {
+      "id": "characterization",
+      "term": "Characterization",
+      "definition": "Generation of .lib files for a cell library, done with respect to PVT corners.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.30"
+      ]
+    },
+    {
+      "id": "netlist",
+      "term": "Netlist",
+      "definition": "Detailed list of all logic gates and their interconnections that implement an RTL design.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.54"
+      ]
+    },
+    {
+      "id": "sleep-transistors",
+      "term": "Sleep transistors",
+      "definition": "Devices used in power gating to shut off the supply entirely to idle blocks, the primary method for eliminating leakage power.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Design Standard Cell Libraries",
+      "sources": [
+        "vlsipd-unit-2-vlsipd#slide.63"
+      ]
+    },
+    {
+      "id": "slack",
+      "term": "Slack",
+      "definition": "Difference between the required time and the arrival time of a signal along a timing path.",
+      "formula": "Slack = Required − Arrival",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-unit-3-vlsipd#slide.2"
+      ]
+    },
+    {
+      "id": "dynamic-timing-analysis",
+      "term": "Dynamic timing analysis",
+      "definition": "Timing verification method often used for specific functional validation, in contrast to the sign-off standard method.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-unit-3-vlsipd#slide.6"
+      ]
+    },
+    {
+      "id": "timing-path",
+      "term": "Timing path",
+      "definition": "Physical route that signals travel through the chip, analysed in STA by splitting the chip into four such routes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-unit-3-vlsipd#slide.8",
+        "vlsipd-unit-3-vlsipd#slide.4"
+      ]
+    },
+    {
+      "id": "timing-constraints",
+      "term": "Timing constraints",
+      "definition": "Mathematical rules imposed on timing paths to ensure the chip works at the desired speed, written in an SDC file.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-unit-3-vlsipd#slide.8",
+        "vlsipd-unit-3-vlsipd#slide.9"
+      ]
+    },
+    {
+      "id": "clock-skew",
+      "term": "Clock skew",
+      "definition": "Time difference between the clock edge arriving at the launch flip-flop and at the capture flip-flop.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-unit-3-vlsipd#slide.11"
+      ]
+    },
+    {
+      "id": "critical-path",
+      "term": "Critical path",
+      "definition": "Path between an input and an output with the maximum delay.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-wiki-sta#critical-path"
+      ]
+    },
+    {
+      "id": "setup-violation",
+      "term": "Setup violation",
+      "definition": "Max time violation that occurs when a signal arrives too late and misses the time when it should advance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-wiki-sta#timing-violations"
+      ]
+    },
+    {
+      "id": "hold-violation",
+      "term": "Hold violation",
+      "definition": "Min time violation that occurs when an input signal changes too soon after the clock's active transition.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Static Timing Analysis",
+      "sources": [
+        "vlsipd-wiki-sta#timing-violations"
+      ]
+    },
+    {
+      "id": "floorplanning",
+      "term": "Floorplanning",
+      "definition": "Early step in integrated circuit design flows that arranges major functional blocks on the chip area to allow timing-clean routing and spread power consumption.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-floorplan#overview"
+      ]
+    },
+    {
+      "id": "macro-placement",
+      "term": "Macro placement",
+      "definition": "Positioning of large fixed-size blocks, such as memory arrays, inside the chip outline to shorten critical paths and reduce routing congestion.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-floorplan#macro-placement"
+      ]
+    },
+    {
+      "id": "i-o-pad-placement",
+      "term": "I/O pad placement",
+      "definition": "Positioning of input/output pads around the chip's edge, reserving nearby space for line drivers to limit delay and signal degradation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-floorplan#io-pads"
+      ]
+    },
+    {
+      "id": "placement",
+      "term": "Placement",
+      "definition": "Physical design step that assigns exact locations to the various circuit components within the chip's core area.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-placement#overview"
+      ]
+    },
+    {
+      "id": "global-placement",
+      "term": "Global placement",
+      "definition": "Stage that distributes all instances to appropriate locations on a global scale, with minor overlaps allowed.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-placement#global-placement"
+      ]
+    },
+    {
+      "id": "detailed-placement",
+      "term": "Detailed placement",
+      "definition": "Stage that shifts each instance to a nearby legal location with only a very moderate change in layout.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-placement#detailed-placement"
+      ]
+    },
+    {
+      "id": "total-wire-length",
+      "term": "Total wire length",
+      "definition": "Sum of the lengths of all the wires in the design, typically the primary objective of most placers.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-placement#objectives"
+      ]
+    },
+    {
+      "id": "local-congestion",
+      "term": "Local congestion",
+      "definition": "Difference between the lengths of wires in a region and the length of routing tracks available in that region.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Design Floor Planning - Power Planning",
+      "sources": [
+        "vlsipd-wiki-placement#congestion"
+      ]
+    },
+    {
+      "id": "clock-distribution-network",
+      "term": "Clock distribution network",
+      "definition": "Network that distributes clock signals from a common point to all the elements that need them.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-clock-distribution#overview"
+      ]
+    },
+    {
+      "id": "clock-tree",
+      "term": "Clock tree",
+      "definition": "Clock distribution network that forms a tree, such as an H-tree.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-clock-distribution#overview"
+      ]
+    },
+    {
+      "id": "clock-jitter",
+      "term": "Clock jitter",
+      "definition": "Non-periodicity of the clock at a particular point in the network, since no clock signal is perfectly periodic.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-clock-skew#jitter"
+      ]
+    },
+    {
+      "id": "beneficial-skew",
+      "term": "Beneficial skew",
+      "definition": "Intentional clock skew introduced to benefit a synchronous circuit.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-clock-skew#overview"
+      ]
+    },
+    {
+      "id": "routing",
+      "term": "Routing",
+      "definition": "Step following placement that adds the wires needed to connect the placed components while meeting the design rules.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-routing#overview"
+      ]
+    },
+    {
+      "id": "global-routing",
+      "term": "Global routing",
+      "definition": "First routing pass, which estimates a rough path for each net, often on a coarse grid and sometimes with layer assignment.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-routing#global-routing"
+      ]
+    },
+    {
+      "id": "rip-up-and-reroute",
+      "term": "Rip-up and reroute",
+      "definition": "Most common detailed routing technique, which removes routed nets, changes their order and retries until routing succeeds.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-routing#detailed-routing"
+      ]
+    },
+    {
+      "id": "routing-layer-direction",
+      "term": "Routing layer direction",
+      "definition": "Practice of assigning each wiring layer to carry predominantly x-directional or y-directional wiring.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Clock Tree Synthesis and Routing",
+      "sources": [
+        "vlsipd-wiki-routing#layers"
+      ]
+    },
+    {
+      "id": "design-rule",
+      "term": "Design rule",
+      "definition": "Geometric constraint imposed on designers of circuit boards, semiconductor devices and integrated circuits to give margins for manufacturing variability.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Design Checks and Signoff",
+      "sources": [
+        "vlsipd-wiki-drc#overview"
+      ]
+    },
+    {
+      "id": "design-rule-checking",
+      "term": "Design rule checking",
+      "definition": "Electronic design automation step that confirms a layout complies with manufacturing constraints, forming a major part of physical verification signoff.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Design Checks and Signoff",
+      "sources": [
+        "vlsipd-wiki-drc#overview"
+      ]
+    },
+    {
+      "id": "antenna-rules",
+      "term": "Antenna rules",
+      "definition": "Complex rules that check ratios of areas of every layer of a net, relevant when intermediate layers are etched.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Design Checks and Signoff",
+      "sources": [
+        "vlsipd-wiki-drc#antenna-rules"
+      ]
+    },
+    {
+      "id": "electromigration",
+      "term": "Electromigration",
+      "definition": "Transport of material caused by the gradual movement of ions in a conductor as electrons transfer momentum to metal atoms.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Design Checks and Signoff",
+      "sources": [
+        "vlsipd-wiki-electromigration#overview"
+      ]
+    },
+    {
+      "id": "ir-drop",
+      "term": "IR drop",
+      "definition": "Load-dependent voltage drop caused by the electrical resistance of a wire.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Design Checks and Signoff",
+      "sources": [
+        "vlsipd-wiki-electromigration#ir-drop"
+      ]
+    },
+    {
+      "id": "pvt-corner",
+      "term": "PVT corner",
+      "definition": "Extreme combination of process, voltage and temperature conditions under which timing is evaluated to ensure correct operation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Design Checks and Signoff",
+      "sources": [
+        "vlsipd-wiki-sta#corner-analysis"
+      ]
+    }
+  ]
+}
