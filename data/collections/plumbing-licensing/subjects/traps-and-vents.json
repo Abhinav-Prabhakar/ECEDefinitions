@@ -1,0 +1,759 @@
+{
+  "version": 1,
+  "id": "traps-and-vents",
+  "collectionId": "plumbing-licensing",
+  "section": "core",
+  "name": "Traps and Vents",
+  "shortName": "Traps and vents",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Trap fundamentals"
+    },
+    {
+      "number": 2,
+      "title": "Trap seals"
+    },
+    {
+      "number": 3,
+      "title": "Venting methods"
+    },
+    {
+      "number": 4,
+      "title": "Vent sizing"
+    },
+    {
+      "number": 5,
+      "title": "Common venting defects"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "double-trapping",
+      "term": "Double trapping",
+      "definition": "Installing two traps in series on one fixture drain is prohibited.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [],
+      "confusables": [
+        "S-trap",
+        "Trap",
+        "Building trap"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.1",
+        "upc-2024#sec.1001.2"
+      ]
+    },
+    {
+      "id": "fixture-drain",
+      "term": "Fixture drain",
+      "definition": "The drain pipe that carries waste from a fixture trap to the next drain junction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Trap arm",
+        "Tailpiece",
+        "Trap"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.fixture-drain"
+      ]
+    },
+    {
+      "id": "self-scouring-trap",
+      "term": "Self-scouring trap",
+      "definition": "A trap shaped so flowing waste clears solids from its interior without relying on partitions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Drum trap",
+        "Bell trap",
+        "Trap"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.2",
+        "upc-2024#sec.1003.1"
+      ]
+    },
+    {
+      "id": "tailpiece",
+      "term": "Tailpiece",
+      "definition": "The short pipe that carries waste from a fixture outlet down to the trap inlet.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Fixture drain",
+        "Trap arm",
+        "Trap"
+      ],
+      "sources": [
+        "asse-plumbing-dictionary-6e#entry.tailpiece",
+        "upc-2024#sec.1001.2"
+      ]
+    },
+    {
+      "id": "trap",
+      "term": "Trap",
+      "definition": "A fitting or device that holds a liquid seal to keep sewer gas out while wastewater passes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Trap arm",
+        "Trap seal",
+        "Trap dip"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "trap-arm",
+      "term": "Trap arm",
+      "definition": "The section of fixture drain that runs from the trap outlet to the vent connection.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Fixture drain",
+        "Trap",
+        "Trap weir"
+      ],
+      "sources": [
+        "upc-2024#sec.202",
+        "asse-plumbing-dictionary-6e#entry.trap-arm"
+      ]
+    },
+    {
+      "id": "trap-dip",
+      "term": "Trap dip",
+      "definition": "The highest point of the internal passage at the lowest part of the trap bend.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [
+        "Top dip"
+      ],
+      "confusables": [
+        "Trap weir",
+        "Trap seal",
+        "Trap arm"
+      ],
+      "sources": [
+        "upc-2024#sec.202",
+        "asse-plumbing-dictionary-6e#entry.trap-seal"
+      ]
+    },
+    {
+      "id": "trap-weir",
+      "term": "Trap weir",
+      "definition": "The low point at the outlet side of a trap over which the seal spills.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Trap fundamentals",
+      "aliases": [
+        "Crown weir"
+      ],
+      "confusables": [
+        "Trap dip",
+        "Trap seal",
+        "Trap arm"
+      ],
+      "sources": [
+        "upc-2024#sec.202",
+        "asse-plumbing-dictionary-6e#entry.crown-weir"
+      ]
+    },
+    {
+      "id": "backpressure-drainage",
+      "term": "Backpressure (drainage)",
+      "definition": "Pressure in the drainage piping that pushes against the trap seal from the outlet side.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [
+        "Drainage backpressure"
+      ],
+      "confusables": [
+        "Trap siphonage",
+        "Trap seal",
+        "Flood level rim"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.backpressure"
+      ]
+    },
+    {
+      "id": "barrier-type-trap-seal-protection-device",
+      "term": "Barrier-type trap seal protection device",
+      "definition": "A cover or membrane that slows evaporation from the seal of a floor drain trap.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [],
+      "confusables": [
+        "Trap seal primer",
+        "Trap seal",
+        "Evaporation"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.4.1.4"
+      ]
+    },
+    {
+      "id": "capillary-attraction",
+      "term": "Capillary attraction",
+      "definition": "The drawing of liquid into a narrow space by surface tension, which can pull water out of a trap seal.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [],
+      "confusables": [
+        "Evaporation",
+        "Trap siphonage",
+        "Depth of trap seal"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.4"
+      ]
+    },
+    {
+      "id": "depth-of-trap-seal",
+      "term": "Depth of trap seal",
+      "definition": "The amount of liquid that must leave a full trap before air can pass.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [],
+      "confusables": [
+        "Trap seal",
+        "Trap weir",
+        "Trap dip"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "evaporation",
+      "term": "Evaporation",
+      "definition": "The slow loss of a trap seal as water turns to vapor during long disuse.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [],
+      "confusables": [
+        "Trap seal",
+        "Trap seal primer",
+        "Trap siphonage"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.4.1",
+        "asse-plumbing-dictionary-6e#entry.evaporation"
+      ]
+    },
+    {
+      "id": "trap-seal",
+      "term": "Trap seal",
+      "definition": "The vertical distance from the trap weir down to the top of the trap dip.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [],
+      "confusables": [
+        "Depth of trap seal",
+        "Trap weir",
+        "Trap dip"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.trap-seal"
+      ]
+    },
+    {
+      "id": "trap-seal-primer",
+      "term": "Trap seal primer",
+      "definition": "A device that adds a measured amount of water to a trap that is seldom used.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [],
+      "confusables": [
+        "Barrier-type trap seal protection device",
+        "Trap seal",
+        "Evaporation"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.4.1.1",
+        "asse-plumbing-dictionary-6e#entry.trap-seal-primer-valve"
+      ]
+    },
+    {
+      "id": "trap-siphonage",
+      "term": "Trap siphonage",
+      "definition": "The loss of a trap seal when negative pressure in the drain pulls the water out.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Trap seals",
+      "aliases": [
+        "Siphonage"
+      ],
+      "confusables": [
+        "Backpressure (drainage)",
+        "Trap seal",
+        "Evaporation"
+      ],
+      "sources": [
+        "ipc-2021#sec.901.2",
+        "asse-plumbing-dictionary-6e#entry.backsiphonage"
+      ]
+    },
+    {
+      "id": "air-admittance-valve",
+      "term": "Air admittance valve",
+      "definition": "A one-way valve that admits air when negative pressure develops and seals when flow stops.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Individual vent",
+        "Vent system",
+        "Trap siphonage"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.air-admittance-valve"
+      ]
+    },
+    {
+      "id": "circuit-vent",
+      "term": "Circuit vent",
+      "definition": "A branch vent that serves two to eight traps connected to one horizontal branch.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Common vent",
+        "Wet vent",
+        "Relief vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "common-vent",
+      "term": "Common vent",
+      "definition": "A vent that connects at the junction of two fixture drains and serves both traps.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Individual vent",
+        "Circuit vent",
+        "Wet vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.common-vent"
+      ]
+    },
+    {
+      "id": "individual-vent",
+      "term": "Individual vent",
+      "definition": "A vent pipe that serves one fixture trap and connects to the vent system at a higher level.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Common vent",
+        "Circuit vent",
+        "Vent system"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.individual-vent"
+      ]
+    },
+    {
+      "id": "island-fixture-vent",
+      "term": "Island fixture vent",
+      "definition": "A vent for a sink or lavatory that rises past the fixture outlet before dropping below the floor.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Individual vent",
+        "Common vent",
+        "Vent system"
+      ],
+      "sources": [
+        "ipc-2021#sec.916.1",
+        "upc-2024#sec.909.1"
+      ]
+    },
+    {
+      "id": "relief-vent",
+      "term": "Relief vent",
+      "definition": "A vent that circulates air between drainage and vent systems or relieves stack pressure.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Circuit vent",
+        "Vent stack",
+        "Wet vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "vent-system",
+      "term": "Vent system",
+      "definition": "Piping that supplies air to a drainage system and protects trap seals from pressure changes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Vent stack",
+        "Stack vent",
+        "Individual vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "vent-terminal",
+      "term": "Vent terminal",
+      "definition": "Outdoor end of a vent pipe that opens to the atmosphere for air exchange.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Vent header",
+        "Vent stack",
+        "Stack vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.903.1",
+        "upc-2024#sec.906.1"
+      ]
+    },
+    {
+      "id": "wet-vent",
+      "term": "Wet vent",
+      "definition": "A vent that also carries wastewater from fixtures on the same drainage branch.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Venting methods",
+      "aliases": [],
+      "confusables": [
+        "Circuit vent",
+        "Common vent",
+        "Relief vent"
+      ],
+      "sources": [
+        "upc-2024#sec.202",
+        "ipc-2021#sec.912"
+      ]
+    },
+    {
+      "id": "branch-interval",
+      "term": "Branch interval",
+      "definition": "A stack height of at least eight feet within which one floor's branches connect.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Developed length",
+        "Vent header",
+        "Stack vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.branch-interval"
+      ]
+    },
+    {
+      "id": "minimum-vent-size",
+      "term": "Minimum vent size",
+      "definition": "The smallest allowed vent diameter, one and one-quarter inches, before sizing tables require more.",
+      "formula": "1 1/4 in. (32 mm) minimum",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Developed length",
+        "Vent header",
+        "Vent stack"
+      ],
+      "sources": [
+        "ipc-2021#sec.906.2",
+        "upc-2024#sec.904.1"
+      ]
+    },
+    {
+      "id": "stack-vent",
+      "term": "Stack vent",
+      "definition": "The extension of a soil or waste stack upward past the highest horizontal drain connected to it.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Vent stack",
+        "Vent header",
+        "Relief vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "sump-vent",
+      "term": "Sump vent",
+      "definition": "A vent that terminates separately to open air from a sewage ejector or sump.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Vent stack",
+        "Stack vent",
+        "Relief vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "ipc-2021#sec.906.5"
+      ]
+    },
+    {
+      "id": "vent-capacity",
+      "term": "Vent capacity",
+      "definition": "The maximum drainage load a vent of a given size can serve under the adopted code tables.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Minimum vent size",
+        "Branch interval",
+        "Vent header"
+      ],
+      "sources": [
+        "ipc-2021#sec.916.2"
+      ]
+    },
+    {
+      "id": "vent-header",
+      "term": "Vent header",
+      "definition": "A common vent pipe that joins several stack vents at the top and runs outdoors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Vent stack",
+        "Stack vent",
+        "Vent system"
+      ],
+      "sources": [
+        "ipc-2021#sec.904.5"
+      ]
+    },
+    {
+      "id": "vent-stack",
+      "term": "Vent stack",
+      "definition": "A vertical vent pipe that provides air circulation to and from the drainage system.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent sizing",
+      "aliases": [],
+      "confusables": [
+        "Stack vent",
+        "Vent system",
+        "Vent header"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "asse-plumbing-dictionary-6e#entry.vent-stack"
+      ]
+    },
+    {
+      "id": "bell-trap",
+      "term": "Bell trap",
+      "definition": "A bell-shaped trap below a floor drain inlet that collects debris and is prohibited.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Drum trap",
+        "S-trap",
+        "Crown vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.3",
+        "asse-plumbing-dictionary-6e#entry.bell-trap"
+      ]
+    },
+    {
+      "id": "building-trap",
+      "term": "Building trap",
+      "definition": "A trap in a building drain that prevents air movement between the building and sewer.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Drum trap",
+        "Double trapping",
+        "Trap"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "ipc-2021#sec.1002.6"
+      ]
+    },
+    {
+      "id": "crown-vent",
+      "term": "Crown vent",
+      "definition": "A vent connected at the trap crown too near the weir to protect the seal.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "S-trap",
+        "Trap weir",
+        "Flat vent"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.3",
+        "asse-plumbing-dictionary-6e#entry.crown-vent"
+      ]
+    },
+    {
+      "id": "drum-trap",
+      "term": "Drum trap",
+      "definition": "A cylindrical trap with a vertical axis, prohibited except for solids or chemical waste.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Bell trap",
+        "S-trap",
+        "Building trap"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.3",
+        "asse-plumbing-dictionary-6e#entry.drum-trap"
+      ]
+    },
+    {
+      "id": "flat-vent",
+      "term": "Flat vent",
+      "definition": "A vent run that is level or back-pitched, so it traps water and blocks air.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Crown vent",
+        "Wet vent",
+        "Vent system"
+      ],
+      "sources": [
+        "ipc-2021#sec.905.2"
+      ]
+    },
+    {
+      "id": "frost-closure",
+      "term": "Frost closure",
+      "definition": "Ice can block a vent terminal in cold weather unless the terminal is increased in diameter.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Vent stack",
+        "Vent system",
+        "Air admittance valve"
+      ],
+      "sources": [
+        "ipc-2021#sec.903.2",
+        "upc-2024#sec.906.7"
+      ]
+    },
+    {
+      "id": "s-trap",
+      "term": "S-trap",
+      "definition": "A trap whose outlet turns downward right after the seal, forming an S that siphons.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Crown vent",
+        "Bell trap",
+        "Drum trap"
+      ],
+      "sources": [
+        "ipc-2021#sec.1002.3",
+        "asse-plumbing-dictionary-6e#entry.full-s-trap"
+      ]
+    },
+    {
+      "id": "unvented-trap",
+      "term": "Unvented trap",
+      "definition": "A trap with no protecting vent, leaving its seal exposed to siphonage and backpressure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Common venting defects",
+      "aliases": [],
+      "confusables": [
+        "Trap siphonage",
+        "Backpressure (drainage)",
+        "Trap seal"
+      ],
+      "sources": [
+        "ipc-2021#sec.901.2.1",
+        "ipc-2021#sec.901.2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,752 @@
+{
+  "version": 1,
+  "id": "water-supply",
+  "collectionId": "plumbing-licensing",
+  "section": "core",
+  "name": "Water Supply Systems",
+  "shortName": "Water supply",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Supply basics"
+    },
+    {
+      "number": 2,
+      "title": "Pressure and flow"
+    },
+    {
+      "number": 3,
+      "title": "Pipe materials"
+    },
+    {
+      "number": 4,
+      "title": "Fittings and valves"
+    },
+    {
+      "number": 5,
+      "title": "Water heating"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "fixture-supply",
+      "term": "Fixture supply",
+      "definition": "The water pipe that connects one fixture to a distribution branch or directly to a water main.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Water distribution pipe",
+        "Riser",
+        "Effective opening"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "individual-water-supply",
+      "term": "Individual water supply",
+      "definition": "A private water source serving one or more families that is not an approved public water supply.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Public water system",
+        "Water main",
+        "Water supply system"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "public-water-system",
+      "term": "Public water system",
+      "definition": "A piped water system serving the public that has at least 15 service connections or serves 25 people daily for at least 60 days a year.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Individual water supply",
+        "Water main",
+        "Water service pipe"
+      ],
+      "sources": [
+        "ecfr-141#sec.141.2"
+      ]
+    },
+    {
+      "id": "riser",
+      "term": "Riser",
+      "definition": "A vertical water supply pipe that extends one story or more to feed branches or a group of fixtures.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Water distribution pipe",
+        "Fixture supply",
+        "Water service pipe"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "water-distribution-pipe",
+      "term": "Water distribution pipe",
+      "definition": "Piping inside a building or on the premises that carries water from the service pipe or meter to the points of use.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Water service pipe",
+        "Fixture supply",
+        "Riser"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "water-main",
+      "term": "Water main",
+      "definition": "A public water supply pipe, or system of pipes, installed and maintained by a public entity in a street or public easement.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Water service pipe",
+        "Public water system",
+        "Individual water supply"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "water-service-pipe",
+      "term": "Water service pipe",
+      "definition": "The pipe that carries potable water from the water main, or from the meter at the right of way, to the building distribution system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Water main",
+        "Water distribution pipe",
+        "Fixture supply"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "water-supply-system",
+      "term": "Water supply system",
+      "definition": "The water service pipe, distribution piping, fittings, control valves, and appurtenances that deliver potable water within or adjacent to a building.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Supply basics",
+      "aliases": [],
+      "confusables": [
+        "Water service pipe",
+        "Water distribution pipe",
+        "Fixture supply"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "developed-length",
+      "term": "Developed length",
+      "definition": "The length of a pipeline measured along the centerline of the pipe and its fittings.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Fixture supply",
+        "Water distribution pipe",
+        "Riser"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "effective-opening",
+      "term": "Effective opening",
+      "definition": "The smallest cross-sectional area at a water discharge point, expressed as the diameter of an equivalent circle.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Flow pressure",
+        "Fixture supply",
+        "Flushometer valve"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "flow-pressure",
+      "term": "Flow pressure",
+      "definition": "The pressure in a water supply pipe at a fixture outlet while that outlet is fully open and flowing.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Low-head backpressure",
+        "Pressure-reducing valve",
+        "Effective opening"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "low-head-backpressure",
+      "term": "Low-head backpressure",
+      "definition": "Backpressure of 4.33 psi or less, equal to the pressure exerted by a column of water 10 feet high.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Flow pressure",
+        "Vacuum",
+        "Water-hammer arrestor"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "pressure-reducing-valve",
+      "term": "Pressure-reducing valve",
+      "definition": "A valve installed where static pressure exceeds 80 psi to reduce building water pressure to 80 psi or less.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Water pressure booster system",
+        "Flow pressure",
+        "Thermal expansion control device"
+      ],
+      "sources": [
+        "ipc-2021#sec.604.8"
+      ]
+    },
+    {
+      "id": "vacuum",
+      "term": "Vacuum",
+      "definition": "Any pressure lower than the pressure exerted by the atmosphere at the same location.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Low-head backpressure",
+        "Flow pressure",
+        "Vacuum relief valve"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "pressure-booster-system",
+      "term": "Water pressure booster system",
+      "definition": "A pump, hydropneumatic tank, or elevated tank that supplements pressure when the available supply cannot meet fixture demand.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Pressure-reducing valve",
+        "Water main",
+        "Vacuum"
+      ],
+      "sources": [
+        "ipc-2021#sec.606.5.1"
+      ]
+    },
+    {
+      "id": "water-hammer-arrestor",
+      "term": "Water-hammer arrestor",
+      "definition": "A device that absorbs the pressure surge created when water flow in a supply system stops suddenly.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pressure and flow",
+      "aliases": [],
+      "confusables": [
+        "Quick-closing valve",
+        "Flow pressure",
+        "Low-head backpressure"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "cpvc",
+      "term": "Chlorinated polyvinyl chloride (CPVC)",
+      "definition": "Chlorinated polyvinyl chloride pipe listed for water service and hot water distribution rated at 100 psi and 180 degrees Fahrenheit.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Cross-linked polyethylene (PEX)",
+        "Polyethylene of raised temperature (PE-RT)",
+        "PEX-AL-PEX"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.4"
+      ]
+    },
+    {
+      "id": "copper-tubing",
+      "term": "Copper tubing",
+      "definition": "Copper tube made in Types K, L, and M and listed for water service and distribution piping.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Galvanized steel pipe",
+        "Ductile iron pipe",
+        "Lead-free solder and flux"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "pex",
+      "term": "Cross-linked polyethylene (PEX)",
+      "definition": "Cross-linked polyethylene tubing listed for water service and for both hot and cold water distribution.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Chlorinated polyvinyl chloride (CPVC)",
+        "Polyethylene of raised temperature (PE-RT)",
+        "PEX-AL-PEX"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "ductile-iron-pipe",
+      "term": "Ductile iron pipe",
+      "definition": "A cement-mortar-lined iron pipe listed for water service and water distribution mains.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Galvanized steel pipe",
+        "Copper tubing",
+        "Water main"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "galvanized-steel-pipe",
+      "term": "Galvanized steel pipe",
+      "definition": "Zinc-coated steel pipe listed for water service and distribution and joined by threads or mechanical fittings.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Copper tubing",
+        "Ductile iron pipe",
+        "Working pressure rating"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "lead-free-solder",
+      "term": "Lead-free solder and flux",
+      "definition": "Solder and flux containing not more than 0.2 percent lead, required for joints in potable water supply piping.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Copper tubing",
+        "Press-connect joint",
+        "Mechanical joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "ipc-2021#sec.605.12.3"
+      ]
+    },
+    {
+      "id": "pex-al-pex",
+      "term": "PEX-AL-PEX",
+      "definition": "A pipe of cross-linked polyethylene layers bonded to an aluminum core, listed for water service and distribution.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Cross-linked polyethylene (PEX)",
+        "Polyethylene of raised temperature (PE-RT)",
+        "Chlorinated polyvinyl chloride (CPVC)"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "pe-rt",
+      "term": "Polyethylene of raised temperature (PE-RT)",
+      "definition": "Polyethylene tubing formulated for raised-temperature service and listed for hot and cold water distribution.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Cross-linked polyethylene (PEX)",
+        "Chlorinated polyvinyl chloride (CPVC)",
+        "PEX-AL-PEX"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.4"
+      ]
+    },
+    {
+      "id": "working-pressure-rating",
+      "term": "Working pressure rating",
+      "definition": "The maximum pressure a pipe or tube is rated to withstand in service, at least 160 psi at 73.4 degrees Fahrenheit for buried service pipe.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pipe materials",
+      "aliases": [],
+      "confusables": [
+        "Flow pressure",
+        "Water service pipe",
+        "Copper tubing"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "adapter-fitting",
+      "term": "Adapter fitting",
+      "definition": "A connecting device that joins pipes or fittings of different sizes or types that do not otherwise fit together.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Push-fit fitting",
+        "Mechanical joint",
+        "Press-connect joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "flushometer-valve",
+      "term": "Flushometer valve",
+      "definition": "A valve on a pressurized supply line that opens to deliver a measured flush and closes gradually to reseal the fixture trap.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Full-open valve",
+        "Quick-closing valve",
+        "Fixture supply"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "full-open-valve",
+      "term": "Full-open valve",
+      "definition": "A shutoff valve whose fully open closure member does not restrict flow through the valve body.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Quick-closing valve",
+        "Flushometer valve",
+        "Pressure-reducing valve"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "gate-valve",
+      "term": "Gate valve",
+      "definition": "A valve with a wedge-shaped gate that lifts fully out of the flow path when the stem turns.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Full-open valve",
+        "Quick-closing valve",
+        "Flushometer valve"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "mechanical-joint",
+      "term": "Mechanical joint",
+      "definition": "A pipe connection that relies on compression or an elastomeric seal rather than solder, solvent cement, threads, or heat fusion.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Press-connect joint",
+        "Push-fit fitting",
+        "Adapter fitting"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "press-connect-joint",
+      "term": "Press-connect joint",
+      "definition": "A permanent mechanical joint with an elastomeric seal, made with a pressing tool and jaw approved by the fitting manufacturer.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Push-fit fitting",
+        "Mechanical joint",
+        "Lead-free solder and flux"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "push-fit-fitting",
+      "term": "Push-fit fitting",
+      "definition": "A mechanical fitting that seals by inserting the pipe or tube into the fitting body.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Press-connect joint",
+        "Adapter fitting",
+        "Mechanical joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "quick-closing-valve",
+      "term": "Quick-closing valve",
+      "definition": "A valve or faucet that shuts off rapidly, either automatically on release or through a mechanical fast-closing mechanism.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Full-open valve",
+        "Flushometer valve",
+        "Water-hammer arrestor"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "saddle-type-fitting",
+      "term": "Saddle-type fitting",
+      "definition": "A fitting that taps a branch into an existing pipe, prohibited as a joint in water supply piping.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fittings and valves",
+      "aliases": [],
+      "confusables": [
+        "Adapter fitting",
+        "Mechanical joint",
+        "Push-fit fitting"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.9"
+      ]
+    },
+    {
+      "id": "circulating-hot-water-system",
+      "term": "Circulating hot water system",
+      "definition": "A hot water distribution system with pumps that circulate heated water from the heater through supply piping and back.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Demand recirculation water system",
+        "Hot water",
+        "Water heater"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "demand-recirculation",
+      "term": "Demand recirculation water system",
+      "definition": "A recirculation system that starts its pump only when a user signals demand, then primes the hot water piping.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Circulating hot water system",
+        "Hot water",
+        "Tempered water"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "hot-water",
+      "term": "Hot water",
+      "definition": "Water at a temperature of 110 degrees Fahrenheit or higher, the code threshold for hot water supply.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Tempered water",
+        "Water heater",
+        "Circulating hot water system"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "tp-relief-valve",
+      "term": "Temperature and pressure relief (T&P) valve",
+      "definition": "A combination valve that opens on excess temperature or excess pressure to protect a water heater tank.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Vacuum relief valve",
+        "Water heater",
+        "Hot water"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "tempered-water",
+      "term": "Tempered water",
+      "definition": "Water held between 85 and 110 degrees Fahrenheit for bathing and washing where full hot water would scald.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Hot water",
+        "Water heater",
+        "Demand recirculation water system"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "thermal-expansion-control",
+      "term": "Thermal expansion control device",
+      "definition": "A device on the cold water inlet that absorbs the volume increase created as water is heated in a closed system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Temperature and pressure relief (T&P) valve",
+        "Pressure-reducing valve",
+        "Water heater"
+      ],
+      "sources": [
+        "ipc-2021#sec.607.3"
+      ]
+    },
+    {
+      "id": "vacuum-relief-valve",
+      "term": "Vacuum relief valve",
+      "definition": "A valve that admits air to prevent a vacuum from forming inside a water heater or storage tank.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Temperature and pressure relief (T&P) valve",
+        "Vacuum",
+        "Water heater"
+      ],
+      "sources": [
+        "ipc-2021#sec.504.2"
+      ]
+    },
+    {
+      "id": "water-heater",
+      "term": "Water heater",
+      "definition": "An appliance that heats potable water and delivers it to the potable hot water distribution system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water heating",
+      "aliases": [],
+      "confusables": [
+        "Circulating hot water system",
+        "Demand recirculation water system",
+        "Temperature and pressure relief (T&P) valve"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    }
+  ]
+}

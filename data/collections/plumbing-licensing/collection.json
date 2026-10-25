@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "id": "plumbing-licensing",
+  "name": "Plumbing Licensing",
+  "tagline": "Plumbing, in one line.",
+  "topic": "Plumbing licensing for plumbing apprentices and journeyman exam candidates",
+  "audience": "Plumbing apprentices and journeyman exam candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "water supply systems",
+      "drain-waste-vent systems",
+      "traps and venting",
+      "backflow prevention and fixtures",
+      "plumbing code fundamentals"
+    ],
+    "excludes": [
+      "medical gas piping",
+      "fire sprinkler design",
+      "solar thermal sizing",
+      "commercial process piping",
+      "state and local amendment details"
+    ]
+  },
+  "assumptions": [
+    "US plumbing code concepts (IPC and UPC common ground)",
+    "vocabulary and concepts, not installation procedures",
+    "exam-oriented definitions"
+  ],
+  "disclaimer": "Educational vocabulary only; not plumbing advice or code compliance guidance.",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "water-supply",
+          "name": "Water Supply Systems",
+          "shortName": "Water supply",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/plumbing-licensing/subjects/water-supply.json",
+          "definitionCount": 42,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "drain-waste-vent",
+          "name": "Drain-Waste-Vent",
+          "shortName": "Drain-waste-vent",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/plumbing-licensing/subjects/drain-waste-vent.json",
+          "definitionCount": 42,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "traps-and-vents",
+          "name": "Traps and Vents",
+          "shortName": "Traps and vents",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/plumbing-licensing/subjects/traps-and-vents.json",
+          "definitionCount": 40,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 3
+        },
+        {
+          "id": "backflow-fixtures",
+          "name": "Backflow and Fixtures",
+          "shortName": "Backflow and fixtures",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/plumbing-licensing/subjects/backflow-fixtures.json",
+          "definitionCount": 42,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 3
+        },
+        {
+          "id": "plumbing-code",
+          "name": "Plumbing Code",
+          "shortName": "Plumbing code",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/plumbing-licensing/subjects/plumbing-code.json",
+          "definitionCount": 40,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 3
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 1,
+    "subjects": 5,
+    "definitions": 206,
+    "completeSubjects": 5,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "id": "backflow-fixtures",
+  "collectionId": "plumbing-licensing",
+  "section": "core",
+  "name": "Backflow and Fixtures",
+  "shortName": "Backflow and fixtures",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Cross-connection basics"
+    },
+    {
+      "number": 2,
+      "title": "Backflow devices"
+    },
+    {
+      "number": 3,
+      "title": "Fixture types"
+    },
+    {
+      "number": 4,
+      "title": "Fixture requirements"
+    },
+    {
+      "number": 5,
+      "title": "Water efficiency"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "backflow",
+      "term": "Backflow",
+      "definition": "The flow of water or other substances into potable distribution pipes from a source other than the intended one.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [],
+      "confusables": [
+        "Backsiphonage",
+        "Backpressure (water supply)",
+        "Cross-connection"
+      ],
+      "sources": [
+        "plumbing-epa-ccc#p.48"
+      ]
+    },
+    {
+      "id": "backpressure-water-supply",
+      "term": "Backpressure (water supply)",
+      "definition": "Pressure in a connected system that exceeds supply pressure and drives water toward the potable main.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [
+        "Supply backpressure"
+      ],
+      "confusables": [
+        "Backsiphonage",
+        "Backflow",
+        "Reduced pressure principle assembly"
+      ],
+      "sources": [
+        "plumbing-epa-ccc#p.21"
+      ]
+    },
+    {
+      "id": "backsiphonage",
+      "term": "Backsiphonage",
+      "definition": "Backflow caused by negative pressure in the potable water distribution piping.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [],
+      "confusables": [
+        "Backpressure (water supply)",
+        "Backflow",
+        "Atmospheric vacuum breaker"
+      ],
+      "sources": [
+        "plumbing-epa-ccc#p.48",
+        "ipc-2021#sec.backsiphonage"
+      ]
+    },
+    {
+      "id": "contamination",
+      "term": "Contamination",
+      "definition": "An impairment of potable water quality that creates a public health hazard through poisoning or disease.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [],
+      "confusables": [
+        "Pollution",
+        "Cross-connection",
+        "Nonpotable water"
+      ],
+      "sources": [
+        "ipc-2021#sec.contamination"
+      ]
+    },
+    {
+      "id": "cross-connection",
+      "term": "Cross-connection",
+      "definition": "Any physical connection between a potable water system and a source of contamination or pollution.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [
+        "cross connection"
+      ],
+      "confusables": [
+        "Backflow",
+        "Backsiphonage",
+        "Air gap"
+      ],
+      "sources": [
+        "plumbing-epa-ccc#p.48",
+        "ipc-2021#sec.cross-connection"
+      ]
+    },
+    {
+      "id": "nonpotable-water",
+      "term": "Nonpotable water",
+      "definition": "Water unsuitable for drinking, bathing, or culinary purposes because of its quality.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [],
+      "confusables": [
+        "Potable water",
+        "Reclaimed water",
+        "Pollution"
+      ],
+      "sources": [
+        "ipc-2021#sec.nonpotable-water"
+      ]
+    },
+    {
+      "id": "pollution",
+      "term": "Pollution",
+      "definition": "An impairment of potable water quality that harms appearance, taste, or odor without creating a health hazard.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [],
+      "confusables": [
+        "Contamination",
+        "Nonpotable water",
+        "Cross-connection"
+      ],
+      "sources": [
+        "ipc-2021#sec.pollution"
+      ]
+    },
+    {
+      "id": "potable-water",
+      "term": "Potable water",
+      "definition": "Water safe for drinking, bathing, and culinary use because harmful impurities fall below hazardous levels.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cross-connection basics",
+      "aliases": [],
+      "confusables": [
+        "Nonpotable water",
+        "Reclaimed water",
+        "Contamination"
+      ],
+      "sources": [
+        "ipc-2021#sec.potable-water"
+      ]
+    },
+    {
+      "id": "air-gap",
+      "term": "Air gap",
+      "definition": "The unobstructed vertical distance through free atmosphere between a water outlet and the flood level rim below it.",
+      "formula": "2D, minimum 1 in",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [],
+      "confusables": [
+        "Air break",
+        "Critical level",
+        "Flood level rim"
+      ],
+      "sources": [
+        "ipc-2021#sec.air-gap-water-distribution-system",
+        "ipc-2021#sec.608.14.1"
+      ]
+    },
+    {
+      "id": "atmospheric-vacuum-breaker",
+      "term": "Atmospheric vacuum breaker",
+      "definition": "A device that admits air downstream when supply pressure drops and protects only against backsiphonage.",
+      "formula": "no shutoff downstream",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "AVB"
+      ],
+      "confusables": [
+        "Pressure vacuum breaker assembly",
+        "Spillproof vacuum breaker",
+        "Air gap"
+      ],
+      "sources": [
+        "ipc-2021#sec.608.14.6",
+        "plumbing-epa-ccc#p.23"
+      ]
+    },
+    {
+      "id": "backflow-preventer",
+      "term": "Backflow preventer",
+      "definition": "A device, assembly, or method that stops backflow from entering the potable water supply.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "BFP"
+      ],
+      "confusables": [
+        "Air gap",
+        "Atmospheric vacuum breaker",
+        "Reduced pressure principle assembly"
+      ],
+      "sources": [
+        "ipc-2021#sec.backflow-preventer"
+      ]
+    },
+    {
+      "id": "barometric-loop",
+      "term": "Barometric loop",
+      "definition": "A continuous pipe loop rising about 35 feet that prevents backsiphonage but not backpressure.",
+      "formula": "35 ft (10 668 mm)",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [],
+      "confusables": [
+        "Air gap",
+        "Pressure vacuum breaker assembly",
+        "Atmospheric vacuum breaker"
+      ],
+      "sources": [
+        "ipc-2021#sec.608.14.4",
+        "plumbing-epa-ccc#p.23"
+      ]
+    },
+    {
+      "id": "critical-level",
+      "term": "Critical level",
+      "definition": "The minimum height above a flood level rim at which a backflow preventer or vacuum breaker must sit.",
+      "formula": "C-L marking",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "C-L"
+      ],
+      "confusables": [
+        "Flood level rim",
+        "Air gap",
+        "Atmospheric vacuum breaker"
+      ],
+      "sources": [
+        "ipc-2021#sec.critical-level-c-l",
+        "ipc-2021#sec.608.16.4"
+      ]
+    },
+    {
+      "id": "double-check-valve-assembly",
+      "term": "Double check valve assembly",
+      "definition": "A testable assembly of two check valves used to protect against low or moderate hazards.",
+      "formula": "2 checks, testable",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "DCVA",
+        "double check assembly"
+      ],
+      "confusables": [
+        "Reduced pressure principle assembly",
+        "Dual check backflow preventer",
+        "Pressure vacuum breaker assembly"
+      ],
+      "sources": [
+        "ipc-2021#sec.608.14.7",
+        "plumbing-epa-ccc#p.25"
+      ]
+    },
+    {
+      "id": "dual-check-backflow-preventer",
+      "term": "Dual check backflow preventer",
+      "definition": "A non-testable pair of check valves installed on a residential service, immediately downstream of the meter.",
+      "formula": "2 checks, no test cocks",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "residential dual check"
+      ],
+      "confusables": [
+        "Double check valve assembly",
+        "Air gap",
+        "Backflow preventer"
+      ],
+      "sources": [
+        "ipc-2021#sec.608.14.9",
+        "plumbing-epa-ccc#p.26"
+      ]
+    },
+    {
+      "id": "hose-connection-vacuum-breaker",
+      "term": "Hose connection vacuum breaker",
+      "definition": "A vacuum breaker threaded onto a hose bibb that stops backsiphonage from a hose or attached appliance.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [],
+      "confusables": [
+        "Atmospheric vacuum breaker",
+        "Pressure vacuum breaker assembly",
+        "Spillproof vacuum breaker"
+      ],
+      "sources": [
+        "ipc-2021#sec.608.14.2"
+      ]
+    },
+    {
+      "id": "pressure-vacuum-breaker-assembly",
+      "term": "Pressure vacuum breaker assembly",
+      "definition": "A testable vacuum breaker with a spring-loaded check and shutoff valves that may operate under constant pressure.",
+      "formula": "check + air inlet, testable",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "PVB"
+      ],
+      "confusables": [
+        "Atmospheric vacuum breaker",
+        "Spillproof vacuum breaker",
+        "Barometric loop"
+      ],
+      "sources": [
+        "ipc-2021#sec.608.14.5",
+        "plumbing-epa-ccc#p.24"
+      ]
+    },
+    {
+      "id": "reduced-pressure-principle-assembly",
+      "term": "Reduced pressure principle assembly",
+      "definition": "A testable assembly with two check valves and a relief valve that vents the zone between them to atmosphere.",
+      "formula": "2 checks + relief valve",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "RPZ",
+        "reduced pressure zone assembly"
+      ],
+      "confusables": [
+        "Double check valve assembly",
+        "Pressure vacuum breaker assembly",
+        "Air gap"
+      ],
+      "sources": [
+        "ipc-2021#sec.reduced-pressure-principle-backflow-prevention-assembly",
+        "plumbing-epa-ccc#p.27"
+      ]
+    },
+    {
+      "id": "spillproof-vacuum-breaker",
+      "term": "Spillproof vacuum breaker",
+      "definition": "A vacuum breaker assembly with a check valve and air-inlet vent that limits water spilled from the vent port.",
+      "formula": "check + vent, spill-resistant",
+      "unit": 2,
+      "unitTitle": "Backflow devices",
+      "aliases": [
+        "SVB",
+        "spill-resistant vacuum breaker"
+      ],
+      "confusables": [
+        "Atmospheric vacuum breaker",
+        "Pressure vacuum breaker assembly",
+        "Critical level"
+      ],
+      "sources": [
+        "ipc-2021#sec.spillproof-vacuum-breaker",
+        "ipc-2021#sec.608.14.5"
+      ]
+    },
+    {
+      "id": "bathtub",
+      "term": "Bathtub",
+      "definition": "A bathing fixture with a waste outlet of at least 1 1/2 inches and, where fitted, an overflow of the same size.",
+      "formula": "1 1/2 in waste + overflow",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Shower",
+        "Lavatory",
+        "Sink"
+      ],
+      "sources": [
+        "ipc-2021#sec.407.2"
+      ]
+    },
+    {
+      "id": "drinking-fountain",
+      "term": "Drinking fountain",
+      "definition": "A fixture connected to potable water and drainage that delivers a stream of water for drinking.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Sink",
+        "Lavatory",
+        "Floor drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.drinking-fountain",
+        "ipc-2021#sec.410.1"
+      ]
+    },
+    {
+      "id": "floor-drain",
+      "term": "Floor drain",
+      "definition": "A drain inlet with a removable strainer and an outlet of at least 2 inches in diameter.",
+      "formula": "2 in outlet minimum",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Shower",
+        "Sink",
+        "Bathtub"
+      ],
+      "sources": [
+        "ipc-2021#sec.413.2",
+        "ipc-2021#sec.413.3"
+      ]
+    },
+    {
+      "id": "lavatory",
+      "term": "Lavatory",
+      "definition": "A hand-washing basin fixture that requires a waste outlet at least 1 1/4 inches in diameter.",
+      "formula": "1 1/4 in waste outlet",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [
+        "washbasin",
+        "hand basin"
+      ],
+      "confusables": [
+        "Sink",
+        "Floor drain",
+        "Water closet"
+      ],
+      "sources": [
+        "ipc-2021#sec.419.3",
+        "ipc-2021#sec.419.5"
+      ]
+    },
+    {
+      "id": "plumbing-fixture",
+      "term": "Plumbing fixture",
+      "definition": "A receptacle or device connected to a water supply, a drainage system, or both.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Water closet",
+        "Lavatory",
+        "Sink"
+      ],
+      "sources": [
+        "ipc-2021#sec.plumbing-fixture"
+      ]
+    },
+    {
+      "id": "shower",
+      "term": "Shower",
+      "definition": "A bathing area with a shower head, a compartment of at least 900 square inches, and a waste outlet of at least 1 1/2 inches.",
+      "formula": "900 in2 minimum",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Bathtub",
+        "Floor drain",
+        "Sink"
+      ],
+      "sources": [
+        "ipc-2021#sec.421.4",
+        "ipc-2021#sec.421.3"
+      ]
+    },
+    {
+      "id": "sink",
+      "term": "Sink",
+      "definition": "A basin fixture whose waste outlet must be at least 1 1/2 inches in diameter and fitted with a strainer.",
+      "formula": "1 1/2 in waste outlet",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Lavatory",
+        "Drinking fountain",
+        "Floor drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.422.2"
+      ]
+    },
+    {
+      "id": "urinal",
+      "term": "Urinal",
+      "definition": "A fixture that receives liquid waste and flushes it through a trap into the drainage system.",
+      "formula": "1.0 gpf maximum",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [],
+      "confusables": [
+        "Water closet",
+        "Sink",
+        "Lavatory"
+      ],
+      "sources": [
+        "ipc-2021#sec.424.1",
+        "plumbing-epa-watersense#sec.urinals"
+      ]
+    },
+    {
+      "id": "water-closet",
+      "term": "Water closet",
+      "definition": "A toilet fixture that receives liquid and solid waste and removes it by flushing into the drainage system.",
+      "formula": "1.6 gpf maximum",
+      "unit": 3,
+      "unitTitle": "Fixture types",
+      "aliases": [
+        "toilet",
+        "WC"
+      ],
+      "confusables": [
+        "Urinal",
+        "Bathtub",
+        "Lavatory"
+      ],
+      "sources": [
+        "ipc-2021#sec.425.1",
+        "plumbing-epa-watersense#sec.residential-toilets"
+      ]
+    },
+    {
+      "id": "accessible-fixture",
+      "term": "Accessible fixture",
+      "definition": "A plumbing fixture installed to meet the reach and clearance rules of ICC A117.1.",
+      "formula": "ICC A117.1",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Fixture centerline clearance",
+        "Minimum number of fixtures",
+        "Urinal partition"
+      ],
+      "sources": [
+        "ipc-2021#sec.404.2"
+      ]
+    },
+    {
+      "id": "air-break",
+      "term": "Air break",
+      "definition": "A piping arrangement in which a drain discharges below a flood level rim and above a trap seal.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Air gap",
+        "Flood level rim",
+        "Backsiphonage"
+      ],
+      "sources": [
+        "ipc-2021#sec.air-break-drainage-system"
+      ]
+    },
+    {
+      "id": "fixture-centerline-clearance",
+      "term": "Fixture centerline clearance",
+      "definition": "The 15-inch minimum distance from a fixture centerline to a side wall, partition, or obstruction.",
+      "formula": "15 in from centerline",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Water closet compartment",
+        "Urinal partition",
+        "Accessible fixture"
+      ],
+      "sources": [
+        "ipc-2021#sec.405.3.1"
+      ]
+    },
+    {
+      "id": "flood-level-rim",
+      "term": "Flood level rim",
+      "definition": "The edge of a receptacle over which water overflows when the fixture is filled.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Air gap",
+        "Critical level",
+        "Air break"
+      ],
+      "sources": [
+        "ipc-2021#sec.flood-level-rim"
+      ]
+    },
+    {
+      "id": "minimum-number-of-fixtures",
+      "term": "Minimum number of fixtures",
+      "definition": "The count of plumbing fixtures an occupancy requires, set by use and occupant load in Table 403.1.",
+      "formula": "Table 403.1",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Accessible fixture",
+        "Water closet compartment",
+        "Fixture centerline clearance"
+      ],
+      "sources": [
+        "ipc-2021#sec.403.1",
+        "ipc-2021#sec.403.1.1"
+      ]
+    },
+    {
+      "id": "separate-facilities",
+      "term": "Separate facilities",
+      "definition": "Toilet rooms provided for each sex wherever plumbing fixtures are required.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Minimum number of fixtures",
+        "Accessible fixture",
+        "Water closet compartment"
+      ],
+      "sources": [
+        "ipc-2021#sec.403.2"
+      ]
+    },
+    {
+      "id": "urinal-partition",
+      "term": "Urinal partition",
+      "definition": "A divider between urinals that provides privacy and leaves at least 30 inches between partitions.",
+      "formula": "30 in between partitions",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Water closet compartment",
+        "Fixture centerline clearance",
+        "Urinal"
+      ],
+      "sources": [
+        "ipc-2021#sec.405.3.5"
+      ]
+    },
+    {
+      "id": "water-closet-compartment",
+      "term": "Water closet compartment",
+      "definition": "An enclosure with walls or partitions and a door that separates a public or employee water closet.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fixture requirements",
+      "aliases": [],
+      "confusables": [
+        "Urinal partition",
+        "Fixture centerline clearance",
+        "Accessible fixture"
+      ],
+      "sources": [
+        "ipc-2021#sec.405.3.4"
+      ]
+    },
+    {
+      "id": "dual-flush",
+      "term": "Dual flush",
+      "definition": "A flushing feature that provides a reduced volume for liquid waste and a full volume for solid waste.",
+      "formula": "reduced or full",
+      "unit": 5,
+      "unitTitle": "Water efficiency",
+      "aliases": [
+        "dual flushing device"
+      ],
+      "confusables": [
+        "Flush volume",
+        "WaterSense labeled toilet",
+        "Maximum flow rate"
+      ],
+      "sources": [
+        "ipc-2021#sec.dual-flushing-device",
+        "plumbing-epa-watersense#sec.residential-toilets"
+      ]
+    },
+    {
+      "id": "flush-volume",
+      "term": "Flush volume",
+      "definition": "The quantity of water a water closet or urinal uses in one flushing cycle.",
+      "formula": "gpf",
+      "unit": 5,
+      "unitTitle": "Water efficiency",
+      "aliases": [],
+      "confusables": [
+        "Maximum flow rate",
+        "Dual flush",
+        "WaterSense labeled toilet"
+      ],
+      "sources": [
+        "ipc-2021#sec.604.4",
+        "plumbing-epa-watersense#sec.residential-toilets"
+      ]
+    },
+    {
+      "id": "maximum-flow-rate",
+      "term": "Maximum flow rate",
+      "definition": "The highest water use the code allows for a fixture or fitting, listed in Table 604.4.",
+      "formula": "Table 604.4",
+      "unit": 5,
+      "unitTitle": "Water efficiency",
+      "aliases": [],
+      "confusables": [
+        "Flush volume",
+        "WaterSense",
+        "Dual flush"
+      ],
+      "sources": [
+        "ipc-2021#sec.604.4"
+      ]
+    },
+    {
+      "id": "reclaimed-water",
+      "term": "Reclaimed water",
+      "definition": "Nonpotable water produced by treating wastewater at a permitted facility for approved uses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Water efficiency",
+      "aliases": [
+        "recycled water"
+      ],
+      "confusables": [
+        "Nonpotable water",
+        "Potable water",
+        "Pollution"
+      ],
+      "sources": [
+        "ipc-2021#sec.reclaimed-water"
+      ]
+    },
+    {
+      "id": "watersense",
+      "term": "WaterSense",
+      "definition": "An EPA labeling program for fixtures and fittings that are independently certified for water efficiency and performance.",
+      "formula": "1.28 gpf, 1.5 gpm",
+      "unit": 5,
+      "unitTitle": "Water efficiency",
+      "aliases": [
+        "WaterSense program"
+      ],
+      "confusables": [
+        "Maximum flow rate",
+        "WaterSense labeled toilet",
+        "Flush volume"
+      ],
+      "sources": [
+        "plumbing-epa-watersense#sec.watersense-products"
+      ]
+    },
+    {
+      "id": "watersense-labeled-toilet",
+      "term": "WaterSense labeled toilet",
+      "definition": "A tank-type toilet certified to use no more than 1.28 gallons per flush and meet performance criteria.",
+      "formula": "no more than 1.28 gpf",
+      "unit": 5,
+      "unitTitle": "Water efficiency",
+      "aliases": [
+        "WaterSense toilet"
+      ],
+      "confusables": [
+        "Dual flush",
+        "Flush volume",
+        "Water closet"
+      ],
+      "sources": [
+        "plumbing-epa-watersense#sec.residential-toilets"
+      ]
+    }
+  ]
+}

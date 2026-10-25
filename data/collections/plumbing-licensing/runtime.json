@@ -1,0 +1,1083 @@
+{
+  "version": 1,
+  "id": "plumbing-licensing",
+  "name": "Plumbing Licensing",
+  "short": "Plumbing",
+  "subjects": [
+    {
+      "id": "water-supply",
+      "name": "Water Supply Systems",
+      "short": "Water supply",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "Fixture supply",
+          "The water pipe that connects one fixture to a distribution branch or directly to a water main.",
+          ""
+        ],
+        [
+          "Individual water supply",
+          "A private water source serving one or more families that is not an approved public water supply.",
+          ""
+        ],
+        [
+          "Public water system",
+          "A piped water system serving the public that has at least 15 service connections or serves 25 people daily for at least 60 days a year.",
+          ""
+        ],
+        [
+          "Riser",
+          "A vertical water supply pipe that extends one story or more to feed branches or a group of fixtures.",
+          ""
+        ],
+        [
+          "Water distribution pipe",
+          "Piping inside a building or on the premises that carries water from the service pipe or meter to the points of use.",
+          ""
+        ],
+        [
+          "Water main",
+          "A public water supply pipe, or system of pipes, installed and maintained by a public entity in a street or public easement.",
+          ""
+        ],
+        [
+          "Water service pipe",
+          "The pipe that carries potable water from the water main, or from the meter at the right of way, to the building distribution system.",
+          ""
+        ],
+        [
+          "Water supply system",
+          "The water service pipe, distribution piping, fittings, control valves, and appurtenances that deliver potable water within or adjacent to a building.",
+          ""
+        ],
+        [
+          "Developed length",
+          "The length of a pipeline measured along the centerline of the pipe and its fittings.",
+          ""
+        ],
+        [
+          "Effective opening",
+          "The smallest cross-sectional area at a water discharge point, expressed as the diameter of an equivalent circle.",
+          ""
+        ],
+        [
+          "Flow pressure",
+          "The pressure in a water supply pipe at a fixture outlet while that outlet is fully open and flowing.",
+          ""
+        ],
+        [
+          "Low-head backpressure",
+          "Backpressure of 4.33 psi or less, equal to the pressure exerted by a column of water 10 feet high.",
+          ""
+        ],
+        [
+          "Pressure-reducing valve",
+          "A valve installed where static pressure exceeds 80 psi to reduce building water pressure to 80 psi or less.",
+          ""
+        ],
+        [
+          "Vacuum",
+          "Any pressure lower than the pressure exerted by the atmosphere at the same location.",
+          ""
+        ],
+        [
+          "Water pressure booster system",
+          "A pump, hydropneumatic tank, or elevated tank that supplements pressure when the available supply cannot meet fixture demand.",
+          ""
+        ],
+        [
+          "Water-hammer arrestor",
+          "A device that absorbs the pressure surge created when water flow in a supply system stops suddenly.",
+          ""
+        ],
+        [
+          "Chlorinated polyvinyl chloride (CPVC)",
+          "Chlorinated polyvinyl chloride pipe listed for water service and hot water distribution rated at 100 psi and 180 degrees Fahrenheit.",
+          ""
+        ],
+        [
+          "Copper tubing",
+          "Copper tube made in Types K, L, and M and listed for water service and distribution piping.",
+          ""
+        ],
+        [
+          "Cross-linked polyethylene (PEX)",
+          "Cross-linked polyethylene tubing listed for water service and for both hot and cold water distribution.",
+          ""
+        ],
+        [
+          "Ductile iron pipe",
+          "A cement-mortar-lined iron pipe listed for water service and water distribution mains.",
+          ""
+        ],
+        [
+          "Galvanized steel pipe",
+          "Zinc-coated steel pipe listed for water service and distribution and joined by threads or mechanical fittings.",
+          ""
+        ],
+        [
+          "Lead-free solder and flux",
+          "Solder and flux containing not more than 0.2 percent lead, required for joints in potable water supply piping.",
+          ""
+        ],
+        [
+          "PEX-AL-PEX",
+          "A pipe of cross-linked polyethylene layers bonded to an aluminum core, listed for water service and distribution.",
+          ""
+        ],
+        [
+          "Polyethylene of raised temperature (PE-RT)",
+          "Polyethylene tubing formulated for raised-temperature service and listed for hot and cold water distribution.",
+          ""
+        ],
+        [
+          "Working pressure rating",
+          "The maximum pressure a pipe or tube is rated to withstand in service, at least 160 psi at 73.4 degrees Fahrenheit for buried service pipe.",
+          ""
+        ],
+        [
+          "Adapter fitting",
+          "A connecting device that joins pipes or fittings of different sizes or types that do not otherwise fit together.",
+          ""
+        ],
+        [
+          "Flushometer valve",
+          "A valve on a pressurized supply line that opens to deliver a measured flush and closes gradually to reseal the fixture trap.",
+          ""
+        ],
+        [
+          "Full-open valve",
+          "A shutoff valve whose fully open closure member does not restrict flow through the valve body.",
+          ""
+        ],
+        [
+          "Gate valve",
+          "A valve with a wedge-shaped gate that lifts fully out of the flow path when the stem turns.",
+          ""
+        ],
+        [
+          "Mechanical joint",
+          "A pipe connection that relies on compression or an elastomeric seal rather than solder, solvent cement, threads, or heat fusion.",
+          ""
+        ],
+        [
+          "Press-connect joint",
+          "A permanent mechanical joint with an elastomeric seal, made with a pressing tool and jaw approved by the fitting manufacturer.",
+          ""
+        ],
+        [
+          "Push-fit fitting",
+          "A mechanical fitting that seals by inserting the pipe or tube into the fitting body.",
+          ""
+        ],
+        [
+          "Quick-closing valve",
+          "A valve or faucet that shuts off rapidly, either automatically on release or through a mechanical fast-closing mechanism.",
+          ""
+        ],
+        [
+          "Saddle-type fitting",
+          "A fitting that taps a branch into an existing pipe, prohibited as a joint in water supply piping.",
+          ""
+        ],
+        [
+          "Circulating hot water system",
+          "A hot water distribution system with pumps that circulate heated water from the heater through supply piping and back.",
+          ""
+        ],
+        [
+          "Demand recirculation water system",
+          "A recirculation system that starts its pump only when a user signals demand, then primes the hot water piping.",
+          ""
+        ],
+        [
+          "Hot water",
+          "Water at a temperature of 110 degrees Fahrenheit or higher, the code threshold for hot water supply.",
+          ""
+        ],
+        [
+          "Temperature and pressure relief (T&P) valve",
+          "A combination valve that opens on excess temperature or excess pressure to protect a water heater tank.",
+          ""
+        ],
+        [
+          "Tempered water",
+          "Water held between 85 and 110 degrees Fahrenheit for bathing and washing where full hot water would scald.",
+          ""
+        ],
+        [
+          "Thermal expansion control device",
+          "A device on the cold water inlet that absorbs the volume increase created as water is heated in a closed system.",
+          ""
+        ],
+        [
+          "Vacuum relief valve",
+          "A valve that admits air to prevent a vacuum from forming inside a water heater or storage tank.",
+          ""
+        ],
+        [
+          "Water heater",
+          "An appliance that heats potable water and delivers it to the potable hot water distribution system.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "drain-waste-vent",
+      "name": "Drain-Waste-Vent",
+      "short": "Drain-waste-vent",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Branch",
+          "Any part of a plumbing piping system other than a riser, main, or stack.",
+          ""
+        ],
+        [
+          "Building drain",
+          "Lowest portion of a building's drainage piping that receives soil and waste discharge and carries it to the building sewer.",
+          ""
+        ],
+        [
+          "Building sewer",
+          "Pipe that begins at the end of the building drain and carries its discharge to a public sewer or private disposal system.",
+          ""
+        ],
+        [
+          "Drainage system",
+          "Piping within a public or private premises that conveys sewage, rainwater, or other liquid waste to a point of disposal.",
+          ""
+        ],
+        [
+          "Horizontal branch",
+          "Drain pipe that connects one or more fixture drains to a soil stack, waste stack, or building drain.",
+          ""
+        ],
+        [
+          "Indirect waste",
+          "Liquid waste that reaches the drainage system through a receptor or air break instead of a direct pipe connection.",
+          ""
+        ],
+        [
+          "Sanitary drainage system",
+          "Piping that carries sewage and other liquid waste from fixtures to a public sewer or private disposal system.",
+          ""
+        ],
+        [
+          "Sewage ejector",
+          "Receptacle and pump assembly that lifts sewage from a point below the gravity drain to a higher line.",
+          ""
+        ],
+        [
+          "Soil pipe",
+          "Drain pipe that carries sewage containing fecal matter to a building drain or building sewer.",
+          ""
+        ],
+        [
+          "Stack",
+          "Vertical line of soil, waste, or vent piping that extends through at least one story, with or without offsets.",
+          ""
+        ],
+        [
+          "Storm drainage",
+          "Piping and receptors that collect rainwater and surface water and carry it to a point of disposal.",
+          ""
+        ],
+        [
+          "Waste pipe",
+          "Pipe that carries only liquid waste that contains no fecal matter.",
+          ""
+        ],
+        [
+          "Continuous flow",
+          "Steady drainage discharge, such as from a pump, rated at two fixture units per gallon per minute.",
+          "2 dfu = 1 gpm"
+        ],
+        [
+          "Drainage fixture unit (DFU)",
+          "Unit that expresses the probable drainage load a fixture places on the drainage system.",
+          "dfu"
+        ],
+        [
+          "Fixture-unit load",
+          "Total drainage fixture units connected to a pipe segment, used to select its required diameter.",
+          ""
+        ],
+        [
+          "Intermittent flow",
+          "Drainage load from equipment that discharges in bursts and is rated in fixture units by flow rate.",
+          ""
+        ],
+        [
+          "Offset",
+          "Arrangement of bends that shifts one section of pipe out of line with but parallel to another section.",
+          ""
+        ],
+        [
+          "Stack load",
+          "Total fixture units that discharge into a vertical stack, checked against the maximum its diameter permits.",
+          ""
+        ],
+        [
+          "Area drain",
+          "Receptor installed outdoors to collect surface water and direct it into a storm drainage line.",
+          ""
+        ],
+        [
+          "Backwater valve",
+          "Device that closes a drainage line automatically to stop sewage from reversing into a building.",
+          ""
+        ],
+        [
+          "Cleanout",
+          "Access opening in a drainage line that permits removal of a blockage with a plug, cap, or removable fixture.",
+          ""
+        ],
+        [
+          "Combination wye and bend",
+          "Assembly of a wye and a bend that produces a smooth, sweeping change of direction between drain pipes.",
+          ""
+        ],
+        [
+          "Drainage fitting",
+          "Fitting intended for drainage service, with a recessed, smooth interior waterway that leaves no ridge inside the pipe.",
+          ""
+        ],
+        [
+          "One-eighth bend",
+          "Fitting that changes drainage flow direction by 45 degrees.",
+          ""
+        ],
+        [
+          "Receptor",
+          "Fixture or surfaced area that receives liquid waste and discharges it through a trap.",
+          ""
+        ],
+        [
+          "Sanitary tee",
+          "Tee fitting with a curved inlet that turns flow from a horizontal branch into a vertical stack in the direction of drainage.",
+          ""
+        ],
+        [
+          "Sweep",
+          "Fitting with a long, gradual curve that carries flow through a change of direction with little resistance.",
+          ""
+        ],
+        [
+          "Wye branch",
+          "Y-shaped fitting that joins a branch to a drain at a shallow angle so flow turns gradually.",
+          ""
+        ],
+        [
+          "Branch vent",
+          "Vent that connects one or more individual vents to a vent stack or stack vent.",
+          ""
+        ],
+        [
+          "Combination waste and vent system",
+          "Waste piping arrangement that vents fixtures through an oversized common pipe instead of separate vent piping.",
+          ""
+        ],
+        [
+          "Yoke vent",
+          "Vent that connects a soil or waste stack to a vent stack to equalize pressure between them.",
+          ""
+        ],
+        [
+          "Backgrade",
+          "Reverse pitch that makes a drain fall away from its point of disposal and hold water.",
+          ""
+        ],
+        [
+          "Fall",
+          "Vertical drop of a pipe over a stated horizontal distance.",
+          ""
+        ],
+        [
+          "Grade",
+          "Rate at which a horizontal drain falls toward the point of disposal, commonly stated in inches per foot.",
+          ""
+        ],
+        [
+          "Hydraulic jump",
+          "Sudden rise in water depth where flow slows at a change from steep to flat grade.",
+          ""
+        ],
+        [
+          "Invert",
+          "Interior bottom surface of a pipe at a cross section, used as the reference for elevation.",
+          ""
+        ],
+        [
+          "Percent slope",
+          "Slope expressed as vertical drop divided by horizontal run, then multiplied by one hundred.",
+          "percent = (fall / run) x 100"
+        ],
+        [
+          "Scouring velocity",
+          "Flow speed that keeps solids suspended and clears settled sediment from a sloping drain.",
+          ""
+        ],
+        [
+          "Slope",
+          "Fall of a pipe stated as vertical drop per unit of horizontal run.",
+          ""
+        ],
+        [
+          "Trap arm slope",
+          "Pitch of a trap arm, commonly one-quarter inch per foot, that keeps the arm self-scouring.",
+          ""
+        ],
+        [
+          "Uniform slope",
+          "Continuous, unbroken pitch along a drain run, without flat or reversed sections.",
+          ""
+        ],
+        [
+          "Vent grade",
+          "Pitch of a vent pipe that lets moisture drain back by gravity to the pipe it serves.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "traps-and-vents",
+      "name": "Traps and Vents",
+      "short": "Traps and vents",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Double trapping",
+          "Installing two traps in series on one fixture drain is prohibited.",
+          ""
+        ],
+        [
+          "Fixture drain",
+          "The drain pipe that carries waste from a fixture trap to the next drain junction.",
+          ""
+        ],
+        [
+          "Self-scouring trap",
+          "A trap shaped so flowing waste clears solids from its interior without relying on partitions.",
+          ""
+        ],
+        [
+          "Tailpiece",
+          "The short pipe that carries waste from a fixture outlet down to the trap inlet.",
+          ""
+        ],
+        [
+          "Trap",
+          "A fitting or device that holds a liquid seal to keep sewer gas out while wastewater passes.",
+          ""
+        ],
+        [
+          "Trap arm",
+          "The section of fixture drain that runs from the trap outlet to the vent connection.",
+          ""
+        ],
+        [
+          "Trap dip",
+          "The highest point of the internal passage at the lowest part of the trap bend.",
+          ""
+        ],
+        [
+          "Trap weir",
+          "The low point at the outlet side of a trap over which the seal spills.",
+          ""
+        ],
+        [
+          "Backpressure (drainage)",
+          "Pressure in the drainage piping that pushes against the trap seal from the outlet side.",
+          ""
+        ],
+        [
+          "Barrier-type trap seal protection device",
+          "A cover or membrane that slows evaporation from the seal of a floor drain trap.",
+          ""
+        ],
+        [
+          "Capillary attraction",
+          "The drawing of liquid into a narrow space by surface tension, which can pull water out of a trap seal.",
+          ""
+        ],
+        [
+          "Depth of trap seal",
+          "The amount of liquid that must leave a full trap before air can pass.",
+          ""
+        ],
+        [
+          "Evaporation",
+          "The slow loss of a trap seal as water turns to vapor during long disuse.",
+          ""
+        ],
+        [
+          "Trap seal",
+          "The vertical distance from the trap weir down to the top of the trap dip.",
+          ""
+        ],
+        [
+          "Trap seal primer",
+          "A device that adds a measured amount of water to a trap that is seldom used.",
+          ""
+        ],
+        [
+          "Trap siphonage",
+          "The loss of a trap seal when negative pressure in the drain pulls the water out.",
+          ""
+        ],
+        [
+          "Air admittance valve",
+          "A one-way valve that admits air when negative pressure develops and seals when flow stops.",
+          ""
+        ],
+        [
+          "Circuit vent",
+          "A branch vent that serves two to eight traps connected to one horizontal branch.",
+          ""
+        ],
+        [
+          "Common vent",
+          "A vent that connects at the junction of two fixture drains and serves both traps.",
+          ""
+        ],
+        [
+          "Individual vent",
+          "A vent pipe that serves one fixture trap and connects to the vent system at a higher level.",
+          ""
+        ],
+        [
+          "Island fixture vent",
+          "A vent for a sink or lavatory that rises past the fixture outlet before dropping below the floor.",
+          ""
+        ],
+        [
+          "Relief vent",
+          "A vent that circulates air between drainage and vent systems or relieves stack pressure.",
+          ""
+        ],
+        [
+          "Vent system",
+          "Piping that supplies air to a drainage system and protects trap seals from pressure changes.",
+          ""
+        ],
+        [
+          "Vent terminal",
+          "Outdoor end of a vent pipe that opens to the atmosphere for air exchange.",
+          ""
+        ],
+        [
+          "Wet vent",
+          "A vent that also carries wastewater from fixtures on the same drainage branch.",
+          ""
+        ],
+        [
+          "Branch interval",
+          "A stack height of at least eight feet within which one floor's branches connect.",
+          ""
+        ],
+        [
+          "Minimum vent size",
+          "The smallest allowed vent diameter, one and one-quarter inches, before sizing tables require more.",
+          "1 1/4 in. (32 mm) minimum"
+        ],
+        [
+          "Stack vent",
+          "The extension of a soil or waste stack upward past the highest horizontal drain connected to it.",
+          ""
+        ],
+        [
+          "Sump vent",
+          "A vent that terminates separately to open air from a sewage ejector or sump.",
+          ""
+        ],
+        [
+          "Vent capacity",
+          "The maximum drainage load a vent of a given size can serve under the adopted code tables.",
+          ""
+        ],
+        [
+          "Vent header",
+          "A common vent pipe that joins several stack vents at the top and runs outdoors.",
+          ""
+        ],
+        [
+          "Vent stack",
+          "A vertical vent pipe that provides air circulation to and from the drainage system.",
+          ""
+        ],
+        [
+          "Bell trap",
+          "A bell-shaped trap below a floor drain inlet that collects debris and is prohibited.",
+          ""
+        ],
+        [
+          "Building trap",
+          "A trap in a building drain that prevents air movement between the building and sewer.",
+          ""
+        ],
+        [
+          "Crown vent",
+          "A vent connected at the trap crown too near the weir to protect the seal.",
+          ""
+        ],
+        [
+          "Drum trap",
+          "A cylindrical trap with a vertical axis, prohibited except for solids or chemical waste.",
+          ""
+        ],
+        [
+          "Flat vent",
+          "A vent run that is level or back-pitched, so it traps water and blocks air.",
+          ""
+        ],
+        [
+          "Frost closure",
+          "Ice can block a vent terminal in cold weather unless the terminal is increased in diameter.",
+          ""
+        ],
+        [
+          "S-trap",
+          "A trap whose outlet turns downward right after the seal, forming an S that siphons.",
+          ""
+        ],
+        [
+          "Unvented trap",
+          "A trap with no protecting vent, leaving its seal exposed to siphonage and backpressure.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "backflow-fixtures",
+      "name": "Backflow and Fixtures",
+      "short": "Backflow and fixtures",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Backflow",
+          "The flow of water or other substances into potable distribution pipes from a source other than the intended one.",
+          ""
+        ],
+        [
+          "Backpressure (water supply)",
+          "Pressure in a connected system that exceeds supply pressure and drives water toward the potable main.",
+          ""
+        ],
+        [
+          "Backsiphonage",
+          "Backflow caused by negative pressure in the potable water distribution piping.",
+          ""
+        ],
+        [
+          "Contamination",
+          "An impairment of potable water quality that creates a public health hazard through poisoning or disease.",
+          ""
+        ],
+        [
+          "Cross-connection",
+          "Any physical connection between a potable water system and a source of contamination or pollution.",
+          ""
+        ],
+        [
+          "Nonpotable water",
+          "Water unsuitable for drinking, bathing, or culinary purposes because of its quality.",
+          ""
+        ],
+        [
+          "Pollution",
+          "An impairment of potable water quality that harms appearance, taste, or odor without creating a health hazard.",
+          ""
+        ],
+        [
+          "Potable water",
+          "Water safe for drinking, bathing, and culinary use because harmful impurities fall below hazardous levels.",
+          ""
+        ],
+        [
+          "Air gap",
+          "The unobstructed vertical distance through free atmosphere between a water outlet and the flood level rim below it.",
+          "2D, minimum 1 in"
+        ],
+        [
+          "Atmospheric vacuum breaker",
+          "A device that admits air downstream when supply pressure drops and protects only against backsiphonage.",
+          "no shutoff downstream"
+        ],
+        [
+          "Backflow preventer",
+          "A device, assembly, or method that stops backflow from entering the potable water supply.",
+          ""
+        ],
+        [
+          "Barometric loop",
+          "A continuous pipe loop rising about 35 feet that prevents backsiphonage but not backpressure.",
+          "35 ft (10 668 mm)"
+        ],
+        [
+          "Critical level",
+          "The minimum height above a flood level rim at which a backflow preventer or vacuum breaker must sit.",
+          "C-L marking"
+        ],
+        [
+          "Double check valve assembly",
+          "A testable assembly of two check valves used to protect against low or moderate hazards.",
+          "2 checks, testable"
+        ],
+        [
+          "Dual check backflow preventer",
+          "A non-testable pair of check valves installed on a residential service, immediately downstream of the meter.",
+          "2 checks, no test cocks"
+        ],
+        [
+          "Hose connection vacuum breaker",
+          "A vacuum breaker threaded onto a hose bibb that stops backsiphonage from a hose or attached appliance.",
+          ""
+        ],
+        [
+          "Pressure vacuum breaker assembly",
+          "A testable vacuum breaker with a spring-loaded check and shutoff valves that may operate under constant pressure.",
+          "check + air inlet, testable"
+        ],
+        [
+          "Reduced pressure principle assembly",
+          "A testable assembly with two check valves and a relief valve that vents the zone between them to atmosphere.",
+          "2 checks + relief valve"
+        ],
+        [
+          "Spillproof vacuum breaker",
+          "A vacuum breaker assembly with a check valve and air-inlet vent that limits water spilled from the vent port.",
+          "check + vent, spill-resistant"
+        ],
+        [
+          "Bathtub",
+          "A bathing fixture with a waste outlet of at least 1 1/2 inches and, where fitted, an overflow of the same size.",
+          "1 1/2 in waste + overflow"
+        ],
+        [
+          "Drinking fountain",
+          "A fixture connected to potable water and drainage that delivers a stream of water for drinking.",
+          ""
+        ],
+        [
+          "Floor drain",
+          "A drain inlet with a removable strainer and an outlet of at least 2 inches in diameter.",
+          "2 in outlet minimum"
+        ],
+        [
+          "Lavatory",
+          "A hand-washing basin fixture that requires a waste outlet at least 1 1/4 inches in diameter.",
+          "1 1/4 in waste outlet"
+        ],
+        [
+          "Plumbing fixture",
+          "A receptacle or device connected to a water supply, a drainage system, or both.",
+          ""
+        ],
+        [
+          "Shower",
+          "A bathing area with a shower head, a compartment of at least 900 square inches, and a waste outlet of at least 1 1/2 inches.",
+          "900 in2 minimum"
+        ],
+        [
+          "Sink",
+          "A basin fixture whose waste outlet must be at least 1 1/2 inches in diameter and fitted with a strainer.",
+          "1 1/2 in waste outlet"
+        ],
+        [
+          "Urinal",
+          "A fixture that receives liquid waste and flushes it through a trap into the drainage system.",
+          "1.0 gpf maximum"
+        ],
+        [
+          "Water closet",
+          "A toilet fixture that receives liquid and solid waste and removes it by flushing into the drainage system.",
+          "1.6 gpf maximum"
+        ],
+        [
+          "Accessible fixture",
+          "A plumbing fixture installed to meet the reach and clearance rules of ICC A117.1.",
+          "ICC A117.1"
+        ],
+        [
+          "Air break",
+          "A piping arrangement in which a drain discharges below a flood level rim and above a trap seal.",
+          ""
+        ],
+        [
+          "Fixture centerline clearance",
+          "The 15-inch minimum distance from a fixture centerline to a side wall, partition, or obstruction.",
+          "15 in from centerline"
+        ],
+        [
+          "Flood level rim",
+          "The edge of a receptacle over which water overflows when the fixture is filled.",
+          ""
+        ],
+        [
+          "Minimum number of fixtures",
+          "The count of plumbing fixtures an occupancy requires, set by use and occupant load in Table 403.1.",
+          "Table 403.1"
+        ],
+        [
+          "Separate facilities",
+          "Toilet rooms provided for each sex wherever plumbing fixtures are required.",
+          ""
+        ],
+        [
+          "Urinal partition",
+          "A divider between urinals that provides privacy and leaves at least 30 inches between partitions.",
+          "30 in between partitions"
+        ],
+        [
+          "Water closet compartment",
+          "An enclosure with walls or partitions and a door that separates a public or employee water closet.",
+          ""
+        ],
+        [
+          "Dual flush",
+          "A flushing feature that provides a reduced volume for liquid waste and a full volume for solid waste.",
+          "reduced or full"
+        ],
+        [
+          "Flush volume",
+          "The quantity of water a water closet or urinal uses in one flushing cycle.",
+          "gpf"
+        ],
+        [
+          "Maximum flow rate",
+          "The highest water use the code allows for a fixture or fitting, listed in Table 604.4.",
+          "Table 604.4"
+        ],
+        [
+          "Reclaimed water",
+          "Nonpotable water produced by treating wastewater at a permitted facility for approved uses.",
+          ""
+        ],
+        [
+          "WaterSense",
+          "An EPA labeling program for fixtures and fittings that are independently certified for water efficiency and performance.",
+          "1.28 gpf, 1.5 gpm"
+        ],
+        [
+          "WaterSense labeled toilet",
+          "A tank-type toilet certified to use no more than 1.28 gallons per flush and meet performance criteria.",
+          "no more than 1.28 gpf"
+        ]
+      ]
+    },
+    {
+      "id": "plumbing-code",
+      "name": "Plumbing Code",
+      "short": "Plumbing code",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "alternative engineered design",
+          "A plumbing system that satisfies the code's intent and performance level even though the code does not specifically regulate its design.",
+          ""
+        ],
+        [
+          "approved",
+          "Acceptable to the code official, who may require tests or research reports as evidence of compliance.",
+          ""
+        ],
+        [
+          "approved agency",
+          "An established and recognized organization regularly engaged in testing, inspection, or product certification that the code official has accepted.",
+          ""
+        ],
+        [
+          "code official",
+          "The officer or other designated authority charged with administering and enforcing the code, including a duly authorized representative.",
+          ""
+        ],
+        [
+          "existing installation",
+          "A plumbing system legally installed before the code took effect or covered by a permit to install that has already been issued.",
+          ""
+        ],
+        [
+          "plumbing code",
+          "A legally adopted set of minimum requirements governing the design, installation, and maintenance of plumbing systems.",
+          ""
+        ],
+        [
+          "plumbing system",
+          "The water distribution pipes, fixtures, traps, soil and vent pipes, drains, and appurtenances within a structure, including the water service and building sewer.",
+          ""
+        ],
+        [
+          "third-party certified",
+          "A product whose function and performance an approved agency has tested and continues to monitor under a certification program.",
+          ""
+        ],
+        [
+          "annual permit",
+          "A permit letting a qualified tradesperson make repeated alterations to an approved system without obtaining a separate permit each time.",
+          ""
+        ],
+        [
+          "board of appeals",
+          "An appointed body that hears appeals of the code official's orders, decisions, and code interpretations.",
+          ""
+        ],
+        [
+          "construction document",
+          "Written, graphic, and pictorial material describing a project's design, location, and physical characteristics for permit review.",
+          ""
+        ],
+        [
+          "final inspection",
+          "An inspection made when the building is complete, fixtures are connected, and the structure is ready for occupancy.",
+          ""
+        ],
+        [
+          "notice of approval",
+          "A written notice the code official issues after tests and inspections show the work complies with the code.",
+          ""
+        ],
+        [
+          "permit",
+          "Official authorization the code official issues before regulated plumbing work may begin.",
+          ""
+        ],
+        [
+          "rough-in inspection",
+          "An inspection made after framing and all sanitary, storm, and water piping are installed but before wall or ceiling membranes.",
+          ""
+        ],
+        [
+          "stop work order",
+          "A written order halting work that is proceeding contrary to the code or in a dangerous manner.",
+          ""
+        ],
+        [
+          "underground inspection",
+          "An inspection made after trenches are excavated and bedded and piping installed, but before backfill is placed.",
+          ""
+        ],
+        [
+          "brazed joint",
+          "A copper joint made by heating cleaned surfaces and melting a filler metal that conforms to the applicable filler standard.",
+          ""
+        ],
+        [
+          "dielectric union",
+          "A fitting that joins copper or copper-alloy tubing to steel pipe while preventing galvanic corrosion between the different metals.",
+          ""
+        ],
+        [
+          "prohibited joint",
+          "A connection the code forbids, such as a cement joint, saddle fitting, or solvent-cement joint between different plastics.",
+          ""
+        ],
+        [
+          "solder joint",
+          "A copper joint made by cleaning surfaces, applying flux, and melting lead-free solder to draw into the gap.",
+          ""
+        ],
+        [
+          "solvent cement",
+          "A plastic pipe adhesive that softens and fuses the mating surfaces of pipe and fitting as it cures.",
+          ""
+        ],
+        [
+          "solvent-cemented joint",
+          "A plastic pipe joint made by coating clean surfaces with solvent cement and assembling them while the cement remains wet.",
+          ""
+        ],
+        [
+          "threaded joint",
+          "A screwed connection in which tapered external pipe threads engage internal threads and seal with compound or tape.",
+          ""
+        ],
+        [
+          "welded joint",
+          "A pipe connection formed by heating two ends until they fuse, with or without added filler metal.",
+          ""
+        ],
+        [
+          "bedding",
+          "The prepared trench bottom or placed material that gives continuous load-bearing support along a buried pipe.",
+          ""
+        ],
+        [
+          "frost line",
+          "The depth below grade to which soil freezes, used to set minimum burial depth for exterior water piping.",
+          ""
+        ],
+        [
+          "hanger spacing",
+          "The maximum distance allowed between supports for a given piping material, size, and orientation.",
+          ""
+        ],
+        [
+          "pipe sleeve",
+          "A larger pipe built into a foundation wall so the passing pipe can move without loading the wall.",
+          ""
+        ],
+        [
+          "shield plate",
+          "A steel plate protecting pipe installed close to the edge of a bored or notched framing member.",
+          ""
+        ],
+        [
+          "supports",
+          "Devices that support and secure pipe, fixtures, and equipment in a plumbing system.",
+          ""
+        ],
+        [
+          "sway bracing",
+          "Rigid bracing installed where flow direction changes in large horizontal drains to resist movement from flow forces.",
+          ""
+        ],
+        [
+          "air test",
+          "A test that pressurizes nonplastic piping with air and holds the pressure to reveal leaks.",
+          ""
+        ],
+        [
+          "competent person",
+          "A worker able to identify existing and predictable hazards and authorized to take prompt corrective action.",
+          ""
+        ],
+        [
+          "confined space",
+          "A space large enough to enter, with restricted entry or exit, that is not designed for continuous occupancy.",
+          ""
+        ],
+        [
+          "hazardous atmosphere",
+          "An atmosphere that may cause death, incapacitation, injury, or acute illness through fire or explosion, oxygen imbalance, or toxicity.",
+          ""
+        ],
+        [
+          "permit-required confined space",
+          "A confined space containing a hazardous atmosphere, engulfment potential, converging walls, or another serious safety hazard.",
+          ""
+        ],
+        [
+          "protective system",
+          "A method such as sloping, benching, shoring, or shielding that protects workers from cave-ins and falling material.",
+          ""
+        ],
+        [
+          "smoke test",
+          "A test that fills traps with water and introduces pungent smoke to find openings in the drainage system.",
+          ""
+        ],
+        [
+          "water test",
+          "A test that fills drainage piping with water to a specified head and holds it to reveal leaks.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

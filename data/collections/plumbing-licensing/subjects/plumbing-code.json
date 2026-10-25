@@ -1,0 +1,755 @@
+{
+  "version": 1,
+  "id": "plumbing-code",
+  "collectionId": "plumbing-licensing",
+  "section": "core",
+  "name": "Plumbing Code",
+  "shortName": "Plumbing code",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "Code framework"
+    },
+    {
+      "number": 2,
+      "title": "Permits and inspection"
+    },
+    {
+      "number": 3,
+      "title": "Materials and joints"
+    },
+    {
+      "number": 4,
+      "title": "Support and protection"
+    },
+    {
+      "number": 5,
+      "title": "Safety and testing"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "alternative-engineered-design",
+      "term": "alternative engineered design",
+      "definition": "A plumbing system that satisfies the code's intent and performance level even though the code does not specifically regulate its design.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "plumbing system",
+        "existing installation",
+        "plumbing code"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "approved",
+      "term": "approved",
+      "definition": "Acceptable to the code official, who may require tests or research reports as evidence of compliance.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "approved agency",
+        "third-party certified",
+        "code official"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "approved-agency",
+      "term": "approved agency",
+      "definition": "An established and recognized organization regularly engaged in testing, inspection, or product certification that the code official has accepted.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "third-party certified",
+        "approved",
+        "code official"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "code-official",
+      "term": "code official",
+      "definition": "The officer or other designated authority charged with administering and enforcing the code, including a duly authorized representative.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "approved agency",
+        "approved",
+        "board of appeals"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "existing-installation",
+      "term": "existing installation",
+      "definition": "A plumbing system legally installed before the code took effect or covered by a permit to install that has already been issued.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "plumbing system",
+        "plumbing code",
+        "alternative engineered design"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "plumbing-code",
+      "term": "plumbing code",
+      "definition": "A legally adopted set of minimum requirements governing the design, installation, and maintenance of plumbing systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "plumbing system",
+        "existing installation",
+        "alternative engineered design"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.101.3"
+      ]
+    },
+    {
+      "id": "plumbing-system",
+      "term": "plumbing system",
+      "definition": "The water distribution pipes, fixtures, traps, soil and vent pipes, drains, and appurtenances within a structure, including the water service and building sewer.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "plumbing code",
+        "existing installation",
+        "alternative engineered design"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "third-party-certified",
+      "term": "third-party certified",
+      "definition": "A product whose function and performance an approved agency has tested and continues to monitor under a certification program.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Code framework",
+      "aliases": [],
+      "confusables": [
+        "approved agency",
+        "approved",
+        "existing installation"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "annual-permit",
+      "term": "annual permit",
+      "definition": "A permit letting a qualified tradesperson make repeated alterations to an approved system without obtaining a separate permit each time.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "permit",
+        "construction document",
+        "stop work order"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.106.1.1"
+      ]
+    },
+    {
+      "id": "board-of-appeals",
+      "term": "board of appeals",
+      "definition": "An appointed body that hears appeals of the code official's orders, decisions, and code interpretations.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "code official",
+        "stop work order",
+        "notice of approval"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.114.1"
+      ]
+    },
+    {
+      "id": "construction-document",
+      "term": "construction document",
+      "definition": "Written, graphic, and pictorial material describing a project's design, location, and physical characteristics for permit review.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "permit",
+        "annual permit",
+        "notice of approval"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "final-inspection",
+      "term": "final inspection",
+      "definition": "An inspection made when the building is complete, fixtures are connected, and the structure is ready for occupancy.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "rough-in inspection",
+        "underground inspection",
+        "notice of approval"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.108.2"
+      ]
+    },
+    {
+      "id": "notice-of-approval",
+      "term": "notice of approval",
+      "definition": "A written notice the code official issues after tests and inspections show the work complies with the code.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "stop work order",
+        "final inspection",
+        "permit"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.111.1"
+      ]
+    },
+    {
+      "id": "permit",
+      "term": "permit",
+      "definition": "Official authorization the code official issues before regulated plumbing work may begin.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "annual permit",
+        "stop work order",
+        "notice of approval"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.106.1"
+      ]
+    },
+    {
+      "id": "rough-in-inspection",
+      "term": "rough-in inspection",
+      "definition": "An inspection made after framing and all sanitary, storm, and water piping are installed but before wall or ceiling membranes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "underground inspection",
+        "final inspection",
+        "notice of approval"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.108.2"
+      ]
+    },
+    {
+      "id": "stop-work-order",
+      "term": "stop work order",
+      "definition": "A written order halting work that is proceeding contrary to the code or in a dangerous manner.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "notice of approval",
+        "permit",
+        "board of appeals"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.113.1"
+      ]
+    },
+    {
+      "id": "underground-inspection",
+      "term": "underground inspection",
+      "definition": "An inspection made after trenches are excavated and bedded and piping installed, but before backfill is placed.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Permits and inspection",
+      "aliases": [],
+      "confusables": [
+        "rough-in inspection",
+        "final inspection",
+        "bedding"
+      ],
+      "sources": [
+        "ipc-2021#sec.1.108.2"
+      ]
+    },
+    {
+      "id": "brazed-joint",
+      "term": "brazed joint",
+      "definition": "A copper joint made by heating cleaned surfaces and melting a filler metal that conforms to the applicable filler standard.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "solder joint",
+        "solvent-cemented joint",
+        "welded joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.6.605.13.1"
+      ]
+    },
+    {
+      "id": "dielectric-union",
+      "term": "dielectric union",
+      "definition": "A fitting that joins copper or copper-alloy tubing to steel pipe while preventing galvanic corrosion between the different metals.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "threaded joint",
+        "brazed joint",
+        "solder joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.6.605.23.1"
+      ]
+    },
+    {
+      "id": "prohibited-joint",
+      "term": "prohibited joint",
+      "definition": "A connection the code forbids, such as a cement joint, saddle fitting, or solvent-cement joint between different plastics.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "solvent-cemented joint",
+        "solder joint",
+        "brazed joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.7.707.1"
+      ]
+    },
+    {
+      "id": "solder-joint",
+      "term": "solder joint",
+      "definition": "A copper joint made by cleaning surfaces, applying flux, and melting lead-free solder to draw into the gap.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "brazed joint",
+        "solvent-cemented joint",
+        "welded joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.6.605.13.6"
+      ]
+    },
+    {
+      "id": "solvent-cement",
+      "term": "solvent cement",
+      "definition": "A plastic pipe adhesive that softens and fuses the mating surfaces of pipe and fitting as it cures.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "solvent-cemented joint",
+        "solder joint",
+        "brazed joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.6.605.10.2"
+      ]
+    },
+    {
+      "id": "solvent-cemented-joint",
+      "term": "solvent-cemented joint",
+      "definition": "A plastic pipe joint made by coating clean surfaces with solvent cement and assembling them while the cement remains wet.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "solder joint",
+        "brazed joint",
+        "solvent cement"
+      ],
+      "sources": [
+        "ipc-2021#sec.6.605.10.2"
+      ]
+    },
+    {
+      "id": "threaded-joint",
+      "term": "threaded joint",
+      "definition": "A screwed connection in which tapered external pipe threads engage internal threads and seal with compound or tape.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "brazed joint",
+        "solder joint",
+        "solvent-cemented joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "welded-joint",
+      "term": "welded joint",
+      "definition": "A pipe connection formed by heating two ends until they fuse, with or without added filler metal.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Materials and joints",
+      "aliases": [],
+      "confusables": [
+        "brazed joint",
+        "solder joint",
+        "solvent-cemented joint"
+      ],
+      "sources": [
+        "ipc-2021#sec.605.3"
+      ]
+    },
+    {
+      "id": "bedding",
+      "term": "bedding",
+      "definition": "The prepared trench bottom or placed material that gives continuous load-bearing support along a buried pipe.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "frost line",
+        "pipe sleeve",
+        "shield plate"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.306.2"
+      ]
+    },
+    {
+      "id": "frost-line",
+      "term": "frost line",
+      "definition": "The depth below grade to which soil freezes, used to set minimum burial depth for exterior water piping.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "bedding",
+        "pipe sleeve",
+        "shield plate"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.305.4"
+      ]
+    },
+    {
+      "id": "hanger-spacing",
+      "term": "hanger spacing",
+      "definition": "The maximum distance allowed between supports for a given piping material, size, and orientation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "supports",
+        "sway bracing",
+        "shield plate"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.308.5"
+      ]
+    },
+    {
+      "id": "pipe-sleeve",
+      "term": "pipe sleeve",
+      "definition": "A larger pipe built into a foundation wall so the passing pipe can move without loading the wall.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "shield plate",
+        "bedding",
+        "supports"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.305.3"
+      ]
+    },
+    {
+      "id": "shield-plate",
+      "term": "shield plate",
+      "definition": "A steel plate protecting pipe installed close to the edge of a bored or notched framing member.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "pipe sleeve",
+        "hanger spacing",
+        "supports"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.305.6"
+      ]
+    },
+    {
+      "id": "supports",
+      "term": "supports",
+      "definition": "Devices that support and secure pipe, fixtures, and equipment in a plumbing system.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "hanger spacing",
+        "sway bracing",
+        "pipe sleeve"
+      ],
+      "sources": [
+        "ipc-2021#sec.2"
+      ]
+    },
+    {
+      "id": "sway-bracing",
+      "term": "sway bracing",
+      "definition": "Rigid bracing installed where flow direction changes in large horizontal drains to resist movement from flow forces.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Support and protection",
+      "aliases": [],
+      "confusables": [
+        "supports",
+        "hanger spacing",
+        "pipe sleeve"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.308.6"
+      ]
+    },
+    {
+      "id": "air-test",
+      "term": "air test",
+      "definition": "A test that pressurizes nonplastic piping with air and holds the pressure to reveal leaks.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "water test",
+        "smoke test",
+        "competent person"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.312.3"
+      ]
+    },
+    {
+      "id": "competent-person",
+      "term": "competent person",
+      "definition": "A worker able to identify existing and predictable hazards and authorized to take prompt corrective action.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "protective system",
+        "code official",
+        "confined space"
+      ],
+      "sources": [
+        "osha-1926-subpart-p#sec.1926.650"
+      ]
+    },
+    {
+      "id": "confined-space",
+      "term": "confined space",
+      "definition": "A space large enough to enter, with restricted entry or exit, that is not designed for continuous occupancy.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "permit-required confined space",
+        "hazardous atmosphere",
+        "protective system"
+      ],
+      "sources": [
+        "osha-1910-146#sec.1910.146(b)"
+      ]
+    },
+    {
+      "id": "hazardous-atmosphere",
+      "term": "hazardous atmosphere",
+      "definition": "An atmosphere that may cause death, incapacitation, injury, or acute illness through fire or explosion, oxygen imbalance, or toxicity.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "confined space",
+        "permit-required confined space",
+        "air test"
+      ],
+      "sources": [
+        "osha-1910-146#sec.1910.146(b)"
+      ]
+    },
+    {
+      "id": "permit-required-confined-space",
+      "term": "permit-required confined space",
+      "definition": "A confined space containing a hazardous atmosphere, engulfment potential, converging walls, or another serious safety hazard.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "confined space",
+        "hazardous atmosphere",
+        "protective system"
+      ],
+      "sources": [
+        "osha-1910-146#sec.1910.146(b)"
+      ]
+    },
+    {
+      "id": "protective-system",
+      "term": "protective system",
+      "definition": "A method such as sloping, benching, shoring, or shielding that protects workers from cave-ins and falling material.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "competent person",
+        "confined space",
+        "permit-required confined space"
+      ],
+      "sources": [
+        "osha-1926-subpart-p#sec.1926.650"
+      ]
+    },
+    {
+      "id": "smoke-test",
+      "term": "smoke test",
+      "definition": "A test that fills traps with water and introduces pungent smoke to find openings in the drainage system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "water test",
+        "air test",
+        "final inspection"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.312.4"
+      ]
+    },
+    {
+      "id": "water-test",
+      "term": "water test",
+      "definition": "A test that fills drainage piping with water to a specified head and holds it to reveal leaks.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Safety and testing",
+      "aliases": [],
+      "confusables": [
+        "air test",
+        "smoke test",
+        "notice of approval"
+      ],
+      "sources": [
+        "ipc-2021#sec.3.312.2"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ipc-2021",
+      "title": "2021 International Plumbing Code (IPC)",
+      "publisher": "International Code Council (ICC)",
+      "url": "https://codes.iccsafe.org/content/IPC2021P1",
+      "type": "model-code",
+      "license": "Proprietary model code; free read-only access through ICC Digital Codes",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>[.<section>]",
+      "notes": "Chapters 1, 2, 3, 6, and 7 read from the ICC free web edition; definitions paraphrased, not quoted."
+    },
+    {
+      "id": "osha-1926-subpart-p",
+      "title": "29 CFR Part 1926 Subpart P, Excavations",
+      "publisher": "Occupational Safety and Health Administration (OSHA), U.S. Department of Labor",
+      "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926/subpart-P",
+      "type": "regulation",
+      "license": "Public domain (U.S. government work)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Definitions in 1926.650; excavation and protective-system requirements in 1926.651 and 1926.652."
+    },
+    {
+      "id": "osha-1910-146",
+      "title": "29 CFR 1910.146, Permit-Required Confined Spaces",
+      "publisher": "Occupational Safety and Health Administration (OSHA), U.S. Department of Labor",
+      "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1910/subpart-J/section-1910.146",
+      "type": "regulation",
+      "license": "Public domain (U.S. government work)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Definitions read from paragraph (b) of the standard."
+    }
+  ]
+}

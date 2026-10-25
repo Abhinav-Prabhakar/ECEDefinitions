@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "collectionId": "plumbing-licensing",
+  "generatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "asse-plumbing-dictionary-6e",
+      "title": "ASSE International Plumbing Dictionary, 6th Edition",
+      "publisher": "ASSE International",
+      "url": "https://asse-plumbing.org/",
+      "type": "reference",
+      "license": "free public PDF; copyright ASSE International",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "entry.<term>",
+      "notes": "Trade dictionary used for fixture-level vocabulary that the model codes define only in passing."
+    },
+    {
+      "id": "ecfr-141",
+      "title": "40 CFR 141.2 - National Primary Drinking Water Regulations definitions",
+      "publisher": "US Environmental Protection Agency (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-A/section-141.2",
+      "type": "regulation",
+      "license": "US Government work (public domain)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Potable-water definitions used to pin down supply-water terms the plumbing code assumes."
+    },
+    {
+      "id": "ipc-2021",
+      "title": "International Plumbing Code 2021 (Chapters 1-10)",
+      "publisher": "International Code Council (ICC)",
+      "url": "https://up.codes/viewer/texas/ipc-2021",
+      "type": "code",
+      "license": "proprietary model code; free read-only access, no redistribution",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Read through the Texas 2021 IPC adoption on UpCodes, plus the 2020 Plumbing Code of New York State PDF, which adopts the 2018 IPC with amendments. Definitions are paraphrased; no code text is stored in this repo."
+    },
+    {
+      "id": "osha-1910-146",
+      "title": "29 CFR 1910.146 - Permit-Required Confined Spaces",
+      "publisher": "US Occupational Safety and Health Administration",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146",
+      "type": "regulation",
+      "license": "US Government work (public domain)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Confined-space entry requirements that apply to pits, vaults, and tanks."
+    },
+    {
+      "id": "osha-1926-subpart-p",
+      "title": "29 CFR 1926 Subpart P - Excavations",
+      "publisher": "US Occupational Safety and Health Administration",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926SubpartP",
+      "type": "regulation",
+      "license": "US Government work (public domain)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Trenching and excavation safety for underground plumbing work."
+    },
+    {
+      "id": "plumbing-epa-ccc",
+      "title": "Cross-Connection Control Manual (EPA 816-R-03-002)",
+      "publisher": "US Environmental Protection Agency, Office of Water",
+      "url": "https://www.epa.gov/sites/default/files/2015-09/documents/epa816r03002_0.pdf",
+      "type": "government manual",
+      "license": "US Government work (public domain)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "p.<n>",
+      "notes": "Backflow and cross-connection device taxonomy; the glossary is on p.48 of the PDF."
+    },
+    {
+      "id": "plumbing-epa-watersense",
+      "title": "WaterSense product criteria (toilets, faucets, showerheads, urinals)",
+      "publisher": "US Environmental Protection Agency, WaterSense",
+      "url": "https://www.epa.gov/watersense/watersense-products",
+      "type": "government program",
+      "license": "US Government work (public domain)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Current flow-rate and flush-volume criteria for water-efficient fixtures."
+    },
+    {
+      "id": "upc-2024",
+      "title": "Uniform Plumbing Code 2024 (IAPMO/ANSI UPC 1-2024)",
+      "publisher": "International Association of Plumbing and Mechanical Officials (IAPMO)",
+      "url": "https://epubs.iapmo.org/2024/UPC/",
+      "type": "code",
+      "license": "proprietary model code; free read-only edition",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Read from IAPMO's free read-only edition and cross-checked against the 2022 California Plumbing Code, which adopts the 2021 UPC."
+    }
+  ]
+}

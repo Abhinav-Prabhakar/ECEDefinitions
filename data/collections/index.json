@@ -55,6 +55,15 @@
       "subjects": 5,
       "definitions": 270,
       "generatedAt": "2026-10-25"
+    },
+    {
+      "id": "plumbing-licensing",
+      "name": "Plumbing Licensing",
+      "tagline": "Plumbing, in one line.",
+      "path": "data/collections/plumbing-licensing",
+      "subjects": 5,
+      "definitions": 206,
+      "generatedAt": "2026-10-25"
     }
   ]
 }

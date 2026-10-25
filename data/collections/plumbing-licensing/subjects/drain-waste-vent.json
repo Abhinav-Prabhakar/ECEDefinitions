@@ -1,0 +1,787 @@
+{
+  "version": 1,
+  "id": "drain-waste-vent",
+  "collectionId": "plumbing-licensing",
+  "section": "core",
+  "name": "Drain-Waste-Vent",
+  "shortName": "Drain-waste-vent",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Drainage basics"
+    },
+    {
+      "number": 2,
+      "title": "Drain pipe sizing"
+    },
+    {
+      "number": 3,
+      "title": "Waste fittings"
+    },
+    {
+      "number": 4,
+      "title": "Vent systems"
+    },
+    {
+      "number": 5,
+      "title": "Slope and grade"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "branch",
+      "term": "Branch",
+      "definition": "Any part of a plumbing piping system other than a riser, main, or stack.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Stack",
+        "Horizontal branch",
+        "Stack load"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "building-drain",
+      "term": "Building drain",
+      "definition": "Lowest portion of a building's drainage piping that receives soil and waste discharge and carries it to the building sewer.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Building sewer",
+        "Drainage system",
+        "Stack"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "building-sewer",
+      "term": "Building sewer",
+      "definition": "Pipe that begins at the end of the building drain and carries its discharge to a public sewer or private disposal system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Building drain",
+        "Drainage system",
+        "Soil pipe"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.701.1"
+      ]
+    },
+    {
+      "id": "drainage-system",
+      "term": "Drainage system",
+      "definition": "Piping within a public or private premises that conveys sewage, rainwater, or other liquid waste to a point of disposal.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Building drain",
+        "Building sewer",
+        "Soil pipe"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.701.1"
+      ]
+    },
+    {
+      "id": "horizontal-branch",
+      "term": "Horizontal branch",
+      "definition": "Drain pipe that connects one or more fixture drains to a soil stack, waste stack, or building drain.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Branch",
+        "Stack",
+        "Building drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "indirect-waste",
+      "term": "Indirect waste",
+      "definition": "Liquid waste that reaches the drainage system through a receptor or air break instead of a direct pipe connection.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Drainage system",
+        "Sanitary drainage system"
+      ],
+      "sources": [
+        "ipc-2021#sec.802.1",
+        "upc-2024#sec.801.1"
+      ]
+    },
+    {
+      "id": "sanitary-drainage-system",
+      "term": "Sanitary drainage system",
+      "definition": "Piping that carries sewage and other liquid waste from fixtures to a public sewer or private disposal system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Drainage system",
+        "Storm drainage",
+        "Building sewer"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.701.1"
+      ]
+    },
+    {
+      "id": "sewage-ejector",
+      "term": "Sewage ejector",
+      "definition": "Receptacle and pump assembly that lifts sewage from a point below the gravity drain to a higher line.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Building drain",
+        "Drainage system"
+      ],
+      "sources": [
+        "ipc-2021#sec.712.1",
+        "upc-2024#sec.710.1"
+      ]
+    },
+    {
+      "id": "soil-pipe",
+      "term": "Soil pipe",
+      "definition": "Drain pipe that carries sewage containing fecal matter to a building drain or building sewer.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Waste pipe",
+        "Building sewer",
+        "Stack"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "stack",
+      "term": "Stack",
+      "definition": "Vertical line of soil, waste, or vent piping that extends through at least one story, with or without offsets.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Branch",
+        "Stack load",
+        "Horizontal branch"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "storm-drainage",
+      "term": "Storm drainage",
+      "definition": "Piping and receptors that collect rainwater and surface water and carry it to a point of disposal.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Sanitary drainage system",
+        "Drainage system",
+        "Area drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.1101.1",
+        "upc-2024#sec.1101.1"
+      ]
+    },
+    {
+      "id": "waste-pipe",
+      "term": "Waste pipe",
+      "definition": "Pipe that carries only liquid waste that contains no fecal matter.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Drainage basics",
+      "aliases": [],
+      "confusables": [
+        "Soil pipe",
+        "Drainage system",
+        "Building drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "continuous-flow",
+      "term": "Continuous flow",
+      "definition": "Steady drainage discharge, such as from a pump, rated at two fixture units per gallon per minute.",
+      "formula": "2 dfu = 1 gpm",
+      "unit": 2,
+      "unitTitle": "Drain pipe sizing",
+      "aliases": [],
+      "confusables": [
+        "Intermittent flow",
+        "Drainage fixture unit (DFU)",
+        "Stack load"
+      ],
+      "sources": [
+        "upc-2024#sec.702.3",
+        "ipc-2021#sec.709.3"
+      ]
+    },
+    {
+      "id": "drainage-fixture-unit",
+      "term": "Drainage fixture unit (DFU)",
+      "definition": "Unit that expresses the probable drainage load a fixture places on the drainage system.",
+      "formula": "dfu",
+      "unit": 2,
+      "unitTitle": "Drain pipe sizing",
+      "aliases": [
+        "DFU"
+      ],
+      "confusables": [
+        "Fixture-unit load",
+        "Intermittent flow",
+        "Continuous flow"
+      ],
+      "sources": [
+        "ipc-2021#sec.709.1",
+        "upc-2024#sec.702.1"
+      ]
+    },
+    {
+      "id": "fixture-unit-load",
+      "term": "Fixture-unit load",
+      "definition": "Total drainage fixture units connected to a pipe segment, used to select its required diameter.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drain pipe sizing",
+      "aliases": [],
+      "confusables": [
+        "Drainage fixture unit (DFU)",
+        "Stack load",
+        "Offset"
+      ],
+      "sources": [
+        "ipc-2021#sec.710.1",
+        "upc-2024#sec.703.2"
+      ]
+    },
+    {
+      "id": "intermittent-flow",
+      "term": "Intermittent flow",
+      "definition": "Drainage load from equipment that discharges in bursts and is rated in fixture units by flow rate.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drain pipe sizing",
+      "aliases": [],
+      "confusables": [
+        "Continuous flow",
+        "Drainage fixture unit (DFU)",
+        "Fixture-unit load"
+      ],
+      "sources": [
+        "upc-2024#sec.702.2",
+        "ipc-2021#sec.709.1"
+      ]
+    },
+    {
+      "id": "offset",
+      "term": "Offset",
+      "definition": "Arrangement of bends that shifts one section of pipe out of line with but parallel to another section.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drain pipe sizing",
+      "aliases": [],
+      "confusables": [
+        "Stack",
+        "Stack load",
+        "Horizontal branch"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "stack-load",
+      "term": "Stack load",
+      "definition": "Total fixture units that discharge into a vertical stack, checked against the maximum its diameter permits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drain pipe sizing",
+      "aliases": [],
+      "confusables": [
+        "Fixture-unit load",
+        "Stack",
+        "Offset"
+      ],
+      "sources": [
+        "upc-2024#sec.703.2",
+        "ipc-2021#sec.710.1"
+      ]
+    },
+    {
+      "id": "area-drain",
+      "term": "Area drain",
+      "definition": "Receptor installed outdoors to collect surface water and direct it into a storm drainage line.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Storm drainage",
+        "Cleanout"
+      ],
+      "sources": [
+        "ipc-2021#sec.1101.1",
+        "upc-2024#sec.1101.1"
+      ]
+    },
+    {
+      "id": "backwater-valve",
+      "term": "Backwater valve",
+      "definition": "Device that closes a drainage line automatically to stop sewage from reversing into a building.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Cleanout",
+        "Drainage fitting",
+        "Building drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.715.1",
+        "upc-2024#sec.713.1"
+      ]
+    },
+    {
+      "id": "cleanout",
+      "term": "Cleanout",
+      "definition": "Access opening in a drainage line that permits removal of a blockage with a plug, cap, or removable fixture.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Drainage fitting",
+        "Backwater valve",
+        "Building drain"
+      ],
+      "sources": [
+        "ipc-2021#sec.708",
+        "upc-2024#sec.707.1"
+      ]
+    },
+    {
+      "id": "combination-wye-and-bend",
+      "term": "Combination wye and bend",
+      "definition": "Assembly of a wye and a bend that produces a smooth, sweeping change of direction between drain pipes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Wye branch",
+        "Sanitary tee",
+        "Sweep"
+      ],
+      "sources": [
+        "ipc-2021#sec.706.3",
+        "upc-2024#sec.706.3"
+      ]
+    },
+    {
+      "id": "drainage-fitting",
+      "term": "Drainage fitting",
+      "definition": "Fitting intended for drainage service, with a recessed, smooth interior waterway that leaves no ridge inside the pipe.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Sanitary tee",
+        "Wye branch",
+        "Sweep"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.701.3"
+      ]
+    },
+    {
+      "id": "one-eighth-bend",
+      "term": "One-eighth bend",
+      "definition": "Fitting that changes drainage flow direction by 45 degrees.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Sweep",
+        "Wye branch",
+        "Combination wye and bend"
+      ],
+      "sources": [
+        "ipc-2021#sec.706.1",
+        "upc-2024#sec.706.1"
+      ]
+    },
+    {
+      "id": "receptor",
+      "term": "Receptor",
+      "definition": "Fixture or surfaced area that receives liquid waste and discharges it through a trap.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Area drain",
+        "Indirect waste",
+        "Cleanout"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "sanitary-tee",
+      "term": "Sanitary tee",
+      "definition": "Tee fitting with a curved inlet that turns flow from a horizontal branch into a vertical stack in the direction of drainage.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Wye branch",
+        "Combination wye and bend",
+        "Drainage fitting"
+      ],
+      "sources": [
+        "ipc-2021#sec.706.3",
+        "upc-2024#sec.706.2"
+      ]
+    },
+    {
+      "id": "sweep",
+      "term": "Sweep",
+      "definition": "Fitting with a long, gradual curve that carries flow through a change of direction with little resistance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Sanitary tee",
+        "Combination wye and bend",
+        "One-eighth bend"
+      ],
+      "sources": [
+        "ipc-2021#sec.706.3"
+      ]
+    },
+    {
+      "id": "wye-branch",
+      "term": "Wye branch",
+      "definition": "Y-shaped fitting that joins a branch to a drain at a shallow angle so flow turns gradually.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Waste fittings",
+      "aliases": [],
+      "confusables": [
+        "Sanitary tee",
+        "Combination wye and bend",
+        "One-eighth bend"
+      ],
+      "sources": [
+        "ipc-2021#sec.706.3",
+        "upc-2024#sec.706.3"
+      ]
+    },
+    {
+      "id": "branch-vent",
+      "term": "Branch vent",
+      "definition": "Vent that connects one or more individual vents to a vent stack or stack vent.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent systems",
+      "aliases": [],
+      "confusables": [
+        "Yoke vent",
+        "Combination waste and vent system",
+        "Stack"
+      ],
+      "sources": [
+        "ipc-2021#sec.202"
+      ]
+    },
+    {
+      "id": "combination-waste-and-vent-system",
+      "term": "Combination waste and vent system",
+      "definition": "Waste piping arrangement that vents fixtures through an oversized common pipe instead of separate vent piping.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent systems",
+      "aliases": [],
+      "confusables": [
+        "Branch vent",
+        "Yoke vent",
+        "Stack"
+      ],
+      "sources": [
+        "ipc-2021#sec.915.1",
+        "upc-2024#sec.910.0"
+      ]
+    },
+    {
+      "id": "yoke-vent",
+      "term": "Yoke vent",
+      "definition": "Vent that connects a soil or waste stack to a vent stack to equalize pressure between them.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Vent systems",
+      "aliases": [],
+      "confusables": [
+        "Branch vent",
+        "Combination waste and vent system",
+        "Stack"
+      ],
+      "sources": [
+        "ipc-2021#sec.917.1",
+        "upc-2024#sec.913.1"
+      ]
+    },
+    {
+      "id": "backgrade",
+      "term": "Backgrade",
+      "definition": "Reverse pitch that makes a drain fall away from its point of disposal and hold water.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Uniform slope",
+        "Slope",
+        "Percent slope"
+      ],
+      "sources": [
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "fall",
+      "term": "Fall",
+      "definition": "Vertical drop of a pipe over a stated horizontal distance.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Slope",
+        "Percent slope",
+        "Uniform slope"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "grade",
+      "term": "Grade",
+      "definition": "Rate at which a horizontal drain falls toward the point of disposal, commonly stated in inches per foot.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Backgrade",
+        "Percent slope",
+        "Vent grade"
+      ],
+      "sources": [
+        "ipc-2021#sec.704.1",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "hydraulic-jump",
+      "term": "Hydraulic jump",
+      "definition": "Sudden rise in water depth where flow slows at a change from steep to flat grade.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Scouring velocity",
+        "Backgrade",
+        "Slope"
+      ],
+      "sources": [
+        "ipc-2021#sec.704.1",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "invert",
+      "term": "Invert",
+      "definition": "Interior bottom surface of a pipe at a cross section, used as the reference for elevation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Fall",
+        "Grade",
+        "Percent slope"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.202"
+      ]
+    },
+    {
+      "id": "percent-slope",
+      "term": "Percent slope",
+      "definition": "Slope expressed as vertical drop divided by horizontal run, then multiplied by one hundred.",
+      "formula": "percent = (fall / run) x 100",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Fall",
+        "Backgrade",
+        "Invert"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "scouring-velocity",
+      "term": "Scouring velocity",
+      "definition": "Flow speed that keeps solids suspended and clears settled sediment from a sloping drain.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Hydraulic jump",
+        "Slope",
+        "Fall"
+      ],
+      "sources": [
+        "ipc-2021#sec.704.1",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "slope",
+      "term": "Slope",
+      "definition": "Fall of a pipe stated as vertical drop per unit of horizontal run.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Backgrade",
+        "Uniform slope",
+        "Percent slope"
+      ],
+      "sources": [
+        "ipc-2021#sec.202",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "trap-arm-slope",
+      "term": "Trap arm slope",
+      "definition": "Pitch of a trap arm, commonly one-quarter inch per foot, that keeps the arm self-scouring.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Vent grade",
+        "Slope",
+        "Backgrade"
+      ],
+      "sources": [
+        "ipc-2021#sec.909.1",
+        "upc-2024#sec.1002.2"
+      ]
+    },
+    {
+      "id": "uniform-slope",
+      "term": "Uniform slope",
+      "definition": "Continuous, unbroken pitch along a drain run, without flat or reversed sections.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Backgrade",
+        "Fall",
+        "Slope"
+      ],
+      "sources": [
+        "ipc-2021#sec.704.1",
+        "upc-2024#sec.708.1"
+      ]
+    },
+    {
+      "id": "vent-grade",
+      "term": "Vent grade",
+      "definition": "Pitch of a vent pipe that lets moisture drain back by gravity to the pipe it serves.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Slope and grade",
+      "aliases": [],
+      "confusables": [
+        "Trap arm slope",
+        "Slope",
+        "Backgrade"
+      ],
+      "sources": [
+        "ipc-2021#sec.905.2",
+        "upc-2024#sec.905.1"
+      ]
+    }
+  ]
+}

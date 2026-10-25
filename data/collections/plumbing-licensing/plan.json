@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "topic": "Plumbing licensing for plumbing apprentices and journeyman exam candidates",
+  "collectionId": "plumbing-licensing",
+  "type": "exam",
+  "audience": "Plumbing apprentices and journeyman exam candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "includes": [
+    "water supply systems",
+    "drain-waste-vent systems",
+    "traps and venting",
+    "backflow prevention and fixtures",
+    "plumbing code fundamentals"
+  ],
+  "excludes": [
+    "medical gas piping",
+    "fire sprinkler design",
+    "solar thermal sizing",
+    "commercial process piping",
+    "state and local amendment details"
+  ],
+  "assumptions": [
+    "US plumbing code concepts (IPC and UPC common ground)",
+    "vocabulary and concepts, not installation procedures",
+    "exam-oriented definitions"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "water-supply",
+          "name": "Water Supply Systems",
+          "shortName": "Water supply",
+          "units": ["Supply basics", "Pressure and flow", "Pipe materials", "Fittings and valves", "Water heating"],
+          "targetDefinitions": 42,
+          "sourceQueries": ["IPC water supply definitions glossary"]
+        },
+        {
+          "id": "drain-waste-vent",
+          "name": "Drain-Waste-Vent",
+          "shortName": "Drain-waste-vent",
+          "units": ["Drainage basics", "Drain pipe sizing", "Waste fittings", "Vent systems", "Slope and grade"],
+          "targetDefinitions": 42,
+          "sourceQueries": ["IPC drain waste vent definitions"]
+        },
+        {
+          "id": "traps-and-vents",
+          "name": "Traps and Vents",
+          "shortName": "Traps and vents",
+          "units": ["Trap fundamentals", "Trap seals", "Venting methods", "Vent sizing", "Common venting defects"],
+          "targetDefinitions": 40,
+          "sourceQueries": ["plumbing trap vent definitions glossary"]
+        },
+        {
+          "id": "backflow-fixtures",
+          "name": "Backflow and Fixtures",
+          "shortName": "Backflow and fixtures",
+          "units": ["Cross-connection basics", "Backflow devices", "Fixture types", "Fixture requirements", "Water efficiency"],
+          "targetDefinitions": 42,
+          "sourceQueries": ["backflow prevention fixture definitions glossary"]
+        },
+        {
+          "id": "plumbing-code",
+          "name": "Plumbing Code",
+          "shortName": "Plumbing code",
+          "units": ["Code framework", "Permits and inspection", "Materials and joints", "Support and protection", "Safety and testing"],
+          "targetDefinitions": 40,
+          "sourceQueries": ["IPC plumbing code definitions glossary"]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 180, "max": 240 },
+  "disclaimer": "Educational vocabulary only; not plumbing advice or code compliance guidance."
+}
