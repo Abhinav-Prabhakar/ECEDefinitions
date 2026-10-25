@@ -3751,6 +3751,56 @@
       "status": "downloaded",
       "locatorScheme": "p.<n>",
       "sha256": "5baf53bf4cf92588369c3200eb9c3bee88e08f282a4e01e52746b5521710420b"
+    },
+    {
+      "id": "vlsitd-web-sheet-resistance",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Sheet resistance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sheet_resistance",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-propagation-delay",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Propagation delay (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Propagation_delay",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-fan-out",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Fan-out (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fan-out",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-pld",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Programmable logic device (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Programmable_logic_device",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-fpga",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Field-programmable gate array (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Field-programmable_gate_array",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
     }
   ]
 }

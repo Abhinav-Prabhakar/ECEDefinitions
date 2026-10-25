@@ -54,7 +54,7 @@ def main():
         if not sid or not re.fullmatch(r"[a-z0-9-]+", sid): err(f"bad source id {sid!r}"); continue
         if sid in src_ids: err(f"duplicate source id {sid}")
         src_ids[sid]=st
-        if st.get("status") not in ("downloaded","parsed","inaccessible","needs_ocr","skipped"):
+        if st.get("status") not in ("downloaded","parsed","accessed","inaccessible","needs_ocr","skipped"):
             err(f"source {sid} bad status {st.get('status')!r}")
         if st.get("subjectId") and sems and st.get("semester") not in expected_semesters:
             err(f"source {sid} bad semester {st.get('semester')}")
@@ -156,6 +156,9 @@ def check_defs(sid, d, src_ids):
                 err(f"{sid} def#{i} '{term}': cites inaccessible source {srcid}")
             if st.get("subjectId")!=sid:
                 err(f"{sid} def#{i} '{term}': source {srcid} belongs to {st.get('subjectId')}")
+            if st.get("kind")=="web":
+                if not re.fullmatch(r"[A-Za-z0-9._-]+", locpart): err(f"{sid} def#{i} '{term}': web locator {locpart!r} not a section slug")
+                continue
             mm=re.fullmatch(r"p\.\d+", locpart) or re.fullmatch(r"slide\.\d+", locpart) or re.fullmatch(r"para\.\d+", locpart)
             if not mm: err(f"{sid} def#{i} '{term}': locator {locpart!r} not p.N / slide.N / para.N")
         if defn["id"] in seen_ids: err(f"{sid}: dup definition id {defn['id']}")

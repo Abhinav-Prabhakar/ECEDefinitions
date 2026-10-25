@@ -564,6 +564,129 @@
       "sources": [
         "vlsitd-unit-3#slide.29"
       ]
+    },
+    {
+      "id": "sheet-resistance",
+      "term": "Sheet Resistance",
+      "definition": "Resistance of a square of thin uniform film, measured between opposite sides and expressed in ohms per square regardless of the square's size.",
+      "formula": "R = Rs·L/W",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-sheet-resistance#Calculations"
+      ]
+    },
+    {
+      "id": "propagation-delay",
+      "term": "Propagation Delay",
+      "definition": "Time for a signal to reach its destination; for a logic gate, from the input crossing 50% of its level to the output crossing 50%.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-propagation-delay#Electronics"
+      ]
+    },
+    {
+      "id": "rc-delay",
+      "term": "RC Delay",
+      "definition": "Gate delay set by the time constant of the driver's equivalent resistance and the total load capacitance, growing as either increases.",
+      "formula": "τ = R·C",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-propagation-delay#Electronics"
+      ]
+    },
+    {
+      "id": "fan-out",
+      "term": "Fan-Out",
+      "definition": "Number of gate inputs driven by the output of one logic gate; each extra load adds capacitance that slows the output transition.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-fan-out#Theory",
+        "vlsitd-web-fan-out#AC-fan-out"
+      ]
+    },
+    {
+      "id": "buffer-tree",
+      "term": "Buffer Tree",
+      "definition": "Chain of successively larger buffers used to drive a very large load, instead of wiring one gate to many inputs, to limit total delay.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-fan-out#AC-fan-out"
+      ]
+    },
+    {
+      "id": "pld",
+      "term": "PLD",
+      "definition": "Digital circuit element whose function is undefined at manufacture and is set by programming the connections between its internal gates.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-pld#Lead-section"
+      ]
+    },
+    {
+      "id": "pal",
+      "term": "PAL",
+      "definition": "Programmable logic device with a programmable AND plane and fixed OR plane that builds sum-of-products outputs, faster and cheaper than a fully programmable array.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-pld#PAL"
+      ]
+    },
+    {
+      "id": "cpld",
+      "term": "CPLD",
+      "definition": "Device equivalent to several programmable array logic blocks linked by programmable interconnections in one chip, suited to wide combinational logic.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-pld#CPLDs"
+      ]
+    },
+    {
+      "id": "fpga",
+      "term": "FPGA",
+      "definition": "Reprogrammable integrated circuit built from a grid of programmable logic blocks linked by configurable connections, usually loaded from SRAM at power-up.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-fpga#Introduction",
+        "vlsitd-web-fpga#Programming"
+      ]
+    },
+    {
+      "id": "lookup-table",
+      "term": "Lookup Table",
+      "definition": "Small programmable element inside a logic cell that implements a logic function of its inputs, typically four-input.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-fpga#Logic-blocks"
+      ]
+    },
+    {
+      "id": "configurable-logic-block",
+      "term": "Configurable Logic Block",
+      "definition": "Basic building unit of a field-programmable array, holding a few logic cells that each combine a lookup table, full adder and flip-flop.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Delays and Programmable Logic Devices",
+      "sources": [
+        "vlsitd-web-fpga#Logic-blocks"
+      ]
     }
   ]
 }
