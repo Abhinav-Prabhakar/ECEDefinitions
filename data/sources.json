@@ -3753,6 +3753,96 @@
       "sha256": "5baf53bf4cf92588369c3200eb9c3bee88e08f282a4e01e52746b5521710420b"
     },
     {
+      "id": "acn-web-ieee-802-11",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "IEEE 802.11 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IEEE_802.11",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-hiperlan",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "HiperLAN (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/HiperLAN",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-vpn",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Virtual private network (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-bluetooth",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Bluetooth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bluetooth",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-wimax",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "WiMAX (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/WiMAX",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-ofdm",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Orthogonal frequency-division multiplexing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Orthogonal_frequency-division_multiplexing",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-mimo",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "MIMO (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/MIMO",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-lte",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "LTE (telecommunication) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/LTE_(telecommunication)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-epc",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Evolved Packet Core (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Evolved_Packet_Core",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
       "id": "vlsitd-web-sheet-resistance",
       "semester": "3-2",
       "subjectId": "vlsi-technology-and-design",

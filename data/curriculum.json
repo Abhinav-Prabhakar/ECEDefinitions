@@ -615,11 +615,11 @@
           "folderId": "1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
           "folderUrl": "https://drive.google.com/drive/folders/1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
           "data": "data/subjects/4-1/advanced-communications-and-networks.json",
-          "definitionCount": 43,
+          "definitionCount": 70,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 12
         },
         {
           "id": "computer-networks",
@@ -711,9 +711,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 41,
-    "definitions": 1586,
-    "completeSubjects": 27,
-    "partialSubjects": 6,
+    "definitions": 1613,
+    "completeSubjects": 28,
+    "partialSubjects": 5,
     "inaccessibleSubjects": 8
   }
 }
