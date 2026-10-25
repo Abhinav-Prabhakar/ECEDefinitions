@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "topic": "Medical terminology for pre-health students",
+  "collectionId": "medical-terminology",
+  "type": "course",
+  "audience": "Pre-health undergraduates and nursing students",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "includes": [
+    "word parts (prefixes, roots, suffixes, combining forms)",
+    "body systems terminology",
+    "clinical abbreviations",
+    "medical documentation",
+    "diagnostics",
+    "pharmacology basics"
+  ],
+  "excludes": [
+    "diagnosis and treatment protocols",
+    "drug dosing",
+    "advanced pathology",
+    "patient-specific advice"
+  ],
+  "assumptions": [
+    "US clinical usage",
+    "no prior anatomy assumed",
+    "vocabulary only, not clinical training"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "word-parts",
+          "name": "Word Parts",
+          "shortName": "Word parts",
+          "units": ["Prefixes", "Roots", "Suffixes", "Combining forms"],
+          "targetDefinitions": 48,
+          "sourceQueries": [
+            "OpenStax medical terminology prefixes roots suffixes",
+            "NLM medical terminology glossary"
+          ]
+        },
+        {
+          "id": "body-systems",
+          "name": "Body Systems",
+          "shortName": "Body systems",
+          "units": ["Integumentary", "Skeletal and muscular", "Cardiovascular", "Respiratory", "Nervous", "Digestive, urinary, and endocrine"],
+          "targetDefinitions": 60,
+          "sourceQueries": [
+            "OpenStax anatomy and physiology terminology body systems",
+            "MedlinePlus medical dictionary body systems"
+          ]
+        },
+        {
+          "id": "clinical-abbreviations",
+          "name": "Clinical Abbreviations",
+          "shortName": "Clinical abbreviations",
+          "units": ["Vital signs and measurements", "Diagnoses and conditions", "Procedures and tests", "Medications and routes", "Departments and roles", "Time and frequency"],
+          "targetDefinitions": 50,
+          "sourceQueries": [
+            "Joint Commission do not use abbreviations list",
+            "MedlinePlus medical abbreviations"
+          ]
+        },
+        {
+          "id": "documentation",
+          "name": "Documentation",
+          "shortName": "Documentation",
+          "units": ["Medical records", "SOAP and progress notes", "Orders and prescriptions", "Consent and legal", "Coding and billing basics"],
+          "targetDefinitions": 50,
+          "sourceQueries": [
+            "CMS medical documentation guidelines",
+            "AHIMA medical record documentation"
+          ]
+        },
+        {
+          "id": "diagnostics",
+          "name": "Diagnostics",
+          "shortName": "Diagnostics",
+          "units": ["Laboratory values", "Imaging modalities", "Physical exam terms", "Diagnostic procedures", "Pathology and cytology"],
+          "targetDefinitions": 60,
+          "sourceQueries": [
+            "MedlinePlus diagnostic tests",
+            "NIH clinical center diagnostic terminology"
+          ]
+        },
+        {
+          "id": "pharmacology-basics",
+          "name": "Pharmacology Basics",
+          "shortName": "Pharmacology basics",
+          "units": ["Pharmacokinetics", "Pharmacodynamics", "Drug classes", "Routes and formulations", "Adverse effects and interactions"],
+          "targetDefinitions": 50,
+          "sourceQueries": [
+            "OpenStax pharmacology basics",
+            "FDA pharmacology glossary"
+          ]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 280, "max": 360 },
+  "disclaimer": "Educational vocabulary only; not medical advice."
+}

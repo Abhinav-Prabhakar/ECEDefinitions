@@ -1,0 +1,915 @@
+{
+  "version": 1,
+  "id": "pharmacology-basics",
+  "collectionId": "medical-terminology",
+  "section": "core",
+  "name": "Pharmacology Basics",
+  "shortName": "Pharmacology basics",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#9b6ae0",
+  "dark": "#bb95ff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Pharmacokinetics"
+    },
+    {
+      "number": 2,
+      "title": "Pharmacodynamics"
+    },
+    {
+      "number": 3,
+      "title": "Drug classes"
+    },
+    {
+      "number": 4,
+      "title": "Routes and formulations"
+    },
+    {
+      "number": 5,
+      "title": "Adverse effects and interactions"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "absorption",
+      "term": "Absorption",
+      "definition": "Movement of a drug from its administration site into the bloodstream.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Distribution",
+        "Bioavailability",
+        "Metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "distribution",
+      "term": "Distribution",
+      "definition": "Transport of a drug to its sites of action through bodily fluids.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Absorption",
+        "Metabolism",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "metabolism",
+      "term": "Metabolism",
+      "definition": "Chemical change of a drug into less active or inactive forms, mainly in the liver.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [
+        "biotransformation"
+      ],
+      "confusables": [
+        "Excretion",
+        "Absorption",
+        "Distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "excretion",
+      "term": "Excretion",
+      "definition": "Elimination of drugs from the body, mainly through the kidneys.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Metabolism",
+        "Distribution",
+        "Absorption"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "bioavailability",
+      "term": "Bioavailability",
+      "definition": "Fraction of a drug dose that reaches systemic circulation unchanged.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Absorption",
+        "First-pass effect",
+        "Distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "half-life",
+      "term": "Half-life",
+      "definition": "Time required for serum drug concentration to decrease by one half.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Duration of action",
+        "Peak",
+        "Onset of action"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "first-pass-effect",
+      "term": "First-pass effect",
+      "definition": "Oral drug metabolism before reaching systemic circulation, lowering active concentration.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Bioavailability",
+        "Absorption",
+        "Metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "onset-of-action",
+      "term": "Onset of action",
+      "definition": "Time after administration when a drug first produces a therapeutic effect.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Duration of action",
+        "Peak",
+        "Half-life"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "duration-of-action",
+      "term": "Duration of action",
+      "definition": "Length of time a drug concentration remains sufficient for therapeutic response.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Onset of action",
+        "Half-life",
+        "Peak"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "peak",
+      "term": "Peak",
+      "definition": "Time when a drug reaches its maximum serum concentration.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pharmacokinetics",
+      "aliases": [],
+      "confusables": [
+        "Onset of action",
+        "Duration of action",
+        "Half-life"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "pharmacodynamics",
+      "term": "Pharmacodynamics",
+      "definition": "How a drug interacts with receptors and body systems to produce effects.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Mechanism of action",
+        "Receptor",
+        "Ligand"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "receptor",
+      "term": "Receptor",
+      "definition": "Cellular site where a drug binds to trigger or block a response.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Ligand",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "ligand",
+      "term": "Ligand",
+      "definition": "Molecule that binds to a receptor or other receiving protein.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "agonist",
+      "term": "Agonist",
+      "definition": "Drug that binds a receptor and produces a biological response.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Antagonist",
+        "Partial agonist",
+        "Receptor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "antagonist",
+      "term": "Antagonist",
+      "definition": "Drug that blocks a receptor, preventing an agonist from activating it.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [
+        "blocker"
+      ],
+      "confusables": [
+        "Agonist",
+        "Partial agonist",
+        "Receptor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "partial-agonist",
+      "term": "Partial agonist",
+      "definition": "Drug producing a limited receptor response, less than a full agonist.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Agonist",
+        "Antagonist",
+        "Receptor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "affinity",
+      "term": "Affinity",
+      "definition": "Strength of attraction between a drug and its receptor site.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Intrinsic activity",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "intrinsic-activity",
+      "term": "Intrinsic activity",
+      "definition": "Maximal effect a drug can produce at a receptor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [],
+      "confusables": [
+        "Affinity",
+        "Agonist",
+        "Partial agonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "mechanism-of-action",
+      "term": "Mechanism of action",
+      "definition": "Way a drug produces its effects on the body.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [
+        "MOA"
+      ],
+      "confusables": [
+        "Pharmacodynamics",
+        "Receptor",
+        "Therapeutic index"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-index",
+      "term": "Therapeutic index",
+      "definition": "Ratio of the dose producing a therapeutic effect to the dose causing toxicity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Pharmacodynamics",
+      "aliases": [
+        "therapeutic window"
+      ],
+      "confusables": [
+        "Toxicity",
+        "Half-life",
+        "Pharmacodynamics"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "analgesic",
+      "term": "Analgesic",
+      "definition": "Medicine that relieves pain without necessarily treating its underlying cause.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [
+        "pain reliever"
+      ],
+      "confusables": [
+        "NSAID",
+        "Antibiotic",
+        "Anticoagulant"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.analgesics"
+      ]
+    },
+    {
+      "id": "antibiotic",
+      "term": "Antibiotic",
+      "definition": "Medicine that kills or inhibits the growth of bacteria.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [],
+      "confusables": [
+        "Analgesic",
+        "Anticoagulant",
+        "Antidepressant"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.antibiotics"
+      ]
+    },
+    {
+      "id": "anticoagulant",
+      "term": "Anticoagulant",
+      "definition": "Medicine that helps prevent blood clots from forming.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [
+        "blood thinner"
+      ],
+      "confusables": [
+        "Antihypertensive",
+        "Analgesic",
+        "Antibiotic"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.anticoagulants"
+      ]
+    },
+    {
+      "id": "antidepressant",
+      "term": "Antidepressant",
+      "definition": "Medicine used to treat depression and related mood disorders.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [],
+      "confusables": [
+        "Analgesic",
+        "Antibiotic",
+        "Anticoagulant"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.antidepressants"
+      ]
+    },
+    {
+      "id": "antihistamine",
+      "term": "Antihistamine",
+      "definition": "Medicine that blocks histamine to reduce allergy symptoms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [],
+      "confusables": [
+        "Corticosteroid",
+        "Bronchodilator",
+        "Analgesic"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.antihistamines"
+      ]
+    },
+    {
+      "id": "antihypertensive",
+      "term": "Antihypertensive",
+      "definition": "Medicine used to lower or control high blood pressure.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [],
+      "confusables": [
+        "Diuretic",
+        "Analgesic",
+        "Antibiotic"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.antihypertensives"
+      ]
+    },
+    {
+      "id": "bronchodilator",
+      "term": "Bronchodilator",
+      "definition": "Medicine that relaxes airway muscles to improve breathing.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [],
+      "confusables": [
+        "Antihistamine",
+        "Corticosteroid",
+        "Analgesic"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.bronchodilators"
+      ]
+    },
+    {
+      "id": "corticosteroid",
+      "term": "Corticosteroid",
+      "definition": "Anti-inflammatory medicine mimicking hormones from the adrenal cortex.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [
+        "steroid"
+      ],
+      "confusables": [
+        "NSAID",
+        "Antihistamine",
+        "Bronchodilator"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.corticosteroids"
+      ]
+    },
+    {
+      "id": "diuretic",
+      "term": "Diuretic",
+      "definition": "Medicine that increases urine output to remove excess fluid.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [
+        "water pill"
+      ],
+      "confusables": [
+        "Antihypertensive",
+        "Analgesic",
+        "Antibiotic"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.diuretics"
+      ]
+    },
+    {
+      "id": "nsaid",
+      "term": "NSAID",
+      "definition": "Nonsteroidal anti-inflammatory drug that reduces pain, fever, and inflammation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug classes",
+      "aliases": [
+        "nonsteroidal anti-inflammatory drug"
+      ],
+      "confusables": [
+        "Analgesic",
+        "Corticosteroid",
+        "Antibiotic"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.nsaids"
+      ]
+    },
+    {
+      "id": "enteral",
+      "term": "Enteral",
+      "definition": "Administration of a medication through the gastrointestinal tract.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Parenteral",
+        "Percutaneous",
+        "Intravenous"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "parenteral",
+      "term": "Parenteral",
+      "definition": "Administration of medication by any route outside the gastrointestinal tract.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Enteral",
+        "Intravenous",
+        "Intramuscular"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "percutaneous",
+      "term": "Percutaneous",
+      "definition": "Application of drugs to the skin or mucous membranes.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Enteral",
+        "Parenteral",
+        "Transdermal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1"
+      ]
+    },
+    {
+      "id": "intravenous",
+      "term": "Intravenous",
+      "definition": "Administration of a drug directly into a vein.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [
+        "IV"
+      ],
+      "confusables": [
+        "Intramuscular",
+        "Subcutaneous",
+        "Enteral"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "intramuscular",
+      "term": "Intramuscular",
+      "definition": "Administration of a drug directly into a skeletal muscle.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [
+        "IM"
+      ],
+      "confusables": [
+        "Intravenous",
+        "Subcutaneous",
+        "Enteral"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "subcutaneous",
+      "term": "Subcutaneous",
+      "definition": "Administration of a drug into the adipose tissue under the skin.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [
+        "SC"
+      ],
+      "confusables": [
+        "Intramuscular",
+        "Intravenous",
+        "Transdermal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "transdermal",
+      "term": "Transdermal",
+      "definition": "Topical administration of a drug through a skin patch.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Percutaneous",
+        "Cutaneous",
+        "Subcutaneous"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "cutaneous",
+      "term": "Cutaneous",
+      "definition": "Relating to application or administration of drugs to the skin.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Percutaneous",
+        "Transdermal",
+        "Subcutaneous"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1"
+      ]
+    },
+    {
+      "id": "dosage-form",
+      "term": "Dosage form",
+      "definition": "Physical form in which a drug is produced and dispensed.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Active ingredient",
+        "Enteral",
+        "Parenteral"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.dosage-form"
+      ]
+    },
+    {
+      "id": "active-ingredient",
+      "term": "Active ingredient",
+      "definition": "Component providing pharmacological activity in a drug product.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Routes and formulations",
+      "aliases": [],
+      "confusables": [
+        "Dosage form",
+        "Enteral",
+        "Parenteral"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "adverse-effect",
+      "term": "Adverse effect",
+      "definition": "An undesired effect produced by a drug at therapeutic doses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Side effect",
+        "Adverse drug reaction",
+        "Toxicity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1"
+      ]
+    },
+    {
+      "id": "side-effect",
+      "term": "Side effect",
+      "definition": "Secondary effect produced by a drug at therapeutic doses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Adverse effect",
+        "Adverse drug reaction",
+        "Toxicity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1"
+      ]
+    },
+    {
+      "id": "adverse-drug-reaction",
+      "term": "Adverse drug reaction",
+      "definition": "Noxious, unintended, undesired effect occurring at normal drug doses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [
+        "ADR"
+      ],
+      "confusables": [
+        "Adverse effect",
+        "Side effect",
+        "Adverse drug event"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.3"
+      ]
+    },
+    {
+      "id": "adverse-drug-event",
+      "term": "Adverse drug event",
+      "definition": "Harm to a patient resulting from drug exposure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [
+        "ADE"
+      ],
+      "confusables": [
+        "Adverse drug reaction",
+        "Medication error",
+        "Toxicity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.3"
+      ]
+    },
+    {
+      "id": "allergic-reaction",
+      "term": "Allergic reaction",
+      "definition": "Immune response due to sensitivity to a substance.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Anaphylaxis",
+        "Adverse drug reaction",
+        "Side effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.3"
+      ]
+    },
+    {
+      "id": "anaphylaxis",
+      "term": "Anaphylaxis",
+      "definition": "Severe, life-threatening reaction causing bronchospasm and low blood pressure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Allergic reaction",
+        "Adverse drug reaction",
+        "Toxicity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.3"
+      ]
+    },
+    {
+      "id": "drug-interaction",
+      "term": "Drug interaction",
+      "definition": "Reaction between a medication and another substance or condition.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reaction",
+        "Side effect",
+        "Adverse effect"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "toxicity",
+      "term": "Toxicity",
+      "definition": "Harmful effect from excessive drug levels in the body.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Adverse effect",
+        "Therapeutic index",
+        "Side effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "tolerance",
+      "term": "Tolerance",
+      "definition": "Body adaptation requiring higher doses for the same effect.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Toxicity",
+        "Adverse effect",
+        "Side effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "medication-error",
+      "term": "Medication error",
+      "definition": "Preventable event that may cause inappropriate medication use or harm.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Adverse effects and interactions",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug event",
+        "Adverse drug reaction",
+        "Side effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,841 @@
+{
+  "version": 1,
+  "id": "clinical-abbreviations",
+  "collectionId": "medical-terminology",
+  "section": "core",
+  "name": "Clinical Abbreviations",
+  "shortName": "Clinical abbreviations",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Vital signs and measurements"
+    },
+    {
+      "number": 2,
+      "title": "Diagnoses and conditions"
+    },
+    {
+      "number": 3,
+      "title": "Procedures and tests"
+    },
+    {
+      "number": 4,
+      "title": "Medications and routes"
+    },
+    {
+      "number": 5,
+      "title": "Departments and roles"
+    },
+    {
+      "number": 6,
+      "title": "Time and frequency"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "abg",
+      "term": "ABG",
+      "definition": "ABG denotes arterial blood gases, a test used to detect lung diseases.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "BUN",
+        "GFR",
+        "HCT"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.abg"
+      ]
+    },
+    {
+      "id": "bmi",
+      "term": "BMI",
+      "definition": "BMI denotes body mass index, a measure of appropriate weight for height.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "BP",
+        "HCT",
+        "HGB"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.bmi"
+      ]
+    },
+    {
+      "id": "bp",
+      "term": "BP",
+      "definition": "BP denotes blood pressure, the force of blood against artery walls.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "BMI",
+        "HCT",
+        "HGB"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.bp"
+      ]
+    },
+    {
+      "id": "bun",
+      "term": "BUN",
+      "definition": "BUN denotes blood urea nitrogen, a blood test for kidney disease.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "GFR",
+        "ABG",
+        "HCT"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.bun"
+      ]
+    },
+    {
+      "id": "gfr",
+      "term": "GFR",
+      "definition": "GFR denotes glomerular filtration rate, a test of kidney damage.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "BUN",
+        "ABG",
+        "HCT"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.gfr"
+      ]
+    },
+    {
+      "id": "hct",
+      "term": "HCT",
+      "definition": "HCT denotes hematocrit, a blood test measurement of red cell volume.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "HGB",
+        "RBC",
+        "WBC"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.hct"
+      ]
+    },
+    {
+      "id": "hgb",
+      "term": "HGB",
+      "definition": "HGB denotes hemoglobin, a blood test measurement of oxygen-carrying protein.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "HCT",
+        "RBC",
+        "WBC"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.hgb"
+      ]
+    },
+    {
+      "id": "rbc",
+      "term": "RBC",
+      "definition": "RBC denotes red blood cell, a type of blood cell.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "WBC",
+        "HCT",
+        "HGB"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.rbc"
+      ]
+    },
+    {
+      "id": "wbc",
+      "term": "WBC",
+      "definition": "WBC denotes white blood cell, a type of blood cell.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Vital signs and measurements",
+      "confusables": [
+        "RBC",
+        "HCT",
+        "HGB"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.wbc"
+      ]
+    },
+    {
+      "id": "afib",
+      "term": "AFIB",
+      "definition": "AFIB denotes atrial fibrillation, a disturbance of heart rhythm.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "MI",
+        "CHF",
+        "HTN"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.afib"
+      ]
+    },
+    {
+      "id": "aids",
+      "term": "AIDS",
+      "definition": "AIDS denotes acquired immunodeficiency syndrome, infection caused by HIV.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "ALS",
+        "AFIB",
+        "COPD"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.aids"
+      ]
+    },
+    {
+      "id": "als",
+      "term": "ALS",
+      "definition": "ALS denotes amyotrophic lateral sclerosis, also known as Lou Gehrig's disease.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "AIDS",
+        "MI",
+        "HTN"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.als"
+      ]
+    },
+    {
+      "id": "chf",
+      "term": "CHF",
+      "definition": "CHF denotes congestive heart failure, when the heart cannot pump enough blood.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "AFIB",
+        "MI",
+        "HTN"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.chf"
+      ]
+    },
+    {
+      "id": "copd",
+      "term": "COPD",
+      "definition": "COPD denotes chronic obstructive pulmonary disease, a lung disease causing breathlessness.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "GERD",
+        "DVT",
+        "MI"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.copd"
+      ]
+    },
+    {
+      "id": "dvt",
+      "term": "DVT",
+      "definition": "DVT denotes deep-vein thrombosis, a blood clot in a deep vein.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "COPD",
+        "GERD",
+        "MI"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.dvt"
+      ]
+    },
+    {
+      "id": "gerd",
+      "term": "GERD",
+      "definition": "GERD denotes gastroesophageal reflux disease, when stomach contents leak into the gullet.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "DVT",
+        "COPD",
+        "CHF"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.gerd"
+      ]
+    },
+    {
+      "id": "htn",
+      "term": "HTN",
+      "definition": "HTN denotes hypertension, meaning chronically high blood pressure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "MI",
+        "CHF",
+        "AFIB"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.htn"
+      ]
+    },
+    {
+      "id": "mi",
+      "term": "MI",
+      "definition": "MI denotes myocardial infarction, commonly called a heart attack.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Diagnoses and conditions",
+      "confusables": [
+        "AFIB",
+        "CHF",
+        "HTN"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.mi"
+      ]
+    },
+    {
+      "id": "cabg",
+      "term": "CABG",
+      "definition": "CABG denotes coronary artery bypass graft, a type of heart surgery.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "CXR",
+        "MRI",
+        "PET"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.cabg"
+      ]
+    },
+    {
+      "id": "cxr",
+      "term": "CXR",
+      "definition": "CXR denotes chest x-ray, an imaging test of the lungs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "MRI",
+        "PET",
+        "ECG"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.cxr"
+      ]
+    },
+    {
+      "id": "d-and-c",
+      "term": "D&C",
+      "definition": "D&C denotes dilatation and curettage, a surgical procedure on the uterus.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "CABG",
+        "PAP",
+        "ECG"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.d-c"
+      ]
+    },
+    {
+      "id": "ecg",
+      "term": "ECG",
+      "definition": "ECG denotes electrocardiogram, a test measuring the heart's electrical impulses.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "EEG",
+        "CXR",
+        "MRI"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.ecg"
+      ]
+    },
+    {
+      "id": "eeg",
+      "term": "EEG",
+      "definition": "EEG denotes electroencephalogram, a test measuring the brain's electrical impulses.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "ECG",
+        "MRI",
+        "PET"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.eeg"
+      ]
+    },
+    {
+      "id": "mri",
+      "term": "MRI",
+      "definition": "MRI denotes magnetic resonance imaging, a type of imaging test.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "PET",
+        "CXR",
+        "ECG"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.mri"
+      ]
+    },
+    {
+      "id": "pap",
+      "term": "PAP",
+      "definition": "PAP denotes Papanicolau, a test used to detect cervical cancer.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "PET",
+        "CXR",
+        "ECG"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.pap"
+      ]
+    },
+    {
+      "id": "pet",
+      "term": "PET",
+      "definition": "PET denotes positron emission tomography, a type of imaging test.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Procedures and tests",
+      "confusables": [
+        "MRI",
+        "CXR",
+        "ECG"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.pet"
+      ]
+    },
+    {
+      "id": "dtp",
+      "term": "DTP",
+      "definition": "DTP denotes diphtheria, tetanus, and pertussis vaccine for three diseases.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "MMR",
+        "NSAID",
+        "HRT"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.dtp"
+      ]
+    },
+    {
+      "id": "hrt",
+      "term": "HRT",
+      "definition": "HRT denotes hormone replacement therapy, replacing hormones the body lacks.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "NSAID",
+        "DTP",
+        "MMR"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.hrt"
+      ]
+    },
+    {
+      "id": "im",
+      "term": "IM",
+      "definition": "IM denotes intramuscular, a type of injection into muscle.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "IV",
+        "NG",
+        "Rx"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.im"
+      ]
+    },
+    {
+      "id": "iv",
+      "term": "IV",
+      "definition": "IV denotes intravenous, a type of injection into a vein.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "IM",
+        "NG",
+        "Rx"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.iv"
+      ]
+    },
+    {
+      "id": "mmr",
+      "term": "MMR",
+      "definition": "MMR denotes measles, mumps, and rubella vaccine for three diseases.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "DTP",
+        "NSAID",
+        "HRT"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.mmr"
+      ]
+    },
+    {
+      "id": "ng",
+      "term": "NG",
+      "definition": "NG denotes nasogastric, a tube used to empty stomach contents.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "IM",
+        "IV",
+        "Rx"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.ng"
+      ]
+    },
+    {
+      "id": "nkda",
+      "term": "NKDA",
+      "definition": "NKDA denotes no known drug allergies in the patient record.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "Rx",
+        "NSAID",
+        "HRT"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.nkda"
+      ]
+    },
+    {
+      "id": "nsaid",
+      "term": "NSAID",
+      "definition": "NSAID denotes non-steroidal anti-inflammatory drug, such as ibuprofen.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "HRT",
+        "DTP",
+        "MMR"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.nsaid"
+      ]
+    },
+    {
+      "id": "rx",
+      "term": "Rx",
+      "definition": "Rx denotes prescription, the written order for medication.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medications and routes",
+      "confusables": [
+        "IM",
+        "IV",
+        "NG"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.rx"
+      ]
+    },
+    {
+      "id": "cdc",
+      "term": "CDC",
+      "definition": "CDC denotes Centers for Disease Control and Prevention, a public health agency.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "HCO",
+        "HCP",
+        "ICU"
+      ],
+      "sources": [
+        "cdc-infection-control-abbreviations#sec.cdc"
+      ]
+    },
+    {
+      "id": "cns",
+      "term": "CNS",
+      "definition": "CNS denotes central nervous system, the brain and spinal cord.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "ICU",
+        "ENT",
+        "GI"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.cns"
+      ]
+    },
+    {
+      "id": "ent",
+      "term": "ENT",
+      "definition": "ENT denotes ear, nose, and throat, a clinical specialty.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "GI",
+        "GU",
+        "CNS"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.ent"
+      ]
+    },
+    {
+      "id": "gi",
+      "term": "GI",
+      "definition": "GI denotes gastrointestinal, another term for the digestive system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "GU",
+        "ENT",
+        "CNS"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.gi"
+      ]
+    },
+    {
+      "id": "gu",
+      "term": "GU",
+      "definition": "GU denotes genitourinary, the urinary and sex organs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "GI",
+        "ENT",
+        "CNS"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.gu"
+      ]
+    },
+    {
+      "id": "hco",
+      "term": "HCO",
+      "definition": "HCO denotes healthcare organization, a facility delivering care.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "HCP",
+        "CDC",
+        "ICU"
+      ],
+      "sources": [
+        "cdc-infection-control-abbreviations#sec.hco"
+      ]
+    },
+    {
+      "id": "hcp",
+      "term": "HCP",
+      "definition": "HCP denotes healthcare personnel, staff providing patient care.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "HCO",
+        "CDC",
+        "ICU"
+      ],
+      "sources": [
+        "cdc-infection-control-abbreviations#sec.hcp"
+      ]
+    },
+    {
+      "id": "icu",
+      "term": "ICU",
+      "definition": "ICU denotes intensive care unit, a special hospital unit.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Departments and roles",
+      "confusables": [
+        "CNS",
+        "HCP",
+        "HCO"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.icu"
+      ]
+    },
+    {
+      "id": "bid",
+      "term": "BID",
+      "definition": "BID denotes twice a day, a prescription frequency.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "TID",
+        "QID",
+        "QD"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.bid"
+      ]
+    },
+    {
+      "id": "prn",
+      "term": "PRN",
+      "definition": "PRN denotes as needed, taken only when symptoms require.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "BID",
+        "QD",
+        "QHS"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.prn"
+      ]
+    },
+    {
+      "id": "qd",
+      "term": "QD",
+      "definition": "QD denotes daily, an abbreviation on the do-not-use list.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "QOD",
+        "QID",
+        "BID"
+      ],
+      "sources": [
+        "joint-commission-do-not-use#sec.qd"
+      ]
+    },
+    {
+      "id": "qhs",
+      "term": "QHS",
+      "definition": "QHS denotes nightly at bedtime, an error-prone abbreviation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "PRN",
+        "QOD",
+        "QD"
+      ],
+      "sources": [
+        "ismp-error-prone-abbreviations#sec.qhs"
+      ]
+    },
+    {
+      "id": "qid",
+      "term": "QID",
+      "definition": "QID denotes four times a day, a prescription frequency.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "TID",
+        "BID",
+        "QD"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.qid"
+      ]
+    },
+    {
+      "id": "qod",
+      "term": "QOD",
+      "definition": "QOD denotes every other day, an abbreviation on the do-not-use list.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "QD",
+        "QID",
+        "BID"
+      ],
+      "sources": [
+        "joint-commission-do-not-use#sec.qod"
+      ]
+    },
+    {
+      "id": "tid",
+      "term": "TID",
+      "definition": "TID denotes three times a day, a prescription frequency.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Time and frequency",
+      "confusables": [
+        "BID",
+        "QID",
+        "QD"
+      ],
+      "sources": [
+        "medlineplus-appendix-b#sec.tid"
+      ]
+    }
+  ]
+}

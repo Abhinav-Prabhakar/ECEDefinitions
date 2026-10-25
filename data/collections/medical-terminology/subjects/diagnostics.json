@@ -1,0 +1,1295 @@
+{
+  "version": 1,
+  "id": "diagnostics",
+  "collectionId": "medical-terminology",
+  "section": "core",
+  "name": "Diagnostics",
+  "shortName": "Diagnostics",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "Laboratory values"
+    },
+    {
+      "number": 2,
+      "title": "Imaging modalities"
+    },
+    {
+      "number": 3,
+      "title": "Physical exam terms"
+    },
+    {
+      "number": 4,
+      "title": "Diagnostic procedures"
+    },
+    {
+      "number": 5,
+      "title": "Pathology and cytology"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "complete-blood-count",
+      "term": "Complete blood count",
+      "definition": "A blood test measuring red cells, white cells, and platelets.",
+      "formula": "CBC",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "CBC"
+      ],
+      "confusables": [
+        "Hematocrit",
+        "Hemoglobin",
+        "White blood cell count"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.complete-blood-count"
+      ]
+    },
+    {
+      "id": "red-blood-cell-count",
+      "term": "Red blood cell count",
+      "definition": "Number of red blood cells per volume of blood.",
+      "formula": "RBC",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "RBC",
+        "erythrocyte count"
+      ],
+      "confusables": [
+        "Hemoglobin",
+        "Hematocrit",
+        "White blood cell count"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.red-blood-cell-count"
+      ]
+    },
+    {
+      "id": "hemoglobin",
+      "term": "Hemoglobin",
+      "definition": "Protein in red blood cells that carries oxygen.",
+      "formula": "Hb",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "Hb"
+      ],
+      "confusables": [
+        "Hematocrit",
+        "Red blood cell count",
+        "Platelet count"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.hemoglobin"
+      ]
+    },
+    {
+      "id": "hematocrit",
+      "term": "Hematocrit",
+      "definition": "Percentage of blood volume made up of red blood cells.",
+      "formula": "Hct",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "Hct"
+      ],
+      "confusables": [
+        "Hemoglobin",
+        "Red blood cell count",
+        "White blood cell count"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.hematocrit"
+      ]
+    },
+    {
+      "id": "white-blood-cell-count",
+      "term": "White blood cell count",
+      "definition": "Number of white blood cells in a blood sample.",
+      "formula": "WBC",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "WBC",
+        "leukocyte count"
+      ],
+      "confusables": [
+        "Red blood cell count",
+        "Platelet count",
+        "Hemoglobin"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.white-blood-cell-count"
+      ]
+    },
+    {
+      "id": "platelet-count",
+      "term": "Platelet count",
+      "definition": "The number of platelets in a blood sample.",
+      "formula": "PLT",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "PLT",
+        "thrombocyte count"
+      ],
+      "confusables": [
+        "White blood cell count",
+        "Red blood cell count",
+        "Hemoglobin"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.platelet-count"
+      ]
+    },
+    {
+      "id": "basic-metabolic-panel",
+      "term": "Basic metabolic panel",
+      "definition": "Blood tests measuring glucose, electrolytes, and kidney function.",
+      "formula": "BMP",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "BMP"
+      ],
+      "confusables": [
+        "Comprehensive metabolic panel",
+        "Lipid panel",
+        "Complete blood count"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.basic-metabolic-panel"
+      ]
+    },
+    {
+      "id": "comprehensive-metabolic-panel",
+      "term": "Comprehensive metabolic panel",
+      "definition": "Blood test adding liver enzymes and proteins to a basic panel.",
+      "formula": "CMP",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "CMP"
+      ],
+      "confusables": [
+        "Basic metabolic panel",
+        "Lipid panel",
+        "Complete blood count"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.comprehensive-metabolic-panel"
+      ]
+    },
+    {
+      "id": "blood-urea-nitrogen",
+      "term": "Blood urea nitrogen",
+      "definition": "Nitrogen in blood from urea, reflecting kidney function.",
+      "formula": "BUN",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "BUN"
+      ],
+      "confusables": [
+        "Creatinine",
+        "Glucose",
+        "Sodium"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.blood-urea-nitrogen"
+      ]
+    },
+    {
+      "id": "creatinine",
+      "term": "Creatinine",
+      "definition": "Waste product filtered by kidneys, used to assess kidney function.",
+      "formula": "Cr",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "Cr"
+      ],
+      "confusables": [
+        "Blood urea nitrogen",
+        "Glucose",
+        "Potassium"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.creatinine"
+      ]
+    },
+    {
+      "id": "glucose",
+      "term": "Glucose",
+      "definition": "Amount of sugar present in the blood at testing.",
+      "formula": "mg/dL",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "blood sugar"
+      ],
+      "confusables": [
+        "Glycated hemoglobin",
+        "Lipid panel",
+        "Basic metabolic panel"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.glucose"
+      ]
+    },
+    {
+      "id": "glycated-hemoglobin",
+      "term": "Glycated hemoglobin",
+      "definition": "Average blood glucose over the past two to three months.",
+      "formula": "HbA1c",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "HbA1c",
+        "A1C"
+      ],
+      "confusables": [
+        "Glucose",
+        "Lipid panel",
+        "Basic metabolic panel"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.glycated-hemoglobin"
+      ]
+    },
+    {
+      "id": "sodium",
+      "term": "Sodium",
+      "definition": "Blood level of sodium, an electrolyte regulating fluids.",
+      "formula": "Na",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "Na"
+      ],
+      "confusables": [
+        "Potassium",
+        "Chloride",
+        "Calcium"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.sodium"
+      ]
+    },
+    {
+      "id": "potassium",
+      "term": "Potassium",
+      "definition": "Blood level of potassium, an electrolyte for nerves and muscles.",
+      "formula": "K",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "K"
+      ],
+      "confusables": [
+        "Sodium",
+        "Chloride",
+        "Calcium"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.potassium"
+      ]
+    },
+    {
+      "id": "chloride",
+      "term": "Chloride",
+      "definition": "Blood level of chloride, an electrolyte balancing fluids.",
+      "formula": "Cl",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "Cl"
+      ],
+      "confusables": [
+        "Sodium",
+        "Potassium",
+        "Calcium"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.chloride"
+      ]
+    },
+    {
+      "id": "calcium",
+      "term": "Calcium",
+      "definition": "Blood level of calcium, a mineral for bones and muscles.",
+      "formula": "Ca",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "Ca"
+      ],
+      "confusables": [
+        "Sodium",
+        "Potassium",
+        "Chloride"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.calcium"
+      ]
+    },
+    {
+      "id": "lipid-panel",
+      "term": "Lipid panel",
+      "definition": "A blood test measuring cholesterol and triglyceride levels.",
+      "formula": "lipids",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [
+        "lipid profile"
+      ],
+      "confusables": [
+        "Basic metabolic panel",
+        "Comprehensive metabolic panel",
+        "Glucose"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.lipid-panel"
+      ]
+    },
+    {
+      "id": "reference-range",
+      "term": "Reference range",
+      "definition": "Expected interval of test results in healthy people.",
+      "formula": "normal",
+      "unit": 1,
+      "unitTitle": "Laboratory values",
+      "aliases": [],
+      "confusables": [
+        "Complete blood count",
+        "Basic metabolic panel",
+        "Comprehensive metabolic panel"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.reference-range"
+      ]
+    },
+    {
+      "id": "x-ray",
+      "term": "X-ray",
+      "definition": "Image made using radiation to view bones and tissues.",
+      "formula": "radiograph",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "radiograph"
+      ],
+      "confusables": [
+        "CT scan",
+        "MRI",
+        "Ultrasound"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.x-ray"
+      ]
+    },
+    {
+      "id": "ct-scan",
+      "term": "CT scan",
+      "definition": "Detailed cross-sectional images created from X-rays and computers.",
+      "formula": "CT",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "computed tomography"
+      ],
+      "confusables": [
+        "MRI",
+        "X-ray",
+        "Ultrasound"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.ct-scan"
+      ]
+    },
+    {
+      "id": "mri",
+      "term": "MRI",
+      "definition": "Detailed images using magnetic fields and radio waves.",
+      "formula": "MRI",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "magnetic resonance imaging"
+      ],
+      "confusables": [
+        "CT scan",
+        "X-ray",
+        "Ultrasound"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.mri"
+      ]
+    },
+    {
+      "id": "ultrasound",
+      "term": "Ultrasound",
+      "definition": "Images of the body produced using high-frequency sound waves.",
+      "formula": "sonography",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "sonography"
+      ],
+      "confusables": [
+        "MRI",
+        "X-ray",
+        "CT scan"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.ultrasound"
+      ]
+    },
+    {
+      "id": "nuclear-medicine-scan",
+      "term": "Nuclear medicine scan",
+      "definition": "Images from small amounts of radioactive tracer material.",
+      "formula": "NM",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [],
+      "confusables": [
+        "PET scan",
+        "CT scan",
+        "MRI"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.nuclear-medicine-scan"
+      ]
+    },
+    {
+      "id": "pet-scan",
+      "term": "PET scan",
+      "definition": "Images showing metabolic activity using a radioactive tracer.",
+      "formula": "PET",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "positron emission tomography"
+      ],
+      "confusables": [
+        "Nuclear medicine scan",
+        "CT scan",
+        "MRI"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.pet-scan"
+      ]
+    },
+    {
+      "id": "mammography",
+      "term": "Mammography",
+      "definition": "X-ray imaging of the breast for screening and diagnosis.",
+      "formula": "mammo",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [],
+      "confusables": [
+        "Ultrasound",
+        "MRI",
+        "CT scan"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.mammography"
+      ]
+    },
+    {
+      "id": "fluoroscopy",
+      "term": "Fluoroscopy",
+      "definition": "Continuous real-time moving X-ray images of the body.",
+      "formula": "fluoro",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [],
+      "confusables": [
+        "X-ray",
+        "CT scan",
+        "Ultrasound"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.fluoroscopy"
+      ]
+    },
+    {
+      "id": "dexa-scan",
+      "term": "DEXA scan",
+      "definition": "A low-dose X-ray measuring the bone mineral density.",
+      "formula": "DEXA",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "bone density scan"
+      ],
+      "confusables": [
+        "X-ray",
+        "CT scan",
+        "MRI"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.dexa-scan"
+      ]
+    },
+    {
+      "id": "angiography",
+      "term": "Angiography",
+      "definition": "The imaging of blood vessels using contrast dye.",
+      "formula": "angio",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [],
+      "confusables": [
+        "Ultrasound",
+        "CT scan",
+        "MRI"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.angiography"
+      ]
+    },
+    {
+      "id": "contrast-medium",
+      "term": "Contrast medium",
+      "definition": "A substance improving visibility of structures in imaging.",
+      "formula": "contrast",
+      "unit": 2,
+      "unitTitle": "Imaging modalities",
+      "aliases": [
+        "contrast agent"
+      ],
+      "confusables": [
+        "X-ray",
+        "CT scan",
+        "MRI"
+      ],
+      "sources": [
+        "medlineplus-diagnostic-imaging#sec.contrast-medium"
+      ]
+    },
+    {
+      "id": "inspection",
+      "term": "Inspection",
+      "definition": "Visual examination of the body for any abnormalities.",
+      "formula": "look",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Palpation",
+        "Percussion",
+        "Auscultation"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.inspection"
+      ]
+    },
+    {
+      "id": "palpation",
+      "term": "Palpation",
+      "definition": "Feeling body structures with hands to assess them.",
+      "formula": "feel",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Inspection",
+        "Percussion",
+        "Auscultation"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.palpation"
+      ]
+    },
+    {
+      "id": "percussion",
+      "term": "Percussion",
+      "definition": "Tapping the body surface to assess underlying organs.",
+      "formula": "tap",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Palpation",
+        "Auscultation",
+        "Inspection"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.percussion"
+      ]
+    },
+    {
+      "id": "auscultation",
+      "term": "Auscultation",
+      "definition": "Listening to body sounds, often with a stethoscope.",
+      "formula": "listen",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Percussion",
+        "Palpation",
+        "Inspection"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.auscultation"
+      ]
+    },
+    {
+      "id": "vital-signs",
+      "term": "Vital signs",
+      "definition": "The basic measurements of the body's essential functions.",
+      "formula": "VS",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "VS"
+      ],
+      "confusables": [
+        "Blood pressure",
+        "Pulse",
+        "Respiratory rate"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.vital-signs"
+      ]
+    },
+    {
+      "id": "blood-pressure",
+      "term": "Blood pressure",
+      "definition": "Force of blood against the walls of arteries.",
+      "formula": "BP",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "BP"
+      ],
+      "confusables": [
+        "Pulse",
+        "Respiratory rate",
+        "Oxygen saturation"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.blood-pressure"
+      ]
+    },
+    {
+      "id": "pulse",
+      "term": "Pulse",
+      "definition": "The number of heartbeats per minute at rest.",
+      "formula": "HR",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "heart rate"
+      ],
+      "confusables": [
+        "Blood pressure",
+        "Respiratory rate",
+        "Oxygen saturation"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.pulse"
+      ]
+    },
+    {
+      "id": "respiratory-rate",
+      "term": "Respiratory rate",
+      "definition": "The number of breaths taken per minute at rest.",
+      "formula": "RR",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "RR"
+      ],
+      "confusables": [
+        "Pulse",
+        "Blood pressure",
+        "Oxygen saturation"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.respiratory-rate"
+      ]
+    },
+    {
+      "id": "body-temperature",
+      "term": "Body temperature",
+      "definition": "The measure of the body's internal heat level.",
+      "formula": "temp",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Pulse",
+        "Respiratory rate",
+        "Blood pressure"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.body-temperature"
+      ]
+    },
+    {
+      "id": "oxygen-saturation",
+      "term": "Oxygen saturation",
+      "definition": "The percentage of hemoglobin carrying oxygen in blood.",
+      "formula": "SpO2",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "SpO2"
+      ],
+      "confusables": [
+        "Pulse",
+        "Respiratory rate",
+        "Blood pressure"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.oxygen-saturation"
+      ]
+    },
+    {
+      "id": "body-mass-index",
+      "term": "Body mass index",
+      "definition": "The weight-to-height ratio used for estimating body fat.",
+      "formula": "BMI",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "BMI"
+      ],
+      "confusables": [
+        "Blood pressure",
+        "Pulse",
+        "Respiratory rate"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.body-mass-index"
+      ]
+    },
+    {
+      "id": "range-of-motion",
+      "term": "Range of motion",
+      "definition": "The degree of movement possible at a joint.",
+      "formula": "ROM",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [
+        "ROM"
+      ],
+      "confusables": [
+        "Palpation",
+        "Inspection",
+        "Percussion"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.range-of-motion"
+      ]
+    },
+    {
+      "id": "edema",
+      "term": "Edema",
+      "definition": "The swelling caused by excess fluid in tissues.",
+      "formula": "swelling",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Inflammation",
+        "Necrosis",
+        "Atypia"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.edema"
+      ]
+    },
+    {
+      "id": "reflex",
+      "term": "Reflex",
+      "definition": "Involuntary response of the body to a stimulus.",
+      "formula": "reflex",
+      "unit": 3,
+      "unitTitle": "Physical exam terms",
+      "aliases": [],
+      "confusables": [
+        "Range of motion",
+        "Palpation",
+        "Inspection"
+      ],
+      "sources": [
+        "medlineplus-encyclopedia#sec.reflex"
+      ]
+    },
+    {
+      "id": "biopsy",
+      "term": "Biopsy",
+      "definition": "Removal of a small tissue sample for examination.",
+      "formula": "bx",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "bx"
+      ],
+      "confusables": [
+        "Cytology",
+        "Histology",
+        "Pap test"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.biopsy"
+      ]
+    },
+    {
+      "id": "endoscopy",
+      "term": "Endoscopy",
+      "definition": "Visual exam of internal organs using a flexible scope.",
+      "formula": "scope",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [],
+      "confusables": [
+        "Colonoscopy",
+        "Biopsy",
+        "Thoracentesis"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.endoscopy"
+      ]
+    },
+    {
+      "id": "colonoscopy",
+      "term": "Colonoscopy",
+      "definition": "An endoscopic examination of the colon and rectum.",
+      "formula": "scope",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [],
+      "confusables": [
+        "Endoscopy",
+        "Biopsy",
+        "Pap test"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.colonoscopy"
+      ]
+    },
+    {
+      "id": "electrocardiogram",
+      "term": "Electrocardiogram",
+      "definition": "A recording of the heart's electrical activity over time.",
+      "formula": "ECG",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "ECG",
+        "EKG"
+      ],
+      "confusables": [
+        "Echocardiogram",
+        "Spirometry",
+        "Cardiac stress test"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.electrocardiogram"
+      ]
+    },
+    {
+      "id": "echocardiogram",
+      "term": "Echocardiogram",
+      "definition": "Ultrasound imaging of the heart's structure and function.",
+      "formula": "echo",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "echo"
+      ],
+      "confusables": [
+        "Electrocardiogram",
+        "Ultrasound",
+        "Angiography"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.echocardiogram"
+      ]
+    },
+    {
+      "id": "spirometry",
+      "term": "Spirometry",
+      "definition": "A test measuring lung airflow and lung volume.",
+      "formula": "PFT",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "pulmonary function test"
+      ],
+      "confusables": [
+        "Electrocardiogram",
+        "Echocardiogram",
+        "Cardiac stress test"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.spirometry"
+      ]
+    },
+    {
+      "id": "lumbar-puncture",
+      "term": "Lumbar puncture",
+      "definition": "Needle insertion into the spinal canal to collect fluid.",
+      "formula": "LP",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "spinal tap"
+      ],
+      "confusables": [
+        "Thoracentesis",
+        "Paracentesis",
+        "Biopsy"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.lumbar-puncture"
+      ]
+    },
+    {
+      "id": "thoracentesis",
+      "term": "Thoracentesis",
+      "definition": "Needle removal of fluid from the pleural space.",
+      "formula": "thora",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [],
+      "confusables": [
+        "Paracentesis",
+        "Lumbar puncture",
+        "Biopsy"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.thoracentesis"
+      ]
+    },
+    {
+      "id": "paracentesis",
+      "term": "Paracentesis",
+      "definition": "Needle removal of fluid from the abdominal cavity.",
+      "formula": "para",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [],
+      "confusables": [
+        "Thoracentesis",
+        "Lumbar puncture",
+        "Biopsy"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.paracentesis"
+      ]
+    },
+    {
+      "id": "bone-marrow-biopsy",
+      "term": "Bone marrow biopsy",
+      "definition": "Removal of bone marrow tissue for laboratory testing.",
+      "formula": "BMB",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "BMB"
+      ],
+      "confusables": [
+        "Biopsy",
+        "Lumbar puncture",
+        "Thoracentesis"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.bone-marrow-biopsy"
+      ]
+    },
+    {
+      "id": "pap-test",
+      "term": "Pap test",
+      "definition": "A cervical cell sample screened for cellular abnormalities.",
+      "formula": "Pap",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [
+        "Pap smear"
+      ],
+      "confusables": [
+        "Biopsy",
+        "Cytology",
+        "Histology"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.pap-test"
+      ]
+    },
+    {
+      "id": "cardiac-stress-test",
+      "term": "Cardiac stress test",
+      "definition": "Heart function measured during physical exertion and exercise.",
+      "formula": "stress",
+      "unit": 4,
+      "unitTitle": "Diagnostic procedures",
+      "aliases": [],
+      "confusables": [
+        "Electrocardiogram",
+        "Echocardiogram",
+        "Spirometry"
+      ],
+      "sources": [
+        "medlineplus-medical-tests#sec.cardiac-stress-test"
+      ]
+    },
+    {
+      "id": "pathology",
+      "term": "Pathology",
+      "definition": "Study of disease causes and effects on the body.",
+      "formula": "path",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Cytology",
+        "Histology",
+        "Histopathology"
+      ],
+      "sources": [
+        "nci-dictionary#sec.pathology"
+      ]
+    },
+    {
+      "id": "cytology",
+      "term": "Cytology",
+      "definition": "The study of individual cells under a microscope.",
+      "formula": "cyto",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Histology",
+        "Pathology",
+        "Histopathology"
+      ],
+      "sources": [
+        "nci-dictionary#sec.cytology"
+      ]
+    },
+    {
+      "id": "histology",
+      "term": "Histology",
+      "definition": "The study of tissues and organs under a microscope.",
+      "formula": "histo",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Cytology",
+        "Pathology",
+        "Histopathology"
+      ],
+      "sources": [
+        "nci-dictionary#sec.histology"
+      ]
+    },
+    {
+      "id": "histopathology",
+      "term": "Histopathology",
+      "definition": "The microscopic examination of diseased tissue in patients.",
+      "formula": "histopath",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Cytology",
+        "Histology",
+        "Pathology"
+      ],
+      "sources": [
+        "nci-dictionary#sec.histopathology"
+      ]
+    },
+    {
+      "id": "neoplasm",
+      "term": "Neoplasm",
+      "definition": "An abnormal new growth of tissue in the body.",
+      "formula": "tumor",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [
+        "tumor"
+      ],
+      "confusables": [
+        "Dysplasia",
+        "Hyperplasia",
+        "Metastasis"
+      ],
+      "sources": [
+        "nci-dictionary#sec.neoplasm"
+      ]
+    },
+    {
+      "id": "benign",
+      "term": "Benign",
+      "definition": "A growth that is not cancerous or invasive.",
+      "formula": "benign",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Malignant",
+        "Neoplasm",
+        "Metastasis"
+      ],
+      "sources": [
+        "nci-dictionary#sec.benign"
+      ]
+    },
+    {
+      "id": "malignant",
+      "term": "Malignant",
+      "definition": "A growth that is cancerous and able to spread.",
+      "formula": "malignant",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Benign",
+        "Neoplasm",
+        "Metastasis"
+      ],
+      "sources": [
+        "nci-dictionary#sec.malignant"
+      ]
+    },
+    {
+      "id": "metastasis",
+      "term": "Metastasis",
+      "definition": "The spread of cancer to distant body sites.",
+      "formula": "mets",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [
+        "mets"
+      ],
+      "confusables": [
+        "Malignant",
+        "Neoplasm",
+        "Dysplasia"
+      ],
+      "sources": [
+        "nci-dictionary#sec.metastasis"
+      ]
+    },
+    {
+      "id": "dysplasia",
+      "term": "Dysplasia",
+      "definition": "The abnormal development or maturation of body cells.",
+      "formula": "dysplasia",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Hyperplasia",
+        "Atypia",
+        "Neoplasm"
+      ],
+      "sources": [
+        "nci-dictionary#sec.dysplasia"
+      ]
+    },
+    {
+      "id": "hyperplasia",
+      "term": "Hyperplasia",
+      "definition": "Increase in the number of cells in a tissue.",
+      "formula": "hyperplasia",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Dysplasia",
+        "Atypia",
+        "Neoplasm"
+      ],
+      "sources": [
+        "nci-dictionary#sec.hyperplasia"
+      ]
+    },
+    {
+      "id": "atypia",
+      "term": "Atypia",
+      "definition": "Cells that show abnormal size or shape changes.",
+      "formula": "atypia",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Dysplasia",
+        "Hyperplasia",
+        "Neoplasm"
+      ],
+      "sources": [
+        "nci-dictionary#sec.atypia"
+      ]
+    },
+    {
+      "id": "necrosis",
+      "term": "Necrosis",
+      "definition": "Death of cells or tissue in a living body.",
+      "formula": "necrosis",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Apoptosis",
+        "Inflammation",
+        "Metastasis"
+      ],
+      "sources": [
+        "nci-dictionary#sec.necrosis"
+      ]
+    },
+    {
+      "id": "apoptosis",
+      "term": "Apoptosis",
+      "definition": "The programmed cell death of cells in the body.",
+      "formula": "apoptosis",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Necrosis",
+        "Inflammation",
+        "Dysplasia"
+      ],
+      "sources": [
+        "nci-dictionary#sec.apoptosis"
+      ]
+    },
+    {
+      "id": "inflammation",
+      "term": "Inflammation",
+      "definition": "The body's response to injury or to infection.",
+      "formula": "inflam",
+      "unit": 5,
+      "unitTitle": "Pathology and cytology",
+      "aliases": [],
+      "confusables": [
+        "Necrosis",
+        "Apoptosis",
+        "Neoplasm"
+      ],
+      "sources": [
+        "nci-dictionary#sec.inflammation"
+      ]
+    }
+  ]
+}

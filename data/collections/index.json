@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-25",
+  "collections": [
+    {
+      "id": "medical-terminology",
+      "name": "Medical Terminology",
+      "tagline": "Medicine, in one line.",
+      "path": "data/collections/medical-terminology",
+      "subjects": 6,
+      "definitions": 327,
+      "generatedAt": "2026-10-25"
+    }
+  ]
+}

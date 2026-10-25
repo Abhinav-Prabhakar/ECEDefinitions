@@ -1,0 +1,1083 @@
+{
+  "version": 1,
+  "id": "body-systems",
+  "collectionId": "medical-terminology",
+  "section": "core",
+  "name": "Body Systems",
+  "shortName": "Body systems",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Integumentary"
+    },
+    {
+      "number": 2,
+      "title": "Skeletal and muscular"
+    },
+    {
+      "number": 3,
+      "title": "Cardiovascular"
+    },
+    {
+      "number": 4,
+      "title": "Respiratory"
+    },
+    {
+      "number": 5,
+      "title": "Nervous"
+    },
+    {
+      "number": 6,
+      "title": "Digestive, urinary, and endocrine"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "epidermis",
+      "term": "Epidermis",
+      "definition": "The outermost tissue layer of the skin, made of epithelial cells.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Dermis",
+        "Hypodermis",
+        "Stratum corneum"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "dermis",
+      "term": "Dermis",
+      "definition": "The layer of skin between the epidermis and hypodermis, containing connective tissue, blood vessels, and glands.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Epidermis",
+        "Hypodermis",
+        "Pacinian corpuscle"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "hypodermis",
+      "term": "Hypodermis",
+      "definition": "The connective tissue layer that anchors the skin to underlying bone and muscle.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [
+        "subcutaneous layer"
+      ],
+      "confusables": [
+        "Epidermis",
+        "Dermis",
+        "Stratum corneum"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "keratinocyte",
+      "term": "Keratinocyte",
+      "definition": "The most common epidermal cell, which produces keratin for skin strength.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Melanocyte",
+        "Stratum corneum",
+        "Melanoma"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "melanocyte",
+      "term": "Melanocyte",
+      "definition": "A cell in the deepest epidermal layer that produces the pigment melanin.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Keratinocyte",
+        "Melanoma",
+        "Stratum corneum"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "sebaceous-gland",
+      "term": "Sebaceous gland",
+      "definition": "An oil gland in the dermis that secretes sebum to lubricate skin and hair.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Eccrine sweat gland",
+        "Keratinocyte",
+        "Melanocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "eccrine-sweat-gland",
+      "term": "Eccrine sweat gland",
+      "definition": "A widespread sweat gland that produces watery sweat for body temperature regulation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Sebaceous gland",
+        "Stratum corneum",
+        "Melanocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "stratum-corneum",
+      "term": "Stratum corneum",
+      "definition": "The outermost layer of the epidermis, made of dead, flattened cells.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Epidermis",
+        "Dermis",
+        "Keratinocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "melanoma",
+      "term": "Melanoma",
+      "definition": "A dangerous skin cancer that originates from pigment-producing melanocytes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [],
+      "confusables": [
+        "Melanocyte",
+        "Keratinocyte",
+        "Sebaceous gland"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "pacinian-corpuscle",
+      "term": "Pacinian corpuscle",
+      "definition": "A deep skin receptor that detects vibration and deep pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Integumentary",
+      "aliases": [
+        "lamellated corpuscle"
+      ],
+      "confusables": [
+        "Stratum corneum",
+        "Dermis",
+        "Epidermis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.5"
+      ]
+    },
+    {
+      "id": "osteoblast",
+      "term": "Osteoblast",
+      "definition": "A bone cell that synthesizes and secretes new bone matrix.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Osteoclast",
+        "Osteocyte",
+        "Compact bone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "osteoclast",
+      "term": "Osteoclast",
+      "definition": "A bone cell that breaks down and resorbs bone tissue.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Osteoblast",
+        "Osteocyte",
+        "Spongy bone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "osteocyte",
+      "term": "Osteocyte",
+      "definition": "The main cell of mature bone, which maintains the mineralized matrix.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Osteoblast",
+        "Osteoclast",
+        "Compact bone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "compact-bone",
+      "term": "Compact bone",
+      "definition": "Dense, hard bone tissue that withstands compressive forces.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Spongy bone",
+        "Osteocyte",
+        "Hematopoiesis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "spongy-bone",
+      "term": "Spongy bone",
+      "definition": "Light, lattice-like bone tissue that supports shifts in weight.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [
+        "cancellous bone"
+      ],
+      "confusables": [
+        "Compact bone",
+        "Hematopoiesis",
+        "Osteoporosis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "epiphyseal-plate",
+      "term": "Epiphyseal plate",
+      "definition": "A cartilage growth plate in immature bone that lengthens the bone.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [
+        "growth plate"
+      ],
+      "confusables": [
+        "Compact bone",
+        "Spongy bone",
+        "Osteoporosis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "hematopoiesis",
+      "term": "Hematopoiesis",
+      "definition": "Blood cell production that occurs in the red marrow of bones.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Compact bone",
+        "Spongy bone",
+        "Osteoporosis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "osteoporosis",
+      "term": "Osteoporosis",
+      "definition": "A disease in which bone resorption outpaces formation, reducing bone mass.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Hematopoiesis",
+        "Compact bone",
+        "Spongy bone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.6"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "term": "Sarcomere",
+      "definition": "The repeating contractile unit of skeletal muscle containing actin and myosin.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [],
+      "confusables": [
+        "Neuromuscular junction",
+        "Neuron",
+        "Action potential"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.10"
+      ]
+    },
+    {
+      "id": "neuromuscular-junction",
+      "term": "Neuromuscular junction",
+      "definition": "The synapse where a motor neuron signals a muscle fiber to contract.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Skeletal and muscular",
+      "aliases": [
+        "NMJ"
+      ],
+      "confusables": [
+        "Sarcomere",
+        "Synapse",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.10"
+      ]
+    },
+    {
+      "id": "artery",
+      "term": "Artery",
+      "definition": "A blood vessel that carries blood away from the heart.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Vein",
+        "Capillary",
+        "Aorta"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "vein",
+      "term": "Vein",
+      "definition": "A blood vessel that returns blood toward the heart.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Artery",
+        "Capillary",
+        "Aorta"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "capillary",
+      "term": "Capillary",
+      "definition": "The smallest blood vessel, where gases and nutrients exchange.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Artery",
+        "Vein",
+        "Hemoglobin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "aorta",
+      "term": "Aorta",
+      "definition": "The largest artery, carrying oxygenated blood from the heart.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Artery",
+        "Vein",
+        "Myocardium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "sinoatrial-node",
+      "term": "Sinoatrial node",
+      "definition": "The heart's natural pacemaker that initiates each heartbeat.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [
+        "SA node"
+      ],
+      "confusables": [
+        "Myocardium",
+        "Systole",
+        "Diastole"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "myocardium",
+      "term": "Myocardium",
+      "definition": "The muscular middle layer of the heart wall that pumps blood.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Sinoatrial node",
+        "Systole",
+        "Diastole"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "systole",
+      "term": "Systole",
+      "definition": "The phase of the cardiac cycle when the heart contracts.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Diastole",
+        "Sinoatrial node",
+        "Myocardium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "diastole",
+      "term": "Diastole",
+      "definition": "The phase of the cardiac cycle when the heart relaxes and fills.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Systole",
+        "Sinoatrial node",
+        "Myocardium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "hematocrit",
+      "term": "Hematocrit",
+      "definition": "The percentage of blood volume occupied by red blood cells.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Hemoglobin",
+        "Artery",
+        "Vein"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "hemoglobin",
+      "term": "Hemoglobin",
+      "definition": "The oxygen-carrying protein found in red blood cells.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Hematocrit",
+        "Capillary",
+        "Artery"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "alveolus",
+      "term": "Alveolus",
+      "definition": "A tiny air sac in the lungs where gas exchange occurs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Bronchus",
+        "Trachea",
+        "Surfactant"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "bronchus",
+      "term": "Bronchus",
+      "definition": "A major airway branch that carries air into each lung.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Alveolus",
+        "Trachea",
+        "Diaphragm"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "trachea",
+      "term": "Trachea",
+      "definition": "The windpipe that conducts air between the larynx and bronchi.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [
+        "windpipe"
+      ],
+      "confusables": [
+        "Bronchus",
+        "Alveolus",
+        "Pleura"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "diaphragm",
+      "term": "Diaphragm",
+      "definition": "The dome-shaped muscle that drives breathing by changing thoracic volume.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Trachea",
+        "Bronchus",
+        "Pleura"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "pleura",
+      "term": "Pleura",
+      "definition": "The thin membrane that lines the lungs and chest cavity.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Diaphragm",
+        "Surfactant",
+        "Alveolus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "surfactant",
+      "term": "Surfactant",
+      "definition": "A substance that reduces surface tension in the alveoli.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Alveolus",
+        "Pleura",
+        "Bronchus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "ventilation",
+      "term": "Ventilation",
+      "definition": "The process of moving air into and out of the lungs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [
+        "breathing"
+      ],
+      "confusables": [
+        "Inspiration",
+        "Expiration",
+        "Diaphragm"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "inspiration",
+      "term": "Inspiration",
+      "definition": "The act of drawing air into the lungs during breathing.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [
+        "inhalation"
+      ],
+      "confusables": [
+        "Expiration",
+        "Ventilation",
+        "Diaphragm"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "expiration",
+      "term": "Expiration",
+      "definition": "The act of pushing air out of the lungs during breathing.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [
+        "exhalation"
+      ],
+      "confusables": [
+        "Inspiration",
+        "Ventilation",
+        "Diaphragm"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "spirometry",
+      "term": "Spirometry",
+      "definition": "A test measuring how much air the lungs can move.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Ventilation",
+        "Inspiration",
+        "Expiration"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "neuron",
+      "term": "Neuron",
+      "definition": "A nerve cell that transmits electrical signals in the body.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Dendrite",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "axon",
+      "term": "Axon",
+      "definition": "The long fiber that carries signals away from a neuron's cell body.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Dendrite",
+        "Myelin",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "dendrite",
+      "term": "Dendrite",
+      "definition": "A branching fiber that receives signals toward a neuron's cell body.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Myelin",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "synapse",
+      "term": "Synapse",
+      "definition": "The junction where one neuron communicates with another cell.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Dendrite",
+        "Neurotransmitter"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "myelin",
+      "term": "Myelin",
+      "definition": "The fatty sheath that insulates axons and speeds signal conduction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Action potential",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "action-potential",
+      "term": "Action potential",
+      "definition": "A rapid electrical signal that travels along a neuron's membrane.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Myelin",
+        "Neurotransmitter",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "neurotransmitter",
+      "term": "Neurotransmitter",
+      "definition": "A chemical messenger released across a synapse between neurons.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Synapse",
+        "Axon",
+        "Dendrite"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "cerebrum",
+      "term": "Cerebrum",
+      "definition": "The largest part of the brain, responsible for higher functions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Cerebellum",
+        "Spinal cord",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "cerebellum",
+      "term": "Cerebellum",
+      "definition": "The brain region that coordinates movement and balance.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Spinal cord",
+        "Myelin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "spinal-cord",
+      "term": "Spinal cord",
+      "definition": "The nerve bundle that relays signals between brain and body.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nervous",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Cerebellum",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "stomach",
+      "term": "Stomach",
+      "definition": "The muscular organ that mixes food with gastric juice.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Small intestine",
+        "Liver",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "small-intestine",
+      "term": "Small intestine",
+      "definition": "The organ where most of the body's nutrient absorption occurs.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Stomach",
+        "Liver",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "liver",
+      "term": "Liver",
+      "definition": "The organ that produces bile and processes nutrients.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Stomach",
+        "Small intestine",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "pancreas",
+      "term": "Pancreas",
+      "definition": "The gland that secretes digestive enzymes and insulin.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Liver",
+        "Stomach",
+        "Small intestine"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "kidney",
+      "term": "Kidney",
+      "definition": "The organ that filters blood and produces urine.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Nephron",
+        "Bladder",
+        "Liver"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "nephron",
+      "term": "Nephron",
+      "definition": "The functional unit of the kidney that filters blood.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Kidney",
+        "Bladder",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "bladder",
+      "term": "Bladder",
+      "definition": "The muscular sac that stores urine before excretion.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [
+        "urinary bladder"
+      ],
+      "confusables": [
+        "Kidney",
+        "Nephron",
+        "Stomach"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "hormone",
+      "term": "Hormone",
+      "definition": "A chemical messenger secreted by an endocrine gland.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Insulin",
+        "Thyroid gland",
+        "Neurotransmitter"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "insulin",
+      "term": "Insulin",
+      "definition": "A pancreatic hormone that lowers blood glucose levels.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Hormone",
+        "Thyroid gland",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "thyroid-gland",
+      "term": "Thyroid gland",
+      "definition": "An endocrine gland that regulates metabolism and growth.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Digestive, urinary, and endocrine",
+      "aliases": [],
+      "confusables": [
+        "Hormone",
+        "Insulin",
+        "Liver"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    }
+  ]
+}

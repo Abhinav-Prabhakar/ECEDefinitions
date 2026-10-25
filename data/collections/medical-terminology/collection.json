@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "id": "medical-terminology",
+  "name": "Medical Terminology",
+  "tagline": "Medicine, in one line.",
+  "topic": "Medical terminology for pre-health students",
+  "audience": "Pre-health undergraduates and nursing students",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "word parts (prefixes, roots, suffixes, combining forms)",
+      "body systems terminology",
+      "clinical abbreviations",
+      "medical documentation",
+      "diagnostics",
+      "pharmacology basics"
+    ],
+    "excludes": [
+      "diagnosis and treatment protocols",
+      "drug dosing",
+      "advanced pathology",
+      "patient-specific advice"
+    ]
+  },
+  "assumptions": [
+    "US clinical usage",
+    "no prior anatomy assumed",
+    "vocabulary only, not clinical training"
+  ],
+  "disclaimer": "Educational vocabulary only; not medical advice.",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "word-parts",
+          "name": "Word Parts",
+          "shortName": "Word parts",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/medical-terminology/subjects/word-parts.json",
+          "definitionCount": 48,
+          "unitCount": 4,
+          "coveredUnits": 4,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "body-systems",
+          "name": "Body Systems",
+          "shortName": "Body systems",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/medical-terminology/subjects/body-systems.json",
+          "definitionCount": 60,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "clinical-abbreviations",
+          "name": "Clinical Abbreviations",
+          "shortName": "Clinical abbreviations",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/medical-terminology/subjects/clinical-abbreviations.json",
+          "definitionCount": 50,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 4
+        },
+        {
+          "id": "documentation",
+          "name": "Documentation",
+          "shortName": "Documentation",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/medical-terminology/subjects/documentation.json",
+          "definitionCount": 50,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 5
+        },
+        {
+          "id": "diagnostics",
+          "name": "Diagnostics",
+          "shortName": "Diagnostics",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/medical-terminology/subjects/diagnostics.json",
+          "definitionCount": 69,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 4
+        },
+        {
+          "id": "pharmacology-basics",
+          "name": "Pharmacology Basics",
+          "shortName": "Pharmacology basics",
+          "code": null,
+          "courseType": "core",
+          "color": "#9b6ae0",
+          "dark": "#bb95ff",
+          "data": "data/collections/medical-terminology/subjects/pharmacology-basics.json",
+          "definitionCount": 50,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 3
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 1,
+    "subjects": 6,
+    "definitions": 327,
+    "completeSubjects": 6,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

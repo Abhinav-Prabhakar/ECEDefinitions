@@ -1,0 +1,1697 @@
+{
+  "version": 1,
+  "id": "medical-terminology",
+  "name": "Medical Terminology",
+  "short": "Med term",
+  "subjects": [
+    {
+      "id": "word-parts",
+      "name": "Word Parts",
+      "short": "Word parts",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "a-, an-",
+          "A prefix meaning without, absence of, or not.",
+          ""
+        ],
+        [
+          "brady-",
+          "A prefix meaning slow, often used in cardiac terms.",
+          ""
+        ],
+        [
+          "dys-",
+          "A prefix meaning bad, painful, or difficult in medical terms.",
+          ""
+        ],
+        [
+          "hyper-",
+          "A prefix meaning above, excessive, or beyond normal.",
+          ""
+        ],
+        [
+          "hypo-",
+          "A prefix meaning below, beneath, or deficient in medical terms.",
+          ""
+        ],
+        [
+          "inter-",
+          "A prefix meaning between two or more structures.",
+          ""
+        ],
+        [
+          "intra-",
+          "A prefix meaning within or inside a structure.",
+          ""
+        ],
+        [
+          "peri-",
+          "A prefix meaning around or surrounding a structure.",
+          ""
+        ],
+        [
+          "poly-",
+          "A prefix meaning many or excessive in amount.",
+          ""
+        ],
+        [
+          "sub-",
+          "A prefix meaning under or beneath a structure.",
+          ""
+        ],
+        [
+          "tachy-",
+          "A prefix meaning rapid or fast, often cardiac.",
+          ""
+        ],
+        [
+          "uni-",
+          "A prefix meaning one or single in number.",
+          ""
+        ],
+        [
+          "arthr",
+          "The word root referring to a joint in medical terms.",
+          ""
+        ],
+        [
+          "cardi",
+          "The word root referring to the heart in medical terms.",
+          ""
+        ],
+        [
+          "cyt",
+          "The word root referring to a body cell.",
+          ""
+        ],
+        [
+          "encephal",
+          "The word root referring to the brain in medical terms.",
+          ""
+        ],
+        [
+          "gastr",
+          "The word root referring to the stomach in medical terms.",
+          ""
+        ],
+        [
+          "hemat",
+          "The word root referring to blood in medical terms.",
+          ""
+        ],
+        [
+          "leuk",
+          "The word root referring to the color white.",
+          ""
+        ],
+        [
+          "my",
+          "The word root referring to muscle tissue in medical terms.",
+          ""
+        ],
+        [
+          "nephr",
+          "The word root referring to the kidney in medical terms.",
+          ""
+        ],
+        [
+          "neur",
+          "The word root referring to a nerve in medical terms.",
+          ""
+        ],
+        [
+          "pneum",
+          "The word root referring to the lungs in medical terms.",
+          ""
+        ],
+        [
+          "thorac",
+          "The word root referring to the chest in medical terms.",
+          ""
+        ],
+        [
+          "-algia",
+          "A suffix meaning pain in a body part.",
+          ""
+        ],
+        [
+          "-cyte",
+          "A suffix meaning cell, as in blood cells.",
+          ""
+        ],
+        [
+          "-ectomy",
+          "A suffix meaning surgical removal of a body part.",
+          ""
+        ],
+        [
+          "-emia",
+          "A suffix indicating a condition of the blood.",
+          ""
+        ],
+        [
+          "-graphy",
+          "A suffix meaning the process of recording images.",
+          ""
+        ],
+        [
+          "-itis",
+          "A suffix indicating inflammation of a tissue in medical terms.",
+          ""
+        ],
+        [
+          "-logist",
+          "A suffix meaning a specialist who studies disorders.",
+          ""
+        ],
+        [
+          "-logy",
+          "A suffix meaning the study of a subject.",
+          ""
+        ],
+        [
+          "-megaly",
+          "A suffix meaning enlargement of an organ in medical terms.",
+          ""
+        ],
+        [
+          "-oma",
+          "A suffix meaning a tumor or neoplasm in medical terms.",
+          ""
+        ],
+        [
+          "-pathy",
+          "A suffix indicating a disease or abnormality of tissue.",
+          ""
+        ],
+        [
+          "-scopy",
+          "A suffix meaning the process of visual examination.",
+          ""
+        ],
+        [
+          "arthr/o",
+          "A combining form referring to a joint in medical terms.",
+          ""
+        ],
+        [
+          "cardi/o",
+          "A combining form referring to the heart in medical terms.",
+          ""
+        ],
+        [
+          "combining form",
+          "A word root joined to a combining vowel, usually o.",
+          ""
+        ],
+        [
+          "combining vowel",
+          "A vowel, usually o, that links word parts.",
+          ""
+        ],
+        [
+          "cyt/o",
+          "A combining form referring to a cell in medical terms.",
+          ""
+        ],
+        [
+          "encephal/o",
+          "A combining form referring to the brain in medical terms.",
+          ""
+        ],
+        [
+          "gastr/o",
+          "A combining form referring to the stomach in medical terms.",
+          ""
+        ],
+        [
+          "hemat/o",
+          "A combining form referring to blood in medical terms.",
+          ""
+        ],
+        [
+          "nephr/o",
+          "A combining form referring to the kidney in medical terms.",
+          ""
+        ],
+        [
+          "neur/o",
+          "A combining form referring to a nerve in medical terms.",
+          ""
+        ],
+        [
+          "pneum/o",
+          "A combining form referring to the lungs in medical terms.",
+          ""
+        ],
+        [
+          "thorac/o",
+          "A combining form referring to the chest in medical terms.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "body-systems",
+      "name": "Body Systems",
+      "short": "Body systems",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Dermis",
+          "The layer of skin between the epidermis and hypodermis, containing connective tissue, blood vessels, and glands.",
+          ""
+        ],
+        [
+          "Eccrine sweat gland",
+          "A widespread sweat gland that produces watery sweat for body temperature regulation.",
+          ""
+        ],
+        [
+          "Epidermis",
+          "The outermost tissue layer of the skin, made of epithelial cells.",
+          ""
+        ],
+        [
+          "Hypodermis",
+          "The connective tissue layer that anchors the skin to underlying bone and muscle.",
+          ""
+        ],
+        [
+          "Keratinocyte",
+          "The most common epidermal cell, which produces keratin for skin strength.",
+          ""
+        ],
+        [
+          "Melanocyte",
+          "A cell in the deepest epidermal layer that produces the pigment melanin.",
+          ""
+        ],
+        [
+          "Melanoma",
+          "A dangerous skin cancer that originates from pigment-producing melanocytes.",
+          ""
+        ],
+        [
+          "Pacinian corpuscle",
+          "A deep skin receptor that detects vibration and deep pressure.",
+          ""
+        ],
+        [
+          "Sebaceous gland",
+          "An oil gland in the dermis that secretes sebum to lubricate skin and hair.",
+          ""
+        ],
+        [
+          "Stratum corneum",
+          "The outermost layer of the epidermis, made of dead, flattened cells.",
+          ""
+        ],
+        [
+          "Compact bone",
+          "Dense, hard bone tissue that withstands compressive forces.",
+          ""
+        ],
+        [
+          "Epiphyseal plate",
+          "A cartilage growth plate in immature bone that lengthens the bone.",
+          ""
+        ],
+        [
+          "Hematopoiesis",
+          "Blood cell production that occurs in the red marrow of bones.",
+          ""
+        ],
+        [
+          "Neuromuscular junction",
+          "The synapse where a motor neuron signals a muscle fiber to contract.",
+          ""
+        ],
+        [
+          "Osteoblast",
+          "A bone cell that synthesizes and secretes new bone matrix.",
+          ""
+        ],
+        [
+          "Osteoclast",
+          "A bone cell that breaks down and resorbs bone tissue.",
+          ""
+        ],
+        [
+          "Osteocyte",
+          "The main cell of mature bone, which maintains the mineralized matrix.",
+          ""
+        ],
+        [
+          "Osteoporosis",
+          "A disease in which bone resorption outpaces formation, reducing bone mass.",
+          ""
+        ],
+        [
+          "Sarcomere",
+          "The repeating contractile unit of skeletal muscle containing actin and myosin.",
+          ""
+        ],
+        [
+          "Spongy bone",
+          "Light, lattice-like bone tissue that supports shifts in weight.",
+          ""
+        ],
+        [
+          "Aorta",
+          "The largest artery, carrying oxygenated blood from the heart.",
+          ""
+        ],
+        [
+          "Artery",
+          "A blood vessel that carries blood away from the heart.",
+          ""
+        ],
+        [
+          "Capillary",
+          "The smallest blood vessel, where gases and nutrients exchange.",
+          ""
+        ],
+        [
+          "Diastole",
+          "The phase of the cardiac cycle when the heart relaxes and fills.",
+          ""
+        ],
+        [
+          "Hematocrit",
+          "The percentage of blood volume occupied by red blood cells.",
+          ""
+        ],
+        [
+          "Hemoglobin",
+          "The oxygen-carrying protein found in red blood cells.",
+          ""
+        ],
+        [
+          "Myocardium",
+          "The muscular middle layer of the heart wall that pumps blood.",
+          ""
+        ],
+        [
+          "Sinoatrial node",
+          "The heart's natural pacemaker that initiates each heartbeat.",
+          ""
+        ],
+        [
+          "Systole",
+          "The phase of the cardiac cycle when the heart contracts.",
+          ""
+        ],
+        [
+          "Vein",
+          "A blood vessel that returns blood toward the heart.",
+          ""
+        ],
+        [
+          "Alveolus",
+          "A tiny air sac in the lungs where gas exchange occurs.",
+          ""
+        ],
+        [
+          "Bronchus",
+          "A major airway branch that carries air into each lung.",
+          ""
+        ],
+        [
+          "Diaphragm",
+          "The dome-shaped muscle that drives breathing by changing thoracic volume.",
+          ""
+        ],
+        [
+          "Expiration",
+          "The act of pushing air out of the lungs during breathing.",
+          ""
+        ],
+        [
+          "Inspiration",
+          "The act of drawing air into the lungs during breathing.",
+          ""
+        ],
+        [
+          "Pleura",
+          "The thin membrane that lines the lungs and chest cavity.",
+          ""
+        ],
+        [
+          "Spirometry",
+          "A test measuring how much air the lungs can move.",
+          ""
+        ],
+        [
+          "Surfactant",
+          "A substance that reduces surface tension in the alveoli.",
+          ""
+        ],
+        [
+          "Trachea",
+          "The windpipe that conducts air between the larynx and bronchi.",
+          ""
+        ],
+        [
+          "Ventilation",
+          "The process of moving air into and out of the lungs.",
+          ""
+        ],
+        [
+          "Action potential",
+          "A rapid electrical signal that travels along a neuron's membrane.",
+          ""
+        ],
+        [
+          "Axon",
+          "The long fiber that carries signals away from a neuron's cell body.",
+          ""
+        ],
+        [
+          "Cerebellum",
+          "The brain region that coordinates movement and balance.",
+          ""
+        ],
+        [
+          "Cerebrum",
+          "The largest part of the brain, responsible for higher functions.",
+          ""
+        ],
+        [
+          "Dendrite",
+          "A branching fiber that receives signals toward a neuron's cell body.",
+          ""
+        ],
+        [
+          "Myelin",
+          "The fatty sheath that insulates axons and speeds signal conduction.",
+          ""
+        ],
+        [
+          "Neuron",
+          "A nerve cell that transmits electrical signals in the body.",
+          ""
+        ],
+        [
+          "Neurotransmitter",
+          "A chemical messenger released across a synapse between neurons.",
+          ""
+        ],
+        [
+          "Spinal cord",
+          "The nerve bundle that relays signals between brain and body.",
+          ""
+        ],
+        [
+          "Synapse",
+          "The junction where one neuron communicates with another cell.",
+          ""
+        ],
+        [
+          "Bladder",
+          "The muscular sac that stores urine before excretion.",
+          ""
+        ],
+        [
+          "Hormone",
+          "A chemical messenger secreted by an endocrine gland.",
+          ""
+        ],
+        [
+          "Insulin",
+          "A pancreatic hormone that lowers blood glucose levels.",
+          ""
+        ],
+        [
+          "Kidney",
+          "The organ that filters blood and produces urine.",
+          ""
+        ],
+        [
+          "Liver",
+          "The organ that produces bile and processes nutrients.",
+          ""
+        ],
+        [
+          "Nephron",
+          "The functional unit of the kidney that filters blood.",
+          ""
+        ],
+        [
+          "Pancreas",
+          "The gland that secretes digestive enzymes and insulin.",
+          ""
+        ],
+        [
+          "Small intestine",
+          "The organ where most of the body's nutrient absorption occurs.",
+          ""
+        ],
+        [
+          "Stomach",
+          "The muscular organ that mixes food with gastric juice.",
+          ""
+        ],
+        [
+          "Thyroid gland",
+          "An endocrine gland that regulates metabolism and growth.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "clinical-abbreviations",
+      "name": "Clinical Abbreviations",
+      "short": "Clinical abbreviations",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "ABG",
+          "ABG denotes arterial blood gases, a test used to detect lung diseases.",
+          ""
+        ],
+        [
+          "BMI",
+          "BMI denotes body mass index, a measure of appropriate weight for height.",
+          ""
+        ],
+        [
+          "BP",
+          "BP denotes blood pressure, the force of blood against artery walls.",
+          ""
+        ],
+        [
+          "BUN",
+          "BUN denotes blood urea nitrogen, a blood test for kidney disease.",
+          ""
+        ],
+        [
+          "GFR",
+          "GFR denotes glomerular filtration rate, a test of kidney damage.",
+          ""
+        ],
+        [
+          "HCT",
+          "HCT denotes hematocrit, a blood test measurement of red cell volume.",
+          ""
+        ],
+        [
+          "HGB",
+          "HGB denotes hemoglobin, a blood test measurement of oxygen-carrying protein.",
+          ""
+        ],
+        [
+          "RBC",
+          "RBC denotes red blood cell, a type of blood cell.",
+          ""
+        ],
+        [
+          "WBC",
+          "WBC denotes white blood cell, a type of blood cell.",
+          ""
+        ],
+        [
+          "AFIB",
+          "AFIB denotes atrial fibrillation, a disturbance of heart rhythm.",
+          ""
+        ],
+        [
+          "AIDS",
+          "AIDS denotes acquired immunodeficiency syndrome, infection caused by HIV.",
+          ""
+        ],
+        [
+          "ALS",
+          "ALS denotes amyotrophic lateral sclerosis, also known as Lou Gehrig's disease.",
+          ""
+        ],
+        [
+          "CHF",
+          "CHF denotes congestive heart failure, when the heart cannot pump enough blood.",
+          ""
+        ],
+        [
+          "COPD",
+          "COPD denotes chronic obstructive pulmonary disease, a lung disease causing breathlessness.",
+          ""
+        ],
+        [
+          "DVT",
+          "DVT denotes deep-vein thrombosis, a blood clot in a deep vein.",
+          ""
+        ],
+        [
+          "GERD",
+          "GERD denotes gastroesophageal reflux disease, when stomach contents leak into the gullet.",
+          ""
+        ],
+        [
+          "HTN",
+          "HTN denotes hypertension, meaning chronically high blood pressure.",
+          ""
+        ],
+        [
+          "MI",
+          "MI denotes myocardial infarction, commonly called a heart attack.",
+          ""
+        ],
+        [
+          "CABG",
+          "CABG denotes coronary artery bypass graft, a type of heart surgery.",
+          ""
+        ],
+        [
+          "CXR",
+          "CXR denotes chest x-ray, an imaging test of the lungs.",
+          ""
+        ],
+        [
+          "D&C",
+          "D&C denotes dilatation and curettage, a surgical procedure on the uterus.",
+          ""
+        ],
+        [
+          "ECG",
+          "ECG denotes electrocardiogram, a test measuring the heart's electrical impulses.",
+          ""
+        ],
+        [
+          "EEG",
+          "EEG denotes electroencephalogram, a test measuring the brain's electrical impulses.",
+          ""
+        ],
+        [
+          "MRI",
+          "MRI denotes magnetic resonance imaging, a type of imaging test.",
+          ""
+        ],
+        [
+          "PAP",
+          "PAP denotes Papanicolau, a test used to detect cervical cancer.",
+          ""
+        ],
+        [
+          "PET",
+          "PET denotes positron emission tomography, a type of imaging test.",
+          ""
+        ],
+        [
+          "DTP",
+          "DTP denotes diphtheria, tetanus, and pertussis vaccine for three diseases.",
+          ""
+        ],
+        [
+          "HRT",
+          "HRT denotes hormone replacement therapy, replacing hormones the body lacks.",
+          ""
+        ],
+        [
+          "IM",
+          "IM denotes intramuscular, a type of injection into muscle.",
+          ""
+        ],
+        [
+          "IV",
+          "IV denotes intravenous, a type of injection into a vein.",
+          ""
+        ],
+        [
+          "MMR",
+          "MMR denotes measles, mumps, and rubella vaccine for three diseases.",
+          ""
+        ],
+        [
+          "NG",
+          "NG denotes nasogastric, a tube used to empty stomach contents.",
+          ""
+        ],
+        [
+          "NKDA",
+          "NKDA denotes no known drug allergies in the patient record.",
+          ""
+        ],
+        [
+          "NSAID",
+          "NSAID denotes non-steroidal anti-inflammatory drug, such as ibuprofen.",
+          ""
+        ],
+        [
+          "Rx",
+          "Rx denotes prescription, the written order for medication.",
+          ""
+        ],
+        [
+          "CDC",
+          "CDC denotes Centers for Disease Control and Prevention, a public health agency.",
+          ""
+        ],
+        [
+          "CNS",
+          "CNS denotes central nervous system, the brain and spinal cord.",
+          ""
+        ],
+        [
+          "ENT",
+          "ENT denotes ear, nose, and throat, a clinical specialty.",
+          ""
+        ],
+        [
+          "GI",
+          "GI denotes gastrointestinal, another term for the digestive system.",
+          ""
+        ],
+        [
+          "GU",
+          "GU denotes genitourinary, the urinary and sex organs.",
+          ""
+        ],
+        [
+          "HCO",
+          "HCO denotes healthcare organization, a facility delivering care.",
+          ""
+        ],
+        [
+          "HCP",
+          "HCP denotes healthcare personnel, staff providing patient care.",
+          ""
+        ],
+        [
+          "ICU",
+          "ICU denotes intensive care unit, a special hospital unit.",
+          ""
+        ],
+        [
+          "BID",
+          "BID denotes twice a day, a prescription frequency.",
+          ""
+        ],
+        [
+          "PRN",
+          "PRN denotes as needed, taken only when symptoms require.",
+          ""
+        ],
+        [
+          "QD",
+          "QD denotes daily, an abbreviation on the do-not-use list.",
+          ""
+        ],
+        [
+          "QHS",
+          "QHS denotes nightly at bedtime, an error-prone abbreviation.",
+          ""
+        ],
+        [
+          "QID",
+          "QID denotes four times a day, a prescription frequency.",
+          ""
+        ],
+        [
+          "QOD",
+          "QOD denotes every other day, an abbreviation on the do-not-use list.",
+          ""
+        ],
+        [
+          "TID",
+          "TID denotes three times a day, a prescription frequency.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "documentation",
+      "name": "Documentation",
+      "short": "Documentation",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Chart",
+          "The collection of documents forming a patient's medical record.",
+          ""
+        ],
+        [
+          "Designated record set",
+          "Protected health information used to make decisions about a patient's care.",
+          ""
+        ],
+        [
+          "Electronic health record (EHR)",
+          "A digital patient record shared across healthcare settings and providers.",
+          ""
+        ],
+        [
+          "Electronic medical record (EMR)",
+          "A digital record of care created and used within one practice or facility.",
+          ""
+        ],
+        [
+          "Health information",
+          "Data about a person's health status, care, or payment for care.",
+          ""
+        ],
+        [
+          "Legal health record",
+          "The official business record of a healthcare organization released on request.",
+          ""
+        ],
+        [
+          "Medical record",
+          "A documented account of a patient's health history, care, and treatments over time.",
+          ""
+        ],
+        [
+          "Medical record documentation",
+          "The process of recording patient care facts in the medical record.",
+          ""
+        ],
+        [
+          "Personal health record (PHR)",
+          "A health record maintained and controlled by the patient.",
+          ""
+        ],
+        [
+          "Retention period",
+          "The length of time medical records must be kept.",
+          ""
+        ],
+        [
+          "Addendum",
+          "A late entry added to clarify or supplement an existing note.",
+          ""
+        ],
+        [
+          "Assessment",
+          "The clinician's diagnosis or clinical impression of the patient's condition.",
+          "A"
+        ],
+        [
+          "Discharge summary",
+          "A summary of hospital care, findings, and instructions at discharge.",
+          ""
+        ],
+        [
+          "History and physical (H&P)",
+          "A comprehensive initial assessment of a patient's health and exam.",
+          "H&P"
+        ],
+        [
+          "Objective",
+          "Measurable clinical findings and test results documented in a note.",
+          "O"
+        ],
+        [
+          "Plan",
+          "The intended tests, treatments, and follow-up for the patient.",
+          "P"
+        ],
+        [
+          "Problem list",
+          "A maintained list of a patient's active and resolved health problems.",
+          ""
+        ],
+        [
+          "Progress note",
+          "A dated entry documenting a patient's status and care since the last visit.",
+          ""
+        ],
+        [
+          "SOAP note",
+          "A progress note organized into subjective, objective, assessment, and plan sections.",
+          "S-O-A-P"
+        ],
+        [
+          "Subjective",
+          "The patient's reported symptoms, concerns, and history in a note.",
+          "S"
+        ],
+        [
+          "Order set",
+          "A group of related orders used for a common clinical situation.",
+          ""
+        ],
+        [
+          "PRN order",
+          "An order to give a medication or treatment as needed.",
+          "PRN"
+        ],
+        [
+          "Physician order",
+          "A clinician's instruction to provide a treatment, test, or medication.",
+          ""
+        ],
+        [
+          "Prescription",
+          "A written or electronic order for a medication to be dispensed.",
+          ""
+        ],
+        [
+          "Refill",
+          "A repeat dispensing of a prescription without a new order.",
+          ""
+        ],
+        [
+          "Sig",
+          "The directions on a prescription telling how to take a medication.",
+          ""
+        ],
+        [
+          "Standing order",
+          "A pre-approved order carried out when specified conditions are met.",
+          ""
+        ],
+        [
+          "Stat order",
+          "An order requiring immediate administration or performance of a service.",
+          "STAT"
+        ],
+        [
+          "Telephone order",
+          "An order given over the phone and documented for later authentication.",
+          ""
+        ],
+        [
+          "Verbal order",
+          "An order spoken aloud and later transcribed into the medical record.",
+          ""
+        ],
+        [
+          "Advance directive",
+          "A legal document stating a patient's future healthcare wishes.",
+          ""
+        ],
+        [
+          "Amendment",
+          "A change or addition made to a health record at a patient's request.",
+          ""
+        ],
+        [
+          "Confidentiality",
+          "The duty to keep patient information private and secure.",
+          ""
+        ],
+        [
+          "Consent form",
+          "A document recording a patient's agreement to a proposed treatment.",
+          ""
+        ],
+        [
+          "Correction (of record)",
+          "A transparent fix to an error in an existing medical record entry.",
+          ""
+        ],
+        [
+          "DNR order",
+          "An order not to perform cardiopulmonary resuscitation if the heart stops.",
+          "DNR"
+        ],
+        [
+          "HIPAA",
+          "A US law protecting the privacy and security of health information.",
+          ""
+        ],
+        [
+          "Informed consent",
+          "Permission given after a patient understands the risks and benefits of care.",
+          ""
+        ],
+        [
+          "Privacy",
+          "A patient's right to control access to their health information.",
+          ""
+        ],
+        [
+          "Release of information (ROI)",
+          "The process of disclosing health records to authorized requesters.",
+          "ROI"
+        ],
+        [
+          "CPT",
+          "A code set describing medical procedures and physician services.",
+          ""
+        ],
+        [
+          "Claim",
+          "A request submitted to a payer for payment of healthcare services.",
+          ""
+        ],
+        [
+          "Diagnosis code",
+          "A code identifying a patient's disease or condition for billing.",
+          ""
+        ],
+        [
+          "E/M code",
+          "A code reporting evaluation and management services by level.",
+          "E/M"
+        ],
+        [
+          "HCPCS",
+          "A code set for supplies, equipment, and services not in CPT.",
+          ""
+        ],
+        [
+          "ICD-10-CM",
+          "A US diagnosis coding system for classifying diseases and conditions.",
+          ""
+        ],
+        [
+          "Medical necessity",
+          "The requirement that a service be reasonable and needed for diagnosis or treatment.",
+          ""
+        ],
+        [
+          "Modifier",
+          "A code added to a procedure to show special circumstances.",
+          ""
+        ],
+        [
+          "Procedure code",
+          "A code identifying a medical service or procedure performed.",
+          ""
+        ],
+        [
+          "Superbill",
+          "A form listing services and codes used to create a claim.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "diagnostics",
+      "name": "Diagnostics",
+      "short": "Diagnostics",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Basic metabolic panel",
+          "Blood tests measuring glucose, electrolytes, and kidney function.",
+          "BMP"
+        ],
+        [
+          "Blood urea nitrogen",
+          "Nitrogen in blood from urea, reflecting kidney function.",
+          "BUN"
+        ],
+        [
+          "Calcium",
+          "Blood level of calcium, a mineral for bones and muscles.",
+          "Ca"
+        ],
+        [
+          "Chloride",
+          "Blood level of chloride, an electrolyte balancing fluids.",
+          "Cl"
+        ],
+        [
+          "Complete blood count",
+          "A blood test measuring red cells, white cells, and platelets.",
+          "CBC"
+        ],
+        [
+          "Comprehensive metabolic panel",
+          "Blood test adding liver enzymes and proteins to a basic panel.",
+          "CMP"
+        ],
+        [
+          "Creatinine",
+          "Waste product filtered by kidneys, used to assess kidney function.",
+          "Cr"
+        ],
+        [
+          "Glucose",
+          "Amount of sugar present in the blood at testing.",
+          "mg/dL"
+        ],
+        [
+          "Glycated hemoglobin",
+          "Average blood glucose over the past two to three months.",
+          "HbA1c"
+        ],
+        [
+          "Hematocrit",
+          "Percentage of blood volume made up of red blood cells.",
+          "Hct"
+        ],
+        [
+          "Hemoglobin",
+          "Protein in red blood cells that carries oxygen.",
+          "Hb"
+        ],
+        [
+          "Lipid panel",
+          "A blood test measuring cholesterol and triglyceride levels.",
+          "lipids"
+        ],
+        [
+          "Platelet count",
+          "The number of platelets in a blood sample.",
+          "PLT"
+        ],
+        [
+          "Potassium",
+          "Blood level of potassium, an electrolyte for nerves and muscles.",
+          "K"
+        ],
+        [
+          "Red blood cell count",
+          "Number of red blood cells per volume of blood.",
+          "RBC"
+        ],
+        [
+          "Reference range",
+          "Expected interval of test results in healthy people.",
+          "normal"
+        ],
+        [
+          "Sodium",
+          "Blood level of sodium, an electrolyte regulating fluids.",
+          "Na"
+        ],
+        [
+          "White blood cell count",
+          "Number of white blood cells in a blood sample.",
+          "WBC"
+        ],
+        [
+          "Angiography",
+          "The imaging of blood vessels using contrast dye.",
+          "angio"
+        ],
+        [
+          "CT scan",
+          "Detailed cross-sectional images created from X-rays and computers.",
+          "CT"
+        ],
+        [
+          "Contrast medium",
+          "A substance improving visibility of structures in imaging.",
+          "contrast"
+        ],
+        [
+          "DEXA scan",
+          "A low-dose X-ray measuring the bone mineral density.",
+          "DEXA"
+        ],
+        [
+          "Fluoroscopy",
+          "Continuous real-time moving X-ray images of the body.",
+          "fluoro"
+        ],
+        [
+          "MRI",
+          "Detailed images using magnetic fields and radio waves.",
+          "MRI"
+        ],
+        [
+          "Mammography",
+          "X-ray imaging of the breast for screening and diagnosis.",
+          "mammo"
+        ],
+        [
+          "Nuclear medicine scan",
+          "Images from small amounts of radioactive tracer material.",
+          "NM"
+        ],
+        [
+          "PET scan",
+          "Images showing metabolic activity using a radioactive tracer.",
+          "PET"
+        ],
+        [
+          "Ultrasound",
+          "Images of the body produced using high-frequency sound waves.",
+          "sonography"
+        ],
+        [
+          "X-ray",
+          "Image made using radiation to view bones and tissues.",
+          "radiograph"
+        ],
+        [
+          "Auscultation",
+          "Listening to body sounds, often with a stethoscope.",
+          "listen"
+        ],
+        [
+          "Blood pressure",
+          "Force of blood against the walls of arteries.",
+          "BP"
+        ],
+        [
+          "Body mass index",
+          "The weight-to-height ratio used for estimating body fat.",
+          "BMI"
+        ],
+        [
+          "Body temperature",
+          "The measure of the body's internal heat level.",
+          "temp"
+        ],
+        [
+          "Edema",
+          "The swelling caused by excess fluid in tissues.",
+          "swelling"
+        ],
+        [
+          "Inspection",
+          "Visual examination of the body for any abnormalities.",
+          "look"
+        ],
+        [
+          "Oxygen saturation",
+          "The percentage of hemoglobin carrying oxygen in blood.",
+          "SpO2"
+        ],
+        [
+          "Palpation",
+          "Feeling body structures with hands to assess them.",
+          "feel"
+        ],
+        [
+          "Percussion",
+          "Tapping the body surface to assess underlying organs.",
+          "tap"
+        ],
+        [
+          "Pulse",
+          "The number of heartbeats per minute at rest.",
+          "HR"
+        ],
+        [
+          "Range of motion",
+          "The degree of movement possible at a joint.",
+          "ROM"
+        ],
+        [
+          "Reflex",
+          "Involuntary response of the body to a stimulus.",
+          "reflex"
+        ],
+        [
+          "Respiratory rate",
+          "The number of breaths taken per minute at rest.",
+          "RR"
+        ],
+        [
+          "Vital signs",
+          "The basic measurements of the body's essential functions.",
+          "VS"
+        ],
+        [
+          "Biopsy",
+          "Removal of a small tissue sample for examination.",
+          "bx"
+        ],
+        [
+          "Bone marrow biopsy",
+          "Removal of bone marrow tissue for laboratory testing.",
+          "BMB"
+        ],
+        [
+          "Cardiac stress test",
+          "Heart function measured during physical exertion and exercise.",
+          "stress"
+        ],
+        [
+          "Colonoscopy",
+          "An endoscopic examination of the colon and rectum.",
+          "scope"
+        ],
+        [
+          "Echocardiogram",
+          "Ultrasound imaging of the heart's structure and function.",
+          "echo"
+        ],
+        [
+          "Electrocardiogram",
+          "A recording of the heart's electrical activity over time.",
+          "ECG"
+        ],
+        [
+          "Endoscopy",
+          "Visual exam of internal organs using a flexible scope.",
+          "scope"
+        ],
+        [
+          "Lumbar puncture",
+          "Needle insertion into the spinal canal to collect fluid.",
+          "LP"
+        ],
+        [
+          "Pap test",
+          "A cervical cell sample screened for cellular abnormalities.",
+          "Pap"
+        ],
+        [
+          "Paracentesis",
+          "Needle removal of fluid from the abdominal cavity.",
+          "para"
+        ],
+        [
+          "Spirometry",
+          "A test measuring lung airflow and lung volume.",
+          "PFT"
+        ],
+        [
+          "Thoracentesis",
+          "Needle removal of fluid from the pleural space.",
+          "thora"
+        ],
+        [
+          "Apoptosis",
+          "The programmed cell death of cells in the body.",
+          "apoptosis"
+        ],
+        [
+          "Atypia",
+          "Cells that show abnormal size or shape changes.",
+          "atypia"
+        ],
+        [
+          "Benign",
+          "A growth that is not cancerous or invasive.",
+          "benign"
+        ],
+        [
+          "Cytology",
+          "The study of individual cells under a microscope.",
+          "cyto"
+        ],
+        [
+          "Dysplasia",
+          "The abnormal development or maturation of body cells.",
+          "dysplasia"
+        ],
+        [
+          "Histology",
+          "The study of tissues and organs under a microscope.",
+          "histo"
+        ],
+        [
+          "Histopathology",
+          "The microscopic examination of diseased tissue in patients.",
+          "histopath"
+        ],
+        [
+          "Hyperplasia",
+          "Increase in the number of cells in a tissue.",
+          "hyperplasia"
+        ],
+        [
+          "Inflammation",
+          "The body's response to injury or to infection.",
+          "inflam"
+        ],
+        [
+          "Malignant",
+          "A growth that is cancerous and able to spread.",
+          "malignant"
+        ],
+        [
+          "Metastasis",
+          "The spread of cancer to distant body sites.",
+          "mets"
+        ],
+        [
+          "Necrosis",
+          "Death of cells or tissue in a living body.",
+          "necrosis"
+        ],
+        [
+          "Neoplasm",
+          "An abnormal new growth of tissue in the body.",
+          "tumor"
+        ],
+        [
+          "Pathology",
+          "Study of disease causes and effects on the body.",
+          "path"
+        ]
+      ]
+    },
+    {
+      "id": "pharmacology-basics",
+      "name": "Pharmacology Basics",
+      "short": "Pharmacology basics",
+      "color": "#9b6ae0",
+      "dark": "#bb95ff",
+      "defs": [
+        [
+          "Absorption",
+          "Movement of a drug from its administration site into the bloodstream.",
+          ""
+        ],
+        [
+          "Bioavailability",
+          "Fraction of a drug dose that reaches systemic circulation unchanged.",
+          ""
+        ],
+        [
+          "Distribution",
+          "Transport of a drug to its sites of action through bodily fluids.",
+          ""
+        ],
+        [
+          "Duration of action",
+          "Length of time a drug concentration remains sufficient for therapeutic response.",
+          ""
+        ],
+        [
+          "Excretion",
+          "Elimination of drugs from the body, mainly through the kidneys.",
+          ""
+        ],
+        [
+          "First-pass effect",
+          "Oral drug metabolism before reaching systemic circulation, lowering active concentration.",
+          ""
+        ],
+        [
+          "Half-life",
+          "Time required for serum drug concentration to decrease by one half.",
+          ""
+        ],
+        [
+          "Metabolism",
+          "Chemical change of a drug into less active or inactive forms, mainly in the liver.",
+          ""
+        ],
+        [
+          "Onset of action",
+          "Time after administration when a drug first produces a therapeutic effect.",
+          ""
+        ],
+        [
+          "Peak",
+          "Time when a drug reaches its maximum serum concentration.",
+          ""
+        ],
+        [
+          "Affinity",
+          "Strength of attraction between a drug and its receptor site.",
+          ""
+        ],
+        [
+          "Agonist",
+          "Drug that binds a receptor and produces a biological response.",
+          ""
+        ],
+        [
+          "Antagonist",
+          "Drug that blocks a receptor, preventing an agonist from activating it.",
+          ""
+        ],
+        [
+          "Intrinsic activity",
+          "Maximal effect a drug can produce at a receptor.",
+          ""
+        ],
+        [
+          "Ligand",
+          "Molecule that binds to a receptor or other receiving protein.",
+          ""
+        ],
+        [
+          "Mechanism of action",
+          "Way a drug produces its effects on the body.",
+          ""
+        ],
+        [
+          "Partial agonist",
+          "Drug producing a limited receptor response, less than a full agonist.",
+          ""
+        ],
+        [
+          "Pharmacodynamics",
+          "How a drug interacts with receptors and body systems to produce effects.",
+          ""
+        ],
+        [
+          "Receptor",
+          "Cellular site where a drug binds to trigger or block a response.",
+          ""
+        ],
+        [
+          "Therapeutic index",
+          "Ratio of the dose producing a therapeutic effect to the dose causing toxicity.",
+          ""
+        ],
+        [
+          "Analgesic",
+          "Medicine that relieves pain without necessarily treating its underlying cause.",
+          ""
+        ],
+        [
+          "Antibiotic",
+          "Medicine that kills or inhibits the growth of bacteria.",
+          ""
+        ],
+        [
+          "Anticoagulant",
+          "Medicine that helps prevent blood clots from forming.",
+          ""
+        ],
+        [
+          "Antidepressant",
+          "Medicine used to treat depression and related mood disorders.",
+          ""
+        ],
+        [
+          "Antihistamine",
+          "Medicine that blocks histamine to reduce allergy symptoms.",
+          ""
+        ],
+        [
+          "Antihypertensive",
+          "Medicine used to lower or control high blood pressure.",
+          ""
+        ],
+        [
+          "Bronchodilator",
+          "Medicine that relaxes airway muscles to improve breathing.",
+          ""
+        ],
+        [
+          "Corticosteroid",
+          "Anti-inflammatory medicine mimicking hormones from the adrenal cortex.",
+          ""
+        ],
+        [
+          "Diuretic",
+          "Medicine that increases urine output to remove excess fluid.",
+          ""
+        ],
+        [
+          "NSAID",
+          "Nonsteroidal anti-inflammatory drug that reduces pain, fever, and inflammation.",
+          ""
+        ],
+        [
+          "Active ingredient",
+          "Component providing pharmacological activity in a drug product.",
+          ""
+        ],
+        [
+          "Cutaneous",
+          "Relating to application or administration of drugs to the skin.",
+          ""
+        ],
+        [
+          "Dosage form",
+          "Physical form in which a drug is produced and dispensed.",
+          ""
+        ],
+        [
+          "Enteral",
+          "Administration of a medication through the gastrointestinal tract.",
+          ""
+        ],
+        [
+          "Intramuscular",
+          "Administration of a drug directly into a skeletal muscle.",
+          ""
+        ],
+        [
+          "Intravenous",
+          "Administration of a drug directly into a vein.",
+          ""
+        ],
+        [
+          "Parenteral",
+          "Administration of medication by any route outside the gastrointestinal tract.",
+          ""
+        ],
+        [
+          "Percutaneous",
+          "Application of drugs to the skin or mucous membranes.",
+          ""
+        ],
+        [
+          "Subcutaneous",
+          "Administration of a drug into the adipose tissue under the skin.",
+          ""
+        ],
+        [
+          "Transdermal",
+          "Topical administration of a drug through a skin patch.",
+          ""
+        ],
+        [
+          "Adverse drug event",
+          "Harm to a patient resulting from drug exposure.",
+          ""
+        ],
+        [
+          "Adverse drug reaction",
+          "Noxious, unintended, undesired effect occurring at normal drug doses.",
+          ""
+        ],
+        [
+          "Adverse effect",
+          "An undesired effect produced by a drug at therapeutic doses.",
+          ""
+        ],
+        [
+          "Allergic reaction",
+          "Immune response due to sensitivity to a substance.",
+          ""
+        ],
+        [
+          "Anaphylaxis",
+          "Severe, life-threatening reaction causing bronchospasm and low blood pressure.",
+          ""
+        ],
+        [
+          "Drug interaction",
+          "Reaction between a medication and another substance or condition.",
+          ""
+        ],
+        [
+          "Medication error",
+          "Preventable event that may cause inappropriate medication use or harm.",
+          ""
+        ],
+        [
+          "Side effect",
+          "Secondary effect produced by a drug at therapeutic doses.",
+          ""
+        ],
+        [
+          "Tolerance",
+          "Body adaptation requiring higher doses for the same effect.",
+          ""
+        ],
+        [
+          "Toxicity",
+          "Harmful effect from excessive drug levels in the body.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

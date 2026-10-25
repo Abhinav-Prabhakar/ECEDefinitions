@@ -1,0 +1,849 @@
+{
+  "version": 1,
+  "id": "word-parts",
+  "collectionId": "medical-terminology",
+  "section": "core",
+  "name": "Word Parts",
+  "shortName": "Word parts",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Prefixes"
+    },
+    {
+      "number": 2,
+      "title": "Roots"
+    },
+    {
+      "number": 3,
+      "title": "Suffixes"
+    },
+    {
+      "number": 4,
+      "title": "Combining forms"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "a-an",
+      "term": "a-, an-",
+      "definition": "A prefix meaning without, absence of, or not.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "dys-",
+        "hypo-",
+        "brady-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "brady",
+      "term": "brady-",
+      "definition": "A prefix meaning slow, often used in cardiac terms.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "tachy-",
+        "hypo-",
+        "sub-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "dys",
+      "term": "dys-",
+      "definition": "A prefix meaning bad, painful, or difficult in medical terms.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "a-, an-",
+        "hypo-",
+        "brady-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "hyper",
+      "term": "hyper-",
+      "definition": "A prefix meaning above, excessive, or beyond normal.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "hypo-",
+        "poly-",
+        "tachy-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "hypo",
+      "term": "hypo-",
+      "definition": "A prefix meaning below, beneath, or deficient in medical terms.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "hyper-",
+        "sub-",
+        "brady-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "inter",
+      "term": "inter-",
+      "definition": "A prefix meaning between two or more structures.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "intra-",
+        "peri-",
+        "sub-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "intra",
+      "term": "intra-",
+      "definition": "A prefix meaning within or inside a structure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "inter-",
+        "peri-",
+        "sub-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "peri",
+      "term": "peri-",
+      "definition": "A prefix meaning around or surrounding a structure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "inter-",
+        "intra-",
+        "poly-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "poly",
+      "term": "poly-",
+      "definition": "A prefix meaning many or excessive in amount.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "uni-",
+        "tachy-",
+        "brady-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "sub",
+      "term": "sub-",
+      "definition": "A prefix meaning under or beneath a structure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "hypo-",
+        "intra-",
+        "a-, an-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "tachy",
+      "term": "tachy-",
+      "definition": "A prefix meaning rapid or fast, often cardiac.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "brady-",
+        "hypo-",
+        "sub-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "uni",
+      "term": "uni-",
+      "definition": "A prefix meaning one or single in number.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Prefixes",
+      "aliases": [],
+      "confusables": [
+        "poly-",
+        "inter-",
+        "a-, an-"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.3"
+      ]
+    },
+    {
+      "id": "arthr",
+      "term": "arthr",
+      "definition": "The word root referring to a joint in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "cardi",
+        "gastr",
+        "nephr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "cardi",
+      "term": "cardi",
+      "definition": "The word root referring to the heart in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "gastr",
+        "nephr",
+        "neur"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "cyt",
+      "term": "cyt",
+      "definition": "The word root referring to a body cell.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "hemat",
+        "my",
+        "arthr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "encephal",
+      "term": "encephal",
+      "definition": "The word root referring to the brain in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "neur",
+        "pneum",
+        "thorac"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "gastr",
+      "term": "gastr",
+      "definition": "The word root referring to the stomach in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "cardi",
+        "nephr",
+        "thorac"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "hemat",
+      "term": "hemat",
+      "definition": "The word root referring to blood in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "cyt",
+        "leuk",
+        "arthr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "leuk",
+      "term": "leuk",
+      "definition": "The word root referring to the color white.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "hemat",
+        "cyt",
+        "arthr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "my",
+      "term": "my",
+      "definition": "The word root referring to muscle tissue in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "cyt",
+        "arthr",
+        "neur"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "nephr",
+      "term": "nephr",
+      "definition": "The word root referring to the kidney in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "gastr",
+        "cardi",
+        "thorac"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "neur",
+      "term": "neur",
+      "definition": "The word root referring to a nerve in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "encephal",
+        "my",
+        "pneum"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "pneum",
+      "term": "pneum",
+      "definition": "The word root referring to the lungs in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "thorac",
+        "cardi",
+        "neur"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "thorac",
+      "term": "thorac",
+      "definition": "The word root referring to the chest in medical terms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Roots",
+      "aliases": [],
+      "confusables": [
+        "pneum",
+        "cardi",
+        "arthr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "algia",
+      "term": "-algia",
+      "definition": "A suffix meaning pain in a body part.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-itis",
+        "-pathy",
+        "-cyte"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "cyte",
+      "term": "-cyte",
+      "definition": "A suffix meaning cell, as in blood cells.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-algia",
+        "-ectomy",
+        "-emia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "ectomy",
+      "term": "-ectomy",
+      "definition": "A suffix meaning surgical removal of a body part.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-algia",
+        "-cyte",
+        "-emia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "emia",
+      "term": "-emia",
+      "definition": "A suffix indicating a condition of the blood.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-cyte",
+        "-oma",
+        "-algia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "graphy",
+      "term": "-graphy",
+      "definition": "A suffix meaning the process of recording images.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-scopy",
+        "-logy",
+        "-algia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "itis",
+      "term": "-itis",
+      "definition": "A suffix indicating inflammation of a tissue in medical terms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-pathy",
+        "-algia",
+        "-cyte"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "logy",
+      "term": "-logy",
+      "definition": "A suffix meaning the study of a subject.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-logist",
+        "-graphy",
+        "-algia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "logist",
+      "term": "-logist",
+      "definition": "A suffix meaning a specialist who studies disorders.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-logy",
+        "-scopy",
+        "-algia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "megaly",
+      "term": "-megaly",
+      "definition": "A suffix meaning enlargement of an organ in medical terms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-oma",
+        "-algia",
+        "-cyte"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "oma",
+      "term": "-oma",
+      "definition": "A suffix meaning a tumor or neoplasm in medical terms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-megaly",
+        "-algia",
+        "-cyte"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "pathy",
+      "term": "-pathy",
+      "definition": "A suffix indicating a disease or abnormality of tissue.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-itis",
+        "-algia",
+        "-cyte"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "scopy",
+      "term": "-scopy",
+      "definition": "A suffix meaning the process of visual examination.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Suffixes",
+      "aliases": [],
+      "confusables": [
+        "-graphy",
+        "-ectomy",
+        "-algia"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.5"
+      ]
+    },
+    {
+      "id": "combining-form",
+      "term": "combining form",
+      "definition": "A word root joined to a combining vowel, usually o.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "cardi/o",
+        "nephr/o",
+        "combining vowel"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "combining-vowel",
+      "term": "combining vowel",
+      "definition": "A vowel, usually o, that links word parts.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "combining form",
+        "cardi/o",
+        "gastr/o"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "cardi-o",
+      "term": "cardi/o",
+      "definition": "A combining form referring to the heart in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "gastr/o",
+        "nephr/o",
+        "cardi"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "gastr-o",
+      "term": "gastr/o",
+      "definition": "A combining form referring to the stomach in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "cardi/o",
+        "nephr/o",
+        "gastr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "nephr-o",
+      "term": "nephr/o",
+      "definition": "A combining form referring to the kidney in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "neur/o",
+        "gastr/o",
+        "nephr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "neur-o",
+      "term": "neur/o",
+      "definition": "A combining form referring to a nerve in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "encephal/o",
+        "nephr/o",
+        "neur"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "hemat-o",
+      "term": "hemat/o",
+      "definition": "A combining form referring to blood in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "cyt/o",
+        "arthr/o",
+        "hemat"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "arthr-o",
+      "term": "arthr/o",
+      "definition": "A combining form referring to a joint in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "thorac/o",
+        "hemat/o",
+        "arthr"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "cyt-o",
+      "term": "cyt/o",
+      "definition": "A combining form referring to a cell in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "hemat/o",
+        "arthr/o",
+        "cyt"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "encephal-o",
+      "term": "encephal/o",
+      "definition": "A combining form referring to the brain in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "neur/o",
+        "pneum/o",
+        "encephal"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "pneum-o",
+      "term": "pneum/o",
+      "definition": "A combining form referring to the lungs in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "thorac/o",
+        "encephal/o",
+        "pneum"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    },
+    {
+      "id": "thorac-o",
+      "term": "thorac/o",
+      "definition": "A combining form referring to the chest in medical terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Combining forms",
+      "aliases": [],
+      "confusables": [
+        "arthr/o",
+        "pneum/o",
+        "thorac"
+      ],
+      "sources": [
+        "medterm-wtcs#ch.1.4"
+      ]
+    }
+  ]
+}

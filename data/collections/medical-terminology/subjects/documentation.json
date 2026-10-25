@@ -1,0 +1,920 @@
+{
+  "version": 1,
+  "id": "documentation",
+  "collectionId": "medical-terminology",
+  "section": "core",
+  "name": "Documentation",
+  "shortName": "Documentation",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Medical records"
+    },
+    {
+      "number": 2,
+      "title": "SOAP and progress notes"
+    },
+    {
+      "number": 3,
+      "title": "Orders and prescriptions"
+    },
+    {
+      "number": 4,
+      "title": "Consent and legal"
+    },
+    {
+      "number": 5,
+      "title": "Coding and billing basics"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "medical-record",
+      "term": "Medical record",
+      "definition": "A documented account of a patient's health history, care, and treatments over time.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [
+        "health record",
+        "patient record"
+      ],
+      "confusables": [
+        "Electronic health record (EHR)",
+        "Electronic medical record (EMR)",
+        "Chart"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "electronic-health-record",
+      "term": "Electronic health record (EHR)",
+      "definition": "A digital patient record shared across healthcare settings and providers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [
+        "EHR"
+      ],
+      "confusables": [
+        "Electronic medical record (EMR)",
+        "Personal health record (PHR)",
+        "Medical record"
+      ],
+      "sources": [
+        "medlineplus-phr#sec.ehr"
+      ]
+    },
+    {
+      "id": "electronic-medical-record",
+      "term": "Electronic medical record (EMR)",
+      "definition": "A digital record of care created and used within one practice or facility.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [
+        "EMR"
+      ],
+      "confusables": [
+        "Electronic health record (EHR)",
+        "Personal health record (PHR)",
+        "Medical record"
+      ],
+      "sources": [
+        "medlineplus-phr#sec.emr"
+      ]
+    },
+    {
+      "id": "personal-health-record",
+      "term": "Personal health record (PHR)",
+      "definition": "A health record maintained and controlled by the patient.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [
+        "PHR"
+      ],
+      "confusables": [
+        "Electronic health record (EHR)",
+        "Electronic medical record (EMR)",
+        "Medical record"
+      ],
+      "sources": [
+        "medlineplus-phr#sec.phr"
+      ]
+    },
+    {
+      "id": "legal-health-record",
+      "term": "Legal health record",
+      "definition": "The official business record of a healthcare organization released on request.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [],
+      "confusables": [
+        "Designated record set",
+        "Medical record",
+        "Chart"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.2"
+      ]
+    },
+    {
+      "id": "designated-record-set",
+      "term": "Designated record set",
+      "definition": "Protected health information used to make decisions about a patient's care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [
+        "DRS"
+      ],
+      "confusables": [
+        "Legal health record",
+        "Medical record",
+        "Health information"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.2"
+      ]
+    },
+    {
+      "id": "chart",
+      "term": "Chart",
+      "definition": "The collection of documents forming a patient's medical record.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [],
+      "confusables": [
+        "Medical record",
+        "Progress note",
+        "Health information"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "health-information",
+      "term": "Health information",
+      "definition": "Data about a person's health status, care, or payment for care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [],
+      "confusables": [
+        "Medical record",
+        "Designated record set",
+        "Chart"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.2"
+      ]
+    },
+    {
+      "id": "medical-record-documentation",
+      "term": "Medical record documentation",
+      "definition": "The process of recording patient care facts in the medical record.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [],
+      "confusables": [
+        "Medical record",
+        "Progress note",
+        "Chart"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "retention-period",
+      "term": "Retention period",
+      "definition": "The length of time medical records must be kept.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Medical records",
+      "aliases": [],
+      "confusables": [
+        "Medical record",
+        "Release of information (ROI)",
+        "Chart"
+      ],
+      "sources": [
+        "cms-medrec-maintenance#sec.retention"
+      ]
+    },
+    {
+      "id": "soap-note",
+      "term": "SOAP note",
+      "definition": "A progress note organized into subjective, objective, assessment, and plan sections.",
+      "formula": "S-O-A-P",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Progress note",
+        "History and physical (H&P)",
+        "Problem list"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.e-m-documentation"
+      ]
+    },
+    {
+      "id": "subjective",
+      "term": "Subjective",
+      "definition": "The patient's reported symptoms, concerns, and history in a note.",
+      "formula": "S",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Objective",
+        "Assessment",
+        "Plan"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.e-m-documentation"
+      ]
+    },
+    {
+      "id": "objective",
+      "term": "Objective",
+      "definition": "Measurable clinical findings and test results documented in a note.",
+      "formula": "O",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Subjective",
+        "Assessment",
+        "Plan"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.e-m-documentation"
+      ]
+    },
+    {
+      "id": "assessment",
+      "term": "Assessment",
+      "definition": "The clinician's diagnosis or clinical impression of the patient's condition.",
+      "formula": "A",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [
+        "clinical impression"
+      ],
+      "confusables": [
+        "Subjective",
+        "Objective",
+        "Plan"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.e-m-documentation"
+      ]
+    },
+    {
+      "id": "plan",
+      "term": "Plan",
+      "definition": "The intended tests, treatments, and follow-up for the patient.",
+      "formula": "P",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Assessment",
+        "Subjective",
+        "Objective"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.e-m-documentation"
+      ]
+    },
+    {
+      "id": "progress-note",
+      "term": "Progress note",
+      "definition": "A dated entry documenting a patient's status and care since the last visit.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "SOAP note",
+        "Addendum",
+        "History and physical (H&P)"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "history-and-physical",
+      "term": "History and physical (H&P)",
+      "definition": "A comprehensive initial assessment of a patient's health and exam.",
+      "formula": "H&P",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [
+        "H&P"
+      ],
+      "confusables": [
+        "Progress note",
+        "SOAP note",
+        "Discharge summary"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "discharge-summary",
+      "term": "Discharge summary",
+      "definition": "A summary of hospital care, findings, and instructions at discharge.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Progress note",
+        "History and physical (H&P)",
+        "SOAP note"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "problem-list",
+      "term": "Problem list",
+      "definition": "A maintained list of a patient's active and resolved health problems.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Assessment",
+        "Progress note",
+        "SOAP note"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.3"
+      ]
+    },
+    {
+      "id": "addendum",
+      "term": "Addendum",
+      "definition": "A late entry added to clarify or supplement an existing note.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "SOAP and progress notes",
+      "aliases": [],
+      "confusables": [
+        "Progress note",
+        "Correction (of record)",
+        "Amendment"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.4"
+      ]
+    },
+    {
+      "id": "physician-order",
+      "term": "Physician order",
+      "definition": "A clinician's instruction to provide a treatment, test, or medication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [
+        "provider order"
+      ],
+      "confusables": [
+        "Verbal order",
+        "Telephone order",
+        "Standing order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "verbal-order",
+      "term": "Verbal order",
+      "definition": "An order spoken aloud and later transcribed into the medical record.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "Telephone order",
+        "Physician order",
+        "Standing order"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.5"
+      ]
+    },
+    {
+      "id": "telephone-order",
+      "term": "Telephone order",
+      "definition": "An order given over the phone and documented for later authentication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "Verbal order",
+        "Physician order",
+        "Standing order"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.5"
+      ]
+    },
+    {
+      "id": "standing-order",
+      "term": "Standing order",
+      "definition": "A pre-approved order carried out when specified conditions are met.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "Physician order",
+        "PRN order",
+        "Stat order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "prn-order",
+      "term": "PRN order",
+      "definition": "An order to give a medication or treatment as needed.",
+      "formula": "PRN",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [
+        "as-needed order"
+      ],
+      "confusables": [
+        "Standing order",
+        "Stat order",
+        "Physician order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "stat-order",
+      "term": "Stat order",
+      "definition": "An order requiring immediate administration or performance of a service.",
+      "formula": "STAT",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "PRN order",
+        "Standing order",
+        "Physician order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "prescription",
+      "term": "Prescription",
+      "definition": "A written or electronic order for a medication to be dispensed.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [
+        "Rx"
+      ],
+      "confusables": [
+        "Physician order",
+        "Sig",
+        "Refill"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "sig",
+      "term": "Sig",
+      "definition": "The directions on a prescription telling how to take a medication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "Prescription",
+        "Refill",
+        "Physician order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "refill",
+      "term": "Refill",
+      "definition": "A repeat dispensing of a prescription without a new order.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "Prescription",
+        "Sig",
+        "Physician order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "order-set",
+      "term": "Order set",
+      "definition": "A group of related orders used for a common clinical situation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Orders and prescriptions",
+      "aliases": [],
+      "confusables": [
+        "Standing order",
+        "Physician order",
+        "Prescription"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.orders"
+      ]
+    },
+    {
+      "id": "informed-consent",
+      "term": "Informed consent",
+      "definition": "Permission given after a patient understands the risks and benefits of care.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "Consent form",
+        "Advance directive",
+        "DNR order"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-record-documentation"
+      ]
+    },
+    {
+      "id": "consent-form",
+      "term": "Consent form",
+      "definition": "A document recording a patient's agreement to a proposed treatment.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "Informed consent",
+        "Advance directive",
+        "Release of information (ROI)"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.6"
+      ]
+    },
+    {
+      "id": "advance-directive",
+      "term": "Advance directive",
+      "definition": "A legal document stating a patient's future healthcare wishes.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "DNR order",
+        "Informed consent",
+        "Consent form"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.6"
+      ]
+    },
+    {
+      "id": "dnr-order",
+      "term": "DNR order",
+      "definition": "An order not to perform cardiopulmonary resuscitation if the heart stops.",
+      "formula": "DNR",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [
+        "do-not-resuscitate order"
+      ],
+      "confusables": [
+        "Advance directive",
+        "Informed consent",
+        "Physician order"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.6"
+      ]
+    },
+    {
+      "id": "hipaa",
+      "term": "HIPAA",
+      "definition": "A US law protecting the privacy and security of health information.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [
+        "Health Insurance Portability and Accountability Act"
+      ],
+      "confusables": [
+        "Confidentiality",
+        "Privacy",
+        "Release of information (ROI)"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.3"
+      ]
+    },
+    {
+      "id": "confidentiality",
+      "term": "Confidentiality",
+      "definition": "The duty to keep patient information private and secure.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "Privacy",
+        "HIPAA",
+        "Release of information (ROI)"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.3"
+      ]
+    },
+    {
+      "id": "privacy",
+      "term": "Privacy",
+      "definition": "A patient's right to control access to their health information.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "Confidentiality",
+        "HIPAA",
+        "Release of information (ROI)"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.3"
+      ]
+    },
+    {
+      "id": "release-of-information",
+      "term": "Release of information (ROI)",
+      "definition": "The process of disclosing health records to authorized requesters.",
+      "formula": "ROI",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [
+        "ROI"
+      ],
+      "confusables": [
+        "HIPAA",
+        "Confidentiality",
+        "Privacy"
+      ],
+      "sources": [
+        "ahima-legal-health-record#p.4"
+      ]
+    },
+    {
+      "id": "amendment",
+      "term": "Amendment",
+      "definition": "A change or addition made to a health record at a patient's request.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "Addendum",
+        "Correction (of record)",
+        "Release of information (ROI)"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.7"
+      ]
+    },
+    {
+      "id": "correction-of-record",
+      "term": "Correction (of record)",
+      "definition": "A transparent fix to an error in an existing medical record entry.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Consent and legal",
+      "aliases": [],
+      "confusables": [
+        "Amendment",
+        "Addendum",
+        "Medical record documentation"
+      ],
+      "sources": [
+        "ahima-medrec-doc#p.4"
+      ]
+    },
+    {
+      "id": "icd-10-cm",
+      "term": "ICD-10-CM",
+      "definition": "A US diagnosis coding system for classifying diseases and conditions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "CPT",
+        "HCPCS",
+        "Diagnosis code"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "cpt",
+      "term": "CPT",
+      "definition": "A code set describing medical procedures and physician services.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [
+        "Current Procedural Terminology"
+      ],
+      "confusables": [
+        "ICD-10-CM",
+        "HCPCS",
+        "Procedure code"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "hcpcs",
+      "term": "HCPCS",
+      "definition": "A code set for supplies, equipment, and services not in CPT.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "CPT",
+        "ICD-10-CM",
+        "Procedure code"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "e-m-code",
+      "term": "E/M code",
+      "definition": "A code reporting evaluation and management services by level.",
+      "formula": "E/M",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [
+        "evaluation and management code"
+      ],
+      "confusables": [
+        "CPT",
+        "ICD-10-CM",
+        "Procedure code"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.e-m-documentation"
+      ]
+    },
+    {
+      "id": "medical-necessity",
+      "term": "Medical necessity",
+      "definition": "The requirement that a service be reasonable and needed for diagnosis or treatment.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "Claim",
+        "Modifier",
+        "Diagnosis code"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.medical-necessity"
+      ]
+    },
+    {
+      "id": "claim",
+      "term": "Claim",
+      "definition": "A request submitted to a payer for payment of healthcare services.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "Superbill",
+        "Medical necessity",
+        "Modifier"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "superbill",
+      "term": "Superbill",
+      "definition": "A form listing services and codes used to create a claim.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [
+        "encounter form"
+      ],
+      "confusables": [
+        "Claim",
+        "E/M code",
+        "Modifier"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "modifier",
+      "term": "Modifier",
+      "definition": "A code added to a procedure to show special circumstances.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "CPT",
+        "HCPCS",
+        "Procedure code"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "diagnosis-code",
+      "term": "Diagnosis code",
+      "definition": "A code identifying a patient's disease or condition for billing.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "ICD-10-CM",
+        "Procedure code",
+        "Modifier"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    },
+    {
+      "id": "procedure-code",
+      "term": "Procedure code",
+      "definition": "A code identifying a medical service or procedure performed.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Coding and billing basics",
+      "aliases": [],
+      "confusables": [
+        "CPT",
+        "Diagnosis code",
+        "Modifier"
+      ],
+      "sources": [
+        "cms-medrec-doc#sec.coding-and-billing"
+      ]
+    }
+  ]
+}
