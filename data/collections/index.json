@@ -21,6 +21,15 @@
       "generatedAt": "2026-10-25"
     },
     {
+      "id": "nursing-and-nclex",
+      "name": "Nursing and NCLEX",
+      "tagline": "Nursing and NCLEX, in one line.",
+      "path": "data/collections/nursing-and-nclex",
+      "subjects": 6,
+      "definitions": 347,
+      "generatedAt": "2026-10-25"
+    },
+    {
       "id": "pharmacology",
       "name": "Pharmacology",
       "tagline": "Pharmacology, in one line.",

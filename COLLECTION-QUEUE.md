@@ -69,12 +69,6 @@ it. Do not move a partial collection to Completed just to clear the line.
   - Target: 6 subjects, 280–360 definitions.
 
 
-- [ ] **Nursing and NCLEX** — `nursing-and-nclex`
-  - Scope: fundamentals; health assessment; safety and infection control; medical-surgical;
-    maternal and child; mental health.
-  - Audience: NCLEX-RN candidates.
-  - Target: 6 subjects, 300–380 definitions.
-
 - [ ] **Pathology** — `pathology`
   - Scope: cell injury and adaptation; inflammation and repair; neoplasia; hemodynamics;
     systems pathology.
@@ -187,6 +181,7 @@ library has a history.
 | 2026-10-25 | Medical terminology | data/collections/medical-terminology | 327 | validation passed |
 | 2026-10-25 | Anatomy and physiology | data/collections/anatomy-and-physiology | 285 | PR #3 draft |
 | 2026-10-25 | Pharmacology | data/collections/pharmacology | 270 | validation passed; PR draft |
+| 2026-10-25 | Nursing and NCLEX | data/collections/nursing-and-nclex | 347 | validation passed |
 
 ---
 
