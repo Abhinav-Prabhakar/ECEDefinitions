@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "topic": "US legal literacy for non-lawyers and first-year law students",
+  "collectionId": "us-legal-literacy",
+  "type": "general knowledge",
+  "audience": "Non-lawyers and first-year law students",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "includes": [
+    "sources of law, court structure, and legal authority",
+    "civil and criminal procedure from filing through appeal",
+    "constitutional rights and their limits",
+    "contract formation, performance, breach, and remedies",
+    "torts: negligence, intentional torts, strict liability, damages, defenses",
+    "criminal law elements, mens rea, major offenses, and defenses"
+  ],
+  "excludes": [
+    "state-specific statutory variations beyond a noted example",
+    "tax, employment, corporate, and real estate law",
+    "legislative and administrative procedure",
+    "evidence doctrine (separate collection)",
+    "intellectual property and privacy (separate collections)",
+    "legal advice, strategy, or case analysis"
+  ],
+  "assumptions": [
+    "US federal and general common-law usage; state variation is noted only where it is the point",
+    "no prior legal training assumed",
+    "introductory, vocabulary-only treatment: general principles, not the rule in any one state",
+    "constitutional and procedural references are to the US Constitution, federal statutes, and the federal rules unless stated"
+  ],
+  "sections": [
+    {
+      "id": "foundations",
+      "label": "Foundations",
+      "subjects": [
+        {
+          "id": "sources-of-law-and-courts",
+          "name": "Sources of Law and Courts",
+          "shortName": "Courts and law",
+          "units": [
+            "Sources of law",
+            "Federal courts",
+            "State courts",
+            "Jurisdiction and venue",
+            "Precedent and stare decisis",
+            "Legal authority and citation"
+          ],
+          "targetDefinitions": 48,
+          "sourceQueries": [
+            "Cornell LII Wex sources of law stare decisis jurisdiction",
+            "uscourts.gov federal court system structure",
+            "OpenStax American Government 2e judiciary chapter",
+            "Congress.gov Constitution Annotated judicial power"
+          ]
+        },
+        {
+          "id": "procedure",
+          "name": "Civil and Criminal Procedure",
+          "shortName": "Legal procedure",
+          "units": [
+            "Commencing a lawsuit",
+            "Pleadings and motions",
+            "Discovery",
+            "Trial and judgment",
+            "Appeals and finality",
+            "Criminal process stages"
+          ],
+          "targetDefinitions": 45,
+          "sourceQueries": [
+            "Legal Information Institute Federal Rules of Civil Procedure",
+            "Legal Information Institute Federal Rules of Criminal Procedure",
+            "Cornell LII Wex civil procedure discovery pleading",
+            "uscourts.gov how trials work"
+          ]
+        },
+        {
+          "id": "constitutional-rights",
+          "name": "Constitutional Rights",
+          "shortName": "Constitutional rights",
+          "units": [
+            "Bill of Rights fundamentals",
+            "First Amendment freedoms",
+            "Due process",
+            "Equal protection",
+            "Search, seizure, and criminal process rights",
+            "Incorporation and state action"
+          ],
+          "targetDefinitions": 45,
+          "sourceQueries": [
+            "Constitution Annotated bill of rights congress.gov",
+            "Cornell LII First Amendment due process equal protection",
+            "Oyez First Amendment Fourth Amendment Fourteenth Amendment",
+            "OpenStax American Government 2e civil liberties chapter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doctrines",
+      "label": "Core doctrines",
+      "subjects": [
+        {
+          "id": "contracts",
+          "name": "Contracts",
+          "shortName": "Contract law",
+          "units": [
+            "Formation: offer and acceptance",
+            "Consideration and capacity",
+            "Defenses to formation",
+            "Performance and breach",
+            "Remedies"
+          ],
+          "targetDefinitions": 45,
+          "sourceQueries": [
+            "Cornell LII Wex contract offer acceptance consideration",
+            "Cornell LII Uniform Commercial Code Article 2",
+            "Cornell LII Wex statute of frauds anticipatory repudiation",
+            "OpenStax business law contract formation"
+          ]
+        },
+        {
+          "id": "torts",
+          "name": "Torts",
+          "shortName": "Tort law",
+          "units": [
+            "Negligence",
+            "Intentional torts",
+            "Strict liability and products liability",
+            "Damages",
+            "Defenses"
+          ],
+          "targetDefinitions": 45,
+          "sourceQueries": [
+            "Cornell LII Wex tort negligence duty breach causation",
+            "Cornell LII Wex intentional tort strict liability defamation",
+            "Cornell LII Wex damages contributory negligence assumption of risk",
+            "OpenStax business law torts chapter"
+          ]
+        },
+        {
+          "id": "criminal-law",
+          "name": "Criminal Law",
+          "shortName": "Criminal law",
+          "units": [
+            "Elements and actus reus",
+            "Mens rea and culpability",
+            "Major offenses",
+            "Defenses",
+            "Punishment and sentencing"
+          ],
+          "targetDefinitions": 45,
+          "sourceQueries": [
+            "Cornell LII Wex mens rea actus rea",
+            "Cornell LII Wex homicide robbery burglary elements",
+            "Cornell LII Wex self-defense insanity justification",
+            "OpenStax American Government 2e criminal law chapter"
+          ]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": {
+    "min": 240,
+    "max": 300
+  },
+  "disclaimer": "Educational vocabulary only; not legal advice."
+}
