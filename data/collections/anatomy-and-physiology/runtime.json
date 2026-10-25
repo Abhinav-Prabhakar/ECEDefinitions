@@ -1,0 +1,1487 @@
+{
+  "version": 1,
+  "id": "anatomy-and-physiology",
+  "name": "Anatomy and Physiology",
+  "short": "Anat & phys",
+  "subjects": [
+    {
+      "id": "cells-and-tissues",
+      "name": "Cells and Tissues",
+      "short": "Cells and tissues",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "Active transport",
+          "Movement of substances across a membrane using energy from ATP.",
+          ""
+        ],
+        [
+          "Amphipathic",
+          "Describing a molecule containing both hydrophilic and hydrophobic regions.",
+          ""
+        ],
+        [
+          "Cell membrane",
+          "The flexible phospholipid bilayer surrounding a cell that regulates passage of substances.",
+          ""
+        ],
+        [
+          "Diffusion",
+          "The movement of particles from an area of higher concentration to lower concentration.",
+          ""
+        ],
+        [
+          "Endocytosis",
+          "The process of a cell engulfing material by enveloping it in membrane.",
+          ""
+        ],
+        [
+          "Glycocalyx",
+          "The fuzzy carbohydrate coating surrounding a cell formed from glycoproteins.",
+          ""
+        ],
+        [
+          "Glycoprotein",
+          "A protein with carbohydrate molecules attached that extend into the extracellular space.",
+          ""
+        ],
+        [
+          "Hydrophilic",
+          "Describing a molecule or region that is attracted to water.",
+          ""
+        ],
+        [
+          "Hydrophobic",
+          "Describing a molecule or region that repels and is repelled by water.",
+          ""
+        ],
+        [
+          "Integral protein",
+          "A protein embedded within the lipid bilayer of the cell membrane.",
+          ""
+        ],
+        [
+          "Ligand",
+          "The specific molecule that binds to and activates a receptor.",
+          ""
+        ],
+        [
+          "Osmosis",
+          "The diffusion of water through a semipermeable membrane down its concentration gradient.",
+          ""
+        ],
+        [
+          "Peripheral protein",
+          "A protein attached to the inner or outer surface of the cell membrane.",
+          ""
+        ],
+        [
+          "Phagocytosis",
+          "The endocytosis of large particles such as invading bacterial cells.",
+          ""
+        ],
+        [
+          "Phospholipid",
+          "An amphipathic lipid with a hydrophilic phosphate head and hydrophobic fatty acid tails.",
+          ""
+        ],
+        [
+          "Receptor",
+          "A recognition protein that selectively binds a specific molecule outside the cell.",
+          ""
+        ],
+        [
+          "Selective permeability",
+          "The membrane property that allows some substances to pass while blocking others.",
+          ""
+        ],
+        [
+          "Sodium-potassium pump",
+          "An ATPase that transports sodium out of a cell while moving potassium into it.",
+          ""
+        ],
+        [
+          "Anaphase",
+          "The stage of mitosis when sister chromatids separate and move apart.",
+          ""
+        ],
+        [
+          "Cell cycle",
+          "The ordered sequence of events through which a cell grows and divides.",
+          ""
+        ],
+        [
+          "Chromosome",
+          "A structure of DNA and protein carrying genetic information.",
+          ""
+        ],
+        [
+          "Cytokinesis",
+          "The division of the cytoplasm following nuclear division.",
+          ""
+        ],
+        [
+          "Interphase",
+          "The phase of the cell cycle when the cell grows and replicates DNA.",
+          ""
+        ],
+        [
+          "Metaphase",
+          "The stage of mitosis when chromosomes align at the cell equator.",
+          ""
+        ],
+        [
+          "Mitosis",
+          "The division of a somatic cell nucleus into two identical nuclei.",
+          ""
+        ],
+        [
+          "Prophase",
+          "The first stage of mitosis when chromosomes condense and spindles form.",
+          ""
+        ],
+        [
+          "Telophase",
+          "The final stage of mitosis when new nuclei begin to form.",
+          ""
+        ],
+        [
+          "Connective tissue",
+          "Tissue that binds and supports other tissues and organs.",
+          ""
+        ],
+        [
+          "Ectoderm",
+          "The outer germ layer giving rise to skin and nervous tissue.",
+          ""
+        ],
+        [
+          "Endoderm",
+          "The inner germ layer lining airways and digestive tract.",
+          ""
+        ],
+        [
+          "Epithelial tissue",
+          "Sheets of cells covering surfaces and lining cavities and passageways.",
+          ""
+        ],
+        [
+          "Germ layer",
+          "One of three embryonic cell lineages forming all tissues and organs.",
+          ""
+        ],
+        [
+          "Mesoderm",
+          "The middle germ layer giving rise to connective, muscle, and circulatory tissues.",
+          ""
+        ],
+        [
+          "Muscle tissue",
+          "Excitable tissue that contracts to produce body movement.",
+          ""
+        ],
+        [
+          "Nervous tissue",
+          "Excitable tissue that propagates electrochemical signals as nerve impulses.",
+          ""
+        ],
+        [
+          "Organ",
+          "A structure formed by several tissue types working together as a unit.",
+          ""
+        ],
+        [
+          "Tissue",
+          "A group of cells sharing a common embryonic origin and function.",
+          ""
+        ],
+        [
+          "Cutaneous membrane",
+          "The skin, a stratified squamous epithelial membrane resting on connective tissue.",
+          ""
+        ],
+        [
+          "Endocrine gland",
+          "A gland that secretes hormones directly into the bloodstream.",
+          ""
+        ],
+        [
+          "Epithelial membrane",
+          "A membrane composed of epithelium attached to connective tissue.",
+          ""
+        ],
+        [
+          "Exocrine gland",
+          "A gland that secretes its product through a duct to a surface.",
+          ""
+        ],
+        [
+          "Mucous membrane",
+          "An epithelial membrane lining cavities opening to the exterior.",
+          ""
+        ],
+        [
+          "Serous membrane",
+          "An epithelial membrane lining closed body cavities and covering organs.",
+          ""
+        ],
+        [
+          "Synovial membrane",
+          "A connective tissue membrane lining freely movable joint cavities.",
+          ""
+        ],
+        [
+          "Tissue membrane",
+          "A thin layer of cells covering body surfaces, organs, or cavities.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "skeletal-muscular",
+      "name": "Skeletal and Muscular Systems",
+      "short": "Skeletal and muscular",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Compact bone",
+          "Dense osseous tissue that withstands compressive forces and forms the outer shell of bones.",
+          ""
+        ],
+        [
+          "Diaphysis",
+          "Tubular shaft running between the proximal and distal ends of a long bone.",
+          ""
+        ],
+        [
+          "Epiphyseal plate",
+          "Sheet of hyaline cartilage in an immature bone's metaphysis that enables longitudinal growth.",
+          ""
+        ],
+        [
+          "Epiphysis",
+          "Wide section at each end of a long bone, filled with spongy bone and red marrow.",
+          ""
+        ],
+        [
+          "Osteoblast",
+          "Cell responsible for forming new bone by secreting uncalcified bone matrix.",
+          ""
+        ],
+        [
+          "Osteoclast",
+          "Cell that breaks down and resorbs bone tissue during remodeling.",
+          ""
+        ],
+        [
+          "Osteocyte",
+          "Mature bone cell that maintains the mineralized matrix and communicates through canaliculi.",
+          ""
+        ],
+        [
+          "Osteogenic cell",
+          "Undifferentiated bone stem cell that divides and differentiates into osteoblasts.",
+          ""
+        ],
+        [
+          "Osteon",
+          "Basic structural unit of compact bone, made of concentric layers of calcified matrix around a central canal.",
+          ""
+        ],
+        [
+          "Spongy bone",
+          "Trabeculated osseous tissue that supports shifts in weight distribution inside bones.",
+          ""
+        ],
+        [
+          "Axial skeleton",
+          "Central vertical axis of the body, including the skull, vertebral column, and thoracic cage.",
+          ""
+        ],
+        [
+          "Cervical vertebrae",
+          "Seven vertebrae in the neck region that support the head and allow movement.",
+          ""
+        ],
+        [
+          "Coccyx",
+          "Small bone at the inferior end of the vertebral column formed by fused coccygeal vertebrae.",
+          ""
+        ],
+        [
+          "Cranium",
+          "Portion of the skull that encloses and protects the brain.",
+          ""
+        ],
+        [
+          "Ribs",
+          "Curved bones that form the sides of the thoracic cage and aid breathing.",
+          ""
+        ],
+        [
+          "Sacrum",
+          "Triangular bone formed by fused vertebrae at the base of the vertebral column.",
+          ""
+        ],
+        [
+          "Skull",
+          "Bony structure of the head that protects the brain and supports the face.",
+          ""
+        ],
+        [
+          "Sternum",
+          "Flat bone in the center of the chest that articulates with most ribs.",
+          ""
+        ],
+        [
+          "Thoracic cage",
+          "Bony enclosure formed by the sternum, ribs, and thoracic vertebrae that protects thoracic organs.",
+          ""
+        ],
+        [
+          "Vertebral column",
+          "Series of vertebrae extending from skull to pelvis that protects the spinal cord.",
+          ""
+        ],
+        [
+          "Appendicular skeleton",
+          "All bones of the upper and lower limbs plus the girdles attaching them to the axial skeleton.",
+          ""
+        ],
+        [
+          "Clavicle",
+          "Collarbone that articulates with the sternum medially and the scapula laterally.",
+          ""
+        ],
+        [
+          "Coxal bone",
+          "Hip bone formed by fusion of the ilium, ischium, and pubis.",
+          ""
+        ],
+        [
+          "Femur",
+          "Thigh bone; the longest and strongest bone in the body.",
+          ""
+        ],
+        [
+          "Fibula",
+          "Thin lateral leg bone that stabilizes the ankle but does not bear weight.",
+          ""
+        ],
+        [
+          "Humerus",
+          "Single bone of the upper arm, articulating with the scapula and forearm bones.",
+          ""
+        ],
+        [
+          "Radius",
+          "Lateral forearm bone that articulates with the humerus and carpal bones.",
+          ""
+        ],
+        [
+          "Scapula",
+          "Shoulder blade that articulates with the humerus and clavicle.",
+          ""
+        ],
+        [
+          "Tibia",
+          "Large medial leg bone that bears body weight and articulates with the femur and talus.",
+          ""
+        ],
+        [
+          "Ulna",
+          "Medial forearm bone whose trochlear notch articulates with the humerus.",
+          ""
+        ],
+        [
+          "Cardiac muscle",
+          "Striated involuntary muscle of the heart joined by intercalated discs.",
+          ""
+        ],
+        [
+          "Epimysium",
+          "Outer connective tissue layer surrounding an entire skeletal muscle.",
+          ""
+        ],
+        [
+          "Fascicle",
+          "Bundle of muscle fibers surrounded by perimysium within a skeletal muscle.",
+          ""
+        ],
+        [
+          "Motor unit",
+          "A motor neuron plus all the muscle fibers it innervates.",
+          ""
+        ],
+        [
+          "Myofibril",
+          "Long cylindrical organelle within a muscle fiber that contains sarcomeres.",
+          ""
+        ],
+        [
+          "Neuromuscular junction",
+          "Synapse between a motor neuron axon terminal and a muscle fiber membrane.",
+          ""
+        ],
+        [
+          "Sarcomere",
+          "Repeating contractile unit of striated muscle containing actin and myosin filaments.",
+          ""
+        ],
+        [
+          "Skeletal muscle",
+          "Striated, multinucleated muscle attached to bones that produces voluntary movement.",
+          ""
+        ],
+        [
+          "Smooth muscle",
+          "Non-striated involuntary muscle in walls of hollow organs and vessels.",
+          ""
+        ],
+        [
+          "Tendon",
+          "Dense connective tissue that attaches a muscle to a bone.",
+          ""
+        ],
+        [
+          "Actin",
+          "Protein forming the thin myofilaments that slide during muscle contraction.",
+          ""
+        ],
+        [
+          "Concentric contraction",
+          "Muscle contraction that shortens the muscle to move a load.",
+          ""
+        ],
+        [
+          "Eccentric contraction",
+          "Muscle contraction that lengthens the muscle as tension diminishes.",
+          ""
+        ],
+        [
+          "Excitation-contraction coupling",
+          "Sequence linking motor neuron signaling to contraction of a muscle fiber's sarcomeres.",
+          ""
+        ],
+        [
+          "Isometric contraction",
+          "Muscle contraction producing tension without change in muscle length.",
+          ""
+        ],
+        [
+          "Isotonic contraction",
+          "Muscle contraction involving a change in muscle length under constant tension.",
+          ""
+        ],
+        [
+          "Motor end-plate",
+          "Region of muscle fiber sarcolemma at the neuromuscular junction with acetylcholine receptors.",
+          ""
+        ],
+        [
+          "Myosin",
+          "Protein forming thick filaments whose heads pull actin during contraction.",
+          ""
+        ],
+        [
+          "Power stroke",
+          "Action of myosin pulling actin inward toward the M line.",
+          ""
+        ],
+        [
+          "Recruitment",
+          "Increase in the number of motor units activated to raise contraction strength.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "cardiovascular-respiratory",
+      "name": "Cardiovascular and Respiratory Systems",
+      "short": "Cardiovascular and respiratory",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Atrioventricular node",
+          "A relay station that delays the electrical signal between the atria and ventricles.",
+          ""
+        ],
+        [
+          "Atrium",
+          "An upper chamber of the heart that receives blood returning to the heart.",
+          ""
+        ],
+        [
+          "Cardiac cycle",
+          "The sequence of contraction and relaxation events in the heart during one heartbeat.",
+          ""
+        ],
+        [
+          "Cardiac output",
+          "The volume of blood pumped by the heart per minute.",
+          ""
+        ],
+        [
+          "Diastole",
+          "The phase of the cardiac cycle when the heart muscle relaxes and fills with blood.",
+          ""
+        ],
+        [
+          "Epicardium",
+          "The outermost layer of the heart wall, also called the visceral pericardium.",
+          ""
+        ],
+        [
+          "Heart",
+          "A muscular organ that pumps blood through the body's blood vessels.",
+          ""
+        ],
+        [
+          "Myocardium",
+          "The thick muscular middle layer of the heart wall that contracts to pump blood.",
+          ""
+        ],
+        [
+          "Sinoatrial node",
+          "The heart's natural pacemaker, located in the right atrium, that initiates each heartbeat.",
+          ""
+        ],
+        [
+          "Systole",
+          "The phase of the cardiac cycle when the heart muscle contracts and pumps blood.",
+          ""
+        ],
+        [
+          "Ventricle",
+          "A lower chamber of the heart that pumps blood out to the lungs or body.",
+          ""
+        ],
+        [
+          "Aorta",
+          "The largest artery, carrying oxygenated blood from the left ventricle to the body.",
+          ""
+        ],
+        [
+          "Arteriole",
+          "A small branch of an artery that leads into capillary beds.",
+          ""
+        ],
+        [
+          "Artery",
+          "A blood vessel that carries blood away from the heart, usually oxygenated.",
+          ""
+        ],
+        [
+          "Blood pressure",
+          "The force exerted by circulating blood on the walls of blood vessels.",
+          ""
+        ],
+        [
+          "Capillary",
+          "The smallest blood vessel, where exchange of gases and nutrients occurs.",
+          ""
+        ],
+        [
+          "Endothelium",
+          "The simple squamous epithelium lining the interior of blood vessels.",
+          ""
+        ],
+        [
+          "Tunica externa",
+          "The outermost layer of a blood vessel wall made of connective tissue.",
+          ""
+        ],
+        [
+          "Tunica intima",
+          "The innermost layer of a blood vessel wall, lined by endothelium.",
+          ""
+        ],
+        [
+          "Tunica media",
+          "The middle layer of a blood vessel wall containing smooth muscle and elastic fibers.",
+          ""
+        ],
+        [
+          "Vein",
+          "A blood vessel that returns blood toward the heart, usually deoxygenated.",
+          ""
+        ],
+        [
+          "Vena cava",
+          "A large vein returning deoxygenated blood from the body to the right atrium.",
+          ""
+        ],
+        [
+          "Venule",
+          "A small vessel that collects blood from capillaries and feeds into veins.",
+          ""
+        ],
+        [
+          "ABO blood group",
+          "A system classifying blood by antigens present on red blood cell surfaces.",
+          ""
+        ],
+        [
+          "Erythrocyte",
+          "A red blood cell that transports oxygen and carbon dioxide in the blood.",
+          ""
+        ],
+        [
+          "Erythropoiesis",
+          "The production of new red blood cells in the bone marrow.",
+          ""
+        ],
+        [
+          "Hematocrit",
+          "The percentage of blood volume occupied by red blood cells.",
+          ""
+        ],
+        [
+          "Hemoglobin",
+          "The iron-containing protein in red blood cells that binds oxygen.",
+          ""
+        ],
+        [
+          "Hemostasis",
+          "The process that stops bleeding through vascular spasm, platelet plug, and clotting.",
+          ""
+        ],
+        [
+          "Leukocyte",
+          "A white blood cell involved in immune defense against infection.",
+          ""
+        ],
+        [
+          "Lymphocyte",
+          "A white blood cell that mediates adaptive immunity, such as B and T cells.",
+          ""
+        ],
+        [
+          "Neutrophil",
+          "The most abundant white blood cell, which phagocytizes bacteria and debris.",
+          ""
+        ],
+        [
+          "Plasma",
+          "The liquid component of blood that carries cells, nutrients, and wastes.",
+          ""
+        ],
+        [
+          "Platelet",
+          "A cell fragment that participates in blood clotting and hemostasis.",
+          ""
+        ],
+        [
+          "Alveolus",
+          "A tiny air sac in the lung where gas exchange with blood occurs.",
+          ""
+        ],
+        [
+          "Bronchiole",
+          "A small airway branch within the lung that lacks cartilage support.",
+          ""
+        ],
+        [
+          "Bronchus",
+          "One of two main branches from the trachea leading into each lung.",
+          ""
+        ],
+        [
+          "Diaphragm",
+          "The dome-shaped muscle that contracts to increase thoracic volume during inspiration.",
+          ""
+        ],
+        [
+          "Epiglottis",
+          "A flap that closes the larynx during swallowing to prevent food aspiration.",
+          ""
+        ],
+        [
+          "Larynx",
+          "The voice box containing vocal cords, located between the pharynx and trachea.",
+          ""
+        ],
+        [
+          "Mucus",
+          "A slippery secretion that traps dust and pathogens in the respiratory tract.",
+          ""
+        ],
+        [
+          "Nasal cavity",
+          "The air-filled space behind the nose that warms, moistens, and filters air.",
+          ""
+        ],
+        [
+          "Pharynx",
+          "A muscular tube that connects the nasal cavity to the larynx and esophagus.",
+          ""
+        ],
+        [
+          "Pleura",
+          "The serous membrane that lines the thoracic cavity and covers the lungs.",
+          ""
+        ],
+        [
+          "Trachea",
+          "The windpipe, a tube reinforced with cartilage rings that conducts air to bronchi.",
+          ""
+        ],
+        [
+          "Carbon dioxide",
+          "A waste gas produced by cells and removed by the lungs during exhalation.",
+          ""
+        ],
+        [
+          "Diffusion",
+          "The passive movement of gases from high to low concentration across membranes.",
+          ""
+        ],
+        [
+          "External respiration",
+          "Gas exchange between the lungs and the blood across the respiratory membrane.",
+          ""
+        ],
+        [
+          "Hemoglobin saturation",
+          "The percentage of hemoglobin binding sites occupied by oxygen.",
+          ""
+        ],
+        [
+          "Internal respiration",
+          "Gas exchange between the blood and body tissues at the cellular level.",
+          ""
+        ],
+        [
+          "Oxygen",
+          "A gas essential for cellular respiration, transported mainly by hemoglobin.",
+          ""
+        ],
+        [
+          "Partial pressure",
+          "The pressure contributed by one gas in a mixture of gases.",
+          ""
+        ],
+        [
+          "Respiratory membrane",
+          "The thin barrier between alveolar air and capillary blood for gas exchange.",
+          ""
+        ],
+        [
+          "Surfactant",
+          "A substance that reduces surface tension in alveoli to prevent collapse.",
+          ""
+        ],
+        [
+          "Ventilation",
+          "The mechanical process of moving air into and out of the lungs.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "nervous-endocrine",
+      "name": "Nervous and Endocrine Systems",
+      "short": "Nervous and endocrine",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Action potential",
+          "A rapid change in membrane voltage that transmits an electrical signal.",
+          ""
+        ],
+        [
+          "Axon",
+          "The single fiber carrying an electrical signal away from the neuron cell body.",
+          ""
+        ],
+        [
+          "Dendrite",
+          "Branchlike fibers that receive incoming signals from other neurons or sensory cells.",
+          ""
+        ],
+        [
+          "Glial cell",
+          "A supportive neural tissue cell that maintains and supports neurons.",
+          ""
+        ],
+        [
+          "Myelin",
+          "A lipid-rich insulating sheath around axons that speeds electrical signal conduction.",
+          ""
+        ],
+        [
+          "Nerve",
+          "A cord-like bundle of axons in the peripheral nervous system transmitting signals.",
+          ""
+        ],
+        [
+          "Neuron",
+          "A nerve cell that generates and propagates electrical signals throughout the nervous system.",
+          ""
+        ],
+        [
+          "Neurotransmitter",
+          "A chemical messenger released from a neuron to alter a target cell.",
+          ""
+        ],
+        [
+          "Schwann cell",
+          "A peripheral nervous system glial cell that forms myelin around axons.",
+          ""
+        ],
+        [
+          "Synapse",
+          "The narrow junction where a chemical signal passes between neurons or cells.",
+          ""
+        ],
+        [
+          "Brain stem",
+          "The brain region including midbrain, pons, and medulla connecting brain to cord.",
+          ""
+        ],
+        [
+          "Cerebellum",
+          "The brain region that compares movement commands with sensory feedback for coordination.",
+          ""
+        ],
+        [
+          "Cerebral cortex",
+          "The outer gray matter of the brain where conscious perception occurs.",
+          ""
+        ],
+        [
+          "Cerebrum",
+          "The brain region responsible for higher functions like memory, emotion, and consciousness.",
+          ""
+        ],
+        [
+          "Corpus callosum",
+          "The large white matter tract connecting the right and left cerebral hemispheres.",
+          ""
+        ],
+        [
+          "Cranial nerve",
+          "One of twelve nerves connected to the brain serving head and neck.",
+          ""
+        ],
+        [
+          "Hypothalamus",
+          "A diencephalon region coordinating autonomic and endocrine control of homeostasis.",
+          ""
+        ],
+        [
+          "Meninges",
+          "Protective connective tissue coverings surrounding the central nervous system.",
+          ""
+        ],
+        [
+          "Spinal cord",
+          "The central nervous system organ within the vertebral cavity mediating reflexes.",
+          ""
+        ],
+        [
+          "Thalamus",
+          "A diencephalon region relaying information between the cerebrum and periphery.",
+          ""
+        ],
+        [
+          "Extraocular muscles",
+          "Six skeletal muscles controlling eye movement within the orbit.",
+          ""
+        ],
+        [
+          "Kinesthesia",
+          "The general sensory perception of movement of the body.",
+          ""
+        ],
+        [
+          "Olfaction",
+          "The special sense of smell with a direct connection to the cerebrum.",
+          ""
+        ],
+        [
+          "Optic nerve",
+          "The second cranial nerve responsible for visual sensation.",
+          ""
+        ],
+        [
+          "Proprioception",
+          "Sensory perception of body position and movement of body parts.",
+          ""
+        ],
+        [
+          "Somatosensation",
+          "General body senses including touch, pain, temperature, and proprioception.",
+          ""
+        ],
+        [
+          "Thermoreceptor",
+          "A sensory receptor that transduces temperature stimuli into neural signals.",
+          ""
+        ],
+        [
+          "Vestibulocochlear nerve",
+          "The eighth cranial nerve responsible for hearing and balance sensations.",
+          ""
+        ],
+        [
+          "Adrenal cortex",
+          "The outer adrenal region producing mineralocorticoids and glucocorticoids.",
+          ""
+        ],
+        [
+          "Adrenal glands",
+          "Endocrine glands atop each kidney regulating stress response and electrolytes.",
+          ""
+        ],
+        [
+          "Adrenal medulla",
+          "The inner adrenal layer producing epinephrine and norepinephrine for stress.",
+          ""
+        ],
+        [
+          "Pancreas",
+          "An organ with endocrine and exocrine functions regulating digestion and glucose.",
+          ""
+        ],
+        [
+          "Parathyroid glands",
+          "Small glands embedded in the thyroid that produce parathyroid hormone.",
+          ""
+        ],
+        [
+          "Pineal gland",
+          "An endocrine gland secreting melatonin to regulate the sleep-wake cycle.",
+          ""
+        ],
+        [
+          "Pituitary gland",
+          "A bean-sized organ suspended from the hypothalamus that secretes hormones.",
+          ""
+        ],
+        [
+          "Thymus",
+          "An organ involved in T-cell development, active during infancy and childhood.",
+          ""
+        ],
+        [
+          "Thyroid gland",
+          "A large endocrine gland responsible for synthesizing thyroid hormones.",
+          ""
+        ],
+        [
+          "Aldosterone",
+          "A hormone stimulating sodium and fluid retention, increasing blood volume.",
+          ""
+        ],
+        [
+          "Antidiuretic hormone",
+          "A hypothalamic hormone signaling kidneys to reabsorb water.",
+          ""
+        ],
+        [
+          "Calcitonin",
+          "A thyroid hormone that decreases blood calcium levels.",
+          ""
+        ],
+        [
+          "Cortisol",
+          "A glucocorticoid important in glucose metabolism and immune downregulation.",
+          ""
+        ],
+        [
+          "Epinephrine",
+          "The primary catecholamine secreted by the adrenal medulla during stress.",
+          ""
+        ],
+        [
+          "Estrogens",
+          "Female sex hormones important for reproductive tract development and pregnancy.",
+          ""
+        ],
+        [
+          "Glucagon",
+          "A pancreatic hormone stimulating glycogen breakdown, increasing blood glucose.",
+          ""
+        ],
+        [
+          "Growth hormone",
+          "An anterior pituitary hormone promoting tissue building and nutrient metabolism.",
+          ""
+        ],
+        [
+          "Hormone",
+          "A secretion traveling via blood or lymph to induce target cell responses.",
+          ""
+        ],
+        [
+          "Insulin",
+          "A pancreatic hormone enhancing cellular glucose uptake, lowering blood glucose.",
+          ""
+        ],
+        [
+          "Oxytocin",
+          "A hypothalamic hormone stimulating uterine contractions and milk ejection.",
+          ""
+        ],
+        [
+          "Testosterone",
+          "A steroid hormone important for sperm maturation and secondary sex traits.",
+          ""
+        ],
+        [
+          "Thyroxine",
+          "An amino acid-derived thyroid hormone more abundant but less potent.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "digestive-urinary",
+      "name": "Digestive and Urinary Systems",
+      "short": "Digestive and urinary",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Absorption",
+          "The passage of digested nutrients from the intestinal lumen through mucosal cells into blood or lymph.",
+          ""
+        ],
+        [
+          "Alimentary canal",
+          "The continuous muscular tube of the digestive tract that extends from the mouth to the anus.",
+          ""
+        ],
+        [
+          "Bolus",
+          "A mass of chewed food ready to be swallowed.",
+          ""
+        ],
+        [
+          "Chemical digestion",
+          "The enzymatic breakdown of food molecules into smaller absorbable components.",
+          ""
+        ],
+        [
+          "Chyme",
+          "The soupy liquid formed when food is mixed with digestive juices in the stomach.",
+          ""
+        ],
+        [
+          "Defecation",
+          "The elimination of undigested material from the body in the form of feces.",
+          ""
+        ],
+        [
+          "Ingestion",
+          "The process of taking food into the gastrointestinal tract through the mouth.",
+          ""
+        ],
+        [
+          "Mechanical digestion",
+          "Chewing, mixing, and segmentation that physically break food into smaller pieces for chemical digestion.",
+          ""
+        ],
+        [
+          "Peristalsis",
+          "Wavelike muscular contractions and relaxations that propel food along the gastrointestinal tract.",
+          ""
+        ],
+        [
+          "Propulsion",
+          "The voluntary act of swallowing and the involuntary process of peristalsis that move food through the digestive tract.",
+          ""
+        ],
+        [
+          "Segmentation",
+          "Alternating contractions and relaxations of nonadjacent intestinal segments that mix food with digestive juices.",
+          ""
+        ],
+        [
+          "Small intestine",
+          "The section of the alimentary canal where most digestion and nutrient absorption occur.",
+          ""
+        ],
+        [
+          "Accessory digestive organ",
+          "Organs that aid digestion but are not part of the alimentary canal, such as the liver, pancreas, and gallbladder.",
+          ""
+        ],
+        [
+          "Bile",
+          "An alkaline fluid produced by the liver that emulsifies lipids for digestion.",
+          ""
+        ],
+        [
+          "Gallbladder",
+          "An accessory organ that stores and concentrates bile produced by the liver.",
+          ""
+        ],
+        [
+          "Hepatocyte",
+          "The major functional cell of the liver that performs metabolic and secretory tasks.",
+          ""
+        ],
+        [
+          "Liver",
+          "The body's largest gland, whose main digestive role is producing bile.",
+          ""
+        ],
+        [
+          "Pancreas",
+          "An accessory organ that secretes pancreatic juice containing digestive enzymes and bicarbonate.",
+          ""
+        ],
+        [
+          "Pancreatic amylase",
+          "An enzyme secreted by the pancreas that completes carbohydrate digestion in the small intestine.",
+          ""
+        ],
+        [
+          "Pancreatic juice",
+          "The secretion of the pancreas containing digestive enzymes and bicarbonate.",
+          ""
+        ],
+        [
+          "Saliva",
+          "An aqueous solution of proteins and ions secreted into the mouth by salivary glands.",
+          ""
+        ],
+        [
+          "Salivary amylase",
+          "A digestive enzyme in saliva that begins the chemical breakdown of starch.",
+          ""
+        ],
+        [
+          "Salivary gland",
+          "An exocrine gland that secretes saliva into the mouth.",
+          ""
+        ],
+        [
+          "Bowman's capsule",
+          "A cup-shaped sac surrounding the glomerulus that collects the filtrate.",
+          ""
+        ],
+        [
+          "Calyces",
+          "Cup-like structures that receive urine from collecting ducts and pass it to the renal pelvis.",
+          ""
+        ],
+        [
+          "Collecting duct",
+          "A tube that receives urine from nephrons and carries it toward the renal pelvis.",
+          ""
+        ],
+        [
+          "Detrusor muscle",
+          "The smooth muscle in the bladder wall that contracts to expel urine.",
+          ""
+        ],
+        [
+          "Distal convoluted tubule",
+          "The nephron segment that receives filtrate from the loop of Henle and empties into collecting ducts.",
+          ""
+        ],
+        [
+          "Glomerulus",
+          "A tuft of capillaries in the kidney that filters blood based on size.",
+          ""
+        ],
+        [
+          "Loop of Henle",
+          "The descending and ascending portion of a nephron between the proximal and distal tubules.",
+          ""
+        ],
+        [
+          "Nephron",
+          "The functional unit of the kidney that filters blood and forms urine.",
+          ""
+        ],
+        [
+          "Proximal convoluted tubule",
+          "The highly active nephron segment that reabsorbs and secretes substances from filtrate.",
+          ""
+        ],
+        [
+          "Renal corpuscle",
+          "The part of a nephron consisting of the glomerulus and Bowman's capsule.",
+          ""
+        ],
+        [
+          "Urethra",
+          "The tube that transports urine from the urinary bladder to the outside of the body.",
+          ""
+        ],
+        [
+          "Antidiuretic hormone (ADH)",
+          "A hormone that increases water reabsorption from the kidney's collecting tubules.",
+          ""
+        ],
+        [
+          "Dehydration",
+          "A state in which the body contains insufficient water in blood and tissues.",
+          ""
+        ],
+        [
+          "Diuresis",
+          "The production of an abnormally large volume of urine.",
+          ""
+        ],
+        [
+          "Extracellular fluid",
+          "Fluid located outside cells, including interstitial fluid, blood plasma, and other body fluids.",
+          ""
+        ],
+        [
+          "Interstitial fluid",
+          "The fluid in small spaces between cells that is not contained within blood vessels.",
+          ""
+        ],
+        [
+          "Intracellular fluid",
+          "The fluid contained within the cytosol of body cells.",
+          ""
+        ],
+        [
+          "Metabolic acidosis",
+          "A condition in which a deficiency of bicarbonate makes the blood overly acidic.",
+          ""
+        ],
+        [
+          "Metabolic alkalosis",
+          "A condition in which an excess of bicarbonate makes the blood overly alkaline.",
+          ""
+        ],
+        [
+          "Plasma osmolality",
+          "The concentration of solute particles per kilogram of blood plasma solvent, reflecting hydration status.",
+          ""
+        ],
+        [
+          "Respiratory acidosis",
+          "A condition in which excess carbon dioxide makes the blood overly acidic.",
+          ""
+        ],
+        [
+          "Respiratory alkalosis",
+          "A condition in which a deficiency of carbon dioxide makes the blood overly alkaline.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "homeostasis",
+      "name": "Homeostasis",
+      "short": "Homeostasis",
+      "color": "#9b6ae0",
+      "dark": "#bb95ff",
+      "defs": [
+        [
+          "Control center",
+          "The component that compares a monitored value to its normal range and activates an effector if needed.",
+          ""
+        ],
+        [
+          "Effector",
+          "The component that produces a change reversing a deviation and restoring the value to its normal range.",
+          ""
+        ],
+        [
+          "Feedback loop",
+          "A cycle of stimulus, sensor, control center, and effector that regulates a physiological condition.",
+          ""
+        ],
+        [
+          "Homeostasis",
+          "The process by which cells throughout the body maintain internal conditions within a narrow life-compatible range.",
+          ""
+        ],
+        [
+          "Negative feedback",
+          "A mechanism that reverses a deviation from the set point, maintaining body parameters within normal range.",
+          ""
+        ],
+        [
+          "Normal range",
+          "The restricted set of values for a physiological parameter that is optimally healthful and stable.",
+          ""
+        ],
+        [
+          "Positive feedback",
+          "A mechanism that intensifies a change, moving the body farther from the normal range until an endpoint.",
+          ""
+        ],
+        [
+          "Sensor",
+          "A component of a feedback system that monitors a physiological value and reports it to the control center.",
+          ""
+        ],
+        [
+          "Set point",
+          "The physiological value around which the normal range of a parameter fluctuates.",
+          ""
+        ],
+        [
+          "Stimulus",
+          "A deviation of a physiological parameter beyond its normal range that triggers a feedback response.",
+          ""
+        ],
+        [
+          "Epinephrine",
+          "Hormone that breaks down glycogen to glucose, increasing metabolism and heat production.",
+          ""
+        ],
+        [
+          "Heat-gain center",
+          "Brain cells activated by cold that reduce skin blood flow and trigger heat-producing responses.",
+          ""
+        ],
+        [
+          "Heat-loss center",
+          "A cluster of brain cells stimulated when body temperature exceeds its normal range to promote cooling.",
+          ""
+        ],
+        [
+          "Shivering",
+          "Involuntary skeletal muscle contractions that generate heat during severe cold exposure.",
+          ""
+        ],
+        [
+          "Sweating",
+          "Activation of sweat glands whose evaporating sweat removes heat from the skin surface.",
+          ""
+        ],
+        [
+          "Temperature regulation center",
+          "The brain region that receives temperature data and activates heat-loss or heat-gain responses.",
+          ""
+        ],
+        [
+          "Thermoregulation",
+          "The process of maintaining body temperature within its normal range through heat gain or loss.",
+          ""
+        ],
+        [
+          "Thyroid hormone",
+          "Hormone released to increase metabolic activity and heat production throughout the body.",
+          ""
+        ],
+        [
+          "Vasoconstriction",
+          "Narrowing of skin blood vessels that reduces blood flow to the surface to conserve heat.",
+          ""
+        ],
+        [
+          "Vasodilation",
+          "Widening of skin blood vessels that increases blood flow to the surface to radiate heat.",
+          ""
+        ],
+        [
+          "Acid",
+          "A substance that donates hydrogen ions, lowering pH and increasing acidity.",
+          ""
+        ],
+        [
+          "Acidosis",
+          "A condition in which blood pH falls below 7.35, making it too acidic.",
+          ""
+        ],
+        [
+          "Alkalosis",
+          "A condition in which blood pH rises above 7.45, making it too alkaline.",
+          ""
+        ],
+        [
+          "Base",
+          "A substance that accepts hydrogen ions or donates hydroxyl ions, raising pH.",
+          ""
+        ],
+        [
+          "Bicarbonate",
+          "An ion that serves as a key buffer component and helps maintain acid-base balance.",
+          "HCO3-"
+        ],
+        [
+          "Bicarbonate-carbonic acid buffer",
+          "The primary buffering system of interstitial fluid, maintaining a 20:1 bicarbonate to carbonic acid ratio.",
+          ""
+        ],
+        [
+          "Buffer",
+          "A chemical system that prevents radical pH change by absorbing excess hydrogen or hydroxyl ions.",
+          ""
+        ],
+        [
+          "Carbonic acid",
+          "A weak acid formed from carbon dioxide and water that participates in buffering.",
+          "H2CO3"
+        ],
+        [
+          "Carbonic anhydrase",
+          "An enzyme in red blood cells that converts carbon dioxide into bicarbonate.",
+          ""
+        ],
+        [
+          "pH",
+          "A measure of the acidity or alkalinity of a solution based on hydrogen ion concentration.",
+          ""
+        ],
+        [
+          "Aldosterone",
+          "Hormone that increases sodium reabsorption in kidney tubules, with water following.",
+          ""
+        ],
+        [
+          "Antidiuretic hormone (ADH)",
+          "Hormone that increases water reabsorption from kidney collecting tubules.",
+          ""
+        ],
+        [
+          "Aquaporin",
+          "A water channel protein inserted into kidney tubule membranes to increase water reabsorption.",
+          ""
+        ],
+        [
+          "Dehydration",
+          "A net loss of water resulting in insufficient water in blood and other tissues.",
+          ""
+        ],
+        [
+          "Diuresis",
+          "Production of urine in excess of normal levels, expelling excess body water.",
+          ""
+        ],
+        [
+          "Osmolality",
+          "The concentration of solute particles per kilogram of solvent, reflecting hydration state.",
+          ""
+        ],
+        [
+          "Osmoreceptor",
+          "A sensory receptor in the hypothalamus that monitors blood osmolality.",
+          ""
+        ],
+        [
+          "Osmosis",
+          "The diffusion of water across a semipermeable membrane from higher to lower water concentration.",
+          ""
+        ],
+        [
+          "Plasma osmolality",
+          "The solute-to-water ratio of blood plasma, monitored to assess hydration.",
+          ""
+        ],
+        [
+          "Thirst response",
+          "Physiological processes triggered by dehydration that produce conscious thirst and water-seeking.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "id": "anatomy-and-physiology",
+  "name": "Anatomy and Physiology",
+  "tagline": "Anatomy and physiology, in one line.",
+  "topic": "Anatomy and physiology for pre-health and allied-health students",
+  "audience": "Pre-health and allied-health students",
+  "level": "intro",
+  "jurisdiction": "global",
+  "spelling": "US",
+  "language": "en",
+  "regulated": false,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "cells and tissues",
+      "skeletal and muscular systems",
+      "cardiovascular and respiratory systems",
+      "nervous and endocrine systems",
+      "digestive and urinary systems",
+      "homeostasis"
+    ],
+    "excludes": [
+      "advanced pathophysiology",
+      "clinical diagnosis and treatment",
+      "pharmacology and drug dosing",
+      "surgical anatomy",
+      "patient-specific advice"
+    ]
+  },
+  "assumptions": [
+    "introductory college-level anatomy and physiology",
+    "US spelling",
+    "vocabulary only, not clinical training",
+    "some definitions benefit from an accompanying image (noted in README)"
+  ],
+  "disclaimer": "",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "cells-and-tissues",
+          "name": "Cells and Tissues",
+          "shortName": "Cells and tissues",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/anatomy-and-physiology/subjects/cells-and-tissues.json",
+          "definitionCount": 45,
+          "unitCount": 4,
+          "coveredUnits": 4,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "skeletal-muscular",
+          "name": "Skeletal and Muscular Systems",
+          "shortName": "Skeletal and muscular",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/anatomy-and-physiology/subjects/skeletal-muscular.json",
+          "definitionCount": 50,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "cardiovascular-respiratory",
+          "name": "Cardiovascular and Respiratory Systems",
+          "shortName": "Cardiovascular and respiratory",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/anatomy-and-physiology/subjects/cardiovascular-respiratory.json",
+          "definitionCount": 55,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "nervous-endocrine",
+          "name": "Nervous and Endocrine Systems",
+          "shortName": "Nervous and endocrine",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/anatomy-and-physiology/subjects/nervous-endocrine.json",
+          "definitionCount": 50,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "digestive-urinary",
+          "name": "Digestive and Urinary Systems",
+          "shortName": "Digestive and urinary",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/anatomy-and-physiology/subjects/digestive-urinary.json",
+          "definitionCount": 45,
+          "unitCount": 4,
+          "coveredUnits": 4,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "homeostasis",
+          "name": "Homeostasis",
+          "shortName": "Homeostasis",
+          "code": null,
+          "courseType": "core",
+          "color": "#9b6ae0",
+          "dark": "#bb95ff",
+          "data": "data/collections/anatomy-and-physiology/subjects/homeostasis.json",
+          "definitionCount": 40,
+          "unitCount": 4,
+          "coveredUnits": 4,
+          "status": "complete",
+          "sourceCount": 1
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 1,
+    "subjects": 6,
+    "definitions": 285,
+    "completeSubjects": 6,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "collectionId": "anatomy-and-physiology",
+  "generatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "openstax-anatomy-physiology-2e",
+      "title": "Anatomy and Physiology 2e",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": "Primary source for all subjects."
+    }
+  ]
+}

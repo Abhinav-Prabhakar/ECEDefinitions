@@ -11,59 +11,800 @@
   "color": "#22a06b",
   "dark": "#4bd399",
   "units": [
-    { "number": 1, "title": "Digestive tract" },
-    { "number": 2, "title": "Accessory organs" },
-    { "number": 3, "title": "Urinary tract" },
-    { "number": 4, "title": "Fluid balance" }
+    {
+      "number": 1,
+      "title": "Digestive tract"
+    },
+    {
+      "number": 2,
+      "title": "Accessory organs"
+    },
+    {
+      "number": 3,
+      "title": "Urinary tract"
+    },
+    {
+      "number": 4,
+      "title": "Fluid balance"
+    }
   ],
   "definitions": [
-    { "id": "alimentary-canal", "term": "Alimentary canal", "definition": "The continuous muscular tube of the digestive tract that extends from the mouth to the anus.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Esophagus", "Stomach", "Large intestine"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "ingestion", "term": "Ingestion", "definition": "The process of taking food into the gastrointestinal tract through the mouth.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Deglutition", "Propulsion", "Absorption"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "propulsion", "term": "Propulsion", "definition": "The voluntary act of swallowing and the involuntary process of peristalsis that move food through the digestive tract.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Motility", "Segmentation", "Peristalsis"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "mechanical-digestion", "term": "Mechanical digestion", "definition": "Chewing, mixing, and segmentation that physically break food into smaller pieces for chemical digestion.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Chemical digestion", "Mastication", "Segmentation"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "chemical-digestion", "term": "Chemical digestion", "definition": "The enzymatic breakdown of food molecules into smaller absorbable components.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Mechanical digestion", "Absorption", "Hydrolysis"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "absorption", "term": "Absorption", "definition": "The passage of digested nutrients from the intestinal lumen through mucosal cells into blood or lymph.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Digestion", "Secretion", "Defecation"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "defecation", "term": "Defecation", "definition": "The elimination of undigested material from the body in the form of feces.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Urination", "Absorption", "Excretion"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "peristalsis", "term": "Peristalsis", "definition": "Wavelike muscular contractions and relaxations that propel food along the gastrointestinal tract.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Segmentation", "Motility", "Mixing wave"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "segmentation", "term": "Segmentation", "definition": "Alternating contractions and relaxations of nonadjacent intestinal segments that mix food with digestive juices.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Peristalsis", "Mass movement", "Churning"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "chyme", "term": "Chyme", "definition": "The soupy liquid formed when food is mixed with digestive juices in the stomach.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Bolus", "Feces", "Chyle"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "bolus", "term": "Bolus", "definition": "A mass of chewed food ready to be swallowed.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Chyme", "Feces", "Food"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "small-intestine", "term": "Small intestine", "definition": "The section of the alimentary canal where most digestion and nutrient absorption occur.", "formula": "", "unit": 1, "unitTitle": "Digestive tract", "aliases": [], "confusables": ["Large intestine", "Duodenum", "Ileum"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-
-    { "id": "accessory-digestive-organ", "term": "Accessory digestive organ", "definition": "Organs that aid digestion but are not part of the alimentary canal, such as the liver, pancreas, and gallbladder.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Alimentary canal", "Gastrointestinal tract", "Viscera"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "salivary-gland", "term": "Salivary gland", "definition": "An exocrine gland that secretes saliva into the mouth.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Parotid gland", "Submandibular gland", "Sublingual gland"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "saliva", "term": "Saliva", "definition": "An aqueous solution of proteins and ions secreted into the mouth by salivary glands.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Salivary amylase", "Mucus", "Gastric juice"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "salivary-amylase", "term": "Salivary amylase", "definition": "A digestive enzyme in saliva that begins the chemical breakdown of starch.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Pancreatic amylase", "Pepsin", "Lipase"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "liver", "term": "Liver", "definition": "The body's largest gland, whose main digestive role is producing bile.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Gallbladder", "Pancreas", "Hepatocyte"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "hepatocyte", "term": "Hepatocyte", "definition": "The major functional cell of the liver that performs metabolic and secretory tasks.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Kupffer cell", "Bile canaliculus", "Hepatic lobule"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "gallbladder", "term": "Gallbladder", "definition": "An accessory organ that stores and concentrates bile produced by the liver.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Liver", "Cystic duct", "Bile duct"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "bile", "term": "Bile", "definition": "An alkaline fluid produced by the liver that emulsifies lipids for digestion.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Bilirubin", "Pancreatic juice", "Saliva"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "pancreas", "term": "Pancreas", "definition": "An accessory organ that secretes pancreatic juice containing digestive enzymes and bicarbonate.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Liver", "Gallbladder", "Spleen"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "pancreatic-juice", "term": "Pancreatic juice", "definition": "The secretion of the pancreas containing digestive enzymes and bicarbonate.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Bile", "Saliva", "Gastric juice"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-    { "id": "pancreatic-amylase", "term": "Pancreatic amylase", "definition": "An enzyme secreted by the pancreas that completes carbohydrate digestion in the small intestine.", "formula": "", "unit": 2, "unitTitle": "Accessory organs", "aliases": [], "confusables": ["Salivary amylase", "Pancreatic lipase", "Trypsin"], "sources": ["openstax-anatomy-physiology-2e#ch.23"] },
-
-    { "id": "nephron", "term": "Nephron", "definition": "The functional unit of the kidney that filters blood and forms urine.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Renal corpuscle", "Collecting duct", "Glomerulus"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "renal-corpuscle", "term": "Renal corpuscle", "definition": "The part of a nephron consisting of the glomerulus and Bowman's capsule.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Nephron", "Renal tubule", "Glomerulus"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "glomerulus", "term": "Glomerulus", "definition": "A tuft of capillaries in the kidney that filters blood based on size.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Bowman's capsule", "Renal corpuscle", "Podocyte"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "bowmans-capsule", "term": "Bowman's capsule", "definition": "A cup-shaped sac surrounding the glomerulus that collects the filtrate.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Glomerulus", "Renal corpuscle", "Filtration slits"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "proximal-convoluted-tubule", "term": "Proximal convoluted tubule", "definition": "The highly active nephron segment that reabsorbs and secretes substances from filtrate.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": ["PCT"], "confusables": ["Distal convoluted tubule", "Loop of Henle", "Collecting duct"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "loop-of-henle", "term": "Loop of Henle", "definition": "The descending and ascending portion of a nephron between the proximal and distal tubules.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Proximal convoluted tubule", "Distal convoluted tubule", "Collecting duct"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "distal-convoluted-tubule", "term": "Distal convoluted tubule", "definition": "The nephron segment that receives filtrate from the loop of Henle and empties into collecting ducts.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": ["DCT"], "confusables": ["Proximal convoluted tubule", "Loop of Henle", "Collecting duct"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "collecting-duct", "term": "Collecting duct", "definition": "A tube that receives urine from nephrons and carries it toward the renal pelvis.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Distal convoluted tubule", "Renal tubule", "Ureter"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "calyces", "term": "Calyces", "definition": "Cup-like structures that receive urine from collecting ducts and pass it to the renal pelvis.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Renal pelvis", "Renal pyramid", "Renal papilla"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "urethra", "term": "Urethra", "definition": "The tube that transports urine from the urinary bladder to the outside of the body.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Ureter", "Bladder", "Meatus"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-    { "id": "detrusor-muscle", "term": "Detrusor muscle", "definition": "The smooth muscle in the bladder wall that contracts to expel urine.", "formula": "", "unit": 3, "unitTitle": "Urinary tract", "aliases": [], "confusables": ["Sphincter", "Trigone", "Bladder wall"], "sources": ["openstax-anatomy-physiology-2e#ch.25"] },
-
-    { "id": "extracellular-fluid", "term": "Extracellular fluid", "definition": "Fluid located outside cells, including interstitial fluid, blood plasma, and other body fluids.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": ["ECF"], "confusables": ["Intracellular fluid", "Interstitial fluid", "Plasma"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "intracellular-fluid", "term": "Intracellular fluid", "definition": "The fluid contained within the cytosol of body cells.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": ["ICF"], "confusables": ["Extracellular fluid", "Interstitial fluid", "Cytosol"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "interstitial-fluid", "term": "Interstitial fluid", "definition": "The fluid in small spaces between cells that is not contained within blood vessels.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": ["IF"], "confusables": ["Extracellular fluid", "Intracellular fluid", "Plasma"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "plasma-osmolality", "term": "Plasma osmolality", "definition": "The ratio of solutes to solvent in blood plasma, reflecting hydration status.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Specific gravity", "Osmolarity", "Hematocrit"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "antidiuretic-hormone", "term": "Antidiuretic hormone (ADH)", "definition": "A hormone that increases water reabsorption from the kidney's collecting tubules.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": ["Vasopressin"], "confusables": ["Aldosterone", "Renin", "Angiotensin II"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "dehydration", "term": "Dehydration", "definition": "A state in which the body contains insufficient water in blood and tissues.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Diuresis", "Edema", "Hypovolemia"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "diuresis", "term": "Diuresis", "definition": "The production of an abnormally large volume of urine.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Dehydration", "Oliguria", "Anuria"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "metabolic-acidosis", "term": "Metabolic acidosis", "definition": "A condition in which a deficiency of bicarbonate makes the blood overly acidic.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Respiratory acidosis", "Metabolic alkalosis", "Ketoacidosis"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "metabolic-alkalosis", "term": "Metabolic alkalosis", "definition": "A condition in which an excess of bicarbonate makes the blood overly alkaline.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Respiratory alkalosis", "Metabolic acidosis", "Hypercapnia"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "respiratory-acidosis", "term": "Respiratory acidosis", "definition": "A condition in which excess carbon dioxide makes the blood overly acidic.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Metabolic acidosis", "Respiratory alkalosis", "Hypercapnia"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] },
-    { "id": "respiratory-alkalosis", "term": "Respiratory alkalosis", "definition": "A condition in which a deficiency of carbon dioxide makes the blood overly alkaline.", "formula": "", "unit": 4, "unitTitle": "Fluid balance", "aliases": [], "confusables": ["Metabolic alkalosis", "Respiratory acidosis", "Hypocapnia"], "sources": ["openstax-anatomy-physiology-2e#ch.26"] }
+    {
+      "id": "absorption",
+      "term": "Absorption",
+      "definition": "The passage of digested nutrients from the intestinal lumen through mucosal cells into blood or lymph.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Defecation",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "alimentary-canal",
+      "term": "Alimentary canal",
+      "definition": "The continuous muscular tube of the digestive tract that extends from the mouth to the anus.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Ingestion",
+        "Propulsion",
+        "Mechanical digestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "bolus",
+      "term": "Bolus",
+      "definition": "A mass of chewed food ready to be swallowed.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Chyme",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "chemical-digestion",
+      "term": "Chemical digestion",
+      "definition": "The enzymatic breakdown of food molecules into smaller absorbable components.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Mechanical digestion",
+        "Absorption",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "chyme",
+      "term": "Chyme",
+      "definition": "The soupy liquid formed when food is mixed with digestive juices in the stomach.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Bolus",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "defecation",
+      "term": "Defecation",
+      "definition": "The elimination of undigested material from the body in the form of feces.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Absorption",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "ingestion",
+      "term": "Ingestion",
+      "definition": "The process of taking food into the gastrointestinal tract through the mouth.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Propulsion",
+        "Absorption",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "mechanical-digestion",
+      "term": "Mechanical digestion",
+      "definition": "Chewing, mixing, and segmentation that physically break food into smaller pieces for chemical digestion.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Chemical digestion",
+        "Segmentation",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "peristalsis",
+      "term": "Peristalsis",
+      "definition": "Wavelike muscular contractions and relaxations that propel food along the gastrointestinal tract.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Segmentation",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "propulsion",
+      "term": "Propulsion",
+      "definition": "The voluntary act of swallowing and the involuntary process of peristalsis that move food through the digestive tract.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Segmentation",
+        "Peristalsis",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "segmentation",
+      "term": "Segmentation",
+      "definition": "Alternating contractions and relaxations of nonadjacent intestinal segments that mix food with digestive juices.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Peristalsis",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "small-intestine",
+      "term": "Small intestine",
+      "definition": "The section of the alimentary canal where most digestion and nutrient absorption occur.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Digestive tract",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "accessory-digestive-organ",
+      "term": "Accessory digestive organ",
+      "definition": "Organs that aid digestion but are not part of the alimentary canal, such as the liver, pancreas, and gallbladder.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "bile",
+      "term": "Bile",
+      "definition": "An alkaline fluid produced by the liver that emulsifies lipids for digestion.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Pancreatic juice",
+        "Saliva",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "gallbladder",
+      "term": "Gallbladder",
+      "definition": "An accessory organ that stores and concentrates bile produced by the liver.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Liver",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "hepatocyte",
+      "term": "Hepatocyte",
+      "definition": "The major functional cell of the liver that performs metabolic and secretory tasks.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "liver",
+      "term": "Liver",
+      "definition": "The body's largest gland, whose main digestive role is producing bile.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Gallbladder",
+        "Pancreas",
+        "Hepatocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "pancreas",
+      "term": "Pancreas",
+      "definition": "An accessory organ that secretes pancreatic juice containing digestive enzymes and bicarbonate.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Liver",
+        "Gallbladder",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "pancreatic-amylase",
+      "term": "Pancreatic amylase",
+      "definition": "An enzyme secreted by the pancreas that completes carbohydrate digestion in the small intestine.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Salivary amylase",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "pancreatic-juice",
+      "term": "Pancreatic juice",
+      "definition": "The secretion of the pancreas containing digestive enzymes and bicarbonate.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Bile",
+        "Saliva",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "saliva",
+      "term": "Saliva",
+      "definition": "An aqueous solution of proteins and ions secreted into the mouth by salivary glands.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Salivary amylase",
+        "Mucus",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "salivary-amylase",
+      "term": "Salivary amylase",
+      "definition": "A digestive enzyme in saliva that begins the chemical breakdown of starch.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Pancreatic amylase",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "salivary-gland",
+      "term": "Salivary gland",
+      "definition": "An exocrine gland that secretes saliva into the mouth.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Accessory organs",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.23"
+      ]
+    },
+    {
+      "id": "bowmans-capsule",
+      "term": "Bowman's capsule",
+      "definition": "A cup-shaped sac surrounding the glomerulus that collects the filtrate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Glomerulus",
+        "Renal corpuscle",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "calyces",
+      "term": "Calyces",
+      "definition": "Cup-like structures that receive urine from collecting ducts and pass it to the renal pelvis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "collecting-duct",
+      "term": "Collecting duct",
+      "definition": "A tube that receives urine from nephrons and carries it toward the renal pelvis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Distal convoluted tubule",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "detrusor-muscle",
+      "term": "Detrusor muscle",
+      "definition": "The smooth muscle in the bladder wall that contracts to expel urine.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "distal-convoluted-tubule",
+      "term": "Distal convoluted tubule",
+      "definition": "The nephron segment that receives filtrate from the loop of Henle and empties into collecting ducts.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [
+        "DCT"
+      ],
+      "confusables": [
+        "Proximal convoluted tubule",
+        "Loop of Henle",
+        "Collecting duct"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "glomerulus",
+      "term": "Glomerulus",
+      "definition": "A tuft of capillaries in the kidney that filters blood based on size.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Bowman's capsule",
+        "Renal corpuscle",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "loop-of-henle",
+      "term": "Loop of Henle",
+      "definition": "The descending and ascending portion of a nephron between the proximal and distal tubules.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Proximal convoluted tubule",
+        "Distal convoluted tubule",
+        "Collecting duct"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "nephron",
+      "term": "Nephron",
+      "definition": "The functional unit of the kidney that filters blood and forms urine.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Renal corpuscle",
+        "Collecting duct",
+        "Glomerulus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "proximal-convoluted-tubule",
+      "term": "Proximal convoluted tubule",
+      "definition": "The highly active nephron segment that reabsorbs and secretes substances from filtrate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [
+        "PCT"
+      ],
+      "confusables": [
+        "Distal convoluted tubule",
+        "Loop of Henle",
+        "Collecting duct"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "renal-corpuscle",
+      "term": "Renal corpuscle",
+      "definition": "The part of a nephron consisting of the glomerulus and Bowman's capsule.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Nephron",
+        "Glomerulus",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "urethra",
+      "term": "Urethra",
+      "definition": "The tube that transports urine from the urinary bladder to the outside of the body.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Urinary tract",
+      "aliases": [],
+      "confusables": [
+        "Alimentary canal",
+        "Ingestion",
+        "Propulsion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.25"
+      ]
+    },
+    {
+      "id": "antidiuretic-hormone",
+      "term": "Antidiuretic hormone (ADH)",
+      "definition": "A hormone that increases water reabsorption from the kidney's collecting tubules.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [
+        "Vasopressin"
+      ],
+      "confusables": [
+        "Aldosterone",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "dehydration",
+      "term": "Dehydration",
+      "definition": "A state in which the body contains insufficient water in blood and tissues.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Diuresis",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "diuresis",
+      "term": "Diuresis",
+      "definition": "The production of an abnormally large volume of urine.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Dehydration",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "extracellular-fluid",
+      "term": "Extracellular fluid",
+      "definition": "Fluid located outside cells, including interstitial fluid, blood plasma, and other body fluids.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [
+        "ECF"
+      ],
+      "confusables": [
+        "Intracellular fluid",
+        "Interstitial fluid",
+        "Plasma"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "interstitial-fluid",
+      "term": "Interstitial fluid",
+      "definition": "The fluid in small spaces between cells that is not contained within blood vessels.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [
+        "IF"
+      ],
+      "confusables": [
+        "Extracellular fluid",
+        "Intracellular fluid",
+        "Plasma"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "intracellular-fluid",
+      "term": "Intracellular fluid",
+      "definition": "The fluid contained within the cytosol of body cells.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [
+        "ICF"
+      ],
+      "confusables": [
+        "Extracellular fluid",
+        "Interstitial fluid",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "metabolic-acidosis",
+      "term": "Metabolic acidosis",
+      "definition": "A condition in which a deficiency of bicarbonate makes the blood overly acidic.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Respiratory acidosis",
+        "Metabolic alkalosis",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "metabolic-alkalosis",
+      "term": "Metabolic alkalosis",
+      "definition": "A condition in which an excess of bicarbonate makes the blood overly alkaline.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Respiratory alkalosis",
+        "Metabolic acidosis",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "plasma-osmolality",
+      "term": "Plasma osmolality",
+      "definition": "The concentration of solute particles per kilogram of blood plasma solvent, reflecting hydration status.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Hematocrit",
+        "Alimentary canal",
+        "Ingestion"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "respiratory-acidosis",
+      "term": "Respiratory acidosis",
+      "definition": "A condition in which excess carbon dioxide makes the blood overly acidic.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Metabolic acidosis",
+        "Respiratory alkalosis",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "respiratory-alkalosis",
+      "term": "Respiratory alkalosis",
+      "definition": "A condition in which a deficiency of carbon dioxide makes the blood overly alkaline.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fluid balance",
+      "aliases": [],
+      "confusables": [
+        "Metabolic alkalosis",
+        "Respiratory acidosis",
+        "Alimentary canal"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    }
   ]
 }

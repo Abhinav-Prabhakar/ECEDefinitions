@@ -11,66 +11,890 @@
   "color": "#e0567f",
   "dark": "#ff7f9f",
   "units": [
-    { "number": 1, "title": "Neuron and nerve" },
-    { "number": 2, "title": "Brain and spinal cord" },
-    { "number": 3, "title": "Senses" },
-    { "number": 4, "title": "Endocrine glands" },
-    { "number": 5, "title": "Hormones" }
+    {
+      "number": 1,
+      "title": "Neuron and nerve"
+    },
+    {
+      "number": 2,
+      "title": "Brain and spinal cord"
+    },
+    {
+      "number": 3,
+      "title": "Senses"
+    },
+    {
+      "number": 4,
+      "title": "Endocrine glands"
+    },
+    {
+      "number": 5,
+      "title": "Hormones"
+    }
   ],
   "definitions": [
-    { "id": "neuron", "term": "Neuron", "definition": "A nerve cell that generates and propagates electrical signals throughout the nervous system.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Axon", "Dendrite", "Synapse"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "axon", "term": "Axon", "definition": "The single fiber carrying an electrical signal away from the neuron cell body.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Dendrite", "Myelin", "Synapse"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "dendrite", "term": "Dendrite", "definition": "Branchlike fibers that receive incoming signals from other neurons or sensory cells.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Axon", "Myelin", "Synapse"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "synapse", "term": "Synapse", "definition": "The narrow junction where a chemical signal passes between neurons or cells.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Axon", "Dendrite", "Neurotransmitter"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "myelin", "term": "Myelin", "definition": "A lipid-rich insulating sheath around axons that speeds electrical signal conduction.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Axon", "Action potential", "Synapse"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "action-potential", "term": "Action potential", "definition": "A rapid change in membrane voltage that transmits an electrical signal.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Myelin", "Neurotransmitter", "Synapse"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "neurotransmitter", "term": "Neurotransmitter", "definition": "A chemical messenger released from a neuron to alter a target cell.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Synapse", "Axon", "Dendrite"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "nerve", "term": "Nerve", "definition": "A cord-like bundle of axons in the peripheral nervous system transmitting signals.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Neuron", "Axon", "Synapse"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "glial-cell", "term": "Glial cell", "definition": "A supportive neural tissue cell that maintains and supports neurons.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Neuron", "Axon", "Myelin"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "schwann-cell", "term": "Schwann cell", "definition": "A peripheral nervous system glial cell that forms myelin around axons.", "formula": "", "unit": 1, "unitTitle": "Neuron and nerve", "aliases": [], "confusables": ["Oligodendrocyte", "Myelin", "Axon"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-
-    { "id": "cerebrum", "term": "Cerebrum", "definition": "The brain region responsible for higher functions like memory, emotion, and consciousness.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebellum", "Spinal cord", "Cerebral cortex"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "cerebellum", "term": "Cerebellum", "definition": "The brain region that compares movement commands with sensory feedback for coordination.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebrum", "Spinal cord", "Myelin"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "spinal-cord", "term": "Spinal cord", "definition": "The central nervous system organ within the vertebral cavity mediating reflexes.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebrum", "Cerebellum", "Neuron"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "thalamus", "term": "Thalamus", "definition": "A diencephalon region relaying information between the cerebrum and periphery.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Hypothalamus", "Cerebrum", "Brain stem"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "hypothalamus", "term": "Hypothalamus", "definition": "A diencephalon region coordinating autonomic and endocrine control of homeostasis.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Thalamus", "Pituitary gland", "Cerebrum"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "brain-stem", "term": "Brain stem", "definition": "The brain region including midbrain, pons, and medulla connecting brain to cord.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebrum", "Cerebellum", "Spinal cord"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "meninges", "term": "Meninges", "definition": "Protective connective tissue coverings surrounding the central nervous system.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebrum", "Spinal cord", "Cerebellum"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "cranial-nerve", "term": "Cranial nerve", "definition": "One of twelve nerves connected to the brain serving head and neck.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Spinal nerve", "Nerve", "Neuron"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "cerebral-cortex", "term": "Cerebral cortex", "definition": "The outer gray matter of the brain where conscious perception occurs.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebrum", "Gray matter", "White matter"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "corpus-callosum", "term": "Corpus callosum", "definition": "The large white matter tract connecting the right and left cerebral hemispheres.", "formula": "", "unit": 2, "unitTitle": "Brain and spinal cord", "aliases": [], "confusables": ["Cerebrum", "White matter", "Cerebral cortex"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-
-    { "id": "olfaction", "term": "Olfaction", "definition": "The special sense of smell with a direct connection to the cerebrum.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Optic nerve", "Vestibulocochlear nerve", "Proprioception"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "optic-nerve", "term": "Optic nerve", "definition": "The second cranial nerve responsible for visual sensation.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Olfaction", "Vestibulocochlear nerve", "Cranial nerve"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "vestibulocochlear-nerve", "term": "Vestibulocochlear nerve", "definition": "The eighth cranial nerve responsible for hearing and balance sensations.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Optic nerve", "Olfaction", "Cranial nerve"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "proprioception", "term": "Proprioception", "definition": "Sensory perception of body position and movement of body parts.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Kinesthesia", "Somatosensation", "Thermoreceptor"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "somatosensation", "term": "Somatosensation", "definition": "General body senses including touch, pain, temperature, and proprioception.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Proprioception", "Kinesthesia", "Thermoreceptor"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "thermoreceptor", "term": "Thermoreceptor", "definition": "A sensory receptor that transduces temperature stimuli into neural signals.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Proprioception", "Somatosensation", "Olfaction"], "sources": ["openstax-anatomy-physiology-2e#ch.12"] },
-    { "id": "kinesthesia", "term": "Kinesthesia", "definition": "The general sensory perception of movement of the body.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Proprioception", "Somatosensation", "Thermoreceptor"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-    { "id": "extraocular-muscles", "term": "Extraocular muscles", "definition": "Six skeletal muscles controlling eye movement within the orbit.", "formula": "", "unit": 3, "unitTitle": "Senses", "aliases": [], "confusables": ["Optic nerve", "Olfaction", "Vestibulocochlear nerve"], "sources": ["openstax-anatomy-physiology-2e#ch.13"] },
-
-    { "id": "pituitary-gland", "term": "Pituitary gland", "definition": "A bean-sized organ suspended from the hypothalamus that secretes hormones.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": ["hypophysis"], "confusables": ["Hypothalamus", "Thyroid gland", "Adrenal glands"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "thyroid-gland", "term": "Thyroid gland", "definition": "A large endocrine gland responsible for synthesizing thyroid hormones.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Parathyroid glands", "Pituitary gland", "Adrenal glands"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "parathyroid-glands", "term": "Parathyroid glands", "definition": "Small glands embedded in the thyroid that produce parathyroid hormone.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Thyroid gland", "Pituitary gland", "Adrenal glands"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "adrenal-glands", "term": "Adrenal glands", "definition": "Endocrine glands atop each kidney regulating stress response and electrolytes.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Adrenal cortex", "Adrenal medulla", "Pituitary gland"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "pancreas", "term": "Pancreas", "definition": "An organ with endocrine and exocrine functions regulating digestion and glucose.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Thyroid gland", "Pituitary gland", "Liver"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "pineal-gland", "term": "Pineal gland", "definition": "An endocrine gland secreting melatonin to regulate the sleep-wake cycle.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Pituitary gland", "Thyroid gland", "Adrenal glands"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "thymus", "term": "Thymus", "definition": "An organ involved in T-cell development, active during infancy and childhood.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Pineal gland", "Thyroid gland", "Adrenal glands"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "adrenal-cortex", "term": "Adrenal cortex", "definition": "The outer adrenal region producing mineralocorticoids and glucocorticoids.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Adrenal medulla", "Adrenal glands", "Pituitary gland"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "adrenal-medulla", "term": "Adrenal medulla", "definition": "The inner adrenal layer producing epinephrine and norepinephrine for stress.", "formula": "", "unit": 4, "unitTitle": "Endocrine glands", "aliases": [], "confusables": ["Adrenal cortex", "Adrenal glands", "Pituitary gland"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-
-    { "id": "hormone", "term": "Hormone", "definition": "A secretion traveling via blood or lymph to induce target cell responses.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Neurotransmitter", "Insulin", "Thyroid gland"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "insulin", "term": "Insulin", "definition": "A pancreatic hormone enhancing cellular glucose uptake, lowering blood glucose.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Glucagon", "Hormone", "Pancreas"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "glucagon", "term": "Glucagon", "definition": "A pancreatic hormone stimulating glycogen breakdown, increasing blood glucose.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Insulin", "Hormone", "Pancreas"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "cortisol", "term": "Cortisol", "definition": "A glucocorticoid important in glucose metabolism and immune downregulation.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Aldosterone", "Epinephrine", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "aldosterone", "term": "Aldosterone", "definition": "A hormone stimulating sodium and fluid retention, increasing blood volume.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Cortisol", "Antidiuretic hormone", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "epinephrine", "term": "Epinephrine", "definition": "The primary catecholamine secreted by the adrenal medulla during stress.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": ["adrenaline"], "confusables": ["Norepinephrine", "Cortisol", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "thyroxine", "term": "Thyroxine", "definition": "An amino acid-derived thyroid hormone more abundant but less potent.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": ["T4", "tetraiodothyronine"], "confusables": ["Triiodothyronine", "Calcitonin", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "growth-hormone", "term": "Growth hormone", "definition": "An anterior pituitary hormone promoting tissue building and nutrient metabolism.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": ["GH", "somatotropin"], "confusables": ["Prolactin", "Thyroid-stimulating hormone", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "antidiuretic-hormone", "term": "Antidiuretic hormone", "definition": "A hypothalamic hormone signaling kidneys to reabsorb water.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": ["ADH", "vasopressin"], "confusables": ["Aldosterone", "Oxytocin", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "oxytocin", "term": "Oxytocin", "definition": "A hypothalamic hormone stimulating uterine contractions and milk ejection.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Antidiuretic hormone", "Prolactin", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "calcitonin", "term": "Calcitonin", "definition": "A thyroid hormone that decreases blood calcium levels.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Parathyroid hormone", "Thyroxine", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "testosterone", "term": "Testosterone", "definition": "A steroid hormone important for sperm maturation and secondary sex traits.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Estrogens", "Progesterone", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] },
-    { "id": "estrogens", "term": "Estrogens", "definition": "Female sex hormones important for reproductive tract development and pregnancy.", "formula": "", "unit": 5, "unitTitle": "Hormones", "aliases": [], "confusables": ["Testosterone", "Progesterone", "Hormone"], "sources": ["openstax-anatomy-physiology-2e#ch.17"] }
+    {
+      "id": "action-potential",
+      "term": "Action potential",
+      "definition": "A rapid change in membrane voltage that transmits an electrical signal.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Myelin",
+        "Neurotransmitter",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "axon",
+      "term": "Axon",
+      "definition": "The single fiber carrying an electrical signal away from the neuron cell body.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Dendrite",
+        "Myelin",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "dendrite",
+      "term": "Dendrite",
+      "definition": "Branchlike fibers that receive incoming signals from other neurons or sensory cells.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Myelin",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "glial-cell",
+      "term": "Glial cell",
+      "definition": "A supportive neural tissue cell that maintains and supports neurons.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Neuron",
+        "Axon",
+        "Myelin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "myelin",
+      "term": "Myelin",
+      "definition": "A lipid-rich insulating sheath around axons that speeds electrical signal conduction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Action potential",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "nerve",
+      "term": "Nerve",
+      "definition": "A cord-like bundle of axons in the peripheral nervous system transmitting signals.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Neuron",
+        "Axon",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "neuron",
+      "term": "Neuron",
+      "definition": "A nerve cell that generates and propagates electrical signals throughout the nervous system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Dendrite",
+        "Synapse"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "neurotransmitter",
+      "term": "Neurotransmitter",
+      "definition": "A chemical messenger released from a neuron to alter a target cell.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Synapse",
+        "Axon",
+        "Dendrite"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "schwann-cell",
+      "term": "Schwann cell",
+      "definition": "A peripheral nervous system glial cell that forms myelin around axons.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Myelin",
+        "Axon",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "synapse",
+      "term": "Synapse",
+      "definition": "The narrow junction where a chemical signal passes between neurons or cells.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Neuron and nerve",
+      "aliases": [],
+      "confusables": [
+        "Axon",
+        "Dendrite",
+        "Neurotransmitter"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "brain-stem",
+      "term": "Brain stem",
+      "definition": "The brain region including midbrain, pons, and medulla connecting brain to cord.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Cerebellum",
+        "Spinal cord"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "cerebellum",
+      "term": "Cerebellum",
+      "definition": "The brain region that compares movement commands with sensory feedback for coordination.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Spinal cord",
+        "Myelin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "cerebral-cortex",
+      "term": "Cerebral cortex",
+      "definition": "The outer gray matter of the brain where conscious perception occurs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Neuron",
+        "Axon"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "cerebrum",
+      "term": "Cerebrum",
+      "definition": "The brain region responsible for higher functions like memory, emotion, and consciousness.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebellum",
+        "Spinal cord",
+        "Cerebral cortex"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "corpus-callosum",
+      "term": "Corpus callosum",
+      "definition": "The large white matter tract connecting the right and left cerebral hemispheres.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Cerebral cortex",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "cranial-nerve",
+      "term": "Cranial nerve",
+      "definition": "One of twelve nerves connected to the brain serving head and neck.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Nerve",
+        "Neuron",
+        "Axon"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "hypothalamus",
+      "term": "Hypothalamus",
+      "definition": "A diencephalon region coordinating autonomic and endocrine control of homeostasis.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Thalamus",
+        "Pituitary gland",
+        "Cerebrum"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "meninges",
+      "term": "Meninges",
+      "definition": "Protective connective tissue coverings surrounding the central nervous system.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Spinal cord",
+        "Cerebellum"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "spinal-cord",
+      "term": "Spinal cord",
+      "definition": "The central nervous system organ within the vertebral cavity mediating reflexes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Cerebrum",
+        "Cerebellum",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "thalamus",
+      "term": "Thalamus",
+      "definition": "A diencephalon region relaying information between the cerebrum and periphery.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Brain and spinal cord",
+      "aliases": [],
+      "confusables": [
+        "Hypothalamus",
+        "Cerebrum",
+        "Brain stem"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "extraocular-muscles",
+      "term": "Extraocular muscles",
+      "definition": "Six skeletal muscles controlling eye movement within the orbit.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Optic nerve",
+        "Olfaction",
+        "Vestibulocochlear nerve"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "kinesthesia",
+      "term": "Kinesthesia",
+      "definition": "The general sensory perception of movement of the body.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Proprioception",
+        "Somatosensation",
+        "Thermoreceptor"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "olfaction",
+      "term": "Olfaction",
+      "definition": "The special sense of smell with a direct connection to the cerebrum.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Optic nerve",
+        "Vestibulocochlear nerve",
+        "Proprioception"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "optic-nerve",
+      "term": "Optic nerve",
+      "definition": "The second cranial nerve responsible for visual sensation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Olfaction",
+        "Vestibulocochlear nerve",
+        "Cranial nerve"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "proprioception",
+      "term": "Proprioception",
+      "definition": "Sensory perception of body position and movement of body parts.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Kinesthesia",
+        "Somatosensation",
+        "Thermoreceptor"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "somatosensation",
+      "term": "Somatosensation",
+      "definition": "General body senses including touch, pain, temperature, and proprioception.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Proprioception",
+        "Kinesthesia",
+        "Thermoreceptor"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "thermoreceptor",
+      "term": "Thermoreceptor",
+      "definition": "A sensory receptor that transduces temperature stimuli into neural signals.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Proprioception",
+        "Somatosensation",
+        "Olfaction"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.12"
+      ]
+    },
+    {
+      "id": "vestibulocochlear-nerve",
+      "term": "Vestibulocochlear nerve",
+      "definition": "The eighth cranial nerve responsible for hearing and balance sensations.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Senses",
+      "aliases": [],
+      "confusables": [
+        "Optic nerve",
+        "Olfaction",
+        "Cranial nerve"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.13"
+      ]
+    },
+    {
+      "id": "adrenal-cortex",
+      "term": "Adrenal cortex",
+      "definition": "The outer adrenal region producing mineralocorticoids and glucocorticoids.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Adrenal medulla",
+        "Adrenal glands",
+        "Pituitary gland"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "adrenal-glands",
+      "term": "Adrenal glands",
+      "definition": "Endocrine glands atop each kidney regulating stress response and electrolytes.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Adrenal cortex",
+        "Adrenal medulla",
+        "Pituitary gland"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "adrenal-medulla",
+      "term": "Adrenal medulla",
+      "definition": "The inner adrenal layer producing epinephrine and norepinephrine for stress.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Adrenal cortex",
+        "Adrenal glands",
+        "Pituitary gland"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "pancreas",
+      "term": "Pancreas",
+      "definition": "An organ with endocrine and exocrine functions regulating digestion and glucose.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Thyroid gland",
+        "Pituitary gland",
+        "Liver"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "parathyroid-glands",
+      "term": "Parathyroid glands",
+      "definition": "Small glands embedded in the thyroid that produce parathyroid hormone.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Thyroid gland",
+        "Pituitary gland",
+        "Adrenal glands"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "pineal-gland",
+      "term": "Pineal gland",
+      "definition": "An endocrine gland secreting melatonin to regulate the sleep-wake cycle.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Pituitary gland",
+        "Thyroid gland",
+        "Adrenal glands"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "pituitary-gland",
+      "term": "Pituitary gland",
+      "definition": "A bean-sized organ suspended from the hypothalamus that secretes hormones.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [
+        "hypophysis"
+      ],
+      "confusables": [
+        "Hypothalamus",
+        "Thyroid gland",
+        "Adrenal glands"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "thymus",
+      "term": "Thymus",
+      "definition": "An organ involved in T-cell development, active during infancy and childhood.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Pineal gland",
+        "Thyroid gland",
+        "Adrenal glands"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "thyroid-gland",
+      "term": "Thyroid gland",
+      "definition": "A large endocrine gland responsible for synthesizing thyroid hormones.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine glands",
+      "aliases": [],
+      "confusables": [
+        "Parathyroid glands",
+        "Pituitary gland",
+        "Adrenal glands"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "aldosterone",
+      "term": "Aldosterone",
+      "definition": "A hormone stimulating sodium and fluid retention, increasing blood volume.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Cortisol",
+        "Antidiuretic hormone",
+        "Hormone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "antidiuretic-hormone",
+      "term": "Antidiuretic hormone",
+      "definition": "A hypothalamic hormone signaling kidneys to reabsorb water.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [
+        "ADH",
+        "vasopressin"
+      ],
+      "confusables": [
+        "Aldosterone",
+        "Oxytocin",
+        "Hormone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "calcitonin",
+      "term": "Calcitonin",
+      "definition": "A thyroid hormone that decreases blood calcium levels.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Thyroxine",
+        "Hormone",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "cortisol",
+      "term": "Cortisol",
+      "definition": "A glucocorticoid important in glucose metabolism and immune downregulation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Aldosterone",
+        "Epinephrine",
+        "Hormone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "epinephrine",
+      "term": "Epinephrine",
+      "definition": "The primary catecholamine secreted by the adrenal medulla during stress.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [
+        "adrenaline"
+      ],
+      "confusables": [
+        "Cortisol",
+        "Hormone",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "estrogens",
+      "term": "Estrogens",
+      "definition": "Female sex hormones important for reproductive tract development and pregnancy.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Testosterone",
+        "Hormone",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "glucagon",
+      "term": "Glucagon",
+      "definition": "A pancreatic hormone stimulating glycogen breakdown, increasing blood glucose.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Insulin",
+        "Hormone",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "growth-hormone",
+      "term": "Growth hormone",
+      "definition": "An anterior pituitary hormone promoting tissue building and nutrient metabolism.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [
+        "GH",
+        "somatotropin"
+      ],
+      "confusables": [
+        "Hormone",
+        "Neuron",
+        "Axon"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "hormone",
+      "term": "Hormone",
+      "definition": "A secretion traveling via blood or lymph to induce target cell responses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Neurotransmitter",
+        "Insulin",
+        "Thyroid gland"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "insulin",
+      "term": "Insulin",
+      "definition": "A pancreatic hormone enhancing cellular glucose uptake, lowering blood glucose.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Glucagon",
+        "Hormone",
+        "Pancreas"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "oxytocin",
+      "term": "Oxytocin",
+      "definition": "A hypothalamic hormone stimulating uterine contractions and milk ejection.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Antidiuretic hormone",
+        "Hormone",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "term": "Testosterone",
+      "definition": "A steroid hormone important for sperm maturation and secondary sex traits.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [],
+      "confusables": [
+        "Estrogens",
+        "Hormone",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    },
+    {
+      "id": "thyroxine",
+      "term": "Thyroxine",
+      "definition": "An amino acid-derived thyroid hormone more abundant but less potent.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hormones",
+      "aliases": [
+        "T4",
+        "tetraiodothyronine"
+      ],
+      "confusables": [
+        "Calcitonin",
+        "Hormone",
+        "Neuron"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.17"
+      ]
+    }
   ]
 }

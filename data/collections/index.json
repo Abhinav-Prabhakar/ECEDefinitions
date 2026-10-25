@@ -3,6 +3,15 @@
   "generatedAt": "2026-10-25",
   "collections": [
     {
+      "id": "anatomy-and-physiology",
+      "name": "Anatomy and Physiology",
+      "tagline": "Anatomy and physiology, in one line.",
+      "path": "data/collections/anatomy-and-physiology",
+      "subjects": 6,
+      "definitions": 285,
+      "generatedAt": "2026-10-25"
+    },
+    {
       "id": "medical-terminology",
       "name": "Medical Terminology",
       "tagline": "Medicine, in one line.",

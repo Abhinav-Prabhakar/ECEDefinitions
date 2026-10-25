@@ -30,68 +30,17 @@
   ],
   "definitions": [
     {
-      "id": "cell-membrane",
-      "term": "Cell membrane",
-      "definition": "The flexible phospholipid bilayer surrounding a cell that regulates passage of substances.",
+      "id": "active-transport",
+      "term": "Active transport",
+      "definition": "Movement of substances across a membrane using energy from ATP.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Cell structure",
       "aliases": [],
       "confusables": [
-        "Cytoplasm",
-        "Nucleus",
-        "Vesicle"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "phospholipid",
-      "term": "Phospholipid",
-      "definition": "An amphipathic lipid with a hydrophilic phosphate head and hydrophobic fatty acid tails.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
-      "aliases": [],
-      "confusables": [
-        "Cholesterol",
-        "Glycoprotein",
-        "Amphipathic"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "hydrophilic",
-      "term": "Hydrophilic",
-      "definition": "Describing a molecule or region that is attracted to water.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
-      "aliases": [],
-      "confusables": [
-        "Hydrophobic",
-        "Amphipathic",
-        "Lipid tail"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "hydrophobic",
-      "term": "Hydrophobic",
-      "definition": "Describing a molecule or region that repels and is repelled by water.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
-      "aliases": [],
-      "confusables": [
-        "Hydrophilic",
-        "Phospholipid head",
-        "Amphipathic"
+        "Endocytosis",
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
@@ -115,51 +64,51 @@
       ]
     },
     {
-      "id": "integral-protein",
-      "term": "Integral protein",
-      "definition": "A protein embedded within the lipid bilayer of the cell membrane.",
+      "id": "cell-membrane",
+      "term": "Cell membrane",
+      "definition": "The flexible phospholipid bilayer surrounding a cell that regulates passage of substances.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Cell structure",
       "aliases": [],
       "confusables": [
-        "Peripheral protein",
-        "Channel protein",
-        "Glycoprotein"
+        "Phospholipid",
+        "Hydrophilic",
+        "Hydrophobic"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
       ]
     },
     {
-      "id": "peripheral-protein",
-      "term": "Peripheral protein",
-      "definition": "A protein attached to the inner or outer surface of the cell membrane.",
+      "id": "diffusion",
+      "term": "Diffusion",
+      "definition": "The movement of particles from an area of higher concentration to lower concentration.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Cell structure",
       "aliases": [],
       "confusables": [
-        "Integral protein",
-        "Receptor",
-        "Glycoprotein"
+        "Osmosis",
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
       ]
     },
     {
-      "id": "glycoprotein",
-      "term": "Glycoprotein",
-      "definition": "A protein with carbohydrate molecules attached that extend into the extracellular space.",
+      "id": "endocytosis",
+      "term": "Endocytosis",
+      "definition": "The process of a cell engulfing material by enveloping it in membrane.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Cell structure",
       "aliases": [],
       "confusables": [
-        "Glycocalyx",
-        "Integral protein",
-        "Receptor"
+        "Phagocytosis",
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
@@ -183,17 +132,68 @@
       ]
     },
     {
-      "id": "receptor",
-      "term": "Receptor",
-      "definition": "A recognition protein that selectively binds a specific molecule outside the cell.",
+      "id": "glycoprotein",
+      "term": "Glycoprotein",
+      "definition": "A protein with carbohydrate molecules attached that extend into the extracellular space.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Cell structure",
       "aliases": [],
       "confusables": [
-        "Ligand",
+        "Glycocalyx",
+        "Integral protein",
+        "Receptor"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "hydrophilic",
+      "term": "Hydrophilic",
+      "definition": "Describing a molecule or region that is attracted to water.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Hydrophobic",
+        "Amphipathic",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "hydrophobic",
+      "term": "Hydrophobic",
+      "definition": "Describing a molecule or region that repels and is repelled by water.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Hydrophilic",
+        "Amphipathic",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "integral-protein",
+      "term": "Integral protein",
+      "definition": "A protein embedded within the lipid bilayer of the cell membrane.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Peripheral protein",
         "Glycoprotein",
-        "Channel protein"
+        "Cell membrane"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
@@ -217,40 +217,6 @@
       ]
     },
     {
-      "id": "selective-permeability",
-      "term": "Selective permeability",
-      "definition": "The property of a membrane allowing only certain substances to pass through unaided.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
-      "aliases": [],
-      "confusables": [
-        "Diffusion",
-        "Osmosis",
-        "Active transport"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "diffusion",
-      "term": "Diffusion",
-      "definition": "The movement of particles from an area of higher concentration to lower concentration.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
-      "aliases": [],
-      "confusables": [
-        "Osmosis",
-        "Simple diffusion",
-        "Facilitated diffusion"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
       "id": "osmosis",
       "term": "Osmosis",
       "definition": "The diffusion of water through a semipermeable membrane down its concentration gradient.",
@@ -260,25 +226,93 @@
       "aliases": [],
       "confusables": [
         "Diffusion",
-        "Isotonic",
-        "Hypertonic"
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
       ]
     },
     {
-      "id": "active-transport",
-      "term": "Active transport",
-      "definition": "Movement of substances across a membrane using energy from ATP.",
+      "id": "peripheral-protein",
+      "term": "Peripheral protein",
+      "definition": "A protein attached to the inner or outer surface of the cell membrane.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Cell structure",
       "aliases": [],
       "confusables": [
-        "Passive transport",
-        "Facilitated diffusion",
-        "Endocytosis"
+        "Integral protein",
+        "Receptor",
+        "Glycoprotein"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "phagocytosis",
+      "term": "Phagocytosis",
+      "definition": "The endocytosis of large particles such as invading bacterial cells.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Endocytosis",
+        "Cell membrane",
+        "Phospholipid"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "phospholipid",
+      "term": "Phospholipid",
+      "definition": "An amphipathic lipid with a hydrophilic phosphate head and hydrophobic fatty acid tails.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Glycoprotein",
+        "Amphipathic",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "receptor",
+      "term": "Receptor",
+      "definition": "A recognition protein that selectively binds a specific molecule outside the cell.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Ligand",
+        "Glycoprotein",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "selective-permeability",
+      "term": "Selective permeability",
+      "definition": "The membrane property that allows some substances to pass while blocking others.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cell structure",
+      "aliases": [],
+      "confusables": [
+        "Diffusion",
+        "Osmosis",
+        "Active transport"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
@@ -294,42 +328,25 @@
       "aliases": [],
       "confusables": [
         "Active transport",
-        "Ion channel",
-        "Sodium-glucose symporter"
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
       ]
     },
     {
-      "id": "endocytosis",
-      "term": "Endocytosis",
-      "definition": "The process of a cell engulfing material by enveloping it in membrane.",
+      "id": "anaphase",
+      "term": "Anaphase",
+      "definition": "The stage of mitosis when sister chromatids separate and move apart.",
       "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
+      "unit": 2,
+      "unitTitle": "Cell division",
       "aliases": [],
       "confusables": [
-        "Exocytosis",
-        "Phagocytosis",
-        "Pinocytosis"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "phagocytosis",
-      "term": "Phagocytosis",
-      "definition": "The endocytosis of large particles such as invading bacterial cells.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "Cell structure",
-      "aliases": [],
-      "confusables": [
-        "Pinocytosis",
-        "Endocytosis",
-        "Receptor-mediated endocytosis"
+        "Prophase",
+        "Metaphase",
+        "Telophase"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
@@ -353,6 +370,40 @@
       ]
     },
     {
+      "id": "chromosome",
+      "term": "Chromosome",
+      "definition": "A structure of DNA and protein carrying genetic information.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Cell division",
+      "aliases": [],
+      "confusables": [
+        "Cell membrane",
+        "Phospholipid",
+        "Hydrophilic"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "cytokinesis",
+      "term": "Cytokinesis",
+      "definition": "The division of the cytoplasm following nuclear division.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Cell division",
+      "aliases": [],
+      "confusables": [
+        "Mitosis",
+        "Cell cycle",
+        "Interphase"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
       "id": "interphase",
       "term": "Interphase",
       "definition": "The phase of the cell cycle when the cell grows and replicates DNA.",
@@ -364,40 +415,6 @@
         "Mitosis",
         "Cell cycle",
         "Cytokinesis"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "mitosis",
-      "term": "Mitosis",
-      "definition": "The division of a somatic cell nucleus into two identical nuclei.",
-      "formula": "",
-      "unit": 2,
-      "unitTitle": "Cell division",
-      "aliases": [],
-      "confusables": [
-        "Meiosis",
-        "Cytokinesis",
-        "Cell cycle"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "prophase",
-      "term": "Prophase",
-      "definition": "The first stage of mitosis when chromosomes condense and spindles form.",
-      "formula": "",
-      "unit": 2,
-      "unitTitle": "Cell division",
-      "aliases": [],
-      "confusables": [
-        "Metaphase",
-        "Anaphase",
-        "Telophase"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.3"
@@ -421,16 +438,33 @@
       ]
     },
     {
-      "id": "anaphase",
-      "term": "Anaphase",
-      "definition": "The stage of mitosis when sister chromatids separate and move apart.",
+      "id": "mitosis",
+      "term": "Mitosis",
+      "definition": "The division of a somatic cell nucleus into two identical nuclei.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Cell division",
       "aliases": [],
       "confusables": [
-        "Prophase",
+        "Cytokinesis",
+        "Cell cycle",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.3"
+      ]
+    },
+    {
+      "id": "prophase",
+      "term": "Prophase",
+      "definition": "The first stage of mitosis when chromosomes condense and spindles form.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Cell division",
+      "aliases": [],
+      "confusables": [
         "Metaphase",
+        "Anaphase",
         "Telophase"
       ],
       "sources": [
@@ -455,51 +489,51 @@
       ]
     },
     {
-      "id": "cytokinesis",
-      "term": "Cytokinesis",
-      "definition": "The division of the cytoplasm following nuclear division.",
-      "formula": "",
-      "unit": 2,
-      "unitTitle": "Cell division",
-      "aliases": [],
-      "confusables": [
-        "Mitosis",
-        "Cell cycle",
-        "Interphase"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "chromosome",
-      "term": "Chromosome",
-      "definition": "A structure of DNA and protein carrying genetic information.",
-      "formula": "",
-      "unit": 2,
-      "unitTitle": "Cell division",
-      "aliases": [],
-      "confusables": [
-        "Chromatid",
-        "Centromere",
-        "Gene"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.3"
-      ]
-    },
-    {
-      "id": "tissue",
-      "term": "Tissue",
-      "definition": "A group of cells sharing a common embryonic origin and function.",
+      "id": "connective-tissue",
+      "term": "Connective tissue",
+      "definition": "Tissue that binds and supports other tissues and organs.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Tissues",
       "aliases": [],
       "confusables": [
-        "Organ",
-        "Cell",
-        "Organ system"
+        "Epithelial tissue",
+        "Muscle tissue",
+        "Nervous tissue"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.4"
+      ]
+    },
+    {
+      "id": "ectoderm",
+      "term": "Ectoderm",
+      "definition": "The outer germ layer giving rise to skin and nervous tissue.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Tissues",
+      "aliases": [],
+      "confusables": [
+        "Mesoderm",
+        "Endoderm",
+        "Germ layer"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.4"
+      ]
+    },
+    {
+      "id": "endoderm",
+      "term": "Endoderm",
+      "definition": "The inner germ layer lining airways and digestive tract.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Tissues",
+      "aliases": [],
+      "confusables": [
+        "Ectoderm",
+        "Mesoderm",
+        "Germ layer"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
@@ -523,17 +557,34 @@
       ]
     },
     {
-      "id": "connective-tissue",
-      "term": "Connective tissue",
-      "definition": "Tissue that binds and supports other tissues and organs.",
+      "id": "germ-layer",
+      "term": "Germ layer",
+      "definition": "One of three embryonic cell lineages forming all tissues and organs.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Tissues",
       "aliases": [],
       "confusables": [
-        "Epithelial tissue",
-        "Muscle tissue",
-        "Nervous tissue"
+        "Ectoderm",
+        "Mesoderm",
+        "Endoderm"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.4"
+      ]
+    },
+    {
+      "id": "mesoderm",
+      "term": "Mesoderm",
+      "definition": "The middle germ layer giving rise to connective, muscle, and circulatory tissues.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Tissues",
+      "aliases": [],
+      "confusables": [
+        "Ectoderm",
+        "Endoderm",
+        "Germ layer"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
@@ -574,74 +625,6 @@
       ]
     },
     {
-      "id": "germ-layer",
-      "term": "Germ layer",
-      "definition": "One of three embryonic cell lineages forming all tissues and organs.",
-      "formula": "",
-      "unit": 3,
-      "unitTitle": "Tissues",
-      "aliases": [],
-      "confusables": [
-        "Ectoderm",
-        "Mesoderm",
-        "Endoderm"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.4"
-      ]
-    },
-    {
-      "id": "ectoderm",
-      "term": "Ectoderm",
-      "definition": "The outer germ layer giving rise to skin and nervous tissue.",
-      "formula": "",
-      "unit": 3,
-      "unitTitle": "Tissues",
-      "aliases": [],
-      "confusables": [
-        "Mesoderm",
-        "Endoderm",
-        "Germ layer"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.4"
-      ]
-    },
-    {
-      "id": "mesoderm",
-      "term": "Mesoderm",
-      "definition": "The middle germ layer giving rise to connective, muscle, and circulatory tissues.",
-      "formula": "",
-      "unit": 3,
-      "unitTitle": "Tissues",
-      "aliases": [],
-      "confusables": [
-        "Ectoderm",
-        "Endoderm",
-        "Germ layer"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.4"
-      ]
-    },
-    {
-      "id": "endoderm",
-      "term": "Endoderm",
-      "definition": "The inner germ layer lining airways and digestive tract.",
-      "formula": "",
-      "unit": 3,
-      "unitTitle": "Tissues",
-      "aliases": [],
-      "confusables": [
-        "Ectoderm",
-        "Mesoderm",
-        "Germ layer"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.4"
-      ]
-    },
-    {
       "id": "organ",
       "term": "Organ",
       "definition": "A structure formed by several tissue types working together as a unit.",
@@ -651,25 +634,59 @@
       "aliases": [],
       "confusables": [
         "Tissue",
-        "Organ system",
-        "Cell"
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
       ]
     },
     {
-      "id": "tissue-membrane",
-      "term": "Tissue membrane",
-      "definition": "A thin layer of cells covering body surfaces, organs, or cavities.",
+      "id": "tissue",
+      "term": "Tissue",
+      "definition": "A group of cells sharing a common embryonic origin and function.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Tissues",
+      "aliases": [],
+      "confusables": [
+        "Organ",
+        "Cell membrane",
+        "Phospholipid"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.4"
+      ]
+    },
+    {
+      "id": "cutaneous-membrane",
+      "term": "Cutaneous membrane",
+      "definition": "The skin, a stratified squamous epithelial membrane resting on connective tissue.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Membranes and glands",
       "aliases": [],
       "confusables": [
-        "Epithelial membrane",
-        "Connective tissue membrane",
-        "Mucous membrane"
+        "Mucous membrane",
+        "Serous membrane",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.4"
+      ]
+    },
+    {
+      "id": "endocrine-gland",
+      "term": "Endocrine gland",
+      "definition": "A gland that secretes hormones directly into the bloodstream.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Membranes and glands",
+      "aliases": [],
+      "confusables": [
+        "Exocrine gland",
+        "Hormone",
+        "Cell membrane"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
@@ -684,9 +701,26 @@
       "unitTitle": "Membranes and glands",
       "aliases": [],
       "confusables": [
-        "Connective tissue membrane",
         "Tissue membrane",
-        "Mucous membrane"
+        "Mucous membrane",
+        "Cell membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.4"
+      ]
+    },
+    {
+      "id": "exocrine-gland",
+      "term": "Exocrine gland",
+      "definition": "A gland that secretes its product through a duct to a surface.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Membranes and glands",
+      "aliases": [],
+      "confusables": [
+        "Endocrine gland",
+        "Cell membrane",
+        "Phospholipid"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
@@ -720,24 +754,7 @@
       "confusables": [
         "Mucous membrane",
         "Cutaneous membrane",
-        "Mesothelium"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.4"
-      ]
-    },
-    {
-      "id": "cutaneous-membrane",
-      "term": "Cutaneous membrane",
-      "definition": "The skin, a stratified squamous epithelial membrane resting on connective tissue.",
-      "formula": "",
-      "unit": 4,
-      "unitTitle": "Membranes and glands",
-      "aliases": [],
-      "confusables": [
-        "Mucous membrane",
-        "Serous membrane",
-        "Epidermis"
+        "Cell membrane"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
@@ -754,41 +771,24 @@
       "confusables": [
         "Serous membrane",
         "Mucous membrane",
-        "Synovial fluid"
+        "Cell membrane"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
       ]
     },
     {
-      "id": "exocrine-gland",
-      "term": "Exocrine gland",
-      "definition": "A gland that secretes its product through a duct to a surface.",
+      "id": "tissue-membrane",
+      "term": "Tissue membrane",
+      "definition": "A thin layer of cells covering body surfaces, organs, or cavities.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Membranes and glands",
       "aliases": [],
       "confusables": [
-        "Endocrine gland",
-        "Gland",
-        "Secretion"
-      ],
-      "sources": [
-        "openstax-anatomy-physiology-2e#ch.4"
-      ]
-    },
-    {
-      "id": "endocrine-gland",
-      "term": "Endocrine gland",
-      "definition": "A gland that secretes hormones directly into the bloodstream.",
-      "formula": "",
-      "unit": 4,
-      "unitTitle": "Membranes and glands",
-      "aliases": [],
-      "confusables": [
-        "Exocrine gland",
-        "Hormone",
-        "Gland"
+        "Epithelial membrane",
+        "Mucous membrane",
+        "Cell membrane"
       ],
       "sources": [
         "openstax-anatomy-physiology-2e#ch.4"
