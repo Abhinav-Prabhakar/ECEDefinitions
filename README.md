@@ -8,9 +8,9 @@
 
 **Electronics, in one line.**
 
-A quiet ECE study instrument: 1,575 real definitions across 34 subjects, grouped by
-semester, with a daily practice stack, adaptive two-way quizzes, source traceability, and
-a memory of what you actually know.
+A quiet ECE study instrument: 2,773 definitions across 51 subjects — every A22 core course
+and elective option, every unit — grouped by semester, with a daily practice stack, adaptive
+two-way quizzes, source traceability, and a memory of what you actually know.
 
 <a href="https://abhinav-prabhakar.github.io/ECEDefinitions/">
   <img src="https://img.shields.io/badge/OPEN_THE_APP-live-5b6ee1?style=for-the-badge&logo=githubpages&logoColor=white" alt="Open the live app" />
@@ -86,16 +86,17 @@ The home page is the A22 map, not a flat list. Subjects sit under their semester
 count, and a subject-specific line diagram. Colour is the subject's identity, used in small
 doses.
 
-The full A22 map is now in: **eight semesters**, **34 subject files** (33 complete/partial,
-plus Python Programming as an unresolved data set), and **1,575 one-liners**. Seven subject
-slots are honestly marked as not seeded (six unresolved elective slots and Technical
-Seminar, which has no published material); `4-2` is the project semester with no taught
-material in the source folder. Nothing is fabricated to fill a gap.
+The full A22 map is in: **eight semesters**, **51 subjects** with every syllabus unit
+covered — 34 core courses plus 17 elective options, each grouped under its elective slot —
+and **2,773 one-liners**. Technical Seminar has no taught content and `4-2` is the project
+semester, so both are shown as such rather than padded.
 
-Every definition carries a source locator. Hover a definition's mastery rail to see the
-source file and page/slide it came from; the subject header also shows its source count.
-The final dataset catalogues 250 source files in `data/sources.json`; raw source files are
-not redistributed.
+Every definition carries a source locator. Units taught from the course's own decks and notes
+cite the Drive file and page/slide (1,948 definitions); units the Drive folder never covered
+were written from the official syllabus topics and cite the web page they came from (825
+definitions). Hover a definition's mastery rail to see its source. `data/sources.json`
+catalogues 587 sources; raw source files are not redistributed. Coverage, method and gaps
+are in [`data/README.md`](data/README.md).
 
 <div align="center">
   <img src="assets/screenshot-semesters.png" alt="The complete ECE semester map with not-seeded elective slots and the 4-2 project semester" width="100%" />
