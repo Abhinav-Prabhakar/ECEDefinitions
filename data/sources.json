@@ -4470,6 +4470,176 @@
       "status": "downloaded",
       "locatorScheme": "slide.<n>",
       "sha256": "b82b03836f22e9e0911c470b0485f3b01b3ed1b140a812cc0875915f94209493"
+    },
+    {
+      "id": "ann-wikipedia-artificial-neural-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Artificial neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_neural_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-adaline",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "ADALINE - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ADALINE",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-artificial-neuron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Artificial neuron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_neuron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-bidirectional-associative-memory",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Bidirectional associative memory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bidirectional_associative_memory",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-competitive-learning",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Competitive learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Competitive_learning",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-delta-rule",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Delta rule - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Delta_rule",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-stephen-grossberg",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Stephen Grossberg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Grossberg",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-hebbian-theory",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Hebbian theory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hebbian_theory",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-hmc-art-networks-slides",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "ART Networks (Adaptive Resonance Theory) lecture slides - Harvey Mudd College CS152",
+      "url": "https://www.cs.hmc.edu/courses/2000/fall/cs152/html14/slides14.pdf",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "slide.<n>"
+    },
+    {
+      "id": "ann-wikipedia-hopfield-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Hopfield network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hopfield_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-neocognitron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Neocognitron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neocognitron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-neuron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Neuron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neuron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-perceptron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Perceptron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perceptron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-radial-basis-function-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Radial basis function network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radial_basis_function_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-recurrent-neural-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Recurrent neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Recurrent_neural_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-self-organizing-map",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Self-organizing map - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-statistical-classification",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Statistical classification - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Statistical_classification",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
     }
   ]
 }

@@ -1,0 +1,633 @@
+{
+  "version": 1,
+  "id": "artificial-neural-networks",
+  "semester": "3-1",
+  "name": "Artificial Neural Networks",
+  "shortName": "ANN",
+  "code": "9C517",
+  "courseType": "PE",
+  "elective": "Professional Elective I",
+  "folderId": "1MEfKKH-ftEU7pdOc_eKgO5ocErKgVEcz",
+  "folderUrl": "https://drive.google.com/drive/folders/1MEfKKH-ftEU7pdOc_eKgO5ocErKgVEcz",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "neuron",
+      "term": "Neuron",
+      "definition": "Excitable cell that fires electrical signals and forms networks, mainly within the central nervous system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-neuron#para.1"
+      ]
+    },
+    {
+      "id": "dendrite",
+      "term": "Dendrite",
+      "definition": "Branched extension of a nerve cell that receives most of the cell's incoming signals, often through small spines.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-neuron#para.3"
+      ]
+    },
+    {
+      "id": "soma",
+      "term": "Soma",
+      "definition": "Compact cell body of a nerve cell that houses the nucleus and carries out most protein synthesis.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-neuron#para.3"
+      ]
+    },
+    {
+      "id": "axon",
+      "term": "Axon",
+      "definition": "Thin cable-like projection of a nerve cell that carries signals away from the cell body, sometimes over long distances.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-neuron#para.3"
+      ]
+    },
+    {
+      "id": "synapse",
+      "term": "Synapse",
+      "definition": "Specialized junction where one cell passes a signal to another, usually through chemical messengers across a small gap.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-neuron#para.2"
+      ]
+    },
+    {
+      "id": "action-potential",
+      "term": "Action potential",
+      "definition": "All-or-nothing electrochemical pulse produced when a nerve cell's voltage changes enough, which then travels along its axon.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-neuron#para.4"
+      ]
+    },
+    {
+      "id": "artificial-neural-network",
+      "term": "Artificial neural network",
+      "definition": "Computing model built from many connected numerical units, loosely inspired by the brain, that learns by adjusting connection strengths.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.2"
+      ]
+    },
+    {
+      "id": "weight",
+      "term": "Weight",
+      "definition": "Adjustable value on a connection that sets how strongly one signal influences the next unit; changed during training.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.2"
+      ]
+    },
+    {
+      "id": "adaptive-linear-combiner",
+      "term": "Adaptive linear combiner",
+      "definition": "Element that forms a weighted sum of its inputs plus an offset and adjusts its coefficients by an error-driven rule.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Biological and Artificial Neural Networks",
+      "sources": [
+        "ann-wikipedia-adaline#para.4",
+        "ann-wikipedia-adaline#para.6"
+      ]
+    },
+    {
+      "id": "artificial-neuron",
+      "term": "Artificial neuron",
+      "definition": "Numerical processing unit that sums its weighted inputs, adds an offset, and passes the result through a nonlinear function to give one output.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.38"
+      ]
+    },
+    {
+      "id": "bias",
+      "term": "Bias",
+      "definition": "Term added to a unit's weighted input sum before the nonlinear output function is applied.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.38"
+      ]
+    },
+    {
+      "id": "activation-function",
+      "term": "Activation function",
+      "definition": "Nonlinear function that converts a unit's total input into its output signal.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.38"
+      ]
+    },
+    {
+      "id": "threshold-activation",
+      "term": "Threshold activation",
+      "definition": "Output rule giving 1 when the weighted input sum reaches a set level and 0 otherwise, splitting inputs with a hyperplane.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-artificial-neuron#para.30",
+        "ann-wikipedia-artificial-neuron#para.31"
+      ]
+    },
+    {
+      "id": "mcculloch-pitts-neuron",
+      "term": "McCulloch-Pitts neuron",
+      "definition": "Binary unit working in discrete time steps that fires only when enough excitatory inputs are active and no inhibitory input is.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-artificial-neuron#para.11",
+        "ann-wikipedia-artificial-neuron#para.12"
+      ]
+    },
+    {
+      "id": "perceptron",
+      "term": "Perceptron",
+      "definition": "Linear binary classifier that multiplies inputs by weights, adds a bias, and applies a step function to output 0 or 1.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-perceptron#para.1"
+      ]
+    },
+    {
+      "id": "linear-separability",
+      "term": "Linear separability",
+      "definition": "Property of a dataset whose classes can be divided by a single straight boundary; AND, OR and NOR have it, XOR does not.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-perceptron#para.50",
+        "ann-wikipedia-artificial-neuron#para.13"
+      ]
+    },
+    {
+      "id": "adaline",
+      "term": "ADALINE",
+      "definition": "Early single-layer network of Widrow and Hoff that computes a weighted sum of inputs plus a bias.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-adaline#para.1",
+        "ann-wikipedia-adaline#para.4"
+      ]
+    },
+    {
+      "id": "madaline",
+      "term": "MADALINE",
+      "definition": "Multilayer feedforward network built from ADALINE units with a sign output, trained by special rules because the sign function cannot be differentiated.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Artificial Neuron Models",
+      "sources": [
+        "ann-wikipedia-adaline#para.3",
+        "ann-wikipedia-adaline#para.9",
+        "ann-wikipedia-adaline#para.10"
+      ]
+    },
+    {
+      "id": "instar",
+      "term": "Instar",
+      "definition": "Grossberg learning scheme, introduced in 1976, for training adaptive filters; Kohonen later used the same equation in self-organizing maps.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-stephen-grossberg#para.8"
+      ]
+    },
+    {
+      "id": "outstar",
+      "term": "Outstar",
+      "definition": "Grossberg learning scheme, introduced from 1967 onward, used for learning spatial patterns.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-stephen-grossberg#para.8"
+      ]
+    },
+    {
+      "id": "bidirectional-associative-memory",
+      "term": "Bidirectional associative memory",
+      "definition": "Recurrent network of two fully connected layers that, given a pattern at either layer, returns the paired pattern at the other.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-bidirectional-associative-memory#para.1",
+        "ann-wikipedia-bidirectional-associative-memory#para.3"
+      ]
+    },
+    {
+      "id": "auto-associative-memory",
+      "term": "Auto-associative memory",
+      "definition": "Memory that links a stored vector to itself so that a partial or noisy cue settles to the full stored pattern.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-hopfield-network#para.2",
+        "ann-wikipedia-hopfield-network#para.31"
+      ]
+    },
+    {
+      "id": "network-topology",
+      "term": "Network topology",
+      "definition": "Pattern of connections among neurons, forming a directed weighted graph usually organised into input, hidden and output layers.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.39",
+        "ann-wikipedia-artificial-neural-network#para.40"
+      ]
+    },
+    {
+      "id": "feedforward-network",
+      "term": "Feedforward network",
+      "definition": "Network in which each layer's outputs feed only the next layer, so information moves in one direction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.42"
+      ]
+    },
+    {
+      "id": "multilayer-feedforward-network",
+      "term": "Multilayer feedforward network",
+      "definition": "Forward-only network of two or more layers, able to solve problems that a single layer cannot, trained by backpropagation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-perceptron#para.18",
+        "ann-wikipedia-perceptron#para.35",
+        "ann-wikipedia-perceptron#para.41"
+      ]
+    },
+    {
+      "id": "recurrent-neural-network",
+      "term": "Recurrent neural network",
+      "definition": "Network whose connections loop back to the same or earlier layers, so each step's output feeds into the next step.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-recurrent-neural-network#para.1",
+        "ann-wikipedia-artificial-neural-network#para.42"
+      ]
+    },
+    {
+      "id": "training",
+      "term": "Training",
+      "definition": "Process of adjusting connection strengths to reduce the gap between predicted outputs and known outputs in sample data.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Network Topologies and Architectures",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.4",
+        "ann-wikipedia-artificial-neural-network#para.43"
+      ]
+    },
+    {
+      "id": "hebb-s-law",
+      "term": "Hebb's law",
+      "definition": "Principle that a connection strengthens when one cell repeatedly and persistently helps drive another cell to fire.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-hebbian-theory#para.1"
+      ]
+    },
+    {
+      "id": "hebbian-learning-rule",
+      "term": "Hebbian learning rule",
+      "definition": "Weight-setting rule that raises a connection when the two linked units are active together and lowers it when they are not.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-hebbian-theory#para.8"
+      ]
+    },
+    {
+      "id": "generalized-hebb-rule",
+      "term": "Generalized Hebb rule",
+      "definition": "Extension in which a weight rises when it helps fire a unit, and falls when it inhibits firing or units do not fire together.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-hmc-art-networks-slides#slide.4"
+      ]
+    },
+    {
+      "id": "perceptron-learning-rule",
+      "term": "Perceptron learning rule",
+      "definition": "Iterative procedure that, on a wrong output, shifts each weight in proportion to learning rate, error and the matching input.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-perceptron#para.47"
+      ]
+    },
+    {
+      "id": "delta-rule",
+      "term": "Delta rule",
+      "definition": "Gradient-descent learning method that adjusts the input weights of a single-layer network to reduce output error.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-delta-rule#para.1"
+      ]
+    },
+    {
+      "id": "lms-learning-rule",
+      "term": "LMS learning rule",
+      "definition": "Rule used by ADALINE that moves each weight in proportion to target-minus-output error times input, minimising squared error.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-adaline#para.6",
+        "ann-wikipedia-adaline#para.7",
+        "ann-wikipedia-adaline#para.8"
+      ]
+    },
+    {
+      "id": "learning-rate",
+      "term": "Learning rate",
+      "definition": "Small constant that scales the size of each weight change in a gradient-based update.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-delta-rule#para.2"
+      ]
+    },
+    {
+      "id": "backpropagation",
+      "term": "Backpropagation",
+      "definition": "Method that computes the loss gradient for each weight by passing error backward from output toward input.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-artificial-neural-network#para.20",
+        "ann-wikipedia-artificial-neural-network#para.43",
+        "ann-wikipedia-artificial-neural-network#para.48"
+      ]
+    },
+    {
+      "id": "correlation-learning",
+      "term": "Correlation learning",
+      "definition": "Weight update proportional to the product of input correlations and current weights, which makes weights grow unstably.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Learning Methods and Basic Learning Laws",
+      "sources": [
+        "ann-wikipedia-hebbian-theory#para.15",
+        "ann-wikipedia-hebbian-theory#para.16",
+        "ann-wikipedia-hebbian-theory#para.19"
+      ]
+    },
+    {
+      "id": "heteroassociative-memory",
+      "term": "Heteroassociative memory",
+      "definition": "Memory that, given one pattern, returns a different associated pattern which may have a different size.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-bidirectional-associative-memory#para.1"
+      ]
+    },
+    {
+      "id": "auto-association",
+      "term": "Auto-association",
+      "definition": "Task of linking a vector with itself so that a degraded version of a stored pattern is completed.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-hopfield-network#para.31"
+      ]
+    },
+    {
+      "id": "pattern-storage",
+      "term": "Pattern storage",
+      "definition": "Setting connection strengths so that a pattern becomes a stable low-energy state the network can later recall.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-hopfield-network#para.31"
+      ]
+    },
+    {
+      "id": "content-addressable-memory",
+      "term": "Content-addressable memory",
+      "definition": "Memory that recovers a complete stored pattern from a partial or corrupted cue.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-hopfield-network#para.2"
+      ]
+    },
+    {
+      "id": "pattern-classification",
+      "term": "Pattern classification",
+      "definition": "Grouping observations into categories using an algorithm built from their measurable properties.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-statistical-classification#para.1"
+      ]
+    },
+    {
+      "id": "competitive-learning",
+      "term": "Competitive learning",
+      "definition": "Unsupervised scheme in which nodes compete to respond to inputs, each specializing so similar patterns are grouped.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-competitive-learning#para.1"
+      ]
+    },
+    {
+      "id": "winner-take-all",
+      "term": "Winner-take-all",
+      "definition": "Selection mechanism in which only the strongest-responding unit becomes active while the others stay off.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-competitive-learning#para.3"
+      ]
+    },
+    {
+      "id": "self-organizing-map",
+      "term": "Self-organizing map",
+      "definition": "Unsupervised network trained by competition that turns high-dimensional data into a low-dimensional, usually two-dimensional, map preserving structure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-self-organizing-map#para.1",
+        "ann-wikipedia-self-organizing-map#para.2"
+      ]
+    },
+    {
+      "id": "best-matching-unit",
+      "term": "Best matching unit",
+      "definition": "Map node whose weight vector lies closest to a given input; it and its neighbours are pulled toward that input.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pattern Recognition Tasks",
+      "sources": [
+        "ann-wikipedia-self-organizing-map#para.9"
+      ]
+    },
+    {
+      "id": "radial-basis-function",
+      "term": "Radial basis function",
+      "definition": "Function whose value depends only on the distance from a centre point, commonly Gaussian in shape.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-radial-basis-function-network#para.2"
+      ]
+    },
+    {
+      "id": "radial-basis-function-network",
+      "term": "Radial basis function network",
+      "definition": "Three-layer network with an input layer, a nonlinear hidden layer of distance-based units, and a linear output layer.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-radial-basis-function-network#para.1",
+        "ann-wikipedia-radial-basis-function-network#para.2"
+      ]
+    },
+    {
+      "id": "gaussian-radial-basis-function",
+      "term": "Gaussian radial basis function",
+      "definition": "Distance-based unit whose response falls off exponentially with squared distance from its centre, scaled by a decay parameter.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-radial-basis-function-network#para.2",
+        "ann-wikipedia-radial-basis-function-network#para.3"
+      ]
+    },
+    {
+      "id": "basis-function-centre",
+      "term": "Basis-function centre",
+      "definition": "Vector at which a hidden unit responds most strongly, often chosen by sampling training inputs or by clustering.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-radial-basis-function-network#para.2",
+        "ann-wikipedia-radial-basis-function-network#para.17"
+      ]
+    },
+    {
+      "id": "counter-propagation-network",
+      "term": "Counter-propagation network",
+      "definition": "Three-layer network combining Grossberg's instar and outstar learning to map m-dimensional inputs onto n-dimensional outputs.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-stephen-grossberg#para.8"
+      ]
+    },
+    {
+      "id": "neocognitron",
+      "term": "Neocognitron",
+      "definition": "Multilayer hierarchical network proposed by Fukushima in 1979 for pattern recognition such as handwritten characters; precursor of convolutional networks.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-neocognitron#para.1"
+      ]
+    },
+    {
+      "id": "s-cell",
+      "term": "S-cell",
+      "definition": "Neocognitron unit type that detects local features in its input.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-neocognitron#para.4"
+      ]
+    },
+    {
+      "id": "c-cell",
+      "term": "C-cell",
+      "definition": "Neocognitron unit type that tolerates small shifts in position of the features detected by the preceding layer.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-neocognitron#para.4"
+      ]
+    },
+    {
+      "id": "hopfield-network",
+      "term": "Hopfield network",
+      "definition": "Single-layer recurrent network with symmetric connections between all neurons that settles into low-energy states encoding stored patterns.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "RBF, Counter Propagation and Neocognitron",
+      "sources": [
+        "ann-wikipedia-hopfield-network#para.1"
+      ]
+    }
+  ]
+}
