@@ -1,0 +1,369 @@
+{
+  "subject": "database-systems-concepts",
+  "artifacts": {
+    "database-systems-concepts--data-definition-language": {
+      "type": "code",
+      "lang": "sql",
+      "title": "DDL creates the schema and its constraints",
+      "lines": [
+        "CREATE TABLE enrol (",
+        "  sid   INT     NOT NULL,",
+        "  cid   CHAR(6) NOT NULL,",
+        "  grade CHAR(2),",
+        "  PRIMARY KEY (sid, cid),",
+        "  FOREIGN KEY (sid) REFERENCES student(id) ON DELETE CASCADE,",
+        "  CHECK (grade IN ('A','B','C','D','F'))",
+        ");"
+      ],
+      "highlight": [
+        5
+      ],
+      "note": "DDL fixes the schema and its constraints; every later DML statement is checked against them."
+    },
+    "database-systems-concepts--data-manipulation-language": {
+      "type": "code",
+      "lang": "sql",
+      "title": "DML changes rows, not the schema",
+      "lines": [
+        "INSERT INTO student (id, name) VALUES (7, 'Rao');",
+        "UPDATE enrol SET grade = 'B' WHERE sid = 7 AND cid = 'CS301';",
+        "DELETE FROM enrol WHERE grade IS NULL;"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "Each statement runs inside a transaction, so a failed third statement can leave the first two uncommitted."
+    },
+    "database-systems-concepts--candidate-key": {
+      "type": "table",
+      "title": "keys of student(id, email, name)",
+      "headers": [
+        "key",
+        "rule",
+        "example"
+      ],
+      "rows": [
+        [
+          "superkey",
+          "any set that determines every attribute",
+          "{id}, {id, name}, {id, email}"
+        ],
+        [
+          "candidate key",
+          "a minimal superkey",
+          "{id}, {email}"
+        ],
+        [
+          "primary key",
+          "the candidate key chosen for identity",
+          "{id}"
+        ],
+        [
+          "alternate key",
+          "a candidate key not chosen",
+          "{email}"
+        ],
+        [
+          "foreign key",
+          "attributes matching a key of another relation",
+          "enrol.sid -> student.id"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Minimality is what separates a candidate key from the superkeys that contain it."
+    },
+    "database-systems-concepts--inner-join": {
+      "type": "code",
+      "lang": "sql",
+      "title": "inner join on a matching key",
+      "lines": [
+        "SELECT s.name, e.grade",
+        "FROM   student AS s",
+        "JOIN   enrol   AS e ON e.sid = s.id",
+        "WHERE  e.cid = 'CS301';"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        "Rao  | B",
+        "Iyer | A"
+      ],
+      "note": "Only rows with a match on enrol survive, so a student with no enrolment disappears from the result."
+    },
+    "database-systems-concepts--left-outer-join": {
+      "type": "code",
+      "lang": "sql",
+      "title": "left outer join keeps unmatched rows",
+      "lines": [
+        "SELECT s.name, e.cid, e.grade",
+        "FROM   student AS s",
+        "LEFT JOIN enrol AS e ON e.sid = s.id;"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        "Rao  | CS301 | B",
+        "Iyer | CS301 | A",
+        "Das  | NULL  | NULL"
+      ],
+      "note": "The unmatched left row survives with nulls on the right, which is why COUNT(e.cid) ignores it."
+    },
+    "database-systems-concepts--null": {
+      "type": "table",
+      "title": "three-valued AND",
+      "headers": [
+        "AND",
+        "TRUE",
+        "FALSE",
+        "NULL"
+      ],
+      "rows": [
+        [
+          "TRUE",
+          "TRUE",
+          "FALSE",
+          "NULL"
+        ],
+        [
+          "FALSE",
+          "FALSE",
+          "FALSE",
+          "FALSE"
+        ],
+        [
+          "NULL",
+          "NULL",
+          "FALSE",
+          "NULL"
+        ]
+      ],
+      "highlight": 3,
+      "note": "NULL means unknown rather than false, so grade <> 'A' does not return rows where grade is NULL."
+    },
+    "database-systems-concepts--view": {
+      "type": "code",
+      "lang": "sql",
+      "title": "a view stores the query, not the rows",
+      "lines": [
+        "CREATE VIEW cs_marks AS",
+        "  SELECT s.id, s.name, e.grade",
+        "  FROM   student s JOIN enrol e ON e.sid = s.id",
+        "  WHERE  e.cid LIKE 'CS%';",
+        "",
+        "SELECT name FROM cs_marks WHERE grade = 'A';"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "The view is recomputed from student and enrol every time it is referenced, so it never goes stale."
+    },
+    "database-systems-concepts--trigger": {
+      "type": "code",
+      "lang": "sql",
+      "title": "row-level audit trigger",
+      "lines": [
+        "CREATE TRIGGER trg_grade_audit",
+        "AFTER UPDATE ON enrol",
+        "FOR EACH ROW",
+        "INSERT INTO grade_log(sid, cid, old_g, new_g)",
+        "VALUES (OLD.sid, OLD.cid, OLD.grade, NEW.grade);"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "A row-level trigger fires once per changed row, inside the transaction that caused the change."
+    },
+    "database-systems-concepts--schedule": {
+      "type": "table",
+      "title": "an interleaved schedule S",
+      "headers": [
+        "step",
+        "T1",
+        "T2",
+        "conflict"
+      ],
+      "rows": [
+        [
+          "1",
+          "r1(X)",
+          "",
+          ""
+        ],
+        [
+          "2",
+          "",
+          "r2(Y)",
+          ""
+        ],
+        [
+          "3",
+          "w1(X)",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "r1(Y)",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "c1",
+          "",
+          ""
+        ],
+        [
+          "6",
+          "",
+          "r2(X)",
+          "w1(X) before r2(X): T1 -> T2"
+        ],
+        [
+          "7",
+          "",
+          "w2(Y)",
+          "r1(Y) before w2(Y): T1 -> T2"
+        ],
+        [
+          "8",
+          "",
+          "c2",
+          ""
+        ]
+      ],
+      "highlight": 6,
+      "note": "Every conflict edge runs T1 -> T2, so the precedence graph is acyclic and S is conflict-serializable, equivalent to T1 then T2."
+    },
+    "database-systems-concepts--write-ahead-logging": {
+      "type": "sequence",
+      "title": "log record reaches disk before its page",
+      "actors": [
+        "transaction",
+        "log",
+        "buffer pool",
+        "data file"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "append <T1, X, old, new>"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "force the log record to disk"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "modify page X in the buffer pool"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "page may flush later; log is already safe"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "append and force the commit record c1"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "checkpoint: pages applied, log truncated"
+        }
+      ],
+      "note": "Undo replays the old value from the log, redo the new one; the ordering rule is what makes both possible."
+    },
+    "database-systems-concepts--two-phase-locking": {
+      "type": "sequence",
+      "title": "growing then shrinking phase",
+      "actors": [
+        "T1",
+        "T2",
+        "lock manager"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 2,
+          "label": "lock-S(X)"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "grant S(X)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "lock-X(X)"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "block: S(X) held by T1"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "lock-X(Y) while still holding S(X)"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "grant X(Y)"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "commit; release every lock"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "wake T2 and grant X(X)"
+        }
+      ],
+      "note": "T1 takes every lock before releasing any, so the schedule is conflict-serializable and no cycle can form here."
+    },
+    "database-systems-concepts--dense-index": {
+      "type": "table",
+      "title": "dense versus sparse index",
+      "headers": [
+        "property",
+        "dense index",
+        "sparse index"
+      ],
+      "rows": [
+        [
+          "entries",
+          "one per record",
+          "one per block"
+        ],
+        [
+          "size",
+          "|R| = n entries",
+          "B(R) entries"
+        ],
+        [
+          "lookup",
+          "pointer straight to the record",
+          "scan the block after a match"
+        ],
+        [
+          "best for",
+          "secondary and non-ordering keys",
+          "the ordering key of a sorted file"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A sparse index is much smaller and may fit in fewer pages, but it only works when the file is ordered by the key."
+    }
+  }
+}

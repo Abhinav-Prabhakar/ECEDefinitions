@@ -121,7 +121,8 @@
       "unitTitle": "Artificial Neuron Models",
       "sources": [
         "ann-wikipedia-artificial-neural-network#para.38"
-      ]
+      ],
+      "artifact": "artificial-neural-networks--artificial-neuron"
     },
     {
       "id": "bias",
@@ -143,7 +144,8 @@
       "unitTitle": "Artificial Neuron Models",
       "sources": [
         "ann-wikipedia-artificial-neural-network#para.38"
-      ]
+      ],
+      "artifact": "artificial-neural-networks--activation-function"
     },
     {
       "id": "threshold-activation",
@@ -326,7 +328,8 @@
         "ann-wikipedia-artificial-neural-network#para.4",
         "ann-wikipedia-artificial-neural-network#para.43"
       ],
-      "diagram": "gradient-descent"
+      "diagram": "gradient-descent",
+      "artifact": "artificial-neural-networks--training"
     },
     {
       "id": "hebb-s-law",
@@ -337,7 +340,8 @@
       "unitTitle": "Learning Methods and Basic Learning Laws",
       "sources": [
         "ann-wikipedia-hebbian-theory#para.1"
-      ]
+      ],
+      "artifact": "artificial-neural-networks--hebb-s-law"
     },
     {
       "id": "hebbian-learning-rule",
@@ -382,7 +386,8 @@
       "sources": [
         "ann-wikipedia-delta-rule#para.1"
       ],
-      "diagram": "gradient-descent"
+      "diagram": "gradient-descent",
+      "artifact": "artificial-neural-networks--delta-rule"
     },
     {
       "id": "lms-learning-rule",
@@ -422,7 +427,8 @@
         "ann-wikipedia-artificial-neural-network#para.43",
         "ann-wikipedia-artificial-neural-network#para.48"
       ],
-      "diagram": "gradient-descent"
+      "diagram": "gradient-descent",
+      "artifact": "artificial-neural-networks--backpropagation"
     },
     {
       "id": "correlation-learning",
@@ -525,7 +531,8 @@
       "sources": [
         "ann-wikipedia-self-organizing-map#para.1",
         "ann-wikipedia-self-organizing-map#para.2"
-      ]
+      ],
+      "artifact": "artificial-neural-networks--self-organizing-map"
     },
     {
       "id": "best-matching-unit",
@@ -561,7 +568,8 @@
         "ann-wikipedia-radial-basis-function-network#para.1",
         "ann-wikipedia-radial-basis-function-network#para.2"
       ],
-      "diagram": "neural-net"
+      "diagram": "neural-net",
+      "artifact": "artificial-neural-networks--radial-basis-function-network"
     },
     {
       "id": "gaussian-radial-basis-function",
@@ -643,7 +651,8 @@
       "unitTitle": "RBF, Counter Propagation and Neocognitron",
       "sources": [
         "ann-wikipedia-hopfield-network#para.1"
-      ]
+      ],
+      "artifact": "artificial-neural-networks--hopfield-network"
     }
   ]
 }

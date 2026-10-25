@@ -1,0 +1,347 @@
+{
+  "subject": "embedded-system-design-using-arm",
+  "artifacts": {
+    "embedded-system-design-using-arm--cpsr": {
+      "type": "table",
+      "title": "CPSR bit map",
+      "headers": [
+        "bits",
+        "field",
+        "meaning"
+      ],
+      "rows": [
+        [
+          "31",
+          "N",
+          "bit 31 of the result is 1"
+        ],
+        [
+          "30",
+          "Z",
+          "the result is zero"
+        ],
+        [
+          "29",
+          "C",
+          "carry out, or no borrow"
+        ],
+        [
+          "28",
+          "V",
+          "signed overflow"
+        ],
+        [
+          "27",
+          "Q",
+          "sticky saturation flag in DSP extensions"
+        ],
+        [
+          "7",
+          "I",
+          "IRQ disabled when 1"
+        ],
+        [
+          "6",
+          "F",
+          "FIQ disabled when 1"
+        ],
+        [
+          "5",
+          "T",
+          "Thumb state when 1, ARMv5 and later"
+        ],
+        [
+          "4:0",
+          "M[4:0]",
+          "mode: 0b10000 user, 0b10001 FIQ, 0b10010 IRQ, 0b10011 SVC"
+        ]
+      ],
+      "highlight": 9,
+      "note": "In user mode a write to CPSR is ignored, so only privileged code can change the mode and mask bits."
+    },
+    "embedded-system-design-using-arm--user-mode": {
+      "type": "table",
+      "title": "processor modes and their banked registers",
+      "headers": [
+        "mode",
+        "M[4:0]",
+        "banked registers",
+        "entered on"
+      ],
+      "rows": [
+        [
+          "User",
+          "0b10000",
+          "none, r0-r15 shared",
+          "return to user code"
+        ],
+        [
+          "FIQ",
+          "0b10001",
+          "r8-r14",
+          "fast interrupt request"
+        ],
+        [
+          "IRQ",
+          "0b10010",
+          "r13, r14",
+          "interrupt request"
+        ],
+        [
+          "Supervisor",
+          "0b10011",
+          "r13, r14",
+          "SWI or reset"
+        ],
+        [
+          "Abort",
+          "0b10111",
+          "r13, r14",
+          "failed data or prefetch access"
+        ],
+        [
+          "Undefined",
+          "0b11011",
+          "r13, r14",
+          "undefined instruction"
+        ],
+        [
+          "System",
+          "0b11111",
+          "none, privileged user variant",
+          "privileged code that needs user registers"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Each mode has its own r13 and r14, so an exception can switch stacks without first saving the old stack pointer."
+    },
+    "embedded-system-design-using-arm--vector-table": {
+      "type": "table",
+      "title": "exception vector table",
+      "headers": [
+        "address",
+        "exception",
+        "mode entered"
+      ],
+      "rows": [
+        [
+          "0x00000000",
+          "reset",
+          "Supervisor"
+        ],
+        [
+          "0x00000004",
+          "undefined instruction",
+          "Undefined"
+        ],
+        [
+          "0x00000008",
+          "software interrupt, SWI",
+          "Supervisor"
+        ],
+        [
+          "0x0000000C",
+          "prefetch abort",
+          "Abort"
+        ],
+        [
+          "0x00000010",
+          "data abort",
+          "Abort"
+        ],
+        [
+          "0x00000014",
+          "reserved",
+          "none"
+        ],
+        [
+          "0x00000018",
+          "IRQ",
+          "IRQ"
+        ],
+        [
+          "0x0000001C",
+          "FIQ",
+          "FIQ"
+        ]
+      ],
+      "highlight": 3,
+      "note": "A slot is only four bytes, so it normally holds a branch to the handler rather than the handler itself."
+    },
+    "embedded-system-design-using-arm--barrel-shifter": {
+      "type": "code",
+      "lang": "arm",
+      "title": "shift folded into the operand path",
+      "lines": [
+        "MOV  r0, r1, LSL #2      ; r0 = r1 * 4",
+        "ADD  r2, r3, r3, LSL #3  ; r2 = r3 * 9",
+        "MOV  r4, r5, ASR #1      ; r4 = r5 / 2, sign preserved",
+        "RSB  r6, r7, r7, LSL #1  ; r6 = 2 * r7 - r7"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "The shift happens before the ALU, so a multiply by a small constant costs no extra instruction or cycle."
+    },
+    "embedded-system-design-using-arm--data-processing-instructions": {
+      "type": "code",
+      "lang": "arm",
+      "title": "data processing with flags and a condition",
+      "lines": [
+        "SUBS r2, r0, r1      ; r2 = r0 - r1, update N Z C V",
+        "ADDNE r2, r2, #1     ; add 1 only when Z = 0",
+        "MUL  r3, r0, r1      ; r3 = r0 * r1, flags unchanged",
+        "AND  r4, r0, #0xFF   ; keep the low byte"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "The S suffix makes the flags a side effect of the operation; the NE suffix then predicates the next instruction on them."
+    },
+    "embedded-system-design-using-arm--load-store-instruction": {
+      "type": "code",
+      "lang": "arm",
+      "title": "three load-store addressing forms",
+      "lines": [
+        "LDR  r0, [r1]            ; r0 = mem[r1]",
+        "LDR  r2, [r1, #4]        ; r2 = mem[r1 + 4], r1 unchanged",
+        "LDR  r3, [r1, #8]!       ; pre-index: r1 += 8, then load",
+        "STR  r4, [r1], #-4       ; post-index: store, then r1 -= 4"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "The exclamation mark writes the computed address back to the base register, which is how a loop walks an array."
+    },
+    "embedded-system-design-using-arm--multiple-register-transfer": {
+      "type": "code",
+      "lang": "arm",
+      "title": "callee-save prologue and epilogue",
+      "lines": [
+        "func  STMFD sp!, {r4-r7, lr}   ; push 5 words, sp -= 20",
+        "      MOV   r4, r0",
+        "      BL    helper",
+        "      ADD   r0, r0, r4",
+        "      LDMFD sp!, {r4-r7, pc}   ; pop and return through pc"
+      ],
+      "highlight": [
+        5
+      ],
+      "note": "Restoring pc from the stack performs the return, so the epilogue needs no separate branch instruction."
+    },
+    "embedded-system-design-using-arm--condition-field": {
+      "type": "table",
+      "title": "condition suffixes and the flags they test",
+      "headers": [
+        "suffix",
+        "flags",
+        "meaning"
+      ],
+      "rows": [
+        [
+          "EQ / NE",
+          "Z",
+          "equal / not equal"
+        ],
+        [
+          "CS / CC",
+          "C",
+          "unsigned higher or same / lower"
+        ],
+        [
+          "MI / PL",
+          "N",
+          "minus / plus"
+        ],
+        [
+          "VS / VC",
+          "V",
+          "overflow set / clear"
+        ],
+        [
+          "HI / LS",
+          "C, Z",
+          "unsigned higher / lower or same"
+        ],
+        [
+          "GE / LT",
+          "N, V",
+          "signed greater or equal / less than"
+        ],
+        [
+          "GT / LE",
+          "Z, N, V",
+          "signed greater / less or equal"
+        ],
+        [
+          "AL",
+          "none",
+          "always, the default when no suffix is given"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The condition occupies bits 31:28 of the instruction word, so almost every ARM instruction can be predicated."
+    },
+    "embedded-system-design-using-arm--atpcs": {
+      "type": "table",
+      "title": "register roles across an ATPCS call",
+      "headers": [
+        "register",
+        "role",
+        "preserved by callee"
+      ],
+      "rows": [
+        [
+          "r0 - r3",
+          "first four arguments, then the return value",
+          "no, scratch"
+        ],
+        [
+          "r4 - r11",
+          "local variables of the callee",
+          "yes"
+        ],
+        [
+          "r12 (ip)",
+          "intra-procedure scratch register",
+          "no"
+        ],
+        [
+          "r13 (sp)",
+          "stack pointer, full descending",
+          "yes"
+        ],
+        [
+          "r14 (lr)",
+          "return address written by BL",
+          "no, saved if needed"
+        ],
+        [
+          "r15 (pc)",
+          "program counter",
+          "yes"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only r0 to r3 carry arguments, so a fifth argument is already pushed on the stack before the call."
+    },
+    "embedded-system-design-using-arm--arm-thumb-interworking": {
+      "type": "code",
+      "lang": "arm",
+      "title": "switching state with BLX and BX",
+      "lines": [
+        "      CODE32",
+        "start BLX  thumb_inc      ; ARM to Thumb, T set from target bit 0",
+        "      ADD  r2, r0, #1     ; back in ARM state",
+        "      CODE16",
+        "thumb_inc",
+        "      ADD  r0, #1         ; 16-bit Thumb encoding",
+        "      BX   lr             ; return, state read from lr bit 0"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "Bit 0 of a code address selects the state, so BX and BLX change instruction set without a CPSR mode change."
+    }
+  }
+}

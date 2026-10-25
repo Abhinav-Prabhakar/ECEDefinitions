@@ -1,0 +1,444 @@
+{
+  "subject": "operating-systems-concepts",
+  "artifacts": {
+    "operating-systems-concepts--system-call": {
+      "type": "sequence",
+      "title": "read() crosses the protection boundary",
+      "actors": [
+        "app",
+        "libc",
+        "kernel"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "read(fd, buf, 4096)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "trap with syscall number in a register"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "run the driver, copy 4096 bytes"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "return n, or -1 with errno set"
+        }
+      ],
+      "note": "Only the trap switches mode and stack; the wrapper hides that crossing so the call looks like an ordinary function."
+    },
+    "operating-systems-concepts--file-management-calls": {
+      "type": "code",
+      "lang": "c",
+      "title": "open, read, write, close",
+      "lines": [
+        "int fd = open(\"data.bin\", O_RDWR | O_CREAT, 0644);",
+        "if (fd < 0) { perror(\"open\"); exit(1); }",
+        "char buf[64];",
+        "ssize_t n = read(fd, buf, sizeof buf);",
+        "if (n > 0) write(STDOUT_FILENO, buf, n);",
+        "close(fd);"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "open returns a per-process descriptor, and read and write advance the shared file offset."
+    },
+    "operating-systems-concepts--process-control-block": {
+      "type": "table",
+      "title": "fields of a process control block",
+      "headers": [
+        "field",
+        "holds",
+        "used by"
+      ],
+      "rows": [
+        [
+          "pid, ppid",
+          "identity and parent link",
+          "scheduler, signals"
+        ],
+        [
+          "state",
+          "new, ready, running, waiting, exit",
+          "scheduler"
+        ],
+        [
+          "PC, SP, registers",
+          "saved CPU context",
+          "context switch"
+        ],
+        [
+          "memory limits, table base",
+          "address space",
+          "MMU, loader"
+        ],
+        [
+          "open file table",
+          "descriptors and offsets",
+          "file system"
+        ],
+        [
+          "priority, nice, CPU time",
+          "scheduling and accounting",
+          "scheduler, statistics"
+        ],
+        [
+          "pending signals, exit status",
+          "IPC and termination",
+          "kernel, wait()"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The PCB is both the identity record and the save area, so a context switch mostly reads and writes these fields."
+    },
+    "operating-systems-concepts--context-switch": {
+      "type": "code",
+      "lang": "pseudo",
+      "title": "saving one context and loading another",
+      "lines": [
+        "switch_to(prev, next):",
+        "    save_regs(prev->pcb)",
+        "    prev->state = READY",
+        "    next->state = RUNNING",
+        "    load_regs(next->pcb)",
+        "    switch_mm(prev, next)      # reload the page-table base"
+      ],
+      "highlight": [
+        6
+      ],
+      "note": "Registers and bookkeeping move first; the address space changes only when the page-table base is reloaded."
+    },
+    "operating-systems-concepts--round-robin": {
+      "type": "table",
+      "title": "round robin with q = 3 ms",
+      "headers": [
+        "slice",
+        "window (ms)",
+        "running",
+        "left after slice"
+      ],
+      "rows": [
+        [
+          "1",
+          "0-3",
+          "P1",
+          "5"
+        ],
+        [
+          "2",
+          "3-6",
+          "P2",
+          "2"
+        ],
+        [
+          "3",
+          "6-8",
+          "P3",
+          "0, done at 8"
+        ],
+        [
+          "4",
+          "8-11",
+          "P1",
+          "2"
+        ],
+        [
+          "5",
+          "11-13",
+          "P2",
+          "0, done at 13"
+        ],
+        [
+          "6",
+          "13-15",
+          "P1",
+          "0, done at 15"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Bursts are 8, 5 and 2 ms, all arriving at t = 0; mean turnaround is 12 ms and mean waiting time 7 ms."
+    },
+    "operating-systems-concepts--deadlock-avoidance": {
+      "type": "table",
+      "title": "banker safety check with available (3, 3, 2)",
+      "headers": [
+        "process",
+        "alloc (A B C)",
+        "max (A B C)",
+        "need (A B C)"
+      ],
+      "rows": [
+        [
+          "P0",
+          "0 1 0",
+          "7 5 3",
+          "7 4 3"
+        ],
+        [
+          "P1",
+          "2 0 0",
+          "3 2 2",
+          "1 2 2"
+        ],
+        [
+          "P2",
+          "3 0 2",
+          "9 0 2",
+          "6 0 0"
+        ],
+        [
+          "P3",
+          "2 1 1",
+          "2 2 2",
+          "0 1 1"
+        ],
+        [
+          "P4",
+          "0 0 2",
+          "4 3 3",
+          "4 3 1"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Need = Max - Alloc; P1 is the first row that fits the available vector, so the safe sequence starts P1."
+    },
+    "operating-systems-concepts--page-table": {
+      "type": "table",
+      "title": "one 32-bit page table entry",
+      "headers": [
+        "bits",
+        "field",
+        "meaning"
+      ],
+      "rows": [
+        [
+          "31",
+          "present",
+          "1 = page is in a frame"
+        ],
+        [
+          "30",
+          "dirty",
+          "1 = written since it was loaded"
+        ],
+        [
+          "29",
+          "accessed",
+          "1 = read or written since last clear"
+        ],
+        [
+          "28:12",
+          "frame number",
+          "physical page frame holding the page"
+        ],
+        [
+          "11:9",
+          "protection",
+          "read, write and execute rights"
+        ],
+        [
+          "8:0",
+          "flags",
+          "caching, user/supervisor, no-execute"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The MMU tests the present bit first; a zero traps to the kernel, which fills in the frame number."
+    },
+    "operating-systems-concepts--page-fault": {
+      "type": "sequence",
+      "title": "servicing a demand page fault",
+      "actors": [
+        "CPU",
+        "MMU",
+        "OS",
+        "disk"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "load from virtual page 0x3F"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "PTE present = 0: page-fault trap"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "read page 0x3F from swap"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "DMA done, page now in frame 12"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "write PTE: frame 12, present = 1"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "restart the faulting instruction"
+        }
+      ],
+      "note": "The program never sees the fault because the instruction re-executes once the mapping is valid."
+    },
+    "operating-systems-concepts--optimal-page-replacement": {
+      "type": "table",
+      "title": "optimal replacement, three frames",
+      "headers": [
+        "ref",
+        "frames after",
+        "result"
+      ],
+      "rows": [
+        [
+          "7",
+          "7 | - | -",
+          "fault"
+        ],
+        [
+          "0",
+          "7 | 0 | -",
+          "fault"
+        ],
+        [
+          "1",
+          "7 | 0 | 1",
+          "fault"
+        ],
+        [
+          "2",
+          "2 | 0 | 1",
+          "fault, evict 7"
+        ],
+        [
+          "0",
+          "2 | 0 | 1",
+          "hit"
+        ],
+        [
+          "3",
+          "3 | 0 | 1",
+          "fault, evict 2"
+        ],
+        [
+          "0",
+          "3 | 0 | 1",
+          "hit"
+        ],
+        [
+          "4",
+          "3 | 0 | 4",
+          "fault, evict 1"
+        ]
+      ],
+      "highlight": 4,
+      "note": "OPT evicts the page used farthest in the future; on this string it needs 6 faults, the minimum possible."
+    },
+    "operating-systems-concepts--wait-operation": {
+      "type": "code",
+      "lang": "pseudo",
+      "title": "wait and signal on a counting semaphore",
+      "lines": [
+        "wait(S):",
+        "    S = S - 1",
+        "    if S < 0:",
+        "        add this process to S.queue",
+        "        block()",
+        "",
+        "signal(S):",
+        "    S = S + 1",
+        "    if S <= 0:",
+        "        remove one process from S.queue",
+        "        wakeup(that process)"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "On contention the value goes negative, and its magnitude counts the processes blocked on S."
+    },
+    "operating-systems-concepts--direct-memory-access": {
+      "type": "sequence",
+      "title": "a DMA block transfer",
+      "actors": [
+        "CPU",
+        "DMA",
+        "device",
+        "memory"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "program address, count, direction"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "assert DREQ for the next word"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "grant the bus and write the word"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "count = 0: raise the interrupt"
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "label": "read the completed buffer"
+        }
+      ],
+      "note": "The CPU is free between steps 1 and 4 instead of copying every word itself."
+    },
+    "operating-systems-concepts--access-control-matrix": {
+      "type": "table",
+      "title": "subjects against objects",
+      "headers": [
+        "subject",
+        "file A",
+        "file B",
+        "printer"
+      ],
+      "rows": [
+        [
+          "alice",
+          "rw",
+          "r",
+          "-"
+        ],
+        [
+          "bob",
+          "r",
+          "-",
+          "w"
+        ],
+        [
+          "carol",
+          "-",
+          "rw",
+          "r"
+        ]
+      ],
+      "highlight": 1,
+      "note": "A column is an access control list, a row is a capability list, and the matrix is the model both project."
+    }
+  }
+}

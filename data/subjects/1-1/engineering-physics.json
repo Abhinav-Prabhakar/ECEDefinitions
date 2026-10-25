@@ -101,7 +101,8 @@
       "sources": [
         "ep-unit-1-quantum-mechanics#p.40"
       ],
-      "diagram": "particle-box"
+      "diagram": "particle-box",
+      "artifact": "engineering-physics--particle-in-a-box"
     },
     {
       "id": "energy-eigenvalue",

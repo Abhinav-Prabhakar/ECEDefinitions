@@ -132,7 +132,7 @@ def check_defs(sid, d, src_ids):
     for i,defn in enumerate(d.get("definitions",[])):
         keys={"id","term","definition","formula","unit","unitTitle","sources"}
         if keys-set(defn.keys()): err(f"{sid} def#{i}: missing {sorted(keys-set(defn.keys()))}")
-        if set(defn.keys())-keys-{"diagram"}: err(f"{sid} def#{i}: extra keys {sorted(set(defn.keys())-keys-{'diagram'})}")
+        if set(defn.keys())-keys-{"diagram","artifact"}: err(f"{sid} def#{i}: extra keys {sorted(set(defn.keys())-keys-{'diagram','artifact'})}")
         term=defn.get("term","")
         text=defn.get("definition","")
         if len(term)>48: err(f"{sid} def#{i}: term too long ({len(term)})")
@@ -144,6 +144,9 @@ def check_defs(sid, d, src_ids):
         if len(f)>220: err(f"{sid} def#{i} '{term}': formula too long ({len(f)})")
         if f and ('$' in f or '\\begin{' in f or '\\end{' in f):
             err(f"{sid} def#{i} '{term}': formula must be bare inline TeX (no $ or environments)")
+        art=defn.get("artifact")
+        if art is not None and (not isinstance(art,str) or not re.fullmatch(r"[a-z0-9-]+--[a-z0-9-]+", art)):
+            err(f"{sid} def#{i} '{term}': bad artifact id {art!r}")
         dg=defn.get("diagram")
         if dg is not None:
             if not isinstance(dg,str) or not re.fullmatch(r"[a-z0-9-]+", dg):

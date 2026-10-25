@@ -1,0 +1,315 @@
+{
+  "subject": "artificial-neural-networks",
+  "artifacts": {
+    "artificial-neural-networks--artificial-neuron": {
+      "type": "code",
+      "lang": "python",
+      "title": "one artificial neuron",
+      "lines": [
+        "import math",
+        "",
+        "def neuron(x, w, b):",
+        "    z = sum(wi * xi for wi, xi in zip(w, x)) + b",
+        "    return 1 / (1 + math.exp(-z))",
+        "",
+        "print(round(neuron([1.0, 2.0], [0.5, -0.5], 0.1), 4))"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "0.4013"
+      ],
+      "note": "The dot product plus bias is the unit's total input z; the sigmoid is the nonlinearity that turns z into the output a."
+    },
+    "artificial-neural-networks--activation-function": {
+      "type": "table",
+      "title": "activation functions",
+      "headers": [
+        "function",
+        "f(z)",
+        "range",
+        "f'(z)",
+        "usual role"
+      ],
+      "rows": [
+        [
+          "step",
+          "1 if z >= 0 else 0",
+          "{0, 1}",
+          "0 almost everywhere",
+          "perceptron output"
+        ],
+        [
+          "sign",
+          "-1 if z < 0 else +1",
+          "{-1, +1}",
+          "0 almost everywhere",
+          "ADALINE output"
+        ],
+        [
+          "sigmoid",
+          "1 / (1 + e^(-z))",
+          "(0, 1)",
+          "f(1 - f)",
+          "probabilistic output"
+        ],
+        [
+          "tanh",
+          "(e^z - e^(-z)) / (e^z + e^(-z))",
+          "(-1, 1)",
+          "1 - f^2",
+          "hidden units"
+        ],
+        [
+          "ReLU",
+          "max(0, z)",
+          "[0, inf)",
+          "1 if z > 0 else 0",
+          "deep hidden units"
+        ],
+        [
+          "softmax",
+          "e^(z_k) / sum_j e^(z_j)",
+          "(0, 1), sums to 1",
+          "f_k(δ_kj - f_j)",
+          "multiclass output"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Sigmoid and tanh saturate at both ends, so their slopes shrink toward zero; ReLU keeps a constant slope for positive inputs."
+    },
+    "artificial-neural-networks--hebb-s-law": {
+      "type": "table",
+      "title": "learning rules compared",
+      "headers": [
+        "rule",
+        "update",
+        "signal driving it",
+        "effect"
+      ],
+      "rows": [
+        [
+          "Hebb",
+          "delta w = eta * x * y",
+          "co-activation",
+          "strengthens active pairs"
+        ],
+        [
+          "perceptron",
+          "delta w = eta * (t - y) * x",
+          "output error, step y",
+          "moves boundary on mistakes"
+        ],
+        [
+          "delta / LMS",
+          "delta w = eta * (t - y) * x",
+          "output error, linear y",
+          "least-squares descent"
+        ],
+        [
+          "instar",
+          "delta w = eta * y * (x - w)",
+          "distance to input",
+          "weights move to input pattern"
+        ],
+        [
+          "outstar",
+          "delta w = eta * y * (t - w)",
+          "distance to target",
+          "weights move to target pattern"
+        ],
+        [
+          "competitive",
+          "delta w_j = eta * (x - w_j)",
+          "winner only",
+          "cluster prototypes"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Supervised rules carry a target t; Hebb, instar and competitive rules are driven by the input or by co-activation instead."
+    },
+    "artificial-neural-networks--delta-rule": {
+      "type": "derivation",
+      "title": "delta rule from squared error",
+      "steps": [
+        "E=\\frac{1}{2}(t-y)^{2},\\quad y=\\sum_{i}w_{i}x_{i}",
+        "\\frac{\\partial E}{\\partial w_{i}}=(y-t)\\frac{\\partial y}{\\partial w_{i}}=(y-t)x_{i}",
+        "\\Delta w_{i}=-\\eta\\frac{\\partial E}{\\partial w_{i}}=\\eta\\,(t-y)\\,x_{i}"
+      ],
+      "symbols": [
+        [
+          "E",
+          "squared output error"
+        ],
+        [
+          "t",
+          "target output"
+        ],
+        [
+          "y",
+          "actual output"
+        ],
+        [
+          "\\eta",
+          "learning rate"
+        ],
+        [
+          "x_i",
+          "input on connection i"
+        ]
+      ],
+      "note": "The derivative of the squared error is the output error times the input, so each weight steps along the negative gradient."
+    },
+    "artificial-neural-networks--backpropagation": {
+      "type": "derivation",
+      "title": "backpropagation gradients",
+      "steps": [
+        "\\frac{\\partial L}{\\partial z_{j}^{(L)}}=\\frac{\\partial L}{\\partial a_{j}^{(L)}}\\,f'\\!\\left(z_{j}^{(L)}\\right)",
+        "\\delta^{(l)}=\\left(\\mathbf{W}^{(l+1)\\top}\\delta^{(l+1)}\\right)\\odot f'\\!\\left(\\mathbf{z}^{(l)}\\right)",
+        "\\frac{\\partial L}{\\partial\\mathbf{W}^{(l)}}=\\delta^{(l)}\\,\\mathbf{a}^{(l-1)\\top}",
+        "\\mathbf{W}^{(l)}\\leftarrow\\mathbf{W}^{(l)}-\\eta\\,\\frac{\\partial L}{\\partial\\mathbf{W}^{(l)}}"
+      ],
+      "symbols": [
+        [
+          "\\delta^{(l)}",
+          "error signal at layer l"
+        ],
+        [
+          "\\odot",
+          "elementwise product"
+        ],
+        [
+          "\\mathbf{a}^{(l-1)}",
+          "activations entering layer l"
+        ],
+        [
+          "\\mathbf{z}^{(l)}",
+          "pre-activation inputs"
+        ],
+        [
+          "\\eta",
+          "learning rate"
+        ]
+      ],
+      "note": "Each delta is the next layer's delta pushed back through its weights and masked by the local derivative; the weight gradient is that delta times the layer input."
+    },
+    "artificial-neural-networks--hopfield-network": {
+      "type": "derivation",
+      "title": "Hopfield energy never increases",
+      "steps": [
+        "E=-\\frac{1}{2}\\sum_{i\\ne j}w_{ij}x_{i}x_{j},\\quad w_{ij}=w_{ji}",
+        "E=\\text{const}-x_{k}\\sum_{j\\ne k}w_{kj}x_{j}",
+        "\\Delta E=-\\Delta x_{k}\\,h_{k},\\quad h_{k}=\\sum_{j\\ne k}w_{kj}x_{j}",
+        "x_{k}'=\\operatorname{sgn}(h_{k})\\;\\Rightarrow\\;\\Delta E=x_{k}h_{k}-|h_{k}|\\le 0"
+      ],
+      "symbols": [
+        [
+          "E",
+          "network energy"
+        ],
+        [
+          "w_{ij}",
+          "symmetric connection weight"
+        ],
+        [
+          "x_k",
+          "binary state of unit k"
+        ],
+        [
+          "h_k",
+          "local field at unit k"
+        ],
+        [
+          "\\Delta x_k",
+          "change in x_k when it flips"
+        ]
+      ],
+      "note": "Only the flipped unit's terms change, so an update aligned with its local field can never raise the energy and the network must settle."
+    },
+    "artificial-neural-networks--radial-basis-function-network": {
+      "type": "derivation",
+      "title": "RBF output layer as least squares",
+      "steps": [
+        "y_{k}=\\sum_{j=1}^{m}w_{kj}\\,\\phi\\!\\left(\\lVert\\mathbf{x}-\\mathbf{c}_{j}\\rVert\\right)",
+        "\\mathbf{y}=\\mathbf{\\Phi}\\mathbf{w},\\quad \\Phi_{nj}=\\phi\\!\\left(\\lVert\\mathbf{x}_{n}-\\mathbf{c}_{j}\\rVert\\right)",
+        "\\min_{\\mathbf{w}}\\lVert\\mathbf{\\Phi}\\mathbf{w}-\\mathbf{t}\\rVert^{2}",
+        "\\mathbf{w}=\\left(\\mathbf{\\Phi}^{\\top}\\mathbf{\\Phi}\\right)^{-1}\\mathbf{\\Phi}^{\\top}\\mathbf{t}=\\mathbf{\\Phi}^{+}\\mathbf{t}"
+      ],
+      "symbols": [
+        [
+          "\\phi",
+          "radial basis function"
+        ],
+        [
+          "\\mathbf{c}_j",
+          "centre of hidden unit j"
+        ],
+        [
+          "\\mathbf{\\Phi}",
+          "design matrix of hidden responses"
+        ],
+        [
+          "\\mathbf{t}",
+          "target vector"
+        ],
+        [
+          "\\mathbf{\\Phi}^{+}",
+          "Moore-Penrose pseudoinverse"
+        ]
+      ],
+      "note": "Once centres and widths are fixed, the output layer is linear in its weights, so training is one least-squares solve rather than gradient descent."
+    },
+    "artificial-neural-networks--training": {
+      "type": "code",
+      "lang": "python",
+      "title": "one gradient-descent epoch",
+      "lines": [
+        "X = [(0.0, 1.0), (1.0, 0.0), (1.0, 1.0), (2.0, 1.0)]",
+        "T = [1.0, 1.0, 2.0, 3.0]",
+        "w, b, eta = [0.0, 0.0], 0.0, 0.05",
+        "",
+        "for epoch in range(500):",
+        "    for x, t in zip(X, T):",
+        "        y = w[0]*x[0] + w[1]*x[1] + b",
+        "        err = t - y",
+        "        w[0] += eta * err * x[0]",
+        "        w[1] += eta * err * x[1]",
+        "        b += eta * err",
+        "",
+        "print(round(w[0], 2), round(w[1], 2), round(b, 2))"
+      ],
+      "highlight": [
+        8
+      ],
+      "output": [
+        "1.0 1.0 0.0"
+      ],
+      "note": "Each epoch sweeps every sample once; 500 passes let this exactly linear target settle at w = (1, 1) and b = 0."
+    },
+    "artificial-neural-networks--self-organizing-map": {
+      "type": "code",
+      "lang": "python",
+      "title": "self-organizing map update",
+      "lines": [
+        "import math",
+        "",
+        "W = [[0.1, 0.2], [0.8, 0.9], [0.4, 0.5]]",
+        "x, eta = [0.3, 0.35], 0.5",
+        "j = min(range(len(W)), key=lambda k: math.dist(W[k], x))",
+        "for k, wk in enumerate(W):",
+        "    h = math.exp(-((k - j) ** 2) / (2 * 1.0 ** 2))",
+        "    W[k] = [a + eta * h * (b - a) for a, b in zip(wk, x)]",
+        "",
+        "print(j, [round(v, 3) for v in W[j]])"
+      ],
+      "highlight": [
+        5
+      ],
+      "output": [
+        "2 [0.35, 0.425]"
+      ],
+      "note": "The BMU is the nearest weight vector; neighbours move by the same input scaled by a Gaussian h that decays with distance on the map."
+    }
+  }
+}

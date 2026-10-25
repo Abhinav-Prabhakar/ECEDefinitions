@@ -75,7 +75,8 @@
       "sources": [
         "pp-unit-i-dr-pl#slide.26"
       ],
-      "diagram": "memory-layout"
+      "diagram": "memory-layout",
+      "artifact": "python-programming--variable"
     },
     {
       "id": "if-statement",
@@ -229,7 +230,8 @@
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
         "pp-unit-ii-dr-pl#slide.7"
-      ]
+      ],
+      "artifact": "python-programming--slicing"
     },
     {
       "id": "list",
@@ -252,7 +254,8 @@
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
         "pp-unit-ii-dr-pl#slide.30"
-      ]
+      ],
+      "artifact": "python-programming--tuple"
     },
     {
       "id": "dictionary",
@@ -297,7 +300,8 @@
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
         "pp-unit-ii-dr-pl#slide.58"
-      ]
+      ],
+      "artifact": "python-programming--try-except"
     },
     {
       "id": "finally-clause",
@@ -308,7 +312,8 @@
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
         "pp-unit-ii-dr-pl#slide.60"
-      ]
+      ],
+      "artifact": "python-programming--finally-clause"
     },
     {
       "id": "user-defined-exception",
@@ -330,7 +335,8 @@
       "unitTitle": "Python OOP and Regular Expressions",
       "sources": [
         "pp-unit-iii-dr-pl#slide.2"
-      ]
+      ],
+      "artifact": "python-programming--class"
     },
     {
       "id": "object",
@@ -385,7 +391,8 @@
       "unitTitle": "Python OOP and Regular Expressions",
       "sources": [
         "pp-unit-iii-dr-pl#slide.16"
-      ]
+      ],
+      "artifact": "python-programming--inheritance"
     },
     {
       "id": "overloading",
@@ -451,7 +458,8 @@
       "unitTitle": "Python OOP and Regular Expressions",
       "sources": [
         "pp-unit-iii-dr-pl#slide.29"
-      ]
+      ],
+      "artifact": "python-programming--re-search"
     },
     {
       "id": "file-object",
@@ -484,7 +492,8 @@
       "unitTitle": "File Handling and Serialization",
       "sources": [
         "pp-py-io#reading-and-writing-files"
-      ]
+      ],
+      "artifact": "python-programming--with-statement"
     },
     {
       "id": "read",
@@ -528,7 +537,8 @@
       "unitTitle": "File Handling and Serialization",
       "sources": [
         "pp-py-pickle#overview"
-      ]
+      ],
+      "artifact": "python-programming--pickling"
     },
     {
       "id": "os-path",
@@ -594,7 +604,8 @@
       "unitTitle": "GUI Programming with Tkinter",
       "sources": [
         "pp-py-tkinter#mainloop"
-      ]
+      ],
+      "artifact": "python-programming--mainloop"
     },
     {
       "id": "geometry-manager",
@@ -660,7 +671,8 @@
       "unitTitle": "NumPy, pandas and Matplotlib",
       "sources": [
         "pp-numpy-basics#ndarray"
-      ]
+      ],
+      "artifact": "python-programming--ndarray"
     },
     {
       "id": "dtype",
@@ -715,7 +727,8 @@
       "unitTitle": "NumPy, pandas and Matplotlib",
       "sources": [
         "pp-pandas-10min#groupby"
-      ]
+      ],
+      "artifact": "python-programming--groupby"
     },
     {
       "id": "nan",
@@ -748,7 +761,8 @@
       "unitTitle": "NumPy, pandas and Matplotlib",
       "sources": [
         "pp-mpl-quickstart#axes"
-      ]
+      ],
+      "artifact": "python-programming--axes"
     }
   ]
 }

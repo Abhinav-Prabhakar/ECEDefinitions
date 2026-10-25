@@ -1,11 +1,13 @@
 /* one·liners — offline app shell */
-const CACHE = 'oneliners-v14';
+const CACHE = 'oneliners-v15';
 const ASSETS = [
   './',
   './index.html',
   './manifest.webmanifest',
   './data/curriculum.json',
   './data/sources.json',
+  './data/artifacts.json',
+  './data/artifacts.json?v=1',
   './assets/icon.svg',
   './assets/icon-192.png',
   './assets/icon-512.png',

@@ -1,0 +1,296 @@
+{
+  "subject": "vlsi-physical-design",
+  "artifacts": {
+    "vlsi-physical-design--asic": {
+      "type": "table",
+      "title": "ASIC implementation styles",
+      "headers": [
+        "style",
+        "masks customised",
+        "density / speed",
+        "cost and time"
+      ],
+      "rows": [
+        [
+          "full custom",
+          "all layers",
+          "highest",
+          "highest NRE, months"
+        ],
+        [
+          "cell-based (standard cell)",
+          "all layers, cells reused",
+          "high",
+          "moderate NRE"
+        ],
+        [
+          "gate array / sea-of-gates",
+          "interconnect only",
+          "lower, fixed devices",
+          "low NRE, weeks"
+        ],
+        [
+          "FPGA",
+          "none, SRAM configured",
+          "lowest",
+          "near-zero NRE, field-upgradable"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Moving down the table trades silicon efficiency for fewer custom masks and a shorter path to first silicon."
+    },
+    "vlsi-physical-design--timing-path": {
+      "type": "table",
+      "title": "the four STA path types",
+      "headers": [
+        "path",
+        "launch",
+        "capture",
+        "constraint"
+      ],
+      "rows": [
+        [
+          "input → register",
+          "input port",
+          "flip-flop",
+          "T_clk − t_input_delay"
+        ],
+        [
+          "register → register",
+          "flip-flop",
+          "flip-flop",
+          "one clock period"
+        ],
+        [
+          "register → output",
+          "flip-flop",
+          "output port",
+          "T_clk − t_output_delay"
+        ],
+        [
+          "input → output",
+          "input port",
+          "output port",
+          "combinational delay only"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Every path in the design is one of these four; the launch and capture points decide which clock period applies."
+    },
+    "vlsi-physical-design--timing-constraints": {
+      "type": "derivation",
+      "title": "from slack to the setup and hold inequalities",
+      "steps": [
+        "t_{\\text{arrival}}=t_{cq}+t_{\\text{comb}}",
+        "t_{\\text{required}}=T_{\\text{clk}}+t_{\\text{skew}}-t_{su}",
+        "t_{\\text{slack}}=t_{\\text{required}}-t_{\\text{arrival}}=T_{\\text{clk}}+t_{\\text{skew}}-t_{su}-t_{cq}-t_{\\text{comb}}",
+        "t_{\\text{slack}}\\ge 0\\iff T_{\\text{clk}}\\ge t_{cq}+t_{\\text{comb}}+t_{su}-t_{\\text{skew}}",
+        "t_{cq}+t_{\\text{comb}}\\ge t_{hold}+t_{\\text{skew}}\\ \\text{(hold, same edge)}"
+      ],
+      "symbols": [
+        [
+          "t_{cq}",
+          "clock-to-Q delay"
+        ],
+        [
+          "t_{\\text{comb}}",
+          "combinational path delay"
+        ],
+        [
+          "t_{su}",
+          "setup time"
+        ],
+        [
+          "t_{hold}",
+          "hold time"
+        ],
+        [
+          "t_{\\text{skew}}",
+          "capture clock minus launch clock"
+        ]
+      ],
+      "note": "Setup squeezes the period; hold does not contain T_clk, which is why it is fixed by adding delay rather than by slowing the clock."
+    },
+    "vlsi-physical-design--static-timing-analysis": {
+      "type": "code",
+      "lang": "text",
+      "title": "the SDC that STA actually reads",
+      "lines": [
+        "create_clock -period 2.0 -name clk [get_ports clk]",
+        "set_input_delay  -clock clk 0.5 [get_ports din]",
+        "set_output_delay -clock clk 0.7 [get_ports dout]",
+        "set_clock_uncertainty 0.10 [get_clocks clk]",
+        "set_false_path -from [get_ports test_mode]",
+        "report_timing -delay_type max -nworst 10"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "STA needs no vectors: the clock, the port delays and the exceptions fully define every arrival and required time."
+    },
+    "vlsi-physical-design--implementation": {
+      "type": "sequence",
+      "title": "netlist to routed layout",
+      "actors": [
+        "netlist",
+        "floorplan",
+        "place + CTS",
+        "route + signoff"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "read .lib and SDC, fix die and core size"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "fix macros, pads, power grid; place cells"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "balance clock tree, global then detailed route"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "slack negative: resize, buffer, move cells"
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "label": "local congestion: revisit floorplan and die size"
+        }
+      ],
+      "note": "The loop repeats until STA, DRC, LVS, EM and IR are clean; only then is the GDSII handed to the foundry."
+    },
+    "vlsi-physical-design--electromigration": {
+      "type": "derivation",
+      "title": "Black's equation as a width rule",
+      "steps": [
+        "t_{50}=A\\,J^{-n}\\exp\\!\\left(\\frac{E_{a}}{kT}\\right)",
+        "J_{\\max}=\\left[\\frac{A}{t_{\\text{target}}}\\exp\\!\\left(\\frac{E_{a}}{kT}\\right)\\right]^{1/n}",
+        "n\\approx 2\\ \\Rightarrow\\ \\frac{t_{50}(J/2)}{t_{50}(J)}=2^{n}\\approx 4",
+        "I_{\\max}=J_{\\max}\\,w\\,h"
+      ],
+      "symbols": [
+        [
+          "J",
+          "current density"
+        ],
+        [
+          "n",
+          "current-density exponent ≈ 2"
+        ],
+        [
+          "E_{a}",
+          "activation energy"
+        ],
+        [
+          "A",
+          "process-dependent constant"
+        ],
+        [
+          "w,\\ h",
+          "wire width and thickness"
+        ]
+      ],
+      "note": "Because n is about 2, halving the current density buys roughly four times the wire life; that exponent is the whole basis of the EM width rule."
+    },
+    "vlsi-physical-design--via": {
+      "type": "table",
+      "title": "metal stack and via transitions",
+      "headers": [
+        "layer",
+        "preferred direction",
+        "via down",
+        "typical role"
+      ],
+      "rows": [
+        [
+          "M1",
+          "horizontal",
+          "contact to diffusion/poly",
+          "cell internals, pins"
+        ],
+        [
+          "M2",
+          "vertical",
+          "via1",
+          "short local routes"
+        ],
+        [
+          "M3",
+          "horizontal",
+          "via2",
+          "local routes, clock"
+        ],
+        [
+          "M4",
+          "vertical",
+          "via3",
+          "clock, medium routes"
+        ],
+        [
+          "M5",
+          "horizontal",
+          "via4",
+          "power straps"
+        ],
+        [
+          "M6 and above",
+          "alternating",
+          "via5 and up",
+          "global routes, pads"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Each via is a cut plus an enclosure on both layers; alternating directions let adjacent layers cross without parallel-run coupling."
+    },
+    "vlsi-physical-design--pvt-corner": {
+      "type": "table",
+      "title": "timing corners",
+      "headers": [
+        "corner",
+        "process",
+        "voltage",
+        "temperature",
+        "what it stresses"
+      ],
+      "rows": [
+        [
+          "SS",
+          "slow",
+          "V_DD,min",
+          "125 °C",
+          "setup, cell and wire delay"
+        ],
+        [
+          "FF",
+          "fast",
+          "V_DD,max",
+          "−40 °C",
+          "hold, short-path race"
+        ],
+        [
+          "TT",
+          "typical",
+          "V_DD,typ",
+          "25 °C",
+          "nominal reporting only"
+        ],
+        [
+          "SF / FS",
+          "skewed",
+          "V_DD,typ",
+          "25 °C",
+          "on-chip variation, mismatch"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Setup is signed off slow-slow and hold fast-fast, so the two ends of the same die are both covered by one analysis."
+    }
+  }
+}

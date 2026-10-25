@@ -75,7 +75,8 @@
       "unitTitle": "Classes and Objects",
       "sources": [
         "java-oracle-methods#overloading-methods"
-      ]
+      ],
+      "artifact": "programming-in-java--method-signature"
     },
     {
       "id": "string",
@@ -86,7 +87,8 @@
       "unitTitle": "Classes and Objects",
       "sources": [
         "java-oracle-strings#strings"
-      ]
+      ],
+      "artifact": "programming-in-java--string"
     },
     {
       "id": "string-literal",
@@ -108,7 +110,8 @@
       "unitTitle": "Classes and Objects",
       "sources": [
         "java-oracle-access#controlling-access"
-      ]
+      ],
+      "artifact": "programming-in-java--access-level-modifier"
     },
     {
       "id": "private-modifier",
@@ -207,7 +210,8 @@
       "unitTitle": "Inheritance and Interfaces",
       "sources": [
         "java-oracle-polymorphism#polymorphism"
-      ]
+      ],
+      "artifact": "programming-in-java--virtual-method-invocation"
     },
     {
       "id": "abstract-class",
@@ -240,7 +244,8 @@
       "unitTitle": "Inheritance and Interfaces",
       "sources": [
         "java-oracle-concepts#what-is-an-interface"
-      ]
+      ],
+      "artifact": "programming-in-java--interface"
     },
     {
       "id": "interface-versus-abstract-class",
@@ -251,7 +256,8 @@
       "unitTitle": "Inheritance and Interfaces",
       "sources": [
         "java-oracle-abstract#abstract-classes"
-      ]
+      ],
+      "artifact": "programming-in-java--interface-versus-abstract-class"
     },
     {
       "id": "package",
@@ -339,7 +345,8 @@
       "unitTitle": "Packages, I/O and Collections",
       "sources": [
         "java-oracle-collections#framework-contents"
-      ]
+      ],
+      "artifact": "programming-in-java--collection-implementations"
     },
     {
       "id": "collection-algorithms",
@@ -407,7 +414,8 @@
       "unitTitle": "Exception Handling and Multi-Threading",
       "sources": [
         "java-oracle-exceptions#exception"
-      ]
+      ],
+      "artifact": "programming-in-java--catching-an-exception"
     },
     {
       "id": "finally-block",
@@ -418,7 +426,8 @@
       "unitTitle": "Exception Handling and Multi-Threading",
       "sources": [
         "java-oracle-finally#finally"
-      ]
+      ],
+      "artifact": "programming-in-java--finally-block"
     },
     {
       "id": "process",
@@ -441,7 +450,8 @@
       "unitTitle": "Exception Handling and Multi-Threading",
       "sources": [
         "java-oracle-procthread#processes-and-threads"
-      ]
+      ],
+      "artifact": "programming-in-java--thread"
     },
     {
       "id": "time-slicing",
@@ -485,7 +495,8 @@
       "unitTitle": "Exception Handling and Multi-Threading",
       "sources": [
         "java-oracle-sync#synchronization"
-      ]
+      ],
+      "artifact": "programming-in-java--synchronization"
     },
     {
       "id": "thread-contention",
@@ -541,7 +552,8 @@
       "unitTitle": "GUI Programming, Swings and Event Handling",
       "sources": [
         "java-oracle-layout#layout-manager"
-      ]
+      ],
+      "artifact": "programming-in-java--layout-manager"
     },
     {
       "id": "gridlayout",
@@ -585,7 +597,8 @@
       "unitTitle": "GUI Programming, Swings and Event Handling",
       "sources": [
         "java-oracle-events#event-handling"
-      ]
+      ],
+      "artifact": "programming-in-java--event-listener"
     },
     {
       "id": "java-applet",
@@ -662,7 +675,8 @@
       "unitTitle": "Applets and Networking",
       "sources": [
         "java-oracle-sockets#what-is-a-socket"
-      ]
+      ],
+      "artifact": "programming-in-java--socket"
     },
     {
       "id": "endpoint",

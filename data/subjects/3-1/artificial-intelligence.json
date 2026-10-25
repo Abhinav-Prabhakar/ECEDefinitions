@@ -41,7 +41,8 @@
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
         "ai-ai-unit-i#slide.20"
-      ]
+      ],
+      "artifact": "artificial-intelligence--agent"
     },
     {
       "id": "sensor",
@@ -75,7 +76,8 @@
       "sources": [
         "ai-ai-unit-i#slide.30"
       ],
-      "diagram": "state-machine"
+      "diagram": "state-machine",
+      "artifact": "artificial-intelligence--simple-reflex-agent"
     },
     {
       "id": "model-based-reflex-agent",
@@ -120,7 +122,8 @@
       "sources": [
         "ai-ai-unit-i#slide.45"
       ],
-      "diagram": "graph-search"
+      "diagram": "graph-search",
+      "artifact": "artificial-intelligence--breadth-first-search"
     },
     {
       "id": "depth-first-search",
@@ -210,7 +213,8 @@
       "unitTitle": "Problem Solving and Search",
       "sources": [
         "ai-ai-unit-ii#slide.18"
-      ]
+      ],
+      "artifact": "artificial-intelligence--alpha-beta-pruning"
     },
     {
       "id": "constraint-satisfaction-problem",
@@ -243,7 +247,8 @@
       "unitTitle": "Problem Solving and Search",
       "sources": [
         "ai-ai-unit-ii#slide.74"
-      ]
+      ],
+      "artifact": "artificial-intelligence--forward-chaining"
     },
     {
       "id": "backward-chaining",
@@ -375,7 +380,8 @@
       "unitTitle": "Planning",
       "sources": [
         "ai-ai-unit-iv#slide.6"
-      ]
+      ],
+      "artifact": "artificial-intelligence--pddl"
     },
     {
       "id": "action-schema",
@@ -487,7 +493,8 @@
       "sources": [
         "ai-ai-unit-v#slide.35"
       ],
-      "diagram": "bayes-tree"
+      "diagram": "bayes-tree",
+      "artifact": "artificial-intelligence--bayes-rule"
     },
     {
       "id": "full-joint-probability-distribution",
@@ -555,7 +562,8 @@
       "unitTitle": "Learning",
       "sources": [
         "ai-ai-unit-vi#slide.11"
-      ]
+      ],
+      "artifact": "artificial-intelligence--reinforcement-learning"
     },
     {
       "id": "decision-tree",
@@ -567,7 +575,8 @@
       "sources": [
         "ai-ai-unit-vi#slide.20"
       ],
-      "diagram": "decision-tree"
+      "diagram": "decision-tree",
+      "artifact": "artificial-intelligence--decision-tree"
     }
   ]
 }

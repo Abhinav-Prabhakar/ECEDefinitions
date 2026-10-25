@@ -121,7 +121,8 @@
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.21"
-      ]
+      ],
+      "artifact": "embedded-c-programming--static-ram"
     },
     {
       "id": "prom",
@@ -132,7 +133,8 @@
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.23"
-      ]
+      ],
+      "artifact": "embedded-c-programming--prom"
     },
     {
       "id": "bdata-area",
@@ -143,7 +145,8 @@
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.27"
-      ]
+      ],
+      "artifact": "embedded-c-programming--bdata-area"
     },
     {
       "id": "8-bit-microcontroller",
@@ -190,7 +193,8 @@
       "sources": [
         "ecp-unit-2#slide.37"
       ],
-      "diagram": "interrupt-flow"
+      "diagram": "interrupt-flow",
+      "artifact": "embedded-c-programming--isr"
     },
     {
       "id": "switch-bounce",
@@ -201,7 +205,8 @@
       "unitTitle": "Reading Switches",
       "sources": [
         "ecp-unit-3#slide.22"
-      ]
+      ],
+      "artifact": "embedded-c-programming--switch-bounce"
     },
     {
       "id": "pull-up-resistor",
@@ -225,7 +230,8 @@
       "sources": [
         "ecp-unit-4#p.9",
         "ecp-unit-4#p.10"
-      ]
+      ],
+      "artifact": "embedded-c-programming--modular-programming"
     },
     {
       "id": "project-header",
@@ -259,7 +265,8 @@
       "unitTitle": "Adding Structure to the Code",
       "sources": [
         "ecp-unit-4#p.21"
-      ]
+      ],
+      "artifact": "embedded-c-programming--typedef"
     },
     {
       "id": "port-header",
@@ -307,7 +314,8 @@
       "sources": [
         "ecp-unit-5#p.12",
         "ecp-unit-5#p.13"
-      ]
+      ],
+      "artifact": "embedded-c-programming--tcon"
     },
     {
       "id": "tmod",
@@ -319,7 +327,8 @@
       "sources": [
         "ecp-unit-5#p.14",
         "ecp-unit-5#p.15"
-      ]
+      ],
+      "artifact": "embedded-c-programming--tmod"
     },
     {
       "id": "timer-2",

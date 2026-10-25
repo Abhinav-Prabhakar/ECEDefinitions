@@ -66,7 +66,8 @@
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
         "mpmc-unit-1a#slide.16"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--instruction-queue"
     },
     {
       "id": "flag-register",
@@ -77,7 +78,8 @@
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
         "mpmc-unit-1a#slide.18"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--flag-register"
     },
     {
       "id": "carry-flag",
@@ -133,7 +135,8 @@
       "sources": [
         "mpmc-unit-1a#slide.28"
       ],
-      "diagram": "memory-layout"
+      "diagram": "memory-layout",
+      "artifact": "microprocessors-and-microcontrollers--segment-registers"
     },
     {
       "id": "physical-address",
@@ -178,7 +181,8 @@
       "unitTitle": "Instruction Set of 8086",
       "sources": [
         "mpmc-unit-1b#slide.2"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--addressing-mode"
     },
     {
       "id": "immediate-addressing",
@@ -267,7 +271,8 @@
       "unitTitle": "Instruction Set of 8086",
       "sources": [
         "mpmc-unit-1b#slide.33"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--cmp-instruction"
     },
     {
       "id": "mul-instruction",
@@ -312,7 +317,8 @@
       "unitTitle": "Assembly Language Programming",
       "sources": [
         "mpmc-unit-1b#slide.90"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--assembler-directive"
     },
     {
       "id": "procedure",
@@ -345,7 +351,8 @@
       "unitTitle": "Interfacing with 8086",
       "sources": [
         "mpmc-unit-2#slide.4"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--8255-ppi"
     },
     {
       "id": "bsr-mode",
@@ -447,7 +454,8 @@
       "sources": [
         "mpmc-unit-2#slide.61"
       ],
-      "diagram": "interrupt-flow"
+      "diagram": "interrupt-flow",
+      "artifact": "microprocessors-and-microcontrollers--8259-pic"
     },
     {
       "id": "microcontroller",
@@ -551,7 +559,8 @@
         "mpmc-unit-3#slide.37",
         "mpmc-unit-3#slide.38"
       ],
-      "diagram": "counter-timing"
+      "diagram": "counter-timing",
+      "artifact": "microprocessors-and-microcontrollers--tcon"
     },
     {
       "id": "ie-register",
@@ -562,7 +571,8 @@
       "unitTitle": "8051 Microcontroller",
       "sources": [
         "mpmc-unit-3#slide.54"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--ie-register"
     },
     {
       "id": "lcd",
@@ -652,7 +662,8 @@
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [
         "mpmc-unit-4#slide.33"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--sbuf"
     },
     {
       "id": "scon",
@@ -663,7 +674,8 @@
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [
         "mpmc-unit-4#slide.34"
-      ]
+      ],
+      "artifact": "microprocessors-and-microcontrollers--scon"
     },
     {
       "id": "pcon",

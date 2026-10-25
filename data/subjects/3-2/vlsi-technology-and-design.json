@@ -109,7 +109,8 @@
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
         "vlsitd-unit-1-vlsi-td#slide.43"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--verilog-value-set"
     },
     {
       "id": "verilog-built-in-primitives",
@@ -169,7 +170,8 @@
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
         "vlsitd-unit-3-vlsi-td#slide.47"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--p-well-process"
     },
     {
       "id": "n-well-process",
@@ -328,7 +330,8 @@
       "sources": [
         "vlsitd-unit-3-vlsi-td#slide.45",
         "vlsitd-unit-4#slide.35"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--cmos-inverter"
     },
     {
       "id": "nmos-saturation-region",
@@ -384,7 +387,8 @@
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
         "vlsitd-unit-2-vlsi-td#slide.84"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--non-blocking-assignment"
     },
     {
       "id": "full-adder",
@@ -453,7 +457,8 @@
       "unitTitle": "Circuit Design Processes & Layout",
       "sources": [
         "vlsitd-unit-5#slide.16"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--lambda-based-design-rules"
     },
     {
       "id": "scaling-of-mos-circuits",
@@ -465,7 +470,8 @@
       "sources": [
         "vlsitd-unit-5#slide.22",
         "vlsitd-unit-5#slide.24"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--scaling-of-mos-circuits"
     },
     {
       "id": "oxidation",
@@ -476,7 +482,8 @@
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
         "vlsitd-unit-3#slide.15"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--oxidation"
     },
     {
       "id": "lithography",
@@ -608,7 +615,8 @@
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
         "vlsitd-web-propagation-delay#Electronics"
-      ]
+      ],
+      "artifact": "vlsi-technology-and-design--rc-delay"
     },
     {
       "id": "fan-out",

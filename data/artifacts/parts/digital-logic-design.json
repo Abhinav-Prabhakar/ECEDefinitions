@@ -1,0 +1,456 @@
+{
+  "subject": "digital-logic-design",
+  "artifacts": {
+    "digital-logic-design--gray-code": {
+      "type": "table",
+      "title": "4-bit binary and Gray code",
+      "headers": [
+        "decimal",
+        "binary",
+        "gray"
+      ],
+      "rows": [
+        [
+          "0",
+          "0000",
+          "0000"
+        ],
+        [
+          "1",
+          "0001",
+          "0001"
+        ],
+        [
+          "2",
+          "0010",
+          "0011"
+        ],
+        [
+          "3",
+          "0011",
+          "0010"
+        ],
+        [
+          "4",
+          "0100",
+          "0110"
+        ],
+        [
+          "5",
+          "0101",
+          "0111"
+        ],
+        [
+          "6",
+          "0110",
+          "0101"
+        ],
+        [
+          "7",
+          "0111",
+          "0100"
+        ],
+        [
+          "8",
+          "1000",
+          "1100"
+        ],
+        [
+          "9",
+          "1001",
+          "1101"
+        ],
+        [
+          "10",
+          "1010",
+          "1111"
+        ],
+        [
+          "11",
+          "1011",
+          "1110"
+        ],
+        [
+          "12",
+          "1100",
+          "1010"
+        ],
+        [
+          "13",
+          "1101",
+          "1011"
+        ],
+        [
+          "14",
+          "1110",
+          "1001"
+        ],
+        [
+          "15",
+          "1111",
+          "1000"
+        ]
+      ],
+      "highlight": 8,
+      "note": "From 7 to 8 all four binary bits change but only one Gray bit does, so a Gray-coded encoder cannot glitch."
+    },
+    "digital-logic-design--boolean-algebra": {
+      "type": "table",
+      "title": "Boolean identities and their duals",
+      "headers": [
+        "name",
+        "OR form",
+        "AND form"
+      ],
+      "rows": [
+        [
+          "identity",
+          "x + 0 = x",
+          "x · 1 = x"
+        ],
+        [
+          "null",
+          "x + 1 = 1",
+          "x · 0 = 0"
+        ],
+        [
+          "idempotent",
+          "x + x = x",
+          "x · x = x"
+        ],
+        [
+          "complement",
+          "x + x' = 1",
+          "x · x' = 0"
+        ],
+        [
+          "commutative",
+          "x + y = y + x",
+          "x y = y x"
+        ],
+        [
+          "associative",
+          "(x + y) + z = x + (y + z)",
+          "(x y) z = x (y z)"
+        ],
+        [
+          "distributive",
+          "x (y + z) = x y + x z",
+          "x + y z = (x + y)(x + z)"
+        ],
+        [
+          "absorption",
+          "x + x y = x",
+          "x (x + y) = x"
+        ],
+        [
+          "De Morgan",
+          "(x + y)' = x' y'",
+          "(x y)' = x' + y'"
+        ],
+        [
+          "consensus",
+          "x y + x' z + y z = x y + x' z",
+          "(x+y)(x'+z)(y+z) = (x+y)(x'+z)"
+        ]
+      ],
+      "highlight": 9,
+      "note": "Each identity has a dual: swap AND with OR and 0 with 1 to get the other column."
+    },
+    "digital-logic-design--karnaugh-map": {
+      "type": "derivation",
+      "title": "why a K-map group drops variables",
+      "steps": [
+        "F=\\Sigma m(0,1,4,5)=A'B'C'D'+A'B'C'D+A'BC'D'+A'BC'D",
+        "F=A'C'\\left(B'D'+B'D+BD'+BD\\right)",
+        "B'D'+B'D+BD'+BD=\\left(B'+B\\right)\\left(D'+D\\right)=1",
+        "F=A'C'"
+      ],
+      "symbols": [
+        [
+          "m_{i}",
+          "minterm i"
+        ],
+        [
+          "A'",
+          "complement of A"
+        ],
+        [
+          "A'C'",
+          "product term left after grouping"
+        ]
+      ],
+      "note": "Grouping m0, m1, m4 and m5 removes B and D together, because each adjacent pair differs in exactly one variable."
+    },
+    "digital-logic-design--full-adder": {
+      "type": "table",
+      "title": "Full adder truth table",
+      "headers": [
+        "A",
+        "B",
+        "C_in",
+        "S",
+        "C_out"
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "highlight": 7,
+      "note": "S is the three-way XOR, while C_out is the majority vote, which is why two half adders plus an OR gate build it."
+    },
+    "digital-logic-design--jk-flip-flop": {
+      "type": "table",
+      "title": "Next state and excitation of the four flip-flops",
+      "headers": [
+        "type",
+        "Q(t+1)",
+        "excite 0 → 1",
+        "excite 1 → 0",
+        "toggle"
+      ],
+      "rows": [
+        [
+          "SR",
+          "S + R'Q",
+          "S = 1, R = 0",
+          "S = 0, R = 1",
+          "not allowed"
+        ],
+        [
+          "JK",
+          "J Q' + K' Q",
+          "J = 1, K = X",
+          "J = X, K = 1",
+          "J = K = 1"
+        ],
+        [
+          "D",
+          "D",
+          "D = 1",
+          "D = 0",
+          "D = Q'"
+        ],
+        [
+          "T",
+          "T ⊕ Q",
+          "T = 1",
+          "T = 1",
+          "T = 1"
+        ]
+      ],
+      "highlight": 2,
+      "note": "JK is the universal type: tie J and K for a T stage, or add an inverter ahead of J for a D stage."
+    },
+    "digital-logic-design--ripple-counter": {
+      "type": "derivation",
+      "title": "modulus and maximum clock of a ripple counter",
+      "steps": [
+        "M=2^{n}",
+        "t_{\\text{pd}}=n\\,t_{\\text{pd,FF}}",
+        "f_{\\max}=\\frac{1}{t_{\\text{pd}}}=\\frac{1}{n\\,t_{\\text{pd,FF}}}",
+        "n=4,\\ t_{\\text{pd,FF}}=10\\,\\text{ns}:\\ f_{\\max}=\\frac{1}{40\\,\\text{ns}}=25\\,\\text{MHz}"
+      ],
+      "symbols": [
+        [
+          "n",
+          "number of flip-flops"
+        ],
+        [
+          "M",
+          "modulus, states before repeat"
+        ],
+        [
+          "t_{\\text{pd,FF}}",
+          "delay of one flip-flop"
+        ],
+        [
+          "f_{\\max}",
+          "highest usable clock"
+        ]
+      ],
+      "note": "Delay accumulates because each stage waits for the one before it, so f_max falls as 1/n."
+    },
+    "digital-logic-design--johnson-counter": {
+      "type": "table",
+      "title": "4-bit Johnson counter sequence",
+      "headers": [
+        "clock",
+        "Q3 Q2 Q1 Q0",
+        "value",
+        "state"
+      ],
+      "rows": [
+        [
+          "0",
+          "0000",
+          "0",
+          "reset"
+        ],
+        [
+          "1",
+          "1000",
+          "8",
+          "shift in 1"
+        ],
+        [
+          "2",
+          "1100",
+          "12",
+          "—"
+        ],
+        [
+          "3",
+          "1110",
+          "14",
+          "—"
+        ],
+        [
+          "4",
+          "1111",
+          "15",
+          "all ones"
+        ],
+        [
+          "5",
+          "0111",
+          "7",
+          "—"
+        ],
+        [
+          "6",
+          "0011",
+          "3",
+          "—"
+        ],
+        [
+          "7",
+          "0001",
+          "1",
+          "—"
+        ],
+        [
+          "8",
+          "0000",
+          "0",
+          "repeats"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Feedback is Q0' into the first stage, giving M = 2n = 8 states against the ring counter's 4."
+    },
+    "digital-logic-design--shift-register": {
+      "type": "code",
+      "lang": "verilog",
+      "title": "4-bit serial-in serial-out shift register",
+      "lines": [
+        "module shift4 (input clk, rst, sin, output reg [3:0] q);",
+        "  always @(posedge clk) begin",
+        "    if (rst) q <= 4'b0000;",
+        "    else     q <= {q[2:0], sin};",
+        "  end",
+        "endmodule"
+      ],
+      "highlight": 4,
+      "note": "The concatenation shifts left by one bit and loads sin into the vacant LSB on every rising edge."
+    },
+    "digital-logic-design--pla": {
+      "type": "table",
+      "title": "ROM, PLA and PAL",
+      "headers": [
+        "device",
+        "AND plane",
+        "OR plane",
+        "implements"
+      ],
+      "rows": [
+        [
+          "ROM, mask",
+          "fixed decoder",
+          "fixed",
+          "every minterm stored"
+        ],
+        [
+          "PROM",
+          "fixed decoder",
+          "programmable fuses",
+          "any SOP, one-time"
+        ],
+        [
+          "EPROM / EEPROM",
+          "fixed decoder",
+          "floating-gate cells",
+          "any SOP, erasable"
+        ],
+        [
+          "PLA",
+          "programmable",
+          "programmable",
+          "compact SOP, both planes"
+        ],
+        [
+          "PAL",
+          "programmable",
+          "fixed",
+          "SOP limited by fixed OR"
+        ]
+      ],
+      "highlight": 4,
+      "note": "A PLA programs both planes, so it stores only the product terms the function actually needs."
+    }
+  }
+}

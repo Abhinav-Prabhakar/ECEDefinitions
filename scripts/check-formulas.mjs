@@ -51,7 +51,32 @@ for (const file of files) {
   }
 }
 
-console.log(`formulas=${formulas} subjects=${files.length}`);
+const artifactPath = path.join(root, 'data', 'artifacts.json');
+let derivations = 0;
+if (fs.existsSync(artifactPath)) {
+  const registry = JSON.parse(fs.readFileSync(artifactPath, 'utf8'));
+  for (const [id, artifact] of Object.entries(registry.artifacts || {})) {
+    if (artifact.type !== 'derivation') continue;
+    (artifact.steps || []).forEach((step, i) => {
+      derivations++;
+      if (/\$|\\begin\{|\\end\{/.test(step)) {
+        bad++;
+        problems.push(`artifacts/${id} step ${i + 1}: delimiters/environments in formula`);
+        return;
+      }
+      try {
+        katex.renderToString(step, {
+          displayMode: false, throwOnError: true, strict: 'ignore', trust: false, output: 'html'
+        });
+      } catch (err) {
+        bad++;
+        problems.push(`artifacts/${id} step ${i + 1}: ${err.message.split('\n')[0]}`);
+      }
+    });
+  }
+}
+
+console.log(`formulas=${formulas} derivations=${derivations} subjects=${files.length}`);
 if (bad) {
   console.log(`FORMULA CHECK FAILED: ${bad} problem(s)`);
   for (const p of problems) console.log(' -', p);

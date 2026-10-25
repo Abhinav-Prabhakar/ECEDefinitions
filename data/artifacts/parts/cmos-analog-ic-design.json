@@ -1,0 +1,358 @@
+{
+  "subject": "cmos-analog-ic-design",
+  "artifacts": {
+    "cmos-analog-ic-design--mosfet-operating-regions": {
+      "type": "table",
+      "title": "MOSFET regions by bias",
+      "headers": [
+        "region",
+        "condition",
+        "I_D",
+        "g_m",
+        "use"
+      ],
+      "rows": [
+        [
+          "cut-off",
+          "V_GS < V_TH (ideal)",
+          "≈ 0 (only leakage)",
+          "0",
+          "switch off, standby"
+        ],
+        [
+          "triode",
+          "V_DS < V_OV",
+          "µ_nC_ox(W/L)(V_OV − V_DS/2)V_DS",
+          "µ_nC_ox(W/L)V_DS",
+          "active resistor, closed switch"
+        ],
+        [
+          "saturation",
+          "V_DS ≥ V_OV",
+          "½µ_nC_ox(W/L)V_OV²(1+λV_DS)",
+          "µ_nC_ox(W/L)V_OV",
+          "gain stage, current source"
+        ],
+        [
+          "weak inversion",
+          "V_GS just below V_TH",
+          "I_0(W/L)e^(V_OV/nV_T)",
+          "I_D/(nV_T)",
+          "micropower bias"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The boundary V_DS = V_OV is where the channel first pinches off at the drain; below it the device is a resistor, above it a current source."
+    },
+    "cmos-analog-ic-design--current-mirror": {
+      "type": "table",
+      "title": "current-mirror topologies",
+      "headers": [
+        "topology",
+        "R_out",
+        "min V_out",
+        "note"
+      ],
+      "rows": [
+        [
+          "simple",
+          "r_o2 = V_A/I_D",
+          "V_OV",
+          "one device, best headroom"
+        ],
+        [
+          "cascode",
+          "≈ g_m r_o²",
+          "2V_OV",
+          "one extra bias line"
+        ],
+        [
+          "wide-swing cascode",
+          "≈ g_m r_o²",
+          "2V_OV − V_T",
+          "needs a bias generator"
+        ],
+        [
+          "Wilson",
+          "≈ g_m r_o²/2",
+          "V_GS + V_OV",
+          "self-biased, three devices"
+        ],
+        [
+          "regulated (gain-boosted)",
+          "≈ A·g_m r_o²",
+          "2V_OV",
+          "auxiliary amp, extra pole"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Each step down the table buys output resistance with compliance headroom; a mirror is chosen by which of the two the stage can spare."
+    },
+    "cmos-analog-ic-design--mos-switch": {
+      "type": "table",
+      "title": "analog switch options",
+      "headers": [
+        "configuration",
+        "passes",
+        "R_on",
+        "limitation"
+      ],
+      "rows": [
+        [
+          "NMOS only",
+          "0 to V_DD − V_T",
+          "low at low V_in",
+          "loses V_T, body effect raises it"
+        ],
+        [
+          "PMOS only",
+          "|V_TP| to V_DD",
+          "low at high V_in",
+          "poor low-level pass"
+        ],
+        [
+          "CMOS transmission gate",
+          "0 to V_DD",
+          "R_on,n ‖ R_on,p",
+          "complementary clocks, more area"
+        ],
+        [
+          "bootstrapped NMOS",
+          "0 to V_DD + V_boot",
+          "near-constant",
+          "gate overdrive, reliability limit"
+        ]
+      ],
+      "highlight": 3,
+      "note": "In the parallel pair whichever device is starved of overdrive the other is fully on, so R_on stays flat across the rail."
+    },
+    "cmos-analog-ic-design--operational-amplifier": {
+      "type": "table",
+      "title": "op-amp specs and what sets them",
+      "headers": [
+        "spec",
+        "expression",
+        "set by",
+        "trade-off"
+      ],
+      "rows": [
+        [
+          "A_OL",
+          "g_m1(r_o2‖r_o4)·g_m6(r_o6‖r_o7)",
+          "channel length, cascoding",
+          "output swing"
+        ],
+        [
+          "GBW",
+          "g_m1/C_c",
+          "input-pair g_m, C_c",
+          "power, slew rate"
+        ],
+        [
+          "phase margin",
+          "90° − atan(ω_u/ω_p2)",
+          "C_c and the second pole",
+          "speed vs stability"
+        ],
+        [
+          "slew rate",
+          "I_tail/C_c",
+          "tail current",
+          "power"
+        ],
+        [
+          "ICMR",
+          "V_GS1 + V_DS,sat5 up to V_DD − V_SG3 − V_DS,sat3",
+          "input pair, tail source",
+          "headroom"
+        ],
+        [
+          "output swing",
+          "V_DS,sat6 up to V_DD − V_DS,sat7",
+          "output-stage overdrive",
+          "gain"
+        ],
+        [
+          "CMRR",
+          "A_d/A_cm",
+          "tail output resistance, matching",
+          "area"
+        ],
+        [
+          "PSRR",
+          "A_d/A_dd",
+          "rejection in the bias network",
+          "supply noise"
+        ],
+        [
+          "V_OS",
+          "ΔV_TH + (V_OV/2)·Δ(W/L)/(W/L)",
+          "mismatch, device area",
+          "area, trim"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Every entry is a knob on the same handful of devices, so the table reads as a trade-off map rather than a datasheet."
+    },
+    "cmos-analog-ic-design--subthreshold-slope": {
+      "type": "derivation",
+      "title": "where the 60 mV/decade comes from",
+      "steps": [
+        "I_{D}=I_{0}\\frac{W}{L}e^{(V_{GS}-V_{TH})/(nV_{T})}",
+        "S=\\frac{dV_{GS}}{d\\log_{10}I_{D}}=\\ln(10)\\,nV_{T}",
+        "n=1+\\frac{C_{dep}}{C_{ox}},\\qquad V_{T}=\\frac{kT}{q}",
+        "S=\\frac{kT}{q}\\ln(10)\\left(1+\\frac{C_{dep}}{C_{ox}}\\right)\\approx 60\\ \\text{mV/dec}"
+      ],
+      "symbols": [
+        [
+          "S",
+          "subthreshold swing"
+        ],
+        [
+          "n",
+          "body-effect coefficient"
+        ],
+        [
+          "C_{dep}",
+          "depletion capacitance under the channel"
+        ],
+        [
+          "C_{ox}",
+          "oxide capacitance per unit area"
+        ],
+        [
+          "V_{T}",
+          "thermal voltage kT/q"
+        ]
+      ],
+      "note": "The floor is ln(10)·kT/q, about 60 mV per decade at 300 K; body effect (n > 1) is what pushes a real device above it."
+    },
+    "cmos-analog-ic-design--intrinsic-gain": {
+      "type": "derivation",
+      "title": "intrinsic gain eliminates the bias current",
+      "steps": [
+        "A_{v}=g_{m}r_{o}",
+        "g_{m}=\\frac{\\partial I_{D}}{\\partial V_{GS}}=\\mu_{n}C_{ox}\\frac{W}{L}V_{OV}=\\frac{2I_{D}}{V_{OV}}",
+        "r_{o}=\\frac{\\partial V_{DS}}{\\partial I_{D}}=\\frac{V_{A}}{I_{D}}",
+        "A_{v}=\\frac{2I_{D}}{V_{OV}}\\cdot\\frac{V_{A}}{I_{D}}=\\frac{2V_{A}}{V_{OV}}"
+      ],
+      "symbols": [
+        [
+          "V_{A}",
+          "Early voltage"
+        ],
+        [
+          "V_{OV}",
+          "overdrive V_GS − V_TH"
+        ],
+        [
+          "I_{D}",
+          "bias current"
+        ]
+      ],
+      "note": "I_D cancels, so intrinsic gain is fixed by Early voltage and overdrive alone: more current buys speed, never more gain."
+    },
+    "cmos-analog-ic-design--thermal-noise": {
+      "type": "derivation",
+      "title": "thermal noise referred to the gate",
+      "steps": [
+        "\\overline{i_{n}^{2}}=4kT\\,G_{\\text{eff}}\\,\\Delta f",
+        "G_{\\text{eff}}=\\gamma g_{m},\\qquad \\gamma=\\tfrac{2}{3}\\ \\text{(long channel)}",
+        "\\overline{i_{n}^{2}}=4kT\\gamma g_{m}\\,\\Delta f",
+        "\\overline{v_{n}^{2}}=\\frac{\\overline{i_{n}^{2}}}{g_{m}^{2}}=\\frac{4kT\\gamma}{g_{m}}\\Delta f"
+      ],
+      "symbols": [
+        [
+          "k",
+          "Boltzmann constant"
+        ],
+        [
+          "\\gamma",
+          "channel thermal-noise coefficient"
+        ],
+        [
+          "g_{m}",
+          "transconductance"
+        ],
+        [
+          "\\Delta f",
+          "measurement bandwidth"
+        ]
+      ],
+      "note": "Noise is a conductance effect, so referring it to the gate divides by g_m²: the input pair is made high-g_m to push the floor down."
+    },
+    "cmos-analog-ic-design--bandgap-voltage-reference": {
+      "type": "derivation",
+      "title": "CTAT plus PTAT cancels the temperature drift",
+      "steps": [
+        "V_{BE}(T)=V_{BE0}-\\alpha T,\\qquad \\frac{\\partial V_{BE}}{\\partial T}\\approx -2\\ \\text{mV/K}",
+        "\\Delta V_{BE}=V_{BE1}-V_{BE2}=\\frac{kT}{q}\\ln N",
+        "V_{ref}=V_{BE}+K\\Delta V_{BE}=V_{BE0}-\\alpha T+K\\frac{k}{q}\\ln N\\,T",
+        "\\frac{\\partial V_{ref}}{\\partial T}=0\\ \\Rightarrow\\ K=\\frac{\\alpha q}{k\\ln N}",
+        "V_{ref}=V_{BE0}\\approx 1.2\\ \\text{V}\\quad\\text{(band gap extrapolated to 0 K)}"
+      ],
+      "symbols": [
+        [
+          "K",
+          "PTAT gain set by a resistor ratio"
+        ],
+        [
+          "N",
+          "current-density ratio of the two junctions"
+        ],
+        [
+          "\\alpha",
+          "CTAT slope ≈ 2 mV/K"
+        ],
+        [
+          "V_{BE0}",
+          "junction voltage extrapolated to 0 K"
+        ]
+      ],
+      "note": "The junction voltage falls at about 2 mV/K and the scaled ΔV_BE rises at the same rate; their sum lands near the 1.2 V band gap."
+    },
+    "cmos-analog-ic-design--latched-comparator": {
+      "type": "sequence",
+      "title": "latched comparator decision cycle",
+      "actors": [
+        "clock",
+        "input pair",
+        "regenerative latch",
+        "output"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "φ = 0: precharge, inputs still tracked"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "φ = 0: cross-coupled pair held balanced"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "φ rises: input pair samples V_in+ − V_in−"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "imbalance ΔI seeds the latch"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "regeneration: ΔV grows as e^(t/τ_reg)"
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "label": "φ falls: outputs reset for the next decision"
+        }
+      ],
+      "note": "Resolution time is exponential in the seed, so a small input difference costs only a little extra regeneration time."
+    }
+  }
+}

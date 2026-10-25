@@ -1,0 +1,93 @@
+{
+  "mosfet": [
+    {"x": 58, "y": 75, "label": "gate"},
+    {"x": 160, "y": 40, "label": "drain"},
+    {"x": 160, "y": 110, "label": "source"},
+    {"x": 92, "y": 75, "label": "channel"}
+  ],
+  "bjt": [
+    {"x": 90, "y": 75, "label": "base"},
+    {"x": 150, "y": 30, "label": "collector"},
+    {"x": 150, "y": 120, "label": "emitter"},
+    {"x": 110, "y": 60, "label": "base junction"}
+  ],
+  "pn-junction": [
+    {"x": 64, "y": 72, "label": "p region"},
+    {"x": 176, "y": 72, "label": "n region"},
+    {"x": 120, "y": 72, "label": "depletion region"},
+    {"x": 150, "y": 72, "label": "electric field"}
+  ],
+  "d-flipflop": [
+    {"x": 70, "y": 58, "label": "D input"},
+    {"x": 176, "y": 58, "label": "Q output"},
+    {"x": 74, "y": 112, "label": "clock input"},
+    {"x": 123, "y": 76, "label": "storage element"}
+  ],
+  "opamp": [
+    {"x": 60, "y": 60, "label": "inverting input"},
+    {"x": 60, "y": 90, "label": "non-inverting input"},
+    {"x": 180, "y": 75, "label": "output"},
+    {"x": 120, "y": 36, "label": "feedback path"}
+  ],
+  "osi-stack": [
+    {"x": 120, "y": 22, "label": "application layer"},
+    {"x": 120, "y": 73, "label": "transport layer"},
+    {"x": 120, "y": 90, "label": "network layer"},
+    {"x": 120, "y": 124, "label": "physical layer"}
+  ],
+  "tcp-handshake": [
+    {"x": 120, "y": 40, "label": "SYN"},
+    {"x": 120, "y": 68, "label": "SYN + ACK"},
+    {"x": 120, "y": 96, "label": "ACK"},
+    {"x": 60, "y": 16, "label": "client"}
+  ],
+  "memory-layout": [
+    {"x": 104, "y": 28, "label": "text segment"},
+    {"x": 104, "y": 44, "label": "data segment"},
+    {"x": 104, "y": 76, "label": "heap"},
+    {"x": 104, "y": 107, "label": "stack"}
+  ],
+  "process-states": [
+    {"x": 46, "y": 42, "label": "new"},
+    {"x": 120, "y": 42, "label": "ready"},
+    {"x": 194, "y": 42, "label": "running"},
+    {"x": 120, "y": 110, "label": "waiting"}
+  ],
+  "tx-line": [
+    {"x": 33, "y": 46, "label": "source"},
+    {"x": 207, "y": 46, "label": "load"},
+    {"x": 120, "y": 78, "label": "line"},
+    {"x": 120, "y": 112, "label": "standing wave"}
+  ],
+  "em-wave": [
+    {"x": 120, "y": 20, "label": "electric field"},
+    {"x": 120, "y": 134, "label": "magnetic field"},
+    {"x": 190, "y": 88, "label": "propagation axis"},
+    {"x": 120, "y": 76, "label": "in phase"}
+  ],
+  "pipeline": [
+    {"x": 40, "y": 40, "label": "fetch"},
+    {"x": 79, "y": 40, "label": "decode"},
+    {"x": 118, "y": 40, "label": "execute"},
+    {"x": 157, "y": 40, "label": "memory"},
+    {"x": 196, "y": 40, "label": "write back"}
+  ],
+  "cache-map": [
+    {"x": 54, "y": 41, "label": "tag"},
+    {"x": 102, "y": 41, "label": "index"},
+    {"x": 136, "y": 41, "label": "offset"},
+    {"x": 106, "y": 84, "label": "cache set"}
+  ],
+  "linked-list": [
+    {"x": 18, "y": 60, "label": "head"},
+    {"x": 48, "y": 69, "label": "node"},
+    {"x": 72, "y": 69, "label": "next pointer"},
+    {"x": 228, "y": 69, "label": "null terminator"}
+  ],
+  "binary-tree": [
+    {"x": 120, "y": 30, "label": "root"},
+    {"x": 76, "y": 66, "label": "left child"},
+    {"x": 164, "y": 66, "label": "right child"},
+    {"x": 48, "y": 104, "label": "leaf"}
+  ]
+}

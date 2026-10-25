@@ -57,7 +57,8 @@
       "sources": [
         "esd-unit-ii#slide.17",
         "esd-unit-ii#slide.24"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--cpsr"
     },
     {
       "id": "user-mode",
@@ -68,7 +69,8 @@
       "unitTitle": "ARM Architecture",
       "sources": [
         "esd-unit-ii#slide.19"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--user-mode"
     },
     {
       "id": "irq-mode",
@@ -170,7 +172,8 @@
       "sources": [
         "esd-unit-ii#slide.36"
       ],
-      "diagram": "interrupt-flow"
+      "diagram": "interrupt-flow",
+      "artifact": "embedded-system-design-using-arm--vector-table"
     },
     {
       "id": "barrel-shifter",
@@ -181,7 +184,8 @@
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.6"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--barrel-shifter"
     },
     {
       "id": "data-processing-instructions",
@@ -192,7 +196,8 @@
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.4"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--data-processing-instructions"
     },
     {
       "id": "comparison-instructions",
@@ -225,7 +230,8 @@
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.17"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--load-store-instruction"
     },
     {
       "id": "multiple-register-transfer",
@@ -236,7 +242,8 @@
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.23"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--multiple-register-transfer"
     },
     {
       "id": "swap-instruction",
@@ -282,7 +289,8 @@
       "sources": [
         "esd-unit-iii#slide.29"
       ],
-      "diagram": "memory-layout"
+      "diagram": "memory-layout",
+      "artifact": "embedded-system-design-using-arm--atpcs"
     },
     {
       "id": "software-interrupt-instruction",
@@ -315,7 +323,8 @@
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.36"
-      ]
+      ],
+      "artifact": "embedded-system-design-using-arm--condition-field"
     },
     {
       "id": "thumb-instruction-set",
@@ -338,7 +347,8 @@
       "sources": [
         "esd-unit-4#slide.8"
       ],
-      "diagram": "state-machine"
+      "diagram": "state-machine",
+      "artifact": "embedded-system-design-using-arm--arm-thumb-interworking"
     },
     {
       "id": "low-registers",

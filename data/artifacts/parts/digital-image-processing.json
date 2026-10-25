@@ -1,0 +1,261 @@
+{
+  "subject": "digital-image-processing",
+  "artifacts": {
+    "digital-image-processing--convolution": {
+      "type": "code",
+      "lang": "python",
+      "title": "convolution at one pixel",
+      "lines": [
+        "f = [[10] * 5 for _ in range(5)]",
+        "f[2][2] = 50",
+        "h = [[1/9] * 3 for _ in range(3)]",
+        "x = y = 2",
+        "g = sum(h[m][n] * f[x - m][y - n] for m in range(3) for n in range(3))",
+        "print(round(g, 2))"
+      ],
+      "highlight": [
+        5
+      ],
+      "output": [
+        "14.44"
+      ],
+      "note": "The output is the 3x3 neighbourhood mean, 130/9; reading f[x - m][y - n] is the kernel flip that separates convolution from correlation."
+    },
+    "digital-image-processing--spatial-filtering": {
+      "type": "table",
+      "title": "3x3 filter kernels",
+      "headers": [
+        "filter",
+        "kernel (3x3, rows)",
+        "effect"
+      ],
+      "rows": [
+        [
+          "average",
+          "(1/9) all ones",
+          "blur, suppress noise"
+        ],
+        [
+          "Gaussian",
+          "(1/16) [1 2 1; 2 4 2; 1 2 1]",
+          "smooth, weighted centre"
+        ],
+        [
+          "Laplacian",
+          "[0 1 0; 1 -4 1; 0 1 0]",
+          "respond to edges"
+        ],
+        [
+          "Sobel x",
+          "[-1 0 1; -2 0 2; -1 0 1]",
+          "vertical-edge gradient"
+        ],
+        [
+          "Sobel y",
+          "[-1 -2 -1; 0 0 0; 1 2 1]",
+          "horizontal-edge gradient"
+        ],
+        [
+          "sharpen",
+          "[0 -1 0; -1 5 -1; 0 -1 0]",
+          "unsharp mask"
+        ]
+      ],
+      "highlight": 4,
+      "note": "A blur kernel's weights sum to one and preserve brightness; a derivative kernel's weights sum to zero and keep only local differences."
+    },
+    "digital-image-processing--histogram-equalization": {
+      "type": "derivation",
+      "title": "histogram equalization",
+      "steps": [
+        "s=T(r)=(L-1)\\int_{0}^{r}p_{r}(w)\\,dw",
+        "\\frac{ds}{dr}=(L-1)\\,p_{r}(r)",
+        "p_{s}(s)=p_{r}(r)\\left|\\frac{dr}{ds}\\right|=\\frac{1}{L-1}",
+        "s_{k}=(L-1)\\sum_{j=0}^{k}p_{r}(r_{j})=(L-1)\\sum_{j=0}^{k}\\frac{n_{j}}{MN}"
+      ],
+      "symbols": [
+        [
+          "r_k",
+          "input intensity level"
+        ],
+        [
+          "s_k",
+          "output intensity level"
+        ],
+        [
+          "n_k",
+          "pixels at level r_k"
+        ],
+        [
+          "M,N",
+          "image dimensions"
+        ],
+        [
+          "L",
+          "number of intensity levels"
+        ]
+      ],
+      "note": "The transform's slope is proportional to the input density, so the output density is flat and crowded levels are spread across the range."
+    },
+    "digital-image-processing--wiener-filter": {
+      "type": "derivation",
+      "title": "Wiener filter from MMSE",
+      "steps": [
+        "e=\\mathbb{E}\\left[\\left|F-WG\\right|^{2}\\right],\\quad G=HF+N",
+        "\\frac{\\partial e}{\\partial W^{*}}=-\\mathbb{E}\\left[(F-WG)G^{*}\\right]=0",
+        "W\\,\\mathbb{E}\\left[|G|^{2}\\right]=\\mathbb{E}\\left[FG^{*}\\right]=H^{*}S_{f}",
+        "W=\\frac{H^{*}S_{f}}{|H|^{2}S_{f}+S_{n}}=\\frac{H^{*}}{|H|^{2}+S_{n}/S_{f}}",
+        "\\hat{F}=W\\,G"
+      ],
+      "symbols": [
+        [
+          "S_f",
+          "power spectrum of the true image"
+        ],
+        [
+          "S_n",
+          "noise power spectrum, uncorrelated with F"
+        ],
+        [
+          "H",
+          "degradation transfer function"
+        ],
+        [
+          "W",
+          "restoration filter"
+        ],
+        [
+          "^{*}",
+          "complex conjugate"
+        ]
+      ],
+      "note": "The gain is the inverse filter H*/|H|^2 tapered by S_f/S_n, so frequencies where noise dominates are attenuated instead of amplified."
+    },
+    "digital-image-processing--huffman-coding": {
+      "type": "code",
+      "lang": "python",
+      "title": "Huffman merge",
+      "lines": [
+        "import heapq",
+        "",
+        "def huffman(p):",
+        "    heap = [(wt, i, {s: \"\"}) for i, (s, wt) in enumerate(p.items())]",
+        "    heapq.heapify(heap)",
+        "    uid = len(heap)",
+        "    while len(heap) > 1:",
+        "        w1, _, c1 = heapq.heappop(heap)",
+        "        w2, _, c2 = heapq.heappop(heap)",
+        "        codes = {s: \"0\" + c for s, c in c1.items()}",
+        "        codes.update({s: \"1\" + c for s, c in c2.items()})",
+        "        heapq.heappush(heap, (w1 + w2, uid, codes))",
+        "        uid += 1",
+        "    return heap[0][2]",
+        "",
+        "print(huffman({\"a\": 0.5, \"b\": 0.25, \"c\": 0.25}))"
+      ],
+      "highlight": [
+        8,
+        9
+      ],
+      "output": [
+        "{'a': '0', 'b': '10', 'c': '11'}"
+      ],
+      "note": "Merging the two lowest weights and prefixing the left branch with 0 and the right with 1 yields a prefix code with minimum mean length."
+    },
+    "digital-image-processing--opening": {
+      "type": "table",
+      "title": "morphological operators",
+      "headers": [
+        "operation",
+        "expression",
+        "effect on objects"
+      ],
+      "rows": [
+        [
+          "dilation",
+          "A ⊕ B",
+          "grows, fills small holes"
+        ],
+        [
+          "erosion",
+          "A ⊖ B",
+          "shrinks, removes thin parts"
+        ],
+        [
+          "opening",
+          "(A ⊖ B) ⊕ B",
+          "removes protrusions, keeps size"
+        ],
+        [
+          "closing",
+          "(A ⊕ B) ⊖ B",
+          "fills gaps, keeps size"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Opening erodes first and dilates back, so structures that vanish in the erosion never return; closing does the reverse and keeps gaps filled."
+    },
+    "digital-image-processing--jpeg": {
+      "type": "sequence",
+      "title": "JPEG encode order",
+      "actors": [
+        "encoder",
+        "DCT",
+        "quantiser",
+        "bitstream"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "level-shifted 8x8 block"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "64 DCT coefficients"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "round(C/Q), zig-zag, Huffman"
+        }
+      ],
+      "note": "Quantisation is the only lossy step; the zig-zag scan and Huffman code that follow only reorder and pack what survives."
+    },
+    "digital-image-processing--block-truncation-coding": {
+      "type": "derivation",
+      "title": "block truncation levels",
+      "steps": [
+        "n=p+q,\\quad \\bar{f}=\\frac{p\\,b+q\\,a}{n}",
+        "\\sigma^{2}=\\frac{p\\,(b-\\bar{f})^{2}+q\\,(a-\\bar{f})^{2}}{n}",
+        "b-\\bar{f}=\\frac{q}{n}(b-a),\\quad \\bar{f}-a=\\frac{p}{n}(b-a)",
+        "\\sigma^{2}=\\frac{pq}{n^{2}}(b-a)^{2}",
+        "a=\\bar{f}-\\sigma\\sqrt{\\frac{q}{p}},\\quad b=\\bar{f}+\\sigma\\sqrt{\\frac{p}{q}}"
+      ],
+      "symbols": [
+        [
+          "p",
+          "pixels above the block mean"
+        ],
+        [
+          "q",
+          "pixels at or below the mean"
+        ],
+        [
+          "a,b",
+          "two reconstruction levels"
+        ],
+        [
+          "\\bar{f}",
+          "block mean"
+        ],
+        [
+          "\\sigma",
+          "block standard deviation"
+        ]
+      ],
+      "note": "Matching the block mean and variance with two levels gives a and b; each block then costs two levels plus a p+q bit map."
+    }
+  }
+}

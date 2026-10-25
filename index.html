@@ -1039,6 +1039,138 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
 }
 .def.dg-open .def-dg{opacity:1;visibility:visible;transform:none;pointer-events:auto}
 
+/* cold surfaces — code, spec tables, sequences, derivations */
+.art-btn{
+  width:18px;height:18px;margin-left:5px;padding:0;
+  display:inline-grid;place-items:center;vertical-align:-2px;
+  border:1px solid var(--hair);border-radius:4px;
+  background:var(--surface);color:var(--ink-4);
+  cursor:pointer;transition:.3s var(--ease);
+}
+.art-btn svg{display:block}
+.art-btn:hover,.art-btn[aria-expanded="true"]{
+  border-color:var(--accent-line);color:var(--accent);background:var(--accent-tint);
+}
+.art-panel{
+  margin:10px 0 3px;max-width:640px;
+  border:1px solid var(--hair);border-radius:12px;
+  background:var(--surface-soft);overflow:hidden;
+}
+.art-panel[hidden]{display:none}
+.surface-head{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 12px;border-bottom:1px solid var(--hair);
+  font-size:8px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-4);
+}
+.surface-head b{font-weight:400;color:var(--ink-3);letter-spacing:.12em}
+.surface-head span:first-child{color:var(--accent);letter-spacing:.14em}
+.surface-close{
+  margin-left:auto;width:18px;height:18px;padding:0;border:0;border-radius:50%;
+  background:none;color:var(--ink-4);cursor:pointer;font-size:12px;line-height:1;
+}
+.surface-close:hover{color:var(--ink)}
+.surface-note{
+  margin:0;padding:8px 13px 10px;border-top:1px solid var(--hair);
+  font-size:9.5px;letter-spacing:.02em;color:var(--ink-3);line-height:1.55;
+}
+
+/* code */
+.code-body{
+  margin:0;padding:9px 0;overflow-x:auto;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:10.5px;line-height:1.7;color:var(--ink-2);
+  tab-size:2;
+}
+.code-body .cl{display:flex;min-width:max-content;padding:0 12px 0 0}
+.code-body .cl.hl{background:var(--accent-tint);box-shadow:inset 2px 0 0 var(--accent)}
+.code-body .ln{
+  width:34px;flex:0 0 auto;text-align:right;padding-right:12px;
+  color:var(--ink-4);font-variant-numeric:tabular-nums;user-select:none;
+}
+.code-body .lc{white-space:pre;color:var(--ink-2)}
+.code-out{padding:7px 12px;border-top:1px solid var(--hair);background:var(--surface)}
+.code-out .out-label{
+  display:block;font-size:7px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-4);margin-bottom:3px;
+}
+.code-out pre{
+  margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:10px;color:var(--ink-3);white-space:pre-wrap;
+}
+
+/* spec table */
+.spec-table{
+  width:100%;border-collapse:collapse;font-size:9.5px;line-height:1.45;
+  font-variant-numeric:tabular-nums;
+}
+.spec-table th{
+  font-weight:400;font-size:7.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-4);text-align:left;padding:7px 12px;border-bottom:1px solid var(--hair);
+}
+.spec-table td{padding:6px 12px;border-bottom:1px solid var(--hair-2);color:var(--ink-2)}
+.spec-table tr:last-child td{border-bottom:0}
+.spec-table tr.hl td{background:var(--accent-tint);color:var(--ink)}
+.spec-table td:first-child{color:var(--ink);font-weight:400}
+.spec-table td:last-child{text-align:right;color:var(--ink-3)}
+
+/* sequence */
+.seq-list{padding:6px 12px 4px}
+.seq-step{
+  display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:8px;align-items:baseline;
+  padding:5px 0;border-bottom:1px solid var(--hair-2);
+}
+.seq-step:last-child{border-bottom:0}
+.seq-step .seq-n{font-size:7.5px;color:var(--ink-4);font-variant-numeric:tabular-nums}
+.seq-step .seq-arrow{font-size:9px;color:var(--ink-3);letter-spacing:.02em}
+.seq-step .seq-arrow b{font-weight:400;color:var(--ink-2)}
+.seq-step .seq-label{font-size:9px;color:var(--accent);text-align:right}
+.seq-controls{
+  display:flex;align-items:center;gap:8px;justify-content:flex-end;
+  padding:6px 12px 8px;border-top:1px solid var(--hair);
+}
+.seq-controls button{
+  width:22px;height:22px;border-radius:50%;border:1px solid var(--hair);
+  background:var(--surface);color:var(--ink-3);cursor:pointer;font-size:11px;padding:0;
+}
+.seq-controls button:hover{border-color:var(--accent-line);color:var(--accent)}
+.seq-controls span{font-size:8px;letter-spacing:.12em;color:var(--ink-4);font-variant-numeric:tabular-nums}
+
+/* derivation */
+.derive-list{
+  margin:0;padding:10px 14px 6px;list-style:none;counter-reset:step;
+}
+.derive-list li{
+  counter-increment:step;display:grid;grid-template-columns:20px minmax(0,1fr);
+  gap:8px;padding:5px 0;border-bottom:1px solid var(--hair-2);
+  overflow-x:auto;
+}
+.derive-list li:last-child{border-bottom:0}
+.derive-list li::before{
+  content:counter(step,decimal-leading-zero);font-size:7.5px;color:var(--ink-4);
+  padding-top:4px;font-variant-numeric:tabular-nums;
+}
+.derive-list .katex{font-size:11px}
+.derive-symbols{width:100%;border-collapse:collapse;border-top:1px solid var(--hair)}
+.derive-symbols td{padding:5px 12px;font-size:9px;color:var(--ink-3);border-bottom:1px solid var(--hair-2)}
+.derive-symbols td:first-child{width:80px;color:var(--ink);white-space:nowrap}
+.derive-symbols tr:last-child td{border-bottom:0}
+
+/* quiz figure / label */
+.q-figure{
+  display:block;margin:2px auto 18px;max-width:360px;
+  color:var(--accent);opacity:.95;
+}
+.q-figure svg{display:block;width:100%;height:auto}
+.q-marker{fill:var(--surface);stroke:var(--accent);stroke-width:1.4}
+.q-marker-text{
+  fill:var(--accent);font-family:'Inter',sans-serif;font-size:7px;
+  font-weight:400;letter-spacing:.04em;
+}
+.q-artifact{margin-top:14px}
+.q-artifact .art-panel{max-width:100%;margin:0}
+
+
 /* study mode */
 .sp.study .line{opacity:0}
 .sp.study .def:hover .line{opacity:1}
@@ -1180,6 +1312,11 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   line-height:1.06;letter-spacing:-.04em;
   min-height:1.1em;max-width:22ch;
 }
+.q-card.is-figure .q-def{
+  max-width:420px;min-height:0;font-size:0;line-height:0;
+}
+.q-card.is-figure .q-def::after{display:none}
+.q-card.is-figure .q-figure{margin:0 auto 18px}
 .q-blank{
   display:inline-block;width:2.4em;height:.8em;
   margin:0 .12em;vertical-align:baseline;
@@ -1953,6 +2090,7 @@ html[data-theme="dark"] .week-bars b.today{background:var(--ink-2)}
           </div>
           <div class="q-eq" id="qEq" hidden></div>
           <figure class="q-fig" id="qFig" hidden></figure>
+          <div class="q-artifact" id="qArtifact" hidden></div>
           <div class="q-expl-row" id="qMissRow" hidden>
             <span class="q-why-tag">your pick</span>
             <p class="q-miss" id="qMiss"></p>
@@ -2095,6 +2233,21 @@ function diagramMarkup(id, label){
     <use href="#dg-${esc(id)}"></use></svg>`;
 }
 
+function diagramFigureHTML(id, label){
+  const svg = diagramMarkup(id, label);
+  return svg ? `<div class="q-figure">${svg}</div>` : '';
+}
+
+function labeledDiagramHTML(id, point){
+  if (!id || !DG.ready || !point) return '';
+  return `<div class="q-figure"><svg class="dg-card" viewBox="0 0 240 150" role="img"
+    aria-label="diagram with marker A">
+    <use href="#dg-${esc(id)}"></use>
+    <circle class="q-marker" cx="${point.x}" cy="${point.y}" r="7"></circle>
+    <text class="q-marker-text" x="${point.x}" y="${point.y + 2.4}" text-anchor="middle">A</text>
+  </svg></div>`;
+}
+
 let DG_PROMISE = null;
 function loadDiagrams(){
   if (DG.ready) return Promise.resolve();
@@ -2116,6 +2269,132 @@ function loadDiagrams(){
   })();
   return DG_PROMISE;
 }
+
+/* Cold surfaces: code, spec tables, sequences and derivations.
+   A definition opts in with "artifact": "<subject>--<definition>". */
+const ART = { ready: false, artifacts: {}, labels: {} };
+const ART_URL = 'data/artifacts.json?v=1';
+let ART_PROMISE = null;
+
+const ART_ICONS = {
+  code: `<svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor"
+    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M5.5 4 2.5 8l3 4M10.5 4l3 4-3 4"/></svg>`,
+  table: `<svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor"
+    stroke-width="1" stroke-linecap="round" aria-hidden="true">
+    <rect x="2" y="3" width="12" height="10" rx="1"/><path d="M2 7h12M7 3v10"/></svg>`,
+  sequence: `<svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor"
+    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M2 4h8M2 8h12M2 12h6"/><path d="M11 2l2 2-2 2M13 6l2 2-2 2"/></svg>`,
+  derivation: `<svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor"
+    stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 3h8l-4 5 4 5H4"/></svg>`
+};
+const ART_LABELS = { code: 'code', table: 'spec', sequence: 'sequence', derivation: 'derivation' };
+
+function loadArtifacts(){
+  if (ART.ready) return Promise.resolve();
+  if (ART_PROMISE) return ART_PROMISE;
+  ART_PROMISE = (async () => {
+    try {
+      const res = await fetch(ART_URL, { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      ART.artifacts = data.artifacts || {};
+      ART.labels = data.labels || {};
+      ART.ready = true;
+    } catch (err){
+      console.warn('[one·liners] surfaces unavailable', err);
+    }
+  })();
+  return ART_PROMISE;
+}
+
+function artifactRecord(id){ return id ? ART.artifacts[id] || null : null; }
+function artifactType(id){ const a = artifactRecord(id); return a ? a.type : ''; }
+function artifactIconHTML(id){
+  const t = artifactType(id);
+  return ART_ICONS[t] || ART_ICONS.code;
+}
+
+function surfaceHeadHTML(a, closable){
+  return `<div class="surface-head"><span>${esc(ART_LABELS[a.type] || a.type)}</span>
+    <b>${esc(a.title || '')}</b>
+    ${closable ? '<button class="surface-close" type="button" data-art-close aria-label="close surface">×</button>' : ''}
+  </div>`;
+}
+
+function artifactHTML(id, closable = false){
+  const a = artifactRecord(id);
+  if (!a) return '';
+  let body = '';
+  if (a.type === 'code'){
+    const hl = new Set(Array.isArray(a.highlight) ? a.highlight : [a.highlight].filter(Number.isInteger));
+    const lines = (a.lines || []).map((line, i) =>
+      `<span class="cl${hl.has(i + 1) ? ' hl' : ''}"><span class="ln">${i + 1}</span><span class="lc">${esc(line)}</span></span>`
+    ).join('');
+    body = `<pre class="code-body">${lines}</pre>` +
+      (a.output ? `<div class="code-out"><span class="out-label">output</span><pre>${esc(a.output.join('\n'))}</pre></div>` : '');
+  } else if (a.type === 'table'){
+    const heads = (a.headers || []).map(h => `<th>${esc(h)}</th>`).join('');
+    const rows = (a.rows || []).map((row, i) =>
+      `<tr${Number(a.highlight) === i + 1 ? ' class="hl"' : ''}>${row.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`
+    ).join('');
+    body = `<table class="spec-table"><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table>`;
+  } else if (a.type === 'sequence'){
+    const steps = (a.steps || []).map((s, i) => {
+      const from = a.actors[s.from] || '?';
+      const to = a.actors[s.to] || '?';
+      return `<div class="seq-step" data-step="${i}"${i ? ' hidden' : ''}>
+        <span class="seq-n">${pad(i + 1)}</span>
+        <span class="seq-arrow"><b>${esc(from)}</b> → ${esc(to)}</span>
+        <span class="seq-label">${esc(s.label)}</span>
+      </div>`;
+    }).join('');
+    body = `<div class="seq-list" data-seq data-seq-count="${a.steps.length}">${steps}</div>
+      <div class="seq-controls">
+        <button type="button" data-seq-prev aria-label="previous step">‹</button>
+        <span class="seq-count">01 / ${pad(a.steps.length)}</span>
+        <button type="button" data-seq-next aria-label="next step">›</button>
+      </div>`;
+  } else if (a.type === 'derivation'){
+    const steps = (a.steps || []).map(s => `<li>${mathHTML(s, true)}</li>`).join('');
+    const syms = (a.symbols || []).length
+      ? `<table class="derive-symbols"><tbody>${a.symbols.map(p =>
+          `<tr><td>${mathHTML(p[0])}</td><td>${esc(p[1])}</td></tr>`).join('')}</tbody></table>`
+      : '';
+    body = `<ol class="derive-list">${steps}</ol>${syms}`;
+  }
+  return `${surfaceHeadHTML(a, closable)}${body}${a.note ? `<p class="surface-note">${esc(a.note)}</p>` : ''}`;
+}
+
+function artifactSurface(id, closable = false){
+  const a = artifactRecord(id);
+  if (!a) return '';
+  return `<div class="art-panel ${esc(a.type)}">${artifactHTML(id, closable)}</div>`;
+}
+
+function wireSequences(root){
+  $$('[data-seq]', root).forEach(box => {
+    if (box.dataset.wired) return;
+    box.dataset.wired = '1';
+    const steps = [...box.querySelectorAll('.seq-step')];
+    let i = 0;
+    const count = box.closest('.art-panel')?.querySelector('.seq-count');
+    const show = () => {
+      steps.forEach((s, k) => { s.hidden = k !== i; });
+      if (count) count.textContent = `${pad(i + 1)} / ${pad(steps.length)}`;
+    };
+    box.parentElement.querySelector('[data-seq-prev]')?.addEventListener('click', () => {
+      i = (i - 1 + steps.length) % steps.length; show();
+    });
+    box.parentElement.querySelector('[data-seq-next]')?.addEventListener('click', () => {
+      i = (i + 1) % steps.length; show();
+    });
+    show();
+  });
+}
+
 
 function shuffle(arr){
   const a = [...arr];
@@ -2551,7 +2830,8 @@ function subjectFromData(stub, semester, payload){
       d && Number.isInteger(d.unit) ? d.unit : null,
       d && d.unitTitle ? String(d.unitTitle) : null,
       d && Array.isArray(d.sources) ? d.sources.filter(Boolean).map(String) : [],
-      d && d.diagram ? String(d.diagram) : ''
+      d && d.diagram ? String(d.diagram) : '',
+      d && d.artifact ? String(d.artifact) : ''
     ])
     .filter(d => d[0] && d[1]);
   const style = styleFor(stub);
@@ -3443,6 +3723,20 @@ const defFilters = $('#defFilters');
 const defsCount = $('#defsCount');
 
 defsEl.addEventListener('click', e => {
+  const close = e.target.closest('[data-art-close]');
+  if (close){
+    const row = close.closest('.def');
+    if (row) setArtOpen(row, false);
+    return;
+  }
+  const artBtn = e.target.closest('.art-btn');
+  if (artBtn){
+    const row = artBtn.closest('.def');
+    const open = !row.classList.contains('art-open');
+    $$('.def.art-open', defsEl).forEach(x => setArtOpen(x, false));
+    setArtOpen(row, open);
+    return;
+  }
   const btn = e.target.closest('.dg-btn');
   if (!btn) return;
   const row = btn.closest('.def');
@@ -3455,6 +3749,20 @@ defsEl.addEventListener('click', e => {
   row.classList.toggle('dg-open', open);
   btn.setAttribute('aria-expanded', String(open));
 });
+
+function setArtOpen(row, open){
+  const panel = row.querySelector('.art-panel');
+  const btn = row.querySelector('.art-btn');
+  if (!panel || !btn) return;
+  if (open && !panel.dataset.rendered){
+    panel.innerHTML = artifactHTML(panel.dataset.artPanel, true);
+    panel.dataset.rendered = '1';
+    wireSequences(panel);
+  }
+  panel.hidden = !open;
+  row.classList.toggle('art-open', open);
+  btn.setAttribute('aria-expanded', String(open));
+}
 
 let currentId = null;
 let currentFilter = 'all';
@@ -3523,13 +3831,20 @@ function defMarkup(s, d, i){
   const src = sourceInfo(d[5]);
   const tip = esc(JSON.stringify(defTip(rec, score, accentOf(s), src)));
   const dg = diagramMarkup(d[6], d[0]);
-  return `<div class="def${dg ? ' has-dg' : ''}" data-term="${esc(d[0])}" data-score="${score}" data-seen="${rec ? (rec.attempts || 0) : 0}"
+  const art = artifactRecord(d[7]);
+  const artType = art ? art.type : '';
+  return `<div class="def${dg ? ' has-dg' : ''}${art ? ' has-art' : ''}" data-term="${esc(d[0])}" data-score="${score}" data-seen="${rec ? (rec.attempts || 0) : 0}"
       data-search="${esc(search)}" data-key="${esc(defKey(s.id, d[0]))}" data-src="${esc(src)}"
       style="animation-delay:${i * 24}ms">
     <span class="node"></span>
     <div class="term">${esc(d[0])}${dg ? `<button class="dg-btn" type="button"
-      aria-label="show diagram for ${esc(d[0])}" title="diagram — hover or tap" aria-expanded="false">${DG_ICON}</button>` : ''}</div>
+      aria-label="show diagram for ${esc(d[0])}" title="diagram — hover or tap" aria-expanded="false">${DG_ICON}</button>` : ''}${
+      art ? `<button class="art-btn" type="button" data-art-id="${esc(d[7])}"
+        aria-label="show ${ART_LABELS[artType] || 'surface'} for ${esc(d[0])}"
+        title="${ART_LABELS[artType] || 'surface'} — tap" aria-expanded="false">${artifactIconHTML(d[7])}</button>` : ''
+    }</div>
     <div class="line">${esc(d[1])}${d[2] ? `<span class="eq">${mathHTML(d[2])}</span>` : ''}</div>
+    ${art ? `<div class="art-panel" data-art-panel="${esc(d[7])}" hidden></div>` : ''}
     <span class="def-side" data-tip='${tip}'>
       <span class="mstat">${shown ? pct + '%' : 'new'}</span>
       <span class="mbar"><i style="width:${pct}%"></i></span>
@@ -3612,6 +3927,7 @@ async function openSubject(id){
   const trigger = document.activeElement && document.activeElement !== document.body
     ? document.activeElement : null;
   if (!DG.ready) await loadDiagrams();
+  if (!ART.ready) await loadArtifacts();
   subjectTrigger = trigger;
   currentId = id;
   currentFilter = 'all';
@@ -3725,6 +4041,7 @@ const qFbText = $('#qFbText');
 const qAnswer = $('#qAnswer');
 const qWhy = $('#qWhy');
 const qEq = $('#qEq');
+const qArtifact = $('#qArtifact');
 const qFig = $('#qFig');
 const qMissRow = $('#qMissRow');
 const qMiss = $('#qMiss');
@@ -3804,17 +4121,26 @@ function renderQuestion(){
   const q = st.qs[st.i];
   st.answered = false;
   qCard.classList.remove('answered', 'is-ok', 'is-no');
-  const isWord = q.type === 'term';
-  qCard.classList.toggle('is-word', isWord);
+  const isTerm = q.type === 'term';
+  const isDef = q.type === 'def';
+  const isFigure = q.type === 'figure';
+  const isLabel = q.type === 'label';
+  qCard.classList.toggle('is-word', isTerm);
+  qCard.classList.toggle('is-figure', isFigure || isLabel);
   qIdx.textContent = pad(st.i + 1);
   qCounter.textContent = `${pad(st.i + 1)} / ${pad(st.qs.length)}`;
-  qKind.innerHTML = isWord ? `term <b>→</b> definition` : `definition <b>→</b> term`;
-  if (isWord) qDef.textContent = q.d[0];
-  else qDef.innerHTML = maskedHTML(q.masked);
-  qOpts.className = 'q-opts' + (isWord ? ' long' : '');
+  qKind.innerHTML = isTerm ? `term <b>→</b> definition`
+    : isDef ? `definition <b>→</b> term`
+    : isFigure ? `figure <b>→</b> term`
+    : `figure <b>→</b> label`;
+  if (isTerm) qDef.textContent = q.d[0];
+  else if (isDef) qDef.innerHTML = maskedHTML(q.masked);
+  else if (isFigure) qDef.innerHTML = diagramFigureHTML(q.d[6], q.d[0]);
+  else qDef.innerHTML = labeledDiagramHTML(q.d[6], q.labelPoint);
+  qOpts.className = 'q-opts' + (isTerm ? ' long' : '');
 
   qOpts.innerHTML = q.opts.map((o, k) => {
-    const label = isWord ? maskedHTML(o.masked) : esc(o.term);
+    const label = isTerm ? maskedHTML(o.masked) : isLabel ? esc(o.label) : esc(o.term);
     const letter = 'ABCD'[k];
     return `<button class="opt" type="button" aria-keyshortcuts="${k + 1} ${letter}">
       <span class="key">${letter}</span>
@@ -3833,6 +4159,8 @@ function renderQuestion(){
   qEq.innerHTML = '';
   qFig.hidden = true;
   qFig.innerHTML = '';
+  qArtifact.hidden = true;
+  qArtifact.innerHTML = '';
   setHint('question');
 
   qCard.classList.remove('in');
@@ -3852,37 +4180,45 @@ function answer(index){
   const q = st.qs[st.i];
   const chosen = q.opts[index];
   if (!chosen) return;
-  const ok = chosen.term === q.d[0];
+  const isLabel = q.type === 'label';
+  const isVisual = q.type === 'figure' || isLabel;
+  const ok = isLabel ? chosen.label === q.correctLabel : chosen.term === q.d[0];
   const result = recordAnswer(st.s.id, q.d[0], ok);
 
   st.answered = true;
   st.correct += ok ? 1 : 0;
-  st.log[st.i] = { ok, type: q.type, term: q.d[0], chosen: chosen.term };
+  st.log[st.i] = { ok, type: q.type, term: q.d[0], chosen: isLabel ? chosen.label : chosen.term };
 
   [...qOpts.children].forEach((btn, k) => {
     btn.disabled = true;
     const o = q.opts[k];
-    if (o.term === q.d[0]) btn.classList.add('correct');
+    if (isLabel ? o.label === q.correctLabel : o.term === q.d[0]) btn.classList.add('correct');
     else if (k === index) btn.classList.add('wrong');
   });
 
   qCard.classList.add('answered', ok ? 'is-ok' : 'is-no');
   qFbText.textContent = ok ? 'correct' : 'not quite';
   qFbIc.innerHTML = ok ? CHECK_ICON : CROSS_ICON;
-  qAnswer.innerHTML = ok
-    ? `That's <b>${esc(q.d[0])}</b>.`
-    : `It's <b>${esc(q.d[0])}</b>.`;
+  qAnswer.innerHTML = isLabel
+    ? `That marker is the <b>${esc(q.correctLabel)}</b>.`
+    : ok ? `That's <b>${esc(q.d[0])}</b>.` : `It's <b>${esc(q.d[0])}</b>.`;
   qWhy.textContent = q.d[1];
   qEq.hidden = !q.d[2];
   qEq.innerHTML = q.d[2] ? mathHTML(q.d[2], true) : '';
-  const qDiagram = diagramMarkup(q.d[6], q.d[0]);
+  const qDiagram = isVisual ? '' : diagramMarkup(q.d[6], q.d[0]);
   qFig.hidden = !qDiagram;
   qFig.innerHTML = qDiagram
     ? `${qDiagram}<figcaption>${esc(q.d[0])}</figcaption>`
     : '';
+  const qSurface = artifactSurface(q.d[7]);
+  qArtifact.hidden = !qSurface;
+  qArtifact.innerHTML = qSurface;
+  if (qSurface) wireSequences(qArtifact);
   qMissRow.hidden = ok;
   if (!ok){
-    qMiss.innerHTML = `<b>${esc(chosen.term)}</b> — ${esc(chosen.def)}`;
+    qMiss.innerHTML = isLabel
+      ? `You picked <b>${esc(chosen.label)}</b>.`
+      : `<b>${esc(chosen.term)}</b> — ${esc(chosen.def)}`;
   }
 
   const beforePct = Math.round(result.before * 100);
@@ -4052,17 +4388,44 @@ function startQuiz(){
 
   const count = Math.min(Q_COUNT, s.defs.length);
   const picked = pickAdaptiveDefs(s, count);
-  const typeSlots = shuffle([
-    ...Array(Math.ceil(count / 2)).fill('term'),
-    ...Array(Math.floor(count / 2)).fill('def')
+  let labelDef = picked.find(d => d[6] && (ART.labels[d[6]] || []).length >= 4);
+  if (!labelDef){
+    const choices = s.defs.filter(d => d[6] && (ART.labels[d[6]] || []).length >= 4);
+    if (choices.length) labelDef = choices[Math.floor(Math.random() * choices.length)];
+  }
+  let figureDef = picked.find(d => d[6] && d !== labelDef);
+  if (!figureDef){
+    const choices = s.defs.filter(d => d[6] && d !== labelDef);
+    if (choices.length) figureDef = choices[Math.floor(Math.random() * choices.length)];
+  }
+  const visual = [];
+  if (labelDef) visual.push({ d: labelDef, type: 'label' });
+  if (figureDef) visual.push({ d: figureDef, type: 'figure' });
+  const baseCount = Math.max(0, count - visual.length);
+  const rest = picked.filter(d => !visual.some(v => v.d === d)).slice(0, baseCount);
+  const base = [];
+  while (base.length < baseCount) base.push(base.length % 2 ? 'def' : 'term');
+  shuffle(base);
+  const assigned = shuffle([
+    ...visual,
+    ...rest.map((d, i) => ({ d, type: base[i] }))
   ]);
-  const qs = picked.map((d, i) => {
-    const type = typeSlots[i];
-    const others = pickDistractors(s, d, type);
-    const opts = shuffle([d, ...others]).map(x => ({
-      term: x[0], def: x[1], formula: x[2], masked: maskTerm(x[0], x[1])
-    }));
-    return { d, type, opts, masked: maskTerm(d[0], d[1]) };
+  const qs = assigned.map(({ d, type }) => {
+    let opts, correctLabel = null, labelPoint = null;
+    if (type === 'label'){
+      const labels = ART.labels[d[6]] || [];
+      const target = labels[Math.floor(Math.random() * labels.length)];
+      const others = shuffle(labels.filter(l => l.label !== target.label)).slice(0, 3);
+      opts = shuffle([target, ...others]).map(l => ({ label: l.label }));
+      correctLabel = target.label;
+      labelPoint = target;
+    } else {
+      const others = pickDistractors(s, d, type === 'figure' ? 'def' : type);
+      opts = shuffle([d, ...others]).map(x => ({
+        term: x[0], def: x[1], formula: x[2], masked: maskTerm(x[0], x[1])
+      }));
+    }
+    return { d, type, opts, masked: maskTerm(d[0], d[1]), correctLabel, labelPoint };
   });
 
   if (!quizOpen){

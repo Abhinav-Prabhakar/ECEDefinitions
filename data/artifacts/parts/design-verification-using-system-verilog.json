@@ -1,0 +1,331 @@
+{
+  "subject": "design-verification-using-system-verilog",
+  "artifacts": {
+    "design-verification-using-system-verilog--dynamic-array": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "dynamic array: allocate, fill, resize",
+      "lines": [
+        "int    dyn[];              // empty, size 0",
+        "dyn = new[8];              // allocate 8 elements",
+        "foreach (dyn[i]) dyn[i] = i * 3;",
+        "dyn = new[16](dyn);        // grow, keeping old values",
+        "$display(\"size=%0d dyn[7]=%0d\", dyn.size(), dyn[7]);"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "size=16 dyn[7]=21"
+      ],
+      "note": "new[n](src) reallocates and copies the first n old elements, so the array can grow without losing data."
+    },
+    "design-verification-using-system-verilog--clocking-block": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "clocking block skews",
+      "lines": [
+        "clocking cb @(posedge clk);",
+        "  default input #1step output #2ns;",
+        "  input  req, addr;",
+        "  output gnt, data;",
+        "endclocking",
+        "",
+        "cb.data <= 8'hA5;          // driven 2 ns after the edge",
+        "@(cb);                     // wait one sampled cycle"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "Inputs are sampled just before the edge and outputs driven after it, so the testbench never races the design."
+    },
+    "design-verification-using-system-verilog--fork-join": {
+      "type": "table",
+      "title": "fork variants and wait fork",
+      "headers": [
+        "construct",
+        "parent resumes",
+        "siblings after that"
+      ],
+      "rows": [
+        [
+          "fork...join",
+          "after all n threads end",
+          "none left"
+        ],
+        [
+          "fork...join_any",
+          "after the first one ends",
+          "n-1 still running"
+        ],
+        [
+          "fork...join_none",
+          "immediately",
+          "all n still running"
+        ],
+        [
+          "wait fork",
+          "after every spawned thread ends",
+          "none left"
+        ]
+      ],
+      "highlight": 2,
+      "note": "join_any leaves the losers alive, so a testbench normally follows it with disable fork."
+    },
+    "design-verification-using-system-verilog--shallow-copy": {
+      "type": "table",
+      "title": "assignment, shallow copy, deep copy",
+      "headers": [
+        "aspect",
+        "b = a",
+        "b = new a",
+        "overridden copy()"
+      ],
+      "rows": [
+        [
+          "distinct object",
+          "no",
+          "yes",
+          "yes"
+        ],
+        [
+          "scalar fields",
+          "shared",
+          "copied by value",
+          "copied by value"
+        ],
+        [
+          "object handles",
+          "shared",
+          "shared",
+          "fresh copies"
+        ],
+        [
+          "change b.child.x",
+          "changes a.child.x",
+          "changes a.child.x",
+          "leaves a.child.x alone"
+        ],
+        [
+          "typical use",
+          "alias in a scoreboard",
+          "snapshot for the scoreboard",
+          "independent stimulus object"
+        ]
+      ],
+      "highlight": 3,
+      "note": "b = a copies only the handle; new a copies the fields, and only an overridden copy() duplicates the objects they point to."
+    },
+    "design-verification-using-system-verilog--constraint-block": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "two constraint blocks solved together",
+      "lines": [
+        "class pkt;",
+        "  rand bit [3:0] len;",
+        "  rand bit [7:0] data[];",
+        "  constraint c_len  { len inside {[1:8]}; data.size() == len; }",
+        "  constraint c_even { len[0] == 1'b0; }",
+        "endclass",
+        "",
+        "pkt p = new();",
+        "assert (p.randomize());"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "Both blocks are active at once and solved as one AND, so len can only be 2, 4, 6 or 8."
+    },
+    "design-verification-using-system-verilog--constrained-random-generation": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "randomize and check the return value",
+      "lines": [
+        "class cfg;",
+        "  rand bit [1:0] mode;",
+        "  rand int unsigned delay;",
+        "  constraint c_cfg { delay inside {[10:50]}; mode != 2'b11; }",
+        "endclass",
+        "",
+        "cfg c = new();",
+        "if (!c.randomize()) $fatal(1, \"no solution\");",
+        "$display(\"mode=%0d delay=%0d\", c.mode, c.delay);"
+      ],
+      "highlight": [
+        8
+      ],
+      "note": "randomize() solves every active constraint and returns 0 only when no value of the random variables satisfies them."
+    },
+    "design-verification-using-system-verilog--virtual-interface": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "class holding a virtual interface",
+      "lines": [
+        "interface bus_if (input logic clk);",
+        "  logic        req, gnt;",
+        "  logic [31:0] addr;",
+        "endinterface",
+        "",
+        "class driver;",
+        "  virtual bus_if vif;            // handle, not an instance",
+        "  task run();",
+        "    @(posedge vif.clk iff vif.gnt);",
+        "    vif.addr <= 32'h1000;",
+        "  endtask",
+        "endclass"
+      ],
+      "highlight": [
+        7
+      ],
+      "note": "The class holds a reference to an interface instance created in a module, which is how class objects reach real pins."
+    },
+    "design-verification-using-system-verilog--concurrent-assertion": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "request eventually granted",
+      "lines": [
+        "property p_handshake;",
+        "  @(posedge clk) disable iff (!rst_n)",
+        "  req |-> ##[1:4] gnt;",
+        "endproperty",
+        "",
+        "a_hs: assert property (p_handshake)",
+        "  else $error(\"req at %0t not granted\", $time);"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "The property is sampled every clock tick and fails if gnt is still low four cycles after req."
+    },
+    "design-verification-using-system-verilog--sequence": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "a burst sequence with repetition",
+      "lines": [
+        "sequence s_burst;",
+        "  @(posedge clk) sop ##1 data[*1:8] ##1 eop;",
+        "endsequence",
+        "",
+        "a_burst: assert property (s_burst);"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "##1 delays by one cycle and [*1:8] matches one to eight consecutive data beats between sop and eop."
+    },
+    "design-verification-using-system-verilog--covergroup": {
+      "type": "code",
+      "lang": "systemverilog",
+      "title": "covergroup with a cross",
+      "lines": [
+        "covergroup cg_xact @(posedge clk);",
+        "  cp_len:  coverpoint len { bins low = {[0:3]}; bins high = {[4:7]}; }",
+        "  cp_mode: coverpoint mode;",
+        "  x_ml:    cross cp_mode, cp_len;",
+        "endgroup",
+        "",
+        "cg_xact cg = new();"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "The cross creates one bin per mode and len-range pair, so four modes and two bins give eight bins in all."
+    },
+    "design-verification-using-system-verilog--coverpoint": {
+      "type": "table",
+      "title": "coverpoint bin forms",
+      "headers": [
+        "bin form",
+        "matches",
+        "bins created"
+      ],
+      "rows": [
+        [
+          "bins a = {[0:3]};",
+          "the values 0 to 3 as one group",
+          "1"
+        ],
+        [
+          "bins b[] = {[0:3]};",
+          "each value of the range separately",
+          "4"
+        ],
+        [
+          "bins c = default;",
+          "every value no other bin took",
+          "1"
+        ],
+        [
+          "ignore_bins d = {7};",
+          "value 7, excluded from the report",
+          "0"
+        ],
+        [
+          "illegal_bins e = {8,9};",
+          "values 8 or 9 flag a test error",
+          "0"
+        ],
+        [
+          "bins f = (0 => 3);",
+          "a 0 followed by a 3",
+          "1"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The [] suffix splits a range into one bin per value, which is why a four-value range counts four times in the total."
+    },
+    "design-verification-using-system-verilog--testbench": {
+      "type": "sequence",
+      "title": "testbench hand-off for a write and read-back",
+      "actors": [
+        "test",
+        "driver",
+        "dut",
+        "monitor"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "write(0x10, 0xA5)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "drive addr and data at posedge"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "outputs sampled before next edge"
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "label": "observed transaction published"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "read(0x10)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "drive the read address"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "stored data returned on the bus"
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "label": "compare with the reference model"
+        }
+      ],
+      "note": "The monitor rebuilds transactions from pins, so the check never depends on looking inside the design."
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "subject": "python-programming",
+  "artifacts": {
+    "python-programming--variable": {
+      "type": "code",
+      "lang": "python",
+      "title": "a name can be rebound to another type",
+      "lines": [
+        "x = 42",
+        "print(type(x).__name__)",
+        "x = \"forty-two\"",
+        "print(type(x).__name__)"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        "int",
+        "str"
+      ],
+      "note": "Assigning again rebinds the name to a new object of another type; no declaration fixes it."
+    },
+    "python-programming--slicing": {
+      "type": "code",
+      "lang": "python",
+      "title": "slice bounds and step",
+      "lines": [
+        "s = \"PYTHON\"",
+        "print(s[1:4], s[::-1], s[::2])"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "YTH NOHTYP PTO"
+      ],
+      "note": "start is inclusive, stop is exclusive, and a step of -1 walks the sequence backwards."
+    },
+    "python-programming--tuple": {
+      "type": "table",
+      "title": "ordering and mutability of built-in collections",
+      "headers": [
+        "type",
+        "ordered",
+        "mutable",
+        "duplicates",
+        "literal"
+      ],
+      "rows": [
+        [
+          "list",
+          "yes",
+          "yes",
+          "yes",
+          "[1, 2]"
+        ],
+        [
+          "tuple",
+          "yes",
+          "no",
+          "yes",
+          "(1, 2)"
+        ],
+        [
+          "dict",
+          "yes, insertion",
+          "yes",
+          "keys no",
+          "{1: 'a'}"
+        ],
+        [
+          "set",
+          "no",
+          "yes",
+          "no",
+          "{1, 2}"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the container is frozen: a tuple holding a list still exposes that list's mutations."
+    },
+    "python-programming--try-except": {
+      "type": "code",
+      "lang": "python",
+      "title": "catching ValueError",
+      "lines": [
+        "try:",
+        "    n = int(\"abc\")",
+        "except ValueError:",
+        "    print(\"not a number\")"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        "not a number"
+      ],
+      "note": "int() raises ValueError for non-numeric text; the except clause catches that type instead of crashing."
+    },
+    "python-programming--finally-clause": {
+      "type": "code",
+      "lang": "python",
+      "title": "finally runs even on return",
+      "lines": [
+        "def read(path):",
+        "    try:",
+        "        with open(path) as f:",
+        "            return f.read()",
+        "    finally:",
+        "        print(\"done\")"
+      ],
+      "highlight": [
+        5
+      ],
+      "output": [
+        "done"
+      ],
+      "note": "The finally block runs after the return value is computed but before the caller receives it."
+    },
+    "python-programming--class": {
+      "type": "code",
+      "lang": "python",
+      "title": "class, constructor and method",
+      "lines": [
+        "class Point:",
+        "    def __init__(self, x, y):",
+        "        self.x = x",
+        "        self.y = y",
+        "    def norm(self):",
+        "        return (self.x ** 2 + self.y ** 2) ** 0.5",
+        "print(Point(3, 4).norm())"
+      ],
+      "highlight": [
+        1
+      ],
+      "output": [
+        "5.0"
+      ],
+      "note": "The class body defines the constructor and norm; Point(3, 4) creates an instance and binds self to it."
+    },
+    "python-programming--inheritance": {
+      "type": "code",
+      "lang": "python",
+      "title": "subclassing and overriding",
+      "lines": [
+        "class Animal:",
+        "    def speak(self):",
+        "        return \"...\"",
+        "class Dog(Animal):",
+        "    def speak(self):",
+        "        return \"woof\"",
+        "print(Dog().speak())"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "woof"
+      ],
+      "note": "Dog names Animal in parentheses to inherit its methods, then replaces speak with its own version."
+    },
+    "python-programming--re-search": {
+      "type": "code",
+      "lang": "python",
+      "title": "searching anywhere in a string",
+      "lines": [
+        "import re",
+        "m = re.search(r\"\\d+\", \"order 42\")",
+        "print(m.group(), m.start())"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "42 6"
+      ],
+      "note": "re.search scans the whole string; the match object exposes the matched text and its starting offset."
+    },
+    "python-programming--with-statement": {
+      "type": "code",
+      "lang": "python",
+      "title": "context manager closes the file",
+      "lines": [
+        "with open(\"notes.txt\", \"w\") as f:",
+        "    f.write(\"hello\\n\")",
+        "print(f.closed)"
+      ],
+      "highlight": [
+        1
+      ],
+      "output": [
+        "True"
+      ],
+      "note": "The with block closes the file when it exits, even if the write raises an exception."
+    },
+    "python-programming--pickling": {
+      "type": "table",
+      "title": "json versus pickle",
+      "headers": [
+        "aspect",
+        "json",
+        "pickle"
+      ],
+      "rows": [
+        [
+          "format",
+          "UTF-8 text",
+          "binary bytes"
+        ],
+        [
+          "types",
+          "null, bool, number, string, list, object",
+          "any Python object"
+        ],
+        [
+          "other languages",
+          "yes",
+          "no"
+        ],
+        [
+          "untrusted input",
+          "safe to parse",
+          "can execute code"
+        ]
+      ],
+      "highlight": 4,
+      "note": "json is a cross-language interchange format; pickle preserves Python objects but must never load untrusted bytes."
+    },
+    "python-programming--mainloop": {
+      "type": "code",
+      "lang": "python",
+      "title": "starting the Tk event loop",
+      "lines": [
+        "import tkinter as tk",
+        "root = tk.Tk()",
+        "tk.Label(root, text=\"Hello\").pack()",
+        "root.mainloop()"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "mainloop enters Tk's event loop; the window stays responsive until it is destroyed."
+    },
+    "python-programming--ndarray": {
+      "type": "code",
+      "lang": "python",
+      "title": "shape and dtype",
+      "lines": [
+        "import numpy as np",
+        "a = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.float64)",
+        "print(a.shape, a.dtype)"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "(2, 3) float64"
+      ],
+      "note": "shape gives the length along each axis; dtype is the one type shared by every element."
+    },
+    "python-programming--groupby": {
+      "type": "code",
+      "lang": "python",
+      "title": "split, apply, combine",
+      "lines": [
+        "import pandas as pd",
+        "df = pd.DataFrame({\"dept\": [\"CSE\", \"CSE\", \"ECE\"], \"marks\": [90, 80, 70]})",
+        "print(df.groupby(\"dept\")[\"marks\"].mean().to_dict())"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        "{'CSE': 85.0, 'ECE': 70.0}"
+      ],
+      "note": "groupby splits rows by dept, averages marks in each group, and combines the results into a Series."
+    },
+    "python-programming--axes": {
+      "type": "code",
+      "lang": "python",
+      "title": "Figure and Axes from subplots",
+      "lines": [
+        "import matplotlib.pyplot as plt",
+        "fig, ax = plt.subplots()",
+        "ax.plot([1, 2, 3], [2, 4, 1])",
+        "ax.set_xlabel(\"time\")",
+        "fig.savefig(\"plot.png\")"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "subplots returns a Figure and one Axes; the Axes holds the data and labels while the Figure owns the output."
+    }
+  }
+}

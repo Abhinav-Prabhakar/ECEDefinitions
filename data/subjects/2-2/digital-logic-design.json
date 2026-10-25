@@ -63,7 +63,8 @@
       "sources": [
         "dld-dld-unit-1#slide.33"
       ],
-      "formula": "g_{i}=b_{i}\\oplus b_{i+1},\\quad g_{n-1}=b_{n-1}"
+      "formula": "g_{i}=b_{i}\\oplus b_{i+1},\\quad g_{n-1}=b_{n-1}",
+      "artifact": "digital-logic-design--gray-code"
     },
     {
       "id": "excess-3-code",
@@ -96,7 +97,8 @@
       "sources": [
         "dld-dld-unit-1#slide.39"
       ],
-      "formula": "x+\\overline{x}=1,\\quad x\\cdot\\overline{x}=0,\\quad x\\in\\{0,1\\}"
+      "formula": "x+\\overline{x}=1,\\quad x\\cdot\\overline{x}=0,\\quad x\\in\\{0,1\\}",
+      "artifact": "digital-logic-design--boolean-algebra"
     },
     {
       "id": "maxterm",
@@ -153,7 +155,8 @@
         "dld-dld-unit-2#slide.21"
       ],
       "formula": "x\\,y+x\\,\\overline{y}=x",
-      "diagram": "kmap"
+      "diagram": "kmap",
+      "artifact": "digital-logic-design--karnaugh-map"
     },
     {
       "id": "prime-implicant",
@@ -232,7 +235,8 @@
       "sources": [
         "dld-dld-unit-3#slide.25"
       ],
-      "formula": "S=A\\oplus B\\oplus C_{\\text{in}},\\quad C_{\\text{out}}=A\\,B+C_{\\text{in}}(A\\oplus B)"
+      "formula": "S=A\\oplus B\\oplus C_{\\text{in}},\\quad C_{\\text{out}}=A\\,B+C_{\\text{in}}(A\\oplus B)",
+      "artifact": "digital-logic-design--full-adder"
     },
     {
       "id": "half-subtractor",
@@ -388,7 +392,8 @@
         "dld-dld-unit-4#slide.2"
       ],
       "formula": "Q(t+1)=J\\,\\overline{Q(t)}+\\overline{K}\\,Q(t)",
-      "diagram": "d-flipflop"
+      "diagram": "d-flipflop",
+      "artifact": "digital-logic-design--jk-flip-flop"
     },
     {
       "id": "d-flip-flop",
@@ -435,7 +440,8 @@
         "dld-dld-unit-5#slide.7"
       ],
       "formula": "t_{\\text{pd}}=n\\,t_{\\text{pd,FF}}",
-      "diagram": "counter-timing"
+      "diagram": "counter-timing",
+      "artifact": "digital-logic-design--ripple-counter"
     },
     {
       "id": "synchronous-counter",
@@ -471,7 +477,8 @@
         "dld-dld-unit-5#slide.22"
       ],
       "formula": "M=2n",
-      "diagram": "shift-register"
+      "diagram": "shift-register",
+      "artifact": "digital-logic-design--johnson-counter"
     },
     {
       "id": "shift-register",
@@ -483,7 +490,8 @@
         "dld-dld-unit-5#slide.25"
       ],
       "formula": "Q_{i}(t+1)=Q_{i-1}(t)",
-      "diagram": "shift-register"
+      "diagram": "shift-register",
+      "artifact": "digital-logic-design--shift-register"
     },
     {
       "id": "programmable-logic-device",
@@ -527,7 +535,8 @@
       "sources": [
         "dld-dld-unit-6#slide.20"
       ],
-      "formula": "F_{j}=\\sum_{i}P_{i}\\,c_{ij},\\quad c_{ij}\\in\\{0,1\\}"
+      "formula": "F_{j}=\\sum_{i}P_{i}\\,c_{ij},\\quad c_{ij}\\in\\{0,1\\}",
+      "artifact": "digital-logic-design--pla"
     },
     {
       "id": "asm-chart",

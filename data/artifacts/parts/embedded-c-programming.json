@@ -1,0 +1,248 @@
+{
+  "subject": "embedded-c-programming",
+  "artifacts": {
+    "embedded-c-programming--static-ram": {
+      "type": "table",
+      "title": "DRAM against SRAM",
+      "headers": [
+        "property",
+        "DRAM",
+        "SRAM"
+      ],
+      "rows": [
+        [
+          "storage element",
+          "capacitor",
+          "flip-flop, six transistors"
+        ],
+        [
+          "refresh",
+          "required every few ms",
+          "not required"
+        ],
+        [
+          "density",
+          "high",
+          "lower"
+        ],
+        [
+          "cost per bit",
+          "low",
+          "higher"
+        ],
+        [
+          "typical use",
+          "main memory",
+          "cache, small buffers"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The refresh requirement separates the two; SRAM spends area to avoid it."
+    },
+    "embedded-c-programming--prom": {
+      "type": "table",
+      "title": "one-time and reprogrammable ROM",
+      "headers": [
+        "type",
+        "program",
+        "erase"
+      ],
+      "rows": [
+        [
+          "PROM",
+          "once, by fusing links",
+          "not possible"
+        ],
+        [
+          "EPROM",
+          "electrically, at high voltage",
+          "UV light through a window"
+        ],
+        [
+          "EEPROM",
+          "electrically, byte by byte",
+          "electrically, byte by byte"
+        ],
+        [
+          "Flash",
+          "electrically, in blocks",
+          "electrically, in blocks"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Erase granularity, not programmability, is what separates these parts."
+    },
+    "embedded-c-programming--tcon": {
+      "type": "table",
+      "title": "TCON bits at 88H",
+      "headers": [
+        "bit",
+        "name",
+        "function"
+      ],
+      "rows": [
+        [
+          "7",
+          "TF1",
+          "timer 1 overflow flag"
+        ],
+        [
+          "6",
+          "TR1",
+          "timer 1 run control"
+        ],
+        [
+          "5",
+          "TF0",
+          "timer 0 overflow flag"
+        ],
+        [
+          "4",
+          "TR0",
+          "timer 0 run control"
+        ],
+        [
+          "3",
+          "IE1",
+          "external interrupt 1 request flag"
+        ],
+        [
+          "2",
+          "IT1",
+          "interrupt 1 type: edge or level"
+        ],
+        [
+          "1",
+          "IE0",
+          "external interrupt 0 request flag"
+        ],
+        [
+          "0",
+          "IT0",
+          "interrupt 0 type: edge or level"
+        ]
+      ],
+      "highlight": 4,
+      "note": "TCON is bit-addressable, so a flag is tested without masking the whole byte."
+    },
+    "embedded-c-programming--tmod": {
+      "type": "table",
+      "title": "TMOD mode encoding",
+      "headers": [
+        "M1",
+        "M0",
+        "mode",
+        "operation"
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "0",
+          "13-bit: THx 8 bits plus TLx 5 bits"
+        ],
+        [
+          "0",
+          "1",
+          "1",
+          "16-bit timer or counter"
+        ],
+        [
+          "1",
+          "0",
+          "2",
+          "8-bit, reloads from THx on overflow"
+        ],
+        [
+          "1",
+          "1",
+          "3",
+          "split: two 8-bit timers, timer 0 only"
+        ]
+      ],
+      "highlight": 2,
+      "note": "GATE lets a pin gate the run bit; C/T counts edges instead of machine cycles."
+    },
+    "embedded-c-programming--bdata-area": {
+      "type": "code",
+      "lang": "c",
+      "title": "bit-addressable BDATA",
+      "lines": [
+        "char bdata flags;           /* lives in 20H-2FH */",
+        "sbit ready = flags ^ 0;     /* bit address 00H */",
+        "sbit error = flags ^ 7;     /* bit address 07H */",
+        "flags = 0x00;",
+        "ready = 1;                  /* sets one bit only */"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "sbit names one bit of the byte, so the compiler emits a bit instruction."
+    },
+    "embedded-c-programming--isr": {
+      "type": "code",
+      "lang": "c",
+      "title": "timer 0 interrupt handler",
+      "lines": [
+        "void t0_isr(void) interrupt 1   /* vector 1 = timer 0 */",
+        "{",
+        "    TH0 = 0xFC;                 /* reload 1 ms at 12 MHz */",
+        "    TL0 = 0x18;",
+        "    ticks++;",
+        "}"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "The number after interrupt binds the function to a vector, so no address is written by hand."
+    },
+    "embedded-c-programming--switch-bounce": {
+      "type": "code",
+      "lang": "c",
+      "title": "debouncing a switch",
+      "lines": [
+        "if (SW == 0) {              /* first contact closes */",
+        "    delay_ms(20);           /* let the contacts settle */",
+        "    if (SW == 0) {          /* still closed: a real press */",
+        "        toggle_led();",
+        "    }",
+        "}"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "The second read, taken after the bounce window, turns a noisy edge into one event."
+    },
+    "embedded-c-programming--modular-programming": {
+      "type": "code",
+      "lang": "c",
+      "title": "module-private state",
+      "lines": [
+        "/* delay.c */",
+        "static unsigned int ticks;          /* file scope only */",
+        "unsigned int elapsed(void) {        /* public member */",
+        "    return ticks;",
+        "}"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "static is the private member; the plain function is the only door into the module."
+    },
+    "embedded-c-programming--typedef": {
+      "type": "code",
+      "lang": "c",
+      "title": "typedef aliases",
+      "lines": [
+        "typedef unsigned char byte;     /* 8-bit */",
+        "typedef unsigned int  word;     /* 16-bit on the 8051 */",
+        "typedef bit           flag;     /* one BDATA bit */",
+        "byte port_state;"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "The alias is a type, so it declares variables and stands in prototypes unchanged."
+    }
+  }
+}

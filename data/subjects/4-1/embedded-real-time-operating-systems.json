@@ -42,7 +42,8 @@
       "sources": [
         "ertos-introduction-lect-1#slide.13"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "embedded-real-time-operating-systems--hard-real-time-system"
     },
     {
       "id": "firm-real-time-system",
@@ -246,7 +247,8 @@
       "unitTitle": "Real-Time Systems",
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.88"
-      ]
+      ],
+      "artifact": "embedded-real-time-operating-systems--utilization"
     },
     {
       "id": "release-time",
@@ -349,7 +351,8 @@
         "ertos-real-time-systems-units-2-3#slide.186"
       ],
       "formula": "\\text{prio}(J_i)>\\text{prio}(J_j)\\iff d_i<d_j",
-      "diagram": "scheduling"
+      "diagram": "scheduling",
+      "artifact": "embedded-real-time-operating-systems--edf"
     },
     {
       "id": "laxity",
@@ -394,7 +397,8 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.209"
       ],
-      "formula": "p_{\\text{eff}}(J_L)=p_L<p_M<p_H"
+      "formula": "p_{\\text{eff}}(J_L)=p_L<p_M<p_H",
+      "artifact": "embedded-real-time-operating-systems--priority-inversion"
     },
     {
       "id": "file-descriptor",
@@ -405,7 +409,8 @@
       "sources": [
         "ertos-unix-file-io-unit-1#slide.6"
       ],
-      "formula": "\\text{fd}\\in\\{0,1,2,\\dots\\},\\quad \\text{fd}=-1\\Rightarrow\\text{error}"
+      "formula": "\\text{fd}\\in\\{0,1,2,\\dots\\},\\quad \\text{fd}=-1\\Rightarrow\\text{error}",
+      "artifact": "embedded-real-time-operating-systems--file-descriptor"
     },
     {
       "id": "fifo-named-pipe",
@@ -439,7 +444,8 @@
         "ertos-unix-file-io-unit-1#slide.28",
         "ertos-unix-file-io-unit-1#slide.8"
       ],
-      "formula": "n_{\\text{done}}<n_{\\text{req}}"
+      "formula": "n_{\\text{done}}<n_{\\text{req}}",
+      "artifact": "embedded-real-time-operating-systems--short-count"
     },
     {
       "id": "rio-package",
@@ -461,7 +467,8 @@
       "sources": [
         "ertos-unix-file-io-unit-1#slide.18"
       ],
-      "formula": "\\text{entry}[\\text{newfd}]\\leftarrow\\text{entry}[\\text{oldfd}]"
+      "formula": "\\text{entry}[\\text{newfd}]\\leftarrow\\text{entry}[\\text{oldfd}]",
+      "artifact": "embedded-real-time-operating-systems--io-redirection"
     },
     {
       "id": "interrupt",
@@ -473,7 +480,8 @@
       "sources": [
         "ertos-web-interrupt#Lead-section"
       ],
-      "diagram": "interrupt-flow"
+      "diagram": "interrupt-flow",
+      "artifact": "embedded-real-time-operating-systems--interrupt"
     },
     {
       "id": "isr",
@@ -554,7 +562,8 @@
       "sources": [
         "ertos-web-pit#Lead-section"
       ],
-      "diagram": "counter-timing"
+      "diagram": "counter-timing",
+      "artifact": "embedded-real-time-operating-systems--programmable-interval-timer"
     },
     {
       "id": "one-shot-timer",
@@ -587,7 +596,8 @@
       "unitTitle": "Case Studies of RTOS",
       "sources": [
         "ertos-web-ucos#Micro-Controller-Operating-Systems"
-      ]
+      ],
+      "artifact": "embedded-real-time-operating-systems--micro-c-os-ii"
     },
     {
       "id": "vxworks",

@@ -113,7 +113,8 @@
       "sources": [
         "edc-edc-unit-1#slide.66"
       ],
-      "formula": "I_{Z}=\\frac{V_{S}-V_{Z}}{R_{S}}-I_{L}"
+      "formula": "I_{Z}=\\frac{V_{S}-V_{Z}}{R_{S}}-I_{L}",
+      "artifact": "electronic-devices-and-circuits--zener-diode"
     },
     {
       "id": "zener-breakdown",
@@ -170,7 +171,8 @@
         "edc-edc-unit-1#slide.100"
       ],
       "formula": "\\eta=\\frac{P_{\\text{dc}}}{P_{\\text{ac}}}\\times100\\%",
-      "diagram": "rectifier-waveforms"
+      "diagram": "rectifier-waveforms",
+      "artifact": "electronic-devices-and-circuits--rectifier"
     },
     {
       "id": "ripple-factor",
@@ -181,7 +183,8 @@
       "sources": [
         "edc-edc-unit-1#slide.125"
       ],
-      "formula": "r=\\sqrt{\\left(\\frac{V_{\\text{rms}}}{V_{\\text{dc}}}\\right)^{2}-1}"
+      "formula": "r=\\sqrt{\\left(\\frac{V_{\\text{rms}}}{V_{\\text{dc}}}\\right)^{2}-1}",
+      "artifact": "electronic-devices-and-circuits--ripple-factor"
     },
     {
       "id": "peak-inverse-voltage",
@@ -204,7 +207,8 @@
         "edc-edc-unit-2#slide.2"
       ],
       "formula": "I_{E}=I_{B}+I_{C}",
-      "diagram": "bjt"
+      "diagram": "bjt",
+      "artifact": "electronic-devices-and-circuits--bjt"
     },
     {
       "id": "active-region",
@@ -216,7 +220,8 @@
         "edc-edc-unit-2#slide.9"
       ],
       "formula": "I_{C}=\\beta I_{B},\\quad I_{B}>0",
-      "diagram": "bjt"
+      "diagram": "bjt",
+      "artifact": "electronic-devices-and-circuits--active-region"
     },
     {
       "id": "saturation-region",
@@ -261,7 +266,8 @@
         "edc-edc-unit-2#slide.8"
       ],
       "formula": "A_{v}=-g_{m}R_{C},\\quad A_{i}=\\beta",
-      "diagram": "bjt-biasing"
+      "diagram": "bjt-biasing",
+      "artifact": "electronic-devices-and-circuits--common-emitter"
     },
     {
       "id": "common-collector",
@@ -373,7 +379,8 @@
       "sources": [
         "edc-edc-unit-3#slide.62"
       ],
-      "formula": "A_{v}=\\prod_{k=1}^{n}A_{vk}"
+      "formula": "A_{v}=\\prod_{k=1}^{n}A_{vk}",
+      "artifact": "electronic-devices-and-circuits--multistage-amplifier"
     },
     {
       "id": "rc-coupled-amplifier",
@@ -395,7 +402,8 @@
       "sources": [
         "edc-edc-unit-3#slide.100"
       ],
-      "formula": "g_{m}=\\frac{I_{C}}{V_{T}},\\quad r_{\\pi}=\\frac{\\beta}{g_{m}}"
+      "formula": "g_{m}=\\frac{I_{C}}{V_{T}},\\quad r_{\\pi}=\\frac{\\beta}{g_{m}}",
+      "artifact": "electronic-devices-and-circuits--hybrid-pi-model"
     },
     {
       "id": "transconductance",
@@ -498,7 +506,8 @@
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.9"
       ],
       "formula": "A_{f}=\\frac{A}{1+A\\beta}",
-      "diagram": "control-loop"
+      "diagram": "control-loop",
+      "artifact": "electronic-devices-and-circuits--feedback-amplifier"
     },
     {
       "id": "positive-feedback",

@@ -154,7 +154,8 @@
       "sources": [
         "dvsv-wiki-functional-verification#testbench"
       ],
-      "diagram": "verification-flow"
+      "diagram": "verification-flow",
+      "artifact": "design-verification-using-system-verilog--testbench"
     },
     {
       "id": "stimulus-generator",
@@ -253,7 +254,8 @@
       "unitTitle": "SystemVerilog Language Concepts",
       "sources": [
         "dvsv-wiki-systemverilog#data-types"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--dynamic-array"
     },
     {
       "id": "associative-array",
@@ -309,7 +311,8 @@
       "sources": [
         "dvsv-cv-clocking-block#introduction"
       ],
-      "diagram": "counter-timing"
+      "diagram": "counter-timing",
+      "artifact": "design-verification-using-system-verilog--clocking-block"
     },
     {
       "id": "program-block",
@@ -331,7 +334,8 @@
       "unitTitle": "SystemVerilog Language Concepts",
       "sources": [
         "dvsv-cv-fork-join#introduction"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--fork-join"
     },
     {
       "id": "fork-join-any",
@@ -364,7 +368,8 @@
       "unitTitle": "Object Oriented Programming Concepts-I",
       "sources": [
         "dvsv-wiki-object-copying#shallow-copy"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--shallow-copy"
     },
     {
       "id": "deep-copy",
@@ -397,7 +402,8 @@
       "unitTitle": "Object Oriented Programming Concepts-I",
       "sources": [
         "dvsv-cv-constraint-blocks#introduction"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--constraint-block"
     },
     {
       "id": "constrained-random-generation",
@@ -408,7 +414,8 @@
       "unitTitle": "Object Oriented Programming Concepts-I",
       "sources": [
         "dvsv-wiki-systemverilog#constrained-random-generation"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--constrained-random-generation"
     },
     {
       "id": "constraint-mode",
@@ -474,7 +481,8 @@
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
         "dvsv-cv-virtual-interface#introduction"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--virtual-interface"
     },
     {
       "id": "event",
@@ -529,7 +537,8 @@
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
         "dvsv-cv-immediate-assertions#concurrent-assertions"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--concurrent-assertion"
     },
     {
       "id": "sequence",
@@ -541,7 +550,8 @@
       "sources": [
         "dvsv-wiki-systemverilog#assertions"
       ],
-      "diagram": "counter-timing"
+      "diagram": "counter-timing",
+      "artifact": "design-verification-using-system-verilog--sequence"
     },
     {
       "id": "property",
@@ -563,7 +573,8 @@
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
         "dvsv-cv-covergroup#covergroup"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--covergroup"
     },
     {
       "id": "coverpoint",
@@ -574,7 +585,8 @@
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
         "dvsv-cv-covergroup#coverpoint"
-      ]
+      ],
+      "artifact": "design-verification-using-system-verilog--coverpoint"
     },
     {
       "id": "cross-coverage",

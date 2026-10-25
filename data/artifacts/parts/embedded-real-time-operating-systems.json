@@ -1,0 +1,303 @@
+{
+  "subject": "embedded-real-time-operating-systems",
+  "artifacts": {
+    "embedded-real-time-operating-systems--hard-real-time-system": {
+      "type": "table",
+      "title": "the three real-time classes by cost of a late result",
+      "headers": [
+        "class",
+        "missed deadline",
+        "example"
+      ],
+      "rows": [
+        [
+          "hard",
+          "catastrophic failure; the late result may be worthless",
+          "air traffic control, nuclear plant control"
+        ],
+        [
+          "firm",
+          "quality drops and the result is discarded, but no disaster",
+          "automobile ignition, a dropped video frame"
+        ],
+        [
+          "soft",
+          "quality falls yet the result is still useful",
+          "multimedia streaming, an interactive game"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The classes differ only in what lateness costs, so a scheduler adequate for the lower rows may fail the top one."
+    },
+    "embedded-real-time-operating-systems--utilization": {
+      "type": "table",
+      "title": "utilization of three periodic tasks",
+      "headers": [
+        "task",
+        "period p (ms)",
+        "execution e (ms)",
+        "u = e/p"
+      ],
+      "rows": [
+        [
+          "T1",
+          "10",
+          "2",
+          "0.20"
+        ],
+        [
+          "T2",
+          "20",
+          "4",
+          "0.20"
+        ],
+        [
+          "T3",
+          "50",
+          "5",
+          "0.10"
+        ],
+        [
+          "total U",
+          "-",
+          "-",
+          "0.50"
+        ]
+      ],
+      "highlight": 4,
+      "note": "U = 0.50 is below the 0.78 rate-monotonic bound for three tasks, so this set is schedulable with fixed priorities."
+    },
+    "embedded-real-time-operating-systems--edf": {
+      "type": "table",
+      "title": "EDF order for three jobs released together",
+      "headers": [
+        "job",
+        "execution e",
+        "deadline d",
+        "EDF order",
+        "finishes at"
+      ],
+      "rows": [
+        [
+          "J1",
+          "2",
+          "5",
+          "2nd",
+          "4"
+        ],
+        [
+          "J2",
+          "3",
+          "8",
+          "3rd",
+          "7"
+        ],
+        [
+          "J3",
+          "2",
+          "3",
+          "1st",
+          "2"
+        ]
+      ],
+      "highlight": 3,
+      "note": "All jobs arrive at t = 0, so ordering by deadline gives finish times 2, 4 and 7, each at or before its own deadline."
+    },
+    "embedded-real-time-operating-systems--micro-c-os-ii": {
+      "type": "table",
+      "title": "RTOS kernels by scheduling and footprint",
+      "headers": [
+        "kernel",
+        "scheduling",
+        "footprint",
+        "niche"
+      ],
+      "rows": [
+        [
+          "Micro C/OS-II",
+          "preemptive, 64 fixed priorities",
+          "5 - 24 KB",
+          "certified small MCU kernels"
+        ],
+        [
+          "VxWorks",
+          "preemptive plus round-robin",
+          "hundreds of KB",
+          "aerospace, industrial control"
+        ],
+        [
+          "TinyOS",
+          "event-driven, FIFO tasks",
+          "a few KB",
+          "wireless sensor nodes"
+        ],
+        [
+          "RT Linux",
+          "dual kernel, Linux as lowest priority",
+          "hundreds of KB",
+          "hard real time on PC hardware"
+        ],
+        [
+          "PREEMPT_RT",
+          "mainline Linux, threaded IRQs",
+          "full Linux",
+          "soft to firm real time"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Footprint and determinism trade against each other: the smallest kernels give the tightest bounds but the fewest services."
+    },
+    "embedded-real-time-operating-systems--interrupt": {
+      "type": "sequence",
+      "title": "from a device request to ISR entry",
+      "actors": [
+        "device",
+        "controller",
+        "CPU",
+        "ISR"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "assert its request line"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "arbitrate, drive IRQ with a vector id"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "stack PC and CPSR, branch to the vector"
+        },
+        {
+          "from": 3,
+          "to": 3,
+          "label": "service the device and clear its flag"
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "label": "write end-of-interrupt"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "return: restore PC and CPSR, resume"
+        }
+      ],
+      "note": "Latency runs from the last task instruction to the first ISR instruction, so vectoring and context save dominate it."
+    },
+    "embedded-real-time-operating-systems--priority-inversion": {
+      "type": "sequence",
+      "title": "priority inversion on a shared mutex",
+      "actors": [
+        "task H",
+        "task M",
+        "task L"
+      ],
+      "steps": [
+        {
+          "from": 2,
+          "to": 2,
+          "label": "L locks the shared bus mutex"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "H requests it and blocks"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "M preempts L, which still holds the lock"
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "label": "L resumes at H's priority (inheritance)"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "L unlocks; H preempts it and runs"
+        }
+      ],
+      "note": "Without inheritance the medium task delays the high one for as long as it keeps preempting the lock holder."
+    },
+    "embedded-real-time-operating-systems--file-descriptor": {
+      "type": "code",
+      "lang": "c",
+      "title": "open, read and close by descriptor",
+      "lines": [
+        "int fd = open(\"notes.txt\", O_RDONLY);",
+        "if (fd < 0) { perror(\"open\"); return 1; }",
+        "char buf[64];",
+        "ssize_t n = read(fd, buf, sizeof buf);",
+        "write(STDOUT_FILENO, buf, n);",
+        "close(fd);"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "fd indexes the process descriptor table; 0, 1 and 2 are already open as stdin, stdout and stderr."
+    },
+    "embedded-real-time-operating-systems--io-redirection": {
+      "type": "code",
+      "lang": "c",
+      "title": "shell redirection with dup2",
+      "lines": [
+        "int fd = open(\"out.txt\", O_WRONLY | O_CREAT | O_TRUNC, 0644);",
+        "dup2(fd, STDOUT_FILENO);   /* entry[1] now names out.txt */",
+        "close(fd);                 /* the extra descriptor is spare */",
+        "printf(\"hello\\n\");         /* lands in the file, not the tty */"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "dup2 copies one descriptor-table entry over another, so fd 1 and fd share one open file description and its offset."
+    },
+    "embedded-real-time-operating-systems--programmable-interval-timer": {
+      "type": "code",
+      "lang": "c",
+      "title": "dividing the PIT clock down to a 100 Hz tick",
+      "lines": [
+        "#define PIT_INPUT_HZ 1193182u",
+        "uint16_t divisor = (uint16_t)(PIT_INPUT_HZ / 100u);   /* 11931 */",
+        "outb(0x43, 0x36);                 /* channel 0, lo/hi, mode 3 */",
+        "outb(0x40, divisor & 0xFF);       /* low byte first */",
+        "outb(0x40, divisor >> 8);         /* high byte; tick every 10 ms */"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "divisor 11931 gives 100.007 Hz, a 9.999 ms tick"
+      ],
+      "note": "The counter divides a fixed input clock, so the reload value alone sets the tick period and the periodic interrupt rate."
+    },
+    "embedded-real-time-operating-systems--short-count": {
+      "type": "code",
+      "lang": "c",
+      "title": "read loop that absorbs short counts",
+      "lines": [
+        "ssize_t rio_readn(int fd, char *buf, size_t n) {",
+        "    size_t left = n;",
+        "    while (left > 0) {",
+        "        ssize_t k = read(fd, buf, left);",
+        "        if (k < 0 && errno == EINTR) continue;",
+        "        if (k <= 0) return k;          /* EOF or error */",
+        "        left -= k; buf += k;",
+        "    }",
+        "    return n;",
+        "}"
+      ],
+      "highlight": [
+        6
+      ],
+      "note": "A socket or pipe may return fewer bytes than asked, so the loop advances the pointer and retries until n bytes arrive."
+    }
+  }
+}

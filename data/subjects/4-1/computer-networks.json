@@ -110,7 +110,8 @@
       ],
       "id": "osi-reference-model",
       "formula": "",
-      "diagram": "osi-stack"
+      "diagram": "osi-stack",
+      "artifact": "computer-networks--osi-reference-model"
     },
     {
       "term": "Byte Stuffing",
@@ -143,7 +144,8 @@
         "cn-cn-unit-2#slide.63"
       ],
       "id": "checksum",
-      "formula": "C=\\overline{\\sum_{i=1}^{k}W_{i}}"
+      "formula": "C=\\overline{\\sum_{i=1}^{k}W_{i}}",
+      "artifact": "computer-networks--checksum"
     },
     {
       "term": "Cyclic Redundancy Check (CRC)",
@@ -154,7 +156,8 @@
         "cn-cn-unit-2#slide.68"
       ],
       "id": "cyclic-redundancy-check-crc",
-      "formula": "R(x)=x^{n}D(x)\\bmod G(x)"
+      "formula": "R(x)=x^{n}D(x)\\bmod G(x)",
+      "artifact": "computer-networks--cyclic-redundancy-check-crc"
     },
     {
       "term": "Stop-and-Wait ARQ",
@@ -165,7 +168,8 @@
         "cn-cn-unit-2#slide.25"
       ],
       "id": "stop-and-wait-arq",
-      "formula": "\\eta=\\frac{1}{1+2a},\\quad a=\\frac{T_{p}}{T_{fr}}"
+      "formula": "\\eta=\\frac{1}{1+2a},\\quad a=\\frac{T_{p}}{T_{fr}}",
+      "artifact": "computer-networks--stop-and-wait-arq"
     },
     {
       "term": "Go-Back-N ARQ",
@@ -345,7 +349,8 @@
         "cn-cn-unit-4#slide.28"
       ],
       "id": "count-to-infinity-problem",
-      "formula": ""
+      "formula": "",
+      "artifact": "computer-networks--count-to-infinity-problem"
     },
     {
       "term": "Split Horizon",
@@ -414,7 +419,8 @@
         "cn-cn-unit-5#slide.27"
       ],
       "id": "subnetting",
-      "formula": "N_{\\text{sub}}=2^{s},\\quad N_{\\text{host}}=2^{h}-2"
+      "formula": "N_{\\text{sub}}=2^{s},\\quad N_{\\text{host}}=2^{h}-2",
+      "artifact": "computer-networks--subnetting"
     },
     {
       "term": "Supernetting",
@@ -437,7 +443,8 @@
       ],
       "id": "nat",
       "formula": "(\\text{privIP},\\text{port})\\mapsto(\\text{pubIP},\\text{port}')",
-      "diagram": "ip-packet"
+      "diagram": "ip-packet",
+      "artifact": "computer-networks--nat"
     },
     {
       "term": "DHCP",
@@ -448,7 +455,8 @@
         "cn-cn-unit-5#slide.57"
       ],
       "id": "dhcp",
-      "formula": ""
+      "formula": "",
+      "artifact": "computer-networks--dhcp"
     },
     {
       "term": "Choke Packet",
@@ -492,7 +500,8 @@
         "cn-cn-unit-6a#slide.18"
       ],
       "id": "udp",
-      "formula": ""
+      "formula": "",
+      "artifact": "computer-networks--udp"
     },
     {
       "term": "TCP",
@@ -503,7 +512,8 @@
         "cn-cn-unit-6a#slide.28"
       ],
       "id": "tcp",
-      "formula": "\\text{throughput}\\le\\frac{W}{RTT}"
+      "formula": "\\text{throughput}\\le\\frac{W}{RTT}",
+      "artifact": "computer-networks--tcp"
     },
     {
       "term": "Three-Way Handshaking",
@@ -526,7 +536,8 @@
         "cn-cn-unit-6b#slide.4"
       ],
       "id": "dns",
-      "formula": ""
+      "formula": "",
+      "artifact": "computer-networks--dns"
     },
     {
       "term": "SMTP",
@@ -570,7 +581,8 @@
         "cn-cn-unit-6b#slide.52"
       ],
       "id": "http",
-      "formula": ""
+      "formula": "",
+      "artifact": "computer-networks--http"
     }
   ]
 }

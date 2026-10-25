@@ -87,7 +87,8 @@
       "sources": [
         "ica-unit-1-ica#slide.67"
       ],
-      "formula": "A_{d}\\to\\infty,\\ R_{in}\\to\\infty,\\ R_{out}\\to 0"
+      "formula": "A_{d}\\to\\infty,\\ R_{in}\\to\\infty,\\ R_{out}\\to 0",
+      "artifact": "ic-applications--ideal-op-amp"
     },
     {
       "id": "input-offset-current",
@@ -153,7 +154,8 @@
       "sources": [
         "ica-unit-2-ica#slide.9"
       ],
-      "formula": "V_{o}=\\left(1+\\frac{2R}{R_{G}}\\right)(V_{2}-V_{1})"
+      "formula": "V_{o}=\\left(1+\\frac{2R}{R_{G}}\\right)(V_{2}-V_{1})",
+      "artifact": "ic-applications--instrumentation-amplifier"
     },
     {
       "id": "integrator",
@@ -300,7 +302,8 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.40"
       ],
-      "formula": "V_{H}=V_{UT}-V_{LT}"
+      "formula": "V_{H}=V_{UT}-V_{LT}",
+      "artifact": "ic-applications--schmitt-trigger"
     },
     {
       "id": "filter",
@@ -392,7 +395,8 @@
         "ica-unit-3-ica-part-1#slide.13"
       ],
       "formula": "|H(j\\omega)|=\\frac{1}{\\sqrt{1+(\\omega/\\omega_{c})^{2n}}}",
-      "diagram": "bode"
+      "diagram": "bode",
+      "artifact": "ic-applications--butterworth-filter"
     },
     {
       "id": "notch-filter",
@@ -472,7 +476,8 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.3"
       ],
-      "formula": "V_{TH}=\\frac{2}{3}V_{CC},\\ V_{TL}=\\frac{1}{3}V_{CC}"
+      "formula": "V_{TH}=\\frac{2}{3}V_{CC},\\ V_{TL}=\\frac{1}{3}V_{CC}",
+      "artifact": "ic-applications--timer-555"
     },
     {
       "id": "phase-locked-loop",
@@ -484,7 +489,8 @@
         "ica-unit-3-ica-part-2#slide.44"
       ],
       "formula": "\\Delta f=f_{o}-f_{r}\\to 0",
-      "diagram": "pll"
+      "diagram": "pll",
+      "artifact": "ic-applications--phase-locked-loop"
     },
     {
       "id": "lock-range",
@@ -541,7 +547,8 @@
         "ica-unit-2-ica#slide.54"
       ],
       "formula": "\\text{LSB}=\\frac{V_{FS}}{2^{n}-1}",
-      "diagram": "adc-dac"
+      "diagram": "adc-dac",
+      "artifact": "ic-applications--dac-resolution"
     },
     {
       "id": "adc-resolution",
@@ -553,7 +560,8 @@
         "ica-unit-2-ica#slide.54"
       ],
       "formula": "D=\\frac{V_{in}}{V_{FS}}\\,(2^{n}-1)",
-      "diagram": "adc-dac"
+      "diagram": "adc-dac",
+      "artifact": "ic-applications--adc-resolution"
     },
     {
       "id": "ttl",
@@ -576,7 +584,8 @@
         "ica-unit-2-ica#slide.5"
       ],
       "formula": "P_{\\text{dyn}}=\\alpha CV_{DD}^{2}f",
-      "diagram": "cmos-inverter"
+      "diagram": "cmos-inverter",
+      "artifact": "ic-applications--cmos"
     }
   ]
 }

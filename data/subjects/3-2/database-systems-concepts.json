@@ -64,7 +64,8 @@
       "unitTitle": "Database Systems and ER Model",
       "sources": [
         "dbsc-wiki-database#languages"
-      ]
+      ],
+      "artifact": "database-systems-concepts--data-definition-language"
     },
     {
       "id": "data-manipulation-language",
@@ -75,7 +76,8 @@
       "unitTitle": "Database Systems and ER Model",
       "sources": [
         "dbsc-wiki-database#languages"
-      ]
+      ],
+      "artifact": "database-systems-concepts--data-manipulation-language"
     },
     {
       "id": "entity",
@@ -176,7 +178,8 @@
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
         "dbsc-wiki-relational-model#keys"
-      ]
+      ],
+      "artifact": "database-systems-concepts--candidate-key"
     },
     {
       "id": "primary-key",
@@ -220,7 +223,8 @@
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
         "dbsc-wiki-view#overview"
-      ]
+      ],
+      "artifact": "database-systems-concepts--view"
     },
     {
       "id": "materialized-view",
@@ -308,7 +312,8 @@
       "unitTitle": "SQL",
       "sources": [
         "dbsc-wiki-sql#null-and-three-valued-logic"
-      ]
+      ],
+      "artifact": "database-systems-concepts--null"
     },
     {
       "id": "join",
@@ -332,7 +337,8 @@
       "sources": [
         "dbsc-wiki-join#inner-join"
       ],
-      "diagram": "sql-join"
+      "diagram": "sql-join",
+      "artifact": "database-systems-concepts--inner-join"
     },
     {
       "id": "left-outer-join",
@@ -343,7 +349,8 @@
       "unitTitle": "SQL",
       "sources": [
         "dbsc-wiki-join#outer-join"
-      ]
+      ],
+      "artifact": "database-systems-concepts--left-outer-join"
     },
     {
       "id": "full-outer-join",
@@ -398,7 +405,8 @@
       "unitTitle": "SQL",
       "sources": [
         "dbsc-wiki-trigger#overview"
-      ]
+      ],
+      "artifact": "database-systems-concepts--trigger"
     },
     {
       "id": "normalization",
@@ -545,7 +553,8 @@
       "sources": [
         "dbsc-wiki-serializability#schedule"
       ],
-      "diagram": "transaction"
+      "diagram": "transaction",
+      "artifact": "database-systems-concepts--schedule"
     },
     {
       "id": "serial-schedule",
@@ -589,7 +598,8 @@
       "unitTitle": "Transaction Management",
       "sources": [
         "dbsc-wiki-2pl#overview"
-      ]
+      ],
+      "artifact": "database-systems-concepts--two-phase-locking"
     },
     {
       "id": "shared-lock",
@@ -622,7 +632,8 @@
       "unitTitle": "Transaction Management",
       "sources": [
         "dbsc-wiki-wal#overview"
-      ]
+      ],
+      "artifact": "database-systems-concepts--write-ahead-logging"
     },
     {
       "id": "checkpoint",
@@ -689,7 +700,8 @@
       "unitTitle": "Storage and Indexing",
       "sources": [
         "dbsc-wiki-index#dense-and-sparse"
-      ]
+      ],
+      "artifact": "database-systems-concepts--dense-index"
     },
     {
       "id": "sparse-index",

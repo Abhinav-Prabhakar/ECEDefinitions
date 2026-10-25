@@ -1,0 +1,396 @@
+{
+  "subject": "programming-in-java",
+  "artifacts": {
+    "programming-in-java--access-level-modifier": {
+      "type": "table",
+      "title": "member access levels",
+      "headers": [
+        "modifier",
+        "same class",
+        "same package",
+        "subclass",
+        "anywhere"
+      ],
+      "rows": [
+        [
+          "private",
+          "yes",
+          "no",
+          "no",
+          "no"
+        ],
+        [
+          "(no modifier)",
+          "yes",
+          "yes",
+          "no",
+          "no"
+        ],
+        [
+          "protected",
+          "yes",
+          "yes",
+          "yes",
+          "no"
+        ],
+        [
+          "public",
+          "yes",
+          "yes",
+          "yes",
+          "yes"
+        ]
+      ],
+      "highlight": 3,
+      "note": "protected also reaches subclasses in other packages; no modifier means package-private only."
+    },
+    "programming-in-java--method-signature": {
+      "type": "table",
+      "title": "what counts in a method signature",
+      "headers": [
+        "part of declaration",
+        "in signature",
+        "reason"
+      ],
+      "rows": [
+        [
+          "method name",
+          "yes",
+          "selects the method"
+        ],
+        [
+          "parameter types",
+          "yes",
+          "form the descriptor"
+        ],
+        [
+          "parameter names",
+          "no",
+          "ignored by compiler"
+        ],
+        [
+          "return type",
+          "no",
+          "cannot overload on it"
+        ],
+        [
+          "throws clause",
+          "no",
+          "not part of descriptor"
+        ],
+        [
+          "modifiers",
+          "no",
+          "static and final do not distinguish"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Two methods differing only in return type do not compile: the signature is name plus parameter types."
+    },
+    "programming-in-java--string": {
+      "type": "code",
+      "lang": "java",
+      "title": "String methods return new objects",
+      "lines": [
+        "String s = \"java\";",
+        "s.toUpperCase();",
+        "System.out.println(s);",
+        "String u = s.toUpperCase();",
+        "System.out.println(u);"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "java",
+        "JAVA"
+      ],
+      "note": "toUpperCase returns a new String; s still refers to the original, so only the reassigned u is upper case."
+    },
+    "programming-in-java--virtual-method-invocation": {
+      "type": "code",
+      "lang": "java",
+      "title": "dispatch on the object, not the reference",
+      "lines": [
+        "class Animal { void speak() { System.out.println(\"...\"); } }",
+        "class Dog extends Animal { void speak() { System.out.println(\"woof\"); } }",
+        "public class Main {",
+        "    public static void main(String[] args) {",
+        "        Animal a = new Dog();",
+        "        a.speak();",
+        "    }",
+        "}"
+      ],
+      "highlight": [
+        5
+      ],
+      "output": [
+        "woof"
+      ],
+      "note": "The reference is Animal but the object is Dog, so the JVM dispatches to Dog.speak() at run time."
+    },
+    "programming-in-java--interface": {
+      "type": "code",
+      "lang": "java",
+      "title": "interface and implementing class",
+      "lines": [
+        "interface Drivable {",
+        "    int MAX_SPEED = 120;",
+        "    void drive();",
+        "}",
+        "class Car implements Drivable {",
+        "    public void drive() { System.out.println(\"vroom\"); }",
+        "}"
+      ],
+      "highlight": [
+        5
+      ],
+      "note": "Interface fields are implicitly public static final and methods public abstract; the implementation must be public."
+    },
+    "programming-in-java--interface-versus-abstract-class": {
+      "type": "table",
+      "title": "interface versus abstract class",
+      "headers": [
+        "capability",
+        "interface",
+        "abstract class"
+      ],
+      "rows": [
+        [
+          "instance fields",
+          "no, constants only",
+          "yes"
+        ],
+        [
+          "constructors",
+          "no",
+          "yes"
+        ],
+        [
+          "multiple inheritance",
+          "many interfaces",
+          "one superclass"
+        ],
+        [
+          "method bodies",
+          "default and static only",
+          "any method"
+        ],
+        [
+          "member access",
+          "public by default",
+          "any modifier"
+        ]
+      ],
+      "highlight": 3,
+      "note": "A class may implement several interfaces but extend only one class: interfaces buy types, abstract classes buy shared state."
+    },
+    "programming-in-java--collection-implementations": {
+      "type": "table",
+      "title": "common collection implementations",
+      "headers": [
+        "class",
+        "interface",
+        "order",
+        "access cost"
+      ],
+      "rows": [
+        [
+          "ArrayList",
+          "List",
+          "insertion order",
+          "O(1) by index"
+        ],
+        [
+          "LinkedList",
+          "List, Deque",
+          "insertion order",
+          "O(n) by index"
+        ],
+        [
+          "HashSet",
+          "Set",
+          "no order",
+          "O(1) contains"
+        ],
+        [
+          "TreeSet",
+          "NavigableSet",
+          "sorted",
+          "O(log n) contains"
+        ],
+        [
+          "HashMap",
+          "Map",
+          "no order",
+          "O(1) by key"
+        ],
+        [
+          "TreeMap",
+          "NavigableMap",
+          "sorted by key",
+          "O(log n) by key"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Hash structures trade ordering for average O(1) lookup; tree structures keep keys sorted at O(log n)."
+    },
+    "programming-in-java--catching-an-exception": {
+      "type": "code",
+      "lang": "java",
+      "title": "catching a runtime exception",
+      "lines": [
+        "try {",
+        "    int[] a = new int[3];",
+        "    a[5] = 1;",
+        "} catch (ArrayIndexOutOfBoundsException e) {",
+        "    System.out.println(\"index out of range\");",
+        "}"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "index out of range"
+      ],
+      "note": "The catch parameter names the type to handle; without it the exception would unwind the call stack."
+    },
+    "programming-in-java--finally-block": {
+      "type": "code",
+      "lang": "java",
+      "title": "finally runs before the return completes",
+      "lines": [
+        "static int f() {",
+        "    try {",
+        "        return 1;",
+        "    } finally {",
+        "        System.out.println(\"cleanup\");",
+        "    }",
+        "}"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "cleanup"
+      ],
+      "note": "finally runs after the return expression is evaluated but before control leaves f(), so cleanup is never skipped."
+    },
+    "programming-in-java--thread": {
+      "type": "table",
+      "title": "process versus thread",
+      "headers": [
+        "aspect",
+        "process",
+        "thread"
+      ],
+      "rows": [
+        [
+          "memory",
+          "private address space",
+          "shares process memory"
+        ],
+        [
+          "creation cost",
+          "high",
+          "low"
+        ],
+        [
+          "communication",
+          "IPC, pipes, sockets",
+          "shared fields"
+        ],
+        [
+          "isolation",
+          "a crash stays contained",
+          "a crash can end the process"
+        ],
+        [
+          "Java API",
+          "ProcessBuilder",
+          "Thread, Runnable"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Threads share the heap and open files, so they communicate cheaply but need synchronization."
+    },
+    "programming-in-java--synchronization": {
+      "type": "code",
+      "lang": "java",
+      "title": "synchronized methods lock the instance",
+      "lines": [
+        "class Counter {",
+        "    private int n;",
+        "    synchronized void inc() { n++; }",
+        "    synchronized int value() { return n; }",
+        "}"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "Each synchronized method locks the Counter instance, so two threads cannot run inc() at the same time."
+    },
+    "programming-in-java--layout-manager": {
+      "type": "table",
+      "title": "Swing layout managers",
+      "headers": [
+        "manager",
+        "arrangement",
+        "uses preferred size"
+      ],
+      "rows": [
+        [
+          "FlowLayout",
+          "left to right, wraps",
+          "yes"
+        ],
+        [
+          "BorderLayout",
+          "five regions",
+          "no"
+        ],
+        [
+          "GridLayout",
+          "equal cells in r x c",
+          "no"
+        ],
+        [
+          "BoxLayout",
+          "single row or column",
+          "yes"
+        ]
+      ],
+      "highlight": 3,
+      "note": "BorderLayout and GridLayout stretch components to fill their slot; FlowLayout and BoxLayout keep the preferred size."
+    },
+    "programming-in-java--event-listener": {
+      "type": "code",
+      "lang": "java",
+      "title": "registering an action listener",
+      "lines": [
+        "JButton go = new JButton(\"Go\");",
+        "go.addActionListener(e -> System.out.println(\"clicked\"));"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "addActionListener registers the lambda; Swing invokes it on the event dispatch thread when the button is pressed."
+    },
+    "programming-in-java--socket": {
+      "type": "code",
+      "lang": "java",
+      "title": "TCP client socket",
+      "lines": [
+        "try (Socket s = new Socket(\"example.com\", 80)) {",
+        "    PrintWriter out = new PrintWriter(s.getOutputStream(), true);",
+        "    out.println(\"GET / HTTP/1.1\");",
+        "    out.println(\"Host: example.com\");",
+        "}"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "The constructor resolves the host and connects to the port; try-with-resources closes the socket at the end of the block."
+    }
+  }
+}

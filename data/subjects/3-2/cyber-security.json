@@ -43,7 +43,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.14"
-      ]
+      ],
+      "artifact": "cyber-security--integrity"
     },
     {
       "id": "availability",
@@ -87,7 +88,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.21"
-      ]
+      ],
+      "artifact": "cyber-security--risk"
     },
     {
       "id": "active-attack",
@@ -98,7 +100,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.26"
-      ]
+      ],
+      "artifact": "cyber-security--active-attack"
     },
     {
       "id": "passive-attack",
@@ -120,7 +123,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.28"
-      ]
+      ],
+      "artifact": "cyber-security--malware"
     },
     {
       "id": "virus",
@@ -176,7 +180,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.26"
-      ]
+      ],
+      "artifact": "cyber-security--dos-attack"
     },
     {
       "id": "spoofing",
@@ -222,7 +227,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.52"
-      ]
+      ],
+      "artifact": "cyber-security--non-repudiation"
     },
     {
       "id": "cyberspace",
@@ -488,7 +494,8 @@
       "unitTitle": "Privacy Issues",
       "sources": [
         "cys-cybersecurity-unit-5#slide.30"
-      ]
+      ],
+      "artifact": "cyber-security--data-masking"
     },
     {
       "id": "data-linking",

@@ -107,7 +107,8 @@
         "dip-wikipedia-kernel-image-processing#para.5",
         "dip-wikipedia-kernel-image-processing#para.1"
       ],
-      "diagram": "convolution-2d"
+      "diagram": "convolution-2d",
+      "artifact": "digital-image-processing--convolution"
     },
     {
       "id": "cross-correlation",
@@ -267,7 +268,8 @@
         "dip-wikipedia-histogram-equalization#para.11",
         "dip-wikipedia-histogram-equalization#para.12"
       ],
-      "diagram": "histogram"
+      "diagram": "histogram",
+      "artifact": "digital-image-processing--histogram-equalization"
     },
     {
       "id": "adaptive-histogram-equalization",
@@ -291,7 +293,8 @@
       "sources": [
         "dip-wikipedia-kernel-image-processing#para.1"
       ],
-      "diagram": "convolution-2d"
+      "diagram": "convolution-2d",
+      "artifact": "digital-image-processing--spatial-filtering"
     },
     {
       "id": "smoothing-filter",
@@ -397,7 +400,8 @@
       "unitTitle": "Image Restoration",
       "sources": [
         "dip-wikipedia-wiener-deconvolution#para.1"
-      ]
+      ],
+      "artifact": "digital-image-processing--wiener-filter"
     },
     {
       "id": "minimum-mean-square-error",
@@ -522,7 +526,8 @@
       "sources": [
         "dip-wikipedia-mathematical-morphology#para.25",
         "dip-wikipedia-mathematical-morphology#para.27"
-      ]
+      ],
+      "artifact": "digital-image-processing--opening"
     },
     {
       "id": "closing",
@@ -605,7 +610,8 @@
       "sources": [
         "dip-wikipedia-huffman-coding#para.1",
         "dip-wikipedia-huffman-coding#para.16"
-      ]
+      ],
+      "artifact": "digital-image-processing--huffman-coding"
     },
     {
       "id": "run-length-encoding",
@@ -653,7 +659,8 @@
       "sources": [
         "dip-wikipedia-block-truncation-coding#para.1",
         "dip-wikipedia-block-truncation-coding#para.5"
-      ]
+      ],
+      "artifact": "digital-image-processing--block-truncation-coding"
     },
     {
       "id": "transform-coding",
@@ -677,7 +684,8 @@
       "sources": [
         "dip-wikipedia-digital-image#para.20",
         "dip-wikipedia-digital-image-processing#para.8"
-      ]
+      ],
+      "artifact": "digital-image-processing--jpeg"
     }
   ]
 }

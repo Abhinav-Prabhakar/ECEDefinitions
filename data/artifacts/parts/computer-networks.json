@@ -1,0 +1,433 @@
+{
+  "subject": "computer-networks",
+  "artifacts": {
+    "computer-networks--tcp": {
+      "type": "sequence",
+      "title": "TCP connection open",
+      "actors": [
+        "client",
+        "server"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "SYN"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "SYN + ACK"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "ACK"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "data"
+        }
+      ],
+      "note": "The three-way handshake agrees both sequence numbers before any payload is sent."
+    },
+    "computer-networks--osi-reference-model": {
+      "type": "table",
+      "title": "OSI layers, PDUs and jobs",
+      "headers": [
+        "layer",
+        "PDU",
+        "main job"
+      ],
+      "rows": [
+        [
+          "7 application",
+          "message",
+          "services for the user: HTTP, DNS, SMTP"
+        ],
+        [
+          "6 presentation",
+          "message",
+          "syntax, encoding, compression and encryption"
+        ],
+        [
+          "5 session",
+          "message",
+          "dialog control: establish, manage, end sessions"
+        ],
+        [
+          "4 transport",
+          "segment",
+          "end-to-end process delivery, ports, flow control"
+        ],
+        [
+          "3 network",
+          "packet",
+          "logical addressing and routing between networks"
+        ],
+        [
+          "2 data link",
+          "frame",
+          "framing, error control, MAC addressing"
+        ],
+        [
+          "1 physical",
+          "bit",
+          "bit transmission over the medium"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Each layer adds its own header to the unit passed down, so the PDU is renamed at layers 4, 3 and 2."
+    },
+    "computer-networks--checksum": {
+      "type": "table",
+      "title": "one's complement checksum by hand",
+      "headers": [
+        "step",
+        "16-bit value"
+      ],
+      "rows": [
+        [
+          "data word 1",
+          "0x1234"
+        ],
+        [
+          "data word 2",
+          "0x5678"
+        ],
+        [
+          "sum",
+          "0x68AC"
+        ],
+        [
+          "checksum sent = complement of sum",
+          "0x9753"
+        ],
+        [
+          "receiver adds all three words",
+          "0xFFFF, complement 0x0000, accepted"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Only the complement travels, so a receiver's total folds to all ones and its complement is zero when nothing is corrupt."
+    },
+    "computer-networks--cyclic-redundancy-check-crc": {
+      "type": "code",
+      "lang": "c",
+      "title": "CRC-32 remainder, one bit per clock",
+      "lines": [
+        "uint32_t crc32(const uint8_t *p, size_t n) {",
+        "    uint32_t crc = 0xFFFFFFFFu;",
+        "    while (n--) {",
+        "        crc ^= *p++;",
+        "        for (int k = 0; k < 8; k++)",
+        "            crc = (crc >> 1) ^ (0xEDB88320u & -(crc & 1u));",
+        "    }",
+        "    return ~crc;",
+        "}"
+      ],
+      "highlight": [
+        6
+      ],
+      "output": [
+        "crc32(\"123456789\") = 0xCBF43926"
+      ],
+      "note": "Each data bit is XORed into the register, then the register shifts as if dividing by the generator polynomial."
+    },
+    "computer-networks--stop-and-wait-arq": {
+      "type": "sequence",
+      "title": "stop-and-wait with one lost frame",
+      "actors": [
+        "sender",
+        "receiver"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "frame 0 (seq = 0)"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "ACK 1 (next expected = 1)"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "frame 1 lost in transit"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "timeout: frame 1 retransmitted"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "ACK 0"
+        }
+      ],
+      "note": "The sender keeps one copy until its ACK arrives, so a single sequence bit is enough to discard a duplicate."
+    },
+    "computer-networks--count-to-infinity-problem": {
+      "type": "table",
+      "title": "count to infinity after link A-B fails",
+      "headers": [
+        "update round",
+        "B: cost to A",
+        "C: cost to A"
+      ],
+      "rows": [
+        [
+          "0, before failure",
+          "1 direct",
+          "2 via B"
+        ],
+        [
+          "1",
+          "3 via C",
+          "2 via B"
+        ],
+        [
+          "2",
+          "3 via C",
+          "4 via B"
+        ],
+        [
+          "3",
+          "5 via C",
+          "4 via B"
+        ],
+        [
+          "4",
+          "5 via C",
+          "6 via B"
+        ],
+        [
+          "converged",
+          "16 = infinity",
+          "16 = infinity"
+        ]
+      ],
+      "highlight": 2,
+      "note": "B believes C's stale route to A, so every round adds 2 to the cost instead of declaring the link down."
+    },
+    "computer-networks--subnetting": {
+      "type": "table",
+      "title": "192.168.1.0/24 split into four /26 subnets",
+      "headers": [
+        "subnet",
+        "network",
+        "usable hosts",
+        "broadcast"
+      ],
+      "rows": [
+        [
+          "1",
+          "192.168.1.0/26",
+          "192.168.1.1 - .62",
+          "192.168.1.63"
+        ],
+        [
+          "2",
+          "192.168.1.64/26",
+          "192.168.1.65 - .126",
+          "192.168.1.127"
+        ],
+        [
+          "3",
+          "192.168.1.128/26",
+          "192.168.1.129 - .190",
+          "192.168.1.191"
+        ],
+        [
+          "4",
+          "192.168.1.192/26",
+          "192.168.1.193 - .254",
+          "192.168.1.255"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Borrowing 2 host bits from the /24 gives 4 subnets of 2^6 - 2 = 62 usable hosts each."
+    },
+    "computer-networks--nat": {
+      "type": "table",
+      "title": "NAT translation table at the border router",
+      "headers": [
+        "direction",
+        "inside address:port",
+        "outside address:port"
+      ],
+      "rows": [
+        [
+          "outbound",
+          "10.0.0.5:3344",
+          "203.0.113.7:40001"
+        ],
+        [
+          "outbound",
+          "10.0.0.6:3344",
+          "203.0.113.7:40002"
+        ],
+        [
+          "inbound",
+          "10.0.0.5:3344",
+          "203.0.113.7:40001"
+        ],
+        [
+          "inbound",
+          "10.0.0.6:3344",
+          "203.0.113.7:40002"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Both hosts chose port 3344 independently, so the router rewrites the source port to keep the public tuple unique."
+    },
+    "computer-networks--dhcp": {
+      "type": "sequence",
+      "title": "DHCP lease acquisition (DORA)",
+      "actors": [
+        "client",
+        "server"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DHCPDISCOVER broadcast from 0.0.0.0"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "DHCPOFFER: 192.168.1.50, mask, gateway"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DHCPREQUEST for the offered address"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "DHCPACK: 24 h lease, DNS servers"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "renewal request at half the lease"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "DHCPACK with a fresh lease"
+        }
+      ],
+      "note": "The client owns nothing until the ACK, so the request repeats the offer to tell other servers to withdraw theirs."
+    },
+    "computer-networks--dns": {
+      "type": "sequence",
+      "title": "resolving www.example.com from the root down",
+      "actors": [
+        "resolver",
+        "root server",
+        "com TLD",
+        "authoritative"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "query www.example.com A?"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "referral: ask a.gtld-servers.net"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "query the com TLD server"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "referral: ask ns1.example.com"
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "label": "query ns1.example.com"
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "label": "A 93.184.216.34, TTL 3600"
+        }
+      ],
+      "note": "The resolver walks one delegation at a time and caches each answer for its TTL, so later lookups start lower."
+    },
+    "computer-networks--http": {
+      "type": "code",
+      "lang": "text",
+      "title": "one HTTP/1.1 request and its response head",
+      "lines": [
+        "GET /index.html HTTP/1.1",
+        "Host: www.example.com",
+        "Accept: text/html",
+        "Connection: close"
+      ],
+      "highlight": [
+        1
+      ],
+      "output": [
+        "HTTP/1.1 200 OK",
+        "Content-Type: text/html",
+        "Content-Length: 1256",
+        "",
+        "<!doctype html><html>...</html>"
+      ],
+      "note": "The request line carries method, target and version; a blank line ends the header block and the body follows."
+    },
+    "computer-networks--udp": {
+      "type": "table",
+      "title": "UDP header",
+      "headers": [
+        "field",
+        "bits",
+        "what it carries"
+      ],
+      "rows": [
+        [
+          "source port",
+          "16",
+          "sending process, optional in one-way use"
+        ],
+        [
+          "destination port",
+          "16",
+          "process the datagram is delivered to"
+        ],
+        [
+          "length",
+          "16",
+          "header plus data, minimum 8"
+        ],
+        [
+          "checksum",
+          "16",
+          "one's complement over pseudo-header and datagram; 0 = unused"
+        ],
+        [
+          "data",
+          "0 - 65507",
+          "payload, with no ordering or retransmission"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Eight header bytes in total: no sequence number and no ACK, so loss and reordering are left to the application."
+    }
+  }
+}

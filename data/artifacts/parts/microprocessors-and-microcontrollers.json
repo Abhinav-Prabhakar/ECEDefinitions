@@ -1,0 +1,499 @@
+{
+  "subject": "microprocessors-and-microcontrollers",
+  "artifacts": {
+    "microprocessors-and-microcontrollers--flag-register": {
+      "type": "table",
+      "title": "8086 flag bits",
+      "headers": [
+        "bit",
+        "flag",
+        "set when"
+      ],
+      "rows": [
+        [
+          "0",
+          "CF",
+          "carry out of the MSB, or a borrow"
+        ],
+        [
+          "2",
+          "PF",
+          "the low byte has even parity"
+        ],
+        [
+          "4",
+          "AF",
+          "carry out of bit 3"
+        ],
+        [
+          "6",
+          "ZF",
+          "the result is zero"
+        ],
+        [
+          "7",
+          "SF",
+          "the MSB of the result is 1"
+        ],
+        [
+          "8",
+          "TF",
+          "trap, single-step mode"
+        ],
+        [
+          "9",
+          "IF",
+          "maskable interrupts are enabled"
+        ],
+        [
+          "10",
+          "DF",
+          "string operations run downwards"
+        ],
+        [
+          "11",
+          "OF",
+          "the signed result is out of range"
+        ]
+      ],
+      "highlight": 9,
+      "note": "Bits 1, 3, 12 to 15 are undefined or unused, so nine of the sixteen bits carry status."
+    },
+    "microprocessors-and-microcontrollers--segment-registers": {
+      "type": "table",
+      "title": "segment and default offset pairs",
+      "headers": [
+        "segment",
+        "offset registers",
+        "area"
+      ],
+      "rows": [
+        [
+          "CS",
+          "IP",
+          "code"
+        ],
+        [
+          "DS",
+          "BX, SI, DI",
+          "data"
+        ],
+        [
+          "SS",
+          "SP, BP",
+          "stack"
+        ],
+        [
+          "ES",
+          "DI",
+          "extra, string destination"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The BIU picks the segment from the offset used, which is why BP switches the default to SS."
+    },
+    "microprocessors-and-microcontrollers--addressing-mode": {
+      "type": "table",
+      "title": "8086 addressing modes",
+      "headers": [
+        "mode",
+        "example",
+        "effective address"
+      ],
+      "rows": [
+        [
+          "immediate",
+          "MOV AX, 0005H",
+          "operand inside the instruction"
+        ],
+        [
+          "register",
+          "MOV AX, BX",
+          "operand inside the register"
+        ],
+        [
+          "direct",
+          "MOV AX, [5000H]",
+          "DS:5000H"
+        ],
+        [
+          "register indirect",
+          "MOV AX, [BX]",
+          "DS:BX"
+        ],
+        [
+          "based",
+          "MOV AX, [BP+6]",
+          "SS:BP+6"
+        ],
+        [
+          "indexed",
+          "MOV AX, [SI+4]",
+          "DS:SI+4"
+        ],
+        [
+          "based indexed",
+          "MOV AX, [BX+SI]",
+          "DS:BX+SI"
+        ]
+      ],
+      "highlight": 7,
+      "note": "Only the forms built on BP address the stack segment by default; the rest start from DS."
+    },
+    "microprocessors-and-microcontrollers--instruction-queue": {
+      "type": "sequence",
+      "title": "prefetch overlap",
+      "actors": [
+        "BIU",
+        "queue",
+        "EU"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "prefetch while the bus is idle"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "opcode handed to the decoder"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "next byte requested"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "queue empty, fetch stalls"
+        }
+      ],
+      "note": "Overlap pays only while the queue stays full, which is why a taken branch flushes it."
+    },
+    "microprocessors-and-microcontrollers--cmp-instruction": {
+      "type": "table",
+      "title": "jumps tested after CMP",
+      "headers": [
+        "condition",
+        "jump",
+        "meaning"
+      ],
+      "rows": [
+        [
+          "ZF = 1",
+          "JE / JZ",
+          "equal, or zero"
+        ],
+        [
+          "ZF = 0",
+          "JNE / JNZ",
+          "not equal"
+        ],
+        [
+          "CF = 0 and ZF = 0",
+          "JA",
+          "above, unsigned greater"
+        ],
+        [
+          "CF = 1",
+          "JB",
+          "below, unsigned less"
+        ],
+        [
+          "SF = OF and ZF = 0",
+          "JG",
+          "greater, signed"
+        ],
+        [
+          "SF ≠ OF",
+          "JL",
+          "less, signed"
+        ]
+      ],
+      "highlight": 3,
+      "note": "CMP stores nothing, so one subtraction feeds every conditional jump that follows it."
+    },
+    "microprocessors-and-microcontrollers--assembler-directive": {
+      "type": "code",
+      "lang": "text",
+      "title": "directives around an instruction block",
+      "lines": [
+        "COUNT   EQU  05H            ; a constant, no storage",
+        "        ORG  0100H          ; where the code is placed",
+        "START:  MOV  AL, COUNT",
+        "        MOV  [0200H], AL",
+        "        END  START          ; END names the entry point"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "Directives steer the assembler only; only the MOV lines produce machine code."
+    },
+    "microprocessors-and-microcontrollers--8255-ppi": {
+      "type": "table",
+      "title": "8255 mode-set control word",
+      "headers": [
+        "bit",
+        "field",
+        "meaning"
+      ],
+      "rows": [
+        [
+          "D7",
+          "mode set flag",
+          "1 = mode set, 0 = bit set/reset"
+        ],
+        [
+          "D6 D5",
+          "group A mode",
+          "00 mode 0, 01 mode 1, 1x mode 2"
+        ],
+        [
+          "D4",
+          "port A direction",
+          "1 = input, 0 = output"
+        ],
+        [
+          "D3",
+          "port C upper",
+          "1 = input, 0 = output"
+        ],
+        [
+          "D2",
+          "group B mode",
+          "0 = mode 0, 1 = mode 1"
+        ],
+        [
+          "D1",
+          "port B direction",
+          "1 = input, 0 = output"
+        ],
+        [
+          "D0",
+          "port C lower",
+          "1 = input, 0 = output"
+        ]
+      ],
+      "highlight": 2,
+      "note": "One write sets every port direction at once, so a direction change reformats the whole chip."
+    },
+    "microprocessors-and-microcontrollers--8259-pic": {
+      "type": "sequence",
+      "title": "interrupt acknowledge",
+      "actors": [
+        "device",
+        "8259 PIC",
+        "CPU"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "request on IR0-IR7"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "INT to the CPU"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "INTA pulse"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "vector byte on the data bus"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "EOI at the end of the ISR"
+        }
+      ],
+      "note": "The vector byte saves polling; the EOI re-arms that input for the next request."
+    },
+    "microprocessors-and-microcontrollers--tcon": {
+      "type": "table",
+      "title": "TCON bits and bit addresses",
+      "headers": [
+        "bit",
+        "address",
+        "name",
+        "function"
+      ],
+      "rows": [
+        [
+          "7",
+          "8FH",
+          "TF1",
+          "timer 1 overflow flag"
+        ],
+        [
+          "6",
+          "8EH",
+          "TR1",
+          "timer 1 run control"
+        ],
+        [
+          "5",
+          "8DH",
+          "TF0",
+          "timer 0 overflow flag"
+        ],
+        [
+          "4",
+          "8CH",
+          "TR0",
+          "timer 0 run control"
+        ],
+        [
+          "3",
+          "8BH",
+          "IE1",
+          "external interrupt 1 flag"
+        ],
+        [
+          "2",
+          "8AH",
+          "IT1",
+          "interrupt 1 type: edge or level"
+        ],
+        [
+          "1",
+          "89H",
+          "IE0",
+          "external interrupt 0 flag"
+        ],
+        [
+          "0",
+          "88H",
+          "IT0",
+          "interrupt 0 type: edge or level"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The register sits at 88H and every bit is itself addressable, so SETB TR0 works directly."
+    },
+    "microprocessors-and-microcontrollers--ie-register": {
+      "type": "table",
+      "title": "IE register bits",
+      "headers": [
+        "bit",
+        "name",
+        "function"
+      ],
+      "rows": [
+        [
+          "7",
+          "EA",
+          "global enable, gates all the others"
+        ],
+        [
+          "5",
+          "ET2",
+          "timer 2 interrupt (8052 parts)"
+        ],
+        [
+          "4",
+          "ES",
+          "serial port interrupt"
+        ],
+        [
+          "3",
+          "ET1",
+          "timer 1 interrupt"
+        ],
+        [
+          "2",
+          "EX1",
+          "external interrupt 1"
+        ],
+        [
+          "1",
+          "ET0",
+          "timer 0 interrupt"
+        ],
+        [
+          "0",
+          "EX0",
+          "external interrupt 0"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Bit 6 is unused; EA must be set as well as the source bit, or the request stays ignored."
+    },
+    "microprocessors-and-microcontrollers--scon": {
+      "type": "table",
+      "title": "SCON bits",
+      "headers": [
+        "bit",
+        "name",
+        "function"
+      ],
+      "rows": [
+        [
+          "7",
+          "SM0",
+          "mode select, with SM1"
+        ],
+        [
+          "6",
+          "SM1",
+          "mode select, with SM0"
+        ],
+        [
+          "5",
+          "SM2",
+          "multiprocessor enable in modes 2 and 3"
+        ],
+        [
+          "4",
+          "REN",
+          "receive enable"
+        ],
+        [
+          "3",
+          "TB8",
+          "ninth transmitted bit"
+        ],
+        [
+          "2",
+          "RB8",
+          "ninth received bit"
+        ],
+        [
+          "1",
+          "TI",
+          "transmit interrupt flag, set by hardware"
+        ],
+        [
+          "0",
+          "RI",
+          "receive interrupt flag, set by hardware"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The flags are set by the hardware and cleared by software, so each must be reset by hand."
+    },
+    "microprocessors-and-microcontrollers--sbuf": {
+      "type": "code",
+      "lang": "c",
+      "title": "one byte through SBUF",
+      "lines": [
+        "void putchar_8051(char c) {",
+        "    SBUF = c;          /* a write starts the shift out */",
+        "    while (TI == 0);   /* wait for the stop bit */",
+        "    TI = 0;            /* clear before the next byte */",
+        "}"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "The same name reads on receive and writes on transmit, so SBUF is really two registers."
+    }
+  }
+}

@@ -97,7 +97,8 @@
       "unitTitle": "Introduction to Operating Systems",
       "sources": [
         "osc-wiki-syscall#overview"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--system-call"
     },
     {
       "id": "process-control-calls",
@@ -119,7 +120,8 @@
       "unitTitle": "Introduction to Operating Systems",
       "sources": [
         "osc-wiki-syscall#categories"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--file-management-calls"
     },
     {
       "id": "thread",
@@ -186,7 +188,8 @@
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-process#representation"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--process-control-block"
     },
     {
       "id": "context-switch",
@@ -198,7 +201,8 @@
       "sources": [
         "osc-wiki-process#process-states"
       ],
-      "diagram": "process-states"
+      "diagram": "process-states",
+      "artifact": "operating-systems-concepts--context-switch"
     },
     {
       "id": "scheduler",
@@ -290,7 +294,8 @@
       "sources": [
         "osc-wiki-scheduling#algorithms"
       ],
-      "diagram": "scheduling"
+      "diagram": "scheduling",
+      "artifact": "operating-systems-concepts--round-robin"
     },
     {
       "id": "multilevel-queue",
@@ -367,7 +372,8 @@
       "unitTitle": "Process Synchronization and Inter Process Communication",
       "sources": [
         "osc-wiki-semaphore#operations"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--wait-operation"
     },
     {
       "id": "signal-operation",
@@ -490,7 +496,8 @@
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-deadlock#avoidance"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--deadlock-avoidance"
     },
     {
       "id": "deadlock-detection",
@@ -559,7 +566,8 @@
       "sources": [
         "osc-wiki-paging#overview"
       ],
-      "diagram": "paging"
+      "diagram": "paging",
+      "artifact": "operating-systems-concepts--page-table"
     },
     {
       "id": "page-fault",
@@ -570,7 +578,8 @@
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-paging#page-faults"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--page-fault"
     },
     {
       "id": "demand-paging",
@@ -603,7 +612,8 @@
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-page-replacement#optimal"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--optimal-page-replacement"
     },
     {
       "id": "thrashing",
@@ -706,7 +716,8 @@
       "sources": [
         "osc-wiki-dma#overview"
       ],
-      "diagram": "dma"
+      "diagram": "dma",
+      "artifact": "operating-systems-concepts--direct-memory-access"
     },
     {
       "id": "programmed-i-o",
@@ -739,7 +750,8 @@
       "unitTitle": "I/O Systems and Protection",
       "sources": [
         "osc-wiki-access-control-matrix#overview"
-      ]
+      ],
+      "artifact": "operating-systems-concepts--access-control-matrix"
     },
     {
       "id": "access-control-list",

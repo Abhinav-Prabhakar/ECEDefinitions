@@ -1,0 +1,257 @@
+{
+  "subject": "analog-circuits",
+  "artifacts": {
+    "analog-circuits--distortion": {
+      "type": "table",
+      "title": "Distortion mechanisms",
+      "headers": [
+        "type",
+        "cause",
+        "what you see",
+        "remedy"
+      ],
+      "rows": [
+        [
+          "harmonic (THD)",
+          "curved transfer characteristic",
+          "energy at 2f, 3f, ...",
+          "negative feedback, class A bias"
+        ],
+        [
+          "intermodulation",
+          "two tones in one nonlinearity",
+          "sum and difference tones",
+          "back off the drive level"
+        ],
+        [
+          "crossover",
+          "class B dead zone near zero",
+          "flat step at the zero crossing",
+          "class AB bias"
+        ],
+        [
+          "frequency and phase",
+          "gain or delay varies with f",
+          "tilted square wave, ringing",
+          "wider bandwidth, compensation"
+        ],
+        [
+          "clipping",
+          "drive beyond the output swing",
+          "flattened peaks",
+          "lower gain or higher rail"
+        ]
+      ],
+      "highlight": 3,
+      "note": "THD compares the rms of the harmonics with the fundamental; intermodulation products land in band and cannot be filtered out."
+    },
+    "analog-circuits--class-b-amplifier": {
+      "type": "table",
+      "title": "Power amplifier classes",
+      "headers": [
+        "class",
+        "conduction angle",
+        "maximum efficiency",
+        "distortion",
+        "typical use"
+      ],
+      "rows": [
+        [
+          "A",
+          "360°",
+          "25% (50% with transformer)",
+          "low",
+          "low-level and hi-fi stages"
+        ],
+        [
+          "AB",
+          "180° to 360°",
+          "50–78%",
+          "low",
+          "audio power output"
+        ],
+        [
+          "B",
+          "180°",
+          "78.5%",
+          "crossover",
+          "push-pull pairs"
+        ],
+        [
+          "C",
+          "under 180°",
+          "up to about 85%",
+          "high, needs tuned load",
+          "RF tuned amplifiers"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Efficiency rises as the conduction angle falls; the distortion that comes with it is tolerable only into a tuned load."
+    },
+    "analog-circuits--multivibrator": {
+      "type": "table",
+      "title": "Multivibrator states",
+      "headers": [
+        "type",
+        "stable states",
+        "trigger",
+        "output",
+        "use"
+      ],
+      "rows": [
+        [
+          "astable",
+          "none",
+          "none",
+          "continuous square wave",
+          "clock, oscillator"
+        ],
+        [
+          "monostable",
+          "one",
+          "one pulse",
+          "single pulse of width T",
+          "pulse stretcher, delay"
+        ],
+        [
+          "bistable",
+          "two",
+          "set or reset pulse",
+          "holds until retriggered",
+          "latch, flip-flop"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The number of stable states names the circuit; any remaining state is quasi-stable and sets the timing."
+    },
+    "analog-circuits--intrinsic-standoff-ratio": {
+      "type": "derivation",
+      "title": "peak-point voltage of a UJT",
+      "steps": [
+        "V_{B1}=\\eta V_{BB}=\\frac{R_{B1}}{R_{B1}+R_{B2}}V_{BB}",
+        "V_{P}=V_{B1}+V_{D}\\approx\\eta V_{BB}+0.7\\,\\text{V}",
+        "\\eta=\\frac{V_{P}-V_{D}}{V_{BB}}",
+        "\\Delta V_{P}=\\eta\\,\\Delta V_{BB}"
+      ],
+      "symbols": [
+        [
+          "\\eta",
+          "intrinsic stand-off ratio, 0.5 to 0.8"
+        ],
+        [
+          "R_{B1}",
+          "base-1 resistance"
+        ],
+        [
+          "V_{BB}",
+          "interbase supply"
+        ],
+        [
+          "V_{P}",
+          "peak-point voltage"
+        ],
+        [
+          "V_{D}",
+          "emitter diode drop, about 0.7 V"
+        ]
+      ],
+      "note": "Because η is fixed by doping, the firing voltage tracks the interbase supply rather than sitting at a fixed value."
+    },
+    "analog-circuits--desensitivity": {
+      "type": "derivation",
+      "title": "desensitivity from the closed-loop gain",
+      "steps": [
+        "A_{f}=\\frac{A}{1+A\\beta}",
+        "\\frac{dA_{f}}{dA}=\\frac{1+A\\beta-A\\beta}{\\left(1+A\\beta\\right)^{2}}=\\frac{1}{\\left(1+A\\beta\\right)^{2}}",
+        "\\frac{dA_{f}}{A_{f}}=\\frac{1}{1+A\\beta}\\cdot\\frac{dA}{A}",
+        "\\frac{dA_{f}}{A_{f}}\\approx\\frac{1}{A\\beta}\\cdot\\frac{dA}{A}\\quad\\text{for }A\\beta\\gg1"
+      ],
+      "symbols": [
+        [
+          "A",
+          "open-loop gain"
+        ],
+        [
+          "\\beta",
+          "feedback factor"
+        ],
+        [
+          "A_{f}",
+          "closed-loop gain"
+        ],
+        [
+          "D=1+A\\beta",
+          "desensitivity factor"
+        ]
+      ],
+      "note": "A 20% change in open-loop gain becomes 0.2% at Aβ = 100, which is why feedback buys stability with gain."
+    },
+    "analog-circuits--astable-multivibrator": {
+      "type": "derivation",
+      "title": "period of a collector-coupled astable",
+      "steps": [
+        "V_{C}(t)=-V_{CC}+2V_{CC}\\left(1-e^{-t/(R_{B}C)}\\right)",
+        "V_{C}=0\\ \\Rightarrow\\ e^{-t/(R_{B}C)}=\\tfrac{1}{2}\\ \\Rightarrow\\ t_{1/2}=R_{B}C\\ln 2",
+        "T=2t_{1/2}=2R_{B}C\\ln 2\\approx1.4R_{B}C",
+        "T=0.69\\left(R_{B1}C_{1}+R_{B2}C_{2}\\right),\\quad \\text{duty}=\\frac{R_{B1}}{R_{B1}+R_{B2}}"
+      ],
+      "symbols": [
+        [
+          "R_{B}",
+          "base timing resistor"
+        ],
+        [
+          "C",
+          "coupling capacitor"
+        ],
+        [
+          "t_{1/2}",
+          "half period"
+        ],
+        [
+          "V_{CC}",
+          "supply rail"
+        ]
+      ],
+      "note": "Each half cycle is one RC charge from −V_CC toward +V_CC, crossing zero after exactly ln 2 time constants."
+    },
+    "analog-circuits--bidirectional-sampling-gate": {
+      "type": "table",
+      "title": "Unidirectional and bidirectional gates",
+      "headers": [
+        "property",
+        "unidirectional",
+        "bidirectional"
+      ],
+      "rows": [
+        [
+          "devices",
+          "one transistor, common base or emitter",
+          "two transistors in anti-series, or a FET"
+        ],
+        [
+          "signal polarity",
+          "one",
+          "both"
+        ],
+        [
+          "control",
+          "single gating pulse",
+          "complementary pulses"
+        ],
+        [
+          "ON resistance",
+          "low",
+          "higher, two devices in series"
+        ],
+        [
+          "typical use",
+          "unipolar sample-and-hold",
+          "audio and analog switch"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A single transistor blocks one polarity, so passing both needs two in anti-series or a CMOS transmission gate."
+    }
+  }
+}

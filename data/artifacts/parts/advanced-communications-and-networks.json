@@ -1,0 +1,431 @@
+{
+  "subject": "advanced-communications-and-networks",
+  "artifacts": {
+    "advanced-communications-and-networks--pseudo-noise-pn-sequence": {
+      "type": "code",
+      "lang": "c",
+      "title": "4-stage LFSR producing an m-sequence",
+      "lines": [
+        "uint8_t lfsr = 0x1;                    /* never the all-zero state */",
+        "for (int i = 0; i < 15; i++) {",
+        "    int out = lfsr & 1;",
+        "    int bit = (lfsr ^ (lfsr >> 1)) & 1;   /* feedback taps */",
+        "    lfsr = (lfsr >> 1) | (bit << 3);",
+        "    printf(\"%d\", out);",
+        "}"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "100010011010111   then it repeats"
+      ],
+      "note": "With the right taps the register visits all 2^4 - 1 non-zero states before repeating, one chip per shift."
+    },
+    "advanced-communications-and-networks--walsh-hadamard-sequence": {
+      "type": "table",
+      "title": "4 x 4 Hadamard rows as spreading codes",
+      "headers": [
+        "code",
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "rows": [
+        [
+          "W0",
+          "+1",
+          "+1",
+          "+1",
+          "+1"
+        ],
+        [
+          "W1",
+          "+1",
+          "-1",
+          "+1",
+          "-1"
+        ],
+        [
+          "W2",
+          "+1",
+          "+1",
+          "-1",
+          "-1"
+        ],
+        [
+          "W3",
+          "+1",
+          "-1",
+          "-1",
+          "+1"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Any two rows agree in exactly half the chips, so W1 dot W2 = 1 - 1 - 1 + 1 = 0: the set is orthogonal."
+    },
+    "advanced-communications-and-networks--code-division-multiple-access": {
+      "type": "table",
+      "title": "two CDMA users on one chip stream",
+      "headers": [
+        "user",
+        "data bit",
+        "code",
+        "chips on the air"
+      ],
+      "rows": [
+        [
+          "A",
+          "+1",
+          "+1 -1 +1 -1",
+          "+1 -1 +1 -1"
+        ],
+        [
+          "B",
+          "-1",
+          "+1 +1 -1 -1",
+          "-1 -1 +1 +1"
+        ],
+        [
+          "channel",
+          "-",
+          "-",
+          "0 -2 +2 0, the sum of both"
+        ],
+        [
+          "decode A",
+          "-",
+          "+1 -1 +1 -1",
+          "0 + 2 + 2 + 0 = 4, so bit = +1"
+        ],
+        [
+          "decode B",
+          "-",
+          "+1 +1 -1 -1",
+          "0 - 2 - 2 + 0 = -4, so bit = -1"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each receiver correlates the shared stream with its own code; the other code is orthogonal, so it sums to zero."
+    },
+    "advanced-communications-and-networks--soft-handoff": {
+      "type": "sequence",
+      "title": "soft handoff: make before break",
+      "actors": [
+        "mobile",
+        "serving BS",
+        "target BS",
+        "MSC"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "neighbour pilot rises above T_ADD"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "measurement report, handoff requested"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "allocate a traffic channel in the target cell"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "second leg established, both cells serve"
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "label": "rake receiver combines both legs"
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "label": "old pilot below T_DROP: drop the leg"
+        }
+      ],
+      "note": "Both legs carry the same frame during the overlap, so the mobile never breaks the link before the new one works."
+    },
+    "advanced-communications-and-networks--registration-mobile-ip": {
+      "type": "sequence",
+      "title": "Mobile IP registration through a foreign agent",
+      "actors": [
+        "mobile node",
+        "foreign agent",
+        "home agent"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "registration request, care-of address = FA"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "forward the request with the FA address"
+        },
+        {
+          "from": 2,
+          "to": 2,
+          "label": "authenticate, bind home address to CoA"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "registration reply with lifetime and code"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "relay the reply to the mobile node"
+        }
+      ],
+      "note": "Until the binding exists the home agent still tunnels to the old care-of address, so registration precedes the move."
+    },
+    "advanced-communications-and-networks--tunneling-mobile-ip": {
+      "type": "table",
+      "title": "Mobile IP encapsulation overhead",
+      "headers": [
+        "encapsulation",
+        "added bytes",
+        "what is added"
+      ],
+      "rows": [
+        [
+          "IP-in-IP, RFC 2003",
+          "20",
+          "a complete outer IPv4 header"
+        ],
+        [
+          "minimal, RFC 2004",
+          "8 - 12",
+          "short forwarding header: src, dst, protocol, checksum"
+        ],
+        [
+          "GRE, RFC 1701",
+          "24",
+          "outer IP header plus a GRE header"
+        ],
+        [
+          "no encapsulation",
+          "0",
+          "the original datagram is routed unchanged"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Every added byte lowers the effective MTU of the tunnel, which is why minimal encapsulation exists for small links."
+    },
+    "advanced-communications-and-networks--wireless-application-protocol-wap": {
+      "type": "table",
+      "title": "WAP stack and its WWW counterpart",
+      "headers": [
+        "WAP layer",
+        "WWW counterpart",
+        "job"
+      ],
+      "rows": [
+        [
+          "WAE with WML",
+          "HTML and scripting",
+          "content and presentation on a small screen"
+        ],
+        [
+          "WSP",
+          "HTTP",
+          "session, request/reply, capability negotiation"
+        ],
+        [
+          "WTP",
+          "TCP",
+          "reliable transactions with light handshaking"
+        ],
+        [
+          "WTLS",
+          "TLS/SSL",
+          "encryption and authentication on the air link"
+        ],
+        [
+          "WDP",
+          "UDP",
+          "bearer-independent datagrams and segmentation"
+        ],
+        [
+          "bearer",
+          "IP",
+          "GSM, GPRS, CDMA, SMS and other carriers"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each WWW layer is replaced by a version tuned for narrowband links; a gateway translates to HTTP at the carrier."
+    },
+    "advanced-communications-and-networks--cyclic-prefix": {
+      "type": "derivation",
+      "title": "cyclic prefix cost in an OFDM symbol",
+      "steps": [
+        "T_{s}=T_{u}+T_{g},\\quad \\Delta f=\\frac{1}{T_{u}}",
+        "\\Delta f=15\\ \\text{kHz}\\Rightarrow T_{u}=\\frac{1}{15\\times10^{3}}=66.7\\ \\mu\\text{s}",
+        "T_{g}=4.7\\ \\mu\\text{s}\\Rightarrow T_{s}=66.7+4.7=71.4\\ \\mu\\text{s}",
+        "\\text{overhead}=\\frac{T_{g}}{T_{s}}=\\frac{4.7}{71.4}=6.6\\%"
+      ],
+      "symbols": [
+        [
+          "T_{s}",
+          "OFDM symbol time"
+        ],
+        [
+          "T_{u}",
+          "useful symbol part"
+        ],
+        [
+          "T_{g}",
+          "guard interval, the cyclic prefix"
+        ],
+        [
+          "\\Delta f",
+          "subcarrier spacing"
+        ]
+      ],
+      "note": "The guard interval must exceed the delay spread; lengthening it removes ISI but spends more of each symbol on redundant data."
+    },
+    "advanced-communications-and-networks--papr": {
+      "type": "derivation",
+      "title": "PAPR of N equal-amplitude subcarriers",
+      "steps": [
+        "x(t)=\\sum_{n=0}^{N-1}A\\,e^{j2\\pi f_{n}t}",
+        "\\max_{t}|x(t)|^{2}=(NA)^{2}\\quad\\text{when all carriers align in phase}",
+        "\\mathbb{E}\\left[|x(t)|^{2}\\right]=NA^{2}",
+        "\\text{PAPR}=\\frac{N^{2}A^{2}}{NA^{2}}=N",
+        "N=64:\\quad \\text{PAPR}_{\\text{dB}}=10\\log_{10}64=18.1\\ \\text{dB}"
+      ],
+      "symbols": [
+        [
+          "N",
+          "number of subcarriers"
+        ],
+        [
+          "A",
+          "amplitude of each subcarrier"
+        ],
+        [
+          "f_{n}",
+          "frequency of subcarrier n"
+        ]
+      ],
+      "note": "Since the worst case is every subcarrier adding in phase, the amplifier must back off about 18 dB or the peaks clip."
+    },
+    "advanced-communications-and-networks--spatial-multiplexing": {
+      "type": "derivation",
+      "title": "capacity of a 4 x 4 spatial multiplexing link",
+      "steps": [
+        "C=\\min(N_{t},N_{r})\\,\\log_{2}\\!\\left(1+\\frac{\\rho}{N_{t}}\\right)",
+        "N_{t}=N_{r}=4,\\quad \\rho=100\\ (20\\ \\text{dB})",
+        "\\frac{\\rho}{N_{t}}=25\\Rightarrow\\log_{2}(1+25)=4.70",
+        "C=4\\times4.70=18.8\\ \\text{bit/s/Hz}"
+      ],
+      "symbols": [
+        [
+          "N_{t}",
+          "transmit antennas"
+        ],
+        [
+          "N_{r}",
+          "receive antennas"
+        ],
+        [
+          "\\rho",
+          "received signal-to-noise ratio"
+        ]
+      ],
+      "note": "Each antenna pair adds one independent stream, so capacity grows linearly with min(Nt, Nr) and only logarithmically with SNR."
+    },
+    "advanced-communications-and-networks--ieee-802-11ac": {
+      "type": "table",
+      "title": "IEEE 802.11 amendments at a glance",
+      "headers": [
+        "amendment",
+        "band",
+        "modulation",
+        "max rate"
+      ],
+      "rows": [
+        [
+          "802.11b",
+          "2.4 GHz",
+          "DSSS / CCK",
+          "11 Mbit/s"
+        ],
+        [
+          "802.11a",
+          "5 GHz",
+          "OFDM",
+          "54 Mbit/s"
+        ],
+        [
+          "802.11g",
+          "2.4 GHz",
+          "OFDM, 11b compatible",
+          "54 Mbit/s"
+        ],
+        [
+          "802.11n",
+          "2.4 and 5 GHz",
+          "MIMO-OFDM, 64-QAM",
+          "600 Mbit/s"
+        ],
+        [
+          "802.11ac",
+          "5 GHz",
+          "MIMO-OFDM, 256-QAM, 160 MHz",
+          "6.9 Gbit/s"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Each amendment buys rate from wider channels, denser modulation or more spatial streams, never from a new medium."
+    },
+    "advanced-communications-and-networks--mme": {
+      "type": "table",
+      "title": "LTE core elements and their planes",
+      "headers": [
+        "element",
+        "plane",
+        "function"
+      ],
+      "rows": [
+        [
+          "eNodeB",
+          "radio access",
+          "radio link, scheduling, ciphering, header compression"
+        ],
+        [
+          "MME",
+          "control",
+          "NAS signalling, paging, bearer setup, authentication"
+        ],
+        [
+          "S-GW",
+          "user",
+          "anchors user packets between eNodeB and P-GW"
+        ],
+        [
+          "P-GW",
+          "user",
+          "allocates the UE address, links to external networks"
+        ],
+        [
+          "HSS",
+          "control",
+          "subscriber database that feeds the MME"
+        ]
+      ],
+      "highlight": 2,
+      "note": "LTE separates the planes: the MME never touches a user packet, and the gateways never terminate signalling."
+    }
+  }
+}

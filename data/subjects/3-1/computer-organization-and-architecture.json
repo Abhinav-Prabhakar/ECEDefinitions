@@ -42,7 +42,8 @@
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1a#slide.7"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--register-transfer-language"
     },
     {
       "id": "bus",
@@ -130,7 +131,8 @@
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1a#slide.35"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--insert-operation"
     },
     {
       "id": "logical-shift",
@@ -177,7 +179,8 @@
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1b#slide.5"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--machine-instruction"
     },
     {
       "id": "opcode",
@@ -222,7 +225,8 @@
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1b#slide.18"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--instruction-cycle"
     },
     {
       "id": "interrupt",
@@ -268,7 +272,8 @@
       "unitTitle": "Microprogrammed Control",
       "sources": [
         "coa-unit-2#slide.13"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--addressing-mode"
     },
     {
       "id": "implied-mode",
@@ -390,7 +395,8 @@
       "unitTitle": "Microprogrammed Control",
       "sources": [
         "coa-unit-2#slide.27"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--risc"
     },
     {
       "id": "microprogram",
@@ -412,7 +418,8 @@
       "unitTitle": "Microprogrammed Control",
       "sources": [
         "coa-unit-2#slide.28"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--microinstruction"
     },
     {
       "id": "writeable-control-storage",
@@ -545,7 +552,8 @@
       "unitTitle": "Data Representation",
       "sources": [
         "coa-unit-3b#slide.25"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--booth-multiplication"
     },
     {
       "id": "memory-bus",
@@ -601,7 +609,8 @@
       "sources": [
         "coa-unit-4a#slide.10",
         "coa-unit-4a#slide.13"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--handshaking"
     },
     {
       "id": "asynchronous-serial-transfer",
@@ -649,7 +658,8 @@
       "sources": [
         "coa-unit-4a#slide.27"
       ],
-      "diagram": "dma"
+      "diagram": "dma",
+      "artifact": "computer-organization-and-architecture--dma-controller"
     },
     {
       "id": "memory-hierarchy",
@@ -729,7 +739,8 @@
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
         "coa-unit-5a#slide.4"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--flynn-s-classification"
     },
     {
       "id": "instruction-stream",
@@ -831,7 +842,8 @@
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
         "coa-unit-5a#slide.24"
-      ]
+      ],
+      "artifact": "computer-organization-and-architecture--pipeline-interlock"
     },
     {
       "id": "multiprocessor-system",

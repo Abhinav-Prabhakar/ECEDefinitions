@@ -39,7 +39,8 @@
       ],
       "id": "pseudo-noise-pn-sequence",
       "formula": "L=2^{n}-1",
-      "diagram": "shift-register"
+      "diagram": "shift-register",
+      "artifact": "advanced-communications-and-networks--pseudo-noise-pn-sequence"
     },
     {
       "term": "Balance Property",
@@ -105,7 +106,8 @@
         "acn-unit-i#p.25"
       ],
       "id": "walsh-hadamard-sequence",
-      "formula": "\\sum_{k=0}^{N-1}W_{i}(k)W_{j}(k)=N\\delta_{ij}"
+      "formula": "\\sum_{k=0}^{N-1}W_{i}(k)W_{j}(k)=N\\delta_{ij}",
+      "artifact": "advanced-communications-and-networks--walsh-hadamard-sequence"
     },
     {
       "term": "Barker Sequence",
@@ -173,7 +175,8 @@
         "acn-unit-i#p.72"
       ],
       "id": "code-division-multiple-access",
-      "formula": "r(t)=\\sum_{i=1}^{K}A_{i}b_{i}(t)c_{i}(t)+n(t)"
+      "formula": "r(t)=\\sum_{i=1}^{K}A_{i}b_{i}(t)c_{i}(t)+n(t)",
+      "artifact": "advanced-communications-and-networks--code-division-multiple-access"
     },
     {
       "term": "Rake Receiver",
@@ -206,7 +209,8 @@
         "acn-unit-i#p.93"
       ],
       "id": "soft-handoff",
-      "formula": "\\gamma_{\\text{SHO}}=\\sum_{i\\in S}\\gamma_{i}"
+      "formula": "\\gamma_{\\text{SHO}}=\\sum_{i\\in S}\\gamma_{i}",
+      "artifact": "advanced-communications-and-networks--soft-handoff"
     },
     {
       "term": "Multiuser Detection",
@@ -396,7 +400,8 @@
         "acn-unit-iii#p.11"
       ],
       "id": "registration-mobile-ip",
-      "formula": ""
+      "formula": "",
+      "artifact": "advanced-communications-and-networks--registration-mobile-ip"
     },
     {
       "term": "Tunneling (Mobile IP)",
@@ -408,7 +413,8 @@
       ],
       "id": "tunneling-mobile-ip",
       "formula": "L_{\\text{tunnel}}=L_{\\text{IP}}^{\\text{outer}}+L_{\\text{orig}}",
-      "diagram": "ip-packet"
+      "diagram": "ip-packet",
+      "artifact": "advanced-communications-and-networks--tunneling-mobile-ip"
     },
     {
       "term": "Minimal Encapsulation",
@@ -442,7 +448,8 @@
         "acn-unit-iii#p.18"
       ],
       "id": "wireless-application-protocol-wap",
-      "formula": ""
+      "formula": "",
+      "artifact": "advanced-communications-and-networks--wireless-application-protocol-wap"
     },
     {
       "term": "Wireless Markup Language (WML)",
@@ -564,7 +571,8 @@
       "unitTitle": "Wireless LANs",
       "sources": [
         "acn-web-ieee-802-11#Protocol"
-      ]
+      ],
+      "artifact": "advanced-communications-and-networks--ieee-802-11ac"
     },
     {
       "id": "csma-ca",
@@ -722,7 +730,8 @@
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-ofdm#Guard-interval-for-elimination-of-intersymbol-interference"
-      ]
+      ],
+      "artifact": "advanced-communications-and-networks--cyclic-prefix"
     },
     {
       "id": "papr",
@@ -733,7 +742,8 @@
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-ofdm#Linear-transmitter-power-amplifier"
-      ]
+      ],
+      "artifact": "advanced-communications-and-networks--papr"
     },
     {
       "id": "mimo",
@@ -756,7 +766,8 @@
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-mimo#Functions"
-      ]
+      ],
+      "artifact": "advanced-communications-and-networks--spatial-multiplexing"
     },
     {
       "id": "enodeb",
@@ -778,7 +789,8 @@
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-epc#SAE-Architecture"
-      ]
+      ],
+      "artifact": "advanced-communications-and-networks--mme"
     },
     {
       "id": "td-lte",

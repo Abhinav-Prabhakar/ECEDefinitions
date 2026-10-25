@@ -90,7 +90,8 @@
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.42"
       ],
-      "diagram": "asic-flow"
+      "diagram": "asic-flow",
+      "artifact": "vlsi-physical-design--asic"
     },
     {
       "id": "full-custom-asic",
@@ -217,7 +218,8 @@
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.67",
         "vlsipd-unit-3-vlsipd#slide.2"
-      ]
+      ],
+      "artifact": "vlsi-physical-design--static-timing-analysis"
     },
     {
       "id": "implementation",
@@ -229,7 +231,8 @@
       "sources": [
         "vlsipd-unit-2-vlsipd#slide.5"
       ],
-      "diagram": "asic-flow"
+      "diagram": "asic-flow",
+      "artifact": "vlsi-physical-design--implementation"
     },
     {
       "id": "pitch",
@@ -251,7 +254,8 @@
       "unitTitle": "Design Standard Cell Libraries",
       "sources": [
         "vlsipd-unit-2-vlsipd#slide.8"
-      ]
+      ],
+      "artifact": "vlsi-physical-design--via"
     },
     {
       "id": "isolation-cell",
@@ -384,7 +388,8 @@
       "sources": [
         "vlsipd-unit-3-vlsipd#slide.8",
         "vlsipd-unit-3-vlsipd#slide.4"
-      ]
+      ],
+      "artifact": "vlsi-physical-design--timing-path"
     },
     {
       "id": "timing-constraints",
@@ -396,7 +401,8 @@
       "sources": [
         "vlsipd-unit-3-vlsipd#slide.8",
         "vlsipd-unit-3-vlsipd#slide.9"
-      ]
+      ],
+      "artifact": "vlsi-physical-design--timing-constraints"
     },
     {
       "id": "clock-skew",
@@ -663,7 +669,8 @@
       "unitTitle": "Design Checks and Signoff",
       "sources": [
         "vlsipd-wiki-electromigration#overview"
-      ]
+      ],
+      "artifact": "vlsi-physical-design--electromigration"
     },
     {
       "id": "ir-drop",
@@ -685,7 +692,8 @@
       "unitTitle": "Design Checks and Signoff",
       "sources": [
         "vlsipd-wiki-sta#corner-analysis"
-      ]
+      ],
+      "artifact": "vlsi-physical-design--pvt-corner"
     }
   ]
 }

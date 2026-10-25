@@ -1,0 +1,303 @@
+{
+  "subject": "artificial-intelligence",
+  "artifacts": {
+    "artificial-intelligence--agent": {
+      "type": "sequence",
+      "title": "agent–environment loop",
+      "actors": [
+        "environment",
+        "sensors",
+        "agent",
+        "actuators"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "state changes reach the sensors"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "percept sequence p_t"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "action a_t = f(percept history)"
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "label": "effect changes the environment"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "next state produces p_{t+1}"
+        }
+      ],
+      "note": "The loop closes through the environment: the percept at t+1 is the only feedback on the action taken at t."
+    },
+    "artificial-intelligence--simple-reflex-agent": {
+      "type": "code",
+      "lang": "python",
+      "title": "condition–action rules",
+      "lines": [
+        "RULES = {\"dirty\": \"suck\", \"A\": \"right\", \"B\": \"left\"}",
+        "",
+        "def reflex(percept):",
+        "    for condition, action in RULES.items():",
+        "        if condition in percept:",
+        "            return action",
+        "    return \"noop\"",
+        "",
+        "print(reflex((\"A\", \"dirty\")))",
+        "print(reflex((\"B\", \"clean\")))"
+      ],
+      "highlight": [
+        5
+      ],
+      "output": [
+        "suck",
+        "left"
+      ],
+      "note": "The table is scanned top to bottom against the current percept only; no state or history is stored between calls."
+    },
+    "artificial-intelligence--breadth-first-search": {
+      "type": "table",
+      "title": "search strategy comparison",
+      "headers": [
+        "strategy",
+        "frontier order",
+        "complete",
+        "optimal",
+        "time",
+        "space"
+      ],
+      "rows": [
+        [
+          "BFS",
+          "FIFO queue",
+          "yes",
+          "yes, unit cost",
+          "O(b^d)",
+          "O(b^d)"
+        ],
+        [
+          "DFS",
+          "LIFO stack",
+          "finite only",
+          "no",
+          "O(b^m)",
+          "O(bm)"
+        ],
+        [
+          "UCS",
+          "lowest g(n)",
+          "yes",
+          "yes",
+          "O(b^(1+C*/ε))",
+          "same as time"
+        ],
+        [
+          "greedy",
+          "lowest h(n)",
+          "no",
+          "no",
+          "O(b^m)",
+          "O(b^m)"
+        ],
+        [
+          "A*",
+          "lowest g(n)+h(n)",
+          "yes",
+          "yes, admissible h",
+          "exponential",
+          "exponential"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The frontier key alone decides the row: g gives UCS, h gives greedy, and g+h gives A* while keeping optimality."
+    },
+    "artificial-intelligence--alpha-beta-pruning": {
+      "type": "code",
+      "lang": "python",
+      "title": "minimax with alpha–beta pruning",
+      "lines": [
+        "def ab(node, depth, alpha, beta, hi):",
+        "    if depth == 0: return node",
+        "    best = -1e9 if hi else 1e9",
+        "    for kid in node:",
+        "        v = ab(kid, depth-1, alpha, beta, not hi)",
+        "        best = max(best, v) if hi else min(best, v)",
+        "        alpha, beta = (max(alpha, v), beta) if hi else (alpha, min(beta, v))",
+        "        if alpha >= beta: break",
+        "    return best",
+        "",
+        "print(ab([[3, 12], [8, 2]], 2, -1e9, 1e9, True))"
+      ],
+      "highlight": [
+        8
+      ],
+      "output": [
+        "3"
+      ],
+      "note": "Raising alpha at a MAX node and lowering beta at a MIN node lets the alpha >= beta test drop branches the opponent would refuse."
+    },
+    "artificial-intelligence--pddl": {
+      "type": "code",
+      "lang": "text",
+      "title": "PDDL action schema",
+      "lines": [
+        "(define (domain blocks)",
+        "  (:predicates (on ?x ?y) (clear ?x) (holding ?x))",
+        "  (:action stack",
+        "    :parameters (?x ?y)",
+        "    :precondition (and (holding ?x) (clear ?y))",
+        "    :effect (and (on ?x ?y) (not (holding ?x)) (not (clear ?y)))))"
+      ],
+      "highlight": [
+        5,
+        6
+      ],
+      "note": "Preconditions are tested before the action; effect literals are added and deleted together, so holding and clear are consumed as on is made."
+    },
+    "artificial-intelligence--bayes-rule": {
+      "type": "derivation",
+      "title": "Bayes' rule from conditional probability",
+      "steps": [
+        "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)},\\quad P(B)>0",
+        "P(A\\cap B)=P(B\\mid A)\\,P(A)",
+        "P(B)=\\sum_{a}P(B\\mid A=a)\\,P(A=a)",
+        "P(A\\mid B)=\\frac{P(B\\mid A)\\,P(A)}{\\sum_{a}P(B\\mid A=a)\\,P(A=a)}"
+      ],
+      "symbols": [
+        [
+          "A",
+          "hypothesis or hidden cause"
+        ],
+        [
+          "B",
+          "observed evidence"
+        ],
+        [
+          "P(A)",
+          "prior probability"
+        ],
+        [
+          "P(B\\mid A)",
+          "likelihood"
+        ],
+        [
+          "P(A\\mid B)",
+          "posterior probability"
+        ]
+      ],
+      "note": "The numerator is the joint probability written two ways; expanding the denominator by total probability makes the rule usable without P(B)."
+    },
+    "artificial-intelligence--forward-chaining": {
+      "type": "table",
+      "title": "forward vs backward chaining",
+      "headers": [
+        "aspect",
+        "forward chaining",
+        "backward chaining"
+      ],
+      "rows": [
+        [
+          "start",
+          "known facts",
+          "goal query"
+        ],
+        [
+          "rule use",
+          "match premises, add conclusions",
+          "find rules concluding the goal"
+        ],
+        [
+          "direction",
+          "data-driven",
+          "goal-driven"
+        ],
+        [
+          "stops when",
+          "goal derived or no new facts",
+          "premises reduce to known facts"
+        ],
+        [
+          "typical use",
+          "monitoring and alerting",
+          "diagnosis and proof search"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Both apply modus ponens; only the agenda differs, which is new facts to close versus open subgoals to prove."
+    },
+    "artificial-intelligence--reinforcement-learning": {
+      "type": "derivation",
+      "title": "Bellman expectation",
+      "steps": [
+        "V^{\\pi}(s)=\\mathbb{E}_{\\pi}\\left[\\sum_{t=0}^{\\infty}\\gamma^{t}r_{t}\\mid s_{0}=s\\right]",
+        "V^{\\pi}(s)=\\mathbb{E}_{\\pi}\\left[r_{0}+\\gamma\\sum_{t=0}^{\\infty}\\gamma^{t}r_{t+1}\\mid s_{0}=s\\right]",
+        "V^{\\pi}(s)=R(s,\\pi(s))+\\gamma\\sum_{s'}P(s'\\mid s,\\pi(s))\\,V^{\\pi}(s')"
+      ],
+      "symbols": [
+        [
+          "\\gamma",
+          "discount factor, 0 <= gamma < 1"
+        ],
+        [
+          "r_t",
+          "reward received at step t"
+        ],
+        [
+          "R(s,a)",
+          "expected immediate reward"
+        ],
+        [
+          "P(s'\\mid s,a)",
+          "transition probability"
+        ],
+        [
+          "\\pi",
+          "policy mapping states to actions"
+        ]
+      ],
+      "note": "Pulling the first reward out of the sum leaves the same expectation one step later, which is exactly the Bellman equation."
+    },
+    "artificial-intelligence--decision-tree": {
+      "type": "derivation",
+      "title": "information gain from entropy",
+      "steps": [
+        "H(D)=-\\sum_{k}p_{k}\\log_{2}p_{k}",
+        "H(D\\mid A)=\\sum_{v}\\frac{|D_{v}|}{|D|}\\,H(D_{v})",
+        "IG(D,A)=H(D)-H(D\\mid A)",
+        "A^{*}=\\arg\\max_{A}IG(D,A)"
+      ],
+      "symbols": [
+        [
+          "D",
+          "training set reaching the node"
+        ],
+        [
+          "A",
+          "candidate attribute"
+        ],
+        [
+          "D_v",
+          "subset of D with A = v"
+        ],
+        [
+          "p_k",
+          "fraction of D in class k"
+        ],
+        [
+          "H",
+          "Shannon entropy in bits"
+        ]
+      ],
+      "note": "Gain is the parent entropy minus the weighted entropy of the children, so the chosen test removes the most uncertainty."
+    }
+  }
+}

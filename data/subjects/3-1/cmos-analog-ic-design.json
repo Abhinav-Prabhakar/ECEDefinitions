@@ -132,7 +132,8 @@
       "sources": [
         "cmos-unit-2#slide.45"
       ],
-      "diagram": "mosfet-curves"
+      "diagram": "mosfet-curves",
+      "artifact": "cmos-analog-ic-design--mosfet-operating-regions"
     },
     {
       "id": "mosfet",
@@ -180,7 +181,8 @@
       "sources": [
         "cmos-unit-3#slide.21"
       ],
-      "diagram": "current-mirror"
+      "diagram": "current-mirror",
+      "artifact": "cmos-analog-ic-design--current-mirror"
     },
     {
       "id": "mos-switch",
@@ -191,7 +193,8 @@
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
         "cmos-unit-3#slide.26"
-      ]
+      ],
+      "artifact": "cmos-analog-ic-design--mos-switch"
     },
     {
       "id": "differential-amplifier",
@@ -247,7 +250,8 @@
       "unitTitle": "CMOS Amplifiers",
       "sources": [
         "cmos-unit-4-cmos#p.63"
-      ]
+      ],
+      "artifact": "cmos-analog-ic-design--intrinsic-gain"
     },
     {
       "id": "open-loop-voltage-gain",
@@ -337,7 +341,8 @@
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
         "cmos-unit-5-cmos#p.11"
-      ]
+      ],
+      "artifact": "cmos-analog-ic-design--thermal-noise"
     },
     {
       "id": "flicker-noise",
@@ -487,7 +492,8 @@
       "unitTitle": "CMOS Device Modeling",
       "sources": [
         "cmos-wiki-subthreshold#overview"
-      ]
+      ],
+      "artifact": "cmos-analog-ic-design--subthreshold-slope"
     },
     {
       "id": "weak-inversion",
@@ -531,7 +537,8 @@
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
         "cmos-wiki-bandgap#overview"
-      ]
+      ],
+      "artifact": "cmos-analog-ic-design--bandgap-voltage-reference"
     },
     {
       "id": "ptat-quantity",
@@ -622,7 +629,8 @@
       "sources": [
         "cmos-wiki-opamp#overview"
       ],
-      "diagram": "opamp"
+      "diagram": "opamp",
+      "artifact": "cmos-analog-ic-design--operational-amplifier"
     },
     {
       "id": "input-offset-voltage",
@@ -711,7 +719,8 @@
       "unitTitle": "Comparators",
       "sources": [
         "cmos-wiki-comparator#dynamic-comparators"
-      ]
+      ],
+      "artifact": "cmos-analog-ic-design--latched-comparator"
     },
     {
       "id": "rail-to-rail-comparator",

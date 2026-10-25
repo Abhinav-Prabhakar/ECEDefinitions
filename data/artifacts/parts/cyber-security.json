@@ -1,0 +1,275 @@
+{
+  "subject": "cyber-security",
+  "artifacts": {
+    "cyber-security--risk": {
+      "type": "table",
+      "title": "risk score matrix",
+      "headers": [
+        "likelihood P",
+        "loss 1",
+        "loss 2",
+        "loss 3"
+      ],
+      "rows": [
+        [
+          "rare (1)",
+          "1 low",
+          "2 low",
+          "3 medium"
+        ],
+        [
+          "possible (2)",
+          "2 low",
+          "4 medium",
+          "6 high"
+        ],
+        [
+          "likely (3)",
+          "3 medium",
+          "6 high",
+          "9 critical"
+        ],
+        [
+          "almost certain (4)",
+          "4 medium",
+          "8 high",
+          "12 critical"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The cell is P x L, so likely x medium loss and possible x high loss both score 6 but still need different controls."
+    },
+    "cyber-security--active-attack": {
+      "type": "table",
+      "title": "active vs passive attacks",
+      "headers": [
+        "aspect",
+        "active",
+        "passive"
+      ],
+      "rows": [
+        [
+          "effect on data",
+          "modifies or destroys",
+          "reads only"
+        ],
+        [
+          "examples",
+          "spoofing, DoS, replay",
+          "eavesdropping, traffic analysis"
+        ],
+        [
+          "detectability",
+          "often leaves traces",
+          "hard to detect"
+        ],
+        [
+          "CIA target",
+          "integrity, availability",
+          "confidentiality"
+        ],
+        [
+          "defence",
+          "authentication, integrity checks",
+          "encryption, padding"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The dividing line is whether the attacker changes state; a passive attack can break confidentiality without changing a packet."
+    },
+    "cyber-security--malware": {
+      "type": "table",
+      "title": "malware classes",
+      "headers": [
+        "class",
+        "needs host",
+        "self-replicates",
+        "trigger",
+        "typical effect"
+      ],
+      "rows": [
+        [
+          "virus",
+          "file",
+          "yes, to other files",
+          "on execution",
+          "corrupts files"
+        ],
+        [
+          "worm",
+          "no",
+          "yes, over the network",
+          "on execution",
+          "spreads, consumes bandwidth"
+        ],
+        [
+          "trojan",
+          "no",
+          "no",
+          "user launch",
+          "backdoor, spying"
+        ],
+        [
+          "logic bomb",
+          "yes, embedded",
+          "no",
+          "date or event",
+          "destructive payload"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Only viruses and worms replicate; a trojan relies on disguise and a logic bomb on a condition, so removal cannot wait for a trigger."
+    },
+    "cyber-security--dos-attack": {
+      "type": "sequence",
+      "title": "SYN-flood denial of service",
+      "actors": [
+        "attacker",
+        "victim",
+        "backlog"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "SYN with a spoofed source address"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "SYN-ACK sent to the forged address"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "no ACK is returned"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "half-open entry held until timeout"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "backlog table fills"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "fresh SYNs; legitimate clients refused"
+        }
+      ],
+      "note": "Each spoofed SYN occupies a backlog slot until it times out; once full, valid clients are refused before their handshake completes."
+    },
+    "cyber-security--non-repudiation": {
+      "type": "sequence",
+      "title": "signature and verification",
+      "actors": [
+        "CA",
+        "signer",
+        "verifier"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "certificate binds identity to PK_A"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "m and sigma = Sign(SK_A, H(m))"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "check certificate revocation"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "PK_A valid"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "accept if Verify(PK_A, m, sigma) = 1"
+        }
+      ],
+      "note": "Only the signer holds SK_A, so a valid signature cannot be forged by the verifier and the signer cannot deny signing."
+    },
+    "cyber-security--integrity": {
+      "type": "code",
+      "lang": "python",
+      "title": "SHA-256 integrity check",
+      "lines": [
+        "import hashlib",
+        "",
+        "def digest(data):",
+        "    return hashlib.sha256(data).hexdigest()",
+        "",
+        "sent = b\"transfer 100 to account 42\"",
+        "received = b\"transfer 900 to account 42\"",
+        "print(digest(sent) == digest(received))"
+      ],
+      "highlight": [
+        8
+      ],
+      "output": [
+        "False"
+      ],
+      "note": "Recomputing the digest of the received bytes and comparing it with the sender digest exposes any modification."
+    },
+    "cyber-security--data-masking": {
+      "type": "table",
+      "title": "masking techniques",
+      "headers": [
+        "technique",
+        "what is stored",
+        "reversible",
+        "example"
+      ],
+      "rows": [
+        [
+          "redaction",
+          "nothing",
+          "no",
+          "account ****"
+        ],
+        [
+          "truncation",
+          "last four digits",
+          "no",
+          "**** 4821"
+        ],
+        [
+          "tokenization",
+          "random token",
+          "yes, via vault",
+          "tok_7f3a"
+        ],
+        [
+          "pseudonymization",
+          "stable alias",
+          "yes, with key",
+          "user_019"
+        ],
+        [
+          "generalization",
+          "coarser value",
+          "no",
+          "age 30-39"
+        ],
+        [
+          "noise addition",
+          "perturbed value",
+          "no",
+          "38.7 becomes 39.1"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Reversible methods keep a mapping or key, so the masked field is still personal data and needs the same protection as the original."
+    }
+  }
+}

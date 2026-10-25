@@ -1,0 +1,354 @@
+{
+  "subject": "electronic-devices-and-circuits",
+  "artifacts": {
+    "electronic-devices-and-circuits--bjt": {
+      "type": "table",
+      "title": "BJT terminal relations",
+      "headers": [
+        "terminal",
+        "direction",
+        "relation"
+      ],
+      "rows": [
+        [
+          "base",
+          "in",
+          "I_B"
+        ],
+        [
+          "collector",
+          "in",
+          "I_C"
+        ],
+        [
+          "emitter",
+          "out",
+          "I_E = I_B + I_C"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The emitter current is always the sum of the other two; the base current is the smallest."
+    },
+    "electronic-devices-and-circuits--active-region": {
+      "type": "table",
+      "title": "BJT operating regions",
+      "headers": [
+        "region",
+        "emitter junction",
+        "collector junction",
+        "collector current",
+        "use"
+      ],
+      "rows": [
+        [
+          "cut-off",
+          "not forward biased",
+          "reverse",
+          "≈ 0",
+          "open switch"
+        ],
+        [
+          "active",
+          "forward",
+          "reverse",
+          "I_C = β I_B",
+          "amplifier"
+        ],
+        [
+          "saturation",
+          "forward",
+          "forward",
+          "I_C < β I_B",
+          "closed switch"
+        ],
+        [
+          "reverse active",
+          "reverse",
+          "forward",
+          "small, inverted",
+          "rarely used"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the active region behaves as a controlled current source; saturation and cut-off are the two switch states."
+    },
+    "electronic-devices-and-circuits--rectifier": {
+      "type": "table",
+      "title": "Rectifier comparison",
+      "headers": [
+        "quantity",
+        "half-wave",
+        "full-wave, centre tap",
+        "bridge"
+      ],
+      "rows": [
+        [
+          "diodes",
+          "1",
+          "2",
+          "4"
+        ],
+        [
+          "V_dc",
+          "V_m/π",
+          "2V_m/π",
+          "2V_m/π"
+        ],
+        [
+          "ripple factor",
+          "1.21",
+          "0.48",
+          "0.48"
+        ],
+        [
+          "PIV per diode",
+          "V_m",
+          "2V_m",
+          "V_m"
+        ],
+        [
+          "ripple frequency",
+          "f",
+          "2f",
+          "2f"
+        ],
+        [
+          "maximum efficiency",
+          "40.6%",
+          "81.2%",
+          "81.2%"
+        ],
+        [
+          "transformer",
+          "simple",
+          "centre tap needed",
+          "simple"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The bridge doubles the diode count but halves the peak inverse voltage and needs no centre tap."
+    },
+    "electronic-devices-and-circuits--ripple-factor": {
+      "type": "derivation",
+      "title": "ripple factor of a half-wave rectifier",
+      "steps": [
+        "V_{\\text{dc}}=\\frac{1}{2\\pi}\\int_{0}^{\\pi}V_{m}\\sin\\theta\\,d\\theta=\\frac{V_{m}}{\\pi}",
+        "V_{\\text{rms}}=\\sqrt{\\frac{1}{2\\pi}\\int_{0}^{\\pi}V_{m}^{2}\\sin^{2}\\theta\\,d\\theta}=\\frac{V_{m}}{2}",
+        "r=\\sqrt{\\left(\\frac{V_{\\text{rms}}}{V_{\\text{dc}}}\\right)^{2}-1}=\\sqrt{\\left(\\frac{\\pi}{2}\\right)^{2}-1}",
+        "r=\\sqrt{2.467-1}=1.21"
+      ],
+      "symbols": [
+        [
+          "V_{m}",
+          "peak secondary voltage"
+        ],
+        [
+          "V_{\\text{dc}}",
+          "average output voltage"
+        ],
+        [
+          "V_{\\text{rms}}",
+          "rms output voltage"
+        ],
+        [
+          "r",
+          "ripple factor"
+        ]
+      ],
+      "note": "Repeating the integral with period π/2 for a full-wave output gives r = 0.48 instead of 1.21."
+    },
+    "electronic-devices-and-circuits--common-emitter": {
+      "type": "table",
+      "title": "BJT amplifier configurations",
+      "headers": [
+        "property",
+        "common base",
+        "common emitter",
+        "common collector"
+      ],
+      "rows": [
+        [
+          "current gain",
+          "α < 1",
+          "β, large",
+          "1 + β"
+        ],
+        [
+          "voltage gain",
+          "high",
+          "high, inverted",
+          "< 1"
+        ],
+        [
+          "input resistance",
+          "very low, ≈ 20 Ω",
+          "low, ≈ 1 kΩ",
+          "high, ≈ 100 kΩ"
+        ],
+        [
+          "output resistance",
+          "high, ≈ 1 MΩ",
+          "moderate, ≈ 50 kΩ",
+          "very low, ≈ 50 Ω"
+        ],
+        [
+          "phase shift",
+          "0°",
+          "180°",
+          "0°"
+        ],
+        [
+          "typical use",
+          "RF, high frequency",
+          "audio voltage gain",
+          "buffer, impedance match"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Common emitter alone both raises current and inverts; common collector is used only as an emitter-follower buffer."
+    },
+    "electronic-devices-and-circuits--hybrid-pi-model": {
+      "type": "derivation",
+      "title": "hybrid-pi parameters at the bias point",
+      "steps": [
+        "g_{m}=\\frac{\\partial I_{C}}{\\partial V_{BE}}=\\frac{I_{S}}{V_{T}}e^{V_{BE}/V_{T}}=\\frac{I_{C}}{V_{T}}",
+        "r_{\\pi}=\\frac{v_{be}}{i_{b}}=\\frac{v_{be}}{i_{c}/\\beta}=\\frac{\\beta}{g_{m}}",
+        "r_{\\pi}=\\frac{\\beta V_{T}}{I_{C}}=\\frac{\\beta\\,(26\\,\\text{mV})}{I_{C}}",
+        "r_{o}=\\frac{V_{A}+V_{CE}}{I_{C}}\\approx\\frac{V_{A}}{I_{C}}"
+      ],
+      "symbols": [
+        [
+          "g_{m}",
+          "transconductance"
+        ],
+        [
+          "r_{\\pi}",
+          "base-emitter resistance"
+        ],
+        [
+          "r_{o}",
+          "output resistance"
+        ],
+        [
+          "V_{A}",
+          "Early voltage"
+        ],
+        [
+          "V_{T}",
+          "thermal voltage, 26 mV at 300 K"
+        ]
+      ],
+      "note": "At I_C = 1 mA and β = 100, g_m = 38.5 mS and r_pi ≈ 2.6 kΩ, both set by the bias current alone."
+    },
+    "electronic-devices-and-circuits--feedback-amplifier": {
+      "type": "table",
+      "title": "Four negative-feedback topologies",
+      "headers": [
+        "topology",
+        "input signal",
+        "output sensed",
+        "input resistance",
+        "output resistance",
+        "typical use"
+      ],
+      "rows": [
+        [
+          "voltage series",
+          "voltage, series",
+          "voltage, shunt",
+          "rises by D",
+          "falls by D",
+          "voltage amplifier"
+        ],
+        [
+          "voltage shunt",
+          "current, shunt",
+          "voltage, shunt",
+          "falls by D",
+          "falls by D",
+          "transresistance amp"
+        ],
+        [
+          "current series",
+          "voltage, series",
+          "current, series",
+          "rises by D",
+          "rises by D",
+          "transconductance amp"
+        ],
+        [
+          "current shunt",
+          "current, shunt",
+          "current, series",
+          "falls by D",
+          "rises by D",
+          "current amplifier"
+        ]
+      ],
+      "highlight": 1,
+      "note": "D = 1 + Aβ; the name states what is mixed at the input and what is sampled at the output."
+    },
+    "electronic-devices-and-circuits--multistage-amplifier": {
+      "type": "derivation",
+      "title": "cascaded gain and bandwidth",
+      "steps": [
+        "A_{v}=A_{v1}A_{v2}\\cdots A_{vn}",
+        "A_{v}(\\text{dB})=20\\log_{10}|A_{v}|=\\sum_{k=1}^{n}20\\log_{10}|A_{vk}|",
+        "f_{H}=f_{H1}\\sqrt{2^{1/n}-1},\\quad f_{L}=\\frac{f_{L1}}{\\sqrt{2^{1/n}-1}}",
+        "BW=f_{H}-f_{L}\\approx f_{H1}\\sqrt{2^{1/n}-1}"
+      ],
+      "symbols": [
+        [
+          "A_{vk}",
+          "gain of stage k"
+        ],
+        [
+          "f_{H1}",
+          "single-stage upper cut-off"
+        ],
+        [
+          "n",
+          "number of stages"
+        ],
+        [
+          "BW",
+          "overall bandwidth"
+        ]
+      ],
+      "note": "Two identical stages put the overall -3 dB point at 0.64 f_H1, so cascading trades bandwidth for gain."
+    },
+    "electronic-devices-and-circuits--zener-diode": {
+      "type": "derivation",
+      "title": "sizing the zener series resistor",
+      "steps": [
+        "V_{S}=I_{S}R_{S}+V_{Z},\\quad I_{S}=I_{Z}+I_{L}",
+        "I_{Z}=\\frac{V_{S}-V_{Z}}{R_{S}}-I_{L}",
+        "R_{S}=\\frac{V_{S,\\min}-V_{Z}}{I_{Z,\\min}+I_{L,\\max}}",
+        "P_{R_{S}}=\\frac{\\left(V_{S,\\max}-V_{Z}\\right)^{2}}{R_{S}}"
+      ],
+      "symbols": [
+        [
+          "V_{S}",
+          "unregulated input"
+        ],
+        [
+          "V_{Z}",
+          "zener voltage"
+        ],
+        [
+          "R_{S}",
+          "series resistor"
+        ],
+        [
+          "I_{Z,\\min}",
+          "minimum zener current for regulation"
+        ],
+        [
+          "I_{L,\\max}",
+          "maximum load current"
+        ]
+      ],
+      "note": "The worst case for R_S is minimum input with full load; the worst case for its power is maximum input with no load."
+    }
+  }
+}

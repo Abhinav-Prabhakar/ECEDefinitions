@@ -1,0 +1,21 @@
+{
+  "subject": "engineering-physics",
+  "artifacts": {
+    "engineering-physics--particle-in-a-box": {
+      "type": "derivation",
+      "title": "particle in an infinite well",
+      "steps": [
+        "E_{n}=\\frac{n^{2}h^{2}}{8mL^{2}}",
+        "\\psi_{n}(x)=\\sqrt{\\frac{2}{L}}\\sin\\!\\left(\\frac{n\\pi x}{L}\\right)",
+        "\\int_{0}^{L}|\\psi_{n}(x)|^{2}\\,dx=1"
+      ],
+      "symbols": [
+        ["n", "principal quantum number"],
+        ["L", "well width"],
+        ["m", "particle mass"],
+        ["h", "Planck constant"]
+      ],
+      "note": "The boundary conditions quantise the allowed wavelengths, so only discrete energies survive."
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "subject": "vlsi-technology-and-design",
+  "artifacts": {
+    "vlsi-technology-and-design--verilog-value-set": {
+      "type": "table",
+      "title": "four-valued logic",
+      "headers": [
+        "value",
+        "meaning",
+        "drives a net?",
+        "in synthesis"
+      ],
+      "rows": [
+        [
+          "0",
+          "logic zero, false",
+          "yes",
+          "tied to ground"
+        ],
+        [
+          "1",
+          "logic one, true",
+          "yes",
+          "tied to V_DD"
+        ],
+        [
+          "x",
+          "unknown or uninitialised",
+          "no",
+          "don't-care for optimisation"
+        ],
+        [
+          "z",
+          "high impedance",
+          "no, released",
+          "tri-state buffer or tie-off"
+        ]
+      ],
+      "highlight": 3,
+      "note": "x propagates through arithmetic, so one uninitialised register can contaminate an otherwise valid simulation."
+    },
+    "vlsi-technology-and-design--non-blocking-assignment": {
+      "type": "code",
+      "lang": "verilog",
+      "title": "blocking vs non-blocking in a shift register",
+      "lines": [
+        "always @(posedge clk) begin",
+        "  q1 <= d;      // scheduled for the end of the time step",
+        "  q2 <= q1;     // samples the OLD q1",
+        "end",
+        "",
+        "always @(posedge clk) begin",
+        "  r1 = d;       // blocking: executes immediately",
+        "  r2 = r1;      // r2 takes the NEW r1",
+        "end"
+      ],
+      "highlight": [
+        2,
+        3
+      ],
+      "note": "With <= the two flops form a shift register; with = they collapse into one stage, and r2 simply follows d."
+    },
+    "vlsi-technology-and-design--cmos-inverter": {
+      "type": "derivation",
+      "title": "switching threshold from equal drain currents",
+      "steps": [
+        "I_{Dn}=I_{Dp},\\qquad V_{GSn}=V_{M},\\quad V_{SGp}=V_{DD}-V_{M}",
+        "\\frac{\\mu_{n}C_{ox}}{2}\\frac{W_{n}}{L}(V_{M}-V_{tn})^{2}=\\frac{\\mu_{p}C_{ox}}{2}\\frac{W_{p}}{L}(V_{DD}-V_{M}-|V_{tp}|)^{2}",
+        "\\sqrt{\\frac{\\mu_{n}W_{n}}{\\mu_{p}W_{p}}}\\left(V_{M}-V_{tn}\\right)=V_{DD}-V_{M}-|V_{tp}|",
+        "V_{M}=\\frac{V_{DD}+V_{tn}+|V_{tp}|}{2}\\quad\\text{when}\\ \\mu_{n}W_{n}=\\mu_{p}W_{p}"
+      ],
+      "symbols": [
+        [
+          "V_{M}",
+          "switching threshold"
+        ],
+        [
+          "V_{tn},\\ V_{tp}",
+          "nMOS and pMOS threshold voltages"
+        ],
+        [
+          "W_{n},\\ W_{p}",
+          "device widths, same L"
+        ]
+      ],
+      "note": "Equal strengths put the trip point halfway; widening the NMOS pulls V_M down and makes the gate harder to switch low."
+    },
+    "vlsi-technology-and-design--p-well-process": {
+      "type": "table",
+      "title": "CMOS process variants",
+      "headers": [
+        "process",
+        "substrate",
+        "well",
+        "strength",
+        "weakness"
+      ],
+      "rows": [
+        [
+          "p-well",
+          "n-substrate",
+          "one deep p-well for nMOS",
+          "simple, few masks",
+          "nMOS body is the well, poor latch-up"
+        ],
+        [
+          "n-well",
+          "p-substrate",
+          "one n-well for pMOS, ~8 masks",
+          "industry baseline, good nMOS",
+          "pMOS in well, latch-up margin"
+        ],
+        [
+          "twin-tub",
+          "p-epi on p+",
+          "separate p and n wells",
+          "both devices optimised",
+          "more masks, longer flow"
+        ],
+        [
+          "BiCMOS",
+          "p-substrate plus epi",
+          "twin wells with buried n+",
+          "bipolar speed on the same die",
+          "12+ masks, high cost"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The well is both the body of the transistor inside it and one plate of the parasitic thyristor, so well choice fixes latch-up margin."
+    },
+    "vlsi-technology-and-design--scaling-of-mos-circuits": {
+      "type": "table",
+      "title": "constant-field vs constant-voltage scaling",
+      "headers": [
+        "quantity",
+        "constant field",
+        "constant voltage",
+        "consequence"
+      ],
+      "rows": [
+        [
+          "dimensions L, W, t_ox",
+          "1/S",
+          "1/S",
+          "same density gain"
+        ],
+        [
+          "voltage V_DD, V_t",
+          "1/S",
+          "1",
+          "field rises in constant voltage"
+        ],
+        [
+          "doping N_A",
+          "S",
+          "S",
+          "depletion width shrinks"
+        ],
+        [
+          "gate delay",
+          "1/S",
+          "1/S",
+          "same speed gain"
+        ],
+        [
+          "power per gate",
+          "1/S²",
+          "1/S",
+          "constant voltage keeps less of the win"
+        ],
+        [
+          "power density",
+          "1",
+          "S",
+          "constant voltage hits a thermal wall"
+        ]
+      ],
+      "highlight": 6,
+      "note": "Constant-field scaling keeps the field and reliability fixed; keeping 5 V for compatibility made power density climb until supplies had to fall."
+    },
+    "vlsi-technology-and-design--oxidation": {
+      "type": "derivation",
+      "title": "Deal-Grove: linear then parabolic growth",
+      "steps": [
+        "F_{1}=h(C^{*}-C_{s}),\\quad F_{2}=\\frac{D_{ox}}{x_{ox}}(C_{s}-C_{i}),\\quad F_{3}=k_{s}C_{i}",
+        "B=\\frac{2D_{ox}C^{*}}{N_{1}},\\qquad A=2D_{ox}\\left(\\frac{1}{k_{s}}+\\frac{1}{h}\\right)",
+        "F_{1}=F_{2}=F_{3}=F\\ \\Rightarrow\\ \\frac{dx_{ox}}{dt}=\\frac{F}{N_{1}}=\\frac{B}{A+2x_{ox}}",
+        "\\int_{0}^{x_{ox}}(A+2x)\\,dx=B\\,t\\ \\Rightarrow\\ x_{ox}^{2}+Ax_{ox}=B\\,t",
+        "x_{ox}\\approx\\frac{B}{A}t\\ \\text{(thin)},\\qquad x_{ox}\\approx\\sqrt{Bt}\\ \\text{(thick)}"
+      ],
+      "symbols": [
+        [
+          "x_{ox}",
+          "oxide thickness"
+        ],
+        [
+          "C^{*}",
+          "equilibrium oxidant concentration in the gas"
+        ],
+        [
+          "D_{ox}",
+          "oxidant diffusivity in the oxide"
+        ],
+        [
+          "k_{s}",
+          "surface reaction rate"
+        ],
+        [
+          "N_{1}",
+          "oxidant molecules per unit oxide volume"
+        ]
+      ],
+      "note": "Thin oxides are reaction-limited and grow linearly; thick ones are diffusion-limited and grow as √t, so the same furnace gives both regimes."
+    },
+    "vlsi-technology-and-design--rc-delay": {
+      "type": "derivation",
+      "title": "0.69RC and the Elmore sum",
+      "steps": [
+        "V_{out}(t)=V_{DD}\\left(1-e^{-t/RC}\\right)",
+        "V_{out}=V_{DD}/2\\ \\Rightarrow\\ e^{-t_{p}/RC}=\\tfrac{1}{2}",
+        "t_{p}=RC\\ln 2\\approx 0.69\\,RC",
+        "\\tau_{\\text{Elmore}}=\\sum_{i=1}^{N}R_{i}C_{i},\\qquad t_{p}\\approx 0.69\\,\\tau_{\\text{Elmore}}"
+      ],
+      "symbols": [
+        [
+          "R",
+          "driver equivalent resistance"
+        ],
+        [
+          "C",
+          "total load capacitance"
+        ],
+        [
+          "R_{i},\\ C_{i}",
+          "resistance to node i, capacitance at node i"
+        ]
+      ],
+      "note": "A single pole reaches 50% at 0.69τ; the Elmore sum generalises that to a whole RC ladder with one multiply."
+    },
+    "vlsi-technology-and-design--lambda-based-design-rules": {
+      "type": "table",
+      "title": "classic 2λ layout rules",
+      "headers": [
+        "rule",
+        "symbol",
+        "value"
+      ],
+      "rows": [
+        [
+          "minimum width, poly or active",
+          "w_min",
+          "2λ"
+        ],
+        [
+          "poly to active spacing",
+          "s",
+          "2λ"
+        ],
+        [
+          "gate length over active",
+          "L",
+          "2λ"
+        ],
+        [
+          "metal width",
+          "w_m",
+          "3λ"
+        ],
+        [
+          "metal to metal spacing",
+          "s_m",
+          "3λ"
+        ],
+        [
+          "contact cut",
+          "c",
+          "2λ × 2λ"
+        ],
+        [
+          "n-well to n-well spacing",
+          "s_well",
+          "6λ"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Every dimension is a multiple of λ = L_min/2, so one rule set survives a process shrink; the foundry deck is the final authority."
+    }
+  }
+}

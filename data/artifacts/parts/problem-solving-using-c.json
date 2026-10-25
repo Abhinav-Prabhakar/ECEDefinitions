@@ -1,0 +1,355 @@
+{
+  "subject": "problem-solving-using-c",
+  "artifacts": {
+    "problem-solving-using-c--pointer": {
+      "type": "code",
+      "lang": "c",
+      "title": "pointer arithmetic",
+      "lines": [
+        "int x = 42;",
+        "int *p = &x;",
+        "printf(\"%d\\n\", *p);"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "42"
+      ],
+      "note": "p stores the address of x; *p reads the value at that address."
+    },
+    "problem-solving-using-c--data-type": {
+      "type": "table",
+      "title": "C fundamental types on a 64-bit compiler",
+      "headers": [
+        "type",
+        "bytes",
+        "range",
+        "printf"
+      ],
+      "rows": [
+        [
+          "char",
+          "1",
+          "-128 to 127",
+          "%c"
+        ],
+        [
+          "short",
+          "2",
+          "-32768 to 32767",
+          "%hd"
+        ],
+        [
+          "int",
+          "4",
+          "-2147483648 to 2147483647",
+          "%d"
+        ],
+        [
+          "unsigned int",
+          "4",
+          "0 to 4294967295",
+          "%u"
+        ],
+        [
+          "long long",
+          "8",
+          "-9223372036854775808 to 9223372036854775807",
+          "%lld"
+        ],
+        [
+          "float",
+          "4",
+          "1.2e-38 to 3.4e38",
+          "%f"
+        ],
+        [
+          "double",
+          "8",
+          "2.2e-308 to 1.8e308",
+          "%f"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Byte counts are typical for a 64-bit compiler; sizeof and limits.h are the portable check."
+    },
+    "problem-solving-using-c--operator": {
+      "type": "table",
+      "title": "operator precedence",
+      "headers": [
+        "level",
+        "operators",
+        "associativity"
+      ],
+      "rows": [
+        [
+          "1",
+          "()  []  .  ->  postfix ++ --",
+          "left to right"
+        ],
+        [
+          "2",
+          "unary ++ -- + - ! ~ * & sizeof (type)",
+          "right to left"
+        ],
+        [
+          "3",
+          "*  /  %",
+          "left to right"
+        ],
+        [
+          "4",
+          "+  -",
+          "left to right"
+        ],
+        [
+          "5",
+          "<<  >>",
+          "left to right"
+        ],
+        [
+          "6",
+          "<  <=  >  >=",
+          "left to right"
+        ],
+        [
+          "7",
+          "==  !=",
+          "left to right"
+        ],
+        [
+          "8",
+          "bitwise &",
+          "left to right"
+        ],
+        [
+          "9",
+          "bitwise ^",
+          "left to right"
+        ],
+        [
+          "10",
+          "bitwise |",
+          "left to right"
+        ],
+        [
+          "11",
+          "&&",
+          "left to right"
+        ],
+        [
+          "12",
+          "||",
+          "left to right"
+        ],
+        [
+          "13",
+          "?:",
+          "right to left"
+        ],
+        [
+          "14",
+          "=  +=  -=  *=  /=  %=",
+          "right to left"
+        ],
+        [
+          "15",
+          ",",
+          "left to right"
+        ]
+      ],
+      "highlight": 14,
+      "note": "Unary, conditional and assignment operators associate right to left; the rest associate left to right."
+    },
+    "problem-solving-using-c--logical-operator": {
+      "type": "code",
+      "lang": "c",
+      "title": "short-circuit evaluation",
+      "lines": [
+        "int n = 0;",
+        "if (n != 0 && 100 / n > 5)",
+        "    printf(\"nonzero\\n\");",
+        "else",
+        "    printf(\"short-circuited\\n\");"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "short-circuited"
+      ],
+      "note": "&& stops at the first false operand, so 100 / n is never evaluated and division by zero is avoided."
+    },
+    "problem-solving-using-c--type-casting": {
+      "type": "code",
+      "lang": "c",
+      "title": "explicit cast and truncation",
+      "lines": [
+        "int total = 7, count = 2;",
+        "double mean = (double) total / count;",
+        "printf(\"%.2f %d\\n\", mean, (int) 3.9);"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "3.50 3"
+      ],
+      "note": "Casting one operand forces floating-point division; casting to int truncates toward zero."
+    },
+    "problem-solving-using-c--switch-statement": {
+      "type": "code",
+      "lang": "c",
+      "title": "switch with break and default",
+      "lines": [
+        "int day = 3;",
+        "switch (day) {",
+        "case 1:  printf(\"Monday\\n\");    break;",
+        "case 3:  printf(\"Wednesday\\n\"); break;",
+        "default: printf(\"other\\n\");",
+        "}"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "Wednesday"
+      ],
+      "note": "Without break, control falls through into the next case label instead of leaving the switch."
+    },
+    "problem-solving-using-c--string": {
+      "type": "code",
+      "lang": "c",
+      "title": "the hidden null terminator",
+      "lines": [
+        "char s[] = \"C\";",
+        "printf(\"%zu %d\\n\", strlen(s), s[1]);"
+      ],
+      "highlight": [
+        1
+      ],
+      "output": [
+        "1 0"
+      ],
+      "note": "The literal needs two bytes: 'C' plus the terminating '\\0', so s[1] is zero."
+    },
+    "problem-solving-using-c--two-dimensional-array": {
+      "type": "code",
+      "lang": "c",
+      "title": "row-major traversal",
+      "lines": [
+        "int m[2][3] = {{1, 2, 3}, {4, 5, 6}};",
+        "for (int i = 0; i < 2; i++) {",
+        "    for (int j = 0; j < 3; j++)",
+        "        printf(\"%2d\", m[i][j]);",
+        "    printf(\"\\n\");",
+        "}"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        " 1 2 3",
+        " 4 5 6"
+      ],
+      "note": "Each row is contiguous, so the inner loop walks memory in order and the outer loop advances one row."
+    },
+    "problem-solving-using-c--recursion": {
+      "type": "code",
+      "lang": "c",
+      "title": "recursive factorial",
+      "lines": [
+        "int fact(int n) {",
+        "    if (n <= 1) return 1;",
+        "    return n * fact(n - 1);",
+        "}",
+        "printf(\"%d\\n\", fact(5));"
+      ],
+      "highlight": [
+        3
+      ],
+      "output": [
+        "120"
+      ],
+      "note": "Each call waits for fact(n - 1); the base case n <= 1 returns directly and unwinds the stack."
+    },
+    "problem-solving-using-c--call-by-value": {
+      "type": "code",
+      "lang": "c",
+      "title": "call by value leaves the caller unchanged",
+      "lines": [
+        "void swap(int a, int b) {",
+        "    int t = a; a = b; b = t;",
+        "}",
+        "int x = 1, y = 2;",
+        "swap(x, y);",
+        "printf(\"%d %d\\n\", x, y);"
+      ],
+      "highlight": [
+        2
+      ],
+      "output": [
+        "1 2"
+      ],
+      "note": "a and b are copies, so swapping them never reaches the caller's x and y."
+    },
+    "problem-solving-using-c--storage-class": {
+      "type": "table",
+      "title": "storage classes",
+      "headers": [
+        "specifier",
+        "storage",
+        "lifetime",
+        "default value"
+      ],
+      "rows": [
+        [
+          "auto",
+          "stack",
+          "block entry to exit",
+          "indeterminate"
+        ],
+        [
+          "register",
+          "CPU register (hint)",
+          "block entry to exit",
+          "indeterminate"
+        ],
+        [
+          "static",
+          "static data area",
+          "whole program",
+          "zero"
+        ],
+        [
+          "extern",
+          "defined in another file",
+          "whole program",
+          "zero at definition"
+        ]
+      ],
+      "highlight": 3,
+      "note": "static inside a function keeps its value between calls; extern only declares a name stored elsewhere."
+    },
+    "problem-solving-using-c--fopen": {
+      "type": "code",
+      "lang": "c",
+      "title": "opening a file and checking for failure",
+      "lines": [
+        "FILE *fp = fopen(\"data.txt\", \"r\");",
+        "if (fp == NULL) {",
+        "    perror(\"data.txt\");",
+        "    exit(1);",
+        "}",
+        "char buf[64];",
+        "fgets(buf, sizeof buf, fp);",
+        "fclose(fp);"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "Mode \"r\" opens for reading; fopen returns NULL on failure, so the check must come before any read."
+    }
+  }
+}

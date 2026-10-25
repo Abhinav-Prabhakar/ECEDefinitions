@@ -1,0 +1,411 @@
+{
+  "subject": "computer-organization-and-architecture",
+  "artifacts": {
+    "computer-organization-and-architecture--machine-instruction": {
+      "type": "table",
+      "title": "instruction formats by address count",
+      "headers": [
+        "format",
+        "fields",
+        "example",
+        "operands"
+      ],
+      "rows": [
+        [
+          "three-address",
+          "opcode plus 3 register fields",
+          "ADD R1, R2, R3",
+          "3"
+        ],
+        [
+          "two-address",
+          "opcode plus 2 fields, one is the result",
+          "ADD R1, R2",
+          "2"
+        ],
+        [
+          "one-address",
+          "opcode plus 1 field, accumulator implied",
+          "ADD X",
+          "1"
+        ],
+        [
+          "zero-address",
+          "opcode only, operands come from the stack",
+          "ADD",
+          "0"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The address count fixes how many fields the word needs and where the result is named."
+    },
+    "computer-organization-and-architecture--register-transfer-language": {
+      "type": "code",
+      "lang": "pseudo",
+      "title": "register transfer notation",
+      "lines": [
+        "PC ← PC + 1              ; move to the next instruction",
+        "MAR ← IR(address)         ; take the address field",
+        "MDR ← M[MAR]              ; read that word",
+        "R1 ← R1 + MDR             ; add it to register R1"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "Each arrow copies the source into the destination; the square brackets mean the memory at that address."
+    },
+    "computer-organization-and-architecture--addressing-mode": {
+      "type": "table",
+      "title": "effective address by mode",
+      "headers": [
+        "mode",
+        "effective address",
+        "memory accesses"
+      ],
+      "rows": [
+        [
+          "implied",
+          "none, the operands are registers",
+          "0"
+        ],
+        [
+          "immediate",
+          "operand = IR(address)",
+          "0"
+        ],
+        [
+          "register",
+          "operand = R",
+          "0"
+        ],
+        [
+          "register indirect",
+          "EA = [R]",
+          "1"
+        ],
+        [
+          "direct",
+          "EA = IR(address)",
+          "1"
+        ],
+        [
+          "indirect",
+          "EA = M[IR(address)]",
+          "2"
+        ],
+        [
+          "indexed",
+          "EA = XR + IR(address)",
+          "1"
+        ]
+      ],
+      "highlight": 6,
+      "note": "Only the indirect mode needs the extra memory pass, because its address word must itself be read."
+    },
+    "computer-organization-and-architecture--risc": {
+      "type": "table",
+      "title": "CISC and RISC compared",
+      "headers": [
+        "property",
+        "CISC",
+        "RISC"
+      ],
+      "rows": [
+        [
+          "instruction count",
+          "100 to 250",
+          "few, around 50 to 100"
+        ],
+        [
+          "addressing modes",
+          "many",
+          "few"
+        ],
+        [
+          "instruction length",
+          "variable",
+          "fixed, one word"
+        ],
+        [
+          "memory operands",
+          "any operand may be in memory",
+          "load and store only"
+        ],
+        [
+          "control",
+          "microprogrammed",
+          "hardwired"
+        ],
+        [
+          "cycles per instruction",
+          "many",
+          "mostly one"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The memory-operand rule is the sharpest split: only load and store touch memory."
+    },
+    "computer-organization-and-architecture--microinstruction": {
+      "type": "table",
+      "title": "microinstruction fields",
+      "headers": [
+        "field",
+        "holds"
+      ],
+      "rows": [
+        [
+          "F1, F2, F3",
+          "select up to three microoperations for this step"
+        ],
+        [
+          "CD",
+          "condition select, the status bit to test"
+        ],
+        [
+          "BR",
+          "branch type: jump, call, return or map"
+        ],
+        [
+          "AD",
+          "branch address, or the next microinstruction"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The control word and the sequencing word share one entry, so a step and its successor are read together."
+    },
+    "computer-organization-and-architecture--flynn-s-classification": {
+      "type": "table",
+      "title": "Flynn's four classes",
+      "headers": [
+        "class",
+        "instruction streams",
+        "data streams",
+        "example"
+      ],
+      "rows": [
+        [
+          "SISD",
+          "1",
+          "1",
+          "classic uniprocessor"
+        ],
+        [
+          "SIMD",
+          "1",
+          "many",
+          "array processor, GPU lane"
+        ],
+        [
+          "MISD",
+          "many",
+          "1",
+          "rare; fault-tolerant systolic array"
+        ],
+        [
+          "MIMD",
+          "many",
+          "many",
+          "multiprocessor, multicomputer"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The class names follow the two streams in order, so MIMD is the only loosely coupled general case."
+    },
+    "computer-organization-and-architecture--pipeline-interlock": {
+      "type": "table",
+      "title": "hazards and their remedies",
+      "headers": [
+        "hazard",
+        "cause",
+        "remedy"
+      ],
+      "rows": [
+        [
+          "structural",
+          "two instructions need one resource",
+          "duplicate it or add a port"
+        ],
+        [
+          "data",
+          "a result is not yet written back",
+          "forward the value, else stall"
+        ],
+        [
+          "control",
+          "a branch changes the PC",
+          "delay slot, predict or flush"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The interlock stalls exactly the stages that would read a value still in flight."
+    },
+    "computer-organization-and-architecture--booth-multiplication": {
+      "type": "table",
+      "title": "Booth recoding pairs",
+      "headers": [
+        "Q0",
+        "Q-1",
+        "action"
+      ],
+      "rows": [
+        [
+          "0",
+          "0",
+          "do nothing, then shift right"
+        ],
+        [
+          "0",
+          "1",
+          "add the multiplicand, then shift right"
+        ],
+        [
+          "1",
+          "0",
+          "subtract the multiplicand, then shift right"
+        ],
+        [
+          "1",
+          "1",
+          "do nothing, then shift right"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each pair is examined once per multiplier bit, so an n-bit multiplier needs n passes."
+    },
+    "computer-organization-and-architecture--insert-operation": {
+      "type": "code",
+      "lang": "c",
+      "title": "inserting a bit pattern",
+      "lines": [
+        "unsigned char A = 0x3C;              /* 0011 1100 */",
+        "A = (A & 0x0F) | (0xA << 4);         /* clear 7-4, insert 1010 */",
+        "printf(\"%02X\\n\", A);"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "The AND clears the field and the OR inserts the pattern, so the other four bits survive."
+    },
+    "computer-organization-and-architecture--instruction-cycle": {
+      "type": "sequence",
+      "title": "instruction cycle",
+      "actors": [
+        "CPU",
+        "memory"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "MAR ← PC, read"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "instruction word → IR"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "indirect pass: read the address word"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "effective address → MAR"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "read the operand"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "operand → ALU, execute"
+        }
+      ],
+      "note": "The indirect pass disappears when the addressing mode already supplies the effective address."
+    },
+    "computer-organization-and-architecture--handshaking": {
+      "type": "sequence",
+      "title": "asynchronous handshake",
+      "actors": [
+        "source",
+        "interface",
+        "destination"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "data placed on the bus"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "data valid, strobe asserted"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "accepted, acknowledge"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "strobe dropped, bus released"
+        }
+      ],
+      "note": "Each item waits for the acknowledge, so the link runs at the slower unit’s pace."
+    },
+    "computer-organization-and-architecture--dma-controller": {
+      "type": "sequence",
+      "title": "DMA block transfer",
+      "actors": [
+        "CPU",
+        "DMA controller",
+        "memory",
+        "device"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "load count, address, direction"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "bus request (HOLD)"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "bus grant (HLDA)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "address plus read command"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "data word"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "data word written to the device"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "bus released, count done"
+        }
+      ],
+      "note": "The CPU only lends the bus, so no instruction is fetched while the block moves."
+    }
+  }
+}

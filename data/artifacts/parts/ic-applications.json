@@ -1,0 +1,364 @@
+{
+  "subject": "ic-applications",
+  "artifacts": {
+    "ic-applications--ideal-op-amp": {
+      "type": "table",
+      "title": "Ideal against a real 741 op-amp",
+      "headers": [
+        "parameter",
+        "ideal",
+        "741",
+        "effect of the finite value"
+      ],
+      "rows": [
+        [
+          "open-loop gain",
+          "∞",
+          "2×10^5",
+          "closed-loop gain error"
+        ],
+        [
+          "input resistance",
+          "∞",
+          "2 MΩ",
+          "loads the source"
+        ],
+        [
+          "output resistance",
+          "0",
+          "75 Ω",
+          "output droops under load"
+        ],
+        [
+          "bandwidth",
+          "∞",
+          "1 MHz at unity gain",
+          "gain falls 20 dB per decade"
+        ],
+        [
+          "CMRR",
+          "∞",
+          "90 dB",
+          "common-mode input appears as offset"
+        ],
+        [
+          "slew rate",
+          "∞",
+          "0.5 V/µs",
+          "limits large-signal frequency"
+        ],
+        [
+          "input offset voltage",
+          "0",
+          "2 mV",
+          "output offset at high gain"
+        ]
+      ],
+      "highlight": 6,
+      "note": "The two golden rules hold only while the loop is closed and the output stays inside its swing."
+    },
+    "ic-applications--instrumentation-amplifier": {
+      "type": "derivation",
+      "title": "three-op-amp instrumentation gain",
+      "steps": [
+        "i_{G}=\\frac{V_{2}-V_{1}}{R_{G}}",
+        "v_{o1}=V_{1}-i_{G}R,\\quad v_{o2}=V_{2}+i_{G}R",
+        "v_{o2}-v_{o1}=\\left(V_{2}-V_{1}\\right)\\left(1+\\frac{2R}{R_{G}}\\right)",
+        "V_{o}=v_{o2}-v_{o1}"
+      ],
+      "symbols": [
+        [
+          "R_{G}",
+          "gain-setting resistor"
+        ],
+        [
+          "R",
+          "input-stage feedback resistor"
+        ],
+        [
+          "v_{o1},v_{o2}",
+          "first-stage outputs"
+        ],
+        [
+          "V_{o}",
+          "final single-ended output"
+        ]
+      ],
+      "note": "Only R_G sets the gain, so one resistor or a switch changes range without unbalancing the CMRR."
+    },
+    "ic-applications--timer-555": {
+      "type": "table",
+      "title": "555 timer modes",
+      "headers": [
+        "mode",
+        "connections",
+        "output",
+        "timing"
+      ],
+      "rows": [
+        [
+          "monostable",
+          "pins 2 and 6 to C, pin 7 open",
+          "one pulse",
+          "T = 1.1 R C"
+        ],
+        [
+          "astable",
+          "pins 2 and 6 to C, pin 7 across R2",
+          "free-running square",
+          "T = 0.69 (R1 + 2R2) C"
+        ],
+        [
+          "astable, duty below 50%",
+          "diode across R2",
+          "short low time",
+          "duty = R1 / (R1 + R2)"
+        ],
+        [
+          "bistable",
+          "pins 2 and 6 driven as inputs",
+          "latches set or reset",
+          "no timing components"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The comparators fire at 1/3 and 2/3 V_CC, so every timing formula contains ln 2 = 0.69 or ln 3 = 1.1."
+    },
+    "ic-applications--phase-locked-loop": {
+      "type": "sequence",
+      "title": "PLL lock acquisition",
+      "actors": [
+        "reference",
+        "phase detector",
+        "loop filter",
+        "VCO"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "reference edge arrives"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "error voltage follows the phase difference"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "filtered DC sets the VCO frequency"
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "label": "VCO output returns to the detector"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "phase error narrows, control settles"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "VCO frequency equals reference: locked"
+        }
+      ],
+      "note": "Lock is declared when the phase error stops changing, which is stricter than the two frequencies merely matching."
+    },
+    "ic-applications--adc-resolution": {
+      "type": "table",
+      "title": "ADC architectures",
+      "headers": [
+        "type",
+        "method",
+        "speed",
+        "resolution",
+        "typical use"
+      ],
+      "rows": [
+        [
+          "flash",
+          "2^n − 1 comparators in parallel",
+          "fastest, GS/s",
+          "6–8 bit",
+          "video, radar"
+        ],
+        [
+          "SAR",
+          "binary search with one comparator",
+          "moderate, MS/s",
+          "8–16 bit",
+          "data acquisition"
+        ],
+        [
+          "dual slope",
+          "integrate input, then reference",
+          "slow, 10–100 per s",
+          "12–18 bit",
+          "DMM, noise rejection"
+        ],
+        [
+          "sigma-delta",
+          "oversampling with noise shaping",
+          "slow to moderate",
+          "16–24 bit",
+          "audio, sensors"
+        ],
+        [
+          "pipeline",
+          "cascade of low-resolution stages",
+          "fast",
+          "10–14 bit",
+          "IF sampling"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Speed costs comparators: flash needs 2^n − 1 of them while a SAR converter needs exactly one."
+    },
+    "ic-applications--dac-resolution": {
+      "type": "derivation",
+      "title": "DAC step size and resolution",
+      "steps": [
+        "\\text{LSB}=\\frac{V_{FS}}{2^{n}-1}",
+        "V_{o}=V_{FS}\\frac{D}{2^{n}-1},\\quad D=\\sum_{i=0}^{n-1}b_{i}2^{i}",
+        "\\text{fractional resolution}=\\frac{1}{2^{n}-1}",
+        "n=8,\\ V_{FS}=5\\,\\text{V}:\\ \\text{LSB}=\\frac{5}{255}=19.6\\,\\text{mV}"
+      ],
+      "symbols": [
+        [
+          "n",
+          "number of bits"
+        ],
+        [
+          "V_{FS}",
+          "full-scale voltage"
+        ],
+        [
+          "D",
+          "digital input code"
+        ],
+        [
+          "b_{i}",
+          "bit i of the input"
+        ]
+      ],
+      "note": "Each extra bit halves the step, so resolution in volts improves by 6 dB per bit."
+    },
+    "ic-applications--cmos": {
+      "type": "table",
+      "title": "TTL against CMOS logic",
+      "headers": [
+        "parameter",
+        "TTL (74LS)",
+        "CMOS (4000 / HC)"
+      ],
+      "rows": [
+        [
+          "supply",
+          "5 V ± 5%",
+          "3–15 V"
+        ],
+        [
+          "static power per gate",
+          "about 1 mW",
+          "nanowatts"
+        ],
+        [
+          "dynamic power",
+          "low",
+          "αCV²f, rises with frequency"
+        ],
+        [
+          "propagation delay",
+          "about 10 ns",
+          "25–50 ns, HC about 10 ns"
+        ],
+        [
+          "noise margin",
+          "0.4 V",
+          "about 30% of V_DD"
+        ],
+        [
+          "fan-out",
+          "about 10",
+          "very high, capacitive"
+        ],
+        [
+          "input impedance",
+          "low, bipolar",
+          "very high, gate oxide"
+        ]
+      ],
+      "highlight": 2,
+      "note": "CMOS wins on static power and TTL on drive at 5 V, but fine-geometry CMOS now beats both."
+    },
+    "ic-applications--butterworth-filter": {
+      "type": "derivation",
+      "title": "order needed for a Butterworth response",
+      "steps": [
+        "|H|^{2}=\\frac{1}{1+\\left(\\omega/\\omega_{c}\\right)^{2n}}",
+        "A(\\omega)=-10\\log_{10}\\left[1+\\left(\\omega/\\omega_{c}\\right)^{2n}\\right]",
+        "\\frac{10^{A_{s}/10}-1}{10^{A_{p}/10}-1}=\\left(\\frac{\\omega_{s}}{\\omega_{p}}\\right)^{2n}",
+        "n\\ge\\frac{\\log_{10}\\left[\\left(10^{A_{s}/10}-1\\right)/\\left(10^{A_{p}/10}-1\\right)\\right]}{2\\log_{10}\\left(\\omega_{s}/\\omega_{p}\\right)}"
+      ],
+      "symbols": [
+        [
+          "n",
+          "filter order"
+        ],
+        [
+          "A_{p}",
+          "passband attenuation in dB"
+        ],
+        [
+          "A_{s}",
+          "stopband attenuation in dB"
+        ],
+        [
+          "\\omega_{p}",
+          "passband edge"
+        ],
+        [
+          "\\omega_{s}",
+          "stopband edge"
+        ]
+      ],
+      "note": "With 3 dB at ω_p and 40 dB at 2ω_p the bound gives n ≥ 6.6, so a seventh-order section is required."
+    },
+    "ic-applications--schmitt-trigger": {
+      "type": "derivation",
+      "title": "hysteresis of an inverting Schmitt trigger",
+      "steps": [
+        "V_{+}=V_{o}\\frac{R_{1}}{R_{1}+R_{2}}+V_{\\text{ref}}\\frac{R_{2}}{R_{1}+R_{2}}",
+        "V_{UT}=+V_{\\text{sat}}\\frac{R_{1}}{R_{1}+R_{2}}",
+        "V_{LT}=-V_{\\text{sat}}\\frac{R_{1}}{R_{1}+R_{2}}",
+        "V_{H}=V_{UT}-V_{LT}=\\frac{2V_{\\text{sat}}R_{1}}{R_{1}+R_{2}}"
+      ],
+      "symbols": [
+        [
+          "R_{1}",
+          "divider resistor to ground"
+        ],
+        [
+          "R_{2}",
+          "feedback resistor"
+        ],
+        [
+          "V_{\\text{sat}}",
+          "output saturation voltage"
+        ],
+        [
+          "V_{H}",
+          "hysteresis width"
+        ],
+        [
+          "V_{\\text{ref}}",
+          "optional offset reference"
+        ]
+      ],
+      "note": "Hysteresis depends only on the divider ratio, and the two trip points sit symmetrically about V_ref."
+    }
+  }
+}
