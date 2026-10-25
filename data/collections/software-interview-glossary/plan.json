@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "topic": "Software interview glossary for mid-level software engineer candidates",
+  "collectionId": "software-interview-glossary",
+  "type": "professional field",
+  "audience": "Mid-level software engineer interview candidates",
+  "level": "intro",
+  "jurisdiction": "global",
+  "spelling": "US",
+  "language": "en",
+  "regulated": false,
+  "volatile": false,
+  "includes": [
+    "programming fundamentals: types, scope, functions, closures, control flow, memory, paradigms",
+    "data structures and algorithms: complexity, core structures, trees and graphs, hashing, sorting, design techniques",
+    "system design: scalability, reliability, consistency, partitioning, caching, messaging, operations",
+    "databases and SQL: relational model, keys, querying, transactions, indexes, NoSQL",
+    "operating systems and networking: processes, scheduling, memory, storage, synchronization, network protocols and addressing",
+    "web and browser: HTTP, rendering, DOM, security policies, storage, web APIs"
+  ],
+  "excludes": [
+    "language-specific syntax and library APIs",
+    "vendor product names and cloud service catalogues",
+    "coding-puzzle solutions and worked interview questions",
+    "machine learning, data engineering and LLM vocabulary (separate collections)",
+    "hiring process, behavioural interview and career advice"
+  ],
+  "assumptions": [
+    "Terms are defined at the level a mid-level engineer is expected to explain in an interview",
+    "Definitions follow widely used, vendor-neutral meanings; language-specific senses are noted in the term when they differ",
+    "Source ids in this collection are not prefixed with the collection id; they are unique within the collection",
+    "US spelling",
+    "Sources are free to read; the NIST Dictionary of Algorithms and Data Structures was unreachable during the access audit and is not used"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "programming-fundamentals",
+          "name": "Programming Fundamentals",
+          "shortName": "Fundamentals",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "units": [
+            "Types and values",
+            "Variables, scope and binding",
+            "Functions and closures",
+            "Control flow and recursion",
+            "Memory and references",
+            "Paradigms and abstraction"
+          ],
+          "targetDefinitions": 55,
+          "candidateSources": [
+            { "id": "python-glossary", "url": "https://docs.python.org/3/glossary.html", "note": "Language-neutral terms via Python glossary entries" },
+            { "id": "mdn-glossary", "url": "https://developer.mozilla.org/en-US/docs/Glossary", "note": "Closure, hoisting, scope and similar JS-adjacent concepts" }
+          ]
+        },
+        {
+          "id": "data-structures-and-algorithms",
+          "name": "Data Structures and Algorithms",
+          "shortName": "DSA",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "units": [
+            "Complexity analysis",
+            "Arrays and linked lists",
+            "Stacks, queues and heaps",
+            "Trees and graphs",
+            "Hashing",
+            "Sorting and searching",
+            "Algorithm design techniques"
+          ],
+          "targetDefinitions": 60,
+          "candidateSources": [
+            { "id": "opendsa", "url": "https://opendsa-server.cs.vt.edu/", "note": "Open textbook modules on data structures and algorithms" },
+            { "id": "wikipedia-algorithms", "url": "https://en.wikipedia.org/wiki/Amortized_analysis", "note": "Orientation and secondary source for named algorithms and analysis terms" }
+          ]
+        },
+        {
+          "id": "system-design",
+          "name": "System Design",
+          "shortName": "System design",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "units": [
+            "Scalability and performance",
+            "Reliability and availability",
+            "Consistency and replication",
+            "Partitioning and load balancing",
+            "Caching and messaging",
+            "Operations and architecture"
+          ],
+          "targetDefinitions": 55,
+          "candidateSources": [
+            { "id": "aws-glossary", "url": "https://docs.aws.amazon.com/general/latest/gr/glos-chap.html", "note": "Cloud architecture terms: regions, availability zones, scaling, reliability" },
+            { "id": "sre-book", "url": "https://sre.google/sre-book/table-of-contents/", "note": "Reliability terms: SLO, SLI, error budget, toil, idempotency where discussed" }
+          ]
+        },
+        {
+          "id": "databases-and-sql",
+          "name": "Databases and SQL",
+          "shortName": "Databases",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "units": [
+            "Relational model and schema",
+            "Keys and normalization",
+            "Querying and aggregation",
+            "Transactions and concurrency",
+            "Indexes and query execution",
+            "NoSQL and distributed storage"
+          ],
+          "targetDefinitions": 55,
+          "candidateSources": [
+            { "id": "postgres-glossary", "url": "https://www.postgresql.org/docs/current/glossary.html", "note": "Primary database terms with stable anchors" },
+            { "id": "postgres-docs", "url": "https://www.postgresql.org/docs/current/", "note": "Transaction isolation, MVCC, indexes and query planning chapters" }
+          ]
+        },
+        {
+          "id": "operating-systems-and-networking",
+          "name": "Operating Systems and Networking",
+          "shortName": "OS & networks",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "units": [
+            "Processes and threads",
+            "CPU scheduling",
+            "Memory management",
+            "Storage and file systems",
+            "Synchronization and deadlock",
+            "Network models and addressing",
+            "Transport and application protocols"
+          ],
+          "targetDefinitions": 60,
+          "candidateSources": [
+            { "id": "ostep", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/", "note": "Open-access OS textbook; chapter locators" },
+            { "id": "nist-glossary", "url": "https://csrc.nist.gov/glossary", "note": "US government glossary for networking and OS-adjacent terms" },
+            { "id": "rfc3022", "url": "https://www.rfc-editor.org/rfc/rfc3022", "note": "Traditional IP network address translator (NAT) definition" }
+          ]
+        },
+        {
+          "id": "web-and-browser",
+          "name": "Web and Browser",
+          "shortName": "Web",
+          "color": "#9b6ae0",
+          "dark": "#bb95ff",
+          "units": [
+            "HTTP and transport",
+            "Browser architecture and rendering",
+            "The DOM and events",
+            "Security policies",
+            "Storage and state",
+            "Web APIs and performance"
+          ],
+          "targetDefinitions": 50,
+          "candidateSources": [
+            { "id": "mdn-glossary", "url": "https://developer.mozilla.org/en-US/docs/Glossary", "note": "Primary web and browser glossary entries" }
+          ]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 300, "max": 400 },
+  "disclaimer": ""
+}
