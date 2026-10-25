@@ -1,0 +1,1153 @@
+{
+  "version": 1,
+  "id": "drug-classes",
+  "collectionId": "pharmacology",
+  "section": "clinical",
+  "name": "Major Drug Classes",
+  "shortName": "Drug classes",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Cardiovascular drugs"
+    },
+    {
+      "number": 2,
+      "title": "Central nervous system drugs"
+    },
+    {
+      "number": 3,
+      "title": "Antimicrobials"
+    },
+    {
+      "number": 4,
+      "title": "Endocrine and metabolic drugs"
+    },
+    {
+      "number": 5,
+      "title": "GI, respiratory, and analgesic drugs"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "ace-inhibitor",
+      "term": "ACE inhibitor",
+      "definition": "Blocks conversion of angiotensin I to II, lowering blood pressure and afterload.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "Angiotensin-converting enzyme inhibitor"
+      ],
+      "confusables": [
+        "ARB",
+        "Beta blocker",
+        "Calcium channel blocker"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "arb",
+      "term": "ARB",
+      "definition": "Blocks angiotensin II receptors to produce vasodilation and lower blood pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "Angiotensin II receptor blocker"
+      ],
+      "confusables": [
+        "ACE inhibitor",
+        "Beta blocker",
+        "Calcium channel blocker"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "anticoagulant",
+      "term": "Anticoagulant",
+      "definition": "Interferes with clotting factors to prevent formation or extension of blood clots.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [],
+      "confusables": [
+        "Antiplatelet",
+        "Thrombolytic",
+        "Statin"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.20"
+      ]
+    },
+    {
+      "id": "antiplatelet",
+      "term": "Antiplatelet",
+      "definition": "Inhibits platelet aggregation to reduce risk of arterial thrombosis.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [],
+      "confusables": [
+        "Anticoagulant",
+        "Thrombolytic",
+        "NSAID"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.20"
+      ]
+    },
+    {
+      "id": "beta-blocker",
+      "term": "Beta blocker",
+      "definition": "Blocks beta-adrenergic receptors, reducing heart rate, contractility, and blood pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "Beta-adrenergic blocker"
+      ],
+      "confusables": [
+        "Calcium channel blocker",
+        "ACE inhibitor",
+        "ARB"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "calcium-channel-blocker",
+      "term": "Calcium channel blocker",
+      "definition": "Inhibits calcium entry into vascular smooth muscle, causing vasodilation and lower pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "CCB"
+      ],
+      "confusables": [
+        "Beta blocker",
+        "ACE inhibitor",
+        "Nitrate"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "cardiac-glycoside",
+      "term": "Cardiac glycoside",
+      "definition": "Increases myocardial contractility and slows heart rate in heart failure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "Digoxin"
+      ],
+      "confusables": [
+        "Beta blocker",
+        "Loop diuretic",
+        "Nitrate"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.19"
+      ]
+    },
+    {
+      "id": "loop-diuretic",
+      "term": "Loop diuretic",
+      "definition": "Powerful diuretic acting on the loop of Henle to remove excess fluid.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [],
+      "confusables": [
+        "Thiazide diuretic",
+        "Potassium-sparing diuretic",
+        "Cardiac glycoside"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.19"
+      ]
+    },
+    {
+      "id": "nitrate",
+      "term": "Nitrate",
+      "definition": "Vasodilates coronary vessels to relieve angina and reduce cardiac workload.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "Antianginal nitrate"
+      ],
+      "confusables": [
+        "Calcium channel blocker",
+        "Beta blocker",
+        "Thrombolytic"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "potassium-sparing-diuretic",
+      "term": "Potassium-sparing diuretic",
+      "definition": "Diuretic that excretes sodium while retaining potassium to prevent hypokalemia.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [],
+      "confusables": [
+        "Loop diuretic",
+        "Thiazide diuretic",
+        "ACE inhibitor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "statin",
+      "term": "Statin",
+      "definition": "Inhibits HMG-CoA reductase to lower cholesterol and reduce cardiovascular risk.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "HMG-CoA reductase inhibitor"
+      ],
+      "confusables": [
+        "Anticoagulant",
+        "Antiplatelet",
+        "ACE inhibitor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "thiazide-diuretic",
+      "term": "Thiazide diuretic",
+      "definition": "Promotes sodium and water excretion in the distal tubule to lower blood pressure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [],
+      "confusables": [
+        "Loop diuretic",
+        "Potassium-sparing diuretic",
+        "ACE inhibitor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.18"
+      ]
+    },
+    {
+      "id": "thrombolytic",
+      "term": "Thrombolytic",
+      "definition": "Activates plasminogen to dissolve existing clots in acute events.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular drugs",
+      "aliases": [
+        "Fibrinolytic"
+      ],
+      "confusables": [
+        "Anticoagulant",
+        "Antiplatelet",
+        "Nitrate"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.20"
+      ]
+    },
+    {
+      "id": "anticonvulsant",
+      "term": "Anticonvulsant",
+      "definition": "Stabilizes neuronal membranes and raises seizure threshold to prevent seizures.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Antiepileptic drug"
+      ],
+      "confusables": [
+        "Benzodiazepine",
+        "Typical antipsychotic",
+        "Mood stabilizer"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.33"
+      ]
+    },
+    {
+      "id": "antiparkinsonian",
+      "term": "Antiparkinsonian",
+      "definition": "Restores dopamine activity to reduce tremor and rigidity in Parkinson disease.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Levodopa"
+      ],
+      "confusables": [
+        "Anticonvulsant",
+        "CNS stimulant",
+        "Mood stabilizer"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.36"
+      ]
+    },
+    {
+      "id": "atypical-antipsychotic",
+      "term": "Atypical antipsychotic",
+      "definition": "Antagonizes serotonin and dopamine receptors with fewer extrapyramidal effects.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Second-generation antipsychotic"
+      ],
+      "confusables": [
+        "Typical antipsychotic",
+        "Mood stabilizer",
+        "Anticonvulsant"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.32"
+      ]
+    },
+    {
+      "id": "benzodiazepine",
+      "term": "Benzodiazepine",
+      "definition": "Enhances GABA activity to produce anxiolysis, sedation, and muscle relaxation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [],
+      "confusables": [
+        "Sedative-hypnotic",
+        "Anticonvulsant",
+        "CNS stimulant"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.31"
+      ]
+    },
+    {
+      "id": "cns-stimulant",
+      "term": "CNS stimulant",
+      "definition": "Increases catecholamine activity to improve alertness and attention.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [],
+      "confusables": [
+        "Sedative-hypnotic",
+        "Benzodiazepine",
+        "Anticonvulsant"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.35"
+      ]
+    },
+    {
+      "id": "maoi",
+      "term": "MAOI",
+      "definition": "Inhibits monoamine oxidase to increase neurotransmitter levels in depression.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Monoamine oxidase inhibitor"
+      ],
+      "confusables": [
+        "SSRI",
+        "TCA",
+        "SNRI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.30"
+      ]
+    },
+    {
+      "id": "mood-stabilizer",
+      "term": "Mood stabilizer",
+      "definition": "Modulates neuronal signaling to control mood swings in bipolar disorder.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Lithium"
+      ],
+      "confusables": [
+        "Atypical antipsychotic",
+        "Anticonvulsant",
+        "SSRI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.32"
+      ]
+    },
+    {
+      "id": "opioid-analgesic",
+      "term": "Opioid analgesic",
+      "definition": "Agonizes mu opioid receptors to relieve moderate to severe pain.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Opiate"
+      ],
+      "confusables": [
+        "NSAID",
+        "Acetaminophen",
+        "Sedative-hypnotic"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.34"
+      ]
+    },
+    {
+      "id": "snri",
+      "term": "SNRI",
+      "definition": "Inhibits reuptake of serotonin and norepinephrine for depression and pain.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Serotonin-norepinephrine reuptake inhibitor"
+      ],
+      "confusables": [
+        "SSRI",
+        "TCA",
+        "MAOI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.30"
+      ]
+    },
+    {
+      "id": "ssri",
+      "term": "SSRI",
+      "definition": "Selectively inhibits serotonin reuptake to treat depression and anxiety.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Selective serotonin reuptake inhibitor"
+      ],
+      "confusables": [
+        "SNRI",
+        "TCA",
+        "MAOI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.30"
+      ]
+    },
+    {
+      "id": "sedative-hypnotic",
+      "term": "Sedative-hypnotic",
+      "definition": "Depresses central nervous system activity to induce sleep or calm.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [],
+      "confusables": [
+        "Benzodiazepine",
+        "CNS stimulant",
+        "Opioid analgesic"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.31"
+      ]
+    },
+    {
+      "id": "tca",
+      "term": "TCA",
+      "definition": "Tricyclic antidepressant blocking reuptake of norepinephrine and serotonin.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "Tricyclic antidepressant"
+      ],
+      "confusables": [
+        "SSRI",
+        "SNRI",
+        "MAOI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.30"
+      ]
+    },
+    {
+      "id": "typical-antipsychotic",
+      "term": "Typical antipsychotic",
+      "definition": "Blocks dopamine D2 receptors to reduce positive psychotic symptoms.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Central nervous system drugs",
+      "aliases": [
+        "First-generation antipsychotic"
+      ],
+      "confusables": [
+        "Atypical antipsychotic",
+        "Anticonvulsant",
+        "SSRI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.32"
+      ]
+    },
+    {
+      "id": "aminoglycoside",
+      "term": "Aminoglycoside",
+      "definition": "Bactericidal protein synthesis inhibitor used mainly for gram-negative infections.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Tetracycline",
+        "Macrolide",
+        "Sulfonamide"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "antimalarial",
+      "term": "Antimalarial",
+      "definition": "Kills or suppresses Plasmodium parasites to treat or prevent malaria.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Antitubercular",
+        "Antiretroviral",
+        "Antitubercular"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "antiretroviral",
+      "term": "Antiretroviral",
+      "definition": "Suppresses HIV replication through multiple mechanisms to reduce viral load.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [
+        "HAART"
+      ],
+      "confusables": [
+        "Nucleoside analog antiviral",
+        "Antitubercular",
+        "Antimalarial"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "antitubercular",
+      "term": "Antitubercular",
+      "definition": "Combination therapy targeting Mycobacterium tuberculosis to cure infection.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [
+        "Anti-TB drug"
+      ],
+      "confusables": [
+        "Antiretroviral",
+        "Antimalarial",
+        "Aminoglycoside"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "azole-antifungal",
+      "term": "Azole antifungal",
+      "definition": "Inhibits fungal ergosterol synthesis, disrupting the cell membrane.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [
+        "Azole"
+      ],
+      "confusables": [
+        "Nucleoside analog antiviral",
+        "Antiretroviral",
+        "Macrolide"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "cephalosporin",
+      "term": "Cephalosporin",
+      "definition": "Beta-lactam antibiotic with broader spectrum against gram-positive and gram-negative bacteria.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Penicillin",
+        "Macrolide",
+        "Fluoroquinolone"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "fluoroquinolone",
+      "term": "Fluoroquinolone",
+      "definition": "Inhibits bacterial DNA gyrase and topoisomerase to block replication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Sulfonamide",
+        "Macrolide",
+        "Tetracycline"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "macrolide",
+      "term": "Macrolide",
+      "definition": "Inhibits bacterial protein synthesis by binding the 50S ribosomal subunit.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Tetracycline",
+        "Aminoglycoside",
+        "Penicillin"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "nucleoside-analog-antiviral",
+      "term": "Nucleoside analog antiviral",
+      "definition": "Mimics nucleosides to inhibit viral DNA or RNA polymerase replication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [
+        "Nucleoside analog"
+      ],
+      "confusables": [
+        "Azole antifungal",
+        "Antiretroviral",
+        "Antitubercular"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "penicillin",
+      "term": "Penicillin",
+      "definition": "Beta-lactam inhibiting bacterial cell wall synthesis, causing cell lysis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Cephalosporin",
+        "Macrolide",
+        "Sulfonamide"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "sulfonamide",
+      "term": "Sulfonamide",
+      "definition": "Inhibits bacterial folic acid synthesis to stop growth of susceptible organisms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [
+        "Sulfa drug"
+      ],
+      "confusables": [
+        "Penicillin",
+        "Fluoroquinolone",
+        "Tetracycline"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "tetracycline",
+      "term": "Tetracycline",
+      "definition": "Binds the 30S ribosomal subunit to inhibit bacterial protein synthesis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Antimicrobials",
+      "aliases": [],
+      "confusables": [
+        "Macrolide",
+        "Aminoglycoside",
+        "Fluoroquinolone"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.7"
+      ]
+    },
+    {
+      "id": "antithyroid-drug",
+      "term": "Antithyroid drug",
+      "definition": "Inhibits thyroid hormone synthesis to treat hyperthyroidism in affected clients.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [
+        "Methimazole"
+      ],
+      "confusables": [
+        "Levothyroxine",
+        "Corticosteroid",
+        "SERM"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.25"
+      ]
+    },
+    {
+      "id": "biguanide",
+      "term": "Biguanide",
+      "definition": "Decreases hepatic glucose production and improves insulin sensitivity.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [
+        "Metformin"
+      ],
+      "confusables": [
+        "Sulfonylurea",
+        "SGLT2 inhibitor",
+        "Insulin"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.24"
+      ]
+    },
+    {
+      "id": "bisphosphonate",
+      "term": "Bisphosphonate",
+      "definition": "Inhibits osteoclast-mediated bone resorption to treat and prevent osteoporosis.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "Corticosteroid",
+        "SERM",
+        "Levothyroxine"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.27"
+      ]
+    },
+    {
+      "id": "corticosteroid",
+      "term": "Corticosteroid",
+      "definition": "Reduces inflammation and immune activity for many inflammatory conditions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "NSAID",
+        "Bisphosphonate",
+        "Antithyroid drug"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.26"
+      ]
+    },
+    {
+      "id": "dpp-4-inhibitor",
+      "term": "DPP-4 inhibitor",
+      "definition": "Enhances incretin hormones to increase insulin and decrease glucagon.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "GLP-1 receptor agonist",
+        "SGLT2 inhibitor",
+        "Sulfonylurea"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.24"
+      ]
+    },
+    {
+      "id": "glp-1-receptor-agonist",
+      "term": "GLP-1 receptor agonist",
+      "definition": "Mimics incretin to stimulate insulin and slow gastric emptying.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "DPP-4 inhibitor",
+        "Insulin",
+        "SGLT2 inhibitor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.24"
+      ]
+    },
+    {
+      "id": "hormonal-contraceptive",
+      "term": "Hormonal contraceptive",
+      "definition": "Suppresses ovulation using estrogen and progestin to prevent pregnancy.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "SERM",
+        "Corticosteroid",
+        "Insulin"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.28"
+      ]
+    },
+    {
+      "id": "insulin",
+      "term": "Insulin",
+      "definition": "Lowers blood glucose by promoting cellular uptake and storage of glucose.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "Sulfonylurea",
+        "Biguanide",
+        "GLP-1 receptor agonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.24"
+      ]
+    },
+    {
+      "id": "levothyroxine",
+      "term": "Levothyroxine",
+      "definition": "Synthetic thyroid hormone replacing deficient thyroxine in hypothyroidism.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "Antithyroid drug",
+        "Corticosteroid",
+        "Bisphosphonate"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.25"
+      ]
+    },
+    {
+      "id": "serm",
+      "term": "SERM",
+      "definition": "Selectively modulates estrogen receptors in different tissues throughout the body.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [
+        "Selective estrogen receptor modulator"
+      ],
+      "confusables": [
+        "Hormonal contraceptive",
+        "Bisphosphonate",
+        "Corticosteroid"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.28"
+      ]
+    },
+    {
+      "id": "sglt2-inhibitor",
+      "term": "SGLT2 inhibitor",
+      "definition": "Blocks renal glucose reabsorption, promoting urinary glucose excretion.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "Biguanide",
+        "DPP-4 inhibitor",
+        "GLP-1 receptor agonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.24"
+      ]
+    },
+    {
+      "id": "sulfonylurea",
+      "term": "Sulfonylurea",
+      "definition": "Stimulates pancreatic beta cells to release insulin and lower glucose.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Endocrine and metabolic drugs",
+      "aliases": [],
+      "confusables": [
+        "Insulin",
+        "Biguanide",
+        "DPP-4 inhibitor"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.24"
+      ]
+    },
+    {
+      "id": "acetaminophen",
+      "term": "Acetaminophen",
+      "definition": "Reduces pain and fever centrally without significant anti-inflammatory effect.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [
+        "Paracetamol"
+      ],
+      "confusables": [
+        "NSAID",
+        "Opioid analgesic",
+        "NSAID"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.34"
+      ]
+    },
+    {
+      "id": "antacid",
+      "term": "Antacid",
+      "definition": "Neutralizes stomach acid to relieve heartburn and indigestion.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "PPI",
+        "H2 blocker",
+        "Laxative"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.22"
+      ]
+    },
+    {
+      "id": "antidiarrheal",
+      "term": "Antidiarrheal",
+      "definition": "Slows intestinal motility to reduce frequency of loose stools.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "Laxative",
+        "Antiemetic",
+        "Antacid"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.22"
+      ]
+    },
+    {
+      "id": "antiemetic",
+      "term": "Antiemetic",
+      "definition": "Prevents or treats nausea and vomiting by acting on vomiting centers.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "Antitussive",
+        "Antidiarrheal",
+        "PPI"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.22"
+      ]
+    },
+    {
+      "id": "antitussive",
+      "term": "Antitussive",
+      "definition": "Suppresses the cough reflex to relieve nonproductive cough.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "Expectorant",
+        "Antiemetic",
+        "Bronchodilator"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.23"
+      ]
+    },
+    {
+      "id": "bronchodilator",
+      "term": "Bronchodilator",
+      "definition": "Relaxes bronchial smooth muscle to improve airflow in asthma and COPD.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [
+        "Beta-2 agonist"
+      ],
+      "confusables": [
+        "Inhaled corticosteroid",
+        "Antitussive",
+        "Expectorant"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.23"
+      ]
+    },
+    {
+      "id": "expectorant",
+      "term": "Expectorant",
+      "definition": "Thins and loosens respiratory secretions to ease productive cough.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "Antitussive",
+        "Bronchodilator",
+        "Bronchodilator"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.23"
+      ]
+    },
+    {
+      "id": "h2-blocker",
+      "term": "H2 blocker",
+      "definition": "Blocks histamine H2 receptors to decrease gastric acid production.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [
+        "H2 receptor antagonist"
+      ],
+      "confusables": [
+        "PPI",
+        "Antacid",
+        "Antidiarrheal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.22"
+      ]
+    },
+    {
+      "id": "inhaled-corticosteroid",
+      "term": "Inhaled corticosteroid",
+      "definition": "Reduces airway inflammation to control asthma and prevent exacerbations.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "Bronchodilator",
+        "Corticosteroid",
+        "Bronchodilator"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.23"
+      ]
+    },
+    {
+      "id": "laxative",
+      "term": "Laxative",
+      "definition": "Promotes bowel movement to relieve constipation in affected clients.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [],
+      "confusables": [
+        "Antidiarrheal",
+        "Antacid",
+        "Antiemetic"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.22"
+      ]
+    },
+    {
+      "id": "nsaid",
+      "term": "NSAID",
+      "definition": "Inhibits prostaglandin synthesis to relieve pain, fever, and inflammation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [
+        "Nonsteroidal anti-inflammatory drug"
+      ],
+      "confusables": [
+        "Acetaminophen",
+        "Corticosteroid",
+        "Opioid analgesic"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.34"
+      ]
+    },
+    {
+      "id": "ppi",
+      "term": "PPI",
+      "definition": "Irreversibly inhibits gastric proton pump to reduce acid secretion.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GI, respiratory, and analgesic drugs",
+      "aliases": [
+        "Proton pump inhibitor"
+      ],
+      "confusables": [
+        "H2 blocker",
+        "Antacid",
+        "Antiemetic"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.22"
+      ]
+    }
+  ]
+}

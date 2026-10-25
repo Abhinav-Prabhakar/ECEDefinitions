@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "id": "pharmacology",
+  "name": "Pharmacology",
+  "tagline": "Pharmacology, in one line.",
+  "topic": "Pharmacology for nursing and pre-health students",
+  "audience": "Nursing and pre-health students",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "pharmacokinetics",
+      "pharmacodynamics",
+      "major drug classes",
+      "adverse effects and drug interactions",
+      "special populations"
+    ],
+    "excludes": [
+      "drug dosing and patient-specific regimens",
+      "prescribing and clinical decision-making",
+      "advanced medicinal chemistry",
+      "controlled-substance scheduling detail",
+      "patient-specific advice"
+    ]
+  },
+  "assumptions": [
+    "US clinical usage and FDA-approved terminology",
+    "introductory level; no prior pharmacology assumed",
+    "vocabulary only, not clinical training or prescribing guidance"
+  ],
+  "disclaimer": "Educational vocabulary only; not medical advice, prescribing guidance, or patient-specific recommendations.",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "pharmacokinetics",
+          "name": "Pharmacokinetics",
+          "shortName": "Pharmacokinetics",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/pharmacology/subjects/pharmacokinetics.json",
+          "definitionCount": 52,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "pharmacodynamics",
+          "name": "Pharmacodynamics",
+          "shortName": "Pharmacodynamics",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/pharmacology/subjects/pharmacodynamics.json",
+          "definitionCount": 52,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 3
+        }
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "Clinical",
+      "subjects": [
+        {
+          "id": "drug-classes",
+          "name": "Major Drug Classes",
+          "shortName": "Drug classes",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/pharmacology/subjects/drug-classes.json",
+          "definitionCount": 62,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "adverse-effects-and-interactions",
+          "name": "Adverse Effects and Drug Interactions",
+          "shortName": "Adverse effects",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/pharmacology/subjects/adverse-effects-and-interactions.json",
+          "definitionCount": 52,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 3
+        },
+        {
+          "id": "special-populations",
+          "name": "Special Populations",
+          "shortName": "Special populations",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/pharmacology/subjects/special-populations.json",
+          "definitionCount": 52,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 2,
+    "subjects": 5,
+    "definitions": 270,
+    "completeSubjects": 5,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

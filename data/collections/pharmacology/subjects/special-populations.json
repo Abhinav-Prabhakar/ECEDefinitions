@@ -1,0 +1,931 @@
+{
+  "version": 1,
+  "id": "special-populations",
+  "collectionId": "pharmacology",
+  "section": "clinical",
+  "name": "Special Populations",
+  "shortName": "Special populations",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "Pediatrics"
+    },
+    {
+      "number": 2,
+      "title": "Geriatrics"
+    },
+    {
+      "number": 3,
+      "title": "Pregnancy and lactation"
+    },
+    {
+      "number": 4,
+      "title": "Renal impairment"
+    },
+    {
+      "number": 5,
+      "title": "Hepatic impairment"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "body-mass-sensitivity",
+      "term": "Body mass sensitivity",
+      "definition": "Small body mass in children increases drug concentration and sensitivity to effects.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Pediatric dosing",
+        "Weight-based dosing",
+        "Body surface area"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "body-surface-area",
+      "term": "Body surface area",
+      "definition": "A measure used to calculate drug doses based on a child's body size.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [
+        "BSA"
+      ],
+      "confusables": [
+        "Pediatric dosing",
+        "Weight-based dosing",
+        "Body mass sensitivity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "immature-hepatic-metabolism",
+      "term": "Immature hepatic metabolism",
+      "definition": "Infants and children have underdeveloped livers, slowing drug metabolism and risking toxicity.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Immature renal excretion",
+        "Pediatric dosing",
+        "Body mass sensitivity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "immature-renal-excretion",
+      "term": "Immature renal excretion",
+      "definition": "Underdeveloped kidneys in young patients reduce drug clearance and prolong drug effects.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Immature hepatic metabolism",
+        "Renal clearance",
+        "Pediatric dosing"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "kids-list",
+      "term": "KIDs List",
+      "definition": "A list identifying drugs that may be harmful or inappropriate for pediatric patients.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Pediatric medication safety",
+        "Off-label pediatric use",
+        "Pediatric clinical trials limitation"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "limited-pediatric-testing",
+      "term": "Limited pediatric testing",
+      "definition": "Most drug data come from adults, leaving pediatric safety and dosing less studied.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Off-label pediatric use",
+        "KIDs List",
+        "Pediatric clinical trials limitation"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "off-label-pediatric-use",
+      "term": "Off-label pediatric use",
+      "definition": "Use of drugs in children without pediatric-specific FDA-approved labeling or dosing.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "KIDs List",
+        "Pediatric clinical trials limitation",
+        "Limited pediatric testing"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "pediatric-clinical-trials-limitation",
+      "term": "Pediatric clinical trials limitation",
+      "definition": "Ethical and consent challenges limit drug research in infants and children.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Limited pediatric testing",
+        "Off-label pediatric use",
+        "KIDs List"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "pediatric-dosing",
+      "term": "Pediatric dosing",
+      "definition": "Dosing calculated by milligrams per kilogram of body weight or body surface area.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Weight-based dosing",
+        "Body surface area",
+        "Body mass sensitivity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "pediatric-medication-safety",
+      "term": "Pediatric medication safety",
+      "definition": "Double-check calculations and use the smallest syringe for precise pediatric doses.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "KIDs List",
+        "Pediatric dosing",
+        "Weight-based dosing"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "weight-based-dosing",
+      "term": "Weight-based dosing",
+      "definition": "Drug dose determined by multiplying milligrams per kilogram by body weight.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Pediatrics",
+      "aliases": [],
+      "confusables": [
+        "Pediatric dosing",
+        "Body surface area",
+        "Pediatric medication safety"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "adverse-drug-reactions-elderly",
+      "term": "Adverse drug reactions in elderly",
+      "definition": "Older adults experience adverse drug reactions more frequently than younger adults.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Polypharmacy",
+        "Narrow therapeutic index risk",
+        "Potentially inappropriate medication"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "age-related-pharmacokinetic-changes",
+      "term": "Age-related pharmacokinetic changes",
+      "definition": "Aging alters drug absorption, distribution, metabolism, and excretion processes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Declining renal function",
+        "Declining hepatic function",
+        "Altered drug absorption in older adults"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "altered-drug-absorption-older-adults",
+      "term": "Altered drug absorption in older adults",
+      "definition": "Slower gut transit and lower gastric acidity change oral drug absorption.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Age-related pharmacokinetic changes",
+        "Declining renal function",
+        "Declining hepatic function"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "beers-criteria",
+      "term": "Beers Criteria",
+      "definition": "A list of potentially inappropriate medications for use in older adults.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Polypharmacy",
+        "Potentially inappropriate medication",
+        "Medication reconciliation"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "declining-hepatic-function",
+      "term": "Declining hepatic function",
+      "definition": "Reduced liver function in older adults slows drug metabolism and prolongs effects.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Declining renal function",
+        "Age-related pharmacokinetic changes",
+        "Hepatic metabolism reduction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "declining-renal-function",
+      "term": "Declining renal function",
+      "definition": "Reduced kidney function in older adults slows drug excretion and raises toxicity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Declining hepatic function",
+        "Age-related pharmacokinetic changes",
+        "Renal clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "medication-reconciliation",
+      "term": "Medication reconciliation",
+      "definition": "Reviewing all medications to identify interactions, duplications, and needed changes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Polypharmacy",
+        "Beers Criteria",
+        "Potentially inappropriate medication"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "narrow-therapeutic-index-risk",
+      "term": "Narrow therapeutic index risk",
+      "definition": "Small dose changes in older adults can cause toxicity or subtherapeutic effects.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reactions in elderly",
+        "Polypharmacy",
+        "Declining renal function"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "polypharmacy",
+      "term": "Polypharmacy",
+      "definition": "Concurrent use of multiple medications, increasing interaction and adverse effect risk.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reactions in elderly",
+        "Medication reconciliation",
+        "Beers Criteria"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "potentially-inappropriate-medication",
+      "term": "Potentially inappropriate medication",
+      "definition": "A drug whose risks in older adults may outweigh its expected benefits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Beers Criteria",
+        "Polypharmacy",
+        "Adverse drug reactions in elderly"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "silver-tsunami",
+      "term": "Silver tsunami",
+      "definition": "The rapid growth of the older adult population increasing healthcare demand.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Geriatrics",
+      "aliases": [],
+      "confusables": [
+        "Polypharmacy",
+        "Age-related pharmacokinetic changes",
+        "Medication reconciliation"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "fetal-drug-exposure",
+      "term": "Fetal drug exposure",
+      "definition": "Assumption that any medication taken during pregnancy can reach the fetus.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Teratogenic drug",
+        "Placental drug transfer",
+        "Risk-benefit in pregnancy"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "increased-gfr-pregnancy",
+      "term": "Increased GFR in pregnancy",
+      "definition": "Doubled renal blood flow in pregnancy accelerates drug clearance from body.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Physiologic changes in pregnancy",
+        "Placental drug transfer"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "lactation-drug-transfer",
+      "term": "Lactation drug transfer",
+      "definition": "Passage of drugs into breast milk, potentially exposing the nursing infant.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Placental drug transfer",
+        "Fetal drug exposure",
+        "Risk-benefit in pregnancy"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "lipid-soluble-drug-passage",
+      "term": "Lipid-soluble drug passage",
+      "definition": "Lipid-soluble drugs cross the placenta more easily than protein-bound drugs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Placental drug transfer",
+        "Teratogenic drug",
+        "Fetal drug exposure"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "physiologic-changes-pregnancy",
+      "term": "Physiologic changes in pregnancy",
+      "definition": "Pregnancy alters absorption, distribution, metabolism, and excretion of drugs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Increased GFR in pregnancy",
+        "Placental drug transfer"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "placental-drug-transfer",
+      "term": "Placental drug transfer",
+      "definition": "Movement of drugs across the placenta from pregnant client to fetus.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Teratogenic drug",
+        "Fetal drug exposure",
+        "Lipid-soluble drug passage"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "pregnancy-lactation-labeling-rule",
+      "term": "Pregnancy and Lactation Labeling Rule",
+      "definition": "FDA rule replacing pregnancy categories with narrative drug labeling guidance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [
+        "PLLR"
+      ],
+      "confusables": [
+        "Pregnancy category system",
+        "Teratogenic drug",
+        "Risk-benefit in pregnancy"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "pregnancy-category-system",
+      "term": "Pregnancy category system",
+      "definition": "Legacy FDA ABCDX classification of fetal risk for drugs during pregnancy.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Pregnancy and Lactation Labeling Rule",
+        "Teratogenic drug",
+        "Risk-benefit in pregnancy"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "risk-benefit-pregnancy",
+      "term": "Risk-benefit in pregnancy",
+      "definition": "Weighing maternal and fetal benefits against risks before giving drugs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Teratogenic drug",
+        "Fetal drug exposure",
+        "Pregnancy and Lactation Labeling Rule"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "teratogenic-drug",
+      "term": "Teratogenic drug",
+      "definition": "A drug known to cause harm to embryonic or fetal development.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Pregnancy and lactation",
+      "aliases": [],
+      "confusables": [
+        "Placental drug transfer",
+        "Fetal drug exposure",
+        "Risk-benefit in pregnancy"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.1-4"
+      ]
+    },
+    {
+      "id": "blood-urea-nitrogen",
+      "term": "Blood urea nitrogen",
+      "definition": "A blood test measuring urea nitrogen to assess kidney function.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [
+        "BUN"
+      ],
+      "confusables": [
+        "Serum creatinine",
+        "Glomerular filtration rate",
+        "Renal clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "chronic-kidney-disease-dosing",
+      "term": "Chronic kidney disease dosing",
+      "definition": "Dose modifications needed for patients with long-standing kidney disease.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Dosage adjustment in renal impairment",
+        "Reduced drug excretion",
+        "Glomerular filtration rate"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "dialysis-drug-removal",
+      "term": "Dialysis and drug removal",
+      "definition": "Hemodialysis can remove some drugs, requiring post-dialysis dosing adjustments.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Renal clearance",
+        "Drug accumulation in renal impairment",
+        "Dosage adjustment in renal impairment"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "dosage-adjustment-renal",
+      "term": "Dosage adjustment in renal impairment",
+      "definition": "Modifying dose or frequency to prevent toxicity in kidney disease.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Reduced drug excretion",
+        "Drug accumulation in renal impairment",
+        "Renal clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "drug-accumulation-renal",
+      "term": "Drug accumulation in renal impairment",
+      "definition": "Drugs build up when kidneys fail to excrete them, causing toxicity.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Reduced drug excretion",
+        "Dosage adjustment in renal impairment",
+        "Nephrotoxic drugs"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "glomerular-filtration-rate",
+      "term": "Glomerular filtration rate",
+      "definition": "Volume of blood filtered by kidneys per minute, indicating renal function.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [
+        "GFR"
+      ],
+      "confusables": [
+        "Blood urea nitrogen",
+        "Serum creatinine",
+        "Renal clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "nephrotoxic-drugs",
+      "term": "Nephrotoxic drugs",
+      "definition": "Drugs that can damage kidney tissue or worsen renal function.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Drug accumulation in renal impairment",
+        "Renal clearance",
+        "Dosage adjustment in renal impairment"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "reduced-drug-excretion",
+      "term": "Reduced drug excretion",
+      "definition": "Impaired kidneys clear drugs more slowly, increasing blood drug levels.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Renal clearance",
+        "Drug accumulation in renal impairment",
+        "Dosage adjustment in renal impairment"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "renal-clearance",
+      "term": "Renal clearance",
+      "definition": "Efficiency of kidneys in removing a drug from the bloodstream.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Glomerular filtration rate",
+        "Reduced drug excretion",
+        "Drug accumulation in renal impairment"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "serum-creatinine",
+      "term": "Serum creatinine",
+      "definition": "A waste product measured in blood to evaluate renal function.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Renal impairment",
+      "aliases": [],
+      "confusables": [
+        "Blood urea nitrogen",
+        "Glomerular filtration rate",
+        "Renal clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "acetaminophen-liver-risk",
+      "term": "Acetaminophen liver risk",
+      "definition": "Acetaminophen requires caution or avoidance in underlying liver disease.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Hepatotoxic drugs",
+        "Liver enzymes",
+        "Cirrhosis and drug metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "alanine-aminotransferase",
+      "term": "Alanine aminotransferase",
+      "definition": "A liver enzyme used to detect hepatic injury or dysfunction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [
+        "ALT"
+      ],
+      "confusables": [
+        "Aspartate aminotransferase",
+        "Liver enzymes",
+        "Hepatic metabolism reduction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "aspartate-aminotransferase",
+      "term": "Aspartate aminotransferase",
+      "definition": "An enzyme whose elevation may indicate liver cell injury or damage.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [
+        "AST"
+      ],
+      "confusables": [
+        "Alanine aminotransferase",
+        "Liver enzymes",
+        "Hepatic metabolism reduction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "cirrhosis-drug-metabolism",
+      "term": "Cirrhosis and drug metabolism",
+      "definition": "Cirrhotic livers metabolize drugs less effectively, prolonging drug effects.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Hepatic metabolism reduction",
+        "Drug accumulation in liver disease",
+        "First-pass effect reduction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "drug-accumulation-liver",
+      "term": "Drug accumulation in liver disease",
+      "definition": "Reduced metabolism lets drugs build up, increasing toxicity risk.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Hepatic metabolism reduction",
+        "Cirrhosis and drug metabolism",
+        "Hepatotoxic drugs"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "first-pass-effect-reduction",
+      "term": "First-pass effect reduction",
+      "definition": "Liver disease decreases first-pass metabolism, raising oral drug bioavailability.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Hepatic metabolism reduction",
+        "Cirrhosis and drug metabolism",
+        "Drug accumulation in liver disease"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "hepatic-metabolism-reduction",
+      "term": "Hepatic metabolism reduction",
+      "definition": "Liver disease slows drug metabolism, increasing systemic drug concentrations.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Cirrhosis and drug metabolism",
+        "Drug accumulation in liver disease",
+        "Liver enzymes"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "hepatotoxic-drugs",
+      "term": "Hepatotoxic drugs",
+      "definition": "Drugs that can injure or damage the liver tissue.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Liver enzymes",
+        "Hepatic metabolism reduction",
+        "Drug accumulation in liver disease"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "liver-enzymes",
+      "term": "Liver enzymes",
+      "definition": "AST and ALT elevations indicate hepatic dysfunction or liver damage.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Hepatic metabolism reduction",
+        "Cirrhosis and drug metabolism",
+        "Hepatotoxic drugs"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    },
+    {
+      "id": "protein-binding-liver",
+      "term": "Protein binding changes",
+      "definition": "Liver disease alters plasma protein binding, increasing free drug levels.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hepatic impairment",
+      "aliases": [],
+      "confusables": [
+        "Hepatic metabolism reduction",
+        "Drug accumulation in liver disease",
+        "First-pass effect reduction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2-2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "topic": "Pharmacology for nursing and pre-health students",
+  "collectionId": "pharmacology",
+  "type": "course",
+  "audience": "Nursing and pre-health students",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "includes": [
+    "pharmacokinetics",
+    "pharmacodynamics",
+    "major drug classes",
+    "adverse effects and drug interactions",
+    "special populations"
+  ],
+  "excludes": [
+    "drug dosing and patient-specific regimens",
+    "prescribing and clinical decision-making",
+    "advanced medicinal chemistry",
+    "controlled-substance scheduling detail",
+    "patient-specific advice"
+  ],
+  "assumptions": [
+    "US clinical usage and FDA-approved terminology",
+    "introductory level; no prior pharmacology assumed",
+    "vocabulary only, not clinical training or prescribing guidance"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "pharmacokinetics",
+          "name": "Pharmacokinetics",
+          "shortName": "Pharmacokinetics",
+          "units": ["Absorption", "Distribution", "Metabolism", "Excretion", "Bioavailability and half-life"],
+          "targetDefinitions": 52,
+          "sourceQueries": [
+            "OpenStax pharmacology pharmacokinetics ADME",
+            "FDA pharmacokinetics glossary",
+            "Katzung pharmacokinetics"
+          ]
+        },
+        {
+          "id": "pharmacodynamics",
+          "name": "Pharmacodynamics",
+          "shortName": "Pharmacodynamics",
+          "units": ["Receptors and ligands", "Agonists and antagonists", "Dose-response relationships", "Therapeutic index and safety", "Tolerance and dependence"],
+          "targetDefinitions": 52,
+          "sourceQueries": [
+            "OpenStax pharmacology pharmacodynamics receptors",
+            "Goodman Gilman pharmacodynamics dose-response"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "Clinical",
+      "subjects": [
+        {
+          "id": "drug-classes",
+          "name": "Major Drug Classes",
+          "shortName": "Drug classes",
+          "units": ["Cardiovascular drugs", "Central nervous system drugs", "Antimicrobials", "Endocrine and metabolic drugs", "GI, respiratory, and analgesic drugs"],
+          "targetDefinitions": 62,
+          "sourceQueries": [
+            "nursing pharmacology major drug classes",
+            "OpenStax pharmacology drug classes",
+            "Davis drug guide classes"
+          ]
+        },
+        {
+          "id": "adverse-effects-and-interactions",
+          "name": "Adverse Effects and Drug Interactions",
+          "shortName": "Adverse effects",
+          "units": ["Adverse drug reactions", "Drug-drug interactions", "Drug-food and drug-disease interactions", "Toxicity and overdose", "Pharmacovigilance and reporting"],
+          "targetDefinitions": 52,
+          "sourceQueries": [
+            "FDA adverse drug reactions pharmacovigilance",
+            "nursing pharmacology drug interactions"
+          ]
+        },
+        {
+          "id": "special-populations",
+          "name": "Special Populations",
+          "shortName": "Special populations",
+          "units": ["Pediatrics", "Geriatrics", "Pregnancy and lactation", "Renal impairment", "Hepatic impairment"],
+          "targetDefinitions": 52,
+          "sourceQueries": [
+            "FDA special populations pharmacokinetics",
+            "nursing pharmacology geriatrics pediatrics"
+          ]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 220, "max": 300 },
+  "disclaimer": "Educational vocabulary only; not medical advice, prescribing guidance, or patient-specific recommendations."
+}

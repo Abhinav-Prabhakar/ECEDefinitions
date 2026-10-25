@@ -1,0 +1,937 @@
+{
+  "version": 1,
+  "id": "pharmacodynamics",
+  "collectionId": "pharmacology",
+  "section": "core",
+  "name": "Pharmacodynamics",
+  "shortName": "Pharmacodynamics",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Receptors and ligands"
+    },
+    {
+      "number": 2,
+      "title": "Agonists and antagonists"
+    },
+    {
+      "number": 3,
+      "title": "Dose-response relationships"
+    },
+    {
+      "number": 4,
+      "title": "Therapeutic index and safety"
+    },
+    {
+      "number": 5,
+      "title": "Tolerance and dependence"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "affinity",
+      "term": "Affinity",
+      "definition": "Strength of binding between a drug and its receptor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Efficacy",
+        "Potency",
+        "Selectivity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "endogenous-ligand",
+      "term": "Endogenous ligand",
+      "definition": "A signaling molecule produced inside the body that binds a receptor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Exogenous ligand",
+        "Ligand",
+        "Receptor"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "enzyme",
+      "term": "Enzyme",
+      "definition": "A protein target that many drugs inhibit to alter cellular function.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Ion channel",
+        "Ligand"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "exogenous-ligand",
+      "term": "Exogenous ligand",
+      "definition": "A substance from outside the body, such as a drug, that binds a receptor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Endogenous ligand",
+        "Ligand",
+        "Agonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "ion-channel",
+      "term": "Ion channel",
+      "definition": "A membrane gate that opens or closes to allow ions or drugs to pass.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Ligand",
+        "Enzyme"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "ligand",
+      "term": "Ligand",
+      "definition": "Any molecule that binds to a receptor to produce or block a response.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "receptor",
+      "term": "Receptor",
+      "definition": "A protein on or in a cell that binds a specific messenger and triggers a response.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Ligand",
+        "Enzyme",
+        "Ion channel"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "receptor-subtype",
+      "term": "Receptor subtype",
+      "definition": "A variant form of a receptor with distinct tissue distribution or drug sensitivity.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Receptor",
+        "Selectivity",
+        "Signal transduction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "second-messenger",
+      "term": "Second messenger",
+      "definition": "An intracellular signaling molecule activated after a drug binds its receptor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Signal transduction",
+        "Receptor",
+        "Ligand"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "selectivity",
+      "term": "Selectivity",
+      "definition": "Preference of a drug for binding one receptor type over others.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Affinity",
+        "Receptor subtype",
+        "Ligand"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "signal-transduction",
+      "term": "Signal transduction",
+      "definition": "The intracellular process that converts receptor binding into a cellular response.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Receptors and ligands",
+      "aliases": [],
+      "confusables": [
+        "Second messenger",
+        "Receptor",
+        "Ligand"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "agonist",
+      "term": "Agonist",
+      "definition": "A drug that binds a receptor and activates it to produce a biological effect.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Antagonist",
+        "Partial agonist",
+        "Ligand"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "allosteric-modulator",
+      "term": "Allosteric modulator",
+      "definition": "A drug that binds a receptor at a site other than the active site.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Agonist",
+        "Antagonist",
+        "Competitive antagonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "antagonist",
+      "term": "Antagonist",
+      "definition": "A drug that binds a receptor without activating it, blocking other molecules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Agonist",
+        "Partial agonist",
+        "Competitive antagonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "competitive-antagonist",
+      "term": "Competitive antagonist",
+      "definition": "An antagonist that reversibly competes with an agonist for the same receptor site.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Noncompetitive antagonist",
+        "Antagonist",
+        "Agonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "drug-receptor-complex",
+      "term": "Drug-receptor complex",
+      "definition": "The temporary binding of a drug to its receptor that initiates a response.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Ligand",
+        "Receptor",
+        "Agonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "full-agonist",
+      "term": "Full agonist",
+      "definition": "An agonist that produces the maximal possible receptor response.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Partial agonist",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "irreversible-antagonist",
+      "term": "Irreversible antagonist",
+      "definition": "An antagonist that binds covalently and permanently deactivates its receptor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Competitive antagonist",
+        "Noncompetitive antagonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "mixed-agonist-antagonist",
+      "term": "Mixed agonist-antagonist",
+      "definition": "A drug that activates one receptor type while blocking another.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Partial agonist",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "noncompetitive-antagonist",
+      "term": "Noncompetitive antagonist",
+      "definition": "An antagonist that binds a different site and prevents maximal receptor response.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Competitive antagonist",
+        "Antagonist",
+        "Irreversible antagonist"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "partial-agonist",
+      "term": "Partial agonist",
+      "definition": "An agonist that activates a receptor but produces a weaker effect than a full agonist.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Full agonist",
+        "Agonist",
+        "Antagonist"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.1"
+      ]
+    },
+    {
+      "id": "reversible-binding",
+      "term": "Reversible binding",
+      "definition": "Drug-receptor attachment that can dissociate depending on affinity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Agonists and antagonists",
+      "aliases": [],
+      "confusables": [
+        "Irreversible antagonist",
+        "Competitive antagonist",
+        "Affinity"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "ceiling-effect",
+      "term": "Ceiling effect",
+      "definition": "The maximal response a drug can produce regardless of further dose increases.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Emax",
+        "Efficacy",
+        "Potency"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "dose-response-curve",
+      "term": "Dose-response curve",
+      "definition": "A graph relating drug concentration to the magnitude of biological response.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Graded dose-response",
+        "Quantal dose-response",
+        "Potency"
+      ],
+      "sources": [
+        "wtcs-nursing-pharmacology#sec.1.7",
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "ec50",
+      "term": "EC50",
+      "definition": "The concentration producing half of a drug's maximal response.",
+      "formula": "EC50",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "ED50",
+        "Potency",
+        "Emax"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "ed50",
+      "term": "ED50",
+      "definition": "The dose producing the intended effect in half of a population.",
+      "formula": "ED50",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "EC50",
+        "LD50",
+        "Therapeutic index"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.3"
+      ]
+    },
+    {
+      "id": "efficacy",
+      "term": "Efficacy",
+      "definition": "The maximum effect a drug can produce at a tolerable dose.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Potency",
+        "Ceiling effect",
+        "Emax"
+      ],
+      "sources": [
+        "wtcs-nursing-pharmacology#sec.1.7",
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "emax",
+      "term": "Emax",
+      "definition": "The greatest response a drug can achieve on its dose-response curve.",
+      "formula": "Emax",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Efficacy",
+        "Ceiling effect",
+        "EC50"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "graded-dose-response",
+      "term": "Graded dose-response",
+      "definition": "A continuous increase in response as drug dose increases in one subject.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Quantal dose-response",
+        "Dose-response curve",
+        "Potency"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "potency",
+      "term": "Potency",
+      "definition": "The dose or concentration needed to produce a given drug effect.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Efficacy",
+        "Affinity",
+        "EC50"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "quantal-dose-response",
+      "term": "Quantal dose-response",
+      "definition": "The distribution of effective doses across a population.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Graded dose-response",
+        "ED50",
+        "LD50"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.3"
+      ]
+    },
+    {
+      "id": "slope",
+      "term": "Slope",
+      "definition": "The change in drug response per unit change in dose.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Dose-response relationships",
+      "aliases": [],
+      "confusables": [
+        "Potency",
+        "Efficacy",
+        "Dose-response curve"
+      ],
+      "sources": [
+        "wtcs-nursing-pharmacology#sec.1.7",
+        "libretexts-essentials-pharmacology#sec.3.2"
+      ]
+    },
+    {
+      "id": "adverse-drug-reaction",
+      "term": "Adverse drug reaction",
+      "definition": "A harmful unintended response to a drug at therapeutic doses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Side effect",
+        "Drug toxicity",
+        "Therapeutic effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "area-under-the-curve",
+      "term": "Area under the curve",
+      "definition": "Total drug exposure of the body to a drug over time.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [
+        "AUC"
+      ],
+      "confusables": [
+        "Minimum effective concentration",
+        "Therapeutic window",
+        "Drug toxicity"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.4"
+      ]
+    },
+    {
+      "id": "drug-toxicity",
+      "term": "Drug toxicity",
+      "definition": "Harmful effects from excessive drug accumulation in the body.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reaction",
+        "Overdose",
+        "Side effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "duration-of-action",
+      "term": "Duration of action",
+      "definition": "The length of time a drug produces a therapeutic response.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Onset of action",
+        "Peak effect",
+        "Minimum effective concentration"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "ld50",
+      "term": "LD50",
+      "definition": "The dose lethal to half of a tested population.",
+      "formula": "LD50",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "ED50",
+        "Therapeutic index",
+        "Drug toxicity"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.3"
+      ]
+    },
+    {
+      "id": "margin-of-safety",
+      "term": "Margin of safety",
+      "definition": "The gap between effective and toxic drug doses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic index",
+        "Therapeutic window",
+        "LD50"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.3"
+      ]
+    },
+    {
+      "id": "minimum-effective-concentration",
+      "term": "Minimum effective concentration",
+      "definition": "The lowest drug level that produces the desired therapeutic effect.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [
+        "MEC"
+      ],
+      "confusables": [
+        "Therapeutic window",
+        "Peak effect",
+        "Onset of action"
+      ],
+      "sources": [
+        "libretexts-essentials-pharmacology#sec.3.2",
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "onset-of-action",
+      "term": "Onset of action",
+      "definition": "The time needed after dosing for a therapeutic response to begin.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Peak effect",
+        "Duration of action",
+        "Minimum effective concentration"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "peak-effect",
+      "term": "Peak effect",
+      "definition": "The time required for a drug to produce its maximum therapeutic response.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Onset of action",
+        "Duration of action",
+        "Minimum effective concentration"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "side-effect",
+      "term": "Side effect",
+      "definition": "A mild predictable secondary effect of a drug.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reaction",
+        "Drug toxicity",
+        "Therapeutic effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-index",
+      "term": "Therapeutic index",
+      "definition": "The ratio between toxic and effective drug doses indicating safety.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic window",
+        "Margin of safety",
+        "LD50"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.3"
+      ]
+    },
+    {
+      "id": "therapeutic-window",
+      "term": "Therapeutic window",
+      "definition": "The dose range that is both safe and effective.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Therapeutic index and safety",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic index",
+        "Minimum effective concentration",
+        "Duration of action"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2",
+        "libretexts-essentials-pharmacology#sec.3.3"
+      ]
+    },
+    {
+      "id": "drug-accumulation",
+      "term": "Drug accumulation",
+      "definition": "Buildup of a drug in the body when elimination is slower than dosing.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Drug toxicity",
+        "Overdose",
+        "Drug tolerance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "drug-dependence",
+      "term": "Drug dependence",
+      "definition": "A physiological or psychological need for a drug.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Drug tolerance",
+        "Physical dependence",
+        "Psychological dependence"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "drug-tolerance",
+      "term": "Drug tolerance",
+      "definition": "The need for higher drug doses to achieve the same effect.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Drug dependence",
+        "Physical dependence",
+        "Drug accumulation"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "overdose",
+      "term": "Overdose",
+      "definition": "Ingestion of an excessive amount of a drug causing toxicity.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Drug toxicity",
+        "Drug accumulation",
+        "Adverse drug reaction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "physical-dependence",
+      "term": "Physical dependence",
+      "definition": "A physiological need for a drug whose absence causes withdrawal symptoms.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Psychological dependence",
+        "Drug dependence",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "psychological-dependence",
+      "term": "Psychological dependence",
+      "definition": "An intense urge to use a drug despite harmful consequences.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Physical dependence",
+        "Drug dependence",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-effect",
+      "term": "Therapeutic effect",
+      "definition": "The intended beneficial effect produced by a drug.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Side effect",
+        "Adverse drug reaction",
+        "Drug toxicity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "term": "Withdrawal",
+      "definition": "Symptoms that occur when a dependent drug is stopped.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Tolerance and dependence",
+      "aliases": [],
+      "confusables": [
+        "Physical dependence",
+        "Drug dependence",
+        "Drug tolerance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    }
+  ]
+}

@@ -69,12 +69,6 @@ it. Do not move a partial collection to Completed just to clear the line.
   - Target: 6 subjects, 280–360 definitions.
 
 
-- [ ] **Pharmacology** — `pharmacology`
-  - Scope: pharmacokinetics; pharmacodynamics; major drug classes; adverse effects and
-    interactions; special populations.
-  - Audience: nursing and pre-health students.
-  - Target: 5 subjects, 220–300 definitions.
-
 - [ ] **Nursing and NCLEX** — `nursing-and-nclex`
   - Scope: fundamentals; health assessment; safety and infection control; medical-surgical;
     maternal and child; mental health.
@@ -192,6 +186,7 @@ library has a history.
 | 2026-10-25 | Software interview glossary | data/collections/software-interview-glossary | 356 | PR #1 draft |
 | 2026-10-25 | Medical terminology | data/collections/medical-terminology | 327 | validation passed |
 | 2026-10-25 | Anatomy and physiology | data/collections/anatomy-and-physiology | 285 | PR #3 draft |
+| 2026-10-25 | Pharmacology | data/collections/pharmacology | 270 | validation passed; PR draft |
 
 ---
 

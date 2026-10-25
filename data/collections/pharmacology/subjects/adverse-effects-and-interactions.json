@@ -1,0 +1,904 @@
+{
+  "version": 1,
+  "id": "adverse-effects-and-interactions",
+  "collectionId": "pharmacology",
+  "section": "clinical",
+  "name": "Adverse Effects and Drug Interactions",
+  "shortName": "Adverse effects",
+  "code": null,
+  "courseType": "clinical",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Adverse drug reactions"
+    },
+    {
+      "number": 2,
+      "title": "Drug-drug interactions"
+    },
+    {
+      "number": 3,
+      "title": "Drug-food and drug-disease interactions"
+    },
+    {
+      "number": 4,
+      "title": "Toxicity and overdose"
+    },
+    {
+      "number": 5,
+      "title": "Pharmacovigilance and reporting"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "adverse-drug-event",
+      "term": "Adverse drug event",
+      "definition": "Any harm experienced by a person that results from exposure to a medication.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reaction",
+        "Medication error",
+        "Toxicity"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "adverse-drug-reaction",
+      "term": "Adverse drug reaction",
+      "definition": "An undesirable, unexpected, and potentially dangerous response to a drug at therapeutic doses.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Side effect",
+        "Adverse drug event",
+        "Allergic reaction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "adverse-effect",
+      "term": "Adverse effect",
+      "definition": "An undesired effect of a drug that may occur alongside its intended therapeutic action.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Side effect",
+        "Adverse drug reaction",
+        "Toxicity"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "allergic-reaction",
+      "term": "Allergic reaction",
+      "definition": "An immune-mediated response that occurs when the body reacts to a drug or substance.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Anaphylaxis",
+        "Hypersensitivity",
+        "Idiosyncratic reaction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "anaphylaxis",
+      "term": "Anaphylaxis",
+      "definition": "A rare, life-threatening allergic reaction causing breathing difficulty and cardiovascular collapse.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Allergic reaction",
+        "Hypersensitivity"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "drug-allergy",
+      "term": "Drug allergy",
+      "definition": "An immune-mediated adverse reaction to a medication that can range from rash to anaphylaxis.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Drug intolerance",
+        "Side effect",
+        "Hypersensitivity"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "drug-intolerance",
+      "term": "Drug intolerance",
+      "definition": "A non-immune adverse reaction where a drug's effects become unacceptable at normal doses.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Drug allergy",
+        "Side effect",
+        "Adverse effect"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "hypersensitivity",
+      "term": "Hypersensitivity",
+      "definition": "An exaggerated immune response to a drug that can produce rash, fever, or anaphylaxis.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Allergic reaction",
+        "Tolerance",
+        "Idiosyncratic reaction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "idiosyncratic-reaction",
+      "term": "Idiosyncratic reaction",
+      "definition": "An unusual, unpredictable drug response often related to individual genetic or metabolic factors.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Allergic reaction",
+        "Paradoxical effect",
+        "Hypersensitivity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "paradoxical-effect",
+      "term": "Paradoxical effect",
+      "definition": "A drug effect that is opposite to the intended therapeutic effect, such as stimulant-induced drowsiness.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Side effect",
+        "Idiosyncratic reaction",
+        "Adverse effect"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "side-effect",
+      "term": "Side effect",
+      "definition": "A secondary and usually predictable effect produced by a drug at therapeutic doses.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Adverse drug reactions",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug reaction",
+        "Adverse effect",
+        "Toxicity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "additive-effect",
+      "term": "Additive effect",
+      "definition": "Combined drug effect equal to the sum of the individual effects of each drug.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Synergistic effect",
+        "Potentiation",
+        "Antagonism"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "antagonism",
+      "term": "Antagonism",
+      "definition": "An interaction where one drug reduces or blocks the effect of another drug.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Synergistic effect",
+        "Enzyme inhibition",
+        "Tolerance"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "drug-drug-interaction",
+      "term": "Drug-drug interaction",
+      "definition": "A change in a drug's effect caused by concurrent use of another drug.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Drug-food interaction",
+        "Drug-disease interaction",
+        "Polypharmacy"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "enzyme-induction",
+      "term": "Enzyme induction",
+      "definition": "Increased activity of drug-metabolizing enzymes that lowers concentrations of affected drugs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Enzyme inhibition",
+        "Metabolism",
+        "Potentiation"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "enzyme-inhibition",
+      "term": "Enzyme inhibition",
+      "definition": "Decreased activity of drug-metabolizing enzymes that raises concentrations of affected drugs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Enzyme induction",
+        "Metabolism",
+        "Antagonism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "pharmacodynamic-interaction",
+      "term": "Pharmacodynamic interaction",
+      "definition": "An interaction that changes drug effects at the receptor or target-organ level.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Pharmacokinetic interaction",
+        "Synergistic effect",
+        "Antagonism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "pharmacokinetic-interaction",
+      "term": "Pharmacokinetic interaction",
+      "definition": "An interaction that alters absorption, distribution, metabolism, or excretion of a drug.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Pharmacodynamic interaction",
+        "Enzyme induction",
+        "Bioavailability"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "polypharmacy",
+      "term": "Polypharmacy",
+      "definition": "The concurrent use of multiple medications, which increases interaction and adverse-effect risk.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Medication reconciliation",
+        "Drug-drug interaction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "potentiation",
+      "term": "Potentiation",
+      "definition": "An interaction where one drug enhances the effect of another without having that effect itself.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Synergistic effect",
+        "Additive effect",
+        "Enzyme induction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "synergistic-effect",
+      "term": "Synergistic effect",
+      "definition": "Combined drug effect that is greater than the sum of each drug's individual effect.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Drug-drug interactions",
+      "aliases": [],
+      "confusables": [
+        "Additive effect",
+        "Potentiation",
+        "Antagonism"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "alcohol-interaction",
+      "term": "Alcohol interaction",
+      "definition": "A harmful or amplified effect that occurs when alcohol is combined with a medication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Drug-food interaction",
+        "Toxicity"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "contraindication",
+      "term": "Contraindication",
+      "definition": "A condition or factor that makes a particular drug inadvisable or unsafe to use.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Precaution",
+        "Drug-disease interaction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "drug-disease-interaction",
+      "term": "Drug-disease interaction",
+      "definition": "A situation where a drug worsens or complicates an existing medical condition.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Contraindication",
+        "Drug-drug interaction",
+        "Precaution"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "drug-food-interaction",
+      "term": "Drug-food interaction",
+      "definition": "A change in a drug's effect or absorption caused by food, beverages, or nutrients.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Drug-drug interaction",
+        "Drug-disease interaction",
+        "Drug-nutrient interaction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "drug-nutrient-interaction",
+      "term": "Drug-nutrient interaction",
+      "definition": "An interaction between a medication and vitamins, minerals, or other dietary components.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Drug-food interaction",
+        "Malabsorption"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "food-effect",
+      "term": "Food effect",
+      "definition": "The influence of food on drug absorption, which can increase, decrease, or delay it.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Absorption",
+        "Bioavailability",
+        "Drug-food interaction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "grapefruit-interaction",
+      "term": "Grapefruit interaction",
+      "definition": "Grapefruit juice inhibiting intestinal enzymes and raising levels of certain drugs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Enzyme inhibition",
+        "Food effect",
+        "Bioavailability"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "herb-drug-interaction",
+      "term": "Herb-drug interaction",
+      "definition": "An interaction between herbal supplements and medications that can alter drug effects.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Drug-food interaction",
+        "Drug-drug interaction"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "malabsorption",
+      "term": "Malabsorption",
+      "definition": "Impaired absorption of nutrients or drugs from the gastrointestinal tract.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Drug-nutrient interaction",
+        "Bioavailability",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "precaution",
+      "term": "Precaution",
+      "definition": "A warning to use a drug carefully because of possible risks in certain conditions.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Drug-food and drug-disease interactions",
+      "aliases": [],
+      "confusables": [
+        "Contraindication",
+        "Adverse effect",
+        "Side effect"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "antidote",
+      "term": "Antidote",
+      "definition": "A substance given to counteract the toxic effects of a drug or poison.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Antagonist",
+        "Overdose"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "dependence",
+      "term": "Dependence",
+      "definition": "A state where the body or mind requires a drug to function normally or avoid withdrawal.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Tolerance",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "lethal-dose",
+      "term": "Lethal dose",
+      "definition": "The amount of a drug that can cause death in a given proportion of exposed individuals.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Toxic dose",
+        "Overdose",
+        "LD50"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "overdose",
+      "term": "Overdose",
+      "definition": "Taking more than the recommended or safe amount of a drug, risking serious harm.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Toxicity",
+        "Lethal dose"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "serum-drug-level",
+      "term": "Serum drug level",
+      "definition": "The concentration of a drug measured in blood to guide safe and effective dosing.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic index",
+        "Toxic dose"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-index",
+      "term": "Therapeutic index",
+      "definition": "The ratio of the toxic dose to the effective dose; higher values indicate safer drugs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic window",
+        "Toxic dose"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "tolerance",
+      "term": "Tolerance",
+      "definition": "Reduced drug response over time, requiring higher doses to achieve the same effect.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Dependence",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "toxic-dose",
+      "term": "Toxic dose",
+      "definition": "The amount of a drug that produces harmful or poisonous effects in the body.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Lethal dose",
+        "Overdose"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "toxicity",
+      "term": "Toxicity",
+      "definition": "Harmful effects from excessive drug levels, often when metabolism or excretion is impaired.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Overdose",
+        "Adverse effect",
+        "Side effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "term": "Withdrawal",
+      "definition": "Symptoms that occur when a regularly used drug is reduced or stopped abruptly.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Toxicity and overdose",
+      "aliases": [],
+      "confusables": [
+        "Dependence",
+        "Tolerance",
+        "Overdose"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "adverse-event-reporting",
+      "term": "Adverse event reporting",
+      "definition": "Submitting suspected harmful drug reactions to regulatory agencies for safety monitoring.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Pharmacovigilance",
+        "MedWatch",
+        "FAERS"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "black-box-warning",
+      "term": "Black box warning",
+      "definition": "The FDA's strongest safety warning highlighting serious or life-threatening drug risks.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Contraindication",
+        "Precaution",
+        "Adverse effect"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "drug-recall",
+      "term": "Drug recall",
+      "definition": "A manufacturer or regulator action to remove a defective or unsafe drug from the market.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Postmarketing surveillance",
+        "Adverse event reporting"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "faers",
+      "term": "FAERS",
+      "definition": "The FDA database that collects adverse event and medication error reports.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "MedWatch",
+        "Pharmacovigilance",
+        "Postmarketing surveillance"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "medwatch",
+      "term": "MedWatch",
+      "definition": "The FDA program for reporting adverse events and product problems involving medications.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "FAERS",
+        "Pharmacovigilance"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "medication-error",
+      "term": "Medication error",
+      "definition": "Any preventable event that may cause inappropriate medication use or patient harm.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Adverse drug event",
+        "Adverse drug reaction",
+        "Medication reconciliation"
+      ],
+      "sources": [
+        "medlineplus-drug-therapy#sec.drug-interactions"
+      ]
+    },
+    {
+      "id": "medication-guide",
+      "term": "Medication guide",
+      "definition": "FDA-required patient information highlighting serious risks and safe use of specific drugs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "REMS",
+        "Black box warning"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "medication-reconciliation",
+      "term": "Medication reconciliation",
+      "definition": "The process of verifying and updating a patient's accurate medication list across care transitions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Medication error",
+        "Polypharmacy",
+        "Drug-drug interaction"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "pharmacovigilance",
+      "term": "Pharmacovigilance",
+      "definition": "The science and activities of detecting, assessing, and preventing adverse drug effects.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Postmarketing surveillance",
+        "Adverse event reporting"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "postmarketing-surveillance",
+      "term": "Postmarketing surveillance",
+      "definition": "Ongoing monitoring of drug safety after a medication has been approved for use.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Pharmacovigilance",
+        "Drug recall",
+        "FAERS"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    },
+    {
+      "id": "rems",
+      "term": "REMS",
+      "definition": "A risk evaluation and mitigation strategy required to ensure safe use of certain drugs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pharmacovigilance and reporting",
+      "aliases": [],
+      "confusables": [
+        "Black box warning",
+        "Pharmacovigilance",
+        "Medication guide"
+      ],
+      "sources": [
+        "fda-drugsfda-glossary#sec.active-ingredient"
+      ]
+    }
+  ]
+}

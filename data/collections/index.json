@@ -19,6 +19,15 @@
       "subjects": 6,
       "definitions": 327,
       "generatedAt": "2026-10-25"
+    },
+    {
+      "id": "pharmacology",
+      "name": "Pharmacology",
+      "tagline": "Pharmacology, in one line.",
+      "path": "data/collections/pharmacology",
+      "subjects": 5,
+      "definitions": 270,
+      "generatedAt": "2026-10-25"
     }
   ]
 }

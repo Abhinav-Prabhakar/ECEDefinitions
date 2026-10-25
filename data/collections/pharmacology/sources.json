@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "collectionId": "pharmacology",
+  "generatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "openstax-pharmacology-nurses",
+      "title": "Pharmacology for Nurses",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/details/books/pharmacology",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "wtcs-nursing-pharmacology",
+      "title": "Nursing Pharmacology",
+      "publisher": "WisTech Open (Chippewa Valley Technical College)",
+      "url": "https://wtcs.pressbooks.pub/pharmacology/",
+      "type": "textbook",
+      "license": "CC BY 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": ""
+    },
+    {
+      "id": "libretexts-essentials-pharmacology",
+      "title": "Essentials of Pharmacology",
+      "publisher": "Medicine LibreTexts (University of Illinois Chicago)",
+      "url": "https://med.libretexts.org/Courses/University_of_Illinois_Chicago/Essentials_of_Pharmacology",
+      "type": "textbook",
+      "license": "CC BY 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": ""
+    },
+    {
+      "id": "medlineplus-drug-therapy",
+      "title": "Drug Therapy",
+      "publisher": "National Library of Medicine (MedlinePlus)",
+      "url": "https://medlineplus.gov/drugtherapy.html",
+      "type": "encyclopedia",
+      "license": "Public domain (US government)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": ""
+    },
+    {
+      "id": "fda-drugsfda-glossary",
+      "title": "Drugs@FDA Glossary of Terms",
+      "publisher": "U.S. Food and Drug Administration (FDA)",
+      "url": "https://www.fda.gov/drugs/drug-approvals-and-databases/drugsfda-glossary-terms",
+      "type": "glossary",
+      "license": "Public domain (US government)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": ""
+    },
+    {
+      "id": "fda-population-pk",
+      "title": "Population Pharmacokinetics: Guidance for Industry",
+      "publisher": "U.S. Food and Drug Administration (FDA)",
+      "url": "https://www.fda.gov/media/128793/download",
+      "type": "guidance",
+      "license": "Public domain (US government)",
+      "accessed": "2026-10-25",
+      "status": "accessible",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Consulted; not cited by definitions."
+    }
+  ]
+}

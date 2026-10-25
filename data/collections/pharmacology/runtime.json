@@ -1,0 +1,1403 @@
+{
+  "version": 1,
+  "id": "pharmacology",
+  "name": "Pharmacology",
+  "short": "Pharmacology",
+  "subjects": [
+    {
+      "id": "pharmacokinetics",
+      "name": "Pharmacokinetics",
+      "short": "Pharmacokinetics",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "Absorption",
+          "Movement of a drug from its administration site through body membranes into the bloodstream.",
+          ""
+        ],
+        [
+          "Blood flow",
+          "Circulation at the absorption site that carries absorbed drug into systemic circulation.",
+          ""
+        ],
+        [
+          "Coatings",
+          "Special layers on oral preparations that modify the rate of drug absorption.",
+          ""
+        ],
+        [
+          "Drug formulation",
+          "The physical preparation of a drug that affects how quickly it is absorbed.",
+          ""
+        ],
+        [
+          "First-pass effect",
+          "Metabolism of an oral drug in the liver before it enters systemic circulation.",
+          ""
+        ],
+        [
+          "Food effect",
+          "Influence of food in the gut on the absorption of oral medications.",
+          ""
+        ],
+        [
+          "Gastric motility",
+          "Movement of stomach contents that can speed or slow drug absorption.",
+          ""
+        ],
+        [
+          "Lipid solubility",
+          "Ability of a drug to dissolve in lipids, speeding absorption across membranes.",
+          ""
+        ],
+        [
+          "Molecular size",
+          "Size of drug molecules, with smaller molecules absorbed more readily than large ones.",
+          ""
+        ],
+        [
+          "Route of administration",
+          "The path by which a medication enters the body and becomes available for absorption.",
+          ""
+        ],
+        [
+          "Stomach acidity",
+          "Gastric pH that can alter the absorption of orally administered drugs.",
+          ""
+        ],
+        [
+          "Surface area",
+          "Extent of absorbing membrane, with larger areas allowing faster drug absorption.",
+          ""
+        ],
+        [
+          "Albumin",
+          "Plasma protein that binds many drugs and influences their distribution.",
+          ""
+        ],
+        [
+          "Blood-brain barrier",
+          "Protective system that limits entry of many drugs into the central nervous system.",
+          ""
+        ],
+        [
+          "Cell membrane permeability",
+          "Ease with which a drug crosses cell membranes to reach target tissues.",
+          ""
+        ],
+        [
+          "Distribution",
+          "Movement of a drug through the body after it has been absorbed.",
+          ""
+        ],
+        [
+          "Free drug",
+          "Unbound portion of a drug able to cross membranes and produce effects.",
+          ""
+        ],
+        [
+          "Lipid-soluble drug",
+          "Drug that crosses membranes readily and distributes widely throughout tissues.",
+          ""
+        ],
+        [
+          "Protein binding",
+          "Attachment of drugs to plasma proteins that limits free drug available to tissues.",
+          ""
+        ],
+        [
+          "Tissue perfusion",
+          "Blood flow delivering drug to tissues, affecting concentration at target sites.",
+          ""
+        ],
+        [
+          "Volume of distribution",
+          "Apparent body volume into which a drug disperses after entering circulation.",
+          ""
+        ],
+        [
+          "Water-soluble drug",
+          "Drug that crosses membranes poorly and distributes less widely than lipid-soluble drugs.",
+          ""
+        ],
+        [
+          "Active metabolite",
+          "Product of drug metabolism that retains pharmacologic activity in the body.",
+          ""
+        ],
+        [
+          "Cirrhosis",
+          "Chronic liver disease that reduces drug metabolism and raises toxicity risk.",
+          ""
+        ],
+        [
+          "Cytochrome P450",
+          "Family of liver enzymes that metabolize many lipid-soluble drugs.",
+          ""
+        ],
+        [
+          "Detoxification",
+          "Process by which enzymes reduce or eliminate toxic effects of drugs.",
+          ""
+        ],
+        [
+          "Enzyme induction",
+          "Increase in metabolic enzyme activity that accelerates drug breakdown.",
+          ""
+        ],
+        [
+          "Enzyme inhibition",
+          "Decrease in metabolic enzyme activity that slows drug breakdown.",
+          ""
+        ],
+        [
+          "Hepatic metabolism",
+          "Metabolism of drugs that occurs primarily in the liver by specialized enzymes.",
+          ""
+        ],
+        [
+          "Inactive metabolite",
+          "Product of drug metabolism that lacks pharmacologic activity and is excreted.",
+          ""
+        ],
+        [
+          "Liver enzymes",
+          "Blood markers such as AST and ALT used to assess hepatic function.",
+          ""
+        ],
+        [
+          "Metabolism",
+          "Chemical conversion of a drug into forms that can be more readily eliminated.",
+          ""
+        ],
+        [
+          "Biliary excretion",
+          "Elimination of drugs or metabolites through bile into the feces.",
+          ""
+        ],
+        [
+          "Creatinine clearance",
+          "Measure of kidney filtration rate used to assess drug elimination capacity.",
+          ""
+        ],
+        [
+          "Excretion",
+          "Elimination of drugs and their metabolites from the body.",
+          ""
+        ],
+        [
+          "Fecal excretion",
+          "Elimination of drug metabolites from the body through the stool.",
+          ""
+        ],
+        [
+          "Glomerular filtration",
+          "Kidney process that filters water-soluble drugs into urine for elimination.",
+          ""
+        ],
+        [
+          "Pulmonary excretion",
+          "Elimination of volatile drugs through the lungs during respiration.",
+          ""
+        ],
+        [
+          "Renal excretion",
+          "Elimination of drugs and metabolites primarily through the kidneys and urine.",
+          ""
+        ],
+        [
+          "Renal impairment",
+          "Reduced kidney function that decreases drug excretion and increases toxicity risk.",
+          ""
+        ],
+        [
+          "Urine pH",
+          "Acidity of urine that can alter renal elimination of certain drugs.",
+          ""
+        ],
+        [
+          "Bioavailability",
+          "Fraction of an administered dose that reaches systemic circulation unchanged.",
+          ""
+        ],
+        [
+          "Clearance",
+          "Volume of blood cleared of drug per unit time by elimination processes.",
+          "CL"
+        ],
+        [
+          "Drug accumulation",
+          "Build-up of drug in the body when dosing exceeds elimination.",
+          ""
+        ],
+        [
+          "Duration of action",
+          "Length of time a drug produces a therapeutic response.",
+          ""
+        ],
+        [
+          "Half-life",
+          "Time required for serum drug concentration to decrease by one half.",
+          "t1/2"
+        ],
+        [
+          "Minimum effective concentration",
+          "Lowest drug concentration that produces a therapeutic response.",
+          "MEC"
+        ],
+        [
+          "Onset of action",
+          "Time required for a drug to produce its first therapeutic response.",
+          ""
+        ],
+        [
+          "Peak effect",
+          "Time required for a drug to reach its maximum therapeutic response.",
+          ""
+        ],
+        [
+          "Steady state",
+          "Equilibrium where drug administration rate equals elimination rate.",
+          ""
+        ],
+        [
+          "Therapeutic index",
+          "Range of doses that are both safe and effective for a drug.",
+          ""
+        ],
+        [
+          "Therapeutic window",
+          "Range of drug concentrations producing benefit without causing toxicity.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "pharmacodynamics",
+      "name": "Pharmacodynamics",
+      "short": "Pharmacodynamics",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Affinity",
+          "Strength of binding between a drug and its receptor.",
+          ""
+        ],
+        [
+          "Endogenous ligand",
+          "A signaling molecule produced inside the body that binds a receptor.",
+          ""
+        ],
+        [
+          "Enzyme",
+          "A protein target that many drugs inhibit to alter cellular function.",
+          ""
+        ],
+        [
+          "Exogenous ligand",
+          "A substance from outside the body, such as a drug, that binds a receptor.",
+          ""
+        ],
+        [
+          "Ion channel",
+          "A membrane gate that opens or closes to allow ions or drugs to pass.",
+          ""
+        ],
+        [
+          "Ligand",
+          "Any molecule that binds to a receptor to produce or block a response.",
+          ""
+        ],
+        [
+          "Receptor",
+          "A protein on or in a cell that binds a specific messenger and triggers a response.",
+          ""
+        ],
+        [
+          "Receptor subtype",
+          "A variant form of a receptor with distinct tissue distribution or drug sensitivity.",
+          ""
+        ],
+        [
+          "Second messenger",
+          "An intracellular signaling molecule activated after a drug binds its receptor.",
+          ""
+        ],
+        [
+          "Selectivity",
+          "Preference of a drug for binding one receptor type over others.",
+          ""
+        ],
+        [
+          "Signal transduction",
+          "The intracellular process that converts receptor binding into a cellular response.",
+          ""
+        ],
+        [
+          "Agonist",
+          "A drug that binds a receptor and activates it to produce a biological effect.",
+          ""
+        ],
+        [
+          "Allosteric modulator",
+          "A drug that binds a receptor at a site other than the active site.",
+          ""
+        ],
+        [
+          "Antagonist",
+          "A drug that binds a receptor without activating it, blocking other molecules.",
+          ""
+        ],
+        [
+          "Competitive antagonist",
+          "An antagonist that reversibly competes with an agonist for the same receptor site.",
+          ""
+        ],
+        [
+          "Drug-receptor complex",
+          "The temporary binding of a drug to its receptor that initiates a response.",
+          ""
+        ],
+        [
+          "Full agonist",
+          "An agonist that produces the maximal possible receptor response.",
+          ""
+        ],
+        [
+          "Irreversible antagonist",
+          "An antagonist that binds covalently and permanently deactivates its receptor.",
+          ""
+        ],
+        [
+          "Mixed agonist-antagonist",
+          "A drug that activates one receptor type while blocking another.",
+          ""
+        ],
+        [
+          "Noncompetitive antagonist",
+          "An antagonist that binds a different site and prevents maximal receptor response.",
+          ""
+        ],
+        [
+          "Partial agonist",
+          "An agonist that activates a receptor but produces a weaker effect than a full agonist.",
+          ""
+        ],
+        [
+          "Reversible binding",
+          "Drug-receptor attachment that can dissociate depending on affinity.",
+          ""
+        ],
+        [
+          "Ceiling effect",
+          "The maximal response a drug can produce regardless of further dose increases.",
+          ""
+        ],
+        [
+          "Dose-response curve",
+          "A graph relating drug concentration to the magnitude of biological response.",
+          ""
+        ],
+        [
+          "EC50",
+          "The concentration producing half of a drug's maximal response.",
+          "EC50"
+        ],
+        [
+          "ED50",
+          "The dose producing the intended effect in half of a population.",
+          "ED50"
+        ],
+        [
+          "Efficacy",
+          "The maximum effect a drug can produce at a tolerable dose.",
+          ""
+        ],
+        [
+          "Emax",
+          "The greatest response a drug can achieve on its dose-response curve.",
+          "Emax"
+        ],
+        [
+          "Graded dose-response",
+          "A continuous increase in response as drug dose increases in one subject.",
+          ""
+        ],
+        [
+          "Potency",
+          "The dose or concentration needed to produce a given drug effect.",
+          ""
+        ],
+        [
+          "Quantal dose-response",
+          "The distribution of effective doses across a population.",
+          ""
+        ],
+        [
+          "Slope",
+          "The change in drug response per unit change in dose.",
+          ""
+        ],
+        [
+          "Adverse drug reaction",
+          "A harmful unintended response to a drug at therapeutic doses.",
+          ""
+        ],
+        [
+          "Area under the curve",
+          "Total drug exposure of the body to a drug over time.",
+          ""
+        ],
+        [
+          "Drug toxicity",
+          "Harmful effects from excessive drug accumulation in the body.",
+          ""
+        ],
+        [
+          "Duration of action",
+          "The length of time a drug produces a therapeutic response.",
+          ""
+        ],
+        [
+          "LD50",
+          "The dose lethal to half of a tested population.",
+          "LD50"
+        ],
+        [
+          "Margin of safety",
+          "The gap between effective and toxic drug doses.",
+          ""
+        ],
+        [
+          "Minimum effective concentration",
+          "The lowest drug level that produces the desired therapeutic effect.",
+          ""
+        ],
+        [
+          "Onset of action",
+          "The time needed after dosing for a therapeutic response to begin.",
+          ""
+        ],
+        [
+          "Peak effect",
+          "The time required for a drug to produce its maximum therapeutic response.",
+          ""
+        ],
+        [
+          "Side effect",
+          "A mild predictable secondary effect of a drug.",
+          ""
+        ],
+        [
+          "Therapeutic index",
+          "The ratio between toxic and effective drug doses indicating safety.",
+          ""
+        ],
+        [
+          "Therapeutic window",
+          "The dose range that is both safe and effective.",
+          ""
+        ],
+        [
+          "Drug accumulation",
+          "Buildup of a drug in the body when elimination is slower than dosing.",
+          ""
+        ],
+        [
+          "Drug dependence",
+          "A physiological or psychological need for a drug.",
+          ""
+        ],
+        [
+          "Drug tolerance",
+          "The need for higher drug doses to achieve the same effect.",
+          ""
+        ],
+        [
+          "Overdose",
+          "Ingestion of an excessive amount of a drug causing toxicity.",
+          ""
+        ],
+        [
+          "Physical dependence",
+          "A physiological need for a drug whose absence causes withdrawal symptoms.",
+          ""
+        ],
+        [
+          "Psychological dependence",
+          "An intense urge to use a drug despite harmful consequences.",
+          ""
+        ],
+        [
+          "Therapeutic effect",
+          "The intended beneficial effect produced by a drug.",
+          ""
+        ],
+        [
+          "Withdrawal",
+          "Symptoms that occur when a dependent drug is stopped.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "drug-classes",
+      "name": "Major Drug Classes",
+      "short": "Drug classes",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "ACE inhibitor",
+          "Blocks conversion of angiotensin I to II, lowering blood pressure and afterload.",
+          ""
+        ],
+        [
+          "ARB",
+          "Blocks angiotensin II receptors to produce vasodilation and lower blood pressure.",
+          ""
+        ],
+        [
+          "Anticoagulant",
+          "Interferes with clotting factors to prevent formation or extension of blood clots.",
+          ""
+        ],
+        [
+          "Antiplatelet",
+          "Inhibits platelet aggregation to reduce risk of arterial thrombosis.",
+          ""
+        ],
+        [
+          "Beta blocker",
+          "Blocks beta-adrenergic receptors, reducing heart rate, contractility, and blood pressure.",
+          ""
+        ],
+        [
+          "Calcium channel blocker",
+          "Inhibits calcium entry into vascular smooth muscle, causing vasodilation and lower pressure.",
+          ""
+        ],
+        [
+          "Cardiac glycoside",
+          "Increases myocardial contractility and slows heart rate in heart failure.",
+          ""
+        ],
+        [
+          "Loop diuretic",
+          "Powerful diuretic acting on the loop of Henle to remove excess fluid.",
+          ""
+        ],
+        [
+          "Nitrate",
+          "Vasodilates coronary vessels to relieve angina and reduce cardiac workload.",
+          ""
+        ],
+        [
+          "Potassium-sparing diuretic",
+          "Diuretic that excretes sodium while retaining potassium to prevent hypokalemia.",
+          ""
+        ],
+        [
+          "Statin",
+          "Inhibits HMG-CoA reductase to lower cholesterol and reduce cardiovascular risk.",
+          ""
+        ],
+        [
+          "Thiazide diuretic",
+          "Promotes sodium and water excretion in the distal tubule to lower blood pressure.",
+          ""
+        ],
+        [
+          "Thrombolytic",
+          "Activates plasminogen to dissolve existing clots in acute events.",
+          ""
+        ],
+        [
+          "Anticonvulsant",
+          "Stabilizes neuronal membranes and raises seizure threshold to prevent seizures.",
+          ""
+        ],
+        [
+          "Antiparkinsonian",
+          "Restores dopamine activity to reduce tremor and rigidity in Parkinson disease.",
+          ""
+        ],
+        [
+          "Atypical antipsychotic",
+          "Antagonizes serotonin and dopamine receptors with fewer extrapyramidal effects.",
+          ""
+        ],
+        [
+          "Benzodiazepine",
+          "Enhances GABA activity to produce anxiolysis, sedation, and muscle relaxation.",
+          ""
+        ],
+        [
+          "CNS stimulant",
+          "Increases catecholamine activity to improve alertness and attention.",
+          ""
+        ],
+        [
+          "MAOI",
+          "Inhibits monoamine oxidase to increase neurotransmitter levels in depression.",
+          ""
+        ],
+        [
+          "Mood stabilizer",
+          "Modulates neuronal signaling to control mood swings in bipolar disorder.",
+          ""
+        ],
+        [
+          "Opioid analgesic",
+          "Agonizes mu opioid receptors to relieve moderate to severe pain.",
+          ""
+        ],
+        [
+          "SNRI",
+          "Inhibits reuptake of serotonin and norepinephrine for depression and pain.",
+          ""
+        ],
+        [
+          "SSRI",
+          "Selectively inhibits serotonin reuptake to treat depression and anxiety.",
+          ""
+        ],
+        [
+          "Sedative-hypnotic",
+          "Depresses central nervous system activity to induce sleep or calm.",
+          ""
+        ],
+        [
+          "TCA",
+          "Tricyclic antidepressant blocking reuptake of norepinephrine and serotonin.",
+          ""
+        ],
+        [
+          "Typical antipsychotic",
+          "Blocks dopamine D2 receptors to reduce positive psychotic symptoms.",
+          ""
+        ],
+        [
+          "Aminoglycoside",
+          "Bactericidal protein synthesis inhibitor used mainly for gram-negative infections.",
+          ""
+        ],
+        [
+          "Antimalarial",
+          "Kills or suppresses Plasmodium parasites to treat or prevent malaria.",
+          ""
+        ],
+        [
+          "Antiretroviral",
+          "Suppresses HIV replication through multiple mechanisms to reduce viral load.",
+          ""
+        ],
+        [
+          "Antitubercular",
+          "Combination therapy targeting Mycobacterium tuberculosis to cure infection.",
+          ""
+        ],
+        [
+          "Azole antifungal",
+          "Inhibits fungal ergosterol synthesis, disrupting the cell membrane.",
+          ""
+        ],
+        [
+          "Cephalosporin",
+          "Beta-lactam antibiotic with broader spectrum against gram-positive and gram-negative bacteria.",
+          ""
+        ],
+        [
+          "Fluoroquinolone",
+          "Inhibits bacterial DNA gyrase and topoisomerase to block replication.",
+          ""
+        ],
+        [
+          "Macrolide",
+          "Inhibits bacterial protein synthesis by binding the 50S ribosomal subunit.",
+          ""
+        ],
+        [
+          "Nucleoside analog antiviral",
+          "Mimics nucleosides to inhibit viral DNA or RNA polymerase replication.",
+          ""
+        ],
+        [
+          "Penicillin",
+          "Beta-lactam inhibiting bacterial cell wall synthesis, causing cell lysis.",
+          ""
+        ],
+        [
+          "Sulfonamide",
+          "Inhibits bacterial folic acid synthesis to stop growth of susceptible organisms.",
+          ""
+        ],
+        [
+          "Tetracycline",
+          "Binds the 30S ribosomal subunit to inhibit bacterial protein synthesis.",
+          ""
+        ],
+        [
+          "Antithyroid drug",
+          "Inhibits thyroid hormone synthesis to treat hyperthyroidism in affected clients.",
+          ""
+        ],
+        [
+          "Biguanide",
+          "Decreases hepatic glucose production and improves insulin sensitivity.",
+          ""
+        ],
+        [
+          "Bisphosphonate",
+          "Inhibits osteoclast-mediated bone resorption to treat and prevent osteoporosis.",
+          ""
+        ],
+        [
+          "Corticosteroid",
+          "Reduces inflammation and immune activity for many inflammatory conditions.",
+          ""
+        ],
+        [
+          "DPP-4 inhibitor",
+          "Enhances incretin hormones to increase insulin and decrease glucagon.",
+          ""
+        ],
+        [
+          "GLP-1 receptor agonist",
+          "Mimics incretin to stimulate insulin and slow gastric emptying.",
+          ""
+        ],
+        [
+          "Hormonal contraceptive",
+          "Suppresses ovulation using estrogen and progestin to prevent pregnancy.",
+          ""
+        ],
+        [
+          "Insulin",
+          "Lowers blood glucose by promoting cellular uptake and storage of glucose.",
+          ""
+        ],
+        [
+          "Levothyroxine",
+          "Synthetic thyroid hormone replacing deficient thyroxine in hypothyroidism.",
+          ""
+        ],
+        [
+          "SERM",
+          "Selectively modulates estrogen receptors in different tissues throughout the body.",
+          ""
+        ],
+        [
+          "SGLT2 inhibitor",
+          "Blocks renal glucose reabsorption, promoting urinary glucose excretion.",
+          ""
+        ],
+        [
+          "Sulfonylurea",
+          "Stimulates pancreatic beta cells to release insulin and lower glucose.",
+          ""
+        ],
+        [
+          "Acetaminophen",
+          "Reduces pain and fever centrally without significant anti-inflammatory effect.",
+          ""
+        ],
+        [
+          "Antacid",
+          "Neutralizes stomach acid to relieve heartburn and indigestion.",
+          ""
+        ],
+        [
+          "Antidiarrheal",
+          "Slows intestinal motility to reduce frequency of loose stools.",
+          ""
+        ],
+        [
+          "Antiemetic",
+          "Prevents or treats nausea and vomiting by acting on vomiting centers.",
+          ""
+        ],
+        [
+          "Antitussive",
+          "Suppresses the cough reflex to relieve nonproductive cough.",
+          ""
+        ],
+        [
+          "Bronchodilator",
+          "Relaxes bronchial smooth muscle to improve airflow in asthma and COPD.",
+          ""
+        ],
+        [
+          "Expectorant",
+          "Thins and loosens respiratory secretions to ease productive cough.",
+          ""
+        ],
+        [
+          "H2 blocker",
+          "Blocks histamine H2 receptors to decrease gastric acid production.",
+          ""
+        ],
+        [
+          "Inhaled corticosteroid",
+          "Reduces airway inflammation to control asthma and prevent exacerbations.",
+          ""
+        ],
+        [
+          "Laxative",
+          "Promotes bowel movement to relieve constipation in affected clients.",
+          ""
+        ],
+        [
+          "NSAID",
+          "Inhibits prostaglandin synthesis to relieve pain, fever, and inflammation.",
+          ""
+        ],
+        [
+          "PPI",
+          "Irreversibly inhibits gastric proton pump to reduce acid secretion.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "adverse-effects-and-interactions",
+      "name": "Adverse Effects and Drug Interactions",
+      "short": "Adverse effects",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Adverse drug event",
+          "Any harm experienced by a person that results from exposure to a medication.",
+          ""
+        ],
+        [
+          "Adverse drug reaction",
+          "An undesirable, unexpected, and potentially dangerous response to a drug at therapeutic doses.",
+          ""
+        ],
+        [
+          "Adverse effect",
+          "An undesired effect of a drug that may occur alongside its intended therapeutic action.",
+          ""
+        ],
+        [
+          "Allergic reaction",
+          "An immune-mediated response that occurs when the body reacts to a drug or substance.",
+          ""
+        ],
+        [
+          "Anaphylaxis",
+          "A rare, life-threatening allergic reaction causing breathing difficulty and cardiovascular collapse.",
+          ""
+        ],
+        [
+          "Drug allergy",
+          "An immune-mediated adverse reaction to a medication that can range from rash to anaphylaxis.",
+          ""
+        ],
+        [
+          "Drug intolerance",
+          "A non-immune adverse reaction where a drug's effects become unacceptable at normal doses.",
+          ""
+        ],
+        [
+          "Hypersensitivity",
+          "An exaggerated immune response to a drug that can produce rash, fever, or anaphylaxis.",
+          ""
+        ],
+        [
+          "Idiosyncratic reaction",
+          "An unusual, unpredictable drug response often related to individual genetic or metabolic factors.",
+          ""
+        ],
+        [
+          "Paradoxical effect",
+          "A drug effect that is opposite to the intended therapeutic effect, such as stimulant-induced drowsiness.",
+          ""
+        ],
+        [
+          "Side effect",
+          "A secondary and usually predictable effect produced by a drug at therapeutic doses.",
+          ""
+        ],
+        [
+          "Additive effect",
+          "Combined drug effect equal to the sum of the individual effects of each drug.",
+          ""
+        ],
+        [
+          "Antagonism",
+          "An interaction where one drug reduces or blocks the effect of another drug.",
+          ""
+        ],
+        [
+          "Drug-drug interaction",
+          "A change in a drug's effect caused by concurrent use of another drug.",
+          ""
+        ],
+        [
+          "Enzyme induction",
+          "Increased activity of drug-metabolizing enzymes that lowers concentrations of affected drugs.",
+          ""
+        ],
+        [
+          "Enzyme inhibition",
+          "Decreased activity of drug-metabolizing enzymes that raises concentrations of affected drugs.",
+          ""
+        ],
+        [
+          "Pharmacodynamic interaction",
+          "An interaction that changes drug effects at the receptor or target-organ level.",
+          ""
+        ],
+        [
+          "Pharmacokinetic interaction",
+          "An interaction that alters absorption, distribution, metabolism, or excretion of a drug.",
+          ""
+        ],
+        [
+          "Polypharmacy",
+          "The concurrent use of multiple medications, which increases interaction and adverse-effect risk.",
+          ""
+        ],
+        [
+          "Potentiation",
+          "An interaction where one drug enhances the effect of another without having that effect itself.",
+          ""
+        ],
+        [
+          "Synergistic effect",
+          "Combined drug effect that is greater than the sum of each drug's individual effect.",
+          ""
+        ],
+        [
+          "Alcohol interaction",
+          "A harmful or amplified effect that occurs when alcohol is combined with a medication.",
+          ""
+        ],
+        [
+          "Contraindication",
+          "A condition or factor that makes a particular drug inadvisable or unsafe to use.",
+          ""
+        ],
+        [
+          "Drug-disease interaction",
+          "A situation where a drug worsens or complicates an existing medical condition.",
+          ""
+        ],
+        [
+          "Drug-food interaction",
+          "A change in a drug's effect or absorption caused by food, beverages, or nutrients.",
+          ""
+        ],
+        [
+          "Drug-nutrient interaction",
+          "An interaction between a medication and vitamins, minerals, or other dietary components.",
+          ""
+        ],
+        [
+          "Food effect",
+          "The influence of food on drug absorption, which can increase, decrease, or delay it.",
+          ""
+        ],
+        [
+          "Grapefruit interaction",
+          "Grapefruit juice inhibiting intestinal enzymes and raising levels of certain drugs.",
+          ""
+        ],
+        [
+          "Herb-drug interaction",
+          "An interaction between herbal supplements and medications that can alter drug effects.",
+          ""
+        ],
+        [
+          "Malabsorption",
+          "Impaired absorption of nutrients or drugs from the gastrointestinal tract.",
+          ""
+        ],
+        [
+          "Precaution",
+          "A warning to use a drug carefully because of possible risks in certain conditions.",
+          ""
+        ],
+        [
+          "Antidote",
+          "A substance given to counteract the toxic effects of a drug or poison.",
+          ""
+        ],
+        [
+          "Dependence",
+          "A state where the body or mind requires a drug to function normally or avoid withdrawal.",
+          ""
+        ],
+        [
+          "Lethal dose",
+          "The amount of a drug that can cause death in a given proportion of exposed individuals.",
+          ""
+        ],
+        [
+          "Overdose",
+          "Taking more than the recommended or safe amount of a drug, risking serious harm.",
+          ""
+        ],
+        [
+          "Serum drug level",
+          "The concentration of a drug measured in blood to guide safe and effective dosing.",
+          ""
+        ],
+        [
+          "Therapeutic index",
+          "The ratio of the toxic dose to the effective dose; higher values indicate safer drugs.",
+          ""
+        ],
+        [
+          "Tolerance",
+          "Reduced drug response over time, requiring higher doses to achieve the same effect.",
+          ""
+        ],
+        [
+          "Toxic dose",
+          "The amount of a drug that produces harmful or poisonous effects in the body.",
+          ""
+        ],
+        [
+          "Toxicity",
+          "Harmful effects from excessive drug levels, often when metabolism or excretion is impaired.",
+          ""
+        ],
+        [
+          "Withdrawal",
+          "Symptoms that occur when a regularly used drug is reduced or stopped abruptly.",
+          ""
+        ],
+        [
+          "Adverse event reporting",
+          "Submitting suspected harmful drug reactions to regulatory agencies for safety monitoring.",
+          ""
+        ],
+        [
+          "Black box warning",
+          "The FDA's strongest safety warning highlighting serious or life-threatening drug risks.",
+          ""
+        ],
+        [
+          "Drug recall",
+          "A manufacturer or regulator action to remove a defective or unsafe drug from the market.",
+          ""
+        ],
+        [
+          "FAERS",
+          "The FDA database that collects adverse event and medication error reports.",
+          ""
+        ],
+        [
+          "MedWatch",
+          "The FDA program for reporting adverse events and product problems involving medications.",
+          ""
+        ],
+        [
+          "Medication error",
+          "Any preventable event that may cause inappropriate medication use or patient harm.",
+          ""
+        ],
+        [
+          "Medication guide",
+          "FDA-required patient information highlighting serious risks and safe use of specific drugs.",
+          ""
+        ],
+        [
+          "Medication reconciliation",
+          "The process of verifying and updating a patient's accurate medication list across care transitions.",
+          ""
+        ],
+        [
+          "Pharmacovigilance",
+          "The science and activities of detecting, assessing, and preventing adverse drug effects.",
+          ""
+        ],
+        [
+          "Postmarketing surveillance",
+          "Ongoing monitoring of drug safety after a medication has been approved for use.",
+          ""
+        ],
+        [
+          "REMS",
+          "A risk evaluation and mitigation strategy required to ensure safe use of certain drugs.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "special-populations",
+      "name": "Special Populations",
+      "short": "Special populations",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Body mass sensitivity",
+          "Small body mass in children increases drug concentration and sensitivity to effects.",
+          ""
+        ],
+        [
+          "Body surface area",
+          "A measure used to calculate drug doses based on a child's body size.",
+          ""
+        ],
+        [
+          "Immature hepatic metabolism",
+          "Infants and children have underdeveloped livers, slowing drug metabolism and risking toxicity.",
+          ""
+        ],
+        [
+          "Immature renal excretion",
+          "Underdeveloped kidneys in young patients reduce drug clearance and prolong drug effects.",
+          ""
+        ],
+        [
+          "KIDs List",
+          "A list identifying drugs that may be harmful or inappropriate for pediatric patients.",
+          ""
+        ],
+        [
+          "Limited pediatric testing",
+          "Most drug data come from adults, leaving pediatric safety and dosing less studied.",
+          ""
+        ],
+        [
+          "Off-label pediatric use",
+          "Use of drugs in children without pediatric-specific FDA-approved labeling or dosing.",
+          ""
+        ],
+        [
+          "Pediatric clinical trials limitation",
+          "Ethical and consent challenges limit drug research in infants and children.",
+          ""
+        ],
+        [
+          "Pediatric dosing",
+          "Dosing calculated by milligrams per kilogram of body weight or body surface area.",
+          ""
+        ],
+        [
+          "Pediatric medication safety",
+          "Double-check calculations and use the smallest syringe for precise pediatric doses.",
+          ""
+        ],
+        [
+          "Weight-based dosing",
+          "Drug dose determined by multiplying milligrams per kilogram by body weight.",
+          ""
+        ],
+        [
+          "Adverse drug reactions in elderly",
+          "Older adults experience adverse drug reactions more frequently than younger adults.",
+          ""
+        ],
+        [
+          "Age-related pharmacokinetic changes",
+          "Aging alters drug absorption, distribution, metabolism, and excretion processes.",
+          ""
+        ],
+        [
+          "Altered drug absorption in older adults",
+          "Slower gut transit and lower gastric acidity change oral drug absorption.",
+          ""
+        ],
+        [
+          "Beers Criteria",
+          "A list of potentially inappropriate medications for use in older adults.",
+          ""
+        ],
+        [
+          "Declining hepatic function",
+          "Reduced liver function in older adults slows drug metabolism and prolongs effects.",
+          ""
+        ],
+        [
+          "Declining renal function",
+          "Reduced kidney function in older adults slows drug excretion and raises toxicity.",
+          ""
+        ],
+        [
+          "Medication reconciliation",
+          "Reviewing all medications to identify interactions, duplications, and needed changes.",
+          ""
+        ],
+        [
+          "Narrow therapeutic index risk",
+          "Small dose changes in older adults can cause toxicity or subtherapeutic effects.",
+          ""
+        ],
+        [
+          "Polypharmacy",
+          "Concurrent use of multiple medications, increasing interaction and adverse effect risk.",
+          ""
+        ],
+        [
+          "Potentially inappropriate medication",
+          "A drug whose risks in older adults may outweigh its expected benefits.",
+          ""
+        ],
+        [
+          "Silver tsunami",
+          "The rapid growth of the older adult population increasing healthcare demand.",
+          ""
+        ],
+        [
+          "Fetal drug exposure",
+          "Assumption that any medication taken during pregnancy can reach the fetus.",
+          ""
+        ],
+        [
+          "Increased GFR in pregnancy",
+          "Doubled renal blood flow in pregnancy accelerates drug clearance from body.",
+          ""
+        ],
+        [
+          "Lactation drug transfer",
+          "Passage of drugs into breast milk, potentially exposing the nursing infant.",
+          ""
+        ],
+        [
+          "Lipid-soluble drug passage",
+          "Lipid-soluble drugs cross the placenta more easily than protein-bound drugs.",
+          ""
+        ],
+        [
+          "Physiologic changes in pregnancy",
+          "Pregnancy alters absorption, distribution, metabolism, and excretion of drugs.",
+          ""
+        ],
+        [
+          "Placental drug transfer",
+          "Movement of drugs across the placenta from pregnant client to fetus.",
+          ""
+        ],
+        [
+          "Pregnancy and Lactation Labeling Rule",
+          "FDA rule replacing pregnancy categories with narrative drug labeling guidance.",
+          ""
+        ],
+        [
+          "Pregnancy category system",
+          "Legacy FDA ABCDX classification of fetal risk for drugs during pregnancy.",
+          ""
+        ],
+        [
+          "Risk-benefit in pregnancy",
+          "Weighing maternal and fetal benefits against risks before giving drugs.",
+          ""
+        ],
+        [
+          "Teratogenic drug",
+          "A drug known to cause harm to embryonic or fetal development.",
+          ""
+        ],
+        [
+          "Blood urea nitrogen",
+          "A blood test measuring urea nitrogen to assess kidney function.",
+          ""
+        ],
+        [
+          "Chronic kidney disease dosing",
+          "Dose modifications needed for patients with long-standing kidney disease.",
+          ""
+        ],
+        [
+          "Dialysis and drug removal",
+          "Hemodialysis can remove some drugs, requiring post-dialysis dosing adjustments.",
+          ""
+        ],
+        [
+          "Dosage adjustment in renal impairment",
+          "Modifying dose or frequency to prevent toxicity in kidney disease.",
+          ""
+        ],
+        [
+          "Drug accumulation in renal impairment",
+          "Drugs build up when kidneys fail to excrete them, causing toxicity.",
+          ""
+        ],
+        [
+          "Glomerular filtration rate",
+          "Volume of blood filtered by kidneys per minute, indicating renal function.",
+          ""
+        ],
+        [
+          "Nephrotoxic drugs",
+          "Drugs that can damage kidney tissue or worsen renal function.",
+          ""
+        ],
+        [
+          "Reduced drug excretion",
+          "Impaired kidneys clear drugs more slowly, increasing blood drug levels.",
+          ""
+        ],
+        [
+          "Renal clearance",
+          "Efficiency of kidneys in removing a drug from the bloodstream.",
+          ""
+        ],
+        [
+          "Serum creatinine",
+          "A waste product measured in blood to evaluate renal function.",
+          ""
+        ],
+        [
+          "Acetaminophen liver risk",
+          "Acetaminophen requires caution or avoidance in underlying liver disease.",
+          ""
+        ],
+        [
+          "Alanine aminotransferase",
+          "A liver enzyme used to detect hepatic injury or dysfunction.",
+          ""
+        ],
+        [
+          "Aspartate aminotransferase",
+          "An enzyme whose elevation may indicate liver cell injury or damage.",
+          ""
+        ],
+        [
+          "Cirrhosis and drug metabolism",
+          "Cirrhotic livers metabolize drugs less effectively, prolonging drug effects.",
+          ""
+        ],
+        [
+          "Drug accumulation in liver disease",
+          "Reduced metabolism lets drugs build up, increasing toxicity risk.",
+          ""
+        ],
+        [
+          "First-pass effect reduction",
+          "Liver disease decreases first-pass metabolism, raising oral drug bioavailability.",
+          ""
+        ],
+        [
+          "Hepatic metabolism reduction",
+          "Liver disease slows drug metabolism, increasing systemic drug concentrations.",
+          ""
+        ],
+        [
+          "Hepatotoxic drugs",
+          "Drugs that can injure or damage the liver tissue.",
+          ""
+        ],
+        [
+          "Liver enzymes",
+          "AST and ALT elevations indicate hepatic dysfunction or liver damage.",
+          ""
+        ],
+        [
+          "Protein binding changes",
+          "Liver disease alters plasma protein binding, increasing free drug levels.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

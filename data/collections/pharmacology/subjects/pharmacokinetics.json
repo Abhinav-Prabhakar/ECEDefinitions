@@ -1,0 +1,916 @@
+{
+  "version": 1,
+  "id": "pharmacokinetics",
+  "collectionId": "pharmacology",
+  "section": "core",
+  "name": "Pharmacokinetics",
+  "shortName": "Pharmacokinetics",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Absorption"
+    },
+    {
+      "number": 2,
+      "title": "Distribution"
+    },
+    {
+      "number": 3,
+      "title": "Metabolism"
+    },
+    {
+      "number": 4,
+      "title": "Excretion"
+    },
+    {
+      "number": 5,
+      "title": "Bioavailability and half-life"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "absorption",
+      "term": "Absorption",
+      "definition": "Movement of a drug from its administration site through body membranes into the bloodstream.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Distribution",
+        "Metabolism",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "blood-flow",
+      "term": "Blood flow",
+      "definition": "Circulation at the absorption site that carries absorbed drug into systemic circulation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Tissue perfusion",
+        "Surface area",
+        "Gastric motility"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "coatings",
+      "term": "Coatings",
+      "definition": "Special layers on oral preparations that modify the rate of drug absorption.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Drug formulation",
+        "Food effect",
+        "Stomach acidity"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "drug-formulation",
+      "term": "Drug formulation",
+      "definition": "The physical preparation of a drug that affects how quickly it is absorbed.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Route of administration",
+        "Coatings"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "first-pass-effect",
+      "term": "First-pass effect",
+      "definition": "Metabolism of an oral drug in the liver before it enters systemic circulation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Bioavailability",
+        "Hepatic metabolism",
+        "Distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "food-effect",
+      "term": "Food effect",
+      "definition": "Influence of food in the gut on the absorption of oral medications.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Stomach acidity",
+        "Gastric motility",
+        "Coatings"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "gastric-motility",
+      "term": "Gastric motility",
+      "definition": "Movement of stomach contents that can speed or slow drug absorption.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Stomach acidity",
+        "Surface area",
+        "Food effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "lipid-solubility",
+      "term": "Lipid solubility",
+      "definition": "Ability of a drug to dissolve in lipids, speeding absorption across membranes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Water-soluble drug",
+        "Molecular size",
+        "Protein binding"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "molecular-size",
+      "term": "Molecular size",
+      "definition": "Size of drug molecules, with smaller molecules absorbed more readily than large ones.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Lipid solubility",
+        "Surface area",
+        "Blood flow"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "route-of-administration",
+      "term": "Route of administration",
+      "definition": "The path by which a medication enters the body and becomes available for absorption.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Drug formulation",
+        "Bioavailability"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "stomach-acidity",
+      "term": "Stomach acidity",
+      "definition": "Gastric pH that can alter the absorption of orally administered drugs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Urine pH",
+        "Gastric motility",
+        "Food effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "surface-area",
+      "term": "Surface area",
+      "definition": "Extent of absorbing membrane, with larger areas allowing faster drug absorption.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Absorption",
+      "aliases": [],
+      "confusables": [
+        "Molecular size",
+        "Lipid solubility",
+        "Gastric motility"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "albumin",
+      "term": "Albumin",
+      "definition": "Plasma protein that binds many drugs and influences their distribution.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Protein binding",
+        "Free drug",
+        "Volume of distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "blood-brain-barrier",
+      "term": "Blood-brain barrier",
+      "definition": "Protective system that limits entry of many drugs into the central nervous system.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Cell membrane permeability",
+        "Lipid solubility",
+        "Protein binding"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "cell-membrane-permeability",
+      "term": "Cell membrane permeability",
+      "definition": "Ease with which a drug crosses cell membranes to reach target tissues.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Lipid solubility",
+        "Blood-brain barrier",
+        "Protein binding"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "distribution",
+      "term": "Distribution",
+      "definition": "Movement of a drug through the body after it has been absorbed.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Absorption",
+        "Metabolism",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "free-drug",
+      "term": "Free drug",
+      "definition": "Unbound portion of a drug able to cross membranes and produce effects.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Protein binding",
+        "Albumin",
+        "Volume of distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "lipid-soluble-distribution",
+      "term": "Lipid-soluble drug",
+      "definition": "Drug that crosses membranes readily and distributes widely throughout tissues.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Water-soluble drug",
+        "Cell membrane permeability",
+        "Protein binding"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "protein-binding",
+      "term": "Protein binding",
+      "definition": "Attachment of drugs to plasma proteins that limits free drug available to tissues.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Free drug",
+        "Albumin",
+        "Lipid solubility"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "tissue-perfusion",
+      "term": "Tissue perfusion",
+      "definition": "Blood flow delivering drug to tissues, affecting concentration at target sites.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Blood flow",
+        "Protein binding",
+        "Volume of distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "volume-of-distribution",
+      "term": "Volume of distribution",
+      "definition": "Apparent body volume into which a drug disperses after entering circulation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Protein binding",
+        "Tissue perfusion",
+        "Clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "water-soluble-drug",
+      "term": "Water-soluble drug",
+      "definition": "Drug that crosses membranes poorly and distributes less widely than lipid-soluble drugs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Distribution",
+      "aliases": [],
+      "confusables": [
+        "Lipid-soluble drug",
+        "Cell membrane permeability",
+        "Protein binding"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "active-metabolite",
+      "term": "Active metabolite",
+      "definition": "Product of drug metabolism that retains pharmacologic activity in the body.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Inactive metabolite",
+        "Metabolism",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "cirrhosis",
+      "term": "Cirrhosis",
+      "definition": "Chronic liver disease that reduces drug metabolism and raises toxicity risk.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Renal impairment",
+        "Hepatic metabolism",
+        "Enzyme inhibition"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "cytochrome-p450",
+      "term": "Cytochrome P450",
+      "definition": "Family of liver enzymes that metabolize many lipid-soluble drugs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Hepatic metabolism",
+        "Enzyme induction",
+        "Enzyme inhibition"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "detoxification",
+      "term": "Detoxification",
+      "definition": "Process by which enzymes reduce or eliminate toxic effects of drugs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Metabolism",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "enzyme-induction",
+      "term": "Enzyme induction",
+      "definition": "Increase in metabolic enzyme activity that accelerates drug breakdown.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Enzyme inhibition",
+        "Cytochrome P450",
+        "Metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "enzyme-inhibition",
+      "term": "Enzyme inhibition",
+      "definition": "Decrease in metabolic enzyme activity that slows drug breakdown.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Enzyme induction",
+        "Cytochrome P450",
+        "Hepatic metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "hepatic-metabolism",
+      "term": "Hepatic metabolism",
+      "definition": "Metabolism of drugs that occurs primarily in the liver by specialized enzymes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Renal excretion",
+        "First-pass effect",
+        "Cytochrome P450"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "inactive-metabolite",
+      "term": "Inactive metabolite",
+      "definition": "Product of drug metabolism that lacks pharmacologic activity and is excreted.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Active metabolite",
+        "Metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "liver-enzymes",
+      "term": "Liver enzymes",
+      "definition": "Blood markers such as AST and ALT used to assess hepatic function.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Serum creatinine",
+        "Cytochrome P450",
+        "Hepatic metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "metabolism",
+      "term": "Metabolism",
+      "definition": "Chemical conversion of a drug into forms that can be more readily eliminated.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Metabolism",
+      "aliases": [],
+      "confusables": [
+        "Absorption",
+        "Distribution",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "biliary-excretion",
+      "term": "Biliary excretion",
+      "definition": "Elimination of drugs or metabolites through bile into the feces.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Renal excretion",
+        "Fecal excretion",
+        "Hepatic metabolism"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "creatinine-clearance",
+      "term": "Creatinine clearance",
+      "definition": "Measure of kidney filtration rate used to assess drug elimination capacity.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Serum creatinine",
+        "Glomerular filtration",
+        "Renal impairment"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "excretion",
+      "term": "Excretion",
+      "definition": "Elimination of drugs and their metabolites from the body.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Metabolism",
+        "Absorption",
+        "Distribution"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "fecal-excretion",
+      "term": "Fecal excretion",
+      "definition": "Elimination of drug metabolites from the body through the stool.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Biliary excretion",
+        "Renal excretion",
+        "Pulmonary excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "glomerular-filtration",
+      "term": "Glomerular filtration",
+      "definition": "Kidney process that filters water-soluble drugs into urine for elimination.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Renal excretion",
+        "Creatinine clearance",
+        "Urine pH"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "pulmonary-excretion",
+      "term": "Pulmonary excretion",
+      "definition": "Elimination of volatile drugs through the lungs during respiration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Renal excretion",
+        "Fecal excretion",
+        "Biliary excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "renal-excretion",
+      "term": "Renal excretion",
+      "definition": "Elimination of drugs and metabolites primarily through the kidneys and urine.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Biliary excretion",
+        "Glomerular filtration",
+        "Fecal excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "renal-impairment",
+      "term": "Renal impairment",
+      "definition": "Reduced kidney function that decreases drug excretion and increases toxicity risk.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Cirrhosis",
+        "Creatinine clearance",
+        "Serum creatinine"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "urine-ph",
+      "term": "Urine pH",
+      "definition": "Acidity of urine that can alter renal elimination of certain drugs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Excretion",
+      "aliases": [],
+      "confusables": [
+        "Stomach acidity",
+        "Glomerular filtration",
+        "Renal excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "bioavailability",
+      "term": "Bioavailability",
+      "definition": "Fraction of an administered dose that reaches systemic circulation unchanged.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "First-pass effect",
+        "Absorption"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "clearance",
+      "term": "Clearance",
+      "definition": "Volume of blood cleared of drug per unit time by elimination processes.",
+      "formula": "CL",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Half-life",
+        "Volume of distribution",
+        "Excretion"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "drug-accumulation",
+      "term": "Drug accumulation",
+      "definition": "Build-up of drug in the body when dosing exceeds elimination.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Steady state",
+        "Half-life",
+        "Therapeutic index"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "duration-of-action",
+      "term": "Duration of action",
+      "definition": "Length of time a drug produces a therapeutic response.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Half-life",
+        "Onset of action",
+        "Peak effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "half-life",
+      "term": "Half-life",
+      "definition": "Time required for serum drug concentration to decrease by one half.",
+      "formula": "t1/2",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Duration of action",
+        "Peak effect",
+        "Onset of action"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "minimum-effective-concentration",
+      "term": "Minimum effective concentration",
+      "definition": "Lowest drug concentration that produces a therapeutic response.",
+      "formula": "MEC",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Peak effect",
+        "Onset of action",
+        "Therapeutic window"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "onset-of-action",
+      "term": "Onset of action",
+      "definition": "Time required for a drug to produce its first therapeutic response.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Peak effect",
+        "Duration of action",
+        "Half-life"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "peak-effect",
+      "term": "Peak effect",
+      "definition": "Time required for a drug to reach its maximum therapeutic response.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Onset of action",
+        "Duration of action",
+        "Half-life"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "steady-state",
+      "term": "Steady state",
+      "definition": "Equilibrium where drug administration rate equals elimination rate.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Half-life",
+        "Drug accumulation",
+        "Clearance"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-index",
+      "term": "Therapeutic index",
+      "definition": "Range of doses that are both safe and effective for a drug.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic window",
+        "Half-life",
+        "Minimum effective concentration"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-window",
+      "term": "Therapeutic window",
+      "definition": "Range of drug concentrations producing benefit without causing toxicity.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Bioavailability and half-life",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic index",
+        "Minimum effective concentration",
+        "Peak effect"
+      ],
+      "sources": [
+        "openstax-pharmacology-nurses#ch.2"
+      ]
+    }
+  ]
+}
