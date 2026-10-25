@@ -1,0 +1,708 @@
+{
+  "version": 1,
+  "id": "design-verification-using-system-verilog",
+  "semester": "3-2",
+  "name": "Design Verification using SystemVerilog",
+  "shortName": "DVSV",
+  "code": "9C726",
+  "courseType": "PE",
+  "elective": "Professional Elective III",
+  "folderId": "1gZ9UPi1jQq92_R4Be4J8fYzbYlb1ZoxX",
+  "folderUrl": "https://drive.google.com/drive/folders/1gZ9UPi1jQq92_R4Be4J8fYzbYlb1ZoxX",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "functional-verification",
+      "term": "Functional verification",
+      "definition": "Process of checking that a logic design meets its specification by asking whether the proposed design does what is intended.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-functional-verification#introduction"
+      ]
+    },
+    {
+      "id": "logic-simulation",
+      "term": "Logic simulation",
+      "definition": "Technique that runs a software model of a design while a testbench supplies inputs, observes outputs and checks them.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-functional-verification#simulation"
+      ]
+    },
+    {
+      "id": "hardware-emulation",
+      "term": "Hardware emulation",
+      "definition": "Technique imitating a design under development on special-purpose hardware, usually compiled from an HDL, mainly for debugging and functional verification.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-hardware-emulation#introduction"
+      ]
+    },
+    {
+      "id": "fpga-prototyping",
+      "term": "FPGA prototyping",
+      "definition": "Technique mapping a design onto reconfigurable hardware that runs much faster than software simulation and allows testing with real software, though large designs take long to implement.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-hardware-emulation#fpga-prototyping"
+      ]
+    },
+    {
+      "id": "formal-verification",
+      "term": "Formal verification",
+      "definition": "Use of mathematical methods to prove or disprove that a design satisfies stated properties without test vectors, limited by state-space explosion.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-formal-verification#introduction"
+      ]
+    },
+    {
+      "id": "model-checking",
+      "term": "Model checking",
+      "definition": "Formal technique performing a systematic, exhaustive exploration of a mathematical model of a system; often automatic, but generally unable to scale to large systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-formal-verification#model-checking"
+      ]
+    },
+    {
+      "id": "black-box-testing",
+      "term": "Black-box testing",
+      "definition": "Approach in which the tester has no knowledge of the internal structure of the item under test.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-gray-box#introduction"
+      ]
+    },
+    {
+      "id": "white-box-testing",
+      "term": "White-box testing",
+      "definition": "Approach giving the tester extensive visibility into the internals of the item under test.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-gray-box#introduction"
+      ]
+    },
+    {
+      "id": "gray-box-testing",
+      "term": "Gray-box testing",
+      "definition": "Approach in which the tester has only partial knowledge of internal structure, combining the visibility-free and full-visibility styles to find structural or usage defects.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Functional Verification",
+      "sources": [
+        "dvsv-wiki-gray-box#introduction"
+      ]
+    },
+    {
+      "id": "system-on-a-chip",
+      "term": "System on a chip",
+      "definition": "Integrated circuit that combines most or all key components of a computer or electronic system onto a single microchip.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-soc#introduction"
+      ]
+    },
+    {
+      "id": "soc-integration-benefits",
+      "term": "SoC integration benefits",
+      "definition": "Advantages over discrete multi-chip systems: lower power use, smaller die area, lower cost and higher reliability from fewer packages and reduced assembly.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-soc#advantages"
+      ]
+    },
+    {
+      "id": "network-on-chip",
+      "term": "Network-on-chip",
+      "definition": "Alternative to a shared bus for linking the processor cores, memories and interfaces of a single-chip system.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-soc#communications-subsystem"
+      ]
+    },
+    {
+      "id": "testbench",
+      "term": "Testbench",
+      "definition": "Simulation environment that generates stimuli, drives them into the design, monitors the outputs and checks the results.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-functional-verification#testbench"
+      ]
+    },
+    {
+      "id": "stimulus-generator",
+      "term": "Stimulus generator",
+      "definition": "Testbench component that creates input vectors intended to expose differences between a specification and its implementation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-functional-verification#stimulus"
+      ]
+    },
+    {
+      "id": "checker",
+      "term": "Checker",
+      "definition": "Component that validates that stored transactions are legal and compares actual results against expected results supplied by the generator.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-functional-verification#testbench"
+      ]
+    },
+    {
+      "id": "scoreboard",
+      "term": "Scoreboard",
+      "definition": "Component that compares a design's inputs and outputs against an expected relationship, often defined by a predictor model, to judge conformance.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-uvm#scoreboard"
+      ]
+    },
+    {
+      "id": "code-coverage",
+      "term": "Code coverage",
+      "definition": "Metric of how thoroughly the HDL source is exercised, for example by statement, branch and toggle measures.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-functional-verification#coverage"
+      ]
+    },
+    {
+      "id": "functional-coverage",
+      "term": "Functional coverage",
+      "definition": "Metric showing whether the intended functionality described in the verification plan has actually been exercised.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-functional-verification#coverage"
+      ]
+    },
+    {
+      "id": "coverage-closure",
+      "term": "Coverage closure",
+      "definition": "Reaching the predefined coverage goals, signalling that verification of the planned features is complete.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
+      "sources": [
+        "dvsv-wiki-functional-verification#coverage"
+      ]
+    },
+    {
+      "id": "systemverilog",
+      "term": "SystemVerilog",
+      "definition": "IEEE 1800 hardware description and verification language that extends Verilog, originating from Superlog donated to Accellera in 2002.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-systemverilog#introduction"
+      ]
+    },
+    {
+      "id": "hardware-verification-language",
+      "term": "Hardware verification language",
+      "definition": "Programming language for verifying designs written in an HDL, combining high-level programming features with bit-level manipulation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-hvl#introduction"
+      ]
+    },
+    {
+      "id": "dynamic-array",
+      "term": "Dynamic array",
+      "definition": "Array whose size is set at run time rather than fixed at compile time.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-systemverilog#data-types"
+      ]
+    },
+    {
+      "id": "associative-array",
+      "term": "Associative array",
+      "definition": "Array indexed by a key of a user-specified type instead of a contiguous integer range.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-systemverilog#data-types"
+      ]
+    },
+    {
+      "id": "queue",
+      "term": "Queue",
+      "definition": "Variable-size ordered collection that supports efficient insertion and removal at both ends.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-systemverilog#data-types"
+      ]
+    },
+    {
+      "id": "interface",
+      "term": "Interface",
+      "definition": "Construct that bundles related signals together, reducing repetitive port declarations between modules.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-systemverilog#interfaces"
+      ]
+    },
+    {
+      "id": "modport",
+      "term": "Modport",
+      "definition": "Declaration inside a signal bundle that specifies signal direction for each module or testbench using it.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-wiki-systemverilog#interfaces"
+      ]
+    },
+    {
+      "id": "clocking-block",
+      "term": "Clocking block",
+      "definition": "Named group of signals sharing one clock, each sampled or driven at set times relative to the clock edge to avoid races with the design.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-cv-clocking-block#introduction"
+      ]
+    },
+    {
+      "id": "program-block",
+      "term": "Program block",
+      "definition": "Testbench container holding tasks, functions, class objects and initial blocks, executed in the reactive region so testbench code sees settled design values.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-cv-program-block#introduction"
+      ]
+    },
+    {
+      "id": "fork-join",
+      "term": "fork...join",
+      "definition": "Parallel construct in which the parent thread waits until every spawned thread has finished.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-cv-fork-join#introduction"
+      ]
+    },
+    {
+      "id": "fork-join-any",
+      "term": "fork...join_any",
+      "definition": "Parallel construct in which the parent resumes once any one spawned thread finishes while the others keep running.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-cv-fork-join#introduction"
+      ]
+    },
+    {
+      "id": "fork-join-none",
+      "term": "fork...join_none",
+      "definition": "Parallel construct in which the parent continues immediately after spawning its threads without waiting.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SystemVerilog Language Concepts",
+      "sources": [
+        "dvsv-cv-fork-join#introduction"
+      ]
+    },
+    {
+      "id": "shallow-copy",
+      "term": "Shallow copy",
+      "definition": "Copy that creates a new object and copies field values field by field, so reference fields still point at the same underlying objects as the original.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-object-copying#shallow-copy"
+      ]
+    },
+    {
+      "id": "deep-copy",
+      "term": "Deep copy",
+      "definition": "Copy that also duplicates the objects referenced by fields, so the copy and original share no contents and later changes to one do not affect the other.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-object-copying#deep-copy"
+      ]
+    },
+    {
+      "id": "static-class-member",
+      "term": "Static class member",
+      "definition": "Property declared so that a single copy is shared by all instances of its class; a static method can be called without creating an object.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-cv-static#static-class-members"
+      ]
+    },
+    {
+      "id": "constraint-block",
+      "term": "Constraint block",
+      "definition": "Named class member in curly braces whose active instances are solved together as one logical AND, with no priority or source order.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-cv-constraint-blocks#introduction"
+      ]
+    },
+    {
+      "id": "constrained-random-generation",
+      "term": "Constrained random generation",
+      "definition": "Stimulus technique that declares variables as randomisable with constraints, then calls a built-in method to produce legal random values.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-systemverilog#constrained-random-generation"
+      ]
+    },
+    {
+      "id": "constraint-mode",
+      "term": "Constraint mode",
+      "definition": "Built-in method that enables or disables individual constraints of an object at run time.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-systemverilog#constrained-random-generation"
+      ]
+    },
+    {
+      "id": "solve-order",
+      "term": "Solve order",
+      "definition": "Construct controlling the sequence in which random variables are solved, instead of relying on source order, when one choice constrains another.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-cv-constraint-blocks#solve-before"
+      ]
+    },
+    {
+      "id": "single-inheritance",
+      "term": "Single inheritance",
+      "definition": "Class model in which each class derives from at most one parent class, as supported by SystemVerilog together with interface classes.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-systemverilog#classes"
+      ]
+    },
+    {
+      "id": "polymorphism",
+      "term": "Polymorphism",
+      "definition": "Provision of one interface to entities of different data types, letting code work with values of more than one type.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-polymorphism#introduction"
+      ]
+    },
+    {
+      "id": "subtype-polymorphism",
+      "term": "Subtype polymorphism",
+      "definition": "Form letting one name refer to objects of several classes sharing a common superclass, with the method to run usually resolved at run time.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Object Oriented Programming Concepts-I",
+      "sources": [
+        "dvsv-wiki-polymorphism#subtype-polymorphism"
+      ]
+    },
+    {
+      "id": "virtual-interface",
+      "term": "Virtual interface",
+      "definition": "Handle declared inside a class that points to an interface instance already present in a module, giving class-based components access to real design signals.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-virtual-interface#introduction"
+      ]
+    },
+    {
+      "id": "event",
+      "term": "Event",
+      "definition": "Static object handle used to synchronise concurrent processes: one process triggers it and others wait for it.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-event#introduction"
+      ]
+    },
+    {
+      "id": "semaphore",
+      "term": "Semaphore",
+      "definition": "Container holding a fixed number of keys that processes take to proceed and return when done, used for mutual exclusion over shared resources.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-semaphore#introduction"
+      ]
+    },
+    {
+      "id": "mailbox",
+      "term": "Mailbox",
+      "definition": "Built-in FIFO channel for passing messages between processes, either bounded, which blocks writers when full, or unbounded.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-mailbox#introduction"
+      ]
+    },
+    {
+      "id": "immediate-assertion",
+      "term": "Immediate assertion",
+      "definition": "Check executed like the condition of an if statement inside a procedural block, passing when true at execution time; intended for simulation only.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-immediate-assertions#introduction"
+      ]
+    },
+    {
+      "id": "concurrent-assertion",
+      "term": "Concurrent assertion",
+      "definition": "Check not tied to procedural execution that is evaluated over clock ticks and is required for formal verification.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-immediate-assertions#concurrent-assertions"
+      ]
+    },
+    {
+      "id": "sequence",
+      "term": "Sequence",
+      "definition": "Assertion building block describing a scenario that unfolds over time, built with temporal operators such as the cycle-delay operator.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-wiki-systemverilog#assertions"
+      ]
+    },
+    {
+      "id": "property",
+      "term": "Property",
+      "definition": "Assertion building block specifying required behaviour, often a triggering sequence implying that further behaviour must follow.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-wiki-systemverilog#assertions"
+      ]
+    },
+    {
+      "id": "covergroup",
+      "term": "Covergroup",
+      "definition": "Reusable type bundling coverpoints, cross coverage, a sampling event and options, instantiated with new like a class.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-covergroup#covergroup"
+      ]
+    },
+    {
+      "id": "coverpoint",
+      "term": "Coverpoint",
+      "definition": "Coverage item that tracks one variable or expression and records which of its legal values occur during a test.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-covergroup#coverpoint"
+      ]
+    },
+    {
+      "id": "cross-coverage",
+      "term": "Cross coverage",
+      "definition": "Coverage that tracks combinations of values across two or more coverpoints rather than each one alone.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-covergroup#cross"
+      ]
+    },
+    {
+      "id": "dpi",
+      "term": "DPI",
+      "definition": "Standard mechanism that lets SystemVerilog call C or C++ functions and lets foreign code call SystemVerilog functions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Object Oriented Programming Concepts-II",
+      "sources": [
+        "dvsv-cv-dpi#introduction"
+      ]
+    },
+    {
+      "id": "transaction",
+      "term": "Transaction",
+      "definition": "Plain class describing one unit of interface activity, with randomisable fields for the driver and fields the monitor fills in.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-cv-testbench-example#transaction"
+      ]
+    },
+    {
+      "id": "driver",
+      "term": "Driver",
+      "definition": "Component that takes transactions from a mailbox and drives them onto the design's ports through a virtual interface.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-cv-testbench-example#driver"
+      ]
+    },
+    {
+      "id": "monitor",
+      "term": "Monitor",
+      "definition": "Component that watches the interface without driving it, rebuilds transactions from observed signals and forwards them to the scoreboard.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-cv-testbench-example#monitor"
+      ]
+    },
+    {
+      "id": "test-environment",
+      "term": "Test environment",
+      "definition": "Container class with no logic of its own that creates the driver, monitor and scoreboard, connects their handles and starts them.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-cv-testbench-example#environment"
+      ]
+    },
+    {
+      "id": "test",
+      "term": "Test",
+      "definition": "Top-level code that creates the environment and supplies stimulus, such as a write followed by a read-back of the same address.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-cv-testbench-example#test"
+      ]
+    },
+    {
+      "id": "reference-model",
+      "term": "Reference model",
+      "definition": "Model defining the expected input-output relationship of the design, against which the scoreboard judges whether the design meets its specification.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-wiki-uvm#scoreboard"
+      ]
+    },
+    {
+      "id": "bus-functional-model",
+      "term": "Bus functional model",
+      "definition": "Non-synthesizable software model of a component with external buses, simulating bus transactions so bus behaviour can be checked before hardware exists.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-wiki-bfm#introduction"
+      ]
+    },
+    {
+      "id": "uvm",
+      "term": "UVM",
+      "definition": "Accellera-standard, class-based methodology adding a framework and automation to SystemVerilog for verifying integrated circuit designs.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-wiki-uvm#introduction"
+      ]
+    },
+    {
+      "id": "agent",
+      "term": "Agent",
+      "definition": "Wrapper class grouping the verification objects for one design interface, containing a driver and monitor when active or only a monitor when passive.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-wiki-uvm#agent"
+      ]
+    },
+    {
+      "id": "sequencer",
+      "term": "Sequencer",
+      "definition": "Component handling scenario generation for the design, including initial-state setup and configuration of the environment.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Advanced Testbench Design using SystemVerilog",
+      "sources": [
+        "dvsv-wiki-uvm#sequencer"
+      ]
+    }
+  ]
+}
