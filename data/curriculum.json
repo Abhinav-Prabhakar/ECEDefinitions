@@ -455,20 +455,20 @@
           "sourceCount": 6
         },
         {
-          "id": "java",
-          "name": "JAVA",
+          "id": "programming-in-java",
+          "name": "Programming in Java",
           "shortName": "JAVA",
-          "code": "",
+          "code": "9EC42",
           "courseType": "OE",
           "elective": "Open Elective I",
           "folderId": "1N05GaP2DqPNlKjBJ__i5-aoCwnbG55kx",
           "folderUrl": "https://drive.google.com/drive/folders/1N05GaP2DqPNlKjBJ__i5-aoCwnbG55kx",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/3-1/programming-in-java.json",
+          "definitionCount": 60,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 23
         },
         {
           "id": "artificial-neural-networks",
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 1948,
-    "completeSubjects": 31,
+    "definitions": 2008,
+    "completeSubjects": 32,
     "partialSubjects": 11,
-    "inaccessibleSubjects": 10
+    "inaccessibleSubjects": 9
   }
 }
