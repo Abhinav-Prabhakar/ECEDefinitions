@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "id": "satellite-communication",
+  "semester": "3-2",
+  "name": "Satellite Communication",
+  "shortName": "SC",
+  "code": "9C620",
+  "courseType": "PE",
+  "elective": "Professional Elective II",
+  "folderId": "1ZSlDoGSRln6ENRNDUGA7yL0GiF76h8dL",
+  "folderUrl": "https://drive.google.com/drive/folders/1ZSlDoGSRln6ENRNDUGA7yL0GiF76h8dL",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "communications-satellite",
+      "term": "Communications satellite",
+      "definition": "Artificial satellite that relays and amplifies radio telecommunication signals so two points on the ground can communicate.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-communications-satellite#para.1"
+      ]
+    },
+    {
+      "id": "kepler-s-first-law",
+      "term": "Kepler's first law",
+      "definition": "Each orbiting body travels along an ellipse with its primary body at one of the two foci.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-keplers-laws-of-planetary-motion#para.1"
+      ]
+    },
+    {
+      "id": "kepler-s-second-law",
+      "term": "Kepler's second law",
+      "definition": "A line joining an orbiting body to its primary sweeps out equal areas in equal times, so the body moves faster when closer.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-keplers-laws-of-planetary-motion#para.1"
+      ]
+    },
+    {
+      "id": "kepler-s-third-law",
+      "term": "Kepler's third law",
+      "definition": "The square of an orbital period is proportional to the cube of the semi-major axis, for all bodies orbiting the same primary.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-keplers-laws-of-planetary-motion#para.1"
+      ]
+    },
+    {
+      "id": "eccentricity",
+      "term": "Eccentricity",
+      "definition": "Measure of how stretched an elliptical orbit is, from zero for a perfect circle toward one for a very elongated shape.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-keplers-laws-of-planetary-motion#para.1"
+      ]
+    },
+    {
+      "id": "geostationary-orbit",
+      "term": "Geostationary orbit",
+      "definition": "Circular equatorial orbit about 35,786 km above Earth's surface in which a satellite appears fixed in the sky to ground observers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-geostationary-orbit#para.1"
+      ]
+    },
+    {
+      "id": "orbital-perturbation",
+      "term": "Orbital perturbation",
+      "definition": "Deviation from a simple two-body orbit caused by forces such as a non-spherical central body, third bodies or atmospheric resistance.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-orbital-perturbation-analysis#para.1"
+      ]
+    },
+    {
+      "id": "geostationary-transfer-orbit",
+      "term": "Geostationary transfer orbit",
+      "definition": "Highly elliptical orbit with its low point near low Earth orbit and its high point at geostationary altitude, used as a stepping stone to the final orbit.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-geostationary-transfer-orbit#para.1",
+        "satcom-wikipedia-geostationary-transfer-orbit#para.3"
+      ]
+    },
+    {
+      "id": "launch-vehicle",
+      "term": "Launch vehicle",
+      "definition": "High-thrust rocket that lifts a satellite toward its transfer orbit, then releases it and usually falls back through the atmosphere.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction, Orbital Mechanics and Launchers",
+      "sources": [
+        "satcom-wikipedia-geostationary-transfer-orbit#para.2",
+        "satcom-wikipedia-geostationary-transfer-orbit#para.10"
+      ]
+    },
+    {
+      "id": "satellite-bus",
+      "term": "Satellite bus",
+      "definition": "Main body and structural component of a spacecraft that holds the payload, instruments and the supporting subsystems.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-satellite-bus#para.1",
+        "satcom-wikipedia-satellite-bus#para.4"
+      ]
+    },
+    {
+      "id": "attitude-control",
+      "term": "Attitude control",
+      "definition": "Steering of a spacecraft's orientation relative to a reference, using actuators and algorithms guided by sensor data.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-spacecraft-attitude-control#para.1"
+      ]
+    },
+    {
+      "id": "spin-stabilisation",
+      "term": "Spin stabilisation",
+      "definition": "Method of holding a spacecraft's orientation by spinning it, so its rotating mass resists disturbances.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-spacecraft-attitude-control#para.7"
+      ]
+    },
+    {
+      "id": "three-axis-stabilisation",
+      "term": "Three-axis stabilisation",
+      "definition": "Method of holding a spacecraft in a fixed orientation without rotation, using thrusters, reaction wheels or similar actuators.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-spacecraft-attitude-control#para.8"
+      ]
+    },
+    {
+      "id": "reaction-wheel",
+      "term": "Reaction wheel",
+      "definition": "Electrically driven rotor on a spacecraft axis that exchanges angular momentum with the vehicle in order to rotate it.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-spacecraft-attitude-control#para.13"
+      ]
+    },
+    {
+      "id": "telemetry",
+      "term": "Telemetry",
+      "definition": "Gathering of measurements at distant locations and automatic transmission to receiving equipment where they can be monitored.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-telemetry#para.1",
+        "satcom-wikipedia-telemetry#para.30"
+      ]
+    },
+    {
+      "id": "telecommand",
+      "term": "Telecommand",
+      "definition": "Counterpart of remote measurement, for systems that must receive outside instructions and data in order to operate.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-telemetry#para.1"
+      ]
+    },
+    {
+      "id": "power-subsystem",
+      "term": "Power subsystem",
+      "definition": "Part of a spacecraft bus that generates, stores and distributes electrical power.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-satellite-bus#para.4"
+      ]
+    },
+    {
+      "id": "transponder",
+      "term": "Transponder",
+      "definition": "Series of interconnected units that forms a communications channel between a satellite's receiving and transmitting antennas.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-transponder-satellite-communications#para.1",
+        "satcom-wikipedia-transponder-satellite-communications#para.2"
+      ]
+    },
+    {
+      "id": "regenerative-transponder",
+      "term": "Regenerative transponder",
+      "definition": "Design in which the satellite itself demodulates, decodes, re-encodes and remodulates the signal, improving quality and allowing digital processing.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Satellite Subsystems",
+      "sources": [
+        "satcom-wikipedia-transponder-satellite-communications#para.3"
+      ]
+    },
+    {
+      "id": "link-budget",
+      "term": "Link budget",
+      "definition": "Accounting of all power gains and losses a signal experiences from transmitter to receiver, used to confirm adequate reception at design time.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-link-budget#para.1"
+      ]
+    },
+    {
+      "id": "link-margin",
+      "term": "Link margin",
+      "definition": "Safety allowance between the received power and the receiver's minimum required power.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-link-budget#para.1"
+      ]
+    },
+    {
+      "id": "free-space-path-loss",
+      "term": "Free-space path loss",
+      "definition": "Loss of signal strength through empty space, depending on the ratio of distance to wavelength and roughly 20 log10(4*pi*d/lambda) dB.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-link-budget#para.5",
+        "satcom-wikipedia-link-budget#para.6"
+      ]
+    },
+    {
+      "id": "effective-isotropic-radiated-power",
+      "term": "Effective isotropic radiated power",
+      "definition": "Power a theoretical equal-in-all-directions antenna would need to produce the same peak signal strength as the real antenna in its strongest direction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-effective-radiated-power#para.2",
+        "satcom-wikipedia-effective-radiated-power#para.3"
+      ]
+    },
+    {
+      "id": "antenna-gain",
+      "term": "Antenna gain",
+      "definition": "Ratio of an antenna's peak signal strength to that of a chosen reference antenna; meaningless without a stated reference.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-effective-radiated-power#para.3"
+      ]
+    },
+    {
+      "id": "noise-temperature",
+      "term": "Noise temperature",
+      "definition": "Temperature of a resistor that would produce the same available noise power per unit bandwidth as the component or source considered.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-noise-temperature#para.1",
+        "satcom-wikipedia-noise-temperature#para.2"
+      ]
+    },
+    {
+      "id": "system-noise-temperature",
+      "term": "System noise temperature",
+      "definition": "Total of the antenna's noise temperature and the effective noise temperature of the receiver and its transmission lines.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-noise-temperature#para.6"
+      ]
+    },
+    {
+      "id": "noise-figure",
+      "term": "Noise figure",
+      "definition": "Ten times the logarithm of the noise factor, which is one plus the equivalent noise temperature divided by 290 K.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-noise-temperature#para.8",
+        "satcom-wikipedia-noise-temperature#para.9",
+        "satcom-wikipedia-noise-temperature#para.10"
+      ]
+    },
+    {
+      "id": "cascade-noise-temperature",
+      "term": "Cascade noise temperature",
+      "definition": "Effective input noise temperature of amplifier stages in series: first-stage value plus later stages each divided by preceding gain, so early stages dominate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Satellite Link Design",
+      "sources": [
+        "satcom-wikipedia-noise-temperature#para.13",
+        "satcom-wikipedia-noise-temperature#para.14"
+      ]
+    },
+    {
+      "id": "frequency-division-multiple-access",
+      "term": "Frequency-division multiple access",
+      "definition": "Channel access method that lets several users share a channel by splitting its bandwidth into separate frequency sub-channels, one per user.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-frequency-division-multiple-access#para.1"
+      ]
+    },
+    {
+      "id": "time-division-multiple-access",
+      "term": "Time-division multiple access",
+      "definition": "Channel access method letting several users share one frequency channel by taking turns, each transmitting in its own slice of time.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-time-division-multiple-access#para.1"
+      ]
+    },
+    {
+      "id": "guard-interval",
+      "term": "Guard interval",
+      "definition": "Unused gap at the end of a time slot that keeps one transmission from spilling into the next slot.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-time-division-multiple-access#para.6"
+      ]
+    },
+    {
+      "id": "tdma-frame",
+      "term": "TDMA frame",
+      "definition": "Repeating block of a data stream divided into time slots, each assigned to a different user.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-time-division-multiple-access#para.1"
+      ]
+    },
+    {
+      "id": "code-division-multiple-access",
+      "term": "Code-division multiple access",
+      "definition": "Channel access method letting several transmitters share one frequency band by spreading their signals with a unique code each.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-code-division-multiple-access#para.1"
+      ]
+    },
+    {
+      "id": "spreading-code",
+      "term": "Spreading code",
+      "definition": "Pseudo-random chip sequence, running at a much higher rate than the data, combined with the data to widen its bandwidth.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-code-division-multiple-access#para.5"
+      ]
+    },
+    {
+      "id": "spread-spectrum",
+      "term": "Spread spectrum",
+      "definition": "Technique that widens a signal's bandwidth far beyond its minimum requirement, improving security and resistance to jamming.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-code-division-multiple-access#para.10",
+        "satcom-wikipedia-spread-spectrum#para.1",
+        "satcom-wikipedia-spread-spectrum#para.2"
+      ]
+    },
+    {
+      "id": "processing-gain",
+      "term": "Processing gain",
+      "definition": "Ratio of data bit time to chip time, which helps determine how many users a base station can support.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-code-division-multiple-access#para.10"
+      ]
+    },
+    {
+      "id": "orthogonal-codes",
+      "term": "Orthogonal codes",
+      "definition": "Mutually uncorrelated codes assigned to users in synchronous systems, which therefore do not interfere with one another.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multiple Access",
+      "sources": [
+        "satcom-wikipedia-code-division-multiple-access#para.16"
+      ]
+    },
+    {
+      "id": "ground-station",
+      "term": "Ground station",
+      "definition": "Terrestrial radio station that communicates with spacecraft, transmitting to and receiving radio waves from them.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-ground-station#para.1"
+      ]
+    },
+    {
+      "id": "parabolic-antenna",
+      "term": "Parabolic antenna",
+      "definition": "Dish-shaped antenna that is the principal telecommunications device of a ground station.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-ground-station#para.1"
+      ]
+    },
+    {
+      "id": "tracking-station",
+      "term": "Tracking station",
+      "definition": "Ground facility that mainly receives telemetry, follows space missions or tracks satellites not in geostationary orbit.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-ground-station#para.3"
+      ]
+    },
+    {
+      "id": "teleport",
+      "term": "Teleport",
+      "definition": "Hub that links a satellite network to a terrestrial telecommunications network such as the Internet, offering uplink and broadcast services.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-ground-station#para.5",
+        "satcom-wikipedia-ground-station#para.6"
+      ]
+    },
+    {
+      "id": "low-earth-orbit",
+      "term": "Low Earth orbit",
+      "definition": "Orbit around Earth with a period of 128 minutes or less and eccentricity below 0.25, reaching up to about 2,000 km altitude.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-low-earth-orbit#para.1",
+        "satcom-wikipedia-low-earth-orbit#para.4"
+      ]
+    },
+    {
+      "id": "medium-earth-orbit",
+      "term": "Medium Earth orbit",
+      "definition": "Orbit roughly 2,000 to 35,786 km up from which satellites stay visible for 2 to 8 hours and cover wider areas than low-orbit ones.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-communications-satellite#para.17"
+      ]
+    },
+    {
+      "id": "satellite-constellation",
+      "term": "Satellite constellation",
+      "definition": "Large group of low-orbit satellites needed for continuous coverage because each sees only a small part of Earth at once.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-low-earth-orbit#para.14"
+      ]
+    },
+    {
+      "id": "atmospheric-drag",
+      "term": "Atmospheric drag",
+      "definition": "Slowing of low-orbit satellites by thin gas in the upper atmosphere, which makes orbits below 300 km decay quickly without re-boosting.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-low-earth-orbit#para.8",
+        "satcom-wikipedia-low-earth-orbit#para.15"
+      ]
+    },
+    {
+      "id": "geostationary-propagation-delay",
+      "term": "Geostationary propagation delay",
+      "definition": "Signal round-trip time of about 240 ms from the equator through a satellite at that altitude, which hurts latency-sensitive uses such as voice.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Earth Station Technology and LEO/GEO Systems",
+      "sources": [
+        "satcom-wikipedia-geostationary-orbit#para.1"
+      ]
+    },
+    {
+      "id": "gps",
+      "term": "GPS",
+      "definition": "Satellite-based navigation system owned by the U.S. government that gives receivers their location and time wherever signal quality allows.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-global-positioning-system#para.1"
+      ]
+    },
+    {
+      "id": "position-location",
+      "term": "Position location",
+      "definition": "Calculation of a receiver's three-dimensional position from its distances to several satellites, derived from signal travel times.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-global-positioning-system#para.30",
+        "satcom-wikipedia-global-positioning-system#para.31"
+      ]
+    },
+    {
+      "id": "receiver-clock-offset",
+      "term": "Receiver clock offset",
+      "definition": "Deviation of a receiver's own clock from satellite time, which is why a fourth satellite is needed to solve for it.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-global-positioning-system#para.28",
+        "satcom-wikipedia-global-positioning-system#para.30"
+      ]
+    },
+    {
+      "id": "navigation-message",
+      "term": "Navigation message",
+      "definition": "Data each satellite broadcasts at 50 bits per second, carrying transmission time, orbit information and constellation status.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-gps-signals#para.19",
+        "satcom-wikipedia-global-positioning-system#para.29"
+      ]
+    },
+    {
+      "id": "c-a-code",
+      "term": "C/A code",
+      "definition": "Civilian ranging sequence of 1,023 chips sent at about 1 Mchip/s, so it repeats every millisecond.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-gps-signals#para.10",
+        "satcom-wikipedia-gps-signals#para.12"
+      ]
+    },
+    {
+      "id": "p-y-code",
+      "term": "P(Y) code",
+      "definition": "Military precision sequence, much longer and faster than the civilian one and scrambled with a secret sequence to block spoofing.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-gps-signals#para.15",
+        "satcom-wikipedia-gps-signals#para.17"
+      ]
+    },
+    {
+      "id": "signal-acquisition",
+      "term": "Signal acquisition",
+      "definition": "Process of time-aligning a receiver-generated copy of a satellite's code with the incoming signal to find when a code point arrived.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-global-positioning-system#para.29"
+      ]
+    },
+    {
+      "id": "differential-gps",
+      "term": "Differential GPS",
+      "definition": "Method that improves satellite positioning by applying corrections from nearby fixed ground stations, reducing error from several metres to a few centimetres.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-differential-gps#para.1",
+        "satcom-wikipedia-differential-gps#para.17"
+      ]
+    },
+    {
+      "id": "pseudorange-correction",
+      "term": "Pseudorange correction",
+      "definition": "Adjustment applied to raw satellite-distance measurements before the receiver computes its position.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Satellite Navigation and the Global Positioning System",
+      "sources": [
+        "satcom-wikipedia-differential-gps#para.15"
+      ]
+    }
+  ]
+}

@@ -4980,6 +4980,216 @@
       "kind": "web",
       "status": "accessed",
       "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-spacecraft-attitude-control",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Spacecraft attitude control - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spacecraft_attitude_control",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-satellite-bus",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Satellite bus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Satellite_bus",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-code-division-multiple-access",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Code-division multiple access - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Code-division_multiple_access",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-communications-satellite",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Communications satellite - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Communications_satellite",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-differential-gps",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Differential GPS - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Differential_GPS",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-effective-radiated-power",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Effective radiated power - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Effective_radiated_power",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-frequency-division-multiple-access",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Frequency-division multiple access - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frequency-division_multiple_access",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-geostationary-orbit",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Geostationary orbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geostationary_orbit",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-global-positioning-system",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Global Positioning System - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-ground-station",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Ground station - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ground_station",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-gps-signals",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "GPS signals - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GPS_signals",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-geostationary-transfer-orbit",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Geostationary transfer orbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geostationary_transfer_orbit",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-keplers-laws-of-planetary-motion",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Kepler's laws of planetary motion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-link-budget",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Link budget - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Link_budget",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-low-earth-orbit",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Low Earth orbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Low_Earth_orbit",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-noise-temperature",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Noise temperature - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Noise_temperature",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-orbital-perturbation-analysis",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Orbital perturbation analysis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Orbital_perturbation_analysis",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-spread-spectrum",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Spread spectrum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spread_spectrum",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-time-division-multiple-access",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Time-division multiple access - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Time-division_multiple_access",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-telemetry",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Telemetry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Telemetry",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-transponder-satellite-communications",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Transponder (satellite communications) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transponder_(satellite_communications)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
     }
   ]
 }
