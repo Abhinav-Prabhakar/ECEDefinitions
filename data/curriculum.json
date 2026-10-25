@@ -402,11 +402,11 @@
           "folderId": "1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
           "folderUrl": "https://drive.google.com/drive/folders/1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
           "data": "data/subjects/3-1/digital-signal-processing.json",
-          "definitionCount": 37,
+          "definitionCount": 64,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 17
         },
         {
           "id": "ic-applications",
@@ -711,9 +711,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 41,
-    "definitions": 1645,
-    "completeSubjects": 28,
-    "partialSubjects": 6,
+    "definitions": 1672,
+    "completeSubjects": 29,
+    "partialSubjects": 5,
     "inaccessibleSubjects": 8
   }
 }

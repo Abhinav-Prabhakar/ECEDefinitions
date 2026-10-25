@@ -8,7 +8,7 @@
   "courseType": "PC",
   "folderId": "1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
   "folderUrl": "https://drive.google.com/drive/folders/1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
-  "status": "partial",
+  "status": "complete",
   "definitions": [
     {
       "id": "butterworth-filter",
@@ -415,6 +415,303 @@
       "unitTitle": "Multirate signal processing",
       "sources": [
         "dsp-dsp-unit-6#p.12"
+      ]
+    },
+    {
+      "id": "discrete-time-signal",
+      "term": "Discrete-time signal",
+      "definition": "Sequence of quantities defined only at separate instants, obtainable by sampling a continuously varying waveform.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-discrete-signal#discrete-time"
+      ]
+    },
+    {
+      "id": "periodic-sequence",
+      "term": "Periodic sequence",
+      "definition": "Series of samples satisfying x[n + N] = x[n] for every n, so the pattern repeats every N samples.",
+      "formula": "x[n + N] = x[n]",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-dfs#introduction"
+      ]
+    },
+    {
+      "id": "unit-impulse",
+      "term": "Unit impulse",
+      "definition": "Sample pattern equal to one at index zero and zero at every other index, also called the Kronecker delta.",
+      "formula": "δ[n]",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-lti#discrete-time-systems"
+      ]
+    },
+    {
+      "id": "linear-shift-invariant-system",
+      "term": "Linear shift-invariant system",
+      "definition": "Discrete-domain processor obeying superposition whose behavior is unchanged by delaying the input, fully described by its impulse response.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-lti#definition"
+      ]
+    },
+    {
+      "id": "impulse-response",
+      "term": "Impulse response",
+      "definition": "Output h[n] produced when a unit sample at index zero is applied, completely characterizing a linear shift-invariant processor.",
+      "formula": "h[n]",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-lti#impulse-response-and-convolution"
+      ]
+    },
+    {
+      "id": "convolution-sum",
+      "term": "Convolution sum",
+      "definition": "Output formula expressing a linear shift-invariant processor's response as the input combined with its characteristic output h[n].",
+      "formula": "y[n] = Σ x[k]h[n − k]",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-lti#impulse-response-and-convolution"
+      ]
+    },
+    {
+      "id": "causality",
+      "term": "Causality",
+      "definition": "Property that the output at any instant depends only on present and past inputs, equivalent to an impulse response that is zero for n < 0.",
+      "formula": "h[n] = 0 for n < 0",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-causal#discrete-time-causality-via-the-impulse-response"
+      ]
+    },
+    {
+      "id": "bibo-stability",
+      "term": "BIBO stability",
+      "definition": "Property guaranteeing finite outputs for every finite-amplitude excitation, which for discrete shift-invariant processors holds when the impulse response is absolutely summable.",
+      "formula": "Σ|h[n]| < ∞",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-bibo#time-domain-condition-for-lti-systems"
+      ]
+    },
+    {
+      "id": "linear-constant-coefficient-difference-equation",
+      "term": "Linear constant-coefficient difference equation",
+      "definition": "Recurrence expressing each term of a sequence as a fixed-weight combination of earlier terms, used to describe discrete processors.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Discrete-Time Signals and Systems",
+      "sources": [
+        "dsp-wiki-linear-recurrence#definitions"
+      ]
+    },
+    {
+      "id": "discrete-fourier-series",
+      "term": "Discrete Fourier series",
+      "definition": "Expansion of a repeating sample pattern into N complex exponentials that are harmonics of the fundamental digital frequency 1/N.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-dfs#introduction"
+      ]
+    },
+    {
+      "id": "dtft",
+      "term": "DTFT",
+      "definition": "Transform mapping a sample sequence to a continuous function of angular frequency that repeats every 2π.",
+      "formula": "S(ω) = Σ s[n]e^(−iωn)",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-dtft#definition"
+      ]
+    },
+    {
+      "id": "dft",
+      "term": "DFT",
+      "definition": "Transform mapping N complex numbers to N complex numbers, giving equally spaced samples of the DTFT of a finite sequence.",
+      "formula": "X_k = Σ x_n e^(−i2πkn/N)",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-dft#definition"
+      ]
+    },
+    {
+      "id": "inverse-dft",
+      "term": "Inverse DFT",
+      "definition": "Transform recovering the original N samples using the opposite exponent sign and a 1/N normalization.",
+      "formula": "x_n = (1/N) Σ X_k e^(i2πkn/N)",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-dft#definition"
+      ]
+    },
+    {
+      "id": "circular-shift-property",
+      "term": "Circular shift property",
+      "definition": "Duality where multiplying the input by a linear phase rotates the output indices modulo N, and a rotated input multiplies the output by a linear phase.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-dft#properties"
+      ]
+    },
+    {
+      "id": "circular-convolution",
+      "term": "Circular convolution",
+      "definition": "Operation combining two length-N sequences with indices wrapped modulo N, corresponding to pointwise multiplication of their DFTs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-circular-convolution#definition"
+      ]
+    },
+    {
+      "id": "overlap-add",
+      "term": "Overlap-add",
+      "definition": "Block-processing technique that splits a long input into segments, filters each using FFT-based circular operations after appended zeros, and sums the intersecting output pieces.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-overlap-add#definition"
+      ]
+    },
+    {
+      "id": "overlap-save",
+      "term": "Overlap-save",
+      "definition": "Block-processing technique that reuses the last M−1 input samples of each block, filters by circular operations, and discards the first M−1 corrupted outputs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-overlap-save#how-it-works"
+      ]
+    },
+    {
+      "id": "direct-evaluation",
+      "term": "Direct evaluation",
+      "definition": "Brute-force computation straight from the defining sum of the transform, requiring N terms for each of N outputs, about N² operations.",
+      "formula": "O(N²)",
+      "unit": 2,
+      "unitTitle": "Discrete Fourier Transform",
+      "sources": [
+        "dsp-wiki-fft#complexity-o-n-log-n"
+      ]
+    },
+    {
+      "id": "fft",
+      "term": "FFT",
+      "definition": "Any algorithm computing the DFT or its inverse in O(N log N) operations, producing the same results as direct evaluation.",
+      "formula": "O(N log N)",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-fft#definition"
+      ]
+    },
+    {
+      "id": "radix-2-fft",
+      "term": "Radix-2 FFT",
+      "definition": "Divide-and-conquer scheme for power-of-two lengths that splits each transform into two half-length transforms, needing (N/2)log₂N complex multiplications.",
+      "formula": "(N/2)·log₂N multiplications",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-fft#radix-2-cooley-tukey"
+      ]
+    },
+    {
+      "id": "decimation-in-time",
+      "term": "Decimation in time",
+      "definition": "Radix-2 splitting that separates the input into even-indexed and odd-indexed samples, transforms each half and combines the results.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-cooley-tukey#radix-2-dit"
+      ]
+    },
+    {
+      "id": "decimation-in-frequency",
+      "term": "Decimation in frequency",
+      "definition": "Radix-2 variant, also known as the Sande–Tukey algorithm, obtained by reversing the order of the splitting steps of its time-domain counterpart.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-cooley-tukey#radix-2-dif"
+      ]
+    },
+    {
+      "id": "butterfly",
+      "term": "Butterfly",
+      "definition": "Size-2 transform that combines even and odd sub-results by forming their sum and difference after scaling the odd part by a twiddle factor.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-cooley-tukey#butterfly"
+      ]
+    },
+    {
+      "id": "twiddle-factor",
+      "term": "Twiddle factor",
+      "definition": "Complex root of unity that multiplies intermediate results between stages of a divide-and-conquer transform.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-fft#radix-2-cooley-tukey"
+      ]
+    },
+    {
+      "id": "bit-reversal",
+      "term": "Bit reversal",
+      "definition": "Permutation that swaps each index with the one whose binary digits are written in opposite order, restoring natural output order of in-place radix-2 algorithms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-cooley-tukey#bit-reversal"
+      ]
+    },
+    {
+      "id": "inverse-fft",
+      "term": "Inverse FFT",
+      "definition": "Fast evaluation of x_n = (1/N)ΣX_k e^(i2πkn/N), obtained from a forward algorithm by flipping the exponent sign and scaling by 1/N.",
+      "formula": "x_n = (1/N) Σ X_k e^(i2πkn/N)",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-fft#inverse-fft"
+      ]
+    },
+    {
+      "id": "ofdm",
+      "term": "OFDM",
+      "definition": "Multicarrier modulation splitting data into parallel streams on closely spaced subcarriers whose mutual crosstalk is eliminated, generated by an inverse FFT at the transmitter.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Fast Fourier Transform",
+      "sources": [
+        "dsp-wiki-ofdm#fft-ifft-use"
       ]
     }
   ]
