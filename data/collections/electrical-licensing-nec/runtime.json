@@ -271,11 +271,6 @@
           ""
         ],
         [
-          "Ground Fault",
-          "An unintentional electrical connection between an ungrounded conductor and ground or equipment grounding conductor.",
-          ""
-        ],
-        [
           "Interrupting Rating",
           "The highest current at rated voltage that a device is intended to interrupt under standard test conditions.",
           ""
@@ -298,6 +293,11 @@
         [
           "Short Circuit",
           "An accidental connection of relatively low impedance between two points of different potential in an electric circuit.",
+          ""
+        ],
+        [
+          "Short-Circuit Current Rating",
+          "The highest prospective short-circuit current that equipment can withstand at its rated voltage without sustaining damage.",
           ""
         ],
         [
@@ -396,11 +396,6 @@
           ""
         ],
         [
-          "Continuous Load",
-          "A load where the maximum current is expected to continue for three hours or more.",
-          ""
-        ],
-        [
           "Feeder Protection",
           "Overcurrent protection provided for feeders to protect conductors and meet system requirements.",
           ""
@@ -408,6 +403,11 @@
         [
           "Location of Overcurrent Protective Devices",
           "NEC provisions specifying where OCPDs must be located for accessibility and protection.",
+          ""
+        ],
+        [
+          "Next-Size-Up Rule",
+          "Permission to use the next higher standard overcurrent device rating where conductor ampacity does not correspond to a standard rating and stated limits are met.",
           ""
         ],
         [
@@ -436,9 +436,9 @@
           ""
         ],
         [
-          "I\u00b2t",
+          "I²t",
           "The thermal energy let-through by an overcurrent device during fault interruption, used in evaluating damage to conductors and equipment.",
-          "I^2 \u00d7 t"
+          "I^2 × t"
         ],
         [
           "Let-Through Current",
@@ -744,6 +744,11 @@
           ""
         ],
         [
+          "Grounded Neutral Fault",
+          "A neutral-to-ground connection on the load side of a GFCI that prevents the device from tripping.",
+          ""
+        ],
+        [
           "Leakage Current",
           "Small unintended current flowing from an energized conductor to ground through insulation.",
           ""
@@ -766,6 +771,11 @@
         [
           "Feed-Through Protection",
           "GFCI protection provided to downstream receptacles connected to the load side of a GFCI device.",
+          ""
+        ],
+        [
+          "GFCI for Temporary Wiring",
+          "NEC requirement for GFCI protection of receptacles supplied by temporary wiring during construction or maintenance.",
           ""
         ],
         [
@@ -824,6 +834,11 @@
           ""
         ],
         [
+          "AFCI Branch-Circuit Extension",
+          "NEC requirement to provide AFCI protection when extending or modifying branch circuits in dwelling units.",
+          ""
+        ],
+        [
           "AFCI Circuit Breaker",
           "A circuit breaker providing arc-fault protection for an entire branch circuit.",
           ""
@@ -854,6 +869,11 @@
           ""
         ],
         [
+          "Outlet Branch-Circuit AFCI Receptacle",
+          "A receptacle-type AFCI device that protects downstream branch-circuit wiring when installed at the first outlet.",
+          ""
+        ],
+        [
           "Circuit GFCI Protection",
           "GFCI protection applied at the breaker to protect an entire branch circuit.",
           ""
@@ -866,6 +886,11 @@
         [
           "Existing Installation Consideration",
           "NEC provisions that address GFCI or AFCI protection requirements for existing installations.",
+          ""
+        ],
+        [
+          "Line-Load Reversal",
+          "A miswiring condition where supply conductors land on the load terminals, leaving the GFCI without line power.",
           ""
         ],
         [
@@ -950,7 +975,7 @@
         [
           "Dwelling general lighting load",
           "A unit-area lighting load applied to habitable space in a dwelling per NEC tables.",
-          "3 VA/ft\u00b2"
+          "3 VA/ft²"
         ],
         [
           "Dwelling heating or cooling load",

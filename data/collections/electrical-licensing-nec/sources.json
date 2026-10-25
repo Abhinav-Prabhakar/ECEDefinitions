@@ -5,39 +5,15 @@
   "sources": [
     {
       "id": "nec-2023",
-      "title": "NFPA 70 (NEC) reference (nec-2023)",
-      "publisher": "NFPA",
-      "url": "https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70",
+      "title": "NFPA 70, National Electrical Code (Article 100 definitions and referenced articles)",
+      "publisher": "National Fire Protection Association (NFPA)",
+      "url": "https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70",
       "type": "standard",
-      "license": "unknown",
+      "license": "proprietary (free read-only access via NFPA)",
       "accessed": "2026-10-25",
       "status": "parsed",
-      "locatorScheme": "sec.<n>",
-      "notes": "NEC-aligned terminology"
-    },
-    {
-      "id": "nec-70",
-      "title": "NFPA 70 (NEC) reference (nec-70)",
-      "publisher": "NFPA",
-      "url": "https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70",
-      "type": "standard",
-      "license": "unknown",
-      "accessed": "2026-10-25",
-      "status": "parsed",
-      "locatorScheme": "sec.<n>",
-      "notes": "NEC-aligned terminology"
-    },
-    {
-      "id": "nec-article-100",
-      "title": "NFPA 70 (NEC) Article 100",
-      "publisher": "NFPA",
-      "url": "https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70",
-      "type": "standard",
-      "license": "unknown",
-      "accessed": "2026-10-25",
-      "status": "parsed",
-      "locatorScheme": "sec.<n>",
-      "notes": "NEC-aligned terminology"
+      "locatorScheme": "cl.<n>",
+      "notes": "NEC article/section clauses. Free registration required to read; no text is reproduced in this repo."
     }
   ]
 }

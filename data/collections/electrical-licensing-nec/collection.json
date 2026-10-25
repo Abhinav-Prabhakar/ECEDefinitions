@@ -93,10 +93,10 @@
           "color": "#e0567f",
           "dark": "#ff7f9f",
           "data": "data/collections/electrical-licensing-nec/subjects/gfci-afci.json",
-          "definitionCount": 35,
+          "definitionCount": 40,
           "unitCount": 5,
           "coveredUnits": 5,
-          "status": "partial",
+          "status": "complete",
           "sourceCount": 1
         },
         {
@@ -120,9 +120,9 @@
   "coverage": {
     "sections": 1,
     "subjects": 5,
-    "definitions": 215,
-    "completeSubjects": 4,
-    "partialSubjects": 1,
+    "definitions": 220,
+    "completeSubjects": 5,
+    "partialSubjects": 0,
     "inaccessibleSubjects": 0
   }
 }

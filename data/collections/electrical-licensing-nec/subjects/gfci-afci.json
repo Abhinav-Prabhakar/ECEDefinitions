@@ -34,40 +34,6 @@
   ],
   "definitions": [
     {
-      "id": "ground-fault-circuit-interrupter",
-      "term": "Ground-Fault Circuit Interrupter",
-      "definition": "A device that de-energizes a circuit upon detecting current imbalance between conductors.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "GFCI basics",
-      "aliases": [
-        "GFCI"
-      ],
-      "confusables": [
-        "Arc-Fault Circuit Interrupter",
-        "Ground Fault"
-      ],
-      "sources": [
-        "nec-2023#cl.100"
-      ]
-    },
-    {
-      "id": "ground-fault",
-      "term": "Ground Fault",
-      "definition": "An unintentional electrical path between an energized conductor and ground or grounded parts.",
-      "formula": "",
-      "unit": 1,
-      "unitTitle": "GFCI basics",
-      "aliases": [],
-      "confusables": [
-        "Arc Fault",
-        "Ground-Fault Circuit Interrupter"
-      ],
-      "sources": [
-        "nec-2023#cl.100"
-      ]
-    },
-    {
       "id": "class-a-gfci",
       "term": "Class A GFCI",
       "definition": "A GFCI that trips when ground-fault current is between four and six milliamperes.",
@@ -94,6 +60,92 @@
       "confusables": [
         "Leakage Current",
         "Ground-Fault Circuit Interrupter"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "gfci-circuit-breaker",
+      "term": "GFCI Circuit Breaker",
+      "definition": "A circuit breaker that provides ground-fault protection for an entire branch circuit.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "GFCI basics",
+      "aliases": [
+        "GFCI breaker"
+      ],
+      "confusables": [
+        "GFCI Receptacle",
+        "Dual-Function Breaker"
+      ],
+      "sources": [
+        "nec-2023#cl.210.8"
+      ]
+    },
+    {
+      "id": "gfci-receptacle",
+      "term": "GFCI Receptacle",
+      "definition": "A receptacle incorporating integral ground-fault circuit interrupter protection.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "GFCI basics",
+      "aliases": [],
+      "confusables": [
+        "Ground-Fault Circuit Interrupter",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.406.4"
+      ]
+    },
+    {
+      "id": "ground-fault",
+      "term": "Ground Fault",
+      "definition": "An unintentional electrical path between an energized conductor and ground or grounded parts.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "GFCI basics",
+      "aliases": [],
+      "confusables": [
+        "Arc Fault",
+        "Ground-Fault Circuit Interrupter"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "ground-fault-circuit-interrupter",
+      "term": "Ground-Fault Circuit Interrupter",
+      "definition": "A device that de-energizes a circuit upon detecting current imbalance between conductors.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "GFCI basics",
+      "aliases": [
+        "GFCI"
+      ],
+      "confusables": [
+        "Arc-Fault Circuit Interrupter",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "grounded-neutral-fault",
+      "term": "Grounded Neutral Fault",
+      "definition": "A neutral-to-ground connection on the load side of a GFCI that prevents the device from tripping.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "GFCI basics",
+      "aliases": [
+        "Grounded neutral"
+      ],
+      "confusables": [
+        "Ground Fault",
+        "Current Imbalance"
       ],
       "sources": [
         "nec-2023#cl.100"
@@ -132,37 +184,35 @@
       ]
     },
     {
-      "id": "gfci-receptacle",
-      "term": "GFCI Receptacle",
-      "definition": "A receptacle incorporating integral ground-fault circuit interrupter protection.",
+      "id": "bathroom-gfci-requirement",
+      "term": "Bathroom GFCI Requirement",
+      "definition": "NEC requirement for GFCI protection of receptacles in bathroom locations.",
       "formula": "",
-      "unit": 1,
-      "unitTitle": "GFCI basics",
+      "unit": 2,
+      "unitTitle": "GFCI requirements",
       "aliases": [],
       "confusables": [
-        "Ground-Fault Circuit Interrupter",
-        "Ground Fault"
+        "Garage GFCI Requirement",
+        "Outdoor GFCI Requirement"
       ],
       "sources": [
-        "nec-2023#cl.406.4"
+        "nec-2023#cl.210.8(A)"
       ]
     },
     {
-      "id": "gfci-circuit-breaker",
-      "term": "GFCI Circuit Breaker",
-      "definition": "A circuit breaker that provides ground-fault protection for an entire branch circuit.",
+      "id": "boathouse-gfci-requirement",
+      "term": "Boathouse GFCI Requirement",
+      "definition": "NEC requirement for GFCI protection of receptacles in boathouses and similar locations.",
       "formula": "",
-      "unit": 1,
-      "unitTitle": "GFCI basics",
-      "aliases": [
-        "GFCI breaker"
-      ],
+      "unit": 2,
+      "unitTitle": "GFCI requirements",
+      "aliases": [],
       "confusables": [
-        "GFCI Receptacle",
-        "Dual-Function Breaker"
+        "Outdoor GFCI Requirement",
+        "Ground-Fault Circuit Interrupter"
       ],
       "sources": [
-        "nec-2023#cl.210.8"
+        "nec-2023#cl.210.8(A)"
       ]
     },
     {
@@ -182,41 +232,27 @@
       ]
     },
     {
-      "id": "bathroom-gfci-requirement",
-      "term": "Bathroom GFCI Requirement",
-      "definition": "NEC requirement for GFCI protection of receptacles in bathroom locations.",
+      "id": "gfci-for-temporary-wiring",
+      "term": "GFCI for Temporary Wiring",
+      "definition": "NEC requirement for GFCI protection of receptacles supplied by temporary wiring during construction or maintenance.",
       "formula": "",
       "unit": 2,
       "unitTitle": "GFCI requirements",
-      "aliases": [],
+      "aliases": [
+        "Temporary wiring GFCI"
+      ],
       "confusables": [
-        "Garage GFCI Requirement",
+        "Portable Appliance Protection",
         "Outdoor GFCI Requirement"
       ],
       "sources": [
-        "nec-2023#cl.210.8(A)"
+        "nec-2023#cl.590.6"
       ]
     },
     {
       "id": "garage-gfci-requirement",
       "term": "Garage GFCI Requirement",
       "definition": "NEC requirement for GFCI protection of receptacles in attached or detached garages.",
-      "formula": "",
-      "unit": 2,
-      "unitTitle": "GFCI requirements",
-      "aliases": [],
-      "confusables": [
-        "Ground-Fault Circuit Interrupter",
-        "Ground Fault"
-      ],
-      "sources": [
-        "nec-2023#cl.210.8(A)"
-      ]
-    },
-    {
-      "id": "outdoor-gfci-requirement",
-      "term": "Outdoor GFCI Requirement",
-      "definition": "NEC requirement for GFCI protection of receptacles installed outdoors.",
       "formula": "",
       "unit": 2,
       "unitTitle": "GFCI requirements",
@@ -246,6 +282,22 @@
       ]
     },
     {
+      "id": "outdoor-gfci-requirement",
+      "term": "Outdoor GFCI Requirement",
+      "definition": "NEC requirement for GFCI protection of receptacles installed outdoors.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "GFCI requirements",
+      "aliases": [],
+      "confusables": [
+        "Ground-Fault Circuit Interrupter",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.210.8(A)"
+      ]
+    },
+    {
       "id": "unfinished-basement-gfci",
       "term": "Unfinished Basement GFCI",
       "definition": "NEC requirement for GFCI protection of receptacles in unfinished basement areas.",
@@ -262,19 +314,19 @@
       ]
     },
     {
-      "id": "boathouse-gfci-requirement",
-      "term": "Boathouse GFCI Requirement",
-      "definition": "NEC requirement for GFCI protection of receptacles in boathouses and similar locations.",
+      "id": "arc-fault",
+      "term": "Arc Fault",
+      "definition": "An unintended arc produced by current flowing through an unintentional path.",
       "formula": "",
-      "unit": 2,
-      "unitTitle": "GFCI requirements",
+      "unit": 3,
+      "unitTitle": "AFCI basics",
       "aliases": [],
       "confusables": [
-        "Outdoor GFCI Requirement",
-        "Ground-Fault Circuit Interrupter"
+        "Ground Fault",
+        "Parallel Arc"
       ],
       "sources": [
-        "nec-2023#cl.210.8(A)"
+        "nec-2023#cl.100"
       ]
     },
     {
@@ -296,19 +348,55 @@
       ]
     },
     {
-      "id": "arc-fault",
-      "term": "Arc Fault",
-      "definition": "An unintended arc produced by current flowing through an unintentional path.",
+      "id": "branch-feeder-afci",
+      "term": "Branch/Feeder AFCI",
+      "definition": "An AFCI that provides protection against parallel arcs in branch circuit and feeder wiring.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "AFCI basics",
+      "aliases": [
+        "Branch/Feeder AFCI"
+      ],
+      "confusables": [
+        "Combination-Type AFCI",
+        "Ground-Fault Circuit Interrupter"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "combination-type-afci",
+      "term": "Combination-Type AFCI",
+      "definition": "An AFCI that provides protection against both series and parallel arc faults.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "AFCI basics",
+      "aliases": [
+        "Combination AFCI"
+      ],
+      "confusables": [
+        "Branch/Feeder AFCI",
+        "Dual-Function Breaker"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "fire-prevention-protection",
+      "term": "Fire Prevention Protection",
+      "definition": "Protection intended to mitigate arc faults that could ignite combustible materials.",
       "formula": "",
       "unit": 3,
       "unitTitle": "AFCI basics",
       "aliases": [],
       "confusables": [
-        "Ground Fault",
-        "Parallel Arc"
+        "Personnel Protection",
+        "Ground-Fault Circuit Interrupter"
       ],
       "sources": [
-        "nec-2023#cl.100"
+        "nec-2023#cl.210.12"
       ]
     },
     {
@@ -344,52 +432,71 @@
       ]
     },
     {
-      "id": "combination-type-afci",
-      "term": "Combination-Type AFCI",
-      "definition": "An AFCI that provides protection against both series and parallel arc faults.",
+      "id": "afci-branch-circuit-extension",
+      "term": "AFCI Branch-Circuit Extension",
+      "definition": "NEC requirement to provide AFCI protection when extending or modifying branch circuits in dwelling units.",
       "formula": "",
-      "unit": 3,
-      "unitTitle": "AFCI basics",
+      "unit": 4,
+      "unitTitle": "AFCI requirements",
       "aliases": [
-        "Combination AFCI"
+        "AFCI circuit extension"
       ],
       "confusables": [
-        "Branch/Feeder AFCI",
+        "Extended Dwelling AFCI Areas",
+        "Outlet Branch Circuit"
+      ],
+      "sources": [
+        "nec-2023#cl.210.12(C)"
+      ]
+    },
+    {
+      "id": "afci-circuit-breaker",
+      "term": "AFCI Circuit Breaker",
+      "definition": "A circuit breaker providing arc-fault protection for an entire branch circuit.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "AFCI requirements",
+      "aliases": [
+        "AFCI breaker"
+      ],
+      "confusables": [
+        "GFCI Circuit Breaker",
         "Dual-Function Breaker"
       ],
       "sources": [
-        "nec-2023#cl.100"
+        "nec-2023#cl.210.12"
       ]
     },
     {
-      "id": "branch-feeder-afci",
-      "term": "Branch/Feeder AFCI",
-      "definition": "An AFCI that provides protection against parallel arcs in branch circuit and feeder wiring.",
+      "id": "afci-exception-list",
+      "term": "AFCI Exception List",
+      "definition": "Specific circuits or locations exempt from AFCI protection under NEC provisions.",
       "formula": "",
-      "unit": 3,
-      "unitTitle": "AFCI basics",
-      "aliases": [
-        "Branch/Feeder AFCI"
-      ],
-      "confusables": [
-        "Combination-Type AFCI",
-        "Ground-Fault Circuit Interrupter"
-      ],
-      "sources": [
-        "nec-2023#cl.100"
-      ]
-    },
-    {
-      "id": "fire-prevention-protection",
-      "term": "Fire Prevention Protection",
-      "definition": "Protection intended to mitigate arc faults that could ignite combustible materials.",
-      "formula": "",
-      "unit": 3,
-      "unitTitle": "AFCI basics",
+      "unit": 4,
+      "unitTitle": "AFCI requirements",
       "aliases": [],
       "confusables": [
-        "Personnel Protection",
-        "Ground-Fault Circuit Interrupter"
+        "Ground-Fault Circuit Interrupter",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.210.12(A)"
+      ]
+    },
+    {
+      "id": "dual-function-breaker",
+      "term": "Dual-Function Breaker",
+      "definition": "A circuit breaker providing both ground-fault and arc-fault protection.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "AFCI requirements",
+      "aliases": [
+        "Dual-function AFCI/GFCI breaker"
+      ],
+      "confusables": [
+        "AFCI Circuit Breaker",
+        "GFCI Circuit Breaker",
+        "Combination-Type AFCI"
       ],
       "sources": [
         "nec-2023#cl.210.12"
@@ -428,59 +535,6 @@
       ]
     },
     {
-      "id": "afci-exception-list",
-      "term": "AFCI Exception List",
-      "definition": "Specific circuits or locations exempt from AFCI protection under NEC provisions.",
-      "formula": "",
-      "unit": 4,
-      "unitTitle": "AFCI requirements",
-      "aliases": [],
-      "confusables": [
-        "Ground-Fault Circuit Interrupter",
-        "Ground Fault"
-      ],
-      "sources": [
-        "nec-2023#cl.210.12(A)"
-      ]
-    },
-    {
-      "id": "afci-circuit-breaker",
-      "term": "AFCI Circuit Breaker",
-      "definition": "A circuit breaker providing arc-fault protection for an entire branch circuit.",
-      "formula": "",
-      "unit": 4,
-      "unitTitle": "AFCI requirements",
-      "aliases": [
-        "AFCI breaker"
-      ],
-      "confusables": [
-        "GFCI Circuit Breaker",
-        "Dual-Function Breaker"
-      ],
-      "sources": [
-        "nec-2023#cl.210.12"
-      ]
-    },
-    {
-      "id": "dual-function-breaker",
-      "term": "Dual-Function Breaker",
-      "definition": "A circuit breaker providing both ground-fault and arc-fault protection.",
-      "formula": "",
-      "unit": 4,
-      "unitTitle": "AFCI requirements",
-      "aliases": [
-        "Dual-function AFCI/GFCI breaker"
-      ],
-      "confusables": [
-        "AFCI Circuit Breaker",
-        "GFCI Circuit Breaker",
-        "Combination-Type AFCI"
-      ],
-      "sources": [
-        "nec-2023#cl.210.12"
-      ]
-    },
-    {
       "id": "outlet-branch-circuit",
       "term": "Outlet Branch Circuit",
       "definition": "A branch circuit supplying receptacle outlets, often subject to AFCI protection requirements.",
@@ -497,19 +551,21 @@
       ]
     },
     {
-      "id": "receptacle-gfci-protection",
-      "term": "Receptacle GFCI Protection",
-      "definition": "GFCI protection applied to a receptacle outlet to protect users from ground faults.",
+      "id": "outlet-branch-circuit-afci-receptacle",
+      "term": "Outlet Branch-Circuit AFCI Receptacle",
+      "definition": "A receptacle-type AFCI device that protects downstream branch-circuit wiring when installed at the first outlet.",
       "formula": "",
-      "unit": 5,
-      "unitTitle": "Protection applications",
-      "aliases": [],
+      "unit": 4,
+      "unitTitle": "AFCI requirements",
+      "aliases": [
+        "OBC AFCI receptacle"
+      ],
       "confusables": [
-        "Feed-Through Protection",
-        "Ground-Fault Circuit Interrupter"
+        "Outlet Branch Circuit",
+        "Combination-Type AFCI"
       ],
       "sources": [
-        "nec-2023#cl.210.8"
+        "nec-2023#cl.210.12(A)"
       ]
     },
     {
@@ -529,23 +585,6 @@
       ]
     },
     {
-      "id": "wet-location-protection",
-      "term": "Wet Location Protection",
-      "definition": "GFCI protection required for receptacles in wet locations due to shock hazard.",
-      "formula": "",
-      "unit": 5,
-      "unitTitle": "Protection applications",
-      "aliases": [],
-      "confusables": [
-        "Damp Location Protection",
-        "Outdoor GFCI Requirement",
-        "Bathroom GFCI Requirement"
-      ],
-      "sources": [
-        "nec-2023#cl.210.8(A)"
-      ]
-    },
-    {
       "id": "damp-location-protection",
       "term": "Damp Location Protection",
       "definition": "GFCI protection considerations for receptacles in damp but not wet locations.",
@@ -559,22 +598,6 @@
       ],
       "sources": [
         "nec-2023#cl.210.8(A)"
-      ]
-    },
-    {
-      "id": "portable-appliance-protection",
-      "term": "Portable Appliance Protection",
-      "definition": "GFCI protection used for cord-and-plug connected portable appliances in required locations.",
-      "formula": "",
-      "unit": 5,
-      "unitTitle": "Protection applications",
-      "aliases": [],
-      "confusables": [
-        "Ground-Fault Circuit Interrupter",
-        "Ground Fault"
-      ],
-      "sources": [
-        "nec-2023#cl.210.8(B)"
       ]
     },
     {
@@ -594,6 +617,56 @@
       ]
     },
     {
+      "id": "line-load-reversal",
+      "term": "Line-Load Reversal",
+      "definition": "A miswiring condition where supply conductors land on the load terminals, leaving the GFCI without line power.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Protection applications",
+      "aliases": [
+        "Reversed line and load"
+      ],
+      "confusables": [
+        "Feed-Through Protection",
+        "GFCI Receptacle"
+      ],
+      "sources": [
+        "nec-2023#cl.406.4"
+      ]
+    },
+    {
+      "id": "portable-appliance-protection",
+      "term": "Portable Appliance Protection",
+      "definition": "GFCI protection used for cord-and-plug connected portable appliances in required locations.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Protection applications",
+      "aliases": [],
+      "confusables": [
+        "Ground-Fault Circuit Interrupter",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.210.8(B)"
+      ]
+    },
+    {
+      "id": "receptacle-gfci-protection",
+      "term": "Receptacle GFCI Protection",
+      "definition": "GFCI protection applied to a receptacle outlet to protect users from ground faults.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Protection applications",
+      "aliases": [],
+      "confusables": [
+        "Feed-Through Protection",
+        "Ground-Fault Circuit Interrupter"
+      ],
+      "sources": [
+        "nec-2023#cl.210.8"
+      ]
+    },
+    {
       "id": "replacement-receptacle-requirement",
       "term": "Replacement Receptacle Requirement",
       "definition": "NEC requirement to provide GFCI or AFCI protection when replacing receptacles in certain locations.",
@@ -607,6 +680,23 @@
       ],
       "sources": [
         "nec-2023#cl.406.4(D)"
+      ]
+    },
+    {
+      "id": "wet-location-protection",
+      "term": "Wet Location Protection",
+      "definition": "GFCI protection required for receptacles in wet locations due to shock hazard.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Protection applications",
+      "aliases": [],
+      "confusables": [
+        "Damp Location Protection",
+        "Outdoor GFCI Requirement",
+        "Bathroom GFCI Requirement"
+      ],
+      "sources": [
+        "nec-2023#cl.210.8(A)"
       ]
     }
   ]

@@ -219,9 +219,8 @@ def validate_collection(cpath):
                     # locator scheme match
                     scheme = src.get("locatorScheme","")
                     prefix = scheme.split("<")[0]
-                    # be lenient
-                    if prefix and not re.match(r'^[a-z]+\.', locator) and not locator.startswith(prefix):
-                        pass  # skip strict check
+                    if not locator.startswith(prefix):
+                        err(f"{slug}/{sid}/{d.get('id')}: locator {locator} doesn't match scheme {scheme}")
             all_defs_collection.append((sid, d))
 
     # confusable existence across collection

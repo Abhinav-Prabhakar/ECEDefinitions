@@ -47,7 +47,7 @@
         "Calculated load"
       ],
       "sources": [
-        "nec-70#cl.220.1"
+        "nec-2023#cl.220.1"
       ]
     },
     {
@@ -64,7 +64,7 @@
         "Calculated load"
       ],
       "sources": [
-        "nec-70#cl.220.2"
+        "nec-2023#cl.220.2"
       ]
     },
     {
@@ -80,7 +80,7 @@
         "Calculated load"
       ],
       "sources": [
-        "nec-70#cl.220.3"
+        "nec-2023#cl.220.3"
       ]
     },
     {
@@ -97,7 +97,7 @@
         "Connected load"
       ],
       "sources": [
-        "nec-70#cl.100"
+        "nec-2023#cl.100"
       ]
     },
     {
@@ -114,7 +114,7 @@
         "Calculated load"
       ],
       "sources": [
-        "nec-70#cl.100"
+        "nec-2023#cl.100"
       ]
     },
     {
@@ -131,7 +131,7 @@
         "Feeder load"
       ],
       "sources": [
-        "nec-70#cl.220.1"
+        "nec-2023#cl.220.1"
       ]
     },
     {
@@ -148,7 +148,7 @@
         "Calculated load"
       ],
       "sources": [
-        "nec-70#cl.220.10"
+        "nec-2023#cl.220.10"
       ]
     },
     {
@@ -165,7 +165,7 @@
         "Demand load"
       ],
       "sources": [
-        "nec-70#cl.215.2"
+        "nec-2023#cl.215.2"
       ]
     },
     {
@@ -182,14 +182,14 @@
         "Demand load"
       ],
       "sources": [
-        "nec-70#cl.230.1"
+        "nec-2023#cl.230.1"
       ]
     },
     {
       "id": "general-lighting-load-dwelling",
       "term": "Dwelling general lighting load",
       "definition": "A unit-area lighting load applied to habitable space in a dwelling per NEC tables.",
-      "formula": "3 VA/ft\u00b2",
+      "formula": "3 VA/ft²",
       "unit": 2,
       "unitTitle": "Dwelling calculations",
       "aliases": [],
@@ -198,7 +198,7 @@
         "Load"
       ],
       "sources": [
-        "nec-70#cl.220.12"
+        "nec-2023#cl.220.12"
       ]
     },
     {
@@ -215,7 +215,7 @@
         "Dwelling receptacle load"
       ],
       "sources": [
-        "nec-70#cl.210.11(C)(1)"
+        "nec-2023#cl.210.11(C)(1)"
       ]
     },
     {
@@ -232,7 +232,7 @@
         "Fixed appliance load"
       ],
       "sources": [
-        "nec-70#cl.210.11(C)(2)"
+        "nec-2023#cl.210.11(C)(2)"
       ]
     },
     {
@@ -249,7 +249,7 @@
         "Laundry circuit"
       ],
       "sources": [
-        "nec-70#cl.220.14(I)"
+        "nec-2023#cl.220.14(I)"
       ]
     },
     {
@@ -266,7 +266,7 @@
         "Appliance demand factor"
       ],
       "sources": [
-        "nec-70#cl.220.53"
+        "nec-2023#cl.220.53"
       ]
     },
     {
@@ -283,7 +283,7 @@
         "Cooking appliance demand factor"
       ],
       "sources": [
-        "nec-70#cl.220.55"
+        "nec-2023#cl.220.55"
       ]
     },
     {
@@ -300,7 +300,7 @@
         "Dryer demand factor"
       ],
       "sources": [
-        "nec-70#cl.220.54"
+        "nec-2023#cl.220.54"
       ]
     },
     {
@@ -317,7 +317,7 @@
         "Service load"
       ],
       "sources": [
-        "nec-70#cl.220.51"
+        "nec-2023#cl.220.51"
       ]
     },
     {
@@ -333,7 +333,7 @@
         "Service load"
       ],
       "sources": [
-        "nec-70#cl.220.82"
+        "nec-2023#cl.220.82"
       ]
     },
     {
@@ -350,7 +350,7 @@
         "Non-dwelling receptacle load"
       ],
       "sources": [
-        "nec-70#cl.220.12"
+        "nec-2023#cl.220.12"
       ]
     },
     {
@@ -367,7 +367,7 @@
         "Sign outlet load"
       ],
       "sources": [
-        "nec-70#cl.220.43(A)"
+        "nec-2023#cl.220.43(A)"
       ]
     },
     {
@@ -384,7 +384,7 @@
         "Non-dwelling receptacle load"
       ],
       "sources": [
-        "nec-70#cl.220.14(F)"
+        "nec-2023#cl.220.14(F)"
       ]
     },
     {
@@ -401,7 +401,7 @@
         "Sign outlet load"
       ],
       "sources": [
-        "nec-70#cl.220.43(B)"
+        "nec-2023#cl.220.43(B)"
       ]
     },
     {
@@ -418,7 +418,7 @@
         "Demand factor"
       ],
       "sources": [
-        "nec-70#cl.220.44"
+        "nec-2023#cl.220.44"
       ]
     },
     {
@@ -434,7 +434,7 @@
         "Demand load"
       ],
       "sources": [
-        "nec-70#cl.430.24"
+        "nec-2023#cl.430.24"
       ]
     },
     {
@@ -451,7 +451,7 @@
         "Track lighting load"
       ],
       "sources": [
-        "nec-70#cl.220.14(H)"
+        "nec-2023#cl.220.14(H)"
       ]
     },
     {
@@ -468,7 +468,7 @@
         "Continuous load"
       ],
       "sources": [
-        "nec-70#cl.220.12"
+        "nec-2023#cl.220.12"
       ]
     },
     {
@@ -485,7 +485,7 @@
         "Feeder load"
       ],
       "sources": [
-        "nec-70#cl.220.87"
+        "nec-2023#cl.220.87"
       ]
     },
     {
@@ -501,7 +501,7 @@
         "Load"
       ],
       "sources": [
-        "nec-70#cl.220.3"
+        "nec-2023#cl.220.3"
       ]
     },
     {
@@ -517,7 +517,7 @@
         "Load"
       ],
       "sources": [
-        "nec-70#cl.220.3"
+        "nec-2023#cl.220.3"
       ]
     },
     {
@@ -534,7 +534,7 @@
         "Non-dwelling general lighting load"
       ],
       "sources": [
-        "nec-70#cl.220.42"
+        "nec-2023#cl.220.42"
       ]
     },
     {
@@ -551,7 +551,7 @@
         "Non-dwelling receptacle load"
       ],
       "sources": [
-        "nec-70#cl.220.44"
+        "nec-2023#cl.220.44"
       ]
     },
     {
@@ -568,7 +568,7 @@
         "Fixed appliance load"
       ],
       "sources": [
-        "nec-70#cl.220.53"
+        "nec-2023#cl.220.53"
       ]
     },
     {
@@ -585,7 +585,7 @@
         "Demand factor"
       ],
       "sources": [
-        "nec-70#cl.220.55"
+        "nec-2023#cl.220.55"
       ]
     },
     {
@@ -602,7 +602,7 @@
         "Dryer load"
       ],
       "sources": [
-        "nec-70#cl.220.54"
+        "nec-2023#cl.220.54"
       ]
     },
     {
@@ -619,7 +619,7 @@
         "Service load"
       ],
       "sources": [
-        "nec-70#cl.220.61"
+        "nec-2023#cl.220.61"
       ]
     },
     {
@@ -635,7 +635,7 @@
         "Continuous load"
       ],
       "sources": [
-        "nec-70#cl.220.3"
+        "nec-2023#cl.220.3"
       ]
     },
     {
@@ -651,7 +651,7 @@
         "Connected load"
       ],
       "sources": [
-        "nec-70#cl.230.2"
+        "nec-2023#cl.230.2"
       ]
     },
     {
@@ -668,7 +668,7 @@
         "Service conductors"
       ],
       "sources": [
-        "nec-70#cl.230.79"
+        "nec-2023#cl.230.79"
       ]
     },
     {
@@ -684,7 +684,7 @@
         "Load"
       ],
       "sources": [
-        "nec-70#cl.230.42"
+        "nec-2023#cl.230.42"
       ]
     },
     {
@@ -701,7 +701,7 @@
         "Calculated load"
       ],
       "sources": [
-        "nec-70#cl.230.1"
+        "nec-2023#cl.230.1"
       ]
     },
     {
@@ -717,7 +717,7 @@
         "Service conductors"
       ],
       "sources": [
-        "nec-70#cl.220.61"
+        "nec-2023#cl.220.61"
       ]
     },
     {
@@ -733,7 +733,7 @@
         "Load"
       ],
       "sources": [
-        "nec-70#cl.230.90"
+        "nec-2023#cl.230.90"
       ]
     },
     {
@@ -749,7 +749,7 @@
         "Service load"
       ],
       "sources": [
-        "nec-70#cl.230.79"
+        "nec-2023#cl.230.79"
       ]
     },
     {
@@ -766,7 +766,7 @@
         "Service conductor ampacity"
       ],
       "sources": [
-        "nec-70#cl.230.79"
+        "nec-2023#cl.230.79"
       ]
     },
     {
@@ -783,7 +783,7 @@
         "Feeder load"
       ],
       "sources": [
-        "nec-70#cl.220.1"
+        "nec-2023#cl.220.1"
       ]
     }
   ]
