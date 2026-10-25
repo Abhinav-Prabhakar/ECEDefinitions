@@ -9,8 +9,9 @@
 **Electronics, in one line.**
 
 A quiet ECE study instrument: 2,773 definitions across 51 subjects — every A22 core course
-and elective option, every unit — grouped by semester, with a daily practice stack, adaptive
-two-way quizzes, source traceability, and a memory of what you actually know.
+and elective option, every unit — grouped by semester, with 1,662 typeset equations, 624
+concept diagrams, a daily practice stack, adaptive two-way quizzes, source traceability,
+and a memory of what you actually know.
 
 <a href="https://abhinav-prabhakar.github.io/ECEDefinitions/">
   <img src="https://img.shields.io/badge/OPEN_THE_APP-live-5b6ee1?style=for-the-badge&logo=githubpages&logoColor=white" alt="Open the live app" />
@@ -43,6 +44,34 @@ No accounts, no server, no noise.
 > **Recognition is not recall.** So the quiz asks in both directions.
 
 ---
+
+## Equations, not walls of text
+
+Every definition that has an honest relation carries one, set in bare LaTeX and rendered by
+a self-hosted KaTeX build: `λ = h/p`, `E_n = n²h²/8mL²`, `H(z) = Y(z)/X(z)`,
+`T(n) = 2T(n/2) + Θ(n)`. 1,662 definitions do. The rest are genuinely descriptive, and
+stay that way — an invented equation is worse than no equation.
+
+- Equations are **inline on the subject page**, not hidden behind a hover.
+- They inherit the subject colour and the active theme; no math-font flash, no third-party
+  request, and no network after the first visit.
+- `node scripts/check-formulas.mjs` parses every stored formula against the same KaTeX
+  build before it ships.
+
+## Figures where a figure earns it
+
+624 definitions carry a thin-line concept diagram: 57% of Engineering Physics, 30–42% of
+the core electronics, signals and communications subjects, 15–25% of the systems subjects,
+and only a handful in programming, management and values. The density is deliberate.
+
+- **Subject page:** a small frame glyph after the term; hover or focus reveals the drawing.
+  Nothing moves, nothing shifts, and the page stays a page.
+- **Quiz:** once you answer, the equation and the figure are shown directly with the
+  explanation — no hunting.
+- One shared SVG sprite, 198 symbols, drawn in `currentColor` + the subject accent. It
+  works in both themes and offline like the rest of the shell.
+- The library is generated from `scripts/diagrams/*.py`; every drawing is on the same
+  240×150 grid, 1px line, sparse uppercase labels.
 
 ## Screenshots
 
@@ -256,8 +285,10 @@ sheet closes and held inside an open subject or quiz.
 
 | | |
 | --- | --- |
-| **Stack** | Static HTML, CSS and vanilla JavaScript. No framework. A stdlib Python script builds the data index. |
-| **Data** | `data/curriculum.json`, one file per subject under `data/subjects/<semester>/`, and `data/sources.json`. |
+| **Stack** | Static HTML, CSS and vanilla JavaScript. No framework. Stdlib Python builds the index and the diagram sprite. |
+| **Data** | `data/curriculum.json`, one file per subject under `data/subjects/<semester>/`, and `data/sources.json`. Equations are bare TeX; diagrams are sprite ids. |
+| **Math** | Self-hosted KaTeX (woff2 only), precached with the shell. |
+| **Figures** | 198-symbol SVG sprite, generated from `scripts/diagrams/*.py`. |
 | **Storage** | `localStorage` — `oneliners.state.v1` for progress, `oneliners.theme` for the theme. |
 | **Offline** | Hand-written service worker; precaches the app shell, source manifest, and every seeded subject file. |
 | **Type** | Self-hosted Inter variable font. |
@@ -314,15 +345,23 @@ curriculum index is already committed.
 ├── .nojekyll                         # keep GitHub Pages static
 ├── data/
 │   ├── curriculum.json               # semester index the app loads
-│   ├── sources.json                  # 250 source files + locator schemes
+│   ├── sources.json                  # 587 sources + locator schemes
 │   ├── README.md                     # coverage and access report
-│   └── subjects/<semester>/*.json    # one file per subject
+│   └── subjects/<semester>/*.json    # one file per subject (formula + diagram)
 ├── scripts/
 │   ├── build-curriculum-index.py     # rebuild curriculum.json from subject files
-│   └── validate-seed-data.py         # dependency-free data validator
+│   ├── validate-seed-data.py         # dependency-free data + diagram validator
+│   ├── check-formulas.mjs            # parse every formula with the vendored KaTeX
+│   ├── build-diagrams.py             # merge the diagram families into the sprite
+│   └── diagrams/                     # base primitives + six family modules
 ├── prompts/
-│   └── seed-curriculum-agent.md      # source-extraction brief
+│   ├── seed-curriculum-agent.md      # source-extraction brief
+│   ├── equation-pass-agent.md        # notation + figure brief
+│   ├── diagram-catalog.md            # all 198 ids and coverage rules
+│   └── diagram-family-agent.md       # drawing brief
 └── assets/
+    ├── diagrams.svg                  # 198 thin-line symbols
+    ├── katex/                        # self-hosted KaTeX (woff2 only)
     ├── icon.svg                      # brand mark
     ├── icon-192.png                  # PWA icon
     ├── icon-512.png                  # PWA icon

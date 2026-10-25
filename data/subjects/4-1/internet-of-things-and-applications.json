@@ -233,7 +233,7 @@
         "iota-iota-unit-2#p.90"
       ],
       "id": "i2c",
-      "formula": "R_{b}=f_{\\text{SCL}}",
+      "formula": "\\text{bit rate}=f_{\\text{SCL}}",
       "diagram": "i2c-bus"
     },
     {

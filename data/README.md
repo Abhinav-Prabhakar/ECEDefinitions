@@ -10,7 +10,11 @@ A22 syllabus topics using cited web sources. This is a coverage report, not mark
 - **Definitions:** 2,773, all with ≥1 source locator — 1,948 from Drive files, 825 from web sources
 - **Sources catalogued:** 587 (`data/sources.json`): 298 Drive files, 289 web pages (`kind: "web"`)
 - **Validator:** `python3 scripts/validate-seed-data.py` → `VALIDATION OK`
+- **Formula check:** `node scripts/check-formulas.mjs` → `FORMULA CHECK OK`
 - **Leak audit:** `python3 scripts/audit-definition-leaks.py --no-echo` → 0 blocking findings
+- **Notation layer:** 1,662 definitions carry a bare-LaTeX `formula`; 624 carry a `diagram`
+  id from the shared 198-symbol sprite. Coverage is deliberately uneven (physics/devices
+  high, programming/management/values low). See `prompts/diagram-catalog.md`.
 
 **No raw source files are redistributed in this repository** — only definitions,
 formulas, locators and the source manifest. See the note at the end.

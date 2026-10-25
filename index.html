@@ -2094,20 +2094,26 @@ function diagramMarkup(id, label){
     <use href="#dg-${esc(id)}"></use></svg>`;
 }
 
-async function loadDiagrams(){
-  try {
-    const res = await fetch('assets/diagrams.svg', { cache: 'no-cache' });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const host = document.createElement('div');
-    host.id = 'dg-sprite';
-    host.setAttribute('aria-hidden', 'true');
-    host.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
-    host.innerHTML = await res.text();
-    document.body.prepend(host);
-    DG.ready = true;
-  } catch (err){
-    console.warn('[one·liners] diagrams unavailable', err);
-  }
+let DG_PROMISE = null;
+function loadDiagrams(){
+  if (DG.ready) return Promise.resolve();
+  if (DG_PROMISE) return DG_PROMISE;
+  DG_PROMISE = (async () => {
+    try {
+      const res = await fetch('assets/diagrams.svg', { cache: 'no-cache' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const host = document.createElement('div');
+      host.id = 'dg-sprite';
+      host.setAttribute('aria-hidden', 'true');
+      host.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+      host.innerHTML = await res.text();
+      document.body.prepend(host);
+      DG.ready = true;
+    } catch (err){
+      console.warn('[one·liners] diagrams unavailable', err);
+    }
+  })();
+  return DG_PROMISE;
 }
 
 function shuffle(arr){
@@ -3599,11 +3605,13 @@ function refreshSubject(){
   applyDefFilter();
 }
 
-function openSubject(id){
+async function openSubject(id){
   const s = SUBJECT_BY_ID[id];
   if (!s) return;
-  subjectTrigger = document.activeElement && document.activeElement !== document.body
+  const trigger = document.activeElement && document.activeElement !== document.body
     ? document.activeElement : null;
+  if (!DG.ready) await loadDiagrams();
+  subjectTrigger = trigger;
   currentId = id;
   currentFilter = 'all';
 
@@ -4435,7 +4443,7 @@ async function init(){
   document.title = 'one·liners — ECE';
 
   try {
-    const [data] = await Promise.all([loadCurriculum(), loadDiagrams()]);
+    const data = await loadCurriculum();
     SEMESTERS = data.semesters;
     SUBJECTS = data.subjects;
     SUBJECT_BY_ID = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
@@ -4454,6 +4462,7 @@ async function init(){
     filterCards();
     refreshHome();
     alignGraphToEnd();
+    loadDiagrams();
   } catch (err){
     console.error(err);
     showDataError(err);
