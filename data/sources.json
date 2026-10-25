@@ -3843,6 +3843,86 @@
       "locatorScheme": "section slug"
     },
     {
+      "id": "ertos-web-interrupt",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Interrupt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interrupt",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-rtc",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Real-time clock (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real-time_clock",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-pit",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Programmable interval timer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Programmable_interval_timer",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-rtlinux",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "RTLinux (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/RTLinux",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-ucos",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Micro-Controller Operating Systems (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Micro-Controller_Operating_Systems",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-vxworks",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "VxWorks (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/VxWorks",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-tinyos",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "TinyOS (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/TinyOS",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-embedded-linux",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Embedded Linux (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Embedded_Linux",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
       "id": "vlsitd-web-sheet-resistance",
       "semester": "3-2",
       "subjectId": "vlsi-technology-and-design",

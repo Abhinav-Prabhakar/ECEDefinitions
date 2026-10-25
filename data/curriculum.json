@@ -645,11 +645,11 @@
           "folderId": "1kecqObpSdxgTDP0JbzrswXfzaiWLDOQr",
           "folderUrl": "https://drive.google.com/drive/folders/1kecqObpSdxgTDP0JbzrswXfzaiWLDOQr",
           "data": "data/subjects/4-1/embedded-real-time-operating-systems.json",
-          "definitionCount": 40,
+          "definitionCount": 58,
           "unitCount": 6,
-          "coveredUnits": 4,
-          "status": "partial",
-          "sourceCount": 5
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 13
         },
         {
           "id": "internet-of-things-and-applications",
@@ -711,9 +711,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 41,
-    "definitions": 1613,
-    "completeSubjects": 28,
-    "partialSubjects": 5,
+    "definitions": 1631,
+    "completeSubjects": 29,
+    "partialSubjects": 4,
     "inaccessibleSubjects": 8
   }
 }
