@@ -1,0 +1,281 @@
+{
+  "subject": "antennas-and-wave-propagations",
+  "artifacts": {
+    "antennas-and-wave-propagations--hertzian-dipole": {
+      "type": "derivation",
+      "title": "far field to radiation resistance",
+      "steps": [
+        "E_{\\theta}=\\frac{j\\eta\\beta Il}{4\\pi r}\\sin\\theta\\,e^{-j\\beta r}",
+        "\\langle S\\rangle=\\frac{|E_{\\theta}|^{2}}{2\\eta}=\\frac{\\eta\\beta^{2}I^{2}l^{2}}{32\\pi^{2}r^{2}}\\sin^{2}\\theta",
+        "P_{\\text{rad}}=\\int_{0}^{2\\pi}\\!\\!\\int_{0}^{\\pi}\\langle S\\rangle r^{2}\\sin\\theta\\,d\\theta\\,d\\phi=\\frac{\\eta\\beta^{2}I^{2}l^{2}}{12\\pi}",
+        "R_{r}=\\frac{2P_{\\text{rad}}}{I^{2}}=80\\pi^{2}\\left(\\frac{l}{\\lambda}\\right)^{2}"
+      ],
+      "symbols": [
+        [
+          "\\eta",
+          "intrinsic impedance, 120π Ω"
+        ],
+        [
+          "\\beta",
+          "phase constant 2π/λ"
+        ],
+        [
+          "l",
+          "element length, l much less than λ"
+        ],
+        [
+          "R_{r}",
+          "radiation resistance"
+        ]
+      ],
+      "note": "R_r grows as (l/λ)², so a 0.01λ element has R_r ≈ 0.08 Ω and is a hopeless match to a 50 Ω line."
+    },
+    "antennas-and-wave-propagations--antenna-array": {
+      "type": "derivation",
+      "title": "uniform array factor and its first null",
+      "steps": [
+        "\\psi=kd\\cos\\theta+\\beta,\\qquad \\text{AF}=\\sum_{n=0}^{N-1}e^{jn\\psi}=\\frac{\\sin\\left(N\\psi/2\\right)}{\\sin\\left(\\psi/2\\right)}",
+        "\\text{AF}=0\\ \\text{when}\\ \\frac{N\\psi}{2}=\\pm m\\pi,\\qquad m=1,2,\\dots",
+        "\\psi_{\\text{null}}=\\frac{2\\pi}{N}",
+        "\\text{HPBW}\\approx\\frac{0.886\\lambda}{Nd}\\ \\text{(broadside, large N)}"
+      ],
+      "symbols": [
+        [
+          "\\psi",
+          "total phase difference between adjacent elements"
+        ],
+        [
+          "k",
+          "2π/λ"
+        ],
+        [
+          "d",
+          "element spacing"
+        ],
+        [
+          "\\beta",
+          "progressive feed phase"
+        ],
+        [
+          "N",
+          "number of elements"
+        ]
+      ],
+      "note": "The first null moves in as 1/N, so doubling the elements halves the beamwidth; spacing near one wavelength adds grating lobes."
+    },
+    "antennas-and-wave-propagations--directivity": {
+      "type": "derivation",
+      "title": "directivity from the beam solid angle",
+      "steps": [
+        "\\Omega_{A}=\\iint_{4\\pi}F^{2}(\\theta,\\phi)\\,d\\Omega",
+        "D=\\frac{4\\pi U_{\\max}}{P_{\\text{rad}}}=\\frac{4\\pi}{\\Omega_{A}}",
+        "\\Omega_{A}\\approx\\theta_{E}\\theta_{H}\\ \\Rightarrow\\ D\\approx\\frac{41253}{\\theta_{E}\\theta_{H}\\ (\\text{deg})}",
+        "D\\ (\\text{dBi})=10\\log_{10}D"
+      ],
+      "symbols": [
+        [
+          "\\Omega_{A}",
+          "beam solid angle, sr"
+        ],
+        [
+          "F",
+          "normalised field pattern"
+        ],
+        [
+          "\\theta_{E},\\ \\theta_{H}",
+          "E- and H-plane half-power beamwidths"
+        ],
+        [
+          "D",
+          "directivity, dimensionless"
+        ]
+      ],
+      "note": "The 41253 is 4π converted to square degrees, so the estimate needs only two measured beamwidths and no integration."
+    },
+    "antennas-and-wave-propagations--effective-aperture": {
+      "type": "derivation",
+      "title": "Friis transmission equation",
+      "steps": [
+        "S_{\\text{inc}}=\\frac{P_{t}G_{t}}{4\\pi R^{2}}",
+        "A_{e}=\\frac{\\lambda^{2}}{4\\pi}G_{r}",
+        "P_{r}=S_{\\text{inc}}A_{e}=P_{t}G_{t}G_{r}\\left(\\frac{\\lambda}{4\\pi R}\\right)^{2}",
+        "\\frac{P_{r}}{P_{t}}=\\left(\\frac{\\lambda}{4\\pi R}\\right)^{2}\\ \\text{for}\\ G_{t}=G_{r}=1"
+      ],
+      "symbols": [
+        [
+          "P_{t},P_{r}",
+          "transmitted and received power"
+        ],
+        [
+          "G_{t},G_{r}",
+          "transmit and receive gains"
+        ],
+        [
+          "R",
+          "separation, far-field"
+        ],
+        [
+          "A_{e}",
+          "effective aperture of the receive antenna"
+        ]
+      ],
+      "note": "Every term is a ratio, so the whole link can be carried in dB: the path contributes 20log10(λ/4πR)."
+    },
+    "antennas-and-wave-propagations--antenna": {
+      "type": "table",
+      "title": "common antenna types",
+      "headers": [
+        "type",
+        "typical gain",
+        "bandwidth",
+        "polarisation",
+        "use"
+      ],
+      "rows": [
+        [
+          "short dipole",
+          "1.8 dBi",
+          "narrow",
+          "linear",
+          "probes, field sensors"
+        ],
+        [
+          "half-wave dipole",
+          "2.15 dBi",
+          "about 10%",
+          "linear",
+          "reference, FM broadcast"
+        ],
+        [
+          "Yagi-Uda",
+          "10-15 dBi",
+          "about 5%",
+          "linear",
+          "TV, VHF point-to-point"
+        ],
+        [
+          "horn",
+          "15-25 dBi",
+          "wide",
+          "linear or circular",
+          "reflector feeds, test ranges"
+        ],
+        [
+          "parabolic reflector",
+          "30-50 dBi",
+          "narrow",
+          "set by the feed",
+          "satellite, radar"
+        ],
+        [
+          "microstrip patch",
+          "5-8 dBi",
+          "1-5%",
+          "linear or circular",
+          "handsets, conformal arrays"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Gain and bandwidth trade against each other: aperture antennas buy decibels with size, travelling-wave types buy band with length."
+    },
+    "antennas-and-wave-propagations--end-fire-array": {
+      "type": "table",
+      "title": "broadside, end-fire and Hansen-Woodyard arrays",
+      "headers": [
+        "array",
+        "progressive phase",
+        "main beam",
+        "HPBW"
+      ],
+      "rows": [
+        [
+          "broadside",
+          "β = 0",
+          "θ = 90°",
+          "0.886λ/(Nd)"
+        ],
+        [
+          "ordinary end-fire",
+          "β = -kd",
+          "θ = 0°",
+          "2 sqrt(0.886λ/(Nd))"
+        ],
+        [
+          "Hansen-Woodyard",
+          "β = -(kd + π/N)",
+          "θ = 0°",
+          "narrower than end-fire"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the progressive feed phase β changes, so one physical array can be steered from broadside to end-fire by the feed network."
+    },
+    "antennas-and-wave-propagations--polarization": {
+      "type": "table",
+      "title": "polarisation states and axial ratio",
+      "headers": [
+        "state",
+        "condition",
+        "axial ratio",
+        "example"
+      ],
+      "rows": [
+        [
+          "linear",
+          "δ = 0° or 180°",
+          "infinite",
+          "dipole, monopole"
+        ],
+        [
+          "circular",
+          "δ = ±90° and E_x = E_y",
+          "1 (0 dB)",
+          "helix, turnstile"
+        ],
+        [
+          "elliptical",
+          "any other δ",
+          "1 < AR < infinite",
+          "tilted crossed dipoles"
+        ],
+        [
+          "cross-polarised",
+          "orthogonal to the incident E",
+          "-",
+          "20-30 dB loss at the receiver"
+        ]
+      ],
+      "highlight": 2,
+      "note": "An axial ratio of 1 is perfect circular; the opposite rotation sense is rejected completely, so sense matters as much as tilt."
+    },
+    "antennas-and-wave-propagations--muf": {
+      "type": "derivation",
+      "title": "secant law, MUF and skip distance",
+      "steps": [
+        "f_{v}=f\\cos\\theta_{0}",
+        "f_{v}=f_{c}\\ \\Rightarrow\\ f_{\\text{MUF}}=\\frac{f_{c}}{\\cos\\theta_{0}}=f_{c}\\sec\\theta_{0}",
+        "d_{\\text{skip}}=2h\\tan\\theta_{0}",
+        "d_{\\text{skip}}=2h\\sqrt{\\left(\\frac{f_{\\text{MUF}}}{f_{c}}\\right)^{2}-1}"
+      ],
+      "symbols": [
+        [
+          "\\theta_{0}",
+          "elevation angle at the layer"
+        ],
+        [
+          "f_{c}",
+          "critical frequency"
+        ],
+        [
+          "h",
+          "virtual height of the reflecting layer"
+        ],
+        [
+          "f_{\\text{MUF}}",
+          "maximum usable frequency"
+        ]
+      ],
+      "note": "Above the MUF the ray penetrates the layer instead of returning; below it the skip distance shortens until the ground wave takes over."
+    }
+  }
+}

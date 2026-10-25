@@ -1,0 +1,257 @@
+{
+  "subject": "probability-theory-and-stochastic-process",
+  "artifacts": {
+    "probability-theory-and-stochastic-process--bayes-theorem": {
+      "type": "derivation",
+      "title": "a 99 % test on a 1 % prevalence",
+      "steps": [
+        "P(D)=0.01,\\quad P(+|D)=0.99,\\quad P(+|D^{c})=0.01",
+        "P(+)=P(+|D)P(D)+P(+|D^{c})P(D^{c})=0.0099+0.0099=0.0198",
+        "P(D|+)=\\frac{P(+|D)P(D)}{P(+)}=\\frac{0.0099}{0.0198}=0.50"
+      ],
+      "symbols": [
+        [
+          "D",
+          "the subject has the condition"
+        ],
+        [
+          "+",
+          "the test reports positive"
+        ],
+        [
+          "P(+|D)",
+          "sensitivity"
+        ],
+        [
+          "P(+|D^{c})",
+          "false-positive rate"
+        ]
+      ],
+      "note": "With equal error rates at 1 % prevalence, true and false positives are equally numerous, so a positive result is only 50 % conclusive."
+    },
+    "probability-theory-and-stochastic-process--central-limit-theorem": {
+      "type": "derivation",
+      "title": "normal approximation for 30 dice",
+      "steps": [
+        "\\mu=\\frac{1+6}{2}=3.5,\\quad \\sigma^{2}=\\frac{6^{2}-1}{12}=\\frac{35}{12}",
+        "n=30:\\quad E[S_{n}]=105,\\quad \\operatorname{sd}(S_{n})=\\sqrt{30\\cdot35/12}=9.35",
+        "P(S_{n}>120)=P\\left(Z>\\frac{120.5-105}{9.35}\\right)=P(Z>1.66)",
+        "=1-\\Phi(1.66)\\approx0.048"
+      ],
+      "symbols": [
+        [
+          "S_{n}",
+          "sum of n independent rolls"
+        ],
+        [
+          "\\mu,\\ \\sigma^{2}",
+          "mean and variance of one roll"
+        ],
+        [
+          "Z",
+          "standard normal variable"
+        ],
+        [
+          "\\Phi",
+          "standard normal CDF"
+        ]
+      ],
+      "note": "The sum is standardised, not the average, and the 120.5 continuity correction keeps the normal approximation accurate at n = 30."
+    },
+    "probability-theory-and-stochastic-process--poisson-distribution": {
+      "type": "derivation",
+      "title": "Poisson as a limit of the binomial",
+      "steps": [
+        "\\binom{n}{k}p^{k}(1-p)^{n-k},\\quad p=\\frac{\\lambda}{n}",
+        "=\\frac{n(n-1)\\cdots(n-k+1)}{k!}\\left(\\frac{\\lambda}{n}\\right)^{k}\\left(1-\\frac{\\lambda}{n}\\right)^{n-k}",
+        "\\frac{n(n-1)\\cdots(n-k+1)}{n^{k}}\\to1,\\quad\\left(1-\\frac{\\lambda}{n}\\right)^{n}\\to e^{-\\lambda},\\quad\\left(1-\\frac{\\lambda}{n}\\right)^{-k}\\to1",
+        "P(X=k)\\to\\frac{\\lambda^{k}e^{-\\lambda}}{k!}"
+      ],
+      "symbols": [
+        [
+          "n",
+          "number of Bernoulli trials"
+        ],
+        [
+          "p",
+          "per-trial success probability"
+        ],
+        [
+          "\\lambda",
+          "fixed mean np"
+        ],
+        [
+          "k",
+          "observed count"
+        ]
+      ],
+      "note": "Hold the mean lambda = np fixed while n grows and p shrinks as 1/n; the binomial count then converges to the Poisson law."
+    },
+    "probability-theory-and-stochastic-process--random-variable": {
+      "type": "table",
+      "title": "common distributions at a glance",
+      "headers": [
+        "distribution",
+        "type",
+        "mean",
+        "variance",
+        "model"
+      ],
+      "rows": [
+        [
+          "Bernoulli(p)",
+          "discrete",
+          "p",
+          "p(1 - p)",
+          "one yes/no trial"
+        ],
+        [
+          "binomial(n, p)",
+          "discrete",
+          "np",
+          "np(1 - p)",
+          "successes in n trials"
+        ],
+        [
+          "Poisson(lambda)",
+          "discrete",
+          "lambda",
+          "lambda",
+          "rare events per interval"
+        ],
+        [
+          "uniform(a, b)",
+          "continuous",
+          "(a + b)/2",
+          "(b - a)^2/12",
+          "no preferred value"
+        ],
+        [
+          "exponential(lambda)",
+          "continuous",
+          "1/lambda",
+          "1/lambda^2",
+          "waiting time, memoryless"
+        ],
+        [
+          "Gaussian(mu, sigma^2)",
+          "continuous",
+          "mu",
+          "sigma^2",
+          "sum of many small effects"
+        ],
+        [
+          "Rayleigh(sigma)",
+          "continuous",
+          "sigma sqrt(pi/2)",
+          "(2 - pi/2) sigma^2",
+          "magnitude of a 2-D Gaussian"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Mean and variance give location and spread; only the Gaussian is fixed by those two numbers, which is what makes the CLT so strong."
+    },
+    "probability-theory-and-stochastic-process--lti-response": {
+      "type": "derivation",
+      "title": "output PSD of a filtered process",
+      "steps": [
+        "Y(t)=\\int_{-\\infty}^{\\infty}h(\\alpha)X(t-\\alpha)\\,d\\alpha",
+        "R_{YY}(\\tau)=\\int\\!\\!\\int h(\\alpha)h(\\beta)R_{XX}(\\tau+\\alpha-\\beta)\\,d\\alpha\\,d\\beta",
+        "S_{YY}(\\omega)=H(\\omega)H^{*}(\\omega)S_{XX}(\\omega)=\\left|H(\\omega)\\right|^{2}S_{XX}(\\omega)",
+        "\\text{RC low-pass}:\\quad S_{YY}(\\omega)=\\frac{S_{XX}(\\omega)}{1+(\\omega RC)^{2}}"
+      ],
+      "symbols": [
+        [
+          "h",
+          "impulse response"
+        ],
+        [
+          "H",
+          "transfer function"
+        ],
+        [
+          "S_{XX}",
+          "input power spectral density"
+        ],
+        [
+          "S_{YY}",
+          "output power spectral density"
+        ]
+      ],
+      "note": "The output spectrum is the input spectrum weighted by |H|^2, so the filter never creates frequencies, only rescales the ones present."
+    },
+    "probability-theory-and-stochastic-process--correlation-coefficient": {
+      "type": "derivation",
+      "title": "why the correlation coefficient is bounded by one",
+      "steps": [
+        "\\tilde{X}=X-\\mu_{X},\\quad\\tilde{Y}=Y-\\mu_{Y}",
+        "0\\le E\\left[(\\tilde{X}-a\\tilde{Y})^{2}\\right]=\\sigma_{X}^{2}-2a\\operatorname{Cov}(X,Y)+a^{2}\\sigma_{Y}^{2}",
+        "a=\\frac{\\operatorname{Cov}(X,Y)}{\\sigma_{Y}^{2}}\\;\\Rightarrow\\;\\sigma_{X}^{2}-\\frac{\\operatorname{Cov}^{2}(X,Y)}{\\sigma_{Y}^{2}}\\ge0",
+        "\\rho_{XY}^{2}=\\frac{\\operatorname{Cov}^{2}(X,Y)}{\\sigma_{X}^{2}\\sigma_{Y}^{2}}\\le1"
+      ],
+      "symbols": [
+        [
+          "a",
+          "any real multiplier"
+        ],
+        [
+          "\\operatorname{Cov}(X,Y)",
+          "covariance"
+        ],
+        [
+          "\\sigma_{X},\\ \\sigma_{Y}",
+          "standard deviations"
+        ],
+        [
+          "\\rho_{XY}",
+          "correlation coefficient"
+        ]
+      ],
+      "note": "The multiplier that minimises the mean-square error gives the tightest bound, so |rho| = 1 exactly when Y is an affine function of X."
+    },
+    "probability-theory-and-stochastic-process--thermal-noise": {
+      "type": "table",
+      "title": "noise mechanisms and their spectra",
+      "headers": [
+        "noise",
+        "PSD",
+        "depends on",
+        "spectrum"
+      ],
+      "rows": [
+        [
+          "thermal",
+          "4kTR (V^2/Hz)",
+          "R and T",
+          "flat"
+        ],
+        [
+          "shot",
+          "2qI (A^2/Hz)",
+          "DC current I",
+          "flat"
+        ],
+        [
+          "flicker",
+          "K/f^alpha, alpha ~ 1",
+          "device process",
+          "rising at low f"
+        ],
+        [
+          "burst (RTS)",
+          "Lorentzian",
+          "traps",
+          "one corner"
+        ],
+        [
+          "quantisation",
+          "delta^2/12 over f_s/2",
+          "bits and rate",
+          "flat in band"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Thermal and shot noise are white; flicker and burst noise concentrate at low frequency, so chopping or a carrier moves the signal away."
+    }
+  }
+}

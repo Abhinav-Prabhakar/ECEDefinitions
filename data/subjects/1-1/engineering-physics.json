@@ -44,7 +44,8 @@
       "sources": [
         "ep-unit-1-quantum-mechanics#p.6"
       ],
-      "diagram": "matter-wave"
+      "diagram": "matter-wave",
+      "artifact": "engineering-physics--de-broglie-wavelength"
     },
     {
       "id": "heisenberg-uncertainty-principle",
@@ -67,7 +68,8 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.32"
-      ]
+      ],
+      "artifact": "engineering-physics--schrodinger-time-independent-wave-equation"
     },
     {
       "id": "wave-function",
@@ -126,7 +128,8 @@
         "ep-unit-1-quantum-mechanics#p.1"
       ],
       "formula": "",
-      "diagram": "bragg"
+      "diagram": "bragg",
+      "artifact": "engineering-physics--davisson-germer-experiment"
     },
     {
       "id": "laser",
@@ -173,7 +176,8 @@
         "ep-unit-2-lasers#slide.26"
       ],
       "formula": "N_{2}>N_{1}",
-      "diagram": "laser-levels"
+      "diagram": "laser-levels",
+      "artifact": "engineering-physics--population-inversion"
     },
     {
       "id": "metastable-state",
@@ -231,7 +235,8 @@
         "ep-unit-2-fiber-optics#slide.15"
       ],
       "formula": "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}",
-      "diagram": "fiber-na"
+      "diagram": "fiber-na",
+      "artifact": "engineering-physics--numerical-aperture"
     },
     {
       "id": "attenuation",
@@ -321,7 +326,8 @@
         "ep-unit-3-magnetic-and-superconducting-materials#slide.27"
       ],
       "formula": "",
-      "diagram": "hysteresis-loop"
+      "diagram": "hysteresis-loop",
+      "artifact": "engineering-physics--hysteresis"
     },
     {
       "id": "superconductivity",
@@ -333,7 +339,8 @@
         "ep-unit-3-magnetic-and-superconducting-materials#slide.37"
       ],
       "formula": "\\rho=0\\quad(T<T_{c})",
-      "diagram": "meissner-effect"
+      "diagram": "meissner-effect",
+      "artifact": "engineering-physics--superconductivity"
     },
     {
       "id": "meissner-effect",
@@ -472,7 +479,8 @@
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.39"
       ],
-      "formula": "\\frac{\\varepsilon_{r}-1}{\\varepsilon_{r}+2}=\\frac{N\\alpha}{3\\varepsilon_{0}}"
+      "formula": "\\frac{\\varepsilon_{r}-1}{\\varepsilon_{r}+2}=\\frac{N\\alpha}{3\\varepsilon_{0}}",
+      "artifact": "engineering-physics--clausius-mossotti-equation"
     },
     {
       "id": "semiconductor",

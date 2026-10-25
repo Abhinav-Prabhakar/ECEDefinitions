@@ -16,6 +16,145 @@
         ["h", "Planck constant"]
       ],
       "note": "The boundary conditions quantise the allowed wavelengths, so only discrete energies survive."
+    },
+    "engineering-physics--de-broglie-wavelength": {
+      "type": "derivation",
+      "title": "de Broglie wavelength of an accelerated electron",
+      "steps": [
+        "\\lambda=\\frac{h}{p},\\qquad p=mv",
+        "eV=\\frac{1}{2}mv^{2}\\;\\Rightarrow\\;p=\\sqrt{2meV}",
+        "\\lambda=\\frac{h}{\\sqrt{2meV}}=\\frac{1.227}{\\sqrt{V}}\\ \\mathrm{nm}",
+        "V=54\\ \\mathrm{V}\\;\\Rightarrow\\;\\lambda\\approx0.167\\ \\mathrm{nm}"
+      ],
+      "symbols": [
+        ["\\lambda", "de Broglie wavelength"],
+        ["V", "accelerating voltage"],
+        ["m", "electron mass"],
+        ["e", "elementary charge"],
+        ["h", "Planck constant"]
+      ],
+      "note": "The whole constant is fixed by the electron mass and charge, so the wavelength scales only as V to the minus one-half."
+    },
+    "engineering-physics--davisson-germer-experiment": {
+      "type": "derivation",
+      "title": "Bragg condition applied to an electron beam",
+      "steps": [
+        "2d\\sin\\theta=n\\lambda\\quad(\\text{planes spaced }d\\text{ apart})",
+        "\\lambda=\\frac{h}{\\sqrt{2meV}}",
+        "\\sin\\theta=\\frac{nh}{2d\\sqrt{2meV}}",
+        "V=54\\ \\mathrm{V},\\ d=0.091\\ \\mathrm{nm}:\\ \\sin\\theta\\approx0.91,\\ \\theta\\approx65^{\\circ}"
+      ],
+      "symbols": [
+        ["d", "spacing between crystal planes"],
+        ["\\theta", "glancing angle to the plane"],
+        ["n", "order of diffraction"],
+        ["V", "accelerating voltage"],
+        ["\\lambda", "electron wavelength"]
+      ],
+      "note": "The measured peak angle matches the wavelength predicted from 54 V, which is the evidence for the matter wave."
+    },
+    "engineering-physics--schrodinger-time-independent-wave-equation": {
+      "type": "derivation",
+      "title": "separating time from the wave equation",
+      "steps": [
+        "i\\hbar\\frac{\\partial\\Psi}{\\partial t}=\\hat{H}\\Psi,\\qquad \\hat{H}=-\\frac{\\hbar^{2}}{2m}\\nabla^{2}+V",
+        "\\Psi(\\mathbf{r},t)=\\psi(\\mathbf{r})\\,e^{-iEt/\\hbar}",
+        "i\\hbar\\frac{\\partial\\Psi}{\\partial t}=E\\,\\psi\\,e^{-iEt/\\hbar}",
+        "E\\psi=\\hat{H}\\psi\\;\\Longrightarrow\\;-\\frac{\\hbar^{2}}{2m}\\nabla^{2}\\psi+V\\psi=E\\psi"
+      ],
+      "symbols": [
+        ["\\Psi", "full time-dependent wave function"],
+        ["\\psi", "spatial part"],
+        ["\\hat{H}", "Hamiltonian operator"],
+        ["E", "energy eigenvalue"],
+        ["V", "potential energy"]
+      ],
+      "note": "A single-frequency ansatz turns the time derivative into the constant E, leaving a spatial eigenvalue problem."
+    },
+    "engineering-physics--population-inversion": {
+      "type": "derivation",
+      "title": "why lasing needs pumping",
+      "steps": [
+        "\\frac{N_{2}}{N_{1}}=\\exp\\!\\left(-\\frac{h\\nu}{k_{B}T}\\right)",
+        "\\nu=4.7\\times10^{14}\\ \\mathrm{Hz},\\ T=300\\ \\mathrm{K}:\\ \\frac{N_{2}}{N_{1}}\\approx e^{-75}\\approx10^{-33}",
+        "\\text{absorption}\\propto N_{1}B_{12},\\qquad \\text{stimulated emission}\\propto N_{2}B_{21}",
+        "N_{2}>N_{1}\\;\\Rightarrow\\;\\text{gain},\\qquad \\gamma=\\sigma\\,(N_{2}-N_{1})"
+      ],
+      "symbols": [
+        ["N_{1},N_{2}", "level populations"],
+        ["\\nu", "transition frequency"],
+        ["B_{12},B_{21}", "Einstein coefficients"],
+        ["\\sigma", "stimulated-emission cross-section"],
+        ["\\gamma", "gain coefficient"],
+        ["k_{B}", "Boltzmann constant"]
+      ],
+      "note": "At thermal equilibrium the upper level is empty, so the populations must be driven past equality before the medium amplifies."
+    },
+    "engineering-physics--numerical-aperture": {
+      "type": "derivation",
+      "title": "acceptance cone from the critical angle",
+      "steps": [
+        "n_{0}\\sin\\theta_{a}=n_{1}\\sin\\theta_{r},\\qquad n_{0}=1\\ (\\text{air})",
+        "\\sin\\theta_{c}=\\frac{n_{2}}{n_{1}}",
+        "\\theta_{r}=90^{\\circ}-\\theta_{c}\\;\\Rightarrow\\;\\sin\\theta_{a}=n_{1}\\cos\\theta_{c}",
+        "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}"
+      ],
+      "symbols": [
+        ["\\theta_{a}", "acceptance angle"],
+        ["\\theta_{c}", "critical angle"],
+        ["\\theta_{r}", "refracted angle inside the core"],
+        ["n_{1}", "core refractive index"],
+        ["n_{2}", "cladding refractive index"]
+      ],
+      "note": "The cone edge is the ray that arrives at the core wall exactly at the critical angle."
+    },
+    "engineering-physics--hysteresis": {
+      "type": "table",
+      "title": "soft vs hard magnetic materials",
+      "headers": ["property", "soft magnetic", "hard magnetic"],
+      "rows": [
+        ["coercivity H_c", "low, under 1 kA/m", "high, tens to hundreds of kA/m"],
+        ["retentivity B_r", "low", "high"],
+        ["loop area", "small, low loss per cycle", "large, high energy product"],
+        ["permeability", "high, easily magnetised", "moderate"],
+        ["typical materials", "soft iron, silicon steel, Mn-Zn ferrite", "Alnico, NdFeB, hard ferrite"],
+        ["use", "transformer and machine cores", "permanent magnets, loudspeakers"]
+      ],
+      "highlight": 1,
+      "note": "The loop area is the energy lost as heat per unit volume per cycle, so cores are chosen soft and permanent magnets hard."
+    },
+    "engineering-physics--superconductivity": {
+      "type": "table",
+      "title": "Type I and Type II superconductors",
+      "headers": ["property", "Type I", "Type II"],
+      "rows": [
+        ["critical field", "one H_c, low (about 0.08 T for Pb)", "two fields, H_c1 below H_c2"],
+        ["flux behaviour", "complete Meissner expulsion", "quantised vortices between H_c1 and H_c2"],
+        ["H_c2", "not applicable", "high, above 100 T in some cuprates"],
+        ["materials", "Pb, Hg, Sn, Al", "NbTi, Nb3Sn, YBCO"],
+        ["use", "rarely used for magnets", "MRI and accelerator magnets"]
+      ],
+      "highlight": 2,
+      "note": "Above H_c1 flux enters as vortices that stay pinned to defects, so the wire keeps carrying current up to H_c2."
+    },
+    "engineering-physics--clausius-mossotti-equation": {
+      "type": "derivation",
+      "title": "from polarizability to dielectric constant",
+      "steps": [
+        "\\mathbf{P}=N\\alpha\\mathbf{E}_{\\text{loc}}",
+        "\\mathbf{E}_{\\text{loc}}=\\mathbf{E}+\\frac{\\mathbf{P}}{3\\varepsilon_{0}}",
+        "\\mathbf{P}=\\varepsilon_{0}(\\varepsilon_{r}-1)\\mathbf{E}",
+        "\\varepsilon_{0}(\\varepsilon_{r}-1)=N\\alpha\\left(1+\\frac{\\varepsilon_{r}-1}{3}\\right)",
+        "\\frac{\\varepsilon_{r}-1}{\\varepsilon_{r}+2}=\\frac{N\\alpha}{3\\varepsilon_{0}}"
+      ],
+      "symbols": [
+        ["\\mathbf{P}", "polarization"],
+        ["N", "number density of dipoles"],
+        ["\\alpha", "polarizability"],
+        ["\\mathbf{E}_{\\text{loc}}", "local field at a dipole"],
+        ["\\varepsilon_{r}", "relative permittivity"]
+      ],
+      "note": "The Lorentz local field adds the depolarising field of the surrounding dipoles, which is where the εr + 2 term comes from."
     }
   }
 }

@@ -1,0 +1,270 @@
+{
+  "subject": "satellite-communication",
+  "artifacts": {
+    "satellite-communication--kepler-s-third-law": {
+      "type": "derivation",
+      "title": "period from the circular force balance",
+      "steps": [
+        "\\frac{\\mu m}{r^{2}}=\\frac{mv^{2}}{r}\\;\\Rightarrow\\;v^{2}=\\frac{\\mu}{r}",
+        "T=\\frac{2\\pi r}{v}=2\\pi\\sqrt{\\frac{r^{3}}{\\mu}}",
+        "T^{2}=\\frac{4\\pi^{2}}{\\mu}r^{3}\\;\\Rightarrow\\;T^{2}=\\frac{4\\pi^{2}}{\\mu}a^{3}\\ \\text{for an ellipse}",
+        "a=42{,}164\\ \\text{km},\\ \\mu=3.986\\times10^{5}\\ \\text{km}^{3}/\\text{s}^{2}\\;\\Rightarrow\\;T=86{,}164\\ \\text{s}"
+      ],
+      "symbols": [
+        [
+          "\\mu",
+          "gravitational parameter of the primary"
+        ],
+        [
+          "a",
+          "semi-major axis"
+        ],
+        [
+          "r",
+          "radius of the circular orbit"
+        ],
+        [
+          "T",
+          "orbital period"
+        ]
+      ],
+      "note": "The pull supplies the centripetal force; squaring the circular result gives the general ellipse law, and a = 42,164 km returns one sidereal day."
+    },
+    "satellite-communication--geostationary-transfer-orbit": {
+      "type": "derivation",
+      "title": "two Hohmann burns into GEO",
+      "steps": [
+        "a_{t}=\\frac{r_{p}+r_{a}}{2},\\quad v_{p}=\\sqrt{\\mu\\left(\\frac{2}{r_{p}}-\\frac{1}{a_{t}}\\right)}=10.15\\ \\text{km/s}",
+        "v_{c,p}=\\sqrt{\\frac{\\mu}{r_{p}}}=7.73\\ \\text{km/s}\\;\\Rightarrow\\;\\Delta v_{1}=10.15-7.73=2.43\\ \\text{km/s}",
+        "v_{a}=\\sqrt{\\mu\\left(\\frac{2}{r_{a}}-\\frac{1}{a_{t}}\\right)}=1.61\\ \\text{km/s},\\quad v_{c,a}=\\sqrt{\\frac{\\mu}{r_{a}}}=3.07\\ \\text{km/s}",
+        "\\Delta v_{2}=3.07-1.61=1.47\\ \\text{km/s},\\quad \\Delta v_{\\text{tot}}=3.90\\ \\text{km/s}"
+      ],
+      "symbols": [
+        [
+          "r_{p}",
+          "perigee radius, 6,678 km here"
+        ],
+        [
+          "r_{a}",
+          "apogee radius, 42,164 km here"
+        ],
+        [
+          "a_{t}",
+          "transfer-orbit semi-major axis"
+        ],
+        [
+          "\\mu",
+          "Earth gravitational parameter"
+        ]
+      ],
+      "note": "The first burn raises apogee from a 300 km parking orbit and the second circularises at GEO; the two burns together cost 3.90 km/s."
+    },
+    "satellite-communication--link-budget": {
+      "type": "derivation",
+      "title": "worked Ku-band downlink carrier-to-noise",
+      "steps": [
+        "P_{T}=20\\ \\text{dBW},\\ G_{T}=40\\ \\text{dBi}\\;\\Rightarrow\\;\\text{EIRP}=60\\ \\text{dBW}",
+        "L_{\\text{fs}}=20\\log_{10}\\frac{4\\pi d}{\\lambda},\\quad d=3.8\\times10^{7}\\ \\text{m},\\ \\lambda=0.025\\ \\text{m}",
+        "L_{\\text{fs}}=20\\log_{10}\\left(1.91\\times10^{10}\\right)=205.6\\ \\text{dB}",
+        "C/N_{0}=\\text{EIRP}-L_{\\text{fs}}+G/T-k=60-205.6+30+228.6=113.0\\ \\text{dBHz}"
+      ],
+      "symbols": [
+        [
+          "EIRP",
+          "transmit power plus antenna gain"
+        ],
+        [
+          "L_{\\text{fs}}",
+          "free-space path loss"
+        ],
+        [
+          "G/T",
+          "receive antenna gain over system noise temperature, 30 dB/K"
+        ],
+        [
+          "k",
+          "Boltzmann constant, -228.6 dBW/K/Hz"
+        ],
+        [
+          "C/N_{0}",
+          "carrier power over noise density"
+        ]
+      ],
+      "note": "Across a 36 MHz transponder the 113 dBHz density becomes C/N = 113 - 75.4 = 37.6 dB, far above the roughly 10 dB a QPSK link needs."
+    },
+    "satellite-communication--parabolic-antenna": {
+      "type": "derivation",
+      "title": "gain and beamwidth of a dish",
+      "steps": [
+        "A=\\frac{\\pi D^{2}}{4},\\quad G=\\eta\\frac{4\\pi A}{\\lambda^{2}}=\\eta\\left(\\frac{\\pi D}{\\lambda}\\right)^{2}",
+        "D=3\\ \\text{m},\\ \\lambda=0.025\\ \\text{m}\\;\\Rightarrow\\;\\frac{\\pi D}{\\lambda}=377",
+        "G=0.65\\times377^{2}=9.24\\times10^{4}\\;\\Rightarrow\\;49.7\\ \\text{dBi}",
+        "\\theta_{3\\,\\text{dB}}\\approx\\frac{70^{\\circ}\\lambda}{D}=\\frac{70^{\\circ}\\times0.025}{3}=0.58^{\\circ}"
+      ],
+      "symbols": [
+        [
+          "D",
+          "dish diameter"
+        ],
+        [
+          "\\lambda",
+          "wavelength"
+        ],
+        [
+          "\\eta",
+          "aperture efficiency"
+        ],
+        [
+          "\\theta_{3\\,\\text{dB}}",
+          "half-power beamwidth"
+        ]
+      ],
+      "note": "At Ku band a 3 m dish gives about 50 dBi in a 0.58 degree beam; the same dish at 4 GHz loses roughly 10 dB and spreads three times wider."
+    },
+    "satellite-communication--frequency-division-multiple-access": {
+      "type": "table",
+      "title": "multiple access compared",
+      "headers": [
+        "scheme",
+        "resource split",
+        "guard",
+        "capacity limit"
+      ],
+      "rows": [
+        [
+          "FDMA",
+          "one carrier per user",
+          "band gap between carriers",
+          "N ~ B_tot / (B_i + B_g)"
+        ],
+        [
+          "TDMA",
+          "one time slot per user",
+          "time gap between slots",
+          "N_slot per frame, set by burst rate"
+        ],
+        [
+          "CDMA",
+          "one code per user, shared carrier",
+          "none; codes are orthogonal",
+          "N ~ G_p / (E_b/N_0)_req"
+        ]
+      ],
+      "highlight": 1,
+      "note": "FDMA spends bandwidth on guard bands, TDMA spends time on guard intervals, and CDMA spends bandwidth on spreading codes instead of either."
+    },
+    "satellite-communication--gps": {
+      "type": "table",
+      "title": "GPS signals and their chip rates",
+      "headers": [
+        "signal",
+        "carrier (MHz)",
+        "code rate (Mchip/s)",
+        "data (bit/s)"
+      ],
+      "rows": [
+        [
+          "L1 C/A",
+          "1575.42",
+          "1.023",
+          "50"
+        ],
+        [
+          "L1 P(Y)",
+          "1575.42",
+          "10.23",
+          "50"
+        ],
+        [
+          "L2 P(Y)",
+          "1227.60",
+          "10.23",
+          "50"
+        ],
+        [
+          "L2C",
+          "1227.60",
+          "1.023",
+          "25"
+        ],
+        [
+          "L5",
+          "1176.45",
+          "10.23",
+          "50"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Every rate derives from the 10.23 MHz master clock: C/A is a tenth of it, which is why its 1,023 chips repeat in exactly 1 ms."
+    },
+    "satellite-communication--position-location": {
+      "type": "derivation",
+      "title": "linearising the pseudorange equations",
+      "steps": [
+        "\\rho_{i}=\\sqrt{(x-x_{i})^{2}+(y-y_{i})^{2}+(z-z_{i})^{2}}+b,\\quad i=1,\\dots,n",
+        "\\Delta\\rho_{i}=\\frac{x-x_{i}}{r_{i}}\\Delta x+\\frac{y-y_{i}}{r_{i}}\\Delta y+\\frac{z-z_{i}}{r_{i}}\\Delta z+\\Delta b",
+        "H\\,\\Delta\\mathbf{x}=\\Delta\\boldsymbol{\\rho},\\quad \\text{row }i\\text{ of }H=\\left[\\mathbf{u}_{i}^{\\mathsf{T}}\\ 1\\right]",
+        "\\Delta\\mathbf{x}=\\left(H^{\\mathsf{T}}H\\right)^{-1}H^{\\mathsf{T}}\\Delta\\boldsymbol{\\rho},\\quad n\\ge4"
+      ],
+      "symbols": [
+        [
+          "\\rho_{i}",
+          "measured pseudorange to satellite i"
+        ],
+        [
+          "r_{i}",
+          "true geometric range"
+        ],
+        [
+          "b",
+          "receiver clock bias c dt_r"
+        ],
+        [
+          "H",
+          "geometry matrix of line-of-sight vectors"
+        ],
+        [
+          "\\mathbf{u}_{i}",
+          "unit line-of-sight vector"
+        ]
+      ],
+      "note": "Each satellite gives one equation in four unknowns x, y, z and b; four make the linearised system square and extra satellites overdetermine it."
+    },
+    "satellite-communication--low-earth-orbit": {
+      "type": "table",
+      "title": "orbit classes at a glance",
+      "headers": [
+        "class",
+        "altitude (km)",
+        "period",
+        "one-way delay",
+        "coverage per satellite"
+      ],
+      "rows": [
+        [
+          "LEO",
+          "500 - 2,000",
+          "95 - 127 min",
+          "1.7 - 6.7 ms",
+          "minutes"
+        ],
+        [
+          "MEO",
+          "20,200",
+          "718 min",
+          "67 ms",
+          "about 5 h"
+        ],
+        [
+          "GEO",
+          "35,786",
+          "1,436 min",
+          "120 ms",
+          "continuous"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Raising the orbit lengthens the period and the delay, but each satellite covers a bigger cap, so GEO needs three and LEO needs dozens."
+    }
+  }
+}

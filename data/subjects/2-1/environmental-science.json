@@ -109,7 +109,8 @@
       "sources": [
         "ese-unit-i-ecosystem-2024-25#slide.31"
       ],
-      "formula": "\\frac{dN}{dt}=rN\\left(1-\\frac{N}{K}\\right)"
+      "formula": "\\frac{dN}{dt}=rN\\left(1-\\frac{N}{K}\\right)",
+      "artifact": "environmental-science--carrying-capacity"
     },
     {
       "id": "biogeochemical-cycle",
@@ -345,7 +346,8 @@
         "ese-unit-iv-pollution-control-and-environmental-technology#p.9"
       ],
       "formula": "\\text{pH}=-\\log_{10}\\left[\\mathrm{H}^{+}\\right]",
-      "diagram": "environmental-pathway"
+      "diagram": "environmental-pathway",
+      "artifact": "environmental-science--acid-rain"
     },
     {
       "id": "greenhouse-effect",
@@ -356,7 +358,8 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.11"
       ],
-      "formula": "\\Delta F=5.35\\ln\\left(\\frac{C}{C_{0}}\\right)"
+      "formula": "\\Delta F=5.35\\ln\\left(\\frac{C}{C_{0}}\\right)",
+      "artifact": "environmental-science--greenhouse-effect"
     },
     {
       "id": "global-warming",
@@ -379,7 +382,8 @@
         "ese-unit-iv-pollution-control-and-environmental-technology#p.14",
         "ese-unit-iv-pollution-control-and-environmental-technology#p.15"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "environmental-science--ozone-layer-depletion"
     },
     {
       "id": "photochemical-smog",
@@ -435,7 +439,8 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.42"
       ],
-      "formula": "L_{p}=20\\log_{10}\\left(\\frac{p}{p_{0}}\\right)"
+      "formula": "L_{p}=20\\log_{10}\\left(\\frac{p}{p_{0}}\\right)",
+      "artifact": "environmental-science--noise-pollution"
     },
     {
       "id": "e-waste",
@@ -523,7 +528,8 @@
       "sources": [
         "ese-unit-vib-environmental-policy-legislation-environment-im#slide.27"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "environmental-science--environmental-impact-assessment"
     },
     {
       "id": "environmental-management-plan",

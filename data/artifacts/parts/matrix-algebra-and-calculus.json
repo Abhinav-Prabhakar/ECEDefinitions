@@ -1,0 +1,184 @@
+{
+  "subject": "matrix-algebra-and-calculus",
+  "artifacts": {
+    "matrix-algebra-and-calculus--eigenvalue": {
+      "type": "derivation",
+      "title": "eigenvalues from trace and determinant",
+      "steps": [
+        "\\det(A-\\lambda I)=\\lambda^{2}-\\operatorname{tr}(A)\\lambda+\\det(A)",
+        "\\operatorname{tr}(A)=4+3=7,\\quad\\det(A)=4\\cdot3-1\\cdot2=10",
+        "\\lambda^{2}-7\\lambda+10=(\\lambda-5)(\\lambda-2)=0",
+        "(A-5I)\\mathbf{v}=\\mathbf{0}\\Rightarrow\\mathbf{v}_{1}\\propto(1,1);\\quad(A-2I)\\mathbf{v}=\\mathbf{0}\\Rightarrow\\mathbf{v}_{2}\\propto(1,-2)"
+      ],
+      "symbols": [
+        [
+          "\\operatorname{tr}(A)",
+          "sum of diagonal entries"
+        ],
+        [
+          "\\det(A)",
+          "determinant"
+        ],
+        [
+          "\\lambda",
+          "eigenvalue"
+        ],
+        [
+          "v",
+          "eigenvector"
+        ]
+      ],
+      "note": "For A = [[4, 1], [2, 3]] the trace and determinant give the characteristic polynomial without expanding a 2x2 determinant."
+    },
+    "matrix-algebra-and-calculus--cayley-hamilton-theorem": {
+      "type": "derivation",
+      "title": "inverse from the characteristic polynomial",
+      "steps": [
+        "p(\\lambda)=\\lambda^{2}-7\\lambda+10\\;\\Rightarrow\\;p(A)=A^{2}-7A+10I=0",
+        "A^{2}=7A-10I",
+        "A^{-1}\\left(A^{2}-7A+10I\\right)=A-7I+10A^{-1}=0",
+        "A^{-1}=\\frac{1}{10}(7I-A)"
+      ],
+      "symbols": [
+        [
+          "p",
+          "characteristic polynomial"
+        ],
+        [
+          "A",
+          "the 2x2 matrix with trace 7 and determinant 10"
+        ],
+        [
+          "I",
+          "identity matrix"
+        ]
+      ],
+      "note": "Cayley-Hamilton turns the polynomial into a matrix identity, so the inverse needs only 7I - A here, with no adjugate or cofactors."
+    },
+    "matrix-algebra-and-calculus--symmetric-matrix": {
+      "type": "table",
+      "title": "matrix types and their spectra",
+      "headers": [
+        "type",
+        "condition",
+        "eigenvalues",
+        "where it matters"
+      ],
+      "rows": [
+        [
+          "symmetric (real)",
+          "A^T = A",
+          "all real",
+          "covariance, quadratic forms"
+        ],
+        [
+          "skew-symmetric",
+          "A^T = -A",
+          "purely imaginary or 0",
+          "rotations, cross products"
+        ],
+        [
+          "orthogonal",
+          "A^T A = I",
+          "|lambda| = 1",
+          "length-preserving basis change"
+        ],
+        [
+          "Hermitian",
+          "A^H = A",
+          "all real",
+          "quantum observables"
+        ],
+        [
+          "unitary",
+          "U^H U = I",
+          "|lambda| = 1",
+          "complex rotations, DFT"
+        ],
+        [
+          "positive definite",
+          "x^T A x > 0",
+          "all lambda > 0",
+          "minima, Cholesky factorisation"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The real types are special cases of the complex ones, and the eigenvalue statement is what makes each type useful in practice."
+    },
+    "matrix-algebra-and-calculus--taylors-series": {
+      "type": "derivation",
+      "title": "Taylor series of e^x with its error bound",
+      "steps": [
+        "f(x)=e^{x}\\;\\Rightarrow\\;f^{(n)}(0)=1\\ \\text{for every }n",
+        "e^{x}=\\sum_{n=0}^{\\infty}\\frac{x^{n}}{n!}=1+x+\\frac{x^{2}}{2}+\\frac{x^{3}}{6}+\\cdots",
+        "R_{n}(x)=\\frac{e^{\\xi}}{(n+1)!}x^{n+1},\\quad\\xi\\ \\text{between }0\\text{ and }x",
+        "\\left|x\\right|\\le1\\;\\Rightarrow\\;\\left|R_{n}\\right|\\le\\frac{e}{(n+1)!}"
+      ],
+      "symbols": [
+        [
+          "R_{n}",
+          "Lagrange remainder after n terms"
+        ],
+        [
+          "\\xi",
+          "mean-value point"
+        ],
+        [
+          "n",
+          "order of truncation"
+        ]
+      ],
+      "note": "The remainder bounds the error: truncating after x cubed is off by at most e/24, about 0.11, on the interval |x| <= 1."
+    },
+    "matrix-algebra-and-calculus--positive-definite": {
+      "type": "derivation",
+      "title": "positive definiteness by completing the square",
+      "steps": [
+        "q(\\mathbf{x})=x^{2}+4xy+5y^{2}",
+        "=x^{2}+4xy+4y^{2}+y^{2}=(x+2y)^{2}+y^{2}",
+        "q>0\\ \\text{whenever }(x,y)\\ne(0,0)",
+        "\\Delta_{1}=1>0,\\quad\\Delta_{2}=1\\cdot5-2^{2}=1>0"
+      ],
+      "symbols": [
+        [
+          "q",
+          "quadratic form"
+        ],
+        [
+          "\\Delta_{k}",
+          "leading principal minor of order k"
+        ]
+      ],
+      "note": "Completing the square writes q as a sum of squares, and Sylvester criterion reaches the same verdict from the leading minors alone."
+    },
+    "matrix-algebra-and-calculus--variation-of-parameters": {
+      "type": "derivation",
+      "title": "where variation of parameters comes from",
+      "steps": [
+        "y_{p}=A(x)u_{1}(x)+B(x)u_{2}(x)",
+        "y_{p}^{\\prime}=A^{\\prime}u_{1}+B^{\\prime}u_{2}+Au_{1}^{\\prime}+Bu_{2}^{\\prime}",
+        "\\text{impose }A^{\\prime}u_{1}+B^{\\prime}u_{2}=0\\;\\Rightarrow\\;y_{p}^{\\prime}=Au_{1}^{\\prime}+Bu_{2}^{\\prime}",
+        "A^{\\prime}u_{1}^{\\prime}+B^{\\prime}u_{2}^{\\prime}=f,\\quad A^{\\prime}=-\\frac{u_{2}f}{W},\\ B^{\\prime}=\\frac{u_{1}f}{W}"
+      ],
+      "symbols": [
+        [
+          "u_{1},u_{2}",
+          "homogeneous solutions"
+        ],
+        [
+          "A, B",
+          "unknown coefficient functions"
+        ],
+        [
+          "W",
+          "Wronskian of u1 and u2"
+        ],
+        [
+          "f",
+          "forcing term"
+        ]
+      ],
+      "note": "The first condition is a free choice that removes the second-derivative terms; the second makes y_p solve the equation, giving a 2x2 system."
+    }
+  }
+}

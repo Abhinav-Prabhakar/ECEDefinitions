@@ -1,0 +1,287 @@
+{
+  "subject": "basics-of-entrepreneurship",
+  "artifacts": {
+    "basics-of-entrepreneurship--design-thinking": {
+      "type": "sequence",
+      "title": "the design-thinking loop, in order",
+      "actors": [
+        "design team",
+        "user",
+        "prototype"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "observe and interview in real context"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "state the need in the user's words"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "ideate, then build a cheap prototype"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "user attempts a real task with it"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "what failed becomes the next define"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "iterate until the need is actually met"
+        }
+      ],
+      "note": "The loop, not the five labels, is the method: any stage can send the team back to the user rather than forward."
+    },
+    "basics-of-entrepreneurship--business-model-canvas": {
+      "type": "table",
+      "title": "the nine canvas blocks, in the order they are filled",
+      "headers": [
+        "block",
+        "question it answers",
+        "food-truck example"
+      ],
+      "rows": [
+        [
+          "customer segments",
+          "who exactly are we serving?",
+          "office workers near the tech park"
+        ],
+        [
+          "value proposition",
+          "why buy from us and not cook?",
+          "hot lunch in four minutes, under Rs 80"
+        ],
+        [
+          "channels",
+          "how do we reach and sell to them?",
+          "kerbside truck, WhatsApp pre-orders"
+        ],
+        [
+          "customer relationships",
+          "how do we keep them coming back?",
+          "loyalty card, tenth meal free"
+        ],
+        [
+          "revenue streams",
+          "what do they pay for, and how?",
+          "per meal, plus catering orders"
+        ],
+        [
+          "key resources",
+          "what must we own or control?",
+          "truck, freezer, licence"
+        ],
+        [
+          "key activities",
+          "what must we do well every day?",
+          "prep, cook, serve, restock"
+        ],
+        [
+          "key partners",
+          "on whom do we depend?",
+          "supplier, parking owner, FSSAI"
+        ],
+        [
+          "cost structure",
+          "where does the money go?",
+          "food cost, fuel, staff, permits"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The right half describes the customer and the value; the left half describes the operation that can deliver it."
+    },
+    "basics-of-entrepreneurship--revenue-stream": {
+      "type": "table",
+      "title": "revenue models and how predictable each one is",
+      "headers": [
+        "model",
+        "how the money arrives",
+        "predictability"
+      ],
+      "rows": [
+        [
+          "unit sale",
+          "one payment per item sold",
+          "low, follows footfall"
+        ],
+        [
+          "subscription",
+          "fixed fee every month or year",
+          "high, recurring"
+        ],
+        [
+          "usage or metered",
+          "paid per unit consumed",
+          "medium, tracks demand"
+        ],
+        [
+          "licensing or franchise",
+          "rights fee plus royalty",
+          "medium, contract-bound"
+        ],
+        [
+          "commission",
+          "a cut of each transaction",
+          "medium, follows volume"
+        ],
+        [
+          "advertising",
+          "paid per impression or click",
+          "low, cyclical"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A recurring rupee is worth more than a one-off rupee because it can be forecast, and therefore financed."
+    },
+    "basics-of-entrepreneurship--startup-costs": {
+      "type": "table",
+      "title": "setting up a food truck: one-time against running cost",
+      "headers": [
+        "item",
+        "type",
+        "amount"
+      ],
+      "rows": [
+        [
+          "used food truck",
+          "one-time",
+          "Rs 6,50,000"
+        ],
+        [
+          "freezer and kitchen fit-out",
+          "one-time",
+          "Rs 1,20,000"
+        ],
+        [
+          "FSSAI licence and trade permit",
+          "one-time",
+          "Rs 18,000"
+        ],
+        [
+          "signage and branding",
+          "one-time",
+          "Rs 22,000"
+        ],
+        [
+          "loan EMI",
+          "monthly",
+          "Rs 38,000"
+        ],
+        [
+          "staff wages",
+          "monthly",
+          "Rs 45,000"
+        ],
+        [
+          "parking rent",
+          "monthly",
+          "Rs 13,000"
+        ],
+        [
+          "food and packaging",
+          "per meal",
+          "Rs 48"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Startup cost is paid before the first sale; only the monthly and per-meal rows belong in the break-even sum."
+    },
+    "basics-of-entrepreneurship--break-even-point": {
+      "type": "table",
+      "title": "the break-even model for that food truck",
+      "headers": [
+        "line",
+        "formula",
+        "value"
+      ],
+      "rows": [
+        [
+          "price per meal (P)",
+          "menu price",
+          "Rs 80"
+        ],
+        [
+          "variable cost per meal (v)",
+          "food plus packaging",
+          "Rs 48"
+        ],
+        [
+          "contribution per meal",
+          "P - v",
+          "Rs 32"
+        ],
+        [
+          "fixed cost per month (FC)",
+          "EMI, wages, rent, permits",
+          "Rs 96,000"
+        ],
+        [
+          "break-even quantity",
+          "FC / (P - v)",
+          "3,000 meals"
+        ],
+        [
+          "break-even sales",
+          "BEP x P",
+          "Rs 2,40,000"
+        ],
+        [
+          "meals a day to break even",
+          "BEP / 30",
+          "100"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Every meal above 3,000 a month adds Rs 32 of profit; every meal below it adds Rs 32 of loss."
+    },
+    "basics-of-entrepreneurship--partnership": {
+      "type": "table",
+      "title": "choosing the legal form before the first rupee of debt",
+      "headers": [
+        "form",
+        "owners",
+        "liability",
+        "compliance"
+      ],
+      "rows": [
+        [
+          "sole proprietorship",
+          "one",
+          "unlimited, personal",
+          "trade licence, GST"
+        ],
+        [
+          "partnership firm",
+          "two or more",
+          "unlimited, joint and several",
+          "deed, registration, GST"
+        ],
+        [
+          "LLP",
+          "two or more partners",
+          "limited to capital contributed",
+          "MCA filings, audit above threshold"
+        ],
+        [
+          "private limited",
+          "two to two hundred",
+          "limited to shares held",
+          "MCA, audit, board meetings"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The form fixes who pays when the venture fails, so it should be settled before any borrowing is signed."
+    }
+  }
+}

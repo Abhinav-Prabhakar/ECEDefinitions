@@ -1,0 +1,247 @@
+{
+  "subject": "business-economics-and-financial-analysis",
+  "artifacts": {
+    "business-economics-and-financial-analysis--law-of-variable-proportions": {
+      "type": "table",
+      "title": "three stages of the law of variable proportions",
+      "headers": [
+        "stage",
+        "total product",
+        "marginal product",
+        "average product"
+      ],
+      "rows": [
+        [
+          "I - increasing returns",
+          "rises at an increasing rate",
+          "rises, then peaks",
+          "rises"
+        ],
+        [
+          "II - diminishing returns",
+          "rises at a decreasing rate",
+          "falls, stays positive",
+          "peaks where AP = MP, then falls"
+        ],
+        [
+          "III - negative returns",
+          "falls",
+          "negative",
+          "keeps falling, above MP"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A rational producer stops at the end of stage II: past zero marginal product, extra labour actually reduces total output."
+    },
+    "business-economics-and-financial-analysis--break-even-point": {
+      "type": "derivation",
+      "title": "break-even point from total revenue = total cost",
+      "steps": [
+        "\\text{TR}=P Q,\\qquad \\text{TC}=\\text{FC}+\\text{AVC}\\cdot Q",
+        "P Q=\\text{FC}+\\text{AVC}\\,Q",
+        "(P-\\text{AVC})\\,Q=\\text{FC}",
+        "Q_{\\text{BEP}}=\\frac{\\text{FC}}{P-\\text{AVC}}=\\frac{40000}{50-30}=2000\\ \\text{units}",
+        "S_{\\text{BEP}}=Q_{\\text{BEP}}P=2000\\times 50=100000"
+      ],
+      "symbols": [
+        [
+          "P",
+          "selling price per unit"
+        ],
+        [
+          "\\text{AVC}",
+          "variable cost per unit"
+        ],
+        [
+          "\\text{FC}",
+          "total fixed cost"
+        ],
+        [
+          "Q_{\\text{BEP}}",
+          "break-even quantity"
+        ],
+        [
+          "S_{\\text{BEP}}",
+          "break-even sales value"
+        ]
+      ],
+      "note": "With fixed cost 40,000 and 20 of contribution per unit, 2,000 units - sales of 1,00,000 - is the no-profit, no-loss point."
+    },
+    "business-economics-and-financial-analysis--perfect-competition": {
+      "type": "table",
+      "title": "the four market structures side by side",
+      "headers": [
+        "structure",
+        "sellers",
+        "product",
+        "entry",
+        "long-run profit"
+      ],
+      "rows": [
+        [
+          "perfect competition",
+          "very many",
+          "identical",
+          "free",
+          "normal only"
+        ],
+        [
+          "monopolistic competition",
+          "many",
+          "differentiated",
+          "free",
+          "normal only"
+        ],
+        [
+          "oligopoly",
+          "few",
+          "similar or differentiated",
+          "blocked",
+          "positive is possible"
+        ],
+        [
+          "monopoly",
+          "one",
+          "no close substitute",
+          "blocked",
+          "positive, usually regulated"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Firms equate MR and MC; only a price maker faces a falling demand curve, so only it can hold profit above normal."
+    },
+    "business-economics-and-financial-analysis--capital-expenditure": {
+      "type": "table",
+      "title": "capital, revenue and deferred revenue expenditure",
+      "headers": [
+        "basis",
+        "capital",
+        "revenue",
+        "deferred revenue"
+      ],
+      "rows": [
+        [
+          "benefit period",
+          "more than one year",
+          "current year only",
+          "several years"
+        ],
+        [
+          "example",
+          "plant, machinery, patents",
+          "wages, rent, repairs",
+          "heavy launch advertising"
+        ],
+        [
+          "balance sheet",
+          "capitalised as an asset",
+          "not shown, charged to P&L",
+          "asset until written off"
+        ],
+        [
+          "effect on profit",
+          "through depreciation",
+          "fully in the year",
+          "apportioned year by year"
+        ],
+        [
+          "test",
+          "creates or enlarges capacity",
+          "keeps capacity running",
+          "revenue in nature, unusual in size"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Deferred revenue expenditure is revenue in nature, but large enough that charging all of it in one year would distort the profit."
+    },
+    "business-economics-and-financial-analysis--trading-account": {
+      "type": "sequence",
+      "title": "final accounts, from trial balance to next year",
+      "actors": [
+        "trial balance",
+        "trading a/c",
+        "P&L a/c",
+        "balance sheet"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "open stock, purchases, direct expenses"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "gross profit brought down"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "net profit and reserves carried"
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "label": "closing balances open next year"
+        }
+      ],
+      "note": "Each account hands a single number forward: gross profit, then net profit, then the retained balance that reopens the cycle."
+    },
+    "business-economics-and-financial-analysis--ratio-analysis": {
+      "type": "table",
+      "title": "ratio families and what each one actually signals",
+      "headers": [
+        "ratio",
+        "formula",
+        "reads as",
+        "watch for"
+      ],
+      "rows": [
+        [
+          "current ratio",
+          "CA / CL",
+          "cover for short-term dues",
+          "a 2:1 pile of idle cash is not strength"
+        ],
+        [
+          "quick ratio",
+          "(CA - stock) / CL",
+          "cover without selling stock",
+          "1:1 is the usual floor"
+        ],
+        [
+          "inventory turnover",
+          "COGS / average stock",
+          "how often stock is replaced",
+          "very high may mean stock-outs"
+        ],
+        [
+          "inventory holding period",
+          "365 / ITR",
+          "days of stock carried",
+          "each extra day ties up cash"
+        ],
+        [
+          "gross profit ratio",
+          "GP / net sales x 100",
+          "trading margin before overheads",
+          "falls when input costs rise"
+        ],
+        [
+          "net profit ratio",
+          "NPAT / net sales x 100",
+          "what survives every expense",
+          "thin but steady beats volatile"
+        ],
+        [
+          "return on capital employed",
+          "EBIT / capital employed x 100",
+          "return on long-term funds",
+          "compare with cost of capital"
+        ]
+      ],
+      "highlight": 1,
+      "note": "A ratio means nothing alone: judge it against last year, against a peer, or against the plan it was budgeted in."
+    }
+  }
+}

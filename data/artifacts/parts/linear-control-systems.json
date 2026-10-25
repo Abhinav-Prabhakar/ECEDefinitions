@@ -1,0 +1,247 @@
+{
+  "subject": "linear-control-systems",
+  "artifacts": {
+    "linear-control-systems--steady-state-error": {
+      "type": "table",
+      "title": "Steady-state error by system type",
+      "headers": [
+        "input",
+        "type 0",
+        "type 1",
+        "type 2"
+      ],
+      "rows": [
+        [
+          "step, 1/s",
+          "1/(1 + Kp)",
+          "0",
+          "0"
+        ],
+        [
+          "ramp, 1/s²",
+          "∞",
+          "1/Kv",
+          "0"
+        ],
+        [
+          "parabola, 1/s³",
+          "∞",
+          "∞",
+          "1/Ka"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Type is the number of open-loop integrators; each extra one lets the loop follow a higher-order input with finite error."
+    },
+    "linear-control-systems--pid-controller": {
+      "type": "table",
+      "title": "Effect of raising each PID term",
+      "headers": [
+        "term",
+        "rise time",
+        "overshoot",
+        "settling time",
+        "steady-state error",
+        "stability"
+      ],
+      "rows": [
+        [
+          "Kp",
+          "decreases",
+          "increases",
+          "small change",
+          "decreases",
+          "degrades"
+        ],
+        [
+          "Ki",
+          "decreases",
+          "increases",
+          "increases",
+          "eliminated",
+          "degrades"
+        ],
+        [
+          "Kd",
+          "small change",
+          "decreases",
+          "decreases",
+          "no effect",
+          "improves if small"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Classical monotonic trends for a fixed plant: the integral term removes offset, the derivative term damps the approach."
+    },
+    "linear-control-systems--overshoot": {
+      "type": "derivation",
+      "title": "Peak overshoot from the peak time",
+      "steps": [
+        "y(t)=1-\\frac{e^{-\\zeta\\omega_{n}t}}{\\sqrt{1-\\zeta^{2}}}\\sin\\left(\\omega_{d}t+\\cos^{-1}\\zeta\\right),\\qquad \\omega_{d}=\\omega_{n}\\sqrt{1-\\zeta^{2}}",
+        "\\dot{y}(t)=0\\ \\Rightarrow\\ \\omega_{d}t_{p}=\\pi",
+        "y(t_{p})=1-\\frac{e^{-\\zeta\\omega_{n}t_{p}}}{\\sqrt{1-\\zeta^{2}}}\\sin\\left(\\pi+\\cos^{-1}\\zeta\\right)",
+        "\\sin\\left(\\pi+\\cos^{-1}\\zeta\\right)=-\\sqrt{1-\\zeta^{2}}\\ \\Rightarrow\\ y(t_{p})=1+e^{-\\zeta\\omega_{n}\\pi/\\omega_{d}}",
+        "M_{p}=y(t_{p})-1=e^{-\\pi\\zeta/\\sqrt{1-\\zeta^{2}}}"
+      ],
+      "symbols": [
+        [
+          "\\zeta",
+          "damping ratio"
+        ],
+        [
+          "\\omega_{n}",
+          "natural frequency"
+        ],
+        [
+          "\\omega_{d}",
+          "damped frequency"
+        ],
+        [
+          "t_{p}",
+          "peak time"
+        ]
+      ],
+      "note": "At the first peak the sine argument is pi plus arccos zeta, and the root factors cancel so only the exponential decay survives."
+    },
+    "linear-control-systems--root-locus": {
+      "type": "table",
+      "title": "Root-locus construction rules",
+      "headers": [
+        "rule",
+        "statement"
+      ],
+      "rows": [
+        [
+          "branches",
+          "n branches, one per closed-loop pole"
+        ],
+        [
+          "symmetry",
+          "mirror image about the real axis"
+        ],
+        [
+          "real axis",
+          "part of the locus left of an odd count of poles + zeros"
+        ],
+        [
+          "asymptotes",
+          "n − m rays at angles (2q+1)180°/(n − m)"
+        ],
+        [
+          "centroid",
+          "σa = (Σpoles − Σzeros)/(n − m)"
+        ],
+        [
+          "breakaway",
+          "solve dK/ds = 0 with K = −1/(GH)"
+        ],
+        [
+          "jω crossing",
+          "put s = jω in 1 + KGH = 0 and solve for K"
+        ],
+        [
+          "departure",
+          "180° + Σ angles of zeros − Σ angles of other poles"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The first four rules fix the skeleton; the rest place the points where branches split, cross the imaginary axis, or leave a complex pole."
+    },
+    "linear-control-systems--routh-hurwitz-criterion": {
+      "type": "table",
+      "title": "Routh array special cases",
+      "headers": [
+        "case",
+        "what you see",
+        "remedy"
+      ],
+      "rows": [
+        [
+          "zero in first column",
+          "leading entry 0, rest nonzero",
+          "replace it by ε > 0, then let ε → 0"
+        ],
+        [
+          "entire row zero",
+          "a whole row vanishes",
+          "use d/ds of the auxiliary polynomial above"
+        ],
+        [
+          "pure jω roots",
+          "auxiliary row with no sign change",
+          "roots of the auxiliary equation lie on jω"
+        ],
+        [
+          "sign changes",
+          "count down the first column",
+          "equals the number of right-half-plane roots"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Both special cases hide roots on or symmetric about the imaginary axis; the epsilon and derivative tricks expose them without changing the count."
+    },
+    "linear-control-systems--state-transition-matrix": {
+      "type": "derivation",
+      "title": "Matrix exponential to resolvent",
+      "steps": [
+        "e^{At}=I+At+\\frac{A^{2}t^{2}}{2!}+\\cdots",
+        "\\mathcal{L}\\{t^{n}\\}=\\frac{n!}{s^{n+1}}\\ \\Rightarrow\\ \\mathcal{L}\\{e^{At}\\}=\\sum_{n=0}^{\\infty}\\frac{A^{n}}{s^{n+1}}",
+        "=\\frac{1}{s}\\sum_{n=0}^{\\infty}\\left(\\frac{A}{s}\\right)^{n}=\\frac{1}{s}\\left(I-\\frac{A}{s}\\right)^{-1}",
+        "=\\left(sI-A\\right)^{-1}"
+      ],
+      "symbols": [
+        [
+          "A",
+          "state matrix"
+        ],
+        [
+          "I",
+          "identity matrix"
+        ],
+        [
+          "s",
+          "Laplace variable"
+        ]
+      ],
+      "note": "Term-by-term transformation turns the series into a geometric series in A/s, whose sum is the resolvent matrix."
+    },
+    "linear-control-systems--bode-plot": {
+      "type": "table",
+      "title": "Bode asymptotes by factor",
+      "headers": [
+        "factor",
+        "magnitude slope",
+        "phase"
+      ],
+      "rows": [
+        [
+          "K",
+          "20 log K, flat",
+          "0° for K > 0"
+        ],
+        [
+          "(jω)ⁿ",
+          "+20n dB/decade",
+          "+90n°"
+        ],
+        [
+          "(1 + jω/ωc)⁻¹",
+          "0, then −20 dB/decade past ωc",
+          "0° → −90°"
+        ],
+        [
+          "(1 + jω/ωc)",
+          "0, then +20 dB/decade past ωc",
+          "0° → +90°"
+        ],
+        [
+          "1 + 2ζ(jω/ωn) + (jω/ωn)²",
+          "0, then −40 dB/decade past ωn",
+          "0° → −180°"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each factor adds one straight-line pair, so the full plot is the sum of these pieces added on the logarithmic frequency axis."
+    }
+  }
+}

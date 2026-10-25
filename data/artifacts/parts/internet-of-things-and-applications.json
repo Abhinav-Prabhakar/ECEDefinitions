@@ -1,0 +1,317 @@
+{
+  "subject": "internet-of-things-and-applications",
+  "artifacts": {
+    "internet-of-things-and-applications--iot-reference-model": {
+      "type": "table",
+      "title": "the seven Cisco IoT reference levels",
+      "headers": [
+        "level",
+        "name",
+        "what it does"
+      ],
+      "rows": [
+        [
+          "1",
+          "physical devices",
+          "sensors and actuators that touch the real world"
+        ],
+        [
+          "2",
+          "connectivity",
+          "links and protocols between devices and the network"
+        ],
+        [
+          "3",
+          "edge computing",
+          "filters, aggregates and inspects packets before the core"
+        ],
+        [
+          "4",
+          "data accumulation",
+          "stores arriving data, turning events into records"
+        ],
+        [
+          "5",
+          "data abstraction",
+          "reconciles formats into one consistent schema"
+        ],
+        [
+          "6",
+          "application",
+          "reports, control loops and business logic"
+        ],
+        [
+          "7",
+          "collaboration and processes",
+          "people and workflows acting on the reports"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The levels are numbered upward from the devices, and each one consumes only what the level below has already cleaned up."
+    },
+    "internet-of-things-and-applications--mqtt-quality-of-service": {
+      "type": "table",
+      "title": "MQTT delivery guarantees",
+      "headers": [
+        "QoS",
+        "exchange",
+        "guarantee",
+        "cost"
+      ],
+      "rows": [
+        [
+          "0",
+          "PUBLISH only",
+          "at most once; may be lost",
+          "lowest"
+        ],
+        [
+          "1",
+          "PUBLISH, PUBACK",
+          "at least once; duplicates possible",
+          "one round trip"
+        ],
+        [
+          "2",
+          "PUBLISH, PUBREC, PUBREL, PUBCOMP",
+          "exactly once",
+          "two round trips and stored state"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each level buys one more handshake: QoS 1 may duplicate and QoS 2 may not, which is why QoS 2 costs the most state."
+    },
+    "internet-of-things-and-applications--mqtt": {
+      "type": "sequence",
+      "title": "MQTT publish through a broker",
+      "actors": [
+        "publisher",
+        "broker",
+        "subscriber"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "CONNECT, keep-alive"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "CONNACK"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "SUBSCRIBE sensors/temp (QoS 1)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "SUBACK"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "PUBLISH sensors/temp: 24.5"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "forward to every matching subscriber"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "PUBACK"
+        }
+      ],
+      "note": "The two clients never address each other: the topic string is all they share and the broker owns the matching."
+    },
+    "internet-of-things-and-applications--amqp": {
+      "type": "table",
+      "title": "IoT application protocols compared",
+      "headers": [
+        "protocol",
+        "transport",
+        "pattern",
+        "best for"
+      ],
+      "rows": [
+        [
+          "MQTT",
+          "TCP",
+          "publish-subscribe via a broker",
+          "telemetry from many constrained devices"
+        ],
+        [
+          "CoAP",
+          "UDP",
+          "request-response, REST-like",
+          "battery devices on lossy links"
+        ],
+        [
+          "AMQP",
+          "TCP",
+          "queues and exchanges, brokered",
+          "reliable business messaging"
+        ],
+        [
+          "DDS",
+          "UDP or TCP",
+          "brokerless publish-subscribe",
+          "real-time industrial control"
+        ],
+        [
+          "XMPP",
+          "TCP",
+          "XML stanzas plus presence",
+          "chat and device presence"
+        ],
+        [
+          "REST over HTTP",
+          "TCP",
+          "stateless request-response",
+          "simple APIs and dashboards"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The choice is mostly transport plus coupling: UDP where links are weak, a broker where many readers need one writer's data."
+    },
+    "internet-of-things-and-applications--edge-computing": {
+      "type": "sequence",
+      "title": "data path from device to cloud",
+      "actors": [
+        "device",
+        "gateway",
+        "edge node",
+        "cloud"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "raw samples every 10 s, 20 kB"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "filtered and buffered stream"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "control command back to the device"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "aggregated summary once a minute, 2 kB"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "model or rule update"
+        }
+      ],
+      "note": "Filtering before the WAN hop is what the reduction ratio on this row measures: less traffic, less latency, less cloud storage."
+    },
+    "internet-of-things-and-applications--sketch": {
+      "type": "code",
+      "lang": "c",
+      "title": "an Arduino sketch as setup and loop",
+      "lines": [
+        "void setup() {",
+        "    pinMode(LED_BUILTIN, OUTPUT);   /* runs once after reset */",
+        "    Serial.begin(115200);",
+        "}",
+        "",
+        "void loop() {",
+        "    digitalWrite(LED_BUILTIN, HIGH);",
+        "    delay(500);",
+        "    digitalWrite(LED_BUILTIN, LOW);",
+        "    delay(500);                     /* called again forever */",
+        "}"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "setup() runs once after reset and loop() is called repeatedly, so a sketch never returns from loop() on its own."
+    },
+    "internet-of-things-and-applications--bluetooth": {
+      "type": "table",
+      "title": "short-range radios by range and rate",
+      "headers": [
+        "radio",
+        "standard",
+        "range",
+        "data rate",
+        "topology"
+      ],
+      "rows": [
+        [
+          "Wi-Fi",
+          "802.11",
+          "30-100 m",
+          "11-600 Mbit/s",
+          "star, through an AP"
+        ],
+        [
+          "Bluetooth Classic",
+          "802.15.1",
+          "~10 m",
+          "1-3 Mbit/s",
+          "piconet, 1 master + 7 slaves"
+        ],
+        [
+          "Bluetooth LE",
+          "802.15.1",
+          "10-50 m",
+          "1-2 Mbit/s",
+          "star or mesh"
+        ],
+        [
+          "Zigbee",
+          "802.15.4",
+          "10-100 m",
+          "250 kbit/s",
+          "mesh, one coordinator"
+        ],
+        [
+          "LoRa",
+          "LoRaWAN",
+          "2-15 km",
+          "0.3-50 kbit/s",
+          "star of stars"
+        ],
+        [
+          "NFC",
+          "ISO 14443",
+          "under 10 cm",
+          "424 kbit/s",
+          "point-to-point"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Range and rate pull in opposite directions: each step down in data rate buys roughly an order of magnitude in reach and battery life."
+    },
+    "internet-of-things-and-applications--gpio": {
+      "type": "code",
+      "lang": "python",
+      "title": "reading a GPIO pin with the BCM numbering",
+      "lines": [
+        "import RPi.GPIO as GPIO",
+        "",
+        "GPIO.setmode(GPIO.BCM)          # use Broadcom pin numbers",
+        "GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)",
+        "",
+        "if GPIO.input(17) == GPIO.LOW:  # button pulls the pin to ground",
+        "    print(\"pressed\")"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "In BCM mode the number is the SoC's GPIO number rather than the header pin, so the same code survives a board revision."
+    }
+  }
+}

@@ -52,7 +52,8 @@
       "unitTitle": "Single Variable Calculus",
       "sources": [
         "mac-unit-4-mac#slide.5"
-      ]
+      ],
+      "artifact": "matrix-algebra-and-calculus--taylors-series"
     },
     {
       "id": "maclaurin-series",
@@ -151,7 +152,8 @@
       "unitTitle": "System of Linear Equations",
       "sources": [
         "mac-wiki-symmetric-matrix#symmetric-matrix"
-      ]
+      ],
+      "artifact": "matrix-algebra-and-calculus--symmetric-matrix"
     },
     {
       "id": "skew-symmetric-matrix",
@@ -185,7 +187,8 @@
       "sources": [
         "mac-wiki-eigen#key-definitions"
       ],
-      "diagram": "eigen-directions"
+      "diagram": "eigen-directions",
+      "artifact": "matrix-algebra-and-calculus--eigenvalue"
     },
     {
       "id": "eigenvector",
@@ -230,7 +233,8 @@
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
         "mac-wiki-cayley-hamilton#statement-of-the-theorem"
-      ]
+      ],
+      "artifact": "matrix-algebra-and-calculus--cayley-hamilton-theorem"
     },
     {
       "id": "diagonalization",
@@ -298,7 +302,8 @@
       "unitTitle": "Quadratic Forms",
       "sources": [
         "mac-wiki-quadratic-form#definiteness-and-indefiniteness"
-      ]
+      ],
+      "artifact": "matrix-algebra-and-calculus--positive-definite"
     },
     {
       "id": "negative-definite",
@@ -541,7 +546,8 @@
       "unitTitle": "Higher Order ODE",
       "sources": [
         "mac-wiki-variation-parameters#method-for-second-order-equations"
-      ]
+      ],
+      "artifact": "matrix-algebra-and-calculus--variation-of-parameters"
     }
   ]
 }

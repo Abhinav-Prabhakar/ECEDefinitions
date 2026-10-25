@@ -292,7 +292,8 @@
       "sources": [
         "ss-unit-iii-ss-unit-3-lec-1#slide.31"
       ],
-      "diagram": "convolution"
+      "diagram": "convolution",
+      "artifact": "signals-and-systems--convolution"
     },
     {
       "id": "transfer-function",
@@ -338,7 +339,8 @@
       "sources": [
         "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
       ],
-      "diagram": "fourier"
+      "diagram": "fourier",
+      "artifact": "signals-and-systems--fourier-transform"
     },
     {
       "id": "inverse-fourier-transform",
@@ -384,7 +386,8 @@
       "unitTitle": "Fourier transform",
       "sources": [
         "ss-unit-iii-ss-unit-3-lec-1#slide.32"
-      ]
+      ],
+      "artifact": "signals-and-systems--convolution-property-ft"
     },
     {
       "id": "modulation-property",
@@ -417,7 +420,8 @@
       "unitTitle": "Laplace transform",
       "sources": [
         "ss-laplace-transforms#slide.1"
-      ]
+      ],
+      "artifact": "signals-and-systems--laplace-transform"
     },
     {
       "id": "bilateral-laplace",
@@ -439,7 +443,8 @@
       "sources": [
         "ss-laplace-transforms#slide.1"
       ],
-      "formula": "\\int_{-\\infty}^{\\infty}|x(t)|\\,e^{-\\sigma t}dt<\\infty"
+      "formula": "\\int_{-\\infty}^{\\infty}|x(t)|\\,e^{-\\sigma t}dt<\\infty",
+      "artifact": "signals-and-systems--roc"
     },
     {
       "id": "inverse-laplace",
@@ -483,7 +488,8 @@
       "unitTitle": "Z-transform",
       "sources": [
         "ss-z-transforms#slide.1"
-      ]
+      ],
+      "artifact": "signals-and-systems--z-transform"
     },
     {
       "id": "bilateral-z",
@@ -575,7 +581,8 @@
       "sources": [
         "ss-unit5-sampling-theorem#slide.9"
       ],
-      "diagram": "sampling"
+      "diagram": "sampling",
+      "artifact": "signals-and-systems--sampling-theorem"
     },
     {
       "id": "nyquist-rate",

@@ -1,0 +1,265 @@
+{
+  "subject": "advanced-entrepreneurship",
+  "artifacts": {
+    "advanced-entrepreneurship--saas": {
+      "type": "table",
+      "title": "five revenue architectures and the metric each lives on",
+      "headers": [
+        "model",
+        "revenue arrives as",
+        "governing metric",
+        "main risk"
+      ],
+      "rows": [
+        [
+          "SaaS",
+          "per-seat or tiered subscription",
+          "MRR, net revenue retention",
+          "churn after onboarding"
+        ],
+        [
+          "freemium",
+          "subscription from the paying minority",
+          "free-to-paid conversion",
+          "free tier costs outrun conversion"
+        ],
+        [
+          "marketplace",
+          "commission on each transaction",
+          "GMV, take rate, liquidity",
+          "cold-start chicken and egg"
+        ],
+        [
+          "e-commerce",
+          "margin on each order",
+          "AOV, repeat purchase rate",
+          "CAC above contribution"
+        ],
+        [
+          "licensing",
+          "fee plus royalty per unit",
+          "royalty per unit shipped",
+          "dependence on the partner"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The model fixes the metric you optimise: a marketplace cannot be steered by MRR, and SaaS cannot be steered by GMV."
+    },
+    "advanced-entrepreneurship--lean-canvas": {
+      "type": "table",
+      "title": "lean canvas blocks and what each one forces you to state",
+      "headers": [
+        "block",
+        "question it forces",
+        "against the Business Model Canvas"
+      ],
+      "rows": [
+        [
+          "problem",
+          "top three problems worth solving",
+          "no problem block at all"
+        ],
+        [
+          "customer segments",
+          "who hurts enough to pay?",
+          "adds early adopters"
+        ],
+        [
+          "unique value proposition",
+          "why is this different, in one line?",
+          "one sentence, no feature list"
+        ],
+        [
+          "solution",
+          "simplest answer to the problem",
+          "BMC lists activities instead"
+        ],
+        [
+          "channels",
+          "path to the customer",
+          "same as BMC"
+        ],
+        [
+          "revenue streams",
+          "charged for what, and how",
+          "same as BMC"
+        ],
+        [
+          "cost structure",
+          "fixed and variable costs",
+          "same as BMC"
+        ],
+        [
+          "key metrics",
+          "numbers that show the model works",
+          "no metrics block"
+        ],
+        [
+          "unfair advantage",
+          "what cannot be copied or bought",
+          "no equivalent"
+        ]
+      ],
+      "highlight": 9,
+      "note": "Lean canvas swaps partners, resources, activities and relationships for problem, solution, metrics and unfair advantage."
+    },
+    "advanced-entrepreneurship--business-plan": {
+      "type": "table",
+      "title": "what each section of a business plan has to prove",
+      "headers": [
+        "section",
+        "proves",
+        "evidence"
+      ],
+      "rows": [
+        [
+          "executive summary",
+          "the case in one page",
+          "traction to date"
+        ],
+        [
+          "problem and solution",
+          "a real need and a credible answer",
+          "customer interviews"
+        ],
+        [
+          "market analysis",
+          "the market is large enough",
+          "TAM, SAM, SOM sizing"
+        ],
+        [
+          "competition",
+          "why you win",
+          "positioning map"
+        ],
+        [
+          "marketing and sales",
+          "customers are reachable at a workable cost",
+          "CAC and funnel data"
+        ],
+        [
+          "operations",
+          "the service can be repeated",
+          "unit cost, supplier terms"
+        ],
+        [
+          "management",
+          "the team can execute",
+          "roles, prior results"
+        ],
+        [
+          "financial plan",
+          "the numbers add up and last long enough",
+          "three-year P&L, cash flow, ask"
+        ]
+      ],
+      "highlight": 8,
+      "note": "An investor reads a plan looking for reasons to say no; each section should close one of those reasons."
+    },
+    "advanced-entrepreneurship--funding-plan": {
+      "type": "sequence",
+      "title": "the equity funding ladder, after bootstrapping",
+      "actors": [
+        "founder",
+        "angel investor",
+        "venture fund"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "pitch: traction, unit economics, use of funds"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "Rs 25-50 lakh for 10-15 per cent equity"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "Series A pitch once sales repeat"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "Rs 5-15 crore, preferred shares, board seat"
+        }
+      ],
+      "note": "Bootstrap, trade credit and factoring come first, because every equity round sells a permanent slice of the company."
+    },
+    "advanced-entrepreneurship--customer-lifetime-value": {
+      "type": "derivation",
+      "title": "lifetime value and the LTV/CAC test",
+      "steps": [
+        "\\text{ARPU}=\\frac{\\text{monthly revenue}}{\\text{active customers}}",
+        "\\text{average life}=\\frac{1}{c}",
+        "\\text{LTV}=\\text{ARPU}\\times\\frac{1}{c}=\\frac{500}{0.02}",
+        "\\text{LTV}=25000",
+        "\\frac{\\text{LTV}}{\\text{CAC}}=\\frac{25000}{6000}\\approx 4.2"
+      ],
+      "symbols": [
+        [
+          "\\text{ARPU}",
+          "revenue per active customer per month"
+        ],
+        [
+          "c",
+          "monthly churn rate, 0.02 here"
+        ],
+        [
+          "\\text{LTV}",
+          "revenue expected from one customer"
+        ],
+        [
+          "\\text{CAC}",
+          "cost of winning one customer"
+        ]
+      ],
+      "note": "At 4.2:1 each rupee of acquisition spend returns about four over the customer's life; below 3:1 growth usually burns cash."
+    },
+    "advanced-entrepreneurship--economic-value-added": {
+      "type": "table",
+      "title": "six numbers an investor rechecks after the pitch",
+      "headers": [
+        "metric",
+        "formula",
+        "a bad reading means"
+      ],
+      "rows": [
+        [
+          "gross margin",
+          "(revenue - COGS) / revenue",
+          "pricing power too weak"
+        ],
+        [
+          "EBIT margin",
+          "EBIT / revenue",
+          "overheads outgrowing sales"
+        ],
+        [
+          "interest cover",
+          "EBIT / interest",
+          "one bad quarter from default"
+        ],
+        [
+          "AR days",
+          "receivables / revenue x 365",
+          "sales booked but not collected"
+        ],
+        [
+          "EVA",
+          "NOPAT - WACC x capital employed",
+          "growth that destroys value"
+        ],
+        [
+          "net cash flow",
+          "inflows - outflows",
+          "profitable on paper, short of cash"
+        ]
+      ],
+      "highlight": 5,
+      "note": "EBIT ignores how the firm is financed and EVA does not, which is why a profitable firm can still destroy value."
+    }
+  }
+}

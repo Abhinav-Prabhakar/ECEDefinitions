@@ -20,7 +20,8 @@
       "sources": [
         "dsp-unit-4-dsp-questions#p.1"
       ],
-      "diagram": "bode"
+      "diagram": "bode",
+      "artifact": "digital-signal-processing--butterworth-filter"
     },
     {
       "id": "chebyshev-filter",
@@ -100,7 +101,8 @@
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-unit-4-dsp-questions#p.5"
-      ]
+      ],
+      "artifact": "digital-signal-processing--impulse-invariance-method"
     },
     {
       "id": "bilinear-transformation",
@@ -112,7 +114,8 @@
       "sources": [
         "dsp-unit-4-dsp-questions#p.5"
       ],
-      "diagram": "z-plane"
+      "diagram": "z-plane",
+      "artifact": "digital-signal-processing--bilinear-transformation"
     },
     {
       "id": "warping-effect",
@@ -257,7 +260,8 @@
       "unitTitle": "FIR filter design",
       "sources": [
         "dsp-dsp-unit-5-questions#p.1"
-      ]
+      ],
+      "artifact": "digital-signal-processing--linear-phase-filter"
     },
     {
       "id": "gibbs-phenomenon",
@@ -280,7 +284,8 @@
       "sources": [
         "dsp-dsp-unit-5-questions#p.8"
       ],
-      "diagram": "windowing"
+      "diagram": "windowing",
+      "artifact": "digital-signal-processing--window-function"
     },
     {
       "id": "kaiser-window",
@@ -562,7 +567,8 @@
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
         "dsp-wiki-dft#definition"
-      ]
+      ],
+      "artifact": "digital-signal-processing--dft"
     },
     {
       "id": "inverse-dft",
@@ -606,7 +612,8 @@
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
         "dsp-wiki-overlap-add#definition"
-      ]
+      ],
+      "artifact": "digital-signal-processing--overlap-add"
     },
     {
       "id": "overlap-save",
@@ -640,7 +647,8 @@
       "sources": [
         "dsp-wiki-fft#definition"
       ],
-      "diagram": "fft-stages"
+      "diagram": "fft-stages",
+      "artifact": "digital-signal-processing--fft"
     },
     {
       "id": "radix-2-fft",

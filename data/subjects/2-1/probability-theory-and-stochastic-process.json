@@ -89,7 +89,8 @@
       "sources": [
         "ptsp-unit-1-ptsp#slide.20"
       ],
-      "diagram": "bayes-tree"
+      "diagram": "bayes-tree",
+      "artifact": "probability-theory-and-stochastic-process--bayes-theorem"
     },
     {
       "id": "statistical-independence",
@@ -123,7 +124,8 @@
       "sources": [
         "ptsp-unit-2-ptsp#slide.2"
       ],
-      "formula": "X:S\\to\\mathbb{R}"
+      "formula": "X:S\\to\\mathbb{R}",
+      "artifact": "probability-theory-and-stochastic-process--random-variable"
     },
     {
       "id": "pmf",
@@ -211,7 +213,8 @@
       "unitTitle": "Random Variables",
       "sources": [
         "ptsp-unit-2-ptsp#slide.3"
-      ]
+      ],
+      "artifact": "probability-theory-and-stochastic-process--poisson-distribution"
     },
     {
       "id": "uniform-distribution",
@@ -322,7 +325,8 @@
       "unitTitle": "Random Vectors",
       "sources": [
         "ptsp-unit-3-ptsp#slide.39"
-      ]
+      ],
+      "artifact": "probability-theory-and-stochastic-process--correlation-coefficient"
     },
     {
       "id": "independence-rvs",
@@ -345,7 +349,8 @@
         "ptsp-unit-3-ptsp#slide.2"
       ],
       "formula": "Z_n=\\frac{\\sum_{i=1}^{n}X_i-n\\mu}{\\sigma\\sqrt{n}}\\xrightarrow{d}N(0,1)",
-      "diagram": "gaussian"
+      "diagram": "gaussian",
+      "artifact": "probability-theory-and-stochastic-process--central-limit-theorem"
     },
     {
       "id": "jointly-gaussian",
@@ -492,7 +497,8 @@
       "sources": [
         "ptsp-unit-6-ptsp#p.110"
       ],
-      "diagram": "convolution"
+      "diagram": "convolution",
+      "artifact": "probability-theory-and-stochastic-process--lti-response"
     },
     {
       "id": "thermal-noise",
@@ -504,7 +510,8 @@
         "ptsp-unit-6-ptsp#p.4"
       ],
       "formula": "S_{nn}(f)=4kTR",
-      "diagram": "gaussian"
+      "diagram": "gaussian",
+      "artifact": "probability-theory-and-stochastic-process--thermal-noise"
     },
     {
       "id": "shot-noise",

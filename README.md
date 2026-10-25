@@ -10,8 +10,9 @@
 
 A quiet ECE study instrument: 2,773 definitions across 51 subjects — every A22 core course
 and elective option, every unit — grouped by semester, with 1,662 typeset equations, 624
-concept diagrams, a daily practice stack, adaptive two-way quizzes, source traceability,
-and a memory of what you actually know.
+concept diagrams, 431 cold surfaces (code, spec tables, sequences, derivations), a daily
+practice stack, adaptive quizzes in four directions, source traceability, and a memory of
+what you actually know.
 
 <a href="https://abhinav-prabhakar.github.io/ECEDefinitions/">
   <img src="https://img.shields.io/badge/OPEN_THE_APP-live-5b6ee1?style=for-the-badge&logo=githubpages&logoColor=white" alt="Open the live app" />
@@ -73,6 +74,32 @@ and only a handful in programming, management and values. The density is deliber
 - The library is generated from `scripts/diagrams/*.py`; every drawing is on the same
   240×150 grid, 1px line, sparse uppercase labels.
 
+## Cold surfaces, when a sentence cannot carry it
+
+Some things are not definitions. A pointer is understood by seeing `*p`; a register is
+understood by its bitfield; a handshake is understood by its order; an eigenvalue is
+understood by the three lines between the equation and the result. 431 definitions carry
+one of four small, read-only surfaces:
+
+| Surface | What it shows | Examples |
+| --- | --- | --- |
+| **code** | 3–16 numbered lines, one highlighted, optional deterministic output | pointer arithmetic, a Python decorator, a SystemVerilog constraint, an ARM exception vector |
+| **spec** | a hairline table with one highlighted row | BJT operating regions, OSI layers, cache address fields, financial ratios |
+| **sequence** | 2–4 actors, 3–8 ordered steps, stepped one at a time | TCP open, context switch, DMA transfer, three-way handshake |
+| **derivation** | 2–7 KaTeX steps plus a symbol table | particle in a box, Friis, backpropagation, Elmore delay |
+
+- **Click, not hover.** The second glyph after the term opens the surface inline under the
+  definition; one is open at a time, and the panel closes cleanly. Diagrams stay hover
+  because they are glimpsed; surfaces are clicked because they are read.
+- **Rare by design.** 15.5% of definitions, concentrated where the syntax or the algebra is
+  the point, and nearly absent from pure prose: 14 in Python, 12 in C, 2 in UHV. No
+  definition carries a surface merely to have one.
+- **The same surface in the quiz.** Answer a question on a definition that owns one and the
+  table, code or derivation appears with the explanation — including a steppable sequence.
+- Every artifact is data (`data/artifacts/parts/*.json`), built and validated like the
+  rest: `scripts/build-artifacts.py`, `scripts/validate-artifacts.py`, and the shared KaTeX
+  checker.
+
 ## Screenshots
 
 <table>
@@ -97,6 +124,19 @@ and only a handful in programming, management and values. The density is deliber
     <td width="42%">
       <img src="assets/screenshot-quiz-dark.png" alt="A two-way quiz in dark mode with an explanation" width="100%" />
       <p align="center"><sub><strong>Answers explain themselves.</strong> The cue, the definition, and what you picked.</sub></p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td width="58%">
+      <img src="assets/screenshot-surfaces-light.png" alt="A derivation cold surface opened inline under a definition in Engineering Physics" width="100%" />
+      <p align="center"><sub><strong>The algebra between the formula and the answer.</strong> A derivation surface: numbered steps, a symbol table, one line of why.</sub></p>
+    </td>
+    <td width="42%">
+      <img src="assets/screenshot-quiz-label-dark.png" alt="A figure-to-label quiz question with a marker on an unlabelled OSI stack" width="100%" />
+      <p align="center"><sub><strong>Name the marked part.</strong> The drawing loses its lettering while you answer; the reveal puts it back.</sub></p>
     </td>
   </tr>
 </table>
@@ -148,27 +188,39 @@ redistributed.
 
 ---
 
-## Two directions of recall
+## Four directions of recall
 
-Every round mixes both question types, balanced 5/5. You cannot coast on recognition.
+Every round mixes term and definition questions 5/5, and — when the subject can carry them —
+one **figure** question and one **label** question replace two of those slots. You cannot
+coast on recognition.
 
 | Prompt | You choose | What it trains |
 | --- | --- | --- |
 | `Convolution` | one of four definitions | term → meaning |
 | “The output of an LTI system is the input convolved with its impulse response.” | one of four terms | meaning → term |
+| a thin-line drawing | one of four terms | figure → concept |
+| a drawing with `A` on one part | one of four labels | figure → part |
 
+- **Figures without their lettering.** While a figure or label question is open, the
+  diagram is drawn without its printed labels, so the question tests the structure rather
+  than the words on the drawing. Answering restores the labelled drawing in the explanation.
+- **Labels stay honest.** The 15 label sets are hand-marked on real geometry — the base of a
+  BJT, the depletion region, the network layer of a stack, a node in a linked list — and the
+  round only takes a label question when the subject has four labels to choose from.
 - **Adaptive sampling.** The three weakest definitions are guaranteed a slot; the remaining
   slots are weighted toward low mastery.
 - **Keyboard complete.** Press <kbd>1</kbd>–<kbd>4</kbd> or <kbd>A</kbd>–<kbd>D</kbd> to
   choose, <kbd>Enter</kbd> for the next question, <kbd>Esc</kbd> to leave, <kbd>r</kbd> to
   repeat a round, <kbd>b</kbd> to go back.
 - **Explanations, not just verdicts.** Every answer reveals the canonical definition, a
-  formula cue, and — when wrong — the definition of the option you chose.
+  formula cue, the labelled figure when there is one, the definition's cold surface when it
+  has one, and — when wrong — the definition of the option you chose.
 - **A live memory readout.** The mastery bar moves after every answer, with the delta.
 
 <div align="center">
-  <img src="https://img.shields.io/badge/1%20round-10%20questions%20%C2%B7%205%20%2B%205-12b3a6?style=flat-square" alt="10 questions, 5 of each type" />
+  <img src="https://img.shields.io/badge/1%20round-10%20questions-12b3a6?style=flat-square" alt="10 questions" />
   <img src="https://img.shields.io/badge/adaptive-3%20weakest%20guaranteed-e0567f?style=flat-square" alt="Adaptive sampling" />
+  <img src="https://img.shields.io/badge/questions-term%20%C2%B7%20definition%20%C2%B7%20figure%20%C2%B7%20label-5b6ee1?style=flat-square" alt="Four question types" />
 </div>
 
 ---
@@ -286,11 +338,12 @@ sheet closes and held inside an open subject or quiz.
 | | |
 | --- | --- |
 | **Stack** | Static HTML, CSS and vanilla JavaScript. No framework. Stdlib Python builds the index and the diagram sprite. |
-| **Data** | `data/curriculum.json`, one file per subject under `data/subjects/<semester>/`, and `data/sources.json`. Equations are bare TeX; diagrams are sprite ids. |
+| **Data** | `data/curriculum.json`, one file per subject under `data/subjects/<semester>/`, `data/sources.json`, and `data/artifacts.json` (merged cold surfaces + diagram labels). Equations are bare TeX; diagrams and surfaces are ids. |
 | **Math** | Self-hosted KaTeX (woff2 only), precached with the shell. |
 | **Figures** | 198-symbol SVG sprite, generated from `scripts/diagrams/*.py`. |
+| **Surfaces** | 431 artifacts: `code`, `table`, `sequence`, `derivation`. Authored as per-subject fragments, merged by `scripts/build-artifacts.py`; the renderer owns every layout. |
 | **Storage** | `localStorage` — `oneliners.state.v1` for progress, `oneliners.theme` for the theme. |
-| **Offline** | Hand-written service worker; precaches the app shell, source manifest, and every seeded subject file. |
+| **Offline** | Hand-written service worker; precaches the app shell, source manifest, diagram sprite, surface registry, and every seeded subject file. |
 | **Type** | Self-hosted Inter variable font. |
 | **Hosting** | GitHub Pages, static. |
 | **Privacy** | No accounts, no analytics, no network writes. Progress never leaves the device. |
@@ -346,17 +399,25 @@ curriculum index is already committed.
 ├── data/
 │   ├── curriculum.json               # semester index the app loads
 │   ├── sources.json                  # 587 sources + locator schemes
+│   ├── artifacts.json                # merged cold surfaces + diagram label sets
 │   ├── README.md                     # coverage and access report
-│   └── subjects/<semester>/*.json    # one file per subject (formula + diagram)
+│   ├── artifacts/
+│   │   ├── parts/<subject>.json      # per-subject code / table / sequence / derivation
+│   │   └── labels.json               # marker points for figure → label questions
+│   └── subjects/<semester>/*.json    # one file per subject (formula + diagram + artifact)
 ├── scripts/
 │   ├── build-curriculum-index.py     # rebuild curriculum.json from subject files
+│   ├── build-artifacts.py            # merge artifact fragments + labels into one registry
 │   ├── validate-seed-data.py         # dependency-free data + diagram validator
+│   ├── validate-artifacts.py         # surface schema, ids, references, label bounds
 │   ├── check-formulas.mjs            # parse every formula with the vendored KaTeX
+│   ├── check-artifact-formulas.mjs   # parse one fragment's derivation TeX
 │   ├── build-diagrams.py             # merge the diagram families into the sprite
 │   └── diagrams/                     # base primitives + six family modules
 ├── prompts/
 │   ├── seed-curriculum-agent.md      # source-extraction brief
 │   ├── equation-pass-agent.md        # notation + figure brief
+│   ├── artifact-pass-agent.md        # cold-surface brief and schemas
 │   ├── diagram-catalog.md            # all 198 ids and coverage rules
 │   └── diagram-family-agent.md       # drawing brief
 └── assets/

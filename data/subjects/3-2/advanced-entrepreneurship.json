@@ -66,7 +66,8 @@
       "sources": [
         "ae-unit-1#slide.13"
       ],
-      "diagram": "business-model-canvas"
+      "diagram": "business-model-canvas",
+      "artifact": "advanced-entrepreneurship--lean-canvas"
     },
     {
       "id": "freemium",
@@ -88,7 +89,8 @@
       "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
       "sources": [
         "ae-unit-1#slide.31"
-      ]
+      ],
+      "artifact": "advanced-entrepreneurship--saas"
     },
     {
       "id": "marketplace-model",
@@ -133,7 +135,8 @@
       "unitTitle": "Business Planning & Exploring Revenue",
       "sources": [
         "ae-unit-2#slide.4"
-      ]
+      ],
+      "artifact": "advanced-entrepreneurship--business-plan"
     },
     {
       "id": "human-resource-planning",
@@ -335,7 +338,8 @@
       "unitTitle": "Funding the Growth & Building the A-Team",
       "sources": [
         "ae-unit-3#slide.41"
-      ]
+      ],
+      "artifact": "advanced-entrepreneurship--funding-plan"
     },
     {
       "id": "pitch-deck",
@@ -501,7 +505,8 @@
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
         "ae-unit-5#slide.15"
-      ]
+      ],
+      "artifact": "advanced-entrepreneurship--customer-lifetime-value"
     },
     {
       "id": "redemption-rate",
@@ -545,7 +550,8 @@
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
         "ae-unit-5#slide.20"
-      ]
+      ],
+      "artifact": "advanced-entrepreneurship--economic-value-added"
     },
     {
       "id": "interest-cover",

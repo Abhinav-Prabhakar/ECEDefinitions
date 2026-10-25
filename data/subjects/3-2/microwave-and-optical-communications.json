@@ -100,7 +100,8 @@
       "sources": [
         "mwoc-unit-1a#p.60"
       ],
-      "diagram": "waveguide"
+      "diagram": "waveguide",
+      "artifact": "microwave-and-optical-communications--dominant-mode"
     },
     {
       "id": "cutoff-frequency",
@@ -111,7 +112,8 @@
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
         "mwoc-unit-1a#p.41"
-      ]
+      ],
+      "artifact": "microwave-and-optical-communications--cutoff-frequency"
     },
     {
       "id": "phase-velocity",
@@ -178,7 +180,8 @@
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
         "mwoc-unit-2#p.60"
-      ]
+      ],
+      "artifact": "microwave-and-optical-communications--magic-tee"
     },
     {
       "id": "directional-coupler",
@@ -211,7 +214,8 @@
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
         "mwoc-unit-2#p.93"
-      ]
+      ],
+      "artifact": "microwave-and-optical-communications--circulator"
     },
     {
       "id": "ferrite",
@@ -380,7 +384,8 @@
       "sources": [
         "mwoc-unit-5#p.11"
       ],
-      "diagram": "fiber-na"
+      "diagram": "fiber-na",
+      "artifact": "microwave-and-optical-communications--numerical-aperture"
     },
     {
       "id": "single-mode-fiber",
@@ -391,7 +396,8 @@
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.19"
-      ]
+      ],
+      "artifact": "microwave-and-optical-communications--single-mode-fiber"
     },
     {
       "id": "multimode-fiber",
@@ -472,7 +478,8 @@
       "sources": [
         "mwoc-unit-6#p.5"
       ],
-      "diagram": "attenuation"
+      "diagram": "attenuation",
+      "artifact": "microwave-and-optical-communications--attenuation"
     },
     {
       "id": "absorption",
@@ -527,7 +534,8 @@
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
         "mwoc-unit-6#p.24"
-      ]
+      ],
+      "artifact": "microwave-and-optical-communications--dispersion"
     },
     {
       "id": "intramodal-dispersion",

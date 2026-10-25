@@ -1,0 +1,106 @@
+{
+  "subject": "environmental-science",
+  "artifacts": {
+    "environmental-science--carrying-capacity": {
+      "type": "derivation",
+      "title": "logistic growth and the carrying capacity",
+      "steps": [
+        "\\frac{dN}{dt}=rN\\left(1-\\frac{N}{K}\\right)",
+        "\\int\\frac{dN}{N\\left(1-N/K\\right)}=\\int r\\,dt",
+        "\\ln\\frac{N}{K-N}=rt+C",
+        "N(t)=\\frac{K}{1+\\left(\\frac{K-N_{0}}{N_{0}}\\right)e^{-rt}}",
+        "N\\to K\\ \\text{as}\\ t\\to\\infty"
+      ],
+      "symbols": [
+        ["N", "population size"],
+        ["r", "intrinsic growth rate"],
+        ["K", "carrying capacity"],
+        ["N_{0}", "initial population"]
+      ],
+      "note": "Growth is near-exponential while N is far below K and stalls as N approaches K, giving the S-shaped curve."
+    },
+    "environmental-science--acid-rain": {
+      "type": "derivation",
+      "title": "why clean rain sits at pH 5.6",
+      "steps": [
+        "\\mathrm{CO_{2}(g)}\\rightleftharpoons\\mathrm{CO_{2}(aq)},\\quad [\\mathrm{CO_{2}}]=K_{H}P_{\\mathrm{CO_{2}}}",
+        "\\mathrm{CO_{2}+H_{2}O}\\rightleftharpoons\\mathrm{H^{+}}+\\mathrm{HCO_{3}^{-}}",
+        "[\\mathrm{H^{+}}]=\\sqrt{K_{1}K_{H}P_{\\mathrm{CO_{2}}}}\\approx2.4\\times10^{-6}\\ \\mathrm{mol\\,L^{-1}}",
+        "\\mathrm{pH}=-\\log_{10}(2.4\\times10^{-6})=5.6"
+      ],
+      "symbols": [
+        ["K_{H}", "Henry constant for CO2"],
+        ["K_{1}", "first dissociation constant of carbonic acid"],
+        ["P_{\\mathrm{CO_{2}}}", "atmospheric partial pressure, about 400 ppm"]
+      ],
+      "note": "Rain more acidic than pH 5.6 must carry another acid, normally sulphuric or nitric from SOx and NOx."
+    },
+    "environmental-science--greenhouse-effect": {
+      "type": "derivation",
+      "title": "radiative forcing to equilibrium warming",
+      "steps": [
+        "\\Delta F=5.35\\ln\\!\\left(\\frac{C}{C_{0}}\\right)\\ \\mathrm{W\\,m^{-2}}",
+        "C=2C_{0}:\\ \\Delta F=5.35\\ln 2\\approx3.7\\ \\mathrm{W\\,m^{-2}}",
+        "\\Delta T=\\lambda\\,\\Delta F,\\qquad \\lambda\\approx0.8\\ \\mathrm{K\\,m^{2}\\,W^{-1}}",
+        "\\Delta T\\approx0.8\\times3.7\\approx3\\ \\mathrm{K}"
+      ],
+      "symbols": [
+        ["\\Delta F", "radiative forcing"],
+        ["C", "CO2 concentration"],
+        ["C_{0}", "reference concentration"],
+        ["\\lambda", "climate sensitivity parameter"],
+        ["\\Delta T", "equilibrium surface warming"]
+      ],
+      "note": "The logarithmic form comes from saturated CO2 absorption bands, and lambda folds in water-vapour and ice-albedo feedbacks."
+    },
+    "environmental-science--noise-pollution": {
+      "type": "table",
+      "title": "sound levels and their effects",
+      "headers": ["level dB(A)", "reference situation", "effect"],
+      "rows": [
+        ["0", "threshold of hearing", "none"],
+        ["30", "quiet bedroom", "sleep undisturbed"],
+        ["60", "normal conversation", "annoyance begins"],
+        ["85", "busy street, factory floor", "hearing damage after 8 h"],
+        ["100", "pneumatic drill at 5 m", "damage in under 1 h"],
+        ["120", "rock concert, front row", "threshold of pain"],
+        ["140", "jet engine at 25 m", "instant damage"]
+      ],
+      "highlight": 4,
+      "note": "Each 10 dB step is ten times the sound intensity, so the 8-hour limit at 85 dB falls to minutes near 110 dB."
+    },
+    "environmental-science--ozone-layer-depletion": {
+      "type": "table",
+      "title": "ozone depletion potentials",
+      "headers": ["compound", "main use", "ODP", "lifetime (yr)"],
+      "rows": [
+        ["CFC-11 (CCl₃F)", "foam blowing", "1.0", "45"],
+        ["CFC-12 (CCl₂F₂)", "refrigeration", "1.0", "100"],
+        ["CFC-113", "electronics cleaning", "0.8", "85"],
+        ["carbon tetrachloride", "feedstock and solvent", "1.1", "26"],
+        ["methyl chloroform", "degreasing", "0.1", "5"],
+        ["HCFC-22", "refrigeration", "0.055", "12"],
+        ["halon-1211", "fire suppression", "3.0", "16"],
+        ["methyl bromide", "soil fumigant", "0.6", "0.7"]
+      ],
+      "highlight": 7,
+      "note": "ODP is referenced to CFC-11 equal to 1; bromine is roughly 45 times more destructive per atom than chlorine."
+    },
+    "environmental-science--environmental-impact-assessment": {
+      "type": "sequence",
+      "title": "environmental clearance sequence",
+      "actors": ["proponent", "EIA consultant", "regulator", "public"],
+      "steps": [
+        {"from": 0, "to": 1, "label": "project brief and screening"},
+        {"from": 1, "to": 0, "label": "baseline study, impact prediction"},
+        {"from": 0, "to": 1, "label": "draft EIA report and management plan"},
+        {"from": 1, "to": 2, "label": "application submitted for appraisal"},
+        {"from": 2, "to": 3, "label": "public hearing and objections"},
+        {"from": 3, "to": 2, "label": "responses recorded in the final EIA"},
+        {"from": 2, "to": 0, "label": "clearance granted with conditions"},
+        {"from": 0, "to": 2, "label": "six-monthly compliance reports"}
+      ],
+      "note": "Clearance is conditional, so the monitoring reports demanded by the management plan are what keep the project compliant."
+    }
+  }
+}

@@ -209,7 +209,8 @@
       "sources": [
         "befa-unit-2-befa#slide.12"
       ],
-      "formula": "Q=f(L,\\overline{K})"
+      "formula": "Q=f(L,\\overline{K})",
+      "artifact": "business-economics-and-financial-analysis--law-of-variable-proportions"
     },
     {
       "id": "returns-to-scale",
@@ -331,7 +332,8 @@
       "sources": [
         "befa-unit-2-befa#slide.41"
       ],
-      "diagram": "break-even"
+      "diagram": "break-even",
+      "artifact": "business-economics-and-financial-analysis--break-even-point"
     },
     {
       "id": "contribution-margin",
@@ -388,7 +390,8 @@
       "sources": [
         "befa-unit-3-befa#slide.10"
       ],
-      "formula": "P=\\text{AR}=\\text{MR}"
+      "formula": "P=\\text{AR}=\\text{MR}",
+      "artifact": "business-economics-and-financial-analysis--perfect-competition"
     },
     {
       "id": "imperfect-competition",
@@ -432,7 +435,8 @@
       "sources": [
         "befa-unit-v-befa#slide.3"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "business-economics-and-financial-analysis--capital-expenditure"
     },
     {
       "id": "revenue-expenditure",
@@ -465,7 +469,8 @@
       "formula": "\\text{GP}=\\text{Net sales}-\\text{COGS}",
       "sources": [
         "befa-unit-v-befa#slide.7"
-      ]
+      ],
+      "artifact": "business-economics-and-financial-analysis--trading-account"
     },
     {
       "id": "profit-and-loss-account",
@@ -498,7 +503,8 @@
       "sources": [
         "befa-unit-vi-befa#slide.2"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "business-economics-and-financial-analysis--ratio-analysis"
     },
     {
       "id": "current-ratio",

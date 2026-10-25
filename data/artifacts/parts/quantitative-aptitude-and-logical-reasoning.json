@@ -1,0 +1,201 @@
+{
+  "subject": "quantitative-aptitude-and-logical-reasoning",
+  "artifacts": {
+    "quantitative-aptitude-and-logical-reasoning--natural-number": {
+      "type": "table",
+      "title": "the number sets and how they nest",
+      "headers": [
+        "set",
+        "symbol",
+        "members",
+        "example"
+      ],
+      "rows": [
+        [
+          "natural numbers",
+          "N",
+          "1, 2, 3, ...",
+          "7"
+        ],
+        [
+          "whole numbers",
+          "W",
+          "0, 1, 2, 3, ...",
+          "0"
+        ],
+        [
+          "integers",
+          "Z",
+          "..., -2, -1, 0, 1, 2, ...",
+          "-3"
+        ],
+        [
+          "rational numbers",
+          "Q",
+          "p/q with p, q integers and q not 0",
+          "3/4"
+        ],
+        [
+          "real numbers",
+          "R",
+          "all rational and irrational numbers",
+          "sqrt 2"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Each set contains every earlier one, so all natural numbers are whole numbers but not the reverse."
+    },
+    "quantitative-aptitude-and-logical-reasoning--cost-price": {
+      "type": "table",
+      "title": "profit and loss relations with CP = 200",
+      "headers": [
+        "quantity",
+        "relation",
+        "worked value"
+      ],
+      "rows": [
+        [
+          "marked price (MP)",
+          "list price before any discount",
+          "250"
+        ],
+        [
+          "discount",
+          "MP - SP",
+          "250 - 225 = 25"
+        ],
+        [
+          "selling price (SP)",
+          "MP - discount",
+          "225"
+        ],
+        [
+          "profit",
+          "SP - CP when SP exceeds CP",
+          "225 - 200 = 25"
+        ],
+        [
+          "profit %",
+          "(SP - CP) / CP x 100, always on CP",
+          "25 / 200 x 100 = 12.5%"
+        ],
+        [
+          "discount %",
+          "discount / MP x 100, always on MP",
+          "25 / 250 x 100 = 10%"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Profit and discount sit on different bases: profit on cost price, discount on marked price, so a discount can still leave a profit."
+    },
+    "quantitative-aptitude-and-logical-reasoning--alligation": {
+      "type": "derivation",
+      "title": "why the alligation ratio is (d - m) : (m - c)",
+      "steps": [
+        "c\\,q_{c}+d\\,q_{d}=m\\,(q_{c}+q_{d})",
+        "c\\,q_{c}+d\\,q_{d}=m\\,q_{c}+m\\,q_{d}",
+        "q_{c}(m-c)=q_{d}(d-m)",
+        "\\frac{q_{c}}{q_{d}}=\\frac{d-m}{m-c}"
+      ],
+      "symbols": [
+        [
+          "c",
+          "price per unit of the cheaper ingredient"
+        ],
+        [
+          "d",
+          "price per unit of the dearer ingredient"
+        ],
+        [
+          "m",
+          "price per unit of the mixture"
+        ],
+        [
+          "q_{c}",
+          "quantity taken from the cheaper ingredient"
+        ],
+        [
+          "q_{d}",
+          "quantity taken from the dearer ingredient"
+        ]
+      ],
+      "note": "The mixture must cost exactly what its parts cost, so how far each price sits from the mean fixes the ratio of quantities."
+    },
+    "quantitative-aptitude-and-logical-reasoning--argument": {
+      "type": "table",
+      "title": "parts of an argument and how each is tested",
+      "headers": [
+        "part",
+        "role",
+        "test to apply"
+      ],
+      "rows": [
+        [
+          "premise",
+          "statement offered as support",
+          "accept it as given, even if it is false"
+        ],
+        [
+          "conclusion",
+          "claim the argument wants accepted",
+          "must follow, not merely be plausible"
+        ],
+        [
+          "assumption",
+          "unstated premise the inference needs",
+          "negate it: if the conclusion collapses, it is an assumption"
+        ],
+        [
+          "inference",
+          "the step from premises to conclusion",
+          "watch for a term that appears only in the conclusion"
+        ],
+        [
+          "statement",
+          "a sentence that is true or false",
+          "exclude questions, commands and exclamations"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The assumption is the part never written down, so the negation test is the only reliable way to expose it."
+    },
+    "quantitative-aptitude-and-logical-reasoning--opposite-faces": {
+      "type": "table",
+      "title": "counting facts that decide a cube question",
+      "headers": [
+        "quantity",
+        "value",
+        "how it is used"
+      ],
+      "rows": [
+        [
+          "faces",
+          "6",
+          "form three opposite pairs"
+        ],
+        [
+          "edges",
+          "12",
+          "each face shares an edge with 4 others"
+        ],
+        [
+          "corners",
+          "8",
+          "each corner touches 3 mutually adjacent faces"
+        ],
+        [
+          "faces adjacent to one face",
+          "4",
+          "all except the face itself and its opposite"
+        ],
+        [
+          "opposite pairs on a standard die",
+          "3",
+          "(1,6), (2,5) and (3,4) sum to 7"
+        ]
+      ],
+      "highlight": 4,
+      "note": "A face is adjacent to four of the other five, so one view can never identify its opposite; a second view is always needed."
+    }
+  }
+}

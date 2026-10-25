@@ -1,0 +1,106 @@
+{
+  "subject": "engineering-chemistry",
+  "artifacts": {
+    "engineering-chemistry--cfse": {
+      "type": "table",
+      "title": "CFSE and spin state for d^n ions (octahedral)",
+      "headers": ["d^n", "high-spin unpaired", "high-spin CFSE / Δo", "low-spin unpaired", "low-spin CFSE / Δo"],
+      "rows": [
+        ["d0", "0", "0", "0", "0"],
+        ["d1", "1", "0.4", "1", "0.4"],
+        ["d2", "2", "0.8", "2", "0.8"],
+        ["d3", "3", "1.2", "3", "1.2"],
+        ["d4", "4", "0.6", "2", "1.6"],
+        ["d5", "5", "0", "1", "2.0"],
+        ["d6", "4", "0.4", "0", "2.4"],
+        ["d7", "3", "0.8", "1", "1.8"],
+        ["d8", "2", "1.2", "2", "1.2"],
+        ["d9", "1", "0.6", "1", "0.6"],
+        ["d10", "0", "0", "0", "0"]
+      ],
+      "highlight": 7,
+      "note": "Values follow 0.4 n_t2g minus 0.6 n_eg, positive meaning net stabilisation; the pairing energy P is not included."
+    },
+    "engineering-chemistry--spectrochemical-series": {
+      "type": "table",
+      "title": "spectrochemical series in octahedral complexes",
+      "headers": ["ligands, weak to strong", "field", "typical Δo", "spin in 3d ions", "example"],
+      "rows": [
+        ["I⁻ < Br⁻ < Cl⁻", "weak", "under 13 000 cm⁻¹", "high spin", "[CrCl₆]³⁻"],
+        ["F⁻ < OH⁻ < ox²⁻", "weak to medium", "about 15 000 cm⁻¹", "high spin", "[Cr(ox)₃]³⁻"],
+        ["H₂O < NCS⁻", "medium", "17 000–21 000 cm⁻¹", "high spin", "[Cr(H₂O)₆]³⁺"],
+        ["NH₃ < en < bipy", "medium to strong", "about 22 000 cm⁻¹", "high spin", "[Cr(NH₃)₆]³⁺"],
+        ["NO₂⁻ < CN⁻ < CO", "strong", "above 26 000 cm⁻¹", "low spin", "[Cr(CN)₆]³⁻"]
+      ],
+      "highlight": 5,
+      "note": "Only the strong-field end flips a d4 to d7 ion to low spin, because Δo must exceed the pairing energy P."
+    },
+    "engineering-chemistry--nernst-equation": {
+      "type": "derivation",
+      "title": "Nernst equation from Gibbs energy",
+      "steps": [
+        "\\Delta G=\\Delta G^{\\circ}+RT\\ln Q",
+        "\\Delta G=-nFE,\\qquad \\Delta G^{\\circ}=-nFE^{\\circ}",
+        "E=E^{\\circ}-\\frac{RT}{nF}\\ln Q",
+        "T=298\\ \\mathrm{K}:\\ \\frac{RT}{F}\\ln10=0.0592\\ \\mathrm{V}",
+        "E=E^{\\circ}-\\frac{0.0592}{n}\\log_{10}Q"
+      ],
+      "symbols": [
+        ["E", "cell potential"],
+        ["E^{\\circ}", "standard cell potential"],
+        ["n", "electrons transferred"],
+        ["F", "Faraday constant"],
+        ["Q", "reaction quotient"],
+        ["R", "gas constant"]
+      ],
+      "note": "The 0.0592 V form is only the 298 K version, so a temperature change moves the slope of the log term."
+    },
+    "engineering-chemistry--degree-of-polymerization": {
+      "type": "derivation",
+      "title": "Carothers relation: conversion to chain length",
+      "steps": [
+        "\\text{DP}=\\frac{M}{M_{0}}=\\frac{N_{0}}{N}",
+        "p=\\frac{N_{0}-N}{N_{0}}",
+        "1-p=\\frac{N}{N_{0}}\\;\\Rightarrow\\;\\frac{N_{0}}{N}=\\frac{1}{1-p}",
+        "\\text{DP}=\\frac{1}{1-p}",
+        "p=0.99\\;\\Rightarrow\\;\\text{DP}=100"
+      ],
+      "symbols": [
+        ["\\text{DP}", "degree of polymerization"],
+        ["M", "molar mass of the polymer"],
+        ["M_{0}", "molar mass of one repeat unit"],
+        ["N_{0}", "monomers present initially"],
+        ["N", "chains present at conversion p"],
+        ["p", "extent of reaction"]
+      ],
+      "note": "Step-growth chains grow only at high conversion, so reaching DP 100 already needs 99% of the functional groups reacted."
+    },
+    "engineering-chemistry--corrosion": {
+      "type": "table",
+      "title": "forms of corrosion and control",
+      "headers": ["form", "mechanism", "where it appears", "control"],
+      "rows": [
+        ["galvanic", "two dissimilar metals in one electrolyte", "joints, rivets, pipe couplings", "avoid dissimilar couples, insulate the joint"],
+        ["pitting", "local breakdown of the passive film", "stainless steel in chloride water", "cut chloride, keep surface clean, add Mo"],
+        ["crevice", "oxygen starvation inside a shielded gap", "gaskets, washers, lap joints", "seal the gap or redesign it out"],
+        ["stress corrosion", "tensile stress plus a specific ion", "weld heat-affected zones", "stress relief, resistant alloy"],
+        ["oxidation", "direct attack by oxygen at high temperature", "boiler tubes, furnace parts", "Cr or Al alloying, protective oxide"],
+        ["erosion-corrosion", "fast fluid strips the protective film", "pump impellers, pipe bends", "lower velocity, harder alloy"]
+      ],
+      "highlight": 2,
+      "note": "Cathodic protection only works while the protected metal stays the cathode, so a sacrificial anode is consumed instead."
+    },
+    "engineering-chemistry--desalination": {
+      "type": "sequence",
+      "title": "reverse-osmosis desalination",
+      "actors": ["seawater", "pre-treatment", "RO module", "permeate"],
+      "steps": [
+        {"from": 0, "to": 1, "label": "screen, dose antiscalant, 5 µm filter"},
+        {"from": 1, "to": 2, "label": "high-pressure pump at 55–70 bar"},
+        {"from": 2, "to": 3, "label": "water crosses the membrane"},
+        {"from": 2, "to": 0, "label": "brine concentrate rejected to sea"}
+      ],
+      "note": "The pump must beat the osmotic pressure of seawater, about 27 bar, so water is forced against its natural flow."
+    }
+  }
+}

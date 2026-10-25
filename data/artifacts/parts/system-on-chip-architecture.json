@@ -1,0 +1,264 @@
+{
+  "subject": "system-on-chip-architecture",
+  "artifacts": {
+    "system-on-chip-architecture--program-status-word": {
+      "type": "table",
+      "title": "condition flags in an ARM program status word",
+      "headers": [
+        "flag",
+        "CPSR bit",
+        "set when"
+      ],
+      "rows": [
+        [
+          "N",
+          "31",
+          "the result is negative, i.e. its top bit is 1"
+        ],
+        [
+          "Z",
+          "30",
+          "the result is zero"
+        ],
+        [
+          "C",
+          "29",
+          "an add carries out, or a subtract does not borrow"
+        ],
+        [
+          "V",
+          "28",
+          "a signed result overflows the register width"
+        ],
+        [
+          "Q",
+          "27",
+          "saturating arithmetic clamped the result (sticky)"
+        ],
+        [
+          "T",
+          "5",
+          "the core is executing Thumb-state instructions"
+        ]
+      ],
+      "highlight": 3,
+      "note": "A conditional branch is only a test on these flags, so one compare can drive BNE, BCS or BVS without touching the ALU again."
+    },
+    "system-on-chip-architecture--load-store-architecture": {
+      "type": "code",
+      "lang": "arm",
+      "title": "adding two memory values the load-store way",
+      "lines": [
+        "        LDR   r0, [r1]        ; r0 = mem[r1]      load",
+        "        LDR   r2, [r3]        ; r2 = mem[r3]      load",
+        "        ADD   r4, r0, r2      ; r4 = r0 + r2      register operands only",
+        "        STR   r4, [r5]        ; mem[r5] = r4      store"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "Only LDR and STR reach memory, which is what lets every instruction keep the same length and a fixed decode cost."
+    },
+    "system-on-chip-architecture--bimodal-branch-prediction": {
+      "type": "table",
+      "title": "2-bit saturating counter transitions",
+      "headers": [
+        "state",
+        "meaning",
+        "prediction",
+        "on taken",
+        "on not taken"
+      ],
+      "rows": [
+        [
+          "00",
+          "strongly not taken",
+          "not taken",
+          "01",
+          "00"
+        ],
+        [
+          "01",
+          "weakly not taken",
+          "not taken",
+          "10",
+          "00"
+        ],
+        [
+          "10",
+          "weakly taken",
+          "taken",
+          "11",
+          "01"
+        ],
+        [
+          "11",
+          "strongly taken",
+          "taken",
+          "11",
+          "10"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The extra bit provides hysteresis: one loop exit does not flip a strongly taken branch, so a single anomaly is absorbed."
+    },
+    "system-on-chip-architecture--amba": {
+      "type": "table",
+      "title": "AMBA protocol family",
+      "headers": [
+        "protocol",
+        "data width",
+        "key property"
+      ],
+      "rows": [
+        [
+          "APB",
+          "32 bit",
+          "low-power peripheral registers, no bursts"
+        ],
+        [
+          "AHB-Lite",
+          "64-1024 bit",
+          "single master, pipelined bursts"
+        ],
+        [
+          "AHB",
+          "64-1024 bit",
+          "multi-master with a central arbiter and mux"
+        ],
+        [
+          "AXI",
+          "8-1024 bit",
+          "separate address and data channels, outstanding bursts"
+        ],
+        [
+          "ACE",
+          "8-1024 bit",
+          "AXI plus hardware cache coherency between masters"
+        ],
+        [
+          "CHI",
+          "packetized",
+          "coherent, scalable mesh for many cores"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The family trades complexity for parallelism: APB has no bursts, AHB grants one master at a time, and AXI overlaps address with data."
+    },
+    "system-on-chip-architecture--axi": {
+      "type": "sequence",
+      "title": "AXI read burst over separate channels",
+      "actors": [
+        "master",
+        "slave"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "ARADDR, ARLEN = 3 on the read address channel"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "ARREADY accepts the burst"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "RVALID + RDATA beat 1, RLAST = 0"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "beats 2-4, RLAST = 1 on the last"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "next ARADDR issued before the data returns"
+        }
+      ],
+      "note": "Address and data travel on different channels, so the master can queue the next burst while the current one is still arriving."
+    },
+    "system-on-chip-architecture--direct-mapped-cache": {
+      "type": "code",
+      "lang": "c",
+      "title": "splitting an address into tag, index and offset",
+      "lines": [
+        "/* 32 KiB cache, 64 B lines: 512 lines, 6 offset bits, 9 index bits */",
+        "#define OFF_BITS 6",
+        "#define IDX_BITS 9",
+        "",
+        "uint32_t tag    = addr >> (OFF_BITS + IDX_BITS);          /* 17 bits */",
+        "uint32_t index  = (addr >> OFF_BITS) & ((1u << IDX_BITS) - 1);",
+        "uint32_t offset = addr & ((1u << OFF_BITS) - 1);"
+      ],
+      "highlight": [
+        6
+      ],
+      "note": "The index selects the only line the block may occupy, so lookup is one equality test on the tag instead of a search."
+    },
+    "system-on-chip-architecture--tomasulo-s-algorithm": {
+      "type": "code",
+      "lang": "pseudo",
+      "title": "Tomasulo issue and wake-up",
+      "lines": [
+        "for each issued instruction:",
+        "    rs = a free reservation station",
+        "    if regstat[src1] == 0: rs.Vj = reg[src1]  else: rs.Qj = regstat[src1]",
+        "    if regstat[src2] == 0: rs.Vk = reg[src2]  else: rs.Qk = regstat[src2]",
+        "    regstat[dest] = rs",
+        "wait until Qj and Qk are both cleared, then execute",
+        "broadcast (station, result); every waiting station copies it into V"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "An unavailable operand becomes the name of the station that will produce it, so the instruction waits on a producer instead of a register."
+    },
+    "system-on-chip-architecture--jpeg": {
+      "type": "table",
+      "title": "JPEG encode stages and where quality is lost",
+      "headers": [
+        "stage",
+        "operation",
+        "lossy?"
+      ],
+      "rows": [
+        [
+          "colour transform",
+          "RGB to Y, Cb, Cr",
+          "no"
+        ],
+        [
+          "chroma subsampling",
+          "Cb and Cr at quarter resolution (4:2:0)",
+          "yes, colour detail"
+        ],
+        [
+          "level shift and split",
+          "subtract 128, cut into 8x8 blocks",
+          "no"
+        ],
+        [
+          "forward DCT",
+          "64 pixels become 64 frequency coefficients",
+          "no"
+        ],
+        [
+          "quantisation",
+          "divide each coefficient by Q(u,v) and round",
+          "yes, the main loss"
+        ],
+        [
+          "entropy coding",
+          "zigzag scan, then Huffman",
+          "no"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Only subsampling and quantisation discard information; everything after them is a reversible recoding of what survived."
+    }
+  }
+}

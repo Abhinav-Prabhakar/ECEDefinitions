@@ -143,7 +143,8 @@
       "unitTitle": "Introduction to electrical circuits",
       "sources": [
         "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.75"
-      ]
+      ],
+      "artifact": "electrical-circuits-and-networks-analysis--dependent-source"
     },
     {
       "id": "frequency",
@@ -176,7 +177,8 @@
       "unitTitle": "Single phase AC circuits",
       "sources": [
         "ecna-ecna-unit-2-single-phase-ac-circuits#slide.22"
-      ]
+      ],
+      "artifact": "electrical-circuits-and-networks-analysis--rms-value"
     },
     {
       "id": "form-factor",
@@ -221,7 +223,8 @@
       "unitTitle": "Single phase AC circuits",
       "sources": [
         "ecna-ecna-unit-2-single-phase-ac-circuits#slide.44"
-      ]
+      ],
+      "artifact": "electrical-circuits-and-networks-analysis--impedance"
     },
     {
       "id": "real-power",
@@ -353,7 +356,8 @@
       "unitTitle": "Network theorems",
       "sources": [
         "ecna-ecna-unit-4-network-theorems#p.2"
-      ]
+      ],
+      "artifact": "electrical-circuits-and-networks-analysis--superposition-theorem"
     },
     {
       "id": "thevenins-theorem",
@@ -389,7 +393,8 @@
       "sources": [
         "ecna-ecna-unit-4-network-theorems#p.31"
       ],
-      "diagram": "max-power"
+      "diagram": "max-power",
+      "artifact": "electrical-circuits-and-networks-analysis--maximum-power-transfer"
     },
     {
       "id": "reciprocity-theorem",
@@ -434,7 +439,8 @@
       "sources": [
         "ecna-ecna-unit-5-2-ports-parameters#slide.1"
       ],
-      "diagram": "two-port"
+      "diagram": "two-port",
+      "artifact": "electrical-circuits-and-networks-analysis--two-port-network"
     },
     {
       "id": "z-parameters",
@@ -492,7 +498,8 @@
       "sources": [
         "ecna-ecna-unit-6-transients#slide.4"
       ],
-      "diagram": "rc-charge"
+      "diagram": "rc-charge",
+      "artifact": "electrical-circuits-and-networks-analysis--transient"
     },
     {
       "id": "time-constant-rl",
@@ -573,7 +580,8 @@
       "sources": [
         "ecna-ecna-unit-6-transients#slide.4"
       ],
-      "diagram": "rlc-transient"
+      "diagram": "rlc-transient",
+      "artifact": "electrical-circuits-and-networks-analysis--underdamped"
     }
   ]
 }

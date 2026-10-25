@@ -1,0 +1,81 @@
+{
+  "subject": "universal-human-values",
+  "artifacts": {
+    "universal-human-values--four-orders-of-nature": {
+      "type": "table",
+      "title": "the four orders and what separates them",
+      "headers": [
+        "order",
+        "examples",
+        "activity",
+        "distinguishing capability"
+      ],
+      "rows": [
+        [
+          "physical",
+          "soil, water, air, metal",
+          "composition and decomposition",
+          "no self-awareness"
+        ],
+        [
+          "pranic (bio)",
+          "plants, trees, vegetation",
+          "growth, respiration, reproduction",
+          "no self-awareness, but nurtures others"
+        ],
+        [
+          "animal",
+          "animals, birds, insects",
+          "eating, moving, reproducing by instinct",
+          "has self-awareness, but only instinct"
+        ],
+        [
+          "human",
+          "human beings",
+          "physical activity plus knowing and assuming",
+          "can know co-existence and choose to act on it"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Only the human order can know and choose; the other three fulfil their role in the whole without needing to understand it."
+    },
+    "universal-human-values--needs-of-self-and-body": {
+      "type": "table",
+      "title": "the two kinds of need",
+      "headers": [
+        "aspect",
+        "Self (I)",
+        "Body"
+      ],
+      "rows": [
+        [
+          "need",
+          "continuous happiness",
+          "physical facility"
+        ],
+        [
+          "duration",
+          "continuous, once understood it remains",
+          "temporary, must be replenished"
+        ],
+        [
+          "fulfilled by",
+          "right understanding and right feeling",
+          "food, clothing, shelter, instruments"
+        ],
+        [
+          "quantity",
+          "not a quantity, no upper limit",
+          "limited and measurable"
+        ],
+        [
+          "belongs to",
+          "the Self itself",
+          "matter"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Confusing the two is what makes people chase physical facility for happiness, which the body's temporary satisfaction cannot supply."
+    }
+  }
+}

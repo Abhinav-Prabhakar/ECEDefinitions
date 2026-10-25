@@ -43,7 +43,8 @@
       "sources": [
         "adc-adc-unit-i#slide.8"
       ],
-      "diagram": "am-modulation"
+      "diagram": "am-modulation",
+      "artifact": "analog-and-digital-communications--modulation-index-am"
     },
     {
       "id": "dsbsc",
@@ -76,7 +77,8 @@
       "sources": [
         "adc-adc-unit-i#slide.8"
       ],
-      "formula": "B_{\\text{VSB}}=f_{m}+f_{v}"
+      "formula": "B_{\\text{VSB}}=f_{m}+f_{v}",
+      "artifact": "analog-and-digital-communications--vsb"
     },
     {
       "id": "envelope-detector",
@@ -166,7 +168,8 @@
       "sources": [
         "adc-adc-unit-ii#slide.47"
       ],
-      "diagram": "fm-modulation"
+      "diagram": "fm-modulation",
+      "artifact": "analog-and-digital-communications--carsons-rule"
     },
     {
       "id": "pre-emphasis",
@@ -212,7 +215,8 @@
         "adc-adc-unit-iii#slide.2"
       ],
       "formula": "f_{IF}=|f_{LO}-f_{RF}|",
-      "diagram": "superhet"
+      "diagram": "superhet",
+      "artifact": "analog-and-digital-communications--superheterodyne"
     },
     {
       "id": "if",
@@ -339,7 +343,8 @@
       "sources": [
         "adc-adc-unit-iv#slide.3"
       ],
-      "formula": "e=x_{q}-x,\\quad|e|\\le\\frac{\\Delta}{2}"
+      "formula": "e=x_{q}-x,\\quad|e|\\le\\frac{\\Delta}{2}",
+      "artifact": "analog-and-digital-communications--quantization-error"
     },
     {
       "id": "companding",
@@ -406,7 +411,8 @@
         "adc-adc-unit-v#slide.2"
       ],
       "formula": "c(t)=\\sum_{n}a_{n}\\,p(t-nT_{b})",
-      "diagram": "line-coding"
+      "diagram": "line-coding",
+      "artifact": "analog-and-digital-communications--line-coding"
     },
     {
       "id": "isi",
@@ -511,7 +517,8 @@
       "sources": [
         "adc-adc-unit-v#slide.2"
       ],
-      "formula": "P_{e}=\\frac{N_{e}}{N}"
+      "formula": "P_{e}=\\frac{N_{e}}{N}",
+      "artifact": "analog-and-digital-communications--ber"
     },
     {
       "id": "entropy",
@@ -577,7 +584,8 @@
       "sources": [
         "adc-adc-unit-vi#slide.2"
       ],
-      "formula": "r(x)=\\text{rem}\\left[\\frac{x^{n-k}m(x)}{g(x)}\\right]"
+      "formula": "r(x)=\\text{rem}\\left[\\frac{x^{n-k}m(x)}{g(x)}\\right]",
+      "artifact": "analog-and-digital-communications--crc"
     }
   ]
 }

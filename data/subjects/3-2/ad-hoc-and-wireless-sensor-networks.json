@@ -130,7 +130,8 @@
       "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
       "sources": [
         "ahwsn-wiki-exposed-node#introduction"
-      ]
+      ],
+      "artifact": "ad-hoc-and-wireless-sensor-networks--exposed-node-problem"
     },
     {
       "id": "rts-cts-handshake",
@@ -141,7 +142,8 @@
       "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
       "sources": [
         "ahwsn-wiki-hidden-node#rts-cts"
-      ]
+      ],
+      "artifact": "ad-hoc-and-wireless-sensor-networks--rts-cts-handshake"
     },
     {
       "id": "csma-ca",
@@ -267,7 +269,8 @@
       "sources": [
         "ahwsn-wiki-aodv#introduction"
       ],
-      "diagram": "graph-search"
+      "diagram": "graph-search",
+      "artifact": "ad-hoc-and-wireless-sensor-networks--aodv"
     },
     {
       "id": "rreq",
@@ -314,7 +317,8 @@
       "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
       "sources": [
         "ahwsn-wiki-zrp#introduction"
-      ]
+      ],
+      "artifact": "ad-hoc-and-wireless-sensor-networks--zrp"
     },
     {
       "id": "multicast",
@@ -336,7 +340,8 @@
       "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
       "sources": [
         "ahwsn-ietf-odmrp#abstract"
-      ]
+      ],
+      "artifact": "ad-hoc-and-wireless-sensor-networks--odmrp"
     },
     {
       "id": "forwarding-group",
@@ -424,7 +429,8 @@
       "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
       "sources": [
         "ahwsn-wiki-tcp-cc#slow-start"
-      ]
+      ],
+      "artifact": "ad-hoc-and-wireless-sensor-networks--slow-start"
     },
     {
       "id": "loss-as-congestion-assumption",

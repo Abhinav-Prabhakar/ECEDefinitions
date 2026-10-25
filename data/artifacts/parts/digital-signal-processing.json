@@ -1,0 +1,250 @@
+{
+  "subject": "digital-signal-processing",
+  "artifacts": {
+    "digital-signal-processing--dft": {
+      "type": "derivation",
+      "title": "DFT as the DTFT sampled at N points",
+      "steps": [
+        "X(e^{j\\omega})=\\sum_{n=-\\infty}^{\\infty}x[n]e^{-j\\omega n}",
+        "\\text{finite length }N,\\quad \\omega=\\frac{2\\pi k}{N}",
+        "X(e^{j2\\pi k/N})=\\sum_{n=0}^{N-1}x[n]e^{-j2\\pi kn/N}=X[k]",
+        "\\omega_{k+1}-\\omega_{k}=\\frac{2\\pi}{N}"
+      ],
+      "symbols": [
+        [
+          "N",
+          "transform length"
+        ],
+        [
+          "k",
+          "bin index, 0 to N-1"
+        ],
+        [
+          "\\omega",
+          "digital angular frequency"
+        ]
+      ],
+      "note": "The DFT is not a different transform: it is the DTFT evaluated on the grid 2 pi k / N, so one period of the DTFT holds all N bins."
+    },
+    "digital-signal-processing--fft": {
+      "type": "code",
+      "lang": "python",
+      "title": "Recursive radix-2 FFT",
+      "lines": [
+        "import cmath",
+        "def fft(x):",
+        "    n = len(x)",
+        "    if n == 1:",
+        "        return x",
+        "    even, odd = fft(x[0::2]), fft(x[1::2])",
+        "    tw = [cmath.exp(-2j * cmath.pi * k / n) * odd[k] for k in range(n // 2)]",
+        "    return ([even[k] + tw[k] for k in range(n // 2)] +",
+        "            [even[k] - tw[k] for k in range(n // 2)])",
+        "print([round(abs(v), 6) for v in fft([1, 1, 1, 1])])"
+      ],
+      "highlight": [
+        7
+      ],
+      "output": [
+        "[4.0, 0.0, 0.0, 0.0]"
+      ],
+      "note": "Splitting into even and odd inputs gives two half-length transforms; the twiddle multiply and the plus/minus pair are one butterfly per stage."
+    },
+    "digital-signal-processing--window-function": {
+      "type": "table",
+      "title": "Window trade-offs for length N",
+      "headers": [
+        "window",
+        "main lobe",
+        "peak side lobe",
+        "stopband"
+      ],
+      "rows": [
+        [
+          "rectangular",
+          "4π/N",
+          "−13 dB",
+          "−21 dB"
+        ],
+        [
+          "Hann",
+          "8π/N",
+          "−31 dB",
+          "−44 dB"
+        ],
+        [
+          "Hamming",
+          "8π/N",
+          "−41 dB",
+          "−53 dB"
+        ],
+        [
+          "Blackman",
+          "12π/N",
+          "−57 dB",
+          "−74 dB"
+        ],
+        [
+          "Kaiser (β = 8.6)",
+          "≈ 10π/N",
+          "−60 dB",
+          "−80 dB"
+        ]
+      ],
+      "highlight": 3,
+      "note": "A wider main lobe buys lower side lobes: every window trades transition width against stopband attenuation, and the rectangular one loses on both."
+    },
+    "digital-signal-processing--butterworth-filter": {
+      "type": "derivation",
+      "title": "Filter order from the attenuation spec",
+      "steps": [
+        "|H(j\\Omega)|^{2}=\\frac{1}{1+(\\Omega/\\Omega_{c})^{2N}}",
+        "\\text{at }\\Omega_{p}:\\quad \\frac{1}{1+(\\Omega_{p}/\\Omega_{c})^{2N}}=10^{-A_{p}/10}",
+        "\\text{at }\\Omega_{s}:\\quad \\frac{1}{1+(\\Omega_{s}/\\Omega_{c})^{2N}}=10^{-A_{s}/10}",
+        "\\left(\\frac{\\Omega_{s}}{\\Omega_{p}}\\right)^{2N}=\\frac{10^{A_{s}/10}-1}{10^{A_{p}/10}-1}",
+        "N\\ge\\frac{\\log_{10}\\left[(10^{A_{s}/10}-1)/(10^{A_{p}/10}-1)\\right]}{2\\log_{10}(\\Omega_{s}/\\Omega_{p})}"
+      ],
+      "symbols": [
+        [
+          "A_{p}",
+          "passband attenuation in dB"
+        ],
+        [
+          "A_{s}",
+          "stopband attenuation in dB"
+        ],
+        [
+          "\\Omega_{p},\\Omega_{s}",
+          "passband and stopband edges"
+        ],
+        [
+          "N",
+          "filter order"
+        ]
+      ],
+      "note": "Dividing the two spec equations cancels the unknown cutoff, leaving a closed form for the smallest integer order that meets both edges."
+    },
+    "digital-signal-processing--bilinear-transformation": {
+      "type": "derivation",
+      "title": "Where the tangent warping comes from",
+      "steps": [
+        "s=\\frac{2}{T}\\frac{1-z^{-1}}{1+z^{-1}},\\qquad z=e^{j\\omega}",
+        "1-e^{-j\\omega}=2je^{-j\\omega/2}\\sin\\frac{\\omega}{2},\\qquad 1+e^{-j\\omega}=2e^{-j\\omega/2}\\cos\\frac{\\omega}{2}",
+        "s=\\frac{2}{T}\\,j\\tan\\frac{\\omega}{2}=j\\Omega",
+        "\\Omega=\\frac{2}{T}\\tan\\frac{\\omega}{2}\\ \\Rightarrow\\ \\omega=2\\tan^{-1}\\frac{\\Omega T}{2}"
+      ],
+      "symbols": [
+        [
+          "\\Omega",
+          "analog frequency"
+        ],
+        [
+          "\\omega",
+          "digital frequency"
+        ],
+        [
+          "T",
+          "sampling interval"
+        ]
+      ],
+      "note": "On the unit circle the map is purely imaginary, and the tangent squeezes the infinite analog axis into the interval between minus pi and pi."
+    },
+    "digital-signal-processing--impulse-invariance-method": {
+      "type": "table",
+      "title": "Analog-to-digital mapping methods",
+      "headers": [
+        "method",
+        "substitution",
+        "frequency behaviour"
+      ],
+      "rows": [
+        [
+          "impulse invariance",
+          "h[n] = T·ha(nT)",
+          "aliasing from replicas at k·fs"
+        ],
+        [
+          "bilinear",
+          "s = (2/T)(1 − z⁻¹)/(1 + z⁻¹)",
+          "no aliasing, warps high Ω"
+        ],
+        [
+          "backward difference",
+          "s = (1 − z⁻¹)/T",
+          "no aliasing, poor at high Ω"
+        ],
+        [
+          "matched z",
+          "z = e^(sT) for each pole and zero",
+          "no aliasing, keeps the pole map"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the bilinear map folds the whole left half-plane one-to-one inside the unit circle, at the price of frequency warping."
+    },
+    "digital-signal-processing--overlap-add": {
+      "type": "table",
+      "title": "Overlap-add vs overlap-save",
+      "headers": [
+        "aspect",
+        "overlap-add",
+        "overlap-save"
+      ],
+      "rows": [
+        [
+          "FFT size",
+          "N = L + M − 1",
+          "N chosen, N > M"
+        ],
+        [
+          "input block",
+          "L new samples, zero padded",
+          "N samples, last M−1 reused"
+        ],
+        [
+          "corrupted part",
+          "kept, overlapped and added",
+          "first M−1 outputs discarded"
+        ],
+        [
+          "output per block",
+          "L valid samples",
+          "N − M + 1 valid samples"
+        ],
+        [
+          "extra storage",
+          "a tail buffer of M−1",
+          "an input history of M−1"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Both turn one long convolution into circular FFT blocks; they differ only in whether the wrap-around part is added back or thrown away."
+    },
+    "digital-signal-processing--linear-phase-filter": {
+      "type": "derivation",
+      "title": "Symmetry gives exactly linear phase",
+      "steps": [
+        "H(e^{j\\omega})=\\sum_{n=0}^{N-1}h[n]e^{-j\\omega n},\\qquad h[n]=h[N-1-n]",
+        "H(e^{j\\omega})=e^{-j\\omega(N-1)/2}\\sum_{n=0}^{N-1}h[n]e^{-j\\omega\\left(n-\\frac{N-1}{2}\\right)}",
+        "\\text{pair }n\\text{ with }N-1-n:\\quad e^{-j\\omega m}+e^{j\\omega m}=2\\cos\\omega m\\ \\text{is real}",
+        "H(e^{j\\omega})=e^{-j\\omega(N-1)/2}A(\\omega),\\qquad A\\ \\text{real}",
+        "\\theta(\\omega)=-\\frac{N-1}{2}\\omega"
+      ],
+      "symbols": [
+        [
+          "N",
+          "filter length"
+        ],
+        [
+          "A(\\omega)",
+          "real amplitude function"
+        ],
+        [
+          "\\theta(\\omega)",
+          "phase response"
+        ]
+      ],
+      "note": "Symmetric coefficients make the bracketed sum real, so the entire phase is the pure delay of (N-1)/2 samples."
+    }
+  }
+}

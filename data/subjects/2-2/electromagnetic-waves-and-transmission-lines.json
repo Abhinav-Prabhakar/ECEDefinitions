@@ -74,7 +74,8 @@
       "unitTitle": "Electrostatics",
       "sources": [
         "emtl-u-1-electrostatics#slide.30"
-      ]
+      ],
+      "artifact": "electromagnetic-waves-and-transmission-lines--parallel-plate-capacitor"
     },
     {
       "id": "coaxial-capacitor",
@@ -118,7 +119,8 @@
       "unitTitle": "Electrostatics",
       "sources": [
         "emtl-u-1-electrostatics#slide.41"
-      ]
+      ],
+      "artifact": "electromagnetic-waves-and-transmission-lines--relaxation-time"
     },
     {
       "id": "poisson-equation",
@@ -306,7 +308,8 @@
       "sources": [
         "emtl-u-3-timevarying-fields#slide.22"
       ],
-      "diagram": "vector-field"
+      "diagram": "vector-field",
+      "artifact": "electromagnetic-waves-and-transmission-lines--maxwells-equations"
     },
     {
       "id": "tangential-e-continuity",
@@ -409,7 +412,8 @@
       "sources": [
         "emtl-u-4-reflection-refraction-of-em-waves#slide.11"
       ],
-      "diagram": "em-wave"
+      "diagram": "em-wave",
+      "artifact": "electromagnetic-waves-and-transmission-lines--wave-impedance"
     },
     {
       "id": "phase-velocity",
@@ -432,7 +436,8 @@
       "sources": [
         "emtl-u-4-reflection-refraction-of-em-waves#slide.19"
       ],
-      "diagram": "em-wave"
+      "diagram": "em-wave",
+      "artifact": "electromagnetic-waves-and-transmission-lines--poynting-vector"
     },
     {
       "id": "poynting-theorem",
@@ -491,7 +496,8 @@
       "sources": [
         "emtl-u-5-lf-tx-ion-lines#p.3"
       ],
-      "diagram": "tx-line"
+      "diagram": "tx-line",
+      "artifact": "electromagnetic-waves-and-transmission-lines--characteristic-impedance"
     },
     {
       "id": "reflection-coefficient",
@@ -515,7 +521,8 @@
       "sources": [
         "emtl-u-5-lf-tx-ion-lines#p.6"
       ],
-      "diagram": "tx-line"
+      "diagram": "tx-line",
+      "artifact": "electromagnetic-waves-and-transmission-lines--vswr"
     },
     {
       "id": "distortionless-line",
@@ -537,7 +544,8 @@
       "unitTitle": "LF transmission lines",
       "sources": [
         "emtl-u-5-lf-tx-ion-lines#p.6"
-      ]
+      ],
+      "artifact": "electromagnetic-waves-and-transmission-lines--matched-line"
     },
     {
       "id": "smith-chart",

@@ -257,8 +257,21 @@ locators; the hover tooltip shows the first source file and page/slide. `formula
 `diagram` is an optional id into the shared `assets/diagrams.svg` sprite. Both are notation,
 never a replacement for the one-line definition. 1,662 definitions carry an equation and
 624 carry a diagram (22.5% of the catalogue); the density is intentionally highest in
-physics/devices and lowest in programming, management and values. Unresolved and no-material slots are
-rendered as quiet `not seeded` annotations, never as empty cards.
+physics/devices and lowest in programming, management and values.
+
+`artifact` is an optional id into `data/artifacts.json`, a separate **cold-surface** registry
+of 431 fragments: 92 `code`, 186 `table`, 40 `sequence`, 113 `derivation` (15.5% of
+definitions). Artifacts are authored as per-subject fragments under
+`data/artifacts/parts/<subject>.json`, merged by `scripts/build-artifacts.py`, and validated
+against the definitions by `scripts/validate-artifacts.py`. They exist only where the
+sentence cannot carry the thing itself: the syntax, the bitfield, the exchange order, or
+the algebra between a formula and its result.
+
+The same registry carries `labels`: 15 hand-marked diagrams, each with 3–10 labelled points
+in the sprite's 240×150 coordinates. Label points are used by the figure → label quiz and
+must sit on the drawing's geometry, not in empty space.
+
+Unresolved and no-material slots are rendered as quiet `not seeded` annotations, never as empty cards.
 `4-2` renders as a no-material project-semester note.
 
 Everything else is client-side. The static HTML app uses two localStorage keys:
@@ -313,8 +326,9 @@ Shape:
 - **Remembered:** average mastery across all definitions (0% when untouched).
 - **Solid count:** definitions with mastery ≥ .75.
 - **Adaptive rounds:** the three weakest definitions are always included in a 10-question
-  quiz; the remaining slots are weighted toward low mastery. The round is shuffled, and
-  question types stay balanced 5/5.
+  quiz; the remaining slots are weighted toward low mastery. The round is shuffled. Term and
+  definition questions alternate 5/5; when the subject has a labelled diagram and any other
+  diagram, one figure and one label question replace two of those slots (never more).
 
 ---
 
@@ -408,21 +422,41 @@ filter, study-eye.
   term; hovering or focusing the row reveals a floating diagram card, and the glyph
   toggles it on touch. Each row has a right rail: the **mastery percentage** above a 2px
   94px bar. The tooltip adds the source file and page/slide locator.
+- A definition with a cold surface gets a second 18px glyph (`{}` for code, a grid for a
+  spec table, a flow for a sequence, a `Σ`-like mark for a derivation). Clicking opens the
+  surface inline under the definition in a 640px hairline panel — **one open at a time per
+  subject**. Diagrams stay hover; surfaces are click because they are read, not glimpsed.
+- **Cold surfaces** are plain, read-only panels with a small uppercase head (`code` · title),
+  a close control, and an optional one-line note:
+  - `code`: numbered mono lines, one accent-tinted highlight row, optional output block.
+  - `table`: hairline spec table, one highlighted row, right-aligned final column.
+  - `sequence`: one step at a time with previous/next controls and a `02 / 04` counter.
+  - `derivation`: numbered KaTeX steps plus a compact symbol table.
 - On mobile the rail becomes a full-width mastery line under the definition, with the
-  percentage at right. Equations stay inline; diagram cards span the row.
+  percentage at right. Equations stay inline; diagram cards span the row; an open surface
+  uses the full column.
 - Study mode hides definitions until hover (existing behaviour, `s` shortcut); the
-  equation and diagram hide with the definition.
+  equation, diagram and surface hide with the definition.
 - Filtering or searching after a quiz that changed mastery re-evaluates the visible set.
 
 ### Quiz
 A separate fixed sheet, layered above the subject page. Same paper, more air.
-10 questions per round, **two question types, balanced 5/5**. Sampling is adaptive: the
-three weakest definitions are guaranteed a slot and the rest are weighted toward low
-mastery (communicated by the quiz CTA tooltip and the shortcuts note):
+10 questions per round, **four question types**. Sampling is adaptive: the three weakest
+definitions are guaranteed a slot and the rest are weighted toward low mastery
+(communicated by the quiz CTA tooltip and the shortcuts note):
 
 1. **term → definition:** the term is displayed large; choose the matching definition
    from four full-width definition rows.
 2. **definition → term:** the definition is displayed; choose the term from four rows.
+3. **figure → term:** the definition's diagram is shown directly, without its printed
+   lettering; choose the concept from four terms. At most one per round.
+4. **figure → label:** the diagram is shown with a dot and an `A` badge on one part; choose
+   the part's name from four labels. At most one per round, and only when the subject has a
+   labelled diagram.
+
+The figure and label questions are stolen slots, not additions: the round is always ten
+questions, and the remaining term/definition slots stay even. A figure question falls back
+to a term/definition question when the round has no diagram.
 
 - The eyebrow shows the direction (`term → definition`), the question index, and the
   sticky header shows `03 / 10`.
@@ -436,9 +470,17 @@ mastery (communicated by the quiz CTA tooltip and the shortcuts note):
   - verdict (`correct` / `not quite`) + `That's <term>` / `It's <term>`
   - `why` row: the canonical one-line definition
   - equation block: the definition's LaTeX, set on an accent hairline
-  - figure: the definition's diagram, shown directly (not on hover), with a caption
+  - figure: the definition's diagram, shown directly (not on hover), with a caption; for a
+    label question the marker stays and the caption reads `marker A — network layer`
+  - cold surface: when the definition has an artifact, the full surface is shown under the
+    explanation (sequences keep their controls)
   - `your pick` row on misses: the chosen term and its definition, for direct comparison
   - mastery row: current %, animated bar, and `+30%` / `−40%` delta.
+- While a figure or label question is open, the drawing is shown **without its lettering**
+  (`.dg-card.dg-quiet`): the quiz asks you to read structure, not printed words. Answering
+  restores the labelled drawing in the explanation. Quiz figures are inlined from the
+  sprite, not `<use>`-referenced, so the styling can reach them; the accessible name never
+  contains the answer.
 - Every option carries `aria-keyshortcuts`; letters and digits both answer.
 - Results: 168px thin ring, animated dash offset, count-up score, accuracy, correct
   count, round mastery delta, a 10-tick answer ribbon (hover for term + type), and two
@@ -573,6 +615,12 @@ Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
 - Equations are bare inline TeX in `formula`, validated with `node scripts/check-formulas.mjs`
   against the vendored KaTeX build. KaTeX is self-hosted under `assets/katex/` (woff2 only)
   and precached, so equations render offline and inherit the theme colour.
+- Cold surfaces are data, never markup in the subject files: `"artifact":
+  "<subject>--<definition>"` and one fragment under `data/artifacts/parts/`. The renderer
+  owns every surface's layout; content agents supply only the records. Build with
+  `scripts/build-artifacts.py`, validate with `scripts/validate-artifacts.py` (schema,
+  ID prefix, one-to-one definition references, label bounds) and
+  `scripts/check-formulas.mjs` (definition and derivation TeX).
 - Diagrams are one shared sprite, `assets/diagrams.svg` (198 symbols), built from
   `scripts/diagrams/*.py` by `scripts/build-diagrams.py`; a definition opts in with
   `"diagram": "<id>"`. The sprite is injected once and drawn in `currentColor` +

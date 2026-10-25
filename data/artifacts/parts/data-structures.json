@@ -1,0 +1,210 @@
+{
+  "subject": "data-structures",
+  "artifacts": {
+    "data-structures--structure": {
+      "type": "code",
+      "lang": "c",
+      "title": "struct definition, instance and member access",
+      "lines": [
+        "struct point {          /* type definition: no storage yet */",
+        "    int x;",
+        "    int y;",
+        "};",
+        "",
+        "int main(void) {",
+        "    struct point p = {3, 4};",
+        "    printf(\"%d %d\\n\", p.x, p.y);",
+        "    return 0;",
+        "}"
+      ],
+      "highlight": [
+        7
+      ],
+      "output": [
+        "3 4"
+      ],
+      "note": "The definition only describes the layout; memory is reserved when a variable such as p is declared."
+    },
+    "data-structures--typedef": {
+      "type": "code",
+      "lang": "c",
+      "title": "typedef naming an untagged structure",
+      "lines": [
+        "typedef struct {",
+        "    char name[20];",
+        "    int  roll;",
+        "} Student;",
+        "",
+        "Student s = {\"Anita\", 42};",
+        "printf(\"%zu\\n\", sizeof(Student));"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "24"
+      ],
+      "note": "Student is an alias for the unnamed struct, so the keyword struct is not repeated at every use."
+    },
+    "data-structures--enumerated-data-type": {
+      "type": "code",
+      "lang": "c",
+      "title": "enum values with one explicit initialiser",
+      "lines": [
+        "enum day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };",
+        "",
+        "int main(void) {",
+        "    enum day d = WED;",
+        "    printf(\"%d %d\\n\", d, SUN);",
+        "    return 0;",
+        "}"
+      ],
+      "highlight": [
+        1
+      ],
+      "output": [
+        "3 7"
+      ],
+      "note": "Only MON is given a value; each later name takes the previous value plus one, so WED is 3 and SUN is 7."
+    },
+    "data-structures--malloc": {
+      "type": "code",
+      "lang": "c",
+      "title": "allocating n elements and testing the result",
+      "lines": [
+        "int *a = malloc(n * sizeof *a);   /* n ints, uninitialised */",
+        "if (a == NULL) {",
+        "    return 1;                     /* allocation failed */",
+        "}",
+        "a[0] = 10;",
+        "free(a);                          /* back to the heap */"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "Writing sizeof *a keeps the request correct if the element type changes, and the NULL test guards the failure case."
+    },
+    "data-structures--union": {
+      "type": "code",
+      "lang": "c",
+      "title": "union members share one storage area",
+      "lines": [
+        "union value {",
+        "    int   i;",
+        "    float f;",
+        "    char  bytes[4];",
+        "};",
+        "",
+        "union value v;",
+        "v.f = 1.0f;                  /* same 4 bytes as v.i */",
+        "printf(\"%zu\\n\", sizeof v);  /* 4, not 12 */"
+      ],
+      "highlight": [
+        9
+      ],
+      "output": [
+        "4"
+      ],
+      "note": "All three members start at the same address, so writing one overwrites the others and the size is the largest member."
+    },
+    "data-structures--self-referential-structure": {
+      "type": "code",
+      "lang": "c",
+      "title": "a structure holding a pointer to its own type",
+      "lines": [
+        "struct node {",
+        "    int data;",
+        "    struct node *next;   /* points to the same type */",
+        "};",
+        "",
+        "struct node *head = NULL;"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "The member is a pointer rather than a struct node, so the type does not contain itself and its size stays finite."
+    },
+    "data-structures--array-representation-of-binary-tree": {
+      "type": "table",
+      "title": "level-order array for a seven-node tree",
+      "headers": [
+        "index",
+        "node",
+        "parent",
+        "left",
+        "right"
+      ],
+      "rows": [
+        [
+          "0",
+          "A",
+          "-",
+          "B (1)",
+          "C (2)"
+        ],
+        [
+          "1",
+          "B",
+          "A (0)",
+          "D (3)",
+          "E (4)"
+        ],
+        [
+          "2",
+          "C",
+          "A (0)",
+          "F (5)",
+          "G (6)"
+        ],
+        [
+          "3",
+          "D",
+          "B (1)",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "E",
+          "B (1)",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "F",
+          "C (2)",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "G",
+          "C (2)",
+          "-",
+          "-"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Children sit at 2i+1 and 2i+2 and the parent at floor((i-1)/2), so a missing node still costs a cell."
+    },
+    "data-structures--depth-first-search": {
+      "type": "code",
+      "lang": "c",
+      "title": "recursive DFS over an adjacency matrix",
+      "lines": [
+        "void dfs(int u) {",
+        "    visited[u] = 1;",
+        "    printf(\"%d \", u);",
+        "    for (int v = 0; v < n; v++)",
+        "        if (adj[u][v] && !visited[v])",
+        "            dfs(v);",
+        "}"
+      ],
+      "highlight": [
+        6
+      ],
+      "note": "The call stack replaces an explicit stack: each call dives into one neighbour and returns only when that branch is exhausted."
+    }
+  }
+}

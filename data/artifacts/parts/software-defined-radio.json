@@ -1,0 +1,292 @@
+{
+  "subject": "software-defined-radio",
+  "artifacts": {
+    "software-defined-radio--software-defined-radio": {
+      "type": "table",
+      "title": "SDR platforms and their front ends",
+      "headers": [
+        "platform",
+        "ADC bits",
+        "max rate",
+        "tuning range",
+        "duplex"
+      ],
+      "rows": [
+        [
+          "RTL-SDR (R820T2)",
+          "8",
+          "2.4 MS/s",
+          "24 - 1766 MHz",
+          "receive only"
+        ],
+        [
+          "HackRF One",
+          "8",
+          "20 MS/s",
+          "1 MHz - 6 GHz",
+          "half duplex"
+        ],
+        [
+          "ADALM-PLUTO",
+          "12",
+          "61 MS/s",
+          "325 MHz - 3.8 GHz",
+          "full duplex"
+        ],
+        [
+          "USRP B210",
+          "12",
+          "56 MS/s",
+          "70 MHz - 6 GHz",
+          "2 x 2 full duplex"
+        ]
+      ],
+      "highlight": 1,
+      "note": "An 8-bit front end sees about 50 dB of dynamic range; 12 bits adds roughly 24 dB, which is why weak-signal work starts at 12 bits."
+    },
+    "software-defined-radio--lookup-table": {
+      "type": "table",
+      "title": "4-input LUT holding y = ab + cd",
+      "headers": [
+        "address abcd",
+        "stored bit"
+      ],
+      "rows": [
+        [
+          "0000",
+          "0"
+        ],
+        [
+          "0001",
+          "0"
+        ],
+        [
+          "0010",
+          "0"
+        ],
+        [
+          "0011",
+          "1"
+        ],
+        [
+          "0100",
+          "0"
+        ],
+        [
+          "0101",
+          "0"
+        ],
+        [
+          "0110",
+          "0"
+        ],
+        [
+          "0111",
+          "1"
+        ],
+        [
+          "1000",
+          "0"
+        ],
+        [
+          "1001",
+          "0"
+        ],
+        [
+          "1010",
+          "0"
+        ],
+        [
+          "1011",
+          "1"
+        ],
+        [
+          "1100",
+          "1"
+        ],
+        [
+          "1101",
+          "1"
+        ],
+        [
+          "1110",
+          "1"
+        ],
+        [
+          "1111",
+          "1"
+        ]
+      ],
+      "highlight": 13,
+      "note": "The 16 SRAM bits are the truth table: a 4-input LUT realises any function of four variables, and a multiplexer selects the addressed bit."
+    },
+    "software-defined-radio--flash-converter": {
+      "type": "table",
+      "title": "ADC architectures compared",
+      "headers": [
+        "architecture",
+        "resolution",
+        "speed",
+        "latency",
+        "typical use"
+      ],
+      "rows": [
+        [
+          "flash",
+          "6 - 8 bit",
+          "GS/s",
+          "one cycle",
+          "oscilloscopes, SDR front ends"
+        ],
+        [
+          "SAR",
+          "12 - 18 bit",
+          "MS/s",
+          "N cycles",
+          "general purpose, low power"
+        ],
+        [
+          "pipeline",
+          "12 - 16 bit",
+          "100 MS/s",
+          "a few cycles",
+          "video and IF sampling"
+        ],
+        [
+          "sigma-delta",
+          "16 - 24 bit",
+          "kS/s",
+          "many cycles",
+          "audio, instrumentation"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Flash spends 2^M - 1 comparators on a one-cycle conversion; the other architectures trade latency or oversampling for resolution."
+    },
+    "software-defined-radio--fixed-point-processor": {
+      "type": "table",
+      "title": "fixed-point Q formats",
+      "headers": [
+        "format",
+        "total bits",
+        "range",
+        "LSB"
+      ],
+      "rows": [
+        [
+          "Q1.15",
+          "16",
+          "-1 to +0.99997",
+          "3.05e-5"
+        ],
+        [
+          "Q1.31",
+          "32",
+          "-1 to +1 - 2^-31",
+          "4.66e-10"
+        ],
+        [
+          "Q3.13",
+          "16",
+          "-4 to +3.99988",
+          "1.22e-4"
+        ],
+        [
+          "Q0.15 unsigned",
+          "16",
+          "0 to 0.99997",
+          "3.05e-5"
+        ]
+      ],
+      "highlight": 1,
+      "note": "One sign bit and F fraction bits give a step of 2^-F; overflow wraps or saturates, so scaling must precede each multiply-accumulate."
+    },
+    "software-defined-radio--direct-digital-synthesis": {
+      "type": "derivation",
+      "title": "control word to output frequency",
+      "steps": [
+        "\\Delta\\phi=\\frac{2\\pi\\,\\text{FCW}}{2^{N}}\\ \\text{rad per reference clock}",
+        "\\text{one period}=\\frac{2\\pi}{\\Delta\\phi}=\\frac{2^{N}}{\\text{FCW}}\\ \\text{clocks}",
+        "f_{\\text{out}}=\\frac{\\text{FCW}}{2^{N}}f_{c}",
+        "N=32,\\ f_{c}=100\\ \\text{MHz}\\;\\Rightarrow\\;\\Delta f=\\frac{10^{8}}{2^{32}}=0.0233\\ \\text{Hz}"
+      ],
+      "symbols": [
+        [
+          "FCW",
+          "frequency control word"
+        ],
+        [
+          "N",
+          "phase accumulator width in bits"
+        ],
+        [
+          "f_{c}",
+          "reference clock frequency"
+        ],
+        [
+          "\\Delta f",
+          "tuning step"
+        ]
+      ],
+      "note": "The accumulator wraps at 2^32, so the output frequency is simply the fraction of full scale selected by the control word."
+    },
+    "software-defined-radio--dynamic-range": {
+      "type": "derivation",
+      "title": "dynamic range from converter bits",
+      "steps": [
+        "P_{\\text{FS}}=\\frac{(V_{\\text{FS}}/2)^{2}}{2R}=\\frac{V_{\\text{FS}}^{2}}{8R}",
+        "P_{q}=\\frac{\\Delta^{2}}{12R},\\quad \\Delta=\\frac{V_{\\text{FS}}}{2^{M}}",
+        "\\text{DR}=10\\log_{10}\\frac{P_{\\text{FS}}}{P_{q}}=10\\log_{10}\\left(\\frac{3}{2}\\,2^{2M}\\right)",
+        "\\text{DR}=6.02M+1.76\\ \\text{dB}"
+      ],
+      "symbols": [
+        [
+          "V_{\\text{FS}}",
+          "full-scale voltage"
+        ],
+        [
+          "\\Delta",
+          "one least significant bit"
+        ],
+        [
+          "M",
+          "converter resolution in bits"
+        ],
+        [
+          "R",
+          "load resistance"
+        ]
+      ],
+      "note": "Each extra bit halves the step and adds 6.02 dB; the 1.76 dB offset comes from the 3/2 ratio of full-scale sine power to quantisation noise."
+    },
+    "software-defined-radio--aliasing": {
+      "type": "derivation",
+      "title": "undersampling GPS L1 at 100 MS/s",
+      "steps": [
+        "f_{a}=\\left|f_{0}-kf_{s}\\right|,\\quad k=\\operatorname{round}\\frac{f_{0}}{f_{s}}=16",
+        "f_{0}=1575.42\\ \\text{MHz},\\quad f_{s}=100\\ \\text{MHz}",
+        "f_{a}=\\left|1575.42-1600\\right|=24.58\\ \\text{MHz}<\\frac{f_{s}}{2}",
+        "\\text{band }1575.42\\pm1.023\\ \\text{MHz folds to }24.58\\pm1.023\\ \\text{MHz}"
+      ],
+      "symbols": [
+        [
+          "f_{0}",
+          "RF carrier frequency"
+        ],
+        [
+          "f_{s}",
+          "sampling rate"
+        ],
+        [
+          "k",
+          "integer number of folds"
+        ],
+        [
+          "f_{a}",
+          "alias frequency in the first Nyquist zone"
+        ]
+      ],
+      "note": "Sampling at 100 MHz folds the 1575.42 MHz carrier to 24.58 MHz, so a digital down-converter can tune a band far above Nyquist."
+    }
+  }
+}

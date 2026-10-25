@@ -1,0 +1,131 @@
+{
+  "subject": "electrical-circuits-and-networks-analysis",
+  "artifacts": {
+    "electrical-circuits-and-networks-analysis--dependent-source": {
+      "type": "table",
+      "title": "the four controlled sources",
+      "headers": ["type", "relation", "gain symbol", "gain unit"],
+      "rows": [
+        ["voltage-controlled voltage source, VCVS", "v = μ v_x", "μ", "V/V"],
+        ["voltage-controlled current source, VCCS", "i = g_m v_x", "g_m", "S"],
+        ["current-controlled voltage source, CCVS", "v = r_m i_x", "r_m", "Ω"],
+        ["current-controlled current source, CCCS", "i = β i_x", "β", "A/A"]
+      ],
+      "highlight": 1,
+      "note": "The controlling variable sits in another branch, so a controlled source has no independent value of its own."
+    },
+    "electrical-circuits-and-networks-analysis--impedance": {
+      "type": "table",
+      "title": "R, L, C in the time and phasor domains",
+      "headers": ["element", "time domain", "impedance", "admittance", "current phase"],
+      "rows": [
+        ["R", "v = R i", "R", "1/R", "in phase with v"],
+        ["L", "v = L di/dt", "jωL", "1/(jωL)", "lags v by 90°"],
+        ["C", "i = C dv/dt", "1/(jωC)", "jωC", "leads v by 90°"]
+      ],
+      "highlight": 2,
+      "note": "Impedance is the phasor ratio V over I, so differentiation and integration become multiplication and division by j omega."
+    },
+    "electrical-circuits-and-networks-analysis--superposition-theorem": {
+      "type": "table",
+      "title": "network theorems and what each one finds",
+      "headers": ["theorem", "replaces the network with", "applies when", "gives"],
+      "rows": [
+        ["superposition", "one independent source at a time", "linear, bilateral", "branch current or voltage"],
+        ["Thevenin", "V_th in series with R_th", "linear two-terminal network", "load current and voltage"],
+        ["Norton", "I_N in parallel with R_N", "linear two-terminal network", "Thevenin result, dual form"],
+        ["maximum power transfer", "load set to R_th", "source resistance fixed", "P_max = V_th²/4R_th"],
+        ["reciprocity", "source and response ports swapped", "linear, passive, bilateral", "same ratio, z₁₂ = z₂₁"],
+        ["Millman", "one source in series with R", "parallel branches at one node", "node voltage directly"],
+        ["Tellegen", "nothing, it is an identity", "any network", "sum of v_k i_k = 0"]
+      ],
+      "highlight": 1,
+      "note": "Linearity is the shared precondition; power is never superposed, and reciprocity fails once controlled sources appear."
+    },
+    "electrical-circuits-and-networks-analysis--maximum-power-transfer": {
+      "type": "derivation",
+      "title": "maximum load power by differentiation",
+      "steps": [
+        "P=I^{2}R_{L}=\\frac{V_{\\text{th}}^{2}R_{L}}{(R_{\\text{th}}+R_{L})^{2}}",
+        "\\frac{dP}{dR_{L}}=V_{\\text{th}}^{2}\\,\\frac{(R_{\\text{th}}+R_{L})^{2}-2R_{L}(R_{\\text{th}}+R_{L})}{(R_{\\text{th}}+R_{L})^{4}}",
+        "\\frac{dP}{dR_{L}}=0\\;\\Rightarrow\\;R_{L}=R_{\\text{th}}",
+        "P_{\\max}=\\frac{V_{\\text{th}}^{2}}{4R_{\\text{th}}}",
+        "\\eta=\\frac{P_{\\text{load}}}{P_{\\text{supplied}}}=50\\%\\ \\text{at this point}"
+      ],
+      "symbols": [
+        ["P", "power delivered to the load"],
+        ["V_{\\text{th}}", "Thevenin voltage"],
+        ["R_{\\text{th}}", "Thevenin resistance"],
+        ["R_{L}", "load resistance"],
+        ["\\eta", "efficiency"]
+      ],
+      "note": "Power peaks at 50 percent efficiency, so maximum power and maximum efficiency are deliberately different designs."
+    },
+    "electrical-circuits-and-networks-analysis--two-port-network": {
+      "type": "table",
+      "title": "two-port parameter sets",
+      "headers": ["set", "defining equation", "measured with", "diagonal unit"],
+      "rows": [
+        ["Z", "V₁ = z₁₁I₁ + z₁₂I₂", "output open, I₂ = 0", "Ω"],
+        ["Y", "I₁ = y₁₁V₁ + y₁₂V₂", "output short, V₂ = 0", "S"],
+        ["h", "V₁ = h₁₁I₁ + h₁₂V₂", "input short, output open", "Ω and S, mixed"],
+        ["ABCD", "V₁ = A V₂ − B I₂", "output open, then short", "A and D dimensionless"]
+      ],
+      "highlight": 1,
+      "note": "Each set is defined by an open or short test, and converting between them is a matrix inversion, so Y is the inverse of Z."
+    },
+    "electrical-circuits-and-networks-analysis--transient": {
+      "type": "derivation",
+      "title": "first-order RC step response",
+      "steps": [
+        "RC\\frac{dv_{C}}{dt}+v_{C}=V_{s},\\qquad \\tau=RC",
+        "\\frac{dv_{C}}{dt}=\\frac{V_{s}-v_{C}}{\\tau}",
+        "\\int\\frac{dv_{C}}{V_{s}-v_{C}}=\\int\\frac{dt}{\\tau}",
+        "-\\ln\\frac{V_{s}-v_{C}}{V_{s}-v_{C}(0^{+})}=\\frac{t}{\\tau}",
+        "v_{C}(t)=V_{s}+\\left[v_{C}(0^{+})-V_{s}\\right]e^{-t/\\tau}"
+      ],
+      "symbols": [
+        ["v_{C}", "capacitor voltage"],
+        ["V_{s}", "step source voltage"],
+        ["\\tau", "time constant, RC or L/R"],
+        ["R,C", "resistance and capacitance"]
+      ],
+      "note": "The homogeneous part decays with tau while the particular part is the steady state, so one exponential covers every first-order case."
+    },
+    "electrical-circuits-and-networks-analysis--rms-value": {
+      "type": "derivation",
+      "title": "rms of a sinusoid",
+      "steps": [
+        "V_{\\text{rms}}^{2}=\\frac{1}{T}\\int_{0}^{T}V_{m}^{2}\\sin^{2}\\omega t\\,dt",
+        "\\sin^{2}\\omega t=\\frac{1-\\cos 2\\omega t}{2}",
+        "V_{\\text{rms}}^{2}=\\frac{V_{m}^{2}}{2T}\\left[t-\\frac{\\sin 2\\omega t}{2\\omega}\\right]_{0}^{T}=\\frac{V_{m}^{2}}{2}",
+        "V_{\\text{rms}}=\\frac{V_{m}}{\\sqrt{2}}\\approx0.707\\,V_{m}"
+      ],
+      "symbols": [
+        ["V_{m}", "peak value"],
+        ["T", "period"],
+        ["\\omega", "angular frequency, 2 pi f"],
+        ["V_{\\text{rms}}", "root-mean-square value"]
+      ],
+      "note": "The mean of sin squared over a whole period is one half, which is why 230 V rms corresponds to 325 V peak."
+    },
+    "electrical-circuits-and-networks-analysis--underdamped": {
+      "type": "derivation",
+      "title": "roots of the series RLC circuit",
+      "steps": [
+        "L\\frac{di}{dt}+Ri+\\frac{1}{C}\\int i\\,dt=V_{s}",
+        "s^{2}+\\frac{R}{L}s+\\frac{1}{LC}=0",
+        "\\alpha=\\frac{R}{2L},\\qquad \\omega_{0}=\\frac{1}{\\sqrt{LC}}",
+        "\\Delta=\\alpha^{2}-\\omega_{0}^{2}<0\\;\\Rightarrow\\;s=-\\alpha\\pm j\\omega_{d}",
+        "\\omega_{d}=\\sqrt{\\omega_{0}^{2}-\\alpha^{2}}"
+      ],
+      "symbols": [
+        ["\\alpha", "neper frequency, R over 2L"],
+        ["\\omega_{0}", "undamped natural frequency"],
+        ["\\omega_{d}", "damped ringing frequency"],
+        ["\\Delta", "discriminant of the characteristic equation"]
+      ],
+      "note": "The real part of the root sets how fast the ringing dies away and the imaginary part sets its frequency."
+    }
+  }
+}

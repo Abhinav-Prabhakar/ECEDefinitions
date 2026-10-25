@@ -89,7 +89,8 @@
       "sources": [
         "ec-unit-1-molecular-structure#slide.47"
       ],
-      "diagram": "d-orbital-splitting"
+      "diagram": "d-orbital-splitting",
+      "artifact": "engineering-chemistry--cfse"
     },
     {
       "id": "low-spin-complex",
@@ -112,7 +113,8 @@
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.46"
-      ]
+      ],
+      "artifact": "engineering-chemistry--spectrochemical-series"
     },
     {
       "id": "n-type-semiconductor",
@@ -193,7 +195,8 @@
       "unitTitle": "Polymers & Lubricants",
       "sources": [
         "ec-unit-2-polymers-lubricants#slide.4"
-      ]
+      ],
+      "artifact": "engineering-chemistry--degree-of-polymerization"
     },
     {
       "id": "homopolymer",
@@ -270,7 +273,8 @@
       "unitTitle": "Water technology",
       "sources": [
         "ec-unit-3-water-technology#slide.57"
-      ]
+      ],
+      "artifact": "engineering-chemistry--desalination"
     },
     {
       "id": "electrochemical-cell",
@@ -339,7 +343,8 @@
       "sources": [
         "ec-unit-4-electro-chemistry#p.36"
       ],
-      "diagram": "electrochemical-cell"
+      "diagram": "electrochemical-cell",
+      "artifact": "engineering-chemistry--nernst-equation"
     },
     {
       "id": "battery",
@@ -395,7 +400,8 @@
       "sources": [
         "ec-unit-5-corrosion#slide.4"
       ],
-      "diagram": "corrosion-cell"
+      "diagram": "corrosion-cell",
+      "artifact": "engineering-chemistry--corrosion"
     },
     {
       "id": "rust",

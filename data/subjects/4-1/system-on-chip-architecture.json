@@ -219,7 +219,8 @@
         "soca-unit-2#p.8"
       ],
       "id": "program-status-word",
-      "formula": ""
+      "formula": "",
+      "artifact": "system-on-chip-architecture--program-status-word"
     },
     {
       "term": "Load–Store Architecture",
@@ -230,7 +231,8 @@
         "soca-unit-2#p.27"
       ],
       "id": "load-store-architecture",
-      "formula": ""
+      "formula": "",
+      "artifact": "system-on-chip-architecture--load-store-architecture"
     },
     {
       "term": "Register–Memory Architecture",
@@ -285,7 +287,8 @@
         "soca-unit-2#p.57"
       ],
       "id": "bimodal-branch-prediction",
-      "formula": ""
+      "formula": "",
+      "artifact": "system-on-chip-architecture--bimodal-branch-prediction"
     },
     {
       "term": "Vector Register",
@@ -318,7 +321,8 @@
         "soca-unit-2#p.81"
       ],
       "id": "tomasulo-s-algorithm",
-      "formula": ""
+      "formula": "",
+      "artifact": "system-on-chip-architecture--tomasulo-s-algorithm"
     },
     {
       "term": "Reorder Buffer",
@@ -398,7 +402,8 @@
       ],
       "id": "direct-mapped-cache",
       "formula": "i=B_{\\text{block}}\\bmod N_{\\text{lines}}",
-      "diagram": "cache-map"
+      "diagram": "cache-map",
+      "artifact": "system-on-chip-architecture--direct-mapped-cache"
     },
     {
       "term": "Set-Associative Cache",
@@ -488,7 +493,8 @@
       "sources": [
         "soca-web-amba#Introduction",
         "soca-web-soc#Bus-based-communication"
-      ]
+      ],
+      "artifact": "system-on-chip-architecture--amba"
     },
     {
       "id": "ahb",
@@ -532,7 +538,8 @@
       "unitTitle": "Interconnect Customization and Configuration",
       "sources": [
         "soca-web-amba#Advanced-eXtensible-Interface-AXI"
-      ]
+      ],
+      "artifact": "system-on-chip-architecture--axi"
     },
     {
       "id": "ace",
@@ -721,7 +728,8 @@
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
         "soca-web-jpeg#Lead-section"
-      ]
+      ],
+      "artifact": "system-on-chip-architecture--jpeg"
     },
     {
       "id": "discrete-cosine-transform",

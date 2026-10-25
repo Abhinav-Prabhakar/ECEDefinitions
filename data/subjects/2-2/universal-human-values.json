@@ -185,7 +185,8 @@
       "sources": [
         "uhv-uhv-ii#p.57"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "universal-human-values--needs-of-self-and-body"
     },
     {
       "id": "relationship",
@@ -263,7 +264,8 @@
         "uhv-unit-4#p.1"
       ],
       "formula": "",
-      "diagram": "harmony-orders"
+      "diagram": "harmony-orders",
+      "artifact": "universal-human-values--four-orders-of-nature"
     },
     {
       "id": "mutual-fulfillment",

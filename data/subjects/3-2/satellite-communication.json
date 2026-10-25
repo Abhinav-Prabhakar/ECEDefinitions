@@ -54,7 +54,8 @@
       "unitTitle": "Introduction, Orbital Mechanics and Launchers",
       "sources": [
         "satcom-wikipedia-keplers-laws-of-planetary-motion#para.1"
-      ]
+      ],
+      "artifact": "satellite-communication--kepler-s-third-law"
     },
     {
       "id": "eccentricity",
@@ -100,7 +101,8 @@
       "sources": [
         "satcom-wikipedia-geostationary-transfer-orbit#para.1",
         "satcom-wikipedia-geostationary-transfer-orbit#para.3"
-      ]
+      ],
+      "artifact": "satellite-communication--geostationary-transfer-orbit"
     },
     {
       "id": "launch-vehicle",
@@ -239,7 +241,8 @@
       "sources": [
         "satcom-wikipedia-link-budget#para.1"
       ],
-      "diagram": "link-budget"
+      "diagram": "link-budget",
+      "artifact": "satellite-communication--link-budget"
     },
     {
       "id": "link-margin",
@@ -348,7 +351,8 @@
       "unitTitle": "Multiple Access",
       "sources": [
         "satcom-wikipedia-frequency-division-multiple-access#para.1"
-      ]
+      ],
+      "artifact": "satellite-communication--frequency-division-multiple-access"
     },
     {
       "id": "time-division-multiple-access",
@@ -461,7 +465,8 @@
       "sources": [
         "satcom-wikipedia-ground-station#para.1"
       ],
-      "diagram": "antenna-pattern"
+      "diagram": "antenna-pattern",
+      "artifact": "satellite-communication--parabolic-antenna"
     },
     {
       "id": "tracking-station",
@@ -496,7 +501,8 @@
       "sources": [
         "satcom-wikipedia-low-earth-orbit#para.1",
         "satcom-wikipedia-low-earth-orbit#para.4"
-      ]
+      ],
+      "artifact": "satellite-communication--low-earth-orbit"
     },
     {
       "id": "medium-earth-orbit",
@@ -553,7 +559,8 @@
       "unitTitle": "Satellite Navigation and the Global Positioning System",
       "sources": [
         "satcom-wikipedia-global-positioning-system#para.1"
-      ]
+      ],
+      "artifact": "satellite-communication--gps"
     },
     {
       "id": "position-location",
@@ -565,7 +572,8 @@
       "sources": [
         "satcom-wikipedia-global-positioning-system#para.30",
         "satcom-wikipedia-global-positioning-system#para.31"
-      ]
+      ],
+      "artifact": "satellite-communication--position-location"
     },
     {
       "id": "receiver-clock-offset",

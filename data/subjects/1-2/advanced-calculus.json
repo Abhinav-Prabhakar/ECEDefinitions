@@ -108,7 +108,8 @@
       "sources": [
         "ac-ac-unit-1#p.20"
       ],
-      "diagram": "matrix-transform"
+      "diagram": "matrix-transform",
+      "artifact": "advanced-calculus--jacobian"
     },
     {
       "id": "stationary-point",
@@ -263,7 +264,8 @@
       "unitTitle": "PDEs",
       "sources": [
         "ac-ac-unit-3-part-1#p.19"
-      ]
+      ],
+      "artifact": "advanced-calculus--separation-of-variables"
     },
     {
       "id": "wave-equation",
@@ -331,7 +333,8 @@
       "sources": [
         "ac-ac-unit-4#p.7"
       ],
-      "diagram": "fourier"
+      "diagram": "fourier",
+      "artifact": "advanced-calculus--fourier-coefficients"
     },
     {
       "id": "even-function",
@@ -375,7 +378,8 @@
       "unitTitle": "Fourier series",
       "sources": [
         "ac-ac-unit-4#p.22"
-      ]
+      ],
+      "artifact": "advanced-calculus--parsevals-identity"
     },
     {
       "id": "gradient",
@@ -445,7 +449,8 @@
       "sources": [
         "ac-ac-unit-5#p.14"
       ],
-      "diagram": "vector-field"
+      "diagram": "vector-field",
+      "artifact": "advanced-calculus--greens-theorem"
     },
     {
       "id": "stokes-theorem",
@@ -457,7 +462,8 @@
       "sources": [
         "ac-ac-unit-5#p.16"
       ],
-      "diagram": "vector-field"
+      "diagram": "vector-field",
+      "artifact": "advanced-calculus--stokes-theorem"
     },
     {
       "id": "gauss-divergence-theorem",
@@ -491,7 +497,8 @@
       "unitTitle": "Laplace transforms",
       "sources": [
         "ac-ac-unit-6#p.2"
-      ]
+      ],
+      "artifact": "advanced-calculus--laplace-transform"
     },
     {
       "id": "inverse-laplace-transform",

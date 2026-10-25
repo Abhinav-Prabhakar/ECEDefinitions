@@ -76,7 +76,8 @@
         "iota-iota-unit-1#p.69"
       ],
       "id": "iot-reference-model",
-      "formula": ""
+      "formula": "",
+      "artifact": "internet-of-things-and-applications--iot-reference-model"
     },
     {
       "term": "Edge Computing",
@@ -88,7 +89,8 @@
       ],
       "id": "edge-computing",
       "formula": "R_{\\text{red}}=1-\\frac{D_{\\text{out}}}{D_{\\text{in}}}",
-      "diagram": "iot-layers"
+      "diagram": "iot-layers",
+      "artifact": "internet-of-things-and-applications--edge-computing"
     },
     {
       "term": "IoT Analytics",
@@ -210,7 +212,8 @@
         "iota-iota-unit-2#p.34"
       ],
       "id": "sketch",
-      "formula": ""
+      "formula": "",
+      "artifact": "internet-of-things-and-applications--sketch"
     },
     {
       "term": "SPI",
@@ -257,7 +260,8 @@
         "iota-iota-unit-2#p.58"
       ],
       "id": "gpio",
-      "formula": ""
+      "formula": "",
+      "artifact": "internet-of-things-and-applications--gpio"
     },
     {
       "term": "Intel Galileo",
@@ -391,7 +395,8 @@
         "iota-iota-unit-3#p.69"
       ],
       "id": "bluetooth",
-      "formula": ""
+      "formula": "",
+      "artifact": "internet-of-things-and-applications--bluetooth"
     },
     {
       "term": "Piconet",
@@ -469,7 +474,8 @@
       "unitTitle": "IoT Protocols",
       "sources": [
         "iota-web-mqtt#Overview"
-      ]
+      ],
+      "artifact": "internet-of-things-and-applications--mqtt"
     },
     {
       "id": "publish-subscribe",
@@ -502,7 +508,8 @@
       "unitTitle": "IoT Protocols",
       "sources": [
         "iota-web-mqtt#Quality-of-service"
-      ]
+      ],
+      "artifact": "internet-of-things-and-applications--mqtt-quality-of-service"
     },
     {
       "id": "coap",
@@ -524,7 +531,8 @@
       "unitTitle": "IoT Protocols",
       "sources": [
         "iota-web-amqp#Lead-section"
-      ]
+      ],
+      "artifact": "internet-of-things-and-applications--amqp"
     },
     {
       "id": "dds",

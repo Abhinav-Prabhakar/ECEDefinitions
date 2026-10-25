@@ -1,0 +1,248 @@
+{
+  "subject": "product-and-services",
+  "artifacts": {
+    "product-and-services--product-levels": {
+      "type": "table",
+      "title": "the five product levels, worked on a hotel",
+      "headers": [
+        "level",
+        "what the buyer gets",
+        "hotel"
+      ],
+      "rows": [
+        [
+          "core benefit",
+          "the need actually satisfied",
+          "rest and sleep"
+        ],
+        [
+          "basic product",
+          "the generic thing that delivers it",
+          "bed, bathroom, towels"
+        ],
+        [
+          "expected product",
+          "what buyers assume is included",
+          "clean room, quiet, on-time check-in"
+        ],
+        [
+          "augmented product",
+          "what exceeds expectation",
+          "free breakfast, airport pickup"
+        ],
+        [
+          "potential product",
+          "what it could become",
+          "personalised room, loyalty tiers"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Today's augmentation hardens into tomorrow's expectation, so the potential level has to keep moving."
+    },
+    "product-and-services--product-mix-depth": {
+      "type": "table",
+      "title": "width, length and depth in one product mix",
+      "headers": [
+        "product line",
+        "items in the line",
+        "variants per item"
+      ],
+      "rows": [
+        [
+          "beverages",
+          "4",
+          "3"
+        ],
+        [
+          "snacks",
+          "3",
+          "2"
+        ],
+        [
+          "household",
+          "2",
+          "4"
+        ],
+        [
+          "personal care",
+          "5",
+          "2"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Four lines is the width, fourteen items the length, and up to four variants each the depth."
+    },
+    "product-and-services--marketing-mix": {
+      "type": "table",
+      "title": "the 7Ps, and what changes when the offer is a service",
+      "headers": [
+        "P",
+        "goods decision",
+        "service decision"
+      ],
+      "rows": [
+        [
+          "product",
+          "features, quality, packaging",
+          "core and supplementary service, variability control"
+        ],
+        [
+          "price",
+          "list price, discounts, credit",
+          "yield pricing by time and capacity"
+        ],
+        [
+          "place",
+          "channel, coverage, stock",
+          "location and accessibility of delivery"
+        ],
+        [
+          "promotion",
+          "advertising, sales promotion",
+          "staff behaviour and word of mouth"
+        ],
+        [
+          "people",
+          "not part of the offer",
+          "front-line staff are the product"
+        ],
+        [
+          "process",
+          "factory-side, invisible to the buyer",
+          "service blueprint and queue design"
+        ],
+        [
+          "physical evidence",
+          "the product itself",
+          "premises, uniforms, receipts, reviews"
+        ]
+      ],
+      "highlight": 5,
+      "note": "People, process and physical evidence exist because an intangible service has no packaging to carry its promise."
+    },
+    "product-and-services--stage-gate-process": {
+      "type": "table",
+      "title": "stages of new-product development and the gate that ends each",
+      "headers": [
+        "stage",
+        "work done",
+        "gate question"
+      ],
+      "rows": [
+        [
+          "discovery",
+          "screen ideas against strategy",
+          "worth a concept?"
+        ],
+        [
+          "scoping",
+          "quick market and technical check",
+          "does the business case hold?"
+        ],
+        [
+          "business case",
+          "cost, price, volume, risk",
+          "do we fund development?"
+        ],
+        [
+          "development",
+          "build and test the product",
+          "does it pass the lab tests?"
+        ],
+        [
+          "testing",
+          "field trial and trial sell",
+          "do we launch?"
+        ],
+        [
+          "launch",
+          "roll out, track post-market",
+          "does it earn its shelf space?"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Any gate can kill the project; because cost rises sharply with each stage, the early gates are cheap and strict."
+    },
+    "product-and-services--service-blueprint": {
+      "type": "sequence",
+      "title": "service blueprint for an appointment-based repair",
+      "actors": [
+        "customer",
+        "front-stage staff",
+        "back-stage staff",
+        "support system"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "books a slot on the app"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "checks stock and reserves the slot"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "work order reaches the workshop"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "job prepared before the slot"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "service delivered at the counter"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "pays and rates the visit"
+        }
+      ],
+      "note": "Everything above the line of visibility is what the customer sees; the work order and prep below it make the promise keepable."
+    },
+    "product-and-services--servqual": {
+      "type": "table",
+      "title": "SERVQUAL dimensions and the judgement behind each",
+      "headers": [
+        "dimension",
+        "the customer asks",
+        "failure looks like"
+      ],
+      "rows": [
+        [
+          "reliability",
+          "did you do what you promised, first time?",
+          "same request handled differently twice"
+        ],
+        [
+          "responsiveness",
+          "how fast did you react?",
+          "a queue with nobody at the desk"
+        ],
+        [
+          "assurance",
+          "can I trust you with this?",
+          "staff who cannot answer a policy question"
+        ],
+        [
+          "empathy",
+          "do you see me as an individual?",
+          "a scripted reply to a specific problem"
+        ],
+        [
+          "tangibles",
+          "does the setting look competent?",
+          "well-kept premises and equipment"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Reliability usually carries the most weight, and it is the dimension the firm controls most directly."
+    }
+  }
+}

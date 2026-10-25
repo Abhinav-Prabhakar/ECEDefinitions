@@ -245,7 +245,8 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.49"
       ],
-      "formula": "e_{\\text{ss}}=\\lim_{s\\to0}\\frac{sR(s)}{1+G(s)H(s)}"
+      "formula": "e_{\\text{ss}}=\\lim_{s\\to0}\\frac{sR(s)}{1+G(s)H(s)}",
+      "artifact": "linear-control-systems--steady-state-error"
     },
     {
       "id": "error-constant",
@@ -300,7 +301,8 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": "M_p=e^{-\\pi\\zeta/\\sqrt{1-\\zeta^2}}"
+      "formula": "M_p=e^{-\\pi\\zeta/\\sqrt{1-\\zeta^2}}",
+      "artifact": "linear-control-systems--overshoot"
     },
     {
       "id": "delay-time",
@@ -323,7 +325,8 @@
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
       "formula": "C(s)=K_p+\\frac{K_i}{s}+K_ds",
-      "diagram": "pid"
+      "diagram": "pid",
+      "artifact": "linear-control-systems--pid-controller"
     },
     {
       "id": "stability",
@@ -367,7 +370,8 @@
       "sources": [
         "lcs-lcs-unit3#p.2"
       ],
-      "formula": "N_{\\text{RHP}}=\\text{sign changes in first column}"
+      "formula": "N_{\\text{RHP}}=\\text{sign changes in first column}",
+      "artifact": "linear-control-systems--routh-hurwitz-criterion"
     },
     {
       "id": "routh-array",
@@ -390,7 +394,8 @@
         "lcs-lcs-unit3#p.2"
       ],
       "formula": "1+KG(s)H(s)=0",
-      "diagram": "root-locus"
+      "diagram": "root-locus",
+      "artifact": "linear-control-systems--root-locus"
     },
     {
       "id": "breakaway-point",
@@ -437,7 +442,8 @@
         "lcs-lcs-unit4#p.2"
       ],
       "formula": "L(\\omega)=20\\log_{10}|G(j\\omega)|",
-      "diagram": "bode"
+      "diagram": "bode",
+      "artifact": "linear-control-systems--bode-plot"
     },
     {
       "id": "gain-margin",
@@ -574,7 +580,8 @@
       "unitTitle": "State space analysis",
       "sources": [
         "lcs-lcs-unit6#p.61"
-      ]
+      ],
+      "artifact": "linear-control-systems--state-transition-matrix"
     },
     {
       "id": "resolvent-matrix",

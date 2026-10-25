@@ -42,7 +42,8 @@
       "unitTitle": "Interpretations on Product",
       "sources": [
         "ps-unit-i-p-and-s#slide.8"
-      ]
+      ],
+      "artifact": "product-and-services--product-levels"
     },
     {
       "id": "core-benefit",
@@ -130,7 +131,8 @@
       "unitTitle": "Interpretations on Product",
       "sources": [
         "ps-unit-i-p-and-s#slide.21"
-      ]
+      ],
+      "artifact": "product-and-services--product-mix-depth"
     },
     {
       "id": "product-line-pruning",
@@ -273,7 +275,8 @@
       "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.34"
-      ]
+      ],
+      "artifact": "product-and-services--stage-gate-process"
     },
     {
       "id": "financial-analysis",
@@ -453,7 +456,8 @@
       "sources": [
         "ps-wiki-marketing-mix#overview"
       ],
-      "diagram": "marketing-mix"
+      "diagram": "marketing-mix",
+      "artifact": "product-and-services--marketing-mix"
     },
     {
       "id": "people-element",
@@ -531,7 +535,8 @@
       "unitTitle": "Service Process Design and Service Distribution",
       "sources": [
         "ps-wiki-service-design#tools"
-      ]
+      ],
+      "artifact": "product-and-services--service-blueprint"
     },
     {
       "id": "touchpoint",
@@ -664,7 +669,8 @@
       "unitTitle": "Quality of Service",
       "sources": [
         "ps-wiki-servqual#overview"
-      ]
+      ],
+      "artifact": "product-and-services--servqual"
     },
     {
       "id": "reliability",

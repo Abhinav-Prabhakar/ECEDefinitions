@@ -1,0 +1,283 @@
+{
+  "subject": "analog-and-digital-communications",
+  "artifacts": {
+    "analog-and-digital-communications--modulation-index-am": {
+      "type": "derivation",
+      "title": "AM sidebands and power from the modulation index",
+      "steps": [
+        "s(t)=A_{c}\\left[1+\\mu\\cos\\omega_{m}t\\right]\\cos\\omega_{c}t",
+        "s(t)=A_{c}\\cos\\omega_{c}t+\\frac{\\mu A_{c}}{2}\\cos(\\omega_{c}+\\omega_{m})t+\\frac{\\mu A_{c}}{2}\\cos(\\omega_{c}-\\omega_{m})t",
+        "P_{T}=P_{c}+2\\cdot\\frac{P_{c}\\mu^{2}}{4}=P_{c}\\left(1+\\frac{\\mu^{2}}{2}\\right)",
+        "\\mu=\\frac{A_{\\max}-A_{\\min}}{A_{\\max}+A_{\\min}},\\qquad \\eta_{\\text{AM}}=\\frac{\\mu^{2}}{2+\\mu^{2}}"
+      ],
+      "symbols": [
+        [
+          "μ",
+          "modulation index, 0 to 1"
+        ],
+        [
+          "A_{c}",
+          "unmodulated carrier amplitude"
+        ],
+        [
+          "P_{c}",
+          "carrier power A_c^2/2"
+        ],
+        [
+          "P_{T}",
+          "total transmitted power"
+        ],
+        [
+          "\\eta_{\\text{AM}}",
+          "sideband power fraction"
+        ]
+      ],
+      "note": "Each sideband carries μ²/4 of the carrier power, so at μ = 1 only one third of the transmitted power sits in the information."
+    },
+    "analog-and-digital-communications--vsb": {
+      "type": "table",
+      "title": "amplitude modulation schemes compared",
+      "headers": [
+        "scheme",
+        "bandwidth",
+        "carrier",
+        "power in sidebands at μ = 1"
+      ],
+      "rows": [
+        [
+          "DSB-FC (AM)",
+          "2f_m",
+          "transmitted",
+          "33%"
+        ],
+        [
+          "DSB-SC",
+          "2f_m",
+          "suppressed",
+          "100%"
+        ],
+        [
+          "SSB",
+          "f_m",
+          "suppressed",
+          "100%"
+        ],
+        [
+          "VSB",
+          "f_m + f_v",
+          "suppressed",
+          "about 100%"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Dropping the carrier saves power but not bandwidth; dropping a sideband halves it, and VSB keeps a vestigial band only so the shaping filter can be built."
+    },
+    "analog-and-digital-communications--carsons-rule": {
+      "type": "derivation",
+      "title": "Carson's rule from the Bessel expansion",
+      "steps": [
+        "\\beta=\\frac{\\Delta f}{f_{m}}=\\frac{k_{f}A_{m}}{f_{m}}",
+        "s(t)=A_{c}\\sum_{n=-\\infty}^{\\infty}J_{n}(\\beta)\\cos\\left[(\\omega_{c}+n\\omega_{m})t\\right]",
+        "J_{n}(\\beta)\\approx 0\\ \\text{for}\\ |n|>\\beta+1",
+        "B_{T}=2(\\beta+1)f_{m}=2(\\Delta f+f_{m})"
+      ],
+      "symbols": [
+        [
+          "\\beta",
+          "FM modulation index"
+        ],
+        [
+          "\\Delta f",
+          "peak deviation k_f A_m"
+        ],
+        [
+          "f_{m}",
+          "highest modulating frequency"
+        ],
+        [
+          "J_{n}",
+          "Bessel coefficient of the n-th side pair"
+        ],
+        [
+          "B_{T}",
+          "transmission bandwidth"
+        ]
+      ],
+      "note": "Side pairs beyond order β+1 are negligible, so the occupied bandwidth grows with deviation rather than with message bandwidth."
+    },
+    "analog-and-digital-communications--superheterodyne": {
+      "type": "sequence",
+      "title": "superheterodyne front end",
+      "actors": [
+        "preselector",
+        "mixer",
+        "IF amplifier",
+        "detector"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "f_RF passes; f_img = f_RF + 2f_IF rejected"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "LO = f_RF + f_IF mixes down to f_IF"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "fixed IF gain and bandwidth, then detection"
+        }
+      ],
+      "note": "The image has to be removed before the mixer: afterwards it lands on the same f_IF and no filter can separate it from the wanted signal."
+    },
+    "analog-and-digital-communications--quantization-error": {
+      "type": "derivation",
+      "title": "quantisation noise and the 6 dB per bit rule",
+      "steps": [
+        "\\Delta=\\frac{V_{\\text{FS}}}{L}=\\frac{V_{\\text{FS}}}{2^{n}}",
+        "\\overline{e^{2}}=\\frac{1}{\\Delta}\\int_{-\\Delta/2}^{\\Delta/2}e^{2}\\,de=\\frac{\\Delta^{2}}{12}",
+        "\\frac{S}{N}=\\frac{V_{\\text{FS}}^{2}/8}{\\Delta^{2}/12}=\\frac{3}{2}\\,2^{2n}",
+        "\\left(\\frac{S}{N}\\right)_{\\text{dB}}=6.02\\,n+1.76"
+      ],
+      "symbols": [
+        [
+          "\\Delta",
+          "quantisation step"
+        ],
+        [
+          "n",
+          "bits per sample"
+        ],
+        [
+          "L",
+          "levels, 2^n"
+        ],
+        [
+          "S/N",
+          "full-scale sine power to rms noise"
+        ]
+      ],
+      "note": "Every extra bit halves the step and adds 6 dB; the 1.76 dB is the peak-to-rms factor of the assumed full-scale sine."
+    },
+    "analog-and-digital-communications--line-coding": {
+      "type": "table",
+      "title": "binary line codes compared",
+      "headers": [
+        "code",
+        "bandwidth",
+        "DC component",
+        "clock recovery",
+        "rule"
+      ],
+      "rows": [
+        [
+          "NRZ-L",
+          "B/2",
+          "yes, if data unbalanced",
+          "poor",
+          "level gives the bit"
+        ],
+        [
+          "NRZ-I",
+          "B/2",
+          "low",
+          "poor",
+          "transition on a 1"
+        ],
+        [
+          "RZ",
+          "B",
+          "yes",
+          "good",
+          "returns to zero every bit"
+        ],
+        [
+          "Manchester",
+          "B",
+          "none",
+          "excellent",
+          "transition at mid-bit"
+        ],
+        [
+          "AMI",
+          "B/2",
+          "none",
+          "poor on long runs of 0",
+          "alternating ± pulses"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Self-clocking codes spend bandwidth to guarantee transitions, which is why Manchester is used on short links and long-haul systems prefer a scrambler."
+    },
+    "analog-and-digital-communications--ber": {
+      "type": "derivation",
+      "title": "BPSK error rate from the decision distance",
+      "steps": [
+        "r=\\pm\\sqrt{E_{b}}+n,\\qquad n\\sim\\mathcal{N}\\!\\left(0,\\frac{N_{0}}{2}\\right)",
+        "d_{\\min}=2\\sqrt{E_{b}},\\qquad \\sigma=\\sqrt{\\frac{N_{0}}{2}}",
+        "P_{e}=Q\\!\\left(\\frac{d_{\\min}/2}{\\sigma}\\right)=Q\\!\\left(\\sqrt{\\frac{2E_{b}}{N_{0}}}\\right)",
+        "P_{e}=\\frac{1}{2}\\operatorname{erfc}\\!\\left(\\sqrt{\\frac{E_{b}}{N_{0}}}\\right)"
+      ],
+      "symbols": [
+        [
+          "E_{b}",
+          "energy per bit"
+        ],
+        [
+          "N_{0}",
+          "one-sided noise power density"
+        ],
+        [
+          "d_{\\min}",
+          "distance between the two symbols"
+        ],
+        [
+          "Q",
+          "Gaussian tail probability"
+        ]
+      ],
+      "note": "Coherent BPSK reaches 10⁻⁵ at about 9.6 dB of E_b/N_0; each 3 dB more drops P_e by roughly two orders of magnitude."
+    },
+    "analog-and-digital-communications--crc": {
+      "type": "table",
+      "title": "standard CRC generator polynomials",
+      "headers": [
+        "name",
+        "polynomial",
+        "degree",
+        "guaranteed detection"
+      ],
+      "rows": [
+        [
+          "CRC-8",
+          "0x07 (x^8 + x^2 + x + 1)",
+          "8",
+          "single and double bit errors"
+        ],
+        [
+          "CRC-16-IBM",
+          "0x8005 (x^16 + x^15 + x^2 + 1)",
+          "16",
+          "bursts up to 16 bits"
+        ],
+        [
+          "CRC-16-CCITT",
+          "0x1021 (x^16 + x^12 + x^5 + 1)",
+          "16",
+          "bursts up to 16 bits"
+        ],
+        [
+          "CRC-32",
+          "0x04C11DB7",
+          "32",
+          "bursts up to 32 bits"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The degree fixes the remainder width and the longest burst that is always caught; any non-zero remainder flags the frame."
+    }
+  }
+}

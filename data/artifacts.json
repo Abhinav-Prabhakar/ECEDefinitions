@@ -1,6 +1,441 @@
 {
   "version": 1,
   "artifacts": {
+    "ad-hoc-and-wireless-sensor-networks--aodv": {
+      "type": "sequence",
+      "title": "AODV route discovery and first data",
+      "actors": [
+        "source S",
+        "relay R",
+        "destination D"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "RREQ broadcast, TTL, dest seq"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "RREQ rebroadcast, reverse route to S"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "RREP unicast, fresh dest seq"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "RREP forwarded, forward route installed"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DATA along the installed route"
+        }
+      ],
+      "note": "Nothing is sent until a route is needed: the RREQ leaves reverse pointers that the RREP turns into forward routes."
+    },
+    "ad-hoc-and-wireless-sensor-networks--exposed-node-problem": {
+      "type": "table",
+      "title": "hidden and exposed node side by side",
+      "headers": [
+        "case",
+        "hearing pattern",
+        "effect"
+      ],
+      "rows": [
+        [
+          "hidden node",
+          "A to B and C to B, but A and C cannot hear each other",
+          "collision at B, both frames lost"
+        ],
+        [
+          "exposed node",
+          "C hears B to A, while D (C's target) is beyond B's range",
+          "C defers needlessly, capacity wasted"
+        ],
+        [
+          "RTS/CTS cure",
+          "B's CTS is heard by every node that could disturb B",
+          "only those nodes defer; A and C may run in parallel"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A hidden node is inaudible to the sender, an exposed node is audible but harmless; the receiver's CTS separates the two cases."
+    },
+    "ad-hoc-and-wireless-sensor-networks--odmrp": {
+      "type": "sequence",
+      "title": "ODMRP mesh construction",
+      "actors": [
+        "source",
+        "relay",
+        "receiver"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "JOIN QUERY flooded: group, seq no."
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "forwarded, upstream node recorded"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "JOIN REPLY to recorded upstream"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "JOIN REPLY, relay joins forwarding group"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DATA on the mesh; refresh before expiry"
+        }
+      ],
+      "note": "The mesh is rebuilt by periodic JOIN QUERY refreshes, so a node that stops replying simply ages out of the forwarding group."
+    },
+    "ad-hoc-and-wireless-sensor-networks--rts-cts-handshake": {
+      "type": "sequence",
+      "title": "RTS/CTS exchange with a hidden node",
+      "actors": [
+        "sender A",
+        "receiver B",
+        "hidden C"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "RTS: reserved duration"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "CTS"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "same CTS overheard: C sets NAV"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DATA, no collision"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "ACK"
+        }
+      ],
+      "note": "Every node that hears the receiver's CTS stays silent for the reserved duration, which covers the node that could not hear the sender."
+    },
+    "ad-hoc-and-wireless-sensor-networks--slow-start": {
+      "type": "table",
+      "title": "cwnd growth per round trip with ssthresh = 8 MSS",
+      "headers": [
+        "round trip",
+        "cwnd (MSS)",
+        "phase"
+      ],
+      "rows": [
+        [
+          "1",
+          "1",
+          "slow start"
+        ],
+        [
+          "2",
+          "2",
+          "doubling"
+        ],
+        [
+          "3",
+          "4",
+          "doubling"
+        ],
+        [
+          "4",
+          "8",
+          "ssthresh reached"
+        ],
+        [
+          "5",
+          "9",
+          "congestion avoidance, +1"
+        ],
+        [
+          "6",
+          "10",
+          "congestion avoidance"
+        ],
+        [
+          "7",
+          "11",
+          "congestion avoidance"
+        ],
+        [
+          "8",
+          "12",
+          "congestion avoidance"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Doubling stops at ssthresh; from then on each round adds only one MSS, so growth becomes linear instead of exponential."
+    },
+    "ad-hoc-and-wireless-sensor-networks--zrp": {
+      "type": "table",
+      "title": "routing protocols by family",
+      "headers": [
+        "protocol",
+        "family",
+        "loop control",
+        "when it pays"
+      ],
+      "rows": [
+        [
+          "DSDV",
+          "proactive, table-driven",
+          "destination sequence numbers",
+          "dense, slowly changing networks"
+        ],
+        [
+          "AODV",
+          "reactive, on demand",
+          "per-node sequence numbers",
+          "sparse or fast-changing networks"
+        ],
+        [
+          "DSR",
+          "reactive, source routing",
+          "full path in every packet",
+          "small networks, cached routes"
+        ],
+        [
+          "ZRP",
+          "hybrid",
+          "proactive within k hops, reactive beyond",
+          "mixed density, large networks"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Each family buys a different point on the overhead-versus-latency trade-off, and ZRP switches point by hop distance."
+    },
+    "advanced-calculus--fourier-coefficients": {
+      "type": "derivation",
+      "title": "sine coefficients of a square wave",
+      "steps": [
+        "b_{n}=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx=\\frac{2}{\\pi}\\int_{0}^{\\pi}\\sin nx\\,dx",
+        "=\\frac{2}{n\\pi}\\left[-\\cos nx\\right]_{0}^{\\pi}=\\frac{2}{n\\pi}\\left(1-\\cos n\\pi\\right)",
+        "b_{n}=0\\ \\text{for even }n,\\quad b_{n}=\\frac{4}{n\\pi}\\ \\text{for odd }n",
+        "f(x)=\\frac{4}{\\pi}\\sum_{k=0}^{\\infty}\\frac{\\sin(2k+1)x}{2k+1}"
+      ],
+      "symbols": [
+        [
+          "f",
+          "square wave, +1 on (0, pi) and -1 on (-pi, 0)"
+        ],
+        [
+          "b_{n}",
+          "sine coefficient"
+        ],
+        [
+          "n",
+          "harmonic number"
+        ]
+      ],
+      "note": "The wave is odd, so every cosine term vanishes; the surviving odd harmonics fall off as 1/n, which is why the series converges slowly."
+    },
+    "advanced-calculus--greens-theorem": {
+      "type": "derivation",
+      "title": "Green's theorem on a unit square",
+      "steps": [
+        "\\oint_{C}(P\\,dx+Q\\,dy)=\\iint_{R}\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA",
+        "P=x^{2}-y,\\quad Q=x+y^{2}\\;\\Rightarrow\\;\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}=1-(-1)=2",
+        "\\oint_{C}=2\\iint_{R}dA=2\\cdot1=2\\quad\\text{for the unit square}"
+      ],
+      "symbols": [
+        [
+          "P, Q",
+          "components of the planar field"
+        ],
+        [
+          "C",
+          "positively oriented boundary"
+        ],
+        [
+          "R",
+          "enclosed region"
+        ]
+      ],
+      "note": "The integrand collapses to the constant 2, so the line integral is twice the area and does not depend on where the square sits."
+    },
+    "advanced-calculus--jacobian": {
+      "type": "derivation",
+      "title": "why the polar area element is r dr dtheta",
+      "steps": [
+        "x=r\\cos\\theta,\\quad y=r\\sin\\theta",
+        "\\frac{\\partial(x,y)}{\\partial(r,\\theta)}=\\cos\\theta\\,(r\\cos\\theta)-(-r\\sin\\theta)(\\sin\\theta)",
+        "=r\\left(\\cos^{2}\\theta+\\sin^{2}\\theta\\right)=r",
+        "dx\\,dy=\\left|\\frac{\\partial(x,y)}{\\partial(r,\\theta)}\\right|dr\\,d\\theta=r\\,dr\\,d\\theta"
+      ],
+      "symbols": [
+        [
+          "r",
+          "radial distance"
+        ],
+        [
+          "\\theta",
+          "polar angle"
+        ],
+        [
+          "J",
+          "Jacobian determinant"
+        ]
+      ],
+      "note": "The factor r is the local stretching of a small rectangle at radius r; without it the area element is wrong away from the origin."
+    },
+    "advanced-calculus--laplace-transform": {
+      "type": "table",
+      "title": "Laplace transform pairs",
+      "headers": [
+        "f(t)",
+        "F(s)",
+        "ROC"
+      ],
+      "rows": [
+        [
+          "delta(t)",
+          "1",
+          "all s"
+        ],
+        [
+          "u(t)",
+          "1/s",
+          "Re s > 0"
+        ],
+        [
+          "t",
+          "1/s^2",
+          "Re s > 0"
+        ],
+        [
+          "e^(-at)",
+          "1/(s + a)",
+          "Re s > -a"
+        ],
+        [
+          "t e^(-at)",
+          "1/(s + a)^2",
+          "Re s > -a"
+        ],
+        [
+          "sin(wt)",
+          "w/(s^2 + w^2)",
+          "Re s > 0"
+        ],
+        [
+          "cos(wt)",
+          "s/(s^2 + w^2)",
+          "Re s > 0"
+        ],
+        [
+          "u(t - a)",
+          "e^(-as)/s",
+          "Re s > 0"
+        ]
+      ],
+      "highlight": 8,
+      "note": "The delay factor e^(-as) in the last row is why Laplace handles dead time and switched inputs so cleanly."
+    },
+    "advanced-calculus--parsevals-identity": {
+      "type": "derivation",
+      "title": "summing odd reciprocal squares",
+      "steps": [
+        "\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}\\left|f(x)\\right|^{2}dx=\\frac{1}{\\pi}\\cdot2\\pi=2",
+        "\\sum_{n=1}^{\\infty}b_{n}^{2}=\\frac{16}{\\pi^{2}}\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^{2}}",
+        "2=\\frac{16}{\\pi^{2}}\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^{2}}\\;\\Rightarrow\\;\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^{2}}=\\frac{\\pi^{2}}{8}"
+      ],
+      "symbols": [
+        [
+          "b_{n}",
+          "odd sine coefficients, 4/(n pi)"
+        ],
+        [
+          "f",
+          "unit square wave"
+        ]
+      ],
+      "note": "Energy counted in time equals energy counted harmonic by harmonic, turning the Fourier series into a closed form for a numerical series."
+    },
+    "advanced-calculus--separation-of-variables": {
+      "type": "derivation",
+      "title": "solving the heat equation by separation",
+      "steps": [
+        "u(x,t)=X(x)T(t)\\;\\Rightarrow\\;XT^{\\prime}=\\alpha X^{\\prime\\prime}T",
+        "\\frac{T^{\\prime}}{\\alpha T}=\\frac{X^{\\prime\\prime}}{X}=-\\lambda^{2}",
+        "X_{n}=\\sin\\frac{n\\pi x}{L},\\quad T_{n}=e^{-\\alpha n^{2}\\pi^{2}t/L^{2}}",
+        "u(x,t)=\\sum_{n=1}^{\\infty}B_{n}\\sin\\frac{n\\pi x}{L}\\,e^{-\\alpha n^{2}\\pi^{2}t/L^{2}}"
+      ],
+      "symbols": [
+        [
+          "u",
+          "temperature"
+        ],
+        [
+          "\\alpha",
+          "thermal diffusivity"
+        ],
+        [
+          "L",
+          "rod length"
+        ],
+        [
+          "\\lambda",
+          "separation constant"
+        ],
+        [
+          "B_{n}",
+          "coefficient fixed by the initial profile"
+        ]
+      ],
+      "note": "The zero-endpoint conditions quantise lambda to n pi / L, and each mode then decays at its own rate, so high harmonics die first."
+    },
+    "advanced-calculus--stokes-theorem": {
+      "type": "derivation",
+      "title": "checking Stokes' theorem on a disk",
+      "steps": [
+        "\\mathbf{F}=(-y,x,0)\\;\\Rightarrow\\;\\nabla\\times\\mathbf{F}=(0,0,2)",
+        "\\iint_{S}(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{S}=2\\cdot\\pi(2)^{2}=8\\pi",
+        "\\oint_{C}\\mathbf{F}\\cdot d\\mathbf{r}=\\int_{0}^{2\\pi}4\\,d\\theta=8\\pi",
+        "\\text{any surface spanning }C\\text{ gives the same }8\\pi"
+      ],
+      "symbols": [
+        [
+          "F",
+          "vector field"
+        ],
+        [
+          "S",
+          "surface spanning the curve"
+        ],
+        [
+          "C",
+          "circle of radius 2"
+        ]
+      ],
+      "note": "The flat disk and any curved cap share the boundary C, so both surface integrals return 8 pi; only the boundary value is physical."
+    },
     "advanced-communications-and-networks--code-division-multiple-access": {
       "type": "table",
       "title": "two CDMA users on one chip stream",
@@ -427,6 +862,544 @@
       "highlight": 3,
       "note": "Each WWW layer is replaced by a version tuned for narrowband links; a gateway translates to HTTP at the carrier."
     },
+    "advanced-entrepreneurship--business-plan": {
+      "type": "table",
+      "title": "what each section of a business plan has to prove",
+      "headers": [
+        "section",
+        "proves",
+        "evidence"
+      ],
+      "rows": [
+        [
+          "executive summary",
+          "the case in one page",
+          "traction to date"
+        ],
+        [
+          "problem and solution",
+          "a real need and a credible answer",
+          "customer interviews"
+        ],
+        [
+          "market analysis",
+          "the market is large enough",
+          "TAM, SAM, SOM sizing"
+        ],
+        [
+          "competition",
+          "why you win",
+          "positioning map"
+        ],
+        [
+          "marketing and sales",
+          "customers are reachable at a workable cost",
+          "CAC and funnel data"
+        ],
+        [
+          "operations",
+          "the service can be repeated",
+          "unit cost, supplier terms"
+        ],
+        [
+          "management",
+          "the team can execute",
+          "roles, prior results"
+        ],
+        [
+          "financial plan",
+          "the numbers add up and last long enough",
+          "three-year P&L, cash flow, ask"
+        ]
+      ],
+      "highlight": 8,
+      "note": "An investor reads a plan looking for reasons to say no; each section should close one of those reasons."
+    },
+    "advanced-entrepreneurship--customer-lifetime-value": {
+      "type": "derivation",
+      "title": "lifetime value and the LTV/CAC test",
+      "steps": [
+        "\\text{ARPU}=\\frac{\\text{monthly revenue}}{\\text{active customers}}",
+        "\\text{average life}=\\frac{1}{c}",
+        "\\text{LTV}=\\text{ARPU}\\times\\frac{1}{c}=\\frac{500}{0.02}",
+        "\\text{LTV}=25000",
+        "\\frac{\\text{LTV}}{\\text{CAC}}=\\frac{25000}{6000}\\approx 4.2"
+      ],
+      "symbols": [
+        [
+          "\\text{ARPU}",
+          "revenue per active customer per month"
+        ],
+        [
+          "c",
+          "monthly churn rate, 0.02 here"
+        ],
+        [
+          "\\text{LTV}",
+          "revenue expected from one customer"
+        ],
+        [
+          "\\text{CAC}",
+          "cost of winning one customer"
+        ]
+      ],
+      "note": "At 4.2:1 each rupee of acquisition spend returns about four over the customer's life; below 3:1 growth usually burns cash."
+    },
+    "advanced-entrepreneurship--economic-value-added": {
+      "type": "table",
+      "title": "six numbers an investor rechecks after the pitch",
+      "headers": [
+        "metric",
+        "formula",
+        "a bad reading means"
+      ],
+      "rows": [
+        [
+          "gross margin",
+          "(revenue - COGS) / revenue",
+          "pricing power too weak"
+        ],
+        [
+          "EBIT margin",
+          "EBIT / revenue",
+          "overheads outgrowing sales"
+        ],
+        [
+          "interest cover",
+          "EBIT / interest",
+          "one bad quarter from default"
+        ],
+        [
+          "AR days",
+          "receivables / revenue x 365",
+          "sales booked but not collected"
+        ],
+        [
+          "EVA",
+          "NOPAT - WACC x capital employed",
+          "growth that destroys value"
+        ],
+        [
+          "net cash flow",
+          "inflows - outflows",
+          "profitable on paper, short of cash"
+        ]
+      ],
+      "highlight": 5,
+      "note": "EBIT ignores how the firm is financed and EVA does not, which is why a profitable firm can still destroy value."
+    },
+    "advanced-entrepreneurship--funding-plan": {
+      "type": "sequence",
+      "title": "the equity funding ladder, after bootstrapping",
+      "actors": [
+        "founder",
+        "angel investor",
+        "venture fund"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "pitch: traction, unit economics, use of funds"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "Rs 25-50 lakh for 10-15 per cent equity"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "Series A pitch once sales repeat"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "Rs 5-15 crore, preferred shares, board seat"
+        }
+      ],
+      "note": "Bootstrap, trade credit and factoring come first, because every equity round sells a permanent slice of the company."
+    },
+    "advanced-entrepreneurship--lean-canvas": {
+      "type": "table",
+      "title": "lean canvas blocks and what each one forces you to state",
+      "headers": [
+        "block",
+        "question it forces",
+        "against the Business Model Canvas"
+      ],
+      "rows": [
+        [
+          "problem",
+          "top three problems worth solving",
+          "no problem block at all"
+        ],
+        [
+          "customer segments",
+          "who hurts enough to pay?",
+          "adds early adopters"
+        ],
+        [
+          "unique value proposition",
+          "why is this different, in one line?",
+          "one sentence, no feature list"
+        ],
+        [
+          "solution",
+          "simplest answer to the problem",
+          "BMC lists activities instead"
+        ],
+        [
+          "channels",
+          "path to the customer",
+          "same as BMC"
+        ],
+        [
+          "revenue streams",
+          "charged for what, and how",
+          "same as BMC"
+        ],
+        [
+          "cost structure",
+          "fixed and variable costs",
+          "same as BMC"
+        ],
+        [
+          "key metrics",
+          "numbers that show the model works",
+          "no metrics block"
+        ],
+        [
+          "unfair advantage",
+          "what cannot be copied or bought",
+          "no equivalent"
+        ]
+      ],
+      "highlight": 9,
+      "note": "Lean canvas swaps partners, resources, activities and relationships for problem, solution, metrics and unfair advantage."
+    },
+    "advanced-entrepreneurship--saas": {
+      "type": "table",
+      "title": "five revenue architectures and the metric each lives on",
+      "headers": [
+        "model",
+        "revenue arrives as",
+        "governing metric",
+        "main risk"
+      ],
+      "rows": [
+        [
+          "SaaS",
+          "per-seat or tiered subscription",
+          "MRR, net revenue retention",
+          "churn after onboarding"
+        ],
+        [
+          "freemium",
+          "subscription from the paying minority",
+          "free-to-paid conversion",
+          "free tier costs outrun conversion"
+        ],
+        [
+          "marketplace",
+          "commission on each transaction",
+          "GMV, take rate, liquidity",
+          "cold-start chicken and egg"
+        ],
+        [
+          "e-commerce",
+          "margin on each order",
+          "AOV, repeat purchase rate",
+          "CAC above contribution"
+        ],
+        [
+          "licensing",
+          "fee plus royalty per unit",
+          "royalty per unit shipped",
+          "dependence on the partner"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The model fixes the metric you optimise: a marketplace cannot be steered by MRR, and SaaS cannot be steered by GMV."
+    },
+    "analog-and-digital-communications--ber": {
+      "type": "derivation",
+      "title": "BPSK error rate from the decision distance",
+      "steps": [
+        "r=\\pm\\sqrt{E_{b}}+n,\\qquad n\\sim\\mathcal{N}\\!\\left(0,\\frac{N_{0}}{2}\\right)",
+        "d_{\\min}=2\\sqrt{E_{b}},\\qquad \\sigma=\\sqrt{\\frac{N_{0}}{2}}",
+        "P_{e}=Q\\!\\left(\\frac{d_{\\min}/2}{\\sigma}\\right)=Q\\!\\left(\\sqrt{\\frac{2E_{b}}{N_{0}}}\\right)",
+        "P_{e}=\\frac{1}{2}\\operatorname{erfc}\\!\\left(\\sqrt{\\frac{E_{b}}{N_{0}}}\\right)"
+      ],
+      "symbols": [
+        [
+          "E_{b}",
+          "energy per bit"
+        ],
+        [
+          "N_{0}",
+          "one-sided noise power density"
+        ],
+        [
+          "d_{\\min}",
+          "distance between the two symbols"
+        ],
+        [
+          "Q",
+          "Gaussian tail probability"
+        ]
+      ],
+      "note": "Coherent BPSK reaches 10⁻⁵ at about 9.6 dB of E_b/N_0; each 3 dB more drops P_e by roughly two orders of magnitude."
+    },
+    "analog-and-digital-communications--carsons-rule": {
+      "type": "derivation",
+      "title": "Carson's rule from the Bessel expansion",
+      "steps": [
+        "\\beta=\\frac{\\Delta f}{f_{m}}=\\frac{k_{f}A_{m}}{f_{m}}",
+        "s(t)=A_{c}\\sum_{n=-\\infty}^{\\infty}J_{n}(\\beta)\\cos\\left[(\\omega_{c}+n\\omega_{m})t\\right]",
+        "J_{n}(\\beta)\\approx 0\\ \\text{for}\\ |n|>\\beta+1",
+        "B_{T}=2(\\beta+1)f_{m}=2(\\Delta f+f_{m})"
+      ],
+      "symbols": [
+        [
+          "\\beta",
+          "FM modulation index"
+        ],
+        [
+          "\\Delta f",
+          "peak deviation k_f A_m"
+        ],
+        [
+          "f_{m}",
+          "highest modulating frequency"
+        ],
+        [
+          "J_{n}",
+          "Bessel coefficient of the n-th side pair"
+        ],
+        [
+          "B_{T}",
+          "transmission bandwidth"
+        ]
+      ],
+      "note": "Side pairs beyond order β+1 are negligible, so the occupied bandwidth grows with deviation rather than with message bandwidth."
+    },
+    "analog-and-digital-communications--crc": {
+      "type": "table",
+      "title": "standard CRC generator polynomials",
+      "headers": [
+        "name",
+        "polynomial",
+        "degree",
+        "guaranteed detection"
+      ],
+      "rows": [
+        [
+          "CRC-8",
+          "0x07 (x^8 + x^2 + x + 1)",
+          "8",
+          "single and double bit errors"
+        ],
+        [
+          "CRC-16-IBM",
+          "0x8005 (x^16 + x^15 + x^2 + 1)",
+          "16",
+          "bursts up to 16 bits"
+        ],
+        [
+          "CRC-16-CCITT",
+          "0x1021 (x^16 + x^12 + x^5 + 1)",
+          "16",
+          "bursts up to 16 bits"
+        ],
+        [
+          "CRC-32",
+          "0x04C11DB7",
+          "32",
+          "bursts up to 32 bits"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The degree fixes the remainder width and the longest burst that is always caught; any non-zero remainder flags the frame."
+    },
+    "analog-and-digital-communications--line-coding": {
+      "type": "table",
+      "title": "binary line codes compared",
+      "headers": [
+        "code",
+        "bandwidth",
+        "DC component",
+        "clock recovery",
+        "rule"
+      ],
+      "rows": [
+        [
+          "NRZ-L",
+          "B/2",
+          "yes, if data unbalanced",
+          "poor",
+          "level gives the bit"
+        ],
+        [
+          "NRZ-I",
+          "B/2",
+          "low",
+          "poor",
+          "transition on a 1"
+        ],
+        [
+          "RZ",
+          "B",
+          "yes",
+          "good",
+          "returns to zero every bit"
+        ],
+        [
+          "Manchester",
+          "B",
+          "none",
+          "excellent",
+          "transition at mid-bit"
+        ],
+        [
+          "AMI",
+          "B/2",
+          "none",
+          "poor on long runs of 0",
+          "alternating ± pulses"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Self-clocking codes spend bandwidth to guarantee transitions, which is why Manchester is used on short links and long-haul systems prefer a scrambler."
+    },
+    "analog-and-digital-communications--modulation-index-am": {
+      "type": "derivation",
+      "title": "AM sidebands and power from the modulation index",
+      "steps": [
+        "s(t)=A_{c}\\left[1+\\mu\\cos\\omega_{m}t\\right]\\cos\\omega_{c}t",
+        "s(t)=A_{c}\\cos\\omega_{c}t+\\frac{\\mu A_{c}}{2}\\cos(\\omega_{c}+\\omega_{m})t+\\frac{\\mu A_{c}}{2}\\cos(\\omega_{c}-\\omega_{m})t",
+        "P_{T}=P_{c}+2\\cdot\\frac{P_{c}\\mu^{2}}{4}=P_{c}\\left(1+\\frac{\\mu^{2}}{2}\\right)",
+        "\\mu=\\frac{A_{\\max}-A_{\\min}}{A_{\\max}+A_{\\min}},\\qquad \\eta_{\\text{AM}}=\\frac{\\mu^{2}}{2+\\mu^{2}}"
+      ],
+      "symbols": [
+        [
+          "μ",
+          "modulation index, 0 to 1"
+        ],
+        [
+          "A_{c}",
+          "unmodulated carrier amplitude"
+        ],
+        [
+          "P_{c}",
+          "carrier power A_c^2/2"
+        ],
+        [
+          "P_{T}",
+          "total transmitted power"
+        ],
+        [
+          "\\eta_{\\text{AM}}",
+          "sideband power fraction"
+        ]
+      ],
+      "note": "Each sideband carries μ²/4 of the carrier power, so at μ = 1 only one third of the transmitted power sits in the information."
+    },
+    "analog-and-digital-communications--quantization-error": {
+      "type": "derivation",
+      "title": "quantisation noise and the 6 dB per bit rule",
+      "steps": [
+        "\\Delta=\\frac{V_{\\text{FS}}}{L}=\\frac{V_{\\text{FS}}}{2^{n}}",
+        "\\overline{e^{2}}=\\frac{1}{\\Delta}\\int_{-\\Delta/2}^{\\Delta/2}e^{2}\\,de=\\frac{\\Delta^{2}}{12}",
+        "\\frac{S}{N}=\\frac{V_{\\text{FS}}^{2}/8}{\\Delta^{2}/12}=\\frac{3}{2}\\,2^{2n}",
+        "\\left(\\frac{S}{N}\\right)_{\\text{dB}}=6.02\\,n+1.76"
+      ],
+      "symbols": [
+        [
+          "\\Delta",
+          "quantisation step"
+        ],
+        [
+          "n",
+          "bits per sample"
+        ],
+        [
+          "L",
+          "levels, 2^n"
+        ],
+        [
+          "S/N",
+          "full-scale sine power to rms noise"
+        ]
+      ],
+      "note": "Every extra bit halves the step and adds 6 dB; the 1.76 dB is the peak-to-rms factor of the assumed full-scale sine."
+    },
+    "analog-and-digital-communications--superheterodyne": {
+      "type": "sequence",
+      "title": "superheterodyne front end",
+      "actors": [
+        "preselector",
+        "mixer",
+        "IF amplifier",
+        "detector"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "f_RF passes; f_img = f_RF + 2f_IF rejected"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "LO = f_RF + f_IF mixes down to f_IF"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "fixed IF gain and bandwidth, then detection"
+        }
+      ],
+      "note": "The image has to be removed before the mixer: afterwards it lands on the same f_IF and no filter can separate it from the wanted signal."
+    },
+    "analog-and-digital-communications--vsb": {
+      "type": "table",
+      "title": "amplitude modulation schemes compared",
+      "headers": [
+        "scheme",
+        "bandwidth",
+        "carrier",
+        "power in sidebands at μ = 1"
+      ],
+      "rows": [
+        [
+          "DSB-FC (AM)",
+          "2f_m",
+          "transmitted",
+          "33%"
+        ],
+        [
+          "DSB-SC",
+          "2f_m",
+          "suppressed",
+          "100%"
+        ],
+        [
+          "SSB",
+          "f_m",
+          "suppressed",
+          "100%"
+        ],
+        [
+          "VSB",
+          "f_m + f_v",
+          "suppressed",
+          "about 100%"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Dropping the carrier saves power but not bandwidth; dropping a sideband halves it, and VSB keeps a vestigial band only so the shaping filter can be built."
+    },
     "analog-circuits--astable-multivibrator": {
       "type": "derivation",
       "title": "period of a collector-coupled astable",
@@ -678,6 +1651,282 @@
       ],
       "highlight": 1,
       "note": "The number of stable states names the circuit; any remaining state is quasi-stable and sets the timing."
+    },
+    "antennas-and-wave-propagations--antenna": {
+      "type": "table",
+      "title": "common antenna types",
+      "headers": [
+        "type",
+        "typical gain",
+        "bandwidth",
+        "polarisation",
+        "use"
+      ],
+      "rows": [
+        [
+          "short dipole",
+          "1.8 dBi",
+          "narrow",
+          "linear",
+          "probes, field sensors"
+        ],
+        [
+          "half-wave dipole",
+          "2.15 dBi",
+          "about 10%",
+          "linear",
+          "reference, FM broadcast"
+        ],
+        [
+          "Yagi-Uda",
+          "10-15 dBi",
+          "about 5%",
+          "linear",
+          "TV, VHF point-to-point"
+        ],
+        [
+          "horn",
+          "15-25 dBi",
+          "wide",
+          "linear or circular",
+          "reflector feeds, test ranges"
+        ],
+        [
+          "parabolic reflector",
+          "30-50 dBi",
+          "narrow",
+          "set by the feed",
+          "satellite, radar"
+        ],
+        [
+          "microstrip patch",
+          "5-8 dBi",
+          "1-5%",
+          "linear or circular",
+          "handsets, conformal arrays"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Gain and bandwidth trade against each other: aperture antennas buy decibels with size, travelling-wave types buy band with length."
+    },
+    "antennas-and-wave-propagations--antenna-array": {
+      "type": "derivation",
+      "title": "uniform array factor and its first null",
+      "steps": [
+        "\\psi=kd\\cos\\theta+\\beta,\\qquad \\text{AF}=\\sum_{n=0}^{N-1}e^{jn\\psi}=\\frac{\\sin\\left(N\\psi/2\\right)}{\\sin\\left(\\psi/2\\right)}",
+        "\\text{AF}=0\\ \\text{when}\\ \\frac{N\\psi}{2}=\\pm m\\pi,\\qquad m=1,2,\\dots",
+        "\\psi_{\\text{null}}=\\frac{2\\pi}{N}",
+        "\\text{HPBW}\\approx\\frac{0.886\\lambda}{Nd}\\ \\text{(broadside, large N)}"
+      ],
+      "symbols": [
+        [
+          "\\psi",
+          "total phase difference between adjacent elements"
+        ],
+        [
+          "k",
+          "2π/λ"
+        ],
+        [
+          "d",
+          "element spacing"
+        ],
+        [
+          "\\beta",
+          "progressive feed phase"
+        ],
+        [
+          "N",
+          "number of elements"
+        ]
+      ],
+      "note": "The first null moves in as 1/N, so doubling the elements halves the beamwidth; spacing near one wavelength adds grating lobes."
+    },
+    "antennas-and-wave-propagations--directivity": {
+      "type": "derivation",
+      "title": "directivity from the beam solid angle",
+      "steps": [
+        "\\Omega_{A}=\\iint_{4\\pi}F^{2}(\\theta,\\phi)\\,d\\Omega",
+        "D=\\frac{4\\pi U_{\\max}}{P_{\\text{rad}}}=\\frac{4\\pi}{\\Omega_{A}}",
+        "\\Omega_{A}\\approx\\theta_{E}\\theta_{H}\\ \\Rightarrow\\ D\\approx\\frac{41253}{\\theta_{E}\\theta_{H}\\ (\\text{deg})}",
+        "D\\ (\\text{dBi})=10\\log_{10}D"
+      ],
+      "symbols": [
+        [
+          "\\Omega_{A}",
+          "beam solid angle, sr"
+        ],
+        [
+          "F",
+          "normalised field pattern"
+        ],
+        [
+          "\\theta_{E},\\ \\theta_{H}",
+          "E- and H-plane half-power beamwidths"
+        ],
+        [
+          "D",
+          "directivity, dimensionless"
+        ]
+      ],
+      "note": "The 41253 is 4π converted to square degrees, so the estimate needs only two measured beamwidths and no integration."
+    },
+    "antennas-and-wave-propagations--effective-aperture": {
+      "type": "derivation",
+      "title": "Friis transmission equation",
+      "steps": [
+        "S_{\\text{inc}}=\\frac{P_{t}G_{t}}{4\\pi R^{2}}",
+        "A_{e}=\\frac{\\lambda^{2}}{4\\pi}G_{r}",
+        "P_{r}=S_{\\text{inc}}A_{e}=P_{t}G_{t}G_{r}\\left(\\frac{\\lambda}{4\\pi R}\\right)^{2}",
+        "\\frac{P_{r}}{P_{t}}=\\left(\\frac{\\lambda}{4\\pi R}\\right)^{2}\\ \\text{for}\\ G_{t}=G_{r}=1"
+      ],
+      "symbols": [
+        [
+          "P_{t},P_{r}",
+          "transmitted and received power"
+        ],
+        [
+          "G_{t},G_{r}",
+          "transmit and receive gains"
+        ],
+        [
+          "R",
+          "separation, far-field"
+        ],
+        [
+          "A_{e}",
+          "effective aperture of the receive antenna"
+        ]
+      ],
+      "note": "Every term is a ratio, so the whole link can be carried in dB: the path contributes 20log10(λ/4πR)."
+    },
+    "antennas-and-wave-propagations--end-fire-array": {
+      "type": "table",
+      "title": "broadside, end-fire and Hansen-Woodyard arrays",
+      "headers": [
+        "array",
+        "progressive phase",
+        "main beam",
+        "HPBW"
+      ],
+      "rows": [
+        [
+          "broadside",
+          "β = 0",
+          "θ = 90°",
+          "0.886λ/(Nd)"
+        ],
+        [
+          "ordinary end-fire",
+          "β = -kd",
+          "θ = 0°",
+          "2 sqrt(0.886λ/(Nd))"
+        ],
+        [
+          "Hansen-Woodyard",
+          "β = -(kd + π/N)",
+          "θ = 0°",
+          "narrower than end-fire"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the progressive feed phase β changes, so one physical array can be steered from broadside to end-fire by the feed network."
+    },
+    "antennas-and-wave-propagations--hertzian-dipole": {
+      "type": "derivation",
+      "title": "far field to radiation resistance",
+      "steps": [
+        "E_{\\theta}=\\frac{j\\eta\\beta Il}{4\\pi r}\\sin\\theta\\,e^{-j\\beta r}",
+        "\\langle S\\rangle=\\frac{|E_{\\theta}|^{2}}{2\\eta}=\\frac{\\eta\\beta^{2}I^{2}l^{2}}{32\\pi^{2}r^{2}}\\sin^{2}\\theta",
+        "P_{\\text{rad}}=\\int_{0}^{2\\pi}\\!\\!\\int_{0}^{\\pi}\\langle S\\rangle r^{2}\\sin\\theta\\,d\\theta\\,d\\phi=\\frac{\\eta\\beta^{2}I^{2}l^{2}}{12\\pi}",
+        "R_{r}=\\frac{2P_{\\text{rad}}}{I^{2}}=80\\pi^{2}\\left(\\frac{l}{\\lambda}\\right)^{2}"
+      ],
+      "symbols": [
+        [
+          "\\eta",
+          "intrinsic impedance, 120π Ω"
+        ],
+        [
+          "\\beta",
+          "phase constant 2π/λ"
+        ],
+        [
+          "l",
+          "element length, l much less than λ"
+        ],
+        [
+          "R_{r}",
+          "radiation resistance"
+        ]
+      ],
+      "note": "R_r grows as (l/λ)², so a 0.01λ element has R_r ≈ 0.08 Ω and is a hopeless match to a 50 Ω line."
+    },
+    "antennas-and-wave-propagations--muf": {
+      "type": "derivation",
+      "title": "secant law, MUF and skip distance",
+      "steps": [
+        "f_{v}=f\\cos\\theta_{0}",
+        "f_{v}=f_{c}\\ \\Rightarrow\\ f_{\\text{MUF}}=\\frac{f_{c}}{\\cos\\theta_{0}}=f_{c}\\sec\\theta_{0}",
+        "d_{\\text{skip}}=2h\\tan\\theta_{0}",
+        "d_{\\text{skip}}=2h\\sqrt{\\left(\\frac{f_{\\text{MUF}}}{f_{c}}\\right)^{2}-1}"
+      ],
+      "symbols": [
+        [
+          "\\theta_{0}",
+          "elevation angle at the layer"
+        ],
+        [
+          "f_{c}",
+          "critical frequency"
+        ],
+        [
+          "h",
+          "virtual height of the reflecting layer"
+        ],
+        [
+          "f_{\\text{MUF}}",
+          "maximum usable frequency"
+        ]
+      ],
+      "note": "Above the MUF the ray penetrates the layer instead of returning; below it the skip distance shortens until the ground wave takes over."
+    },
+    "antennas-and-wave-propagations--polarization": {
+      "type": "table",
+      "title": "polarisation states and axial ratio",
+      "headers": [
+        "state",
+        "condition",
+        "axial ratio",
+        "example"
+      ],
+      "rows": [
+        [
+          "linear",
+          "δ = 0° or 180°",
+          "infinite",
+          "dipole, monopole"
+        ],
+        [
+          "circular",
+          "δ = ±90° and E_x = E_y",
+          "1 (0 dB)",
+          "helix, turnstile"
+        ],
+        [
+          "elliptical",
+          "any other δ",
+          "1 < AR < infinite",
+          "tilted crossed dipoles"
+        ],
+        [
+          "cross-polarised",
+          "orthogonal to the incident E",
+          "-",
+          "20-30 dB loss at the receiver"
+        ]
+      ],
+      "highlight": 2,
+      "note": "An axial ratio of 1 is perfect circular; the opposite rotation sense is rejected completely, so sense matters as much as tilt."
     },
     "artificial-intelligence--agent": {
       "type": "sequence",
@@ -1287,6 +2536,530 @@
       ],
       "note": "Each epoch sweeps every sample once; 500 passes let this exactly linear target settle at w = (1, 1) and b = 0."
     },
+    "basics-of-entrepreneurship--break-even-point": {
+      "type": "table",
+      "title": "the break-even model for that food truck",
+      "headers": [
+        "line",
+        "formula",
+        "value"
+      ],
+      "rows": [
+        [
+          "price per meal (P)",
+          "menu price",
+          "Rs 80"
+        ],
+        [
+          "variable cost per meal (v)",
+          "food plus packaging",
+          "Rs 48"
+        ],
+        [
+          "contribution per meal",
+          "P - v",
+          "Rs 32"
+        ],
+        [
+          "fixed cost per month (FC)",
+          "EMI, wages, rent, permits",
+          "Rs 96,000"
+        ],
+        [
+          "break-even quantity",
+          "FC / (P - v)",
+          "3,000 meals"
+        ],
+        [
+          "break-even sales",
+          "BEP x P",
+          "Rs 2,40,000"
+        ],
+        [
+          "meals a day to break even",
+          "BEP / 30",
+          "100"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Every meal above 3,000 a month adds Rs 32 of profit; every meal below it adds Rs 32 of loss."
+    },
+    "basics-of-entrepreneurship--business-model-canvas": {
+      "type": "table",
+      "title": "the nine canvas blocks, in the order they are filled",
+      "headers": [
+        "block",
+        "question it answers",
+        "food-truck example"
+      ],
+      "rows": [
+        [
+          "customer segments",
+          "who exactly are we serving?",
+          "office workers near the tech park"
+        ],
+        [
+          "value proposition",
+          "why buy from us and not cook?",
+          "hot lunch in four minutes, under Rs 80"
+        ],
+        [
+          "channels",
+          "how do we reach and sell to them?",
+          "kerbside truck, WhatsApp pre-orders"
+        ],
+        [
+          "customer relationships",
+          "how do we keep them coming back?",
+          "loyalty card, tenth meal free"
+        ],
+        [
+          "revenue streams",
+          "what do they pay for, and how?",
+          "per meal, plus catering orders"
+        ],
+        [
+          "key resources",
+          "what must we own or control?",
+          "truck, freezer, licence"
+        ],
+        [
+          "key activities",
+          "what must we do well every day?",
+          "prep, cook, serve, restock"
+        ],
+        [
+          "key partners",
+          "on whom do we depend?",
+          "supplier, parking owner, FSSAI"
+        ],
+        [
+          "cost structure",
+          "where does the money go?",
+          "food cost, fuel, staff, permits"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The right half describes the customer and the value; the left half describes the operation that can deliver it."
+    },
+    "basics-of-entrepreneurship--design-thinking": {
+      "type": "sequence",
+      "title": "the design-thinking loop, in order",
+      "actors": [
+        "design team",
+        "user",
+        "prototype"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "observe and interview in real context"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "state the need in the user's words"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "ideate, then build a cheap prototype"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "user attempts a real task with it"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "what failed becomes the next define"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "iterate until the need is actually met"
+        }
+      ],
+      "note": "The loop, not the five labels, is the method: any stage can send the team back to the user rather than forward."
+    },
+    "basics-of-entrepreneurship--partnership": {
+      "type": "table",
+      "title": "choosing the legal form before the first rupee of debt",
+      "headers": [
+        "form",
+        "owners",
+        "liability",
+        "compliance"
+      ],
+      "rows": [
+        [
+          "sole proprietorship",
+          "one",
+          "unlimited, personal",
+          "trade licence, GST"
+        ],
+        [
+          "partnership firm",
+          "two or more",
+          "unlimited, joint and several",
+          "deed, registration, GST"
+        ],
+        [
+          "LLP",
+          "two or more partners",
+          "limited to capital contributed",
+          "MCA filings, audit above threshold"
+        ],
+        [
+          "private limited",
+          "two to two hundred",
+          "limited to shares held",
+          "MCA, audit, board meetings"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The form fixes who pays when the venture fails, so it should be settled before any borrowing is signed."
+    },
+    "basics-of-entrepreneurship--revenue-stream": {
+      "type": "table",
+      "title": "revenue models and how predictable each one is",
+      "headers": [
+        "model",
+        "how the money arrives",
+        "predictability"
+      ],
+      "rows": [
+        [
+          "unit sale",
+          "one payment per item sold",
+          "low, follows footfall"
+        ],
+        [
+          "subscription",
+          "fixed fee every month or year",
+          "high, recurring"
+        ],
+        [
+          "usage or metered",
+          "paid per unit consumed",
+          "medium, tracks demand"
+        ],
+        [
+          "licensing or franchise",
+          "rights fee plus royalty",
+          "medium, contract-bound"
+        ],
+        [
+          "commission",
+          "a cut of each transaction",
+          "medium, follows volume"
+        ],
+        [
+          "advertising",
+          "paid per impression or click",
+          "low, cyclical"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A recurring rupee is worth more than a one-off rupee because it can be forecast, and therefore financed."
+    },
+    "basics-of-entrepreneurship--startup-costs": {
+      "type": "table",
+      "title": "setting up a food truck: one-time against running cost",
+      "headers": [
+        "item",
+        "type",
+        "amount"
+      ],
+      "rows": [
+        [
+          "used food truck",
+          "one-time",
+          "Rs 6,50,000"
+        ],
+        [
+          "freezer and kitchen fit-out",
+          "one-time",
+          "Rs 1,20,000"
+        ],
+        [
+          "FSSAI licence and trade permit",
+          "one-time",
+          "Rs 18,000"
+        ],
+        [
+          "signage and branding",
+          "one-time",
+          "Rs 22,000"
+        ],
+        [
+          "loan EMI",
+          "monthly",
+          "Rs 38,000"
+        ],
+        [
+          "staff wages",
+          "monthly",
+          "Rs 45,000"
+        ],
+        [
+          "parking rent",
+          "monthly",
+          "Rs 13,000"
+        ],
+        [
+          "food and packaging",
+          "per meal",
+          "Rs 48"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Startup cost is paid before the first sale; only the monthly and per-meal rows belong in the break-even sum."
+    },
+    "business-economics-and-financial-analysis--break-even-point": {
+      "type": "derivation",
+      "title": "break-even point from total revenue = total cost",
+      "steps": [
+        "\\text{TR}=P Q,\\qquad \\text{TC}=\\text{FC}+\\text{AVC}\\cdot Q",
+        "P Q=\\text{FC}+\\text{AVC}\\,Q",
+        "(P-\\text{AVC})\\,Q=\\text{FC}",
+        "Q_{\\text{BEP}}=\\frac{\\text{FC}}{P-\\text{AVC}}=\\frac{40000}{50-30}=2000\\ \\text{units}",
+        "S_{\\text{BEP}}=Q_{\\text{BEP}}P=2000\\times 50=100000"
+      ],
+      "symbols": [
+        [
+          "P",
+          "selling price per unit"
+        ],
+        [
+          "\\text{AVC}",
+          "variable cost per unit"
+        ],
+        [
+          "\\text{FC}",
+          "total fixed cost"
+        ],
+        [
+          "Q_{\\text{BEP}}",
+          "break-even quantity"
+        ],
+        [
+          "S_{\\text{BEP}}",
+          "break-even sales value"
+        ]
+      ],
+      "note": "With fixed cost 40,000 and 20 of contribution per unit, 2,000 units - sales of 1,00,000 - is the no-profit, no-loss point."
+    },
+    "business-economics-and-financial-analysis--capital-expenditure": {
+      "type": "table",
+      "title": "capital, revenue and deferred revenue expenditure",
+      "headers": [
+        "basis",
+        "capital",
+        "revenue",
+        "deferred revenue"
+      ],
+      "rows": [
+        [
+          "benefit period",
+          "more than one year",
+          "current year only",
+          "several years"
+        ],
+        [
+          "example",
+          "plant, machinery, patents",
+          "wages, rent, repairs",
+          "heavy launch advertising"
+        ],
+        [
+          "balance sheet",
+          "capitalised as an asset",
+          "not shown, charged to P&L",
+          "asset until written off"
+        ],
+        [
+          "effect on profit",
+          "through depreciation",
+          "fully in the year",
+          "apportioned year by year"
+        ],
+        [
+          "test",
+          "creates or enlarges capacity",
+          "keeps capacity running",
+          "revenue in nature, unusual in size"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Deferred revenue expenditure is revenue in nature, but large enough that charging all of it in one year would distort the profit."
+    },
+    "business-economics-and-financial-analysis--law-of-variable-proportions": {
+      "type": "table",
+      "title": "three stages of the law of variable proportions",
+      "headers": [
+        "stage",
+        "total product",
+        "marginal product",
+        "average product"
+      ],
+      "rows": [
+        [
+          "I - increasing returns",
+          "rises at an increasing rate",
+          "rises, then peaks",
+          "rises"
+        ],
+        [
+          "II - diminishing returns",
+          "rises at a decreasing rate",
+          "falls, stays positive",
+          "peaks where AP = MP, then falls"
+        ],
+        [
+          "III - negative returns",
+          "falls",
+          "negative",
+          "keeps falling, above MP"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A rational producer stops at the end of stage II: past zero marginal product, extra labour actually reduces total output."
+    },
+    "business-economics-and-financial-analysis--perfect-competition": {
+      "type": "table",
+      "title": "the four market structures side by side",
+      "headers": [
+        "structure",
+        "sellers",
+        "product",
+        "entry",
+        "long-run profit"
+      ],
+      "rows": [
+        [
+          "perfect competition",
+          "very many",
+          "identical",
+          "free",
+          "normal only"
+        ],
+        [
+          "monopolistic competition",
+          "many",
+          "differentiated",
+          "free",
+          "normal only"
+        ],
+        [
+          "oligopoly",
+          "few",
+          "similar or differentiated",
+          "blocked",
+          "positive is possible"
+        ],
+        [
+          "monopoly",
+          "one",
+          "no close substitute",
+          "blocked",
+          "positive, usually regulated"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Firms equate MR and MC; only a price maker faces a falling demand curve, so only it can hold profit above normal."
+    },
+    "business-economics-and-financial-analysis--ratio-analysis": {
+      "type": "table",
+      "title": "ratio families and what each one actually signals",
+      "headers": [
+        "ratio",
+        "formula",
+        "reads as",
+        "watch for"
+      ],
+      "rows": [
+        [
+          "current ratio",
+          "CA / CL",
+          "cover for short-term dues",
+          "a 2:1 pile of idle cash is not strength"
+        ],
+        [
+          "quick ratio",
+          "(CA - stock) / CL",
+          "cover without selling stock",
+          "1:1 is the usual floor"
+        ],
+        [
+          "inventory turnover",
+          "COGS / average stock",
+          "how often stock is replaced",
+          "very high may mean stock-outs"
+        ],
+        [
+          "inventory holding period",
+          "365 / ITR",
+          "days of stock carried",
+          "each extra day ties up cash"
+        ],
+        [
+          "gross profit ratio",
+          "GP / net sales x 100",
+          "trading margin before overheads",
+          "falls when input costs rise"
+        ],
+        [
+          "net profit ratio",
+          "NPAT / net sales x 100",
+          "what survives every expense",
+          "thin but steady beats volatile"
+        ],
+        [
+          "return on capital employed",
+          "EBIT / capital employed x 100",
+          "return on long-term funds",
+          "compare with cost of capital"
+        ]
+      ],
+      "highlight": 1,
+      "note": "A ratio means nothing alone: judge it against last year, against a peer, or against the plan it was budgeted in."
+    },
+    "business-economics-and-financial-analysis--trading-account": {
+      "type": "sequence",
+      "title": "final accounts, from trial balance to next year",
+      "actors": [
+        "trial balance",
+        "trading a/c",
+        "P&L a/c",
+        "balance sheet"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "open stock, purchases, direct expenses"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "gross profit brought down"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "net profit and reserves carried"
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "label": "closing balances open next year"
+        }
+      ],
+      "note": "Each account hands a single number forward: gross profit, then net profit, then the retained balance that reopens the cycle."
+    },
     "cmos-analog-ic-design--bandgap-voltage-reference": {
       "type": "derivation",
       "title": "CTAT plus PTAT cancels the temperature drift",
@@ -1639,6 +3412,199 @@
         ]
       ],
       "note": "Noise is a conductance effect, so referring it to the gate divides by g_m²: the input pair is made high-g_m to push the floor down."
+    },
+    "complex-variable-and-transform-techniques--cauchy-riemann": {
+      "type": "derivation",
+      "title": "Cauchy-Riemann from two approach paths",
+      "steps": [
+        "f'(z_{0})=\\lim_{\\Delta z\\to0}\\frac{f(z_{0}+\\Delta z)-f(z_{0})}{\\Delta z}",
+        "\\Delta z=\\Delta x:\\quad f'=u_{x}+iv_{x}",
+        "\\Delta z=i\\Delta y:\\quad f'=\\frac{u_{y}\\Delta y+iv_{y}\\Delta y}{i\\Delta y}=v_{y}-iu_{y}",
+        "u_{x}=v_{y},\\qquad u_{y}=-v_{x}"
+      ],
+      "symbols": [
+        [
+          "u",
+          "real part of f"
+        ],
+        [
+          "v",
+          "imaginary part of f"
+        ],
+        [
+          "z_{0}",
+          "point where f is differentiable"
+        ]
+      ],
+      "note": "The derivative must be path independent, so the real-axis and imaginary-axis limits have to agree term by term."
+    },
+    "complex-variable-and-transform-techniques--fourier-series": {
+      "type": "derivation",
+      "title": "Coefficients from orthogonality",
+      "steps": [
+        "f(t)=a_{0}+\\sum_{n=1}^{\\infty}\\left(a_{n}\\cos n\\omega_{0}t+b_{n}\\sin n\\omega_{0}t\\right)",
+        "\\int_{0}^{T}\\cos n\\omega_{0}t\\cos m\\omega_{0}t\\,dt=\\frac{T}{2}\\delta_{mn},\\qquad \\int_{0}^{T}\\sin n\\omega_{0}t\\cos m\\omega_{0}t\\,dt=0",
+        "\\text{multiply }f\\text{ by }\\cos m\\omega_{0}t\\text{ and integrate over one period}",
+        "a_{m}=\\frac{2}{T}\\int_{0}^{T}f(t)\\cos m\\omega_{0}t\\,dt,\\quad b_{m}=\\frac{2}{T}\\int_{0}^{T}f(t)\\sin m\\omega_{0}t\\,dt"
+      ],
+      "symbols": [
+        [
+          "T",
+          "fundamental period, with omega0 = 2 pi / T"
+        ],
+        [
+          "\\delta_{mn}",
+          "1 when m = n, else 0"
+        ]
+      ],
+      "note": "Orthogonality makes every other harmonic integrate to zero, so each coefficient can be extracted independently of the rest."
+    },
+    "complex-variable-and-transform-techniques--harmonic-function": {
+      "type": "derivation",
+      "title": "Analytic functions satisfy Laplace's equation",
+      "steps": [
+        "u_{x}=v_{y},\\qquad u_{y}=-v_{x}",
+        "u_{xx}=v_{yx},\\qquad u_{yy}=-v_{xy}",
+        "v_{xy}=v_{yx}\\ \\Rightarrow\\ u_{xx}+u_{yy}=0",
+        "\\nabla^{2}u=0\\quad \\text{and likewise }\\nabla^{2}v=0"
+      ],
+      "symbols": [
+        [
+          "u,v",
+          "real and imaginary parts of f"
+        ],
+        [
+          "\\nabla^{2}",
+          "Laplacian operator"
+        ]
+      ],
+      "note": "Equality of the mixed partials is the only extra fact needed, and it holds because v is itself smooth."
+    },
+    "complex-variable-and-transform-techniques--laplace-transform": {
+      "type": "table",
+      "title": "Standard Laplace pairs",
+      "headers": [
+        "f(t), t ≥ 0",
+        "F(s)",
+        "ROC"
+      ],
+      "rows": [
+        [
+          "1 (unit step)",
+          "1/s",
+          "Re s > 0"
+        ],
+        [
+          "t",
+          "1/s²",
+          "Re s > 0"
+        ],
+        [
+          "tⁿ",
+          "n!/s^(n+1)",
+          "Re s > 0"
+        ],
+        [
+          "e^(at)",
+          "1/(s − a)",
+          "Re s > a"
+        ],
+        [
+          "sin ωt",
+          "ω/(s² + ω²)",
+          "Re s > 0"
+        ],
+        [
+          "cos ωt",
+          "s/(s² + ω²)",
+          "Re s > 0"
+        ],
+        [
+          "e^(at)cos ωt",
+          "(s − a)/((s − a)² + ω²)",
+          "Re s > a"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Every entry is the same integral evaluated on one prototype; the ROC column is what makes the inverse unique."
+    },
+    "complex-variable-and-transform-techniques--pole-order": {
+      "type": "derivation",
+      "title": "Residue at a pole of order n",
+      "steps": [
+        "g(z)=(z-z_{0})^{n}f(z)=a_{-n}+\\cdots+a_{-1}(z-z_{0})^{n-1}+\\cdots",
+        "\\frac{d^{n-1}g}{dz^{n-1}}=(n-1)!\\,a_{-1}+\\text{terms in }(z-z_{0})+\\cdots",
+        "\\operatorname{Res}_{z=z_{0}}f(z)=\\frac{1}{(n-1)!}\\lim_{z\\to z_{0}}\\frac{d^{n-1}}{dz^{n-1}}\\left[(z-z_{0})^{n}f(z)\\right]"
+      ],
+      "symbols": [
+        [
+          "n",
+          "pole order"
+        ],
+        [
+          "a_{-1}",
+          "residue coefficient"
+        ],
+        [
+          "g(z)",
+          "Laurent series multiplied by (z - z0)^n"
+        ]
+      ],
+      "note": "Multiplying by (z - z0)^n makes the series regular, and n-1 derivatives kill every term except the residue one."
+    },
+    "complex-variable-and-transform-techniques--second-shifting": {
+      "type": "derivation",
+      "title": "Delay becomes an exponential factor",
+      "steps": [
+        "\\mathcal{L}\\{f(t-a)u(t-a)\\}=\\int_{0}^{\\infty}f(t-a)u(t-a)e^{-st}dt",
+        "u(t-a)\\ \\text{kills }[0,a):\\quad =\\int_{a}^{\\infty}f(t-a)e^{-st}dt",
+        "\\tau=t-a:\\quad =\\int_{0}^{\\infty}f(\\tau)e^{-s(\\tau+a)}d\\tau",
+        "=e^{-as}\\int_{0}^{\\infty}f(\\tau)e^{-s\\tau}d\\tau=e^{-as}F(s)"
+      ],
+      "symbols": [
+        [
+          "a",
+          "delay, with a > 0"
+        ],
+        [
+          "u(t-a)",
+          "step that switches the function on at t = a"
+        ]
+      ],
+      "note": "The step is what makes the lower limit a instead of 0, and the substitution then pulls the exponential out as a pure factor."
+    },
+    "complex-variable-and-transform-techniques--singular-point": {
+      "type": "table",
+      "title": "Types of isolated singularity",
+      "headers": [
+        "type",
+        "test on the Laurent series",
+        "behaviour near z0"
+      ],
+      "rows": [
+        [
+          "removable",
+          "no negative powers",
+          "f tends to the finite value a0"
+        ],
+        [
+          "simple pole",
+          "principal part is a−1/(z − z0)",
+          "|f| → ∞, residue is a−1"
+        ],
+        [
+          "pole of order n",
+          "principal part ends at power −n",
+          "|f| → ∞ like a power"
+        ],
+        [
+          "essential",
+          "infinitely many negative powers",
+          "neither finite nor a pole"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the principal part decides the type: removable can be patched, a pole blows up like a power, an essential one does neither."
     },
     "computer-networks--checksum": {
       "type": "table",
@@ -2743,6 +4709,211 @@
       ],
       "highlight": 3,
       "note": "The cell is P x L, so likely x medium loss and possible x high loss both score 6 but still need different controls."
+    },
+    "data-structures--array-representation-of-binary-tree": {
+      "type": "table",
+      "title": "level-order array for a seven-node tree",
+      "headers": [
+        "index",
+        "node",
+        "parent",
+        "left",
+        "right"
+      ],
+      "rows": [
+        [
+          "0",
+          "A",
+          "-",
+          "B (1)",
+          "C (2)"
+        ],
+        [
+          "1",
+          "B",
+          "A (0)",
+          "D (3)",
+          "E (4)"
+        ],
+        [
+          "2",
+          "C",
+          "A (0)",
+          "F (5)",
+          "G (6)"
+        ],
+        [
+          "3",
+          "D",
+          "B (1)",
+          "-",
+          "-"
+        ],
+        [
+          "4",
+          "E",
+          "B (1)",
+          "-",
+          "-"
+        ],
+        [
+          "5",
+          "F",
+          "C (2)",
+          "-",
+          "-"
+        ],
+        [
+          "6",
+          "G",
+          "C (2)",
+          "-",
+          "-"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Children sit at 2i+1 and 2i+2 and the parent at floor((i-1)/2), so a missing node still costs a cell."
+    },
+    "data-structures--depth-first-search": {
+      "type": "code",
+      "lang": "c",
+      "title": "recursive DFS over an adjacency matrix",
+      "lines": [
+        "void dfs(int u) {",
+        "    visited[u] = 1;",
+        "    printf(\"%d \", u);",
+        "    for (int v = 0; v < n; v++)",
+        "        if (adj[u][v] && !visited[v])",
+        "            dfs(v);",
+        "}"
+      ],
+      "highlight": [
+        6
+      ],
+      "note": "The call stack replaces an explicit stack: each call dives into one neighbour and returns only when that branch is exhausted."
+    },
+    "data-structures--enumerated-data-type": {
+      "type": "code",
+      "lang": "c",
+      "title": "enum values with one explicit initialiser",
+      "lines": [
+        "enum day { MON = 1, TUE, WED, THU, FRI, SAT, SUN };",
+        "",
+        "int main(void) {",
+        "    enum day d = WED;",
+        "    printf(\"%d %d\\n\", d, SUN);",
+        "    return 0;",
+        "}"
+      ],
+      "highlight": [
+        1
+      ],
+      "output": [
+        "3 7"
+      ],
+      "note": "Only MON is given a value; each later name takes the previous value plus one, so WED is 3 and SUN is 7."
+    },
+    "data-structures--malloc": {
+      "type": "code",
+      "lang": "c",
+      "title": "allocating n elements and testing the result",
+      "lines": [
+        "int *a = malloc(n * sizeof *a);   /* n ints, uninitialised */",
+        "if (a == NULL) {",
+        "    return 1;                     /* allocation failed */",
+        "}",
+        "a[0] = 10;",
+        "free(a);                          /* back to the heap */"
+      ],
+      "highlight": [
+        1
+      ],
+      "note": "Writing sizeof *a keeps the request correct if the element type changes, and the NULL test guards the failure case."
+    },
+    "data-structures--self-referential-structure": {
+      "type": "code",
+      "lang": "c",
+      "title": "a structure holding a pointer to its own type",
+      "lines": [
+        "struct node {",
+        "    int data;",
+        "    struct node *next;   /* points to the same type */",
+        "};",
+        "",
+        "struct node *head = NULL;"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "The member is a pointer rather than a struct node, so the type does not contain itself and its size stays finite."
+    },
+    "data-structures--structure": {
+      "type": "code",
+      "lang": "c",
+      "title": "struct definition, instance and member access",
+      "lines": [
+        "struct point {          /* type definition: no storage yet */",
+        "    int x;",
+        "    int y;",
+        "};",
+        "",
+        "int main(void) {",
+        "    struct point p = {3, 4};",
+        "    printf(\"%d %d\\n\", p.x, p.y);",
+        "    return 0;",
+        "}"
+      ],
+      "highlight": [
+        7
+      ],
+      "output": [
+        "3 4"
+      ],
+      "note": "The definition only describes the layout; memory is reserved when a variable such as p is declared."
+    },
+    "data-structures--typedef": {
+      "type": "code",
+      "lang": "c",
+      "title": "typedef naming an untagged structure",
+      "lines": [
+        "typedef struct {",
+        "    char name[20];",
+        "    int  roll;",
+        "} Student;",
+        "",
+        "Student s = {\"Anita\", 42};",
+        "printf(\"%zu\\n\", sizeof(Student));"
+      ],
+      "highlight": [
+        4
+      ],
+      "output": [
+        "24"
+      ],
+      "note": "Student is an alias for the unnamed struct, so the keyword struct is not repeated at every use."
+    },
+    "data-structures--union": {
+      "type": "code",
+      "lang": "c",
+      "title": "union members share one storage area",
+      "lines": [
+        "union value {",
+        "    int   i;",
+        "    float f;",
+        "    char  bytes[4];",
+        "};",
+        "",
+        "union value v;",
+        "v.f = 1.0f;                  /* same 4 bytes as v.i */",
+        "printf(\"%zu\\n\", sizeof v);  /* 4, not 12 */"
+      ],
+      "highlight": [
+        9
+      ],
+      "output": [
+        "4"
+      ],
+      "note": "All three members start at the same address, so writing one overwrites the others and the size is the largest member."
     },
     "database-systems-concepts--candidate-key": {
       "type": "table",
@@ -4141,6 +6312,796 @@
       "highlight": 4,
       "note": "The concatenation shifts left by one bit and loads sin into the vacant LSB on every rising edge."
     },
+    "digital-signal-processing--bilinear-transformation": {
+      "type": "derivation",
+      "title": "Where the tangent warping comes from",
+      "steps": [
+        "s=\\frac{2}{T}\\frac{1-z^{-1}}{1+z^{-1}},\\qquad z=e^{j\\omega}",
+        "1-e^{-j\\omega}=2je^{-j\\omega/2}\\sin\\frac{\\omega}{2},\\qquad 1+e^{-j\\omega}=2e^{-j\\omega/2}\\cos\\frac{\\omega}{2}",
+        "s=\\frac{2}{T}\\,j\\tan\\frac{\\omega}{2}=j\\Omega",
+        "\\Omega=\\frac{2}{T}\\tan\\frac{\\omega}{2}\\ \\Rightarrow\\ \\omega=2\\tan^{-1}\\frac{\\Omega T}{2}"
+      ],
+      "symbols": [
+        [
+          "\\Omega",
+          "analog frequency"
+        ],
+        [
+          "\\omega",
+          "digital frequency"
+        ],
+        [
+          "T",
+          "sampling interval"
+        ]
+      ],
+      "note": "On the unit circle the map is purely imaginary, and the tangent squeezes the infinite analog axis into the interval between minus pi and pi."
+    },
+    "digital-signal-processing--butterworth-filter": {
+      "type": "derivation",
+      "title": "Filter order from the attenuation spec",
+      "steps": [
+        "|H(j\\Omega)|^{2}=\\frac{1}{1+(\\Omega/\\Omega_{c})^{2N}}",
+        "\\text{at }\\Omega_{p}:\\quad \\frac{1}{1+(\\Omega_{p}/\\Omega_{c})^{2N}}=10^{-A_{p}/10}",
+        "\\text{at }\\Omega_{s}:\\quad \\frac{1}{1+(\\Omega_{s}/\\Omega_{c})^{2N}}=10^{-A_{s}/10}",
+        "\\left(\\frac{\\Omega_{s}}{\\Omega_{p}}\\right)^{2N}=\\frac{10^{A_{s}/10}-1}{10^{A_{p}/10}-1}",
+        "N\\ge\\frac{\\log_{10}\\left[(10^{A_{s}/10}-1)/(10^{A_{p}/10}-1)\\right]}{2\\log_{10}(\\Omega_{s}/\\Omega_{p})}"
+      ],
+      "symbols": [
+        [
+          "A_{p}",
+          "passband attenuation in dB"
+        ],
+        [
+          "A_{s}",
+          "stopband attenuation in dB"
+        ],
+        [
+          "\\Omega_{p},\\Omega_{s}",
+          "passband and stopband edges"
+        ],
+        [
+          "N",
+          "filter order"
+        ]
+      ],
+      "note": "Dividing the two spec equations cancels the unknown cutoff, leaving a closed form for the smallest integer order that meets both edges."
+    },
+    "digital-signal-processing--dft": {
+      "type": "derivation",
+      "title": "DFT as the DTFT sampled at N points",
+      "steps": [
+        "X(e^{j\\omega})=\\sum_{n=-\\infty}^{\\infty}x[n]e^{-j\\omega n}",
+        "\\text{finite length }N,\\quad \\omega=\\frac{2\\pi k}{N}",
+        "X(e^{j2\\pi k/N})=\\sum_{n=0}^{N-1}x[n]e^{-j2\\pi kn/N}=X[k]",
+        "\\omega_{k+1}-\\omega_{k}=\\frac{2\\pi}{N}"
+      ],
+      "symbols": [
+        [
+          "N",
+          "transform length"
+        ],
+        [
+          "k",
+          "bin index, 0 to N-1"
+        ],
+        [
+          "\\omega",
+          "digital angular frequency"
+        ]
+      ],
+      "note": "The DFT is not a different transform: it is the DTFT evaluated on the grid 2 pi k / N, so one period of the DTFT holds all N bins."
+    },
+    "digital-signal-processing--fft": {
+      "type": "code",
+      "lang": "python",
+      "title": "Recursive radix-2 FFT",
+      "lines": [
+        "import cmath",
+        "def fft(x):",
+        "    n = len(x)",
+        "    if n == 1:",
+        "        return x",
+        "    even, odd = fft(x[0::2]), fft(x[1::2])",
+        "    tw = [cmath.exp(-2j * cmath.pi * k / n) * odd[k] for k in range(n // 2)]",
+        "    return ([even[k] + tw[k] for k in range(n // 2)] +",
+        "            [even[k] - tw[k] for k in range(n // 2)])",
+        "print([round(abs(v), 6) for v in fft([1, 1, 1, 1])])"
+      ],
+      "highlight": [
+        7
+      ],
+      "output": [
+        "[4.0, 0.0, 0.0, 0.0]"
+      ],
+      "note": "Splitting into even and odd inputs gives two half-length transforms; the twiddle multiply and the plus/minus pair are one butterfly per stage."
+    },
+    "digital-signal-processing--impulse-invariance-method": {
+      "type": "table",
+      "title": "Analog-to-digital mapping methods",
+      "headers": [
+        "method",
+        "substitution",
+        "frequency behaviour"
+      ],
+      "rows": [
+        [
+          "impulse invariance",
+          "h[n] = T·ha(nT)",
+          "aliasing from replicas at k·fs"
+        ],
+        [
+          "bilinear",
+          "s = (2/T)(1 − z⁻¹)/(1 + z⁻¹)",
+          "no aliasing, warps high Ω"
+        ],
+        [
+          "backward difference",
+          "s = (1 − z⁻¹)/T",
+          "no aliasing, poor at high Ω"
+        ],
+        [
+          "matched z",
+          "z = e^(sT) for each pole and zero",
+          "no aliasing, keeps the pole map"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the bilinear map folds the whole left half-plane one-to-one inside the unit circle, at the price of frequency warping."
+    },
+    "digital-signal-processing--linear-phase-filter": {
+      "type": "derivation",
+      "title": "Symmetry gives exactly linear phase",
+      "steps": [
+        "H(e^{j\\omega})=\\sum_{n=0}^{N-1}h[n]e^{-j\\omega n},\\qquad h[n]=h[N-1-n]",
+        "H(e^{j\\omega})=e^{-j\\omega(N-1)/2}\\sum_{n=0}^{N-1}h[n]e^{-j\\omega\\left(n-\\frac{N-1}{2}\\right)}",
+        "\\text{pair }n\\text{ with }N-1-n:\\quad e^{-j\\omega m}+e^{j\\omega m}=2\\cos\\omega m\\ \\text{is real}",
+        "H(e^{j\\omega})=e^{-j\\omega(N-1)/2}A(\\omega),\\qquad A\\ \\text{real}",
+        "\\theta(\\omega)=-\\frac{N-1}{2}\\omega"
+      ],
+      "symbols": [
+        [
+          "N",
+          "filter length"
+        ],
+        [
+          "A(\\omega)",
+          "real amplitude function"
+        ],
+        [
+          "\\theta(\\omega)",
+          "phase response"
+        ]
+      ],
+      "note": "Symmetric coefficients make the bracketed sum real, so the entire phase is the pure delay of (N-1)/2 samples."
+    },
+    "digital-signal-processing--overlap-add": {
+      "type": "table",
+      "title": "Overlap-add vs overlap-save",
+      "headers": [
+        "aspect",
+        "overlap-add",
+        "overlap-save"
+      ],
+      "rows": [
+        [
+          "FFT size",
+          "N = L + M − 1",
+          "N chosen, N > M"
+        ],
+        [
+          "input block",
+          "L new samples, zero padded",
+          "N samples, last M−1 reused"
+        ],
+        [
+          "corrupted part",
+          "kept, overlapped and added",
+          "first M−1 outputs discarded"
+        ],
+        [
+          "output per block",
+          "L valid samples",
+          "N − M + 1 valid samples"
+        ],
+        [
+          "extra storage",
+          "a tail buffer of M−1",
+          "an input history of M−1"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Both turn one long convolution into circular FFT blocks; they differ only in whether the wrap-around part is added back or thrown away."
+    },
+    "digital-signal-processing--window-function": {
+      "type": "table",
+      "title": "Window trade-offs for length N",
+      "headers": [
+        "window",
+        "main lobe",
+        "peak side lobe",
+        "stopband"
+      ],
+      "rows": [
+        [
+          "rectangular",
+          "4π/N",
+          "−13 dB",
+          "−21 dB"
+        ],
+        [
+          "Hann",
+          "8π/N",
+          "−31 dB",
+          "−44 dB"
+        ],
+        [
+          "Hamming",
+          "8π/N",
+          "−41 dB",
+          "−53 dB"
+        ],
+        [
+          "Blackman",
+          "12π/N",
+          "−57 dB",
+          "−74 dB"
+        ],
+        [
+          "Kaiser (β = 8.6)",
+          "≈ 10π/N",
+          "−60 dB",
+          "−80 dB"
+        ]
+      ],
+      "highlight": 3,
+      "note": "A wider main lobe buys lower side lobes: every window trades transition width against stopband attenuation, and the rectangular one loses on both."
+    },
+    "electrical-circuits-and-networks-analysis--dependent-source": {
+      "type": "table",
+      "title": "the four controlled sources",
+      "headers": [
+        "type",
+        "relation",
+        "gain symbol",
+        "gain unit"
+      ],
+      "rows": [
+        [
+          "voltage-controlled voltage source, VCVS",
+          "v = μ v_x",
+          "μ",
+          "V/V"
+        ],
+        [
+          "voltage-controlled current source, VCCS",
+          "i = g_m v_x",
+          "g_m",
+          "S"
+        ],
+        [
+          "current-controlled voltage source, CCVS",
+          "v = r_m i_x",
+          "r_m",
+          "Ω"
+        ],
+        [
+          "current-controlled current source, CCCS",
+          "i = β i_x",
+          "β",
+          "A/A"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The controlling variable sits in another branch, so a controlled source has no independent value of its own."
+    },
+    "electrical-circuits-and-networks-analysis--impedance": {
+      "type": "table",
+      "title": "R, L, C in the time and phasor domains",
+      "headers": [
+        "element",
+        "time domain",
+        "impedance",
+        "admittance",
+        "current phase"
+      ],
+      "rows": [
+        [
+          "R",
+          "v = R i",
+          "R",
+          "1/R",
+          "in phase with v"
+        ],
+        [
+          "L",
+          "v = L di/dt",
+          "jωL",
+          "1/(jωL)",
+          "lags v by 90°"
+        ],
+        [
+          "C",
+          "i = C dv/dt",
+          "1/(jωC)",
+          "jωC",
+          "leads v by 90°"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Impedance is the phasor ratio V over I, so differentiation and integration become multiplication and division by j omega."
+    },
+    "electrical-circuits-and-networks-analysis--maximum-power-transfer": {
+      "type": "derivation",
+      "title": "maximum load power by differentiation",
+      "steps": [
+        "P=I^{2}R_{L}=\\frac{V_{\\text{th}}^{2}R_{L}}{(R_{\\text{th}}+R_{L})^{2}}",
+        "\\frac{dP}{dR_{L}}=V_{\\text{th}}^{2}\\,\\frac{(R_{\\text{th}}+R_{L})^{2}-2R_{L}(R_{\\text{th}}+R_{L})}{(R_{\\text{th}}+R_{L})^{4}}",
+        "\\frac{dP}{dR_{L}}=0\\;\\Rightarrow\\;R_{L}=R_{\\text{th}}",
+        "P_{\\max}=\\frac{V_{\\text{th}}^{2}}{4R_{\\text{th}}}",
+        "\\eta=\\frac{P_{\\text{load}}}{P_{\\text{supplied}}}=50\\%\\ \\text{at this point}"
+      ],
+      "symbols": [
+        [
+          "P",
+          "power delivered to the load"
+        ],
+        [
+          "V_{\\text{th}}",
+          "Thevenin voltage"
+        ],
+        [
+          "R_{\\text{th}}",
+          "Thevenin resistance"
+        ],
+        [
+          "R_{L}",
+          "load resistance"
+        ],
+        [
+          "\\eta",
+          "efficiency"
+        ]
+      ],
+      "note": "Power peaks at 50 percent efficiency, so maximum power and maximum efficiency are deliberately different designs."
+    },
+    "electrical-circuits-and-networks-analysis--rms-value": {
+      "type": "derivation",
+      "title": "rms of a sinusoid",
+      "steps": [
+        "V_{\\text{rms}}^{2}=\\frac{1}{T}\\int_{0}^{T}V_{m}^{2}\\sin^{2}\\omega t\\,dt",
+        "\\sin^{2}\\omega t=\\frac{1-\\cos 2\\omega t}{2}",
+        "V_{\\text{rms}}^{2}=\\frac{V_{m}^{2}}{2T}\\left[t-\\frac{\\sin 2\\omega t}{2\\omega}\\right]_{0}^{T}=\\frac{V_{m}^{2}}{2}",
+        "V_{\\text{rms}}=\\frac{V_{m}}{\\sqrt{2}}\\approx0.707\\,V_{m}"
+      ],
+      "symbols": [
+        [
+          "V_{m}",
+          "peak value"
+        ],
+        [
+          "T",
+          "period"
+        ],
+        [
+          "\\omega",
+          "angular frequency, 2 pi f"
+        ],
+        [
+          "V_{\\text{rms}}",
+          "root-mean-square value"
+        ]
+      ],
+      "note": "The mean of sin squared over a whole period is one half, which is why 230 V rms corresponds to 325 V peak."
+    },
+    "electrical-circuits-and-networks-analysis--superposition-theorem": {
+      "type": "table",
+      "title": "network theorems and what each one finds",
+      "headers": [
+        "theorem",
+        "replaces the network with",
+        "applies when",
+        "gives"
+      ],
+      "rows": [
+        [
+          "superposition",
+          "one independent source at a time",
+          "linear, bilateral",
+          "branch current or voltage"
+        ],
+        [
+          "Thevenin",
+          "V_th in series with R_th",
+          "linear two-terminal network",
+          "load current and voltage"
+        ],
+        [
+          "Norton",
+          "I_N in parallel with R_N",
+          "linear two-terminal network",
+          "Thevenin result, dual form"
+        ],
+        [
+          "maximum power transfer",
+          "load set to R_th",
+          "source resistance fixed",
+          "P_max = V_th²/4R_th"
+        ],
+        [
+          "reciprocity",
+          "source and response ports swapped",
+          "linear, passive, bilateral",
+          "same ratio, z₁₂ = z₂₁"
+        ],
+        [
+          "Millman",
+          "one source in series with R",
+          "parallel branches at one node",
+          "node voltage directly"
+        ],
+        [
+          "Tellegen",
+          "nothing, it is an identity",
+          "any network",
+          "sum of v_k i_k = 0"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Linearity is the shared precondition; power is never superposed, and reciprocity fails once controlled sources appear."
+    },
+    "electrical-circuits-and-networks-analysis--transient": {
+      "type": "derivation",
+      "title": "first-order RC step response",
+      "steps": [
+        "RC\\frac{dv_{C}}{dt}+v_{C}=V_{s},\\qquad \\tau=RC",
+        "\\frac{dv_{C}}{dt}=\\frac{V_{s}-v_{C}}{\\tau}",
+        "\\int\\frac{dv_{C}}{V_{s}-v_{C}}=\\int\\frac{dt}{\\tau}",
+        "-\\ln\\frac{V_{s}-v_{C}}{V_{s}-v_{C}(0^{+})}=\\frac{t}{\\tau}",
+        "v_{C}(t)=V_{s}+\\left[v_{C}(0^{+})-V_{s}\\right]e^{-t/\\tau}"
+      ],
+      "symbols": [
+        [
+          "v_{C}",
+          "capacitor voltage"
+        ],
+        [
+          "V_{s}",
+          "step source voltage"
+        ],
+        [
+          "\\tau",
+          "time constant, RC or L/R"
+        ],
+        [
+          "R,C",
+          "resistance and capacitance"
+        ]
+      ],
+      "note": "The homogeneous part decays with tau while the particular part is the steady state, so one exponential covers every first-order case."
+    },
+    "electrical-circuits-and-networks-analysis--two-port-network": {
+      "type": "table",
+      "title": "two-port parameter sets",
+      "headers": [
+        "set",
+        "defining equation",
+        "measured with",
+        "diagonal unit"
+      ],
+      "rows": [
+        [
+          "Z",
+          "V₁ = z₁₁I₁ + z₁₂I₂",
+          "output open, I₂ = 0",
+          "Ω"
+        ],
+        [
+          "Y",
+          "I₁ = y₁₁V₁ + y₁₂V₂",
+          "output short, V₂ = 0",
+          "S"
+        ],
+        [
+          "h",
+          "V₁ = h₁₁I₁ + h₁₂V₂",
+          "input short, output open",
+          "Ω and S, mixed"
+        ],
+        [
+          "ABCD",
+          "V₁ = A V₂ − B I₂",
+          "output open, then short",
+          "A and D dimensionless"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Each set is defined by an open or short test, and converting between them is a matrix inversion, so Y is the inverse of Z."
+    },
+    "electrical-circuits-and-networks-analysis--underdamped": {
+      "type": "derivation",
+      "title": "roots of the series RLC circuit",
+      "steps": [
+        "L\\frac{di}{dt}+Ri+\\frac{1}{C}\\int i\\,dt=V_{s}",
+        "s^{2}+\\frac{R}{L}s+\\frac{1}{LC}=0",
+        "\\alpha=\\frac{R}{2L},\\qquad \\omega_{0}=\\frac{1}{\\sqrt{LC}}",
+        "\\Delta=\\alpha^{2}-\\omega_{0}^{2}<0\\;\\Rightarrow\\;s=-\\alpha\\pm j\\omega_{d}",
+        "\\omega_{d}=\\sqrt{\\omega_{0}^{2}-\\alpha^{2}}"
+      ],
+      "symbols": [
+        [
+          "\\alpha",
+          "neper frequency, R over 2L"
+        ],
+        [
+          "\\omega_{0}",
+          "undamped natural frequency"
+        ],
+        [
+          "\\omega_{d}",
+          "damped ringing frequency"
+        ],
+        [
+          "\\Delta",
+          "discriminant of the characteristic equation"
+        ]
+      ],
+      "note": "The real part of the root sets how fast the ringing dies away and the imaginary part sets its frequency."
+    },
+    "electromagnetic-waves-and-transmission-lines--characteristic-impedance": {
+      "type": "derivation",
+      "title": "Z0 from the telegrapher's equations",
+      "steps": [
+        "-\\frac{\\partial V}{\\partial z}=RI+L\\frac{\\partial I}{\\partial t},\\qquad -\\frac{\\partial I}{\\partial z}=GV+C\\frac{\\partial V}{\\partial t}",
+        "V(z)=V^{+}e^{-\\gamma z}+V^{-}e^{\\gamma z},\\qquad I(z)=\\frac{V^{+}}{Z_{0}}e^{-\\gamma z}-\\frac{V^{-}}{Z_{0}}e^{\\gamma z}",
+        "\\gamma=\\sqrt{(R+j\\omega L)(G+j\\omega C)},\\qquad Z_{0}=\\sqrt{\\frac{R+j\\omega L}{G+j\\omega C}}",
+        "Z_{0}=\\sqrt{\\frac{L}{C}},\\qquad v_{p}=\\frac{1}{\\sqrt{LC}}\\ \\text{(lossless)}"
+      ],
+      "symbols": [
+        [
+          "R,L,G,C",
+          "per-unit-length line parameters"
+        ],
+        [
+          "\\gamma",
+          "propagation constant"
+        ],
+        [
+          "Z_{0}",
+          "characteristic impedance"
+        ],
+        [
+          "v_{p}",
+          "phase velocity"
+        ]
+      ],
+      "note": "Z0 is not the resistance of the wire: it is the fixed ratio a travelling wave settles at, set by the per-length inductance and capacitance."
+    },
+    "electromagnetic-waves-and-transmission-lines--matched-line": {
+      "type": "table",
+      "title": "load terminations on a lossless line",
+      "headers": [
+        "load",
+        "Γ",
+        "VSWR",
+        "voltage pattern"
+      ],
+      "rows": [
+        [
+          "short, Z_L = 0",
+          "-1",
+          "infinite",
+          "node at the load"
+        ],
+        [
+          "open, Z_L = infinite",
+          "+1",
+          "infinite",
+          "antinode at the load"
+        ],
+        [
+          "matched, Z_L = Z_0",
+          "0",
+          "1",
+          "flat, no standing wave"
+        ],
+        [
+          "Z_L = 2Z_0",
+          "+1/3",
+          "2",
+          "2:1 maximum at the load"
+        ],
+        [
+          "Z_L = Z_0/2",
+          "-1/3",
+          "2",
+          "2:1 minimum at the load"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Only |Γ| sets the VSWR; its sign decides whether the load sits at a voltage maximum or a minimum."
+    },
+    "electromagnetic-waves-and-transmission-lines--maxwells-equations": {
+      "type": "table",
+      "title": "Maxwell's equations, differential and integral form",
+      "headers": [
+        "law",
+        "differential",
+        "integral",
+        "statement"
+      ],
+      "rows": [
+        [
+          "Faraday",
+          "∇×E = -∂B/∂t",
+          "∮E·dl = -dΦ_B/dt",
+          "changing flux drives an emf"
+        ],
+        [
+          "Ampere-Maxwell",
+          "∇×H = J + ∂D/∂t",
+          "∮H·dl = I + dΨ_D/dt",
+          "current and displacement current drive H"
+        ],
+        [
+          "Gauss",
+          "∇·D = ρ",
+          "∮D·dS = Q_enc",
+          "charge is the source of D"
+        ],
+        [
+          "Gauss magnetism",
+          "∇·B = 0",
+          "∮B·dS = 0",
+          "no magnetic monopoles"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The displacement term is Maxwell's addition: without it a charging capacitor would break the continuity of current."
+    },
+    "electromagnetic-waves-and-transmission-lines--parallel-plate-capacitor": {
+      "type": "derivation",
+      "title": "capacitance from Gauss's law",
+      "steps": [
+        "\\mathbf{E}=\\frac{\\rho_{s}}{\\varepsilon}\\hat{\\mathbf{z}}=\\frac{Q}{\\varepsilon A}\\hat{\\mathbf{z}}",
+        "V=-\\int_{0}^{d}\\mathbf{E}\\cdot d\\mathbf{l}=\\frac{Qd}{\\varepsilon A}",
+        "C=\\frac{Q}{V}=\\frac{\\varepsilon A}{d}"
+      ],
+      "symbols": [
+        [
+          "\\rho_{s}",
+          "surface charge density"
+        ],
+        [
+          "A",
+          "plate area"
+        ],
+        [
+          "d",
+          "plate separation"
+        ],
+        [
+          "\\varepsilon",
+          "permittivity of the dielectric"
+        ]
+      ],
+      "note": "Fringing is ignored, so the result holds only while d stays much smaller than the plate dimensions."
+    },
+    "electromagnetic-waves-and-transmission-lines--poynting-vector": {
+      "type": "derivation",
+      "title": "average power density of a plane wave",
+      "steps": [
+        "\\mathbf{S}(t)=\\mathbf{E}(t)\\times\\mathbf{H}(t)",
+        "\\langle\\mathbf{S}\\rangle=\\frac{1}{2}\\operatorname{Re}\\left\\{\\mathbf{E}\\times\\mathbf{H}^{*}\\right\\}",
+        "\\langle\\mathbf{S}\\rangle=\\frac{E_{0}^{2}}{2\\eta}\\hat{\\mathbf{k}}=\\frac{1}{2}\\eta H_{0}^{2}\\hat{\\mathbf{k}}"
+      ],
+      "symbols": [
+        [
+          "\\mathbf{S}",
+          "instantaneous Poynting vector"
+        ],
+        [
+          "\\langle\\mathbf{S}\\rangle",
+          "time-average power density, W/m²"
+        ],
+        [
+          "E_{0},\\ H_{0}",
+          "peak field amplitudes"
+        ],
+        [
+          "\\hat{\\mathbf{k}}",
+          "direction of propagation"
+        ]
+      ],
+      "note": "The factor 1/2 comes from averaging the sinusoid: a 1 V/m peak wave in free space carries 1.33 mW/m²."
+    },
+    "electromagnetic-waves-and-transmission-lines--relaxation-time": {
+      "type": "derivation",
+      "title": "charge decay from continuity and Ohm's law",
+      "steps": [
+        "\\nabla\\cdot\\mathbf{J}=-\\frac{\\partial\\rho}{\\partial t},\\qquad \\mathbf{J}=\\sigma\\mathbf{E}",
+        "\\nabla\\cdot\\mathbf{E}=\\frac{\\rho}{\\varepsilon}\\ \\Rightarrow\\ \\nabla\\cdot\\mathbf{J}=\\frac{\\sigma\\rho}{\\varepsilon}",
+        "\\frac{\\partial\\rho}{\\partial t}=-\\frac{\\sigma}{\\varepsilon}\\rho\\ \\Rightarrow\\ \\rho(t)=\\rho_{0}e^{-t/\\tau}",
+        "\\tau=\\frac{\\varepsilon}{\\sigma}"
+      ],
+      "symbols": [
+        [
+          "\\rho",
+          "volume charge density"
+        ],
+        [
+          "\\sigma",
+          "conductivity"
+        ],
+        [
+          "\\varepsilon",
+          "permittivity"
+        ],
+        [
+          "\\tau",
+          "relaxation time"
+        ]
+      ],
+      "note": "In copper τ is about 1.5×10⁻¹⁹ s, which is why excess charge sits on the surface of a good conductor rather than inside it."
+    },
+    "electromagnetic-waves-and-transmission-lines--vswr": {
+      "type": "derivation",
+      "title": "from reflection coefficient to VSWR and return loss",
+      "steps": [
+        "\\Gamma=\\frac{Z_{L}-Z_{0}}{Z_{L}+Z_{0}},\\qquad |\\Gamma|\\le 1",
+        "V_{\\max}=|V^{+}|\\left(1+|\\Gamma|\\right),\\qquad V_{\\min}=|V^{+}|\\left(1-|\\Gamma|\\right)",
+        "\\text{VSWR}=\\frac{V_{\\max}}{V_{\\min}}=\\frac{1+|\\Gamma|}{1-|\\Gamma|}",
+        "|\\Gamma|=\\frac{\\text{VSWR}-1}{\\text{VSWR}+1},\\qquad \\text{RL}=-20\\log_{10}|\\Gamma|\\ \\text{dB}"
+      ],
+      "symbols": [
+        [
+          "\\Gamma",
+          "load reflection coefficient"
+        ],
+        [
+          "VSWR",
+          "voltage standing-wave ratio"
+        ],
+        [
+          "RL",
+          "return loss"
+        ],
+        [
+          "V^{+}",
+          "forward travelling voltage amplitude"
+        ]
+      ],
+      "note": "A VSWR of 2 means |Γ| = 1/3 and 11% of the incident power returns, which is why 2:1 is the usual acceptance limit."
+    },
+    "electromagnetic-waves-and-transmission-lines--wave-impedance": {
+      "type": "derivation",
+      "title": "intrinsic impedance from the curl equations",
+      "steps": [
+        "\\nabla\\times\\mathbf{E}=-j\\omega\\mu\\mathbf{H},\\qquad \\nabla\\times\\mathbf{H}=(\\sigma+j\\omega\\varepsilon)\\mathbf{E}",
+        "\\gamma^{2}=j\\omega\\mu(\\sigma+j\\omega\\varepsilon),\\qquad \\gamma=\\alpha+j\\beta",
+        "\\eta=\\frac{E}{H}=\\frac{j\\omega\\mu}{\\gamma}=\\sqrt{\\frac{j\\omega\\mu}{\\sigma+j\\omega\\varepsilon}}",
+        "\\eta=\\sqrt{\\frac{\\mu}{\\varepsilon}}\\ \\text{(lossless)},\\qquad \\eta_{0}=120\\pi\\approx 377\\ \\Omega"
+      ],
+      "symbols": [
+        [
+          "\\gamma",
+          "propagation constant"
+        ],
+        [
+          "\\eta",
+          "intrinsic impedance of the medium"
+        ],
+        [
+          "\\mu,\\ \\varepsilon",
+          "medium constants"
+        ],
+        [
+          "\\omega",
+          "angular frequency"
+        ]
+      ],
+      "note": "Both fields share the same γ, so their ratio is fixed by the medium alone and not by the source that launched the wave."
+    },
     "electronic-devices-and-circuits--active-region": {
       "type": "table",
       "title": "BJT operating regions",
@@ -5373,6 +8334,483 @@
       "highlight": 3,
       "note": "A slot is only four bytes, so it normally holds a branch to the handler rather than the handler itself."
     },
+    "engineering-chemistry--cfse": {
+      "type": "table",
+      "title": "CFSE and spin state for d^n ions (octahedral)",
+      "headers": [
+        "d^n",
+        "high-spin unpaired",
+        "high-spin CFSE / Δo",
+        "low-spin unpaired",
+        "low-spin CFSE / Δo"
+      ],
+      "rows": [
+        [
+          "d0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "d1",
+          "1",
+          "0.4",
+          "1",
+          "0.4"
+        ],
+        [
+          "d2",
+          "2",
+          "0.8",
+          "2",
+          "0.8"
+        ],
+        [
+          "d3",
+          "3",
+          "1.2",
+          "3",
+          "1.2"
+        ],
+        [
+          "d4",
+          "4",
+          "0.6",
+          "2",
+          "1.6"
+        ],
+        [
+          "d5",
+          "5",
+          "0",
+          "1",
+          "2.0"
+        ],
+        [
+          "d6",
+          "4",
+          "0.4",
+          "0",
+          "2.4"
+        ],
+        [
+          "d7",
+          "3",
+          "0.8",
+          "1",
+          "1.8"
+        ],
+        [
+          "d8",
+          "2",
+          "1.2",
+          "2",
+          "1.2"
+        ],
+        [
+          "d9",
+          "1",
+          "0.6",
+          "1",
+          "0.6"
+        ],
+        [
+          "d10",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "highlight": 7,
+      "note": "Values follow 0.4 n_t2g minus 0.6 n_eg, positive meaning net stabilisation; the pairing energy P is not included."
+    },
+    "engineering-chemistry--corrosion": {
+      "type": "table",
+      "title": "forms of corrosion and control",
+      "headers": [
+        "form",
+        "mechanism",
+        "where it appears",
+        "control"
+      ],
+      "rows": [
+        [
+          "galvanic",
+          "two dissimilar metals in one electrolyte",
+          "joints, rivets, pipe couplings",
+          "avoid dissimilar couples, insulate the joint"
+        ],
+        [
+          "pitting",
+          "local breakdown of the passive film",
+          "stainless steel in chloride water",
+          "cut chloride, keep surface clean, add Mo"
+        ],
+        [
+          "crevice",
+          "oxygen starvation inside a shielded gap",
+          "gaskets, washers, lap joints",
+          "seal the gap or redesign it out"
+        ],
+        [
+          "stress corrosion",
+          "tensile stress plus a specific ion",
+          "weld heat-affected zones",
+          "stress relief, resistant alloy"
+        ],
+        [
+          "oxidation",
+          "direct attack by oxygen at high temperature",
+          "boiler tubes, furnace parts",
+          "Cr or Al alloying, protective oxide"
+        ],
+        [
+          "erosion-corrosion",
+          "fast fluid strips the protective film",
+          "pump impellers, pipe bends",
+          "lower velocity, harder alloy"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Cathodic protection only works while the protected metal stays the cathode, so a sacrificial anode is consumed instead."
+    },
+    "engineering-chemistry--degree-of-polymerization": {
+      "type": "derivation",
+      "title": "Carothers relation: conversion to chain length",
+      "steps": [
+        "\\text{DP}=\\frac{M}{M_{0}}=\\frac{N_{0}}{N}",
+        "p=\\frac{N_{0}-N}{N_{0}}",
+        "1-p=\\frac{N}{N_{0}}\\;\\Rightarrow\\;\\frac{N_{0}}{N}=\\frac{1}{1-p}",
+        "\\text{DP}=\\frac{1}{1-p}",
+        "p=0.99\\;\\Rightarrow\\;\\text{DP}=100"
+      ],
+      "symbols": [
+        [
+          "\\text{DP}",
+          "degree of polymerization"
+        ],
+        [
+          "M",
+          "molar mass of the polymer"
+        ],
+        [
+          "M_{0}",
+          "molar mass of one repeat unit"
+        ],
+        [
+          "N_{0}",
+          "monomers present initially"
+        ],
+        [
+          "N",
+          "chains present at conversion p"
+        ],
+        [
+          "p",
+          "extent of reaction"
+        ]
+      ],
+      "note": "Step-growth chains grow only at high conversion, so reaching DP 100 already needs 99% of the functional groups reacted."
+    },
+    "engineering-chemistry--desalination": {
+      "type": "sequence",
+      "title": "reverse-osmosis desalination",
+      "actors": [
+        "seawater",
+        "pre-treatment",
+        "RO module",
+        "permeate"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "screen, dose antiscalant, 5 µm filter"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "high-pressure pump at 55–70 bar"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "water crosses the membrane"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "brine concentrate rejected to sea"
+        }
+      ],
+      "note": "The pump must beat the osmotic pressure of seawater, about 27 bar, so water is forced against its natural flow."
+    },
+    "engineering-chemistry--nernst-equation": {
+      "type": "derivation",
+      "title": "Nernst equation from Gibbs energy",
+      "steps": [
+        "\\Delta G=\\Delta G^{\\circ}+RT\\ln Q",
+        "\\Delta G=-nFE,\\qquad \\Delta G^{\\circ}=-nFE^{\\circ}",
+        "E=E^{\\circ}-\\frac{RT}{nF}\\ln Q",
+        "T=298\\ \\mathrm{K}:\\ \\frac{RT}{F}\\ln10=0.0592\\ \\mathrm{V}",
+        "E=E^{\\circ}-\\frac{0.0592}{n}\\log_{10}Q"
+      ],
+      "symbols": [
+        [
+          "E",
+          "cell potential"
+        ],
+        [
+          "E^{\\circ}",
+          "standard cell potential"
+        ],
+        [
+          "n",
+          "electrons transferred"
+        ],
+        [
+          "F",
+          "Faraday constant"
+        ],
+        [
+          "Q",
+          "reaction quotient"
+        ],
+        [
+          "R",
+          "gas constant"
+        ]
+      ],
+      "note": "The 0.0592 V form is only the 298 K version, so a temperature change moves the slope of the log term."
+    },
+    "engineering-chemistry--spectrochemical-series": {
+      "type": "table",
+      "title": "spectrochemical series in octahedral complexes",
+      "headers": [
+        "ligands, weak to strong",
+        "field",
+        "typical Δo",
+        "spin in 3d ions",
+        "example"
+      ],
+      "rows": [
+        [
+          "I⁻ < Br⁻ < Cl⁻",
+          "weak",
+          "under 13 000 cm⁻¹",
+          "high spin",
+          "[CrCl₆]³⁻"
+        ],
+        [
+          "F⁻ < OH⁻ < ox²⁻",
+          "weak to medium",
+          "about 15 000 cm⁻¹",
+          "high spin",
+          "[Cr(ox)₃]³⁻"
+        ],
+        [
+          "H₂O < NCS⁻",
+          "medium",
+          "17 000–21 000 cm⁻¹",
+          "high spin",
+          "[Cr(H₂O)₆]³⁺"
+        ],
+        [
+          "NH₃ < en < bipy",
+          "medium to strong",
+          "about 22 000 cm⁻¹",
+          "high spin",
+          "[Cr(NH₃)₆]³⁺"
+        ],
+        [
+          "NO₂⁻ < CN⁻ < CO",
+          "strong",
+          "above 26 000 cm⁻¹",
+          "low spin",
+          "[Cr(CN)₆]³⁻"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Only the strong-field end flips a d4 to d7 ion to low spin, because Δo must exceed the pairing energy P."
+    },
+    "engineering-physics--clausius-mossotti-equation": {
+      "type": "derivation",
+      "title": "from polarizability to dielectric constant",
+      "steps": [
+        "\\mathbf{P}=N\\alpha\\mathbf{E}_{\\text{loc}}",
+        "\\mathbf{E}_{\\text{loc}}=\\mathbf{E}+\\frac{\\mathbf{P}}{3\\varepsilon_{0}}",
+        "\\mathbf{P}=\\varepsilon_{0}(\\varepsilon_{r}-1)\\mathbf{E}",
+        "\\varepsilon_{0}(\\varepsilon_{r}-1)=N\\alpha\\left(1+\\frac{\\varepsilon_{r}-1}{3}\\right)",
+        "\\frac{\\varepsilon_{r}-1}{\\varepsilon_{r}+2}=\\frac{N\\alpha}{3\\varepsilon_{0}}"
+      ],
+      "symbols": [
+        [
+          "\\mathbf{P}",
+          "polarization"
+        ],
+        [
+          "N",
+          "number density of dipoles"
+        ],
+        [
+          "\\alpha",
+          "polarizability"
+        ],
+        [
+          "\\mathbf{E}_{\\text{loc}}",
+          "local field at a dipole"
+        ],
+        [
+          "\\varepsilon_{r}",
+          "relative permittivity"
+        ]
+      ],
+      "note": "The Lorentz local field adds the depolarising field of the surrounding dipoles, which is where the εr + 2 term comes from."
+    },
+    "engineering-physics--davisson-germer-experiment": {
+      "type": "derivation",
+      "title": "Bragg condition applied to an electron beam",
+      "steps": [
+        "2d\\sin\\theta=n\\lambda\\quad(\\text{planes spaced }d\\text{ apart})",
+        "\\lambda=\\frac{h}{\\sqrt{2meV}}",
+        "\\sin\\theta=\\frac{nh}{2d\\sqrt{2meV}}",
+        "V=54\\ \\mathrm{V},\\ d=0.091\\ \\mathrm{nm}:\\ \\sin\\theta\\approx0.91,\\ \\theta\\approx65^{\\circ}"
+      ],
+      "symbols": [
+        [
+          "d",
+          "spacing between crystal planes"
+        ],
+        [
+          "\\theta",
+          "glancing angle to the plane"
+        ],
+        [
+          "n",
+          "order of diffraction"
+        ],
+        [
+          "V",
+          "accelerating voltage"
+        ],
+        [
+          "\\lambda",
+          "electron wavelength"
+        ]
+      ],
+      "note": "The measured peak angle matches the wavelength predicted from 54 V, which is the evidence for the matter wave."
+    },
+    "engineering-physics--de-broglie-wavelength": {
+      "type": "derivation",
+      "title": "de Broglie wavelength of an accelerated electron",
+      "steps": [
+        "\\lambda=\\frac{h}{p},\\qquad p=mv",
+        "eV=\\frac{1}{2}mv^{2}\\;\\Rightarrow\\;p=\\sqrt{2meV}",
+        "\\lambda=\\frac{h}{\\sqrt{2meV}}=\\frac{1.227}{\\sqrt{V}}\\ \\mathrm{nm}",
+        "V=54\\ \\mathrm{V}\\;\\Rightarrow\\;\\lambda\\approx0.167\\ \\mathrm{nm}"
+      ],
+      "symbols": [
+        [
+          "\\lambda",
+          "de Broglie wavelength"
+        ],
+        [
+          "V",
+          "accelerating voltage"
+        ],
+        [
+          "m",
+          "electron mass"
+        ],
+        [
+          "e",
+          "elementary charge"
+        ],
+        [
+          "h",
+          "Planck constant"
+        ]
+      ],
+      "note": "The whole constant is fixed by the electron mass and charge, so the wavelength scales only as V to the minus one-half."
+    },
+    "engineering-physics--hysteresis": {
+      "type": "table",
+      "title": "soft vs hard magnetic materials",
+      "headers": [
+        "property",
+        "soft magnetic",
+        "hard magnetic"
+      ],
+      "rows": [
+        [
+          "coercivity H_c",
+          "low, under 1 kA/m",
+          "high, tens to hundreds of kA/m"
+        ],
+        [
+          "retentivity B_r",
+          "low",
+          "high"
+        ],
+        [
+          "loop area",
+          "small, low loss per cycle",
+          "large, high energy product"
+        ],
+        [
+          "permeability",
+          "high, easily magnetised",
+          "moderate"
+        ],
+        [
+          "typical materials",
+          "soft iron, silicon steel, Mn-Zn ferrite",
+          "Alnico, NdFeB, hard ferrite"
+        ],
+        [
+          "use",
+          "transformer and machine cores",
+          "permanent magnets, loudspeakers"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The loop area is the energy lost as heat per unit volume per cycle, so cores are chosen soft and permanent magnets hard."
+    },
+    "engineering-physics--numerical-aperture": {
+      "type": "derivation",
+      "title": "acceptance cone from the critical angle",
+      "steps": [
+        "n_{0}\\sin\\theta_{a}=n_{1}\\sin\\theta_{r},\\qquad n_{0}=1\\ (\\text{air})",
+        "\\sin\\theta_{c}=\\frac{n_{2}}{n_{1}}",
+        "\\theta_{r}=90^{\\circ}-\\theta_{c}\\;\\Rightarrow\\;\\sin\\theta_{a}=n_{1}\\cos\\theta_{c}",
+        "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}"
+      ],
+      "symbols": [
+        [
+          "\\theta_{a}",
+          "acceptance angle"
+        ],
+        [
+          "\\theta_{c}",
+          "critical angle"
+        ],
+        [
+          "\\theta_{r}",
+          "refracted angle inside the core"
+        ],
+        [
+          "n_{1}",
+          "core refractive index"
+        ],
+        [
+          "n_{2}",
+          "cladding refractive index"
+        ]
+      ],
+      "note": "The cone edge is the ray that arrives at the core wall exactly at the critical angle."
+    },
     "engineering-physics--particle-in-a-box": {
       "type": "derivation",
       "title": "particle in an infinite well",
@@ -5400,6 +8838,365 @@
         ]
       ],
       "note": "The boundary conditions quantise the allowed wavelengths, so only discrete energies survive."
+    },
+    "engineering-physics--population-inversion": {
+      "type": "derivation",
+      "title": "why lasing needs pumping",
+      "steps": [
+        "\\frac{N_{2}}{N_{1}}=\\exp\\!\\left(-\\frac{h\\nu}{k_{B}T}\\right)",
+        "\\nu=4.7\\times10^{14}\\ \\mathrm{Hz},\\ T=300\\ \\mathrm{K}:\\ \\frac{N_{2}}{N_{1}}\\approx e^{-75}\\approx10^{-33}",
+        "\\text{absorption}\\propto N_{1}B_{12},\\qquad \\text{stimulated emission}\\propto N_{2}B_{21}",
+        "N_{2}>N_{1}\\;\\Rightarrow\\;\\text{gain},\\qquad \\gamma=\\sigma\\,(N_{2}-N_{1})"
+      ],
+      "symbols": [
+        [
+          "N_{1},N_{2}",
+          "level populations"
+        ],
+        [
+          "\\nu",
+          "transition frequency"
+        ],
+        [
+          "B_{12},B_{21}",
+          "Einstein coefficients"
+        ],
+        [
+          "\\sigma",
+          "stimulated-emission cross-section"
+        ],
+        [
+          "\\gamma",
+          "gain coefficient"
+        ],
+        [
+          "k_{B}",
+          "Boltzmann constant"
+        ]
+      ],
+      "note": "At thermal equilibrium the upper level is empty, so the populations must be driven past equality before the medium amplifies."
+    },
+    "engineering-physics--schrodinger-time-independent-wave-equation": {
+      "type": "derivation",
+      "title": "separating time from the wave equation",
+      "steps": [
+        "i\\hbar\\frac{\\partial\\Psi}{\\partial t}=\\hat{H}\\Psi,\\qquad \\hat{H}=-\\frac{\\hbar^{2}}{2m}\\nabla^{2}+V",
+        "\\Psi(\\mathbf{r},t)=\\psi(\\mathbf{r})\\,e^{-iEt/\\hbar}",
+        "i\\hbar\\frac{\\partial\\Psi}{\\partial t}=E\\,\\psi\\,e^{-iEt/\\hbar}",
+        "E\\psi=\\hat{H}\\psi\\;\\Longrightarrow\\;-\\frac{\\hbar^{2}}{2m}\\nabla^{2}\\psi+V\\psi=E\\psi"
+      ],
+      "symbols": [
+        [
+          "\\Psi",
+          "full time-dependent wave function"
+        ],
+        [
+          "\\psi",
+          "spatial part"
+        ],
+        [
+          "\\hat{H}",
+          "Hamiltonian operator"
+        ],
+        [
+          "E",
+          "energy eigenvalue"
+        ],
+        [
+          "V",
+          "potential energy"
+        ]
+      ],
+      "note": "A single-frequency ansatz turns the time derivative into the constant E, leaving a spatial eigenvalue problem."
+    },
+    "engineering-physics--superconductivity": {
+      "type": "table",
+      "title": "Type I and Type II superconductors",
+      "headers": [
+        "property",
+        "Type I",
+        "Type II"
+      ],
+      "rows": [
+        [
+          "critical field",
+          "one H_c, low (about 0.08 T for Pb)",
+          "two fields, H_c1 below H_c2"
+        ],
+        [
+          "flux behaviour",
+          "complete Meissner expulsion",
+          "quantised vortices between H_c1 and H_c2"
+        ],
+        [
+          "H_c2",
+          "not applicable",
+          "high, above 100 T in some cuprates"
+        ],
+        [
+          "materials",
+          "Pb, Hg, Sn, Al",
+          "NbTi, Nb3Sn, YBCO"
+        ],
+        [
+          "use",
+          "rarely used for magnets",
+          "MRI and accelerator magnets"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Above H_c1 flux enters as vortices that stay pinned to defects, so the wire keeps carrying current up to H_c2."
+    },
+    "environmental-science--acid-rain": {
+      "type": "derivation",
+      "title": "why clean rain sits at pH 5.6",
+      "steps": [
+        "\\mathrm{CO_{2}(g)}\\rightleftharpoons\\mathrm{CO_{2}(aq)},\\quad [\\mathrm{CO_{2}}]=K_{H}P_{\\mathrm{CO_{2}}}",
+        "\\mathrm{CO_{2}+H_{2}O}\\rightleftharpoons\\mathrm{H^{+}}+\\mathrm{HCO_{3}^{-}}",
+        "[\\mathrm{H^{+}}]=\\sqrt{K_{1}K_{H}P_{\\mathrm{CO_{2}}}}\\approx2.4\\times10^{-6}\\ \\mathrm{mol\\,L^{-1}}",
+        "\\mathrm{pH}=-\\log_{10}(2.4\\times10^{-6})=5.6"
+      ],
+      "symbols": [
+        [
+          "K_{H}",
+          "Henry constant for CO2"
+        ],
+        [
+          "K_{1}",
+          "first dissociation constant of carbonic acid"
+        ],
+        [
+          "P_{\\mathrm{CO_{2}}}",
+          "atmospheric partial pressure, about 400 ppm"
+        ]
+      ],
+      "note": "Rain more acidic than pH 5.6 must carry another acid, normally sulphuric or nitric from SOx and NOx."
+    },
+    "environmental-science--carrying-capacity": {
+      "type": "derivation",
+      "title": "logistic growth and the carrying capacity",
+      "steps": [
+        "\\frac{dN}{dt}=rN\\left(1-\\frac{N}{K}\\right)",
+        "\\int\\frac{dN}{N\\left(1-N/K\\right)}=\\int r\\,dt",
+        "\\ln\\frac{N}{K-N}=rt+C",
+        "N(t)=\\frac{K}{1+\\left(\\frac{K-N_{0}}{N_{0}}\\right)e^{-rt}}",
+        "N\\to K\\ \\text{as}\\ t\\to\\infty"
+      ],
+      "symbols": [
+        [
+          "N",
+          "population size"
+        ],
+        [
+          "r",
+          "intrinsic growth rate"
+        ],
+        [
+          "K",
+          "carrying capacity"
+        ],
+        [
+          "N_{0}",
+          "initial population"
+        ]
+      ],
+      "note": "Growth is near-exponential while N is far below K and stalls as N approaches K, giving the S-shaped curve."
+    },
+    "environmental-science--environmental-impact-assessment": {
+      "type": "sequence",
+      "title": "environmental clearance sequence",
+      "actors": [
+        "proponent",
+        "EIA consultant",
+        "regulator",
+        "public"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "project brief and screening"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "baseline study, impact prediction"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "draft EIA report and management plan"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "application submitted for appraisal"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "public hearing and objections"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "responses recorded in the final EIA"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "clearance granted with conditions"
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "label": "six-monthly compliance reports"
+        }
+      ],
+      "note": "Clearance is conditional, so the monitoring reports demanded by the management plan are what keep the project compliant."
+    },
+    "environmental-science--greenhouse-effect": {
+      "type": "derivation",
+      "title": "radiative forcing to equilibrium warming",
+      "steps": [
+        "\\Delta F=5.35\\ln\\!\\left(\\frac{C}{C_{0}}\\right)\\ \\mathrm{W\\,m^{-2}}",
+        "C=2C_{0}:\\ \\Delta F=5.35\\ln 2\\approx3.7\\ \\mathrm{W\\,m^{-2}}",
+        "\\Delta T=\\lambda\\,\\Delta F,\\qquad \\lambda\\approx0.8\\ \\mathrm{K\\,m^{2}\\,W^{-1}}",
+        "\\Delta T\\approx0.8\\times3.7\\approx3\\ \\mathrm{K}"
+      ],
+      "symbols": [
+        [
+          "\\Delta F",
+          "radiative forcing"
+        ],
+        [
+          "C",
+          "CO2 concentration"
+        ],
+        [
+          "C_{0}",
+          "reference concentration"
+        ],
+        [
+          "\\lambda",
+          "climate sensitivity parameter"
+        ],
+        [
+          "\\Delta T",
+          "equilibrium surface warming"
+        ]
+      ],
+      "note": "The logarithmic form comes from saturated CO2 absorption bands, and lambda folds in water-vapour and ice-albedo feedbacks."
+    },
+    "environmental-science--noise-pollution": {
+      "type": "table",
+      "title": "sound levels and their effects",
+      "headers": [
+        "level dB(A)",
+        "reference situation",
+        "effect"
+      ],
+      "rows": [
+        [
+          "0",
+          "threshold of hearing",
+          "none"
+        ],
+        [
+          "30",
+          "quiet bedroom",
+          "sleep undisturbed"
+        ],
+        [
+          "60",
+          "normal conversation",
+          "annoyance begins"
+        ],
+        [
+          "85",
+          "busy street, factory floor",
+          "hearing damage after 8 h"
+        ],
+        [
+          "100",
+          "pneumatic drill at 5 m",
+          "damage in under 1 h"
+        ],
+        [
+          "120",
+          "rock concert, front row",
+          "threshold of pain"
+        ],
+        [
+          "140",
+          "jet engine at 25 m",
+          "instant damage"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Each 10 dB step is ten times the sound intensity, so the 8-hour limit at 85 dB falls to minutes near 110 dB."
+    },
+    "environmental-science--ozone-layer-depletion": {
+      "type": "table",
+      "title": "ozone depletion potentials",
+      "headers": [
+        "compound",
+        "main use",
+        "ODP",
+        "lifetime (yr)"
+      ],
+      "rows": [
+        [
+          "CFC-11 (CCl₃F)",
+          "foam blowing",
+          "1.0",
+          "45"
+        ],
+        [
+          "CFC-12 (CCl₂F₂)",
+          "refrigeration",
+          "1.0",
+          "100"
+        ],
+        [
+          "CFC-113",
+          "electronics cleaning",
+          "0.8",
+          "85"
+        ],
+        [
+          "carbon tetrachloride",
+          "feedstock and solvent",
+          "1.1",
+          "26"
+        ],
+        [
+          "methyl chloroform",
+          "degreasing",
+          "0.1",
+          "5"
+        ],
+        [
+          "HCFC-22",
+          "refrigeration",
+          "0.055",
+          "12"
+        ],
+        [
+          "halon-1211",
+          "fire suppression",
+          "3.0",
+          "16"
+        ],
+        [
+          "methyl bromide",
+          "soil fumigant",
+          "0.6",
+          "0.7"
+        ]
+      ],
+      "highlight": 7,
+      "note": "ODP is referenced to CFC-11 equal to 1; bromine is roughly 45 times more destructive per atom than chlorine."
     },
     "ic-applications--adc-resolution": {
       "type": "table",
@@ -5759,6 +9556,739 @@
       ],
       "highlight": 2,
       "note": "The comparators fire at 1/3 and 2/3 V_CC, so every timing formula contains ln 2 = 0.69 or ln 3 = 1.1."
+    },
+    "internet-of-things-and-applications--amqp": {
+      "type": "table",
+      "title": "IoT application protocols compared",
+      "headers": [
+        "protocol",
+        "transport",
+        "pattern",
+        "best for"
+      ],
+      "rows": [
+        [
+          "MQTT",
+          "TCP",
+          "publish-subscribe via a broker",
+          "telemetry from many constrained devices"
+        ],
+        [
+          "CoAP",
+          "UDP",
+          "request-response, REST-like",
+          "battery devices on lossy links"
+        ],
+        [
+          "AMQP",
+          "TCP",
+          "queues and exchanges, brokered",
+          "reliable business messaging"
+        ],
+        [
+          "DDS",
+          "UDP or TCP",
+          "brokerless publish-subscribe",
+          "real-time industrial control"
+        ],
+        [
+          "XMPP",
+          "TCP",
+          "XML stanzas plus presence",
+          "chat and device presence"
+        ],
+        [
+          "REST over HTTP",
+          "TCP",
+          "stateless request-response",
+          "simple APIs and dashboards"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The choice is mostly transport plus coupling: UDP where links are weak, a broker where many readers need one writer's data."
+    },
+    "internet-of-things-and-applications--bluetooth": {
+      "type": "table",
+      "title": "short-range radios by range and rate",
+      "headers": [
+        "radio",
+        "standard",
+        "range",
+        "data rate",
+        "topology"
+      ],
+      "rows": [
+        [
+          "Wi-Fi",
+          "802.11",
+          "30-100 m",
+          "11-600 Mbit/s",
+          "star, through an AP"
+        ],
+        [
+          "Bluetooth Classic",
+          "802.15.1",
+          "~10 m",
+          "1-3 Mbit/s",
+          "piconet, 1 master + 7 slaves"
+        ],
+        [
+          "Bluetooth LE",
+          "802.15.1",
+          "10-50 m",
+          "1-2 Mbit/s",
+          "star or mesh"
+        ],
+        [
+          "Zigbee",
+          "802.15.4",
+          "10-100 m",
+          "250 kbit/s",
+          "mesh, one coordinator"
+        ],
+        [
+          "LoRa",
+          "LoRaWAN",
+          "2-15 km",
+          "0.3-50 kbit/s",
+          "star of stars"
+        ],
+        [
+          "NFC",
+          "ISO 14443",
+          "under 10 cm",
+          "424 kbit/s",
+          "point-to-point"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Range and rate pull in opposite directions: each step down in data rate buys roughly an order of magnitude in reach and battery life."
+    },
+    "internet-of-things-and-applications--edge-computing": {
+      "type": "sequence",
+      "title": "data path from device to cloud",
+      "actors": [
+        "device",
+        "gateway",
+        "edge node",
+        "cloud"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "raw samples every 10 s, 20 kB"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "filtered and buffered stream"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "control command back to the device"
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "label": "aggregated summary once a minute, 2 kB"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "model or rule update"
+        }
+      ],
+      "note": "Filtering before the WAN hop is what the reduction ratio on this row measures: less traffic, less latency, less cloud storage."
+    },
+    "internet-of-things-and-applications--gpio": {
+      "type": "code",
+      "lang": "python",
+      "title": "reading a GPIO pin with the BCM numbering",
+      "lines": [
+        "import RPi.GPIO as GPIO",
+        "",
+        "GPIO.setmode(GPIO.BCM)          # use Broadcom pin numbers",
+        "GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)",
+        "",
+        "if GPIO.input(17) == GPIO.LOW:  # button pulls the pin to ground",
+        "    print(\"pressed\")"
+      ],
+      "highlight": [
+        4
+      ],
+      "note": "In BCM mode the number is the SoC's GPIO number rather than the header pin, so the same code survives a board revision."
+    },
+    "internet-of-things-and-applications--iot-reference-model": {
+      "type": "table",
+      "title": "the seven Cisco IoT reference levels",
+      "headers": [
+        "level",
+        "name",
+        "what it does"
+      ],
+      "rows": [
+        [
+          "1",
+          "physical devices",
+          "sensors and actuators that touch the real world"
+        ],
+        [
+          "2",
+          "connectivity",
+          "links and protocols between devices and the network"
+        ],
+        [
+          "3",
+          "edge computing",
+          "filters, aggregates and inspects packets before the core"
+        ],
+        [
+          "4",
+          "data accumulation",
+          "stores arriving data, turning events into records"
+        ],
+        [
+          "5",
+          "data abstraction",
+          "reconciles formats into one consistent schema"
+        ],
+        [
+          "6",
+          "application",
+          "reports, control loops and business logic"
+        ],
+        [
+          "7",
+          "collaboration and processes",
+          "people and workflows acting on the reports"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The levels are numbered upward from the devices, and each one consumes only what the level below has already cleaned up."
+    },
+    "internet-of-things-and-applications--mqtt": {
+      "type": "sequence",
+      "title": "MQTT publish through a broker",
+      "actors": [
+        "publisher",
+        "broker",
+        "subscriber"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "CONNECT, keep-alive"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "CONNACK"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "SUBSCRIBE sensors/temp (QoS 1)"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "SUBACK"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "PUBLISH sensors/temp: 24.5"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "forward to every matching subscriber"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "PUBACK"
+        }
+      ],
+      "note": "The two clients never address each other: the topic string is all they share and the broker owns the matching."
+    },
+    "internet-of-things-and-applications--mqtt-quality-of-service": {
+      "type": "table",
+      "title": "MQTT delivery guarantees",
+      "headers": [
+        "QoS",
+        "exchange",
+        "guarantee",
+        "cost"
+      ],
+      "rows": [
+        [
+          "0",
+          "PUBLISH only",
+          "at most once; may be lost",
+          "lowest"
+        ],
+        [
+          "1",
+          "PUBLISH, PUBACK",
+          "at least once; duplicates possible",
+          "one round trip"
+        ],
+        [
+          "2",
+          "PUBLISH, PUBREC, PUBREL, PUBCOMP",
+          "exactly once",
+          "two round trips and stored state"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each level buys one more handshake: QoS 1 may duplicate and QoS 2 may not, which is why QoS 2 costs the most state."
+    },
+    "internet-of-things-and-applications--sketch": {
+      "type": "code",
+      "lang": "c",
+      "title": "an Arduino sketch as setup and loop",
+      "lines": [
+        "void setup() {",
+        "    pinMode(LED_BUILTIN, OUTPUT);   /* runs once after reset */",
+        "    Serial.begin(115200);",
+        "}",
+        "",
+        "void loop() {",
+        "    digitalWrite(LED_BUILTIN, HIGH);",
+        "    delay(500);",
+        "    digitalWrite(LED_BUILTIN, LOW);",
+        "    delay(500);                     /* called again forever */",
+        "}"
+      ],
+      "highlight": [
+        2
+      ],
+      "note": "setup() runs once after reset and loop() is called repeatedly, so a sketch never returns from loop() on its own."
+    },
+    "linear-control-systems--bode-plot": {
+      "type": "table",
+      "title": "Bode asymptotes by factor",
+      "headers": [
+        "factor",
+        "magnitude slope",
+        "phase"
+      ],
+      "rows": [
+        [
+          "K",
+          "20 log K, flat",
+          "0° for K > 0"
+        ],
+        [
+          "(jω)ⁿ",
+          "+20n dB/decade",
+          "+90n°"
+        ],
+        [
+          "(1 + jω/ωc)⁻¹",
+          "0, then −20 dB/decade past ωc",
+          "0° → −90°"
+        ],
+        [
+          "(1 + jω/ωc)",
+          "0, then +20 dB/decade past ωc",
+          "0° → +90°"
+        ],
+        [
+          "1 + 2ζ(jω/ωn) + (jω/ωn)²",
+          "0, then −40 dB/decade past ωn",
+          "0° → −180°"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Each factor adds one straight-line pair, so the full plot is the sum of these pieces added on the logarithmic frequency axis."
+    },
+    "linear-control-systems--overshoot": {
+      "type": "derivation",
+      "title": "Peak overshoot from the peak time",
+      "steps": [
+        "y(t)=1-\\frac{e^{-\\zeta\\omega_{n}t}}{\\sqrt{1-\\zeta^{2}}}\\sin\\left(\\omega_{d}t+\\cos^{-1}\\zeta\\right),\\qquad \\omega_{d}=\\omega_{n}\\sqrt{1-\\zeta^{2}}",
+        "\\dot{y}(t)=0\\ \\Rightarrow\\ \\omega_{d}t_{p}=\\pi",
+        "y(t_{p})=1-\\frac{e^{-\\zeta\\omega_{n}t_{p}}}{\\sqrt{1-\\zeta^{2}}}\\sin\\left(\\pi+\\cos^{-1}\\zeta\\right)",
+        "\\sin\\left(\\pi+\\cos^{-1}\\zeta\\right)=-\\sqrt{1-\\zeta^{2}}\\ \\Rightarrow\\ y(t_{p})=1+e^{-\\zeta\\omega_{n}\\pi/\\omega_{d}}",
+        "M_{p}=y(t_{p})-1=e^{-\\pi\\zeta/\\sqrt{1-\\zeta^{2}}}"
+      ],
+      "symbols": [
+        [
+          "\\zeta",
+          "damping ratio"
+        ],
+        [
+          "\\omega_{n}",
+          "natural frequency"
+        ],
+        [
+          "\\omega_{d}",
+          "damped frequency"
+        ],
+        [
+          "t_{p}",
+          "peak time"
+        ]
+      ],
+      "note": "At the first peak the sine argument is pi plus arccos zeta, and the root factors cancel so only the exponential decay survives."
+    },
+    "linear-control-systems--pid-controller": {
+      "type": "table",
+      "title": "Effect of raising each PID term",
+      "headers": [
+        "term",
+        "rise time",
+        "overshoot",
+        "settling time",
+        "steady-state error",
+        "stability"
+      ],
+      "rows": [
+        [
+          "Kp",
+          "decreases",
+          "increases",
+          "small change",
+          "decreases",
+          "degrades"
+        ],
+        [
+          "Ki",
+          "decreases",
+          "increases",
+          "increases",
+          "eliminated",
+          "degrades"
+        ],
+        [
+          "Kd",
+          "small change",
+          "decreases",
+          "decreases",
+          "no effect",
+          "improves if small"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Classical monotonic trends for a fixed plant: the integral term removes offset, the derivative term damps the approach."
+    },
+    "linear-control-systems--root-locus": {
+      "type": "table",
+      "title": "Root-locus construction rules",
+      "headers": [
+        "rule",
+        "statement"
+      ],
+      "rows": [
+        [
+          "branches",
+          "n branches, one per closed-loop pole"
+        ],
+        [
+          "symmetry",
+          "mirror image about the real axis"
+        ],
+        [
+          "real axis",
+          "part of the locus left of an odd count of poles + zeros"
+        ],
+        [
+          "asymptotes",
+          "n − m rays at angles (2q+1)180°/(n − m)"
+        ],
+        [
+          "centroid",
+          "σa = (Σpoles − Σzeros)/(n − m)"
+        ],
+        [
+          "breakaway",
+          "solve dK/ds = 0 with K = −1/(GH)"
+        ],
+        [
+          "jω crossing",
+          "put s = jω in 1 + KGH = 0 and solve for K"
+        ],
+        [
+          "departure",
+          "180° + Σ angles of zeros − Σ angles of other poles"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The first four rules fix the skeleton; the rest place the points where branches split, cross the imaginary axis, or leave a complex pole."
+    },
+    "linear-control-systems--routh-hurwitz-criterion": {
+      "type": "table",
+      "title": "Routh array special cases",
+      "headers": [
+        "case",
+        "what you see",
+        "remedy"
+      ],
+      "rows": [
+        [
+          "zero in first column",
+          "leading entry 0, rest nonzero",
+          "replace it by ε > 0, then let ε → 0"
+        ],
+        [
+          "entire row zero",
+          "a whole row vanishes",
+          "use d/ds of the auxiliary polynomial above"
+        ],
+        [
+          "pure jω roots",
+          "auxiliary row with no sign change",
+          "roots of the auxiliary equation lie on jω"
+        ],
+        [
+          "sign changes",
+          "count down the first column",
+          "equals the number of right-half-plane roots"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Both special cases hide roots on or symmetric about the imaginary axis; the epsilon and derivative tricks expose them without changing the count."
+    },
+    "linear-control-systems--state-transition-matrix": {
+      "type": "derivation",
+      "title": "Matrix exponential to resolvent",
+      "steps": [
+        "e^{At}=I+At+\\frac{A^{2}t^{2}}{2!}+\\cdots",
+        "\\mathcal{L}\\{t^{n}\\}=\\frac{n!}{s^{n+1}}\\ \\Rightarrow\\ \\mathcal{L}\\{e^{At}\\}=\\sum_{n=0}^{\\infty}\\frac{A^{n}}{s^{n+1}}",
+        "=\\frac{1}{s}\\sum_{n=0}^{\\infty}\\left(\\frac{A}{s}\\right)^{n}=\\frac{1}{s}\\left(I-\\frac{A}{s}\\right)^{-1}",
+        "=\\left(sI-A\\right)^{-1}"
+      ],
+      "symbols": [
+        [
+          "A",
+          "state matrix"
+        ],
+        [
+          "I",
+          "identity matrix"
+        ],
+        [
+          "s",
+          "Laplace variable"
+        ]
+      ],
+      "note": "Term-by-term transformation turns the series into a geometric series in A/s, whose sum is the resolvent matrix."
+    },
+    "linear-control-systems--steady-state-error": {
+      "type": "table",
+      "title": "Steady-state error by system type",
+      "headers": [
+        "input",
+        "type 0",
+        "type 1",
+        "type 2"
+      ],
+      "rows": [
+        [
+          "step, 1/s",
+          "1/(1 + Kp)",
+          "0",
+          "0"
+        ],
+        [
+          "ramp, 1/s²",
+          "∞",
+          "1/Kv",
+          "0"
+        ],
+        [
+          "parabola, 1/s³",
+          "∞",
+          "∞",
+          "1/Ka"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Type is the number of open-loop integrators; each extra one lets the loop follow a higher-order input with finite error."
+    },
+    "matrix-algebra-and-calculus--cayley-hamilton-theorem": {
+      "type": "derivation",
+      "title": "inverse from the characteristic polynomial",
+      "steps": [
+        "p(\\lambda)=\\lambda^{2}-7\\lambda+10\\;\\Rightarrow\\;p(A)=A^{2}-7A+10I=0",
+        "A^{2}=7A-10I",
+        "A^{-1}\\left(A^{2}-7A+10I\\right)=A-7I+10A^{-1}=0",
+        "A^{-1}=\\frac{1}{10}(7I-A)"
+      ],
+      "symbols": [
+        [
+          "p",
+          "characteristic polynomial"
+        ],
+        [
+          "A",
+          "the 2x2 matrix with trace 7 and determinant 10"
+        ],
+        [
+          "I",
+          "identity matrix"
+        ]
+      ],
+      "note": "Cayley-Hamilton turns the polynomial into a matrix identity, so the inverse needs only 7I - A here, with no adjugate or cofactors."
+    },
+    "matrix-algebra-and-calculus--eigenvalue": {
+      "type": "derivation",
+      "title": "eigenvalues from trace and determinant",
+      "steps": [
+        "\\det(A-\\lambda I)=\\lambda^{2}-\\operatorname{tr}(A)\\lambda+\\det(A)",
+        "\\operatorname{tr}(A)=4+3=7,\\quad\\det(A)=4\\cdot3-1\\cdot2=10",
+        "\\lambda^{2}-7\\lambda+10=(\\lambda-5)(\\lambda-2)=0",
+        "(A-5I)\\mathbf{v}=\\mathbf{0}\\Rightarrow\\mathbf{v}_{1}\\propto(1,1);\\quad(A-2I)\\mathbf{v}=\\mathbf{0}\\Rightarrow\\mathbf{v}_{2}\\propto(1,-2)"
+      ],
+      "symbols": [
+        [
+          "\\operatorname{tr}(A)",
+          "sum of diagonal entries"
+        ],
+        [
+          "\\det(A)",
+          "determinant"
+        ],
+        [
+          "\\lambda",
+          "eigenvalue"
+        ],
+        [
+          "v",
+          "eigenvector"
+        ]
+      ],
+      "note": "For A = [[4, 1], [2, 3]] the trace and determinant give the characteristic polynomial without expanding a 2x2 determinant."
+    },
+    "matrix-algebra-and-calculus--positive-definite": {
+      "type": "derivation",
+      "title": "positive definiteness by completing the square",
+      "steps": [
+        "q(\\mathbf{x})=x^{2}+4xy+5y^{2}",
+        "=x^{2}+4xy+4y^{2}+y^{2}=(x+2y)^{2}+y^{2}",
+        "q>0\\ \\text{whenever }(x,y)\\ne(0,0)",
+        "\\Delta_{1}=1>0,\\quad\\Delta_{2}=1\\cdot5-2^{2}=1>0"
+      ],
+      "symbols": [
+        [
+          "q",
+          "quadratic form"
+        ],
+        [
+          "\\Delta_{k}",
+          "leading principal minor of order k"
+        ]
+      ],
+      "note": "Completing the square writes q as a sum of squares, and Sylvester criterion reaches the same verdict from the leading minors alone."
+    },
+    "matrix-algebra-and-calculus--symmetric-matrix": {
+      "type": "table",
+      "title": "matrix types and their spectra",
+      "headers": [
+        "type",
+        "condition",
+        "eigenvalues",
+        "where it matters"
+      ],
+      "rows": [
+        [
+          "symmetric (real)",
+          "A^T = A",
+          "all real",
+          "covariance, quadratic forms"
+        ],
+        [
+          "skew-symmetric",
+          "A^T = -A",
+          "purely imaginary or 0",
+          "rotations, cross products"
+        ],
+        [
+          "orthogonal",
+          "A^T A = I",
+          "|lambda| = 1",
+          "length-preserving basis change"
+        ],
+        [
+          "Hermitian",
+          "A^H = A",
+          "all real",
+          "quantum observables"
+        ],
+        [
+          "unitary",
+          "U^H U = I",
+          "|lambda| = 1",
+          "complex rotations, DFT"
+        ],
+        [
+          "positive definite",
+          "x^T A x > 0",
+          "all lambda > 0",
+          "minima, Cholesky factorisation"
+        ]
+      ],
+      "highlight": 1,
+      "note": "The real types are special cases of the complex ones, and the eigenvalue statement is what makes each type useful in practice."
+    },
+    "matrix-algebra-and-calculus--taylors-series": {
+      "type": "derivation",
+      "title": "Taylor series of e^x with its error bound",
+      "steps": [
+        "f(x)=e^{x}\\;\\Rightarrow\\;f^{(n)}(0)=1\\ \\text{for every }n",
+        "e^{x}=\\sum_{n=0}^{\\infty}\\frac{x^{n}}{n!}=1+x+\\frac{x^{2}}{2}+\\frac{x^{3}}{6}+\\cdots",
+        "R_{n}(x)=\\frac{e^{\\xi}}{(n+1)!}x^{n+1},\\quad\\xi\\ \\text{between }0\\text{ and }x",
+        "\\left|x\\right|\\le1\\;\\Rightarrow\\;\\left|R_{n}\\right|\\le\\frac{e}{(n+1)!}"
+      ],
+      "symbols": [
+        [
+          "R_{n}",
+          "Lagrange remainder after n terms"
+        ],
+        [
+          "\\xi",
+          "mean-value point"
+        ],
+        [
+          "n",
+          "order of truncation"
+        ]
+      ],
+      "note": "The remainder bounds the error: truncating after x cubed is off by at most e/24, about 0.11, on the interval |x| <= 1."
+    },
+    "matrix-algebra-and-calculus--variation-of-parameters": {
+      "type": "derivation",
+      "title": "where variation of parameters comes from",
+      "steps": [
+        "y_{p}=A(x)u_{1}(x)+B(x)u_{2}(x)",
+        "y_{p}^{\\prime}=A^{\\prime}u_{1}+B^{\\prime}u_{2}+Au_{1}^{\\prime}+Bu_{2}^{\\prime}",
+        "\\text{impose }A^{\\prime}u_{1}+B^{\\prime}u_{2}=0\\;\\Rightarrow\\;y_{p}^{\\prime}=Au_{1}^{\\prime}+Bu_{2}^{\\prime}",
+        "A^{\\prime}u_{1}^{\\prime}+B^{\\prime}u_{2}^{\\prime}=f,\\quad A^{\\prime}=-\\frac{u_{2}f}{W},\\ B^{\\prime}=\\frac{u_{1}f}{W}"
+      ],
+      "symbols": [
+        [
+          "u_{1},u_{2}",
+          "homogeneous solutions"
+        ],
+        [
+          "A, B",
+          "unknown coefficient functions"
+        ],
+        [
+          "W",
+          "Wronskian of u1 and u2"
+        ],
+        [
+          "f",
+          "forcing term"
+        ]
+      ],
+      "note": "The first condition is a free choice that removes the second-derivative terms; the second makes y_p solve the equation, giving a 2x2 system."
     },
     "microprocessors-and-microcontrollers--8255-ppi": {
       "type": "table",
@@ -6254,6 +10784,257 @@
       "highlight": 4,
       "note": "The register sits at 88H and every bit is itself addressable, so SETB TR0 works directly."
     },
+    "microwave-and-optical-communications--attenuation": {
+      "type": "derivation",
+      "title": "optical power budget in decibels",
+      "steps": [
+        "\\alpha=\\frac{10}{L}\\log_{10}\\frac{P_{\\text{in}}}{P_{\\text{out}}}\\ \\text{dB/km}",
+        "P_{\\text{out}}=P_{\\text{in}}\\,10^{-\\alpha L/10}",
+        "L=80\\ \\text{km},\\ \\alpha=0.2\\ \\text{dB/km}\\ \\Rightarrow\\ \\text{fibre loss}=16\\ \\text{dB}",
+        "P_{\\text{rx}}=P_{\\text{tx}}-\\alpha L-(\\text{splice loss})-(\\text{design margin})"
+      ],
+      "symbols": [
+        [
+          "\\alpha",
+          "attenuation coefficient"
+        ],
+        [
+          "L",
+          "span length"
+        ],
+        [
+          "P_{\\text{in}},P_{\\text{out}}",
+          "power into and out of the span"
+        ]
+      ],
+      "note": "In dB every element of the span simply adds, so a link is budgeted by subtraction instead of by multiplying factors."
+    },
+    "microwave-and-optical-communications--circulator": {
+      "type": "sequence",
+      "title": "three-port circulator",
+      "actors": [
+        "port 1",
+        "port 2",
+        "port 3"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "forward wave in at port 1 leaves at port 2"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "wave in at port 2 leaves at port 3"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "wave in at port 3 leaves at port 1"
+        }
+      ],
+      "note": "The ferrite bias fixes one rotation sense, so the reverse direction 2 to 1 is refused and is absorbed by a matched load instead."
+    },
+    "microwave-and-optical-communications--cutoff-frequency": {
+      "type": "derivation",
+      "title": "cutoff from the transverse wavenumber",
+      "steps": [
+        "E_{z}=E_{0}\\sin\\!\\left(\\frac{m\\pi x}{a}\\right)\\sin\\!\\left(\\frac{n\\pi y}{b}\\right)e^{-j\\beta z}",
+        "k_{c}^{2}=\\left(\\frac{m\\pi}{a}\\right)^{2}+\\left(\\frac{n\\pi}{b}\\right)^{2},\\qquad \\beta^{2}=k_{0}^{2}-k_{c}^{2}",
+        "\\beta=0\\ \\Rightarrow\\ k_{0}=k_{c}\\ \\Rightarrow\\ f_{c}=\\frac{c}{2\\pi}k_{c}",
+        "f_{c,mn}=\\frac{c}{2}\\sqrt{\\left(\\frac{m}{a}\\right)^{2}+\\left(\\frac{n}{b}\\right)^{2}},\\qquad f_{c,10}=\\frac{c}{2a}"
+      ],
+      "symbols": [
+        [
+          "a,\\ b",
+          "guide width and height"
+        ],
+        [
+          "m,\\ n",
+          "mode indices"
+        ],
+        [
+          "k_{c}",
+          "cutoff wavenumber"
+        ],
+        [
+          "\\beta",
+          "axial phase constant"
+        ]
+      ],
+      "note": "Below f_c the axial β turns imaginary and the mode evanesces; above it β is real and sets the guide wavelength."
+    },
+    "microwave-and-optical-communications--dispersion": {
+      "type": "derivation",
+      "title": "pulse spread and the bit-rate limit",
+      "steps": [
+        "\\Delta t_{\\text{mod}}=\\frac{L}{c}\\left(n_{1}-n_{2}\\right)",
+        "n_{1}-n_{2}\\approx\\frac{\\text{NA}^{2}}{2n_{1}}",
+        "\\Delta t_{\\text{mod}}=\\frac{L\\,\\text{NA}^{2}}{2n_{1}c}",
+        "B\\le\\frac{1}{2\\Delta t},\\qquad \\Delta t=D\\,L\\,\\Delta\\lambda\\ \\text{(chromatic)}"
+      ],
+      "symbols": [
+        [
+          "\\Delta t",
+          "pulse broadening"
+        ],
+        [
+          "L",
+          "fibre length"
+        ],
+        [
+          "D",
+          "dispersion coefficient, ps/(nm·km)"
+        ],
+        [
+          "B",
+          "bit rate"
+        ]
+      ],
+      "note": "Modal spread falls with NA², which is why a small-NA graded core reaches gigahertz per kilometre while a step-index core stops at tens of megahertz."
+    },
+    "microwave-and-optical-communications--dominant-mode": {
+      "type": "table",
+      "title": "low-order rectangular waveguide modes",
+      "headers": [
+        "mode",
+        "m,n",
+        "f_c",
+        "comment"
+      ],
+      "rows": [
+        [
+          "TE10",
+          "1,0",
+          "c/2a",
+          "dominant mode, lowest loss"
+        ],
+        [
+          "TE01",
+          "0,1",
+          "c/2b",
+          "second when b > a/2"
+        ],
+        [
+          "TE20",
+          "2,0",
+          "c/a",
+          "TE10 field folded twice"
+        ],
+        [
+          "TE11",
+          "1,1",
+          "(c/2)sqrt(1/a^2 + 1/b^2)",
+          "first mixed mode"
+        ],
+        [
+          "TM11",
+          "1,1",
+          "same as TE11",
+          "lowest TM, degenerate with TE11"
+        ]
+      ],
+      "highlight": 1,
+      "note": "A TM mode needs both indices non-zero, so TM11 is the lowest TM mode; a > b is what makes TE10 the dominant mode."
+    },
+    "microwave-and-optical-communications--magic-tee": {
+      "type": "table",
+      "title": "E-plane, H-plane and magic tees",
+      "headers": [
+        "junction",
+        "ports",
+        "split from the arm",
+        "isolation"
+      ],
+      "rows": [
+        [
+          "E-plane tee",
+          "3",
+          "E arm splits in antiphase",
+          "arm 3 sees nothing from the H arm"
+        ],
+        [
+          "H-plane tee",
+          "3",
+          "H arm splits in phase",
+          "arm 3 sees nothing from the E arm"
+        ],
+        [
+          "magic tee",
+          "4",
+          "both arms split 3 dB, 180° between them",
+          "E and H arms isolated, S34 = 0"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Merging the two tees gives equal 3 dB splits with a 180° difference between the collinear arms, while the E and H arms stay isolated."
+    },
+    "microwave-and-optical-communications--numerical-aperture": {
+      "type": "derivation",
+      "title": "acceptance cone from total internal reflection",
+      "steps": [
+        "n_{1}\\sin\\theta_{c}=n_{2}\\sin 90^{\\circ}\\ \\Rightarrow\\ \\sin\\theta_{c}=\\frac{n_{2}}{n_{1}}",
+        "n_{0}\\sin\\theta_{a}=n_{1}\\sin\\left(90^{\\circ}-\\theta_{c}\\right)=n_{1}\\cos\\theta_{c}",
+        "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}",
+        "\\text{NA}\\approx n_{1}\\sqrt{2\\Delta},\\qquad \\Delta=\\frac{n_{1}-n_{2}}{n_{1}}"
+      ],
+      "symbols": [
+        [
+          "n_{0}",
+          "index outside the fibre, 1 in air"
+        ],
+        [
+          "n_{1},\\ n_{2}",
+          "core and cladding indices"
+        ],
+        [
+          "\\theta_{a}",
+          "acceptance half-angle"
+        ],
+        [
+          "\\theta_{c}",
+          "critical angle at the core-cladding boundary"
+        ]
+      ],
+      "note": "A large NA gathers more light but supports more modes, so single-mode fibre keeps both NA and core diameter small."
+    },
+    "microwave-and-optical-communications--single-mode-fiber": {
+      "type": "table",
+      "title": "step-index, graded-index and single-mode fibre",
+      "headers": [
+        "type",
+        "core",
+        "NA",
+        "bandwidth",
+        "source"
+      ],
+      "rows": [
+        [
+          "step-index multimode",
+          "50-100 µm",
+          "0.2-0.3",
+          "10-20 MHz·km",
+          "LED"
+        ],
+        [
+          "graded-index multimode",
+          "50-62.5 µm",
+          "0.2",
+          "0.5-1 GHz·km",
+          "LED or VCSEL"
+        ],
+        [
+          "single-mode",
+          "8-10 µm",
+          "0.1",
+          "above 100 GHz·km",
+          "laser diode"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Grading bends rays back continuously and cuts modal dispersion; reducing to one mode removes it and leaves only chromatic dispersion."
+    },
     "operating-systems-concepts--access-control-matrix": {
       "type": "table",
       "title": "subjects against objects",
@@ -6693,6 +11474,258 @@
       ],
       "note": "On contention the value goes negative, and its magnitude counts the processes blocked on S."
     },
+    "probability-theory-and-stochastic-process--bayes-theorem": {
+      "type": "derivation",
+      "title": "a 99 % test on a 1 % prevalence",
+      "steps": [
+        "P(D)=0.01,\\quad P(+|D)=0.99,\\quad P(+|D^{c})=0.01",
+        "P(+)=P(+|D)P(D)+P(+|D^{c})P(D^{c})=0.0099+0.0099=0.0198",
+        "P(D|+)=\\frac{P(+|D)P(D)}{P(+)}=\\frac{0.0099}{0.0198}=0.50"
+      ],
+      "symbols": [
+        [
+          "D",
+          "the subject has the condition"
+        ],
+        [
+          "+",
+          "the test reports positive"
+        ],
+        [
+          "P(+|D)",
+          "sensitivity"
+        ],
+        [
+          "P(+|D^{c})",
+          "false-positive rate"
+        ]
+      ],
+      "note": "With equal error rates at 1 % prevalence, true and false positives are equally numerous, so a positive result is only 50 % conclusive."
+    },
+    "probability-theory-and-stochastic-process--central-limit-theorem": {
+      "type": "derivation",
+      "title": "normal approximation for 30 dice",
+      "steps": [
+        "\\mu=\\frac{1+6}{2}=3.5,\\quad \\sigma^{2}=\\frac{6^{2}-1}{12}=\\frac{35}{12}",
+        "n=30:\\quad E[S_{n}]=105,\\quad \\operatorname{sd}(S_{n})=\\sqrt{30\\cdot35/12}=9.35",
+        "P(S_{n}>120)=P\\left(Z>\\frac{120.5-105}{9.35}\\right)=P(Z>1.66)",
+        "=1-\\Phi(1.66)\\approx0.048"
+      ],
+      "symbols": [
+        [
+          "S_{n}",
+          "sum of n independent rolls"
+        ],
+        [
+          "\\mu,\\ \\sigma^{2}",
+          "mean and variance of one roll"
+        ],
+        [
+          "Z",
+          "standard normal variable"
+        ],
+        [
+          "\\Phi",
+          "standard normal CDF"
+        ]
+      ],
+      "note": "The sum is standardised, not the average, and the 120.5 continuity correction keeps the normal approximation accurate at n = 30."
+    },
+    "probability-theory-and-stochastic-process--correlation-coefficient": {
+      "type": "derivation",
+      "title": "why the correlation coefficient is bounded by one",
+      "steps": [
+        "\\tilde{X}=X-\\mu_{X},\\quad\\tilde{Y}=Y-\\mu_{Y}",
+        "0\\le E\\left[(\\tilde{X}-a\\tilde{Y})^{2}\\right]=\\sigma_{X}^{2}-2a\\operatorname{Cov}(X,Y)+a^{2}\\sigma_{Y}^{2}",
+        "a=\\frac{\\operatorname{Cov}(X,Y)}{\\sigma_{Y}^{2}}\\;\\Rightarrow\\;\\sigma_{X}^{2}-\\frac{\\operatorname{Cov}^{2}(X,Y)}{\\sigma_{Y}^{2}}\\ge0",
+        "\\rho_{XY}^{2}=\\frac{\\operatorname{Cov}^{2}(X,Y)}{\\sigma_{X}^{2}\\sigma_{Y}^{2}}\\le1"
+      ],
+      "symbols": [
+        [
+          "a",
+          "any real multiplier"
+        ],
+        [
+          "\\operatorname{Cov}(X,Y)",
+          "covariance"
+        ],
+        [
+          "\\sigma_{X},\\ \\sigma_{Y}",
+          "standard deviations"
+        ],
+        [
+          "\\rho_{XY}",
+          "correlation coefficient"
+        ]
+      ],
+      "note": "The multiplier that minimises the mean-square error gives the tightest bound, so |rho| = 1 exactly when Y is an affine function of X."
+    },
+    "probability-theory-and-stochastic-process--lti-response": {
+      "type": "derivation",
+      "title": "output PSD of a filtered process",
+      "steps": [
+        "Y(t)=\\int_{-\\infty}^{\\infty}h(\\alpha)X(t-\\alpha)\\,d\\alpha",
+        "R_{YY}(\\tau)=\\int\\!\\!\\int h(\\alpha)h(\\beta)R_{XX}(\\tau+\\alpha-\\beta)\\,d\\alpha\\,d\\beta",
+        "S_{YY}(\\omega)=H(\\omega)H^{*}(\\omega)S_{XX}(\\omega)=\\left|H(\\omega)\\right|^{2}S_{XX}(\\omega)",
+        "\\text{RC low-pass}:\\quad S_{YY}(\\omega)=\\frac{S_{XX}(\\omega)}{1+(\\omega RC)^{2}}"
+      ],
+      "symbols": [
+        [
+          "h",
+          "impulse response"
+        ],
+        [
+          "H",
+          "transfer function"
+        ],
+        [
+          "S_{XX}",
+          "input power spectral density"
+        ],
+        [
+          "S_{YY}",
+          "output power spectral density"
+        ]
+      ],
+      "note": "The output spectrum is the input spectrum weighted by |H|^2, so the filter never creates frequencies, only rescales the ones present."
+    },
+    "probability-theory-and-stochastic-process--poisson-distribution": {
+      "type": "derivation",
+      "title": "Poisson as a limit of the binomial",
+      "steps": [
+        "\\binom{n}{k}p^{k}(1-p)^{n-k},\\quad p=\\frac{\\lambda}{n}",
+        "=\\frac{n(n-1)\\cdots(n-k+1)}{k!}\\left(\\frac{\\lambda}{n}\\right)^{k}\\left(1-\\frac{\\lambda}{n}\\right)^{n-k}",
+        "\\frac{n(n-1)\\cdots(n-k+1)}{n^{k}}\\to1,\\quad\\left(1-\\frac{\\lambda}{n}\\right)^{n}\\to e^{-\\lambda},\\quad\\left(1-\\frac{\\lambda}{n}\\right)^{-k}\\to1",
+        "P(X=k)\\to\\frac{\\lambda^{k}e^{-\\lambda}}{k!}"
+      ],
+      "symbols": [
+        [
+          "n",
+          "number of Bernoulli trials"
+        ],
+        [
+          "p",
+          "per-trial success probability"
+        ],
+        [
+          "\\lambda",
+          "fixed mean np"
+        ],
+        [
+          "k",
+          "observed count"
+        ]
+      ],
+      "note": "Hold the mean lambda = np fixed while n grows and p shrinks as 1/n; the binomial count then converges to the Poisson law."
+    },
+    "probability-theory-and-stochastic-process--random-variable": {
+      "type": "table",
+      "title": "common distributions at a glance",
+      "headers": [
+        "distribution",
+        "type",
+        "mean",
+        "variance",
+        "model"
+      ],
+      "rows": [
+        [
+          "Bernoulli(p)",
+          "discrete",
+          "p",
+          "p(1 - p)",
+          "one yes/no trial"
+        ],
+        [
+          "binomial(n, p)",
+          "discrete",
+          "np",
+          "np(1 - p)",
+          "successes in n trials"
+        ],
+        [
+          "Poisson(lambda)",
+          "discrete",
+          "lambda",
+          "lambda",
+          "rare events per interval"
+        ],
+        [
+          "uniform(a, b)",
+          "continuous",
+          "(a + b)/2",
+          "(b - a)^2/12",
+          "no preferred value"
+        ],
+        [
+          "exponential(lambda)",
+          "continuous",
+          "1/lambda",
+          "1/lambda^2",
+          "waiting time, memoryless"
+        ],
+        [
+          "Gaussian(mu, sigma^2)",
+          "continuous",
+          "mu",
+          "sigma^2",
+          "sum of many small effects"
+        ],
+        [
+          "Rayleigh(sigma)",
+          "continuous",
+          "sigma sqrt(pi/2)",
+          "(2 - pi/2) sigma^2",
+          "magnitude of a 2-D Gaussian"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Mean and variance give location and spread; only the Gaussian is fixed by those two numbers, which is what makes the CLT so strong."
+    },
+    "probability-theory-and-stochastic-process--thermal-noise": {
+      "type": "table",
+      "title": "noise mechanisms and their spectra",
+      "headers": [
+        "noise",
+        "PSD",
+        "depends on",
+        "spectrum"
+      ],
+      "rows": [
+        [
+          "thermal",
+          "4kTR (V^2/Hz)",
+          "R and T",
+          "flat"
+        ],
+        [
+          "shot",
+          "2qI (A^2/Hz)",
+          "DC current I",
+          "flat"
+        ],
+        [
+          "flicker",
+          "K/f^alpha, alpha ~ 1",
+          "device process",
+          "rising at low f"
+        ],
+        [
+          "burst (RTS)",
+          "Lorentzian",
+          "traps",
+          "one corner"
+        ],
+        [
+          "quantisation",
+          "delta^2/12 over f_s/2",
+          "bits and rate",
+          "flat in band"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Thermal and shot noise are white; flicker and burst noise concentrate at low frequency, so chopping or a carrier moves the signal away."
+    },
     "problem-solving-using-c--call-by-value": {
       "type": "code",
       "lang": "c",
@@ -7042,6 +12075,249 @@
         "3.50 3"
       ],
       "note": "Casting one operand forces floating-point division; casting to int truncates toward zero."
+    },
+    "product-and-services--marketing-mix": {
+      "type": "table",
+      "title": "the 7Ps, and what changes when the offer is a service",
+      "headers": [
+        "P",
+        "goods decision",
+        "service decision"
+      ],
+      "rows": [
+        [
+          "product",
+          "features, quality, packaging",
+          "core and supplementary service, variability control"
+        ],
+        [
+          "price",
+          "list price, discounts, credit",
+          "yield pricing by time and capacity"
+        ],
+        [
+          "place",
+          "channel, coverage, stock",
+          "location and accessibility of delivery"
+        ],
+        [
+          "promotion",
+          "advertising, sales promotion",
+          "staff behaviour and word of mouth"
+        ],
+        [
+          "people",
+          "not part of the offer",
+          "front-line staff are the product"
+        ],
+        [
+          "process",
+          "factory-side, invisible to the buyer",
+          "service blueprint and queue design"
+        ],
+        [
+          "physical evidence",
+          "the product itself",
+          "premises, uniforms, receipts, reviews"
+        ]
+      ],
+      "highlight": 5,
+      "note": "People, process and physical evidence exist because an intangible service has no packaging to carry its promise."
+    },
+    "product-and-services--product-levels": {
+      "type": "table",
+      "title": "the five product levels, worked on a hotel",
+      "headers": [
+        "level",
+        "what the buyer gets",
+        "hotel"
+      ],
+      "rows": [
+        [
+          "core benefit",
+          "the need actually satisfied",
+          "rest and sleep"
+        ],
+        [
+          "basic product",
+          "the generic thing that delivers it",
+          "bed, bathroom, towels"
+        ],
+        [
+          "expected product",
+          "what buyers assume is included",
+          "clean room, quiet, on-time check-in"
+        ],
+        [
+          "augmented product",
+          "what exceeds expectation",
+          "free breakfast, airport pickup"
+        ],
+        [
+          "potential product",
+          "what it could become",
+          "personalised room, loyalty tiers"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Today's augmentation hardens into tomorrow's expectation, so the potential level has to keep moving."
+    },
+    "product-and-services--product-mix-depth": {
+      "type": "table",
+      "title": "width, length and depth in one product mix",
+      "headers": [
+        "product line",
+        "items in the line",
+        "variants per item"
+      ],
+      "rows": [
+        [
+          "beverages",
+          "4",
+          "3"
+        ],
+        [
+          "snacks",
+          "3",
+          "2"
+        ],
+        [
+          "household",
+          "2",
+          "4"
+        ],
+        [
+          "personal care",
+          "5",
+          "2"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Four lines is the width, fourteen items the length, and up to four variants each the depth."
+    },
+    "product-and-services--service-blueprint": {
+      "type": "sequence",
+      "title": "service blueprint for an appointment-based repair",
+      "actors": [
+        "customer",
+        "front-stage staff",
+        "back-stage staff",
+        "support system"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "books a slot on the app"
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "label": "checks stock and reserves the slot"
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "label": "work order reaches the workshop"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "job prepared before the slot"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "service delivered at the counter"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "pays and rates the visit"
+        }
+      ],
+      "note": "Everything above the line of visibility is what the customer sees; the work order and prep below it make the promise keepable."
+    },
+    "product-and-services--servqual": {
+      "type": "table",
+      "title": "SERVQUAL dimensions and the judgement behind each",
+      "headers": [
+        "dimension",
+        "the customer asks",
+        "failure looks like"
+      ],
+      "rows": [
+        [
+          "reliability",
+          "did you do what you promised, first time?",
+          "same request handled differently twice"
+        ],
+        [
+          "responsiveness",
+          "how fast did you react?",
+          "a queue with nobody at the desk"
+        ],
+        [
+          "assurance",
+          "can I trust you with this?",
+          "staff who cannot answer a policy question"
+        ],
+        [
+          "empathy",
+          "do you see me as an individual?",
+          "a scripted reply to a specific problem"
+        ],
+        [
+          "tangibles",
+          "does the setting look competent?",
+          "well-kept premises and equipment"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Reliability usually carries the most weight, and it is the dimension the firm controls most directly."
+    },
+    "product-and-services--stage-gate-process": {
+      "type": "table",
+      "title": "stages of new-product development and the gate that ends each",
+      "headers": [
+        "stage",
+        "work done",
+        "gate question"
+      ],
+      "rows": [
+        [
+          "discovery",
+          "screen ideas against strategy",
+          "worth a concept?"
+        ],
+        [
+          "scoping",
+          "quick market and technical check",
+          "does the business case hold?"
+        ],
+        [
+          "business case",
+          "cost, price, volume, risk",
+          "do we fund development?"
+        ],
+        [
+          "development",
+          "build and test the product",
+          "does it pass the lab tests?"
+        ],
+        [
+          "testing",
+          "field trial and trial sell",
+          "do we launch?"
+        ],
+        [
+          "launch",
+          "roll out, track post-market",
+          "does it earn its shelf space?"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Any gate can kill the project; because cost rises sharply with each stage, the early gates are cheap and strict."
     },
     "programming-in-java--access-level-modifier": {
       "type": "table",
@@ -7724,6 +13000,1299 @@
       ],
       "note": "The with block closes the file when it exits, even if the write raises an exception."
     },
+    "quantitative-aptitude-and-logical-reasoning--alligation": {
+      "type": "derivation",
+      "title": "why the alligation ratio is (d - m) : (m - c)",
+      "steps": [
+        "c\\,q_{c}+d\\,q_{d}=m\\,(q_{c}+q_{d})",
+        "c\\,q_{c}+d\\,q_{d}=m\\,q_{c}+m\\,q_{d}",
+        "q_{c}(m-c)=q_{d}(d-m)",
+        "\\frac{q_{c}}{q_{d}}=\\frac{d-m}{m-c}"
+      ],
+      "symbols": [
+        [
+          "c",
+          "price per unit of the cheaper ingredient"
+        ],
+        [
+          "d",
+          "price per unit of the dearer ingredient"
+        ],
+        [
+          "m",
+          "price per unit of the mixture"
+        ],
+        [
+          "q_{c}",
+          "quantity taken from the cheaper ingredient"
+        ],
+        [
+          "q_{d}",
+          "quantity taken from the dearer ingredient"
+        ]
+      ],
+      "note": "The mixture must cost exactly what its parts cost, so how far each price sits from the mean fixes the ratio of quantities."
+    },
+    "quantitative-aptitude-and-logical-reasoning--argument": {
+      "type": "table",
+      "title": "parts of an argument and how each is tested",
+      "headers": [
+        "part",
+        "role",
+        "test to apply"
+      ],
+      "rows": [
+        [
+          "premise",
+          "statement offered as support",
+          "accept it as given, even if it is false"
+        ],
+        [
+          "conclusion",
+          "claim the argument wants accepted",
+          "must follow, not merely be plausible"
+        ],
+        [
+          "assumption",
+          "unstated premise the inference needs",
+          "negate it: if the conclusion collapses, it is an assumption"
+        ],
+        [
+          "inference",
+          "the step from premises to conclusion",
+          "watch for a term that appears only in the conclusion"
+        ],
+        [
+          "statement",
+          "a sentence that is true or false",
+          "exclude questions, commands and exclamations"
+        ]
+      ],
+      "highlight": 3,
+      "note": "The assumption is the part never written down, so the negation test is the only reliable way to expose it."
+    },
+    "quantitative-aptitude-and-logical-reasoning--cost-price": {
+      "type": "table",
+      "title": "profit and loss relations with CP = 200",
+      "headers": [
+        "quantity",
+        "relation",
+        "worked value"
+      ],
+      "rows": [
+        [
+          "marked price (MP)",
+          "list price before any discount",
+          "250"
+        ],
+        [
+          "discount",
+          "MP - SP",
+          "250 - 225 = 25"
+        ],
+        [
+          "selling price (SP)",
+          "MP - discount",
+          "225"
+        ],
+        [
+          "profit",
+          "SP - CP when SP exceeds CP",
+          "225 - 200 = 25"
+        ],
+        [
+          "profit %",
+          "(SP - CP) / CP x 100, always on CP",
+          "25 / 200 x 100 = 12.5%"
+        ],
+        [
+          "discount %",
+          "discount / MP x 100, always on MP",
+          "25 / 250 x 100 = 10%"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Profit and discount sit on different bases: profit on cost price, discount on marked price, so a discount can still leave a profit."
+    },
+    "quantitative-aptitude-and-logical-reasoning--natural-number": {
+      "type": "table",
+      "title": "the number sets and how they nest",
+      "headers": [
+        "set",
+        "symbol",
+        "members",
+        "example"
+      ],
+      "rows": [
+        [
+          "natural numbers",
+          "N",
+          "1, 2, 3, ...",
+          "7"
+        ],
+        [
+          "whole numbers",
+          "W",
+          "0, 1, 2, 3, ...",
+          "0"
+        ],
+        [
+          "integers",
+          "Z",
+          "..., -2, -1, 0, 1, 2, ...",
+          "-3"
+        ],
+        [
+          "rational numbers",
+          "Q",
+          "p/q with p, q integers and q not 0",
+          "3/4"
+        ],
+        [
+          "real numbers",
+          "R",
+          "all rational and irrational numbers",
+          "sqrt 2"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Each set contains every earlier one, so all natural numbers are whole numbers but not the reverse."
+    },
+    "quantitative-aptitude-and-logical-reasoning--opposite-faces": {
+      "type": "table",
+      "title": "counting facts that decide a cube question",
+      "headers": [
+        "quantity",
+        "value",
+        "how it is used"
+      ],
+      "rows": [
+        [
+          "faces",
+          "6",
+          "form three opposite pairs"
+        ],
+        [
+          "edges",
+          "12",
+          "each face shares an edge with 4 others"
+        ],
+        [
+          "corners",
+          "8",
+          "each corner touches 3 mutually adjacent faces"
+        ],
+        [
+          "faces adjacent to one face",
+          "4",
+          "all except the face itself and its opposite"
+        ],
+        [
+          "opposite pairs on a standard die",
+          "3",
+          "(1,6), (2,5) and (3,4) sum to 7"
+        ]
+      ],
+      "highlight": 4,
+      "note": "A face is adjacent to four of the other five, so one view can never identify its opposite; a second view is always needed."
+    },
+    "satellite-communication--frequency-division-multiple-access": {
+      "type": "table",
+      "title": "multiple access compared",
+      "headers": [
+        "scheme",
+        "resource split",
+        "guard",
+        "capacity limit"
+      ],
+      "rows": [
+        [
+          "FDMA",
+          "one carrier per user",
+          "band gap between carriers",
+          "N ~ B_tot / (B_i + B_g)"
+        ],
+        [
+          "TDMA",
+          "one time slot per user",
+          "time gap between slots",
+          "N_slot per frame, set by burst rate"
+        ],
+        [
+          "CDMA",
+          "one code per user, shared carrier",
+          "none; codes are orthogonal",
+          "N ~ G_p / (E_b/N_0)_req"
+        ]
+      ],
+      "highlight": 1,
+      "note": "FDMA spends bandwidth on guard bands, TDMA spends time on guard intervals, and CDMA spends bandwidth on spreading codes instead of either."
+    },
+    "satellite-communication--geostationary-transfer-orbit": {
+      "type": "derivation",
+      "title": "two Hohmann burns into GEO",
+      "steps": [
+        "a_{t}=\\frac{r_{p}+r_{a}}{2},\\quad v_{p}=\\sqrt{\\mu\\left(\\frac{2}{r_{p}}-\\frac{1}{a_{t}}\\right)}=10.15\\ \\text{km/s}",
+        "v_{c,p}=\\sqrt{\\frac{\\mu}{r_{p}}}=7.73\\ \\text{km/s}\\;\\Rightarrow\\;\\Delta v_{1}=10.15-7.73=2.43\\ \\text{km/s}",
+        "v_{a}=\\sqrt{\\mu\\left(\\frac{2}{r_{a}}-\\frac{1}{a_{t}}\\right)}=1.61\\ \\text{km/s},\\quad v_{c,a}=\\sqrt{\\frac{\\mu}{r_{a}}}=3.07\\ \\text{km/s}",
+        "\\Delta v_{2}=3.07-1.61=1.47\\ \\text{km/s},\\quad \\Delta v_{\\text{tot}}=3.90\\ \\text{km/s}"
+      ],
+      "symbols": [
+        [
+          "r_{p}",
+          "perigee radius, 6,678 km here"
+        ],
+        [
+          "r_{a}",
+          "apogee radius, 42,164 km here"
+        ],
+        [
+          "a_{t}",
+          "transfer-orbit semi-major axis"
+        ],
+        [
+          "\\mu",
+          "Earth gravitational parameter"
+        ]
+      ],
+      "note": "The first burn raises apogee from a 300 km parking orbit and the second circularises at GEO; the two burns together cost 3.90 km/s."
+    },
+    "satellite-communication--gps": {
+      "type": "table",
+      "title": "GPS signals and their chip rates",
+      "headers": [
+        "signal",
+        "carrier (MHz)",
+        "code rate (Mchip/s)",
+        "data (bit/s)"
+      ],
+      "rows": [
+        [
+          "L1 C/A",
+          "1575.42",
+          "1.023",
+          "50"
+        ],
+        [
+          "L1 P(Y)",
+          "1575.42",
+          "10.23",
+          "50"
+        ],
+        [
+          "L2 P(Y)",
+          "1227.60",
+          "10.23",
+          "50"
+        ],
+        [
+          "L2C",
+          "1227.60",
+          "1.023",
+          "25"
+        ],
+        [
+          "L5",
+          "1176.45",
+          "10.23",
+          "50"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Every rate derives from the 10.23 MHz master clock: C/A is a tenth of it, which is why its 1,023 chips repeat in exactly 1 ms."
+    },
+    "satellite-communication--kepler-s-third-law": {
+      "type": "derivation",
+      "title": "period from the circular force balance",
+      "steps": [
+        "\\frac{\\mu m}{r^{2}}=\\frac{mv^{2}}{r}\\;\\Rightarrow\\;v^{2}=\\frac{\\mu}{r}",
+        "T=\\frac{2\\pi r}{v}=2\\pi\\sqrt{\\frac{r^{3}}{\\mu}}",
+        "T^{2}=\\frac{4\\pi^{2}}{\\mu}r^{3}\\;\\Rightarrow\\;T^{2}=\\frac{4\\pi^{2}}{\\mu}a^{3}\\ \\text{for an ellipse}",
+        "a=42{,}164\\ \\text{km},\\ \\mu=3.986\\times10^{5}\\ \\text{km}^{3}/\\text{s}^{2}\\;\\Rightarrow\\;T=86{,}164\\ \\text{s}"
+      ],
+      "symbols": [
+        [
+          "\\mu",
+          "gravitational parameter of the primary"
+        ],
+        [
+          "a",
+          "semi-major axis"
+        ],
+        [
+          "r",
+          "radius of the circular orbit"
+        ],
+        [
+          "T",
+          "orbital period"
+        ]
+      ],
+      "note": "The pull supplies the centripetal force; squaring the circular result gives the general ellipse law, and a = 42,164 km returns one sidereal day."
+    },
+    "satellite-communication--link-budget": {
+      "type": "derivation",
+      "title": "worked Ku-band downlink carrier-to-noise",
+      "steps": [
+        "P_{T}=20\\ \\text{dBW},\\ G_{T}=40\\ \\text{dBi}\\;\\Rightarrow\\;\\text{EIRP}=60\\ \\text{dBW}",
+        "L_{\\text{fs}}=20\\log_{10}\\frac{4\\pi d}{\\lambda},\\quad d=3.8\\times10^{7}\\ \\text{m},\\ \\lambda=0.025\\ \\text{m}",
+        "L_{\\text{fs}}=20\\log_{10}\\left(1.91\\times10^{10}\\right)=205.6\\ \\text{dB}",
+        "C/N_{0}=\\text{EIRP}-L_{\\text{fs}}+G/T-k=60-205.6+30+228.6=113.0\\ \\text{dBHz}"
+      ],
+      "symbols": [
+        [
+          "EIRP",
+          "transmit power plus antenna gain"
+        ],
+        [
+          "L_{\\text{fs}}",
+          "free-space path loss"
+        ],
+        [
+          "G/T",
+          "receive antenna gain over system noise temperature, 30 dB/K"
+        ],
+        [
+          "k",
+          "Boltzmann constant, -228.6 dBW/K/Hz"
+        ],
+        [
+          "C/N_{0}",
+          "carrier power over noise density"
+        ]
+      ],
+      "note": "Across a 36 MHz transponder the 113 dBHz density becomes C/N = 113 - 75.4 = 37.6 dB, far above the roughly 10 dB a QPSK link needs."
+    },
+    "satellite-communication--low-earth-orbit": {
+      "type": "table",
+      "title": "orbit classes at a glance",
+      "headers": [
+        "class",
+        "altitude (km)",
+        "period",
+        "one-way delay",
+        "coverage per satellite"
+      ],
+      "rows": [
+        [
+          "LEO",
+          "500 - 2,000",
+          "95 - 127 min",
+          "1.7 - 6.7 ms",
+          "minutes"
+        ],
+        [
+          "MEO",
+          "20,200",
+          "718 min",
+          "67 ms",
+          "about 5 h"
+        ],
+        [
+          "GEO",
+          "35,786",
+          "1,436 min",
+          "120 ms",
+          "continuous"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Raising the orbit lengthens the period and the delay, but each satellite covers a bigger cap, so GEO needs three and LEO needs dozens."
+    },
+    "satellite-communication--parabolic-antenna": {
+      "type": "derivation",
+      "title": "gain and beamwidth of a dish",
+      "steps": [
+        "A=\\frac{\\pi D^{2}}{4},\\quad G=\\eta\\frac{4\\pi A}{\\lambda^{2}}=\\eta\\left(\\frac{\\pi D}{\\lambda}\\right)^{2}",
+        "D=3\\ \\text{m},\\ \\lambda=0.025\\ \\text{m}\\;\\Rightarrow\\;\\frac{\\pi D}{\\lambda}=377",
+        "G=0.65\\times377^{2}=9.24\\times10^{4}\\;\\Rightarrow\\;49.7\\ \\text{dBi}",
+        "\\theta_{3\\,\\text{dB}}\\approx\\frac{70^{\\circ}\\lambda}{D}=\\frac{70^{\\circ}\\times0.025}{3}=0.58^{\\circ}"
+      ],
+      "symbols": [
+        [
+          "D",
+          "dish diameter"
+        ],
+        [
+          "\\lambda",
+          "wavelength"
+        ],
+        [
+          "\\eta",
+          "aperture efficiency"
+        ],
+        [
+          "\\theta_{3\\,\\text{dB}}",
+          "half-power beamwidth"
+        ]
+      ],
+      "note": "At Ku band a 3 m dish gives about 50 dBi in a 0.58 degree beam; the same dish at 4 GHz loses roughly 10 dB and spreads three times wider."
+    },
+    "satellite-communication--position-location": {
+      "type": "derivation",
+      "title": "linearising the pseudorange equations",
+      "steps": [
+        "\\rho_{i}=\\sqrt{(x-x_{i})^{2}+(y-y_{i})^{2}+(z-z_{i})^{2}}+b,\\quad i=1,\\dots,n",
+        "\\Delta\\rho_{i}=\\frac{x-x_{i}}{r_{i}}\\Delta x+\\frac{y-y_{i}}{r_{i}}\\Delta y+\\frac{z-z_{i}}{r_{i}}\\Delta z+\\Delta b",
+        "H\\,\\Delta\\mathbf{x}=\\Delta\\boldsymbol{\\rho},\\quad \\text{row }i\\text{ of }H=\\left[\\mathbf{u}_{i}^{\\mathsf{T}}\\ 1\\right]",
+        "\\Delta\\mathbf{x}=\\left(H^{\\mathsf{T}}H\\right)^{-1}H^{\\mathsf{T}}\\Delta\\boldsymbol{\\rho},\\quad n\\ge4"
+      ],
+      "symbols": [
+        [
+          "\\rho_{i}",
+          "measured pseudorange to satellite i"
+        ],
+        [
+          "r_{i}",
+          "true geometric range"
+        ],
+        [
+          "b",
+          "receiver clock bias c dt_r"
+        ],
+        [
+          "H",
+          "geometry matrix of line-of-sight vectors"
+        ],
+        [
+          "\\mathbf{u}_{i}",
+          "unit line-of-sight vector"
+        ]
+      ],
+      "note": "Each satellite gives one equation in four unknowns x, y, z and b; four make the linearised system square and extra satellites overdetermine it."
+    },
+    "signals-and-systems--convolution": {
+      "type": "derivation",
+      "title": "Convolution from shifted impulses",
+      "steps": [
+        "x(t)\\approx\\sum_{k}x(k\\Delta)\\,\\delta(t-k\\Delta)\\,\\Delta",
+        "y(t)=T\\Big\\{\\sum_{k}x(k\\Delta)\\Delta\\,\\delta(t-k\\Delta)\\Big\\}=\\sum_{k}x(k\\Delta)\\Delta\\,h(t-k\\Delta)",
+        "\\Delta\\to0:\\quad y(t)=\\int_{-\\infty}^{\\infty}x(\\tau)\\,h(t-\\tau)\\,d\\tau"
+      ],
+      "symbols": [
+        [
+          "\\Delta",
+          "sample spacing, taken to zero"
+        ],
+        [
+          "k\\Delta",
+          "dummy time tau in the limit"
+        ],
+        [
+          "h(t)",
+          "impulse response of the LTI system"
+        ]
+      ],
+      "note": "Linearity lets the sum pass through T, and time invariance turns each shifted impulse into a shifted h; the integral is the limit of that sum."
+    },
+    "signals-and-systems--convolution-property-ft": {
+      "type": "derivation",
+      "title": "Why convolution becomes multiplication",
+      "steps": [
+        "Y(j\\omega)=\\int_{-\\infty}^{\\infty}\\left[\\int_{-\\infty}^{\\infty}x(\\tau)h(t-\\tau)\\,d\\tau\\right]e^{-j\\omega t}\\,dt",
+        "\\text{swap the order:}\\quad =\\int_{-\\infty}^{\\infty}x(\\tau)\\left[\\int_{-\\infty}^{\\infty}h(t-\\tau)e^{-j\\omega t}\\,dt\\right]d\\tau",
+        "\\sigma=t-\\tau:\\quad \\int h(\\sigma)e^{-j\\omega(\\sigma+\\tau)}d\\sigma=e^{-j\\omega\\tau}H(j\\omega)",
+        "Y(j\\omega)=\\int x(\\tau)e^{-j\\omega\\tau}d\\tau\\cdot H(j\\omega)=X(j\\omega)\\,H(j\\omega)"
+      ],
+      "symbols": [
+        [
+          "\\tau",
+          "convolution lag"
+        ],
+        [
+          "\\sigma",
+          "shifted time variable"
+        ],
+        [
+          "H(j\\omega)",
+          "Fourier transform of h(t)"
+        ]
+      ],
+      "note": "The delay in h(t - tau) factors out as a pure exponential, so the outer integral collapses to X(jw) times H(jw)."
+    },
+    "signals-and-systems--fourier-transform": {
+      "type": "table",
+      "title": "Fourier transform pairs worth knowing cold",
+      "headers": [
+        "x(t)",
+        "X(jω)",
+        "reading"
+      ],
+      "rows": [
+        [
+          "δ(t)",
+          "1",
+          "probe: all frequencies, equal weight"
+        ],
+        [
+          "1",
+          "2πδ(ω)",
+          "DC is a single spectral line"
+        ],
+        [
+          "rect(t/τ)",
+          "τ sinc(ωτ/2)",
+          "pulse and sinc are a pair"
+        ],
+        [
+          "e^(−at)u(t)",
+          "1/(a + jω)",
+          "one-pole lowpass, a > 0"
+        ],
+        [
+          "u(t)",
+          "πδ(ω) + 1/(jω)",
+          "step keeps its DC impulse"
+        ],
+        [
+          "cos ω₀t",
+          "π[δ(ω − ω₀) + δ(ω + ω₀)]",
+          "two lines at ±ω₀"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Because the transform is linear, these prototypes plus the shift and modulation rules cover most textbook signals."
+    },
+    "signals-and-systems--laplace-transform": {
+      "type": "derivation",
+      "title": "Why differentiation becomes multiplication",
+      "steps": [
+        "\\mathcal{L}\\{x'(t)\\}=\\int_{0^{-}}^{\\infty}x'(t)\\,e^{-st}dt",
+        "=\\Big[x(t)e^{-st}\\Big]_{0^{-}}^{\\infty}+s\\int_{0^{-}}^{\\infty}x(t)e^{-st}dt",
+        "=0-x(0^{-})+sX(s)",
+        "\\mathcal{L}\\{x'(t)\\}=sX(s)-x(0^{-})"
+      ],
+      "symbols": [
+        [
+          "s",
+          "complex frequency"
+        ],
+        [
+          "x(0^{-})",
+          "initial value left by the boundary term"
+        ],
+        [
+          "X(s)",
+          "Laplace transform of x(t)"
+        ]
+      ],
+      "note": "Integration by parts leaves the initial condition behind, which is why a transformed ODE is algebraic with x(0) as known data."
+    },
+    "signals-and-systems--roc": {
+      "type": "table",
+      "title": "Same X(s), different ROC",
+      "headers": [
+        "x(t)",
+        "X(s)",
+        "ROC"
+      ],
+      "rows": [
+        [
+          "δ(t)",
+          "1",
+          "all s"
+        ],
+        [
+          "u(t)",
+          "1/s",
+          "Re s > 0"
+        ],
+        [
+          "−u(−t)",
+          "1/s",
+          "Re s < 0"
+        ],
+        [
+          "e^(−at)u(t)",
+          "1/(s + a)",
+          "Re s > −a"
+        ],
+        [
+          "−e^(−at)u(−t)",
+          "1/(s + a)",
+          "Re s < −a"
+        ],
+        [
+          "t u(t)",
+          "1/s²",
+          "Re s > 0"
+        ],
+        [
+          "e^(−at)cos ω₀t u(t)",
+          "(s + a)/((s + a)² + ω₀²)",
+          "Re s > −a"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Rows 4 and 5 share one X(s); only the ROC says whether the inverse is right-sided or left-sided."
+    },
+    "signals-and-systems--sampling-theorem": {
+      "type": "derivation",
+      "title": "Spectrum of the sampled signal",
+      "steps": [
+        "x_{s}(t)=x(t)\\sum_{n=-\\infty}^{\\infty}\\delta(t-nT_{s})",
+        "X_{s}(j\\omega)=\\frac{1}{T_{s}}\\sum_{k=-\\infty}^{\\infty}X\\big(j(\\omega-k\\omega_{s})\\big),\\quad \\omega_{s}=\\frac{2\\pi}{T_{s}}",
+        "\\text{each replica is }2\\omega_{m}\\text{ wide, centred at }k\\omega_{s}",
+        "\\text{no overlap}:\\quad \\omega_{s}-\\omega_{m}>\\omega_{m}\\ \\Rightarrow\\ \\omega_{s}>2\\omega_{m}"
+      ],
+      "symbols": [
+        [
+          "T_{s}",
+          "sampling interval"
+        ],
+        [
+          "\\omega_{s}",
+          "sampling angular frequency 2 pi / Ts"
+        ],
+        [
+          "\\omega_{m}",
+          "highest frequency in x(t)"
+        ]
+      ],
+      "note": "Multiplying by the impulse train convolves the spectrum with impulses at k times ws, tiling copies; the 2fm limit is the no-overlap condition."
+    },
+    "signals-and-systems--z-transform": {
+      "type": "derivation",
+      "title": "Geometric series to a pole at z = a",
+      "steps": [
+        "X(z)=\\sum_{n=0}^{\\infty}a^{n}z^{-n}=\\sum_{n=0}^{\\infty}\\left(az^{-1}\\right)^{n}",
+        "=\\frac{1}{1-az^{-1}}=\\frac{z}{z-a}",
+        "\\text{ratio test}:\\quad |az^{-1}|<1\\ \\Rightarrow\\ |z|>|a|"
+      ],
+      "symbols": [
+        [
+          "a",
+          "geometric ratio, and a pole of X(z)"
+        ],
+        [
+          "z",
+          "complex frequency variable"
+        ]
+      ],
+      "note": "The convergence condition of the geometric series is exactly the ROC, and its boundary |z| = |a| is the pole circle."
+    },
+    "software-defined-radio--aliasing": {
+      "type": "derivation",
+      "title": "undersampling GPS L1 at 100 MS/s",
+      "steps": [
+        "f_{a}=\\left|f_{0}-kf_{s}\\right|,\\quad k=\\operatorname{round}\\frac{f_{0}}{f_{s}}=16",
+        "f_{0}=1575.42\\ \\text{MHz},\\quad f_{s}=100\\ \\text{MHz}",
+        "f_{a}=\\left|1575.42-1600\\right|=24.58\\ \\text{MHz}<\\frac{f_{s}}{2}",
+        "\\text{band }1575.42\\pm1.023\\ \\text{MHz folds to }24.58\\pm1.023\\ \\text{MHz}"
+      ],
+      "symbols": [
+        [
+          "f_{0}",
+          "RF carrier frequency"
+        ],
+        [
+          "f_{s}",
+          "sampling rate"
+        ],
+        [
+          "k",
+          "integer number of folds"
+        ],
+        [
+          "f_{a}",
+          "alias frequency in the first Nyquist zone"
+        ]
+      ],
+      "note": "Sampling at 100 MHz folds the 1575.42 MHz carrier to 24.58 MHz, so a digital down-converter can tune a band far above Nyquist."
+    },
+    "software-defined-radio--direct-digital-synthesis": {
+      "type": "derivation",
+      "title": "control word to output frequency",
+      "steps": [
+        "\\Delta\\phi=\\frac{2\\pi\\,\\text{FCW}}{2^{N}}\\ \\text{rad per reference clock}",
+        "\\text{one period}=\\frac{2\\pi}{\\Delta\\phi}=\\frac{2^{N}}{\\text{FCW}}\\ \\text{clocks}",
+        "f_{\\text{out}}=\\frac{\\text{FCW}}{2^{N}}f_{c}",
+        "N=32,\\ f_{c}=100\\ \\text{MHz}\\;\\Rightarrow\\;\\Delta f=\\frac{10^{8}}{2^{32}}=0.0233\\ \\text{Hz}"
+      ],
+      "symbols": [
+        [
+          "FCW",
+          "frequency control word"
+        ],
+        [
+          "N",
+          "phase accumulator width in bits"
+        ],
+        [
+          "f_{c}",
+          "reference clock frequency"
+        ],
+        [
+          "\\Delta f",
+          "tuning step"
+        ]
+      ],
+      "note": "The accumulator wraps at 2^32, so the output frequency is simply the fraction of full scale selected by the control word."
+    },
+    "software-defined-radio--dynamic-range": {
+      "type": "derivation",
+      "title": "dynamic range from converter bits",
+      "steps": [
+        "P_{\\text{FS}}=\\frac{(V_{\\text{FS}}/2)^{2}}{2R}=\\frac{V_{\\text{FS}}^{2}}{8R}",
+        "P_{q}=\\frac{\\Delta^{2}}{12R},\\quad \\Delta=\\frac{V_{\\text{FS}}}{2^{M}}",
+        "\\text{DR}=10\\log_{10}\\frac{P_{\\text{FS}}}{P_{q}}=10\\log_{10}\\left(\\frac{3}{2}\\,2^{2M}\\right)",
+        "\\text{DR}=6.02M+1.76\\ \\text{dB}"
+      ],
+      "symbols": [
+        [
+          "V_{\\text{FS}}",
+          "full-scale voltage"
+        ],
+        [
+          "\\Delta",
+          "one least significant bit"
+        ],
+        [
+          "M",
+          "converter resolution in bits"
+        ],
+        [
+          "R",
+          "load resistance"
+        ]
+      ],
+      "note": "Each extra bit halves the step and adds 6.02 dB; the 1.76 dB offset comes from the 3/2 ratio of full-scale sine power to quantisation noise."
+    },
+    "software-defined-radio--fixed-point-processor": {
+      "type": "table",
+      "title": "fixed-point Q formats",
+      "headers": [
+        "format",
+        "total bits",
+        "range",
+        "LSB"
+      ],
+      "rows": [
+        [
+          "Q1.15",
+          "16",
+          "-1 to +0.99997",
+          "3.05e-5"
+        ],
+        [
+          "Q1.31",
+          "32",
+          "-1 to +1 - 2^-31",
+          "4.66e-10"
+        ],
+        [
+          "Q3.13",
+          "16",
+          "-4 to +3.99988",
+          "1.22e-4"
+        ],
+        [
+          "Q0.15 unsigned",
+          "16",
+          "0 to 0.99997",
+          "3.05e-5"
+        ]
+      ],
+      "highlight": 1,
+      "note": "One sign bit and F fraction bits give a step of 2^-F; overflow wraps or saturates, so scaling must precede each multiply-accumulate."
+    },
+    "software-defined-radio--flash-converter": {
+      "type": "table",
+      "title": "ADC architectures compared",
+      "headers": [
+        "architecture",
+        "resolution",
+        "speed",
+        "latency",
+        "typical use"
+      ],
+      "rows": [
+        [
+          "flash",
+          "6 - 8 bit",
+          "GS/s",
+          "one cycle",
+          "oscilloscopes, SDR front ends"
+        ],
+        [
+          "SAR",
+          "12 - 18 bit",
+          "MS/s",
+          "N cycles",
+          "general purpose, low power"
+        ],
+        [
+          "pipeline",
+          "12 - 16 bit",
+          "100 MS/s",
+          "a few cycles",
+          "video and IF sampling"
+        ],
+        [
+          "sigma-delta",
+          "16 - 24 bit",
+          "kS/s",
+          "many cycles",
+          "audio, instrumentation"
+        ]
+      ],
+      "highlight": 1,
+      "note": "Flash spends 2^M - 1 comparators on a one-cycle conversion; the other architectures trade latency or oversampling for resolution."
+    },
+    "software-defined-radio--lookup-table": {
+      "type": "table",
+      "title": "4-input LUT holding y = ab + cd",
+      "headers": [
+        "address abcd",
+        "stored bit"
+      ],
+      "rows": [
+        [
+          "0000",
+          "0"
+        ],
+        [
+          "0001",
+          "0"
+        ],
+        [
+          "0010",
+          "0"
+        ],
+        [
+          "0011",
+          "1"
+        ],
+        [
+          "0100",
+          "0"
+        ],
+        [
+          "0101",
+          "0"
+        ],
+        [
+          "0110",
+          "0"
+        ],
+        [
+          "0111",
+          "1"
+        ],
+        [
+          "1000",
+          "0"
+        ],
+        [
+          "1001",
+          "0"
+        ],
+        [
+          "1010",
+          "0"
+        ],
+        [
+          "1011",
+          "1"
+        ],
+        [
+          "1100",
+          "1"
+        ],
+        [
+          "1101",
+          "1"
+        ],
+        [
+          "1110",
+          "1"
+        ],
+        [
+          "1111",
+          "1"
+        ]
+      ],
+      "highlight": 13,
+      "note": "The 16 SRAM bits are the truth table: a 4-input LUT realises any function of four variables, and a multiplexer selects the addressed bit."
+    },
+    "software-defined-radio--software-defined-radio": {
+      "type": "table",
+      "title": "SDR platforms and their front ends",
+      "headers": [
+        "platform",
+        "ADC bits",
+        "max rate",
+        "tuning range",
+        "duplex"
+      ],
+      "rows": [
+        [
+          "RTL-SDR (R820T2)",
+          "8",
+          "2.4 MS/s",
+          "24 - 1766 MHz",
+          "receive only"
+        ],
+        [
+          "HackRF One",
+          "8",
+          "20 MS/s",
+          "1 MHz - 6 GHz",
+          "half duplex"
+        ],
+        [
+          "ADALM-PLUTO",
+          "12",
+          "61 MS/s",
+          "325 MHz - 3.8 GHz",
+          "full duplex"
+        ],
+        [
+          "USRP B210",
+          "12",
+          "56 MS/s",
+          "70 MHz - 6 GHz",
+          "2 x 2 full duplex"
+        ]
+      ],
+      "highlight": 1,
+      "note": "An 8-bit front end sees about 50 dB of dynamic range; 12 bits adds roughly 24 dB, which is why weak-signal work starts at 12 bits."
+    },
+    "system-on-chip-architecture--amba": {
+      "type": "table",
+      "title": "AMBA protocol family",
+      "headers": [
+        "protocol",
+        "data width",
+        "key property"
+      ],
+      "rows": [
+        [
+          "APB",
+          "32 bit",
+          "low-power peripheral registers, no bursts"
+        ],
+        [
+          "AHB-Lite",
+          "64-1024 bit",
+          "single master, pipelined bursts"
+        ],
+        [
+          "AHB",
+          "64-1024 bit",
+          "multi-master with a central arbiter and mux"
+        ],
+        [
+          "AXI",
+          "8-1024 bit",
+          "separate address and data channels, outstanding bursts"
+        ],
+        [
+          "ACE",
+          "8-1024 bit",
+          "AXI plus hardware cache coherency between masters"
+        ],
+        [
+          "CHI",
+          "packetized",
+          "coherent, scalable mesh for many cores"
+        ]
+      ],
+      "highlight": 4,
+      "note": "The family trades complexity for parallelism: APB has no bursts, AHB grants one master at a time, and AXI overlaps address with data."
+    },
+    "system-on-chip-architecture--axi": {
+      "type": "sequence",
+      "title": "AXI read burst over separate channels",
+      "actors": [
+        "master",
+        "slave"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "ARADDR, ARLEN = 3 on the read address channel"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "ARREADY accepts the burst"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "RVALID + RDATA beat 1, RLAST = 0"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "beats 2-4, RLAST = 1 on the last"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "next ARADDR issued before the data returns"
+        }
+      ],
+      "note": "Address and data travel on different channels, so the master can queue the next burst while the current one is still arriving."
+    },
+    "system-on-chip-architecture--bimodal-branch-prediction": {
+      "type": "table",
+      "title": "2-bit saturating counter transitions",
+      "headers": [
+        "state",
+        "meaning",
+        "prediction",
+        "on taken",
+        "on not taken"
+      ],
+      "rows": [
+        [
+          "00",
+          "strongly not taken",
+          "not taken",
+          "01",
+          "00"
+        ],
+        [
+          "01",
+          "weakly not taken",
+          "not taken",
+          "10",
+          "00"
+        ],
+        [
+          "10",
+          "weakly taken",
+          "taken",
+          "11",
+          "01"
+        ],
+        [
+          "11",
+          "strongly taken",
+          "taken",
+          "11",
+          "10"
+        ]
+      ],
+      "highlight": 2,
+      "note": "The extra bit provides hysteresis: one loop exit does not flip a strongly taken branch, so a single anomaly is absorbed."
+    },
+    "system-on-chip-architecture--direct-mapped-cache": {
+      "type": "code",
+      "lang": "c",
+      "title": "splitting an address into tag, index and offset",
+      "lines": [
+        "/* 32 KiB cache, 64 B lines: 512 lines, 6 offset bits, 9 index bits */",
+        "#define OFF_BITS 6",
+        "#define IDX_BITS 9",
+        "",
+        "uint32_t tag    = addr >> (OFF_BITS + IDX_BITS);          /* 17 bits */",
+        "uint32_t index  = (addr >> OFF_BITS) & ((1u << IDX_BITS) - 1);",
+        "uint32_t offset = addr & ((1u << OFF_BITS) - 1);"
+      ],
+      "highlight": [
+        6
+      ],
+      "note": "The index selects the only line the block may occupy, so lookup is one equality test on the tag instead of a search."
+    },
+    "system-on-chip-architecture--jpeg": {
+      "type": "table",
+      "title": "JPEG encode stages and where quality is lost",
+      "headers": [
+        "stage",
+        "operation",
+        "lossy?"
+      ],
+      "rows": [
+        [
+          "colour transform",
+          "RGB to Y, Cb, Cr",
+          "no"
+        ],
+        [
+          "chroma subsampling",
+          "Cb and Cr at quarter resolution (4:2:0)",
+          "yes, colour detail"
+        ],
+        [
+          "level shift and split",
+          "subtract 128, cut into 8x8 blocks",
+          "no"
+        ],
+        [
+          "forward DCT",
+          "64 pixels become 64 frequency coefficients",
+          "no"
+        ],
+        [
+          "quantisation",
+          "divide each coefficient by Q(u,v) and round",
+          "yes, the main loss"
+        ],
+        [
+          "entropy coding",
+          "zigzag scan, then Huffman",
+          "no"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Only subsampling and quantisation discard information; everything after them is a reversible recoding of what survived."
+    },
+    "system-on-chip-architecture--load-store-architecture": {
+      "type": "code",
+      "lang": "arm",
+      "title": "adding two memory values the load-store way",
+      "lines": [
+        "        LDR   r0, [r1]        ; r0 = mem[r1]      load",
+        "        LDR   r2, [r3]        ; r2 = mem[r3]      load",
+        "        ADD   r4, r0, r2      ; r4 = r0 + r2      register operands only",
+        "        STR   r4, [r5]        ; mem[r5] = r4      store"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "Only LDR and STR reach memory, which is what lets every instruction keep the same length and a fixed decode cost."
+    },
+    "system-on-chip-architecture--program-status-word": {
+      "type": "table",
+      "title": "condition flags in an ARM program status word",
+      "headers": [
+        "flag",
+        "CPSR bit",
+        "set when"
+      ],
+      "rows": [
+        [
+          "N",
+          "31",
+          "the result is negative, i.e. its top bit is 1"
+        ],
+        [
+          "Z",
+          "30",
+          "the result is zero"
+        ],
+        [
+          "C",
+          "29",
+          "an add carries out, or a subtract does not borrow"
+        ],
+        [
+          "V",
+          "28",
+          "a signed result overflows the register width"
+        ],
+        [
+          "Q",
+          "27",
+          "saturating arithmetic clamped the result (sticky)"
+        ],
+        [
+          "T",
+          "5",
+          "the core is executing Thumb-state instructions"
+        ]
+      ],
+      "highlight": 3,
+      "note": "A conditional branch is only a test on these flags, so one compare can drive BNE, BCS or BVS without touching the ALU again."
+    },
+    "system-on-chip-architecture--tomasulo-s-algorithm": {
+      "type": "code",
+      "lang": "pseudo",
+      "title": "Tomasulo issue and wake-up",
+      "lines": [
+        "for each issued instruction:",
+        "    rs = a free reservation station",
+        "    if regstat[src1] == 0: rs.Vj = reg[src1]  else: rs.Qj = regstat[src1]",
+        "    if regstat[src2] == 0: rs.Vk = reg[src2]  else: rs.Qk = regstat[src2]",
+        "    regstat[dest] = rs",
+        "wait until Qj and Qk are both cleared, then execute",
+        "broadcast (station, result); every waiting station copies it into V"
+      ],
+      "highlight": [
+        3
+      ],
+      "note": "An unavailable operand becomes the name of the station that will produce it, so the instruction waits on a producer instead of a register."
+    },
+    "universal-human-values--four-orders-of-nature": {
+      "type": "table",
+      "title": "the four orders and what separates them",
+      "headers": [
+        "order",
+        "examples",
+        "activity",
+        "distinguishing capability"
+      ],
+      "rows": [
+        [
+          "physical",
+          "soil, water, air, metal",
+          "composition and decomposition",
+          "no self-awareness"
+        ],
+        [
+          "pranic (bio)",
+          "plants, trees, vegetation",
+          "growth, respiration, reproduction",
+          "no self-awareness, but nurtures others"
+        ],
+        [
+          "animal",
+          "animals, birds, insects",
+          "eating, moving, reproducing by instinct",
+          "has self-awareness, but only instinct"
+        ],
+        [
+          "human",
+          "human beings",
+          "physical activity plus knowing and assuming",
+          "can know co-existence and choose to act on it"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Only the human order can know and choose; the other three fulfil their role in the whole without needing to understand it."
+    },
+    "universal-human-values--needs-of-self-and-body": {
+      "type": "table",
+      "title": "the two kinds of need",
+      "headers": [
+        "aspect",
+        "Self (I)",
+        "Body"
+      ],
+      "rows": [
+        [
+          "need",
+          "continuous happiness",
+          "physical facility"
+        ],
+        [
+          "duration",
+          "continuous, once understood it remains",
+          "temporary, must be replenished"
+        ],
+        [
+          "fulfilled by",
+          "right understanding and right feeling",
+          "food, clothing, shelter, instruments"
+        ],
+        [
+          "quantity",
+          "not a quantity, no upper limit",
+          "limited and measurable"
+        ],
+        [
+          "belongs to",
+          "the Self itself",
+          "matter"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Confusing the two is what makes people chase physical facility for happiness, which the body's temporary satisfaction cannot supply."
+    },
     "vlsi-physical-design--asic": {
       "type": "table",
       "title": "ASIC implementation styles",
@@ -8401,8 +14970,8 @@
         "label": "magnetic field"
       },
       {
-        "x": 190,
-        "y": 88,
+        "x": 200,
+        "y": 76,
         "label": "propagation axis"
       },
       {
@@ -8414,7 +14983,7 @@
     "linked-list": [
       {
         "x": 18,
-        "y": 60,
+        "y": 69,
         "label": "head"
       },
       {
@@ -8610,7 +15179,7 @@
       },
       {
         "x": 60,
-        "y": 16,
+        "y": 55,
         "label": "client"
       }
     ],

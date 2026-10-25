@@ -19,7 +19,8 @@
       "unitTitle": "Fundamental Parameters of Antennas",
       "sources": [
         "awp-unit-1#p.20"
-      ]
+      ],
+      "artifact": "antennas-and-wave-propagations--hertzian-dipole"
     },
     {
       "id": "radiation-mechanism",
@@ -42,7 +43,8 @@
       "sources": [
         "awp-unit-1#p.26"
       ],
-      "diagram": "tx-line"
+      "diagram": "tx-line",
+      "artifact": "antennas-and-wave-propagations--antenna"
     },
     {
       "id": "radiation-pattern",
@@ -146,7 +148,8 @@
       "sources": [
         "awp-unit-1#p.45"
       ],
-      "diagram": "em-wave"
+      "diagram": "em-wave",
+      "artifact": "antennas-and-wave-propagations--polarization"
     },
     {
       "id": "linear-polarization",
@@ -202,7 +205,8 @@
       "unitTitle": "Fundamental Parameters of Antennas",
       "sources": [
         "awp-unit-1#p.55"
-      ]
+      ],
+      "artifact": "antennas-and-wave-propagations--directivity"
     },
     {
       "id": "antenna-gain",
@@ -248,7 +252,8 @@
       "sources": [
         "awp-unit-1#p.62"
       ],
-      "diagram": "link-budget"
+      "diagram": "link-budget",
+      "artifact": "antennas-and-wave-propagations--effective-aperture"
     },
     {
       "id": "antenna-efficiency",
@@ -295,7 +300,8 @@
       "sources": [
         "awp-unit-2-part-2#p.3"
       ],
-      "diagram": "antenna-array"
+      "diagram": "antenna-array",
+      "artifact": "antennas-and-wave-propagations--antenna-array"
     },
     {
       "id": "broadside-array",
@@ -318,7 +324,8 @@
       "unitTitle": "Linear Wire Antennas and Arrays",
       "sources": [
         "awp-unit-2-part-2#p.28"
-      ]
+      ],
+      "artifact": "antennas-and-wave-propagations--end-fire-array"
     },
     {
       "id": "binomial-array",
@@ -550,7 +557,8 @@
       "unitTitle": "Ionospheric Propagation",
       "sources": [
         "awp-unit-3#slide.16"
-      ]
+      ],
+      "artifact": "antennas-and-wave-propagations--muf"
     },
     {
       "id": "skip-distance",

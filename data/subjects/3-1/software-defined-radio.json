@@ -20,7 +20,8 @@
       "unitTitle": "Introduction to Software Radio",
       "sources": [
         "sdr-wikipedia-software-defined-radio#para.1"
-      ]
+      ],
+      "artifact": "software-defined-radio--software-defined-radio"
     },
     {
       "id": "waveform",
@@ -112,7 +113,8 @@
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
         "sdr-wikipedia-dynamic-range#para.1"
-      ]
+      ],
+      "artifact": "software-defined-radio--dynamic-range"
     },
     {
       "id": "noise-floor",
@@ -240,7 +242,8 @@
       "unitTitle": "Digital Hardware for Software Radio",
       "sources": [
         "sdr-wikipedia-digital-signal-processor#para.30"
-      ]
+      ],
+      "artifact": "software-defined-radio--fixed-point-processor"
     },
     {
       "id": "fpga",
@@ -276,7 +279,8 @@
       "sources": [
         "sdr-wikipedia-field-programmable-gate-array#para.19",
         "sdr-wikipedia-field-programmable-gate-array#para.20"
-      ]
+      ],
+      "artifact": "software-defined-radio--lookup-table"
     },
     {
       "id": "soft-core",
@@ -311,7 +315,8 @@
       "sources": [
         "sdr-wikipedia-direct-digital-synthesis#para.1",
         "sdr-wikipedia-direct-digital-synthesis#para.2"
-      ]
+      ],
+      "artifact": "software-defined-radio--direct-digital-synthesis"
     },
     {
       "id": "numerically-controlled-oscillator",
@@ -456,7 +461,8 @@
         "sdr-wikipedia-analog-to-digital-converter#para.23",
         "sdr-wikipedia-analog-to-digital-converter#para.24"
       ],
-      "diagram": "aliasing"
+      "diagram": "aliasing",
+      "artifact": "software-defined-radio--aliasing"
     },
     {
       "id": "oversampling",
@@ -481,7 +487,8 @@
       "sources": [
         "sdr-wikipedia-analog-to-digital-converter#para.30",
         "sdr-wikipedia-analog-to-digital-converter#para.31"
-      ]
+      ],
+      "artifact": "software-defined-radio--flash-converter"
     },
     {
       "id": "digital-to-analog-converter",

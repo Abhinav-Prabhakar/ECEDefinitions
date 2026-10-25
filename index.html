@@ -1100,6 +1100,7 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
 }
 
 /* spec table */
+.table-scroll{overflow-x:auto}
 .spec-table{
   width:100%;border-collapse:collapse;font-size:9.5px;line-height:1.45;
   font-variant-numeric:tabular-nums;
@@ -1162,7 +1163,10 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   color:var(--accent);opacity:.95;
 }
 .q-figure svg{display:block;width:100%;height:auto}
-.q-marker{fill:var(--surface);stroke:var(--accent);stroke-width:1.4}
+.q-dot{fill:var(--accent)}
+.q-marker{fill:var(--surface);stroke:var(--accent);stroke-width:1.2}
+/* a visual question shows the drawing without its lettering */
+.dg-card.dg-quiet text:not(.q-marker-text){opacity:0}
 .q-marker-text{
   fill:var(--accent);font-family:'Inter',sans-serif;font-size:7px;
   font-weight:400;letter-spacing:.04em;
@@ -2233,18 +2237,31 @@ function diagramMarkup(id, label){
     <use href="#dg-${esc(id)}"></use></svg>`;
 }
 
-function diagramFigureHTML(id, label){
-  const svg = diagramMarkup(id, label);
+/* Inline the symbol for quiz figures so the drawing can be shown without its
+   printed labels. <use> would hide the geometry from page styles. */
+function diagramInline(id, label, quiet){
+  const sym = id ? document.getElementById(`dg-${id}`) : null;
+  if (!sym) return '';
+  return `<svg class="dg-card${quiet ? ' dg-quiet' : ''}" viewBox="0 0 240 150" role="img"
+    aria-label="${esc(label ? `diagram of ${label}` : 'concept diagram')}">${sym.innerHTML}</svg>`;
+}
+
+function diagramFigureHTML(id, label, quiet = false){
+  const svg = diagramInline(id, label, quiet);
   return svg ? `<div class="q-figure">${svg}</div>` : '';
 }
 
-function labeledDiagramHTML(id, point){
-  if (!id || !DG.ready || !point) return '';
-  return `<div class="q-figure"><svg class="dg-card" viewBox="0 0 240 150" role="img"
+function labeledDiagramHTML(id, point, quiet = false){
+  const sym = id ? document.getElementById(`dg-${id}`) : null;
+  if (!sym || !point) return '';
+  const bx = Math.min(228, Math.max(12, point.x + 11));
+  const by = Math.min(138, Math.max(12, point.y - 11));
+  return `<div class="q-figure"><svg class="dg-card${quiet ? ' dg-quiet' : ''}" viewBox="0 0 240 150" role="img"
     aria-label="diagram with marker A">
-    <use href="#dg-${esc(id)}"></use>
-    <circle class="q-marker" cx="${point.x}" cy="${point.y}" r="7"></circle>
-    <text class="q-marker-text" x="${point.x}" y="${point.y + 2.4}" text-anchor="middle">A</text>
+    ${sym.innerHTML}
+    <circle class="q-dot" cx="${point.x}" cy="${point.y}" r="2.1"></circle>
+    <circle class="q-marker" cx="${bx}" cy="${by}" r="6.4"></circle>
+    <text class="q-marker-text" x="${bx}" y="${by + 2.3}" text-anchor="middle">A</text>
   </svg></div>`;
 }
 
@@ -2273,7 +2290,7 @@ function loadDiagrams(){
 /* Cold surfaces: code, spec tables, sequences and derivations.
    A definition opts in with "artifact": "<subject>--<definition>". */
 const ART = { ready: false, artifacts: {}, labels: {} };
-const ART_URL = 'data/artifacts.json?v=1';
+const ART_URL = 'data/artifacts.json?v=2';
 let ART_PROMISE = null;
 
 const ART_ICONS = {
@@ -2340,7 +2357,7 @@ function artifactHTML(id, closable = false){
     const rows = (a.rows || []).map((row, i) =>
       `<tr${Number(a.highlight) === i + 1 ? ' class="hl"' : ''}>${row.map(c => `<td>${esc(c)}</td>`).join('')}</tr>`
     ).join('');
-    body = `<table class="spec-table"><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table>`;
+    body = `<div class="table-scroll"><table class="spec-table"><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table></div>`;
   } else if (a.type === 'sequence'){
     const steps = (a.steps || []).map((s, i) => {
       const from = a.actors[s.from] || '?';
@@ -4098,11 +4115,8 @@ function updateTicks(){
       c = accentOf(st.s);
       v = 'in progress';
     }
-    t.dataset.tip = JSON.stringify({
-      n: `q${i + 1} · ${st.qs[i].type === 'term' ? 'term → definition' : 'definition → term'}`,
-      c,
-      v
-    });
+    const kind = { term: 'term → definition', def: 'definition → term', figure: 'figure → term', label: 'figure → label' }[st.qs[i].type] || '';
+    t.dataset.tip = JSON.stringify({ n: `q${i + 1} · ${kind}`, c, v });
   });
 }
 
@@ -4135,8 +4149,8 @@ function renderQuestion(){
     : `figure <b>→</b> label`;
   if (isTerm) qDef.textContent = q.d[0];
   else if (isDef) qDef.innerHTML = maskedHTML(q.masked);
-  else if (isFigure) qDef.innerHTML = diagramFigureHTML(q.d[6], q.d[0]);
-  else qDef.innerHTML = labeledDiagramHTML(q.d[6], q.labelPoint);
+  else if (isFigure) qDef.innerHTML = diagramFigureHTML(q.d[6], '', true);
+  else qDef.innerHTML = labeledDiagramHTML(q.d[6], q.labelPoint, true);
   qOpts.className = 'q-opts' + (isTerm ? ' long' : '');
 
   qOpts.innerHTML = q.opts.map((o, k) => {
@@ -4205,10 +4219,10 @@ function answer(index){
   qWhy.textContent = q.d[1];
   qEq.hidden = !q.d[2];
   qEq.innerHTML = q.d[2] ? mathHTML(q.d[2], true) : '';
-  const qDiagram = isVisual ? '' : diagramMarkup(q.d[6], q.d[0]);
+  const qDiagram = isLabel ? labeledDiagramHTML(q.d[6], q.labelPoint) : diagramMarkup(q.d[6], q.d[0]);
   qFig.hidden = !qDiagram;
   qFig.innerHTML = qDiagram
-    ? `${qDiagram}<figcaption>${esc(q.d[0])}</figcaption>`
+    ? `${qDiagram}<figcaption>${isLabel ? `marker A — ${esc(q.correctLabel)}` : esc(q.d[0])}</figcaption>`
     : '';
   const qSurface = artifactSurface(q.d[7]);
   qArtifact.hidden = !qSurface;
@@ -4388,13 +4402,13 @@ function startQuiz(){
 
   const count = Math.min(Q_COUNT, s.defs.length);
   const picked = pickAdaptiveDefs(s, count);
-  let labelDef = picked.find(d => d[6] && (ART.labels[d[6]] || []).length >= 4);
-  if (!labelDef){
+  let labelDef = count >= 6 && picked.find(d => d[6] && (ART.labels[d[6]] || []).length >= 4);
+  if (!labelDef && count >= 6){
     const choices = s.defs.filter(d => d[6] && (ART.labels[d[6]] || []).length >= 4);
     if (choices.length) labelDef = choices[Math.floor(Math.random() * choices.length)];
   }
-  let figureDef = picked.find(d => d[6] && d !== labelDef);
-  if (!figureDef){
+  let figureDef = count >= 6 && picked.find(d => d[6] && d !== labelDef);
+  if (!figureDef && count >= 6){
     const choices = s.defs.filter(d => d[6] && d !== labelDef);
     if (choices.length) figureDef = choices[Math.floor(Math.random() * choices.length)];
   }

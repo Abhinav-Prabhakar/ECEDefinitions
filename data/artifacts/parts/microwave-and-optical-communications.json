@@ -1,0 +1,256 @@
+{
+  "subject": "microwave-and-optical-communications",
+  "artifacts": {
+    "microwave-and-optical-communications--cutoff-frequency": {
+      "type": "derivation",
+      "title": "cutoff from the transverse wavenumber",
+      "steps": [
+        "E_{z}=E_{0}\\sin\\!\\left(\\frac{m\\pi x}{a}\\right)\\sin\\!\\left(\\frac{n\\pi y}{b}\\right)e^{-j\\beta z}",
+        "k_{c}^{2}=\\left(\\frac{m\\pi}{a}\\right)^{2}+\\left(\\frac{n\\pi}{b}\\right)^{2},\\qquad \\beta^{2}=k_{0}^{2}-k_{c}^{2}",
+        "\\beta=0\\ \\Rightarrow\\ k_{0}=k_{c}\\ \\Rightarrow\\ f_{c}=\\frac{c}{2\\pi}k_{c}",
+        "f_{c,mn}=\\frac{c}{2}\\sqrt{\\left(\\frac{m}{a}\\right)^{2}+\\left(\\frac{n}{b}\\right)^{2}},\\qquad f_{c,10}=\\frac{c}{2a}"
+      ],
+      "symbols": [
+        [
+          "a,\\ b",
+          "guide width and height"
+        ],
+        [
+          "m,\\ n",
+          "mode indices"
+        ],
+        [
+          "k_{c}",
+          "cutoff wavenumber"
+        ],
+        [
+          "\\beta",
+          "axial phase constant"
+        ]
+      ],
+      "note": "Below f_c the axial β turns imaginary and the mode evanesces; above it β is real and sets the guide wavelength."
+    },
+    "microwave-and-optical-communications--dominant-mode": {
+      "type": "table",
+      "title": "low-order rectangular waveguide modes",
+      "headers": [
+        "mode",
+        "m,n",
+        "f_c",
+        "comment"
+      ],
+      "rows": [
+        [
+          "TE10",
+          "1,0",
+          "c/2a",
+          "dominant mode, lowest loss"
+        ],
+        [
+          "TE01",
+          "0,1",
+          "c/2b",
+          "second when b > a/2"
+        ],
+        [
+          "TE20",
+          "2,0",
+          "c/a",
+          "TE10 field folded twice"
+        ],
+        [
+          "TE11",
+          "1,1",
+          "(c/2)sqrt(1/a^2 + 1/b^2)",
+          "first mixed mode"
+        ],
+        [
+          "TM11",
+          "1,1",
+          "same as TE11",
+          "lowest TM, degenerate with TE11"
+        ]
+      ],
+      "highlight": 1,
+      "note": "A TM mode needs both indices non-zero, so TM11 is the lowest TM mode; a > b is what makes TE10 the dominant mode."
+    },
+    "microwave-and-optical-communications--magic-tee": {
+      "type": "table",
+      "title": "E-plane, H-plane and magic tees",
+      "headers": [
+        "junction",
+        "ports",
+        "split from the arm",
+        "isolation"
+      ],
+      "rows": [
+        [
+          "E-plane tee",
+          "3",
+          "E arm splits in antiphase",
+          "arm 3 sees nothing from the H arm"
+        ],
+        [
+          "H-plane tee",
+          "3",
+          "H arm splits in phase",
+          "arm 3 sees nothing from the E arm"
+        ],
+        [
+          "magic tee",
+          "4",
+          "both arms split 3 dB, 180° between them",
+          "E and H arms isolated, S34 = 0"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Merging the two tees gives equal 3 dB splits with a 180° difference between the collinear arms, while the E and H arms stay isolated."
+    },
+    "microwave-and-optical-communications--circulator": {
+      "type": "sequence",
+      "title": "three-port circulator",
+      "actors": [
+        "port 1",
+        "port 2",
+        "port 3"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "forward wave in at port 1 leaves at port 2"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "wave in at port 2 leaves at port 3"
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "label": "wave in at port 3 leaves at port 1"
+        }
+      ],
+      "note": "The ferrite bias fixes one rotation sense, so the reverse direction 2 to 1 is refused and is absorbed by a matched load instead."
+    },
+    "microwave-and-optical-communications--attenuation": {
+      "type": "derivation",
+      "title": "optical power budget in decibels",
+      "steps": [
+        "\\alpha=\\frac{10}{L}\\log_{10}\\frac{P_{\\text{in}}}{P_{\\text{out}}}\\ \\text{dB/km}",
+        "P_{\\text{out}}=P_{\\text{in}}\\,10^{-\\alpha L/10}",
+        "L=80\\ \\text{km},\\ \\alpha=0.2\\ \\text{dB/km}\\ \\Rightarrow\\ \\text{fibre loss}=16\\ \\text{dB}",
+        "P_{\\text{rx}}=P_{\\text{tx}}-\\alpha L-(\\text{splice loss})-(\\text{design margin})"
+      ],
+      "symbols": [
+        [
+          "\\alpha",
+          "attenuation coefficient"
+        ],
+        [
+          "L",
+          "span length"
+        ],
+        [
+          "P_{\\text{in}},P_{\\text{out}}",
+          "power into and out of the span"
+        ]
+      ],
+      "note": "In dB every element of the span simply adds, so a link is budgeted by subtraction instead of by multiplying factors."
+    },
+    "microwave-and-optical-communications--numerical-aperture": {
+      "type": "derivation",
+      "title": "acceptance cone from total internal reflection",
+      "steps": [
+        "n_{1}\\sin\\theta_{c}=n_{2}\\sin 90^{\\circ}\\ \\Rightarrow\\ \\sin\\theta_{c}=\\frac{n_{2}}{n_{1}}",
+        "n_{0}\\sin\\theta_{a}=n_{1}\\sin\\left(90^{\\circ}-\\theta_{c}\\right)=n_{1}\\cos\\theta_{c}",
+        "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}",
+        "\\text{NA}\\approx n_{1}\\sqrt{2\\Delta},\\qquad \\Delta=\\frac{n_{1}-n_{2}}{n_{1}}"
+      ],
+      "symbols": [
+        [
+          "n_{0}",
+          "index outside the fibre, 1 in air"
+        ],
+        [
+          "n_{1},\\ n_{2}",
+          "core and cladding indices"
+        ],
+        [
+          "\\theta_{a}",
+          "acceptance half-angle"
+        ],
+        [
+          "\\theta_{c}",
+          "critical angle at the core-cladding boundary"
+        ]
+      ],
+      "note": "A large NA gathers more light but supports more modes, so single-mode fibre keeps both NA and core diameter small."
+    },
+    "microwave-and-optical-communications--single-mode-fiber": {
+      "type": "table",
+      "title": "step-index, graded-index and single-mode fibre",
+      "headers": [
+        "type",
+        "core",
+        "NA",
+        "bandwidth",
+        "source"
+      ],
+      "rows": [
+        [
+          "step-index multimode",
+          "50-100 µm",
+          "0.2-0.3",
+          "10-20 MHz·km",
+          "LED"
+        ],
+        [
+          "graded-index multimode",
+          "50-62.5 µm",
+          "0.2",
+          "0.5-1 GHz·km",
+          "LED or VCSEL"
+        ],
+        [
+          "single-mode",
+          "8-10 µm",
+          "0.1",
+          "above 100 GHz·km",
+          "laser diode"
+        ]
+      ],
+      "highlight": 3,
+      "note": "Grading bends rays back continuously and cuts modal dispersion; reducing to one mode removes it and leaves only chromatic dispersion."
+    },
+    "microwave-and-optical-communications--dispersion": {
+      "type": "derivation",
+      "title": "pulse spread and the bit-rate limit",
+      "steps": [
+        "\\Delta t_{\\text{mod}}=\\frac{L}{c}\\left(n_{1}-n_{2}\\right)",
+        "n_{1}-n_{2}\\approx\\frac{\\text{NA}^{2}}{2n_{1}}",
+        "\\Delta t_{\\text{mod}}=\\frac{L\\,\\text{NA}^{2}}{2n_{1}c}",
+        "B\\le\\frac{1}{2\\Delta t},\\qquad \\Delta t=D\\,L\\,\\Delta\\lambda\\ \\text{(chromatic)}"
+      ],
+      "symbols": [
+        [
+          "\\Delta t",
+          "pulse broadening"
+        ],
+        [
+          "L",
+          "fibre length"
+        ],
+        [
+          "D",
+          "dispersion coefficient, ps/(nm·km)"
+        ],
+        [
+          "B",
+          "bit rate"
+        ]
+      ],
+      "note": "Modal spread falls with NA², which is why a small-NA graded core reaches gigahertz per kilometre while a step-index core stops at tens of megahertz."
+    }
+  }
+}

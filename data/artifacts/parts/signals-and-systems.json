@@ -1,0 +1,215 @@
+{
+  "subject": "signals-and-systems",
+  "artifacts": {
+    "signals-and-systems--convolution": {
+      "type": "derivation",
+      "title": "Convolution from shifted impulses",
+      "steps": [
+        "x(t)\\approx\\sum_{k}x(k\\Delta)\\,\\delta(t-k\\Delta)\\,\\Delta",
+        "y(t)=T\\Big\\{\\sum_{k}x(k\\Delta)\\Delta\\,\\delta(t-k\\Delta)\\Big\\}=\\sum_{k}x(k\\Delta)\\Delta\\,h(t-k\\Delta)",
+        "\\Delta\\to0:\\quad y(t)=\\int_{-\\infty}^{\\infty}x(\\tau)\\,h(t-\\tau)\\,d\\tau"
+      ],
+      "symbols": [
+        [
+          "\\Delta",
+          "sample spacing, taken to zero"
+        ],
+        [
+          "k\\Delta",
+          "dummy time tau in the limit"
+        ],
+        [
+          "h(t)",
+          "impulse response of the LTI system"
+        ]
+      ],
+      "note": "Linearity lets the sum pass through T, and time invariance turns each shifted impulse into a shifted h; the integral is the limit of that sum."
+    },
+    "signals-and-systems--convolution-property-ft": {
+      "type": "derivation",
+      "title": "Why convolution becomes multiplication",
+      "steps": [
+        "Y(j\\omega)=\\int_{-\\infty}^{\\infty}\\left[\\int_{-\\infty}^{\\infty}x(\\tau)h(t-\\tau)\\,d\\tau\\right]e^{-j\\omega t}\\,dt",
+        "\\text{swap the order:}\\quad =\\int_{-\\infty}^{\\infty}x(\\tau)\\left[\\int_{-\\infty}^{\\infty}h(t-\\tau)e^{-j\\omega t}\\,dt\\right]d\\tau",
+        "\\sigma=t-\\tau:\\quad \\int h(\\sigma)e^{-j\\omega(\\sigma+\\tau)}d\\sigma=e^{-j\\omega\\tau}H(j\\omega)",
+        "Y(j\\omega)=\\int x(\\tau)e^{-j\\omega\\tau}d\\tau\\cdot H(j\\omega)=X(j\\omega)\\,H(j\\omega)"
+      ],
+      "symbols": [
+        [
+          "\\tau",
+          "convolution lag"
+        ],
+        [
+          "\\sigma",
+          "shifted time variable"
+        ],
+        [
+          "H(j\\omega)",
+          "Fourier transform of h(t)"
+        ]
+      ],
+      "note": "The delay in h(t - tau) factors out as a pure exponential, so the outer integral collapses to X(jw) times H(jw)."
+    },
+    "signals-and-systems--fourier-transform": {
+      "type": "table",
+      "title": "Fourier transform pairs worth knowing cold",
+      "headers": [
+        "x(t)",
+        "X(jω)",
+        "reading"
+      ],
+      "rows": [
+        [
+          "δ(t)",
+          "1",
+          "probe: all frequencies, equal weight"
+        ],
+        [
+          "1",
+          "2πδ(ω)",
+          "DC is a single spectral line"
+        ],
+        [
+          "rect(t/τ)",
+          "τ sinc(ωτ/2)",
+          "pulse and sinc are a pair"
+        ],
+        [
+          "e^(−at)u(t)",
+          "1/(a + jω)",
+          "one-pole lowpass, a > 0"
+        ],
+        [
+          "u(t)",
+          "πδ(ω) + 1/(jω)",
+          "step keeps its DC impulse"
+        ],
+        [
+          "cos ω₀t",
+          "π[δ(ω − ω₀) + δ(ω + ω₀)]",
+          "two lines at ±ω₀"
+        ]
+      ],
+      "highlight": 5,
+      "note": "Because the transform is linear, these prototypes plus the shift and modulation rules cover most textbook signals."
+    },
+    "signals-and-systems--laplace-transform": {
+      "type": "derivation",
+      "title": "Why differentiation becomes multiplication",
+      "steps": [
+        "\\mathcal{L}\\{x'(t)\\}=\\int_{0^{-}}^{\\infty}x'(t)\\,e^{-st}dt",
+        "=\\Big[x(t)e^{-st}\\Big]_{0^{-}}^{\\infty}+s\\int_{0^{-}}^{\\infty}x(t)e^{-st}dt",
+        "=0-x(0^{-})+sX(s)",
+        "\\mathcal{L}\\{x'(t)\\}=sX(s)-x(0^{-})"
+      ],
+      "symbols": [
+        [
+          "s",
+          "complex frequency"
+        ],
+        [
+          "x(0^{-})",
+          "initial value left by the boundary term"
+        ],
+        [
+          "X(s)",
+          "Laplace transform of x(t)"
+        ]
+      ],
+      "note": "Integration by parts leaves the initial condition behind, which is why a transformed ODE is algebraic with x(0) as known data."
+    },
+    "signals-and-systems--roc": {
+      "type": "table",
+      "title": "Same X(s), different ROC",
+      "headers": [
+        "x(t)",
+        "X(s)",
+        "ROC"
+      ],
+      "rows": [
+        [
+          "δ(t)",
+          "1",
+          "all s"
+        ],
+        [
+          "u(t)",
+          "1/s",
+          "Re s > 0"
+        ],
+        [
+          "−u(−t)",
+          "1/s",
+          "Re s < 0"
+        ],
+        [
+          "e^(−at)u(t)",
+          "1/(s + a)",
+          "Re s > −a"
+        ],
+        [
+          "−e^(−at)u(−t)",
+          "1/(s + a)",
+          "Re s < −a"
+        ],
+        [
+          "t u(t)",
+          "1/s²",
+          "Re s > 0"
+        ],
+        [
+          "e^(−at)cos ω₀t u(t)",
+          "(s + a)/((s + a)² + ω₀²)",
+          "Re s > −a"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Rows 4 and 5 share one X(s); only the ROC says whether the inverse is right-sided or left-sided."
+    },
+    "signals-and-systems--sampling-theorem": {
+      "type": "derivation",
+      "title": "Spectrum of the sampled signal",
+      "steps": [
+        "x_{s}(t)=x(t)\\sum_{n=-\\infty}^{\\infty}\\delta(t-nT_{s})",
+        "X_{s}(j\\omega)=\\frac{1}{T_{s}}\\sum_{k=-\\infty}^{\\infty}X\\big(j(\\omega-k\\omega_{s})\\big),\\quad \\omega_{s}=\\frac{2\\pi}{T_{s}}",
+        "\\text{each replica is }2\\omega_{m}\\text{ wide, centred at }k\\omega_{s}",
+        "\\text{no overlap}:\\quad \\omega_{s}-\\omega_{m}>\\omega_{m}\\ \\Rightarrow\\ \\omega_{s}>2\\omega_{m}"
+      ],
+      "symbols": [
+        [
+          "T_{s}",
+          "sampling interval"
+        ],
+        [
+          "\\omega_{s}",
+          "sampling angular frequency 2 pi / Ts"
+        ],
+        [
+          "\\omega_{m}",
+          "highest frequency in x(t)"
+        ]
+      ],
+      "note": "Multiplying by the impulse train convolves the spectrum with impulses at k times ws, tiling copies; the 2fm limit is the no-overlap condition."
+    },
+    "signals-and-systems--z-transform": {
+      "type": "derivation",
+      "title": "Geometric series to a pole at z = a",
+      "steps": [
+        "X(z)=\\sum_{n=0}^{\\infty}a^{n}z^{-n}=\\sum_{n=0}^{\\infty}\\left(az^{-1}\\right)^{n}",
+        "=\\frac{1}{1-az^{-1}}=\\frac{z}{z-a}",
+        "\\text{ratio test}:\\quad |az^{-1}|<1\\ \\Rightarrow\\ |z|>|a|"
+      ],
+      "symbols": [
+        [
+          "a",
+          "geometric ratio, and a pole of X(z)"
+        ],
+        [
+          "z",
+          "complex frequency variable"
+        ]
+      ],
+      "note": "The convergence condition of the geometric series is exactly the ROC, and its boundary |z| = |a| is the pole circle."
+    }
+  }
+}

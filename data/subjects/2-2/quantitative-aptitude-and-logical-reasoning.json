@@ -19,7 +19,8 @@
       "sources": [
         "qalr-qalr-unit-1#slide.4"
       ],
-      "formula": "\\mathbb{N}=\\{1,2,3,\\dots\\}"
+      "formula": "\\mathbb{N}=\\{1,2,3,\\dots\\}",
+      "artifact": "quantitative-aptitude-and-logical-reasoning--natural-number"
     },
     {
       "id": "whole-number",
@@ -152,7 +153,8 @@
       "sources": [
         "qalr-qalr-unit-2#slide.13"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "quantitative-aptitude-and-logical-reasoning--cost-price"
     },
     {
       "id": "selling-price",
@@ -318,7 +320,8 @@
       "sources": [
         "qalr-qalr-unit-3#slide.47"
       ],
-      "formula": "\\frac{q_{\\text{cheap}}}{q_{\\text{dear}}}=\\frac{d-m}{m-c}"
+      "formula": "\\frac{q_{\\text{cheap}}}{q_{\\text{dear}}}=\\frac{d-m}{m-c}",
+      "artifact": "quantitative-aptitude-and-logical-reasoning--alligation"
     },
     {
       "id": "area",
@@ -351,7 +354,8 @@
       "sources": [
         "qalr-cubes-and-dices#p.1"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "quantitative-aptitude-and-logical-reasoning--opposite-faces"
     },
     {
       "id": "adjacent-faces",
@@ -407,7 +411,8 @@
       "sources": [
         "qalr-statements-and-arguments#p.1"
       ],
-      "formula": ""
+      "formula": "",
+      "artifact": "quantitative-aptitude-and-logical-reasoning--argument"
     },
     {
       "id": "conclusion",

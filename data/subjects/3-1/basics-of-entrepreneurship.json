@@ -98,7 +98,8 @@
       "unitTitle": null,
       "sources": [
         "boe-u2#slide.12"
-      ]
+      ],
+      "artifact": "basics-of-entrepreneurship--design-thinking"
     },
     {
       "id": "market-segmentation",
@@ -188,7 +189,8 @@
       "unitTitle": null,
       "sources": [
         "boe-u3#slide.10"
-      ]
+      ],
+      "artifact": "basics-of-entrepreneurship--business-model-canvas"
     },
     {
       "id": "value-proposition",
@@ -268,7 +270,8 @@
       "sources": [
         "boe-u4#slide.3",
         "boe-u4#slide.26"
-      ]
+      ],
+      "artifact": "basics-of-entrepreneurship--revenue-stream"
     },
     {
       "id": "startup-costs",
@@ -279,7 +282,8 @@
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
         "boe-u4#slide.13"
-      ]
+      ],
+      "artifact": "basics-of-entrepreneurship--startup-costs"
     },
     {
       "id": "fixed-costs",
@@ -313,7 +317,8 @@
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
         "boe-u4#slide.16"
-      ]
+      ],
+      "artifact": "basics-of-entrepreneurship--break-even-point"
     },
     {
       "id": "angel-investor",
@@ -556,7 +561,8 @@
       "unitTitle": "Marketing and Business Regulations",
       "sources": [
         "boe-u6#slide.49"
-      ]
+      ],
+      "artifact": "basics-of-entrepreneurship--partnership"
     }
   ]
 }

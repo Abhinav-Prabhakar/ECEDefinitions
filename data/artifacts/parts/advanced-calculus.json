@@ -1,0 +1,210 @@
+{
+  "subject": "advanced-calculus",
+  "artifacts": {
+    "advanced-calculus--greens-theorem": {
+      "type": "derivation",
+      "title": "Green's theorem on a unit square",
+      "steps": [
+        "\\oint_{C}(P\\,dx+Q\\,dy)=\\iint_{R}\\left(\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}\\right)dA",
+        "P=x^{2}-y,\\quad Q=x+y^{2}\\;\\Rightarrow\\;\\frac{\\partial Q}{\\partial x}-\\frac{\\partial P}{\\partial y}=1-(-1)=2",
+        "\\oint_{C}=2\\iint_{R}dA=2\\cdot1=2\\quad\\text{for the unit square}"
+      ],
+      "symbols": [
+        [
+          "P, Q",
+          "components of the planar field"
+        ],
+        [
+          "C",
+          "positively oriented boundary"
+        ],
+        [
+          "R",
+          "enclosed region"
+        ]
+      ],
+      "note": "The integrand collapses to the constant 2, so the line integral is twice the area and does not depend on where the square sits."
+    },
+    "advanced-calculus--stokes-theorem": {
+      "type": "derivation",
+      "title": "checking Stokes' theorem on a disk",
+      "steps": [
+        "\\mathbf{F}=(-y,x,0)\\;\\Rightarrow\\;\\nabla\\times\\mathbf{F}=(0,0,2)",
+        "\\iint_{S}(\\nabla\\times\\mathbf{F})\\cdot d\\mathbf{S}=2\\cdot\\pi(2)^{2}=8\\pi",
+        "\\oint_{C}\\mathbf{F}\\cdot d\\mathbf{r}=\\int_{0}^{2\\pi}4\\,d\\theta=8\\pi",
+        "\\text{any surface spanning }C\\text{ gives the same }8\\pi"
+      ],
+      "symbols": [
+        [
+          "F",
+          "vector field"
+        ],
+        [
+          "S",
+          "surface spanning the curve"
+        ],
+        [
+          "C",
+          "circle of radius 2"
+        ]
+      ],
+      "note": "The flat disk and any curved cap share the boundary C, so both surface integrals return 8 pi; only the boundary value is physical."
+    },
+    "advanced-calculus--fourier-coefficients": {
+      "type": "derivation",
+      "title": "sine coefficients of a square wave",
+      "steps": [
+        "b_{n}=\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}f(x)\\sin nx\\,dx=\\frac{2}{\\pi}\\int_{0}^{\\pi}\\sin nx\\,dx",
+        "=\\frac{2}{n\\pi}\\left[-\\cos nx\\right]_{0}^{\\pi}=\\frac{2}{n\\pi}\\left(1-\\cos n\\pi\\right)",
+        "b_{n}=0\\ \\text{for even }n,\\quad b_{n}=\\frac{4}{n\\pi}\\ \\text{for odd }n",
+        "f(x)=\\frac{4}{\\pi}\\sum_{k=0}^{\\infty}\\frac{\\sin(2k+1)x}{2k+1}"
+      ],
+      "symbols": [
+        [
+          "f",
+          "square wave, +1 on (0, pi) and -1 on (-pi, 0)"
+        ],
+        [
+          "b_{n}",
+          "sine coefficient"
+        ],
+        [
+          "n",
+          "harmonic number"
+        ]
+      ],
+      "note": "The wave is odd, so every cosine term vanishes; the surviving odd harmonics fall off as 1/n, which is why the series converges slowly."
+    },
+    "advanced-calculus--parsevals-identity": {
+      "type": "derivation",
+      "title": "summing odd reciprocal squares",
+      "steps": [
+        "\\frac{1}{\\pi}\\int_{-\\pi}^{\\pi}\\left|f(x)\\right|^{2}dx=\\frac{1}{\\pi}\\cdot2\\pi=2",
+        "\\sum_{n=1}^{\\infty}b_{n}^{2}=\\frac{16}{\\pi^{2}}\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^{2}}",
+        "2=\\frac{16}{\\pi^{2}}\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^{2}}\\;\\Rightarrow\\;\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^{2}}=\\frac{\\pi^{2}}{8}"
+      ],
+      "symbols": [
+        [
+          "b_{n}",
+          "odd sine coefficients, 4/(n pi)"
+        ],
+        [
+          "f",
+          "unit square wave"
+        ]
+      ],
+      "note": "Energy counted in time equals energy counted harmonic by harmonic, turning the Fourier series into a closed form for a numerical series."
+    },
+    "advanced-calculus--laplace-transform": {
+      "type": "table",
+      "title": "Laplace transform pairs",
+      "headers": [
+        "f(t)",
+        "F(s)",
+        "ROC"
+      ],
+      "rows": [
+        [
+          "delta(t)",
+          "1",
+          "all s"
+        ],
+        [
+          "u(t)",
+          "1/s",
+          "Re s > 0"
+        ],
+        [
+          "t",
+          "1/s^2",
+          "Re s > 0"
+        ],
+        [
+          "e^(-at)",
+          "1/(s + a)",
+          "Re s > -a"
+        ],
+        [
+          "t e^(-at)",
+          "1/(s + a)^2",
+          "Re s > -a"
+        ],
+        [
+          "sin(wt)",
+          "w/(s^2 + w^2)",
+          "Re s > 0"
+        ],
+        [
+          "cos(wt)",
+          "s/(s^2 + w^2)",
+          "Re s > 0"
+        ],
+        [
+          "u(t - a)",
+          "e^(-as)/s",
+          "Re s > 0"
+        ]
+      ],
+      "highlight": 8,
+      "note": "The delay factor e^(-as) in the last row is why Laplace handles dead time and switched inputs so cleanly."
+    },
+    "advanced-calculus--separation-of-variables": {
+      "type": "derivation",
+      "title": "solving the heat equation by separation",
+      "steps": [
+        "u(x,t)=X(x)T(t)\\;\\Rightarrow\\;XT^{\\prime}=\\alpha X^{\\prime\\prime}T",
+        "\\frac{T^{\\prime}}{\\alpha T}=\\frac{X^{\\prime\\prime}}{X}=-\\lambda^{2}",
+        "X_{n}=\\sin\\frac{n\\pi x}{L},\\quad T_{n}=e^{-\\alpha n^{2}\\pi^{2}t/L^{2}}",
+        "u(x,t)=\\sum_{n=1}^{\\infty}B_{n}\\sin\\frac{n\\pi x}{L}\\,e^{-\\alpha n^{2}\\pi^{2}t/L^{2}}"
+      ],
+      "symbols": [
+        [
+          "u",
+          "temperature"
+        ],
+        [
+          "\\alpha",
+          "thermal diffusivity"
+        ],
+        [
+          "L",
+          "rod length"
+        ],
+        [
+          "\\lambda",
+          "separation constant"
+        ],
+        [
+          "B_{n}",
+          "coefficient fixed by the initial profile"
+        ]
+      ],
+      "note": "The zero-endpoint conditions quantise lambda to n pi / L, and each mode then decays at its own rate, so high harmonics die first."
+    },
+    "advanced-calculus--jacobian": {
+      "type": "derivation",
+      "title": "why the polar area element is r dr dtheta",
+      "steps": [
+        "x=r\\cos\\theta,\\quad y=r\\sin\\theta",
+        "\\frac{\\partial(x,y)}{\\partial(r,\\theta)}=\\cos\\theta\\,(r\\cos\\theta)-(-r\\sin\\theta)(\\sin\\theta)",
+        "=r\\left(\\cos^{2}\\theta+\\sin^{2}\\theta\\right)=r",
+        "dx\\,dy=\\left|\\frac{\\partial(x,y)}{\\partial(r,\\theta)}\\right|dr\\,d\\theta=r\\,dr\\,d\\theta"
+      ],
+      "symbols": [
+        [
+          "r",
+          "radial distance"
+        ],
+        [
+          "\\theta",
+          "polar angle"
+        ],
+        [
+          "J",
+          "Jacobian determinant"
+        ]
+      ],
+      "note": "The factor r is the local stretching of a small rectangle at radius r; without it the area element is wrong away from the origin."
+    }
+  }
+}

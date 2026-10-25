@@ -1,0 +1,198 @@
+{
+  "subject": "complex-variable-and-transform-techniques",
+  "artifacts": {
+    "complex-variable-and-transform-techniques--cauchy-riemann": {
+      "type": "derivation",
+      "title": "Cauchy-Riemann from two approach paths",
+      "steps": [
+        "f'(z_{0})=\\lim_{\\Delta z\\to0}\\frac{f(z_{0}+\\Delta z)-f(z_{0})}{\\Delta z}",
+        "\\Delta z=\\Delta x:\\quad f'=u_{x}+iv_{x}",
+        "\\Delta z=i\\Delta y:\\quad f'=\\frac{u_{y}\\Delta y+iv_{y}\\Delta y}{i\\Delta y}=v_{y}-iu_{y}",
+        "u_{x}=v_{y},\\qquad u_{y}=-v_{x}"
+      ],
+      "symbols": [
+        [
+          "u",
+          "real part of f"
+        ],
+        [
+          "v",
+          "imaginary part of f"
+        ],
+        [
+          "z_{0}",
+          "point where f is differentiable"
+        ]
+      ],
+      "note": "The derivative must be path independent, so the real-axis and imaginary-axis limits have to agree term by term."
+    },
+    "complex-variable-and-transform-techniques--harmonic-function": {
+      "type": "derivation",
+      "title": "Analytic functions satisfy Laplace's equation",
+      "steps": [
+        "u_{x}=v_{y},\\qquad u_{y}=-v_{x}",
+        "u_{xx}=v_{yx},\\qquad u_{yy}=-v_{xy}",
+        "v_{xy}=v_{yx}\\ \\Rightarrow\\ u_{xx}+u_{yy}=0",
+        "\\nabla^{2}u=0\\quad \\text{and likewise }\\nabla^{2}v=0"
+      ],
+      "symbols": [
+        [
+          "u,v",
+          "real and imaginary parts of f"
+        ],
+        [
+          "\\nabla^{2}",
+          "Laplacian operator"
+        ]
+      ],
+      "note": "Equality of the mixed partials is the only extra fact needed, and it holds because v is itself smooth."
+    },
+    "complex-variable-and-transform-techniques--pole-order": {
+      "type": "derivation",
+      "title": "Residue at a pole of order n",
+      "steps": [
+        "g(z)=(z-z_{0})^{n}f(z)=a_{-n}+\\cdots+a_{-1}(z-z_{0})^{n-1}+\\cdots",
+        "\\frac{d^{n-1}g}{dz^{n-1}}=(n-1)!\\,a_{-1}+\\text{terms in }(z-z_{0})+\\cdots",
+        "\\operatorname{Res}_{z=z_{0}}f(z)=\\frac{1}{(n-1)!}\\lim_{z\\to z_{0}}\\frac{d^{n-1}}{dz^{n-1}}\\left[(z-z_{0})^{n}f(z)\\right]"
+      ],
+      "symbols": [
+        [
+          "n",
+          "pole order"
+        ],
+        [
+          "a_{-1}",
+          "residue coefficient"
+        ],
+        [
+          "g(z)",
+          "Laurent series multiplied by (z - z0)^n"
+        ]
+      ],
+      "note": "Multiplying by (z - z0)^n makes the series regular, and n-1 derivatives kill every term except the residue one."
+    },
+    "complex-variable-and-transform-techniques--singular-point": {
+      "type": "table",
+      "title": "Types of isolated singularity",
+      "headers": [
+        "type",
+        "test on the Laurent series",
+        "behaviour near z0"
+      ],
+      "rows": [
+        [
+          "removable",
+          "no negative powers",
+          "f tends to the finite value a0"
+        ],
+        [
+          "simple pole",
+          "principal part is a−1/(z − z0)",
+          "|f| → ∞, residue is a−1"
+        ],
+        [
+          "pole of order n",
+          "principal part ends at power −n",
+          "|f| → ∞ like a power"
+        ],
+        [
+          "essential",
+          "infinitely many negative powers",
+          "neither finite nor a pole"
+        ]
+      ],
+      "highlight": 2,
+      "note": "Only the principal part decides the type: removable can be patched, a pole blows up like a power, an essential one does neither."
+    },
+    "complex-variable-and-transform-techniques--laplace-transform": {
+      "type": "table",
+      "title": "Standard Laplace pairs",
+      "headers": [
+        "f(t), t ≥ 0",
+        "F(s)",
+        "ROC"
+      ],
+      "rows": [
+        [
+          "1 (unit step)",
+          "1/s",
+          "Re s > 0"
+        ],
+        [
+          "t",
+          "1/s²",
+          "Re s > 0"
+        ],
+        [
+          "tⁿ",
+          "n!/s^(n+1)",
+          "Re s > 0"
+        ],
+        [
+          "e^(at)",
+          "1/(s − a)",
+          "Re s > a"
+        ],
+        [
+          "sin ωt",
+          "ω/(s² + ω²)",
+          "Re s > 0"
+        ],
+        [
+          "cos ωt",
+          "s/(s² + ω²)",
+          "Re s > 0"
+        ],
+        [
+          "e^(at)cos ωt",
+          "(s − a)/((s − a)² + ω²)",
+          "Re s > a"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Every entry is the same integral evaluated on one prototype; the ROC column is what makes the inverse unique."
+    },
+    "complex-variable-and-transform-techniques--fourier-series": {
+      "type": "derivation",
+      "title": "Coefficients from orthogonality",
+      "steps": [
+        "f(t)=a_{0}+\\sum_{n=1}^{\\infty}\\left(a_{n}\\cos n\\omega_{0}t+b_{n}\\sin n\\omega_{0}t\\right)",
+        "\\int_{0}^{T}\\cos n\\omega_{0}t\\cos m\\omega_{0}t\\,dt=\\frac{T}{2}\\delta_{mn},\\qquad \\int_{0}^{T}\\sin n\\omega_{0}t\\cos m\\omega_{0}t\\,dt=0",
+        "\\text{multiply }f\\text{ by }\\cos m\\omega_{0}t\\text{ and integrate over one period}",
+        "a_{m}=\\frac{2}{T}\\int_{0}^{T}f(t)\\cos m\\omega_{0}t\\,dt,\\quad b_{m}=\\frac{2}{T}\\int_{0}^{T}f(t)\\sin m\\omega_{0}t\\,dt"
+      ],
+      "symbols": [
+        [
+          "T",
+          "fundamental period, with omega0 = 2 pi / T"
+        ],
+        [
+          "\\delta_{mn}",
+          "1 when m = n, else 0"
+        ]
+      ],
+      "note": "Orthogonality makes every other harmonic integrate to zero, so each coefficient can be extracted independently of the rest."
+    },
+    "complex-variable-and-transform-techniques--second-shifting": {
+      "type": "derivation",
+      "title": "Delay becomes an exponential factor",
+      "steps": [
+        "\\mathcal{L}\\{f(t-a)u(t-a)\\}=\\int_{0}^{\\infty}f(t-a)u(t-a)e^{-st}dt",
+        "u(t-a)\\ \\text{kills }[0,a):\\quad =\\int_{a}^{\\infty}f(t-a)e^{-st}dt",
+        "\\tau=t-a:\\quad =\\int_{0}^{\\infty}f(\\tau)e^{-s(\\tau+a)}d\\tau",
+        "=e^{-as}\\int_{0}^{\\infty}f(\\tau)e^{-s\\tau}d\\tau=e^{-as}F(s)"
+      ],
+      "symbols": [
+        [
+          "a",
+          "delay, with a > 0"
+        ],
+        [
+          "u(t-a)",
+          "step that switches the function on at t = a"
+        ]
+      ],
+      "note": "The step is what makes the lower limit a instead of 0, and the substitution then pulls the exponential out as a pure factor."
+    }
+  }
+}

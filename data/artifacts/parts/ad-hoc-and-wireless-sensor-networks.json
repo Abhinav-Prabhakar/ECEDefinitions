@@ -1,0 +1,235 @@
+{
+  "subject": "ad-hoc-and-wireless-sensor-networks",
+  "artifacts": {
+    "ad-hoc-and-wireless-sensor-networks--rts-cts-handshake": {
+      "type": "sequence",
+      "title": "RTS/CTS exchange with a hidden node",
+      "actors": [
+        "sender A",
+        "receiver B",
+        "hidden C"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "RTS: reserved duration"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "CTS"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "same CTS overheard: C sets NAV"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DATA, no collision"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "ACK"
+        }
+      ],
+      "note": "Every node that hears the receiver's CTS stays silent for the reserved duration, which covers the node that could not hear the sender."
+    },
+    "ad-hoc-and-wireless-sensor-networks--exposed-node-problem": {
+      "type": "table",
+      "title": "hidden and exposed node side by side",
+      "headers": [
+        "case",
+        "hearing pattern",
+        "effect"
+      ],
+      "rows": [
+        [
+          "hidden node",
+          "A to B and C to B, but A and C cannot hear each other",
+          "collision at B, both frames lost"
+        ],
+        [
+          "exposed node",
+          "C hears B to A, while D (C's target) is beyond B's range",
+          "C defers needlessly, capacity wasted"
+        ],
+        [
+          "RTS/CTS cure",
+          "B's CTS is heard by every node that could disturb B",
+          "only those nodes defer; A and C may run in parallel"
+        ]
+      ],
+      "highlight": 2,
+      "note": "A hidden node is inaudible to the sender, an exposed node is audible but harmless; the receiver's CTS separates the two cases."
+    },
+    "ad-hoc-and-wireless-sensor-networks--aodv": {
+      "type": "sequence",
+      "title": "AODV route discovery and first data",
+      "actors": [
+        "source S",
+        "relay R",
+        "destination D"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "RREQ broadcast, TTL, dest seq"
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "RREQ rebroadcast, reverse route to S"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "RREP unicast, fresh dest seq"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "RREP forwarded, forward route installed"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DATA along the installed route"
+        }
+      ],
+      "note": "Nothing is sent until a route is needed: the RREQ leaves reverse pointers that the RREP turns into forward routes."
+    },
+    "ad-hoc-and-wireless-sensor-networks--zrp": {
+      "type": "table",
+      "title": "routing protocols by family",
+      "headers": [
+        "protocol",
+        "family",
+        "loop control",
+        "when it pays"
+      ],
+      "rows": [
+        [
+          "DSDV",
+          "proactive, table-driven",
+          "destination sequence numbers",
+          "dense, slowly changing networks"
+        ],
+        [
+          "AODV",
+          "reactive, on demand",
+          "per-node sequence numbers",
+          "sparse or fast-changing networks"
+        ],
+        [
+          "DSR",
+          "reactive, source routing",
+          "full path in every packet",
+          "small networks, cached routes"
+        ],
+        [
+          "ZRP",
+          "hybrid",
+          "proactive within k hops, reactive beyond",
+          "mixed density, large networks"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Each family buys a different point on the overhead-versus-latency trade-off, and ZRP switches point by hop distance."
+    },
+    "ad-hoc-and-wireless-sensor-networks--slow-start": {
+      "type": "table",
+      "title": "cwnd growth per round trip with ssthresh = 8 MSS",
+      "headers": [
+        "round trip",
+        "cwnd (MSS)",
+        "phase"
+      ],
+      "rows": [
+        [
+          "1",
+          "1",
+          "slow start"
+        ],
+        [
+          "2",
+          "2",
+          "doubling"
+        ],
+        [
+          "3",
+          "4",
+          "doubling"
+        ],
+        [
+          "4",
+          "8",
+          "ssthresh reached"
+        ],
+        [
+          "5",
+          "9",
+          "congestion avoidance, +1"
+        ],
+        [
+          "6",
+          "10",
+          "congestion avoidance"
+        ],
+        [
+          "7",
+          "11",
+          "congestion avoidance"
+        ],
+        [
+          "8",
+          "12",
+          "congestion avoidance"
+        ]
+      ],
+      "highlight": 4,
+      "note": "Doubling stops at ssthresh; from then on each round adds only one MSS, so growth becomes linear instead of exponential."
+    },
+    "ad-hoc-and-wireless-sensor-networks--odmrp": {
+      "type": "sequence",
+      "title": "ODMRP mesh construction",
+      "actors": [
+        "source",
+        "relay",
+        "receiver"
+      ],
+      "steps": [
+        {
+          "from": 0,
+          "to": 1,
+          "label": "JOIN QUERY flooded: group, seq no."
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "label": "forwarded, upstream node recorded"
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "label": "JOIN REPLY to recorded upstream"
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "label": "JOIN REPLY, relay joins forwarding group"
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "label": "DATA on the mesh; refresh before expiry"
+        }
+      ],
+      "note": "The mesh is rebuilt by periodic JOIN QUERY refreshes, so a node that stops replying simply ages out of the forwarding group."
+    }
+  }
+}
