@@ -19,7 +19,8 @@
         "iota-iota-unit-1#p.20"
       ],
       "id": "iot",
-      "formula": ""
+      "formula": "",
+      "diagram": "iot-layers"
     },
     {
       "term": "M2M",
@@ -41,7 +42,8 @@
         "iota-iota-unit-1#p.49"
       ],
       "id": "iot-ecosystem",
-      "formula": ""
+      "formula": "",
+      "diagram": "iot-layers"
     },
     {
       "term": "IoT Gateway",
@@ -85,7 +87,8 @@
         "iota-iota-unit-1#p.71"
       ],
       "id": "edge-computing",
-      "formula": ""
+      "formula": "R_{\\text{red}}=1-\\frac{D_{\\text{out}}}{D_{\\text{in}}}",
+      "diagram": "iot-layers"
     },
     {
       "term": "IoT Analytics",
@@ -96,7 +99,8 @@
         "iota-iota-unit-1#p.84"
       ],
       "id": "iot-analytics",
-      "formula": ""
+      "formula": "",
+      "diagram": "big-data"
     },
     {
       "term": "Transducer",
@@ -107,7 +111,7 @@
         "iota-iota-unit-1#p.86"
       ],
       "id": "transducer",
-      "formula": ""
+      "formula": "\\eta=\\frac{P_{\\text{out}}}{P_{\\text{in}}}"
     },
     {
       "term": "Sensor",
@@ -118,7 +122,7 @@
         "iota-iota-unit-1#p.88"
       ],
       "id": "sensor",
-      "formula": ""
+      "formula": "S=\\frac{\\Delta V_{\\text{out}}}{\\Delta x}"
     },
     {
       "term": "Actuator",
@@ -129,7 +133,7 @@
         "iota-iota-unit-1#p.90"
       ],
       "id": "actuator",
-      "formula": ""
+      "formula": "P_{\\text{mech}}=Fv"
     },
     {
       "term": "Vector Sensor",
@@ -140,7 +144,7 @@
         "iota-iota-unit-1#p.99"
       ],
       "id": "vector-sensor",
-      "formula": ""
+      "formula": "|\\mathbf{a}|=\\sqrt{a_{x}^{2}+a_{y}^{2}+a_{z}^{2}}"
     },
     {
       "term": "PIR Sensor",
@@ -162,7 +166,7 @@
         "iota-iota-unit-1#p.117"
       ],
       "id": "hydraulic-actuator",
-      "formula": ""
+      "formula": "F=pA"
     },
     {
       "term": "Pneumatic Actuator",
@@ -173,7 +177,7 @@
         "iota-iota-unit-1#p.119"
       ],
       "id": "pneumatic-actuator",
-      "formula": ""
+      "formula": "W=p\\,\\Delta V"
     },
     {
       "term": "Embedded Platform",
@@ -217,7 +221,8 @@
         "iota-iota-unit-2#p.42"
       ],
       "id": "spi",
-      "formula": ""
+      "formula": "R_{\\text{byte}}=\\frac{f_{\\text{SCK}}}{8}",
+      "diagram": "spi-bus"
     },
     {
       "term": "I2C",
@@ -228,7 +233,8 @@
         "iota-iota-unit-2#p.90"
       ],
       "id": "i2c",
-      "formula": ""
+      "formula": "R_{b}=f_{\\text{SCL}}",
+      "diagram": "i2c-bus"
     },
     {
       "term": "Raspberry Pi",
@@ -239,7 +245,8 @@
         "iota-iota-unit-2#p.50"
       ],
       "id": "raspberry-pi",
-      "formula": ""
+      "formula": "",
+      "diagram": "soc-blocks"
     },
     {
       "term": "GPIO",
@@ -272,7 +279,7 @@
         "iota-iota-unit-2#p.85"
       ],
       "id": "dht11-sensor",
-      "formula": ""
+      "formula": "\\text{chk}=(H_{\\text{int}}+H_{\\text{dec}}+T_{\\text{int}}+T_{\\text{dec}})\\bmod 256"
     },
     {
       "term": "Particle Photon",
@@ -294,7 +301,7 @@
         "iota-iota-unit-3#p.15"
       ],
       "id": "wsn",
-      "formula": ""
+      "formula": "T_{\\text{life}}=\\frac{E_{\\text{batt}}}{P_{\\text{avg}}}"
     },
     {
       "term": "Base Station",
@@ -316,7 +323,7 @@
         "iota-iota-unit-3#p.27"
       ],
       "id": "leach-protocol",
-      "formula": ""
+      "formula": "T(n)=\\frac{p}{1-p\\,(r\\bmod 1/p)}"
     },
     {
       "term": "Coverage Problem",
@@ -327,7 +334,7 @@
         "iota-iota-unit-3#p.30"
       ],
       "id": "coverage-problem",
-      "formula": ""
+      "formula": "C=\\frac{A_{\\text{cov}}}{A_{\\text{tot}}}"
     },
     {
       "term": "Star Topology",
@@ -338,7 +345,7 @@
         "iota-iota-unit-3#p.52"
       ],
       "id": "star-topology",
-      "formula": ""
+      "formula": "L=N-1"
     },
     {
       "term": "Mesh Topology",
@@ -349,7 +356,8 @@
         "iota-iota-unit-3#p.54"
       ],
       "id": "mesh-topology",
-      "formula": ""
+      "formula": "L=\\frac{N(N-1)}{2}",
+      "diagram": "routing"
     },
     {
       "term": "Wi-Fi",
@@ -360,7 +368,8 @@
         "iota-iota-unit-3#p.59"
       ],
       "id": "wi-fi",
-      "formula": ""
+      "formula": "C=B\\log_{2}(1+\\text{SNR})",
+      "diagram": "csma"
     },
     {
       "term": "BSS",
@@ -393,7 +402,7 @@
         "iota-iota-unit-3#p.74"
       ],
       "id": "piconet",
-      "formula": ""
+      "formula": "N_{\\text{active}}\\le 8"
     },
     {
       "term": "Scatternet",
@@ -437,7 +446,8 @@
         "iota-iota-unit-3#p.106"
       ],
       "id": "lora",
-      "formula": ""
+      "formula": "R_{b}=\\frac{\\text{SF}\\cdot B}{2^{\\text{SF}}}",
+      "diagram": "link-budget"
     },
     {
       "term": "NFC",
@@ -454,7 +464,7 @@
       "id": "mqtt",
       "term": "MQTT",
       "definition": "Lightweight publish-subscribe messaging protocol, normally run over TCP/IP, for devices with limited resources or bandwidth.",
-      "formula": "",
+      "formula": "L_{\\text{pkt}}=4+L_{\\text{topic}}+L_{\\text{payload}}",
       "unit": 4,
       "unitTitle": "IoT Protocols",
       "sources": [
@@ -498,7 +508,7 @@
       "id": "coap",
       "term": "CoAP",
       "definition": "UDP-based application protocol for constrained devices, defined in RFC 7252, that translates easily to HTTP and uses confirmable and non-confirmable messages.",
-      "formula": "",
+      "formula": "L_{\\text{msg}}=4+L_{\\text{token}}+L_{\\text{opt}}+L_{\\text{payload}}",
       "unit": 4,
       "unitTitle": "IoT Protocols",
       "sources": [
@@ -580,7 +590,8 @@
       "unitTitle": "IoT Design Methodology",
       "sources": [
         "iota-web-design-methodology-slides#slide-8"
-      ]
+      ],
+      "diagram": "er-diagram"
     },
     {
       "id": "virtual-entity",
@@ -652,18 +663,19 @@
       "id": "smart-lighting",
       "term": "Smart Lighting",
       "definition": "Network-based lighting control in which communication among inputs, outputs and central computing devices adjusts fixture output automatically.",
-      "formula": "",
+      "formula": "E_{\\text{save}}=(P_{\\text{base}}-P_{\\text{dim}})\\,t",
       "unit": 6,
       "unitTitle": "Case Studies Illustrating IoT Applications",
       "sources": [
         "iota-web-smart-lighting#Lighting-control-system"
-      ]
+      ],
+      "diagram": "control-loop"
     },
     {
       "id": "daylight-harvesting",
       "term": "Daylight Harvesting",
       "definition": "Cutting electric lighting by dimming or switching fixtures when natural light is available.",
-      "formula": "",
+      "formula": "E_{\\text{art}}=\\max(0,E_{\\text{set}}-E_{\\text{day}})",
       "unit": 6,
       "unitTitle": "Case Studies Illustrating IoT Applications",
       "sources": [
@@ -718,7 +730,7 @@
       "id": "air-quality-index",
       "term": "Air Quality Index",
       "definition": "Single, often colour-coded score that combines concentrations of common pollutants such as ozone, carbon monoxide and particulates.",
-      "formula": "",
+      "formula": "I=I_{\\text{lo}}+\\frac{I_{\\text{hi}}-I_{\\text{lo}}}{C_{\\text{hi}}-C_{\\text{lo}}}(C-C_{\\text{lo}})",
       "unit": 6,
       "unitTitle": "Case Studies Illustrating IoT Applications",
       "sources": [
@@ -740,7 +752,7 @@
       "id": "smart-irrigation-controller",
       "term": "Smart Irrigation Controller",
       "definition": "Device that automates watering schedules, adjusting them daily from local weather data or from measured soil moisture.",
-      "formula": "",
+      "formula": "ET_{c}=K_{c}ET_{0}",
       "unit": 6,
       "unitTitle": "Case Studies Illustrating IoT Applications",
       "sources": [

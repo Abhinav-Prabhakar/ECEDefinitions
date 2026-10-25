@@ -30,7 +30,8 @@
       "sources": [
         "ertos-introduction-lect-1#slide.9"
       ],
-      "formula": ""
+      "formula": "R_i\\le D_i\\ \\forall i",
+      "diagram": "rtos-timeline"
     },
     {
       "id": "hard-real-time-system",
@@ -74,7 +75,7 @@
       "sources": [
         "ertos-introduction-lect-1#slide.16"
       ],
-      "formula": ""
+      "formula": "L_{\\text{int}}=t_{\\text{ISR,first}}-t_{\\text{task,last}}"
     },
     {
       "id": "context-switching-latency",
@@ -85,7 +86,7 @@
       "sources": [
         "ertos-introduction-lect-1#slide.16"
       ],
-      "formula": ""
+      "formula": "L_{\\text{cs}}=t_{\\text{save}}+t_{\\text{restore}}"
     },
     {
       "id": "preemption",
@@ -96,7 +97,8 @@
       "sources": [
         "ertos-introduction-lect-1#slide.18"
       ],
-      "formula": ""
+      "formula": "p_{\\text{ready}}>p_{\\text{running}}",
+      "diagram": "process-states"
     },
     {
       "id": "unix",
@@ -141,7 +143,8 @@
       "sources": [
         "ertos-unix-lecture-1#slide.24"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "file-system"
     },
     {
       "id": "pipe",
@@ -152,7 +155,8 @@
       "sources": [
         "ertos-unix-lecture-1#slide.10"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "stack-queue"
     },
     {
       "id": "sampling-period",
@@ -163,7 +167,8 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.24"
       ],
-      "formula": ""
+      "formula": "f_s=\\frac{1}{T},\\quad T=t_{k+1}-t_k",
+      "diagram": "sampling"
     },
     {
       "id": "multirate-system",
@@ -185,7 +190,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.32"
       ],
-      "formula": ""
+      "formula": "J_i=\\max_k R_{i,k}-\\min_k R_{i,k}"
     },
     {
       "id": "absolute-temporal-consistency",
@@ -196,7 +201,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.42"
       ],
-      "formula": ""
+      "formula": "\\max_{o\\in S}\\text{age}(o)\\le\\tau_{\\text{abs}}"
     },
     {
       "id": "relative-temporal-consistency",
@@ -207,7 +212,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.43"
       ],
-      "formula": ""
+      "formula": "\\max_{o,o'\\in S}\\left|\\text{age}(o)-\\text{age}(o')\\right|\\le\\tau_{\\text{rel}}"
     },
     {
       "id": "periodic-task-model",
@@ -218,7 +223,8 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.81"
       ],
-      "formula": ""
+      "formula": "\\tau_i=(p_i,e_i,d_i)",
+      "diagram": "rtos-timeline"
     },
     {
       "id": "hyperperiod",
@@ -229,13 +235,13 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.87"
       ],
-      "formula": ""
+      "formula": "H=\\text{lcm}(p_1,p_2,\\dots,p_n)"
     },
     {
       "id": "utilization",
       "term": "Utilization",
       "definition": "Fraction of time a truly periodic task with period pi and execution time ei keeps a processor busy, summed over all tasks.",
-      "formula": "ui = ei / pi",
+      "formula": "U=\\sum_{i=1}^{n}\\frac{e_i}{p_i},\\quad u_i=\\frac{e_i}{p_i}",
       "unit": 2,
       "unitTitle": "Real-Time Systems",
       "sources": [
@@ -246,7 +252,7 @@
       "id": "release-time",
       "term": "Release Time",
       "definition": "Instant at which a job becomes available for execution; when the exact value is unknown, its range is called jitter.",
-      "formula": "ri ∈ [ri−, ri+]",
+      "formula": "r_i\\in[r_i^{-},r_i^{+}],\\quad \\Delta r_i=r_i^{+}-r_i^{-}",
       "unit": 2,
       "unitTitle": "Real-Time Systems",
       "sources": [
@@ -263,7 +269,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.97"
       ],
-      "formula": ""
+      "formula": "t_{k+1}-t_k\\ge p_i^{\\min}"
     },
     {
       "id": "precedence-constraints",
@@ -274,7 +280,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.99"
       ],
-      "formula": ""
+      "formula": "J_a\\prec J_b\\ \\Rightarrow\\ C_a\\le S_b"
     },
     {
       "id": "feasible-schedule",
@@ -285,7 +291,8 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.136"
       ],
-      "formula": ""
+      "formula": "C_i\\le d_i\\ \\forall i",
+      "diagram": "scheduling"
     },
     {
       "id": "invalid-rate",
@@ -296,7 +303,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.147"
       ],
-      "formula": ""
+      "formula": "\\rho_{\\text{inv}}=\\rho_{\\text{miss}}+\\rho_{\\text{loss}}"
     },
     {
       "id": "clock-driven-scheduling",
@@ -307,7 +314,8 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.154"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "scheduling"
     },
     {
       "id": "weighted-round-robin",
@@ -318,7 +326,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.158"
       ],
-      "formula": ""
+      "formula": "f_i=\\frac{w_i}{\\sum_{j=1}^{n}w_j}"
     },
     {
       "id": "priority-driven-algorithm",
@@ -340,13 +348,14 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.186"
       ],
-      "formula": ""
+      "formula": "\\text{prio}(J_i)>\\text{prio}(J_j)\\iff d_i<d_j",
+      "diagram": "scheduling"
     },
     {
       "id": "laxity",
       "term": "Slack (Laxity)",
       "definition": "The time by which a job with deadline d can afford to be delayed: the deadline minus time t minus remaining execution time.",
-      "formula": "slack = d − t − (remaining execution time)",
+      "formula": "\\text{slack}=d-t-e_{\\text{rem}}",
       "unit": 3,
       "unitTitle": "Real-Time Scheduling",
       "sources": [
@@ -363,7 +372,7 @@
         "ertos-real-time-systems-units-2-3#slide.195",
         "ertos-real-time-systems-units-2-3#slide.197"
       ],
-      "formula": ""
+      "formula": "\\text{prio}(J_i)>\\text{prio}(J_j)\\iff\\text{slack}_i<\\text{slack}_j"
     },
     {
       "id": "scheduling-anomaly",
@@ -385,7 +394,7 @@
       "sources": [
         "ertos-real-time-systems-units-2-3#slide.209"
       ],
-      "formula": ""
+      "formula": "p_{\\text{eff}}(J_L)=p_L<p_M<p_H"
     },
     {
       "id": "file-descriptor",
@@ -396,7 +405,7 @@
       "sources": [
         "ertos-unix-file-io-unit-1#slide.6"
       ],
-      "formula": ""
+      "formula": "\\text{fd}\\in\\{0,1,2,\\dots\\},\\quad \\text{fd}=-1\\Rightarrow\\text{error}"
     },
     {
       "id": "fifo-named-pipe",
@@ -430,7 +439,7 @@
         "ertos-unix-file-io-unit-1#slide.28",
         "ertos-unix-file-io-unit-1#slide.8"
       ],
-      "formula": ""
+      "formula": "n_{\\text{done}}<n_{\\text{req}}"
     },
     {
       "id": "rio-package",
@@ -452,7 +461,7 @@
       "sources": [
         "ertos-unix-file-io-unit-1#slide.18"
       ],
-      "formula": ""
+      "formula": "\\text{entry}[\\text{newfd}]\\leftarrow\\text{entry}[\\text{oldfd}]"
     },
     {
       "id": "interrupt",
@@ -463,7 +472,8 @@
       "unitTitle": "Exceptions, Interrupts and Timers",
       "sources": [
         "ertos-web-interrupt#Lead-section"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "isr",
@@ -474,7 +484,8 @@
       "unitTitle": "Exceptions, Interrupts and Timers",
       "sources": [
         "ertos-web-interrupt#Lead-section"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "exception",
@@ -518,7 +529,8 @@
       "unitTitle": "Exceptions, Interrupts and Timers",
       "sources": [
         "ertos-web-interrupt#System-implementation"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "real-time-clock",
@@ -536,12 +548,13 @@
       "id": "programmable-interval-timer",
       "term": "Programmable Interval Timer",
       "definition": "Counter that produces an output signal on reaching a programmed count, which may be used to trigger a processor request.",
-      "formula": "",
+      "formula": "T_{\\text{tick}}=\\frac{N}{f_{\\text{clk}}}",
       "unit": 5,
       "unitTitle": "Exceptions, Interrupts and Timers",
       "sources": [
         "ertos-web-pit#Lead-section"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "one-shot-timer",
@@ -618,7 +631,8 @@
       "unitTitle": "Case Studies of RTOS",
       "sources": [
         "ertos-web-tinyos#Implementation"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "embedded-linux",

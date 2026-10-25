@@ -52,7 +52,8 @@
         "cn-cn-unit-1#slide.26"
       ],
       "id": "mesh-topology",
-      "formula": ""
+      "formula": "L=\\frac{n(n-1)}{2}",
+      "diagram": "routing"
     },
     {
       "term": "LAN",
@@ -85,7 +86,7 @@
         "cn-cn-unit-1#slide.83"
       ],
       "id": "twisted-pair",
-      "formula": ""
+      "formula": "v_{\\text{d}}=v_{1}-v_{2}"
     },
     {
       "term": "Fiber Optics",
@@ -96,7 +97,8 @@
         "cn-cn-unit-1#slide.91"
       ],
       "id": "fiber-optics",
-      "formula": ""
+      "formula": "n_{\\text{core}}>n_{\\text{clad}}",
+      "diagram": "optical-fiber"
     },
     {
       "term": "OSI Reference Model",
@@ -107,7 +109,8 @@
         "cn-cn-unit-1#slide.52"
       ],
       "id": "osi-reference-model",
-      "formula": ""
+      "formula": "",
+      "diagram": "osi-stack"
     },
     {
       "term": "Byte Stuffing",
@@ -140,7 +143,7 @@
         "cn-cn-unit-2#slide.63"
       ],
       "id": "checksum",
-      "formula": ""
+      "formula": "C=\\overline{\\sum_{i=1}^{k}W_{i}}"
     },
     {
       "term": "Cyclic Redundancy Check (CRC)",
@@ -151,7 +154,7 @@
         "cn-cn-unit-2#slide.68"
       ],
       "id": "cyclic-redundancy-check-crc",
-      "formula": ""
+      "formula": "R(x)=x^{n}D(x)\\bmod G(x)"
     },
     {
       "term": "Stop-and-Wait ARQ",
@@ -162,7 +165,7 @@
         "cn-cn-unit-2#slide.25"
       ],
       "id": "stop-and-wait-arq",
-      "formula": ""
+      "formula": "\\eta=\\frac{1}{1+2a},\\quad a=\\frac{T_{p}}{T_{fr}}"
     },
     {
       "term": "Go-Back-N ARQ",
@@ -173,7 +176,7 @@
         "cn-cn-unit-2#slide.30"
       ],
       "id": "go-back-n-arq",
-      "formula": ""
+      "formula": "W\\le 2^{m}-1"
     },
     {
       "term": "Selective Repeat ARQ",
@@ -184,7 +187,7 @@
         "cn-cn-unit-2#slide.42"
       ],
       "id": "selective-repeat-arq",
-      "formula": ""
+      "formula": "W\\le\\frac{2^{m}}{2}=2^{m-1}"
     },
     {
       "term": "Piggybacking",
@@ -228,7 +231,7 @@
         "cn-cn-unit-3#slide.9"
       ],
       "id": "pure-aloha",
-      "formula": ""
+      "formula": "S=G\\,e^{-2G},\\quad S_{\\max}=0.184"
     },
     {
       "term": "Slotted ALOHA",
@@ -239,7 +242,7 @@
         "cn-cn-unit-3#slide.12"
       ],
       "id": "slotted-aloha",
-      "formula": ""
+      "formula": "S=G\\,e^{-G},\\quad S_{\\max}=1/e\\approx 0.368"
     },
     {
       "term": "CSMA/CD",
@@ -250,7 +253,8 @@
         "cn-cn-unit-3#slide.21"
       ],
       "id": "csma-cd",
-      "formula": ""
+      "formula": "T_{fr}\\ge 2T_{p}",
+      "diagram": "csma"
     },
     {
       "term": "CSMA/CA",
@@ -261,7 +265,8 @@
         "cn-cn-unit-3#slide.27"
       ],
       "id": "csma-ca",
-      "formula": ""
+      "formula": "",
+      "diagram": "csma"
     },
     {
       "term": "Hidden Station Problem",
@@ -305,7 +310,8 @@
         "cn-cn-unit-4#slide.4"
       ],
       "id": "store-and-forward-packet-switching",
-      "formula": ""
+      "formula": "T_{\\text{hop}}=\\frac{L}{R}",
+      "diagram": "ip-packet"
     },
     {
       "term": "Flooding",
@@ -327,7 +333,8 @@
         "cn-cn-unit-4#slide.21"
       ],
       "id": "distance-vector-routing",
-      "formula": ""
+      "formula": "D_{x}(y)=\\min_{v}\\{c(x,v)+D_{v}(y)\\}",
+      "diagram": "routing"
     },
     {
       "term": "Count-to-Infinity Problem",
@@ -360,7 +367,8 @@
         "cn-cn-unit-4#slide.31"
       ],
       "id": "link-state-routing",
-      "formula": ""
+      "formula": "D(v)\\leftarrow\\min\\{D(v),\\,D(u)+w(u,v)\\}",
+      "diagram": "graph-search"
     },
     {
       "term": "Reverse Path Forwarding",
@@ -382,7 +390,8 @@
         "cn-cn-unit-4#slide.81"
       ],
       "id": "tunneling",
-      "formula": ""
+      "formula": "",
+      "diagram": "ip-packet"
     },
     {
       "term": "IPv4 Address",
@@ -393,7 +402,8 @@
         "cn-cn-unit-5#slide.16"
       ],
       "id": "ipv4-address",
-      "formula": ""
+      "formula": "N=2^{32}\\approx 4.29\\times 10^{9}",
+      "diagram": "ip-packet"
     },
     {
       "term": "Subnetting",
@@ -404,7 +414,7 @@
         "cn-cn-unit-5#slide.27"
       ],
       "id": "subnetting",
-      "formula": ""
+      "formula": "N_{\\text{sub}}=2^{s},\\quad N_{\\text{host}}=2^{h}-2"
     },
     {
       "term": "Supernetting",
@@ -415,7 +425,7 @@
         "cn-cn-unit-5#slide.28"
       ],
       "id": "supernetting",
-      "formula": ""
+      "formula": "N_{\\text{blocks}}=2^{k}\\Rightarrow\\text{prefix}=24-k"
     },
     {
       "term": "NAT",
@@ -426,7 +436,8 @@
         "cn-cn-unit-5#slide.39"
       ],
       "id": "nat",
-      "formula": ""
+      "formula": "(\\text{privIP},\\text{port})\\mapsto(\\text{pubIP},\\text{port}')",
+      "diagram": "ip-packet"
     },
     {
       "term": "DHCP",
@@ -470,7 +481,7 @@
         "cn-cn-unit-5#slide.102"
       ],
       "id": "token-bucket-algorithm",
-      "formula": ""
+      "formula": "D_{\\max}(t)=b+rt"
     },
     {
       "term": "UDP",
@@ -492,7 +503,7 @@
         "cn-cn-unit-6a#slide.28"
       ],
       "id": "tcp",
-      "formula": ""
+      "formula": "\\text{throughput}\\le\\frac{W}{RTT}"
     },
     {
       "term": "Three-Way Handshaking",
@@ -503,7 +514,8 @@
         "cn-cn-unit-6a#slide.43"
       ],
       "id": "three-way-handshaking",
-      "formula": ""
+      "formula": "",
+      "diagram": "tcp-handshake"
     },
     {
       "term": "DNS",

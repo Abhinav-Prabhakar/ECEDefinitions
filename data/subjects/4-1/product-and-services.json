@@ -114,7 +114,7 @@
       "id": "product-mix-length",
       "term": "Product mix length",
       "definition": "Total number of items in the mix of a company.",
-      "formula": "",
+      "formula": "L=\\sum_{i=1}^{W} n_i",
       "unit": 1,
       "unitTitle": "Interpretations on Product",
       "sources": [
@@ -147,7 +147,7 @@
       "id": "product-cannibalization",
       "term": "Product cannibalization",
       "definition": "Situation in which a new offering takes sales away from a company's existing offering instead of attracting new customers.",
-      "formula": "",
+      "formula": "\\text{CR}=\\frac{S_{\\text{lost,old}}}{S_{\\text{new}}}",
       "unit": 1,
       "unitTitle": "Interpretations on Product",
       "sources": [
@@ -290,12 +290,13 @@
       "id": "cost-analysis",
       "term": "Cost analysis",
       "definition": "Systematic evaluation of all costs associated with launching a new product to support pricing, budgeting and profitability decisions.",
-      "formula": "",
+      "formula": "C_{\\text{total}}=F+c_vQ",
       "unit": 3,
       "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.3"
-      ]
+      ],
+      "diagram": "break-even"
     },
     {
       "id": "promotion-planning",
@@ -323,7 +324,7 @@
       "id": "affiliate-marketing",
       "term": "Affiliate marketing",
       "definition": "Performance-based method in which an individual or business earns a commission for promoting and selling another company's products.",
-      "formula": "",
+      "formula": "C_{\\text{aff}}=r\\,S_{\\text{ref}}",
       "unit": 3,
       "unitTitle": "Launching Product",
       "sources": [
@@ -372,7 +373,8 @@
       "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.37"
-      ]
+      ],
+      "diagram": "product-lifecycle"
     },
     {
       "id": "service",
@@ -411,18 +413,19 @@
       "id": "heterogeneity",
       "term": "Heterogeneity",
       "definition": "Characteristic of services that each one is unique, can never be exactly repeated and is typically modified for each consumer.",
-      "formula": "",
+      "formula": "\\text{CV}=\\frac{\\sigma}{\\mu}",
       "unit": 4,
       "unitTitle": "Introduction to Service",
       "sources": [
         "ps-wiki-service#characteristics"
-      ]
+      ],
+      "diagram": "gaussian"
     },
     {
       "id": "perishability",
       "term": "Perishability",
       "definition": "Characteristic of services by which a rendered service irreversibly vanishes and unused capacity is lost.",
-      "formula": "",
+      "formula": "\\text{Yield}=\\frac{Q_{\\text{sold}}}{Q_{\\text{capacity}}}",
       "unit": 4,
       "unitTitle": "Introduction to Service",
       "sources": [
@@ -449,7 +452,8 @@
       "unitTitle": "Introduction to Service",
       "sources": [
         "ps-wiki-marketing-mix#overview"
-      ]
+      ],
+      "diagram": "marketing-mix"
     },
     {
       "id": "people-element",
@@ -515,7 +519,8 @@
       "unitTitle": "Service Process Design and Service Distribution",
       "sources": [
         "ps-wiki-service-design#overview"
-      ]
+      ],
+      "diagram": "design-thinking"
     },
     {
       "id": "service-blueprint",
@@ -559,7 +564,8 @@
       "unitTitle": "Service Process Design and Service Distribution",
       "sources": [
         "ps-wiki-distribution#overview"
-      ]
+      ],
+      "diagram": "supply-chain"
     },
     {
       "id": "intermediary",
@@ -620,7 +626,7 @@
       "id": "service-quality",
       "term": "Service quality",
       "definition": "Comparison of the perceived expectations of a service with its perceived performance.",
-      "formula": "SQ = P − E",
+      "formula": "\\text{SQ}=P-E",
       "unit": 6,
       "unitTitle": "Quality of Service",
       "sources": [
@@ -631,7 +637,7 @@
       "id": "service-quality-gap",
       "term": "Service quality gap",
       "definition": "Difference between customer expectations and perceptions, the only gap that can be measured directly.",
-      "formula": "",
+      "formula": "G_{5}=E-P",
       "unit": 6,
       "unitTitle": "Quality of Service",
       "sources": [
@@ -653,7 +659,7 @@
       "id": "servqual",
       "term": "SERVQUAL",
       "definition": "Scale that measures customer perception of service quality by comparing what customers expect with what they receive.",
-      "formula": "",
+      "formula": "\\text{SQ}=\\frac{1}{n}\\sum_{i=1}^{n}(P_i-E_i)",
       "unit": 6,
       "unitTitle": "Quality of Service",
       "sources": [

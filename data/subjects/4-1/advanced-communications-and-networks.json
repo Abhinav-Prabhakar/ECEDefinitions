@@ -27,7 +27,7 @@
         "acn-unit-i#p.4"
       ],
       "id": "spread-spectrum",
-      "formula": ""
+      "formula": "G_{p}=\\frac{B_{\\text{ss}}}{B_{m}}"
     },
     {
       "term": "Pseudo-Noise (PN) Sequence",
@@ -38,7 +38,8 @@
         "acn-unit-i#p.9"
       ],
       "id": "pseudo-noise-pn-sequence",
-      "formula": ""
+      "formula": "L=2^{n}-1",
+      "diagram": "shift-register"
     },
     {
       "term": "Balance Property",
@@ -49,7 +50,7 @@
         "acn-unit-i#p.5"
       ],
       "id": "balance-property",
-      "formula": ""
+      "formula": "N_{1}=2^{n-1},\\quad N_{0}=2^{n-1}-1"
     },
     {
       "term": "Run Length Property",
@@ -60,7 +61,7 @@
         "acn-unit-i#p.6"
       ],
       "id": "run-length-property",
-      "formula": ""
+      "formula": "N_{k}=2^{n-k-1},\\quad 1\\le k\\le n-2"
     },
     {
       "term": "Correlation Property",
@@ -71,7 +72,7 @@
         "acn-unit-i#p.7"
       ],
       "id": "correlation-property",
-      "formula": ""
+      "formula": "R(\\tau)=\\sum_{i=0}^{L-1}a_{i}a_{i+\\tau},\\quad R(\\tau)=-1\\ (\\tau\\ne0)"
     },
     {
       "term": "Gold Code",
@@ -82,7 +83,7 @@
         "acn-unit-i#p.19"
       ],
       "id": "gold-code",
-      "formula": ""
+      "formula": "M=2^{n}+1,\\quad \\left|R_{xy}\\right|\\le 2^{(n+1)/2}+1"
     },
     {
       "term": "Kasami Sequence",
@@ -93,7 +94,7 @@
         "acn-unit-i#p.23"
       ],
       "id": "kasami-sequence",
-      "formula": ""
+      "formula": "M=2^{m/2},\\quad \\left|R_{xy}\\right|\\le 2^{m/2}+1"
     },
     {
       "term": "Walsh-Hadamard Sequence",
@@ -104,7 +105,7 @@
         "acn-unit-i#p.25"
       ],
       "id": "walsh-hadamard-sequence",
-      "formula": ""
+      "formula": "\\sum_{k=0}^{N-1}W_{i}(k)W_{j}(k)=N\\delta_{ij}"
     },
     {
       "term": "Barker Sequence",
@@ -115,7 +116,7 @@
         "acn-unit-i#p.28"
       ],
       "id": "barker-sequence",
-      "formula": ""
+      "formula": "\\left|\\sum_{n}a_{n}a_{n+\\tau}\\right|\\le 1,\\quad \\tau\\ne0"
     },
     {
       "term": "Orthogonal Variable Spreading Factor (OVSF)",
@@ -126,7 +127,7 @@
         "acn-unit-i#p.29"
       ],
       "id": "orthogonal-variable-spreading-factor-ovsf",
-      "formula": ""
+      "formula": "R_{c}=SF\\cdot R_{s},\\quad SF=2^{k}"
     },
     {
       "term": "8-PSK",
@@ -137,7 +138,8 @@
         "acn-unit-i#p.33"
       ],
       "id": "8-psk",
-      "formula": ""
+      "formula": "R_{b}=3R_{s},\\quad B_{\\min}=\\frac{R_{b}}{3}",
+      "diagram": "constellation"
     },
     {
       "term": "Differential Quadrature Phase Shift Keying",
@@ -148,7 +150,8 @@
         "acn-unit-i#p.58"
       ],
       "id": "differential-quadrature-phase-shift-keying",
-      "formula": ""
+      "formula": "\\phi_{k}=\\phi_{k-1}+\\frac{2\\pi m_{k}}{4},\\quad m_{k}\\in\\{0,1,2,3\\}",
+      "diagram": "constellation"
     },
     {
       "term": "Direct Sequence Spread Spectrum",
@@ -159,7 +162,7 @@
         "acn-unit-i#p.65"
       ],
       "id": "direct-sequence-spread-spectrum",
-      "formula": ""
+      "formula": "G_{p}=10\\log_{10}N,\\quad B_{\\text{ss}}=N R_{b}"
     },
     {
       "term": "Code Division Multiple Access",
@@ -170,7 +173,7 @@
         "acn-unit-i#p.72"
       ],
       "id": "code-division-multiple-access",
-      "formula": ""
+      "formula": "r(t)=\\sum_{i=1}^{K}A_{i}b_{i}(t)c_{i}(t)+n(t)"
     },
     {
       "term": "Rake Receiver",
@@ -181,7 +184,7 @@
         "acn-unit-i#p.85"
       ],
       "id": "rake-receiver",
-      "formula": ""
+      "formula": "y=\\sum_{l=1}^{L}w_{l}\\int r(t)c(t-\\tau_{l})\\,dt"
     },
     {
       "term": "Near-Far Effect",
@@ -192,7 +195,7 @@
         "acn-unit-i#p.91"
       ],
       "id": "near-far-effect",
-      "formula": ""
+      "formula": "\\frac{P_{\\text{far}}}{P_{\\text{near}}}=\\left(\\frac{d_{\\text{near}}}{d_{\\text{far}}}\\right)^{\\alpha}"
     },
     {
       "term": "Soft Handoff",
@@ -203,7 +206,7 @@
         "acn-unit-i#p.93"
       ],
       "id": "soft-handoff",
-      "formula": ""
+      "formula": "\\gamma_{\\text{SHO}}=\\sum_{i\\in S}\\gamma_{i}"
     },
     {
       "term": "Multiuser Detection",
@@ -214,7 +217,7 @@
         "acn-unit-i#p.94"
       ],
       "id": "multiuser-detection",
-      "formula": ""
+      "formula": "\\hat{\\mathbf{b}}=\\arg\\min_{\\mathbf{b}}\\left\\|\\mathbf{r}-\\mathbf{S}\\mathbf{A}\\mathbf{b}\\right\\|^{2}"
     },
     {
       "term": "Public Switched Telephone Network (PSTN)",
@@ -247,7 +250,7 @@
         "acn-unit-ii#p.11"
       ],
       "id": "mobile-assisted-handoff-maho",
-      "formula": ""
+      "formula": "P_{\\text{target}}>P_{\\text{serving}}+\\Delta_{h}"
     },
     {
       "term": "Circuit Switching",
@@ -258,7 +261,7 @@
         "acn-unit-ii#p.20"
       ],
       "id": "circuit-switching",
-      "formula": ""
+      "formula": "P_{b}=\\frac{A^{C}/C!}{\\sum_{k=0}^{C}A^{k}/k!}"
     },
     {
       "term": "Packet Switching",
@@ -269,7 +272,8 @@
         "acn-unit-ii#p.23"
       ],
       "id": "packet-switching",
-      "formula": ""
+      "formula": "T_{\\text{hop}}=\\frac{L}{R},\\quad T_{\\text{total}}=\\sum_{i=1}^{H}\\frac{L}{R_{i}}",
+      "diagram": "ip-packet"
     },
     {
       "term": "X.25 Protocol",
@@ -280,7 +284,8 @@
         "acn-unit-ii#p.24"
       ],
       "id": "x-25-protocol",
-      "formula": ""
+      "formula": "",
+      "diagram": "osi-stack"
     },
     {
       "term": "Cellular Digital Packet Data (CDPD)",
@@ -313,7 +318,8 @@
         "acn-unit-ii#p.35"
       ],
       "id": "signaling-system-number-7-ss7",
-      "formula": ""
+      "formula": "",
+      "diagram": "osi-stack"
     },
     {
       "term": "Integrated Services Digital Network (ISDN)",
@@ -324,7 +330,7 @@
         "acn-unit-ii#p.40"
       ],
       "id": "integrated-services-digital-network-isdn",
-      "formula": ""
+      "formula": "R_{\\text{BRI}}=2(64)+16=144\\ \\text{kbit/s}"
     },
     {
       "term": "Broadband ISDN (B-ISDN)",
@@ -335,7 +341,7 @@
         "acn-unit-ii#p.43"
       ],
       "id": "broadband-isdn-b-isdn",
-      "formula": ""
+      "formula": "L_{\\text{cell}}=5+48=53\\ \\text{B}"
     },
     {
       "term": "Ethernet",
@@ -401,7 +407,8 @@
         "acn-unit-iii#p.14"
       ],
       "id": "tunneling-mobile-ip",
-      "formula": ""
+      "formula": "L_{\\text{tunnel}}=L_{\\text{IP}}^{\\text{outer}}+L_{\\text{orig}}",
+      "diagram": "ip-packet"
     },
     {
       "term": "Minimal Encapsulation",
@@ -412,7 +419,8 @@
         "acn-unit-iii#p.16"
       ],
       "id": "minimal-encapsulation",
-      "formula": ""
+      "formula": "L_{\\text{ME}}=L_{\\text{orig}}+8\\ \\text{B}",
+      "diagram": "ip-packet"
     },
     {
       "term": "Session Initiation Protocol (SIP)",
@@ -489,7 +497,8 @@
         "acn-unit-iii#p.39"
       ],
       "id": "internet-protocol-version-6-ipv6",
-      "formula": ""
+      "formula": "N_{\\text{addr}}=2^{128},\\quad L_{\\text{hdr}}=40\\ \\text{B}",
+      "diagram": "ip-packet"
     },
     {
       "id": "ssid",
@@ -561,12 +570,13 @@
       "id": "csma-ca",
       "term": "CSMA/CA",
       "definition": "Medium access method where a station listens to the channel before each frame, optionally exchanging RTS and CTS to handle hidden stations.",
-      "formula": "",
+      "formula": "T_{\\text{bo}}=U(0,CW)\\,T_{\\text{slot}}",
       "unit": 4,
       "unitTitle": "Wireless LANs",
       "sources": [
         "acn-web-ieee-802-11#Protocol"
-      ]
+      ],
+      "diagram": "csma"
     },
     {
       "id": "hiperlan-2",
@@ -588,7 +598,8 @@
       "unitTitle": "Wireless LANs",
       "sources": [
         "acn-web-vpn#Background"
-      ]
+      ],
+      "diagram": "encryption"
     },
     {
       "id": "bluetooth",
@@ -676,7 +687,8 @@
       "unitTitle": "Wireless PANs and MANs",
       "sources": [
         "acn-web-wimax#Media-access-control-layer"
-      ]
+      ],
+      "diagram": "scheduling"
     },
     {
       "id": "subscriber-station",
@@ -693,18 +705,19 @@
       "id": "ofdm",
       "term": "OFDM",
       "definition": "Multicarrier scheme sending data over closely spaced orthogonal subcarriers so that they do not interfere and need no guard bands.",
-      "formula": "",
+      "formula": "\\Delta f=\\frac{1}{T_{u}},\\quad T_{s}=T_{u}+T_{g}",
       "unit": 6,
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-ofdm#Orthogonality"
-      ]
+      ],
+      "diagram": "fft-stages"
     },
     {
       "id": "cyclic-prefix",
       "term": "Cyclic Prefix",
       "definition": "Copy of the end of each symbol sent ahead of it in the guard interval, so multipath echoes cause no intersymbol interference.",
-      "formula": "",
+      "formula": "T_{g}\\ge\\tau_{\\max},\\quad T_{s}=T_{u}+T_{g}",
       "unit": 6,
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
@@ -715,7 +728,7 @@
       "id": "papr",
       "term": "PAPR",
       "definition": "Ratio of peak to average transmitted power, high in multicarrier signals because independent subcarriers often add constructively, demanding linear power amplifiers.",
-      "formula": "",
+      "formula": "\\text{PAPR}=\\frac{\\max_{t}\\left|x(t)\\right|^{2}}{\\mathbb{E}\\left[\\left|x(t)\\right|^{2}\\right]}",
       "unit": 6,
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
@@ -726,18 +739,19 @@
       "id": "mimo",
       "term": "MIMO",
       "definition": "Wireless technique using several transmit and receive antennas to raise link capacity through spatial diversity and spatial multiplexing.",
-      "formula": "",
+      "formula": "C=\\log_{2}\\det\\left(\\mathbf{I}_{N_{r}}+\\frac{\\rho}{N_{t}}\\mathbf{H}\\mathbf{H}^{H}\\right)",
       "unit": 6,
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-mimo#Functions"
-      ]
+      ],
+      "diagram": "antenna-array"
     },
     {
       "id": "spatial-multiplexing",
       "term": "Spatial Multiplexing",
       "definition": "Splitting a high-rate stream into several lower-rate streams sent simultaneously on the same frequency and separated by their spatial signatures.",
-      "formula": "",
+      "formula": "C\\approx\\min(N_{t},N_{r})\\log_{2}\\left(1+\\text{SNR}\\right)",
       "unit": 6,
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
@@ -770,12 +784,13 @@
       "id": "td-lte",
       "term": "TD-LTE",
       "definition": "Time-division variant of LTE in which uplink and downlink share one frequency channel.",
-      "formula": "",
+      "formula": "\\eta_{\\text{DL}}+\\eta_{\\text{UL}}=1",
       "unit": 6,
       "unitTitle": "OFDM, MIMO and LTE",
       "sources": [
         "acn-web-lte#LTE-TDD-and-LTE-FDD"
-      ]
+      ],
+      "diagram": "scheduling"
     },
     {
       "id": "volte",

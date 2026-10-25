@@ -38,7 +38,8 @@
         "soca-unit-1#p.8"
       ],
       "id": "system-on-chip",
-      "formula": ""
+      "formula": "A_{\\text{die}}=\\sum_{i}A_{i}+A_{\\text{interconnect}}",
+      "diagram": "soc-blocks"
     },
     {
       "term": "ASIP",
@@ -60,7 +61,8 @@
         "soca-unit-1#p.8"
       ],
       "id": "fpga",
-      "formula": ""
+      "formula": "",
+      "diagram": "fpga"
     },
     {
       "term": "CGRA",
@@ -82,7 +84,7 @@
         "soca-unit-1#p.11"
       ],
       "id": "instruction-level-parallelism",
-      "formula": ""
+      "formula": "\\text{ILP}=\\frac{N_{\\text{ops}}}{N_{\\text{cycles}}}"
     },
     {
       "term": "Pipelining",
@@ -93,7 +95,8 @@
         "soca-unit-1#p.15"
       ],
       "id": "pipelining",
-      "formula": ""
+      "formula": "S=\\frac{nk}{k+n-1}",
+      "diagram": "pipeline"
     },
     {
       "term": "Superscalar Processor",
@@ -104,7 +107,7 @@
         "soca-unit-1#p.21"
       ],
       "id": "superscalar-processor",
-      "formula": ""
+      "formula": "\\text{IPC}=\\frac{\\text{instructions}}{\\text{cycles}}\\le m"
     },
     {
       "term": "VLIW Processor",
@@ -115,7 +118,7 @@
         "soca-unit-1#p.24"
       ],
       "id": "vliw-processor",
-      "formula": ""
+      "formula": "W=\\sum_{i=1}^{m}w_{i}"
     },
     {
       "term": "Array Processor",
@@ -126,7 +129,7 @@
         "soca-unit-1#p.4"
       ],
       "id": "array-processor",
-      "formula": ""
+      "formula": "T_{P}=\\frac{N}{P}\\,t_{\\text{PE}}"
     },
     {
       "term": "Vector Processor",
@@ -137,7 +140,7 @@
         "soca-unit-1#p.4"
       ],
       "id": "vector-processor",
-      "formula": ""
+      "formula": "T_{v}=t_{\\text{start}}+n\\,t_{\\text{elem}}"
     },
     {
       "term": "Virtual Memory",
@@ -148,7 +151,8 @@
         "soca-unit-1#p.13"
       ],
       "id": "virtual-memory",
-      "formula": ""
+      "formula": "N_{\\text{pages}}=\\frac{2^{n_{\\text{VA}}}}{S_{\\text{page}}}",
+      "diagram": "paging"
     },
     {
       "term": "Intellectual Property (IP) Block",
@@ -170,7 +174,8 @@
         "soca-unit-1#p.51"
       ],
       "id": "network-on-chip",
-      "formula": ""
+      "formula": "T_{\\text{NoC}}=H\\,t_{r}+\\frac{L}{b}",
+      "diagram": "routing"
     },
     {
       "term": "Unit Cost",
@@ -181,7 +186,7 @@
         "soca-unit-1#p.1"
       ],
       "id": "unit-cost",
-      "formula": ""
+      "formula": "C_{\\text{unit}}=\\frac{K_{f}+K_{v}n}{n}=\\frac{K_{f}}{n}+K_{v}"
     },
     {
       "term": "Soft Processor",
@@ -203,7 +208,7 @@
         "soca-unit-2#p.12"
       ],
       "id": "register-bit-equivalent",
-      "formula": ""
+      "formula": "A_{\\text{rbe}}=6A_{\\text{tr}}+A_{\\text{ovh}}"
     },
     {
       "term": "Program Status Word",
@@ -258,7 +263,7 @@
         "soca-unit-2#p.45"
       ],
       "id": "total-instruction-time",
-      "formula": ""
+      "formula": "T_{\\text{TOTAL}}=T_{\\text{EXEC}}+T_{D}+T_{M}"
     },
     {
       "term": "Branch Target Buffer",
@@ -269,7 +274,7 @@
         "soca-unit-2#p.52"
       ],
       "id": "branch-target-buffer",
-      "formula": ""
+      "formula": "T_{\\text{avg}}=h\\,T_{\\text{base}}+(1-h)\\,T_{\\text{pen}}"
     },
     {
       "term": "Bimodal Branch Prediction",
@@ -291,7 +296,7 @@
         "soca-unit-2#p.66"
       ],
       "id": "vector-register",
-      "formula": ""
+      "formula": "N_{\\text{elem}}=\\frac{W_{\\text{VR}}}{w}"
     },
     {
       "term": "Register Renaming",
@@ -335,7 +340,8 @@
         "soca-unit-3#p.8"
       ],
       "id": "memory-access-time",
-      "formula": ""
+      "formula": "T_{\\text{access}}=t_{\\text{addr}}+t_{\\text{mem}}+t_{\\text{data}}",
+      "diagram": "memory-hierarchy"
     },
     {
       "term": "Memory Bandwidth",
@@ -346,7 +352,7 @@
         "soca-unit-3#p.24"
       ],
       "id": "memory-bandwidth",
-      "formula": ""
+      "formula": "B=\\frac{W}{T_{\\text{access}}}"
     },
     {
       "term": "Flash Memory",
@@ -357,7 +363,7 @@
         "soca-unit-3#p.6"
       ],
       "id": "flash-memory",
-      "formula": ""
+      "formula": "\\Delta V_{th}=\\frac{Q_{\\text{FG}}}{C_{\\text{FG}}}"
     },
     {
       "term": "Scratchpad Memory",
@@ -379,7 +385,8 @@
         "soca-unit-3#p.11"
       ],
       "id": "cache-miss",
-      "formula": ""
+      "formula": "T_{\\text{avg}}=T_{\\text{hit}}+m\\,T_{\\text{miss}}",
+      "diagram": "memory-hierarchy"
     },
     {
       "term": "Direct-Mapped Cache",
@@ -390,7 +397,8 @@
         "soca-unit-3#p.16"
       ],
       "id": "direct-mapped-cache",
-      "formula": ""
+      "formula": "i=B_{\\text{block}}\\bmod N_{\\text{lines}}",
+      "diagram": "cache-map"
     },
     {
       "term": "Set-Associative Cache",
@@ -401,7 +409,8 @@
         "soca-unit-3#p.16"
       ],
       "id": "set-associative-cache",
-      "formula": ""
+      "formula": "N_{\\text{sets}}=\\frac{N_{\\text{lines}}}{E}",
+      "diagram": "cache-map"
     },
     {
       "term": "Copy-Back Policy",
@@ -412,7 +421,7 @@
         "soca-unit-3#p.24"
       ],
       "id": "copy-back-policy",
-      "formula": ""
+      "formula": "N_{\\text{WB}}=d\\,N_{\\text{replace}}"
     },
     {
       "term": "LRU Replacement",
@@ -434,7 +443,7 @@
         "soca-unit-3#p.27"
       ],
       "id": "split-i-and-d-caches",
-      "formula": ""
+      "formula": "B_{\\text{split}}=B_{I}+B_{D}"
     },
     {
       "term": "eDRAM",
@@ -445,7 +454,7 @@
         "soca-unit-3#p.36"
       ],
       "id": "edram",
-      "formula": ""
+      "formula": "t_{\\text{ret}}=\\frac{C_{s}\\Delta V}{I_{\\text{leak}}}"
     },
     {
       "term": "Strecker–Ravi Model",
@@ -462,7 +471,7 @@
       "id": "bus-based-interconnect",
       "term": "Bus-Based Interconnect",
       "definition": "Traditional on-chip communication in which a shared global bus connects the blocks of a chip, scaling poorly as core counts grow.",
-      "formula": "",
+      "formula": "T_{\\text{bus}}=t_{\\text{arb}}+t_{\\text{addr}}+t_{\\text{data}}",
       "unit": 4,
       "unitTitle": "Interconnect Customization and Configuration",
       "sources": [
@@ -485,7 +494,7 @@
       "id": "ahb",
       "term": "AHB",
       "definition": "Bus protocol with 64 to 1024-bit data paths in which a multiplexer grants access to one master at a time.",
-      "formula": "",
+      "formula": "B=W\\,f_{\\text{clk}}",
       "unit": 4,
       "unitTitle": "Interconnect Customization and Configuration",
       "sources": [
@@ -518,7 +527,7 @@
       "id": "axi",
       "term": "AXI",
       "definition": "Third-generation Arm bus interface for high-frequency designs, separating address and data phases, supporting bursts and out-of-order responses to multiple outstanding addresses.",
-      "formula": "",
+      "formula": "B_{\\text{eff}}=\\frac{N_{\\text{out}}W}{L}",
       "unit": 4,
       "unitTitle": "Interconnect Customization and Configuration",
       "sources": [
@@ -556,7 +565,8 @@
       "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
       "sources": [
         "soca-web-reconfigurable-computing#Introduction"
-      ]
+      ],
+      "diagram": "fpga"
     },
     {
       "id": "partial-reconfiguration",
@@ -606,7 +616,7 @@
       "id": "reconfiguration-rate",
       "term": "Reconfiguration Rate",
       "definition": "Frequency of reloading the hardware, which carries a configuration time and energy cost that is spread more thinly when changes are slower.",
-      "formula": "",
+      "formula": "f_{\\text{reconf}}=\\frac{1}{T_{\\text{cfg}}+T_{\\text{run}}}",
       "unit": 5,
       "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
       "sources": [
@@ -617,7 +627,7 @@
       "id": "spatial-parallelism",
       "term": "Spatial Parallelism",
       "definition": "Replicating an algorithm across one or more FPGAs so several computing units process different data at the same time.",
-      "formula": "",
+      "formula": "T_{N}=\\frac{T_{1}}{N}",
       "unit": 5,
       "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
       "sources": [
@@ -639,18 +649,19 @@
       "id": "asic",
       "term": "ASIC",
       "definition": "Custom chip built for a specific purpose that runs faster and uses less power than programmable logic but cannot be reprogrammed and is costly to make.",
-      "formula": "",
+      "formula": "C_{\\text{NRE}}=C_{\\text{design}}+C_{\\text{mask}}",
       "unit": 5,
       "unitTitle": "Interconnect Configuration and Reconfigurable Devices",
       "sources": [
         "soca-web-soc#Fabrication"
-      ]
+      ],
+      "diagram": "asic-flow"
     },
     {
       "id": "aes",
       "term": "AES",
       "definition": "Symmetric-key encryption standard from NIST, published in 2001 as a restricted variant of Rijndael, processing 128-bit blocks with 128, 192 or 256-bit keys.",
-      "formula": "",
+      "formula": "N_{r}=N_{k}+6",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -661,7 +672,7 @@
       "id": "subbytes",
       "term": "SubBytes",
       "definition": "Non-linear cipher step replacing each state byte through a fixed 8-bit lookup table derived from a finite-field inverse and an affine transformation.",
-      "formula": "",
+      "formula": "S(a)=A\\,a^{-1}\\oplus c,\\quad a\\in\\text{GF}(2^{8})",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -672,7 +683,7 @@
       "id": "shiftrows",
       "term": "ShiftRows",
       "definition": "Cipher step rotating the bytes of each state row by a different offset, so columns are not encrypted independently.",
-      "formula": "",
+      "formula": "s'_{r,c}=s_{r,(c+r)\\bmod 4}",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -683,7 +694,7 @@
       "id": "mixcolumns",
       "term": "MixColumns",
       "definition": "Cipher step applying an invertible linear transformation to each state column using a fixed finite-field matrix, spreading changes across the block.",
-      "formula": "",
+      "formula": "s'(x)=(03x^{3}+01x^{2}+01x+02)\\,s(x)\\bmod(x^{4}+1)",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -694,7 +705,7 @@
       "id": "addroundkey",
       "term": "AddRoundKey",
       "definition": "Cipher step that XORs each state byte with the corresponding byte of the current round key, the only step using the key directly.",
-      "formula": "",
+      "formula": "s'_{r,c}=s_{r,c}\\oplus k_{r,c}",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -705,7 +716,7 @@
       "id": "jpeg",
       "term": "JPEG",
       "definition": "Widely used lossy image compression method with adjustable quality-versus-size trade-off, typically reaching about 10:1 compression with acceptable loss.",
-      "formula": "",
+      "formula": "\\text{CR}=\\frac{S_{\\text{raw}}}{S_{\\text{comp}}}",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -716,7 +727,7 @@
       "id": "discrete-cosine-transform",
       "term": "Discrete Cosine Transform",
       "definition": "Operation converting each 8×8 pixel block from spatial values into frequency components, on which lossy image compression is built.",
-      "formula": "",
+      "formula": "F(u)=\\frac{C(u)}{2}\\sum_{x=0}^{7}f(x)\\cos\\frac{(2x+1)u\\pi}{16}",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
@@ -727,23 +738,25 @@
       "id": "jpeg-quantization",
       "term": "JPEG Quantization",
       "definition": "Division of each frequency coefficient by a constant followed by rounding to an integer, the main lossy step in the pipeline.",
-      "formula": "",
+      "formula": "F_{q}(u,v)=\\text{round}\\!\\left(\\frac{F(u,v)}{Q(u,v)}\\right)",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
         "soca-web-jpeg#JPEG-compression"
-      ]
+      ],
+      "diagram": "quantization"
     },
     {
       "id": "chroma-subsampling",
       "term": "Chroma Subsampling",
       "definition": "Reducing the resolution of the colour-difference components, commonly 4:2:0, because the eye is less sensitive to fine colour detail.",
-      "formula": "",
+      "formula": "N_{Cb}=N_{Cr}=\\frac{N_{Y}}{4}",
       "unit": 6,
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
         "soca-web-jpeg#JPEG-compression"
-      ]
+      ],
+      "diagram": "multirate"
     },
     {
       "id": "soc-design-flow",
@@ -754,7 +767,8 @@
       "unitTitle": "Application Studies: AES and JPEG",
       "sources": [
         "soca-web-soc#Design-flow"
-      ]
+      ],
+      "diagram": "verification-flow"
     }
   ]
 }

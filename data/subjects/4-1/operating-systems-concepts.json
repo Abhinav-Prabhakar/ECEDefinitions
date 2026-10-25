@@ -37,7 +37,7 @@
       "id": "multiprogramming",
       "term": "Multiprogramming",
       "definition": "Keeping several jobs in memory so that another job can use the CPU when one is blocked waiting for input or output.",
-      "formula": "",
+      "formula": "U=1-p^{n}",
       "unit": 1,
       "unitTitle": "Introduction to Operating Systems",
       "sources": [
@@ -174,7 +174,8 @@
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-process#overview"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "process-control-block",
@@ -196,13 +197,14 @@
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-process#process-states"
-      ]
+      ],
+      "diagram": "process-states"
     },
     {
       "id": "scheduler",
       "term": "Scheduler",
       "definition": "Operating system module that selects the next jobs to be admitted into the system and which process runs next.",
-      "formula": "",
+      "formula": "U=\\frac{T_{\\text{busy}}}{T_{\\text{total}}}",
       "unit": 2,
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
@@ -213,7 +215,7 @@
       "id": "long-term-scheduler",
       "term": "Long-term scheduler",
       "definition": "Admission scheduler that decides which jobs or processes are admitted to the ready queue, controlling the degree of multiprogramming.",
-      "formula": "",
+      "formula": "\\lambda=\\frac{N_{\\text{done}}}{T}",
       "unit": 2,
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
@@ -240,7 +242,8 @@
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-scheduling#types"
-      ]
+      ],
+      "diagram": "scheduling"
     },
     {
       "id": "preemptive-scheduling",
@@ -251,24 +254,26 @@
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-scheduling#types"
-      ]
+      ],
+      "diagram": "process-states"
     },
     {
       "id": "first-come-first-served",
       "term": "First come, first served",
       "definition": "The simplest scheduling algorithm, which runs processes in arrival order so long processes can delay short ones.",
-      "formula": "",
+      "formula": "W_i=\\sum_{j<i}B_j,\\quad T_i=C_i-A_i",
       "unit": 2,
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-scheduling#algorithms"
-      ]
+      ],
+      "diagram": "scheduling"
     },
     {
       "id": "shortest-remaining-time",
       "term": "Shortest remaining time",
       "definition": "Scheduling that puts next in the queue the process with the least estimated processing time remaining, which requires time estimates.",
-      "formula": "",
+      "formula": "\\text{next}=\\arg\\min_i\\,(B_i-c_i(t))",
       "unit": 2,
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
@@ -279,18 +284,19 @@
       "id": "round-robin",
       "term": "Round robin",
       "definition": "Scheduling that assigns a fixed time unit per process and cycles through them, rescheduling unfinished processes after others get a turn.",
-      "formula": "",
+      "formula": "T_{\\text{resp}}\\le nq",
       "unit": 2,
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
         "osc-wiki-scheduling#algorithms"
-      ]
+      ],
+      "diagram": "scheduling"
     },
     {
       "id": "multilevel-queue",
       "term": "Multilevel queue",
       "definition": "Scheduling used when processes divide easily into groups, such as foreground interactive and background batch processes.",
-      "formula": "",
+      "formula": "f_i=\\frac{w_i}{\\sum_j w_j}",
       "unit": 2,
       "unitTitle": "Process Management and CPU Scheduling",
       "sources": [
@@ -312,7 +318,7 @@
       "id": "critical-section",
       "term": "Critical section",
       "definition": "Protected section of code that cannot be executed by more than one process or thread at a time.",
-      "formula": "",
+      "formula": "N_{\\text{CS}}\\le 1",
       "unit": 3,
       "unitTitle": "Process Synchronization and Inter Process Communication",
       "sources": [
@@ -334,7 +340,7 @@
       "id": "binary-semaphore",
       "term": "Binary semaphore",
       "definition": "Semaphore restricted to the values 0 and 1, often used to build locks.",
-      "formula": "",
+      "formula": "S\\in\\{0,1\\}",
       "unit": 3,
       "unitTitle": "Process Synchronization and Inter Process Communication",
       "sources": [
@@ -345,7 +351,7 @@
       "id": "counting-semaphore",
       "term": "Counting semaphore",
       "definition": "Semaphore that allows an arbitrary resource count, tracking a pool of identical resources.",
-      "formula": "",
+      "formula": "S\\in\\{0,1,\\ldots,R\\}",
       "unit": 3,
       "unitTitle": "Process Synchronization and Inter Process Communication",
       "sources": [
@@ -356,7 +362,7 @@
       "id": "wait-operation",
       "term": "Wait operation",
       "definition": "Semaphore operation that decrements the semaphore value by one and blocks the caller if the result is negative.",
-      "formula": "P: S ← S − 1",
+      "formula": "S\\leftarrow S-1;\\quad S<0\\Rightarrow\\text{block}",
       "unit": 3,
       "unitTitle": "Process Synchronization and Inter Process Communication",
       "sources": [
@@ -367,7 +373,7 @@
       "id": "signal-operation",
       "term": "Signal operation",
       "definition": "Semaphore operation that increments the semaphore value by one and wakes a waiting process if there is one.",
-      "formula": "V: S ← S + 1",
+      "formula": "S\\leftarrow S+1;\\quad S\\le 0\\Rightarrow\\text{wake}",
       "unit": 3,
       "unitTitle": "Process Synchronization and Inter Process Communication",
       "sources": [
@@ -438,13 +444,14 @@
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-deadlock#overview"
-      ]
+      ],
+      "diagram": "deadlock"
     },
     {
       "id": "mutual-exclusion-condition",
       "term": "Mutual exclusion condition",
       "definition": "Deadlock condition that resources are not shareable, so only one process at a time may use each resource.",
-      "formula": "",
+      "formula": "n_{\\text{users}}(r)\\le 1",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
@@ -466,18 +473,19 @@
       "id": "circular-wait",
       "term": "Circular wait",
       "definition": "Deadlock condition in which each process waits for a resource held by another process in the cycle.",
-      "formula": "",
+      "formula": "p_1\\to p_2\\to\\cdots\\to p_n\\to p_1",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-deadlock#necessary-conditions"
-      ]
+      ],
+      "diagram": "deadlock"
     },
     {
       "id": "deadlock-avoidance",
       "term": "Deadlock avoidance",
       "definition": "Approach that analyses each resource request to check whether granting it could still lead to deadlock, as the banker's algorithm does.",
-      "formula": "",
+      "formula": "\\text{Need}_i=\\text{Max}_i-\\text{Alloc}_i",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
@@ -504,13 +512,14 @@
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-memory-management#virtual-memory"
-      ]
+      ],
+      "diagram": "paging"
     },
     {
       "id": "external-fragmentation",
       "term": "External fragmentation",
       "definition": "Many small gaps between allocated memory blocks that can make the gaps unusable for new allocation requests.",
-      "formula": "",
+      "formula": "\\sum_i h_i\\ge R,\\quad \\max_i h_i<R",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
@@ -521,12 +530,13 @@
       "id": "paging",
       "term": "Paging",
       "definition": "Memory management scheme that adds a level of indirection between physical and logical addresses, letting a program's physical memory be non-contiguous.",
-      "formula": "",
+      "formula": "\\text{PA}=\\text{frameNo}\\times\\text{pageSize}+\\text{offset}",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-paging#overview"
-      ]
+      ],
+      "diagram": "paging"
     },
     {
       "id": "page-frame",
@@ -543,18 +553,19 @@
       "id": "page-table",
       "term": "Page table",
       "definition": "Structure that maps pages to page frames, letting scattered pages appear as one contiguous logical address space.",
-      "formula": "",
+      "formula": "\\text{PTE}[\\text{VPN}]=\\text{PFN}",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
         "osc-wiki-paging#overview"
-      ]
+      ],
+      "diagram": "paging"
     },
     {
       "id": "page-fault",
       "term": "Page fault",
       "definition": "Event triggered when a process references a page that is not mapped to a frame in memory, passing control to the operating system.",
-      "formula": "",
+      "formula": "\\text{EMAT}=(1-p)\\,t_{\\text{mem}}+p\\,t_{\\text{fault}}",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
@@ -565,7 +576,7 @@
       "id": "demand-paging",
       "term": "Demand paging",
       "definition": "Lazy scheme in which pages are loaded only when they are referenced.",
-      "formula": "",
+      "formula": "\\text{PFF}=\\frac{N_{\\text{faults}}}{N_{\\text{accesses}}}",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
@@ -598,7 +609,7 @@
       "id": "thrashing",
       "term": "Thrashing",
       "definition": "Condition in a paging system whose memory is overcommitted, so it keeps moving pages to and from disk and handling page faults.",
-      "formula": "",
+      "formula": "\\sum_i W_i>M_{\\text{frames}}",
       "unit": 4,
       "unitTitle": "Deadlocks and Memory Management",
       "sources": [
@@ -614,7 +625,8 @@
       "unitTitle": "File System and Disk Scheduling",
       "sources": [
         "osc-wiki-file-system#overview"
-      ]
+      ],
+      "diagram": "file-system"
     },
     {
       "id": "directory",
@@ -625,13 +637,14 @@
       "unitTitle": "File System and Disk Scheduling",
       "sources": [
         "osc-wiki-file-system#directories"
-      ]
+      ],
+      "diagram": "file-system"
     },
     {
       "id": "free-space-bitmap",
       "term": "Free space bitmap",
       "definition": "Structure used by a file system to track which blocks of storage are free.",
-      "formula": "",
+      "formula": "\\text{bits}=N_{\\text{blocks}},\\quad \\text{bytes}=\\frac{N_{\\text{blocks}}}{8}",
       "unit": 5,
       "unitTitle": "File System and Disk Scheduling",
       "sources": [
@@ -642,12 +655,13 @@
       "id": "elevator-algorithm",
       "term": "Elevator algorithm",
       "definition": "Disk scheduling method in which the arm travels in one direction servicing requests until none remain, then reverses.",
-      "formula": "",
+      "formula": "D=\\sum_i|c_i-c_{i-1}|",
       "unit": 5,
       "unitTitle": "File System and Disk Scheduling",
       "sources": [
         "osc-wiki-elevator#overview"
-      ]
+      ],
+      "diagram": "disk-layout"
     },
     {
       "id": "circular-elevator-algorithm",
@@ -686,18 +700,19 @@
       "id": "direct-memory-access",
       "term": "Direct memory access",
       "definition": "Feature that lets hardware subsystems access main memory independently of the CPU, so the CPU is not tied up during transfers.",
-      "formula": "",
+      "formula": "t_{\\text{DMA}}=\\frac{N}{R}",
       "unit": 6,
       "unitTitle": "I/O Systems and Protection",
       "sources": [
         "osc-wiki-dma#overview"
-      ]
+      ],
+      "diagram": "dma"
     },
     {
       "id": "programmed-i-o",
       "term": "Programmed I/O",
       "definition": "Non-DMA approach in which the CPU moves the data itself, fully occupying it for the whole transfer.",
-      "formula": "",
+      "formula": "t_{\\text{PIO}}=N\\,t_{\\text{word}}",
       "unit": 6,
       "unitTitle": "I/O Systems and Protection",
       "sources": [
@@ -719,7 +734,7 @@
       "id": "access-control-matrix",
       "term": "Access control matrix",
       "definition": "Abstract formal security model of protection state in which rows are subjects, columns are objects and cells list access rights.",
-      "formula": "",
+      "formula": "M[s,o]\\subseteq R",
       "unit": 6,
       "unitTitle": "I/O Systems and Protection",
       "sources": [
@@ -730,7 +745,7 @@
       "id": "access-control-list",
       "term": "Access control list",
       "definition": "List of permissions associated with a system resource, recording which subjects may perform which operations on it.",
-      "formula": "",
+      "formula": "\\text{ACL}(o)=\\{(s,r):r\\in M[s,o]\\}",
       "unit": 6,
       "unitTitle": "I/O Systems and Protection",
       "sources": [
@@ -741,7 +756,7 @@
       "id": "capability",
       "term": "Capability",
       "definition": "Communicable, unforgeable token of authority that pairs a reference to an object with a set of access rights.",
-      "formula": "",
+      "formula": "\\text{cap}(s)=\\{(o,r):r\\in M[s,o]\\}",
       "unit": 6,
       "unitTitle": "I/O Systems and Protection",
       "sources": [
@@ -752,7 +767,7 @@
       "id": "principle-of-least-privilege",
       "term": "Principle of least privilege",
       "definition": "Rule that each module must be able to access only the information and resources necessary for its legitimate purpose.",
-      "formula": "",
+      "formula": "R_{\\text{granted}}\\subseteq R_{\\text{needed}}",
       "unit": 6,
       "unitTitle": "I/O Systems and Protection",
       "sources": [
