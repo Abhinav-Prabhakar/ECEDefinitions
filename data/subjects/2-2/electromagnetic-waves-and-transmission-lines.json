@@ -18,7 +18,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.4"
+        "emtl-u-1-electrostatics#slide.4"
       ]
     },
     {
@@ -29,7 +29,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.6"
+        "emtl-u-1-electrostatics#slide.6"
       ]
     },
     {
@@ -40,7 +40,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.19"
+        "emtl-u-1-electrostatics#slide.19"
       ]
     },
     {
@@ -51,7 +51,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.19"
+        "emtl-u-1-electrostatics#slide.19"
       ]
     },
     {
@@ -62,7 +62,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.29"
+        "emtl-u-1-electrostatics#slide.29"
       ]
     },
     {
@@ -73,7 +73,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.30"
+        "emtl-u-1-electrostatics#slide.30"
       ]
     },
     {
@@ -84,7 +84,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.31"
+        "emtl-u-1-electrostatics#slide.31"
       ]
     },
     {
@@ -95,7 +95,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.33"
+        "emtl-u-1-electrostatics#slide.33"
       ]
     },
     {
@@ -106,7 +106,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.38"
+        "emtl-u-1-electrostatics#slide.38"
       ]
     },
     {
@@ -117,7 +117,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.41"
+        "emtl-u-1-electrostatics#slide.41"
       ]
     },
     {
@@ -128,7 +128,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.50"
+        "emtl-u-1-electrostatics#slide.50"
       ]
     },
     {
@@ -139,7 +139,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.50"
+        "emtl-u-1-electrostatics#slide.50"
       ]
     },
     {
@@ -150,7 +150,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-u1-electrostatics#slide.52"
+        "emtl-u-1-electrostatics#slide.52"
       ]
     },
     {
@@ -161,7 +161,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.3"
+        "emtl-u-2-magnetostatics#slide.3"
       ]
     },
     {
@@ -172,7 +172,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.6"
+        "emtl-u-2-magnetostatics#slide.6"
       ]
     },
     {
@@ -183,7 +183,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.8"
+        "emtl-u-2-magnetostatics#slide.8"
       ]
     },
     {
@@ -194,7 +194,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.31"
+        "emtl-u-2-magnetostatics#slide.31"
       ]
     },
     {
@@ -205,7 +205,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.37"
+        "emtl-u-2-magnetostatics#slide.37"
       ]
     },
     {
@@ -216,7 +216,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.46"
+        "emtl-u-2-magnetostatics#slide.46"
       ]
     },
     {
@@ -227,7 +227,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.48"
+        "emtl-u-2-magnetostatics#slide.48"
       ]
     },
     {
@@ -238,7 +238,7 @@
       "unit": 2,
       "unitTitle": "Magnetostatics",
       "sources": [
-        "emtl-u2-magnetostatics#slide.50"
+        "emtl-u-2-magnetostatics#slide.50"
       ]
     },
     {
@@ -249,7 +249,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.7"
+        "emtl-u-3-timevarying-fields#slide.7"
       ]
     },
     {
@@ -260,7 +260,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.11"
+        "emtl-u-3-timevarying-fields#slide.11"
       ]
     },
     {
@@ -271,7 +271,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.13"
+        "emtl-u-3-timevarying-fields#slide.13"
       ]
     },
     {
@@ -282,7 +282,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.18"
+        "emtl-u-3-timevarying-fields#slide.18"
       ]
     },
     {
@@ -293,7 +293,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.18"
+        "emtl-u-3-timevarying-fields#slide.18"
       ]
     },
     {
@@ -304,7 +304,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.22"
+        "emtl-u-3-timevarying-fields#slide.22"
       ]
     },
     {
@@ -315,7 +315,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.34"
+        "emtl-u-3-timevarying-fields#slide.34"
       ]
     },
     {
@@ -326,7 +326,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.34"
+        "emtl-u-3-timevarying-fields#slide.34"
       ]
     },
     {
@@ -337,7 +337,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.35"
+        "emtl-u-3-timevarying-fields#slide.35"
       ]
     },
     {
@@ -348,7 +348,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.35"
+        "emtl-u-3-timevarying-fields#slide.35"
       ]
     },
     {
@@ -359,7 +359,7 @@
       "unit": 3,
       "unitTitle": "Time-varying fields",
       "sources": [
-        "emtl-u3-time-varying-fields#slide.55"
+        "emtl-u-3-timevarying-fields#slide.55"
       ]
     },
     {
@@ -370,7 +370,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.10"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.10"
       ]
     },
     {
@@ -381,7 +381,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.11"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.11"
       ]
     },
     {
@@ -392,7 +392,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.11"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.11"
       ]
     },
     {
@@ -403,7 +403,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.11"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.11"
       ]
     },
     {
@@ -414,7 +414,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.11"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.11"
       ]
     },
     {
@@ -425,7 +425,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.19"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.19"
       ]
     },
     {
@@ -436,7 +436,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.20"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.20"
       ]
     },
     {
@@ -447,7 +447,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.27"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.27"
       ]
     },
     {
@@ -458,7 +458,7 @@
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
       "sources": [
-        "emtl-u4-reflection-refraction-em-waves#slide.28"
+        "emtl-u-4-reflection-refraction-of-em-waves#slide.28"
       ]
     },
     {
@@ -469,7 +469,7 @@
       "unit": 5,
       "unitTitle": "LF transmission lines",
       "sources": [
-        "emtl-u5-lf-transmission-lines#p.1"
+        "emtl-u-5-lf-tx-ion-lines#p.1"
       ]
     },
     {
@@ -480,7 +480,7 @@
       "unit": 5,
       "unitTitle": "LF transmission lines",
       "sources": [
-        "emtl-u5-lf-transmission-lines#p.3"
+        "emtl-u-5-lf-tx-ion-lines#p.3"
       ]
     },
     {
@@ -491,7 +491,7 @@
       "unit": 5,
       "unitTitle": "LF transmission lines",
       "sources": [
-        "emtl-u5-lf-transmission-lines#p.5"
+        "emtl-u-5-lf-tx-ion-lines#p.5"
       ]
     },
     {
@@ -502,7 +502,7 @@
       "unit": 5,
       "unitTitle": "LF transmission lines",
       "sources": [
-        "emtl-u5-lf-transmission-lines#p.6"
+        "emtl-u-5-lf-tx-ion-lines#p.6"
       ]
     },
     {
@@ -513,7 +513,7 @@
       "unit": 5,
       "unitTitle": "LF transmission lines",
       "sources": [
-        "emtl-u5-lf-transmission-lines#p.6"
+        "emtl-u-5-lf-tx-ion-lines#p.6"
       ]
     },
     {
@@ -524,7 +524,7 @@
       "unit": 5,
       "unitTitle": "LF transmission lines",
       "sources": [
-        "emtl-u5-lf-transmission-lines#p.6"
+        "emtl-u-5-lf-tx-ion-lines#p.6"
       ]
     },
     {
@@ -535,7 +535,7 @@
       "unit": 6,
       "unitTitle": "HF transmission lines",
       "sources": [
-        "emtl-u6-hf-transmission-lines#p.1"
+        "emtl-u-6-hf-tx-ion-lines#p.1"
       ]
     },
     {
@@ -546,7 +546,7 @@
       "unit": 6,
       "unitTitle": "HF transmission lines",
       "sources": [
-        "emtl-u6-hf-transmission-lines#p.6"
+        "emtl-u-6-hf-tx-ion-lines#p.6"
       ]
     },
     {
@@ -557,7 +557,7 @@
       "unit": 6,
       "unitTitle": "HF transmission lines",
       "sources": [
-        "emtl-u6-hf-transmission-lines#p.6"
+        "emtl-u-6-hf-tx-ion-lines#p.6"
       ]
     },
     {
@@ -568,7 +568,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-review-vectors-coordinate-system#slide.31"
+        "emtl-u-ireview-of-vectors-coordinate-system#slide.2"
       ]
     },
     {
@@ -579,7 +579,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-review-vectors-coordinate-system#slide.31"
+        "emtl-u-ireview-of-vectors-coordinate-system#slide.2"
       ]
     },
     {
@@ -590,7 +590,7 @@
       "unit": 1,
       "unitTitle": "Electrostatics",
       "sources": [
-        "emtl-review-vectors-coordinate-system#slide.31"
+        "emtl-u-ireview-of-vectors-coordinate-system#slide.2"
       ]
     }
   ]

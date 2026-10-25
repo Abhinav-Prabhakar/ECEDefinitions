@@ -406,7 +406,7 @@
       "unit": 4,
       "unitTitle": "Interfacing with 8086",
       "sources": [
-        "mpmc-unit-2#slide.38"
+        "mpmc-unit-2#slide.40"
       ]
     },
     {
@@ -428,7 +428,7 @@
       "unit": 4,
       "unitTitle": "Interfacing with 8086",
       "sources": [
-        "mpmc-unit-2#slide.34"
+        "mpmc-unit-2#slide.32"
       ]
     },
     {
@@ -662,7 +662,7 @@
       "unit": 6,
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [
-        "mpmc-unit-4#slide.51"
+        "mpmc-unit-4#slide.31"
       ]
     }
   ]

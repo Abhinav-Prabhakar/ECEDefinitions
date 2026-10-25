@@ -376,7 +376,7 @@
     {
       "id": "copyright",
       "term": "Copyright",
-      "definition": "Copyright is a right given by law to creators of literary, dramatic, musical and artistic works, and to producers of films and sound recordings, to do or authorize certain acts with their creations.",
+      "definition": "A right given by law to creators of literary, dramatic, musical and artistic works, and to producers of films and sound recordings.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -398,7 +398,7 @@
     {
       "id": "patent",
       "term": "Patent",
-      "definition": "A patent is a legal monopoly granted to the owner of a new invention for a limited period of time; it can be granted for a product as well as a process.",
+      "definition": "A legal monopoly granted to the owner of a new invention for a limited period, covering product as well as process.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -497,7 +497,7 @@
     {
       "id": "cybercrime",
       "term": "Cybercrime",
-      "definition": "In the restrictive sense, cybercrime (computer crime) is any illegal behavior carried out by means of electronic methods targeting the security of computer systems and data processed by them.",
+      "definition": "In the restrictive sense, any illegal behavior carried out by means of electronic methods targeting the security of computer systems and data processed by them.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Cyberspace and the Law",
@@ -541,12 +541,12 @@
     {
       "id": "intermediary",
       "term": "Intermediary",
-      "definition": "Under the IT Act, an intermediary is any person who on behalf of another person receives, stores or transmits an electronic message or provides a service with respect to it.",
+      "definition": "Under the IT Act, any person who on behalf of another person receives, stores or transmits an electronic message or provides a service with respect to it.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Cyberspace and the Law",
       "sources": [
-        "cys-cybersecurity-unit-6#slide.46"
+        "cys-cybersecurity-unit-6#slide.36"
       ]
     },
     {

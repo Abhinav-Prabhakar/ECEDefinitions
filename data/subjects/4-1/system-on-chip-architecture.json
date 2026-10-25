@@ -8,6 +8,452 @@
   "courseType": "PE",
   "folderId": "1arVAiVCv0eOiwsK7Db6Q4NDBCRdssMS1",
   "folderUrl": "https://drive.google.com/drive/folders/1arVAiVCv0eOiwsK7Db6Q4NDBCRdssMS1",
-  "status": "inaccessible",
-  "definitions": []
+  "status": "complete",
+  "coveredUnits": [
+    1,
+    2,
+    3
+  ],
+  "definitions": [
+    {
+      "term": "System Architecture",
+      "definition": "The operational structure and user's view of a system, evolved over time to include functional specification and hardware implementation; it defines the system-level building blocks.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.8"
+      ],
+      "id": "system-architecture",
+      "formula": ""
+    },
+    {
+      "term": "System on Chip",
+      "definition": "A complete system integrated on a single die from interconnected components: processors (core, multimedia, coprocessors), memories, and interconnects.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.8"
+      ],
+      "id": "system-on-chip",
+      "formula": ""
+    },
+    {
+      "term": "ASIP",
+      "definition": "A processor with an instruction set customized for a specific application or domain, sitting between custom ASIC hardware and software on general-purpose processors.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.8"
+      ],
+      "id": "asip",
+      "formula": ""
+    },
+    {
+      "term": "FPGA",
+      "definition": "A device containing an array of computation units, memories, and interconnections, all programmable in the field by the user.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.8"
+      ],
+      "id": "fpga",
+      "formula": ""
+    },
+    {
+      "term": "CGRA",
+      "definition": "Coarse-Grained Reconfigurable Architecture, containing logic blocks that process byte-wide or multiple byte-wide data, forming the building blocks of datapaths.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.8"
+      ],
+      "id": "cgra",
+      "formula": ""
+    },
+    {
+      "term": "Instruction-Level Parallelism",
+      "definition": "ILP is a measure of how many operations in a computer program can be performed simultaneously, provided there is no data dependency among them.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.11"
+      ],
+      "id": "instruction-level-parallelism",
+      "formula": ""
+    },
+    {
+      "term": "Pipelining",
+      "definition": "An approach to exploit parallelism by concurrently performing different phases (fetch, decode, execute, etc.) of instruction processing, assuming these phases are independent.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.15"
+      ],
+      "id": "pipelining",
+      "formula": ""
+    },
+    {
+      "term": "Superscalar Processor",
+      "definition": "A processor that dynamically examines the instruction stream to find independent operations, using multiple functional units and a scheduling window to process several instructions per cycle.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.21"
+      ],
+      "id": "superscalar-processor",
+      "formula": ""
+    },
+    {
+      "term": "VLIW Processor",
+      "definition": "A processor relying on static compiler analysis to schedule independent operations into wide (≥64-bit) instruction words, with one operation field per execution unit.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.24"
+      ],
+      "id": "vliw-processor",
+      "formula": ""
+    },
+    {
+      "term": "Array Processor",
+      "definition": "A set of parallel processing elements connected via one or more networks, each with its own private local memory, operating on data distributed in a regular fashion.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.4"
+      ],
+      "id": "array-processor",
+      "formula": ""
+    },
+    {
+      "term": "Vector Processor",
+      "definition": "A single processor resembling a traditional single-stream processor except that some functional units (and registers) operate on vectors (sequences of data values) and are deeply pipelined.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.4"
+      ],
+      "id": "vector-processor",
+      "formula": ""
+    },
+    {
+      "term": "Virtual Memory",
+      "definition": "A memory facility (often supported by an MMU) that enables programs requiring larger storage than the physical memory, so memory can be efficiently and securely accessed.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.13"
+      ],
+      "id": "virtual-memory",
+      "formula": ""
+    },
+    {
+      "term": "Intellectual Property (IP) Block",
+      "definition": "A predesigned circuit module that SOC technology interconnects to form a complete system, raising the design task from circuit level to system level.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.2"
+      ],
+      "id": "intellectual-property-ip-block",
+      "formula": ""
+    },
+    {
+      "term": "Network-on-Chip",
+      "definition": "An interconnect consisting of an array of switches (dynamically switched crossbar or statically switched 2-D mesh) that exchanges data packets, giving higher throughput than a bus-based system.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.51"
+      ],
+      "id": "network-on-chip",
+      "formula": ""
+    },
+    {
+      "term": "Unit Cost",
+      "definition": "Average cost per chip: unit cost = (project cost) ÷ (number of units), where project cost is fixed cost Kf plus variable cost Kv × n.",
+      "unit": 1,
+      "unitTitle": "Introduction to the System Approach",
+      "sources": [
+        "soca-unit-1#p.1"
+      ],
+      "id": "unit-cost",
+      "formula": ""
+    },
+    {
+      "term": "Soft Processor",
+      "definition": "An IP core implemented using the logic primitives of an FPGA; a microprocessor core entirely implemented by logic synthesis with a high degree of flexibility and configurability.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.8"
+      ],
+      "id": "soft-processor",
+      "formula": ""
+    },
+    {
+      "term": "Register Bit Equivalent",
+      "definition": "The unit of area measurement (rbe), defined as a six-transistor register cell including larger transistors, their interconnections, and inter-bit isolating spaces.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.12"
+      ],
+      "id": "register-bit-equivalent",
+      "formula": ""
+    },
+    {
+      "term": "Program Status Word",
+      "definition": "A set of control status information specified by a typical instruction set, including condition codes (positive, negative, zero, overflow) set by an instruction.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.8"
+      ],
+      "id": "program-status-word",
+      "formula": ""
+    },
+    {
+      "term": "Load–Store Architecture",
+      "definition": "An instruction set, as in RISC, requiring arguments in registers before execution, with ALU instructions using register operands; regular and easy to decode.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.27"
+      ],
+      "id": "load-store-architecture",
+      "formula": ""
+    },
+    {
+      "term": "Register–Memory Architecture",
+      "definition": "An instruction set where instructions operate on operands in registers or with one operand in memory; uses fewer, variable-size instructions but makes decoding more difficult.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.28"
+      ],
+      "id": "register-memory-architecture",
+      "formula": ""
+    },
+    {
+      "term": "Instruction Interlock",
+      "definition": "A unit that ensures the concurrent execution of multiple instructions has the same result as if the instructions were executed completely serially.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.39"
+      ],
+      "id": "instruction-interlock",
+      "formula": ""
+    },
+    {
+      "term": "Total Instruction Time",
+      "definition": "In-order instruction execution time as a linear sum: TTOTAL = TEXEC + TD + TM (execution, pipeline delays, memory delays).",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.45"
+      ],
+      "id": "total-instruction-time",
+      "formula": ""
+    },
+    {
+      "term": "Branch Target Buffer",
+      "definition": "A table storing a branch's target instruction and address, so a correctly guessed branch has zero delay; typically 70–98% effective, e.g. with 512 entries.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.52"
+      ],
+      "id": "branch-target-buffer",
+      "formula": ""
+    },
+    {
+      "term": "Bimodal Branch Prediction",
+      "definition": "Dynamic branch prediction using a 2-bit saturating counter of taken/not-taken history: predict not-taken for 00, 01 and taken for 10, 11.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.57"
+      ],
+      "id": "bimodal-branch-prediction",
+      "formula": ""
+    },
+    {
+      "term": "Vector Register",
+      "definition": "Register hardware (VR) that decouples arithmetic processing from memory, serving as source and destination for all vector operands, often bypassing the cache.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.66"
+      ],
+      "id": "vector-register",
+      "formula": ""
+    },
+    {
+      "term": "Register Renaming",
+      "definition": "Elimination of WAR and WAW hazards caused by reusing the same register for two computations, by renaming the second computation into hidden registers.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.77"
+      ],
+      "id": "register-renaming",
+      "formula": ""
+    },
+    {
+      "term": "Tomasulo's Algorithm",
+      "definition": "A dataflow issue scheme sending instructions to reservation stations that hold operand values, or tags of the stations that will produce still-unavailable operands.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.81"
+      ],
+      "id": "tomasulo-s-algorithm",
+      "formula": ""
+    },
+    {
+      "term": "Reorder Buffer",
+      "definition": "A centralised or distributed buffer that manages out-of-order execution by holding results until the sequential state order is restored.",
+      "unit": 2,
+      "unitTitle": "Processors",
+      "sources": [
+        "soca-unit-2#p.84"
+      ],
+      "id": "reorder-buffer",
+      "formula": ""
+    },
+    {
+      "term": "Memory Access Time",
+      "definition": "The time to access memory, largely a function of physical parameters of the memory system such as processor–memory distance, bus delay, and chip delay.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.8"
+      ],
+      "id": "memory-access-time",
+      "formula": ""
+    },
+    {
+      "term": "Memory Bandwidth",
+      "definition": "The ability of the memory to respond to requests per unit time; with access time, one of the two basic parameters determining memory-system performance.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.24"
+      ],
+      "id": "memory-bandwidth",
+      "formula": ""
+    },
+    {
+      "term": "Flash Memory",
+      "definition": "An array of floating-gate transistors whose trapped floating-gate charge provides non-volatile storage, with a limited number (usually below a million) of reliable rewrite cycles.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.6"
+      ],
+      "id": "flash-memory",
+      "formula": ""
+    },
+    {
+      "term": "Scratchpad Memory",
+      "definition": "A small, fast (one-cycle access) memory holding frequently used or anticipated instructions and data, managed directly by the programmer.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.11"
+      ],
+      "id": "scratchpad-memory",
+      "formula": ""
+    },
+    {
+      "term": "Cache Miss",
+      "definition": "A processor reference not found in the cache; the cache then fetches the missing data, as an associated region of memory called a line, from memory.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.11"
+      ],
+      "id": "cache-miss",
+      "formula": ""
+    },
+    {
+      "term": "Direct-Mapped Cache",
+      "definition": "A cache mapping in which each main-memory block is mapped to exactly one cache location; easy to implement but not flexible.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.16"
+      ],
+      "id": "direct-mapped-cache",
+      "formula": ""
+    },
+    {
+      "term": "Set-Associative Cache",
+      "definition": "A compromise mapping in which each block may reside in any of N locations of a set, easing direct-mapping contention while reducing the size of the associative search.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.16"
+      ],
+      "id": "set-associative-cache",
+      "formula": ""
+    },
+    {
+      "term": "Copy-Back Policy",
+      "definition": "A cache write policy in which a replaced line is written back to memory only if it is dirty; used by most larger caches.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.24"
+      ],
+      "id": "copy-back-policy",
+      "formula": ""
+    },
+    {
+      "term": "LRU Replacement",
+      "definition": "A cache line replacement policy that replaces the line least recently accessed by a read or write when the cache is full.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.25"
+      ],
+      "id": "lru-replacement",
+      "formula": ""
+    },
+    {
+      "term": "Split I- and D-Caches",
+      "definition": "Separate instruction and data caches that double the access bandwidth of the cache ensemble, though a unified cache of the same total size has a lower miss rate.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.27"
+      ],
+      "id": "split-i-and-d-caches",
+      "formula": ""
+    },
+    {
+      "term": "eDRAM",
+      "definition": "Embedded DRAM, an on-die memory compromise integrating high-speed, high-leakage logic transistors with lower-speed, lower-leakage memory transistors on the same die.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.36"
+      ],
+      "id": "edram",
+      "formula": ""
+    },
+    {
+      "term": "Strecker–Ravi Model",
+      "definition": "A processor–memory interaction model where a processor issues a request only after the previous is served, requests are uniformly distributed, and unserviced requests are discarded each memory cycle.",
+      "unit": 3,
+      "unitTitle": "Memory Design for SOC",
+      "sources": [
+        "soca-unit-3#p.42"
+      ],
+      "id": "strecker-ravi-model",
+      "formula": ""
+    }
+  ]
 }

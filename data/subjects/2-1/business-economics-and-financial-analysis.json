@@ -18,7 +18,8 @@
       "unitTitle": "Introduction to Economics",
       "sources": [
         "befa-unit-1-befa#slide.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "macroeconomics",
@@ -28,7 +29,8 @@
       "unitTitle": "Introduction to Economics",
       "sources": [
         "befa-unit-1-befa#slide.8"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "managerial-economics",
@@ -38,7 +40,8 @@
       "unitTitle": "Introduction to Economics",
       "sources": [
         "befa-unit-1-befa#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "demand",
@@ -48,7 +51,8 @@
       "unitTitle": "Demand and Supply",
       "sources": [
         "befa-unit-1-befa#slide.15"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "demand-function",
@@ -69,7 +73,8 @@
       "unitTitle": "Demand and Supply",
       "sources": [
         "befa-unit-1-befa#slide.19"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "price-elasticity-of-demand",
@@ -156,7 +161,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "production-function",
@@ -177,7 +183,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.6"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "isocost",
@@ -187,7 +194,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "law-of-variable-proportions",
@@ -197,7 +205,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.12"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "returns-to-scale",
@@ -207,7 +216,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.16"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "increasing-returns-to-scale",
@@ -217,7 +227,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.18"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "decreasing-returns-to-scale",
@@ -227,7 +238,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.20"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "economies-of-scale",
@@ -237,7 +249,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.21"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "fixed-cost",
@@ -247,7 +260,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.33"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "variable-cost",
@@ -257,7 +271,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.34"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "marginal-cost",
@@ -267,7 +282,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.35"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "opportunity-cost",
@@ -277,7 +293,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.36"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "explicit-cost",
@@ -287,7 +304,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.38"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "implicit-cost",
@@ -297,7 +315,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.39"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "break-even-point",
@@ -324,7 +343,7 @@
     {
       "id": "margin-of-safety",
       "term": "Margin of safety",
-      "definition": "Sales achieved over and above break-even sales.",
+      "definition": "The excess of actual or budgeted sales over break-even sales, showing the cushion available before a loss occurs.",
       "unit": 3,
       "unitTitle": "Production and Cost",
       "formula": "MOS = Total sales - BE sales",
@@ -340,7 +359,8 @@
       "unitTitle": "Production and Cost",
       "sources": [
         "befa-unit-2-befa#slide.50"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "market",
@@ -350,7 +370,8 @@
       "unitTitle": "Market Structures",
       "sources": [
         "befa-unit-3-befa#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "perfect-competition",
@@ -360,7 +381,8 @@
       "unitTitle": "Market Structures",
       "sources": [
         "befa-unit-3-befa#slide.10"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "imperfect-competition",
@@ -370,7 +392,8 @@
       "unitTitle": "Market Structures",
       "sources": [
         "befa-unit-3-befa#slide.12"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "monopoly",
@@ -380,7 +403,8 @@
       "unitTitle": "Market Structures",
       "sources": [
         "befa-unit-3-befa#slide.14"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "monopolistic-competition",
@@ -390,7 +414,8 @@
       "unitTitle": "Market Structures",
       "sources": [
         "befa-unit-3-befa#slide.15"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "capital-expenditure",
@@ -400,7 +425,8 @@
       "unitTitle": "Financial Statements",
       "sources": [
         "befa-unit-v-befa#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "revenue-expenditure",
@@ -410,7 +436,8 @@
       "unitTitle": "Financial Statements",
       "sources": [
         "befa-unit-v-befa#slide.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "deferred-revenue-expenditure",
@@ -420,7 +447,8 @@
       "unitTitle": "Financial Statements",
       "sources": [
         "befa-unit-v-befa#slide.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "trading-account",
@@ -441,7 +469,8 @@
       "unitTitle": "Financial Statements",
       "sources": [
         "befa-unit-v-befa#slide.10"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "balance-sheet",
@@ -451,17 +480,19 @@
       "unitTitle": "Financial Statements",
       "sources": [
         "befa-unit-v-befa#slide.14"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ratio-analysis",
       "term": "Ratio analysis",
-      "definition": "A technique for interpreting financial statements.",
+      "definition": "A technique for interpreting financial statements by studying the relationships among various items and groups of items.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "sources": [
         "befa-unit-vi-befa#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "current-ratio",
@@ -482,7 +513,8 @@
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "sources": [
         "befa-unit-vi-befa#slide.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "inventory-turnover-ratio",
@@ -492,7 +524,7 @@
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "formula": "COGS / Avg stock",
       "sources": [
-        "befa-unit-vi-befa#slide.8"
+        "befa-unit-vi-befa#slide.1"
       ]
     },
     {
@@ -503,18 +535,18 @@
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "formula": "365 / STR",
       "sources": [
-        "befa-unit-vi-befa#slide.8"
+        "befa-unit-vi-befa#slide.9"
       ]
     },
     {
       "id": "gross-profit-ratio",
       "term": "Gross profit ratio",
-      "definition": "Gross profit divided by net sales.",
+      "definition": "Gross profit divided by net sales, expressed as a percentage to gauge the company's trading efficiency.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "formula": "GP / Net sales",
       "sources": [
-        "befa-unit-vi-befa#slide.9"
+        "befa-unit-vi-befa#slide.1"
       ]
     },
     {
@@ -525,7 +557,7 @@
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "formula": "NPAT / Net sales",
       "sources": [
-        "befa-unit-vi-befa#slide.9"
+        "befa-unit-vi-befa#slide.1"
       ]
     }
   ]

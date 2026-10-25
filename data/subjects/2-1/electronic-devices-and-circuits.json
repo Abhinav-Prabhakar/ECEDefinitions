@@ -18,7 +18,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.13"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "extrinsic-semiconductor",
@@ -28,7 +29,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.12"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "n-type-semiconductor",
@@ -37,8 +39,9 @@
       "unit": 1,
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
-        "edc-edc-unit-1#slide.18"
-      ]
+        "edc-edc-unit-1#slide.5"
+      ],
+      "formula": ""
     },
     {
       "id": "p-type-semiconductor",
@@ -48,7 +51,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.30"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "depletion-region",
@@ -58,7 +62,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.43"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "barrier-potential",
@@ -79,7 +84,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.46"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "reverse-saturation-current",
@@ -89,7 +95,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.55"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "zener-diode",
@@ -99,7 +106,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.66"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "zener-breakdown",
@@ -109,7 +117,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.80"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "avalanche-breakdown",
@@ -119,7 +128,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.79"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "transition-capacitance",
@@ -129,7 +139,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.87"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "diffusion-capacitance",
@@ -139,7 +150,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.83"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "rectifier",
@@ -149,7 +161,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.100"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ripple-factor",
@@ -159,7 +172,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.125"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "peak-inverse-voltage",
@@ -169,7 +183,8 @@
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
         "edc-edc-unit-1#slide.127"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "bjt",
@@ -179,7 +194,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "active-region",
@@ -189,7 +205,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "saturation-region",
@@ -199,7 +216,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "cutoff-region",
@@ -209,7 +227,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "common-base",
@@ -219,7 +238,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "common-emitter",
@@ -229,7 +249,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.8"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "common-collector",
@@ -239,7 +260,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.8"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "early-effect",
@@ -249,7 +271,8 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.29"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "punch-through",
@@ -259,17 +282,18 @@
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
         "edc-edc-unit-2#slide.44"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "current-gain-alpha",
       "term": "Current gain alpha",
       "definition": "Ratio of collector current to emitter current in a BJT, typically 0.9 to 0.995.",
-      "formula": "\u03b1=I_C/I_E",
+      "formula": "α=I_C/I_E",
       "unit": 2,
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
-        "edc-edc-unit-2#slide.21"
+        "edc-edc-unit-2#slide.2"
       ]
     },
     {
@@ -279,8 +303,9 @@
       "unit": 3,
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
-        "edc-edc-unit-3#slide.5"
-      ]
+        "edc-edc-unit-3#slide.6"
+      ],
+      "formula": ""
     },
     {
       "id": "millers-theorem",
@@ -290,7 +315,8 @@
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
         "edc-edc-unit-3#slide.52"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "frequency-response",
@@ -300,7 +326,8 @@
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
         "edc-edc-unit-3#slide.59"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "lower-cutoff-frequency",
@@ -310,7 +337,8 @@
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
         "edc-edc-unit-3#slide.61"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "bandwidth",
@@ -331,7 +359,8 @@
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
         "edc-edc-unit-3#slide.62"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "rc-coupled-amplifier",
@@ -341,7 +370,8 @@
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
         "edc-edc-unit-3#slide.68"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "hybrid-pi-model",
@@ -351,13 +381,14 @@
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
         "edc-edc-unit-3#slide.100"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "transconductance",
       "term": "Transconductance",
       "definition": "Ratio of change in collector current to change in base-emitter voltage at constant collector-emitter voltage.",
-      "formula": "g_m=\u0394I_C/\u0394V_BE",
+      "formula": "g_m=ΔI_C/ΔV_BE",
       "unit": 3,
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
@@ -367,12 +398,13 @@
     {
       "id": "fet",
       "term": "Field-effect transistor (FET)",
-      "definition": "A unipolar, voltage-controlled three-terminal semiconductor device.",
+      "definition": "A unipolar, voltage-controlled three-terminal semiconductor device whose conduction from source to drain relies only on majority carriers, modulated by the gate voltage.",
       "unit": 4,
       "unitTitle": "Field Effect Transistor",
       "sources": [
-        "edc-unit-iv#slide.2"
-      ]
+        "edc-unit-iv#slide.1"
+      ],
+      "formula": ""
     },
     {
       "id": "jfet",
@@ -382,7 +414,8 @@
       "unitTitle": "Field Effect Transistor",
       "sources": [
         "edc-unit-iv#slide.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "pinch-off-voltage",
@@ -392,7 +425,8 @@
       "unitTitle": "Field Effect Transistor",
       "sources": [
         "edc-unit-iv#slide.6"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "mosfet",
@@ -401,8 +435,9 @@
       "unit": 4,
       "unitTitle": "Field Effect Transistor",
       "sources": [
-        "edc-edc-fet-unit4#slide.1"
-      ]
+        "edc-edc-fet-unit4#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "enhancement-mosfet",
@@ -411,8 +446,9 @@
       "unit": 4,
       "unitTitle": "Field Effect Transistor",
       "sources": [
-        "edc-edc-fet-unit4#slide.1"
-      ]
+        "edc-edc-fet-unit4#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "depletion-mosfet",
@@ -421,8 +457,9 @@
       "unit": 4,
       "unitTitle": "Field Effect Transistor",
       "sources": [
-        "edc-edc-fet-unit4#slide.1"
-      ]
+        "edc-edc-fet-unit4#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "self-bias-fet",
@@ -432,7 +469,8 @@
       "unitTitle": "Field Effect Transistor",
       "sources": [
         "edc-fet-biasing#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "feedback-amplifier",
@@ -442,7 +480,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "positive-feedback",
@@ -452,7 +491,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.11"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "negative-feedback",
@@ -462,7 +502,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.15"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "barkhausen-criterion",
@@ -472,7 +513,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.47"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "oscillator",
@@ -482,7 +524,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.45"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "resonant-frequency",
@@ -492,7 +535,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.57"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "piezoelectric-effect",
@@ -502,7 +546,8 @@
       "unitTitle": "Feedback Amplifiers and Oscillators",
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.79"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "voltage-regulator",
@@ -512,7 +557,8 @@
       "unitTitle": "Voltage Regulators",
       "sources": [
         "edc-edc-syllabus#para.23"
-      ]
+      ],
+      "formula": ""
     }
   ]
 }

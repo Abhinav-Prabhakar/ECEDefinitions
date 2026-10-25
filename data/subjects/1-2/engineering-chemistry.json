@@ -35,7 +35,7 @@
     {
       "id": "bond-order",
       "term": "Bond order",
-      "definition": "Measure of bond strength between two atoms.",
+      "definition": "Half the difference between the numbers of bonding and antibonding electrons, indicating the strength and stability of a bond.",
       "formula": "BO=(Nb-Na)/2",
       "unit": 1,
       "unitTitle": "Molecular structure",
@@ -167,7 +167,7 @@
     {
       "id": "polymerization",
       "term": "Polymerization",
-      "definition": "Process of forming polymer from monomers.",
+      "definition": "Chemical process in which a large number of small monomer molecules combine to form a very large polymer chain.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Polymers & Lubricants",
@@ -255,7 +255,7 @@
     {
       "id": "desalination",
       "term": "Desalination",
-      "definition": "Removal of dissolved salts from water.",
+      "definition": "Process of removing dissolved salts and minerals from sea or brackish water to obtain water fit for drinking and supply.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Water technology",
@@ -288,7 +288,7 @@
     {
       "id": "conductance",
       "term": "Conductance",
-      "definition": "Reciprocal of resistance; C=1/R.",
+      "definition": "Ease with which a solution conducts electric current, given by the reciprocal of resistance and measured in siemens (Ω⁻¹).",
       "formula": "C=1/R",
       "unit": 4,
       "unitTitle": "Electro chemistry",
@@ -398,7 +398,7 @@
     {
       "id": "electrophile",
       "term": "Electrophile",
-      "definition": "Electron-deficient species that attacks electron-rich centre.",
+      "definition": "Electron-deficient charged or neutral species that attacks an electron-rich centre during an organic reaction, e.g. H⁺ or NO₂⁺.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",
@@ -409,7 +409,7 @@
     {
       "id": "nucleophile",
       "term": "Nucleophile",
-      "definition": "Electron-rich species that attacks electron-deficient centre.",
+      "definition": "Electron-rich charged or neutral species that attacks an electron-deficient centre during an organic reaction, e.g. OH⁻ or CN⁻.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",
@@ -420,7 +420,7 @@
     {
       "id": "sn1-reaction",
       "term": "SN1 reaction",
-      "definition": "Unimolecular nucleophilic substitution via carbocation intermediate.",
+      "definition": "Unimolecular nucleophilic substitution proceeding through a planar carbocation intermediate, with rate depending only on the concentration of the substrate.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",
@@ -442,7 +442,7 @@
     {
       "id": "paracetamol",
       "term": "Paracetamol",
-      "definition": "Mild analgesic/antipyretic used for pain and fever.",
+      "definition": "Mild analgesic and antipyretic drug used to relieve pain and reduce fever, prepared from p-aminophenol.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",
@@ -453,7 +453,7 @@
     {
       "id": "aspirin",
       "term": "Aspirin",
-      "definition": "Anti-pyretic, analgesic, anti-inflammatory; acetylsalicylic acid.",
+      "definition": "Acetylsalicylic acid used as an analgesic, antipyretic and anti-inflammatory drug for pain, fever and related conditions.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",

@@ -18,7 +18,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "open-loop-control-system",
@@ -28,7 +29,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.12"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "closed-loop-control-system",
@@ -38,7 +40,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.15"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "feedback",
@@ -48,12 +51,13 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.19"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "positive-feedback",
       "term": "Positive feedback",
-      "definition": "Feedback added to the reference input.",
+      "definition": "Feedback configuration in which the feedback output is added to the reference input before feeding the error into the open-loop process.",
       "formula": "T=G/(1-GH)",
       "unit": 1,
       "unitTitle": "Modeling and transfer functions",
@@ -80,7 +84,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "controller",
@@ -90,7 +95,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "transfer-function",
@@ -111,17 +117,19 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.52"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "signal-flow-graph",
       "term": "Signal flow graph",
-      "definition": "Directed graph representing relationships between system variables.",
+      "definition": "Directed graph representing the relationships between variables of a system, with nodes denoting variables and directed branches carrying gains, used with Mason's gain formula.",
       "unit": 1,
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.73"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "masons-gain-formula",
@@ -142,7 +150,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.48"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "synchro-receiver",
@@ -152,7 +161,8 @@
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.50"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "transient-response",
@@ -162,7 +172,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "steady-state-response",
@@ -172,7 +183,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "standard-test-signal",
@@ -182,7 +194,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "order-of-system",
@@ -192,7 +205,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "first-order-system",
@@ -202,7 +216,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "second-order-system",
@@ -212,7 +227,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "steady-state-error",
@@ -222,7 +238,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.49"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "error-constant",
@@ -232,7 +249,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.49"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "rise-time",
@@ -242,7 +260,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "peak-time",
@@ -252,7 +271,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "settling-time",
@@ -262,7 +282,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "overshoot",
@@ -272,7 +293,8 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "delay-time",
@@ -282,17 +304,19 @@
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "pid-controller",
       "term": "PID controller",
-      "definition": "Controller combining proportional, integral and derivative actions.",
+      "definition": "Controller combining proportional, integral and derivative actions on the error signal, used to improve transient response and reduce steady-state error.",
       "unit": 2,
       "unitTitle": "Time response analysis",
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "stability",
@@ -302,7 +326,8 @@
       "unitTitle": "Stability analysis (Routh)",
       "sources": [
         "lcs-lcs-unit3#p.10"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "asymptotic-stability",
@@ -311,18 +336,20 @@
       "unit": 3,
       "unitTitle": "Stability analysis (Routh)",
       "sources": [
-        "lcs-lcs-unit3#p.13"
-      ]
+        "lcs-lcs-unit3#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "marginal-stability",
       "term": "Marginal stability",
-      "definition": "Poles on imaginary axis with simple multiplicity.",
+      "definition": "Condition in which all poles lie in the closed left half-plane except simple poles on the imaginary axis, giving sustained constant-amplitude oscillations.",
       "unit": 3,
       "unitTitle": "Stability analysis (Routh)",
       "sources": [
-        "lcs-lcs-unit3#p.13"
-      ]
+        "lcs-lcs-unit3#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "routh-hurwitz-criterion",
@@ -331,8 +358,9 @@
       "unit": 3,
       "unitTitle": "Stability analysis (Routh)",
       "sources": [
-        "lcs-lcs-unit3#p.15"
-      ]
+        "lcs-lcs-unit3#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "routh-array",
@@ -341,8 +369,9 @@
       "unit": 3,
       "unitTitle": "Stability analysis (Routh)",
       "sources": [
-        "lcs-lcs-unit3#p.15"
-      ]
+        "lcs-lcs-unit3#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "root-locus",
@@ -351,8 +380,9 @@
       "unit": 4,
       "unitTitle": "Root locus",
       "sources": [
-        "lcs-lcs-unit3#p.9"
-      ]
+        "lcs-lcs-unit3#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "breakaway-point",
@@ -362,7 +392,8 @@
       "unitTitle": "Root locus",
       "sources": [
         "lcs-lcs-unit3#p.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "asymptote",
@@ -372,17 +403,19 @@
       "unitTitle": "Root locus",
       "sources": [
         "lcs-lcs-unit3#p.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "frequency-response",
       "term": "Frequency response",
-      "definition": "Steady-state output of system to sinusoidal input.",
+      "definition": "Steady-state response of a linear system to a sinusoidal input, characterized by magnitude and phase variations with frequency.",
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
         "lcs-lcs-unit4#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "bode-plot",
@@ -392,17 +425,19 @@
       "unitTitle": "Frequency response (Bode)",
       "sources": [
         "lcs-lcs-unit4#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "gain-margin",
       "term": "Gain margin",
-      "definition": "Additional gain allowed before system becomes unstable.",
+      "definition": "Additional loop gain a stable system can tolerate before reaching instability, measured at the phase crossover frequency, expressed in decibels.",
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
         "lcs-lcs-unit4#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "phase-margin",
@@ -412,27 +447,30 @@
       "unitTitle": "Frequency response (Bode)",
       "sources": [
         "lcs-lcs-unit4#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "gain-crossover-frequency",
       "term": "Gain crossover frequency",
-      "definition": "Frequency where magnitude is 0 dB.",
+      "definition": "Frequency at which the magnitude of the open-loop transfer function equals unity, corresponding to zero decibels on the Bode magnitude plot.",
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
         "lcs-lcs-unit4#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "phase-crossover-frequency",
       "term": "Phase crossover frequency",
-      "definition": "Frequency where phase is -180 degrees.",
+      "definition": "Frequency at which the phase of the open-loop transfer function crosses -180 degrees, marking where stability margins are evaluated.",
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
         "lcs-lcs-unit4#p.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "polar-plot",
@@ -441,8 +479,9 @@
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
-        "lcs-lcs-unit5#p.9"
-      ]
+        "lcs-lcs-unit5#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "state",
@@ -452,7 +491,8 @@
       "unitTitle": "State space analysis",
       "sources": [
         "lcs-lcs-unit6#p.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "state-variable",
@@ -462,17 +502,19 @@
       "unitTitle": "State space analysis",
       "sources": [
         "lcs-lcs-unit6#p.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "state-vector",
       "term": "State vector",
-      "definition": "Vector whose elements are the state variables.",
+      "definition": "Vector whose elements are the state variables of a dynamic system, summarizing the complete system state at any instant.",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
         "lcs-lcs-unit6#p.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "state-space",
@@ -482,7 +524,8 @@
       "unitTitle": "State space analysis",
       "sources": [
         "lcs-lcs-unit6#p.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "state-equation",
@@ -498,7 +541,7 @@
     {
       "id": "output-equation",
       "term": "Output equation",
-      "definition": "Equation relating output to state and input.",
+      "definition": "Equation expressing the system output as a linear combination of the state variables and input variables, y(t)=Cx(t)+Du(t) in state-space form.",
       "formula": "Y=CX+DU",
       "unit": 6,
       "unitTitle": "State space analysis",
@@ -509,7 +552,7 @@
     {
       "id": "state-transition-matrix",
       "term": "State transition matrix",
-      "definition": "Matrix describing free response of state vector.",
+      "definition": "Matrix giving the free response of the state vector to its initial conditions in an unforced linear state-space system.",
       "formula": "Φ(t)=e^(At)",
       "unit": 6,
       "unitTitle": "State space analysis",
@@ -520,7 +563,7 @@
     {
       "id": "resolvent-matrix",
       "term": "Resolvent matrix",
-      "definition": "Inverse of (sI-A) used in state-space solution.",
+      "definition": "Inverse of the matrix (sI-A) appearing in the s-domain solution of the state equations, which transforms into the state transition matrix.",
       "formula": "[sI-A]^-1",
       "unit": 6,
       "unitTitle": "State space analysis",

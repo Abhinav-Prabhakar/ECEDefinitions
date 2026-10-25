@@ -14,7 +14,7 @@
       "id": "de-broglie-hypothesis",
       "term": "de Broglie hypothesis",
       "definition": "Any moving particle is associated with a matter wave.",
-      "formula": "\u03bb=h/mv",
+      "formula": "λ=h/mv",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
@@ -25,7 +25,7 @@
       "id": "matter-wave",
       "term": "Matter wave",
       "definition": "A wave associated with a moving particle, whose wavelength is inversely proportional to its momentum.",
-      "formula": "\u03bb=h/p",
+      "formula": "λ=h/p",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
@@ -36,7 +36,7 @@
       "id": "de-broglie-wavelength",
       "term": "de Broglie wavelength",
       "definition": "The wavelength associated with a particle equals Planck's constant divided by its momentum.",
-      "formula": "\u03bb=h/p",
+      "formula": "λ=h/p",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
@@ -47,7 +47,7 @@
       "id": "heisenberg-uncertainty-principle",
       "term": "Heisenberg uncertainty principle",
       "definition": "It is impossible to simultaneously determine a particle's position and momentum with perfect accuracy.",
-      "formula": "\u0394x \u0394p \u2265 h/4\u03c0",
+      "formula": "Δx Δp ≥ h/4π",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
@@ -56,9 +56,9 @@
     },
     {
       "id": "schrodinger-time-independent-wave-equation",
-      "term": "Schr\u00f6dinger time-independent wave equation",
+      "term": "Schrödinger time-independent wave equation",
       "definition": "A differential equation describing a quantum particle's stationary state using its wave function and potential energy.",
-      "formula": "(\u2212\u210f\u00b2/2m)\u2207\u00b2\u03c8+V\u03c8=E\u03c8",
+      "formula": "(−ℏ²/2m)∇²ψ+Vψ=Eψ",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
@@ -73,24 +73,25 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.33"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "normalization-condition",
       "term": "Normalization condition",
-      "definition": "The integral of |\u03c8|\u00b2 over all space equals one, ensuring total probability is unity.",
-      "formula": "\u222b|\u03c8|\u00b2 d\u03c4=1",
+      "definition": "The integral of |ψ|² over all space equals one, ensuring total probability is unity.",
+      "formula": "∫|ψ|² dτ=1",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
-        "ep-unit-1-quantum-mechanics#p.34"
+        "ep-unit-1-quantum-mechanics#p.37"
       ]
     },
     {
       "id": "particle-in-a-box",
       "term": "Particle in a box",
       "definition": "A particle confined to a one-dimensional infinite potential well has quantized energy levels.",
-      "formula": "E_n=n\u00b2h\u00b2/(8mL\u00b2)",
+      "formula": "E_n=n²h²/(8mL²)",
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
@@ -104,8 +105,9 @@
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
-        "ep-unit-1-quantum-mechanics#p.40"
-      ]
+        "ep-unit-1-quantum-mechanics#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "davisson-germer-experiment",
@@ -114,8 +116,9 @@
       "unit": 1,
       "unitTitle": "Quantum Mechanics",
       "sources": [
-        "ep-unit-1-quantum-mechanics#p.12"
-      ]
+        "ep-unit-1-quantum-mechanics#p.1"
+      ],
+      "formula": ""
     },
     {
       "id": "laser",
@@ -125,7 +128,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-lasers#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "stimulated-emission",
@@ -135,7 +139,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-lasers#slide.14"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "spontaneous-emission",
@@ -145,7 +150,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-lasers#slide.12"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "population-inversion",
@@ -155,7 +161,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-lasers#slide.26"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "metastable-state",
@@ -165,7 +172,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-lasers#slide.27"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "pumping",
@@ -175,7 +183,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-lasers#slide.27"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "optical-fiber",
@@ -185,7 +194,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-fiber-optics#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "total-internal-reflection",
@@ -195,7 +205,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-fiber-optics#slide.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "numerical-aperture",
@@ -205,7 +216,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-fiber-optics#slide.15"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "attenuation",
@@ -215,7 +227,8 @@
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
         "ep-unit-2-fiber-optics#slide.31"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "magnetic-moment",
@@ -232,7 +245,7 @@
       "id": "magnetic-induction",
       "term": "Magnetic induction",
       "definition": "Number of magnetic flux lines passing perpendicularly through unit area.",
-      "formula": "B=\u03a6/A",
+      "formula": "B=Φ/A",
       "unit": 3,
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
@@ -243,7 +256,7 @@
       "id": "permeability",
       "term": "Permeability",
       "definition": "Ratio of magnetic flux density to applied magnetic field intensity in a medium.",
-      "formula": "\u03bc=B/H",
+      "formula": "μ=B/H",
       "unit": 3,
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
@@ -265,7 +278,7 @@
       "id": "magnetic-susceptibility",
       "term": "Magnetic susceptibility",
       "definition": "Ratio of magnetization to applied magnetic field intensity.",
-      "formula": "\u03c7_m=M/H",
+      "formula": "χ_m=M/H",
       "unit": 3,
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
@@ -280,7 +293,8 @@
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.17"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "hysteresis",
@@ -290,7 +304,8 @@
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.27"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "superconductivity",
@@ -300,7 +315,8 @@
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.37"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "meissner-effect",
@@ -310,7 +326,8 @@
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.41"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "cooper-pair",
@@ -320,7 +337,8 @@
       "unitTitle": "Magnetic & Superconducting Materials",
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.50"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "dielectric",
@@ -330,7 +348,8 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "electric-dipole",
@@ -340,13 +359,14 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "dipole-moment",
       "term": "Dipole moment",
       "definition": "Product of charge and separation distance in an electric dipole.",
-      "formula": "\u03bc=qd",
+      "formula": "μ=qd",
       "unit": 4,
       "unitTitle": "Dielectric Materials",
       "sources": [
@@ -357,7 +377,7 @@
       "id": "dielectric-constant",
       "term": "Dielectric constant",
       "definition": "Ratio of a medium's permittivity to free space permittivity.",
-      "formula": "\u03b5_r=\u03b5/\u03b5_0",
+      "formula": "ε_r=ε/ε_0",
       "unit": 4,
       "unitTitle": "Dielectric Materials",
       "sources": [
@@ -372,13 +392,14 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.6"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "polarizability",
       "term": "Polarizability",
       "definition": "Induced dipole moment per unit applied electric field.",
-      "formula": "\u03b1=\u03bc/E",
+      "formula": "α=μ/E",
       "unit": 4,
       "unitTitle": "Dielectric Materials",
       "sources": [
@@ -393,7 +414,8 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.12"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ionic-polarization",
@@ -403,7 +425,8 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.19"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "orientation-polarization",
@@ -413,7 +436,8 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.23"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "clausius-mossotti-equation",
@@ -423,7 +447,8 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.39"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "semiconductor",
@@ -433,7 +458,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "intrinsic-semiconductor",
@@ -443,7 +469,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "extrinsic-semiconductor",
@@ -453,7 +480,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.10"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "n-type-semiconductor",
@@ -463,7 +491,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.41"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "p-type-semiconductor",
@@ -473,7 +502,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.51"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "fermi-level",
@@ -483,7 +513,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.38"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "energy-band-gap",
@@ -493,7 +524,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.17"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "hall-effect",
@@ -503,7 +535,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductors#slide.64"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "pn-junction",
@@ -513,7 +546,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductor-devices#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "light-emitting-diode",
@@ -523,7 +557,8 @@
       "unitTitle": "Semiconductors & Semiconductor Devices",
       "sources": [
         "ep-unit-5-semiconductor-devices#slide.25"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "nanotechnology",
@@ -533,7 +568,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.5"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "nanomaterial",
@@ -542,8 +578,9 @@
       "unit": 6,
       "unitTitle": "Nanotechnology",
       "sources": [
-        "ep-unit-6-nano-technology#slide.2"
-      ]
+        "ep-unit-6-nano-technology#slide.6"
+      ],
+      "formula": ""
     },
     {
       "id": "surface-to-volume-ratio",
@@ -553,7 +590,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.6"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "quantum-confinement",
@@ -563,7 +601,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.8"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "quantum-dot",
@@ -573,7 +612,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.11"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "sol-gel-method",
@@ -583,7 +623,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.16"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "chemical-vapor-deposition",
@@ -593,7 +634,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.20"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ball-milling",
@@ -603,7 +645,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.27"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "carbon-nanotube",
@@ -613,7 +656,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.30"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "x-ray-diffraction",
@@ -623,7 +667,8 @@
       "unitTitle": "Nanotechnology",
       "sources": [
         "ep-unit-6-nano-technology#slide.37"
-      ]
+      ],
+      "formula": ""
     }
   ]
 }

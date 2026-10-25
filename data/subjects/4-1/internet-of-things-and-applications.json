@@ -15,280 +15,440 @@
       "definition": "Network of everyday physical things embedded with electronics, software and sensors, connected to the internet to exchange data and enable monitoring and control.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.20"
+      "sources": [
+        "iota-iota-unit-1#p.20"
+      ],
+      "id": "iot",
+      "formula": ""
     },
     {
       "term": "M2M",
       "definition": "Machine-to-Machine: networking of machines or devices for the purpose of remote monitoring, control and data exchange.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.40"
+      "sources": [
+        "iota-iota-unit-1#p.40"
+      ],
+      "id": "m2m",
+      "formula": ""
     },
     {
       "term": "IoT Ecosystem",
       "definition": "Network of interconnected devices, objects, people and processes that communicate to collect and exchange data; built from devices, sensors, networks, cloud platforms and applications.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.49"
+      "sources": [
+        "iota-iota-unit-1#p.49"
+      ],
+      "id": "iot-ecosystem",
+      "formula": ""
     },
     {
       "term": "IoT Gateway",
       "definition": "Physical device that passes data streams from sensors to the cloud and back, performing data preprocessing before transfer to the cloud.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.53"
+      "sources": [
+        "iota-iota-unit-1#p.53"
+      ],
+      "id": "iot-gateway",
+      "formula": ""
     },
     {
       "term": "IoT Marketplace",
       "definition": "Platform where IoT solutions can be bought or obtained free, offering hardware, specialized software, applications or complete hardware-software-cloud packages.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.65"
+      "sources": [
+        "iota-iota-unit-1#p.65"
+      ],
+      "id": "iot-marketplace",
+      "formula": ""
     },
     {
       "term": "IoT Reference Model",
       "definition": "Cisco's seven-level reference model: physical devices, connectivity, edge computing, data accumulation, data abstraction, application, and collaboration and processes.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.69"
+      "sources": [
+        "iota-iota-unit-1#p.69"
+      ],
+      "id": "iot-reference-model",
+      "formula": ""
     },
     {
       "term": "Edge Computing",
       "definition": "Level 3 of the Cisco IoT model that receives packets and outputs data understandable to higher levels, performing filtering, aggregation and packet content inspection.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.71"
+      "sources": [
+        "iota-iota-unit-1#p.71"
+      ],
+      "id": "edge-computing",
+      "formula": ""
     },
     {
       "term": "IoT Analytics",
       "definition": "Data analysis tool that assesses the wide range of data collected from IoT devices and produces useful information, without extra hardware or infrastructure.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.84"
+      "sources": [
+        "iota-iota-unit-1#p.84"
+      ],
+      "id": "iot-analytics",
+      "formula": ""
     },
     {
       "term": "Transducer",
       "definition": "Device that transforms energy from one form to another, e.g. a microphone converting sound into electrical energy.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.86"
+      "sources": [
+        "iota-iota-unit-1#p.86"
+      ],
+      "id": "transducer",
+      "formula": ""
     },
     {
       "term": "Sensor",
       "definition": "Device that detects changes and events in a physical environment and converts physical parameters like temperature, pressure and motion into electrical signals.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.88"
+      "sources": [
+        "iota-iota-unit-1#p.88"
+      ],
+      "id": "sensor",
+      "formula": ""
     },
     {
       "term": "Actuator",
       "definition": "Device that changes electrical signals into mechanical work, used to cause movement or a change in the surroundings.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.90"
+      "sources": [
+        "iota-iota-unit-1#p.90"
+      ],
+      "id": "actuator",
+      "formula": ""
     },
     {
       "term": "Vector Sensor",
       "definition": "Sensor whose response depends on the magnitude, direction and orientation of the input parameter, e.g. accelerometer, gyroscope and motion detector.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.99"
+      "sources": [
+        "iota-iota-unit-1#p.99"
+      ],
+      "id": "vector-sensor",
+      "formula": ""
     },
     {
       "term": "PIR Sensor",
       "definition": "Passive infrared electronic sensor that measures IR light radiating from objects in its field of view; mainly used for detecting human motion.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.103"
+      "sources": [
+        "iota-iota-unit-1#p.103"
+      ],
+      "id": "pir-sensor",
+      "formula": ""
     },
     {
       "term": "Hydraulic Actuator",
       "definition": "Actuator that uses hydraulic power in a cylinder or fluid motor to perform mechanical operation and can generate a large amount of force.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.117"
+      "sources": [
+        "iota-iota-unit-1#p.117"
+      ],
+      "id": "hydraulic-actuator",
+      "formula": ""
     },
     {
       "term": "Pneumatic Actuator",
       "definition": "Actuator that converts energy produced by vacuum or compressed air at high pressure into linear or rotary motion.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
-      "source": "PDF IOTA Unit 1.pdf p.119"
+      "sources": [
+        "iota-iota-unit-1#p.119"
+      ],
+      "id": "pneumatic-actuator",
+      "formula": ""
     },
     {
       "term": "Embedded Platform",
       "definition": "Hardware and software combination integrated into a single platform to perform specific functions or control within a larger system.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.10"
+      "sources": [
+        "iota-iota-unit-2#p.10"
+      ],
+      "id": "embedded-platform",
+      "formula": ""
     },
     {
       "term": "Arduino",
       "definition": "Open-source electronic prototyping platform based on programmable microcontroller boards and flexible, easy-to-use hardware and software.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.27"
+      "sources": [
+        "iota-iota-unit-2#p.27"
+      ],
+      "id": "arduino",
+      "formula": ""
     },
     {
       "term": "Sketch",
       "definition": "Program code written in the Arduino IDE, divided into setup() for initialization and loop() for iterating the specified task.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.34"
+      "sources": [
+        "iota-iota-unit-2#p.34"
+      ],
+      "id": "sketch",
+      "formula": ""
     },
     {
       "term": "SPI",
       "definition": "Synchronous serial data protocol used by microcontrollers to communicate with one or more peripherals quickly over short distances, using CIPO, COPI, SCK and CS lines.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.42"
+      "sources": [
+        "iota-iota-unit-2#p.42"
+      ],
+      "id": "spi",
+      "formula": ""
     },
     {
       "term": "I2C",
       "definition": "Raspberry Pi interface that allows synchronous data transfer with just two pins: SDA (data line) and SCL (clock line).",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.90"
+      "sources": [
+        "iota-iota-unit-2#p.90"
+      ],
+      "id": "i2c",
+      "formula": ""
     },
     {
       "term": "Raspberry Pi",
       "definition": "Open-source, Linux-based credit-card-sized computer board created by the Raspberry Pi Foundation; interfaces sensors and actuators through GPIO pins.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.50"
+      "sources": [
+        "iota-iota-unit-2#p.50"
+      ],
+      "id": "raspberry-pi",
+      "formula": ""
     },
     {
       "term": "GPIO",
       "definition": "General Purpose Input/Output: generic pin on the Raspberry Pi controlled by the user at run time for input or output; the board has 40 pins.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.58"
+      "sources": [
+        "iota-iota-unit-2#p.58"
+      ],
+      "id": "gpio",
+      "formula": ""
     },
     {
       "term": "Intel Galileo",
       "definition": "Microcontroller board based on the Intel Quark SoC X1000, a 32-bit Pentium-class SoC, pin-compatible with Arduino UNO R3 shields.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.75"
+      "sources": [
+        "iota-iota-unit-2#p.75"
+      ],
+      "id": "intel-galileo",
+      "formula": ""
     },
     {
       "term": "DHT11 Sensor",
       "definition": "Low-cost digital sensor that measures relative humidity and temperature using a capacitive humidity element and a negative-temperature-coefficient thermistor.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.85"
+      "sources": [
+        "iota-iota-unit-2#p.85"
+      ],
+      "id": "dht11-sensor",
+      "formula": ""
     },
     {
       "term": "Particle Photon",
       "definition": "Very small Wi-Fi development kit with a 120 MHz ARM Cortex-M3 microcontroller and on-board Broadcom Wi-Fi chip for connected IoT projects.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
-      "source": "PDF IOTA Unit 2.pdf p.96"
+      "sources": [
+        "iota-iota-unit-2#p.96"
+      ],
+      "id": "particle-photon",
+      "formula": ""
     },
     {
       "term": "WSN",
       "definition": "Infrastructure-less wireless network with a large number of wireless sensors deployed in an ad-hoc manner to monitor system, physical or environmental conditions.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.15"
+      "sources": [
+        "iota-iota-unit-3#p.15"
+      ],
+      "id": "wsn",
+      "formula": ""
     },
     {
       "term": "Base Station",
       "definition": "Central node of a WSN that collects and processes data from sensor nodes and transmits it through the internet to a remote server.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.17"
+      "sources": [
+        "iota-iota-unit-3#p.17"
+      ],
+      "id": "base-station",
+      "formula": ""
     },
     {
       "term": "LEACH Protocol",
       "definition": "Low Energy Adaptive Clustering Hierarchy protocol on which the clustered WSN architecture, with clusters and cluster heads, is based.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.27"
+      "sources": [
+        "iota-iota-unit-3#p.27"
+      ],
+      "id": "leach-protocol",
+      "formula": ""
     },
     {
       "term": "Coverage Problem",
       "definition": "Fundamental WSN problem that reflects the quality of service that can be provided by a particular sensor network.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.30"
+      "sources": [
+        "iota-iota-unit-3#p.30"
+      ],
+      "id": "coverage-problem",
+      "formula": ""
     },
     {
       "term": "Star Topology",
       "definition": "Topology with a single central node (hub) to which every node connects; a failure in the hub can result in failure of the entire network.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.52"
+      "sources": [
+        "iota-iota-unit-3#p.52"
+      ],
+      "id": "star-topology",
+      "formula": ""
     },
     {
       "term": "Mesh Topology",
       "definition": "Topology in which each node also acts as a relay for other nodes' data; fully connected mesh links every node, partial mesh links only neighbours.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.54"
+      "sources": [
+        "iota-iota-unit-3#p.54"
+      ],
+      "id": "mesh-topology",
+      "formula": ""
     },
     {
       "term": "Wi-Fi",
       "definition": "IEEE 802.11 wireless networking technology that uses high-frequency radio waves instead of cables to connect devices to a LAN and the internet.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.59"
+      "sources": [
+        "iota-iota-unit-3#p.59"
+      ],
+      "id": "wi-fi",
+      "formula": ""
     },
     {
       "term": "BSS",
       "definition": "Basic Service Set: a group of stations communicating at the physical layer, either through an access point or peer-to-peer in an ad-hoc manner.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.63"
+      "sources": [
+        "iota-iota-unit-3#p.63"
+      ],
+      "id": "bss",
+      "formula": ""
     },
     {
       "term": "Bluetooth",
       "definition": "Short-range wireless communications technology, invented by Ericsson in 1994, that replaces cables between portable units using ad-hoc piconets.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.69"
+      "sources": [
+        "iota-iota-unit-3#p.69"
+      ],
+      "id": "bluetooth",
+      "formula": ""
     },
     {
       "term": "Piconet",
       "definition": "Small Bluetooth network formed by at most 8 stations: one master node managing up to 7 slave nodes, plus up to 255 parked nodes.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.74"
+      "sources": [
+        "iota-iota-unit-3#p.74"
+      ],
+      "id": "piconet",
+      "formula": ""
     },
     {
       "term": "Scatternet",
       "definition": "Interconnected collection of two or more piconets, formed through a bridge node that acts as a member of two piconets.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.76"
+      "sources": [
+        "iota-iota-unit-3#p.76"
+      ],
+      "id": "scatternet",
+      "formula": ""
     },
     {
       "term": "Zigbee",
       "definition": "Low-power, low-data-rate WPAN specification developed under IEEE 802.15.4 by the Zigbee Alliance for connecting many battery-powered control and sensor devices.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.82"
+      "sources": [
+        "iota-iota-unit-3#p.82"
+      ],
+      "id": "zigbee",
+      "formula": ""
     },
     {
       "term": "Zigbee Coordinator",
       "definition": "Mains-powered device, one per Zigbee network, that starts and maintains the network, selects its security mode and bridges data to the home network.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.92"
+      "sources": [
+        "iota-iota-unit-3#p.92"
+      ],
+      "id": "zigbee-coordinator",
+      "formula": ""
     },
     {
       "term": "LoRa",
       "definition": "Long Range Radio: wireless protocol developed by Semtech for long-range, low-power communications, mainly targeted at M2M and IoT networks.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.106"
+      "sources": [
+        "iota-iota-unit-3#p.106"
+      ],
+      "id": "lora",
+      "formula": ""
     },
     {
       "term": "NFC",
       "definition": "Near Field Communication: short-range communication standard, based on RFID, enabling compatible devices to transmit data over radio waves.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
-      "source": "PDF IOTA Unit 3.pdf p.121"
+      "sources": [
+        "iota-iota-unit-3#p.121"
+      ],
+      "id": "nfc",
+      "formula": ""
     }
   ]
 }

@@ -17,7 +17,9 @@
       "formula": "|H(jΩ)| = 1/√(1+(Ω/Ωc)^(2N))",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.1"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.1"
+      ]
     },
     {
       "id": "chebyshev-filter",
@@ -26,7 +28,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.1"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.1"
+      ]
     },
     {
       "id": "chebyshev-type-i-filter",
@@ -35,7 +39,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.2"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.2"
+      ]
     },
     {
       "id": "chebyshev-type-ii-filter",
@@ -44,7 +50,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.2"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.2"
+      ]
     },
     {
       "id": "iir-filter",
@@ -53,7 +61,9 @@
       "formula": "H(z) = (Σ b_k z^-k)/(1+Σ a_k z^-k)",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.1"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.1"
+      ]
     },
     {
       "id": "recursive-realization",
@@ -62,7 +72,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.10"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
     },
     {
       "id": "non-recursive-realization",
@@ -71,7 +83,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.10"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
     },
     {
       "id": "impulse-invariance-method",
@@ -80,7 +94,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.5"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.5"
+      ]
     },
     {
       "id": "bilinear-transformation",
@@ -89,7 +105,9 @@
       "formula": "s = (2/T)((1-z^-1)/(1+z^-1))",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.5"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.5"
+      ]
     },
     {
       "id": "warping-effect",
@@ -98,7 +116,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.7"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.7"
+      ]
     },
     {
       "id": "prewarping",
@@ -107,7 +127,9 @@
       "formula": "Ω = (2/T) tan(ω/2)",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.7"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.7"
+      ]
     },
     {
       "id": "backward-difference",
@@ -116,7 +138,9 @@
       "formula": "dy/dt ≈ (y(n)-y(n-1))/T",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.6"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.6"
+      ]
     },
     {
       "id": "matched-z-transformation",
@@ -125,7 +149,9 @@
       "formula": "z = e^(sT)",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.7"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.7"
+      ]
     },
     {
       "id": "direct-form-i",
@@ -134,7 +160,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.10"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
     },
     {
       "id": "direct-form-ii",
@@ -143,7 +171,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.10"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
     },
     {
       "id": "signal-flow-graph",
@@ -152,7 +182,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.12"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.12"
+      ]
     },
     {
       "id": "transposition-theorem",
@@ -161,7 +193,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.12"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.12"
+      ]
     },
     {
       "id": "cascade-form",
@@ -170,7 +204,9 @@
       "formula": "H(z)=H1(z)H2(z)...",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.10"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
     },
     {
       "id": "parallel-form",
@@ -179,7 +215,9 @@
       "formula": "H(z)=C+Σ Ak/(1-pk z^-1)",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.10"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
     },
     {
       "id": "iir-linear-phase",
@@ -188,7 +226,9 @@
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
-      "sources": ["dsp-unit-4-dsp-questions#p.6"]
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.6"
+      ]
     },
     {
       "id": "fir-filter",
@@ -197,7 +237,9 @@
       "formula": "H(z)=Σ h(n) z^-n",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.1"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.1"
+      ]
     },
     {
       "id": "linear-phase-filter",
@@ -206,7 +248,9 @@
       "formula": "θ(ω) = -αω",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.1"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.1"
+      ]
     },
     {
       "id": "gibbs-phenomenon",
@@ -215,7 +259,9 @@
       "formula": "",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.7"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.7"
+      ]
     },
     {
       "id": "window-function",
@@ -224,7 +270,9 @@
       "formula": "h(n)=hd(n)w(n)",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.8"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.8"
+      ]
     },
     {
       "id": "kaiser-window",
@@ -233,7 +281,9 @@
       "formula": "w(n)=I0(β√(1-(2n/(N-1))^2))/I0(β)",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.11"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.11"
+      ]
     },
     {
       "id": "frequency-sampling-method",
@@ -242,7 +292,9 @@
       "formula": "",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.2"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.2"
+      ]
     },
     {
       "id": "fir-stability",
@@ -251,7 +303,9 @@
       "formula": "",
       "unit": 5,
       "unitTitle": "FIR filter design",
-      "sources": ["dsp-dsp-unit-5-questions#p.2"]
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.2"
+      ]
     },
     {
       "id": "multirate-signal-processing",
@@ -260,7 +314,9 @@
       "formula": "",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.1"]
+      "sources": [
+        "dsp-dsp-unit-6#p.1"
+      ]
     },
     {
       "id": "downsampling",
@@ -269,7 +325,9 @@
       "formula": "y(n)=x(Mn)",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.1"]
+      "sources": [
+        "dsp-dsp-unit-6#p.1"
+      ]
     },
     {
       "id": "upsampling",
@@ -278,7 +336,9 @@
       "formula": "y(n)=x(n/L) if L|n else 0",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.9"]
+      "sources": [
+        "dsp-dsp-unit-6#p.9"
+      ]
     },
     {
       "id": "decimation",
@@ -287,7 +347,9 @@
       "formula": "",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.5"]
+      "sources": [
+        "dsp-dsp-unit-6#p.5"
+      ]
     },
     {
       "id": "interpolation",
@@ -296,7 +358,9 @@
       "formula": "",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.12"]
+      "sources": [
+        "dsp-dsp-unit-6#p.12"
+      ]
     },
     {
       "id": "anti-aliasing-filter",
@@ -305,7 +369,9 @@
       "formula": "ωc = π/M",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.5"]
+      "sources": [
+        "dsp-dsp-unit-6#p.5"
+      ]
     },
     {
       "id": "anti-imaging-filter",
@@ -314,7 +380,9 @@
       "formula": "ωc = π/L",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.12"]
+      "sources": [
+        "dsp-dsp-unit-6#p.12"
+      ]
     },
     {
       "id": "sampling-rate-conversion",
@@ -323,7 +391,9 @@
       "formula": "F = L/M",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.19"]
+      "sources": [
+        "dsp-dsp-unit-6#p.19"
+      ]
     },
     {
       "id": "aliasing",
@@ -332,7 +402,9 @@
       "formula": "",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.5"]
+      "sources": [
+        "dsp-dsp-unit-6#p.5"
+      ]
     },
     {
       "id": "imaging",
@@ -341,7 +413,9 @@
       "formula": "",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
-      "sources": ["dsp-dsp-unit-6#p.12"]
+      "sources": [
+        "dsp-dsp-unit-6#p.12"
+      ]
     }
   ]
 }

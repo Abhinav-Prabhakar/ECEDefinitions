@@ -17,8 +17,9 @@
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
-      ]
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "am",
@@ -27,18 +28,19 @@
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
-      ]
+        "adc-adc-unit-i#slide.4"
+      ],
+      "formula": ""
     },
     {
       "id": "modulation-index-am",
       "term": "Modulation index (AM)",
-      "definition": "Ratio of message amplitude to carrier amplitude.",
+      "definition": "Ratio of the amplitude of the modulating message signal to the amplitude of the unmodulated carrier in an AM wave.",
       "formula": "μ = A_m/A_c",
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
+        "adc-adc-unit-i#slide.8"
       ]
     },
     {
@@ -48,8 +50,9 @@
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
-      ]
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "ssb",
@@ -58,8 +61,9 @@
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
-      ]
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "vsb",
@@ -68,8 +72,9 @@
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
-      ]
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "envelope-detector",
@@ -78,8 +83,9 @@
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
-        "adc-unit-i#slide.1"
-      ]
+        "adc-adc-unit-i#slide.9"
+      ],
+      "formula": ""
     },
     {
       "id": "fm",
@@ -88,8 +94,9 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "pm",
@@ -98,8 +105,9 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "freq-deviation",
@@ -109,18 +117,18 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
+        "adc-adc-unit-ii#slide.3"
       ]
     },
     {
       "id": "modulation-index-fm",
       "term": "Modulation index (FM)",
-      "definition": "Ratio of frequency deviation to modulating frequency.",
+      "definition": "Ratio of the peak frequency deviation of the FM signal to the modulating frequency of the message signal.",
       "formula": "β = Δf/f_m",
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
+        "adc-adc-unit-ii#slide.2"
       ]
     },
     {
@@ -130,8 +138,9 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.10"
+      ],
+      "formula": ""
     },
     {
       "id": "wbfm",
@@ -140,18 +149,19 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.10"
+      ],
+      "formula": ""
     },
     {
       "id": "carsons-rule",
       "term": "Carson's rule",
-      "definition": "Approximate FM transmission bandwidth.",
+      "definition": "Rule of thumb estimating FM transmission bandwidth as approximately twice the sum of the frequency deviation and the modulating frequency.",
       "formula": "B ≈ 2(Δf+f_m)",
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
+        "adc-adc-unit-ii#slide.47"
       ]
     },
     {
@@ -161,8 +171,9 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "de-emphasis",
@@ -171,8 +182,9 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "fdm",
@@ -181,8 +193,9 @@
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
-        "adc-unit-ii#slide.1"
-      ]
+        "adc-adc-unit-ii#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "superheterodyne",
@@ -191,8 +204,9 @@
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "if",
@@ -201,8 +215,9 @@
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "image-frequency",
@@ -211,8 +226,9 @@
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "selectivity",
@@ -221,8 +237,9 @@
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.23"
+      ],
+      "formula": ""
     },
     {
       "id": "sensitivity",
@@ -231,8 +248,9 @@
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.23"
+      ],
+      "formula": ""
     },
     {
       "id": "agc",
@@ -241,18 +259,20 @@
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.25"
+      ],
+      "formula": ""
     },
     {
       "id": "amplitude-limiting",
       "term": "Amplitude limiting",
-      "definition": "Clipping amplitude variations before FM demodulation.",
+      "definition": "Removal of unwanted amplitude variations from an FM signal using a limiter stage before demodulation, since noise produces amplitude changes.",
       "unit": 3,
       "unitTitle": "Transmitters and Receivers",
       "sources": [
-        "adc-unit-iii#slide.1"
-      ]
+        "adc-adc-unit-iii#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "sampling-theorem",
@@ -261,8 +281,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.27"
+      ],
+      "formula": ""
     },
     {
       "id": "nyquist-rate",
@@ -272,7 +293,7 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
+        "adc-adc-unit-iv#slide.6"
       ]
     },
     {
@@ -282,8 +303,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "quantization",
@@ -292,8 +314,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "quantization-error",
@@ -302,8 +325,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "companding",
@@ -312,8 +336,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "dpcm",
@@ -322,8 +347,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "delta-modulation",
@@ -332,8 +358,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "slope-overload",
@@ -342,8 +369,9 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.92"
+      ],
+      "formula": ""
     },
     {
       "id": "granular-noise",
@@ -352,18 +380,20 @@
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
-        "adc-unit-iv#slide.1"
-      ]
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "line-coding",
       "term": "Line coding",
-      "definition": "Mapping digital bits to a transmitted waveform.",
+      "definition": "Process of converting a sequence of binary data bits into a specific digital waveform suitable for transmission over a channel.",
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "isi",
@@ -372,8 +402,9 @@
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.14"
+      ],
+      "formula": ""
     },
     {
       "id": "eye-diagram",
@@ -382,8 +413,9 @@
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "matched-filter",
@@ -392,38 +424,42 @@
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.14"
+      ],
+      "formula": ""
     },
     {
       "id": "ask",
       "term": "Amplitude shift keying (ASK)",
-      "definition": "Digital data modulates carrier amplitude.",
+      "definition": "Digital modulation scheme in which the amplitude of a sinusoidal carrier is varied in accordance with the binary data.",
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.7"
+      ],
+      "formula": ""
     },
     {
       "id": "fsk",
       "term": "Frequency shift keying (FSK)",
-      "definition": "Digital data modulates carrier frequency.",
+      "definition": "Digital modulation scheme in which the frequency of a sinusoidal carrier is varied in accordance with the binary data.",
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.4"
+      ],
+      "formula": ""
     },
     {
       "id": "psk",
       "term": "Phase shift keying (PSK)",
-      "definition": "Digital data modulates carrier phase.",
+      "definition": "Digital modulation scheme in which the phase of a sinusoidal carrier is varied in accordance with the binary data.",
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.10"
+      ],
+      "formula": ""
     },
     {
       "id": "qpsk",
@@ -432,8 +468,9 @@
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "dpsk",
@@ -442,8 +479,9 @@
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "ber",
@@ -452,18 +490,19 @@
       "unit": 5,
       "unitTitle": "Digital Modulation Techniques",
       "sources": [
-        "adc-unit-v#slide.1"
-      ]
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "entropy",
       "term": "Entropy",
-      "definition": "Average information per message from a source.",
+      "definition": "Average amount of information conveyed per symbol by a source, given by the expectation of the self-information of its symbols.",
       "formula": "H = -Σ p log2 p",
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
-        "adc-unit-vi#slide.1"
+        "adc-adc-unit-vi#slide.7"
       ]
     },
     {
@@ -473,18 +512,19 @@
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
-        "adc-unit-vi#slide.1"
-      ]
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "shannon-hartley",
       "term": "Shannon-Hartley theorem",
-      "definition": "Channel capacity of a bandlimited Gaussian channel.",
+      "definition": "Theorem giving channel capacity C = B log₂(1 + S/N) for a channel corrupted by additive white Gaussian noise.",
       "formula": "C = B log2(1+S/N)",
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
-        "adc-unit-vi#slide.1"
+        "adc-adc-unit-vi#slide.2"
       ]
     },
     {
@@ -494,8 +534,9 @@
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
-        "adc-unit-vi#slide.1"
-      ]
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "hamming-distance",
@@ -504,18 +545,20 @@
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
-        "adc-unit-vi#slide.1"
-      ]
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "crc",
       "term": "Cyclic redundancy check",
-      "definition": "Error detection using polynomial division over data.",
+      "definition": "Error detection technique that appends a remainder obtained by polynomial division of the data to the transmitted frame.",
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
-        "adc-unit-vi#slide.1"
-      ]
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
     }
   ]
 }

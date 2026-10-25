@@ -96,13 +96,13 @@
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
-        "vlsitd-unit-1-vlsi-td#slide.51"
+        "vlsitd-unit-1-vlsi-td#slide.2"
       ]
     },
     {
       "id": "verilog-value-set",
       "term": "Verilog value set",
-      "definition": "Four basic logic values in Verilog: 0 (logic zero or false condition), 1 (logic one or true condition), x (unknown logic value) and z (high impedance or floating state).",
+      "definition": "The four logic values of Verilog: 0 (logic zero or false), 1 (logic one or true), x (unknown logic value) and z (high impedance).",
       "formula": "",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
@@ -301,7 +301,7 @@
     {
       "id": "nmos-inverter",
       "term": "NMOS inverter",
-      "definition": "Inverter in which a pull-down nMOS and a transistor pull-up (depletion or enhancement) sit in series between VDD and ground; it restores logic levels for gates, sequential and memory circuits.",
+      "definition": "An inverter with a pull-down nMOS and a transistor pull-up in series between VDD and ground, restoring logic levels.",
       "formula": "",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
@@ -312,13 +312,13 @@
     {
       "id": "cmos-inverter",
       "term": "CMOS inverter",
-      "definition": "Inverter with an NMOS pull-down and PMOS pull-up in series between VDD and VSS; only one device conducts at a time, giving fully restored logic levels and near-zero static power.",
+      "definition": "An inverter with an NMOS pull-down and PMOS pull-up in series between VDD and VSS, giving restored logic levels and near-zero static power.",
       "formula": "",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
-        "vlsitd-unit-4#slide.35",
-        "vlsitd-unit-3-vlsi-td#slide.45"
+        "vlsitd-unit-3-vlsi-td#slide.45",
+        "vlsitd-unit-4#slide.35"
       ]
     },
     {
@@ -368,7 +368,7 @@
     {
       "id": "non-blocking-assignment",
       "term": "Non-blocking assignment",
-      "definition": "Verilog procedural assignment using '<=' in which the right-hand side is evaluated and the assignment is scheduled, normally for the end of the current time step, letting following statements execute at once.",
+      "definition": "A Verilog procedural assignment using '<=' where the right-hand side is evaluated and the assignment is scheduled for the end of the current time step.",
       "formula": "",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
@@ -379,7 +379,7 @@
     {
       "id": "full-adder",
       "term": "Full adder",
-      "definition": "Combinational circuit that adds two input bits and a carry-in to produce a sum and carry-out.  ",
+      "definition": "Combinational circuit that adds two input bits and a carry-in to produce a sum and carry-out.",
       "formula": "Sum = a ⊕ b ⊕ c; Cout = ab + bc + ca",
       "unit": 3,
       "unitTitle": "Combinational & Sequential Blocks",
@@ -412,7 +412,7 @@
     {
       "id": "stick-diagram",
       "term": "Stick diagram",
-      "definition": "A colour-coded cartoon of a layout that captures topology and layer information, showing all components, vias and their relative placement as an interface between symbolic circuit and actual layout.",
+      "definition": "A colour-coded cartoon of a layout capturing topology and layer information, showing components, vias and their relative placement.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Circuit Design Processes & Layout",
@@ -491,7 +491,7 @@
     {
       "id": "ion-implantation",
       "term": "Ion implantation",
-      "definition": "Fabrication step where dopant ions are produced in an implanter, accelerated by 20–250 kV electric fields and embedded in the crystal lattice, giving accurate reproducible doping at room temperature.",
+      "definition": "A fabrication step where dopant ions are accelerated and embedded in the crystal lattice, giving accurate reproducible doping.",
       "formula": "",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
@@ -535,7 +535,7 @@
     {
       "id": "mos-capacitor",
       "term": "MOS capacitor",
-      "definition": "Integrated capacitor formed from the gate-to-source capacitance of a MOSFET; its value depends on gate area but shows large voltage dependence unless an n+ implant forms the bottom plate.",
+      "definition": "An integrated capacitor formed from the gate-to-source capacitance of a MOSFET, whose value depends on gate area.",
       "formula": "",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",

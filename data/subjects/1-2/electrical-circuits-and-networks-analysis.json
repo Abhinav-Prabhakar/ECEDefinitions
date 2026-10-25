@@ -24,7 +24,7 @@
     {
       "id": "electric-current",
       "term": "Electric current",
-      "definition": "Time rate of change of electric charge.",
+      "definition": "Time rate of change of electric charge, defined by I=dq/dt, measured in amperes where one ampere equals one coulomb per second.",
       "formula": "I=dq/dt",
       "unit": 1,
       "unitTitle": "Introduction to electrical circuits",
@@ -35,7 +35,7 @@
     {
       "id": "voltage",
       "term": "Voltage",
-      "definition": "Electromotive force or potential difference.",
+      "definition": "Electromotive force or potential difference, the work per unit charge needed to move charge between two points, measured in volts.",
       "formula": "V=W/q",
       "unit": 1,
       "unitTitle": "Introduction to electrical circuits",
@@ -57,7 +57,7 @@
     {
       "id": "active-element",
       "term": "Active element",
-      "definition": "Circuit element that can generate energy.",
+      "definition": "Circuit element that can generate energy in a circuit, such as voltage sources, current sources and batteries.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to electrical circuits",
@@ -79,7 +79,7 @@
     {
       "id": "inductor",
       "term": "Inductor",
-      "definition": "Passive element opposing sudden change in current.",
+      "definition": "Passive element that opposes sudden change in current and stores energy in its magnetic field, measured in henries.",
       "formula": "V=L di/dt",
       "unit": 1,
       "unitTitle": "Introduction to electrical circuits",
@@ -145,7 +145,7 @@
     {
       "id": "frequency",
       "term": "Frequency",
-      "definition": "Number of cycles completed per second.",
+      "definition": "Number of cycles of an alternating quantity completed in one second, measured in hertz, and equal to the reciprocal of the time period.",
       "formula": "f=1/T",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -156,7 +156,7 @@
     {
       "id": "angular-frequency",
       "term": "Angular frequency",
-      "definition": "Number of radians covered per second.",
+      "definition": "Number of radians covered in one second by the rotating coil generating an alternating quantity, measured in radians per second.",
       "formula": "ω=2πf",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -178,7 +178,7 @@
     {
       "id": "form-factor",
       "term": "Form factor",
-      "definition": "Ratio of RMS value to average value.",
+      "definition": "Ratio of RMS value to average value of an alternating quantity, equal to 1.11 for a pure sinusoid.",
       "formula": "FF=Vrms/Vavg",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -189,7 +189,7 @@
     {
       "id": "peak-factor",
       "term": "Peak factor",
-      "definition": "Ratio of maximum value to RMS value.",
+      "definition": "Ratio of maximum value to RMS value of an alternating quantity, also called the crest factor, equal to 1.414 for a pure sinusoid.",
       "formula": "PF=Vmax/Vrms",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -200,7 +200,7 @@
     {
       "id": "phasor",
       "term": "Phasor",
-      "definition": "Rotating line representing a sinusoidal quantity.",
+      "definition": "Rotating line of definite length representing a sinusoidal alternating quantity, rotating anticlockwise at constant angular velocity.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -211,7 +211,7 @@
     {
       "id": "impedance",
       "term": "Impedance",
-      "definition": "Total opposition to alternating current.",
+      "definition": "Total opposition offered by a circuit to the flow of alternating current, combining resistance and reactance, measured in ohms.",
       "formula": "Z=R+jX",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -244,7 +244,7 @@
     {
       "id": "apparent-power",
       "term": "Apparent power",
-      "definition": "Total power in an AC circuit.",
+      "definition": "Total power supplied to an AC circuit, the product of RMS voltage and RMS current, measured in volt-amperes.",
       "formula": "S=VI",
       "unit": 2,
       "unitTitle": "Single phase AC circuits",
@@ -255,7 +255,7 @@
     {
       "id": "mmf",
       "term": "Magnetomotive force (MMF)",
-      "definition": "Driving force in a magnetic circuit.",
+      "definition": "Magnetic driving force in a magnetic circuit, analogous to voltage, equal to the product of turns and current, measured in ampere-turns.",
       "formula": "F=Ni",
       "unit": 3,
       "unitTitle": "Magnetic circuits",
@@ -277,7 +277,7 @@
     {
       "id": "magnetic-field-intensity",
       "term": "Magnetic field intensity",
-      "definition": "MMF per unit length of magnetic path.",
+      "definition": "MMF per unit length of the magnetic path, obtained by dividing ampere-turns by the mean path length, measured in ampere-turns per metre.",
       "formula": "H=Ni/l",
       "unit": 3,
       "unitTitle": "Magnetic circuits",
@@ -332,12 +332,12 @@
     {
       "id": "coefficient-of-coupling",
       "term": "Coefficient of coupling",
-      "definition": "Fraction of flux linking both coils.",
+      "definition": "Fraction of the total flux produced by one coil that links with the second coil, ranging between zero and one.",
       "formula": "k=M/√(L1 L2)",
       "unit": 3,
       "unitTitle": "Magnetic circuits",
       "sources": [
-        "ecna-ecna-unit-3-magnetic-circuits#slide.16"
+        "ecna-ecna-unit-3-magnetic-circuits#slide.1"
       ]
     },
     {
@@ -431,29 +431,29 @@
     {
       "id": "z-parameters",
       "term": "Z parameters",
-      "definition": "Impedance parameters relating port voltages to currents.",
+      "definition": "Open-circuit impedance parameters of a two-port network, relating port voltages to port currents through the z-matrix.",
       "formula": "V1=z11 I1+z12 I2",
       "unit": 5,
       "unitTitle": "2-port parameters",
       "sources": [
-        "ecna-ecna-unit-5-2-ports-parameters#slide.5"
+        "ecna-ecna-unit-5-2-ports-parameters#slide.1"
       ]
     },
     {
       "id": "y-parameters",
       "term": "Y parameters",
-      "definition": "Admittance parameters relating port currents to voltages.",
+      "definition": "Short-circuit admittance parameters of a two-port network, relating port currents to port voltages through the y-matrix.",
       "formula": "I1=y11 V1+y12 V2",
       "unit": 5,
       "unitTitle": "2-port parameters",
       "sources": [
-        "ecna-ecna-unit-5-2-ports-parameters#slide.10"
+        "ecna-ecna-unit-5-2-ports-parameters#slide.1"
       ]
     },
     {
       "id": "h-parameters",
       "term": "H parameters",
-      "definition": "Hybrid parameters mixing impedance and admittance.",
+      "definition": "Hybrid parameters of a two-port network that mix impedance and admittance dimensions, relating port voltages and currents, and are widely used in transistor models.",
       "formula": "V1=h11 I1+h12 V2",
       "unit": 5,
       "unitTitle": "2-port parameters",
@@ -464,7 +464,7 @@
     {
       "id": "abcd-parameters",
       "term": "ABCD parameters",
-      "definition": "Transmission parameters used for cascaded networks.",
+      "definition": "Transmission parameters of a two-port network expressing input voltage and current in terms of output quantities, convenient for analyzing cascaded networks.",
       "formula": "V1=A V2-B I2",
       "unit": 5,
       "unitTitle": "2-port parameters",
@@ -552,12 +552,12 @@
     {
       "id": "underdamped",
       "term": "Underdamped response",
-      "definition": "RLC with complex roots; oscillatory decaying response.",
+      "definition": "Response of a second-order RLC circuit whose characteristic roots are complex conjugates, producing decaying oscillations that reach steady state quickly.",
       "formula": "Δ<0",
       "unit": 6,
       "unitTitle": "Transients",
       "sources": [
-        "ecna-ecna-unit-6-transients#slide.52"
+        "ecna-ecna-unit-6-transients#slide.4"
       ]
     }
   ]

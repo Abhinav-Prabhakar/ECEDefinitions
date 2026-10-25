@@ -18,7 +18,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.15"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "decimal-number-system",
@@ -28,7 +29,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.17"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "octal-number-system",
@@ -38,7 +40,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.18"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "hexadecimal-number-system",
@@ -48,7 +51,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.19"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "gray-code",
@@ -58,7 +62,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.33"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "excess-3-code",
@@ -68,7 +73,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.37"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ones-complement",
@@ -78,7 +84,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.50"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "boolean-algebra",
@@ -88,7 +95,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.39"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "maxterm",
@@ -98,7 +106,8 @@
       "unitTitle": "Number Systems and Boolean Algebra",
       "sources": [
         "dld-dld-unit-1#slide.66"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "pos-form",
@@ -119,7 +128,8 @@
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "universal-gate",
@@ -129,17 +139,19 @@
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.17"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "karnaugh-map",
       "term": "Karnaugh map",
-      "definition": "A graphical method for simplifying Boolean functions.",
+      "definition": "A graphical method for simplifying Boolean functions by grouping adjacent cells containing 1s in powers of two.",
       "unit": 2,
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.21"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "prime-implicant",
@@ -149,7 +161,8 @@
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.32"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "essential-prime-implicant",
@@ -159,7 +172,8 @@
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.32"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "dont-care",
@@ -169,7 +183,8 @@
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.33"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "quine-mccluskey",
@@ -179,7 +194,8 @@
       "unitTitle": "Logic Gates and Minimization",
       "sources": [
         "dld-dld-unit-2#slide.45"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "combinational-circuit",
@@ -189,7 +205,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.2"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "half-adder",
@@ -199,7 +216,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.21"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "full-adder",
@@ -209,7 +227,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.25"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "half-subtractor",
@@ -219,7 +238,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.33"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "full-subtractor",
@@ -229,7 +249,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.37"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "multiplexer",
@@ -239,7 +260,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.61"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "demultiplexer",
@@ -249,7 +271,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.83"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "encoder",
@@ -259,7 +282,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.49"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "decoder",
@@ -269,7 +293,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.53"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "parity-bit",
@@ -279,7 +304,8 @@
       "unitTitle": "Combinational Logic Design",
       "sources": [
         "dld-dld-unit-3#slide.97"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "sequential-circuit",
@@ -289,7 +315,8 @@
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
         "dld-dld-unit-4#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "synchronous-circuit",
@@ -298,28 +325,31 @@
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
-        "dld-dld-unit-4#slide.8"
-      ]
+        "dld-dld-unit-4#slide.1"
+      ],
+      "formula": ""
     },
     {
       "id": "asynchronous-circuit",
       "term": "Asynchronous circuit",
-      "definition": "A sequential circuit using unclocked memory elements.",
+      "definition": "A sequential circuit using unclocked memory elements whose outputs change as soon as the inputs change.",
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
-        "dld-dld-unit-4#slide.8"
-      ]
+        "dld-dld-unit-4#slide.1"
+      ],
+      "formula": ""
     },
     {
       "id": "latch",
       "term": "Latch",
-      "definition": "A level-sensitive memory element storing one bit.",
+      "definition": "A level-sensitive memory element storing one bit, whose output responds to input changes while enabled.",
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
         "dld-dld-unit-4#slide.16"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "flip-flop",
@@ -329,7 +359,8 @@
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
         "dld-dld-unit-4#slide.16"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "sr-flip-flop",
@@ -339,7 +370,8 @@
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
         "dld-dld-unit-4#slide.20"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "jk-flip-flop",
@@ -348,8 +380,9 @@
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
-        "dld-dld-unit-4#slide.31"
-      ]
+        "dld-dld-unit-4#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "d-flip-flop",
@@ -358,8 +391,9 @@
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
-        "dld-dld-unit-4#slide.42"
-      ]
+        "dld-dld-unit-4#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "t-flip-flop",
@@ -368,18 +402,20 @@
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
-        "dld-dld-unit-4#slide.44"
-      ]
+        "dld-dld-unit-4#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "counter",
       "term": "Counter",
-      "definition": "A circuit that counts applied clock pulses.",
+      "definition": "A circuit that counts applied clock pulses, built from flip-flops driven in a regular sequence.",
       "unit": 5,
       "unitTitle": "Registers and Counters",
       "sources": [
         "dld-dld-unit-5#slide.6"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ripple-counter",
@@ -389,17 +425,19 @@
       "unitTitle": "Registers and Counters",
       "sources": [
         "dld-dld-unit-5#slide.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "synchronous-counter",
       "term": "Synchronous counter",
-      "definition": "A counter with all flip-flops clocked simultaneously.",
+      "definition": "A counter in which all flip-flops share a common clock and are triggered simultaneously.",
       "unit": 5,
       "unitTitle": "Registers and Counters",
       "sources": [
         "dld-dld-unit-5#slide.4"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "ring-counter",
@@ -409,17 +447,19 @@
       "unitTitle": "Registers and Counters",
       "sources": [
         "dld-dld-unit-5#slide.20"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "johnson-counter",
       "term": "Johnson counter",
-      "definition": "A twisted ring counter with inverted feedback.",
+      "definition": "A twisted ring counter with inverted feedback from the last flip-flop, producing 2n distinct states.",
       "unit": 5,
       "unitTitle": "Registers and Counters",
       "sources": [
         "dld-dld-unit-5#slide.22"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "shift-register",
@@ -429,7 +469,8 @@
       "unitTitle": "Registers and Counters",
       "sources": [
         "dld-dld-unit-5#slide.25"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "programmable-logic-device",
@@ -439,17 +480,19 @@
       "unitTitle": "Programmable Logic Devices",
       "sources": [
         "dld-dld-unit-6#slide.3"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "rom",
       "term": "ROM",
-      "definition": "A non-volatile read-only memory storing fixed data.",
+      "definition": "A non-volatile read-only memory storing fixed data that remains intact even when power is removed.",
       "unit": 6,
       "unitTitle": "Programmable Logic Devices",
       "sources": [
         "dld-dld-unit-6#slide.7"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "prom",
@@ -459,7 +502,8 @@
       "unitTitle": "Programmable Logic Devices",
       "sources": [
         "dld-dld-unit-6#slide.9"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "pla",
@@ -469,17 +513,19 @@
       "unitTitle": "Programmable Logic Devices",
       "sources": [
         "dld-dld-unit-6#slide.20"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "asm-chart",
       "term": "ASM chart",
-      "definition": "A flowchart-like representation of digital hardware algorithms.",
+      "definition": "A flowchart-like representation of digital hardware algorithms describing events, states and timing relationships.",
       "unit": 6,
       "unitTitle": "Programmable Logic Devices",
       "sources": [
         "dld-dld-unit-6#slide.33"
-      ]
+      ],
+      "formula": ""
     }
   ]
 }

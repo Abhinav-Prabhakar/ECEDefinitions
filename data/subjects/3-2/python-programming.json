@@ -134,7 +134,7 @@
     {
       "id": "break-statement",
       "term": "break statement",
-      "definition": "The break statement exits a loop prematurely.",
+      "definition": "The break statement exits the innermost enclosing loop prematurely and passes control to the first statement following that loop.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -293,7 +293,7 @@
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
-        "pp-unit-ii-dr-pl#slide.57"
+        "pp-unit-ii-dr-pl#slide.58"
       ]
     },
     {
@@ -436,7 +436,7 @@
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
       "sources": [
-        "pp-unit-iii-dr-pl#slide.26"
+        "pp-unit-iii-dr-pl#slide.27"
       ]
     },
     {

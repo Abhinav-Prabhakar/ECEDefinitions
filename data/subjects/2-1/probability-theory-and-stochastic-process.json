@@ -29,7 +29,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.51"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "random-experiment",
@@ -39,7 +40,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.46"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "mutually-exclusive-events",
@@ -71,7 +73,7 @@
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
-        "ptsp-ptsp-model-qp-and-syllabus-a22#p.1"
+        "ptsp-unit-1-ptsp#slide.20"
       ]
     },
     {
@@ -82,7 +84,7 @@
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
-        "ptsp-ptsp-model-qp-and-syllabus-a22#p.1"
+        "ptsp-unit-1-ptsp#slide.20"
       ]
     },
     {
@@ -93,13 +95,13 @@
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
-        "ptsp-unit-1-ptsp#slide.90"
+        "ptsp-unit-1-ptsp#slide.6"
       ]
     },
     {
       "id": "joint-probability",
       "term": "Joint probability",
-      "definition": "Probability of two events occurring simultaneously.",
+      "definition": "Probability that two or more events occur together at the same time, written as P(A∩B) for events A and B.",
       "formula": "P(A∩B)",
       "unit": 1,
       "unitTitle": "Probability Theory",
@@ -110,12 +112,13 @@
     {
       "id": "random-variable",
       "term": "Random variable",
-      "definition": "Real-valued function mapping sample points to numbers.",
+      "definition": "A real-valued function defined on the sample space of a random experiment that assigns a numerical value to each sample point.",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
-      ]
+        "ptsp-unit-2-ptsp#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "pmf",
@@ -125,7 +128,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.2"
       ]
     },
     {
@@ -136,7 +139,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.2"
       ]
     },
     {
@@ -147,7 +150,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
@@ -158,7 +161,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
@@ -169,7 +172,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.99"
       ]
     },
     {
@@ -180,7 +183,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
@@ -191,7 +194,7 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
@@ -202,18 +205,19 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
       "id": "uniform-distribution",
       "term": "Uniform distribution",
-      "definition": "Equal probability over a finite interval [a,b].",
+      "definition": "A continuous distribution assigning equal probability density over a finite interval [a, b], so the density is constant throughout the interval.",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
-      ]
+        "ptsp-unit-2-ptsp#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "gaussian-distribution",
@@ -223,18 +227,18 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
       "id": "exponential-distribution",
       "term": "Exponential distribution",
-      "definition": "Models inter-arrival times with constant rate λ.",
+      "definition": "A continuous distribution modelling inter-arrival times of events occurring at a constant average rate λ, characterised by the memoryless property.",
       "formula": "f(x)=λ e^{-λx}, x≥0",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
+        "ptsp-unit-2-ptsp#slide.3"
       ]
     },
     {
@@ -244,18 +248,19 @@
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
-        "ptsp-unit-2-ptsp#slide.1"
-      ]
+        "ptsp-unit-2-ptsp#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "joint-cdf",
       "term": "Joint CDF",
-      "definition": "Joint probability that X≤x and Y≤y.",
+      "definition": "Cumulative distribution function giving the probability that X≤x and Y≤y simultaneously for the two-dimensional random vector (X, Y).",
       "formula": "F_{X,Y}(x,y)=P(X≤x,Y≤y)",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
+        "ptsp-unit-3-ptsp#slide.2"
       ]
     },
     {
@@ -266,7 +271,7 @@
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
+        "ptsp-unit-3-ptsp#slide.2"
       ]
     },
     {
@@ -276,40 +281,41 @@
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
-      ]
+        "ptsp-unit-3-ptsp#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "conditional-pdf",
       "term": "Conditional PDF",
-      "definition": "Density of X given Y=y.",
+      "definition": "Probability density of X evaluated under the condition that Y has taken the specific value y, written as fX|Y(x|y).",
       "formula": "f_{X|Y}(x|y)=f_{XY}(x,y)/f_Y(y)",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
+        "ptsp-unit-3-ptsp#slide.2"
       ]
     },
     {
       "id": "covariance",
       "term": "Covariance",
-      "definition": "Expected product of deviations from means.",
+      "definition": "Expected value of the product of deviations of two random variables from their respective means, measuring their joint linear variation.",
       "formula": "Cov(X,Y)=E[(X-μ_X)(Y-μ_Y)]",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
+        "ptsp-unit-3-ptsp#slide.51"
       ]
     },
     {
       "id": "correlation-coefficient",
       "term": "Correlation coefficient",
-      "definition": "Normalized covariance between two random variables.",
+      "definition": "Normalized measure of linear dependence between two random variables, obtained as covariance divided by the product of their standard deviations.",
       "formula": "ρ_{XY}=Cov(X,Y)/(σ_X σ_Y)",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
+        "ptsp-unit-3-ptsp#slide.39"
       ]
     },
     {
@@ -319,8 +325,9 @@
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
-      ]
+        "ptsp-unit-3-ptsp#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "central-limit-theorem",
@@ -329,18 +336,20 @@
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
-      ]
+        "ptsp-unit-3-ptsp#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "jointly-gaussian",
       "term": "Jointly Gaussian RVs",
-      "definition": "Random vector with multivariate normal distribution.",
+      "definition": "A random vector having a multivariate normal distribution, fully characterized by its mean vector and covariance matrix.",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
-        "ptsp-unit-3-ptsp#slide.1"
-      ]
+        "ptsp-unit-3-ptsp#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "random-process",
@@ -361,7 +370,7 @@
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
-        "ptsp-unit-4-ptsp#p.35"
+        "ptsp-unit-4-ptsp#p.3"
       ]
     },
     {
@@ -389,23 +398,24 @@
     {
       "id": "cross-correlation",
       "term": "Cross-correlation function",
-      "definition": "Expected product of values of two processes.",
+      "definition": "Measure of similarity between two random processes given by the expected product of their samples at specified time instants.",
       "formula": "R_XY(t1,t2)=E[X(t1)Y(t2)]",
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
-        "ptsp-unit-4-ptsp#p.38"
+        "ptsp-unit-4-ptsp#p.3"
       ]
     },
     {
       "id": "sss",
       "term": "Strict-sense stationarity",
-      "definition": "All finite-dimensional distributions are time-invariant.",
+      "definition": "Stationarity in which every finite-dimensional distribution of a random process is invariant under shifts of the time origin.",
       "unit": 5,
       "unitTitle": "Stationarity and Correlation Theory",
       "sources": [
         "ptsp-unit-5-ptsp#p.1"
-      ]
+      ],
+      "formula": ""
     },
     {
       "id": "wss",
@@ -436,8 +446,9 @@
       "unit": 5,
       "unitTitle": "Stationarity and Correlation Theory",
       "sources": [
-        "ptsp-unit-5-ptsp#p.13"
-      ]
+        "ptsp-unit-5-ptsp#p.4"
+      ],
+      "formula": ""
     },
     {
       "id": "ergodicity",
@@ -446,8 +457,9 @@
       "unit": 5,
       "unitTitle": "Stationarity and Correlation Theory",
       "sources": [
-        "ptsp-unit-5-ptsp#p.20"
-      ]
+        "ptsp-unit-5-ptsp#p.4"
+      ],
+      "formula": ""
     },
     {
       "id": "cross-psd",
@@ -456,8 +468,9 @@
       "unit": 5,
       "unitTitle": "Stationarity and Correlation Theory",
       "sources": [
-        "ptsp-unit-5-ptsp#p.17"
-      ]
+        "ptsp-unit-5-ptsp#p.3"
+      ],
+      "formula": ""
     },
     {
       "id": "lti-response",
@@ -477,8 +490,9 @@
       "unit": 6,
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
-        "ptsp-unit-6-ptsp#p.778"
-      ]
+        "ptsp-unit-6-ptsp#p.4"
+      ],
+      "formula": ""
     },
     {
       "id": "shot-noise",
@@ -487,8 +501,9 @@
       "unit": 6,
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
-        "ptsp-unit-6-ptsp#p.778"
-      ]
+        "ptsp-unit-6-ptsp#p.4"
+      ],
+      "formula": ""
     },
     {
       "id": "entropy",
@@ -498,7 +513,7 @@
       "unit": 6,
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
-        "ptsp-unit-6-ptsp#p.513"
+        "ptsp-unit-6-ptsp#p.5"
       ]
     },
     {
@@ -509,7 +524,8 @@
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
         "ptsp-unit-6-ptsp#p.19"
-      ]
+      ],
+      "formula": ""
     }
   ]
 }

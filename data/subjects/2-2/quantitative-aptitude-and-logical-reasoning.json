@@ -13,12 +13,13 @@
     {
       "id": "natural-number",
       "term": "Natural number",
-      "definition": "A counting number: 1, 2, 3, ...",
+      "definition": "A counting number from 1, 2, 3, onward, used for counting and ordering objects.",
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.4"
-      ]
+        "qalr-qalr-unit-1#slide.4"
+      ],
+      "formula": ""
     },
     {
       "id": "whole-number",
@@ -27,8 +28,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.4"
-      ]
+        "qalr-qalr-unit-1#slide.4"
+      ],
+      "formula": ""
     },
     {
       "id": "integer",
@@ -37,8 +39,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.4"
-      ]
+        "qalr-qalr-unit-1#slide.4"
+      ],
+      "formula": ""
     },
     {
       "id": "composite-number",
@@ -47,8 +50,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.8"
-      ]
+        "qalr-qalr-unit-1#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "co-prime-numbers",
@@ -57,8 +61,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.8"
-      ]
+        "qalr-qalr-unit-1#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "hcf",
@@ -67,8 +72,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.31"
-      ]
+        "qalr-qalr-unit-1#slide.31"
+      ],
+      "formula": ""
     },
     {
       "id": "lcm",
@@ -77,8 +83,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.34"
-      ]
+        "qalr-qalr-unit-1#slide.34"
+      ],
+      "formula": ""
     },
     {
       "id": "place-value",
@@ -87,8 +94,9 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.3"
-      ]
+        "qalr-qalr-unit-1#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "average",
@@ -98,7 +106,7 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.47"
+        "qalr-qalr-unit-1#slide.47"
       ]
     },
     {
@@ -108,18 +116,20 @@
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.59"
-      ]
+        "qalr-qalr-unit-1#slide.59"
+      ],
+      "formula": ""
     },
     {
       "id": "proportion",
       "term": "Proportion",
-      "definition": "An equality between two ratios.",
+      "definition": "An equality stating that two ratios are the same, conventionally written as a:b = c:d.",
       "unit": 1,
       "unitTitle": "Number System",
       "sources": [
-        "qalr-unit-1#slide.59"
-      ]
+        "qalr-qalr-unit-1#slide.59"
+      ],
+      "formula": ""
     },
     {
       "id": "percentage",
@@ -128,8 +138,9 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.2"
-      ]
+        "qalr-qalr-unit-2#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "cost-price",
@@ -138,8 +149,9 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.13"
-      ]
+        "qalr-qalr-unit-2#slide.13"
+      ],
+      "formula": ""
     },
     {
       "id": "selling-price",
@@ -148,8 +160,9 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.13"
-      ]
+        "qalr-qalr-unit-2#slide.13"
+      ],
+      "formula": ""
     },
     {
       "id": "profit",
@@ -159,7 +172,7 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.13"
+        "qalr-qalr-unit-2#slide.13"
       ]
     },
     {
@@ -170,7 +183,7 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.13"
+        "qalr-qalr-unit-2#slide.13"
       ]
     },
     {
@@ -181,7 +194,7 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.14"
+        "qalr-qalr-unit-2#slide.2"
       ]
     },
     {
@@ -191,29 +204,31 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.14"
-      ]
+        "qalr-qalr-unit-2#slide.14"
+      ],
+      "formula": ""
     },
     {
       "id": "simple-interest",
       "term": "Simple interest",
-      "definition": "Interest calculated only on the principal amount.",
+      "definition": "Interest calculated only on the principal amount, remaining the same for every year of the investment.",
       "formula": "SI = (P x R x T) / 100",
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.31"
+        "qalr-qalr-unit-2#slide.31"
       ]
     },
     {
       "id": "compound-interest",
       "term": "Compound interest",
-      "definition": "Interest calculated on principal plus accumulated interest.",
+      "definition": "Interest calculated on the principal plus the accumulated interest of earlier periods, growing every year.",
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.37"
-      ]
+        "qalr-qalr-unit-2#slide.37"
+      ],
+      "formula": ""
     },
     {
       "id": "partnership",
@@ -222,39 +237,42 @@
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.26"
-      ]
+        "qalr-qalr-unit-2#slide.26"
+      ],
+      "formula": ""
     },
     {
       "id": "working-partner",
       "term": "Working partner",
-      "definition": "A partner who manages the business.",
+      "definition": "A partner who actively manages the business and takes part in its day-to-day working.",
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
-        "qalr-unit-2#slide.26"
-      ]
+        "qalr-qalr-unit-2#slide.26"
+      ],
+      "formula": ""
     },
     {
       "id": "time-and-work",
       "term": "Time and work",
-      "definition": "Work done equals rate multiplied by time.",
+      "definition": "Work done equals rate of work multiplied by time, the principle behind combined-work problems.",
       "formula": "Work = Rate x Time",
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-2#slide.46"
+        "qalr-qalr-unit-2#slide.46"
       ]
     },
     {
       "id": "efficiency",
       "term": "Efficiency",
-      "definition": "Amount of work done per unit time.",
+      "definition": "Amount of work done per unit time; a worker with higher efficiency completes the job faster.",
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-2#slide.46"
-      ]
+        "qalr-qalr-unit-2#slide.46"
+      ],
+      "formula": ""
     },
     {
       "id": "pipe-cistern",
@@ -263,18 +281,19 @@
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-2#slide.54"
-      ]
+        "qalr-qalr-unit-2#slide.54"
+      ],
+      "formula": ""
     },
     {
       "id": "speed",
       "term": "Speed",
-      "definition": "Distance travelled per unit time.",
+      "definition": "Distance travelled per unit time, typically expressed in kilometres per hour or metres per second.",
       "formula": "Speed = Distance / Time",
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-2#slide.58"
+        "qalr-qalr-unit-2#slide.62"
       ]
     },
     {
@@ -284,8 +303,9 @@
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-2#slide.62"
-      ]
+        "qalr-qalr-unit-2#slide.62"
+      ],
+      "formula": ""
     },
     {
       "id": "alligation",
@@ -294,8 +314,9 @@
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-3#slide.47"
-      ]
+        "qalr-qalr-unit-3#slide.47"
+      ],
+      "formula": ""
     },
     {
       "id": "area",
@@ -304,8 +325,9 @@
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-3#slide.55"
-      ]
+        "qalr-qalr-unit-3#slide.55"
+      ],
+      "formula": ""
     },
     {
       "id": "volume",
@@ -314,8 +336,9 @@
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [
-        "qalr-unit-3#slide.72"
-      ]
+        "qalr-qalr-unit-3#slide.72"
+      ],
+      "formula": ""
     },
     {
       "id": "opposite-faces",
@@ -324,8 +347,9 @@
       "unit": 4,
       "unitTitle": "Reasoning",
       "sources": [
-        "cubes-and-dices#p.1"
-      ]
+        "qalr-cubes-and-dices#p.1"
+      ],
+      "formula": ""
     },
     {
       "id": "adjacent-faces",
@@ -334,8 +358,9 @@
       "unit": 4,
       "unitTitle": "Reasoning",
       "sources": [
-        "cubes-and-dices#p.1"
-      ]
+        "qalr-cubes-and-dices#p.1"
+      ],
+      "formula": ""
     },
     {
       "id": "venn-diagram",
@@ -344,8 +369,9 @@
       "unit": 4,
       "unitTitle": "Reasoning",
       "sources": [
-        "qalr-unit-6-compressed-2#p.3"
-      ]
+        "qalr-qalr-unit-6-compressed-2#p.3"
+      ],
+      "formula": ""
     },
     {
       "id": "data-interpretation",
@@ -354,8 +380,9 @@
       "unit": 5,
       "unitTitle": "Data Interpretation",
       "sources": [
-        "qalr-unit-3#slide.81"
-      ]
+        "qalr-qalr-unit-3#slide.81"
+      ],
+      "formula": ""
     },
     {
       "id": "statement",
@@ -364,8 +391,9 @@
       "unit": 6,
       "unitTitle": "Logical Reasoning",
       "sources": [
-        "qalr-unit-6-compressed-2#p.2"
-      ]
+        "qalr-qalr-unit-6-compressed-2#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "argument",
@@ -374,18 +402,20 @@
       "unit": 6,
       "unitTitle": "Logical Reasoning",
       "sources": [
-        "statements-and-arguments#p.1"
-      ]
+        "qalr-statements-and-arguments#p.1"
+      ],
+      "formula": ""
     },
     {
       "id": "conclusion",
       "term": "Conclusion",
-      "definition": "The statement that follows from given premises.",
+      "definition": "The statement that necessarily follows from the given premises in a logical argument.",
       "unit": 6,
       "unitTitle": "Logical Reasoning",
       "sources": [
-        "qalr-unit-6-compressed-2#p.2"
-      ]
+        "qalr-qalr-unit-6-compressed-2#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "assumption",
@@ -394,8 +424,9 @@
       "unit": 6,
       "unitTitle": "Logical Reasoning",
       "sources": [
-        "qalr-unit-6-compressed-2#p.2"
-      ]
+        "qalr-qalr-unit-6-compressed-2#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "syllogism",
@@ -404,8 +435,9 @@
       "unit": 6,
       "unitTitle": "Logical Reasoning",
       "sources": [
-        "qalr-unit-6-compressed-2#p.2"
-      ]
+        "qalr-qalr-unit-6-compressed-2#p.2"
+      ],
+      "formula": ""
     },
     {
       "id": "data-sufficiency",
@@ -414,8 +446,9 @@
       "unit": 6,
       "unitTitle": "Logical Reasoning",
       "sources": [
-        "qalr-unit-6-compressed-2#p.2"
-      ]
+        "qalr-qalr-unit-6-compressed-2#p.2"
+      ],
+      "formula": ""
     }
   ]
 }

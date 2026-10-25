@@ -14,7 +14,7 @@
       "id": "function-of-two-variables",
       "term": "Function of two variables",
       "definition": "A rule assigning a unique real value f(x,y) to each point (x,y) in a subset of R^2.",
-      "formula": "f:D\u2282R\u00b2\u2192R",
+      "formula": "f:D⊂R²→R",
       "unit": 1,
       "unitTitle": "Functions of several variables",
       "sources": [
@@ -36,7 +36,7 @@
       "id": "continuity",
       "term": "Continuity",
       "definition": "f is continuous at (a,b) if its limit there equals f(a,b).",
-      "formula": "lim_{(x,y)\u2192(a,b)} f(x,y)=f(a,b)",
+      "formula": "lim_{(x,y)→(a,b)} f(x,y)=f(a,b)",
       "unit": 1,
       "unitTitle": "Functions of several variables",
       "sources": [
@@ -47,7 +47,7 @@
       "id": "partial-derivative",
       "term": "Partial derivative",
       "definition": "Derivative of f with respect to one variable while holding the other variables constant.",
-      "formula": "\u2202f/\u2202x",
+      "formula": "∂f/∂x",
       "unit": 1,
       "unitTitle": "Functions of several variables",
       "sources": [
@@ -69,7 +69,7 @@
       "id": "eulers-theorem",
       "term": "Euler's theorem",
       "definition": "For a homogeneous function of degree n, x f_x + y f_y = n f.",
-      "formula": "x\u2202f/\u2202x + y\u2202f/\u2202y = nf",
+      "formula": "x∂f/∂x + y∂f/∂y = nf",
       "unit": 1,
       "unitTitle": "Functions of several variables",
       "sources": [
@@ -102,7 +102,7 @@
       "id": "jacobian",
       "term": "Jacobian",
       "definition": "Determinant of the matrix of first-order partial derivatives of a vector-valued function.",
-      "formula": "J=\u2202(u,v)/\u2202(x,y)",
+      "formula": "J=∂(u,v)/∂(x,y)",
       "unit": 1,
       "unitTitle": "Functions of several variables",
       "sources": [
@@ -134,8 +134,8 @@
     {
       "id": "lagrange-multiplier",
       "term": "Lagrange multiplier",
-      "definition": "Scalar \u03bb used to optimize f subject to a constraint g=0 via \u2207f=\u03bb\u2207g.",
-      "formula": "\u2207f=\u03bb\u2207g",
+      "definition": "Scalar λ used to optimize f subject to a constraint g=0 via ∇f=λ∇g.",
+      "formula": "∇f=λ∇g",
       "unit": 1,
       "unitTitle": "Functions of several variables",
       "sources": [
@@ -146,7 +146,7 @@
       "id": "double-integral",
       "term": "Double integral",
       "definition": "Integral of a function f over a region R in the plane.",
-      "formula": "\u222c_R f dA",
+      "formula": "∬_R f dA",
       "unit": 2,
       "unitTitle": "Multiple integrals",
       "sources": [
@@ -168,7 +168,7 @@
       "id": "triple-integral",
       "term": "Triple integral",
       "definition": "Integral of a function over a solid region in three-dimensional space.",
-      "formula": "\u222d_V f dV",
+      "formula": "∭_V f dV",
       "unit": 2,
       "unitTitle": "Multiple integrals",
       "sources": [
@@ -189,8 +189,8 @@
     {
       "id": "polar-coordinates-integral",
       "term": "Polar coordinates integral",
-      "definition": "Double integral expressed in polar coordinates with area element r dr d\u03b8.",
-      "formula": "dA=r dr d\u03b8",
+      "definition": "Double integral expressed in polar coordinates with area element r dr dθ.",
+      "formula": "dA=r dr dθ",
       "unit": 2,
       "unitTitle": "Multiple integrals",
       "sources": [
@@ -200,8 +200,8 @@
     {
       "id": "cylindrical-coordinates",
       "term": "Cylindrical coordinates",
-      "definition": "Coordinates (r,\u03b8,z) with volume element r dz dr d\u03b8.",
-      "formula": "dV=r dz dr d\u03b8",
+      "definition": "Coordinates (r,θ,z) with volume element r dz dr dθ.",
+      "formula": "dV=r dz dr dθ",
       "unit": 2,
       "unitTitle": "Multiple integrals",
       "sources": [
@@ -211,8 +211,8 @@
     {
       "id": "spherical-coordinates",
       "term": "Spherical coordinates",
-      "definition": "Coordinates (\u03c1,\u03b8,\u03c6) with volume element \u03c1\u00b2 sin\u03c6 d\u03c1 d\u03b8 d\u03c6.",
-      "formula": "dV=\u03c1\u00b2 sin\u03c6 d\u03c1 d\u03b8 d\u03c6",
+      "definition": "Coordinates (ρ,θ,φ) with volume element ρ² sinφ dρ dθ dφ.",
+      "formula": "dV=ρ² sinφ dρ dθ dφ",
       "unit": 2,
       "unitTitle": "Multiple integrals",
       "sources": [
@@ -266,8 +266,8 @@
     {
       "id": "wave-equation",
       "term": "Wave equation",
-      "definition": "PDE u_tt=c\u00b2u_xx modelling propagation of waves such as vibrating strings.",
-      "formula": "u_{tt}=c\u00b2u_{xx}",
+      "definition": "PDE u_tt=c²u_xx modelling propagation of waves such as vibrating strings.",
+      "formula": "u_{tt}=c²u_{xx}",
       "unit": 3,
       "unitTitle": "PDEs",
       "sources": [
@@ -277,8 +277,8 @@
     {
       "id": "heat-equation",
       "term": "Heat equation",
-      "definition": "PDE u_t=\u03b1u_xx modelling diffusion of heat in a medium.",
-      "formula": "u_t=\u03b1u_{xx}",
+      "definition": "PDE u_t=αu_xx modelling diffusion of heat in a medium.",
+      "formula": "u_t=αu_{xx}",
       "unit": 3,
       "unitTitle": "PDEs",
       "sources": [
@@ -377,7 +377,7 @@
       "id": "gradient",
       "term": "Gradient",
       "definition": "Vector of partial derivatives of a scalar field.",
-      "formula": "\u2207f=(\u2202f/\u2202x,\u2202f/\u2202y,\u2202f/\u2202z)",
+      "formula": "∇f=(∂f/∂x,∂f/∂y,∂f/∂z)",
       "unit": 5,
       "unitTitle": "Vector calculus",
       "sources": [
@@ -388,7 +388,7 @@
       "id": "divergence",
       "term": "Divergence",
       "definition": "Scalar measure of net outflow of a vector field per unit volume.",
-      "formula": "\u2207\u00b7F=\u2202P/\u2202x+\u2202Q/\u2202y+\u2202R/\u2202z",
+      "formula": "∇·F=∂P/∂x+∂Q/∂y+∂R/∂z",
       "unit": 5,
       "unitTitle": "Vector calculus",
       "sources": [
@@ -399,7 +399,7 @@
       "id": "curl",
       "term": "Curl",
       "definition": "Vector measuring the rotation or circulation density of a vector field.",
-      "formula": "\u2207\u00d7F",
+      "formula": "∇×F",
       "unit": 5,
       "unitTitle": "Vector calculus",
       "sources": [
@@ -410,7 +410,7 @@
       "id": "directional-derivative",
       "term": "Directional derivative",
       "definition": "Rate of change of f in the direction of a unit vector u.",
-      "formula": "D_u f=\u2207f\u00b7u",
+      "formula": "D_u f=∇f·u",
       "unit": 5,
       "unitTitle": "Vector calculus",
       "sources": [
@@ -421,7 +421,7 @@
       "id": "line-integral",
       "term": "Line integral",
       "definition": "Integral of a vector field along a curve C.",
-      "formula": "\u222b_C F\u00b7dr",
+      "formula": "∫_C F·dr",
       "unit": 5,
       "unitTitle": "Vector calculus",
       "sources": [
@@ -465,7 +465,7 @@
       "id": "conservative-field",
       "term": "Conservative field",
       "definition": "A vector field expressible as the gradient of a scalar potential, with zero curl.",
-      "formula": "F=\u2207\u03c6",
+      "formula": "F=∇φ",
       "unit": 5,
       "unitTitle": "Vector calculus",
       "sources": [
@@ -476,7 +476,7 @@
       "id": "laplace-transform",
       "term": "Laplace transform",
       "definition": "Integral transform converting a time function f(t) to F(s).",
-      "formula": "F(s)=\u222b_0^\u221e e^{-st}f(t)dt",
+      "formula": "F(s)=∫_0^∞ e^{-st}f(t)dt",
       "unit": 6,
       "unitTitle": "Laplace transforms",
       "sources": [
@@ -509,7 +509,7 @@
       "id": "dirac-delta",
       "term": "Dirac delta function",
       "definition": "Generalized function with integral over R equal to 1, representing an impulse.",
-      "formula": "\u222b_{-\u221e}^{\u221e}\u03b4(t)dt=1",
+      "formula": "∫_{-∞}^{∞}δ(t)dt=1",
       "unit": 6,
       "unitTitle": "Laplace transforms",
       "sources": [
@@ -541,8 +541,8 @@
     {
       "id": "initial-value-theorem",
       "term": "Initial value theorem",
-      "definition": "Gives f(0+) from the limiting behaviour of sF(s) as s\u2192\u221e.",
-      "formula": "f(0+)=lim_{s\u2192\u221e}sF(s)",
+      "definition": "Gives f(0+) from the limiting behaviour of sF(s) as s→∞.",
+      "formula": "f(0+)=lim_{s→∞}sF(s)",
       "unit": 6,
       "unitTitle": "Laplace transforms",
       "sources": [
@@ -552,8 +552,8 @@
     {
       "id": "final-value-theorem",
       "term": "Final value theorem",
-      "definition": "Gives the long-time limit of f(t) from sF(s) as s\u21920.",
-      "formula": "lim_{t\u2192\u221e}f(t)=lim_{s\u21920}sF(s)",
+      "definition": "Gives the long-time limit of f(t) from sF(s) as s→0.",
+      "formula": "lim_{t→∞}f(t)=lim_{s→0}sF(s)",
       "unit": 6,
       "unitTitle": "Laplace transforms",
       "sources": [

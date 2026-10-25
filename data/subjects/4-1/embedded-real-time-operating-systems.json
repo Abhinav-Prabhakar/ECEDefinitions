@@ -8,6 +8,451 @@
   "courseType": "PE",
   "folderId": "1kecqObpSdxgTDP0JbzrswXfzaiWLDOQr",
   "folderUrl": "https://drive.google.com/drive/folders/1kecqObpSdxgTDP0JbzrswXfzaiWLDOQr",
-  "status": "inaccessible",
-  "definitions": []
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "operating-system",
+      "term": "Operating System",
+      "definition": "A piece of software that controls all the computer's resources and provides the base upon which application programs can be written.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "rtos",
+      "term": "Real-Time Operating System (RTOS)",
+      "definition": "An operating system that supports real-time applications and embedded systems, meeting task deadlines in addition to logical correctness of results.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "hard-real-time-system",
+      "term": "Hard Real-Time System",
+      "definition": "A real-time system in which missing an individual deadline results in catastrophic failure and great financial loss, e.g. air traffic control, nuclear plant control.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.13"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "firm-real-time-system",
+      "term": "Firm Real-Time System",
+      "definition": "A real-time system where a missed deadline causes an unacceptable quality reduction but the economic disaster risk is limited, e.g. automobile ignition failure.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.14"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "soft-real-time-system",
+      "term": "Soft Real-Time System",
+      "definition": "A real-time system where a deadline may be missed and recovered from, with reduction in quality and performance kept at an acceptable level, e.g. multimedia transmission.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "interrupt-latency",
+      "term": "Interrupt Latency",
+      "definition": "The time between executing the last instruction of an interrupted task and the first instruction of the interrupt handler; an RTOS requires it to be short and predictable.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.16"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "context-switching-latency",
+      "term": "Context-Switching Latency",
+      "definition": "The time taken while saving the context of the current task and then switching over to another task; it should be short in an RTOS.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.16"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "preemption",
+      "term": "Preemption",
+      "definition": "Switching from a currently executing task to a higher-priority task that is ready and waiting to be executed.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-introduction-lect-1#slide.18"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "unix",
+      "term": "UNIX",
+      "definition": "A multi-user, multi-tasking, machine-independent operating system created by Kenneth Thompson and Dennis Ritchie at AT&T Bell Labs in 1969.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-unix-unit-1#slide.4",
+        "ertos-unix-unit-1#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "kernel",
+      "term": "Kernel",
+      "definition": "The hub of the UNIX operating system; it allocates time and memory to programs and handles the file store and communications in response to system calls.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-unix-unit-1#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "shell",
+      "term": "Shell",
+      "definition": "A command line interpreter acting as the interface between user and kernel; it interprets commands typed by the user and arranges for them to be carried out.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-unix-unit-1#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "inode",
+      "term": "Inode",
+      "definition": "A data structure in a UNIX-style file system storing all attributes of a file, identified by a unique inode number.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-unix-lecture-1#slide.24"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "pipe",
+      "term": "Pipe",
+      "definition": "A UNIX facility that links commands together so the output of one program becomes the input of another program or command.",
+      "unit": 1,
+      "unitTitle": "RTOS Fundamentals & UNIX Intro",
+      "sources": [
+        "ertos-unix-lecture-1#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sampling-period",
+      "term": "Sampling Period",
+      "definition": "The length T of time between any two consecutive instants at which the inputs are sampled; a key design choice on which the digital controller's behaviour critically depends.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.24"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "multirate-system",
+      "term": "Multirate System",
+      "definition": "A system whose state variables, monitored by multiple sensors, have different dynamics and therefore require different sampling periods to achieve smooth response.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.28"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "response-time-jitter",
+      "term": "Response-Time Jitter",
+      "definition": "The variation in a job's response time from period to period; some control systems impose the requirement that it not exceed a threshold.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.32"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "absolute-temporal-consistency",
+      "term": "Absolute Temporal Consistency",
+      "definition": "A set of data objects is absolutely temporally consistent if the maximum age of the objects in the set is no greater than a certain threshold.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.42"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "relative-temporal-consistency",
+      "term": "Relative Temporal Consistency",
+      "definition": "A set of data objects is relatively temporally consistent if the maximum difference in their ages is less than the relative consistency threshold used by the application.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.43"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "periodic-task-model",
+      "term": "Periodic Task Model",
+      "definition": "A deterministic workload model in which computations repeated at regular intervals provide a system function, e.g. digital control and constant bit-rate voice/video transmission.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.81"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "hyperperiod",
+      "term": "Hyperperiod",
+      "definition": "A time interval of length H equal to the least common multiple of the periods pi of all periodic tasks in the system.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.87"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "utilization",
+      "term": "Utilization",
+      "definition": "The fraction of time a truly periodic task with period pi and execution time ei keeps a processor busy; total utilization U is the sum of all ui.",
+      "formula": "ui = ei / pi",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.88"
+      ]
+    },
+    {
+      "id": "release-time",
+      "term": "Release Time",
+      "definition": "The instant at which a job becomes available for execution; when the exact value is unknown, the range [ri−, ri+] is called the release-time jitter.",
+      "formula": "ri ∈ [ri−, ri+]",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.68",
+        "ertos-real-time-systems-units-2-3#slide.69"
+      ]
+    },
+    {
+      "id": "sporadic-task",
+      "term": "Sporadic Task",
+      "definition": "A task whose jobs are released at random time instants but have hard deadlines; treated as a hard real-time task.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.97"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "precedence-constraints",
+      "term": "Precedence Constraints",
+      "definition": "Constraints on the order in which jobs can execute arising from data and control dependencies; jobs that may execute in any order are said to be independent.",
+      "unit": 2,
+      "unitTitle": "Real-Time Systems",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.99"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "feasible-schedule",
+      "term": "Feasible Schedule",
+      "definition": "A valid schedule in which every job completes by its deadline and, in general, meets all its timing constraints.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.136"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "invalid-rate",
+      "term": "Invalid Rate",
+      "definition": "The sum of the miss rate and the loss rate — the percentage of jobs that do not produce a useful result; schedulers seek to minimise it.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.147"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "clock-driven-scheduling",
+      "term": "Clock-Driven Scheduling",
+      "definition": "Scheduling in which decisions on which jobs execute when are made at specific time instants; the schedule is computed off-line and stored, minimising run-time overhead.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.154"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "weighted-round-robin",
+      "term": "Weighted Round-Robin",
+      "definition": "A round-robin variant that gives different jobs different weights, i.e. fractions of processor time per round; mainly used for real-time traffic in high-speed switched networks.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.158"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "priority-driven-algorithm",
+      "term": "Priority-Driven Algorithm",
+      "definition": "A class of event-driven, greedy scheduling algorithms that never leave a resource idle intentionally while some job needing it is ready; also called list or work-conserving scheduling.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.164"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "edf",
+      "term": "Earliest-Deadline-First (EDF)",
+      "definition": "A priority assignment whereby the earlier the deadline, the higher the priority; optimal for preemptable jobs on one processor with no resource contention.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.186"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "laxity",
+      "term": "Slack (Laxity)",
+      "definition": "The time by which a job with deadline d can afford to be delayed: the deadline minus time t minus remaining execution time.",
+      "formula": "slack = d − t − (remaining execution time)",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.195"
+      ]
+    },
+    {
+      "id": "lst",
+      "term": "Least-Slack-Time-First (LST)",
+      "definition": "An algorithm that assigns higher priority to jobs with smaller slack; also called Minimum-Laxity-First, it is optimal for preemptive jobs on one processor.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.195",
+        "ertos-real-time-systems-units-2-3#slide.197"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "scheduling-anomaly",
+      "term": "Scheduling Anomaly",
+      "definition": "Unexpected timing behaviour of a priority-driven system in which shorter execution times, fewer dependencies or more processors can make jobs complete later.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.208"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "priority-inversion",
+      "term": "Priority Inversion",
+      "definition": "The situation in which a lower-priority job runs in preference to a higher-priority job that has to wait.",
+      "unit": 3,
+      "unitTitle": "Real-Time Scheduling",
+      "sources": [
+        "ertos-real-time-systems-units-2-3#slide.209"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "file-descriptor",
+      "term": "File Descriptor",
+      "definition": "A small non-negative integer returned by open() identifying an open file; fd = −1 indicates an error.",
+      "unit": 4,
+      "unitTitle": "UNIX File I/O",
+      "sources": [
+        "ertos-unix-file-io-unit-1#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fifo-named-pipe",
+      "term": "FIFO (Named Pipe)",
+      "definition": "A UNIX file type used for inter-process communication between processes.",
+      "unit": 4,
+      "unitTitle": "UNIX File I/O",
+      "sources": [
+        "ertos-unix-file-io-unit-1#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "file-metadata",
+      "term": "File Metadata",
+      "definition": "Data about file data — size, type, permissions, timestamps — maintained per file by the kernel and accessed by users with the stat and fstat functions.",
+      "unit": 4,
+      "unitTitle": "UNIX File I/O",
+      "sources": [
+        "ertos-unix-file-io-unit-1#slide.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "short-count",
+      "term": "Short Count",
+      "definition": "A read/write that transfers fewer bytes than requested; it can occur on EOF, terminal reads, sockets and pipes, but never on disk-file reads and writes (other than EOF).",
+      "unit": 4,
+      "unitTitle": "UNIX File I/O",
+      "sources": [
+        "ertos-unix-file-io-unit-1#slide.28",
+        "ertos-unix-file-io-unit-1#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "rio-package",
+      "term": "RIO Package",
+      "definition": "Robust I/O wrappers (rio_readn, rio_writen, rio_readlineb, rio_readnb) that handle short counts efficiently in network programs; the buffered routines are thread-safe.",
+      "unit": 4,
+      "unitTitle": "UNIX File I/O",
+      "sources": [
+        "ertos-unix-file-io-unit-1#slide.29"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "io-redirection",
+      "term": "I/O Redirection",
+      "definition": "Shell redirection such as ls > foo.txt, implemented by calling dup2(oldfd, newfd), which copies descriptor-table entry oldfd to entry newfd.",
+      "unit": 4,
+      "unitTitle": "UNIX File I/O",
+      "sources": [
+        "ertos-unix-file-io-unit-1#slide.18"
+      ],
+      "formula": ""
+    }
+  ]
 }

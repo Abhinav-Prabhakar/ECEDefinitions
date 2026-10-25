@@ -135,7 +135,7 @@ def read_subject(path: Path, semester: str) -> dict | None:
         "folderUrl": raw.get("folderUrl") or "",
         "data": rel,
         "definitionCount": len(definitions),
-        "unitCount": len(units),
+        "unitCount": max(units) if units else 0,
         "coveredUnits": len(units),
         "status": status,
         "sourceCount": len(sources),
@@ -147,15 +147,45 @@ def main() -> int:
         print(f"missing {SUBJECTS_DIR}", file=sys.stderr)
         return 1
 
+    # Preserve the existing index so unresolved / no-material stubs and the
+    # syllabus unit counts survive a rebuild. The seed data is the source of
+    # truth for definitions; this index is the app-facing view of it.
+    existing: dict = {}
+    existing_by_semester: dict[str, list[dict]] = {}
+    existing_by_key: dict[tuple[str, str], dict] = {}
+    if OUT.exists():
+        try:
+            existing = json.loads(OUT.read_text(encoding="utf-8"))
+            for semester in existing.get("semesters", []):
+                sid = semester.get("id")
+                existing_by_semester[sid] = semester.get("subjects", [])
+                for subject in semester.get("subjects", []):
+                    if sid and subject.get("id"):
+                        existing_by_key[(sid, subject["id"])] = subject
+        except Exception as exc:  # noqa: BLE001 - a corrupt index should not block a rebuild
+            print(f"could not read existing {OUT}: {exc}", file=sys.stderr)
+
     by_semester: dict[str, list[dict]] = {sid: [] for sid, *_ in SEMESTERS}
-    inaccessible: list[dict] = []
     for path in sorted(SUBJECTS_DIR.glob("*/*.json")):
         semester = path.parent.name
         if semester not in by_semester:
             print(f"skip {path}: unknown semester folder {semester}", file=sys.stderr)
             continue
+
         subject = read_subject(path, semester)
         if subject:
+            prior = existing_by_key.get((semester, subject["id"]))
+            if prior:
+                for key in ("unitCount", "coveredUnits", "sourceCount", "status"):
+                    if prior.get(key) is not None:
+                        subject[key] = prior[key]
+            if subject["status"] != "unresolved":
+                if subject["unitCount"] and subject["coveredUnits"] < subject["unitCount"]:
+                    subject["status"] = "partial"
+                elif subject["definitionCount"] < 20:
+                    subject["status"] = "partial"
+                else:
+                    subject["status"] = "complete"
             by_semester[semester].append(subject)
         else:
             try:
@@ -163,21 +193,59 @@ def main() -> int:
             except Exception:
                 continue
             if raw.get("status") == "inaccessible":
-                inaccessible.append({
+                prior = existing_by_key.get((semester, raw.get("id") or path.stem), {})
+                by_semester[semester].append({
                     "id": raw.get("id") or path.stem,
                     "name": raw.get("name") or path.stem.replace("-", " ").title(),
                     "shortName": raw.get("shortName") or "",
                     "code": raw.get("code") or "",
-                    "semester": semester,
-                    "data": path.relative_to(ROOT).as_posix(),
+                    "courseType": raw.get("courseType") or prior.get("courseType") or "",
+                    "folderId": raw.get("folderId") or prior.get("folderId") or "",
+                    "folderUrl": raw.get("folderUrl") or prior.get("folderUrl") or "",
+                    "data": None,
+                    "definitionCount": 0,
+                    "unitCount": prior.get("unitCount") or 0,
+                    "coveredUnits": 0,
                     "status": "inaccessible",
+                    "sourceCount": 0,
                 })
+
+    # Add the stubs that only exist in the index (unresolved electives,
+    # no-material subjects) so a rebuild keeps the complete curriculum map.
+    for sid, _, _, _ in SEMESTERS:
+        data_ids = {s["id"] for s in by_semester[sid]}
+        for prior in existing_by_semester.get(sid, []):
+            if prior.get("id") in data_ids or prior.get("data"):
+                continue
+            by_semester[sid].append({
+                "id": prior.get("id"),
+                "name": prior.get("name") or prior.get("id", "").replace("-", " ").title(),
+                "shortName": prior.get("shortName") or "",
+                "code": prior.get("code") or "",
+                "courseType": prior.get("courseType") or "",
+                "folderId": prior.get("folderId") or "",
+                "folderUrl": prior.get("folderUrl") or "",
+                "data": None,
+                "definitionCount": 0,
+                "unitCount": prior.get("unitCount") or 0,
+                "coveredUnits": 0,
+                "status": prior.get("status") or "unresolved",
+                "sourceCount": 0,
+            })
 
     semesters = []
     for sid, label, year, term in SEMESTERS:
         subjects = by_semester[sid]
         rank = {name: i for i, name in enumerate(ORDER.get(sid, []))}
-        subjects.sort(key=lambda s: (rank.get(s["id"], len(rank)), s["name"].lower()))
+        prior_order = {
+            s["id"]: i for i, s in enumerate(existing_by_semester.get(sid, []))
+            if s.get("id")
+        }
+        subjects.sort(key=lambda s: (
+            prior_order.get(s["id"], 10**6),
+            rank.get(s["id"], len(rank)),
+            s["name"].lower()
+        ))
 
         if not subjects:
             status = "no_materials" if sid == "4-2" else "pending"
@@ -196,22 +264,25 @@ def main() -> int:
         })
 
     all_subjects = [s for sem in semesters for s in sem["subjects"]]
+    data_subjects = [s for s in all_subjects if s.get("data")]
+    stubs = [s for s in all_subjects if not s.get("data")]
     coverage = {
         "semesters": len(semesters),
-        "semestersWithMaterials": sum(1 for sem in semesters if sem["subjects"]),
+        "semestersWithMaterials": sum(
+            1 for sem in semesters if any(s.get("data") for s in sem["subjects"])
+        ),
         "subjects": len(all_subjects),
         "definitions": sum(s["definitionCount"] for s in all_subjects),
-        "completeSubjects": sum(1 for s in all_subjects if s["status"] == "complete"),
-        "partialSubjects": sum(1 for s in all_subjects if s["status"] == "partial"),
-        "inaccessibleSubjects": len(inaccessible),
+        "completeSubjects": sum(1 for s in data_subjects if s["status"] == "complete"),
+        "partialSubjects": sum(1 for s in data_subjects if s["status"] == "partial"),
+        "inaccessibleSubjects": len(stubs) + sum(1 for sem in semesters if not sem["subjects"]),
     }
 
     payload = {
-        "version": 1,
-        "generatedAt": date.today().isoformat(),
-        "source": SOURCE,
+        "version": existing.get("version", 1),
+        "generatedAt": existing.get("generatedAt") or date.today().isoformat(),
+        "source": existing.get("source") or SOURCE,
         "semesters": semesters,
-        "inaccessible": inaccessible,
         "coverage": coverage,
     }
 

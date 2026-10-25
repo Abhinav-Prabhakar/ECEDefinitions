@@ -17,8 +17,9 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.7"
-      ]
+        "ica-unit-1-ica#slide.7"
+      ],
+      "formula": ""
     },
     {
       "id": "differential-amplifier",
@@ -27,7 +28,7 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.26"
+        "ica-unit-1-ica#slide.26"
       ],
       "formula": "Vo = K(Vin1 - Vin2)"
     },
@@ -38,8 +39,9 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.41"
-      ]
+        "ica-unit-1-ica#slide.41"
+      ],
+      "formula": ""
     },
     {
       "id": "open-loop-op-amp",
@@ -48,8 +50,9 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.42"
-      ]
+        "ica-unit-1-ica#slide.42"
+      ],
+      "formula": ""
     },
     {
       "id": "closed-loop-op-amp",
@@ -58,8 +61,9 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.42"
-      ]
+        "ica-unit-1-ica#slide.42"
+      ],
+      "formula": ""
     },
     {
       "id": "virtual-ground",
@@ -68,8 +72,9 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.47"
-      ]
+        "ica-unit-1-ica#slide.47"
+      ],
+      "formula": ""
     },
     {
       "id": "ideal-op-amp",
@@ -78,8 +83,9 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.67"
-      ]
+        "ica-unit-1-ica#slide.67"
+      ],
+      "formula": ""
     },
     {
       "id": "input-offset-current",
@@ -88,7 +94,7 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.70"
+        "ica-unit-1-ica#slide.70"
       ],
       "formula": "Iios = |Ib1 - Ib2|"
     },
@@ -99,7 +105,7 @@
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
-        "ica-ica-unit-1#slide.81"
+        "ica-unit-1-ica#slide.81"
       ],
       "formula": "S = 2πfVm"
     },
@@ -110,8 +116,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.3"
-      ]
+        "ica-unit-2-ica#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "inverting-summer",
@@ -120,7 +127,7 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.4"
+        "ica-unit-2-ica#slide.4"
       ],
       "formula": "Vo = -(V1 + V2)"
     },
@@ -131,7 +138,7 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.8"
+        "ica-unit-2-ica#slide.8"
       ],
       "formula": "Vo = V2 - V1"
     },
@@ -142,8 +149,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.9"
-      ]
+        "ica-unit-2-ica#slide.9"
+      ],
+      "formula": ""
     },
     {
       "id": "integrator",
@@ -152,8 +160,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.18"
-      ]
+        "ica-unit-2-ica#slide.18"
+      ],
+      "formula": ""
     },
     {
       "id": "differentiator",
@@ -162,8 +171,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.30"
-      ]
+        "ica-unit-2-ica#slide.30"
+      ],
+      "formula": ""
     },
     {
       "id": "current-to-voltage-converter",
@@ -172,8 +182,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.40"
-      ]
+        "ica-unit-2-ica#slide.40"
+      ],
+      "formula": ""
     },
     {
       "id": "voltage-to-current-converter",
@@ -182,8 +193,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.42"
-      ]
+        "ica-unit-2-ica#slide.42"
+      ],
+      "formula": ""
     },
     {
       "id": "comparator",
@@ -192,8 +204,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.47"
-      ]
+        "ica-unit-2-ica#slide.47"
+      ],
+      "formula": ""
     },
     {
       "id": "zero-crossing-detector",
@@ -202,8 +215,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.57"
-      ]
+        "ica-unit-2-ica#slide.57"
+      ],
+      "formula": ""
     },
     {
       "id": "sample-and-hold",
@@ -212,8 +226,9 @@
       "unit": 2,
       "unitTitle": "Linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.73"
-      ]
+        "ica-unit-2-ica#slide.73"
+      ],
+      "formula": ""
     },
     {
       "id": "clipper",
@@ -222,8 +237,9 @@
       "unit": 3,
       "unitTitle": "Non-linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.69"
-      ]
+        "ica-unit-2-ica#slide.69"
+      ],
+      "formula": ""
     },
     {
       "id": "clamper",
@@ -232,8 +248,9 @@
       "unit": 3,
       "unitTitle": "Non-linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.71"
-      ]
+        "ica-unit-2-ica#slide.71"
+      ],
+      "formula": ""
     },
     {
       "id": "peak-detector",
@@ -242,8 +259,9 @@
       "unit": 3,
       "unitTitle": "Non-linear Applications",
       "sources": [
-        "ica-ica-unit-2#slide.72"
-      ]
+        "ica-unit-2-ica#slide.72"
+      ],
+      "formula": ""
     },
     {
       "id": "monostable-multivibrator",
@@ -252,8 +270,9 @@
       "unit": 3,
       "unitTitle": "Non-linear Applications",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.8"
-      ]
+        "ica-unit-3-ica-part-2#slide.8"
+      ],
+      "formula": ""
     },
     {
       "id": "astable-multivibrator",
@@ -262,8 +281,9 @@
       "unit": 3,
       "unitTitle": "Non-linear Applications",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.24"
-      ]
+        "ica-unit-3-ica-part-2#slide.24"
+      ],
+      "formula": ""
     },
     {
       "id": "schmitt-trigger",
@@ -272,8 +292,9 @@
       "unit": 3,
       "unitTitle": "Non-linear Applications",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.40"
-      ]
+        "ica-unit-3-ica-part-2#slide.40"
+      ],
+      "formula": ""
     },
     {
       "id": "filter",
@@ -282,8 +303,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.3"
-      ]
+        "ica-unit-3-ica-part-1#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "active-filter",
@@ -292,8 +314,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.5"
-      ]
+        "ica-unit-3-ica-part-1#slide.5"
+      ],
+      "formula": ""
     },
     {
       "id": "low-pass-filter",
@@ -302,8 +325,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.9"
-      ]
+        "ica-unit-3-ica-part-1#slide.9"
+      ],
+      "formula": ""
     },
     {
       "id": "high-pass-filter",
@@ -312,8 +336,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.9"
-      ]
+        "ica-unit-3-ica-part-1#slide.9"
+      ],
+      "formula": ""
     },
     {
       "id": "band-pass-filter",
@@ -322,8 +347,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.27"
-      ]
+        "ica-unit-3-ica-part-1#slide.27"
+      ],
+      "formula": ""
     },
     {
       "id": "band-reject-filter",
@@ -332,8 +358,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.40"
-      ]
+        "ica-unit-3-ica-part-1#slide.40"
+      ],
+      "formula": ""
     },
     {
       "id": "all-pass-filter",
@@ -342,8 +369,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.12"
-      ]
+        "ica-unit-3-ica-part-1#slide.12"
+      ],
+      "formula": ""
     },
     {
       "id": "butterworth-filter",
@@ -352,8 +380,9 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.13"
-      ]
+        "ica-unit-3-ica-part-1#slide.13"
+      ],
+      "formula": ""
     },
     {
       "id": "notch-filter",
@@ -362,7 +391,7 @@
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
-        "ica-ica-unit-3-part-1#slide.46"
+        "ica-unit-3-ica-part-1#slide.46"
       ],
       "formula": "fN = 1/(2πRC)"
     },
@@ -373,8 +402,9 @@
       "unit": 5,
       "unitTitle": "Oscillators",
       "sources": [
-        "ica-ica-unit-4#slide.2"
-      ]
+        "ica-unit-2-ica#slide.2"
+      ],
+      "formula": ""
     },
     {
       "id": "barkhausen-criterion",
@@ -383,8 +413,9 @@
       "unit": 5,
       "unitTitle": "Oscillators",
       "sources": [
-        "ica-ica-unit-4#slide.6"
-      ]
+        "ica-unit-2-ica#slide.6"
+      ],
+      "formula": ""
     },
     {
       "id": "loop-gain",
@@ -393,7 +424,7 @@
       "unit": 5,
       "unitTitle": "Oscillators",
       "sources": [
-        "ica-ica-unit-4#slide.7"
+        "ica-unit-2-ica#slide.9"
       ],
       "formula": "Aβ"
     },
@@ -404,8 +435,9 @@
       "unit": 5,
       "unitTitle": "Oscillators",
       "sources": [
-        "ica-ica-unit-4#slide.17"
-      ]
+        "ica-unit-2-ica#slide.5"
+      ],
+      "formula": ""
     },
     {
       "id": "wein-bridge-oscillator",
@@ -414,8 +446,9 @@
       "unit": 5,
       "unitTitle": "Oscillators",
       "sources": [
-        "ica-ica-unit-4#slide.17"
-      ]
+        "ica-unit-2-ica#slide.17"
+      ],
+      "formula": ""
     },
     {
       "id": "timer-555",
@@ -424,8 +457,9 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.3"
-      ]
+        "ica-unit-3-ica-part-2#slide.3"
+      ],
+      "formula": ""
     },
     {
       "id": "phase-locked-loop",
@@ -434,8 +468,9 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.44"
-      ]
+        "ica-unit-3-ica-part-2#slide.44"
+      ],
+      "formula": ""
     },
     {
       "id": "lock-range",
@@ -444,7 +479,7 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.52"
+        "ica-unit-3-ica-part-2#slide.52"
       ],
       "formula": "fmin ≤ fin ≤ fmax"
     },
@@ -455,7 +490,7 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-3-part-2#slide.52"
+        "ica-unit-3-ica-part-2#slide.52"
       ],
       "formula": "fo - fc ≤ fin ≤ fo + fc"
     },
@@ -466,8 +501,9 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-4#slide.82"
-      ]
+        "ica-unit-4-ica-2021#slide.78"
+      ],
+      "formula": ""
     },
     {
       "id": "shunt-regulator",
@@ -476,8 +512,9 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-4#slide.82"
-      ]
+        "ica-unit-4-ica-2021#slide.77"
+      ],
+      "formula": ""
     },
     {
       "id": "dac-resolution",
@@ -486,7 +523,7 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-4#slide.54"
+        "ica-unit-2-ica#slide.54"
       ],
       "formula": "2^n  or  Vofs/(2^n-1)"
     },
@@ -497,29 +534,31 @@
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-4#slide.54"
+        "ica-unit-2-ica#slide.54"
       ],
       "formula": "VIFS/(2^n-1)"
     },
     {
       "id": "ttl",
       "term": "TTL",
-      "definition": "Transistor-transistor logic based on bipolar transistors.",
+      "definition": "Transistor-transistor logic family built entirely from bipolar junction transistors, offering high switching speed and noise immunity while dissipating more static power than CMOS.",
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-5#slide.5"
-      ]
+        "ica-unit-2-ica#slide.5"
+      ],
+      "formula": ""
     },
     {
       "id": "cmos",
       "term": "CMOS",
-      "definition": "Complementary metal-oxide-semiconductor logic based on MOSFETs.",
+      "definition": "Complementary metal-oxide-semiconductor logic built from paired p-channel and n-channel MOSFETs, drawing very low static power and widely used in modern digital IC fabrication.",
       "unit": 6,
       "unitTitle": "Voltage Regulators/555/Timers",
       "sources": [
-        "ica-ica-unit-5#slide.5"
-      ]
+        "ica-unit-2-ica#slide.5"
+      ],
+      "formula": ""
     }
   ]
 }

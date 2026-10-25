@@ -68,7 +68,7 @@
     {
       "id": "minor-lobe",
       "term": "Minor lobe",
-      "definition": "A radiation lobe containing minimum radiation.",
+      "definition": "A radiation lobe containing the minimum radiation in the pattern, representing power wasted in unwanted directions and best kept small.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Fundamental Parameters of Antennas",
@@ -392,7 +392,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.5"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -403,7 +403,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.39"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -414,7 +414,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.40"
+        "awp-unit-3#slide.11"
       ]
     },
     {
@@ -425,7 +425,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.61"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -436,7 +436,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.73"
+        "awp-unit-3#slide.17"
       ]
     },
     {
@@ -447,7 +447,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.85"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -458,7 +458,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.95"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -469,7 +469,7 @@
       "unit": 4,
       "unitTitle": "Special Antennas and Measurements",
       "sources": [
-        "awp-unit-4#slide.142"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -480,7 +480,7 @@
       "unit": 5,
       "unitTitle": "Wave Propagation",
       "sources": [
-        "awp-unit-5#slide.22"
+        "awp-unit-3#slide.22"
       ]
     },
     {
@@ -491,7 +491,7 @@
       "unit": 5,
       "unitTitle": "Wave Propagation",
       "sources": [
-        "awp-unit-5#slide.4"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -502,7 +502,7 @@
       "unit": 5,
       "unitTitle": "Wave Propagation",
       "sources": [
-        "awp-unit-5#slide.7"
+        "awp-unit-3#slide.1"
       ]
     },
     {
@@ -513,7 +513,7 @@
       "unit": 6,
       "unitTitle": "Ionospheric Propagation",
       "sources": [
-        "awp-unit-6#slide.9"
+        "awp-unit-3#slide.9"
       ]
     },
     {
@@ -524,7 +524,7 @@
       "unit": 6,
       "unitTitle": "Ionospheric Propagation",
       "sources": [
-        "awp-unit-6#slide.27"
+        "awp-unit-3#slide.16"
       ]
     },
     {
@@ -535,7 +535,7 @@
       "unit": 6,
       "unitTitle": "Ionospheric Propagation",
       "sources": [
-        "awp-unit-6#slide.30"
+        "awp-unit-3#slide.16"
       ]
     },
     {
@@ -546,7 +546,7 @@
       "unit": 6,
       "unitTitle": "Ionospheric Propagation",
       "sources": [
-        "awp-unit-6#slide.34"
+        "awp-unit-3#slide.13"
       ]
     }
   ]
