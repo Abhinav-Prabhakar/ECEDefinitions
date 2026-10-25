@@ -1,0 +1,1797 @@
+{
+  "version": 1,
+  "id": "nursing-and-nclex",
+  "name": "Nursing and NCLEX",
+  "short": "Nursing and NCLEX",
+  "subjects": [
+    {
+      "id": "fundamentals",
+      "name": "Fundamentals of Nursing",
+      "short": "Fundamentals",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "ADOPIE",
+          "A mnemonic for the six components of the nursing process: assessment, diagnosis, outcomes identification, planning, implementation, and evaluation.",
+          ""
+        ],
+        [
+          "Clinical judgment",
+          "The observed outcome of critical thinking and decision-making used to deliver safe client care.",
+          ""
+        ],
+        [
+          "Delegation",
+          "The assignment of client care tasks to unlicensed assistive personnel while retaining accountability for the outcome.",
+          ""
+        ],
+        [
+          "Expected outcomes",
+          "Statements of measurable action for the client within a specific time frame in response to nursing interventions.",
+          ""
+        ],
+        [
+          "Nursing diagnosis",
+          "A clinical judgment concerning a human response to health conditions or life processes by an individual, family, group, or community.",
+          ""
+        ],
+        [
+          "Nursing interventions",
+          "Evidence-based actions that the nurse performs to achieve client outcomes.",
+          ""
+        ],
+        [
+          "Nursing process",
+          "A systematic approach to client-centered care with steps including assessment, diagnosis, outcome identification, planning, implementation, and evaluation.",
+          ""
+        ],
+        [
+          "Objective data",
+          "Data the nurse can see, touch, smell, or hear or that is reproducible, such as vital signs or lab results.",
+          ""
+        ],
+        [
+          "PES format",
+          "The format of a nursing diagnosis statement including problem, etiology, and signs and symptoms.",
+          ""
+        ],
+        [
+          "Subjective data",
+          "Data that the client or family reports or that the nurse infers, such as noting the client appears anxious.",
+          ""
+        ],
+        [
+          "Blood pressure",
+          "The pressure of blood pushing against the walls of the arteries, recorded as systolic over diastolic.",
+          ""
+        ],
+        [
+          "Homeostasis",
+          "The process of self-regulation that bodies maintain through multiple, interdependent physiological processes.",
+          ""
+        ],
+        [
+          "Mean arterial pressure",
+          "The average pressure of blood in the arteries driving blood into tissues.",
+          ""
+        ],
+        [
+          "Oxygen saturation",
+          "The percentage ratio of actual oxygen content of hemoglobin to its maximum oxygen-carrying capacity.",
+          ""
+        ],
+        [
+          "Pulse",
+          "The palpable pressure wave that expands and recoils arteries when the left ventricle contracts, assessing heart rate.",
+          ""
+        ],
+        [
+          "Pulse pressure",
+          "The difference between systolic and diastolic blood pressure.",
+          ""
+        ],
+        [
+          "Pyrexia",
+          "A body temperature greater than 100.4 degrees Fahrenheit, commonly called a fever.",
+          ""
+        ],
+        [
+          "Respiratory rate",
+          "The number of complete respiratory cycles of inspiration and expiration counted per minute.",
+          ""
+        ],
+        [
+          "Thermoregulation",
+          "The body's ability to maintain its temperature within normal ranges, regulated by the hypothalamus.",
+          ""
+        ],
+        [
+          "Vital signs",
+          "Measurements of temperature, pulse, respiratory rate, blood pressure, and oxygen saturation that reflect the body's homeostatic functioning.",
+          ""
+        ],
+        [
+          "Acute pain",
+          "Pain that is limited in duration and associated with a specific cause.",
+          ""
+        ],
+        [
+          "Analgesics",
+          "Medications used to relieve pain by acting on the nervous system.",
+          ""
+        ],
+        [
+          "Chronic pain",
+          "Pain that is ongoing and persistent for longer than six months.",
+          ""
+        ],
+        [
+          "Nociceptor",
+          "A sensory receptor that responds to painful stimuli.",
+          ""
+        ],
+        [
+          "Pain",
+          "An unpleasant sensory and emotional experience associated with actual or potential tissue damage.",
+          ""
+        ],
+        [
+          "Patient-Controlled Analgesia",
+          "A method allowing hospitalized clients with severe pain to self-administer opioid medications using a programmed pump.",
+          ""
+        ],
+        [
+          "Physical dependence",
+          "Withdrawal symptoms that occur when chronic pain medication is suddenly reduced or stopped.",
+          ""
+        ],
+        [
+          "Referred pain",
+          "Pain perceived at a location other than the site of the painful stimulus.",
+          ""
+        ],
+        [
+          "Tolerance",
+          "A diminished effect with continued use of the same opioid amount, requiring more for the desired effect.",
+          ""
+        ],
+        [
+          "Withdrawal",
+          "Symptoms causing significant distress after stopping or reducing substance use, including nausea, aches, and insomnia.",
+          ""
+        ],
+        [
+          "Contracture",
+          "The lack of full passive range of motion due to joint, muscle, or soft tissue limitations.",
+          ""
+        ],
+        [
+          "Functional mobility",
+          "The ability to move around in the environment, including walking, standing, and moving in bed.",
+          ""
+        ],
+        [
+          "Mobility",
+          "The ability of a client to change and control body position.",
+          ""
+        ],
+        [
+          "Never events",
+          "Adverse events that are clearly identifiable, measurable, serious, and preventable.",
+          ""
+        ],
+        [
+          "Orthostatic hypotension",
+          "Low blood pressure occurring when changing from lying to sitting or standing, causing dizziness.",
+          ""
+        ],
+        [
+          "Range-of-motion exercises",
+          "Activities aimed to facilitate movement of specific joints and promote mobility of extremities.",
+          ""
+        ],
+        [
+          "Restraint",
+          "A device, method, or process used to restrict a client's freedom of movement without permission.",
+          ""
+        ],
+        [
+          "Root cause analysis",
+          "A structured method to analyze serious adverse events and identify underlying problems increasing error likelihood.",
+          ""
+        ],
+        [
+          "Sentinel event",
+          "A client safety event that reaches a client and results in death, permanent harm, or severe temporary harm.",
+          ""
+        ],
+        [
+          "Universal fall precautions",
+          "Interventions to reduce fall risk for all clients by keeping the environment safe and comfortable.",
+          ""
+        ],
+        [
+          "Carbohydrates",
+          "Sugars and starches providing an important energy source at four kilocalories per gram.",
+          ""
+        ],
+        [
+          "Constipation",
+          "Infrequent or difficult evacuation of feces that may require bowel retraining or laxatives.",
+          ""
+        ],
+        [
+          "Diarrhea",
+          "More than three unformed stools in twenty-four hours indicating increased intestinal motility.",
+          ""
+        ],
+        [
+          "Dysphagia",
+          "Difficulty swallowing that may require modified food textures or alternative feeding routes.",
+          ""
+        ],
+        [
+          "Enteral nutrition",
+          "Liquid nutrition given through the gastrointestinal tract via a tube, bypassing chewing and swallowing.",
+          ""
+        ],
+        [
+          "Macronutrients",
+          "Nutrients needed in larger amounts for energy, including carbohydrates, proteins, and fats.",
+          ""
+        ],
+        [
+          "Oliguria",
+          "Decreased urine output, defined as less than five hundred milliliters in adults over twenty-four hours.",
+          ""
+        ],
+        [
+          "Parenteral nutrition",
+          "An intravenous solution containing glucose, amino acids, minerals, electrolytes, and vitamins with supplemental lipids.",
+          ""
+        ],
+        [
+          "Proteins",
+          "Peptides and amino acids necessary for tissue repair, growth, energy, and fluid balance.",
+          ""
+        ],
+        [
+          "Urinary retention",
+          "A condition when the client cannot empty all of the urine from the bladder.",
+          ""
+        ],
+        [
+          "Active listening",
+          "Communicating verbally and nonverbally interest in what the other person says while verifying understanding.",
+          ""
+        ],
+        [
+          "Charting by exception",
+          "A documentation method where nurses confirm normal findings and note only abnormal findings.",
+          ""
+        ],
+        [
+          "DAR",
+          "A documentation format standing for data, action, and response, focused on one client problem.",
+          ""
+        ],
+        [
+          "Electronic Health Record",
+          "A digital version of a client's paper chart available instantly and securely to authorized users.",
+          ""
+        ],
+        [
+          "Handoff report",
+          "A process of exchanging vital client information, responsibility, and accountability between off-going and incoming nurses.",
+          ""
+        ],
+        [
+          "ISBARR",
+          "A mnemonic for professional communication including introduction, situation, background, assessment, request, and repeat back.",
+          ""
+        ],
+        [
+          "Incident reports",
+          "Documentation completed when an unexpected occurrence or near miss happens, such as a medication error or fall.",
+          ""
+        ],
+        [
+          "Narrative note",
+          "A documentation type that chronicles all assessment findings and nursing activities throughout the shift.",
+          ""
+        ],
+        [
+          "SOAPIE",
+          "A mnemonic organizing documentation by subjective, objective, assessment, plan, interventions, and evaluation.",
+          ""
+        ],
+        [
+          "Therapeutic communication",
+          "The purposeful, interpersonal information transmitting process through words and behaviors leading to client understanding.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "health-assessment",
+      "name": "Health Assessment",
+      "short": "Health assessment",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Activities of daily living",
+          "Basic self-care tasks such as bathing, dressing, and eating.",
+          ""
+        ],
+        [
+          "Chief complaint",
+          "The patient's primary reason for seeking health care.",
+          ""
+        ],
+        [
+          "Demographic data",
+          "Personal information including age, sex, and contact details.",
+          ""
+        ],
+        [
+          "Family health history",
+          "Information about health conditions present in the patient's family.",
+          ""
+        ],
+        [
+          "Functional health",
+          "Ability to perform activities supporting daily living and well-being.",
+          ""
+        ],
+        [
+          "Health history",
+          "A comprehensive interview gathering subjective data to guide nursing care.",
+          ""
+        ],
+        [
+          "History of present illness",
+          "Detailed description of the current health problem and its course.",
+          ""
+        ],
+        [
+          "Past medical history",
+          "Record of previous illnesses, surgeries, and chronic conditions.",
+          ""
+        ],
+        [
+          "Review of systems",
+          "Systematic questions about symptoms across all body systems.",
+          ""
+        ],
+        [
+          "Affect",
+          "Outward display of a person's current emotional state.",
+          ""
+        ],
+        [
+          "Auscultation",
+          "Listening to internal body sounds with a stethoscope.",
+          ""
+        ],
+        [
+          "Body mass index",
+          "Measure of body fat based on height and weight.",
+          "BMI"
+        ],
+        [
+          "Gait",
+          "Pattern of walking observed for balance and coordination.",
+          ""
+        ],
+        [
+          "General survey",
+          "Overall observation of appearance, behavior, and vital signs.",
+          ""
+        ],
+        [
+          "Inspection",
+          "Visual examination of the patient for abnormalities or distress.",
+          ""
+        ],
+        [
+          "Palpation",
+          "Using touch to assess texture, temperature, and tenderness.",
+          ""
+        ],
+        [
+          "Percussion",
+          "Tapping the body surface to evaluate underlying structures.",
+          ""
+        ],
+        [
+          "Primary survey",
+          "Brief initial check of airway, breathing, and circulation.",
+          ""
+        ],
+        [
+          "Cranium",
+          "The bony structure that encloses and protects the brain.",
+          ""
+        ],
+        [
+          "Dysphagia",
+          "Difficulty swallowing due to nerve or structural problems.",
+          ""
+        ],
+        [
+          "Facial drooping",
+          "An asymmetrical facial expression caused by nerve damage.",
+          ""
+        ],
+        [
+          "Larynx",
+          "Voice box connecting pharynx to trachea and regulating airflow.",
+          ""
+        ],
+        [
+          "Lymph node",
+          "Small immune filter that swells during infection response.",
+          ""
+        ],
+        [
+          "Nasal septum",
+          "Wall of bone and cartilage dividing the nasal cavity.",
+          ""
+        ],
+        [
+          "Paranasal sinuses",
+          "Air-filled spaces in skull bones connected to nasal cavity.",
+          ""
+        ],
+        [
+          "Sternocleidomastoid",
+          "Neck muscle that rotates and flexes the head.",
+          ""
+        ],
+        [
+          "Suture",
+          "Fibrous joint connecting adjacent bones of the skull.",
+          ""
+        ],
+        [
+          "Barrel chest",
+          "Chest shape with equal front-to-back and side-to-side diameters.",
+          ""
+        ],
+        [
+          "Clubbing",
+          "Bulbous enlargement of the fingertips from chronic hypoxia.",
+          ""
+        ],
+        [
+          "Crackles",
+          "Popping or crackling lung sounds from fluid in alveoli.",
+          ""
+        ],
+        [
+          "Cyanosis",
+          "Bluish discoloration of the skin from poor oxygenation.",
+          ""
+        ],
+        [
+          "Dyspnea",
+          "Subjective feeling of shortness of breath or air hunger.",
+          ""
+        ],
+        [
+          "Hypoxemia",
+          "Abnormally low level of oxygen in the blood.",
+          ""
+        ],
+        [
+          "Respiration",
+          "Ventilation plus gas exchange at the alveolar level.",
+          ""
+        ],
+        [
+          "Tachypnea",
+          "Respiratory rate greater than twenty breaths per minute.",
+          ""
+        ],
+        [
+          "Ventilation",
+          "Mechanical movement of air into and out of lungs.",
+          ""
+        ],
+        [
+          "Wheezes",
+          "High-pitched whistling sounds produced by the narrowed airways.",
+          ""
+        ],
+        [
+          "Borborygmus",
+          "Audible stomach growling caused by hyperactive bowel sounds.",
+          ""
+        ],
+        [
+          "Distention",
+          "Abnormal swelling or outward enlargement of the abdomen.",
+          ""
+        ],
+        [
+          "Hematemesis",
+          "Vomiting blood, a common sign of gastrointestinal bleeding.",
+          ""
+        ],
+        [
+          "Hyperactive bowel sounds",
+          "Loud frequent gurgling suggesting bowel obstruction or gastroenteritis.",
+          ""
+        ],
+        [
+          "Hypoactive bowel sounds",
+          "Decreased bowel sounds associated with constipation or ileus.",
+          ""
+        ],
+        [
+          "Melena",
+          "Dark tarry stools indicating upper gastrointestinal tract bleeding.",
+          ""
+        ],
+        [
+          "Rebound tenderness",
+          "Pain felt when abdominal pressure is suddenly released.",
+          ""
+        ],
+        [
+          "Rigidity",
+          "Involuntary abdominal muscle contraction due to peritoneal inflammation.",
+          ""
+        ],
+        [
+          "Voluntary guarding",
+          "Conscious tensing of abdominal muscles during the exam.",
+          ""
+        ],
+        [
+          "Bulla",
+          "A fluid-filled blister larger than five millimeters in diameter.",
+          ""
+        ],
+        [
+          "Dermis",
+          "Inner thick layer containing vessels, follicles, and nerves.",
+          ""
+        ],
+        [
+          "Epidermis",
+          "Outermost thin layer of skin made of epithelial cells.",
+          ""
+        ],
+        [
+          "Hypodermis",
+          "Subcutaneous layer of fat connecting skin to muscle.",
+          ""
+        ],
+        [
+          "Lesion",
+          "An area of abnormal or damaged body tissue.",
+          ""
+        ],
+        [
+          "Macule",
+          "A flat discolored spot on the skin surface.",
+          ""
+        ],
+        [
+          "Melanin",
+          "Pigment that produces skin color and UV protection.",
+          ""
+        ],
+        [
+          "Papule",
+          "A small raised solid bump on the skin.",
+          ""
+        ],
+        [
+          "Pustule",
+          "A raised pus-filled bump on the skin surface.",
+          ""
+        ],
+        [
+          "Vesicle",
+          "A small fluid-filled blister on the skin surface.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "safety-and-infection-control",
+      "name": "Safety and Infection Control",
+      "short": "Safety and infection",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Aseptic technique",
+          "Practices that prevent transfer of microorganisms during care.",
+          ""
+        ],
+        [
+          "Chain of infection",
+          "Cyclic process describing how an infection spreads from source to host.",
+          ""
+        ],
+        [
+          "Disinfection",
+          "Process that removes microorganisms from surfaces and equipment.",
+          ""
+        ],
+        [
+          "Healthcare-associated infection",
+          "An infection acquired while receiving care in a healthcare facility.",
+          ""
+        ],
+        [
+          "Infection",
+          "Invasion and growth of a microorganism within the body.",
+          ""
+        ],
+        [
+          "Pathogen",
+          "A microorganism capable of causing disease in a host.",
+          ""
+        ],
+        [
+          "Standard precautions",
+          "Minimum infection prevention practices applied to all patient care.",
+          ""
+        ],
+        [
+          "Sterilization",
+          "Process that destroys all pathogens including spores and viruses.",
+          ""
+        ],
+        [
+          "Virulence",
+          "Degree to which a microorganism is likely to cause disease.",
+          ""
+        ],
+        [
+          "Alcohol-based hand rub",
+          "Antiseptic rub used when hands are not visibly soiled.",
+          ""
+        ],
+        [
+          "Eye protection",
+          "Goggles or face shield protecting eyes from splashes.",
+          ""
+        ],
+        [
+          "Gloves",
+          "Hand covering used to prevent contact with infectious material.",
+          ""
+        ],
+        [
+          "Gown",
+          "Protective garment worn to prevent contamination of clothing.",
+          ""
+        ],
+        [
+          "Hand hygiene",
+          "Cleaning hands with soap and water or alcohol rub.",
+          ""
+        ],
+        [
+          "Mask",
+          "Face covering that protects against respiratory droplet exposure.",
+          ""
+        ],
+        [
+          "Personal protective equipment",
+          "Gloves, gowns, masks, and eyewear protecting against exposure.",
+          ""
+        ],
+        [
+          "Respirator",
+          "Tight-fitting mask filtering airborne particles from inhaled air.",
+          ""
+        ],
+        [
+          "Respiratory hygiene",
+          "Measures to contain respiratory secretions and reduce transmission.",
+          ""
+        ],
+        [
+          "Airborne infection isolation room",
+          "Negative pressure room used to isolate airborne infections.",
+          ""
+        ],
+        [
+          "Airborne precautions",
+          "Precautions for infections spread by small airborne particles.",
+          ""
+        ],
+        [
+          "Cohorting",
+          "Placing patients with same infection together in one area.",
+          ""
+        ],
+        [
+          "Contact precautions",
+          "Precautions for infections spread by direct or indirect contact.",
+          ""
+        ],
+        [
+          "Droplet precautions",
+          "Precautions for infections spread by large respiratory droplets.",
+          ""
+        ],
+        [
+          "Enteric precautions",
+          "Precautions for gastrointestinal pathogens spread through fecal contamination.",
+          ""
+        ],
+        [
+          "Isolation",
+          "Separation of a patient to prevent spread of infection.",
+          ""
+        ],
+        [
+          "Reverse isolation",
+          "Protection of immunocompromised patients from environmental pathogens in healthcare.",
+          ""
+        ],
+        [
+          "Transmission-based precautions",
+          "Extra precautions for patients with highly transmissible pathogens.",
+          ""
+        ],
+        [
+          "Barcode medication administration",
+          "Technology matching patient and medication barcodes before dosing.",
+          ""
+        ],
+        [
+          "Error-prone abbreviation",
+          "Abbreviation frequently misinterpreted and linked to medication errors.",
+          ""
+        ],
+        [
+          "High-alert medication",
+          "Medication with high risk of significant harm if misused.",
+          ""
+        ],
+        [
+          "Independent double check",
+          "Second clinician independently verifies high-risk medication before administration.",
+          ""
+        ],
+        [
+          "Look-alike sound-alike drug",
+          "Medication whose name looks or sounds like another drug.",
+          ""
+        ],
+        [
+          "Medication error",
+          "Any preventable event causing inappropriate medication use or harm.",
+          ""
+        ],
+        [
+          "Medication reconciliation",
+          "Process of comparing and updating medications across care transitions.",
+          ""
+        ],
+        [
+          "Rights of medication administration",
+          "Checklist of rights nurses verify for safe medication delivery.",
+          ""
+        ],
+        [
+          "Tall man lettering",
+          "Mixed-case lettering highlighting differences in similar drug names.",
+          ""
+        ],
+        [
+          "Behavioral restraint",
+          "Restraint used for violent or self-destructive patient behavior.",
+          ""
+        ],
+        [
+          "Chemical restraint",
+          "Medication used to control behavior or restrict movement.",
+          ""
+        ],
+        [
+          "Fall",
+          "Unintentional descent to the ground or lower surface.",
+          ""
+        ],
+        [
+          "Fall risk assessment",
+          "Evaluation identifying patient factors increasing likelihood of falling.",
+          ""
+        ],
+        [
+          "Medical restraint",
+          "Restraint used to manage nonviolent behavior such as tube removal.",
+          ""
+        ],
+        [
+          "Morse Fall Scale",
+          "Tool scoring patient fall risk from clinical factors.",
+          ""
+        ],
+        [
+          "Restraints",
+          "Devices that restrict patient movement to prevent harm.",
+          ""
+        ],
+        [
+          "Scheduled hourly rounding",
+          "Regular checks meeting patient needs to reduce falls.",
+          ""
+        ],
+        [
+          "Seclusion",
+          "Confinement of a patient in a locked room.",
+          ""
+        ],
+        [
+          "Universal fall precautions",
+          "Safety measures applied to all patients to prevent falls.",
+          ""
+        ],
+        [
+          "Decontamination",
+          "Removing hazardous substances from a person or equipment.",
+          ""
+        ],
+        [
+          "Disaster",
+          "Serious disruption of community functioning from hazardous events.",
+          ""
+        ],
+        [
+          "Disaster triage",
+          "Distributing injured victims to facilities according to severity.",
+          ""
+        ],
+        [
+          "Emergency preparedness",
+          "Planning to reduce disaster risks and protect population health.",
+          ""
+        ],
+        [
+          "Field triage",
+          "Sorting victims by injury severity at disaster scene.",
+          ""
+        ],
+        [
+          "Mitigation",
+          "Actions taken to reduce cause or impact of disasters.",
+          ""
+        ],
+        [
+          "PASS",
+          "Steps for using a fire extinguisher: Pull, Aim, Squeeze, Sweep.",
+          ""
+        ],
+        [
+          "RACE",
+          "Fire response acronym: Rescue, Alarm, Confine, Extinguish or Evacuate.",
+          ""
+        ],
+        [
+          "START triage",
+          "Simple Triage and Rapid Treatment system using color tags.",
+          ""
+        ],
+        [
+          "Triage",
+          "Prioritizing patients by severity to allocate limited resources.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "medical-surgical",
+      "name": "Medical-Surgical Nursing",
+      "short": "Med-surg",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Afterload",
+          "The pressure the heart must overcome to eject blood during ventricular contraction.",
+          ""
+        ],
+        [
+          "Atrial fibrillation",
+          "An irregular, often rapid rhythm caused by disorganized electrical activity in the atria.",
+          ""
+        ],
+        [
+          "Cardiac output",
+          "The volume of blood the heart pumps into the aorta each minute.",
+          ""
+        ],
+        [
+          "Dysrhythmia",
+          "An interruption of the heart's normal electrical conduction, causing irregular rhythm.",
+          ""
+        ],
+        [
+          "Heart failure",
+          "A chronic condition where inefficient pumping reduces perfusion throughout the body.",
+          ""
+        ],
+        [
+          "Hypertension",
+          "Persistently elevated blood pressure that increases risk of heart, brain, and kidney disease.",
+          ""
+        ],
+        [
+          "Myocardial infarction",
+          "Death of heart muscle from prolonged interruption of coronary blood supply.",
+          ""
+        ],
+        [
+          "Peripheral vascular disease",
+          "Narrowed blood vessels reducing circulation to the limbs, often from atherosclerosis.",
+          ""
+        ],
+        [
+          "Preload",
+          "The initial stretch of cardiac muscle cells before contraction, reflecting ventricular filling.",
+          ""
+        ],
+        [
+          "Stroke volume",
+          "The amount of blood ejected from the left ventricle during one systolic contraction.",
+          ""
+        ],
+        [
+          "Acute respiratory distress syndrome",
+          "Severe inflammatory lung injury causing hypoxemia and respiratory failure.",
+          ""
+        ],
+        [
+          "Asthma",
+          "A chronic inflammatory airway disorder causing wheezing, breathlessness, and reversible airflow obstruction.",
+          ""
+        ],
+        [
+          "Atelectasis",
+          "Collapse of lung tissue or alveoli, reducing gas exchange.",
+          ""
+        ],
+        [
+          "Bronchiectasis",
+          "Permanent dilation of bronchi from chronic inflammation, causing cough and sputum.",
+          ""
+        ],
+        [
+          "Chronic obstructive pulmonary disease",
+          "A progressive lung disease with persistent airflow limitation, often from smoking.",
+          ""
+        ],
+        [
+          "Cystic fibrosis",
+          "A genetic disorder causing thick mucus buildup that obstructs lungs and digestive tract.",
+          ""
+        ],
+        [
+          "Pleural effusion",
+          "Excess fluid accumulation in the pleural space surrounding the lungs.",
+          ""
+        ],
+        [
+          "Pneumonia",
+          "Infection inflaming the air sacs, which may fill with fluid or pus.",
+          ""
+        ],
+        [
+          "Pneumothorax",
+          "Air in the pleural space causing partial or complete lung collapse.",
+          ""
+        ],
+        [
+          "Tuberculosis",
+          "A contagious bacterial infection primarily affecting the lungs and spread by airborne droplets.",
+          ""
+        ],
+        [
+          "Addison disease",
+          "Adrenal insufficiency causing cortisol deficiency, fatigue, and hypotension.",
+          ""
+        ],
+        [
+          "Cushing syndrome",
+          "Chronic excess cortisol causing weight gain, hypertension, and skin changes.",
+          ""
+        ],
+        [
+          "Diabetes mellitus",
+          "A metabolic disorder of chronic hyperglycemia from insulin deficiency or resistance.",
+          ""
+        ],
+        [
+          "Diabetic ketoacidosis",
+          "A life-threatening hyperglycemic emergency with ketosis and metabolic acidosis.",
+          ""
+        ],
+        [
+          "Hyperparathyroidism",
+          "Excess parathyroid hormone raising blood calcium and weakening bones.",
+          ""
+        ],
+        [
+          "Hyperthyroidism",
+          "Excess thyroid hormone production increasing metabolism and heart rate.",
+          ""
+        ],
+        [
+          "Hypoparathyroidism",
+          "Insufficient parathyroid hormone lowering blood calcium and causing tetany.",
+          ""
+        ],
+        [
+          "Hypothyroidism",
+          "Insufficient thyroid hormone slowing metabolism and causing fatigue and cold intolerance.",
+          ""
+        ],
+        [
+          "Type 1 diabetes mellitus",
+          "Autoimmune destruction of pancreatic beta cells causing absolute insulin deficiency.",
+          ""
+        ],
+        [
+          "Type 2 diabetes mellitus",
+          "Insulin resistance with relative insulin deficiency, often linked to obesity.",
+          ""
+        ],
+        [
+          "Cholecystitis",
+          "Inflammation of the gallbladder, usually from gallstone obstruction.",
+          ""
+        ],
+        [
+          "Chronic kidney disease",
+          "Progressive loss of kidney function over months to years.",
+          ""
+        ],
+        [
+          "Cirrhosis",
+          "Late-stage liver scarring from chronic disease, impairing liver function.",
+          ""
+        ],
+        [
+          "Crohn disease",
+          "Chronic transmural inflammation that can affect any part of the gastrointestinal tract.",
+          ""
+        ],
+        [
+          "Gastroesophageal reflux disease",
+          "Backflow of stomach acid into the esophagus causing heartburn.",
+          ""
+        ],
+        [
+          "Hepatitis",
+          "Inflammation of the liver, often from viral infection or toxins.",
+          ""
+        ],
+        [
+          "Inflammatory bowel disease",
+          "Chronic inflammation of the gastrointestinal tract, including Crohn disease and ulcerative colitis.",
+          ""
+        ],
+        [
+          "Pancreatitis",
+          "Inflammation of the pancreas causing severe abdominal pain and enzyme release.",
+          ""
+        ],
+        [
+          "Peptic ulcer disease",
+          "Open sores in stomach or duodenal lining from acid or infection.",
+          ""
+        ],
+        [
+          "Ulcerative colitis",
+          "Chronic inflammation limited to the colon and rectal mucosa.",
+          ""
+        ],
+        [
+          "Alzheimer disease",
+          "Progressive neurodegenerative disorder causing memory loss and cognitive decline.",
+          ""
+        ],
+        [
+          "Bone fracture",
+          "A break in the continuity of a bone from trauma or stress.",
+          ""
+        ],
+        [
+          "Hemorrhagic stroke",
+          "Brain injury from bleeding into or around the brain tissue.",
+          ""
+        ],
+        [
+          "Ischemic stroke",
+          "Brain infarction from blocked cerebral blood flow, often thrombotic or embolic.",
+          ""
+        ],
+        [
+          "Multiple sclerosis",
+          "Autoimmune demyelination of central nervous system neurons disrupting nerve conduction.",
+          ""
+        ],
+        [
+          "Osteoarthritis",
+          "Degenerative joint disease with cartilage breakdown and bone changes.",
+          ""
+        ],
+        [
+          "Osteoporosis",
+          "Reduced bone density and mass increasing fracture risk.",
+          ""
+        ],
+        [
+          "Parkinson disease",
+          "Progressive neurodegeneration causing tremor, rigidity, and slowed movement.",
+          ""
+        ],
+        [
+          "Seizure",
+          "Sudden, uncontrolled electrical disturbance in the brain altering behavior or consciousness.",
+          ""
+        ],
+        [
+          "Transient ischemic attack",
+          "Brief neurological dysfunction from temporary focal brain ischemia without infarction.",
+          ""
+        ],
+        [
+          "Acid-base imbalance",
+          "Disruption of blood pH homeostasis from respiratory or metabolic causes.",
+          ""
+        ],
+        [
+          "Fluid volume deficit",
+          "Loss of body fluid exceeding intake, causing dehydration and hypovolemia.",
+          ""
+        ],
+        [
+          "Fluid volume excess",
+          "Retention of body fluid leading to edema and hypervolemia.",
+          ""
+        ],
+        [
+          "Homeostasis",
+          "Maintenance of stable internal environment through physiological regulatory mechanisms.",
+          ""
+        ],
+        [
+          "Hypercalcemia",
+          "Serum calcium above normal, causing weakness, confusion, and kidney stones.",
+          ""
+        ],
+        [
+          "Hyperkalemia",
+          "Serum potassium above normal, risking cardiac conduction abnormalities.",
+          ""
+        ],
+        [
+          "Hypernatremia",
+          "Serum sodium above normal, usually from water loss and dehydration.",
+          ""
+        ],
+        [
+          "Hypocalcemia",
+          "Serum calcium below normal, causing neuromuscular irritability and tetany.",
+          ""
+        ],
+        [
+          "Hypokalemia",
+          "Serum potassium below normal, predisposing to muscle weakness and arrhythmias.",
+          ""
+        ],
+        [
+          "Hyponatremia",
+          "Serum sodium below normal, causing cellular swelling and neurological symptoms.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "maternal-and-child",
+      "name": "Maternal and Child Health",
+      "short": "Maternal and child",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Braxton Hicks contractions",
+          "Irregular, painless uterine contractions that occur throughout pregnancy without changing the cervix.",
+          ""
+        ],
+        [
+          "Chadwick sign",
+          "Bluish discoloration of the vagina and cervix due to vasocongestion in pregnancy.",
+          ""
+        ],
+        [
+          "Goodell sign",
+          "Softening of the cervix and vagina with increased mucus discharge during pregnancy.",
+          ""
+        ],
+        [
+          "Hegar sign",
+          "Softening of the lower uterine segment in early pregnancy.",
+          ""
+        ],
+        [
+          "Human chorionic gonadotropin",
+          "Placental hormone that maintains the corpus luteum and stimulates estrogen and progesterone production.",
+          ""
+        ],
+        [
+          "Linea nigra",
+          "Vertical hyperpigmented line on the abdomen from the pubic area to the xiphoid process during pregnancy.",
+          ""
+        ],
+        [
+          "Physiologic anemia of pregnancy",
+          "Hemodilution caused by a greater increase in plasma volume than in red blood cells.",
+          ""
+        ],
+        [
+          "Positive signs of pregnancy",
+          "Definitive evidence of pregnancy including fetal heartbeat, fetal movement felt by provider, or ultrasound visualization.",
+          ""
+        ],
+        [
+          "Presumptive signs of pregnancy",
+          "Subjective symptoms such as amenorrhea, nausea, fatigue, and quickening that suggest but do not confirm pregnancy.",
+          ""
+        ],
+        [
+          "Probable signs of pregnancy",
+          "Objective findings such as Chadwick sign, Goodell sign, Hegar sign, and a positive pregnancy test.",
+          ""
+        ],
+        [
+          "Cervical dilation",
+          "Opening of the cervical os to allow passage of the fetus during labor.",
+          ""
+        ],
+        [
+          "Cervical effacement",
+          "Thinning and shortening of the cervix that occurs during labor.",
+          ""
+        ],
+        [
+          "Fetal engagement",
+          "Entry of the fetal presenting part into the maternal pelvic inlet.",
+          ""
+        ],
+        [
+          "Fetal heart rate",
+          "Number of fetal heartbeats per minute, with a normal range of 110 to 160.",
+          ""
+        ],
+        [
+          "Fetal station",
+          "Position of the fetal presenting part relative to the maternal ischial spines.",
+          ""
+        ],
+        [
+          "First stage of labor",
+          "Stage from onset of labor to full cervical dilation at 10 centimeters.",
+          ""
+        ],
+        [
+          "Labor",
+          "Physiologic process of uterine contractions and cervical change leading to birth of the fetus.",
+          ""
+        ],
+        [
+          "Second stage of labor",
+          "Stage from full cervical dilation to birth of the fetus.",
+          ""
+        ],
+        [
+          "Third stage of labor",
+          "Stage from birth of the fetus to delivery of the placenta.",
+          ""
+        ],
+        [
+          "Uterine contraction",
+          "Rhythmic tightening of the uterine muscle that occurs during labor.",
+          ""
+        ],
+        [
+          "Lactogenesis",
+          "Process of milk production and secretion beginning after delivery.",
+          ""
+        ],
+        [
+          "Lochia",
+          "Vaginal discharge of blood, mucus, and tissue after childbirth.",
+          ""
+        ],
+        [
+          "Postpartum blues",
+          "Mild, transient mood changes occurring in the first two weeks after birth.",
+          ""
+        ],
+        [
+          "Postpartum depression",
+          "Mood disorder with persistent sadness and anxiety after childbirth.",
+          ""
+        ],
+        [
+          "Postpartum hemorrhage",
+          "Excessive bleeding after childbirth, usually more than 500 mL after vaginal birth.",
+          ""
+        ],
+        [
+          "Postpartum period",
+          "Time from birth of the placenta through the first six weeks after delivery.",
+          ""
+        ],
+        [
+          "Postpartum psychosis",
+          "Severe psychiatric emergency with hallucinations or delusions after childbirth.",
+          ""
+        ],
+        [
+          "Uterine atony",
+          "Failure of the uterus to contract effectively after delivery, causing bleeding.",
+          ""
+        ],
+        [
+          "Uterine involution",
+          "Process by which the uterus returns to its pre-pregnancy size after birth.",
+          ""
+        ],
+        [
+          "Apgar score",
+          "Standardized assessment of newborn status at one and five minutes after birth.",
+          ""
+        ],
+        [
+          "Bonding",
+          "Emotional attachment process between parent and newborn after birth.",
+          ""
+        ],
+        [
+          "Colostrum",
+          "First milk produced after birth, rich in antibodies for the newborn.",
+          ""
+        ],
+        [
+          "Jaundice",
+          "Yellowing of skin and eyes from elevated bilirubin in newborns.",
+          ""
+        ],
+        [
+          "Neonatal period",
+          "The first twenty-eight days of life after birth for a newborn.",
+          ""
+        ],
+        [
+          "Newborn weight loss",
+          "Expected loss of 7 to 10 percent of birth weight in first days after birth.",
+          ""
+        ],
+        [
+          "Rooting reflex",
+          "Innate response to facial stimulation that helps newborn find and latch onto nipple.",
+          ""
+        ],
+        [
+          "Suck reflex",
+          "Automatic response to oral stimulation causing sucking and swallowing in newborns.",
+          ""
+        ],
+        [
+          "Surfactant",
+          "Substance that keeps alveoli open, developing around twenty-eight weeks gestation.",
+          ""
+        ],
+        [
+          "Thermoregulation",
+          "Maintenance of stable body temperature, critical for newborns after birth.",
+          ""
+        ],
+        [
+          "Cephalocaudal development",
+          "Growth pattern progressing from head downward toward trunk and extremities.",
+          ""
+        ],
+        [
+          "Developmental milestones",
+          "Skills most children can perform by a given age.",
+          ""
+        ],
+        [
+          "Growth",
+          "Increase in height and weight as children mature.",
+          ""
+        ],
+        [
+          "Menarche",
+          "The first menstrual period, marking the onset of puberty in females.",
+          ""
+        ],
+        [
+          "Object permanence",
+          "Understanding that objects continue to exist when out of sight.",
+          ""
+        ],
+        [
+          "Parallel play",
+          "Toddlers playing near each other without direct interaction.",
+          ""
+        ],
+        [
+          "Proximodistal development",
+          "Growth pattern progressing from midline outward to extremities.",
+          ""
+        ],
+        [
+          "Puberty",
+          "The process of sexual maturation that occurs during adolescence.",
+          ""
+        ],
+        [
+          "Separation anxiety",
+          "Fear of abandonment when primary caregiver leaves, common in infants.",
+          ""
+        ],
+        [
+          "Teratogen",
+          "External agent that can cause fetal abnormalities during development.",
+          ""
+        ],
+        [
+          "Asthma",
+          "Chronic condition with airway inflammation and narrowing causing wheezing and breathlessness.",
+          ""
+        ],
+        [
+          "Bronchiolitis",
+          "A viral lower respiratory infection that is common in infants.",
+          ""
+        ],
+        [
+          "Croup",
+          "Viral respiratory illness causing barking cough and stridor in children.",
+          ""
+        ],
+        [
+          "Dehydration",
+          "Condition of excessive fluid loss leading to impaired body function.",
+          ""
+        ],
+        [
+          "Failure to thrive",
+          "Inadequate growth in children due to medical or psychosocial factors.",
+          ""
+        ],
+        [
+          "Febrile seizure",
+          "Seizure triggered by rapid rise in body temperature in young children.",
+          ""
+        ],
+        [
+          "Fever",
+          "Elevated body temperature, often a sign of infection in children.",
+          ""
+        ],
+        [
+          "Gastroenteritis",
+          "Inflammation of stomach and intestines causing vomiting and diarrhea.",
+          ""
+        ],
+        [
+          "Otitis media",
+          "A middle ear infection that is common in young children.",
+          ""
+        ],
+        [
+          "Respiratory syncytial virus",
+          "Common virus causing respiratory infections in infants and young children.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "mental-health",
+      "name": "Mental Health Nursing",
+      "short": "Mental health",
+      "color": "#9b6ae0",
+      "dark": "#bb95ff",
+      "defs": [
+        [
+          "Active listening",
+          "Focused attention to a client's words, tone, and body language without judgment or interruption.",
+          ""
+        ],
+        [
+          "Empathy",
+          "Understanding and acknowledging a client's feelings while maintaining professional objectivity and respect.",
+          ""
+        ],
+        [
+          "Johari window",
+          "A four-quadrant model of self-awareness used to improve interpersonal communication and insight.",
+          ""
+        ],
+        [
+          "Nonverbal communication",
+          "Messages conveyed through body language, facial expression, gestures, and tone rather than words.",
+          ""
+        ],
+        [
+          "Orientation phase",
+          "Phase focused on building rapport, trust, and mutual goals at the start of the relationship.",
+          ""
+        ],
+        [
+          "Pre-orientation phase",
+          "Initial phase in which the nurse self-reflects and gathers information before meeting the client.",
+          ""
+        ],
+        [
+          "Professional boundaries",
+          "Limits that keep nurse-client interactions safe, ethical, and focused on the client's care.",
+          ""
+        ],
+        [
+          "Self-awareness",
+          "Recognition of one's own thoughts, feelings, and behaviors during interactions with clients.",
+          ""
+        ],
+        [
+          "Therapeutic communication",
+          "Purposeful, client-centered interaction that builds trust and supports assessment, treatment, and recovery.",
+          ""
+        ],
+        [
+          "Therapeutic relationship",
+          "A professional, trust-based partnership focused on the client's needs and guided by nursing process.",
+          ""
+        ],
+        [
+          "Anhedonia",
+          "Loss of interest or pleasure in activities that were previously enjoyable.",
+          ""
+        ],
+        [
+          "Bipolar I disorder",
+          "A mood disorder with full manic episodes, often accompanied by depressive episodes.",
+          ""
+        ],
+        [
+          "Bipolar II disorder",
+          "A mood disorder with depressive and hypomanic episodes but no full manic episodes.",
+          ""
+        ],
+        [
+          "Hypomania",
+          "A milder elevated mood state that does not cause severe impairment or hospitalization.",
+          ""
+        ],
+        [
+          "Major depressive disorder",
+          "A condition characterized by persistent sadness and loss of interest that impairs daily functioning.",
+          ""
+        ],
+        [
+          "Mania",
+          "An abnormally elevated mood with high energy or activity that disrupts normal functioning.",
+          ""
+        ],
+        [
+          "Mood disorder",
+          "A mental health condition marked by persistent disturbances in mood, emotions, and affect.",
+          ""
+        ],
+        [
+          "Persistent depressive disorder",
+          "A milder but longer-lasting form of depression formerly called dysthymia.",
+          ""
+        ],
+        [
+          "Rapid cycling",
+          "Occurrence of at least four mood episodes within a twelve-month period.",
+          ""
+        ],
+        [
+          "Brief psychotic disorder",
+          "Sudden psychotic symptoms lasting more than one day but less than one month.",
+          ""
+        ],
+        [
+          "Catatonia",
+          "A syndrome of psychomotor abnormalities such as immobility, rigidity, or posturing.",
+          ""
+        ],
+        [
+          "Delusion",
+          "A fixed false belief that persists despite contradictory evidence.",
+          ""
+        ],
+        [
+          "Hallucination",
+          "A sensory perception experienced without an external stimulus.",
+          ""
+        ],
+        [
+          "Negative symptoms",
+          "Reductions in normal function, such as flat affect, avolition, and social withdrawal.",
+          ""
+        ],
+        [
+          "Positive symptoms",
+          "Symptoms added by illness, such as hallucinations, delusions, and disorganized speech.",
+          ""
+        ],
+        [
+          "Psychosis",
+          "A loss of contact with reality that impairs perception, thinking, and functioning.",
+          ""
+        ],
+        [
+          "Schizoaffective disorder",
+          "A condition combining psychotic symptoms with mood episode features.",
+          ""
+        ],
+        [
+          "Schizophrenia",
+          "A chronic psychotic disorder with positive and negative symptoms and impaired functioning.",
+          ""
+        ],
+        [
+          "Acute stress disorder",
+          "Trauma-related symptoms lasting from three days to one month after a traumatic event.",
+          ""
+        ],
+        [
+          "Anxiety",
+          "A state of apprehension or fear that may be adaptive or excessive.",
+          ""
+        ],
+        [
+          "Exposure therapy",
+          "Gradual, controlled confrontation with feared stimuli to reduce anxiety responses.",
+          ""
+        ],
+        [
+          "Generalized anxiety disorder",
+          "Excessive, uncontrollable worry about multiple life areas for at least six months.",
+          ""
+        ],
+        [
+          "Obsessive-compulsive disorder",
+          "Recurrent obsessions and compulsions that cause distress and impair functioning.",
+          ""
+        ],
+        [
+          "Panic attack",
+          "A sudden surge of intense fear with physical symptoms such as palpitations and shortness of breath.",
+          ""
+        ],
+        [
+          "Phobia",
+          "An intense, irrational fear of a specific object or situation leading to avoidance.",
+          ""
+        ],
+        [
+          "Post-traumatic stress disorder",
+          "Trauma-related symptoms persisting beyond one month after exposure to a traumatic event.",
+          ""
+        ],
+        [
+          "Trauma-informed care",
+          "An approach that recognizes trauma's impact and promotes safety, trust, and empowerment.",
+          ""
+        ],
+        [
+          "Alcohol use disorder",
+          "Problematic alcohol use leading to clinically significant impairment or distress.",
+          ""
+        ],
+        [
+          "Detoxification",
+          "Medically supervised process of clearing a substance from the body safely.",
+          ""
+        ],
+        [
+          "Harm reduction",
+          "Strategies that minimize negative health consequences of substance use without requiring abstinence.",
+          ""
+        ],
+        [
+          "Intoxication",
+          "Reversible substance-specific syndrome developing during or shortly after use.",
+          ""
+        ],
+        [
+          "Relapse",
+          "Return to substance use after a period of abstinence or recovery.",
+          ""
+        ],
+        [
+          "SBIRT",
+          "Screening, Brief Intervention, and Referral to Treatment for substance use concerns.",
+          ""
+        ],
+        [
+          "Substance use disorder",
+          "A pattern of substance use causing significant impairment or distress.",
+          ""
+        ],
+        [
+          "Tolerance",
+          "Need for increasing amounts of a substance to achieve the same effect.",
+          ""
+        ],
+        [
+          "Withdrawal",
+          "Symptoms occurring when substance use is reduced or stopped after heavy use.",
+          ""
+        ],
+        [
+          "Crisis",
+          "A time-limited state of disequilibrium triggered by a stressful event.",
+          ""
+        ],
+        [
+          "Crisis intervention",
+          "Short-term, focused support to restore safety and functioning during a crisis.",
+          ""
+        ],
+        [
+          "De-escalation",
+          "Techniques used to reduce agitation and prevent violence in tense situations.",
+          ""
+        ],
+        [
+          "Means restriction",
+          "Limiting access to methods that could be used for self-harm.",
+          ""
+        ],
+        [
+          "Postvention",
+          "Support and intervention provided to survivors after a suicide death.",
+          ""
+        ],
+        [
+          "Protective factors",
+          "Characteristics or resources that reduce the likelihood of suicide.",
+          ""
+        ],
+        [
+          "Safety planning",
+          "Collaborative plan identifying warning signs, coping steps, and emergency contacts.",
+          ""
+        ],
+        [
+          "Suicidal ideation",
+          "Thoughts about ending one's life, with or without a plan.",
+          ""
+        ],
+        [
+          "Suicide attempt",
+          "A nonfatal, self-directed behavior with intent to die.",
+          ""
+        ],
+        [
+          "Suicide risk assessment",
+          "Systematic evaluation of risk factors, protective factors, and suicidal intent.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

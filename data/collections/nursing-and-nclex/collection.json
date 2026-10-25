@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "id": "nursing-and-nclex",
+  "name": "Nursing and NCLEX",
+  "tagline": "Nursing and NCLEX, in one line.",
+  "topic": "Nursing and NCLEX-RN preparation",
+  "audience": "NCLEX-RN candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "fundamentals of nursing",
+      "health assessment",
+      "safety and infection control",
+      "medical-surgical nursing",
+      "maternal and child health",
+      "mental health nursing"
+    ],
+    "excludes": [
+      "drug dosing and patient-specific regimens",
+      "prescribing and clinical decision-making",
+      "advanced pathophysiology",
+      "NCLEX item practice and question banks",
+      "state-specific nurse practice act detail"
+    ]
+  },
+  "assumptions": [
+    "US clinical usage and NCLEX-RN 2023 test plan",
+    "introductory level; entry-level RN preparation",
+    "vocabulary only, not clinical training or licensure advice"
+  ],
+  "disclaimer": "Educational vocabulary only; not medical advice, clinical training, or licensure guidance.",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "fundamentals",
+          "name": "Fundamentals of Nursing",
+          "shortName": "Fundamentals",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/nursing-and-nclex/subjects/fundamentals.json",
+          "definitionCount": 60,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "health-assessment",
+          "name": "Health Assessment",
+          "shortName": "Health assessment",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/nursing-and-nclex/subjects/health-assessment.json",
+          "definitionCount": 56,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "safety-and-infection-control",
+          "name": "Safety and Infection Control",
+          "shortName": "Safety and infection",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/nursing-and-nclex/subjects/safety-and-infection-control.json",
+          "definitionCount": 56,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 2
+        }
+      ]
+    },
+    {
+      "id": "clinical",
+      "label": "Clinical",
+      "subjects": [
+        {
+          "id": "medical-surgical",
+          "name": "Medical-Surgical Nursing",
+          "shortName": "Med-surg",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/nursing-and-nclex/subjects/medical-surgical.json",
+          "definitionCount": 60,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "maternal-and-child",
+          "name": "Maternal and Child Health",
+          "shortName": "Maternal and child",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/nursing-and-nclex/subjects/maternal-and-child.json",
+          "definitionCount": 59,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 3
+        },
+        {
+          "id": "mental-health",
+          "name": "Mental Health Nursing",
+          "shortName": "Mental health",
+          "code": null,
+          "courseType": "core",
+          "color": "#9b6ae0",
+          "dark": "#bb95ff",
+          "data": "data/collections/nursing-and-nclex/subjects/mental-health.json",
+          "definitionCount": 56,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 1
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 2,
+    "subjects": 6,
+    "definitions": 347,
+    "completeSubjects": 6,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "collectionId": "nursing-and-nclex",
+  "generatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "cdc-standard-precautions",
+      "title": "Standard Precautions for All Patient Care",
+      "publisher": "Centers for Disease Control and Prevention (CDC)",
+      "url": "https://www.cdc.gov/infection-control/hcp/standard-precautions/",
+      "type": "guideline",
+      "license": "Public domain (US government)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": ""
+    },
+    {
+      "id": "nursingfund-openrn",
+      "title": "Nursing Fundamentals 2e",
+      "publisher": "WisTech Open (Open RN)",
+      "url": "https://wtcs.pressbooks.pub/nursingfundamentals/",
+      "type": "textbook",
+      "license": "CC BY 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "nursingfund-openrn-sec",
+      "title": "Nursing Fundamentals 2e",
+      "publisher": "WisTech Open (Open RN)",
+      "url": "https://wtcs.pressbooks.pub/nursingfundamentals/",
+      "type": "textbook",
+      "license": "CC BY 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Section locators for safety chapters."
+    },
+    {
+      "id": "nursingskills-openrn",
+      "title": "Nursing Skills 2e",
+      "publisher": "WisTech Open (Open RN)",
+      "url": "https://wtcs.pressbooks.pub/nursingskills/",
+      "type": "textbook",
+      "license": "CC BY 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "openstax-fundamentals-nursing",
+      "title": "Fundamentals of Nursing",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/fundamentals-nursing",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "openstax-maternal-newborn-nursing",
+      "title": "Maternal Newborn Nursing",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/maternal-newborn-nursing",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "openstax-medical-surgical-nursing",
+      "title": "Medical-Surgical Nursing",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/medical-surgical-nursing",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "openstax-population-health-nurses",
+      "title": "Population Health for Nurses",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/population-health",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    },
+    {
+      "id": "openstax-psychiatric-mental-health-nursing",
+      "title": "Psychiatric-Mental Health Nursing",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/psychiatric-mental-health",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": ""
+    }
+  ]
+}
