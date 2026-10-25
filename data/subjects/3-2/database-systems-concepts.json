@@ -1,0 +1,752 @@
+{
+  "version": 1,
+  "id": "database-systems-concepts",
+  "semester": "3-2",
+  "name": "Database Systems Concepts",
+  "shortName": "DBSC",
+  "code": "9FC79",
+  "courseType": "OE",
+  "elective": "Open Elective II",
+  "folderId": "1RJoH6oQDbwc9iTvKDrdh2GSDUrd_czKr",
+  "folderUrl": "https://drive.google.com/drive/folders/1RJoH6oQDbwc9iTvKDrdh2GSDUrd_czKr",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "database",
+      "term": "Database",
+      "definition": "Organised collection of related data, stored and accessed through management software.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-database#overview"
+      ]
+    },
+    {
+      "id": "dbms",
+      "term": "DBMS",
+      "definition": "Integrated set of software that lets users interact with databases and provides functions for entering, storing, retrieving and organising information.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-database#overview"
+      ]
+    },
+    {
+      "id": "schema",
+      "term": "Schema",
+      "definition": "Logical data model produced by logical design, expressed in a form that implements the data structures inside a database.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-database#design-and-modeling"
+      ]
+    },
+    {
+      "id": "query-language",
+      "term": "Query language",
+      "definition": "Special-purpose language, such as SQL or XQuery, used to access a database and tied to a particular data model.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-database#languages"
+      ]
+    },
+    {
+      "id": "data-definition-language",
+      "term": "Data definition language",
+      "definition": "Sub-language used to define data types and to create, alter or drop tables and the relationships among them.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-database#languages"
+      ]
+    },
+    {
+      "id": "data-manipulation-language",
+      "term": "Data manipulation language",
+      "definition": "Sub-language used for tasks such as inserting, updating or deleting data.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-database#languages"
+      ]
+    },
+    {
+      "id": "entity",
+      "term": "Entity",
+      "definition": "Thing capable of independent existence that can be uniquely identified, whether physical or logical.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-er-model#entities-and-relationships"
+      ]
+    },
+    {
+      "id": "relationship",
+      "term": "Relationship",
+      "definition": "Link capturing how entities are related to one another, usually expressed as a verb joining two or more nouns.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-er-model#entities-and-relationships"
+      ]
+    },
+    {
+      "id": "entity-set",
+      "term": "Entity set",
+      "definition": "Group of all entities of the same entity type, as shown on entity-relationship diagrams.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-er-model#entities-and-relationships"
+      ]
+    },
+    {
+      "id": "entity-attribute",
+      "term": "Entity attribute",
+      "definition": "Additional property that can belong to an entity or a relationship.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-er-model#entities-and-relationships"
+      ]
+    },
+    {
+      "id": "identifier",
+      "term": "Identifier",
+      "definition": "Minimal set of uniquely identifying attributes that every entity, except a weak one, must have.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Database Systems and ER Model",
+      "sources": [
+        "dbsc-wiki-er-model#entities-and-relationships"
+      ]
+    },
+    {
+      "id": "relation",
+      "term": "Relation",
+      "definition": "Set of tuples that all share the same header, which pairs attribute names with their data types.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#basic-notions"
+      ]
+    },
+    {
+      "id": "tuple",
+      "term": "Tuple",
+      "definition": "Partial function mapping attribute names to atomic values.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#basic-notions"
+      ]
+    },
+    {
+      "id": "domain",
+      "term": "Domain",
+      "definition": "The data type of an attribute, such as integers, character strings or dates, giving the set of permitted values.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#basic-notions"
+      ]
+    },
+    {
+      "id": "candidate-key",
+      "term": "Candidate key",
+      "definition": "Superkey that cannot be further subdivided to form another superkey.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#keys"
+      ]
+    },
+    {
+      "id": "primary-key",
+      "term": "Primary key",
+      "definition": "The one candidate key chosen to identify tuples of a relation, the others being called alternate keys.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#keys"
+      ]
+    },
+    {
+      "id": "foreign-key",
+      "term": "Foreign key",
+      "definition": "Subset of attributes in one relation that corresponds with a key of another relation, whose values must match a tuple there.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#keys"
+      ]
+    },
+    {
+      "id": "relational-schema",
+      "term": "Relational schema",
+      "definition": "Header together with a predicate of constraints that every relation having that header must satisfy.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-model#basic-notions"
+      ]
+    },
+    {
+      "id": "view",
+      "term": "View",
+      "definition": "Result set of a stored query that presents a limited perspective of the database to a user, computed dynamically as a virtual table.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-view#overview"
+      ]
+    },
+    {
+      "id": "materialized-view",
+      "term": "Materialized view",
+      "definition": "Pre-executed, non-virtual view that stores a static snapshot of data, commonly used in data warehousing and refreshed periodically.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-view#materialized-views"
+      ]
+    },
+    {
+      "id": "selection",
+      "term": "Selection",
+      "definition": "Unary operation that keeps the subset of a relation's tuples satisfying a given condition.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-algebra#selection"
+      ]
+    },
+    {
+      "id": "projection",
+      "term": "Projection",
+      "definition": "Operation that restricts all tuples of a relation to a named set of attributes, removing duplicates.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-algebra#projection"
+      ]
+    },
+    {
+      "id": "set-difference",
+      "term": "Set difference",
+      "definition": "Operation that removes from the first relation the tuples that are found in the second.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-algebra#set-operators"
+      ]
+    },
+    {
+      "id": "cartesian-product",
+      "term": "Cartesian product",
+      "definition": "Operation whose result size is the product of the sizes of its operands, pairing every tuple of one with every tuple of the other.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-algebra#cartesian-product"
+      ]
+    },
+    {
+      "id": "rename",
+      "term": "Rename",
+      "definition": "Operation producing a relation identical to the original except that a given attribute is called by a new name.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Relational Model and Relational Algebra",
+      "sources": [
+        "dbsc-wiki-relational-algebra#rename"
+      ]
+    },
+    {
+      "id": "sql",
+      "term": "SQL",
+      "definition": "Domain-specific language used to manage data, especially in a relational database management system.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-sql#overview"
+      ]
+    },
+    {
+      "id": "null",
+      "term": "Null",
+      "definition": "Marker indicating the absence of a value, distinct from a value of zero.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-sql#null-and-three-valued-logic"
+      ]
+    },
+    {
+      "id": "join",
+      "term": "Join",
+      "definition": "Clause that combines columns from one or more tables into a new table by matching rows whose fields correspond.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#overview"
+      ]
+    },
+    {
+      "id": "inner-join",
+      "term": "Inner join",
+      "definition": "Join that requires each row in the two joined tables to have matching column values.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#inner-join"
+      ]
+    },
+    {
+      "id": "left-outer-join",
+      "term": "Left outer join",
+      "definition": "Join that keeps every row of the left table, filling in nulls where the right table has no match.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#outer-join"
+      ]
+    },
+    {
+      "id": "full-outer-join",
+      "term": "Full outer join",
+      "definition": "Join that keeps unmatched rows from both tables, with nulls on the missing side.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#outer-join"
+      ]
+    },
+    {
+      "id": "cross-join",
+      "term": "Cross join",
+      "definition": "Join that returns every possible pairing of rows from the joined tables.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#cross-join"
+      ]
+    },
+    {
+      "id": "natural-join",
+      "term": "Natural join",
+      "definition": "Equi-join whose predicate arises implicitly by comparing all columns of the two tables that have the same names.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#natural-join"
+      ]
+    },
+    {
+      "id": "self-join",
+      "term": "Self join",
+      "definition": "Join of a table to itself, usually through aliases, so rows can be compared with other rows of the same table.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-join#self-join"
+      ]
+    },
+    {
+      "id": "trigger",
+      "term": "Trigger",
+      "definition": "Procedural code that is automatically executed in response to specific events on a table or view in a database.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "SQL",
+      "sources": [
+        "dbsc-wiki-trigger#overview"
+      ]
+    },
+    {
+      "id": "normalization",
+      "term": "Normalization",
+      "definition": "Structuring of a relational database under a series of normal forms to reduce data redundancy and improve data integrity.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#overview"
+      ]
+    },
+    {
+      "id": "update-anomaly",
+      "term": "Update anomaly",
+      "definition": "Logical inconsistency that updates may cause when the same information is stored in multiple rows.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#overview"
+      ]
+    },
+    {
+      "id": "first-normal-form",
+      "term": "First normal form",
+      "definition": "Level at which each field contains a single value, with no sets of values or nested records.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#normal-forms"
+      ]
+    },
+    {
+      "id": "second-normal-form",
+      "term": "Second normal form",
+      "definition": "Level at which every non-candidate-key attribute depends on the whole candidate key.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#normal-forms"
+      ]
+    },
+    {
+      "id": "third-normal-form",
+      "term": "Third normal form",
+      "definition": "Level at which every non-trivial functional dependency either begins with a superkey or ends with a prime attribute.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#normal-forms"
+      ]
+    },
+    {
+      "id": "boyce-codd-normal-form",
+      "term": "Boyce-Codd normal form",
+      "definition": "Stricter form of the third normal form, in which every non-trivial functional dependency begins with a superkey.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#normal-forms"
+      ]
+    },
+    {
+      "id": "fourth-normal-form",
+      "term": "Fourth normal form",
+      "definition": "Level at which every non-trivial multivalued dependency begins with a superkey.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Schema Refinement and Normal Forms",
+      "sources": [
+        "dbsc-wiki-normalization#normal-forms"
+      ]
+    },
+    {
+      "id": "transaction",
+      "term": "Transaction",
+      "definition": "Unit of work performed within a database management system, possibly involving multiple operations.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-transaction#overview"
+      ]
+    },
+    {
+      "id": "atomicity",
+      "term": "Atomicity",
+      "definition": "ACID property by which a transaction must either complete in its entirety or have no effect whatsoever.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-transaction#acid"
+      ]
+    },
+    {
+      "id": "consistency",
+      "term": "Consistency",
+      "definition": "ACID property by which a transaction must conform to the existing constraints in the database.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-transaction#acid"
+      ]
+    },
+    {
+      "id": "isolation",
+      "term": "Isolation",
+      "definition": "ACID property by which a transaction must not affect other transactions running concurrently.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-transaction#acid"
+      ]
+    },
+    {
+      "id": "durability",
+      "term": "Durability",
+      "definition": "ACID property by which a transaction's changes must be written to persistent storage.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-transaction#acid"
+      ]
+    },
+    {
+      "id": "schedule",
+      "term": "Schedule",
+      "definition": "Abstract model describing the order of executions in a set of transactions running in the system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-serializability#schedule"
+      ]
+    },
+    {
+      "id": "serial-schedule",
+      "term": "Serial schedule",
+      "definition": "Schedule in which the executed transactions are non-interleaved.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-serializability#serial-schedule"
+      ]
+    },
+    {
+      "id": "conflict-serializability",
+      "term": "Conflict serializability",
+      "definition": "Property of a schedule that is conflict-equivalent to one or more serial schedules.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-serializability#conflict-serializability"
+      ]
+    },
+    {
+      "id": "recoverable-schedule",
+      "term": "Recoverable schedule",
+      "definition": "Schedule in which transactions commit only after all transactions whose changes they read have committed.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-serializability#recoverability"
+      ]
+    },
+    {
+      "id": "two-phase-locking",
+      "term": "Two-phase locking",
+      "definition": "Pessimistic concurrency control method that guarantees conflict-serializability by never acquiring a lock after releasing one.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-2pl#overview"
+      ]
+    },
+    {
+      "id": "shared-lock",
+      "term": "Shared lock",
+      "definition": "Read lock that permits reading an object and may be held by several transactions at once if none holds a write lock.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-2pl#lock-types"
+      ]
+    },
+    {
+      "id": "exclusive-lock",
+      "term": "Exclusive lock",
+      "definition": "Write lock required to write an object, which blocks other transactions from holding any lock on it.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-2pl#lock-types"
+      ]
+    },
+    {
+      "id": "write-ahead-logging",
+      "term": "Write-ahead logging",
+      "definition": "Family of techniques that provide atomicity and durability by logging each change to disk before the data pages are modified.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-wal#overview"
+      ]
+    },
+    {
+      "id": "checkpoint",
+      "term": "Checkpoint",
+      "definition": "Periodic writing of all changes recorded in the log to the database, after which the log is cleared.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transaction Management",
+      "sources": [
+        "dbsc-wiki-wal#checkpoints"
+      ]
+    },
+    {
+      "id": "database-index",
+      "term": "Database index",
+      "definition": "Data structure that speeds up data retrieval operations on a database table, at the cost of extra writes and storage.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#overview"
+      ]
+    },
+    {
+      "id": "clustered-index",
+      "term": "Clustered index",
+      "definition": "Index that alters the table's data blocks into the same order as the index, so only one is allowed per table.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#clustered"
+      ]
+    },
+    {
+      "id": "non-clustered-index",
+      "term": "Non-clustered index",
+      "definition": "Index whose logical ordering is specified separately while rows stay in arbitrary physical order, so a table can have several.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#non-clustered"
+      ]
+    },
+    {
+      "id": "secondary-index",
+      "term": "Secondary index",
+      "definition": "Dense index used on fields that are neither ordering fields nor key fields.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#types"
+      ]
+    },
+    {
+      "id": "dense-index",
+      "term": "Dense index",
+      "definition": "File of key and pointer pairs with an entry for every record in the data file.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#dense-and-sparse"
+      ]
+    },
+    {
+      "id": "sparse-index",
+      "term": "Sparse index",
+      "definition": "File of key and pointer pairs with an entry for every block, rather than every record, of the data file.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#dense-and-sparse"
+      ]
+    },
+    {
+      "id": "covering-index",
+      "term": "Covering index",
+      "definition": "Index that itself contains the required data fields, so a query can be answered without reading table rows.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-index#covering-index"
+      ]
+    },
+    {
+      "id": "b-tree",
+      "term": "B+ tree",
+      "definition": "Tree with a variable but often large number of children per node, keeping data in linked leaves below key-only interior nodes.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-bplus#overview"
+      ]
+    },
+    {
+      "id": "branching-factor",
+      "term": "Branching factor",
+      "definition": "Measure of the capacity of interior nodes of a B+ tree, setting the maximum number of their direct children.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-bplus#characteristics"
+      ]
+    },
+    {
+      "id": "hash-function",
+      "term": "Hash function",
+      "definition": "Function that maps the universe of keys to indices or slots within a table.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-hashtable#hash-function"
+      ]
+    },
+    {
+      "id": "hash-collision",
+      "term": "Hash collision",
+      "definition": "Situation in which a hash function generates the same index for more than one key.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Storage and Indexing",
+      "sources": [
+        "dbsc-wiki-hashtable#collisions"
+      ]
+    }
+  ]
+}

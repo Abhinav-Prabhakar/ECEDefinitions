@@ -442,7 +442,7 @@
           "id": "basics-of-entrepreneurship",
           "name": "Basics of Entrepreneurship",
           "shortName": "BOE",
-          "code": "8ZC22",
+          "code": "9ZC22",
           "courseType": "OE",
           "elective": "Open Elective I",
           "folderId": "1VdV6eIG6nSJNl7eNQXKY5cykP-X4MVkO",
@@ -455,20 +455,20 @@
           "sourceCount": 6
         },
         {
-          "id": "java",
-          "name": "JAVA",
+          "id": "programming-in-java",
+          "name": "Programming in Java",
           "shortName": "JAVA",
-          "code": "",
+          "code": "9EC42",
           "courseType": "OE",
           "elective": "Open Elective I",
           "folderId": "1N05GaP2DqPNlKjBJ__i5-aoCwnbG55kx",
           "folderUrl": "https://drive.google.com/drive/folders/1N05GaP2DqPNlKjBJ__i5-aoCwnbG55kx",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/3-1/programming-in-java.json",
+          "definitionCount": 60,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 23
         },
         {
           "id": "artificial-neural-networks",
@@ -496,11 +496,11 @@
           "folderId": "10Nns1hDMfbWviOrNQyVT3plgIgd6gcsq",
           "folderUrl": "https://drive.google.com/drive/folders/10Nns1hDMfbWviOrNQyVT3plgIgd6gcsq",
           "data": "data/subjects/3-1/cmos-analog-ic-design.json",
-          "definitionCount": 33,
+          "definitionCount": 64,
           "unitCount": 6,
           "coveredUnits": 6,
-          "status": "partial",
-          "sourceCount": 6
+          "status": "complete",
+          "sourceCount": 16
         },
         {
           "id": "computer-organization-and-architecture",
@@ -622,7 +622,7 @@
           "id": "advanced-entrepreneurship",
           "name": "Advanced Entrepreneurship",
           "shortName": "AE",
-          "code": "8ZC23",
+          "code": "9ZC23",
           "courseType": "OE",
           "elective": "Open Elective II",
           "folderId": "1IBB-yglNuufkpNeWzu_iWZQn-v8XQsG-",
@@ -635,20 +635,20 @@
           "sourceCount": 6
         },
         {
-          "id": "dbsc",
-          "name": "DBSC",
+          "id": "database-systems-concepts",
+          "name": "Database Systems Concepts",
           "shortName": "DBSC",
-          "code": "",
+          "code": "9FC79",
           "courseType": "OE",
           "elective": "Open Elective II",
           "folderId": "1RJoH6oQDbwc9iTvKDrdh2GSDUrd_czKr",
           "folderUrl": "https://drive.google.com/drive/folders/1RJoH6oQDbwc9iTvKDrdh2GSDUrd_czKr",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/3-2/database-systems-concepts.json",
+          "definitionCount": 67,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 17
         },
         {
           "id": "digital-image-processing",
@@ -708,11 +708,11 @@
           "folderId": "1BoTRdZk1tei1mGA8vlS7As4G2ejJfMJz",
           "folderUrl": "https://drive.google.com/drive/folders/1BoTRdZk1tei1mGA8vlS7As4G2ejJfMJz",
           "data": "data/subjects/3-2/vlsi-physical-design.json",
-          "definitionCount": 35,
+          "definitionCount": 60,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 11
         },
         {
           "id": "ad-hoc-and-wireless-sensor-networks",
@@ -847,36 +847,36 @@
           "sourceCount": 3
         },
         {
-          "id": "osc",
-          "name": "OSC",
+          "id": "operating-systems-concepts",
+          "name": "Operating Systems Concepts",
           "shortName": "OSC",
-          "code": "",
+          "code": "9EC43",
           "courseType": "OE",
           "elective": "Open Elective III",
           "folderId": "1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
           "folderUrl": "https://drive.google.com/drive/folders/1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/4-1/operating-systems-concepts.json",
+          "definitionCount": 68,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 22
         },
         {
           "id": "product-and-services",
           "name": "Product and Services",
           "shortName": "P&S",
-          "code": "8ZC24",
+          "code": "9ZC24",
           "courseType": "OE",
           "elective": "Open Elective III",
           "folderId": "1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
           "folderUrl": "https://drive.google.com/drive/folders/1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
           "data": "data/subjects/4-1/product-and-services.json",
-          "definitionCount": 33,
+          "definitionCount": 65,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 12
         }
       ]
     },
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2165,
-    "completeSubjects": 35,
-    "partialSubjects": 11,
-    "inaccessibleSubjects": 10
+    "definitions": 2448,
+    "completeSubjects": 41,
+    "partialSubjects": 8,
+    "inaccessibleSubjects": 7
   }
 }
