@@ -1,5 +1,5 @@
 /* one·liners — offline app shell */
-const CACHE = 'oneliners-v3';
+const CACHE = 'oneliners-v4';
 const ASSETS = [
   './',
   './index.html',

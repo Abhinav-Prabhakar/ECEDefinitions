@@ -119,11 +119,19 @@ layout. The current seeded set:
 | 3-1 | Artificial Intelligence | `#3f8f6b` | `artificial-intelligence` |
 | 3-1 | Digital Signal Processing | `#4f6fd0` | `digital-signal-processing` |
 | 3-1 | IC Applications | `#b07a2e` | `ic-applications` |
+| 3-2 | Microprocessors and Microcontrollers | `#7a5bc4` | `microprocessors-and-microcontrollers` |
+| 3-2 | VLSI Technology and Design | `#2a8fa8` | `vlsi-technology-and-design` |
+| 3-2 | Microwave and Optical Communications | `#1f9d78` | `microwave-and-optical-communications` |
+| 3-2 | Cyber Security | `#b05454` | `cyber-security` |
+| 3-2 | Python Programming | `#3f7fa8` | `python-programming` |
+| 4-1 | Advanced Communications and Networks | `#3f6fb0` | `advanced-communications-and-networks` |
+| 4-1 | Internet of Things and Applications | `#2a9668` | `internet-of-things-and-applications` |
+| 4-1 | Computer Networks | `#5b7fa8` | `computer-networks` |
+| 4-1 | Embedded Real Time Operating Systems (inaccessible) | `#8a6a3f` | `embedded-real-time-operating-systems` |
+| 4-1 | System on Chip Architecture (inaccessible) | `#6b5fa8` | `system-on-chip-architecture` |
 
-Pre-mapped for later batches: Microprocessors and Microcontrollers, VLSI Technology and
-Design, Microwave and Optical Communications, Cyber Security, Python Programming, Advanced
-Communications and Networks, Internet of Things and Applications, Computer Networks,
-Technical Seminar.
+The two inaccessible 4-1 electives keep palette entries for a future retry but currently
+have no definitions and are not rendered. Pre-mapped for later batches: Technical Seminar.
 
 Derived values from a subject colour `c`:
 

@@ -8,7 +8,7 @@
 
 **Electronics, in one line.**
 
-A quiet ECE study instrument: 1,113 real definitions across 24 subjects, grouped by
+A quiet ECE study instrument: 1,495 real definitions across 32 subjects, grouped by
 semester, with a daily practice stack, adaptive two-way quizzes, and a memory of what you
 actually know.
 
@@ -86,8 +86,10 @@ The home page is the A22 map, not a flat list. Subjects sit under their semester
 count, and a subject-specific line diagram. Colour is the subject's identity, used in small
 doses.
 
-The first shipped batches cover **1-1 through 3-1** (24 subjects, 1,113 definitions). Later
-semesters appear as their source material is seeded. The workflow is deliberately boring:
+The shipped batches now cover **1-1 through 4-1** — seven semesters, 32 subjects, 1,495
+definitions. `4-2` is the final batch still to come. Two 4-1 professional electives
+(Embedded Real Time Operating Systems and System on Chip Architecture) are marked
+inaccessible in the source material and are not shown. The workflow is deliberately boring:
 
 ```bash
 # 1. subject JSON files arrive under data/subjects/<semester>/

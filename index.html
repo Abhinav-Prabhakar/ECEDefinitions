@@ -2330,7 +2330,9 @@ const SUBJECT_STYLE = {
   'internet-of-things-and-applications': { color: '#2a9668', dark: '#58c894', motif: 'chip' },
   'computer-networks': { color: '#5b7fa8', dark: '#8fb4dd', motif: 'tree' },
   'python-programming': { color: '#3f7fa8', dark: '#75b4d8', motif: 'code' },
-  'technical-seminar': { color: '#8b7a5c', dark: '#bda98a', motif: 'values' }
+  'technical-seminar': { color: '#8b7a5c', dark: '#bda98a', motif: 'values' },
+  'embedded-real-time-operating-systems': { color: '#8a6a3f', dark: '#c9a06a', motif: 'chip' },
+  'system-on-chip-architecture': { color: '#6b5fa8', dark: '#a99fe0', motif: 'chip' }
 };
 
 const FALLBACK_COLORS = [
@@ -2999,12 +3001,23 @@ const cardEls = new Map();
 
 const semesterEls = new Map();
 
+function coverageLabel(s){
+  if (s.status === 'partial') return 'partial';
+  if (s.status === 'unresolved') return 'unresolved';
+  if (s.status === 'inaccessible') return 'unavailable';
+  if (s.unitCount) return `${s.unitCount} ${s.unitCount === 1 ? 'unit' : 'units'}`;
+  return '';
+}
+
+function coverageContext(s){
+  if (s.status === 'partial') return 'partial coverage';
+  if (s.status === 'unresolved') return 'unresolved elective';
+  if (s.status === 'inaccessible') return 'materials unavailable';
+  return s.unitCount ? `${s.unitCount} ${s.unitCount === 1 ? 'unit' : 'units'}` : '';
+}
+
 function cardMeta(s){
-  const bits = [];
-  if (s.code) bits.push(s.code);
-  if (s.status === 'partial') bits.push('partial');
-  else if (s.unitCount) bits.push(`${s.unitCount} ${s.unitCount === 1 ? 'unit' : 'units'}`);
-  return bits.join(' · ');
+  return [s.code, coverageLabel(s)].filter(Boolean).join(' · ');
 }
 
 function buildCard(s, i){
@@ -3329,9 +3342,9 @@ function openSubject(id){
   spContext.textContent = [
     s.semesterLabel,
     s.code,
-    s.status === 'partial' ? 'partial coverage' : (s.unitCount ? `${s.unitCount} units` : '')
+    coverageContext(s)
   ].filter(Boolean).join(' · ');
-  spContext.classList.toggle('partial', s.status === 'partial');
+  spContext.classList.toggle('partial', s.status !== 'complete');
   spMotif.innerHTML = motifFor(s);
   refreshSubjectStats(s);
 
