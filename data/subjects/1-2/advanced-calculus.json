@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "advanced-calculus",
+  "semester": "1-2",
+  "name": "Advanced Calculus",
+  "shortName": "AC",
+  "code": "9HC12",
+  "courseType": "BS",
+  "folderId": "1-eZM2w1kbF2fIbyA-tgw8AySj_vDD9Zw",
+  "folderUrl": "https://drive.google.com/drive/folders/1-eZM2w1kbF2fIbyA-tgw8AySj_vDD9Zw",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "function-of-two-variables",
+      "term": "Function of two variables",
+      "definition": "A rule assigning a unique real value f(x,y) to each point (x,y) in a subset of R^2.",
+      "formula": "f:D⊂R²→R",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.2"
+      ]
+    },
+    {
+      "id": "limit-of-function-two-variables",
+      "term": "Limit of function of two variables",
+      "definition": "Value L such that f(x,y) approaches L as (x,y) approaches (a,b) along every path in its domain.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.3"
+      ]
+    },
+    {
+      "id": "continuity",
+      "term": "Continuity",
+      "definition": "f is continuous at (a,b) if its limit there equals f(a,b).",
+      "formula": "lim_{(x,y)→(a,b)} f(x,y)=f(a,b)",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.2"
+      ]
+    },
+    {
+      "id": "partial-derivative",
+      "term": "Partial derivative",
+      "definition": "Derivative of f with respect to one variable while holding the other variables constant.",
+      "formula": "∂f/∂x",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.6"
+      ]
+    },
+    {
+      "id": "homogeneous-function",
+      "term": "Homogeneous function",
+      "definition": "A function satisfying f(tx,ty)=t^n f(x,y) for all t>0, where n is its degree.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.10"
+      ]
+    },
+    {
+      "id": "eulers-theorem",
+      "term": "Euler's theorem",
+      "definition": "For a homogeneous function of degree n, x f_x + y f_y = n f.",
+      "formula": "x∂f/∂x + y∂f/∂y = nf",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.11"
+      ]
+    },
+    {
+      "id": "total-derivative",
+      "term": "Total derivative",
+      "definition": "Differential expressing change in f due to changes in all independent variables.",
+      "formula": "df = f_x dx + f_y dy",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.14"
+      ]
+    },
+    {
+      "id": "chain-rule",
+      "term": "Chain rule",
+      "definition": "Rule for differentiating a composite function through partial derivatives of its inner and outer functions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.16"
+      ]
+    },
+    {
+      "id": "jacobian",
+      "term": "Jacobian",
+      "definition": "Determinant of the matrix of first-order partial derivatives of a vector-valued function.",
+      "formula": "J=∂(u,v)/∂(x,y)",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.20"
+      ]
+    },
+    {
+      "id": "stationary-point",
+      "term": "Stationary point",
+      "definition": "A point where all first partial derivatives of f vanish.",
+      "formula": "f_x=f_y=0",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.28"
+      ]
+    },
+    {
+      "id": "saddle-point",
+      "term": "Saddle point",
+      "definition": "A stationary point that is neither a local maximum nor a local minimum.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.30"
+      ]
+    },
+    {
+      "id": "lagrange-multiplier",
+      "term": "Lagrange multiplier",
+      "definition": "Scalar λ used to optimize f subject to a constraint g=0 via ∇f=λ∇g.",
+      "formula": "∇f=λ∇g",
+      "unit": 1,
+      "unitTitle": "Functions of several variables",
+      "sources": [
+        "ac-ac-unit-1#p.34"
+      ]
+    },
+    {
+      "id": "double-integral",
+      "term": "Double integral",
+      "definition": "Integral of a function f over a region R in the plane.",
+      "formula": "∬_R f dA",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.2"
+      ]
+    },
+    {
+      "id": "iterated-integral",
+      "term": "Iterated integral",
+      "definition": "A double integral evaluated as successive single integrals over the region.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.4"
+      ]
+    },
+    {
+      "id": "triple-integral",
+      "term": "Triple integral",
+      "definition": "Integral of a function over a solid region in three-dimensional space.",
+      "formula": "∭_V f dV",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.8"
+      ]
+    },
+    {
+      "id": "change-of-variables",
+      "term": "Change of variables",
+      "definition": "Transformation of an integral using the Jacobian determinant of the coordinate map.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.12"
+      ]
+    },
+    {
+      "id": "polar-coordinates-integral",
+      "term": "Polar coordinates integral",
+      "definition": "Double integral expressed in polar coordinates with area element r dr dθ.",
+      "formula": "dA=r dr dθ",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.14"
+      ]
+    },
+    {
+      "id": "cylindrical-coordinates",
+      "term": "Cylindrical coordinates",
+      "definition": "Coordinates (r,θ,z) with volume element r dz dr dθ.",
+      "formula": "dV=r dz dr dθ",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.16"
+      ]
+    },
+    {
+      "id": "spherical-coordinates",
+      "term": "Spherical coordinates",
+      "definition": "Coordinates (ρ,θ,φ) with volume element ρ² sinφ dρ dθ dφ.",
+      "formula": "dV=ρ² sinφ dρ dθ dφ",
+      "unit": 2,
+      "unitTitle": "Multiple integrals",
+      "sources": [
+        "ac-ac-unit-2#p.18"
+      ]
+    },
+    {
+      "id": "partial-differential-equation",
+      "term": "Partial differential equation",
+      "definition": "An equation involving partial derivatives of an unknown function of several variables.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-1#p.4"
+      ]
+    },
+    {
+      "id": "order-of-pde",
+      "term": "Order of a PDE",
+      "definition": "The order of the highest partial derivative appearing in the equation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-1#p.6"
+      ]
+    },
+    {
+      "id": "linear-pde",
+      "term": "Linear PDE",
+      "definition": "A PDE linear in the unknown function and its derivatives, with coefficients depending only on independent variables.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-1#p.8"
+      ]
+    },
+    {
+      "id": "separation-of-variables",
+      "term": "Separation of variables",
+      "definition": "Method that assumes a solution as a product of single-variable functions to solve a PDE.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-1#p.19"
+      ]
+    },
+    {
+      "id": "wave-equation",
+      "term": "Wave equation",
+      "definition": "PDE u_tt=c²u_xx modelling propagation of waves such as vibrating strings.",
+      "formula": "u_{tt}=c²u_{xx}",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-2#p.7"
+      ]
+    },
+    {
+      "id": "heat-equation",
+      "term": "Heat equation",
+      "definition": "PDE u_t=αu_xx modelling diffusion of heat in a medium.",
+      "formula": "u_t=αu_{xx}",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-2#p.9"
+      ]
+    },
+    {
+      "id": "laplace-equation",
+      "term": "Laplace equation",
+      "definition": "PDE u_xx+u_yy=0 describing steady-state temperature or potential fields.",
+      "formula": "u_{xx}+u_{yy}=0",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-2#p.11"
+      ]
+    },
+    {
+      "id": "dalemberts-solution",
+      "term": "D'Alembert's solution",
+      "definition": "Solution of the wave equation as a superposition of travelling waves.",
+      "formula": "u(x,t)=f(x-ct)+g(x+ct)",
+      "unit": 3,
+      "unitTitle": "PDEs",
+      "sources": [
+        "ac-ac-unit-3-part-2#p.13"
+      ]
+    },
+    {
+      "id": "fourier-series",
+      "term": "Fourier series",
+      "definition": "Expansion of a periodic function as an infinite sum of sine and cosine terms.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fourier series",
+      "sources": [
+        "ac-ac-unit-4#p.5"
+      ]
+    },
+    {
+      "id": "fourier-coefficients",
+      "term": "Fourier coefficients",
+      "definition": "Constants a_n and b_n determined by integrals of f over one period.",
+      "formula": "a_n,b_n",
+      "unit": 4,
+      "unitTitle": "Fourier series",
+      "sources": [
+        "ac-ac-unit-4#p.7"
+      ]
+    },
+    {
+      "id": "even-function",
+      "term": "Even function",
+      "definition": "A function with f(-x)=f(x), whose Fourier series contains only cosine terms.",
+      "formula": "f(-x)=f(x)",
+      "unit": 4,
+      "unitTitle": "Fourier series",
+      "sources": [
+        "ac-ac-unit-4#p.12"
+      ]
+    },
+    {
+      "id": "odd-function",
+      "term": "Odd function",
+      "definition": "A function with f(-x)=-f(x), whose Fourier series contains only sine terms.",
+      "formula": "f(-x)=-f(x)",
+      "unit": 4,
+      "unitTitle": "Fourier series",
+      "sources": [
+        "ac-ac-unit-4#p.14"
+      ]
+    },
+    {
+      "id": "half-range-fourier-series",
+      "term": "Half-range Fourier series",
+      "definition": "A sine or cosine series representing a function defined on half an interval.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fourier series",
+      "sources": [
+        "ac-ac-unit-4#p.18"
+      ]
+    },
+    {
+      "id": "parsevals-identity",
+      "term": "Parseval's identity",
+      "definition": "Relates the sum of squared Fourier coefficients to the integral of the squared function.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Fourier series",
+      "sources": [
+        "ac-ac-unit-4#p.22"
+      ]
+    },
+    {
+      "id": "gradient",
+      "term": "Gradient",
+      "definition": "Vector of partial derivatives of a scalar field.",
+      "formula": "∇f=(∂f/∂x,∂f/∂y,∂f/∂z)",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.4"
+      ]
+    },
+    {
+      "id": "divergence",
+      "term": "Divergence",
+      "definition": "Scalar measure of net outflow of a vector field per unit volume.",
+      "formula": "∇·F=∂P/∂x+∂Q/∂y+∂R/∂z",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.6"
+      ]
+    },
+    {
+      "id": "curl",
+      "term": "Curl",
+      "definition": "Vector measuring the rotation or circulation density of a vector field.",
+      "formula": "∇×F",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.8"
+      ]
+    },
+    {
+      "id": "directional-derivative",
+      "term": "Directional derivative",
+      "definition": "Rate of change of f in the direction of a unit vector u.",
+      "formula": "D_u f=∇f·u",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.10"
+      ]
+    },
+    {
+      "id": "line-integral",
+      "term": "Line integral",
+      "definition": "Integral of a vector field along a curve C.",
+      "formula": "∫_C F·dr",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.12"
+      ]
+    },
+    {
+      "id": "greens-theorem",
+      "term": "Green's theorem",
+      "definition": "Relates a line integral around a simple closed curve to a double integral over the enclosed region.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.14"
+      ]
+    },
+    {
+      "id": "stokes-theorem",
+      "term": "Stokes' theorem",
+      "definition": "Relates the line integral around a boundary curve to the surface integral of the curl.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.16"
+      ]
+    },
+    {
+      "id": "gauss-divergence-theorem",
+      "term": "Gauss divergence theorem",
+      "definition": "Relates flux through a closed surface to the volume integral of the divergence.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.18"
+      ]
+    },
+    {
+      "id": "conservative-field",
+      "term": "Conservative field",
+      "definition": "A vector field expressible as the gradient of a scalar potential, with zero curl.",
+      "formula": "F=∇φ",
+      "unit": 5,
+      "unitTitle": "Vector calculus",
+      "sources": [
+        "ac-ac-unit-5#p.20"
+      ]
+    },
+    {
+      "id": "laplace-transform",
+      "term": "Laplace transform",
+      "definition": "Integral transform converting a time function f(t) to F(s).",
+      "formula": "F(s)=∫_0^∞ e^{-st}f(t)dt",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.2"
+      ]
+    },
+    {
+      "id": "inverse-laplace-transform",
+      "term": "Inverse Laplace transform",
+      "definition": "Operation recovering the original function f(t) from its transform F(s).",
+      "formula": "f(t)=L^{-1}{F(s)}",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.4"
+      ]
+    },
+    {
+      "id": "unit-step-function",
+      "term": "Unit step function",
+      "definition": "Function that is 0 before a and 1 from a onward.",
+      "formula": "u(t-a)",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.6"
+      ]
+    },
+    {
+      "id": "dirac-delta",
+      "term": "Dirac delta function",
+      "definition": "Generalized function with integral over R equal to 1, representing an impulse.",
+      "formula": "∫_{-∞}^{∞}δ(t)dt=1",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.8"
+      ]
+    },
+    {
+      "id": "first-shifting-theorem",
+      "term": "First shifting theorem",
+      "definition": "Laplace transform of e^{at}f(t) shifts F(s) by a.",
+      "formula": "L{e^{at}f(t)}=F(s-a)",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.10"
+      ]
+    },
+    {
+      "id": "convolution-theorem",
+      "term": "Convolution theorem",
+      "definition": "Laplace transform of a convolution equals product of transforms.",
+      "formula": "L{f*g}=F(s)G(s)",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.12"
+      ]
+    },
+    {
+      "id": "initial-value-theorem",
+      "term": "Initial value theorem",
+      "definition": "Gives f(0+) from the limiting behaviour of sF(s) as s→∞.",
+      "formula": "f(0+)=lim_{s→∞}sF(s)",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.14"
+      ]
+    },
+    {
+      "id": "final-value-theorem",
+      "term": "Final value theorem",
+      "definition": "Gives the long-time limit of f(t) from sF(s) as s→0.",
+      "formula": "lim_{t→∞}f(t)=lim_{s→0}sF(s)",
+      "unit": 6,
+      "unitTitle": "Laplace transforms",
+      "sources": [
+        "ac-ac-unit-6#p.16"
+      ]
+    }
+  ]
+}

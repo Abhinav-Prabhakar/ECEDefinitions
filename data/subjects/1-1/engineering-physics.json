@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "id": "engineering-physics",
+  "semester": "1-1",
+  "name": "Engineering Physics",
+  "shortName": "EP",
+  "code": "9HC07",
+  "courseType": "BS",
+  "folderId": "1-tjYwn0uyOM9CqeULd6YB6vHY-IlDdDc",
+  "folderUrl": "https://drive.google.com/drive/folders/1-tjYwn0uyOM9CqeULd6YB6vHY-IlDdDc",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "de-broglie-hypothesis",
+      "term": "de Broglie hypothesis",
+      "definition": "Any moving particle is associated with a matter wave.",
+      "formula": "λ=h/mv",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.5"
+      ]
+    },
+    {
+      "id": "matter-wave",
+      "term": "Matter wave",
+      "definition": "A wave associated with a moving particle, whose wavelength is inversely proportional to its momentum.",
+      "formula": "λ=h/p",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.6"
+      ]
+    },
+    {
+      "id": "de-broglie-wavelength",
+      "term": "de Broglie wavelength",
+      "definition": "The wavelength associated with a particle equals Planck's constant divided by its momentum.",
+      "formula": "λ=h/p",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.6"
+      ]
+    },
+    {
+      "id": "heisenberg-uncertainty-principle",
+      "term": "Heisenberg uncertainty principle",
+      "definition": "It is impossible to simultaneously determine a particle's position and momentum with perfect accuracy.",
+      "formula": "Δx Δp ≥ h/4π",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.27"
+      ]
+    },
+    {
+      "id": "schrodinger-time-independent-wave-equation",
+      "term": "Schrödinger time-independent wave equation",
+      "definition": "A differential equation describing a quantum particle's stationary state using its wave function and potential energy.",
+      "formula": "(−ℏ²/2m)∇²ψ+Vψ=Eψ",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.32"
+      ]
+    },
+    {
+      "id": "wave-function",
+      "term": "Wave function",
+      "definition": "A complex function whose squared magnitude gives the probability density of finding a particle.",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.33"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "normalization-condition",
+      "term": "Normalization condition",
+      "definition": "The integral of |ψ|² over all space equals one, ensuring total probability is unity.",
+      "formula": "∫|ψ|² dτ=1",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.37"
+      ]
+    },
+    {
+      "id": "particle-in-a-box",
+      "term": "Particle in a box",
+      "definition": "A particle confined to a one-dimensional infinite potential well has quantized energy levels.",
+      "formula": "E_n=n²h²/(8mL²)",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.40"
+      ]
+    },
+    {
+      "id": "energy-eigenvalue",
+      "term": "Energy eigenvalue",
+      "definition": "A scalar value representing the measurable energy of a quantum state corresponding to an eigenfunction.",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "davisson-germer-experiment",
+      "term": "Davisson-Germer experiment",
+      "definition": "Electron diffraction from a nickel crystal verified the wave nature of moving particles.",
+      "unit": 1,
+      "unitTitle": "Quantum Mechanics",
+      "sources": [
+        "ep-unit-1-quantum-mechanics#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "laser",
+      "term": "LASER",
+      "definition": "Light Amplification by Stimulated Emission of Radiation is a device producing coherent monochromatic light.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-lasers#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "stimulated-emission",
+      "term": "Stimulated emission",
+      "definition": "An excited atom emits a photon when triggered by an incident photon of matching energy.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-lasers#slide.14"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "spontaneous-emission",
+      "term": "Spontaneous emission",
+      "definition": "An excited atom emits a photon without external stimulus, producing incoherent light.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-lasers#slide.12"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "population-inversion",
+      "term": "Population inversion",
+      "definition": "A state where more atoms occupy a higher energy level than a lower one.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-lasers#slide.26"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "metastable-state",
+      "term": "Metastable state",
+      "definition": "An excited energy state with a long lifetime that enables population inversion.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-lasers#slide.27"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "pumping",
+      "term": "Pumping",
+      "definition": "Supplying energy to a system to achieve population inversion.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-lasers#slide.27"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "optical-fiber",
+      "term": "Optical fiber",
+      "definition": "A transparent dielectric waveguide that carries light between ends by total internal reflection.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-fiber-optics#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "total-internal-reflection",
+      "term": "Total internal reflection",
+      "definition": "Light reflects entirely within a denser medium when incidence exceeds the critical angle.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-fiber-optics#slide.7"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "numerical-aperture",
+      "term": "Numerical aperture",
+      "definition": "A fiber's light-gathering capacity equal to the sine of its acceptance angle.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-fiber-optics#slide.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "attenuation",
+      "term": "Attenuation",
+      "definition": "The reduction in optical signal power as light travels through a fiber.",
+      "unit": 2,
+      "unitTitle": "Lasers & Fiber Optics",
+      "sources": [
+        "ep-unit-2-fiber-optics#slide.31"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "magnetic-moment",
+      "term": "Magnetic moment",
+      "definition": "Product of pole strength and separation distance for a magnetic dipole.",
+      "formula": "m=2lm",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.4"
+      ]
+    },
+    {
+      "id": "magnetic-induction",
+      "term": "Magnetic induction",
+      "definition": "Number of magnetic flux lines passing perpendicularly through unit area.",
+      "formula": "B=Φ/A",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.5"
+      ]
+    },
+    {
+      "id": "permeability",
+      "term": "Permeability",
+      "definition": "Ratio of magnetic flux density to applied magnetic field intensity in a medium.",
+      "formula": "μ=B/H",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.6"
+      ]
+    },
+    {
+      "id": "magnetization",
+      "term": "Magnetization",
+      "definition": "Magnetic moment per unit volume of a magnetized specimen.",
+      "formula": "M=m/V",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.8"
+      ]
+    },
+    {
+      "id": "magnetic-susceptibility",
+      "term": "Magnetic susceptibility",
+      "definition": "Ratio of magnetization to applied magnetic field intensity.",
+      "formula": "χ_m=M/H",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.9"
+      ]
+    },
+    {
+      "id": "bohr-magneton",
+      "term": "Bohr magneton",
+      "definition": "The natural unit of magnetic moment for atomic systems.",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.17"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "hysteresis",
+      "term": "Hysteresis",
+      "definition": "Lagging of magnetization behind the applied magnetic field in ferromagnets.",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.27"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "superconductivity",
+      "term": "Superconductivity",
+      "definition": "Certain materials exhibit near-zero resistivity when cooled below a critical temperature.",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.37"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "meissner-effect",
+      "term": "Meissner effect",
+      "definition": "Expulsion of magnetic flux from a superconductor cooled below its transition temperature.",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.41"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "cooper-pair",
+      "term": "Cooper pair",
+      "definition": "Two electrons bound by lattice distortion, enabling resistance-free current.",
+      "unit": 3,
+      "unitTitle": "Magnetic & Superconducting Materials",
+      "sources": [
+        "ep-unit-3-magnetic-and-superconducting-materials#slide.50"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "dielectric",
+      "term": "Dielectric",
+      "definition": "An insulating material that stores electrical energy via electric polarization.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "electric-dipole",
+      "term": "Electric dipole",
+      "definition": "Two equal and opposite charges separated by a finite distance.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "dipole-moment",
+      "term": "Dipole moment",
+      "definition": "Product of charge and separation distance in an electric dipole.",
+      "formula": "μ=qd",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.4"
+      ]
+    },
+    {
+      "id": "dielectric-constant",
+      "term": "Dielectric constant",
+      "definition": "Ratio of a medium's permittivity to free space permittivity.",
+      "formula": "ε_r=ε/ε_0",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.4"
+      ]
+    },
+    {
+      "id": "polarization",
+      "term": "Polarization",
+      "definition": "Production of electric dipoles in a material by an applied electric field.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "polarizability",
+      "term": "Polarizability",
+      "definition": "Induced dipole moment per unit applied electric field.",
+      "formula": "α=μ/E",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.6"
+      ]
+    },
+    {
+      "id": "electronic-polarization",
+      "term": "Electronic polarization",
+      "definition": "Displacement of electron cloud relative to nucleus under an electric field.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.12"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ionic-polarization",
+      "term": "Ionic polarization",
+      "definition": "Relative displacement of positive and negative ions in a molecule under field.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.19"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "orientation-polarization",
+      "term": "Orientation polarization",
+      "definition": "Alignment of permanent molecular dipoles with an applied electric field.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.23"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "clausius-mossotti-equation",
+      "term": "Clausius-Mossotti equation",
+      "definition": "Relates dielectric constant to atomic polarizability and number density.",
+      "unit": 4,
+      "unitTitle": "Dielectric Materials",
+      "sources": [
+        "ep-unit-4-dielectric-materials-and-their-properties#slide.39"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "semiconductor",
+      "term": "Semiconductor",
+      "definition": "Material with conductivity between conductors and insulators, using electron and hole carriers.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "intrinsic-semiconductor",
+      "term": "Intrinsic semiconductor",
+      "definition": "Pure semiconductor with equal electron and hole concentrations.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.7"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "extrinsic-semiconductor",
+      "term": "Extrinsic semiconductor",
+      "definition": "Semiconductor doped with impurities to increase carrier concentration.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "n-type-semiconductor",
+      "term": "n-type semiconductor",
+      "definition": "Semiconductor doped with pentavalent impurities, electrons are majority carriers.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.41"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "p-type-semiconductor",
+      "term": "p-type semiconductor",
+      "definition": "Semiconductor doped with trivalent impurities, holes are majority carriers.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.51"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fermi-level",
+      "term": "Fermi level",
+      "definition": "Energy level at which probability of electron occupation is one-half.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.38"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "energy-band-gap",
+      "term": "Energy band gap",
+      "definition": "Energy difference between valence band top and conduction band bottom.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.17"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "hall-effect",
+      "term": "Hall effect",
+      "definition": "Voltage developed perpendicular to current and magnetic field in a conductor.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductors#slide.64"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "pn-junction",
+      "term": "pn junction",
+      "definition": "Interface between p-type and n-type semiconductors forming a diode.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductor-devices#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "light-emitting-diode",
+      "term": "Light emitting diode",
+      "definition": "Diode that emits light when forward biased via electron-hole recombination.",
+      "unit": 5,
+      "unitTitle": "Semiconductors & Semiconductor Devices",
+      "sources": [
+        "ep-unit-5-semiconductor-devices#slide.25"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "nanotechnology",
+      "term": "Nanotechnology",
+      "definition": "Design and application of structures by controlling size at nanometer scale.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.5"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "nanomaterial",
+      "term": "Nanomaterial",
+      "definition": "Material with at least one dimension in the 1-100 nm range.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "surface-to-volume-ratio",
+      "term": "Surface-to-volume ratio",
+      "definition": "Nano-materials have relatively larger surface area for the same volume.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "quantum-confinement",
+      "term": "Quantum confinement",
+      "definition": "Change in electron energy levels when dimensions approach de Broglie wavelength.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "quantum-dot",
+      "term": "Quantum dot",
+      "definition": "Nanostructure with all three dimensions reduced to nanoscale.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sol-gel-method",
+      "term": "Sol-gel method",
+      "definition": "Chemical process forming ceramic or glass materials from colloidal sol.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.16"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "chemical-vapor-deposition",
+      "term": "Chemical vapor deposition",
+      "definition": "Depositing nanoparticles from gas phase onto a solid surface.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.20"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ball-milling",
+      "term": "Ball milling",
+      "definition": "Top-down method breaking bulk materials into nanoscale particles by milling.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.27"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "carbon-nanotube",
+      "term": "Carbon nanotube",
+      "definition": "Graphite sheet rolled into cylinder with strong electrical conductivity.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.30"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "x-ray-diffraction",
+      "term": "X-ray diffraction",
+      "definition": "Technique identifying crystal structure using Bragg diffraction of X-rays.",
+      "unit": 6,
+      "unitTitle": "Nanotechnology",
+      "sources": [
+        "ep-unit-6-nano-technology#slide.37"
+      ],
+      "formula": ""
+    }
+  ]
+}

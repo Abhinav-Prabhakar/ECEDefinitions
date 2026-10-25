@@ -1,0 +1,465 @@
+{
+  "version": 1,
+  "id": "engineering-chemistry",
+  "semester": "1-2",
+  "name": "Engineering Chemistry",
+  "shortName": "EC",
+  "code": "9HC04",
+  "courseType": "BS",
+  "folderId": "1-YjSHrTK5bu-lgYXO6QT6H2iAxmRyIyF",
+  "folderUrl": "https://drive.google.com/drive/folders/1-YjSHrTK5bu-lgYXO6QT6H2iAxmRyIyF",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "valence-bond-theory",
+      "term": "Valence bond theory",
+      "definition": "Theory that covalent bonds form by overlap of atomic orbitals containing unpaired electrons.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.6"
+      ]
+    },
+    {
+      "id": "molecular-orbital-theory",
+      "term": "Molecular orbital theory",
+      "definition": "Theory that atomic orbitals combine to form molecular orbitals spanning all nuclei.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.7"
+      ]
+    },
+    {
+      "id": "bond-order",
+      "term": "Bond order",
+      "definition": "Half the difference between the numbers of bonding and antibonding electrons, indicating the strength and stability of a bond.",
+      "formula": "BO=(Nb-Na)/2",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.9"
+      ]
+    },
+    {
+      "id": "diamagnetic",
+      "term": "Diamagnetic",
+      "definition": "Substance with all electrons paired, repelled by magnetic field.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.10"
+      ]
+    },
+    {
+      "id": "crystal-field-theory",
+      "term": "Crystal field theory",
+      "definition": "Model for transition metal complexes treating metal-ligand bonding as electrostatic.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.40"
+      ]
+    },
+    {
+      "id": "crystal-field-splitting",
+      "term": "Crystal field splitting",
+      "definition": "Lifting of degeneracy of d-orbitals in presence of a ligand field.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.43"
+      ]
+    },
+    {
+      "id": "cfse",
+      "term": "Crystal field stabilization energy",
+      "definition": "Net energy gain from preferential filling of lower-energy d-orbitals in complex.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.47"
+      ]
+    },
+    {
+      "id": "low-spin-complex",
+      "term": "Low spin complex",
+      "definition": "Complex where electrons pair in lower-energy orbitals (strong field).",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.53"
+      ]
+    },
+    {
+      "id": "spectrochemical-series",
+      "term": "Spectrochemical series",
+      "definition": "Order of ligands by increasing field strength affecting d-orbital splitting.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.46"
+      ]
+    },
+    {
+      "id": "n-type-semiconductor",
+      "term": "n-type semiconductor",
+      "definition": "Semiconductor doped with pentavalent impurity; electrons are majority carriers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.69"
+      ]
+    },
+    {
+      "id": "p-type-semiconductor",
+      "term": "p-type semiconductor",
+      "definition": "Semiconductor doped with trivalent impurity; holes are majority carriers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.70"
+      ]
+    },
+    {
+      "id": "aromaticity",
+      "term": "Aromaticity",
+      "definition": "Property of cyclic, planar, fully conjugated system with 4n+2 pi electrons.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Molecular structure",
+      "sources": [
+        "ec-unit-1-molecular-structure#slide.37"
+      ]
+    },
+    {
+      "id": "polymer",
+      "term": "Polymer",
+      "definition": "Very large molecule formed by joining repeated monomer units by chemical bonds.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.3"
+      ]
+    },
+    {
+      "id": "monomer",
+      "term": "Monomer",
+      "definition": "Small molecule that serves as repeating unit in polymerization.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.3"
+      ]
+    },
+    {
+      "id": "polymerization",
+      "term": "Polymerization",
+      "definition": "Chemical process in which a large number of small monomer molecules combine to form a very large polymer chain.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.4"
+      ]
+    },
+    {
+      "id": "degree-of-polymerization",
+      "term": "Degree of polymerization",
+      "definition": "Number of repeat (monomer) units in a polymer chain.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.4"
+      ]
+    },
+    {
+      "id": "homopolymer",
+      "term": "Homopolymer",
+      "definition": "Polymer made from only one type of monomer.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.6"
+      ]
+    },
+    {
+      "id": "copolymer",
+      "term": "Copolymer",
+      "definition": "Polymer made from two or more types of monomers.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.6"
+      ]
+    },
+    {
+      "id": "addition-polymerization",
+      "term": "Addition polymerization",
+      "definition": "Polymerization where monomers join without loss of small molecules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.12"
+      ]
+    },
+    {
+      "id": "condensation-polymerization",
+      "term": "Condensation polymerization",
+      "definition": "Polymerization where monomers join with elimination of small molecules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.15"
+      ]
+    },
+    {
+      "id": "thermoplastic",
+      "term": "Thermoplastic",
+      "definition": "Polymer that softens on heating and hardens on cooling; recyclable.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.22"
+      ]
+    },
+    {
+      "id": "thermosetting-polymer",
+      "term": "Thermosetting polymer",
+      "definition": "Polymer that cross-links on heating and cannot be remoulded.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Polymers & Lubricants",
+      "sources": [
+        "ec-unit-2-polymers-lubricants#slide.24"
+      ]
+    },
+    {
+      "id": "desalination",
+      "term": "Desalination",
+      "definition": "Process of removing dissolved salts and minerals from sea or brackish water to obtain water fit for drinking and supply.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Water technology",
+      "sources": [
+        "ec-unit-3-water-technology#slide.57"
+      ]
+    },
+    {
+      "id": "electrochemical-cell",
+      "term": "Electrochemical cell",
+      "definition": "Device converting chemical energy to electrical energy and vice versa.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.4"
+      ]
+    },
+    {
+      "id": "electrolyte",
+      "term": "Electrolyte",
+      "definition": "Substance in molten/solution state conducting current with chemical change.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.9"
+      ]
+    },
+    {
+      "id": "conductance",
+      "term": "Conductance",
+      "definition": "Ease with which a solution conducts electric current, given by the reciprocal of resistance and measured in siemens (Ω⁻¹).",
+      "formula": "C=1/R",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.16"
+      ]
+    },
+    {
+      "id": "electrode-potential",
+      "term": "Electrode potential",
+      "definition": "Potential difference between electrode and its ions at equilibrium.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.28"
+      ]
+    },
+    {
+      "id": "emf-of-cell",
+      "term": "EMF of cell",
+      "definition": "Difference in electrode potentials of two half-cells driving current.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.30"
+      ]
+    },
+    {
+      "id": "nernst-equation",
+      "term": "Nernst equation",
+      "definition": "Relates cell potential to standard potential, temperature, reaction quotient.",
+      "formula": "E=E°-(RT/nF)ln Q",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.36"
+      ]
+    },
+    {
+      "id": "battery",
+      "term": "Battery",
+      "definition": "Storage device converting stored chemical energy to electrical energy.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.53"
+      ]
+    },
+    {
+      "id": "fuel-cell",
+      "term": "Fuel cell",
+      "definition": "Electrochemical cell converting fuel-oxidant chemical energy to electricity continuously.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.67"
+      ]
+    },
+    {
+      "id": "primary-cell",
+      "term": "Primary cell",
+      "definition": "Cell whose reaction occurs once; cannot be recharged.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.53"
+      ]
+    },
+    {
+      "id": "secondary-cell",
+      "term": "Secondary cell",
+      "definition": "Rechargeable cell: galvanic on discharge, electrolytic on charge.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Electro chemistry",
+      "sources": [
+        "ec-unit-4-electro-chemistry#p.59"
+      ]
+    },
+    {
+      "id": "corrosion",
+      "term": "Corrosion",
+      "definition": "Degradation of metal due to reaction with its environment.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Corrosion",
+      "sources": [
+        "ec-unit-5-corrosion#slide.4"
+      ]
+    },
+    {
+      "id": "rust",
+      "term": "Rust",
+      "definition": "Hydrated iron oxide Fe2O3·3H2O formed by iron corrosion.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Corrosion",
+      "sources": [
+        "ec-unit-5-corrosion#slide.4"
+      ]
+    },
+    {
+      "id": "electrophile",
+      "term": "Electrophile",
+      "definition": "Electron-deficient charged or neutral species that attacks an electron-rich centre during an organic reaction, e.g. H⁺ or NO₂⁺.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Organic reactions and drug molecules",
+      "sources": [
+        "ec-unit-6-organic-reactions-and-drug-molecules#p.2"
+      ]
+    },
+    {
+      "id": "nucleophile",
+      "term": "Nucleophile",
+      "definition": "Electron-rich charged or neutral species that attacks an electron-deficient centre during an organic reaction, e.g. OH⁻ or CN⁻.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Organic reactions and drug molecules",
+      "sources": [
+        "ec-unit-6-organic-reactions-and-drug-molecules#p.2"
+      ]
+    },
+    {
+      "id": "sn1-reaction",
+      "term": "SN1 reaction",
+      "definition": "Unimolecular nucleophilic substitution proceeding through a planar carbocation intermediate, with rate depending only on the concentration of the substrate.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Organic reactions and drug molecules",
+      "sources": [
+        "ec-unit-6-organic-reactions-and-drug-molecules#p.11"
+      ]
+    },
+    {
+      "id": "sn2-reaction",
+      "term": "SN2 reaction",
+      "definition": "Bimolecular nucleophilic substitution with inversion in one step.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Organic reactions and drug molecules",
+      "sources": [
+        "ec-unit-6-organic-reactions-and-drug-molecules#p.14"
+      ]
+    },
+    {
+      "id": "paracetamol",
+      "term": "Paracetamol",
+      "definition": "Mild analgesic and antipyretic drug used to relieve pain and reduce fever, prepared from p-aminophenol.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Organic reactions and drug molecules",
+      "sources": [
+        "ec-unit-6-organic-reactions-and-drug-molecules#p.38"
+      ]
+    },
+    {
+      "id": "aspirin",
+      "term": "Aspirin",
+      "definition": "Acetylsalicylic acid used as an analgesic, antipyretic and anti-inflammatory drug for pain, fever and related conditions.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Organic reactions and drug molecules",
+      "sources": [
+        "ec-unit-6-organic-reactions-and-drug-molecules#p.39"
+      ]
+    }
+  ]
+}

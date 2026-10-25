@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "id": "matrix-algebra-and-calculus",
+  "semester": "1-1",
+  "name": "Matrix Algebra and Calculus",
+  "shortName": "MAC",
+  "code": "9HC11",
+  "courseType": "BS",
+  "folderId": "1-mWpn3WSll2yrWeDpFkwxLV0Xbj7RCd7",
+  "folderUrl": "https://drive.google.com/drive/folders/1-mWpn3WSll2yrWeDpFkwxLV0Xbj7RCd7",
+  "status": "partial",
+  "definitions": [
+    {
+      "id": "rolles-theorem",
+      "term": "Rolle's theorem",
+      "definition": "If a function is continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then some c in (a,b) has f'(c)=0.",
+      "formula": "f'(c)=0",
+      "unit": 4,
+      "unitTitle": "Single Variable Calculus",
+      "sources": [
+        "mac-unit-4-mac#slide.2"
+      ]
+    },
+    {
+      "id": "lagranges-mean-value-theorem",
+      "term": "Lagrange's mean value theorem",
+      "definition": "If a function is continuous on [a,b] and differentiable on (a,b), then some c in (a,b) satisfies f'(c)=(f(b)-f(a))/(b-a).",
+      "formula": "f'(c)=(f(b)-f(a))/(b-a)",
+      "unit": 4,
+      "unitTitle": "Single Variable Calculus",
+      "sources": [
+        "mac-unit-4-mac#slide.3"
+      ]
+    },
+    {
+      "id": "cauchys-mean-value-theorem",
+      "term": "Cauchy's mean value theorem",
+      "definition": "If f and g are continuous on [a,b], differentiable on (a,b), and g'(x)≠0, then some c in (a,b) satisfies f'(c)/g'(c)=(f(b)-f(a))/(g(b)-g(a)).",
+      "formula": "f'(c)/g'(c)=(f(b)-f(a))/(g(b)-g(a))",
+      "unit": 4,
+      "unitTitle": "Single Variable Calculus",
+      "sources": [
+        "mac-unit-4-mac#slide.4"
+      ]
+    },
+    {
+      "id": "taylors-series",
+      "term": "Taylor's series",
+      "definition": "The Taylor series expands f(x) about x=x0 as the sum over n of f^(n)(x0)(x-x0)^n/n!, assuming successive derivatives exist.",
+      "formula": "f(x)=Σ f⁽ⁿ⁾(x₀)(x-x₀)ⁿ/n!",
+      "unit": 4,
+      "unitTitle": "Single Variable Calculus",
+      "sources": [
+        "mac-unit-4-mac#slide.5"
+      ]
+    },
+    {
+      "id": "maclaurin-series",
+      "term": "Maclaurin series",
+      "definition": "The Maclaurin series expands f(x) about 0 as the sum over n of f^(n)(0) x^n/n!, assuming successive derivatives exist.",
+      "formula": "f(x)=Σ f⁽ⁿ⁾(0)xⁿ/n!",
+      "unit": 4,
+      "unitTitle": "Single Variable Calculus",
+      "sources": [
+        "mac-unit-4-mac#slide.5"
+      ]
+    }
+  ]
+}
