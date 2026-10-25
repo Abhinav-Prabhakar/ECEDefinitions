@@ -13,7 +13,7 @@
     {
       "id": "python",
       "term": "Python",
-      "definition": "Python is a high-level, interpreted, general-purpose dynamic programming language focusing on code readability.",
+      "definition": "High-level, interpreted, general-purpose dynamic programming language that emphasizes code readability.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -24,7 +24,7 @@
     {
       "id": "interactive-mode",
       "term": "Interactive mode",
-      "definition": "Interactive mode executes Python code one line at a time at the prompt without saving the code.",
+      "definition": "Execution of code one line at a time at the prompt without saving it in a file.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -35,7 +35,7 @@
     {
       "id": "script-mode",
       "term": "Script mode",
-      "definition": "Script mode executes Python code that is saved in a file with a .py extension.",
+      "definition": "Execution of code saved in a file with a .py extension.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -46,7 +46,7 @@
     {
       "id": "module-mode",
       "term": "Module mode",
-      "definition": "Module mode executes Python code saved in a file imported into another Python program.",
+      "definition": "Execution of code saved in a file imported into another Python program.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -57,7 +57,7 @@
     {
       "id": "identifier",
       "term": "Identifier",
-      "definition": "A Python identifier is a name used to identify a variable, function, class, module or other object.",
+      "definition": "Name assigned to a variable, function, class, module or other object in a program.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -68,7 +68,7 @@
     {
       "id": "variable",
       "term": "Variable",
-      "definition": "A variable stores a value; in Python variables need not be declared explicitly.",
+      "definition": "Storage location that holds a value and need not be declared explicitly in Python.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -79,7 +79,7 @@
     {
       "id": "if-statement",
       "term": "if statement",
-      "definition": "An if statement executes its block only when the specified condition is true.",
+      "definition": "Control structure that executes its block only when the specified condition is true.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -90,7 +90,7 @@
     {
       "id": "if-else-statement",
       "term": "if-else statement",
-      "definition": "An if-else statement executes one block if the condition is true and another if it is false.",
+      "definition": "Control structure that executes one block when a condition is true and another when it is false.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -101,7 +101,7 @@
     {
       "id": "if-elif-else",
       "term": "if-elif-else",
-      "definition": "if-elif-else checks multiple conditions in sequence and runs the block of the first true condition.",
+      "definition": "Control structure that checks multiple conditions in sequence and runs the block of the first true condition.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -112,7 +112,7 @@
     {
       "id": "for-loop",
       "term": "for loop",
-      "definition": "A for loop iterates over a sequence or other iterable object.",
+      "definition": "Control structure that iterates over a sequence or other iterable object.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -123,7 +123,7 @@
     {
       "id": "while-loop",
       "term": "while loop",
-      "definition": "A while loop repeatedly executes a block as long as its condition remains True.",
+      "definition": "Control structure that repeatedly executes a block as long as its condition remains true.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -134,7 +134,7 @@
     {
       "id": "break-statement",
       "term": "break statement",
-      "definition": "The break statement exits the innermost enclosing loop prematurely and passes control to the first statement following that loop.",
+      "definition": "Control statement that exits the innermost enclosing loop prematurely and passes control to the next statement after it.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -145,7 +145,7 @@
     {
       "id": "continue-statement",
       "term": "continue statement",
-      "definition": "The continue statement skips the current iteration and moves to the next iteration.",
+      "definition": "Control statement that skips the remaining body of the current iteration and moves to the next iteration.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -156,7 +156,7 @@
     {
       "id": "pass-statement",
       "term": "pass statement",
-      "definition": "The pass statement is a null statement that does nothing, used as a placeholder.",
+      "definition": "Null statement that does nothing and is used as a placeholder where code is syntactically required.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -167,7 +167,7 @@
     {
       "id": "function",
       "term": "Function",
-      "definition": "A function is a block of organized, reusable code used to perform a computation.",
+      "definition": "Block of organized, reusable code that performs a specific computation.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -178,7 +178,7 @@
     {
       "id": "return-statement",
       "term": "return statement",
-      "definition": "The return statement exits a function and optionally passes an expression back to the caller.",
+      "definition": "Control statement that exits a function and optionally passes an expression back to the caller.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -189,7 +189,7 @@
     {
       "id": "global-keyword",
       "term": "global keyword",
-      "definition": "The global keyword is used to modify a global variable inside a function.",
+      "definition": "Directive used to modify a module-level variable from inside a function.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Python",
@@ -200,7 +200,7 @@
     {
       "id": "string",
       "term": "String",
-      "definition": "A string is a sequence of characters enclosed in single or double quotes and is immutable.",
+      "definition": "Sequence of characters enclosed in single or double quotes that cannot be changed after creation.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -211,7 +211,7 @@
     {
       "id": "indexing",
       "term": "Indexing",
-      "definition": "Indexing accesses an element of a string or list by its position, starting at 0.",
+      "definition": "Accessing an element of a sequence by its position, starting at zero.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -222,7 +222,7 @@
     {
       "id": "slicing",
       "term": "Slicing",
-      "definition": "Slicing extracts a substring or subsequence using the [start:end:step] operator.",
+      "definition": "Extracting a substring or subsequence using the [start:end:step] operator.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -233,7 +233,7 @@
     {
       "id": "list",
       "term": "List",
-      "definition": "A list is an ordered, changeable sequence of items enclosed in square brackets; items need not share a type.",
+      "definition": "Ordered, changeable sequence of items enclosed in square brackets whose elements need not share a type.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -244,7 +244,7 @@
     {
       "id": "tuple",
       "term": "Tuple",
-      "definition": "A tuple is an ordered, unchangeable collection enclosed in parentheses; allows duplicate members.",
+      "definition": "Ordered, unchangeable collection enclosed in parentheses that allows duplicate members.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -255,7 +255,7 @@
     {
       "id": "dictionary",
       "term": "Dictionary",
-      "definition": "A dictionary stores data in key:value pairs; it is ordered, changeable and allows no duplicate keys.",
+      "definition": "Collection storing data in key:value pairs that is ordered, changeable and allows no duplicate keys.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -266,7 +266,7 @@
     {
       "id": "module",
       "term": "Module",
-      "definition": "A module is a .py file containing Python code that can be imported and reused.",
+      "definition": "File with a .py extension containing code that can be imported and reused.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -277,7 +277,7 @@
     {
       "id": "exception",
       "term": "Exception",
-      "definition": "An exception is an event during execution that disrupts the normal flow of a program.",
+      "definition": "Event during execution that disrupts the normal flow of a program.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -288,7 +288,7 @@
     {
       "id": "try-except",
       "term": "try-except",
-      "definition": "try-except encloses code that may raise an exception and handles it if one occurs.",
+      "definition": "Construct that encloses code which may raise an exception and handles it if one occurs.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -299,7 +299,7 @@
     {
       "id": "finally-clause",
       "term": "finally clause",
-      "definition": "The finally clause executes code whether or not an exception was raised.",
+      "definition": "Clause that executes its code whether or not an exception was raised.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -310,7 +310,7 @@
     {
       "id": "user-defined-exception",
       "term": "User-defined exception",
-      "definition": "A user-defined exception is created by subclassing the built-in Exception class.",
+      "definition": "Custom error type created by subclassing the built-in Exception class.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
@@ -321,7 +321,7 @@
     {
       "id": "class",
       "term": "Class",
-      "definition": "A class is a blueprint or template for creating objects, bundling data and methods together.",
+      "definition": "Blueprint or template for creating objects that bundles data and methods together.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -332,7 +332,7 @@
     {
       "id": "object",
       "term": "Object",
-      "definition": "An object is an instance of a class with its own unique identity, state and behavior.",
+      "definition": "Instance of a class with its own unique identity, state and behavior.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -343,7 +343,7 @@
     {
       "id": "self-keyword",
       "term": "self",
-      "definition": "self represents the instance of the class and is used to access its attributes and methods.",
+      "definition": "Implicit reference to the current instance of a class, used to access its attributes and methods.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -354,7 +354,7 @@
     {
       "id": "init-method",
       "term": "__init__ method",
-      "definition": "__init__ is a constructor method used to initialize an object's state.",
+      "definition": "Constructor method called automatically when an object is created, used to set up its initial state.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -365,7 +365,7 @@
     {
       "id": "attribute",
       "term": "Attribute",
-      "definition": "An attribute is a variable that holds data, accessed using dot notation.",
+      "definition": "Variable that holds data and is accessed using dot notation on an object.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -376,7 +376,7 @@
     {
       "id": "inheritance",
       "term": "Inheritance",
-      "definition": "Inheritance creates a new child class from an existing parent class, inheriting its properties.",
+      "definition": "Creation of a new child class from an existing parent class so that it acquires the parent's properties.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -387,7 +387,7 @@
     {
       "id": "overloading",
       "term": "Overloading",
-      "definition": "Overloading defines multiple methods with the same name but different parameters.",
+      "definition": "Defining multiple methods with the same name but different parameter lists.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -398,7 +398,7 @@
     {
       "id": "overriding",
       "term": "Overriding",
-      "definition": "Overriding redefines a parent class method in a child class with the same name.",
+      "definition": "Redefinition of a parent class method in a child class with the same name.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -409,7 +409,7 @@
     {
       "id": "data-hiding",
       "term": "Data hiding",
-      "definition": "Data hiding restricts access to attributes and methods using a double underscore prefix.",
+      "definition": "Restriction of access to attributes and methods using a double underscore prefix.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -420,7 +420,7 @@
     {
       "id": "regular-expression",
       "term": "Regular expression",
-      "definition": "A regular expression is a sequence of characters that defines a search pattern.",
+      "definition": "Sequence of characters that defines a search pattern for matching text.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -431,7 +431,7 @@
     {
       "id": "re-match",
       "term": "re.match()",
-      "definition": "re.match() matches a pattern only at the beginning of a string.",
+      "definition": "Tests a pattern only at the beginning of a string.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",
@@ -442,7 +442,7 @@
     {
       "id": "re-search",
       "term": "re.search()",
-      "definition": "re.search() searches for a pattern anywhere in a string.",
+      "definition": "Looks for a pattern anywhere in a string.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Python OOP and Regular Expressions",

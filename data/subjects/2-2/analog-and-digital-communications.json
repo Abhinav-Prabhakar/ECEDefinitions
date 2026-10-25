@@ -35,7 +35,7 @@
     {
       "id": "modulation-index-am",
       "term": "Modulation index (AM)",
-      "definition": "Ratio of the amplitude of the modulating message signal to the amplitude of the unmodulated carrier in an AM wave.",
+      "definition": "Ratio of the message-signal amplitude to the amplitude of the unmodulated carrier wave.",
       "formula": "μ = A_m/A_c",
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
@@ -123,7 +123,7 @@
     {
       "id": "modulation-index-fm",
       "term": "Modulation index (FM)",
-      "definition": "Ratio of the peak frequency deviation of the FM signal to the modulating frequency of the message signal.",
+      "definition": "Ratio of the peak frequency deviation of the carrier to the frequency of the message signal.",
       "formula": "β = Δf/f_m",
       "unit": 2,
       "unitTitle": "Angle Modulation",

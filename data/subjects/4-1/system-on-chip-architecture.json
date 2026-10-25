@@ -127,7 +127,7 @@
     },
     {
       "term": "Vector Processor",
-      "definition": "A single processor resembling a traditional single-stream processor except that some functional units (and registers) operate on vectors (sequences of data values) and are deeply pipelined.",
+      "definition": "A single processing unit resembling a traditional single-stream machine except that some functional units and registers operate on arrays of data values and are deeply pipelined.",
       "unit": 1,
       "unitTitle": "Introduction to the System Approach",
       "sources": [
@@ -171,7 +171,7 @@
     },
     {
       "term": "Unit Cost",
-      "definition": "Average cost per chip: unit cost = (project cost) ÷ (number of units), where project cost is fixed cost Kf plus variable cost Kv × n.",
+      "definition": "Average cost per chip, equal to total project cost divided by number of chips, where project cost is fixed cost Kf plus variable cost Kv × n.",
       "unit": 1,
       "unitTitle": "Introduction to the System Approach",
       "sources": [
@@ -281,7 +281,7 @@
     },
     {
       "term": "Vector Register",
-      "definition": "Register hardware (VR) that decouples arithmetic processing from memory, serving as source and destination for all vector operands, often bypassing the cache.",
+      "definition": "Hardware storage (VR) that decouples arithmetic processing from memory, serving as source and destination for all array operands, often bypassing the cache.",
       "unit": 2,
       "unitTitle": "Processors",
       "sources": [
@@ -292,7 +292,7 @@
     },
     {
       "term": "Register Renaming",
-      "definition": "Elimination of WAR and WAW hazards caused by reusing the same register for two computations, by renaming the second computation into hidden registers.",
+      "definition": "Elimination of WAR and WAW hazards caused by reusing the same storage location for two computations, by mapping the second computation into hidden locations.",
       "unit": 2,
       "unitTitle": "Processors",
       "sources": [
@@ -325,7 +325,7 @@
     },
     {
       "term": "Memory Access Time",
-      "definition": "The time to access memory, largely a function of physical parameters of the memory system such as processor–memory distance, bus delay, and chip delay.",
+      "definition": "The delay to read or write storage, largely a function of physical parameters such as processor–storage distance, bus delay, and chip delay.",
       "unit": 3,
       "unitTitle": "Memory Design for SOC",
       "sources": [

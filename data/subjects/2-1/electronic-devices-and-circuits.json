@@ -299,7 +299,7 @@
     {
       "id": "h-parameters",
       "term": "h-parameters",
-      "definition": "Hybrid parameters describing a two-port network by input impedance, reverse voltage gain, forward current gain and output admittance.",
+      "definition": "Hybrid values describing a two-port network by input impedance, reverse voltage gain, forward current gain and output admittance.",
       "unit": 3,
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [

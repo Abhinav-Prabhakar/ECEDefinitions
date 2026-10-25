@@ -13,7 +13,7 @@
     {
       "id": "artificial-intelligence",
       "term": "Artificial Intelligence",
-      "definition": "Design of intelligence in an artificial device; a man-made thinking power.",
+      "definition": "Design of thinking power in a man-made device; a manufactured cognitive capability.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
@@ -167,7 +167,7 @@
     {
       "id": "game-tree",
       "term": "Game tree",
-      "definition": "A tree whose nodes are game states and edges are moves by players.",
+      "definition": "Structure whose nodes are positions in a contest and edges are moves by players.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
@@ -365,7 +365,7 @@
     {
       "id": "pddl",
       "term": "PDDL",
-      "definition": "Planning Domain Definition Language for expressing states, actions and goals.",
+      "definition": "Formal language for expressing states, actions and goals in planning problems.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Planning",
@@ -409,7 +409,7 @@
     {
       "id": "htn-planning",
       "term": "HTN planning",
-      "definition": "Hierarchical Task Network planning using high-level actions refined into primitives.",
+      "definition": "Approach that decomposes high-level actions into primitive actions until an executable sequence is obtained.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Planning",
@@ -552,7 +552,7 @@
     {
       "id": "decision-tree",
       "term": "Decision tree",
-      "definition": "A tree of attribute tests leading to a classification decision.",
+      "definition": "Structure of attribute tests leading to a classification outcome.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Learning",

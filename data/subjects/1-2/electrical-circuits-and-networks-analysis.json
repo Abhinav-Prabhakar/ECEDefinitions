@@ -420,7 +420,7 @@
     {
       "id": "two-port-network",
       "term": "Two-port network",
-      "definition": "Network with two ports, each a pair of terminals.",
+      "definition": "Circuit with a pair of input terminals and a pair of output terminals.",
       "formula": "",
       "unit": 5,
       "unitTitle": "2-port parameters",
@@ -431,7 +431,7 @@
     {
       "id": "z-parameters",
       "term": "Z parameters",
-      "definition": "Open-circuit impedance parameters of a two-port network, relating port voltages to port currents through the z-matrix.",
+      "definition": "Open-circuit impedance values of a two-port network, relating port voltages to port currents through a matrix.",
       "formula": "V1=z11 I1+z12 I2",
       "unit": 5,
       "unitTitle": "2-port parameters",
@@ -442,7 +442,7 @@
     {
       "id": "y-parameters",
       "term": "Y parameters",
-      "definition": "Short-circuit admittance parameters of a two-port network, relating port currents to port voltages through the y-matrix.",
+      "definition": "Short-circuit admittance values of a two-port network, relating port currents to port voltages through a matrix.",
       "formula": "I1=y11 V1+y12 V2",
       "unit": 5,
       "unitTitle": "2-port parameters",
@@ -453,7 +453,7 @@
     {
       "id": "h-parameters",
       "term": "H parameters",
-      "definition": "Hybrid parameters of a two-port network that mix impedance and admittance dimensions, relating port voltages and currents, and are widely used in transistor models.",
+      "definition": "Hybrid values of a two-port network that mix impedance and admittance dimensions, relating port voltages and currents, and are widely used in transistor models.",
       "formula": "V1=h11 I1+h12 V2",
       "unit": 5,
       "unitTitle": "2-port parameters",
@@ -486,7 +486,7 @@
     {
       "id": "time-constant-rl",
       "term": "Time constant (RL)",
-      "definition": "Time for transient to decay in an RL circuit.",
+      "definition": "Interval for the transient to decay in a circuit of inductance and resistance, equal to inductance divided by resistance.",
       "formula": "τ=L/R",
       "unit": 6,
       "unitTitle": "Transients",
@@ -497,7 +497,7 @@
     {
       "id": "time-constant-rc",
       "term": "Time constant (RC)",
-      "definition": "Time for transient to decay in an RC circuit.",
+      "definition": "Interval for the transient to decay in a circuit of capacitance and resistance, equal to resistance times capacitance.",
       "formula": "τ=RC",
       "unit": 6,
       "unitTitle": "Transients",
@@ -508,7 +508,7 @@
     {
       "id": "inductor-at-t0",
       "term": "Inductor at t=0+",
-      "definition": "Inductor behaves as an open circuit just after switching.",
+      "definition": "Coil that acts as an open circuit just after switching, because its current cannot change instantly.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Transients",
@@ -519,7 +519,7 @@
     {
       "id": "capacitor-at-t0",
       "term": "Capacitor at t=0+",
-      "definition": "Capacitor behaves as a short circuit just after switching.",
+      "definition": "Component that acts as a short circuit just after switching, because its voltage cannot change instantly.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Transients",

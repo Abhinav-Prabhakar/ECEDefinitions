@@ -35,7 +35,7 @@
     {
       "id": "rectangular-waveguide",
       "term": "Rectangular waveguide",
-      "definition": "A hollow metallic waveguide with a rectangular cross-section used at microwave frequencies.",
+      "definition": "Hollow metallic pipe of oblong cross-section used at microwave frequencies.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
@@ -68,7 +68,7 @@
     {
       "id": "te-wave",
       "term": "TE wave",
-      "definition": "An electromagnetic wave whose electric field is transverse to the direction of propagation.",
+      "definition": "Electromagnetic oscillation whose electric field is transverse to the direction of propagation.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
@@ -79,7 +79,7 @@
     {
       "id": "tm-wave",
       "term": "TM wave",
-      "definition": "An electromagnetic wave whose magnetic field is transverse to the direction of propagation.",
+      "definition": "Electromagnetic oscillation whose magnetic field is transverse to the direction of propagation.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
@@ -244,7 +244,7 @@
     {
       "id": "bunching",
       "term": "Bunching",
-      "definition": "The grouping of electrons into bunches as they drift after velocity modulation.",
+      "definition": "Grouping of electrons into clusters as they drift after velocity modulation.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Microwave Tubes",
@@ -266,7 +266,7 @@
     {
       "id": "two-cavity-klystron",
       "term": "Two-cavity klystron",
-      "definition": "A klystron amplifier with a buncher cavity and a catcher cavity.",
+      "definition": "Amplifier with a buncher resonator and a catcher resonator.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Microwave Tubes",

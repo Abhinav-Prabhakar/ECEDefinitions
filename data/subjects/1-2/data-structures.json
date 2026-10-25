@@ -13,7 +13,7 @@
     {
       "id": "structure",
       "term": "Structure",
-      "definition": "A structure is a collection of one or more variables, possibly of different data types, grouped under a single name.",
+      "definition": "Collection of one or more variables, possibly of different data types, grouped under a single name.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction, Arrays, Structures",
@@ -35,7 +35,7 @@
     {
       "id": "type-defined-structure",
       "term": "Type-defined structure",
-      "definition": "A structure definition prefixed with typedef, so its name becomes a user-defined data type.",
+      "definition": "Record declaration prefixed with typedef so that its name can be used directly as a data type.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction, Arrays, Structures",
@@ -46,7 +46,7 @@
     {
       "id": "array-of-structures",
       "term": "Array of structures",
-      "definition": "An array whose elements are structures, allowing multiple related structure variables to be stored together.",
+      "definition": "Contiguous sequence whose elements are grouped records, allowing multiple related variables to be stored together.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction, Arrays, Structures",
@@ -159,7 +159,7 @@
     {
       "id": "abstract-data-type",
       "term": "Abstract data type (ADT)",
-      "definition": "An abstract data type is defined by its data values and operations, without implementation details.",
+      "definition": "Model defined by its permitted values and operations, independent of any implementation details.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -170,7 +170,7 @@
     {
       "id": "stack",
       "term": "Stack",
-      "definition": "A stack is an ordered collection of homogeneous elements where insertion and deletion occur at one end called top.",
+      "definition": "An ordered collection of homogeneous elements where insertion and deletion occur only at one end, called the top.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -181,7 +181,7 @@
     {
       "id": "lifo",
       "term": "LIFO (Last In First Out)",
-      "definition": "Last In First Out means the element inserted last into a stack is deleted first.",
+      "definition": "Discipline in which the element inserted most recently is the first one removed.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -192,7 +192,7 @@
     {
       "id": "queue",
       "term": "Queue",
-      "definition": "A queue is a linear data structure where insertion occurs at the rear and deletion at the front.",
+      "definition": "Linear data structure where insertion occurs at the rear and deletion at the front.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -203,7 +203,7 @@
     {
       "id": "fifo",
       "term": "FIFO (First In First Out)",
-      "definition": "First In First Out means the element inserted first into a queue is deleted first.",
+      "definition": "Discipline in which the element inserted earliest is the first one removed.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -214,7 +214,7 @@
     {
       "id": "circular-queue",
       "term": "Circular queue",
-      "definition": "A circular queue connects the last position back to the first, forming a ring buffer.",
+      "definition": "Linear structure that connects its last position back to the first, forming a ring buffer.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -225,7 +225,7 @@
     {
       "id": "deque",
       "term": "Deque (double-ended queue)",
-      "definition": "A deque is a homogeneous list where insertion and deletion can occur at both ends.",
+      "definition": "Homogeneous list where insertion and deletion can occur at both ends.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -236,7 +236,7 @@
     {
       "id": "priority-queue",
       "term": "Priority queue",
-      "definition": "A priority queue removes items according to their priority, with the highest priority first.",
+      "definition": "Structure that serves items in order of importance, always removing the most important first.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -247,7 +247,7 @@
     {
       "id": "push",
       "term": "Push",
-      "definition": "Push is the operation of inserting or adding an element onto a stack.",
+      "definition": "Operation of inserting or adding an element onto a stack.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -258,7 +258,7 @@
     {
       "id": "pop",
       "term": "Pop",
-      "definition": "Pop is the operation of deleting or removing an element from a stack.",
+      "definition": "Operation of deleting or removing an element from a stack.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
@@ -269,7 +269,7 @@
     {
       "id": "linked-list",
       "term": "Linked list",
-      "definition": "A linked list is a linear collection of homogeneous nodes whose order is maintained by pointers.",
+      "definition": "Linear collection of homogeneous nodes whose order is maintained by pointers.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Linked Lists",
@@ -280,7 +280,7 @@
     {
       "id": "node",
       "term": "Node",
-      "definition": "A node is an element of a linked list containing data and a pointer to the next node.",
+      "definition": "Element of a linked list containing data and a pointer to the next element.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Linked Lists",
@@ -291,7 +291,7 @@
     {
       "id": "singly-linked-list",
       "term": "Singly linked list",
-      "definition": "A singly linked list is traversable in one direction and ends with a null pointer.",
+      "definition": "List traversable in one direction whose last element ends with a null pointer.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Linked Lists",
@@ -302,7 +302,7 @@
     {
       "id": "doubly-linked-list",
       "term": "Doubly linked list",
-      "definition": "A doubly linked list is a two-way list where each node has forward and backward pointers.",
+      "definition": "Two-way list where each element has forward and backward pointers.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Linked Lists",
@@ -313,7 +313,7 @@
     {
       "id": "circular-linked-list",
       "term": "Circular linked list",
-      "definition": "A circular linked list is one where the last node's pointer points back to the first node.",
+      "definition": "List in which the last element's pointer points back to the first element.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Linked Lists",
@@ -324,7 +324,7 @@
     {
       "id": "tree",
       "term": "Tree",
-      "definition": "A tree is a finite set of nodes with a specially designated root and disjoint subtrees.",
+      "definition": "Finite set of nodes with a specially designated root and disjoint subtrees.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Trees",
@@ -335,7 +335,7 @@
     {
       "id": "binary-tree",
       "term": "Binary tree",
-      "definition": "A binary tree is a tree where each node has at most two subtrees, left and right.",
+      "definition": "Hierarchical structure where each node has at most two subtrees, left and right.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Trees",
@@ -346,7 +346,7 @@
     {
       "id": "binary-search-tree",
       "term": "Binary search tree",
-      "definition": "A binary search tree satisfies the BST property: left-subtree keys are smaller and right-subtree keys are larger.",
+      "definition": "Ordered structure in which every left-subtree key is smaller and every right-subtree key larger than the root.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Trees",
@@ -357,7 +357,7 @@
     {
       "id": "avl-tree",
       "term": "AVL tree",
-      "definition": "An AVL tree is a binary search tree whose left and right subtree heights differ by at most one.",
+      "definition": "Height-balanced search structure whose left and right subtree heights differ by at most one.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Trees",
@@ -390,7 +390,7 @@
     {
       "id": "graph",
       "term": "Graph",
-      "definition": "A graph is a pair G=(V,E) where V is a finite nonempty set of vertices and E is the set of edges.",
+      "definition": "Pair G=(V,E) where V is a finite nonempty set of vertices and E is the set of edges.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -401,7 +401,7 @@
     {
       "id": "directed-graph",
       "term": "Directed graph",
-      "definition": "A directed graph is one in which every edge has a direction.",
+      "definition": "Structure in which every edge has a direction.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -412,7 +412,7 @@
     {
       "id": "undirected-graph",
       "term": "Undirected graph",
-      "definition": "An undirected graph is one in which edges have no direction.",
+      "definition": "Structure in which the edges have no direction.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -423,7 +423,7 @@
     {
       "id": "adjacency-matrix",
       "term": "Adjacency matrix",
-      "definition": "An adjacency matrix is a square bit matrix indicating by 1 or 0 whether an edge connects each vertex pair.",
+      "definition": "Square bit matrix indicating by 1 or 0 whether an edge connects each pair of vertices.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -434,7 +434,7 @@
     {
       "id": "adjacency-list",
       "term": "Adjacency list",
-      "definition": "An adjacency list is a linked representation where each vertex stores a list of its adjacent vertices.",
+      "definition": "Linked representation where each vertex stores a list of its adjacent vertices.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -445,7 +445,7 @@
     {
       "id": "depth-first-search",
       "term": "Depth-first search (DFS)",
-      "definition": "Depth-first search explores as far as possible along each branch before backtracking, using a stack.",
+      "definition": "Traversal that explores as far as possible along each branch before backtracking, using a stack.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -456,7 +456,7 @@
     {
       "id": "breadth-first-search",
       "term": "Breadth-first search (BFS)",
-      "definition": "Breadth-first search visits all vertices at one level before moving to the next level, using a queue.",
+      "definition": "Traversal that visits all vertices at one level before moving to the next level, using a queue.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -467,7 +467,7 @@
     {
       "id": "max-heap",
       "term": "Max heap",
-      "definition": "A max heap is a complete or nearly complete binary tree where each node's key is greater than or equal to its descendants'.",
+      "definition": "Complete or nearly complete binary tree where each node's key is greater than or equal to its descendants'.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -478,7 +478,7 @@
     {
       "id": "hash-table",
       "term": "Hash table",
-      "definition": "A hash table stores key-value pairs and supports insertions, lookups and deletions in O(1) time.",
+      "definition": "Structure that stores key-value pairs and supports insertion, lookup and deletion in O(1) time.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
@@ -489,7 +489,7 @@
     {
       "id": "linear-search",
       "term": "Linear search",
-      "definition": "Linear search sequentially checks each array element until the item is found or the array ends.",
+      "definition": "Method that sequentially checks each array element until the item is found or the array ends.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
@@ -500,7 +500,7 @@
     {
       "id": "binary-search",
       "term": "Binary search",
-      "definition": "Binary search repeatedly compares the key with the middle element of a sorted array and halves the search interval.",
+      "definition": "Method that repeatedly compares the key with the middle element of a sorted array and halves the interval.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
@@ -511,7 +511,7 @@
     {
       "id": "selection-sort",
       "term": "Selection sort",
-      "definition": "Selection sort repeatedly selects the smallest element from the unsorted portion and swaps it into place.",
+      "definition": "Method that repeatedly selects the smallest element from the unsorted portion and swaps it into place.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
@@ -522,7 +522,7 @@
     {
       "id": "insertion-sort",
       "term": "Insertion sort",
-      "definition": "Insertion sort builds a sorted segment by inserting each next element into its correct position.",
+      "definition": "Method that builds a sorted segment by inserting each next element into its correct position.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
@@ -533,7 +533,7 @@
     {
       "id": "merge-sort",
       "term": "Merge sort",
-      "definition": "Merge sort divides the list into halves, sorts them, and merges the sorted halves.",
+      "definition": "Method that divides the list into halves, sorts them, and merges the sorted halves.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Searching and Sorting",

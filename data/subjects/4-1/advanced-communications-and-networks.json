@@ -50,7 +50,7 @@
     },
     {
       "term": "Run Length Property",
-      "definition": "Fundamental PN-property that about half of all runs have length 1, a quarter length 2, an eighth length 3, and a fraction 2^-n of runs have length n.",
+      "definition": "PN characteristic that about half of all stretches of identical bits have length 1, a quarter length 2, an eighth length 3, and 2^-n length n.",
       "unit": 1,
       "unitTitle": "Spread Spectrum Communications",
       "sources": [
@@ -105,7 +105,7 @@
     },
     {
       "term": "Barker Sequence",
-      "definition": "A specially designed binary sequence with almost ideal aperiodic autocorrelation; its time-reversed form is also a Barker sequence, and no longer ones exist.",
+      "definition": "Specially designed binary sequence with almost ideal aperiodic autocorrelation; its time-reversed form is also such a sequence, and no longer ones exist.",
       "unit": 1,
       "unitTitle": "Spread Spectrum Communications",
       "sources": [
@@ -270,7 +270,7 @@
     },
     {
       "term": "X.25 Protocol",
-      "definition": "A widely used CCITT (ITU-T) packet protocol that is a standard interface in the lower three layers.",
+      "definition": "A widely used CCITT (ITU-T) packet standard that is a common interface in the lower three layers.",
       "unit": 2,
       "unitTitle": "Wireless Networking",
       "sources": [
@@ -325,7 +325,7 @@
     },
     {
       "term": "Broadband ISDN (B-ISDN)",
-      "definition": "A broadband extension of ISDN based on asynchronous transfer mode (ATM) technology, supporting packet switching for high-bandwidth computer and video-imaging applications.",
+      "definition": "Wide-capacity extension of the digital telephone standard based on asynchronous transfer mode, supporting packet switching for high-capacity computer and video-imaging applications.",
       "unit": 2,
       "unitTitle": "Wireless Networking",
       "sources": [
@@ -424,7 +424,7 @@
     },
     {
       "term": "Wireless Application Protocol (WAP)",
-      "definition": "A universal, open standard from the WAP Forum giving wireless phones and terminals access to telephony and Internet information services on all wireless network technologies.",
+      "definition": "Universal, open standard from the industry forum giving portable phones and terminals access to telephony and Internet information services on all network technologies.",
       "unit": 3,
       "unitTitle": "Mobile IP and Wireless Access Protocol",
       "sources": [
@@ -457,7 +457,7 @@
     },
     {
       "term": "Wireless Transaction Protocol (WTP)",
-      "definition": "A lightweight, transaction-oriented (not connection-oriented) reliable transport protocol that dispenses with TCP overhead, suitable for thin clients over low-bandwidth wireless links, with three transaction classes.",
+      "definition": "A lightweight, operation-oriented reliable transport standard that dispenses with TCP overhead, suitable for thin clients over low-bandwidth links, with three classes.",
       "unit": 3,
       "unitTitle": "Mobile IP and Wireless Access Protocol",
       "sources": [

@@ -189,7 +189,7 @@
     {
       "id": "polar-coordinates-integral",
       "term": "Polar coordinates integral",
-      "definition": "Double integral expressed in polar coordinates with area element r dr dθ.",
+      "definition": "Two-dimensional accumulation over a plane using radius and angle variables, with area element r dr dθ.",
       "formula": "dA=r dr dθ",
       "unit": 2,
       "unitTitle": "Multiple integrals",
@@ -244,7 +244,7 @@
     {
       "id": "linear-pde",
       "term": "Linear PDE",
-      "definition": "A PDE linear in the unknown function and its derivatives, with coefficients depending only on independent variables.",
+      "definition": "Equation involving an unknown function and its partial derivatives in which the unknown and derivatives appear only to the first power, with coefficients depending on independent variables.",
       "formula": "",
       "unit": 3,
       "unitTitle": "PDEs",

@@ -123,7 +123,7 @@
     {
       "id": "harmonic-function",
       "term": "Harmonic function",
-      "definition": "Twice-differentiable real function u(x,y) satisfying Laplace's equation ∇²u=0 in a region; the real and imaginary parts of every analytic function are harmonic.",
+      "definition": "Twice-differentiable real-valued u(x,y) satisfying Laplace's equation ∇²u=0 in a region; the real and imaginary parts of every analytic map satisfy it.",
       "formula": "u_xx+u_yy=0",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
@@ -134,7 +134,7 @@
     {
       "id": "conjugate-harmonic",
       "term": "Conjugate harmonic function",
-      "definition": "Harmonic conjugate of u, the harmonic function v that makes f(z)=u+iv an analytic function satisfying the Cauchy-Riemann equations.",
+      "definition": "Companion v of u that makes f(z)=u+iv analytic and satisfies the Cauchy-Riemann equations.",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -255,7 +255,7 @@
     {
       "id": "fixed-point",
       "term": "Fixed point",
-      "definition": "Point z that remains unaltered under a transformation, satisfying w=f(z)=z; a nonidentity bilinear transform has at most two fixed points.",
+      "definition": "Point z that remains unaltered under a transformation, satisfying w=f(z)=z; a nonidentity bilinear transform has at most two such points.",
       "unit": 2,
       "unitTitle": "Conformal mapping/Cauchy",
       "sources": [
@@ -387,7 +387,7 @@
     {
       "id": "initial-value-theorem",
       "term": "Initial value theorem",
-      "definition": "Theorem giving the initial value f(0+) as the limit of sF(s) as s tends to infinity, valid provided F(s) is a proper rational function.",
+      "definition": "Result giving f(0+) as the limit of sF(s) as s tends to infinity, valid when F(s) is a proper rational function.",
       "formula": "f(0+)=lim_{s->infty} sF(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
@@ -398,7 +398,7 @@
     {
       "id": "final-value-theorem",
       "term": "Final value theorem",
-      "definition": "Theorem giving the final value f(∞) as the limit of sF(s) as s tends to zero, valid when sF(s) has poles only in the left half plane.",
+      "definition": "Result giving f(∞) as the limit of sF(s) as s tends to zero, valid when sF(s) has poles only in the left half plane.",
       "formula": "f(infty)=lim_{s->0} sF(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
@@ -409,7 +409,7 @@
     {
       "id": "convolution-theorem",
       "term": "Convolution theorem",
-      "definition": "Theorem stating that the Laplace transform of the convolution of two time functions equals the product of their individual Laplace transforms.",
+      "definition": "Result stating that the Laplace transform of ∫₀ᵗ f(τ)g(t−τ)dτ equals the product of the individual Laplace transforms F(s)G(s).",
       "formula": "L{f*g}=F(s)G(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
@@ -464,7 +464,7 @@
     {
       "id": "z-transform",
       "term": "Z-transform",
-      "definition": "Transform X(z) of a discrete sequence u_n, defined as the power series Σu_n z^-n and analogous to the Laplace transform for continuous signals.",
+      "definition": "Mapping X(z) of a discrete sequence u_n, defined as the power series Σu_n z^-n and analogous to the Laplace domain representation for continuous signals.",
       "formula": "Z{u_n}=sum_{n=0}^{infty} u_n z^{-n}",
       "unit": 6,
       "unitTitle": "Z-transform",
@@ -519,7 +519,7 @@
     {
       "id": "convolution-z",
       "term": "Convolution (Z)",
-      "definition": "Property stating that the Z-transform of the convolution of two sequences equals the product of their individual Z-transforms.",
+      "definition": "Property stating that the Z-transform of the sum Σ x(k)y(n−k) equals the product X(z)Y(z) of the individual Z-transforms.",
       "unit": 6,
       "unitTitle": "Z-transform",
       "sources": [

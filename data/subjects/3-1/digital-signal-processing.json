@@ -222,7 +222,7 @@
     {
       "id": "iir-linear-phase",
       "term": "Linear phase in IIR",
-      "definition": "A causal and stable IIR filter cannot have linear phase because it would require poles outside the unit circle.",
+      "definition": "A causal and stable recursive filter cannot have phase response proportional to frequency because that would require poles outside the unit circle.",
       "formula": "",
       "unit": 4,
       "unitTitle": "IIR filter design",
@@ -244,7 +244,7 @@
     {
       "id": "linear-phase-filter",
       "term": "Linear phase filter",
-      "definition": "Filter whose phase response is proportional to frequency, preserving signal shape; FIR can have exact linear phase if impulse response is symmetric.",
+      "definition": "System whose delay is constant across frequency, preserving signal shape; FIR can be exact if impulse response is symmetric.",
       "formula": "θ(ω) = -αω",
       "unit": 5,
       "unitTitle": "FIR filter design",
@@ -288,7 +288,7 @@
     {
       "id": "frequency-sampling-method",
       "term": "Frequency sampling method",
-      "definition": "FIR design method that samples the desired frequency response and obtains coefficients by IDFT.",
+      "definition": "FIR design technique that specifies the desired response at discrete points and obtains coefficients by IDFT.",
       "formula": "",
       "unit": 5,
       "unitTitle": "FIR filter design",
@@ -409,7 +409,7 @@
     {
       "id": "imaging",
       "term": "Imaging",
-      "definition": "Extra spectral copies (images) introduced by upsampling a discrete-time signal.",
+      "definition": "Extra spectral copies introduced by upsampling a discrete-time signal.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Multirate signal processing",

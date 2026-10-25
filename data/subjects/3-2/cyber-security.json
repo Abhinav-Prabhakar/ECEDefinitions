@@ -13,7 +13,7 @@
     {
       "id": "cyber-security",
       "term": "Cyber security",
-      "definition": "Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks and data from malicious attacks.",
+      "definition": "Practice of defending computers, servers, mobile devices, electronic systems, networks and data from malicious attacks.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -24,7 +24,7 @@
     {
       "id": "confidentiality",
       "term": "Confidentiality",
-      "definition": "Confidentiality is preventing the disclosure of data to unauthorized parties, keeping shared data private and anonymous.",
+      "definition": "Preventing the disclosure of data to unauthorized parties while keeping shared information private and anonymous.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -35,7 +35,7 @@
     {
       "id": "integrity",
       "term": "Integrity",
-      "definition": "Integrity is protecting information from being modified by unauthorized parties.",
+      "definition": "Protection of information from modification or deletion by unauthorized parties.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -46,7 +46,7 @@
     {
       "id": "availability",
       "term": "Availability",
-      "definition": "Availability is making sure that authorized parties are able to access the information when needed.",
+      "definition": "Ensuring that authorized parties can access information and system resources whenever they are needed.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -57,7 +57,7 @@
     {
       "id": "vulnerability",
       "term": "Vulnerability",
-      "definition": "A vulnerability is a weakness or lacuna in a policy, procedure, protocol, hardware or software that has the potential to cause damage or loss.",
+      "definition": "Weakness or gap in a policy, procedure, protocol, hardware or software that can cause damage or loss.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -68,7 +68,7 @@
     {
       "id": "threat",
       "term": "Threat",
-      "definition": "A threat is a possible security violation that might exploit the vulnerability of a system or asset.",
+      "definition": "Possible security violation that might exploit the weakness of a system or asset.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -79,7 +79,7 @@
     {
       "id": "risk",
       "term": "Risk",
-      "definition": "Risk is the product of threat probability and the potential loss that may result.",
+      "definition": "Product of the probability of an attack and the potential loss that may result.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -90,7 +90,7 @@
     {
       "id": "active-attack",
       "term": "Active attack",
-      "definition": "An active attack is a network exploit in which a hacker attempts to make changes to data on the target or data en route to the target.",
+      "definition": "Network exploit in which an attacker attempts to change data on the target or data in transit to it.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -101,7 +101,7 @@
     {
       "id": "passive-attack",
       "term": "Passive attack",
-      "definition": "A passive attack makes use of information from the system without affecting system resources, e.g. eavesdropping and traffic analysis.",
+      "definition": "Use of information from a system without affecting its resources, as in eavesdropping and traffic analysis.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -112,7 +112,7 @@
     {
       "id": "malware",
       "term": "Malware",
-      "definition": "Malware (malicious code) is software designed to take over or damage a computer user's operating system without the user's knowledge or approval.",
+      "definition": "Software designed to take over or damage a user's operating system without their knowledge or approval.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -123,7 +123,7 @@
     {
       "id": "virus",
       "term": "Virus",
-      "definition": "A virus is a program that attempts to damage a computer system and replicate itself to other computer systems, requiring a host file to replicate.",
+      "definition": "Program that damages a computer system and replicates itself to other systems, requiring a host file to reproduce.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -134,7 +134,7 @@
     {
       "id": "worm",
       "term": "Worm",
-      "definition": "A worm is a self-replicating program that infects one system and spreads to other systems on the network, e.g. Code Red.",
+      "definition": "Self-replicating program that infects one system and spreads to other systems on the network, such as Code Red.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -145,7 +145,7 @@
     {
       "id": "trojan-horse",
       "term": "Trojan horse",
-      "definition": "A Trojan horse is a malicious program disguised as legitimate software that cannot replicate itself and often carries spying or backdoor functions.",
+      "definition": "Malicious program disguised as legitimate software that cannot replicate itself and often carries spying or backdoor functions.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -156,7 +156,7 @@
     {
       "id": "logic-bomb",
       "term": "Logic bomb",
-      "definition": "A logic bomb is malware that lies dormant until a trigger activity, such as a specific date or program launch, activates it; it does not self-replicate.",
+      "definition": "Malware that lies dormant until a trigger activity, such as a specific date or program launch, activates it without self-replication.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -167,7 +167,7 @@
     {
       "id": "dos-attack",
       "term": "Denial of Service (DoS) attack",
-      "definition": "A denial of service (DoS) attack deprives users of access to a network or web resource by overwhelming the target with more traffic than it can handle.",
+      "definition": "Overwhelming a network or web resource with more traffic than it can handle, depriving legitimate users of access.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -178,7 +178,7 @@
     {
       "id": "spoofing",
       "term": "Spoofing",
-      "definition": "Spoofing is a situation in which one person or program successfully masquerades as another by falsifying information to gain an illegitimate advantage.",
+      "definition": "Situation in which one person or program masquerades as another by falsifying information to gain an illegitimate advantage.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -189,7 +189,7 @@
     {
       "id": "ip-spoofing",
       "term": "IP spoofing",
-      "definition": "IP spoofing is the creation of IP packets with a forged source address to conceal the sender's identity or impersonate another computing system.",
+      "definition": "Creation of IP packets with a forged source address to conceal the sender's identity or impersonate another system.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -200,7 +200,7 @@
     {
       "id": "security-policy",
       "term": "Security policy",
-      "definition": "A security policy is the set of rules and practices that regulate how an organization manages and protects its computing and communication resources.",
+      "definition": "Set of rules and practices that regulate how an organization manages and protects its computing and communication resources.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -211,7 +211,7 @@
     {
       "id": "non-repudiation",
       "term": "Non-repudiation",
-      "definition": "Non-repudiation offers a guarantee against denial by a party that it created or sent a particular message.",
+      "definition": "Guarantee against denial by a party that it created or sent a particular message.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -222,7 +222,7 @@
     {
       "id": "cyberspace",
       "term": "Cyberspace",
-      "definition": "Cyberspace is the electronic medium of digital networks used to store, modify and communicate information, including the Internet.",
+      "definition": "Electronic medium of digital networks used to store, modify and communicate information, including the Internet.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -233,7 +233,7 @@
     {
       "id": "cyber-warfare",
       "term": "Cyber warfare",
-      "definition": "Cyber warfare is the use of digital attacks, like computer viruses and hacking, by a nation-state to disrupt the vital computer systems of another.",
+      "definition": "Use of digital attacks, such as computer viruses and hacking, by a nation-state to disrupt another country's vital computer systems.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -244,7 +244,7 @@
     {
       "id": "cyber-terrorism",
       "term": "Cyber terrorism",
-      "definition": "Cyber terrorism is the convergence of cyberspace and terrorism—unlawful attacks against computers and networks to intimidate or coerce a government or its people.",
+      "definition": "Convergence of digital networks and terrorism: unlawful attacks against computers and networks to intimidate or coerce a government or its people.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -255,7 +255,7 @@
     {
       "id": "cyber-espionage",
       "term": "Cyber espionage",
-      "definition": "Cyber espionage is the act of obtaining secrets without the permission and knowledge of the holder, via the Internet, for personal, economic, political or military advantage.",
+      "definition": "Act of obtaining secrets without the permission or knowledge of the holder via the Internet, for personal, economic, political or military advantage.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
@@ -266,7 +266,7 @@
     {
       "id": "computer-forensics",
       "term": "Computer forensics",
-      "definition": "Computer forensics involves the preservation, identification, extraction, documentation and interpretation of computer media for evidentiary and root cause analysis.",
+      "definition": "Preservation, identification, extraction, documentation and interpretation of computer media for evidentiary and root cause analysis.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Cyber Forensics",
@@ -277,7 +277,7 @@
     {
       "id": "digital-evidence",
       "term": "Digital evidence",
-      "definition": "Digital evidence is any information, subject to human intervention or not, that can be extracted from a computer.",
+      "definition": "Any information, subject to human intervention or not, that can be extracted from a computer.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Cyber Forensics",
@@ -288,7 +288,7 @@
     {
       "id": "smtp",
       "term": "SMTP",
-      "definition": "SMTP (Simple Mail Transfer Protocol) is a set of communication guidelines that allow software to transmit electronic mail over the Internet.",
+      "definition": "Set of communication guidelines that allow software to transmit electronic mail over the Internet.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Cyber Forensics",
@@ -299,7 +299,7 @@
     {
       "id": "s-mime",
       "term": "S/MIME",
-      "definition": "S/MIME is a security-enhanced version of MIME that provides digital signatures and encryption of Internet messages.",
+      "definition": "Security-enhanced version of the Internet mail extension standard that provides digital signatures and encryption of messages.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Cyber Forensics",
@@ -310,7 +310,7 @@
     {
       "id": "admissibility-of-evidence",
       "term": "Admissibility of evidence",
-      "definition": "Admissibility of evidence refers to the legal rules that determine whether potential evidence can be considered by a court.",
+      "definition": "Legal rules that determine whether potential evidence can be considered by a court.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Cyber Forensics",
@@ -321,7 +321,7 @@
     {
       "id": "mobile-device",
       "term": "Mobile device",
-      "definition": "A mobile device is easy to use, enables remote access to business networks and the Internet, and enables quick transfer of data.",
+      "definition": "Portable, easy-to-use computing device that enables remote access to business networks and the Internet and quick data transfer.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Cybercrime: Mobile and Wireless Devices",
@@ -332,7 +332,7 @@
     {
       "id": "push-attack",
       "term": "Push attack",
-      "definition": "In a push attack, the attacker creates malicious code at the user's mobile device by hacking it and then spreads it to other elements of the network.",
+      "definition": "Attack in which the attacker creates malicious code on a user's portable device by hacking it and then spreads it to other network elements.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Cybercrime: Mobile and Wireless Devices",
@@ -343,7 +343,7 @@
     {
       "id": "cabir-worm",
       "term": "Cabir worm",
-      "definition": "The Cabir worm is malware that infects mobile phones running Symbian OS and spreads to other phones using wireless Bluetooth signals.",
+      "definition": "Malware that infects mobile phones running Symbian OS and spreads to other phones using wireless Bluetooth signals.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Cybercrime: Mobile and Wireless Devices",
@@ -354,7 +354,7 @@
     {
       "id": "security-breach",
       "term": "Security breach",
-      "definition": "A security breach is the unauthorized acquisition of data that compromises the security, confidentiality and integrity of personal information.",
+      "definition": "Unauthorized acquisition of data that compromises the security, confidentiality and integrity of personal information.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -365,7 +365,7 @@
     {
       "id": "insider-threat",
       "term": "Insider threat",
-      "definition": "An insider threat is the misuse or destruction of sensitive or confidential information and IT equipment by employees, contractors and other trusted individuals.",
+      "definition": "Misuse or destruction of sensitive or confidential information and IT equipment by employees, contractors and other trusted individuals.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -387,7 +387,7 @@
     {
       "id": "trademark",
       "term": "Trademark",
-      "definition": "A trademark is a distinctive sign used by a business to uniquely identify itself and its products or services, and to distinguish them from other businesses.",
+      "definition": "Distinctive sign used by a business to uniquely identify itself and its products or services, and to distinguish them from other businesses.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -409,7 +409,7 @@
     {
       "id": "digital-rights-management",
       "term": "Digital rights management",
-      "definition": "Digital rights management (DRM) is a systematic approach to copyright protection for digital media that prevents unauthorized redistribution and restricts copying.",
+      "definition": "Systematic approach to copyright protection for digital media that prevents unauthorized redistribution and restricts copying.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -420,7 +420,7 @@
     {
       "id": "spamdexing",
       "term": "Spamdexing",
-      "definition": "Spamdexing (search engine spamming) is the practice of creating websites that will be illegitimately indexed with a high position in search engines.",
+      "definition": "Practice of creating websites that will be illegitimately indexed with a high position in search engines.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Cyber Security: Organizational Implications",
@@ -431,7 +431,7 @@
     {
       "id": "data-privacy",
       "term": "Data privacy",
-      "definition": "Data privacy is the part of the data protection area that deals with the proper handling of data based on its relative importance.",
+      "definition": "Part of data protection that deals with the proper handling of information based on its relative importance.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Privacy Issues",
@@ -442,7 +442,7 @@
     {
       "id": "pii",
       "term": "Personally identifiable information",
-      "definition": "Personally identifiable information (PII) can be used to distinguish or trace an individual's identity, alone or when combined with other linking information.",
+      "definition": "Information that can be used to distinguish or trace an individual's identity, alone or combined with other linking information.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Privacy Issues",
@@ -453,7 +453,7 @@
     {
       "id": "gdpr",
       "term": "GDPR",
-      "definition": "The General Data Protection Regulation (GDPR) is a legal framework setting guidelines for the collection and processing of personal information of individuals in the European Union.",
+      "definition": "Legal framework setting guidelines for the collection and processing of personal information of individuals in the European Union.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Privacy Issues",
@@ -464,7 +464,7 @@
     {
       "id": "privacy-notice",
       "term": "Privacy notice",
-      "definition": "A privacy notice (privacy statement) is a statement made to a data subject describing how the organization collects, uses, retains and discloses personal information.",
+      "definition": "Statement made to a data subject describing how an organization collects, uses, retains and discloses personal information.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Privacy Issues",
@@ -475,7 +475,7 @@
     {
       "id": "data-masking",
       "term": "Data masking",
-      "definition": "Data masking ensures data is stored or transmitted with only the minimal details required for a specific transaction, with other details masked or omitted.",
+      "definition": "Ensuring data is stored or transmitted with only the minimal details required for a specific transaction, with other details hidden or omitted.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Privacy Issues",
@@ -486,7 +486,7 @@
     {
       "id": "data-linking",
       "term": "Data linking",
-      "definition": "Data linking brings together information from different sources to create a new, richer dataset by identifying and combining corresponding records.",
+      "definition": "Bringing together information from different sources to create a new, richer dataset by identifying and combining corresponding records.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Privacy Issues",
@@ -508,7 +508,7 @@
     {
       "id": "computer-related-crime",
       "term": "Computer-related crime",
-      "definition": "In the general sense, a computer-related crime is any illegal behavior committed by means of, or in relation to, a computer system or network.",
+      "definition": "Any illegal behavior committed by means of, or in relation to, a computer system or network.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Cyberspace and the Law",
@@ -519,7 +519,7 @@
     {
       "id": "computer-it-act-2000",
       "term": "Computer (IT Act 2000)",
-      "definition": "Under Section 2 of the IT Act, a computer is any electronic, magnetic, optical or other high-speed data processing device performing logical, arithmetic and memory functions.",
+      "definition": "Electronic, magnetic or optical high-speed data processing device that performs logical, arithmetic and memory functions under Section 2 of the IT Act.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Cyberspace and the Law",
@@ -530,7 +530,7 @@
     {
       "id": "computer-resource",
       "term": "Computer resource",
-      "definition": "Under the IT Act, a computer resource means a computer, computer system, computer network, data, computer database or software.",
+      "definition": "Under the IT Act, any hardware, software, network, data or database facility covered by the legislation.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Cyberspace and the Law",
@@ -552,7 +552,7 @@
     {
       "id": "it-act-2000",
       "term": "IT Act 2000",
-      "definition": "The IT Act 2000 provides legal recognition for transactions carried out by means of electronic data interchange and other electronic communication (electronic commerce).",
+      "definition": "Legislation providing legal recognition for transactions carried out by electronic data interchange and other electronic communication, known as electronic commerce.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Cyberspace and the Law",

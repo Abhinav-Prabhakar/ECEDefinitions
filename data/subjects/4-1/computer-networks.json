@@ -100,7 +100,7 @@
     },
     {
       "term": "OSI Reference Model",
-      "definition": "Seven-layer ISO model (Open Systems Interconnection) for understanding and designing a network architecture.",
+      "definition": "Seven-layer framework for understanding and designing how network functions are partitioned and communicate.",
       "unit": 1,
       "unitTitle": "Introduction & OSI Reference Model",
       "sources": [
@@ -199,7 +199,7 @@
     },
     {
       "term": "HDLC",
-      "definition": "High-level Data Link Control: bit-oriented protocol for point-to-point and multipoint links, using I, S and U frames.",
+      "definition": "Bit-oriented protocol for point-to-point and multipoint links, using I, S and U frames.",
       "unit": 2,
       "unitTitle": "Data Link Layer",
       "sources": [
@@ -353,7 +353,7 @@
     },
     {
       "term": "Link State Routing",
-      "definition": "Each node floods its link state packets, learns the full topology and computes its routing table using Dijkstra's algorithm.",
+      "definition": "Each node floods packets describing its local connections, learns the full topology and computes its forwarding table using Dijkstra's algorithm.",
       "unit": 4,
       "unitTitle": "Network Layer",
       "sources": [
@@ -419,7 +419,7 @@
     },
     {
       "term": "NAT",
-      "definition": "Network Address Translation maps private internal addresses to the company's public IP using the TCP source port as table index.",
+      "definition": "Maps private internal addresses to a company's public IP using the TCP source port as table index.",
       "unit": 5,
       "unitTitle": "Network Layer in the Internet",
       "sources": [
@@ -430,7 +430,7 @@
     },
     {
       "term": "DHCP",
-      "definition": "Dynamic Host Configuration Protocol: a DHCP server leases IP addresses and configures host parameters automatically.",
+      "definition": "Server service that leases IP addresses and configures host parameters automatically for clients joining a network.",
       "unit": 5,
       "unitTitle": "Network Layer in the Internet",
       "sources": [
@@ -507,7 +507,7 @@
     },
     {
       "term": "DNS",
-      "definition": "Domain Name System: maps host names to IP addresses and vice versa using distributed, hierarchical name servers.",
+      "definition": "Internet service that maps host names to IP addresses and back using a distributed hierarchy of name servers.",
       "unit": 6,
       "unitTitle": "Transport & Application Layers",
       "sources": [
@@ -518,7 +518,7 @@
     },
     {
       "term": "SMTP",
-      "definition": "Simple Mail Transfer Protocol defines MTA client and server commands and responses for moving mail between systems.",
+      "definition": "Protocol defining the MTA client and server commands and responses used to move e-mail between systems.",
       "unit": 6,
       "unitTitle": "Transport & Application Layers",
       "sources": [
@@ -529,7 +529,7 @@
     },
     {
       "term": "MIME",
-      "definition": "Multipurpose Internet Mail Extensions transforms non-ASCII e-mail data to NVT ASCII data for transmission through the Internet.",
+      "definition": "Transforms non-ASCII e-mail data to NVT ASCII data for transmission through the Internet.",
       "unit": 6,
       "unitTitle": "Transport & Application Layers",
       "sources": [
@@ -540,7 +540,7 @@
     },
     {
       "term": "FTP",
-      "definition": "File Transfer Protocol copies files between hosts using two TCP connections: control on port 21 and data on port 20.",
+      "definition": "Copies files between hosts using two TCP connections: control on port 21 and data on port 20.",
       "unit": 6,
       "unitTitle": "Transport & Application Layers",
       "sources": [

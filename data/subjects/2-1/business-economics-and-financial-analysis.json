@@ -431,7 +431,7 @@
     {
       "id": "revenue-expenditure",
       "term": "Revenue expenditure",
-      "definition": "Expenditure incurred for generating revenue in the current accounting period.",
+      "definition": "Cost incurred for generating income in the current accounting period.",
       "unit": 5,
       "unitTitle": "Financial Statements",
       "sources": [
@@ -464,7 +464,7 @@
     {
       "id": "profit-and-loss-account",
       "term": "Profit and loss account",
-      "definition": "An account prepared to ascertain the net profit or loss of a period.",
+      "definition": "Statement prepared to ascertain net income or shortfall of a period.",
       "unit": 5,
       "unitTitle": "Financial Statements",
       "sources": [
@@ -497,7 +497,7 @@
     {
       "id": "current-ratio",
       "term": "Current ratio",
-      "definition": "The ratio of current assets to current liabilities.",
+      "definition": "Liquid assets divided by short-term obligations, measuring a firm's ability to meet dues.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "formula": "CA / CL",
@@ -508,7 +508,7 @@
     {
       "id": "quick-ratio",
       "term": "Quick ratio",
-      "definition": "The ratio of quick assets to current liabilities.",
+      "definition": "Highly liquid assets divided by short-term obligations, excluding inventory.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
       "sources": [

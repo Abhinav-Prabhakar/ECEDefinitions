@@ -168,7 +168,7 @@
     {
       "id": "n-well-process",
       "term": "n-well process",
-      "definition": "CMOS fabrication approach in which a deep n-well is diffused into a p-substrate to host the pMOS transistors, using around eight process masks.",
+      "definition": "CMOS fabrication approach in which a deep n-doped region is diffused into a p-substrate to host pMOS transistors, using around eight masks.",
       "formula": "",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
@@ -301,7 +301,7 @@
     {
       "id": "nmos-inverter",
       "term": "NMOS inverter",
-      "definition": "An inverter with a pull-down nMOS and a transistor pull-up in series between VDD and ground, restoring logic levels.",
+      "definition": "Logic gate with a pull-down n-channel transistor and a pull-up transistor in series between VDD and ground, restoring levels.",
       "formula": "",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
@@ -390,7 +390,7 @@
     {
       "id": "3-to-8-decoder",
       "term": "3-to-8 decoder",
-      "definition": "Decoder that converts a 3-bit input code into one of 8 mutually exclusive one-hot output lines.",
+      "definition": "Logic block that converts a 3-bit input code into one of eight mutually exclusive one-hot output lines.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Combinational & Sequential Blocks",
@@ -401,7 +401,7 @@
     {
       "id": "8x3-encoder",
       "term": "8×3 encoder",
-      "definition": "Encoder that converts one of 8 active input lines into a 3-bit binary output code.",
+      "definition": "Logic block that converts one of eight active input lines into a 3-bit binary output code.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Combinational & Sequential Blocks",
@@ -458,7 +458,7 @@
     {
       "id": "oxidation",
       "term": "Oxidation",
-      "definition": "Fabrication step in which silicon reacts with oxygen to form SiO2 in 1000–1200 °C ultra-clean furnaces; dry oxidation uses high-purity O2 gas and wet oxidation uses steam.",
+      "definition": "Fabrication step in which silicon reacts with oxygen at 1000–1200 °C in ultra-clean furnaces; the dry form uses O2 gas and the wet form uses steam.",
       "formula": "",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
@@ -513,7 +513,7 @@
     {
       "id": "probe-testing",
       "term": "Probe testing",
-      "definition": "Wafer-level electrical test in which probe needles contact each die's bonding pads and the whole die is tested; failed dice are marked with a drop of ink.",
+      "definition": "Wafer-level electrical check in which needles contact each die's bonding pads and the whole die is exercised; failed dice are marked with ink.",
       "formula": "",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
@@ -557,7 +557,7 @@
     {
       "id": "junction-capacitor",
       "term": "Junction capacitor",
-      "definition": "Integrated capacitor formed by a reverse-biased PN junction whose depletion region acts as the dielectric; used as a varactor and works only under reverse bias.",
+      "definition": "Integrated component formed by a reverse-biased semiconductor boundary whose depletion region acts as the dielectric; used as a varactor and works only under reverse bias.",
       "formula": "",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",

@@ -90,7 +90,7 @@
     {
       "id": "small-signal-amplifier",
       "term": "Small-signal amplifier",
-      "definition": "An amplifier that handles small AC signals with the transistor in the active region.",
+      "definition": "Circuit that boosts low-amplitude alternating waveforms with the transistor kept in its active region.",
       "unit": 1,
       "unitTitle": "Transistor Amplifiers and Biasing",
       "sources": [
@@ -101,7 +101,7 @@
     {
       "id": "power-amplifier",
       "term": "Power amplifier",
-      "definition": "An amplifier designed to deliver large power to a load.",
+      "definition": "Circuit designed to deliver a large amount of energy per unit time to a load.",
       "unit": 1,
       "unitTitle": "Transistor Amplifiers and Biasing",
       "sources": [
@@ -112,7 +112,7 @@
     {
       "id": "rc-coupling",
       "term": "RC coupling",
-      "definition": "Interstage coupling using a capacitor and resistor between amplifier stages.",
+      "definition": "Interstage connection using a capacitor and resistor between amplifier stages.",
       "unit": 2,
       "unitTitle": "Multistage Amplifiers",
       "sources": [
@@ -123,7 +123,7 @@
     {
       "id": "transformer-coupling",
       "term": "Transformer coupling",
-      "definition": "Interstage coupling using a transformer for impedance matching.",
+      "definition": "Interstage connection using a magnetic component for impedance matching.",
       "unit": 2,
       "unitTitle": "Multistage Amplifiers",
       "sources": [
@@ -376,7 +376,7 @@
     {
       "id": "sweep-circuit",
       "term": "Sweep circuit",
-      "definition": "A circuit that generates a linear ramp (sweep) voltage for time-base signals.",
+      "definition": "Arrangement that generates a linear ramp voltage for time-base deflection.",
       "unit": 5,
       "unitTitle": "Time-Base Generators and Wave Shaping",
       "sources": [

@@ -68,7 +68,7 @@
     {
       "id": "virtual-ground",
       "term": "Virtual ground",
-      "definition": "When one input terminal is grounded, the other terminal sits at ground potential due to virtual short.",
+      "definition": "Node that sits at nearly zero potential because feedback forces the two input terminals to the same voltage.",
       "unit": 1,
       "unitTitle": "Op-amp Fundamentals",
       "sources": [
@@ -310,7 +310,7 @@
     {
       "id": "active-filter",
       "term": "Active filter",
-      "definition": "Filter using active elements such as op-amps/transistors along with R, L, C.",
+      "definition": "Circuit using amplifiers or transistors, along with resistors and capacitors, to shape a signal.",
       "unit": 4,
       "unitTitle": "Active Filters",
       "sources": [
@@ -420,7 +420,7 @@
     {
       "id": "loop-gain",
       "term": "Loop gain",
-      "definition": "Product Aβ of amplifier open-loop gain A and feedback factor β.",
+      "definition": "Product Aβ of the amplifier forward gain A and the feedback factor β.",
       "unit": 5,
       "unitTitle": "Oscillators",
       "sources": [

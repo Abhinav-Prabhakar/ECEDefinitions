@@ -79,7 +79,7 @@
     {
       "id": "coaxial-capacitor",
       "term": "Coaxial capacitor",
-      "definition": "A capacitor formed by two coaxial cylindrical conductors separated by a dielectric.",
+      "definition": "Component formed by two concentric cylindrical conductors separated by a dielectric.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Electrostatics",
@@ -90,7 +90,7 @@
     {
       "id": "spherical-capacitor",
       "term": "Spherical capacitor",
-      "definition": "A capacitor formed by two concentric spherical conducting shells separated by a dielectric.",
+      "definition": "Component formed by two nested conducting shells separated by a dielectric.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Electrostatics",
@@ -145,7 +145,7 @@
     {
       "id": "maxwell-electrostatic",
       "term": "Maxwell equations (electrostatic)",
-      "definition": "Gauss's law plus the conservative (irrotational) nature of the electrostatic field.",
+      "definition": "Gauss's law plus the conservative, irrotational nature of the electric field for static charges.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Electrostatics",
@@ -211,7 +211,7 @@
     {
       "id": "magnetic-scalar-potential",
       "term": "Magnetic scalar potential",
-      "definition": "A scalar potential whose negative gradient gives magnetic field in current-free regions.",
+      "definition": "Single-valued quantity whose negative gradient gives the field intensity H in current-free regions.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Magnetostatics",
@@ -222,7 +222,7 @@
     {
       "id": "magnetic-vector-potential",
       "term": "Magnetic vector potential",
-      "definition": "A vector potential whose curl gives magnetic flux density.",
+      "definition": "Quantity whose curl gives flux density in current-carrying regions.",
       "formula": "B = ∇×A",
       "unit": 2,
       "unitTitle": "Magnetostatics",
@@ -277,7 +277,7 @@
     {
       "id": "displacement-current",
       "term": "Displacement current",
-      "definition": "Current due to time variation of electric displacement field.",
+      "definition": "Flow due to time variation of the electric flux density.",
       "formula": "J_d = ∂D/∂t",
       "unit": 3,
       "unitTitle": "Time-varying fields",
@@ -387,7 +387,7 @@
     {
       "id": "phase-constant",
       "term": "Phase constant",
-      "definition": "Imaginary part of propagation constant representing phase change per unit length.",
+      "definition": "Imaginary part of the propagation coefficient representing change in angle per unit length.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Reflection/refraction of EM waves",
@@ -552,7 +552,7 @@
     {
       "id": "stub-matching",
       "term": "Stub matching",
-      "definition": "Technique of using a short-circuited or open-circuited stub to match a load.",
+      "definition": "Technique of using a short-circuited or open-circuited branch to match a load.",
       "formula": "",
       "unit": 6,
       "unitTitle": "HF transmission lines",

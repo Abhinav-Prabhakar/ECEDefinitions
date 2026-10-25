@@ -24,7 +24,7 @@
     {
       "id": "rtos",
       "term": "Real-Time Operating System (RTOS)",
-      "definition": "An operating system that supports real-time applications and embedded systems, meeting task deadlines in addition to logical correctness of results.",
+      "definition": "An executive for embedded applications that meets task deadlines in addition to producing logically correct results.",
       "unit": 1,
       "unitTitle": "RTOS Fundamentals & UNIX Intro",
       "sources": [
@@ -135,7 +135,7 @@
     {
       "id": "inode",
       "term": "Inode",
-      "definition": "A data structure in a UNIX-style file system storing all attributes of a file, identified by a unique inode number.",
+      "definition": "Data structure in a UNIX-style file system storing all attributes of a file and identified by a unique number.",
       "unit": 1,
       "unitTitle": "RTOS Fundamentals & UNIX Intro",
       "sources": [
@@ -234,7 +234,7 @@
     {
       "id": "utilization",
       "term": "Utilization",
-      "definition": "The fraction of time a truly periodic task with period pi and execution time ei keeps a processor busy; total utilization U is the sum of all ui.",
+      "definition": "Fraction of time a truly periodic task with period pi and execution time ei keeps a processor busy, summed over all tasks.",
       "formula": "ui = ei / pi",
       "unit": 2,
       "unitTitle": "Real-Time Systems",
@@ -245,7 +245,7 @@
     {
       "id": "release-time",
       "term": "Release Time",
-      "definition": "The instant at which a job becomes available for execution; when the exact value is unknown, the range [ri−, ri+] is called the release-time jitter.",
+      "definition": "Instant at which a job becomes available for execution; when the exact value is unknown, its range is called jitter.",
       "formula": "ri ∈ [ri−, ri+]",
       "unit": 2,
       "unitTitle": "Real-Time Systems",
@@ -435,7 +435,7 @@
     {
       "id": "rio-package",
       "term": "RIO Package",
-      "definition": "Robust I/O wrappers (rio_readn, rio_writen, rio_readlineb, rio_readnb) that handle short counts efficiently in network programs; the buffered routines are thread-safe.",
+      "definition": "Set of buffered input-output wrappers that handle short counts efficiently in network programs and remain thread-safe.",
       "unit": 4,
       "unitTitle": "UNIX File I/O",
       "sources": [
@@ -446,7 +446,7 @@
     {
       "id": "io-redirection",
       "term": "I/O Redirection",
-      "definition": "Shell redirection such as ls > foo.txt, implemented by calling dup2(oldfd, newfd), which copies descriptor-table entry oldfd to entry newfd.",
+      "definition": "Shell feature, such as ls > foo.txt, implemented by calling dup2(oldfd, newfd), which copies descriptor-table entry oldfd to entry newfd.",
       "unit": 4,
       "unitTitle": "UNIX File I/O",
       "sources": [

@@ -24,7 +24,7 @@
     {
       "id": "molecular-orbital-theory",
       "term": "Molecular orbital theory",
-      "definition": "Theory that atomic orbitals combine to form molecular orbitals spanning all nuclei.",
+      "definition": "Model in which atomic electron clouds combine to form new clouds spanning all nuclei in a molecule.",
       "formula": "",
       "unit": 1,
       "unitTitle": "Molecular structure",
@@ -167,7 +167,7 @@
     {
       "id": "polymerization",
       "term": "Polymerization",
-      "definition": "Chemical process in which a large number of small monomer molecules combine to form a very large polymer chain.",
+      "definition": "Chemical process in which many small monomer molecules combine into a very large chain.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Polymers & Lubricants",
@@ -288,7 +288,7 @@
     {
       "id": "conductance",
       "term": "Conductance",
-      "definition": "Ease with which a solution conducts electric current, given by the reciprocal of resistance and measured in siemens (Ω⁻¹).",
+      "definition": "Ease with which a solution carries electric current, given by the reciprocal of resistance and measured in siemens (Ω⁻¹).",
       "formula": "C=1/R",
       "unit": 4,
       "unitTitle": "Electro chemistry",
@@ -299,7 +299,7 @@
     {
       "id": "electrode-potential",
       "term": "Electrode potential",
-      "definition": "Potential difference between electrode and its ions at equilibrium.",
+      "definition": "Voltage difference between a metal surface and its ions at equilibrium.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Electro chemistry",
@@ -343,7 +343,7 @@
     {
       "id": "fuel-cell",
       "term": "Fuel cell",
-      "definition": "Electrochemical cell converting fuel-oxidant chemical energy to electricity continuously.",
+      "definition": "Electrochemical device converting chemical energy of continuously supplied reactants into electricity.",
       "formula": "",
       "unit": 4,
       "unitTitle": "Electro chemistry",

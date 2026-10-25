@@ -155,7 +155,7 @@
     },
     {
       "term": "Hydraulic Actuator",
-      "definition": "Actuator that uses hydraulic power in a cylinder or fluid motor to perform mechanical operation and can generate a large amount of force.",
+      "definition": "Device that uses pressurized fluid in a cylinder or motor to perform mechanical work and can generate large force.",
       "unit": 1,
       "unitTitle": "Introduction to IoT",
       "sources": [
@@ -232,7 +232,7 @@
     },
     {
       "term": "Raspberry Pi",
-      "definition": "Open-source, Linux-based credit-card-sized computer board created by the Raspberry Pi Foundation; interfaces sensors and actuators through GPIO pins.",
+      "definition": "Open-source, Linux-based credit-card-sized computer board that interfaces sensors and actuators through GPIO pins.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
       "sources": [
@@ -243,7 +243,7 @@
     },
     {
       "term": "GPIO",
-      "definition": "General Purpose Input/Output: generic pin on the Raspberry Pi controlled by the user at run time for input or output; the board has 40 pins.",
+      "definition": "Generic pin on the Raspberry Pi, controlled by the user at run time for input or output; the board exposes 40 such pins.",
       "unit": 2,
       "unitTitle": "Embedded Platform for IoT – RPi 3",
       "sources": [
@@ -309,7 +309,7 @@
     },
     {
       "term": "LEACH Protocol",
-      "definition": "Low Energy Adaptive Clustering Hierarchy protocol on which the clustered WSN architecture, with clusters and cluster heads, is based.",
+      "definition": "Low-energy clustering protocol for wireless sensor networks that groups nodes into clusters and rotates the cluster-head role to save energy.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
       "sources": [
@@ -342,7 +342,7 @@
     },
     {
       "term": "Mesh Topology",
-      "definition": "Topology in which each node also acts as a relay for other nodes' data; fully connected mesh links every node, partial mesh links only neighbours.",
+      "definition": "Arrangement in which each node also relays other nodes' data; fully connected form links every node, partial form links only neighbours.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
       "sources": [
@@ -364,7 +364,7 @@
     },
     {
       "term": "BSS",
-      "definition": "Basic Service Set: a group of stations communicating at the physical layer, either through an access point or peer-to-peer in an ad-hoc manner.",
+      "definition": "Group of stations communicating at the physical layer, either through an access point or peer-to-peer in an ad-hoc manner.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
       "sources": [
@@ -408,7 +408,7 @@
     },
     {
       "term": "Zigbee",
-      "definition": "Low-power, low-data-rate WPAN specification developed under IEEE 802.15.4 by the Zigbee Alliance for connecting many battery-powered control and sensor devices.",
+      "definition": "Low-power, low-data-rate WPAN specification developed under IEEE 802.15.4 for connecting many battery-powered control and sensor devices.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
       "sources": [
@@ -441,7 +441,7 @@
     },
     {
       "term": "NFC",
-      "definition": "Near Field Communication: short-range communication standard, based on RFID, enabling compatible devices to transmit data over radio waves.",
+      "definition": "Short-range communication standard, based on RFID, enabling compatible devices to transmit data over radio waves.",
       "unit": 3,
       "unitTitle": "IoT Wireless Networks",
       "sources": [

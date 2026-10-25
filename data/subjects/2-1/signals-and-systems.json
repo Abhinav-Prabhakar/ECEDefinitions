@@ -35,7 +35,7 @@
     {
       "id": "dt-signal",
       "term": "Discrete-time signal",
-      "definition": "Signal defined only at discrete instants of time.",
+      "definition": "Sequence defined only at discrete instants of time.",
       "formula": "x[n], n∈ℤ",
       "unit": 1,
       "unitTitle": "Signal classification & operations",
@@ -68,7 +68,7 @@
     {
       "id": "energy-signal",
       "term": "Energy signal",
-      "definition": "Finite total energy signal with zero average power.",
+      "definition": "Waveform whose total squared magnitude integrates to a finite value and whose average power is zero.",
       "formula": "E=∫|x(t)|²dt<∞",
       "unit": 1,
       "unitTitle": "Signal classification & operations",
@@ -189,7 +189,7 @@
     {
       "id": "static-system",
       "term": "Static (memoryless) system",
-      "definition": "Memoryless system whose output at any instant depends only on the present input value and not on any past or future input samples.",
+      "definition": "Arrangement whose output at any instant depends only on the present input value, not on past or future samples.",
       "unit": 2,
       "unitTitle": "LTI systems & convolution",
       "sources": [
@@ -244,7 +244,7 @@
     {
       "id": "stable-system",
       "term": "Stable (BIBO) system",
-      "definition": "BIBO-stable system whose output remains bounded by some finite constant whenever the input is bounded, guaranteeing no unbounded growth for finite excitation.",
+      "definition": "Arrangement whose output remains bounded by a finite constant whenever its input is bounded, guaranteeing no unbounded growth for finite excitation.",
       "unit": 2,
       "unitTitle": "LTI systems & convolution",
       "sources": [
@@ -365,7 +365,7 @@
     {
       "id": "convolution-property-ft",
       "term": "Convolution property (FT)",
-      "definition": "Fourier transform property stating that convolution of two signals in the time domain corresponds to simple multiplication of their individual transforms in frequency.",
+      "definition": "Result stating that the Fourier transform of ∫x(τ)h(t−τ)dτ equals X(ω)H(ω), turning a time-domain integral into multiplication in frequency.",
       "formula": "x(t)*h(t) ↔ X(ω)H(ω)",
       "unit": 3,
       "unitTitle": "Fourier transform",
@@ -442,7 +442,7 @@
     {
       "id": "initial-value-theorem-lt",
       "term": "Initial value theorem (LT)",
-      "definition": "Theorem stating that the initial value x(0+) of a causal signal equals the limit of sF(s) as s tends to infinity.",
+      "definition": "Result stating that x(0+) of a causal signal equals the limit of sF(s) as s tends to infinity.",
       "formula": "x(0+)=lim_{s→∞} sX(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
@@ -464,7 +464,7 @@
     {
       "id": "z-transform",
       "term": "Z-transform",
-      "definition": "Transform X(z)=Σx[n]z^-n that maps a discrete-time sequence into the complex z-domain, the discrete counterpart of the Laplace transform.",
+      "definition": "Mapping X(z)=Σx[n]z^-n that takes a discrete-time sequence into the complex z-domain, the discrete counterpart of the Laplace representation.",
       "formula": "X(z)=Σ x[n] z^{-n}",
       "unit": 5,
       "unitTitle": "Z-transform",
@@ -552,7 +552,7 @@
     {
       "id": "sampling-theorem",
       "term": "Sampling theorem",
-      "definition": "Sampling theorem stating that a bandlimited signal with maximum frequency fm is completely recovered by sampling at the Nyquist rate 2fm or faster.",
+      "definition": "Result stating that a bandlimited waveform with maximum frequency fm is completely recovered from samples taken at the Nyquist rate 2fm or faster.",
       "formula": "f_s≥2f_m",
       "unit": 6,
       "unitTitle": "Sampling theorem",
@@ -607,7 +607,7 @@
     {
       "id": "natural-sampling",
       "term": "Natural sampling",
-      "definition": "Sampling method in which the sampled pulse tops follow the natural variation of the message signal during each sampling interval, unlike flat-top sampling.",
+      "definition": "Method in which the pulse tops follow the message variation during each interval, unlike the flat-top approach.",
       "unit": 6,
       "unitTitle": "Sampling theorem",
       "sources": [
@@ -629,7 +629,7 @@
     {
       "id": "bandpass-sampling",
       "term": "Bandpass sampling",
-      "definition": "Sampling a bandpass signal at rate based on bandwidth.",
+      "definition": "Conversion of a band-limited high-frequency waveform to samples at a rate set by its bandwidth.",
       "formula": "f_s≥2B(1+M/N)",
       "unit": 6,
       "unitTitle": "Sampling theorem",

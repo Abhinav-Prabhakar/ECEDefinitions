@@ -189,7 +189,7 @@
     {
       "id": "profit-percentage",
       "term": "Profit percentage",
-      "definition": "Profit expressed as a percentage of cost price.",
+      "definition": "Gain divided by cost price and multiplied by 100.",
       "formula": "Profit% = (Profit / CP) x 100",
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
@@ -244,7 +244,7 @@
     {
       "id": "working-partner",
       "term": "Working partner",
-      "definition": "A partner who actively manages the business and takes part in its day-to-day working.",
+      "definition": "Active member who manages the business and takes part in its day-to-day affairs.",
       "unit": 2,
       "unitTitle": "Percentages and Profit & Loss",
       "sources": [
@@ -255,7 +255,7 @@
     {
       "id": "time-and-work",
       "term": "Time and work",
-      "definition": "Work done equals rate of work multiplied by time, the principle behind combined-work problems.",
+      "definition": "Principle that output equals rate multiplied by duration, behind combined-effort problems.",
       "formula": "Work = Rate x Time",
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
@@ -266,7 +266,7 @@
     {
       "id": "efficiency",
       "term": "Efficiency",
-      "definition": "Amount of work done per unit time; a worker with higher efficiency completes the job faster.",
+      "definition": "Amount of work completed per unit time; a worker with a higher rate finishes the job sooner.",
       "unit": 3,
       "unitTitle": "Time, Work and Mensuration",
       "sources": [

@@ -178,7 +178,7 @@
     {
       "id": "type-casting",
       "term": "Type casting",
-      "definition": "Forces the compiler to convert one data type to another using a cast operator.",
+      "definition": "Explicit conversion of a value from one representation to another using a unary operator.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Operators and Control Statements",
@@ -398,7 +398,7 @@
     {
       "id": "address-operator",
       "term": "Address operator",
-      "definition": "The & operator that extracts the address of a variable.",
+      "definition": "Unary operator that yields the memory location of a variable.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
@@ -420,7 +420,7 @@
     {
       "id": "pointer-to-pointer",
       "term": "Pointer to pointer",
-      "definition": "A pointer variable storing the address of another pointer variable.",
+      "definition": "Variable storing the memory location of another such variable, allowing indirect access through two levels.",
       "formula": "",
       "unit": 5,
       "unitTitle": "Pointers and Strings",

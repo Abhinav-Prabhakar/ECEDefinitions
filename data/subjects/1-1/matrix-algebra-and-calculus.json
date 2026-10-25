@@ -46,7 +46,7 @@
     {
       "id": "taylors-series",
       "term": "Taylor's series",
-      "definition": "The Taylor series expands f(x) about x=x0 as the sum over n of f^(n)(x0)(x-x0)^n/n!, assuming successive derivatives exist.",
+      "definition": "Expansion of f(x) about x=x0 as the sum over n of f^(n)(x0)(x-x0)^n/n!, assuming successive derivatives exist.",
       "formula": "f(x)=Σ f⁽ⁿ⁾(x₀)(x-x₀)ⁿ/n!",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",
@@ -57,7 +57,7 @@
     {
       "id": "maclaurin-series",
       "term": "Maclaurin series",
-      "definition": "The Maclaurin series expands f(x) about 0 as the sum over n of f^(n)(0) x^n/n!, assuming successive derivatives exist.",
+      "definition": "Expansion of f(x) about 0 as the sum over n of f^(n)(0) x^n/n!, assuming successive derivatives exist.",
       "formula": "f(x)=Σ f⁽ⁿ⁾(0)xⁿ/n!",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",

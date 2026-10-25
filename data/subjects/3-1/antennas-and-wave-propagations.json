@@ -310,7 +310,7 @@
     {
       "id": "binomial-array",
       "term": "Binomial array",
-      "definition": "An array whose element amplitudes follow binomial coefficients, eliminating side lobes.",
+      "definition": "Radiating structure whose element amplitudes follow coefficients of (1+x)^n, eliminating side lobes.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Linear Wire Antennas and Arrays",
@@ -365,7 +365,7 @@
     {
       "id": "reflector-antenna",
       "term": "Reflector antenna",
-      "definition": "A highly directional antenna with an active feed and a passive reflector.",
+      "definition": "Highly directional radiating structure with an active feed and a passive reflecting surface.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Aperture and Reflector Antennas",

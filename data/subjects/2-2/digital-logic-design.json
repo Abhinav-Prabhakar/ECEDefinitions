@@ -365,7 +365,7 @@
     {
       "id": "sr-flip-flop",
       "term": "SR flip-flop",
-      "definition": "A flip-flop with Set and Reset inputs controlling its state.",
+      "definition": "Bistable device with two control inputs that drive its output to either state.",
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
@@ -376,7 +376,7 @@
     {
       "id": "jk-flip-flop",
       "term": "JK flip-flop",
-      "definition": "A universal flip-flop with no invalid state, supporting toggle.",
+      "definition": "Universal bistable device with no invalid state that supports toggling.",
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
@@ -387,7 +387,7 @@
     {
       "id": "d-flip-flop",
       "term": "D flip-flop",
-      "definition": "A flip-flop that stores the data input on the clock edge.",
+      "definition": "Bistable device that stores the data input on the clock edge.",
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [
@@ -398,7 +398,7 @@
     {
       "id": "t-flip-flop",
       "term": "T flip-flop",
-      "definition": "A flip-flop that toggles its state when T=1.",
+      "definition": "Bistable device that toggles its state when the control input is high.",
       "unit": 4,
       "unitTitle": "Sequential Circuits and Flip-Flops",
       "sources": [

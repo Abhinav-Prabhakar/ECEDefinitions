@@ -244,7 +244,7 @@
     {
       "id": "error-constant",
       "term": "Error constant",
-      "definition": "Gain constants (Kp, Kv, Ka) used to find steady-state errors.",
+      "definition": "Gain factor such as Kp, Kv or Ka used to find steady-state deviation.",
       "unit": 2,
       "unitTitle": "Time response analysis",
       "sources": [
@@ -255,7 +255,7 @@
     {
       "id": "rise-time",
       "term": "Rise time",
-      "definition": "Time for response to rise from 10% to 90% of final value.",
+      "definition": "Duration for a response to climb from 10% to 90% of its final value.",
       "unit": 2,
       "unitTitle": "Time response analysis",
       "sources": [
@@ -409,7 +409,7 @@
     {
       "id": "frequency-response",
       "term": "Frequency response",
-      "definition": "Steady-state response of a linear system to a sinusoidal input, characterized by magnitude and phase variations with frequency.",
+      "definition": "Steady-state behaviour of a linear system to a sinusoidal input, characterized by magnitude and phase changes across input rates.",
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
@@ -475,7 +475,7 @@
     {
       "id": "polar-plot",
       "term": "Polar plot",
-      "definition": "Plot of magnitude versus phase angle in polar coordinates.",
+      "definition": "Graph of magnitude versus angle in a circular coordinate system.",
       "unit": 5,
       "unitTitle": "Frequency response (Bode)",
       "sources": [
@@ -497,7 +497,7 @@
     {
       "id": "state-variable",
       "term": "State variable",
-      "definition": "Variable describing the system state at any instant.",
+      "definition": "Quantity describing the system condition at any instant.",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
@@ -508,7 +508,7 @@
     {
       "id": "state-vector",
       "term": "State vector",
-      "definition": "Vector whose elements are the state variables of a dynamic system, summarizing the complete system state at any instant.",
+      "definition": "Column of quantities that describe the system condition at any instant, summarizing it completely.",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
@@ -519,7 +519,7 @@
     {
       "id": "state-space",
       "term": "State space",
-      "definition": "n-dimensional space whose axes are the state variables.",
+      "definition": "n-dimensional mathematical continuum whose axes are the system condition variables.",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
@@ -530,7 +530,7 @@
     {
       "id": "state-equation",
       "term": "State equation",
-      "definition": "Differential equation relating state derivative to state and input.",
+      "definition": "Differential relation linking the derivative of the condition vector to that vector and the input.",
       "formula": "Ẋ=AX+BU",
       "unit": 6,
       "unitTitle": "State space analysis",
@@ -541,7 +541,7 @@
     {
       "id": "output-equation",
       "term": "Output equation",
-      "definition": "Equation expressing the system output as a linear combination of the state variables and input variables, y(t)=Cx(t)+Du(t) in state-space form.",
+      "definition": "Relation expressing the system response as a linear combination of condition variables and inputs, y(t)=Cx(t)+Du(t) in matrix form.",
       "formula": "Y=CX+DU",
       "unit": 6,
       "unitTitle": "State space analysis",

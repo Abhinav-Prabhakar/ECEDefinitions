@@ -123,7 +123,7 @@
     {
       "id": "laser",
       "term": "LASER",
-      "definition": "Light Amplification by Stimulated Emission of Radiation is a device producing coherent monochromatic light.",
+      "definition": "Device producing coherent monochromatic light through stimulated emission.",
       "unit": 2,
       "unitTitle": "Lasers & Fiber Optics",
       "sources": [
@@ -662,7 +662,7 @@
     {
       "id": "x-ray-diffraction",
       "term": "X-ray diffraction",
-      "definition": "Technique identifying crystal structure using Bragg diffraction of X-rays.",
+      "definition": "Technique identifying crystal structure from the angles at which short-wavelength radiation scatters from atomic planes.",
       "unit": 6,
       "unitTitle": "Nanotechnology",
       "sources": [

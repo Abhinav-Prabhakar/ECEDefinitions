@@ -234,7 +234,7 @@
     {
       "id": "genetic-diversity",
       "term": "Genetic diversity",
-      "definition": "Diversity expressed at the genetic level among individuals of a species.",
+      "definition": "Variation expressed at the gene level among individuals of a species.",
       "unit": 3,
       "unitTitle": "Biodiversity",
       "sources": [
@@ -433,7 +433,7 @@
     {
       "id": "e-waste",
       "term": "E-waste",
-      "definition": "Waste electronic or electrical goods not fit for their originally intended use.",
+      "definition": "Discarded electronic or electrical goods no longer fit for their originally intended use.",
       "unit": 4,
       "unitTitle": "Pollution control & environmental technology",
       "sources": [
@@ -499,7 +499,7 @@
     {
       "id": "cdm",
       "term": "Clean Development Mechanism",
-      "definition": "Mechanism under Kyoto Protocol promoting clean development in developing countries.",
+      "definition": "Kyoto Protocol arrangement allowing developed countries to earn credits by funding emission-reduction projects in developing countries.",
       "unit": 5,
       "unitTitle": "Sustainable development",
       "sources": [

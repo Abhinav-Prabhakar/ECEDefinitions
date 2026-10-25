@@ -70,7 +70,7 @@
     {
       "id": "flag-register",
       "term": "Flag register (PSW)",
-      "definition": "16-bit register, also called PSW, that reflects the status of ALU computations; it holds 9 active flags, 6 conditional and 3 control flags.",
+      "definition": "16-bit status register that reflects ALU computation results and holds nine active bits, six conditional and three control.",
       "formula": "",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
@@ -114,7 +114,7 @@
     {
       "id": "overflow-flag",
       "term": "Overflow flag (OF)",
-      "definition": "Set when carry into the MSB differs from carry out of the MSB, i.e. the result exceeds the available capacity.",
+      "definition": "Set when the carry entering the MSB differs from the carry leaving it, meaning the result exceeds available capacity.",
       "formula": "",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
@@ -125,7 +125,7 @@
     {
       "id": "segment-registers",
       "term": "Segment registers",
-      "definition": "CS, DS, ES and SS: 16-bit registers holding the starting addresses of the code, data, extra and stack memory segments.",
+      "definition": "CS, DS, ES and SS: 16-bit units holding the starting addresses of code, data, extra and stack memory areas.",
       "formula": "",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
@@ -236,7 +236,7 @@
     {
       "id": "push-instruction",
       "term": "PUSH",
-      "definition": "Pushes the contents of a register or memory location onto the stack; SP is decremented by 2.",
+      "definition": "Instruction that places the contents of a register or memory location onto the stack; SP is decremented by 2.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
@@ -280,7 +280,7 @@
     {
       "id": "int-n",
       "term": "INT N",
-      "definition": "Software interrupt instruction with a type number 0–255 that calls the corresponding interrupt service routine; INT 3 is the break-point interrupt.",
+      "definition": "Software interrupt instruction with a type number 0–255 that calls the corresponding service routine; type 3 is the break-point interrupt.",
       "formula": "",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
@@ -324,7 +324,7 @@
     {
       "id": "macro",
       "term": "Macro",
-      "definition": "Group of repetitive instructions defined with MACRO and ENDM whose machine code is generated each time the macro is called, hence uses more memory.",
+      "definition": "Group of repetitive instructions defined by assembler directives whose machine code is generated each time it is invoked, hence uses more memory.",
       "formula": "",
       "unit": 3,
       "unitTitle": "Assembly Language Programming",
@@ -501,7 +501,7 @@
     {
       "id": "register-banks",
       "term": "Register banks",
-      "definition": "Four banks of eight registers R0–R7 in internal RAM, selected by PSW bits RS1 and RS0, permitting fast context switching in ISRs.",
+      "definition": "Four groups of eight working locations R0–R7 in internal RAM, selected by PSW bits RS1 and RS0, permitting fast context switching in ISRs.",
       "formula": "",
       "unit": 5,
       "unitTitle": "8051 Microcontroller",
@@ -547,7 +547,7 @@
     {
       "id": "ie-register",
       "term": "IE register",
-      "definition": "Interrupt Enable register through which 8051 interrupts, all disabled after reset, are individually enabled and disabled.",
+      "definition": "8051 unit through which each interrupt source, all disabled after reset, can be turned on or off separately.",
       "formula": "",
       "unit": 5,
       "unitTitle": "8051 Microcontroller",
@@ -569,7 +569,7 @@
     {
       "id": "baud-rate",
       "term": "Baud rate",
-      "definition": "Rate at which bits are transmitted in serial communication, in bits per second; at 9600 baud one bit takes 0.104 ms.",
+      "definition": "Rate at which data is sent over a serial link, in bits per second; at 9600 bits per second one bit takes 0.104 ms.",
       "formula": "",
       "unit": 6,
       "unitTitle": "Peripherals and Serial Communication",
