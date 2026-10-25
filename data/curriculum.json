@@ -583,19 +583,20 @@
           "sourceCount": 0
         },
         {
-          "id": "professional-elective-iii",
-          "name": "Professional Elective III",
-          "shortName": "PE-III",
-          "code": "",
+          "id": "ad-hoc-and-wireless-sensor-networks",
+          "name": "Ad Hoc and Wireless Sensor Networks",
+          "shortName": "AHWSN",
+          "code": "9C724",
           "courseType": "PE",
+          "elective": "Professional Elective III",
           "folderId": "1c07MEduWqTD3XqGGj-36vv3rBCpFRrdp",
           "folderUrl": "https://drive.google.com/drive/folders/1c07MEduWqTD3XqGGj-36vv3rBCpFRrdp",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/3-2/ad-hoc-and-wireless-sensor-networks.json",
+          "definitionCount": 55,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 19
         }
       ]
     },
@@ -711,8 +712,8 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 41,
-    "definitions": 1575,
-    "completeSubjects": 26,
+    "definitions": 1630,
+    "completeSubjects": 27,
     "partialSubjects": 7,
     "inaccessibleSubjects": 8
   }

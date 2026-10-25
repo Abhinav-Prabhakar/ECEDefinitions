@@ -1,0 +1,620 @@
+{
+  "version": 1,
+  "id": "ad-hoc-and-wireless-sensor-networks",
+  "semester": "3-2",
+  "name": "Ad Hoc and Wireless Sensor Networks",
+  "shortName": "AHWSN",
+  "code": "9C724",
+  "courseType": "PE",
+  "elective": "Professional Elective III",
+  "folderId": "1c07MEduWqTD3XqGGj-36vv3rBCpFRrdp",
+  "folderUrl": "https://drive.google.com/drive/folders/1c07MEduWqTD3XqGGj-36vv3rBCpFRrdp",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "ad-hoc-wireless-network",
+      "term": "Ad hoc wireless network",
+      "definition": "Decentralised wireless network needing no pre-existing infrastructure such as routers or access points, in which every node forwards data for others and forwarding roles are set dynamically.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#introduction"
+      ]
+    },
+    {
+      "id": "manet",
+      "term": "MANET",
+      "definition": "Continuously self-configuring, self-organising, infrastructure-less network of wirelessly connected mobile devices in which each device also acts as a router for traffic that is not its own.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-manet#introduction"
+      ]
+    },
+    {
+      "id": "multi-hop-relaying",
+      "term": "Multi-hop relaying",
+      "definition": "Forwarding of packets through intermediate peer nodes on the way from source to destination, with every node doubling as a router instead of relying on fixed infrastructure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-manet#characteristics"
+      ]
+    },
+    {
+      "id": "dynamic-topology",
+      "term": "Dynamic topology",
+      "definition": "Network property caused by nodes moving freely, so links frequently break and reform and path selection must keep adapting to the changing connectivity.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#challenges"
+      ]
+    },
+    {
+      "id": "bandwidth-constraint",
+      "term": "Bandwidth constraint",
+      "definition": "Limitation of wireless networks arising from limited channel capacity that all nodes share, restricting the throughput each node can achieve.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#challenges"
+      ]
+    },
+    {
+      "id": "mobile-ip",
+      "term": "Mobile IP",
+      "definition": "IETF standard that lets a mobile device move between networks while keeping the same IP address, enabling Internet access for roaming nodes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-mobile-ip#introduction"
+      ]
+    },
+    {
+      "id": "home-agent",
+      "term": "Home agent",
+      "definition": "Router on a mobile device's home network that tracks the device's current location and tunnels packets to it while it is away.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-mobile-ip#home-agent"
+      ]
+    },
+    {
+      "id": "foreign-agent",
+      "term": "Foreign agent",
+      "definition": "Router on a visited network that keeps records of visiting mobile devices and advertises care-of addresses they can use.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-mobile-ip#foreign-agent"
+      ]
+    },
+    {
+      "id": "care-of-address",
+      "term": "Care-of address",
+      "definition": "Temporary IP address a mobile device uses while attached to a visited network away from its home network.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-mobile-ip#care-of-address"
+      ]
+    },
+    {
+      "id": "hidden-node-problem",
+      "term": "Hidden node problem",
+      "definition": "Collision-causing situation in which two nodes that cannot hear each other transmit to the same receiver at once, so no packet gets through.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-hidden-node#introduction"
+      ]
+    },
+    {
+      "id": "exposed-node-problem",
+      "term": "Exposed node problem",
+      "definition": "Situation in which a node needlessly holds back from sending because it senses a neighbour's transmission that would not actually disrupt the intended receiver, wasting capacity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-exposed-node#introduction"
+      ]
+    },
+    {
+      "id": "rts-cts-handshake",
+      "term": "RTS/CTS handshake",
+      "definition": "Exchange of short control packets in which a sender asks the receiver for permission before sending data, letting nearby nodes hear the replies and synchronise their transmissions.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-hidden-node#rts-cts"
+      ]
+    },
+    {
+      "id": "csma-ca",
+      "term": "CSMA/CA",
+      "definition": "Contention-based wireless medium-access scheme in which each node senses the channel and waits its turn before sending, because hidden nodes cannot hear each other's signals.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-hidden-node#csma-ca"
+      ]
+    },
+    {
+      "id": "macaw",
+      "term": "MACAW",
+      "definition": "Slotted medium-access protocol widely used in ad hoc networks that adds a data-sending frame and an acknowledgement to the handshake; its handshake was adopted by IEEE 802.11.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-macaw#introduction"
+      ]
+    },
+    {
+      "id": "overhearing-based-deferral",
+      "term": "Overhearing-based deferral",
+      "definition": "Behaviour in which a node that detects another pair's control frames refrains from transmitting for the expected duration of their upcoming exchange.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-macaw#exchange"
+      ]
+    },
+    {
+      "id": "exponential-backoff",
+      "term": "Exponential backoff",
+      "definition": "Retry scheme in which a node whose request gets no reply assumes a collision and waits for progressively longer intervals before trying again.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-macaw#backoff"
+      ]
+    },
+    {
+      "id": "contention-based-mac-protocol",
+      "term": "Contention-based MAC protocol",
+      "definition": "Medium-access approach in which nodes compete for the shared channel under distributed rules, so collisions are possible, unlike coordinated centralised scheduling.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#medium-access-control"
+      ]
+    },
+    {
+      "id": "centralized-scheduling",
+      "term": "Centralized scheduling",
+      "definition": "Collision-handling approach in which a coordinating entity organises transmissions so nodes do not clash, in contrast to distributed contention for the channel.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "MAC Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#medium-access-control"
+      ]
+    },
+    {
+      "id": "proactive-routing",
+      "term": "Proactive routing",
+      "definition": "Protocol family that keeps path tables current through periodic updates, giving ready paths at the cost of maintenance overhead and slow reaction to failures.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#routing"
+      ]
+    },
+    {
+      "id": "reactive-routing",
+      "term": "Reactive routing",
+      "definition": "Protocol family that discovers a path only when needed by flooding request packets, incurring discovery latency and the risk of clogging the network.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wanet#routing"
+      ]
+    },
+    {
+      "id": "dsdv",
+      "term": "DSDV",
+      "definition": "Table-driven distance-vector scheme for mobile networks based on Bellman-Ford, whose key contribution was solving the loop problem by tagging entries with destination-originated numbers.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-dsdv#introduction"
+      ]
+    },
+    {
+      "id": "route-sequence-number",
+      "term": "Route sequence number",
+      "definition": "Counter originated by a destination and carried in table entries so newer information is preferred, equal numbers fall back to the better metric, and stale entries are deleted.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-dsdv#sequence-numbers"
+      ]
+    },
+    {
+      "id": "aodv",
+      "term": "AODV",
+      "definition": "Reactive protocol for mobile wireless networks that stays silent until a path is needed, then broadcasts a search, with per-node sequence numbers keeping paths loop-free.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-aodv#introduction"
+      ]
+    },
+    {
+      "id": "rreq",
+      "term": "RREQ",
+      "definition": "Broadcast message flooded through the network to search for a path to a destination, with a time-to-live limiting how far it spreads.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-aodv#route-discovery"
+      ]
+    },
+    {
+      "id": "rrep",
+      "term": "RREP",
+      "definition": "Message sent back by a node able to reach the destination, establishing the path to the requester; the shortest suitable path is chosen.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-aodv#route-discovery"
+      ]
+    },
+    {
+      "id": "dsr",
+      "term": "DSR",
+      "definition": "Reactive protocol in which each data packet carries the complete ordered list of devices it will traverse, instead of intermediate nodes holding forwarding tables.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-dsr#introduction"
+      ]
+    },
+    {
+      "id": "zrp",
+      "term": "ZRP",
+      "definition": "Hybrid protocol that proactively maintains paths to nodes within k hops and reactively discovers paths to destinations beyond that neighbourhood.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Routing Protocols for Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-zrp#introduction"
+      ]
+    },
+    {
+      "id": "multicast",
+      "term": "Multicast",
+      "definition": "Group communication in which data is addressed to a set of destinations simultaneously, either one-to-many or many-to-many.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-multicast#introduction"
+      ]
+    },
+    {
+      "id": "odmrp",
+      "term": "ODMRP",
+      "definition": "Mesh-based multicast protocol that builds group state when a source has data and restricts forwarding to a subset of nodes, maintaining membership as expiring state.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#abstract"
+      ]
+    },
+    {
+      "id": "forwarding-group",
+      "term": "Forwarding group",
+      "definition": "Subset of nodes, comprising the source, receivers and intermediate routers, that relays multicast data for a group in a mesh-based scheme.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#forwarding-group"
+      ]
+    },
+    {
+      "id": "join-query",
+      "term": "JOIN QUERY",
+      "definition": "Packet flooded periodically by a source that has data for a group, carrying group and source addresses and a sequence number so receivers can install reverse-path state.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#join-query-format"
+      ]
+    },
+    {
+      "id": "join-reply",
+      "term": "JOIN REPLY",
+      "definition": "Packet returned by receivers toward the source, causing each router it crosses to mark itself as a member of the group's forwarding set.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#join-reply"
+      ]
+    },
+    {
+      "id": "soft-state",
+      "term": "Soft state",
+      "definition": "Membership or forwarding information that expires unless refreshed, so a node can depart a group without sending any explicit control message.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#overview"
+      ]
+    },
+    {
+      "id": "mesh-based-multicast",
+      "term": "Mesh-based multicast",
+      "definition": "Approach maintaining a forwarding mesh per group instead of a single tree, avoiding intermittent connectivity, traffic concentration and frequent reconfiguration in mobile networks.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#overview"
+      ]
+    },
+    {
+      "id": "tree-based-multicast",
+      "term": "Tree-based multicast",
+      "definition": "Approach delivering group traffic along one tree structure, which in mobile wireless networks suffers intermittent connectivity, traffic concentration and frequent reconfiguration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Multicast Routing in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-ietf-odmrp#overview"
+      ]
+    },
+    {
+      "id": "congestion-window",
+      "term": "Congestion window",
+      "definition": "Sender-maintained limit on unacknowledged data in transit, preventing the link between sender and receiver from being overloaded.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-tcp-cc#congestion-window"
+      ]
+    },
+    {
+      "id": "slow-start",
+      "term": "Slow start",
+      "definition": "Transport-protocol phase in which the sending limit starts small and grows by one segment per acknowledgement, roughly doubling each round trip until loss or a threshold.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-tcp-cc#slow-start"
+      ]
+    },
+    {
+      "id": "loss-as-congestion-assumption",
+      "term": "Loss-as-congestion assumption",
+      "definition": "Habit of treating unacknowledged segments as a sign of network overload, which misfires on wireless links that lose segments to poor link quality or broken connections.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-tcp-cc#wireless-networks"
+      ]
+    },
+    {
+      "id": "resource-consumption-attack",
+      "term": "Resource-consumption attack",
+      "definition": "Attack in which a malicious node floods the network with injected packets to drain relaying nodes' resources, easy where network access control is lacking.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-manet#security"
+      ]
+    },
+    {
+      "id": "packet-dropping-attack",
+      "term": "Packet dropping attack",
+      "definition": "Attack in which a compromised intermediate node discards or delays packets it should forward, even when authentication restricts who may send traffic.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-manet#security"
+      ]
+    },
+    {
+      "id": "black-hole",
+      "term": "Black hole",
+      "definition": "Point in a network where traffic is silently discarded and the sender is never told it failed to arrive, detectable only by monitoring lost traffic.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-black-hole#introduction"
+      ]
+    },
+    {
+      "id": "sybil-attack",
+      "term": "Sybil attack",
+      "definition": "Attack in which a system is subverted by creating multiple fake identities, giving one party far more influence than it should have.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-sybil#introduction"
+      ]
+    },
+    {
+      "id": "key-management",
+      "term": "Key management",
+      "definition": "Management of cryptographic keys in a cryptosystem across their lifecycle: generation, exchange, storage, use, destruction and replacement.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-key-mgmt#introduction"
+      ]
+    },
+    {
+      "id": "trust-management",
+      "term": "Trust management",
+      "definition": "Continuous monitoring and assessment of node behaviour to decide which peers to rely on, made difficult in ad hoc networks by resource limits and changing topology.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-manet#security"
+      ]
+    },
+    {
+      "id": "quality-of-service",
+      "term": "Quality of service",
+      "definition": "Ability to give different priorities to applications, users or data flows, or to guarantee a minimum level of performance.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-qos#introduction"
+      ]
+    },
+    {
+      "id": "jitter",
+      "term": "Jitter",
+      "definition": "Variation in packet arrival times, which a receiver can absorb only by adding latency.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-qos#parameters"
+      ]
+    },
+    {
+      "id": "diffserv",
+      "term": "DiffServ",
+      "definition": "Prioritised service model in which packets are marked with a code in the IP header and routers apply per-class queueing, scaling better than per-flow reservation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Transport Layer, Security and QoS in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-qos#differentiated-services"
+      ]
+    },
+    {
+      "id": "network-lifetime",
+      "term": "Network lifetime",
+      "definition": "Time a battery-powered network stays operational, determined chiefly by node energy, its scarcest resource.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#characteristics"
+      ]
+    },
+    {
+      "id": "duty-cycling",
+      "term": "Duty cycling",
+      "definition": "Practice of switching radios off when idle to extend operating time, at the cost of added latency, routing overhead and neighbour-discovery delay.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#characteristics"
+      ]
+    },
+    {
+      "id": "energy-harvesting",
+      "term": "Energy harvesting",
+      "definition": "Powering a node from environmental sources, as an alternative or supplement to a battery.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#characteristics"
+      ]
+    },
+    {
+      "id": "transmitter-power-output",
+      "term": "Transmitter power output",
+      "definition": "Actual radio-frequency power in watts that a transmitter produces at its output, excluding antenna gain.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-tpo#introduction"
+      ]
+    },
+    {
+      "id": "data-aggregation",
+      "term": "Data aggregation",
+      "definition": "In-network combining of similar readings from neighbouring nodes to cut redundant traffic and save energy.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#data-aggregation"
+      ]
+    },
+    {
+      "id": "wireless-sensor-network",
+      "term": "Wireless sensor network",
+      "definition": "Network of spatially dispersed, dedicated sensors that monitor physical conditions and forward the collected data to a central location.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#introduction"
+      ]
+    },
+    {
+      "id": "sensor-node",
+      "term": "Sensor node",
+      "definition": "Device combining a radio transceiver with antenna, a microcontroller, sensor-interface circuitry and an energy source such as a battery or harvester.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#characteristics"
+      ]
+    },
+    {
+      "id": "base-station",
+      "term": "Base station",
+      "definition": "Gateway node with more computing, energy and communication resources than sensor nodes, forwarding their data to a server or end user.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Energy Management in Ad Hoc Wireless Networks",
+      "sources": [
+        "ahwsn-wiki-wsn#characteristics"
+      ]
+    }
+  ]
+}
