@@ -3923,6 +3923,146 @@
       "locatorScheme": "section slug"
     },
     {
+      "id": "iota-web-mqtt",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "MQTT (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/MQTT",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-coap",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Constrained Application Protocol (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Constrained_Application_Protocol",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-amqp",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Advanced Message Queuing Protocol (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-dds",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Data Distribution Service (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Data_Distribution_Service",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-xmpp",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "XMPP (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-rest",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "REST (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/REST",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-design-methodology-slides",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "IoT Platform Design Methodology (SlideShare slides)",
+      "url": "https://www.slideshare.net/poonamkumawat11/iot-platform-design-methodologypptx",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-wsn",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Wireless sensor network (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wireless_sensor_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-home-automation",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Home automation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_automation",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-weather-station",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Weather station (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weather_station",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-smart-lighting",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Lighting control system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smart_lighting",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-security-alarm",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Security alarm (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Security_alarm",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-irrigation-scheduling",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Irrigation scheduling (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Irrigation_scheduling",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-air-pollution-measurement",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Air pollution measurement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Air_pollution_measurement",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
       "id": "vlsitd-web-sheet-resistance",
       "semester": "3-2",
       "subjectId": "vlsi-technology-and-design",

@@ -660,11 +660,11 @@
           "folderId": "1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
           "folderUrl": "https://drive.google.com/drive/folders/1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
           "data": "data/subjects/4-1/internet-of-things-and-applications.json",
-          "definitionCount": 40,
+          "definitionCount": 67,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 17
         },
         {
           "id": "system-on-chip-architecture",
@@ -711,9 +711,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 41,
-    "definitions": 1631,
-    "completeSubjects": 29,
-    "partialSubjects": 4,
+    "definitions": 1658,
+    "completeSubjects": 30,
+    "partialSubjects": 3,
     "inaccessibleSubjects": 8
   }
 }

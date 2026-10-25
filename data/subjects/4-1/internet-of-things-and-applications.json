@@ -8,7 +8,7 @@
   "courseType": "PC",
   "folderId": "1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
   "folderUrl": "https://drive.google.com/drive/folders/1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
-  "status": "partial",
+  "status": "complete",
   "definitions": [
     {
       "term": "IoT",
@@ -449,6 +449,303 @@
       ],
       "id": "nfc",
       "formula": ""
+    },
+    {
+      "id": "mqtt",
+      "term": "MQTT",
+      "definition": "Lightweight publish-subscribe messaging protocol, normally run over TCP/IP, for devices with limited resources or bandwidth.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-mqtt#Overview"
+      ]
+    },
+    {
+      "id": "publish-subscribe",
+      "term": "Publish-Subscribe",
+      "definition": "Messaging pattern in which senders do not address receivers; a broker decouples both sides by routing messages according to topic.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-mqtt#MQTT-broker"
+      ]
+    },
+    {
+      "id": "mqtt-broker",
+      "term": "MQTT Broker",
+      "definition": "Server software that receives messages from sending clients and routes them to the clients subscribed to each topic, like a post office.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-mqtt#MQTT-broker"
+      ]
+    },
+    {
+      "id": "mqtt-quality-of-service",
+      "term": "MQTT Quality of Service",
+      "definition": "Per-connection delivery setting with three levels: send once with no acknowledgement, retry until acknowledged, and exactly once through a two-step handshake.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-mqtt#Quality-of-service"
+      ]
+    },
+    {
+      "id": "coap",
+      "term": "CoAP",
+      "definition": "UDP-based application protocol for constrained devices, defined in RFC 7252, that translates easily to HTTP and uses confirmable and non-confirmable messages.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-coap#Lead-section"
+      ]
+    },
+    {
+      "id": "amqp",
+      "term": "AMQP",
+      "definition": "Open application-layer wire-level protocol for message-oriented middleware offering queuing, routing, reliability and security, with vendor interoperability.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-amqp#Lead-section"
+      ]
+    },
+    {
+      "id": "dds",
+      "term": "DDS",
+      "definition": "Object Management Group publish-subscribe standard for real-time machine-to-machine data exchange in which applications stay decoupled and need not know each other's locations.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-dds#Lead-section"
+      ]
+    },
+    {
+      "id": "xmpp",
+      "term": "XMPP",
+      "definition": "Open XML-based protocol for instant messaging and presence that exchanges message, presence and iq stanzas over authenticated, encrypted XML streams.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-xmpp#Specifications-and-standards"
+      ]
+    },
+    {
+      "id": "rest",
+      "term": "REST",
+      "definition": "Architectural style of stateless, cacheable, layered client-server interaction with resources identified by URIs, defined by Roy Fielding in 2000.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IoT Protocols",
+      "sources": [
+        "iota-web-rest#Lead-section"
+      ]
+    },
+    {
+      "id": "purpose-and-requirements-specification",
+      "term": "Purpose and Requirements Specification",
+      "definition": "First design step capturing what the system is for and how it behaves, including data collection, analysis, management, privacy, security and interface needs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-5"
+      ]
+    },
+    {
+      "id": "process-specification",
+      "term": "Process Specification",
+      "definition": "Design step that formally describes the system's use cases, derived from its stated aims and needs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-6"
+      ]
+    },
+    {
+      "id": "domain-model",
+      "term": "Domain Model",
+      "definition": "Technology-independent description of the main concepts, entities and objects of the application area, with their attributes and relationships.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-8"
+      ]
+    },
+    {
+      "id": "virtual-entity",
+      "term": "Virtual Entity",
+      "definition": "Digital representation of a discrete thing in the physical world, linked to that thing through a device.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-10"
+      ]
+    },
+    {
+      "id": "information-model",
+      "term": "Information Model",
+      "definition": "Definition of the structure of all data handled by the system, such as attributes of digital entities and their relations, without fixing how it is stored.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-13"
+      ]
+    },
+    {
+      "id": "service-specification",
+      "term": "Service Specification",
+      "definition": "Design step defining each function's type, inputs and outputs, endpoints, schedules, preconditions and effects.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-16"
+      ]
+    },
+    {
+      "id": "iot-level-specification",
+      "term": "IoT Level Specification",
+      "definition": "Design step that fixes which of the five deployment levels the system will use.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-18"
+      ]
+    },
+    {
+      "id": "functional-view",
+      "term": "Functional View",
+      "definition": "Organisation of a system into Device, Communication, Services, Management, Security and Application groups.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-21"
+      ]
+    },
+    {
+      "id": "application-development",
+      "term": "Application Development",
+      "definition": "Final design step of building the software through which users control and monitor the system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "IoT Design Methodology",
+      "sources": [
+        "iota-web-design-methodology-slides#slide-30"
+      ]
+    },
+    {
+      "id": "smart-lighting",
+      "term": "Smart Lighting",
+      "definition": "Network-based lighting control in which communication among inputs, outputs and central computing devices adjusts fixture output automatically.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-smart-lighting#Lighting-control-system"
+      ]
+    },
+    {
+      "id": "daylight-harvesting",
+      "term": "Daylight Harvesting",
+      "definition": "Cutting electric lighting by dimming or switching fixtures when natural light is available.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-smart-lighting#Daylight-availability"
+      ]
+    },
+    {
+      "id": "smart-home-hub",
+      "term": "Smart Home Hub",
+      "definition": "Central device through which home appliances, lighting, climate and security equipment connect and are controlled via wall terminals or phone apps.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-home-automation#Lead-section"
+      ]
+    },
+    {
+      "id": "intrusion-alarm",
+      "term": "Intrusion Alarm",
+      "definition": "System that detects unauthorised entry into a building or area, guarding against theft and damage to property.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-security-alarm#Introduction"
+      ]
+    },
+    {
+      "id": "door-contact-sensor",
+      "term": "Door Contact Sensor",
+      "definition": "Two-piece switch-and-magnet device whose circuit changes when the pieces separate, so the control panel registers the opening as a fault.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-security-alarm#Hermetically-sealed-reed-switches"
+      ]
+    },
+    {
+      "id": "weather-station",
+      "term": "Weather Station",
+      "definition": "Land-based or sea-based facility with instruments such as thermometers, barometers, hygrometers, anemometers and rain gauges measuring atmospheric conditions.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-weather-station#Weather-instruments"
+      ]
+    },
+    {
+      "id": "air-quality-index",
+      "term": "Air Quality Index",
+      "definition": "Single, often colour-coded score that combines concentrations of common pollutants such as ozone, carbon monoxide and particulates.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-air-pollution-measurement#Measurement-units"
+      ]
+    },
+    {
+      "id": "forest-fire-detection-network",
+      "term": "Forest Fire Detection Network",
+      "definition": "Sensor nodes placed in a forest that measure temperature, humidity and fire-related gases so firefighters can detect a fire early and track its spread.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-wsn#Forest-fire-detection"
+      ]
+    },
+    {
+      "id": "smart-irrigation-controller",
+      "term": "Smart Irrigation Controller",
+      "definition": "Device that automates watering schedules, adjusting them daily from local weather data or from measured soil moisture.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies Illustrating IoT Applications",
+      "sources": [
+        "iota-web-irrigation-scheduling#Smart-irrigation-technologies"
+      ]
     }
   ]
 }
