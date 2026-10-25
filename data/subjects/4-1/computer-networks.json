@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "computer-networks",
+  "semester": "4-1",
+  "name": "Computer Networks",
+  "shortName": "CN",
+  "code": "9EC05",
+  "courseType": "ES",
+  "folderId": "1wyUHctxgd6_sN-1Ik_00kpbf58fqHSQR",
+  "folderUrl": "https://drive.google.com/drive/folders/1wyUHctxgd6_sN-1Ik_00kpbf58fqHSQR",
+  "status": "complete",
+  "definitions": [
+    {
+      "term": "Data Communication",
+      "definition": "Exchange of data between two devices through a transmission medium, via a system made of hardware and software.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.14"
+      ],
+      "id": "data-communication",
+      "formula": ""
+    },
+    {
+      "term": "Simplex Mode",
+      "definition": "Unidirectional communication in which the entire channel capacity carries data in one direction only, e.g. keyboard to monitor.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.18"
+      ],
+      "id": "simplex-mode",
+      "formula": ""
+    },
+    {
+      "term": "Full-Duplex Mode",
+      "definition": "Both stations transmit and receive simultaneously, with the capacity of the link shared between the two directions.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.20"
+      ],
+      "id": "full-duplex-mode",
+      "formula": ""
+    },
+    {
+      "term": "Mesh Topology",
+      "definition": "Every device has a dedicated point-to-point link to every other device; a network of n nodes needs n(n−1)/2 links.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.26"
+      ],
+      "id": "mesh-topology",
+      "formula": ""
+    },
+    {
+      "term": "LAN",
+      "definition": "A usually privately owned network linking devices in a single office, building or campus, e.g. Ethernet or WiFi.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.37"
+      ],
+      "id": "lan",
+      "formula": ""
+    },
+    {
+      "term": "WAN",
+      "definition": "Network providing long-distance transmission over large geographic areas; it connects hosts through a communication subnet.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.43"
+      ],
+      "id": "wan",
+      "formula": ""
+    },
+    {
+      "term": "Twisted Pair",
+      "definition": "Two insulated copper wires twisted together in a helix; carrying the signal as a voltage difference gives immunity to noise.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.83"
+      ],
+      "id": "twisted-pair",
+      "formula": ""
+    },
+    {
+      "term": "Fiber Optics",
+      "definition": "Transmission system using light pulses through an ultra-thin glass fiber; presence of light denotes a 1 bit, absence a 0.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.91"
+      ],
+      "id": "fiber-optics",
+      "formula": ""
+    },
+    {
+      "term": "OSI Reference Model",
+      "definition": "Seven-layer ISO model (Open Systems Interconnection) for understanding and designing a network architecture.",
+      "unit": 1,
+      "unitTitle": "Introduction & OSI Reference Model",
+      "sources": [
+        "cn-cn-unit-1#slide.52"
+      ],
+      "id": "osi-reference-model",
+      "formula": ""
+    },
+    {
+      "term": "Byte Stuffing",
+      "definition": "An escape byte is inserted before every accidental flag byte in the data so the flag can still serve as frame delimiter.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.11"
+      ],
+      "id": "byte-stuffing",
+      "formula": ""
+    },
+    {
+      "term": "Bit Stuffing",
+      "definition": "A 0 bit is stuffed after five consecutive 1s in the data so the flag pattern 01111110 never occurs inside a frame.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.13"
+      ],
+      "id": "bit-stuffing",
+      "formula": ""
+    },
+    {
+      "term": "Checksum",
+      "definition": "Complement of the sum of data words sent with a message; receiver's sum of the whole codeword being 0 means no error.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.63"
+      ],
+      "id": "checksum",
+      "formula": ""
+    },
+    {
+      "term": "Cyclic Redundancy Check (CRC)",
+      "definition": "Polynomial error-detecting code; the remainder of modulo-2 division of the augmented dataword by a generator is appended.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.68"
+      ],
+      "id": "cyclic-redundancy-check-crc",
+      "formula": ""
+    },
+    {
+      "term": "Stop-and-Wait ARQ",
+      "definition": "Sender transmits one frame and waits for its acknowledgement before sending the next; sequence numbers are modulo 2.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.25"
+      ],
+      "id": "stop-and-wait-arq",
+      "formula": ""
+    },
+    {
+      "term": "Go-Back-N ARQ",
+      "definition": "Sender retransmits all unacknowledged frames starting from the damaged or lost one; receive window size is 1.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.30"
+      ],
+      "id": "go-back-n-arq",
+      "formula": ""
+    },
+    {
+      "term": "Selective Repeat ARQ",
+      "definition": "Only the damaged or timed-out frame is retransmitted and buffered frames are delivered in order; window size ≤ 2^m/2.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.42"
+      ],
+      "id": "selective-repeat-arq",
+      "formula": ""
+    },
+    {
+      "term": "Piggybacking",
+      "definition": "Technique of temporarily delaying an outgoing acknowledgement so it can be attached to the next outgoing data frame.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.51"
+      ],
+      "id": "piggybacking",
+      "formula": ""
+    },
+    {
+      "term": "HDLC",
+      "definition": "High-level Data Link Control: bit-oriented protocol for point-to-point and multipoint links, using I, S and U frames.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.98"
+      ],
+      "id": "hdlc",
+      "formula": ""
+    },
+    {
+      "term": "PPP",
+      "definition": "Point-to-Point Protocol: byte-oriented framing with LCP for link setup, authentication protocols and NCPs for network layer data.",
+      "unit": 2,
+      "unitTitle": "Data Link Layer",
+      "sources": [
+        "cn-cn-unit-2#slide.108"
+      ],
+      "id": "ppp",
+      "formula": ""
+    },
+    {
+      "term": "Pure ALOHA",
+      "definition": "Earliest random-access method: each station sends whenever it has a frame; vulnerable time 2×Tfr, max throughput 0.184.",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.9"
+      ],
+      "id": "pure-aloha",
+      "formula": ""
+    },
+    {
+      "term": "Slotted ALOHA",
+      "definition": "Stations may transmit only at the start of a time slot; vulnerable time halves to Tfr and max throughput rises to 0.368.",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.12"
+      ],
+      "id": "slotted-aloha",
+      "formula": ""
+    },
+    {
+      "term": "CSMA/CD",
+      "definition": "Carrier sense multiple access with collision detection; frame transmission time must be at least twice the propagation time.",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.21"
+      ],
+      "id": "csma-cd",
+      "formula": ""
+    },
+    {
+      "term": "CSMA/CA",
+      "definition": "Collision-avoidance access method for wireless networks using interframe space, contention window and acknowledgements.",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.27"
+      ],
+      "id": "csma-ca",
+      "formula": ""
+    },
+    {
+      "term": "Hidden Station Problem",
+      "definition": "Stations outside each other's hearing range collide at the receiver; solved with RTS/CTS handshake frames.",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.51"
+      ],
+      "id": "hidden-station-problem",
+      "formula": ""
+    },
+    {
+      "term": "Network Allocation Vector",
+      "definition": "Timer set by stations hearing an RTS frame, showing how long they must wait before sensing the channel (virtual sensing).",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.57"
+      ],
+      "id": "network-allocation-vector",
+      "formula": ""
+    },
+    {
+      "term": "Bridge",
+      "definition": "Data-link device that connects LANs and separates collision domains, forwarding only frames addressed across it.",
+      "unit": 3,
+      "unitTitle": "Medium Access Sublayer",
+      "sources": [
+        "cn-cn-unit-3#slide.73"
+      ],
+      "id": "bridge",
+      "formula": ""
+    },
+    {
+      "term": "Store-and-Forward Packet Switching",
+      "definition": "Router stores a fully arrived packet, verifies its checksum, then forwards it to the next router toward the destination.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.4"
+      ],
+      "id": "store-and-forward-packet-switching",
+      "formula": ""
+    },
+    {
+      "term": "Flooding",
+      "definition": "Routing technique in which every incoming packet is sent out on every outgoing line except the one it arrived on.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.17"
+      ],
+      "id": "flooding",
+      "formula": ""
+    },
+    {
+      "term": "Distance Vector Routing",
+      "definition": "Bellman-Ford routing: each node keeps a vector of least costs to every node and shares it with immediate neighbours.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.21"
+      ],
+      "id": "distance-vector-routing",
+      "formula": ""
+    },
+    {
+      "term": "Count-to-Infinity Problem",
+      "definition": "Routers keep raising the cost of a lost route toward infinity using stale second-hand updates after a link failure.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.28"
+      ],
+      "id": "count-to-infinity-problem",
+      "formula": ""
+    },
+    {
+      "term": "Split Horizon",
+      "definition": "Stabilization technique: a node does not advertise a route back to the neighbour from which it learned that route.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.29"
+      ],
+      "id": "split-horizon",
+      "formula": ""
+    },
+    {
+      "term": "Link State Routing",
+      "definition": "Each node floods its link state packets, learns the full topology and computes its routing table using Dijkstra's algorithm.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.31"
+      ],
+      "id": "link-state-routing",
+      "formula": ""
+    },
+    {
+      "term": "Reverse Path Forwarding",
+      "definition": "Broadcast rule: a packet is forwarded only if it arrived on the link normally used to send packets toward its source.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.51"
+      ],
+      "id": "reverse-path-forwarding",
+      "formula": ""
+    },
+    {
+      "term": "Tunneling",
+      "definition": "Encapsulating a packet of one protocol inside the payload of an intervening network's packets to reach a same-type network.",
+      "unit": 4,
+      "unitTitle": "Network Layer",
+      "sources": [
+        "cn-cn-unit-4#slide.81"
+      ],
+      "id": "tunneling",
+      "formula": ""
+    },
+    {
+      "term": "IPv4 Address",
+      "definition": "32-bit address uniquely defining a device's connection to the Internet, written in dotted-decimal notation.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.16"
+      ],
+      "id": "ipv4-address",
+      "formula": ""
+    },
+    {
+      "term": "Subnetting",
+      "definition": "Dividing a single large network into multiple smaller networks; it increases the number of 1s in the mask.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.27"
+      ],
+      "id": "subnetting",
+      "formula": ""
+    },
+    {
+      "term": "Supernetting",
+      "definition": "Combining several class C blocks into one larger supernetwork; it decreases the number of 1s in the mask.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.28"
+      ],
+      "id": "supernetting",
+      "formula": ""
+    },
+    {
+      "term": "NAT",
+      "definition": "Network Address Translation maps private internal addresses to the company's public IP using the TCP source port as table index.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.39"
+      ],
+      "id": "nat",
+      "formula": ""
+    },
+    {
+      "term": "DHCP",
+      "definition": "Dynamic Host Configuration Protocol: a DHCP server leases IP addresses and configures host parameters automatically.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.57"
+      ],
+      "id": "dhcp",
+      "formula": ""
+    },
+    {
+      "term": "Choke Packet",
+      "definition": "Control packet sent back to the source host by a congested router, ordering it to reduce its traffic.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.76"
+      ],
+      "id": "choke-packet",
+      "formula": ""
+    },
+    {
+      "term": "Leaky Bucket Algorithm",
+      "definition": "Traffic shaper that turns bursty traffic into a fixed-rate outflow; packets wait in a FIFO queue drained at a constant rate.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.98"
+      ],
+      "id": "leaky-bucket-algorithm",
+      "formula": ""
+    },
+    {
+      "term": "Token Bucket Algorithm",
+      "definition": "Idle hosts accumulate tokens as credit for later bursts; one token is consumed for every unit of data sent.",
+      "unit": 5,
+      "unitTitle": "Network Layer in the Internet",
+      "sources": [
+        "cn-cn-unit-5#slide.102"
+      ],
+      "id": "token-bucket-algorithm",
+      "formula": ""
+    },
+    {
+      "term": "UDP",
+      "definition": "Connectionless, unreliable transport protocol adding only port addresses, checksum and length to the services of IP.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6a#slide.18"
+      ],
+      "id": "udp",
+      "formula": ""
+    },
+    {
+      "term": "TCP",
+      "definition": "Connection-oriented, reliable transport protocol delivering byte streams in order with flow and congestion control.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6a#slide.28"
+      ],
+      "id": "tcp",
+      "formula": ""
+    },
+    {
+      "term": "Three-Way Handshaking",
+      "definition": "TCP connection establishment: client sends SYN, server answers SYN+ACK, and client confirms with a final ACK segment.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6a#slide.43"
+      ],
+      "id": "three-way-handshaking",
+      "formula": ""
+    },
+    {
+      "term": "DNS",
+      "definition": "Domain Name System: maps host names to IP addresses and vice versa using distributed, hierarchical name servers.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6b#slide.4"
+      ],
+      "id": "dns",
+      "formula": ""
+    },
+    {
+      "term": "SMTP",
+      "definition": "Simple Mail Transfer Protocol defines MTA client and server commands and responses for moving mail between systems.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6b#slide.39"
+      ],
+      "id": "smtp",
+      "formula": ""
+    },
+    {
+      "term": "MIME",
+      "definition": "Multipurpose Internet Mail Extensions transforms non-ASCII e-mail data to NVT ASCII data for transmission through the Internet.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6b#slide.37"
+      ],
+      "id": "mime",
+      "formula": ""
+    },
+    {
+      "term": "FTP",
+      "definition": "File Transfer Protocol copies files between hosts using two TCP connections: control on port 21 and data on port 20.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6b#slide.43"
+      ],
+      "id": "ftp",
+      "formula": ""
+    },
+    {
+      "term": "HTTP",
+      "definition": "Hypertext Transfer Protocol used mainly to access data on the WWW; a client request message gets a server response message.",
+      "unit": 6,
+      "unitTitle": "Transport & Application Layers",
+      "sources": [
+        "cn-cn-unit-6b#slide.52"
+      ],
+      "id": "http",
+      "formula": ""
+    }
+  ]
+}
