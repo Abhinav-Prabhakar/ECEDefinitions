@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "id": "us-legal-literacy",
+  "name": "US Legal Literacy",
+  "tagline": "US legal literacy, in one line.",
+  "topic": "US legal literacy for non-lawyers and first-year law students",
+  "audience": "Non-lawyers and first-year law students",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "sources of law, court structure, and legal authority",
+      "civil and criminal procedure from filing through appeal",
+      "constitutional rights and their limits",
+      "contract formation, performance, breach, and remedies",
+      "torts: negligence, intentional torts, strict liability, damages, defenses",
+      "criminal law elements, mens rea, major offenses, and defenses"
+    ],
+    "excludes": [
+      "state-specific statutory variations beyond a noted example",
+      "tax, employment, corporate, and real estate law",
+      "legislative and administrative procedure",
+      "evidence doctrine (separate collection)",
+      "intellectual property and privacy (separate collections)",
+      "legal advice, strategy, or case analysis"
+    ]
+  },
+  "assumptions": [
+    "US federal and general common-law usage; state variation is noted only where it is the point",
+    "no prior legal training assumed",
+    "introductory, vocabulary-only treatment: general principles, not the rule in any one state",
+    "constitutional and procedural references are to the US Constitution, federal statutes, and the federal rules unless stated"
+  ],
+  "disclaimer": "Educational vocabulary only; not legal advice.",
+  "sections": [
+    {
+      "id": "foundations",
+      "label": "Foundations",
+      "subjects": [
+        {
+          "id": "sources-of-law-and-courts",
+          "name": "Sources of Law and Courts",
+          "shortName": "Courts and law",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/us-legal-literacy/subjects/sources-of-law-and-courts.json",
+          "definitionCount": 50,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "procedure",
+          "name": "Civil and Criminal Procedure",
+          "shortName": "Legal procedure",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/us-legal-literacy/subjects/procedure.json",
+          "definitionCount": 48,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 4
+        },
+        {
+          "id": "constitutional-rights",
+          "name": "Constitutional Rights",
+          "shortName": "Constitutional rights",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/us-legal-literacy/subjects/constitutional-rights.json",
+          "definitionCount": 43,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 4
+        }
+      ]
+    },
+    {
+      "id": "doctrines",
+      "label": "Core doctrines",
+      "subjects": [
+        {
+          "id": "contracts",
+          "name": "Contracts",
+          "shortName": "Contract law",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/us-legal-literacy/subjects/contracts.json",
+          "definitionCount": 43,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "torts",
+          "name": "Torts",
+          "shortName": "Tort law",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/us-legal-literacy/subjects/torts.json",
+          "definitionCount": 45,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "criminal-law",
+          "name": "Criminal Law",
+          "shortName": "Criminal law",
+          "code": null,
+          "courseType": "core",
+          "color": "#9b6ae0",
+          "dark": "#bb95ff",
+          "data": "data/collections/us-legal-literacy/subjects/criminal-law.json",
+          "definitionCount": 48,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 2
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 2,
+    "subjects": 6,
+    "definitions": 277,
+    "completeSubjects": 6,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

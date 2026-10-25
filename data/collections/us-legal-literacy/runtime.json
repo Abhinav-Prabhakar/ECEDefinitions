@@ -1,0 +1,1447 @@
+{
+  "version": 1,
+  "id": "us-legal-literacy",
+  "name": "US Legal Literacy",
+  "short": "Legal literacy",
+  "subjects": [
+    {
+      "id": "sources-of-law-and-courts",
+      "name": "Sources of Law and Courts",
+      "short": "Courts and law",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "Case law",
+          "Law based on judicial decisions resolving concrete disputes, differing from one jurisdiction to another.",
+          ""
+        ],
+        [
+          "Common law",
+          "Law developed through judicial decisions and precedent rather than enacted by a legislature.",
+          ""
+        ],
+        [
+          "Constitution",
+          "The most fundamental law of a sovereign body, creating government institutions and defining the limits of their power.",
+          ""
+        ],
+        [
+          "Ordinance",
+          "A local law enacted by a municipality that carries the same force as state law where local regulation is authorized.",
+          ""
+        ],
+        [
+          "Preemption",
+          "A doctrine in which a higher sovereign's law supersedes a lower law that would otherwise apply.",
+          ""
+        ],
+        [
+          "Regulation",
+          "A rule made and maintained by a governmental agency exercising power delegated by a legislature.",
+          ""
+        ],
+        [
+          "Statute",
+          "A law enacted by a legislature, with federal statutes ultimately codified in the United States Code.",
+          ""
+        ],
+        [
+          "Supremacy Clause",
+          "The constitutional provision making the Constitution, federal statutes, and treaties supreme law over conflicting state law.",
+          "U.S. Const. art. VI"
+        ],
+        [
+          "Treaty",
+          "A formally signed and ratified agreement between sovereigns that operates as federal law in the United States.",
+          "U.S. Const. art. II § 2"
+        ],
+        [
+          "Amicus curiae",
+          "A nonparty with an interest in a case who petitions to file a brief influencing the court's decision.",
+          "Fed. R. App. P. 29"
+        ],
+        [
+          "Appellate jurisdiction",
+          "The power of a court to review and correct decisions already made by lower courts.",
+          ""
+        ],
+        [
+          "Circuit",
+          "One of twelve regional divisions of the federal system, each served by its own court of appeals.",
+          ""
+        ],
+        [
+          "En banc",
+          "A special appellate proceeding in which all judges of a court hear a case instead of a panel.",
+          ""
+        ],
+        [
+          "Original jurisdiction",
+          "A court's authority to hear and decide a case first, before any appellate review.",
+          "28 U.S.C. § 1251"
+        ],
+        [
+          "U.S. Supreme Court",
+          "The highest court in the federal system, holding both original and appellate jurisdiction under Article III.",
+          "U.S. Const. art. III"
+        ],
+        [
+          "U.S. court of appeals",
+          "An intermediate federal appellate court that reviews district court decisions for legal error without a jury.",
+          ""
+        ],
+        [
+          "U.S. district court",
+          "A federal trial court that finds facts, applies law, and hears nearly all categories of federal cases.",
+          ""
+        ],
+        [
+          "Writ of certiorari",
+          "A discretionary order directing a lower court to send its record so a higher court may review it.",
+          "28 U.S.C. § 1257"
+        ],
+        [
+          "Chancery court",
+          "A court of equity found in a few states, granting remedies such as injunctions and specific performance.",
+          ""
+        ],
+        [
+          "Court of general jurisdiction",
+          "A court empowered to hear any type of case not assigned exclusively to another court.",
+          ""
+        ],
+        [
+          "Court of last resort",
+          "A state's highest court, whose decisions bind every lower court in that state's system.",
+          ""
+        ],
+        [
+          "Court of limited jurisdiction",
+          "A court authorized to hear only particular categories of cases, such as probate or small claims.",
+          ""
+        ],
+        [
+          "Intermediate appellate court",
+          "In states that provide one, an appeals court sitting between trial courts and the court of last resort.",
+          ""
+        ],
+        [
+          "Probate court",
+          "A specialized court that proves a will valid and supervises administration of a decedent's estate.",
+          ""
+        ],
+        [
+          "Small claims court",
+          "A state court that decides claims below a statutory dollar threshold under informal procedures.",
+          ""
+        ],
+        [
+          "State court",
+          "A court created by a state constitution and statutes with authority over matters under state law.",
+          ""
+        ],
+        [
+          "Superior court",
+          "The title used in many states for its trial-level court of general jurisdiction.",
+          ""
+        ],
+        [
+          "Concurrent jurisdiction",
+          "Authority shared by two or more courts to hear the same type of case.",
+          ""
+        ],
+        [
+          "Diversity jurisdiction",
+          "Federal jurisdiction requiring the parties to be citizens of different states with more than $75,000 in dispute.",
+          "28 U.S.C. § 1332"
+        ],
+        [
+          "Federal question jurisdiction",
+          "Federal jurisdiction over a case arising under the Constitution, federal statutes, or other federal law.",
+          "28 U.S.C. § 1331"
+        ],
+        [
+          "Forum non conveniens",
+          "A doctrine allowing a court to decline a case because a more convenient forum can hear it.",
+          ""
+        ],
+        [
+          "Jurisdiction",
+          "The power of a court to adjudicate cases and issue orders, or the territory where it may act.",
+          ""
+        ],
+        [
+          "Personal jurisdiction",
+          "A court's authority to issue a binding decision against the particular party being sued.",
+          "Fed. R. Civ. P. 12"
+        ],
+        [
+          "Subject-matter jurisdiction",
+          "A court's authority to decide a particular category of case and grant the remedy demanded.",
+          "Fed. R. Civ. P. 12"
+        ],
+        [
+          "Venue",
+          "The geographic place where a trial is held, fixed by statute rather than by the Constitution.",
+          "28 U.S.C. § 1391"
+        ],
+        [
+          "Binding precedent",
+          "A rule stated by an appellate court that lower courts in its jurisdiction must follow.",
+          ""
+        ],
+        [
+          "Holding",
+          "A court's resolution of a question of law that determines the outcome of the case.",
+          ""
+        ],
+        [
+          "Horizontal stare decisis",
+          "A court's adherence to its own prior decisions.",
+          ""
+        ],
+        [
+          "Obiter dictum",
+          "A statement in a judicial opinion that is unnecessary to the decision and therefore not binding.",
+          ""
+        ],
+        [
+          "Precedent",
+          "A court decision treated as authority for later cases involving identical or similar facts or issues.",
+          ""
+        ],
+        [
+          "Stare decisis",
+          "A doctrine requiring courts to adhere to precedent when deciding later cases with the same or related issues.",
+          ""
+        ],
+        [
+          "Vertical stare decisis",
+          "A court's adherence to decisions issued by courts higher than it in the same system.",
+          ""
+        ],
+        [
+          "Citation",
+          "A reference identifying a legal source that supports or relates to a statement.",
+          ""
+        ],
+        [
+          "Headnote",
+          "A publisher's summary of an opinion's key legal points, printed ahead of the decision.",
+          ""
+        ],
+        [
+          "Mandatory authority",
+          "Legal authority that a court must follow because it binds within that jurisdiction.",
+          ""
+        ],
+        [
+          "Persuasive authority",
+          "A source of law that a court may follow but is never required to follow.",
+          ""
+        ],
+        [
+          "Primary authority",
+          "Statements of law issued by a legislature, court, or other body empowered to create binding rules.",
+          ""
+        ],
+        [
+          "Restatement",
+          "A secondary source summarizing what the law is or what its drafters believe it should be.",
+          ""
+        ],
+        [
+          "Secondary authority",
+          "Commentary about the law from sources lacking power to establish binding rules in a jurisdiction.",
+          ""
+        ],
+        [
+          "Treatise",
+          "An exhaustive scholarly book analyzing one field of law, its principles, and its rules.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "procedure",
+      "name": "Civil and Criminal Procedure",
+      "short": "Legal procedure",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Civil procedure",
+          "The body of rules that governs how courts conduct civil lawsuits, from filing through appeal.",
+          ""
+        ],
+        [
+          "Class action",
+          "A lawsuit in which one or more plaintiffs represent a larger group holding the same claim against a defendant.",
+          "Fed. R. Civ. P. 23"
+        ],
+        [
+          "Complaint",
+          "The pleading that starts a civil case by stating the plaintiff's claims and the relief sought.",
+          "Fed. R. Civ. P. 3"
+        ],
+        [
+          "Removal",
+          "A defendant's power to move a case filed in state court into federal court when federal jurisdiction exists.",
+          "28 U.S.C. § 1441"
+        ],
+        [
+          "Service of process",
+          "The formal delivery of a summons and complaint that gives a court authority over the defendant.",
+          "Fed. R. Civ. P. 4"
+        ],
+        [
+          "Summons",
+          "A court-issued paper commanding a defendant to appear and defend within the time stated in it.",
+          "Fed. R. Civ. P. 4(a)"
+        ],
+        [
+          "Waiver of service",
+          "A defendant's signed agreement to accept the summons and complaint, eliminating the need for formal service.",
+          "Fed. R. Civ. P. 4(d)"
+        ],
+        [
+          "Affirmative defense",
+          "A defense pleaded by a defendant that, if proven, defeats liability even when the plaintiff's allegations are true.",
+          "Fed. R. Civ. P. 8(c)"
+        ],
+        [
+          "Answer",
+          "The responsive pleading in which a defendant admits or denies each allegation and raises defenses.",
+          "Fed. R. Civ. P. 8(b)"
+        ],
+        [
+          "Counterclaim",
+          "A claim a defendant asserts against the plaintiff, compulsory when it arises from the same transaction.",
+          "Fed. R. Civ. P. 13(a)"
+        ],
+        [
+          "Crossclaim",
+          "A claim one co-party makes against another co-party arising from the same transaction as the action.",
+          "Fed. R. Civ. P. 13(g)"
+        ],
+        [
+          "Motion",
+          "A formal request asking the court for a ruling or order, stating its grounds and the relief sought.",
+          "Fed. R. Civ. P. 7(b)"
+        ],
+        [
+          "Motion to dismiss",
+          "A pre-answer motion asserting a defect such as lack of jurisdiction or failure to state a claim.",
+          "Fed. R. Civ. P. 12(b)(6)"
+        ],
+        [
+          "Pleading",
+          "A formal written statement of claims or defenses allowed by the rules, such as a complaint or answer.",
+          "Fed. R. Civ. P. 7(a)"
+        ],
+        [
+          "Summary judgment",
+          "A judgment entered without a trial when no genuine dispute of material fact exists and the movant is entitled to judgment as a matter of law.",
+          "Fed. R. Civ. P. 56"
+        ],
+        [
+          "Deposition",
+          "Out-of-court testimony given under oath and recorded for use in the proceeding.",
+          "Fed. R. Civ. P. 30"
+        ],
+        [
+          "Discovery",
+          "The pretrial phase in which parties obtain relevant, nonprivileged information from each other to prepare for trial.",
+          "Fed. R. Civ. P. 26(b)(1)"
+        ],
+        [
+          "Initial disclosures",
+          "The exchange of witness names, documents, damages computations, and insurance that each party must make without a request.",
+          "Fed. R. Civ. P. 26(a)(1)"
+        ],
+        [
+          "Interrogatories",
+          "Written questions one party serves on another, answered separately and under oath within thirty days.",
+          "Fed. R. Civ. P. 33"
+        ],
+        [
+          "Motion to compel",
+          "A motion asking the court to order a discovery response after a party fails to disclose or answer.",
+          "Fed. R. Civ. P. 37(a)"
+        ],
+        [
+          "Protective order",
+          "A court order limiting or forbidding discovery to protect a person from annoyance, oppression, or undue burden.",
+          "Fed. R. Civ. P. 26(c)"
+        ],
+        [
+          "Request for admission",
+          "A written request that an opposing party admit facts or the genuineness of documents, deemed admitted if unanswered.",
+          "Fed. R. Civ. P. 36"
+        ],
+        [
+          "Request for production of documents",
+          "A request that a party produce documents, electronically stored information, or tangible items within its possession or control.",
+          "Fed. R. Civ. P. 34"
+        ],
+        [
+          "Default judgment",
+          "A judgment entered against a defendant who failed to plead or otherwise defend after being served.",
+          "Fed. R. Civ. P. 55(b)"
+        ],
+        [
+          "Judgment as a matter of law",
+          "A court's resolution of an issue against a party whose evidence would not let a reasonable jury find for them.",
+          "Fed. R. Civ. P. 50(a)"
+        ],
+        [
+          "New trial",
+          "A retrial that the trial court may order on a motion filed within twenty-eight days after judgment.",
+          "Fed. R. Civ. P. 59"
+        ],
+        [
+          "Preliminary injunction",
+          "An injunction granted before final judgment, issued only on notice to the adverse party.",
+          "Fed. R. Civ. P. 65(a)"
+        ],
+        [
+          "Temporary restraining order",
+          "An emergency order issued without notice when specific facts show immediate and irreparable injury before an opportunity to respond.",
+          "Fed. R. Civ. P. 65(b)"
+        ],
+        [
+          "Verdict",
+          "The jury's formal decision on the issues tried, which must be unanimous unless the parties stipulate otherwise.",
+          "Fed. R. Civ. P. 48(b)"
+        ],
+        [
+          "Voir dire",
+          "The questioning of prospective jurors by a judge or lawyer to test their suitability for jury service.",
+          ""
+        ],
+        [
+          "Voluntary dismissal",
+          "A dismissal the plaintiff files without a court order, made by notice before an answer or summary judgment motion.",
+          "Fed. R. Civ. P. 41(a)"
+        ],
+        [
+          "Appeal",
+          "A request that a higher court review a lower court's determination, taken as of right or by permission.",
+          ""
+        ],
+        [
+          "Certiorari",
+          "A writ by which a higher court agrees to review a lower court's decision when review is discretionary.",
+          ""
+        ],
+        [
+          "Collateral estoppel",
+          "A doctrine barring relitigation of an issue that a prior proceeding validly, finally, and necessarily decided.",
+          ""
+        ],
+        [
+          "Harmless error",
+          "A trial error that an appellate court refuses to reverse because it did not harm the party's right to a fair trial.",
+          ""
+        ],
+        [
+          "Interlocutory appeal",
+          "An appeal from a non-final order entered while the case is still proceeding in the trial court.",
+          "28 U.S.C. § 1292(b)"
+        ],
+        [
+          "Remand",
+          "An appellate court's return of a case to the lower court to reconsider or retry in light of its ruling.",
+          ""
+        ],
+        [
+          "Res judicata",
+          "A doctrine barring a second lawsuit over the same cause of action after a final judgment on the merits.",
+          "Fed. R. Civ. P. 8(c)"
+        ],
+        [
+          "Standard of review",
+          "The level of scrutiny an appellate court applies when reviewing a lower court's ruling.",
+          ""
+        ],
+        [
+          "Acquittal",
+          "A resolution of the charged offense's factual elements in the defendant's favor, absolving the defendant from the accusation.",
+          "Fed. R. Crim. P. 29"
+        ],
+        [
+          "Arraignment",
+          "The open-court proceeding where the defendant receives the charging document and is asked to enter a plea.",
+          "Fed. R. Crim. P. 10"
+        ],
+        [
+          "Arrest warrant",
+          "A judge's order authorizing an arrest, issued when a complaint and its affidavits establish probable cause.",
+          "Fed. R. Crim. P. 4(a)"
+        ],
+        [
+          "Grand jury",
+          "A group of sixteen to twenty-three citizens who decide whether the prosecutor's evidence supports an indictment.",
+          "Fed. R. Crim. P. 6"
+        ],
+        [
+          "Indictment",
+          "A grand jury's written charge formally accusing a person of a crime, required for federal felonies.",
+          "Fed. R. Crim. P. 7(a)"
+        ],
+        [
+          "Information",
+          "A prosecutor's written criminal charge filed without a grand jury after the defendant waives indictment.",
+          "Fed. R. Crim. P. 7(b)"
+        ],
+        [
+          "Initial appearance",
+          "The defendant's first court appearance after arrest, when the court advises the defendant of rights and charges.",
+          "Fed. R. Crim. P. 5"
+        ],
+        [
+          "Plea agreement",
+          "An agreement under which a defendant pleads guilty in exchange for the prosecutor's recommendation or a reduced charge.",
+          "Fed. R. Crim. P. 11"
+        ],
+        [
+          "Preliminary hearing",
+          "A hearing at which a magistrate judge decides whether probable cause supports the charge.",
+          "Fed. R. Crim. P. 5.1"
+        ]
+      ]
+    },
+    {
+      "id": "constitutional-rights",
+      "name": "Constitutional Rights",
+      "short": "Constitutional rights",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Bill of Rights",
+          "The first ten constitutional amendments, which enumerate protections for speech, religion, jury trial, and limits on searches and punishment.",
+          ""
+        ],
+        [
+          "Civil liberties",
+          "Constitutional freedoms that limit how government may treat individuals, such as speech, religion, and the press.",
+          ""
+        ],
+        [
+          "Cruel and unusual punishment",
+          "An Eighth Amendment punishment that is excessive relative to the offense or inflicted as deliberate suffering.",
+          "8th Amendment"
+        ],
+        [
+          "Judicial review",
+          "The judiciary's power to examine legislative and executive acts and invalidate them as unconstitutional.",
+          ""
+        ],
+        [
+          "Second Amendment",
+          "The provision recognizing an individual right to keep and bear arms for lawful purposes, subject to permissible regulation.",
+          "U.S. Const. amend. II"
+        ],
+        [
+          "Unenumerated rights",
+          "Rights retained by the people that the Constitution's list does not name, safeguarded by the Ninth Amendment.",
+          "9th Amendment"
+        ],
+        [
+          "Content-based restriction",
+          "A speech regulation that classifies expression by its message or subject matter, triggering the highest level of judicial scrutiny.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Establishment Clause",
+          "The First Amendment provision barring government-established religion and any undue preference for religion or nonreligion.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Free Exercise Clause",
+          "The First Amendment clause reserving to individuals the right to practice the religious beliefs and rituals they choose.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Freedom of speech",
+          "The First Amendment right to speak, write, and share ideas without government punishment, subject to recognized exceptions.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Freedom of the press",
+          "The First Amendment right to publish and report information through any medium without government censorship.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Prior restraint",
+          "A government restriction blocking expression before it happens, such as a license requirement or injunction, which courts disfavor strongly.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Time, place, and manner restriction",
+          "A neutral rule governing when, where, or how expression occurs that leaves open alternative channels of communication.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Viewpoint discrimination",
+          "Government favoritism toward one perspective on a subject, treated as a particularly disfavored form of content discrimination.",
+          "U.S. Const. amend. I"
+        ],
+        [
+          "Due Process Clause",
+          "The Fifth and Fourteenth Amendment guarantee that the government deprives no person of life, liberty, or property without due process of law.",
+          "U.S. Const. amend. XIV § 1"
+        ],
+        [
+          "Due process",
+          "The requirement that government operates within established law and gives fair procedures whenever it acts against an individual.",
+          "U.S. Const. amends. V & XIV"
+        ],
+        [
+          "Notice",
+          "A due process requirement that a party receive meaningful warning of a proceeding that may affect their rights.",
+          "U.S. Const. amends. V & XIV"
+        ],
+        [
+          "Procedural due process",
+          "The constitutional demand for notice, a hearing, and a neutral decision-maker before the government deprives someone of protected interests.",
+          "U.S. Const. amends. V & XIV"
+        ],
+        [
+          "Right to privacy",
+          "A constitutional liberty against government intrusion into personal decisions, derived by courts from several amendments.",
+          ""
+        ],
+        [
+          "Substantive due process",
+          "The doctrine shielding fundamental rights from government interference regardless of the procedures the government follows.",
+          "U.S. Const. amends. V & XIV"
+        ],
+        [
+          "Void for vagueness",
+          "A ruling invalidating a law whose text fails to give ordinary people clear notice of what conduct it forbids.",
+          "U.S. Const. amends. V & XIV"
+        ],
+        [
+          "Civil rights",
+          "Legal entitlements enacted by law that secure equal treatment and protection from discrimination.",
+          ""
+        ],
+        [
+          "Equal protection",
+          "The requirement that government apply its laws fairly and treat people in similar situations alike without an unjustified distinction.",
+          "U.S. Const. amend. XIV § 1"
+        ],
+        [
+          "Fundamental right",
+          "A right that, when burdened by government action, moves judicial review to the strict scrutiny standard.",
+          ""
+        ],
+        [
+          "Intermediate scrutiny",
+          "A mid-level review requiring an important government interest pursued by means substantially related to that interest.",
+          ""
+        ],
+        [
+          "Protected class",
+          "A group of people whom statutes shield from discrimination based on traits such as race, sex, religion, age, or disability.",
+          ""
+        ],
+        [
+          "Rational basis test",
+          "The most permissive review, upholding a law with a legitimate purpose and a rational link between that purpose and its means.",
+          ""
+        ],
+        [
+          "Strict scrutiny",
+          "The most demanding review, which requires a narrowly tailored means serving a compelling government interest.",
+          ""
+        ],
+        [
+          "Suspect classification",
+          "A classification targeting a historically disfavored group, such as race or national origin, that receives strict judicial scrutiny.",
+          ""
+        ],
+        [
+          "Double jeopardy",
+          "The Fifth Amendment protection against being prosecuted or punished twice for the same offense.",
+          "5th Amendment"
+        ],
+        [
+          "Exclusionary rule",
+          "A rule barring the government from introducing most evidence obtained in violation of the Constitution at trial.",
+          "4th Amendment"
+        ],
+        [
+          "Habeas corpus",
+          "A court order requiring a custodian to produce a detained person so a judge may determine whether the confinement is lawful.",
+          "U.S. Const. art. I § 9"
+        ],
+        [
+          "Miranda warning",
+          "The advisement police give before custodial questioning, covering silence, counsel, and the use of statements as evidence.",
+          "5th Amendment"
+        ],
+        [
+          "Probable cause",
+          "A fair probability, based on facts and circumstances, that a crime occurred or evidence exists in a particular place.",
+          "4th Amendment"
+        ],
+        [
+          "Right to counsel",
+          "A criminal defendant's Sixth Amendment right to a lawyer's assistance, including appointed counsel for those who cannot pay.",
+          "6th Amendment"
+        ],
+        [
+          "Search and seizure",
+          "Government examination of a person or property for evidence and the taking of items, which the Fourth Amendment requires to be reasonable.",
+          "4th Amendment"
+        ],
+        [
+          "Warrant",
+          "A judge-issued authorization for an arrest, search, or seizure, supported by probable cause and a sworn description.",
+          "4th Amendment"
+        ],
+        [
+          "Federalism",
+          "A system dividing governing power between a national government and smaller units that each retain authority over local concerns.",
+          ""
+        ],
+        [
+          "Incorporation doctrine",
+          "A doctrine applying most Bill of Rights protections to the states through the Fourteenth Amendment's Due Process Clause.",
+          "U.S. Const. amend. XIV § 1"
+        ],
+        [
+          "Qualified immunity",
+          "A defense shielding government officials from damages suits unless they violate a clearly established statutory or constitutional right.",
+          ""
+        ],
+        [
+          "Selective incorporation",
+          "The Court's approach of applying individual Bill of Rights guarantees to the states piece by piece rather than wholesale.",
+          "U.S. Const. amend. XIV § 1"
+        ],
+        [
+          "State action",
+          "Conduct taken by the government, or private conduct so connected to the government that it counts as official action.",
+          ""
+        ],
+        [
+          "Under color of law",
+          "Conduct carried out under the appearance of legal authority, including official acts that exceed or misuse granted power.",
+          "42 U.S.C. § 1983"
+        ]
+      ]
+    },
+    {
+      "id": "contracts",
+      "name": "Contracts",
+      "short": "Contract law",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Acceptance",
+          "An offeree's assent to an offer's terms, expressed in words or shown by conduct.",
+          ""
+        ],
+        [
+          "Bilateral contract",
+          "A contract in which each party's promise serves as consideration for the other's promise.",
+          ""
+        ],
+        [
+          "Counteroffer",
+          "A reply that rejects the original offer while proposing a new one on different terms.",
+          ""
+        ],
+        [
+          "Firm offer",
+          "Under UCC Article 2, a merchant's signed promise to hold a goods offer open without consideration.",
+          "UCC § 2-205"
+        ],
+        [
+          "Mirror image rule",
+          "A common-law doctrine requiring acceptance to match the offer exactly, with no changed or added terms.",
+          ""
+        ],
+        [
+          "Mutual assent",
+          "Agreement by all parties to a contract, judged by their outward expressions rather than private thoughts.",
+          ""
+        ],
+        [
+          "Offer",
+          "A proposal to be bound on stated terms if the other party accepts it.",
+          ""
+        ],
+        [
+          "Option contract",
+          "A supported promise to keep an offer open for a set time, during which the offeror cannot revoke.",
+          ""
+        ],
+        [
+          "Unilateral contract",
+          "A contract that the offeree accepts only by performing the act the offer calls for.",
+          ""
+        ],
+        [
+          "Adequacy of consideration",
+          "A doctrine that courts leave the fairness of the value exchanged to the parties themselves.",
+          ""
+        ],
+        [
+          "Capacity",
+          "A person's legal ability to make binding contracts, requiring minimum age and sound mind.",
+          ""
+        ],
+        [
+          "Consideration",
+          "Something of value each party gives or promises to induce the other party's promise.",
+          ""
+        ],
+        [
+          "Gratuitous promise",
+          "A gift promise that binds no one because nothing is exchanged for it.",
+          ""
+        ],
+        [
+          "Illusory promise",
+          "A promise so vague or conditional that it leaves the promisor bound to nothing.",
+          ""
+        ],
+        [
+          "Infancy",
+          "A doctrine that lets a minor avoid contracts because minors are presumed to lack capacity.",
+          ""
+        ],
+        [
+          "Pre-existing duty rule",
+          "A rule that performance already owed supplies no consideration for a promise to pay more.",
+          ""
+        ],
+        [
+          "Promissory estoppel",
+          "A doctrine enforcing a promise without consideration when reasonable reliance would otherwise work injustice.",
+          ""
+        ],
+        [
+          "Voidable contract",
+          "An otherwise valid contract that one protected party may choose to disaffirm.",
+          ""
+        ],
+        [
+          "Adhesion contract",
+          "A standardized form drafted by the stronger party and offered on a take-it-or-leave-it basis.",
+          ""
+        ],
+        [
+          "Duress (contract law)",
+          "Coercion through unlawful threats that destroys free will and makes a contract voidable.",
+          ""
+        ],
+        [
+          "Legality",
+          "A formation requirement that a contract's purpose be lawful before a court will enforce it.",
+          ""
+        ],
+        [
+          "Misrepresentation",
+          "A false statement or misleading omission made to induce another party's reliance.",
+          ""
+        ],
+        [
+          "Mutual mistake",
+          "A shared false belief about a basic assumption that may make a contract voidable.",
+          "Restatement (Second) § 152"
+        ],
+        [
+          "Parol evidence rule",
+          "A rule barring prior or contemporaneous agreements offered to contradict an integrated written contract.",
+          "UCC § 2-202"
+        ],
+        [
+          "Statute of frauds",
+          "A rule requiring a signed writing for land sales, one-year contracts, and goods priced at $500 or more.",
+          "UCC § 2-201"
+        ],
+        [
+          "Unconscionability",
+          "A defense of unfair bargaining combined with oppressive terms that lets a court refuse enforcement.",
+          "UCC § 2-302"
+        ],
+        [
+          "Undue influence",
+          "Excessive persuasion by a trusted party that overcomes free will and makes a contract voidable.",
+          ""
+        ],
+        [
+          "Anticipatory repudiation",
+          "Under UCC Article 2, refusing performance before it is due in a way that impairs the contract's value.",
+          "UCC § 2-610"
+        ],
+        [
+          "Breach of contract",
+          "A party's failure to perform a promised duty without a legal excuse.",
+          ""
+        ],
+        [
+          "Condition precedent",
+          "An event that must occur before a party's duty to perform begins.",
+          ""
+        ],
+        [
+          "Condition subsequent",
+          "An event that, once it occurs, terminates a duty already owed under the contract.",
+          ""
+        ],
+        [
+          "Impracticability",
+          "A defense excusing performance when an unforeseen event makes it excessively difficult or expensive.",
+          "UCC § 2-615"
+        ],
+        [
+          "Material breach",
+          "A failure that defeats a contract's essential purpose and allows the injured party to end the contract.",
+          ""
+        ],
+        [
+          "Perfect tender rule",
+          "Under UCC Article 2, a buyer may reject goods that fail in any respect to conform.",
+          "UCC § 2-601"
+        ],
+        [
+          "Repudiation",
+          "A party's clear statement or conduct showing an intention not to perform a contractual obligation.",
+          ""
+        ],
+        [
+          "Substantial performance",
+          "Performance that fulfills a contract's core purpose despite minor deviations, leaving only a claim for damages.",
+          ""
+        ],
+        [
+          "Consequential damages",
+          "Losses from a breach that the breaching party had reason to know would follow it.",
+          "UCC § 2-715"
+        ],
+        [
+          "Expectation damages",
+          "Damages that put the non-breaching party in as good a position as full performance would have.",
+          ""
+        ],
+        [
+          "Liquidated damages",
+          "A contract term fixing a reasonable sum for breach where actual loss would be hard to prove.",
+          "UCC § 2-718"
+        ],
+        [
+          "Reliance damages",
+          "Recovery of expenditures reasonably incurred in relying on a promise that was later broken.",
+          ""
+        ],
+        [
+          "Rescission",
+          "A remedy canceling a contract and restoring both parties to their pre-agreement positions.",
+          ""
+        ],
+        [
+          "Restitution",
+          "A remedy restoring the value of benefits conferred on the other party to prevent unjust enrichment.",
+          ""
+        ],
+        [
+          "Specific performance",
+          "A court order compelling the promised act when money damages cannot repair the harm.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "torts",
+      "name": "Torts",
+      "short": "Tort law",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Breach of duty",
+          "A defendant's failure to conform to the standard of care that the law requires in the circumstances.",
+          ""
+        ],
+        [
+          "Cause in fact",
+          "Factual causation established by a but-for test linking the defendant's conduct to the plaintiff's harm.",
+          "but-for test"
+        ],
+        [
+          "Duty of care",
+          "An obligation to act reasonably to avoid harming others, forming the first element of a negligence claim.",
+          ""
+        ],
+        [
+          "Duty to rescue",
+          "An obligation to help a person in peril that arises when one's own conduct created the danger.",
+          ""
+        ],
+        [
+          "Foreseeability",
+          "A measure of whether a reasonable person could have predicted the harm resulting from the defendant's conduct.",
+          ""
+        ],
+        [
+          "Negligence",
+          "A civil wrong in which a person fails to exercise the care a reasonable person would under similar circumstances.",
+          "duty → breach → causation → harm"
+        ],
+        [
+          "Proximate cause",
+          "A legally sufficient cause that ties the defendant's breach to harm within the range of foreseeability.",
+          "foreseeability or substantial factor"
+        ],
+        [
+          "Reasonable person standard",
+          "An objective test asking how a hypothetical person of ordinary prudence would act in the same situation.",
+          ""
+        ],
+        [
+          "negligence per se",
+          "Negligence established automatically by violating a statute designed to protect people from the type of harm suffered.",
+          "statute violation = breach"
+        ],
+        [
+          "res ipsa loquitur",
+          "A presumption of negligence arising when an accident ordinarily occurs only through carelessness while the causing object was under the defendant's control.",
+          "accident + control + no plaintiff fault"
+        ],
+        [
+          "Assault",
+          "An intentional act that causes another person to reasonably apprehend imminent harmful or offensive contact.",
+          ""
+        ],
+        [
+          "Battery",
+          "An intentional harmful or offensive contact with a person without consent, needing no proof of actual loss.",
+          ""
+        ],
+        [
+          "Defamation",
+          "A false statement of fact published to a third party that harms the subject's reputation.",
+          ""
+        ],
+        [
+          "False imprisonment",
+          "An intentional restraint that confines a person within a bounded area without consent or legal authority.",
+          ""
+        ],
+        [
+          "Intentional infliction of emotional distress",
+          "Outrageous conduct done intentionally or recklessly that causes another person severe emotional distress.",
+          ""
+        ],
+        [
+          "Intentional tort",
+          "A civil wrong committed purposefully, requiring proof of intent rather than mere carelessness.",
+          ""
+        ],
+        [
+          "Invasion of privacy",
+          "A tort protecting private life, encompassing intrusion on seclusion, public disclosure of private facts, false light, and appropriation.",
+          ""
+        ],
+        [
+          "Libel",
+          "Defamation expressed in written or otherwise recorded form rather than in speech.",
+          ""
+        ],
+        [
+          "Slander",
+          "Defamation communicated through spoken words rather than in a fixed or recorded form.",
+          ""
+        ],
+        [
+          "Abnormally dangerous activity",
+          "An uncommon activity creating a very significant risk of physical harm even when all parties exercise reasonable care.",
+          ""
+        ],
+        [
+          "Attractive nuisance",
+          "A dangerous artificial condition on land that draws trespassing children who cannot appreciate the risk.",
+          ""
+        ],
+        [
+          "Consumer expectation test",
+          "A design-defect standard finding no liability when an ordinary consumer would not expect the product to be defective.",
+          ""
+        ],
+        [
+          "Design defect",
+          "A flaw inherent in a product's plan before manufacture, making the product unreasonably dangerous as designed.",
+          ""
+        ],
+        [
+          "Failure to warn",
+          "A product defect created by inadequate instructions or missing warnings about latent dangers.",
+          ""
+        ],
+        [
+          "Manufacturing defect",
+          "A flaw confined to some units of a product line, arising during construction rather than in the design.",
+          ""
+        ],
+        [
+          "Products liability",
+          "Responsibility of commercial sellers in a product's chain for injuries caused by a defective product they place in commerce.",
+          ""
+        ],
+        [
+          "Risk-utility test",
+          "A design-defect standard excusing a defendant when a product's usefulness outweighs its inherent risk of harm.",
+          ""
+        ],
+        [
+          "Strict liability",
+          "Liability imposed without regard to the defendant's intent or care when the law deems the activity inherently risky.",
+          ""
+        ],
+        [
+          "Compensatory damages",
+          "Money awarded equal to the plaintiff's proven loss, intended to restore rather than punish.",
+          "award = proven loss"
+        ],
+        [
+          "Damages",
+          "Money a court orders paid to make an injured party whole for a proven civil wrong.",
+          ""
+        ],
+        [
+          "General damages",
+          "Harm that flows directly and inevitably from the wrong, suffered by any injured party in that situation.",
+          ""
+        ],
+        [
+          "Mitigation of damages",
+          "A doctrine barring recovery of losses the injured party could have avoided through reasonable efforts.",
+          ""
+        ],
+        [
+          "Nominal damages",
+          "A token sum, such as one dollar, that acknowledges a violated legal right with no measurable loss.",
+          ""
+        ],
+        [
+          "Punitive damages",
+          "Extra money awarded alongside compensatory damages to punish intentional or wanton misconduct and deter repetition.",
+          ""
+        ],
+        [
+          "Special damages",
+          "Quantifiable losses with a set monetary cost, such as medical bills or property repair expenses.",
+          ""
+        ],
+        [
+          "Treble damages",
+          "A statutory award of three times the proven actual damages, imposed for especially egregious conduct.",
+          "3 × actual damages"
+        ],
+        [
+          "Assumption of risk",
+          "A common-law defense that bars recovery when a plaintiff voluntarily accepted the known danger, merged into comparative negligence in many jurisdictions.",
+          ""
+        ],
+        [
+          "Comparative negligence",
+          "A rule reducing a plaintiff's recovery by the plaintiff's own share of fault instead of barring it outright, in pure or modified forms.",
+          "recovery × (1 − plaintiff fault)"
+        ],
+        [
+          "Consent",
+          "A voluntary agreement to another's proposed conduct, requiring capacity and an absence of coercion, fraud, or error.",
+          ""
+        ],
+        [
+          "Contributory negligence",
+          "A common-law rule barring any recovery by a plaintiff who was even slightly negligent, retained in four states and the District of Columbia.",
+          ""
+        ],
+        [
+          "Defense of others",
+          "Reasonable force used to protect a third party from another person's threatened or attempted force.",
+          ""
+        ],
+        [
+          "Good Samaritan rule",
+          "A rule making a volunteer rescuer who takes charge of a helpless person liable for negligent care in the rescue.",
+          ""
+        ],
+        [
+          "Last clear chance",
+          "A doctrine letting a negligent plaintiff recover when the defendant had the final opportunity to avoid the harm.",
+          ""
+        ],
+        [
+          "Self-defense",
+          "Force reasonably believed necessary to repel an imminent unlawful attack, limited to a proportionate response.",
+          ""
+        ],
+        [
+          "Sovereign immunity",
+          "A common-law doctrine preventing suits against the government unless it consents, with federal and state waivers available by statute.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "criminal-law",
+      "name": "Criminal Law",
+      "short": "Criminal law",
+      "color": "#9b6ae0",
+      "dark": "#bb95ff",
+      "defs": [
+        [
+          "Actus reus",
+          "The physical element of a crime, consisting of a voluntary act or a chargeable omission.",
+          "guilty act"
+        ],
+        [
+          "Causation",
+          "The element that connects the defendant's conduct to the prohibited result, proven as but-for or proximate cause.",
+          "conduct → result"
+        ],
+        [
+          "Corpus delicti",
+          "Proof that the essential parts of the charged crime actually occurred, required before a prosecution proceeds.",
+          "body of the crime"
+        ],
+        [
+          "Mala in se",
+          "A crime treated as inherently wrong under general community standards, such as murder.",
+          "wrong in itself"
+        ],
+        [
+          "Mala prohibita",
+          "A crime that statutes prohibit although it is not inherently wrong, such as a parking violation.",
+          "wrong only by statute"
+        ],
+        [
+          "Omission",
+          "A failure to act that satisfies actus reus only when a legal duty to act existed.",
+          ""
+        ],
+        [
+          "Proximate cause",
+          "An actual cause that is also legally sufficient to support criminal liability for the result.",
+          "actual + legally sufficient"
+        ],
+        [
+          "Transferred intent",
+          "Intent aimed at one victim that supplies the mental state for harm to a different victim.",
+          "intent shifts to actual victim"
+        ],
+        [
+          "Voluntary act",
+          "A bodily movement the defendant controls, excluding reflexes and convulsions from actus reus.",
+          ""
+        ],
+        [
+          "General intent",
+          "An intent to perform the prohibited act without a wish for its consequences.",
+          "intent to act only"
+        ],
+        [
+          "Knowingly",
+          "A Model Penal Code mental state in which the defendant is practically certain the conduct causes the result.",
+          ""
+        ],
+        [
+          "Malice aforethought",
+          "The common-law mental state for murder, satisfied by intent to kill or harm, felony murder, or depraved heart.",
+          "mental state for murder"
+        ],
+        [
+          "Mens rea",
+          "The culpable state of mind a prosecutor must prove, such as purpose, knowledge, recklessness, or negligence.",
+          "guilty mind"
+        ],
+        [
+          "Negligently",
+          "A Model Penal Code mental state in which a defendant is unaware of a risk a careful person would notice.",
+          ""
+        ],
+        [
+          "Purposefully",
+          "A Model Penal Code mental state in which the defendant has a conscious object to bring about the result.",
+          ""
+        ],
+        [
+          "Recklessly",
+          "A Model Penal Code mental state in which the defendant consciously disregards a substantial and unjustified risk.",
+          ""
+        ],
+        [
+          "Specific intent",
+          "An intent to bring about a particular result beyond simply performing the prohibited act.",
+          "intent to a result"
+        ],
+        [
+          "Strict liability crime",
+          "An offense that requires proof of the act but no proof of any guilty state of mind.",
+          "no mens rea required"
+        ],
+        [
+          "Assault",
+          "A common-law offense of intentionally putting another person in reasonable apprehension of imminent harmful or offensive contact.",
+          "apprehension of contact"
+        ],
+        [
+          "Attempt",
+          "An inchoate offense requiring intent to commit the target crime, plus dangerous proximity at common law or a substantial step under the Model Penal Code.",
+          "target crime not completed"
+        ],
+        [
+          "Battery",
+          "A common-law offense of intentionally causing harmful or offensive physical contact with another person without consent.",
+          "contact occurs"
+        ],
+        [
+          "Burglary",
+          "Unlawful entry into a building with intent to commit a crime inside, though the exact elements vary by jurisdiction.",
+          "entry with intent"
+        ],
+        [
+          "Conspiracy",
+          "An agreement between two or more people to commit an illegal act, plus intent and an overt act in most jurisdictions.",
+          "agreement to commit crime"
+        ],
+        [
+          "Felony murder",
+          "A rule that treats a death occurring during a dangerous felony as murder without any intent to kill.",
+          "felony + death = murder"
+        ],
+        [
+          "Involuntary manslaughter",
+          "The negligent causing of another person's death, a killing punished as a lesser offense than murder.",
+          "negligent killing"
+        ],
+        [
+          "Larceny",
+          "The common-law taking of another person's property with the intent to deprive the owner of it.",
+          "theft at common law"
+        ],
+        [
+          "Murder",
+          "An unlawful killing of another person with malice aforethought, graded into degrees by most modern statutes.",
+          "killing with malice"
+        ],
+        [
+          "Robbery",
+          "The unlawful taking of property from a person or their presence by force or threat of force.",
+          "theft by force"
+        ],
+        [
+          "Voluntary manslaughter",
+          "An intentional killing without malice, charged for heat of passion at common law or extreme disturbance under the Model Penal Code.",
+          "provoked killing"
+        ],
+        [
+          "Defense of others",
+          "A criminal justification permitting reasonable force to protect another person from an imminent unlawful attack.",
+          ""
+        ],
+        [
+          "Diminished capacity",
+          "A claim that mental impairment prevented the specific intent required, reducing the charge instead of producing an acquittal.",
+          "reduces the charge"
+        ],
+        [
+          "Duress (criminal law)",
+          "A defense that a reasonable threat of imminent death or serious bodily injury compelled the criminal act.",
+          "threat by another person"
+        ],
+        [
+          "Excuse",
+          "A defense that exempts the defendant from liability without claiming the conduct itself was justified.",
+          ""
+        ],
+        [
+          "Insanity defense",
+          "A defense that mental disease left the defendant unable to know wrongfulness or, under the Model Penal Code, to appreciate or conform.",
+          ""
+        ],
+        [
+          "Intoxication",
+          "A defense that intoxication prevented the required mental state, with involuntary intoxication accepted more readily than voluntary.",
+          ""
+        ],
+        [
+          "Justification",
+          "A defense claiming the conduct itself was right or warranted, so punishment serves no purpose.",
+          "conduct was right"
+        ],
+        [
+          "Necessity defense",
+          "A defense that illegal conduct was the lesser of two evils, with no reasonable alternative and no greater danger created.",
+          "lesser of two evils"
+        ],
+        [
+          "Self-defense",
+          "A criminal justification permitting reasonable and proportionate force to repel an imminent unlawful attack on oneself.",
+          ""
+        ],
+        [
+          "Capital punishment",
+          "The death penalty imposed by a state as punishment for a crime and carried out by execution.",
+          "death as sentence"
+        ],
+        [
+          "Federal sentencing guidelines",
+          "Advisory rules that federal judges consult to calculate a sentence from offense seriousness and criminal history.",
+          ""
+        ],
+        [
+          "Guideline range",
+          "The imprisonment range found by intersecting a defendant's offense level with their criminal history category.",
+          "offense level × CHC"
+        ],
+        [
+          "Mandatory minimum",
+          "A minimum penalty set by statute that leaves the sentencing judge no discretion to go lower.",
+          "statutory floor"
+        ],
+        [
+          "Parole",
+          "Conditional release from prison before the sentence is fully served, subject to supervision and conditions.",
+          "release before sentence ends"
+        ],
+        [
+          "Probation",
+          "A sentence of community supervision in place of incarceration, imposed with conditions set by the court.",
+          "community instead of prison"
+        ],
+        [
+          "Recidivism",
+          "An offender's tendency to commit new crimes that produce fresh convictions after a prior sentence.",
+          "reoffending"
+        ],
+        [
+          "Sentencing",
+          "The stage at which a court imposes a penalty on a defendant after conviction.",
+          "penalty after conviction"
+        ],
+        [
+          "Supervised release",
+          "A period of court supervision that follows a federal prison sentence to support the offender's return to the community.",
+          ""
+        ],
+        [
+          "Three strikes",
+          "A sentencing structure that mandates a life term upon a third serious or violent felony conviction.",
+          "third strike = life"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "collectionId": "us-legal-literacy",
+  "generatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "usll-archives-bill-of-rights",
+      "title": "Bill of Rights transcript (Amendments I-X)",
+      "publisher": "U.S. National Archives",
+      "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+      "type": "primary-source-transcript",
+      "license": "Public domain (US government work)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Locator is the amendment slug (e.g. sec.amendment-4). The landing page omits the text, so the transcript URL is cited instead."
+    },
+    {
+      "id": "usll-constitution-annotated",
+      "title": "Constitution Annotated: Analysis and Interpretation of the Constitution",
+      "publisher": "Congressional Research Service, Library of Congress",
+      "url": "https://constitution.congress.gov/",
+      "type": "government-commentary",
+      "license": "Public domain (US government work)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read amendment and essay annotations; locator is the browse-essay path segment (e.g. sec.amdt1-7-3-8). Fetched via a text-rendering proxy after Cloudflare 403."
+    },
+    {
+      "id": "usll-doj-justice-101",
+      "title": "Justice 101: Steps in the Federal Criminal Process",
+      "publisher": "U.S. Department of Justice, Executive Office for U.S. Attorneys",
+      "url": "https://www.justice.gov/usao/justice-101/steps-federal-criminal-process",
+      "type": "guidance",
+      "license": "Public domain (US government)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read charging, initial hearing, plea bargaining, discovery, trial, post-trial motions, sentencing, and appeal sections."
+    },
+    {
+      "id": "usll-frcp",
+      "title": "Federal Rules of Civil Procedure",
+      "publisher": "Cornell Law School, Legal Information Institute (LII)",
+      "url": "https://www.law.cornell.edu/rules/frcp",
+      "type": "code",
+      "license": "Public domain (US government law text); LII compilation CC BY-NC-SA 2.5",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "cl.<n>",
+      "notes": "Read Rules 3, 4, 5, 7, 8, 12, 13, 14, 15, 16, 26, 30, 33, 34, 36, 37, 41, 50, 55, 56, 59, 65; locator is the rule number."
+    },
+    {
+      "id": "usll-frcrmp",
+      "title": "Federal Rules of Criminal Procedure",
+      "publisher": "Cornell Law School, Legal Information Institute (LII)",
+      "url": "https://www.law.cornell.edu/rules/frcrmp",
+      "type": "code",
+      "license": "Public domain (US government law text); LII compilation CC BY-NC-SA 2.5",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "cl.<n>",
+      "notes": "Read Rules 3, 4, 5, 5.1, 6, 7, 10, 11, 12, 16, 29, 32, 46, 48; locator is the rule number (e.g. cl.5.1)."
+    },
+    {
+      "id": "usll-lii-constitution-conan",
+      "title": "U.S. Constitution Annotated (LII edition)",
+      "publisher": "Cornell Law School, Legal Information Institute (LII)",
+      "url": "https://www.law.cornell.edu/constitution-conan",
+      "type": "government-commentary",
+      "license": "CC BY-NC-SA 2.5 (LII edition of Congressional Research Service commentary)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read the First Amendment speech essays (content-based and content-neutral regulation, content-neutral laws, viewpoint discrimination). Locator is the LII page slug."
+    },
+    {
+      "id": "usll-openstax-business-law-i-essentials-2e",
+      "title": "Business Law I Essentials 2e — Ch. 6 The Tort System",
+      "publisher": "OpenStax (Rice University)",
+      "url": "https://openstax.org/books/business-law-i-essentials-2e/pages/6-1-intentional-torts-and-negligence",
+      "type": "textbook",
+      "license": "CC BY-NC-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read 6.1 intentional torts and negligence and 6.2 product and strict liability."
+    },
+    {
+      "id": "usll-ucc-article-2",
+      "title": "Uniform Commercial Code, Article 2 — Sales",
+      "publisher": "Cornell Law School, Legal Information Institute (LII)",
+      "url": "https://www.law.cornell.edu/ucc/2",
+      "type": "code",
+      "license": "CC BY-NC-SA 2.5 (LII edition)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read §§ 2-201, 2-202, 2-204, 2-205, 2-206, 2-207, 2-209, 2-302, 2-314, 2-315, 2-601, 2-610, 2-615, 2-711, 2-715, 2-718; locator is the section number (e.g. sec.2-206)."
+    },
+    {
+      "id": "usll-uscourts-federal-courts",
+      "title": "About Federal Courts",
+      "publisher": "Administrative Office of the U.S. Courts (US federal judiciary)",
+      "url": "https://www.uscourts.gov/about-federal-courts",
+      "type": "government",
+      "license": "Public domain (US government work)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read court-role-and-structure, district courts, courts of appeals, comparing federal and state courts, and appeals pages."
+    },
+    {
+      "id": "usll-ussc-glossary",
+      "title": "Glossary of Federal Sentencing-Related Terms",
+      "publisher": "United States Sentencing Commission",
+      "url": "https://www.ussc.gov/education/glossary",
+      "type": "glossary",
+      "license": "Public domain (US government)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read advisory guidelines, guideline range, departure, variance, mandatory minimum, offense level, criminal history category, relevant conduct, restitution, supervised release entries."
+    },
+    {
+      "id": "usll-wex",
+      "title": "Wex: Legal Dictionary and Encyclopedia",
+      "publisher": "Cornell Law School, Legal Information Institute (LII)",
+      "url": "https://www.law.cornell.edu/wex",
+      "type": "encyclopedia",
+      "license": "CC BY-NC-SA 2.5 (LII original content, per LII site documentation)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<slug>",
+      "notes": "Read ~90 individual Wex entries across all six subjects; locators are Wex entry slugs. Folded the contracts subject's duplicate id 'usll-wex-legal-encyclopedia' into this record. All definitions paraphrased."
+    }
+  ]
+}
