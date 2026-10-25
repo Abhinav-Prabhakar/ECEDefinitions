@@ -51,11 +51,11 @@
           "folderId": "1-mWpn3WSll2yrWeDpFkwxLV0Xbj7RCd7",
           "folderUrl": "https://drive.google.com/drive/folders/1-mWpn3WSll2yrWeDpFkwxLV0Xbj7RCd7",
           "data": "data/subjects/1-1/matrix-algebra-and-calculus.json",
-          "definitionCount": 5,
+          "definitionCount": 48,
           "unitCount": 6,
-          "coveredUnits": 1,
-          "status": "partial",
-          "sourceCount": 1
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 22
         },
         {
           "id": "problem-solving-using-c",
@@ -402,11 +402,11 @@
           "folderId": "1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
           "folderUrl": "https://drive.google.com/drive/folders/1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
           "data": "data/subjects/3-1/digital-signal-processing.json",
-          "definitionCount": 37,
+          "definitionCount": 64,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 17
         },
         {
           "id": "ic-applications",
@@ -597,11 +597,11 @@
           "folderId": "1TbCKnWWIMcdAuvJsO-DNCDk0VZI2yWLu",
           "folderUrl": "https://drive.google.com/drive/folders/1TbCKnWWIMcdAuvJsO-DNCDk0VZI2yWLu",
           "data": "data/subjects/3-2/python-programming.json",
-          "definitionCount": 40,
+          "definitionCount": 67,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 11
         },
         {
           "id": "vlsi-technology-and-design",

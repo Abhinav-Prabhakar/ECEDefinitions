@@ -8,7 +8,7 @@
   "courseType": null,
   "folderId": "1TbCKnWWIMcdAuvJsO-DNCDk0VZI2yWLu",
   "folderUrl": "https://drive.google.com/drive/folders/1TbCKnWWIMcdAuvJsO-DNCDk0VZI2yWLu",
-  "status": "partial",
+  "status": "complete",
   "definitions": [
     {
       "id": "python",
@@ -448,6 +448,303 @@
       "unitTitle": "Python OOP and Regular Expressions",
       "sources": [
         "pp-unit-iii-dr-pl#slide.29"
+      ]
+    },
+    {
+      "id": "file-object",
+      "term": "File object",
+      "definition": "Handle returned by the built-in open function, exposing methods to read, write and reposition within a stored data stream.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-io#reading-and-writing-files"
+      ]
+    },
+    {
+      "id": "file-mode",
+      "term": "File mode",
+      "definition": "Text flag passed to open() such as r, w, a or r+ that sets whether access reads, overwrites, appends or updates.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-io#reading-and-writing-files"
+      ]
+    },
+    {
+      "id": "with-statement",
+      "term": "with statement",
+      "definition": "Context-manager construct that closes an opened resource automatically when its block ends, even if an exception occurs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-io#reading-and-writing-files"
+      ]
+    },
+    {
+      "id": "read",
+      "term": "read()",
+      "definition": "Method that returns up to a given number of characters or bytes, or the entire contents when no size is given.",
+      "formula": "f.read(size)",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-io#methods-of-file-objects"
+      ]
+    },
+    {
+      "id": "seek",
+      "term": "seek()",
+      "definition": "Method that moves the current position to an offset measured from the start, the current position or the end.",
+      "formula": "f.seek(offset, whence)",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-io#methods-of-file-objects"
+      ]
+    },
+    {
+      "id": "json-module",
+      "term": "json module",
+      "definition": "Standard-library module that converts lists, dictionaries and other basic objects to and from a UTF-8 text interchange format.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-io#saving-structured-data-with-json"
+      ]
+    },
+    {
+      "id": "pickling",
+      "term": "Pickling",
+      "definition": "Serialization of an entire object hierarchy into a byte stream that only Python can read back, unsafe for untrusted data.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-pickle#overview"
+      ]
+    },
+    {
+      "id": "os-path",
+      "term": "os.path",
+      "definition": "Standard-library module offering functions such as join, exists, isfile, isdir and splitext to build and query filesystem names portably.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-ospath#functions-covered"
+      ]
+    },
+    {
+      "id": "csv-module",
+      "term": "csv module",
+      "definition": "Standard-library module that reads and writes delimiter-separated tabular rows, handling quoting rules through named dialects.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "File Handling and Serialization",
+      "sources": [
+        "pp-py-csv#reading-csv-reader"
+      ]
+    },
+    {
+      "id": "tkinter",
+      "term": "Tkinter",
+      "definition": "Standard Python binding to the Tcl/Tk graphical interface toolkit, available on Unix, macOS and Windows.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#what-tkinter-is"
+      ]
+    },
+    {
+      "id": "widget",
+      "term": "Widget",
+      "definition": "Python object representing one visual interface element such as a label, button or entry, created with its parent as first argument.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#widgets"
+      ]
+    },
+    {
+      "id": "root-window",
+      "term": "Root window",
+      "definition": "Top-level container created by calling Tk() that initializes the toolkit and parents every other interface element.",
+      "formula": "root = tk.Tk()",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#what-tkinter-is"
+      ]
+    },
+    {
+      "id": "mainloop",
+      "term": "mainloop()",
+      "definition": "Method that starts the event-processing cycle, keeping the interface responsive to user input until the application quits.",
+      "formula": "root.mainloop()",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#mainloop"
+      ]
+    },
+    {
+      "id": "geometry-manager",
+      "term": "Geometry manager",
+      "definition": "Mechanism that positions and sizes widgets inside their container; Tk provides pack, grid and place.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#geometry-managers"
+      ]
+    },
+    {
+      "id": "pack",
+      "term": "pack()",
+      "definition": "Layout method that stacks widgets against one side of the container: top, bottom, left or right.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#pack"
+      ]
+    },
+    {
+      "id": "grid",
+      "term": "grid()",
+      "definition": "Layout method arranging widgets in rows and columns like a table, regarded as the most flexible option.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#grid"
+      ]
+    },
+    {
+      "id": "place",
+      "term": "place()",
+      "definition": "Layout method positioning widgets at absolute or relative coordinates within the container, giving maximum control and no automatic arrangement.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#place"
+      ]
+    },
+    {
+      "id": "event-binding",
+      "term": "Event binding",
+      "definition": "Association of a callback with an input pattern such as <Enter> or <Return>, so the function receives a notification object when triggered.",
+      "formula": "widget.bind(sequence, func)",
+      "unit": 5,
+      "unitTitle": "GUI Programming with Tkinter",
+      "sources": [
+        "pp-py-tkinter#event-binding"
+      ]
+    },
+    {
+      "id": "ndarray",
+      "term": "ndarray",
+      "definition": "Homogeneous N-dimensional array type at the core of NumPy, with fixed total size and a rectangular, non-jagged shape.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-numpy-basics#ndarray"
+      ]
+    },
+    {
+      "id": "dtype",
+      "term": "dtype",
+      "definition": "Attribute recording the single data type shared by all elements of an array, such as int64 or float64.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-numpy-basics#dtype"
+      ]
+    },
+    {
+      "id": "broadcasting",
+      "term": "Broadcasting",
+      "definition": "Rule letting operations combine arrays of different shapes when their dimensions are equal or one of them is 1.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-numpy-basics#broadcasting"
+      ]
+    },
+    {
+      "id": "series",
+      "term": "Series",
+      "definition": "One-dimensional labeled array in pandas able to hold any data type, indexed by a default range when no index is given.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-pandas-10min#series"
+      ]
+    },
+    {
+      "id": "dataframe",
+      "term": "DataFrame",
+      "definition": "Two-dimensional pandas structure of labeled rows and columns in which each column may have its own data type.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-pandas-10min#dataframe"
+      ]
+    },
+    {
+      "id": "groupby",
+      "term": "groupby",
+      "definition": "Split-apply-combine operation that divides data by criteria, applies a function to each part and merges the results.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-pandas-10min#groupby"
+      ]
+    },
+    {
+      "id": "nan",
+      "term": "NaN",
+      "definition": "Floating-point placeholder for absent values that pandas skips in computations by default and handles through dropna and fillna.",
+      "formula": "np.nan",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-pandas-10min#missing-data"
+      ]
+    },
+    {
+      "id": "figure",
+      "term": "Figure",
+      "definition": "Top-level container onto which Matplotlib draws, tracking its plotting regions, titles, legends and colorbars.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-mpl-quickstart#figure"
+      ]
+    },
+    {
+      "id": "axes",
+      "term": "Axes",
+      "definition": "Plotting region attached to a Figure that holds the data, ticks, labels and title; most plot configuration uses its methods.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NumPy, pandas and Matplotlib",
+      "sources": [
+        "pp-mpl-quickstart#axes"
       ]
     }
   ]
