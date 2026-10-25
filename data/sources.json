@@ -4740,6 +4740,246 @@
       "kind": "web",
       "status": "accessed",
       "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-arithmetic-coding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Arithmetic coding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arithmetic_coding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-block-truncation-coding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Block Truncation Coding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Block_Truncation_Coding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-discrete-cosine-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Discrete cosine transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discrete_cosine_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-digital-image",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Digital image - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_image",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-digital-image-processing",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Digital image processing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_image_processing",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-edge-detection",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Edge detection - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edge_detection",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-haar-wavelet",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Haar wavelet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Haar_wavelet",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-hadamard-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Hadamard transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hadamard_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-histogram-equalization",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Histogram equalization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Histogram_equalization",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-hough-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Hough transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hough_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-huffman-coding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Huffman coding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Huffman_coding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-image-compression",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Image compression - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Image_compression",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-kernel-image-processing",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Kernel (image processing) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kernel_(image_processing)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-karhunen-loeve-theorem",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Karhunen-Loeve theorem - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Karhunen%E2%80%93Lo%C3%A8ve_theorem",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-mathematical-morphology",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Mathematical morphology - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mathematical_morphology",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-nearest-centroid-classifier",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Nearest centroid classifier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nearest_centroid_classifier",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-pixel",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Pixel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pixel",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-quantization-signal-processing",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Quantization (signal processing) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quantization_(signal_processing)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-radon-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Radon transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radon_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-run-length-encoding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Run-length encoding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Run-length_encoding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-image-segmentation",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Image segmentation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Image_segmentation",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-template-matching",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Template matching - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Template_matching",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-vector-quantization",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Vector quantization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vector_quantization",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-wiener-deconvolution",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Wiener deconvolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wiener_deconvolution",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
     }
   ]
 }
