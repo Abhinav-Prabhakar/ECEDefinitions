@@ -1132,6 +1132,11 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   line-height:1.06;letter-spacing:-.04em;
   min-height:1.1em;max-width:22ch;
 }
+.q-blank{
+  display:inline-block;width:2.4em;height:.8em;
+  margin:0 .12em;vertical-align:baseline;
+  border-bottom:max(1px,.06em) solid currentColor;opacity:.55;
+}
 .q-def::after{
   content:'';display:block;width:36px;height:1px;
   background:var(--accent);opacity:.45;margin-top:18px;
@@ -3630,15 +3635,16 @@ function renderQuestion(){
   qIdx.textContent = pad(st.i + 1);
   qCounter.textContent = `${pad(st.i + 1)} / ${pad(st.qs.length)}`;
   qKind.innerHTML = isWord ? `term <b>→</b> definition` : `definition <b>→</b> term`;
-  qDef.textContent = isWord ? q.d[0] : q.d[1];
+  if (isWord) qDef.textContent = q.d[0];
+  else qDef.innerHTML = maskedHTML(q.masked);
   qOpts.className = 'q-opts' + (isWord ? ' long' : '');
 
   qOpts.innerHTML = q.opts.map((o, k) => {
-    const label = isWord ? o.def : o.term;
+    const label = isWord ? maskedHTML(o.masked) : esc(o.term);
     const letter = 'ABCD'[k];
     return `<button class="opt" type="button" aria-keyshortcuts="${k + 1} ${letter}">
       <span class="key">${letter}</span>
-      <span class="o-term">${esc(label)}</span>
+      <span class="o-term">${label}</span>
       <span class="o-mark"></span>
     </button>`;
   }).join('');
@@ -3733,6 +3739,127 @@ function pickAdaptiveDefs(s, count){
   return shuffle(picked);
 }
 
+/* Quiz text hygiene.
+   Many definitions restate their own term ("A stack is…", "Domain Name
+   System: …"), which gives the answer away. maskTerm swaps the term, its
+   parenthetical alias and any acronym expansion for a blank. */
+const MASK = '\u0000';
+const ACRONYM_FILLER = new Set(['of', 'and', 'for', 'the', 'a', 'an', 'in', 'to', 'on', 'by', 'with', '&']);
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const maskCache = new Map();
+
+function termVariants(term){
+  const out = new Set();
+  const add = v => {
+    v = v.trim().replace(/^(the|a|an)\s+/i, '');
+    if (v.replace(/[^\p{L}\p{N}]/gu, '').length >= 2) out.add(v);
+  };
+  const base = term.replace(/\s*\([^)]*\)\s*/g, ' ').trim();
+  add(term);
+  add(base);
+  add(base.replace(/'s\b/g, ''));
+  (term.match(/\(([^)]*)\)/g) || []).forEach(p => add(p.slice(1, -1)));
+  return [...out].sort((a, b) => b.length - a.length);
+}
+
+function maskTerm(term, def){
+  const key = term + '\u0001' + def;
+  if (maskCache.has(key)) return maskCache.get(key);
+  let text = def;
+
+  // Spelled-out acronyms: "DNS" ↔ "Domain Name System".
+  const acronyms = [...new Set(term.match(/\b[A-Z][A-Z0-9]{1,6}\b/g) || [])];
+  for (const ac of acronyms){
+    const words = [...text.matchAll(/[\p{L}\p{N}][\p{L}\p{N}'’-]*|&/gu)];
+    for (let i = 0; i < words.length; i++){
+      let k = 0, j = i;
+      while (j < words.length && k < ac.length){
+        const w = words[j][0];
+        if (w[0] === ac[k]){ k++; j++; }
+        else if (k > 0 && ACRONYM_FILLER.has(w.toLowerCase())) j++;
+        else break;
+      }
+      if (k === ac.length && j - i >= 2){
+        const start = words[i].index;
+        const end = words[j - 1].index + words[j - 1][0].length;
+        text = text.slice(0, start) + MASK + text.slice(end);
+        break;
+      }
+    }
+  }
+
+  for (const v of termVariants(term)){
+    const pattern = v.split(/[\s-]+/).map(escRe).join('[\\s-]+');
+    const re = new RegExp(`(?<![\\p{L}\\p{N}])${pattern}(?:'s|’s|es|s)?(?![\\p{L}\\p{N}])`, 'giu');
+    text = text.replace(re, MASK);
+  }
+  // "An ___" would hint that the term starts with a vowel.
+  text = text.replace(/(?<![\p{L}\p{N}])(an?)(\s+)(?=\u0000)/giu, (m, a, sp) => (a[0] === 'A' ? 'The' : 'the') + sp);
+  maskCache.set(key, text);
+  return text;
+}
+
+function maskedHTML(text){
+  return esc(text).replace(/\u0000/g, '<span class="q-blank" aria-label="blank"> </span>');
+}
+
+const SIM_STOP = new Set('a an the of in to and or for by with on at as is are be its it from that which this between per into than when where each one two its their used using'.split(' '));
+const simCache = new Map();
+function simTokens(text){
+  if (simCache.has(text)) return simCache.get(text);
+  const set = new Set(
+    text.toLowerCase().match(/[\p{L}\p{N}]+/gu)?.filter(w => w.length > 2 && !SIM_STOP.has(w))
+      .map(w => w.replace(/(ization|isation|ation|ance|ence|ity|ing|ion|ies|es|s)$/, '')) || []
+  );
+  simCache.set(text, set);
+  return set;
+}
+function jaccard(a, b){
+  if (!a.size || !b.size) return 0;
+  let n = 0;
+  a.forEach(x => { if (b.has(x)) n++; });
+  return n / (a.size + b.size - n);
+}
+// Blanked definition reduced to its words, in order. Two equal keys mean
+// the definitions can't be told apart once their terms are hidden.
+function twinKey(term, def){
+  return (maskTerm(term, def).toLowerCase().match(/[\p{L}\p{N}\u0000]+/gu) || [])
+    .filter(w => !['a', 'an', 'the'].includes(w)).join(' ');
+}
+
+/* Wrong answers that look like the right one: similar wording, same unit,
+   with a little randomness so rounds vary. For definition → term, drop any
+   candidate whose blanked definition reads the same as the correct one —
+   those questions have two right answers. */
+function pickDistractors(s, d, type){
+  const target = simTokens(maskTerm(d[0], d[1]));
+  const targetKey = twinKey(d[0], d[1]);
+  const targetTerm = simTokens(d[0]);
+  const seen = new Set([d[0].toLowerCase(), d[1].toLowerCase()]);
+  const pool = [];
+  for (const x of s.defs){
+    if (seen.has(x[0].toLowerCase()) || seen.has(x[1].toLowerCase())) continue;
+    const xs = simTokens(maskTerm(x[0], x[1]));
+    if (type === 'def' && twinKey(x[0], x[1]) === targetKey) continue;
+    const score = jaccard(target, xs)
+      + 0.5 * jaccard(targetTerm, simTokens(x[0]))
+      + (d[3] != null && x[3] === d[3] ? 0.15 : 0)
+      + Math.random() * 0.3;
+    pool.push({ x, score });
+  }
+  pool.sort((a, b) => b.score - a.score);
+  const out = [];
+  for (const { x } of pool){
+    const k = x[0].toLowerCase();
+    if (seen.has(k)) continue;
+    seen.add(k);
+    seen.add(x[1].toLowerCase());
+    out.push(x);
+    if (out.length === 3) break;
+  }
+  return out;
+}
+
 function startQuiz(){
   if (!currentId) return;
   const s = SUBJECT_BY_ID[currentId];
@@ -3745,9 +3872,12 @@ function startQuiz(){
     ...Array(Math.floor(count / 2)).fill('def')
   ]);
   const qs = picked.map((d, i) => {
-    const others = shuffle(s.defs.filter(x => x[0] !== d[0])).slice(0, 3);
-    const opts = shuffle([d, ...others]).map(x => ({ term: x[0], def: x[1], formula: x[2] }));
-    return { d, type: typeSlots[i], opts };
+    const type = typeSlots[i];
+    const others = pickDistractors(s, d, type);
+    const opts = shuffle([d, ...others]).map(x => ({
+      term: x[0], def: x[1], formula: x[2], masked: maskTerm(x[0], x[1])
+    }));
+    return { d, type, opts, masked: maskTerm(d[0], d[1]) };
   });
 
   if (!quizOpen){
