@@ -1,0 +1,723 @@
+{
+  "version": 1,
+  "id": "homeostasis",
+  "collectionId": "anatomy-and-physiology",
+  "section": "core",
+  "name": "Homeostasis",
+  "shortName": "Homeostasis",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#9b6ae0",
+  "dark": "#bb95ff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Feedback loops"
+    },
+    {
+      "number": 2,
+      "title": "Temperature regulation"
+    },
+    {
+      "number": 3,
+      "title": "pH and buffers"
+    },
+    {
+      "number": 4,
+      "title": "Osmoregulation"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "homeostasis",
+      "term": "Homeostasis",
+      "definition": "The process by which cells throughout the body maintain internal conditions within a narrow life-compatible range.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Set point",
+        "Negative feedback",
+        "Positive feedback"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "set-point",
+      "term": "Set point",
+      "definition": "The physiological value around which the normal range of a parameter fluctuates.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Normal range",
+        "Stimulus",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "normal-range",
+      "term": "Normal range",
+      "definition": "The restricted set of values for a physiological parameter that is optimally healthful and stable.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Set point",
+        "Stimulus",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "stimulus",
+      "term": "Stimulus",
+      "definition": "A deviation of a physiological parameter beyond its normal range that triggers a feedback response.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Sensor",
+        "Effector",
+        "Control center"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "sensor",
+      "term": "Sensor",
+      "definition": "A component of a feedback system that monitors a physiological value and reports it to the control center.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [
+        "Receptor"
+      ],
+      "confusables": [
+        "Stimulus",
+        "Control center",
+        "Effector"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "control-center",
+      "term": "Control center",
+      "definition": "The component that compares a monitored value to its normal range and activates an effector if needed.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Sensor",
+        "Effector",
+        "Stimulus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "effector",
+      "term": "Effector",
+      "definition": "The component that produces a change reversing a deviation and restoring the value to its normal range.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Sensor",
+        "Control center",
+        "Stimulus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "negative-feedback",
+      "term": "Negative feedback",
+      "definition": "A mechanism that reverses a deviation from the set point, maintaining body parameters within normal range.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Positive feedback",
+        "Set point",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "positive-feedback",
+      "term": "Positive feedback",
+      "definition": "A mechanism that intensifies a change, moving the body farther from the normal range until an endpoint.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Negative feedback",
+        "Set point",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "feedback-loop",
+      "term": "Feedback loop",
+      "definition": "A cycle of stimulus, sensor, control center, and effector that regulates a physiological condition.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Feedback loops",
+      "aliases": [],
+      "confusables": [
+        "Negative feedback",
+        "Positive feedback",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "thermoregulation",
+      "term": "Thermoregulation",
+      "definition": "The process of maintaining body temperature within its normal range through heat gain or loss.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Vasodilation",
+        "Vasoconstriction",
+        "Shivering"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "temperature-regulation-center",
+      "term": "Temperature regulation center",
+      "definition": "The brain region that receives temperature data and activates heat-loss or heat-gain responses.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Heat-loss center",
+        "Heat-gain center",
+        "Hypothalamus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "heat-loss-center",
+      "term": "Heat-loss center",
+      "definition": "A cluster of brain cells stimulated when body temperature exceeds its normal range to promote cooling.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Heat-gain center",
+        "Vasodilation",
+        "Sweating"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "heat-gain-center",
+      "term": "Heat-gain center",
+      "definition": "Brain cells activated by cold that reduce skin blood flow and trigger heat-producing responses.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Heat-loss center",
+        "Vasoconstriction",
+        "Shivering"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "vasodilation",
+      "term": "Vasodilation",
+      "definition": "Widening of skin blood vessels that increases blood flow to the surface to radiate heat.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Vasoconstriction",
+        "Heat-loss center",
+        "Sweating"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "vasoconstriction",
+      "term": "Vasoconstriction",
+      "definition": "Narrowing of skin blood vessels that reduces blood flow to the surface to conserve heat.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Vasodilation",
+        "Heat-gain center",
+        "Shivering"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "sweating",
+      "term": "Sweating",
+      "definition": "Activation of sweat glands whose evaporating sweat removes heat from the skin surface.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [
+        "Perspiration"
+      ],
+      "confusables": [
+        "Vasodilation",
+        "Heat-loss center",
+        "Evaporation"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "shivering",
+      "term": "Shivering",
+      "definition": "Involuntary skeletal muscle contractions that generate heat during severe cold exposure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Vasoconstriction",
+        "Heat-gain center",
+        "Thyroid hormone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "thyroid-hormone",
+      "term": "Thyroid hormone",
+      "definition": "Hormone released to increase metabolic activity and heat production throughout the body.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [],
+      "confusables": [
+        "Epinephrine",
+        "Shivering",
+        "Heat-gain center"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "epinephrine",
+      "term": "Epinephrine",
+      "definition": "Hormone that breaks down glycogen to glucose, increasing metabolism and heat production.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Temperature regulation",
+      "aliases": [
+        "Adrenaline"
+      ],
+      "confusables": [
+        "Thyroid hormone",
+        "Shivering",
+        "Heat-gain center"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.1"
+      ]
+    },
+    {
+      "id": "ph",
+      "term": "pH",
+      "definition": "A measure of the acidity or alkalinity of a solution based on hydrogen ion concentration.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Acid",
+        "Base",
+        "Buffer"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "acid",
+      "term": "Acid",
+      "definition": "A substance that donates hydrogen ions, lowering pH and increasing acidity.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Base",
+        "Buffer",
+        "Bicarbonate"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "base",
+      "term": "Base",
+      "definition": "A substance that accepts hydrogen ions or donates hydroxyl ions, raising pH.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [
+        "Alkali"
+      ],
+      "confusables": [
+        "Acid",
+        "Buffer",
+        "Bicarbonate"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "buffer",
+      "term": "Buffer",
+      "definition": "A chemical system that prevents radical pH change by absorbing excess hydrogen or hydroxyl ions.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Acid",
+        "Base",
+        "Bicarbonate"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "bicarbonate",
+      "term": "Bicarbonate",
+      "definition": "An ion that serves as a key buffer component and helps maintain acid-base balance.",
+      "formula": "HCO3-",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Carbonic acid",
+        "Carbon dioxide",
+        "Carbonic anhydrase"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "carbonic-acid",
+      "term": "Carbonic acid",
+      "definition": "A weak acid formed from carbon dioxide and water that participates in buffering.",
+      "formula": "H2CO3",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Bicarbonate",
+        "Carbon dioxide",
+        "Carbonic anhydrase"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "bicarbonate-buffer",
+      "term": "Bicarbonate-carbonic acid buffer",
+      "definition": "The primary buffering system of interstitial fluid, maintaining a 20:1 bicarbonate to carbonic acid ratio.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Bicarbonate",
+        "Carbonic acid",
+        "Buffer"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "carbonic-anhydrase",
+      "term": "Carbonic anhydrase",
+      "definition": "An enzyme in red blood cells that converts carbon dioxide into bicarbonate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Bicarbonate",
+        "Carbonic acid",
+        "Carbon dioxide"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "acidosis",
+      "term": "Acidosis",
+      "definition": "A condition in which blood pH falls below 7.35, making it too acidic.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Alkalosis",
+        "Acid",
+        "Buffer"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "alkalosis",
+      "term": "Alkalosis",
+      "definition": "A condition in which blood pH rises above 7.45, making it too alkaline.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "pH and buffers",
+      "aliases": [],
+      "confusables": [
+        "Acidosis",
+        "Base",
+        "Buffer"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "osmolality",
+      "term": "Osmolality",
+      "definition": "The ratio of solutes to water in a solution, reflecting hydration state.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Osmosis",
+        "Osmoreceptor",
+        "Plasma osmolality"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "plasma-osmolality",
+      "term": "Plasma osmolality",
+      "definition": "The solute-to-water ratio of blood plasma, monitored to assess hydration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Osmolality",
+        "Osmoreceptor",
+        "Dehydration"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "osmosis",
+      "term": "Osmosis",
+      "definition": "The diffusion of water across a semipermeable membrane from higher to lower water concentration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Osmolality",
+        "Osmoreceptor",
+        "Aquaporin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "osmoreceptor",
+      "term": "Osmoreceptor",
+      "definition": "A sensory receptor in the hypothalamus that monitors blood osmolality.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Osmolality",
+        "Thirst response",
+        "ADH"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "thirst-response",
+      "term": "Thirst response",
+      "definition": "Physiological processes triggered by dehydration that produce conscious thirst and water-seeking.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Osmoreceptor",
+        "Dehydration",
+        "ADH"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "dehydration",
+      "term": "Dehydration",
+      "definition": "A net loss of water resulting in insufficient water in blood and other tissues.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Diuresis",
+        "Thirst response",
+        "Plasma osmolality"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "adh",
+      "term": "Antidiuretic hormone (ADH)",
+      "definition": "Hormone that increases water reabsorption from kidney collecting tubules.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [
+        "Vasopressin"
+      ],
+      "confusables": [
+        "Aldosterone",
+        "Angiotensin II",
+        "Aquaporin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "aquaporin",
+      "term": "Aquaporin",
+      "definition": "A water channel protein inserted into kidney tubule membranes to increase water reabsorption.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "ADH",
+        "Osmosis",
+        "Aldosterone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "aldosterone",
+      "term": "Aldosterone",
+      "definition": "Hormone that increases sodium reabsorption in kidney tubules, with water following.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "ADH",
+        "Angiotensin II",
+        "Aquaporin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    },
+    {
+      "id": "diuresis",
+      "term": "Diuresis",
+      "definition": "Production of urine in excess of normal levels, expelling excess body water.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Osmoregulation",
+      "aliases": [],
+      "confusables": [
+        "Dehydration",
+        "ADH",
+        "Aldosterone"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.26"
+      ]
+    }
+  ]
+}

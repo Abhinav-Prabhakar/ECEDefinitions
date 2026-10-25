@@ -1,0 +1,958 @@
+{
+  "version": 1,
+  "id": "cardiovascular-respiratory",
+  "collectionId": "anatomy-and-physiology",
+  "section": "core",
+  "name": "Cardiovascular and Respiratory Systems",
+  "shortName": "Cardiovascular and respiratory",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Heart"
+    },
+    {
+      "number": 2,
+      "title": "Blood vessels"
+    },
+    {
+      "number": 3,
+      "title": "Blood"
+    },
+    {
+      "number": 4,
+      "title": "Respiratory tract"
+    },
+    {
+      "number": 5,
+      "title": "Gas exchange"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "heart",
+      "term": "Heart",
+      "definition": "A muscular organ that pumps blood through the body's blood vessels.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Atrium",
+        "Ventricle",
+        "Myocardium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "atrium",
+      "term": "Atrium",
+      "definition": "An upper chamber of the heart that receives blood returning to the heart.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Ventricle",
+        "Auricle"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "ventricle",
+      "term": "Ventricle",
+      "definition": "A lower chamber of the heart that pumps blood out to the lungs or body.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Atrium",
+        "Aorta"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "myocardium",
+      "term": "Myocardium",
+      "definition": "The thick muscular middle layer of the heart wall that contracts to pump blood.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Endocardium",
+        "Epicardium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "epicardium",
+      "term": "Epicardium",
+      "definition": "The outermost layer of the heart wall, also called the visceral pericardium.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [
+        "Visceral pericardium"
+      ],
+      "confusables": [
+        "Myocardium",
+        "Endocardium",
+        "Parietal pericardium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "sinoatrial-node",
+      "term": "Sinoatrial node",
+      "definition": "The heart's natural pacemaker, located in the right atrium, that initiates each heartbeat.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [
+        "SA node"
+      ],
+      "confusables": [
+        "Atrioventricular node",
+        "Purkinje fibers"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "atrioventricular-node",
+      "term": "Atrioventricular node",
+      "definition": "A relay station that delays the electrical signal between the atria and ventricles.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [
+        "AV node"
+      ],
+      "confusables": [
+        "Sinoatrial node",
+        "Bundle of His"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "cardiac-cycle",
+      "term": "Cardiac cycle",
+      "definition": "The sequence of contraction and relaxation events in the heart during one heartbeat.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Systole",
+        "Diastole"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "systole",
+      "term": "Systole",
+      "definition": "The phase of the cardiac cycle when the heart muscle contracts and pumps blood.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Diastole",
+        "Cardiac cycle"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "diastole",
+      "term": "Diastole",
+      "definition": "The phase of the cardiac cycle when the heart muscle relaxes and fills with blood.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Systole",
+        "Cardiac cycle"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "cardiac-output",
+      "term": "Cardiac output",
+      "definition": "The volume of blood pumped by the heart per minute.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Heart",
+      "aliases": [],
+      "confusables": [
+        "Stroke volume",
+        "Heart rate"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.19"
+      ]
+    },
+    {
+      "id": "artery",
+      "term": "Artery",
+      "definition": "A blood vessel that carries blood away from the heart, usually oxygenated.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Vein",
+        "Arteriole"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "vein",
+      "term": "Vein",
+      "definition": "A blood vessel that returns blood toward the heart, usually deoxygenated.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Artery",
+        "Venule"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "capillary",
+      "term": "Capillary",
+      "definition": "The smallest blood vessel, where exchange of gases and nutrients occurs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Arteriole",
+        "Venule"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "arteriole",
+      "term": "Arteriole",
+      "definition": "A small branch of an artery that leads into capillary beds.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Artery",
+        "Venule"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "venule",
+      "term": "Venule",
+      "definition": "A small vessel that collects blood from capillaries and feeds into veins.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Vein",
+        "Arteriole"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "aorta",
+      "term": "Aorta",
+      "definition": "The largest artery, carrying oxygenated blood from the left ventricle to the body.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Vena cava",
+        "Pulmonary artery"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "vena-cava",
+      "term": "Vena cava",
+      "definition": "A large vein returning deoxygenated blood from the body to the right atrium.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [
+        "Superior vena cava",
+        "Inferior vena cava"
+      ],
+      "confusables": [
+        "Aorta",
+        "Pulmonary vein"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "tunica-intima",
+      "term": "Tunica intima",
+      "definition": "The innermost layer of a blood vessel wall, lined by endothelium.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Tunica media",
+        "Tunica externa"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "tunica-media",
+      "term": "Tunica media",
+      "definition": "The middle layer of a blood vessel wall containing smooth muscle and elastic fibers.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Tunica intima",
+        "Tunica externa"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "tunica-externa",
+      "term": "Tunica externa",
+      "definition": "The outermost layer of a blood vessel wall made of connective tissue.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [
+        "Tunica adventitia"
+      ],
+      "confusables": [
+        "Tunica intima",
+        "Tunica media"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "endothelium",
+      "term": "Endothelium",
+      "definition": "The simple squamous epithelium lining the interior of blood vessels.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Tunica intima",
+        "Epithelium"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "blood-pressure",
+      "term": "Blood pressure",
+      "definition": "The force exerted by circulating blood on the walls of blood vessels.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Blood vessels",
+      "aliases": [],
+      "confusables": [
+        "Pulse",
+        "Hypertension"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.20"
+      ]
+    },
+    {
+      "id": "plasma",
+      "term": "Plasma",
+      "definition": "The liquid component of blood that carries cells, nutrients, and wastes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Serum",
+        "Interstitial fluid"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "erythrocyte",
+      "term": "Erythrocyte",
+      "definition": "A red blood cell that transports oxygen and carbon dioxide in the blood.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [
+        "Red blood cell",
+        "RBC"
+      ],
+      "confusables": [
+        "Leukocyte",
+        "Platelet"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "hemoglobin",
+      "term": "Hemoglobin",
+      "definition": "The iron-containing protein in red blood cells that binds oxygen.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Hematocrit",
+        "Myoglobin"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "leukocyte",
+      "term": "Leukocyte",
+      "definition": "A white blood cell involved in immune defense against infection.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [
+        "White blood cell",
+        "WBC"
+      ],
+      "confusables": [
+        "Erythrocyte",
+        "Lymphocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "neutrophil",
+      "term": "Neutrophil",
+      "definition": "The most abundant white blood cell, which phagocytizes bacteria and debris.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Lymphocyte",
+        "Monocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "lymphocyte",
+      "term": "Lymphocyte",
+      "definition": "A white blood cell that mediates adaptive immunity, such as B and T cells.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Neutrophil",
+        "Monocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "platelet",
+      "term": "Platelet",
+      "definition": "A cell fragment that participates in blood clotting and hemostasis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [
+        "Thrombocyte"
+      ],
+      "confusables": [
+        "Erythrocyte",
+        "Leukocyte"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "hematocrit",
+      "term": "Hematocrit",
+      "definition": "The percentage of blood volume occupied by red blood cells.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Hemoglobin",
+        "Plasma"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "hemostasis",
+      "term": "Hemostasis",
+      "definition": "The process that stops bleeding through vascular spasm, platelet plug, and clotting.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Homeostasis",
+        "Coagulation"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "erythropoiesis",
+      "term": "Erythropoiesis",
+      "definition": "The production of new red blood cells in the bone marrow.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [],
+      "confusables": [
+        "Hematopoiesis",
+        "Thrombopoiesis"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "abo-blood-group",
+      "term": "ABO blood group",
+      "definition": "A system classifying blood by antigens present on red blood cell surfaces.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Blood",
+      "aliases": [
+        "Blood type"
+      ],
+      "confusables": [
+        "Rh factor",
+        "Universal donor"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.18"
+      ]
+    },
+    {
+      "id": "nasal-cavity",
+      "term": "Nasal cavity",
+      "definition": "The air-filled space behind the nose that warms, moistens, and filters air.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [],
+      "confusables": [
+        "Pharynx",
+        "Nasopharynx"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "pharynx",
+      "term": "Pharynx",
+      "definition": "A muscular tube that connects the nasal cavity to the larynx and esophagus.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [
+        "Throat"
+      ],
+      "confusables": [
+        "Larynx",
+        "Trachea"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "larynx",
+      "term": "Larynx",
+      "definition": "The voice box containing vocal cords, located between the pharynx and trachea.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [
+        "Voice box"
+      ],
+      "confusables": [
+        "Pharynx",
+        "Trachea"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "trachea",
+      "term": "Trachea",
+      "definition": "The windpipe, a tube reinforced with cartilage rings that conducts air to bronchi.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [
+        "Windpipe"
+      ],
+      "confusables": [
+        "Bronchus",
+        "Larynx"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "bronchus",
+      "term": "Bronchus",
+      "definition": "One of two main branches from the trachea leading into each lung.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [
+        "Main bronchus"
+      ],
+      "confusables": [
+        "Bronchiole",
+        "Trachea"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "bronchiole",
+      "term": "Bronchiole",
+      "definition": "A small airway branch within the lung that lacks cartilage support.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [],
+      "confusables": [
+        "Bronchus",
+        "Alveolus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "alveolus",
+      "term": "Alveolus",
+      "definition": "A tiny air sac in the lung where gas exchange with blood occurs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [
+        "Alveoli"
+      ],
+      "confusables": [
+        "Bronchiole",
+        "Respiratory membrane"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "diaphragm",
+      "term": "Diaphragm",
+      "definition": "The dome-shaped muscle that contracts to increase thoracic volume during inspiration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [],
+      "confusables": [
+        "Intercostal muscles",
+        "Pleura"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "pleura",
+      "term": "Pleura",
+      "definition": "The serous membrane that lines the thoracic cavity and covers the lungs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [],
+      "confusables": [
+        "Pericardium",
+        "Diaphragm"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "epiglottis",
+      "term": "Epiglottis",
+      "definition": "A flap that closes the larynx during swallowing to prevent food aspiration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [],
+      "confusables": [
+        "Larynx",
+        "Uvula"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "mucus",
+      "term": "Mucus",
+      "definition": "A slippery secretion that traps dust and pathogens in the respiratory tract.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Respiratory tract",
+      "aliases": [],
+      "confusables": [
+        "Surfactant",
+        "Cilia"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "external-respiration",
+      "term": "External respiration",
+      "definition": "Gas exchange between the lungs and the blood across the respiratory membrane.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [],
+      "confusables": [
+        "Internal respiration",
+        "Ventilation"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "internal-respiration",
+      "term": "Internal respiration",
+      "definition": "Gas exchange between the blood and body tissues at the cellular level.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [],
+      "confusables": [
+        "External respiration",
+        "Cellular respiration"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "diffusion",
+      "term": "Diffusion",
+      "definition": "The passive movement of gases from high to low concentration across membranes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [],
+      "confusables": [
+        "Osmosis",
+        "Active transport"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "partial-pressure",
+      "term": "Partial pressure",
+      "definition": "The pressure contributed by one gas in a mixture of gases.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [],
+      "confusables": [
+        "Total pressure",
+        "Concentration gradient"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "surfactant",
+      "term": "Surfactant",
+      "definition": "A substance that reduces surface tension in alveoli to prevent collapse.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [],
+      "confusables": [
+        "Mucus",
+        "Alveolus"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "oxygen",
+      "term": "Oxygen",
+      "definition": "A gas essential for cellular respiration, transported mainly by hemoglobin.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [
+        "O2"
+      ],
+      "confusables": [
+        "Carbon dioxide",
+        "Carbon monoxide"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "carbon-dioxide",
+      "term": "Carbon dioxide",
+      "definition": "A waste gas produced by cells and removed by the lungs during exhalation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [
+        "CO2"
+      ],
+      "confusables": [
+        "Oxygen",
+        "Carbon monoxide"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "hemoglobin-saturation",
+      "term": "Hemoglobin saturation",
+      "definition": "The percentage of hemoglobin binding sites occupied by oxygen.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [],
+      "confusables": [
+        "Partial pressure",
+        "Oxygen"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "respiratory-membrane",
+      "term": "Respiratory membrane",
+      "definition": "The thin barrier between alveolar air and capillary blood for gas exchange.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [
+        "Alveolar-capillary membrane"
+      ],
+      "confusables": [
+        "Alveolus",
+        "Capillary"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    },
+    {
+      "id": "ventilation",
+      "term": "Ventilation",
+      "definition": "The mechanical process of moving air into and out of the lungs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Gas exchange",
+      "aliases": [
+        "Breathing"
+      ],
+      "confusables": [
+        "Respiration",
+        "External respiration"
+      ],
+      "sources": [
+        "openstax-anatomy-physiology-2e#ch.22"
+      ]
+    }
+  ]
+}
