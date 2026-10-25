@@ -635,20 +635,20 @@
           "sourceCount": 6
         },
         {
-          "id": "dbsc",
-          "name": "DBSC",
+          "id": "database-systems-concepts",
+          "name": "Database Systems Concepts",
           "shortName": "DBSC",
-          "code": "",
+          "code": "9FC79",
           "courseType": "OE",
           "elective": "Open Elective II",
           "folderId": "1RJoH6oQDbwc9iTvKDrdh2GSDUrd_czKr",
           "folderUrl": "https://drive.google.com/drive/folders/1RJoH6oQDbwc9iTvKDrdh2GSDUrd_czKr",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/3-2/database-systems-concepts.json",
+          "definitionCount": 67,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 17
         },
         {
           "id": "digital-image-processing",
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2008,
-    "completeSubjects": 32,
+    "definitions": 2075,
+    "completeSubjects": 33,
     "partialSubjects": 11,
-    "inaccessibleSubjects": 9
+    "inaccessibleSubjects": 8
   }
 }
