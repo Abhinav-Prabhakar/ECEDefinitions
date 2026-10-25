@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "collectionId": "software-interview-glossary",
+  "generatedAt": "2026-10-25",
+  "sources": [
+    {
+      "id": "python-glossary",
+      "title": "Python Glossary",
+      "publisher": "Python Software Foundation",
+      "url": "https://docs.python.org/3/glossary.html",
+      "type": "documentation",
+      "license": "PSF License",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<anchor>",
+      "notes": "Language-neutral terms such as closure, scope, iterable and generator; locators are the glossary entry HTML ids."
+    },
+    {
+      "id": "mdn-glossary",
+      "title": "MDN Web Docs Glossary",
+      "publisher": "MDN Web Docs (Mozilla)",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary",
+      "type": "documentation",
+      "license": "CC BY-SA 2.5",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<Term>",
+      "notes": "Per-term glossary pages; locator is the page URL slug exactly as it appears."
+    },
+    {
+      "id": "opendsa",
+      "title": "OpenDSA: An Active eTextbook for Data Structures and Algorithms",
+      "publisher": "OpenDSA Project (Virginia Tech)",
+      "url": "https://opendsa-server.cs.vt.edu/",
+      "type": "textbook",
+      "license": "MIT License",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<module-slug>",
+      "notes": "Module and chapter headings used as locators."
+    },
+    {
+      "id": "wikipedia-algorithms",
+      "title": "Wikipedia articles on algorithms and data structures",
+      "publisher": "Wikimedia Foundation",
+      "url": "https://en.wikipedia.org/wiki/Algorithm",
+      "type": "encyclopedia",
+      "license": "CC BY-SA 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<Article_Title>",
+      "notes": "Used for orientation and named-term definitions; locators are article titles exactly as in the URL."
+    },
+    {
+      "id": "aws-glossary",
+      "title": "AWS Glossary",
+      "publisher": "Amazon Web Services",
+      "url": "https://docs.aws.amazon.com/general/latest/gr/glos-chap.html",
+      "type": "documentation",
+      "license": "unknown",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<anchor>",
+      "notes": "Entry anchors taken from the page's <a name> ids."
+    },
+    {
+      "id": "sre-book",
+      "title": "Site Reliability Engineering",
+      "publisher": "Google",
+      "url": "https://sre.google/sre-book/table-of-contents/",
+      "type": "book",
+      "license": "CC BY-NC-ND 4.0",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": "Chapters 3, 4 and 5 read; terms cited to those chapters."
+    },
+    {
+      "id": "postgres-glossary",
+      "title": "PostgreSQL Glossary (Appendix M)",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/glossary.html",
+      "type": "documentation",
+      "license": "PostgreSQL License",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<anchor>",
+      "notes": "Lowercase glossary entry ids used as locators."
+    },
+    {
+      "id": "postgres-docs",
+      "title": "PostgreSQL Documentation",
+      "publisher": "PostgreSQL Global Development Group",
+      "url": "https://www.postgresql.org/docs/current/",
+      "type": "documentation",
+      "license": "PostgreSQL License",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<page-slug>",
+      "notes": "Manual pages cited by URL slug for terms not in the glossary."
+    },
+    {
+      "id": "mongodb-glossary",
+      "title": "MongoDB Manual Glossary",
+      "publisher": "MongoDB, Inc.",
+      "url": "https://www.mongodb.com/docs/manual/reference/glossary/",
+      "type": "documentation",
+      "license": "CC BY-NC-SA 3.0 Unported",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "std-term-<slug>",
+      "notes": "Page anchors used as locators for NoSQL terms."
+    },
+    {
+      "id": "ostep",
+      "title": "Operating Systems: Three Easy Pieces",
+      "publisher": "Arpaci-Dusseau and Arpaci-Dusseau (University of Wisconsin-Madison)",
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "type": "textbook",
+      "license": "unknown",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "ch.<n>",
+      "notes": "Table of contents read to confirm chapter numbers; chapter PDFs were not machine-readable, so chapter numbers come from the contents page."
+    },
+    {
+      "id": "nist-glossary",
+      "title": "NIST Computer Security Resource Center Glossary",
+      "publisher": "National Institute of Standards and Technology (US government)",
+      "url": "https://csrc.nist.gov/glossary",
+      "type": "glossary",
+      "license": "public domain (US government work)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<term-slug>",
+      "notes": "Term slugs verified on the page; unavailable slugs were not cited."
+    },
+    {
+      "id": "rfc3022",
+      "title": "RFC 3022: Traditional IP Network Address Translator (Traditional NAT)",
+      "publisher": "Internet Engineering Task Force",
+      "url": "https://www.rfc-editor.org/rfc/rfc3022",
+      "type": "standard",
+      "license": "RFC license (2001 Internet Society, limited permissions)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<n>",
+      "notes": "Numbered sections used as locators."
+    },
+    {
+      "id": "rfc768",
+      "title": "RFC 768: User Datagram Protocol",
+      "publisher": "Internet Engineering Task Force",
+      "url": "https://www.rfc-editor.org/rfc/rfc768",
+      "type": "standard",
+      "license": "unknown (no copyright statement on page)",
+      "accessed": "2026-10-25",
+      "status": "parsed",
+      "locatorScheme": "sec.<name>",
+      "notes": "Added as the extra source for UDP; no copyright statement present on the page."
+    }
+  ]
+}

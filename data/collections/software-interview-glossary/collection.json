@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "id": "software-interview-glossary",
+  "name": "Software Interview Glossary",
+  "tagline": "Software, in one line.",
+  "topic": "Software interview glossary for mid-level software engineer candidates",
+  "audience": "Mid-level software engineer interview candidates",
+  "level": "intro",
+  "jurisdiction": "global",
+  "spelling": "US",
+  "language": "en",
+  "regulated": false,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "programming fundamentals: types, scope, functions, closures, control flow, memory, paradigms",
+      "data structures and algorithms: complexity, core structures, trees and graphs, hashing, sorting, design techniques",
+      "system design: scalability, reliability, consistency, partitioning, caching, messaging, operations",
+      "databases and SQL: relational model, keys, querying, transactions, indexes, NoSQL",
+      "operating systems and networking: processes, scheduling, memory, storage, synchronization, network protocols and addressing",
+      "web and browser: HTTP, rendering, DOM, security policies, storage, web APIs"
+    ],
+    "excludes": [
+      "language-specific syntax and library APIs",
+      "vendor product names and cloud service catalogues",
+      "coding-puzzle solutions and worked interview questions",
+      "machine learning, data engineering and LLM vocabulary (separate collections)",
+      "hiring process, behavioural interview and career advice"
+    ]
+  },
+  "assumptions": [
+    "Terms are defined at the level a mid-level engineer is expected to explain in an interview",
+    "Definitions follow widely used, vendor-neutral meanings; language-specific senses are noted in the term when they differ",
+    "Source ids in this collection are not prefixed with the collection id; they are unique within the collection",
+    "US spelling",
+    "Sources are free to read; the NIST Dictionary of Algorithms and Data Structures was unreachable during the access audit and is not used"
+  ],
+  "disclaimer": "",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "programming-fundamentals",
+          "name": "Programming Fundamentals",
+          "shortName": "Fundamentals",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/software-interview-glossary/subjects/programming-fundamentals.json",
+          "definitionCount": 49,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "data-structures-and-algorithms",
+          "name": "Data Structures and Algorithms",
+          "shortName": "DSA",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/software-interview-glossary/subjects/data-structures-and-algorithms.json",
+          "definitionCount": 68,
+          "unitCount": 7,
+          "coveredUnits": 7,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "system-design",
+          "name": "System Design",
+          "shortName": "System design",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/software-interview-glossary/subjects/system-design.json",
+          "definitionCount": 61,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 2
+        },
+        {
+          "id": "databases-and-sql",
+          "name": "Databases and SQL",
+          "shortName": "Databases",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/software-interview-glossary/subjects/databases-and-sql.json",
+          "definitionCount": 65,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 3
+        },
+        {
+          "id": "operating-systems-and-networking",
+          "name": "Operating Systems and Networking",
+          "shortName": "OS & networks",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/software-interview-glossary/subjects/operating-systems-and-networking.json",
+          "definitionCount": 60,
+          "unitCount": 7,
+          "coveredUnits": 7,
+          "status": "complete",
+          "sourceCount": 4
+        },
+        {
+          "id": "web-and-browser",
+          "name": "Web and Browser",
+          "shortName": "Web",
+          "code": null,
+          "courseType": "core",
+          "color": "#9b6ae0",
+          "dark": "#bb95ff",
+          "data": "data/collections/software-interview-glossary/subjects/web-and-browser.json",
+          "definitionCount": 53,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 1
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 1,
+    "subjects": 6,
+    "definitions": 356,
+    "completeSubjects": 6,
+    "partialSubjects": 0,
+    "inaccessibleSubjects": 0
+  }
+}

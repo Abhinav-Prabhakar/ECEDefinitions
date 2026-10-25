@@ -1,0 +1,1842 @@
+{
+  "version": 1,
+  "id": "software-interview-glossary",
+  "name": "Software Interview Glossary",
+  "short": "Software",
+  "subjects": [
+    {
+      "id": "programming-fundamentals",
+      "name": "Programming Fundamentals",
+      "short": "Fundamentals",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "Callable",
+          "An object supporting invocation with a set of arguments.",
+          ""
+        ],
+        [
+          "Hashable",
+          "An object with a hash value that never changes and equality comparison.",
+          ""
+        ],
+        [
+          "Immutable",
+          "An object whose value is fixed and cannot be altered after creation.",
+          ""
+        ],
+        [
+          "Mapping",
+          "A container supporting arbitrary key lookups by hashable keys.",
+          ""
+        ],
+        [
+          "Mutable",
+          "An object whose state is allowed to change during program execution.",
+          ""
+        ],
+        [
+          "Object",
+          "Any data with state (attributes or value) and defined behavior (methods).",
+          ""
+        ],
+        [
+          "Primitive",
+          "Data that is not an object and has no methods or properties.",
+          ""
+        ],
+        [
+          "Sequence",
+          "An iterable supporting efficient element access using integer indices.",
+          ""
+        ],
+        [
+          "Type",
+          "A characteristic of a value affecting what kind of data it stores.",
+          ""
+        ],
+        [
+          "Value",
+          "A primitive or an object reference held by a variable or property.",
+          ""
+        ],
+        [
+          "Binding",
+          "An association of an identifier with a value.",
+          ""
+        ],
+        [
+          "Closure variable",
+          "A free variable from an outer scope captured by a nested function.",
+          ""
+        ],
+        [
+          "Free variable",
+          "A variable used in a namespace that is not local to that namespace.",
+          ""
+        ],
+        [
+          "Global state",
+          "Data accessible throughout a program, such as module-level variables.",
+          ""
+        ],
+        [
+          "Hoisting",
+          "The interpreter moving declarations to the top of their scope before execution.",
+          ""
+        ],
+        [
+          "Namespace",
+          "The place where a variable is stored, implemented as a dictionary.",
+          ""
+        ],
+        [
+          "Nested scope",
+          "The ability to refer to a variable in an enclosing definition.",
+          ""
+        ],
+        [
+          "Scope",
+          "The current execution context where values and expressions are visible.",
+          ""
+        ],
+        [
+          "Argument",
+          "A value passed to a function when calling it.",
+          ""
+        ],
+        [
+          "Callback",
+          "A subroutine function passed as an argument to execute later.",
+          ""
+        ],
+        [
+          "Closure",
+          "A technique implementing lexically scoped name binding with first-class functions.",
+          ""
+        ],
+        [
+          "Coroutine function",
+          "A function returning a coroutine object defined with async def.",
+          ""
+        ],
+        [
+          "Decorator",
+          "A function returning another function, applied as a transformation.",
+          ""
+        ],
+        [
+          "Function",
+          "A code snippet callable by other code or by itself, optionally returning a value.",
+          ""
+        ],
+        [
+          "Generator function",
+          "A function returning a generator object using yield expressions.",
+          ""
+        ],
+        [
+          "Lambda",
+          "An anonymous inline function consisting of a single expression.",
+          ""
+        ],
+        [
+          "Method",
+          "A function defined inside a class body operating on instances.",
+          ""
+        ],
+        [
+          "Parameter",
+          "A named entity in a function definition specifying an accepted argument.",
+          ""
+        ],
+        [
+          "Call stack",
+          "A mechanism tracking the place in code calling multiple functions.",
+          ""
+        ],
+        [
+          "Control flow",
+          "The order in which the computer executes statements in a script.",
+          ""
+        ],
+        [
+          "Expression",
+          "A piece of syntax evaluated to some value.",
+          ""
+        ],
+        [
+          "Loop",
+          "A sequence of instructions repeated until a certain condition is met.",
+          ""
+        ],
+        [
+          "Recursion",
+          "The act of a function calling itself to solve smaller sub-problems.",
+          ""
+        ],
+        [
+          "Statement",
+          "A part of a suite that is an expression or a keyword construct.",
+          ""
+        ],
+        [
+          "Borrowed reference",
+          "A reference to an object not owned by the code using it.",
+          ""
+        ],
+        [
+          "Cyclic isolate",
+          "A subgroup of objects referencing each other in a reference cycle.",
+          ""
+        ],
+        [
+          "Garbage collection",
+          "The process of freeing memory when it is not used anymore.",
+          ""
+        ],
+        [
+          "Immortal",
+          "An object whose reference count is never modified or deallocated.",
+          ""
+        ],
+        [
+          "Object reference",
+          "A pointer to an object rather than a copy of its data.",
+          ""
+        ],
+        [
+          "Reference count",
+          "The number of references to an object, freed when it drops to zero.",
+          ""
+        ],
+        [
+          "Strong reference",
+          "A reference to an object owned by the code holding it.",
+          ""
+        ],
+        [
+          "Abstraction",
+          "A way to reduce complexity by hiding technical details behind simpler APIs.",
+          ""
+        ],
+        [
+          "Descriptor",
+          "An object defining __get__, __set__, or __delete__ methods.",
+          ""
+        ],
+        [
+          "Duck typing",
+          "A style determining interface by calling methods rather than checking types.",
+          ""
+        ],
+        [
+          "EAFP",
+          "A coding style trying an operation and catching exceptions if it fails.",
+          ""
+        ],
+        [
+          "Generic function",
+          "A function composed of multiple implementations for different types.",
+          ""
+        ],
+        [
+          "LBYL",
+          "A coding style testing pre-conditions before making calls or lookups.",
+          ""
+        ],
+        [
+          "Metaclass",
+          "The class of a class, responsible for creating class objects.",
+          ""
+        ],
+        [
+          "Single dispatch",
+          "Generic function dispatch choosing implementation by one argument's type.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "data-structures-and-algorithms",
+      "name": "Data Structures and Algorithms",
+      "short": "DSA",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Amortized analysis",
+          "Averaging the cost of an operation over a sequence of operations.",
+          ""
+        ],
+        [
+          "Asymptotic analysis",
+          "Estimating algorithm efficiency as input size grows large.",
+          ""
+        ],
+        [
+          "Average case",
+          "Typical running time over the distribution of expected inputs.",
+          ""
+        ],
+        [
+          "Basic operation",
+          "A primitive step whose cost does not depend on operand values.",
+          ""
+        ],
+        [
+          "Best case",
+          "Running time for the most favorable input of a given size.",
+          ""
+        ],
+        [
+          "Big-O notation",
+          "Notation for an upper bound on an algorithm's growth rate.",
+          ""
+        ],
+        [
+          "Lower bound",
+          "Best possible cost for any algorithm solving a problem.",
+          ""
+        ],
+        [
+          "Omega notation",
+          "Notation for a lower bound on an algorithm's growth rate.",
+          ""
+        ],
+        [
+          "Overhead",
+          "Extra information stored beyond the actual data values.",
+          ""
+        ],
+        [
+          "Recurrence relation",
+          "Function defined in terms of smaller instances of itself.",
+          ""
+        ],
+        [
+          "Space bound",
+          "Asymptotic limit on the memory an algorithm or structure needs.",
+          ""
+        ],
+        [
+          "Space/time tradeoff",
+          "Trading reduced time for increased space, or vice versa.",
+          ""
+        ],
+        [
+          "Theta notation",
+          "Notation for a tight bound on an algorithm's growth rate.",
+          ""
+        ],
+        [
+          "Time complexity",
+          "Amount of computer time an algorithm takes to run.",
+          ""
+        ],
+        [
+          "Worst case",
+          "Running time for the least favorable input of a given size.",
+          ""
+        ],
+        [
+          "Array-based list",
+          "List implementation storing elements in a contiguous array.",
+          ""
+        ],
+        [
+          "Doubly linked list",
+          "Linked list where each node links to both neighbors.",
+          ""
+        ],
+        [
+          "Dynamic memory allocation",
+          "Allocating memory for new elements as they are needed.",
+          ""
+        ],
+        [
+          "Freelist",
+          "Linked list of freed nodes available for reuse.",
+          ""
+        ],
+        [
+          "Header node",
+          "Extra first node whose value is ignored to simplify cases.",
+          ""
+        ],
+        [
+          "Linked list",
+          "List built from nodes linked by pointers to successors.",
+          ""
+        ],
+        [
+          "List",
+          "Finite ordered sequence of data items called elements.",
+          ""
+        ],
+        [
+          "Node",
+          "Element of a linked structure holding data and links.",
+          ""
+        ],
+        [
+          "Singly linked list",
+          "Linked list where each node links only to its successor.",
+          ""
+        ],
+        [
+          "FIFO",
+          "Policy where the first element inserted is the first removed.",
+          ""
+        ],
+        [
+          "Heap",
+          "Complete binary tree with a partial order between parent and child.",
+          ""
+        ],
+        [
+          "LIFO",
+          "Policy where the last element inserted is the first removed.",
+          ""
+        ],
+        [
+          "Max heap",
+          "Heap where every node is at least as large as its children.",
+          ""
+        ],
+        [
+          "Min heap",
+          "Heap where every node is at most as large as its children.",
+          ""
+        ],
+        [
+          "Priority queue",
+          "Collection organized by importance, yielding the highest priority first.",
+          ""
+        ],
+        [
+          "Queue",
+          "List-like structure inserting at the rear and removing at front.",
+          ""
+        ],
+        [
+          "Stack",
+          "List-like structure inserting and removing at only one end.",
+          ""
+        ],
+        [
+          "Binary search tree",
+          "Binary tree where left descendants are no greater than the node.",
+          ""
+        ],
+        [
+          "Binary tree",
+          "Tree where each node has at most two children.",
+          ""
+        ],
+        [
+          "Breadth-first search",
+          "Traversal exploring all neighbors before moving farther away.",
+          ""
+        ],
+        [
+          "Complete binary tree",
+          "Binary tree filled by levels from left to right.",
+          ""
+        ],
+        [
+          "Cycle",
+          "Path of length at least three connecting a vertex to itself.",
+          ""
+        ],
+        [
+          "DAG",
+          "Directed graph that contains no cycles at all.",
+          ""
+        ],
+        [
+          "Depth-first search",
+          "Traversal following one branch to its end before backtracking.",
+          ""
+        ],
+        [
+          "Full binary tree",
+          "Binary tree where each node has zero or two children.",
+          ""
+        ],
+        [
+          "Graph",
+          "A set of vertices together with a set of edges.",
+          ""
+        ],
+        [
+          "Height",
+          "Length of the longest path from root to a leaf.",
+          ""
+        ],
+        [
+          "Leaf",
+          "A node that has no children in a tree.",
+          ""
+        ],
+        [
+          "Minimal-cost spanning tree",
+          "Connected subgraph spanning vertices with minimum total edge cost.",
+          ""
+        ],
+        [
+          "Path",
+          "Sequence of vertices where consecutive vertices share an edge.",
+          ""
+        ],
+        [
+          "Topological sort",
+          "Linear ordering of vertices respecting all directed edges.",
+          ""
+        ],
+        [
+          "Traversal",
+          "Process of visiting every node in a tree exactly once.",
+          ""
+        ],
+        [
+          "Closed hashing",
+          "Collision resolution storing colliding records in other table slots.",
+          ""
+        ],
+        [
+          "Collision",
+          "Two keys mapping to the same hash table slot.",
+          ""
+        ],
+        [
+          "Exact-match query",
+          "Question asking which record has a given key value.",
+          ""
+        ],
+        [
+          "Hash function",
+          "Function mapping a search key to a hash table slot.",
+          ""
+        ],
+        [
+          "Hash table",
+          "Array used to store records by hashed key values.",
+          ""
+        ],
+        [
+          "Load factor",
+          "Ratio of stored records to hash table slots.",
+          ""
+        ],
+        [
+          "Open hashing",
+          "Collision resolution storing colliding records in external lists.",
+          ""
+        ],
+        [
+          "Decision tree",
+          "Binary tree modeling the binary decisions of an algorithm.",
+          ""
+        ],
+        [
+          "Heapsort",
+          "Sorting algorithm using a heap to extract maximums.",
+          "O(n log n)"
+        ],
+        [
+          "Insertion sort",
+          "Sorting by inserting each element into its sorted position.",
+          "O(n^2)"
+        ],
+        [
+          "Mergesort",
+          "Sorting by recursively splitting and merging sorted halves.",
+          "O(n log n)"
+        ],
+        [
+          "Quicksort",
+          "Sorting by partitioning around a pivot and recursing.",
+          "O(n log n)"
+        ],
+        [
+          "Radix sort",
+          "Sorting by distributing records according to key digits.",
+          ""
+        ],
+        [
+          "Sorting problem",
+          "Arranging records in order by key value, duplicates allowed.",
+          ""
+        ],
+        [
+          "Stable",
+          "Sorting algorithm preserving relative order of equal keys.",
+          ""
+        ],
+        [
+          "Divide and conquer",
+          "Solving a problem by splitting, solving parts, and combining.",
+          ""
+        ],
+        [
+          "Dynamic programming",
+          "Simplifying a problem by breaking it into overlapping subproblems.",
+          ""
+        ],
+        [
+          "Greedy algorithm",
+          "Algorithm making the locally best choice at each step.",
+          ""
+        ],
+        [
+          "Memoization",
+          "Caching results of subproblems to avoid repeated computation.",
+          ""
+        ],
+        [
+          "Optimal substructure",
+          "Property that an optimal solution combines optimal solutions to subproblems.",
+          ""
+        ],
+        [
+          "Reduction",
+          "Deriving bounds for one problem from another problem's bounds.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "short": "System design",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Auto Scaling group",
+          "A logical grouping of instances that share similar characteristics and are managed together for scaling.",
+          ""
+        ],
+        [
+          "Auto scaling",
+          "Automatic launching or terminating of instances based on user-defined policies, schedules, and health checks.",
+          ""
+        ],
+        [
+          "Breach",
+          "A condition where a user-set threshold is passed, possibly triggering a scaling activity.",
+          ""
+        ],
+        [
+          "Capacity",
+          "The amount of available compute size at a given time within defined minimum and maximum values.",
+          ""
+        ],
+        [
+          "Cooldown period",
+          "The time Auto Scaling waits before allowing another scaling change from an alarm.",
+          ""
+        ],
+        [
+          "Latency",
+          "The time it takes to return a response to a request.",
+          ""
+        ],
+        [
+          "Percentile",
+          "A value below which a given percentage of observations in a distribution fall.",
+          ""
+        ],
+        [
+          "Scale in",
+          "Removing instances from an existing Auto Scaling group.",
+          ""
+        ],
+        [
+          "Scale out",
+          "Adding instances to an existing Auto Scaling group.",
+          ""
+        ],
+        [
+          "Scaling activity",
+          "A process that changes the size, configuration, or makeup of an Auto Scaling group.",
+          ""
+        ],
+        [
+          "Scaling policy",
+          "A description of how Auto Scaling scales a group in response to changing demand.",
+          ""
+        ],
+        [
+          "Tail latency",
+          "The latency experienced by the slowest requests in the long tail of a distribution.",
+          ""
+        ],
+        [
+          "Throttling",
+          "The automatic restricting or slowing down of a process based on one or more limits.",
+          ""
+        ],
+        [
+          "Throughput",
+          "The rate at which a service processes requests, typically measured in requests per second.",
+          ""
+        ],
+        [
+          "Active-active",
+          "A high availability strategy where a workload runs simultaneously in multiple regions and serves traffic from all.",
+          ""
+        ],
+        [
+          "Active-passive",
+          "A disaster recovery strategy involving a primary region and a standby region.",
+          ""
+        ],
+        [
+          "Availability",
+          "The fraction of time a service is usable, measured by successful requests over total.",
+          ""
+        ],
+        [
+          "Availability Zone",
+          "A distinct location within a region that is insulated from failures in other zones.",
+          ""
+        ],
+        [
+          "Back up and restore",
+          "A disaster recovery strategy copying backups from a primary region to a standby region for restoration.",
+          ""
+        ],
+        [
+          "Durability",
+          "The likelihood that data will be retained over a long period of time.",
+          ""
+        ],
+        [
+          "Edge location",
+          "A data center that a service uses to perform service-specific operations closer to users.",
+          ""
+        ],
+        [
+          "Error budget",
+          "The rate at which service level objectives may be missed within a period.",
+          ""
+        ],
+        [
+          "Health check",
+          "A call that checks the health status of each instance in an Auto Scaling group.",
+          ""
+        ],
+        [
+          "Hot standby",
+          "An active-passive strategy where the workload is fully scaled in both primary and standby regions.",
+          ""
+        ],
+        [
+          "Pilot light",
+          "An active-passive strategy replicating data to a standby and provisioning only core infrastructure.",
+          ""
+        ],
+        [
+          "Region",
+          "A named set of resources in the same geographical area, comprised of at least three Availability Zones.",
+          ""
+        ],
+        [
+          "Service level agreement (SLA)",
+          "An explicit or implicit contract with users including consequences of meeting or missing objectives.",
+          ""
+        ],
+        [
+          "Service level indicator (SLI)",
+          "A carefully defined quantitative measure of some aspect of the level of service provided.",
+          ""
+        ],
+        [
+          "Service level objective (SLO)",
+          "A target value or range of values for a service level measured by an indicator.",
+          ""
+        ],
+        [
+          "Warm standby",
+          "An active-passive strategy where the workload is scaled down in the passive standby region but functional.",
+          ""
+        ],
+        [
+          "Consistency model",
+          "The method a service uses to achieve high availability, such as replicating data across servers.",
+          ""
+        ],
+        [
+          "Cross-Region replication",
+          "A solution for replicating data across different regions in near-real time.",
+          ""
+        ],
+        [
+          "Data consistency",
+          "A concept where data written successfully is updated in all copies across all regions over time.",
+          ""
+        ],
+        [
+          "Eventual consistency",
+          "A method achieving high availability by replicating data, where an immediate read might not show recent writes.",
+          ""
+        ],
+        [
+          "Eventually consistent read",
+          "A read returning data from one region that might not show the most recent write.",
+          ""
+        ],
+        [
+          "Global consistency",
+          "A concept where data written successfully updates all copies in all regions.",
+          ""
+        ],
+        [
+          "Read local/write global",
+          "An active-active strategy where reads and writes occur in the originating region and replicate synchronously.",
+          ""
+        ],
+        [
+          "Read local/write local",
+          "An active-active strategy where writes go to one primary region and reads are served from the originating region.",
+          ""
+        ],
+        [
+          "Read replica",
+          "An active copy of a database instance receiving replicated updates from the source.",
+          ""
+        ],
+        [
+          "Strongly consistent read",
+          "A read returning the most up-to-date data reflecting all previous successful writes.",
+          ""
+        ],
+        [
+          "Global secondary index",
+          "An index with a partition key and sort key that can differ from the table and span all partitions.",
+          ""
+        ],
+        [
+          "Load balancer",
+          "A DNS name with ports that distributes incoming traffic across multiple instances and zones.",
+          ""
+        ],
+        [
+          "Local secondary index",
+          "An index sharing the table partition key but using a different sort key.",
+          ""
+        ],
+        [
+          "Partition key",
+          "A simple primary key composed of one attribute used to distribute data.",
+          ""
+        ],
+        [
+          "Shard",
+          "A partition of data in an index split into primary and replica shards.",
+          ""
+        ],
+        [
+          "Sort key",
+          "An attribute used to sort partition keys in a composite primary key.",
+          ""
+        ],
+        [
+          "Cache cluster",
+          "A logical cache distributed over multiple cache nodes with a specific node count.",
+          ""
+        ],
+        [
+          "Cache node",
+          "A fixed-size chunk of secure network-attached memory running a cache service.",
+          ""
+        ],
+        [
+          "Content delivery network (CDN)",
+          "A web service speeding distribution of web content via a worldwide network of data centers.",
+          ""
+        ],
+        [
+          "Queue",
+          "A sequence of messages or jobs held in temporary storage awaiting transmission or processing.",
+          ""
+        ],
+        [
+          "Queue URL",
+          "A web address that uniquely identifies a queue.",
+          ""
+        ],
+        [
+          "Topic",
+          "A communication channel for sending messages and subscribing to notifications.",
+          ""
+        ],
+        [
+          "Visibility timeout",
+          "The period a message stays invisible after a component receives it from a queue.",
+          ""
+        ],
+        [
+          "Alarm",
+          "An item watching a metric over time and triggering actions when thresholds are crossed.",
+          ""
+        ],
+        [
+          "Basic monitoring",
+          "Monitoring of provided metrics derived at a five-minute frequency.",
+          ""
+        ],
+        [
+          "Blue/green deployment",
+          "A deployment method replacing original instances with a separate replacement environment.",
+          ""
+        ],
+        [
+          "Container",
+          "A standard unit of software containing application code and all relevant dependencies.",
+          ""
+        ],
+        [
+          "Continuous delivery",
+          "A practice where code changes are automatically built, tested, and prepared for release.",
+          ""
+        ],
+        [
+          "Continuous integration",
+          "A practice where developers regularly merge code changes and automated builds and tests run.",
+          ""
+        ],
+        [
+          "Detailed monitoring",
+          "Monitoring of provided metrics derived at a one-minute frequency.",
+          ""
+        ],
+        [
+          "Toil",
+          "Work tied to running a production service that is manual, repetitive, and scales linearly.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "databases-and-sql",
+      "name": "Databases and SQL",
+      "short": "Databases",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Attribute",
+          "A named, typed element within a tuple or relation.",
+          ""
+        ],
+        [
+          "Column",
+          "An attribute found in a table or view.",
+          ""
+        ],
+        [
+          "Database",
+          "A named collection of local SQL objects within a cluster.",
+          ""
+        ],
+        [
+          "Materialized view",
+          "A relation defined by a SELECT statement that stores its data like a table.",
+          ""
+        ],
+        [
+          "Null",
+          "A marker representing the absence of a definite value.",
+          ""
+        ],
+        [
+          "Relation",
+          "A set of tuples sharing a fixed ordered list of named attributes.",
+          ""
+        ],
+        [
+          "Schema",
+          "A namespace for SQL objects within a single database.",
+          ""
+        ],
+        [
+          "Table",
+          "A relation storing a collection of tuples with a common data structure.",
+          ""
+        ],
+        [
+          "Tuple",
+          "An ordered collection of attributes forming one row of a relation.",
+          ""
+        ],
+        [
+          "View",
+          "A relation defined by a SELECT statement with no storage of its own.",
+          ""
+        ],
+        [
+          "Check constraint",
+          "A constraint restricting allowed values in one or more attributes of a row.",
+          ""
+        ],
+        [
+          "Constraint",
+          "A restriction on the values of data allowed within a table or domain.",
+          ""
+        ],
+        [
+          "Foreign key",
+          "A constraint requiring column values to identify a row in another table.",
+          ""
+        ],
+        [
+          "Key",
+          "A means of identifying a row within a relation by attribute values.",
+          ""
+        ],
+        [
+          "Primary key",
+          "A unique constraint that also forbids null values in its columns.",
+          ""
+        ],
+        [
+          "Referential integrity",
+          "A restriction ensuring foreign key data matches data in the referenced relation.",
+          ""
+        ],
+        [
+          "Unique constraint",
+          "A constraint ensuring each value or combination appears only once in a relation.",
+          ""
+        ],
+        [
+          "Aggregate function",
+          "A function combining multiple input values into a single output value.",
+          ""
+        ],
+        [
+          "Delete",
+          "The SQL command that removes rows from a table or relation.",
+          "DELETE"
+        ],
+        [
+          "Insert",
+          "The SQL command used to add new data into a table.",
+          "INSERT"
+        ],
+        [
+          "Join",
+          "An operation combining data from multiple relations in a query.",
+          "JOIN"
+        ],
+        [
+          "Merge",
+          "An SQL command that conditionally adds, modifies, or removes rows using source data.",
+          "MERGE"
+        ],
+        [
+          "Query",
+          "A request sent to a database backend, usually to return or modify data.",
+          ""
+        ],
+        [
+          "Result set",
+          "A relation transmitted from a backend to a client after an SQL command.",
+          ""
+        ],
+        [
+          "Select",
+          "The SQL command used to request data from a database.",
+          "SELECT"
+        ],
+        [
+          "Update",
+          "The SQL command used to modify rows that may already exist in a table.",
+          "UPDATE"
+        ],
+        [
+          "Window function",
+          "A function applied to a partition of a query's result set.",
+          ""
+        ],
+        [
+          "ACID",
+          "The set of atomicity, consistency, isolation, and durability properties of transactions.",
+          ""
+        ],
+        [
+          "Atomicity",
+          "The property that a transaction's operations all complete or none do.",
+          ""
+        ],
+        [
+          "Commit",
+          "The act of finalizing a transaction, making changes visible and durable.",
+          "COMMIT"
+        ],
+        [
+          "Consistency",
+          "The property that database data always complies with integrity constraints.",
+          ""
+        ],
+        [
+          "Dirty read",
+          "A transaction reading data written by a concurrent uncommitted transaction.",
+          ""
+        ],
+        [
+          "Durability",
+          "The assurance that committed changes survive system failure or crash.",
+          ""
+        ],
+        [
+          "Isolation",
+          "The property that a transaction's effects are invisible to others before commit.",
+          ""
+        ],
+        [
+          "Lock",
+          "A mechanism limiting or preventing simultaneous access to a resource.",
+          ""
+        ],
+        [
+          "MVCC",
+          "A mechanism allowing concurrent readers and writers to avoid blocking each other.",
+          ""
+        ],
+        [
+          "Nonrepeatable read",
+          "Re-reading data and finding it changed by another committed transaction.",
+          ""
+        ],
+        [
+          "Phantom read",
+          "Re-executing a query and finding the matching row set changed by another transaction.",
+          ""
+        ],
+        [
+          "Read committed",
+          "An isolation level where each statement sees data committed before it began.",
+          ""
+        ],
+        [
+          "Read uncommitted",
+          "An isolation level allowing reads of uncommitted data from concurrent transactions.",
+          ""
+        ],
+        [
+          "Repeatable read",
+          "An isolation level where a transaction sees a snapshot from its start.",
+          ""
+        ],
+        [
+          "Rollback",
+          "The command undoing all operations performed since a transaction began.",
+          "ROLLBACK"
+        ],
+        [
+          "Savepoint",
+          "A mark within a transaction allowing partial rollback to that point.",
+          "SAVEPOINT"
+        ],
+        [
+          "Serializable",
+          "An isolation level emulating serial execution of all committed transactions.",
+          ""
+        ],
+        [
+          "Serialization anomaly",
+          "A committed group's result inconsistent with any serial execution order.",
+          ""
+        ],
+        [
+          "Transaction",
+          "A set of commands that succeed or fail together as one atomic unit.",
+          ""
+        ],
+        [
+          "Access method",
+          "An interface PostgreSQL uses to access data in tables and indexes.",
+          ""
+        ],
+        [
+          "Analyze",
+          "The act of collecting statistics to help the query planner decide execution.",
+          "ANALYZE"
+        ],
+        [
+          "B-tree",
+          "A data structure commonly used by database systems to store indexes.",
+          ""
+        ],
+        [
+          "Index",
+          "A relation containing data derived from a table to support fast retrieval.",
+          ""
+        ],
+        [
+          "Parallel query",
+          "The ability to execute parts of a query using multiple CPU processes.",
+          ""
+        ],
+        [
+          "Query planner",
+          "The component determining the most efficient way to execute queries.",
+          ""
+        ],
+        [
+          "Vacuum",
+          "The process removing outdated tuple versions required by MVCC.",
+          "VACUUM"
+        ],
+        [
+          "CAP theorem",
+          "A distributed system can provide at most two of consistency, availability, and partition tolerance.",
+          ""
+        ],
+        [
+          "Collection",
+          "A grouping of documents equivalent to a relational table.",
+          ""
+        ],
+        [
+          "Document",
+          "A record in a collection and the basic unit of data in MongoDB.",
+          ""
+        ],
+        [
+          "Eventual consistency",
+          "A model where reads eventually return the most recently written value.",
+          ""
+        ],
+        [
+          "Primary",
+          "The replica set member that receives all write operations.",
+          ""
+        ],
+        [
+          "Replica set",
+          "A group of servers maintaining the same data set for redundancy.",
+          ""
+        ],
+        [
+          "Replication",
+          "A feature allowing multiple servers to share the same data.",
+          ""
+        ],
+        [
+          "Secondary",
+          "A replica set member that replicates the primary's data.",
+          ""
+        ],
+        [
+          "Shard",
+          "A single instance or replica set storing part of a sharded cluster's data.",
+          ""
+        ],
+        [
+          "Shard key",
+          "The field used to distribute documents among members of a sharded cluster.",
+          ""
+        ],
+        [
+          "Sharded cluster",
+          "The set of nodes comprising a sharded MongoDB deployment.",
+          ""
+        ],
+        [
+          "Sharding",
+          "A database architecture partitioning data by key ranges across multiple instances.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "operating-systems-and-networking",
+      "name": "Operating Systems and Networking",
+      "short": "OS & networks",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Concurrency",
+          "Interleaved or simultaneous execution of multiple activities within one program or system.",
+          ""
+        ],
+        [
+          "Context switch",
+          "Saving one process state and restoring another to share the CPU.",
+          ""
+        ],
+        [
+          "Exec",
+          "Replacing a process image with a new program.",
+          ""
+        ],
+        [
+          "Fork",
+          "Creating a new process by duplicating an existing one.",
+          ""
+        ],
+        [
+          "Process",
+          "An instance of a running program with its own address space.",
+          ""
+        ],
+        [
+          "Race condition",
+          "Behavior depending on the timing of unsynchronized concurrent operations.",
+          ""
+        ],
+        [
+          "System call",
+          "A controlled entry from user code into the operating system kernel.",
+          ""
+        ],
+        [
+          "Thread",
+          "A separate execution stream sharing one process address space.",
+          ""
+        ],
+        [
+          "Wait",
+          "Blocking a process until a child process exits.",
+          ""
+        ],
+        [
+          "CPU scheduling",
+          "Choosing which ready process receives the processor next.",
+          ""
+        ],
+        [
+          "First-come first-served",
+          "Scheduling processes strictly in arrival order without preemption.",
+          ""
+        ],
+        [
+          "Lottery scheduling",
+          "Allocating CPU time shares through randomized ticket draws.",
+          ""
+        ],
+        [
+          "Multi-level feedback queue",
+          "Adaptive scheduler using multiple queues with dynamic priority adjustment.",
+          ""
+        ],
+        [
+          "Multi-processor scheduling",
+          "Assigning and balancing runnable work across multiple CPUs.",
+          ""
+        ],
+        [
+          "Response time",
+          "Elapsed time from request arrival to first response.",
+          ""
+        ],
+        [
+          "Round robin",
+          "Cyclically giving each ready process a fixed time quantum.",
+          ""
+        ],
+        [
+          "Shortest job first",
+          "Running the ready process with the smallest execution time first.",
+          ""
+        ],
+        [
+          "Stride scheduling",
+          "Deterministic CPU allocation using stride values derived from tickets.",
+          ""
+        ],
+        [
+          "Throughput",
+          "Number of processes completed per unit of time.",
+          ""
+        ],
+        [
+          "Turnaround time",
+          "Elapsed time from process submission to its completion.",
+          ""
+        ],
+        [
+          "Address space",
+          "The set of addresses a process may reference.",
+          ""
+        ],
+        [
+          "Address translation",
+          "Converting virtual memory addresses into physical memory addresses.",
+          ""
+        ],
+        [
+          "Free space management",
+          "Tracking and allocating unused memory regions in an efficient manner.",
+          ""
+        ],
+        [
+          "Page fault",
+          "An access to a virtual page not currently in physical memory.",
+          ""
+        ],
+        [
+          "Page table",
+          "Data structure mapping virtual pages to physical frames.",
+          ""
+        ],
+        [
+          "Paging",
+          "Dividing memory into fixed-size pages and physical frames.",
+          ""
+        ],
+        [
+          "Segmentation",
+          "Dividing memory into variable-size logical segments for programs.",
+          ""
+        ],
+        [
+          "Swapping",
+          "Moving memory pages between RAM and disk storage.",
+          ""
+        ],
+        [
+          "Thrashing",
+          "Excessive paging that leaves little time for useful work.",
+          ""
+        ],
+        [
+          "Translation lookaside buffer",
+          "Cache storing the most recent virtual-to-physical address translations.",
+          ""
+        ],
+        [
+          "Virtual memory",
+          "Abstraction giving processes a large private address space.",
+          ""
+        ],
+        [
+          "Directory",
+          "A file mapping names to other files or directories.",
+          ""
+        ],
+        [
+          "File",
+          "A named collection of bytes stored on disk.",
+          ""
+        ],
+        [
+          "File system",
+          "Software organizing and storing files on a device.",
+          ""
+        ],
+        [
+          "Hard disk drive",
+          "Magnetic storage device with spinning platters and heads.",
+          ""
+        ],
+        [
+          "Inode",
+          "Metadata structure describing a file attributes and blocks.",
+          ""
+        ],
+        [
+          "Journaling",
+          "Logging pending file system changes to enable crash recovery.",
+          ""
+        ],
+        [
+          "RAID",
+          "Combining multiple disks to improve performance or redundancy.",
+          ""
+        ],
+        [
+          "Solid-state drive",
+          "Flash-based storage device with no moving mechanical parts.",
+          ""
+        ],
+        [
+          "Atomic operation",
+          "An operation that completes without interruption or interleaving.",
+          ""
+        ],
+        [
+          "Condition variable",
+          "Synchronization primitive letting threads wait for a condition.",
+          ""
+        ],
+        [
+          "Critical section",
+          "Code region accessing shared state requiring mutual exclusion.",
+          ""
+        ],
+        [
+          "Deadlock",
+          "Circular wait among processes where none can proceed.",
+          ""
+        ],
+        [
+          "Livelock",
+          "Processes keep responding to each other but make no progress.",
+          ""
+        ],
+        [
+          "Lock",
+          "Mechanism that ensures mutual exclusion over shared data.",
+          ""
+        ],
+        [
+          "Monitor",
+          "High-level construct combining a lock with condition variables.",
+          ""
+        ],
+        [
+          "Semaphore",
+          "Counter-based synchronization primitive used to control shared access.",
+          ""
+        ],
+        [
+          "Spinlock",
+          "Lock that busy-waits until the lock becomes free.",
+          ""
+        ],
+        [
+          "Basic NAT",
+          "Mapping private IP addresses to global addresses only.",
+          ""
+        ],
+        [
+          "NAPT",
+          "Extending NAT to translate IP addresses and transport ports.",
+          ""
+        ],
+        [
+          "NAT",
+          "Replacing IP addresses in packets to connect private and public networks.",
+          ""
+        ],
+        [
+          "Network",
+          "Collection of interconnected components such as routers and cabling.",
+          ""
+        ],
+        [
+          "Port",
+          "Entry or exit point for connecting communications devices.",
+          ""
+        ],
+        [
+          "Private address space",
+          "IP address ranges reserved for use inside private networks.",
+          ""
+        ],
+        [
+          "Protocol",
+          "Set of rules governing communication between computing systems.",
+          ""
+        ],
+        [
+          "Router",
+          "Gateway forwarding packets between networks at layer three.",
+          ""
+        ],
+        [
+          "DNS",
+          "System tracking and resolving Internet domain names and addresses.",
+          ""
+        ],
+        [
+          "HTTP",
+          "Standard method for communication between clients and web servers.",
+          ""
+        ],
+        [
+          "TCP",
+          "Protocol enabling two hosts to establish a connection and exchange data streams reliably.",
+          ""
+        ],
+        [
+          "UDP",
+          "Protocol letting applications send messages with minimal mechanism and no delivery guarantee.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "web-and-browser",
+      "name": "Web and Browser",
+      "short": "Web",
+      "color": "#9b6ae0",
+      "dark": "#bb95ff",
+      "defs": [
+        [
+          "Cookie",
+          "A small piece of information left on a visitor's computer by a website via a web browser.",
+          ""
+        ],
+        [
+          "HTTP",
+          "The network protocol that enables transfer of hypermedia documents on the Web.",
+          ""
+        ],
+        [
+          "HTTP/2",
+          "A major revision of HTTP that reduces latency through request multiplexing and header compression.",
+          ""
+        ],
+        [
+          "HTTP/3",
+          "A major revision of HTTP that runs over QUIC on UDP instead of TCP.",
+          ""
+        ],
+        [
+          "HTTPS",
+          "An encrypted version of HTTP that uses TLS to secure client-server communication.",
+          ""
+        ],
+        [
+          "QUIC",
+          "A multiplexed transport protocol implemented on UDP used as HTTP/3's transport layer.",
+          ""
+        ],
+        [
+          "REST",
+          "A group of software architecture constraints for efficient distributed systems.",
+          ""
+        ],
+        [
+          "TCP",
+          "A protocol that lets two hosts connect and exchange reliable ordered data streams.",
+          ""
+        ],
+        [
+          "Transport Layer Security (TLS)",
+          "A protocol used by applications to communicate securely across a network.",
+          ""
+        ],
+        [
+          "UDP",
+          "A connectionless protocol for sending data when speed matters more than reliability.",
+          ""
+        ],
+        [
+          "Browser",
+          "A program that retrieves and displays pages from the Web and follows hyperlinks.",
+          ""
+        ],
+        [
+          "Browsing context",
+          "An environment in which a browser displays a document, such as a tab or frame.",
+          ""
+        ],
+        [
+          "Client-side rendering (CSR)",
+          "The practice of generating HTML content using JavaScript in the browser.",
+          ""
+        ],
+        [
+          "Main thread",
+          "The thread where a browser processes user events and paints the page.",
+          ""
+        ],
+        [
+          "Progressive enhancement",
+          "A design philosophy providing baseline functionality to all users while enhancing for capable browsers.",
+          ""
+        ],
+        [
+          "Reflow",
+          "A browser recalculating position and geometry of parts of a webpage.",
+          ""
+        ],
+        [
+          "Render-blocking",
+          "Any part of page loading that blocks rendering of the user interface.",
+          ""
+        ],
+        [
+          "Repaint",
+          "A browser redrawing a webpage to show visual updates from a UI change.",
+          ""
+        ],
+        [
+          "Server-side rendering (SSR)",
+          "The practice of generating HTML content on the server and sending it to the client.",
+          ""
+        ],
+        [
+          "Speculative parsing",
+          "A browser parsing ahead while scripts download to start speculative resource loads.",
+          ""
+        ],
+        [
+          "CSS Object Model (CSSOM)",
+          "A set of APIs for reading and modifying a document's CSS information.",
+          ""
+        ],
+        [
+          "DOM (Document Object Model)",
+          "An API representing and interacting with a markup document as a node tree.",
+          ""
+        ],
+        [
+          "Element",
+          "A part of a webpage represented as a node in the DOM tree.",
+          ""
+        ],
+        [
+          "Event",
+          "An asset generated by DOM elements that JavaScript code can manipulate.",
+          ""
+        ],
+        [
+          "Node",
+          "A single point in the DOM node tree, such as a document, element, or text.",
+          ""
+        ],
+        [
+          "Shadow tree",
+          "A hidden set of DOM nodes attached to a host element via a shadow root.",
+          ""
+        ],
+        [
+          "CORS",
+          "A system of HTTP headers determining whether browsers block cross-origin response access.",
+          ""
+        ],
+        [
+          "CSP",
+          "A policy used to detect and mitigate XSS, clickjacking, and data injection attacks.",
+          ""
+        ],
+        [
+          "Cross-site request forgery (CSRF)",
+          "An attack tricking a browser into making an authenticated request from a malicious site.",
+          ""
+        ],
+        [
+          "Cross-site scripting (XSS)",
+          "An attack injecting malicious code that a target site executes as its own.",
+          ""
+        ],
+        [
+          "HSTS",
+          "A policy telling browsers to use HTTPS for a site and convert HTTP requests.",
+          ""
+        ],
+        [
+          "Origin",
+          "The scheme, hostname, and port that identify where web content originates.",
+          ""
+        ],
+        [
+          "Preflight request",
+          "A CORS OPTIONS request checking whether a server permits a specific method or headers.",
+          ""
+        ],
+        [
+          "Registrable domain",
+          "The highest-level domain for a single site, registered under an effective top-level domain.",
+          ""
+        ],
+        [
+          "SRI",
+          "A security feature letting browsers verify fetched files against a cryptographic hash.",
+          ""
+        ],
+        [
+          "Same-origin policy",
+          "A security mechanism restricting interaction between resources from different origins.",
+          ""
+        ],
+        [
+          "Secure context",
+          "A window or worker meeting minimum standards of authentication and confidentiality.",
+          ""
+        ],
+        [
+          "Site",
+          "A collection of pages served from the same registrable domain.",
+          ""
+        ],
+        [
+          "Cache",
+          "A component storing HTTP responses temporarily for subsequent requests.",
+          ""
+        ],
+        [
+          "Cacheable",
+          "A response that may be stored in a cache for reuse on later requests.",
+          ""
+        ],
+        [
+          "IndexedDB",
+          "A transactional browser database storing JavaScript objects with indexing for fast search.",
+          ""
+        ],
+        [
+          "bfcache",
+          "A browser cache storing a full page snapshot for instant back and forward navigation.",
+          ""
+        ],
+        [
+          "Jank",
+          "Sluggishness in a user interface caused by blocking the main thread.",
+          ""
+        ],
+        [
+          "Lazy load",
+          "A strategy delaying asset loading until the user needs them.",
+          ""
+        ],
+        [
+          "Long task",
+          "A task taking more than 50 milliseconds to complete on the main thread.",
+          ""
+        ],
+        [
+          "Page load time",
+          "The time from navigation start to the start of the load event.",
+          ""
+        ],
+        [
+          "Perceived performance",
+          "How fast, responsive, and reliable a website feels to its users.",
+          ""
+        ],
+        [
+          "Polyfill",
+          "Code providing modern functionality on older browsers lacking native support.",
+          ""
+        ],
+        [
+          "Prefetch",
+          "Speculatively fetching documents or subresources likely to be needed soon.",
+          ""
+        ],
+        [
+          "Prerender",
+          "Speculatively prefetching and rendering a likely next page in the background.",
+          ""
+        ],
+        [
+          "RAIL",
+          "A performance model focused on response, animation, idle, and load user experience.",
+          ""
+        ],
+        [
+          "Speed index",
+          "A metric measuring how quickly page contents are visibly populated.",
+          ""
+        ],
+        [
+          "Web performance",
+          "The time from requesting content until it displays and becomes interactive.",
+          ""
+        ]
+      ]
+    }
+  ]
+}
