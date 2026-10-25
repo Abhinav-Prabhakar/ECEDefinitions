@@ -2082,6 +2082,7 @@ function mathHTML(tex, big = false){
 
 /* Diagrams are one shared SVG sprite: thin line art that inherits currentColor. */
 const DG = { ready: false };
+const DG_URL = 'assets/diagrams.svg?v=2';
 const DG_ICON = `<svg viewBox="0 0 16 16" width="10" height="10" fill="none"
   stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
   aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/>
@@ -2100,7 +2101,7 @@ function loadDiagrams(){
   if (DG_PROMISE) return DG_PROMISE;
   DG_PROMISE = (async () => {
     try {
-      const res = await fetch('assets/diagrams.svg', { cache: 'no-cache' });
+      const res = await fetch(DG_URL, { cache: 'no-cache' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const host = document.createElement('div');
       host.id = 'dg-sprite';
