@@ -5,16 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" id="themeColorMeta" content="#ffffff" />
 <script>
-/* Apply the saved theme before paint. Default is always light. */
+/* Apply the saved theme before paint. Falls back to the device theme. */
 (() => {
-  try {
-    const theme = localStorage.getItem('oneliners.theme');
-    document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'light';
-    if (theme === 'dark') {
-      const meta = document.getElementById('themeColorMeta');
-      if (meta) meta.setAttribute('content', '#0d0f13');
-    }
-  } catch (e) {}
+  let saved = null;
+  try { saved = localStorage.getItem('oneliners.theme'); } catch (e) {}
+  const dark = saved === 'dark' || saved === 'light'
+    ? saved === 'dark'
+    : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  if (dark) {
+    const meta = document.getElementById('themeColorMeta');
+    if (meta) meta.setAttribute('content', '#0d0f13');
+  }
 })();
 </script>
 <title>one·liners — ECE</title>
@@ -2501,6 +2503,17 @@ async function loadCurriculum(){
 }
 const THEME_KEY = 'oneliners.theme';
 const isDark = () => document.documentElement.dataset.theme === 'dark';
+
+function savedTheme(){
+  try {
+    const theme = localStorage.getItem(THEME_KEY);
+    return theme === 'dark' || theme === 'light' ? theme : null;
+  } catch (e) { return null; }
+}
+
+function deviceTheme(){
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
 const accentOf = s => (isDark() && s.dark) ? s.dark : s.color;
 const accentLine = c => rgba(c, isDark() ? .58 : .45);
 const accentTint = c => rgba(c, isDark() ? .11 : .055);
@@ -2631,6 +2644,12 @@ function toggleTheme(){
 
 themeBtn.addEventListener('click', toggleTheme);
 if (spThemeBtn) spThemeBtn.addEventListener('click', toggleTheme);
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+  if (savedTheme()) return;
+  document.documentElement.dataset.theme = e.matches ? 'dark' : 'light';
+  refreshThemeColors();
+});
 
 /* ============================================================
    TODAY PANEL
@@ -4173,7 +4192,7 @@ document.addEventListener('keydown', e => {
    ============================================================ */
 window.addEventListener('storage', e => {
   if (e.key === THEME_KEY){
-    const next = e.newValue === 'dark' ? 'dark' : 'light';
+    const next = e.newValue === 'dark' || e.newValue === 'light' ? e.newValue : deviceTheme();
     document.documentElement.dataset.theme = next;
     refreshThemeColors();
     return;

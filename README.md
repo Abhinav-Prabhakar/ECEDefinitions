@@ -215,8 +215,8 @@ no seeded cells.
   data is unaffected.
 - **Self-hosted Inter** (variable WOFF2) — no external font request, no flash of the wrong
   typeface offline.
-- **Theme:** always light by default, even when the OS is dark. Once you choose dark, it
-  is remembered in `localStorage` and restored before first paint. `<meta name="theme-color">`
+- **Theme:** follows the device by default. Once you choose light or dark, the choice is
+  remembered in `localStorage` and restored before first paint. `<meta name="theme-color">`
   follows it.
 - **Complete metadata:** canonical URL, Open Graph, Twitter card, JSON-LD `WebApplication`,
   favicon set, and a custom social image.

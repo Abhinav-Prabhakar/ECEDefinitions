@@ -72,11 +72,11 @@ hairline discipline and a slightly lifted surface for panels and cards.
 | `--ok` | `#45d99d` | correct, met |
 | `--no` | `#ff7e9e` | incorrect |
 
-- **Default is always light**, even when the OS is dark.
+- **Default is the device theme**, so the page matches the OS until a choice is made.
 - The choice is stored under `oneliners.theme` (`light` / `dark`) and restored before
   first paint by an inline head script. There is no flash of the wrong theme.
-- There is no install prompt and no OS-preference override. The theme is a manual,
-  remembered choice.
+- There is no install prompt. With no saved choice the theme follows live OS changes;
+  once chosen manually, that choice is remembered.
 - A day/night toggle lives in the top bar and in the subject toolbar; `t` toggles it
   anywhere. The subject toolbar hides its toggle only below 380px, where the header
   must keep the title legible.
@@ -260,7 +260,7 @@ Everything else is client-side. The static HTML app uses two localStorage keys:
 
 ```
 oneliners.state.v1    // goal, mastery, history
-oneliners.theme       // "light" | "dark"; default light
+oneliners.theme       // "light" | "dark"; default follows the device
 ```
 
 Shape:
