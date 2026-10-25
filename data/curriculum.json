@@ -496,11 +496,11 @@
           "folderId": "10Nns1hDMfbWviOrNQyVT3plgIgd6gcsq",
           "folderUrl": "https://drive.google.com/drive/folders/10Nns1hDMfbWviOrNQyVT3plgIgd6gcsq",
           "data": "data/subjects/3-1/cmos-analog-ic-design.json",
-          "definitionCount": 33,
+          "definitionCount": 64,
           "unitCount": 6,
           "coveredUnits": 6,
-          "status": "partial",
-          "sourceCount": 6
+          "status": "complete",
+          "sourceCount": 16
         },
         {
           "id": "computer-organization-and-architecture",
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2143,
-    "completeSubjects": 34,
-    "partialSubjects": 11,
+    "definitions": 2174,
+    "completeSubjects": 35,
+    "partialSubjects": 10,
     "inaccessibleSubjects": 7
   }
 }
