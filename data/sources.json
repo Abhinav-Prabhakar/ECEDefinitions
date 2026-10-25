@@ -5627,6 +5627,726 @@
       "viewUrl": "https://sreenidhi.edu.in/wp-content/uploads/2025/02/A22-CSEAIML-Structure-and-Syllabus-for-2022-to-2024.pdf",
       "status": "parsed",
       "locatorScheme": "section-slug"
+    },
+    {
+      "id": "ann-wikipedia-artificial-neural-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Artificial neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_neural_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-adaline",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "ADALINE - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ADALINE",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-artificial-neuron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Artificial neuron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Artificial_neuron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-bidirectional-associative-memory",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Bidirectional associative memory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bidirectional_associative_memory",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-competitive-learning",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Competitive learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Competitive_learning",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-delta-rule",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Delta rule - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Delta_rule",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-stephen-grossberg",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Stephen Grossberg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stephen_Grossberg",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-hebbian-theory",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Hebbian theory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hebbian_theory",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-hmc-art-networks-slides",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "ART Networks (Adaptive Resonance Theory) lecture slides - Harvey Mudd College CS152",
+      "url": "https://www.cs.hmc.edu/courses/2000/fall/cs152/html14/slides14.pdf",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "slide.<n>"
+    },
+    {
+      "id": "ann-wikipedia-hopfield-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Hopfield network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hopfield_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-neocognitron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Neocognitron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neocognitron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-neuron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Neuron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neuron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-perceptron",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Perceptron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perceptron",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-radial-basis-function-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Radial basis function network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radial_basis_function_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-recurrent-neural-network",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Recurrent neural network - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Recurrent_neural_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-self-organizing-map",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Self-organizing map - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-organizing_map",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "ann-wikipedia-statistical-classification",
+      "semester": "3-1",
+      "subjectId": "artificial-neural-networks",
+      "name": "Statistical classification - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Statistical_classification",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-analog-to-digital-converter",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Analog-to-digital converter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Analog-to-digital_converter",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-cognitive-radio",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Cognitive radio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cognitive_radio",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-digital-to-analog-converter",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Digital-to-analog converter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital-to-analog_converter",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-direct-conversion-receiver",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Direct-conversion receiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Direct-conversion_receiver",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-direct-digital-synthesis",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Direct digital synthesis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Direct_digital_synthesis",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-dynamic-range",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Dynamic range - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dynamic_range",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-digital-signal-processor",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Digital signal processor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_signal_processor",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-field-programmable-gate-array",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Field-programmable gate array - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Field-programmable_gate_array",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-superheterodyne-receiver",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Superheterodyne receiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Superheterodyne_receiver",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-software-defined-radio",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Software-defined radio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Software-defined_radio",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-arithmetic-coding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Arithmetic coding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Arithmetic_coding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-block-truncation-coding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Block Truncation Coding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Block_Truncation_Coding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-discrete-cosine-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Discrete cosine transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discrete_cosine_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-digital-image",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Digital image - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_image",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-digital-image-processing",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Digital image processing - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_image_processing",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-edge-detection",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Edge detection - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edge_detection",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-haar-wavelet",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Haar wavelet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Haar_wavelet",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-hadamard-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Hadamard transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hadamard_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-histogram-equalization",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Histogram equalization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Histogram_equalization",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-hough-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Hough transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hough_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-huffman-coding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Huffman coding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Huffman_coding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-image-compression",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Image compression - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Image_compression",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-kernel-image-processing",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Kernel (image processing) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kernel_(image_processing)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-karhunen-loeve-theorem",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Karhunen-Loeve theorem - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Karhunen%E2%80%93Lo%C3%A8ve_theorem",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-mathematical-morphology",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Mathematical morphology - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mathematical_morphology",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-nearest-centroid-classifier",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Nearest centroid classifier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nearest_centroid_classifier",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-pixel",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Pixel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pixel",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-quantization-signal-processing",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Quantization (signal processing) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quantization_(signal_processing)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-radon-transform",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Radon transform - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Radon_transform",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-run-length-encoding",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Run-length encoding - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Run-length_encoding",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-image-segmentation",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Image segmentation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Image_segmentation",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-template-matching",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Template matching - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Template_matching",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-vector-quantization",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Vector quantization - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vector_quantization",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "dip-wikipedia-wiener-deconvolution",
+      "semester": "3-2",
+      "subjectId": "digital-image-processing",
+      "name": "Wiener deconvolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wiener_deconvolution",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-spacecraft-attitude-control",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Spacecraft attitude control - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spacecraft_attitude_control",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-satellite-bus",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Satellite bus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Satellite_bus",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-code-division-multiple-access",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Code-division multiple access - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Code-division_multiple_access",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-communications-satellite",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Communications satellite - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Communications_satellite",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-differential-gps",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Differential GPS - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Differential_GPS",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-effective-radiated-power",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Effective radiated power - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Effective_radiated_power",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-frequency-division-multiple-access",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Frequency-division multiple access - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Frequency-division_multiple_access",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-geostationary-orbit",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Geostationary orbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geostationary_orbit",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-global-positioning-system",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Global Positioning System - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-ground-station",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Ground station - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ground_station",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-gps-signals",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "GPS signals - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GPS_signals",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-geostationary-transfer-orbit",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Geostationary transfer orbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geostationary_transfer_orbit",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-keplers-laws-of-planetary-motion",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Kepler's laws of planetary motion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kepler%27s_laws_of_planetary_motion",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-link-budget",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Link budget - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Link_budget",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-low-earth-orbit",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Low Earth orbit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Low_Earth_orbit",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-noise-temperature",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Noise temperature - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Noise_temperature",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-orbital-perturbation-analysis",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Orbital perturbation analysis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Orbital_perturbation_analysis",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-spread-spectrum",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Spread spectrum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spread_spectrum",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-time-division-multiple-access",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Time-division multiple access - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Time-division_multiple_access",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-telemetry",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Telemetry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Telemetry",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "satcom-wikipedia-transponder-satellite-communications",
+      "semester": "3-2",
+      "subjectId": "satellite-communication",
+      "name": "Transponder (satellite communications) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transponder_(satellite_communications)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
     }
   ]
 }
