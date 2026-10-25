@@ -1,0 +1,555 @@
+{
+  "version": 1,
+  "id": "basics-of-entrepreneurship",
+  "semester": "3-1",
+  "name": "Basics of Entrepreneurship",
+  "shortName": "BOE",
+  "code": "8ZC22",
+  "courseType": "OE",
+  "elective": "Open Elective I",
+  "folderId": "1VdV6eIG6nSJNl7eNQXKY5cykP-X4MVkO",
+  "folderUrl": "https://drive.google.com/drive/folders/1VdV6eIG6nSJNl7eNQXKY5cykP-X4MVkO",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "entrepreneurship",
+      "term": "Entrepreneurship",
+      "definition": "Professional application of knowledge, skills and competencies to generate a new business idea and launch an enterprise, pursuing growth while creating wealth, employment and social good.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Defining Entrepreneurship",
+      "sources": [
+        "boe-u1#slide.4"
+      ]
+    },
+    {
+      "id": "entrepreneur",
+      "term": "Entrepreneur",
+      "definition": "Agent who buys factors of production at certain prices and combines them into a product to sell at uncertain prices in future.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Defining Entrepreneurship",
+      "sources": [
+        "boe-u1#slide.4"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "term": "Enterprise",
+      "definition": "Business organisation formed to provide goods and services, create jobs and contribute to national income, exports and overall economic development.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Defining Entrepreneurship",
+      "sources": [
+        "boe-u1#slide.3"
+      ]
+    },
+    {
+      "id": "flow",
+      "term": "Flow",
+      "definition": "Blissful state of balance in which a person is fully immersed in a task and completely free from distracting thoughts.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Defining Entrepreneurship",
+      "sources": [
+        "boe-u1#slide.7"
+      ]
+    },
+    {
+      "id": "taking-stock-of-your-means",
+      "term": "Taking stock of your means",
+      "definition": "Act of carefully examining the finance, skills, people and other resources one has or requires in order to start off well.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Defining Entrepreneurship",
+      "sources": [
+        "boe-u1#slide.10"
+      ]
+    },
+    {
+      "id": "bird-in-hand-principle",
+      "term": "Bird-in-hand principle",
+      "definition": "First principle of effectuation, stating that an entrepreneur starts with what is already in hand after taking stock of available means.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Defining Entrepreneurship",
+      "sources": [
+        "boe-u1#slide.10"
+      ]
+    },
+    {
+      "id": "mobiliser-style",
+      "term": "Mobiliser style",
+      "definition": "Entrepreneurial style adopted by those who are ambitious about creating a social impact and addressing social issues.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": null,
+      "sources": [
+        "boe-u2#slide.5"
+      ]
+    },
+    {
+      "id": "design-thinking",
+      "term": "Design thinking",
+      "definition": "Iterative process of understanding the user, challenging assumptions and redefining problems to find alternative strategies and solutions that are not instantly apparent.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": null,
+      "sources": [
+        "boe-u2#slide.12"
+      ]
+    },
+    {
+      "id": "market-segmentation",
+      "term": "Market segmentation",
+      "definition": "Activity of dividing a broad consumer or business market into sub-groups of consumers based on shared characteristics.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": null,
+      "sources": [
+        "boe-u2#slide.19"
+      ]
+    },
+    {
+      "id": "target-market",
+      "term": "Target market",
+      "definition": "Group of consumers or organisations most likely to buy a company's products or services, on which marketing efforts are focused.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": null,
+      "sources": [
+        "boe-u2#slide.20"
+      ]
+    },
+    {
+      "id": "niche-market",
+      "term": "Niche market",
+      "definition": "Subset of the market on which a specific product is focused, defining the features, price range and demographics it targets.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": null,
+      "sources": [
+        "boe-u2#slide.28"
+      ]
+    },
+    {
+      "id": "customer-driven-innovation",
+      "term": "Customer driven innovation",
+      "definition": "Situation in which customers look for more innovative products and services, so a company must develop to satisfy their needs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": null,
+      "sources": [
+        "boe-u2#slide.37"
+      ]
+    },
+    {
+      "id": "business-model",
+      "term": "Business model",
+      "definition": "Conceptual structure that supports the viability of a product or company and explains how it operates, makes money and achieves its goals.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.3"
+      ]
+    },
+    {
+      "id": "lean-approach",
+      "term": "Lean approach",
+      "definition": "Way of thinking about the startup process that stresses the business model over the plan and encourages customer discovery, development and iteration.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.7"
+      ]
+    },
+    {
+      "id": "value-stream-mapping",
+      "term": "Value-stream mapping",
+      "definition": "Exercise that identifies all the actions that take a product or service through a process.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.8"
+      ]
+    },
+    {
+      "id": "business-model-canvas",
+      "term": "Business Model Canvas",
+      "definition": "One-page strategic management tool that defines and communicates a business idea by working through the fundamental elements of a business or product.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.10"
+      ]
+    },
+    {
+      "id": "value-proposition",
+      "term": "Value proposition",
+      "definition": "Exchange of value between a business and its customers, around which external and internal factors meet.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.11"
+      ]
+    },
+    {
+      "id": "minimum-viable-product",
+      "term": "Minimum viable product",
+      "definition": "Product with just enough features to satisfy early customers and provide feedback for future product development.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.25"
+      ]
+    },
+    {
+      "id": "product-market-fit",
+      "term": "Product-market fit",
+      "definition": "Being in a good market with a product that can satisfy that market.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.27"
+      ]
+    },
+    {
+      "id": "industry",
+      "term": "Industry",
+      "definition": "System of manufacturers or businesses sharing the common objective of producing a particular kind of goods or services.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.32"
+      ]
+    },
+    {
+      "id": "six-thinking-hats",
+      "term": "Six thinking hats",
+      "definition": "Lateral thinking technique for solving any given problem innovatively, used here to study innovations in an industry.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": null,
+      "sources": [
+        "boe-u3#slide.38"
+      ]
+    },
+    {
+      "id": "revenue",
+      "term": "Revenue",
+      "definition": "Income that a business generates by means of its sales.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.3"
+      ]
+    },
+    {
+      "id": "revenue-stream",
+      "term": "Revenue stream",
+      "definition": "A distinct source of business income, such as one of the different services a business offers.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.3",
+        "boe-u4#slide.26"
+      ]
+    },
+    {
+      "id": "startup-costs",
+      "term": "Startup costs",
+      "definition": "Costs incurred before starting a business, such as the vehicle, freezer, licence and signage of a food truck.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.13"
+      ]
+    },
+    {
+      "id": "fixed-costs",
+      "term": "Fixed costs",
+      "definition": "Costs incurred regularly irrespective of production and sales, usually calculated monthly, such as salary, rent and interest.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.13"
+      ]
+    },
+    {
+      "id": "variable-costs",
+      "term": "Variable costs",
+      "definition": "Costs that depend on the number of units produced and sold, such as raw material and packaging.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.13"
+      ]
+    },
+    {
+      "id": "break-even-point",
+      "term": "Break-even point",
+      "definition": "Point at which costs or expenses and revenues are equal, leaving no net loss or gain.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.16"
+      ]
+    },
+    {
+      "id": "angel-investor",
+      "term": "Angel investor",
+      "definition": "High-net-worth individual who provides financial backing to small startups, typically in exchange for ownership equity in the company.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Economics & Financial Analysis",
+      "sources": [
+        "boe-u4#slide.36"
+      ]
+    },
+    {
+      "id": "leadership-style",
+      "term": "Leadership style",
+      "definition": "Manner and approach of providing direction, implementing plans and motivating people.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.3"
+      ]
+    },
+    {
+      "id": "shared-leadership",
+      "term": "Shared leadership",
+      "definition": "Style that broadly distributes leadership responsibility so that people within a team and organisation lead each other.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.8"
+      ]
+    },
+    {
+      "id": "brainstorming",
+      "term": "Brainstorming",
+      "definition": "Group technique for finding alternatives that can be used at all stages of the problem-solving process.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.24"
+      ]
+    },
+    {
+      "id": "freewheeling",
+      "term": "Freewheeling",
+      "definition": "Principle of generating seemingly crazy or exaggerated ideas and not censoring them.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.26"
+      ]
+    },
+    {
+      "id": "project",
+      "term": "Project",
+      "definition": "Temporary endeavour undertaken to create a unique product or service.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.30"
+      ]
+    },
+    {
+      "id": "project-management",
+      "term": "Project management",
+      "definition": "Detailed methodology for the systematic initiation, tracking and closing of a project.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.31"
+      ]
+    },
+    {
+      "id": "project-planning",
+      "term": "Project planning",
+      "definition": "Process of defining the scope, objectives and steps needed to get the work done, producing a project plan.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.44"
+      ]
+    },
+    {
+      "id": "work-packages",
+      "term": "Work packages",
+      "definition": "Smaller, manageable deliverables and groups of related tasks obtained by breaking down the scope of a project.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Team Building & Project Management",
+      "sources": [
+        "boe-u5#slide.46"
+      ]
+    },
+    {
+      "id": "positioning",
+      "term": "Positioning",
+      "definition": "Act of designing a company's offering and image so that it occupies a distinctive place in the target market's mind.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.2"
+      ]
+    },
+    {
+      "id": "repositioning",
+      "term": "Repositioning",
+      "definition": "Process of creating a new or modified position for a brand, company or product.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.7"
+      ]
+    },
+    {
+      "id": "de-positioning",
+      "term": "De-positioning",
+      "definition": "Way of increasing the distance between you and your competition by widening the value gap known as differentiation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.7"
+      ]
+    },
+    {
+      "id": "brand",
+      "term": "Brand",
+      "definition": "Name, symbol, mark, logo, word or sentence, or a combination, that companies use to distinguish their product from others.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.8"
+      ]
+    },
+    {
+      "id": "branding",
+      "term": "Branding",
+      "definition": "Process of giving meaning to an organisation, product or service by creating and shaping an identity in consumers' minds.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.8"
+      ]
+    },
+    {
+      "id": "line-branding",
+      "term": "Line branding",
+      "definition": "Marketing a group of related products under a single master brand.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.16"
+      ]
+    },
+    {
+      "id": "mixed-branding",
+      "term": "Mixed branding",
+      "definition": "Strategy in which a company sells multiple brands in the same market to appeal to different customer segments.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.16"
+      ]
+    },
+    {
+      "id": "channels",
+      "term": "Channels",
+      "definition": "Means adopted by a company to communicate with its customers or deliver products or services to them.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.20"
+      ]
+    },
+    {
+      "id": "customer-acquisition",
+      "term": "Customer acquisition",
+      "definition": "Gaining new consumers by persuading them to purchase a company's products or services.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.27"
+      ]
+    },
+    {
+      "id": "selling-skills",
+      "term": "Selling skills",
+      "definition": "Skills salesmen need to build relationships with customers, persuade them to make purchases and generate repeat business.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.35"
+      ]
+    },
+    {
+      "id": "sales-plan",
+      "term": "Sales plan",
+      "definition": "Strategy that sets out sales targets and tactics for a business and the steps to meet those targets.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.40"
+      ]
+    },
+    {
+      "id": "business-regulations",
+      "term": "Business regulations",
+      "definition": "Federal, state and local rules that startups must follow, balancing the interests of business with those of the public.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.42"
+      ]
+    },
+    {
+      "id": "partnership",
+      "term": "Partnership",
+      "definition": "Arrangement in which two or more individuals share the profits and liabilities of a business venture.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Marketing and Business Regulations",
+      "sources": [
+        "boe-u6#slide.49"
+      ]
+    }
+  ]
+}
