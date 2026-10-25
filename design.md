@@ -88,14 +88,42 @@ hairline discipline and a slightly lifted surface for panels and cards.
 
 ### Subjects (fixed identity)
 
-| Subject | Colour | Id |
-| --- | --- | --- |
-| Signals & Systems | `#5b6ee1` | `signals` |
-| Digital Electronics | `#12b3a6` | `digital` |
-| Analog Electronics | `#eaa22b` | `analog` |
-| Electromagnetics | `#e0567f` | `em` |
-| Communication Systems | `#22a06b` | `comm` |
-| Microprocessors | `#9b6ae0` | `micro` |
+Each seeded subject has a fixed light/dark accent and a line-art motif. The app reads
+subject identity from `SUBJECT_STYLE`; a subject that is not listed yet receives a
+deterministic fallback colour and the generic motif, so a new batch never breaks the
+layout. The current seeded set:
+
+| Semester | Subject | Colour | Id |
+| --- | --- | --- | --- |
+| 1-1 | Engineering Physics | `#6f63d8` | `engineering-physics` |
+| 1-1 | Matrix Algebra and Calculus | `#3f6fd8` | `matrix-algebra-and-calculus` |
+| 1-1 | Problem Solving using C | `#0f9b8e` | `problem-solving-using-c` |
+| 1-2 | Engineering Chemistry | `#c9852a` | `engineering-chemistry` |
+| 1-2 | Data Structures | `#2a9668` | `data-structures` |
+| 1-2 | Advanced Calculus | `#5966d8` | `advanced-calculus` |
+| 1-2 | Electrical Circuits & Networks Analysis | `#d95376` | `electrical-circuits-and-networks-analysis` |
+| 2-1 | Electronic Devices and Circuits | `#d97a2b` | `electronic-devices-and-circuits` |
+| 2-1 | Signals and Systems | `#2f7fc1` | `signals-and-systems` |
+| 2-1 | Probability Theory and Stochastic Process | `#8a5fc4` | `probability-theory-and-stochastic-process` |
+| 2-1 | Complex Variable and Transform Techniques | `#5b7fa8` | `complex-variable-and-transform-techniques` |
+| 2-1 | Business Economics and Financial Analysis | `#a67c2e` | `business-economics-and-financial-analysis` |
+| 2-1 | Environmental Science | `#5d8a3f` | `environmental-science` |
+| 2-2 | Analog Circuits | `#cc5c48` | `analog-circuits` |
+| 2-2 | Digital Logic Design | `#2a8fa8` | `digital-logic-design` |
+| 2-2 | Analog & Digital Communications | `#1f9d78` | `analog-and-digital-communications` |
+| 2-2 | Electromagnetic Waves and Transmission Lines | `#b06a9b` | `electromagnetic-waves-and-transmission-lines` |
+| 2-2 | Quantitative Aptitude and Logical Reasoning | `#6d7f94` | `quantitative-aptitude-and-logical-reasoning` |
+| 2-2 | Universal Human Values | `#8b7a5c` | `universal-human-values` |
+| 3-1 | Antennas and Wave Propagations | `#7b6fd8` | `antennas-and-wave-propagations` |
+| 3-1 | Linear Control Systems | `#c07a2e` | `linear-control-systems` |
+| 3-1 | Artificial Intelligence | `#3f8f6b` | `artificial-intelligence` |
+| 3-1 | Digital Signal Processing | `#4f6fd0` | `digital-signal-processing` |
+| 3-1 | IC Applications | `#b07a2e` | `ic-applications` |
+
+Pre-mapped for later batches: Microprocessors and Microcontrollers, VLSI Technology and
+Design, Microwave and Optical Communications, Cyber Security, Python Programming, Advanced
+Communications and Networks, Internet of Things and Applications, Computer Networks,
+Technical Seminar.
 
 Derived values from a subject colour `c`:
 
@@ -224,14 +252,18 @@ Shape:
 {
   goal: 100,                 // 10–999
   mastery: {
-    "signals|Convolution": {
+    "electronic-devices-and-circuits|Intrinsic semiconductor": {
       attempts: 4, correct: 3, score: 0.9, streak: 3, last: 172...
     }
   },
   history: {
     "2026-10-24": {
       total: 41,
-      subjects: { signals: 12, comm: 9, digital: 8 }
+      subjects: {
+        "electronic-devices-and-circuits": 12,
+        "signals-and-systems": 9,
+        "data-structures": 8
+      }
     }
   }
 }
@@ -318,23 +350,28 @@ hairline hatch.
 
 ### Subject index
 A section head (`subjects`, visible/total count) and an inline search with `/` key hint.
-The grid is 3 → 2 → 1 columns. The search filters card visibility live and shows a quiet
-empty line when nothing matches.
+Subjects are grouped by **semester** in the A22 order (`1-1` → `4-2`). Each group has a
+two-digit index, the semester label, and a quiet `n subjects · n definitions` count.
+The grid inside a group is 3 → 2 → 1 columns. The search filters cards and whole semester
+groups live; a group disappears when none of its subjects match. Empty groups are not
+rendered, so future batches appear as new groups without a layout change.
 
 ### Subject cards
 White, hairline, 16px radius, min-height 196px. A large thin-line motif sits behind the
-content at 15% opacity, rising to 32% on hover. Top row: dot, name, overall mastery %.
-Bottom row: **one thin vertical bar per definition**, height and opacity scaled by that
-definition's mastery (4px baseline when new), and `solid/total solid`. The bars form a
-tiny memory profile for the subject. Hovering the bar strip reveals the overall summary.
-No fake mini-contribution graph remains.
+content at 15% opacity, rising to 32% on hover. Top row: dot, name, a micro line with the
+official course code and `n units` (or `partial`), and overall mastery %. Bottom row:
+**one thin vertical bar per definition**, height and opacity scaled by that definition's
+mastery (4px baseline when new), and `solid/total solid`. The bars form a tiny memory
+profile for the subject. Hovering the bar strip reveals the overall summary. No fake
+mini-contribution graph remains.
 
 ### Subject page
 Full-screen white sheet that rises 18px and fades in. Sticky toolbar: back, subject,
 filter, study-eye.
 
-- Hero: name, `n one-liners`, a 180px mastery rule filled to the overall %, `x%
-  remembered`, a `quiz yourself` pill with a `q` keycap, and a 20-tick daily strip.
+- Hero: name, a context line (`semester · code · n units`, or `partial coverage`),
+  `n one-liners`, a 180px mastery rule filled to the overall %, `x% remembered`,
+  a `quiz yourself` pill with a `q` keycap, and a 20-tick daily strip.
 - `focus` filters: `all · new · learning · solid` with counts. They combine with the
   text filter; the visible count reads `x of n`. An empty view offers a one-click clear.
 - Definitions are a chronological rail: 1px line, 9px hollow nodes, term 400, definition
@@ -393,9 +430,11 @@ information.
 ### PWA shell
 - `manifest.webmanifest` — standalone display, scope `./`, light launch colours, 192/512
   icons, a maskable 512, and install screenshots (wide home, wide quiz, narrow phone).
-- `sw.js` — precaches the app shell (`index.html`, manifest, icons, Inter), uses
-  network-first navigation with a cached-index fallback, and stale-while-revalidate for
-  same-origin assets. It works fully offline after one visit.
+- `sw.js` — precaches the app shell (`index.html`, manifest, icons, Inter) and every
+  subject file listed in `data/curriculum.json`, uses network-first navigation with a
+  cached-index fallback, and stale-while-revalidate for same-origin assets. Curriculum
+  JSON is network-first so a new batch appears immediately while online and falls back to
+  the cached copy offline. It works fully offline after one visit.
 - **No install dialog is ever shown.** No `beforeinstallprompt` handler exists. Installation
   is left to the browser/OS menu. The manifest has the stable id `/ECEDefinitions/` so it
   cannot collide with another app on the same origin; macOS Chrome exposes install from the
@@ -490,14 +529,18 @@ Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
 
 ## 14 · Scope & build rules
 
-- Static HTML/CSS/JS. No frameworks, no build step, no backend.
+- Static HTML/CSS/JS. No frameworks, no backend. A stdlib Python script builds the
+  curriculum index; the app itself has no runtime build step.
 - Ships as a PWA: manifest, offline service worker, maskable icons and complete social
   metadata. Any change to a precached asset requires a service-worker cache bump.
 - No install prompts, no OS-theme override, no analytics, no third-party runtime requests.
 - State lives in localStorage only. No network writes, no accounts.
-- Data constants are clear (`SUBJECTS`) so more subjects can be added without layout
-  changes. Anything subject-coloured must degrade gracefully at 30 subjects:
-  top-six stacking, neutral heatmap, one filter.
+- Curriculum is loaded from `data/curriculum.json`; every subject has a file under
+  `data/subjects/<semester>/`. `scripts/build-curriculum-index.py` rebuilds the index
+  from those files, so adding a batch is: drop the JSON files in, run the script, commit.
+  `SUBJECT_STYLE` maps known identities; unknown subjects get a deterministic fallback
+  colour and the generic motif. Anything subject-coloured must degrade gracefully at 30
+  subjects: top-six stacking, neutral heatmap, one filter.
 - Reuse tokens and patterns: `.panel`, `.leg`, `.tip`, `.back`, `.btn`, `.filter`,
   `.mbar`, `.mticks`. Do not introduce a second visual language.
 - Before adding a new element, ask: can this be a line, a dot, a tick, or a hover?

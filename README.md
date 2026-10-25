@@ -8,8 +8,9 @@
 
 **Electronics, in one line.**
 
-A quiet ECE study instrument: 72 definitions, a daily practice stack, adaptive two-way
-quizzes, and a memory of what you actually know.
+A quiet ECE study instrument: 1,113 real definitions across 24 subjects, grouped by
+semester, with a daily practice stack, adaptive two-way quizzes, and a memory of what you
+actually know.
 
 <a href="https://abhinav-prabhakar.github.io/ECEDefinitions/">
   <img src="https://img.shields.io/badge/OPEN_THE_APP-live-5b6ee1?style=for-the-badge&logo=githubpages&logoColor=white" alt="Open the live app" />
@@ -75,6 +76,30 @@ No accounts, no server, no noise.
   <img src="assets/screenshot-mobile-subject.png" alt="one·liners on a phone" width="310" />
   <p><sub><strong>320 → 1440px.</strong> The same quiet interface, not a crushed desktop.</sub></p>
 </div>
+
+---
+
+## The curriculum, by semester
+
+The home page is the A22 map, not a flat list. Subjects sit under their semester — **I Year
+· I Semester** through **IV Year · II Semester** — with the official course code, unit
+count, and a subject-specific line diagram. Colour is the subject's identity, used in small
+doses.
+
+The first shipped batches cover **1-1 through 3-1** (24 subjects, 1,113 definitions). Later
+semesters appear as their source material is seeded. The workflow is deliberately boring:
+
+```bash
+# 1. subject JSON files arrive under data/subjects/<semester>/
+# 2. rebuild the index the app reads
+python3 scripts/build-curriculum-index.py
+# 3. commit the data and the index
+```
+
+The app fetches `data/curriculum.json` at runtime, so a new batch adds a new semester group
+without touching the UI. Subjects still being seeded are simply absent — never faked.
+Definitions are derived from the SNIST ECE A22 materials; raw source files are not
+redistributed.
 
 ---
 
@@ -215,9 +240,10 @@ sheet closes and held inside an open subject or quiz.
 
 | | |
 | --- | --- |
-| **Stack** | Static HTML, CSS and vanilla JavaScript. No framework, no build step. |
+| **Stack** | Static HTML, CSS and vanilla JavaScript. No framework. A stdlib Python script builds the data index. |
+| **Data** | `data/curriculum.json` + one file per subject under `data/subjects/<semester>/`. |
 | **Storage** | `localStorage` — `oneliners.state.v1` for progress, `oneliners.theme` for the theme. |
-| **Offline** | Hand-written service worker with an app-shell cache. |
+| **Offline** | Hand-written service worker; precaches the app shell and every seeded subject file. |
 | **Type** | Self-hosted Inter variable font. |
 | **Hosting** | GitHub Pages, static. |
 | **Privacy** | No accounts, no analytics, no network writes. Progress never leaves the device. |
@@ -227,10 +253,18 @@ sheet closes and held inside an open subject or quiz.
 {
   goal: 120,
   mastery: {
-    "signals|Convolution": { attempts: 4, correct: 3, score: 0.9, streak: 2, last: 172… }
+    "electronic-devices-and-circuits|Intrinsic semiconductor":
+      { attempts: 4, correct: 3, score: 0.9, streak: 2, last: 172… }
   },
   history: {
-    "2026-10-24": { total: 41, subjects: { signals: 12, comm: 9, digital: 8 } }
+    "2026-10-24": {
+      total: 41,
+      subjects: {
+        "electronic-devices-and-circuits": 12,
+        "signals-and-systems": 9,
+        "data-structures": 8
+      }
+    }
   }
 }
 ```
@@ -242,13 +276,14 @@ The footer offers a two-step reset. It clears progress but keeps your theme and 
 ## Run it locally
 
 ```bash
-# A server is required for service-worker installation.
+# A server is required: the app fetches its curriculum data.
 python3 -m http.server 8000
 # → http://localhost:8000/
 ```
 
-Or simply open `index.html`; everything except installation and offline caching works.
-There is nothing to install or compile.
+Opening `index.html` directly blocks the data fetch in most browsers. The live GitHub
+Pages build serves everything over HTTPS. There is nothing to install or compile; the
+curriculum index is already committed.
 
 ---
 
@@ -256,20 +291,27 @@ There is nothing to install or compile.
 
 ```text
 .
-├── index.html                 # the entire app
-├── design.md                  # the design system / source of truth
-├── manifest.webmanifest       # PWA manifest
-├── sw.js                      # offline app shell
-├── .nojekyll                  # keep GitHub Pages static
+├── index.html                        # the entire app
+├── design.md                         # the design system / source of truth
+├── manifest.webmanifest              # PWA manifest
+├── sw.js                             # offline app shell + data cache
+├── .nojekyll                         # keep GitHub Pages static
+├── data/
+│   ├── curriculum.json               # semester index the app loads
+│   └── subjects/<semester>/*.json    # one file per subject
+├── scripts/
+│   └── build-curriculum-index.py     # rebuild curriculum.json from subject files
+├── prompts/
+│   └── seed-curriculum-agent.md      # source-extraction brief
 └── assets/
-    ├── icon.svg               # brand mark
-    ├── icon-192.png           # PWA icon
-    ├── icon-512.png           # PWA icon
-    ├── icon-maskable-512.png  # Android adaptive icon
-    ├── apple-touch-icon.png   # iOS
-    ├── favicon-32.png         # fallback favicon
-    ├── og.png                 # social card
-    ├── screenshot-*.png       # README images
+    ├── icon.svg                      # brand mark
+    ├── icon-192.png                  # PWA icon
+    ├── icon-512.png                  # PWA icon
+    ├── icon-maskable-512.png         # Android adaptive icon
+    ├── apple-touch-icon.png          # iOS
+    ├── favicon-32.png                # fallback favicon
+    ├── og.png                        # social card
+    ├── screenshot-*.png              # README images
     └── fonts/
         ├── inter-latin-var.woff2
         └── OFL.txt
