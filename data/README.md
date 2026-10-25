@@ -39,7 +39,7 @@ Complete = every syllabus unit has definitions.
 
 **Notation on those definitions:** 1,662 carry an equation, 624 carry one of 198 diagram
 symbols, and 431 carry a cold surface — 92 code, 186 spec tables, 40 sequences and 113
-derivations. 15 diagrams also carry hand-marked label points for the figure → label quiz.
+derivations. 25 diagrams also carry hand-marked label points for the figure → label quiz.
 Artifacts live under `data/artifacts/parts/` and are merged into `data/artifacts.json` by
 `scripts/build-artifacts.py`; they never change the definition text.
 

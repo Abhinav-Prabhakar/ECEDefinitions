@@ -14936,6 +14936,97 @@
         "label": "cache set"
       }
     ],
+    "cmos-inverter": [
+      {
+        "x": 90,
+        "y": 70,
+        "label": "PMOS"
+      },
+      {
+        "x": 90,
+        "y": 90,
+        "label": "NMOS"
+      },
+      {
+        "x": 44,
+        "y": 78,
+        "label": "input"
+      },
+      {
+        "x": 120,
+        "y": 64,
+        "label": "output"
+      },
+      {
+        "x": 120,
+        "y": 26,
+        "label": "VDD rail"
+      },
+      {
+        "x": 120,
+        "y": 124,
+        "label": "ground rail"
+      }
+    ],
+    "control-loop": [
+      {
+        "x": 62,
+        "y": 64,
+        "label": "summing junction"
+      },
+      {
+        "x": 129,
+        "y": 64,
+        "label": "forward path"
+      },
+      {
+        "x": 143,
+        "y": 112,
+        "label": "feedback sensor"
+      },
+      {
+        "x": 30,
+        "y": 64,
+        "label": "reference input"
+      },
+      {
+        "x": 206,
+        "y": 64,
+        "label": "output"
+      },
+      {
+        "x": 196,
+        "y": 90,
+        "label": "feedback path"
+      }
+    ],
+    "counter-timing": [
+      {
+        "x": 60,
+        "y": 35,
+        "label": "clock"
+      },
+      {
+        "x": 60,
+        "y": 58,
+        "label": "Q0"
+      },
+      {
+        "x": 60,
+        "y": 82,
+        "label": "Q1"
+      },
+      {
+        "x": 60,
+        "y": 106,
+        "label": "Q2"
+      },
+      {
+        "x": 127,
+        "y": 122,
+        "label": "skew"
+      }
+    ],
     "d-flipflop": [
       {
         "x": 70,
@@ -14980,6 +15071,87 @@
         "label": "in phase"
       }
     ],
+    "er-diagram": [
+      {
+        "x": 40,
+        "y": 45,
+        "label": "entity"
+      },
+      {
+        "x": 57,
+        "y": 58,
+        "label": "attribute"
+      },
+      {
+        "x": 120,
+        "y": 68,
+        "label": "relationship"
+      },
+      {
+        "x": 100,
+        "y": 68,
+        "label": "cardinality"
+      }
+    ],
+    "ip-packet": [
+      {
+        "x": 38,
+        "y": 74,
+        "label": "version"
+      },
+      {
+        "x": 65,
+        "y": 74,
+        "label": "header length"
+      },
+      {
+        "x": 89,
+        "y": 74,
+        "label": "time to live"
+      },
+      {
+        "x": 112,
+        "y": 74,
+        "label": "protocol"
+      },
+      {
+        "x": 170,
+        "y": 74,
+        "label": "payload"
+      },
+      {
+        "x": 74,
+        "y": 50,
+        "label": "header"
+      }
+    ],
+    "laser-levels": [
+      {
+        "x": 70,
+        "y": 124,
+        "label": "ground level"
+      },
+      {
+        "x": 70,
+        "y": 72,
+        "label": "metastable level"
+      },
+      {
+        "x": 70,
+        "y": 38,
+        "label": "pump band"
+      },
+      {
+        "x": 56,
+        "y": 90,
+        "label": "pump"
+      },
+      {
+        "x": 80,
+        "y": 55,
+        "label": "stimulated emission"
+      }
+    ],
     "linked-list": [
       {
         "x": 18,
@@ -15000,6 +15172,50 @@
         "x": 228,
         "y": 69,
         "label": "null terminator"
+      }
+    ],
+    "logic-gates": [
+      {
+        "x": 45,
+        "y": 52,
+        "label": "AND gate"
+      },
+      {
+        "x": 150,
+        "y": 52,
+        "label": "OR gate"
+      },
+      {
+        "x": 147,
+        "y": 113,
+        "label": "NOT gate"
+      },
+      {
+        "x": 167,
+        "y": 113,
+        "label": "inversion bubble"
+      }
+    ],
+    "memory-hierarchy": [
+      {
+        "x": 104,
+        "y": 38,
+        "label": "registers"
+      },
+      {
+        "x": 96,
+        "y": 62,
+        "label": "cache"
+      },
+      {
+        "x": 89,
+        "y": 86,
+        "label": "DRAM"
+      },
+      {
+        "x": 85,
+        "y": 110,
+        "label": "disk"
       }
     ],
     "memory-layout": [
@@ -15161,6 +15377,38 @@
         "label": "waiting"
       }
     ],
+    "stack-queue": [
+      {
+        "x": 48,
+        "y": 42,
+        "label": "top of stack"
+      },
+      {
+        "x": 48,
+        "y": 104,
+        "label": "bottom of stack"
+      },
+      {
+        "x": 77,
+        "y": 38,
+        "label": "push"
+      },
+      {
+        "x": 77,
+        "y": 64,
+        "label": "pop"
+      },
+      {
+        "x": 136,
+        "y": 71,
+        "label": "queue front"
+      },
+      {
+        "x": 197,
+        "y": 71,
+        "label": "queue rear"
+      }
+    ],
     "tcp-handshake": [
       {
         "x": 120,
@@ -15203,6 +15451,28 @@
         "x": 120,
         "y": 112,
         "label": "standing wave"
+      }
+    ],
+    "uart-frame": [
+      {
+        "x": 41,
+        "y": 74,
+        "label": "start bit"
+      },
+      {
+        "x": 100,
+        "y": 67,
+        "label": "data bits"
+      },
+      {
+        "x": 167,
+        "y": 67,
+        "label": "parity bit"
+      },
+      {
+        "x": 183,
+        "y": 61,
+        "label": "stop bit"
       }
     ]
   }

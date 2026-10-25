@@ -204,7 +204,7 @@ coast on recognition.
 - **Figures without their lettering.** While a figure or label question is open, the
   diagram is drawn without its printed labels, so the question tests the structure rather
   than the words on the drawing. Answering restores the labelled drawing in the explanation.
-- **Labels stay honest.** The 15 label sets are hand-marked on real geometry — the base of a
+- **Labels stay honest.** The 25 label sets are hand-marked on real geometry — the base of a
   BJT, the depletion region, the network layer of a stack, a node in a linked list — and the
   round only takes a label question when the subject has four labels to choose from.
 - **Adaptive sampling.** The three weakest definitions are guaranteed a slot; the remaining

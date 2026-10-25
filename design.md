@@ -267,7 +267,7 @@ against the definitions by `scripts/validate-artifacts.py`. They exist only wher
 sentence cannot carry the thing itself: the syntax, the bitfield, the exchange order, or
 the algebra between a formula and its result.
 
-The same registry carries `labels`: 15 hand-marked diagrams, each with 3–10 labelled points
+The same registry carries `labels`: 25 hand-marked diagrams, each with 3–10 labelled points
 in the sprite's 240×150 coordinates. Label points are used by the figure → label quiz and
 must sit on the drawing's geometry, not in empty space.
 

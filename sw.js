@@ -1,5 +1,5 @@
 /* one·liners — offline app shell */
-const CACHE = 'oneliners-v16';
+const CACHE = 'oneliners-v17';
 const ASSETS = [
   './',
   './index.html',
@@ -7,7 +7,7 @@ const ASSETS = [
   './data/curriculum.json',
   './data/sources.json',
   './data/artifacts.json',
-  './data/artifacts.json?v=2',
+  './data/artifacts.json?v=3',
   './assets/icon.svg',
   './assets/icon-192.png',
   './assets/icon-512.png',
