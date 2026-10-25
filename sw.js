@@ -1,5 +1,5 @@
 /* one·liners — offline app shell */
-const CACHE = 'oneliners-v13';
+const CACHE = 'oneliners-v14';
 const ASSETS = [
   './',
   './index.html',
@@ -13,6 +13,7 @@ const ASSETS = [
   './assets/apple-touch-icon.png',
   './assets/favicon-32.png',
   './assets/diagrams.svg',
+  './assets/diagrams.svg?v=2',
   './assets/katex/katex.min.css',
   './assets/katex/katex.min.js',
   './assets/fonts/inter-latin-var.woff2',
