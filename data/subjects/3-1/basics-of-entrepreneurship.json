@@ -93,6 +93,7 @@
       "term": "Design thinking",
       "definition": "Iterative process of understanding the user, challenging assumptions and redefining problems to find alternative strategies and solutions that are not instantly apparent.",
       "formula": "",
+      "diagram": "design-thinking",
       "unit": 2,
       "unitTitle": null,
       "sources": [
@@ -170,6 +171,7 @@
       "term": "Value-stream mapping",
       "definition": "Exercise that identifies all the actions that take a product or service through a process.",
       "formula": "",
+      "diagram": "supply-chain",
       "unit": 3,
       "unitTitle": null,
       "sources": [
@@ -181,6 +183,7 @@
       "term": "Business Model Canvas",
       "definition": "One-page strategic management tool that defines and communicates a business idea by working through the fundamental elements of a business or product.",
       "formula": "",
+      "diagram": "business-model-canvas",
       "unit": 3,
       "unitTitle": null,
       "sources": [
@@ -214,6 +217,7 @@
       "term": "Product-market fit",
       "definition": "Being in a good market with a product that can satisfy that market.",
       "formula": "",
+      "diagram": "venn",
       "unit": 3,
       "unitTitle": null,
       "sources": [
@@ -225,6 +229,7 @@
       "term": "Industry",
       "definition": "System of manufacturers or businesses sharing the common objective of producing a particular kind of goods or services.",
       "formula": "",
+      "diagram": "porters-five",
       "unit": 3,
       "unitTitle": null,
       "sources": [
@@ -246,7 +251,7 @@
       "id": "revenue",
       "term": "Revenue",
       "definition": "Income that a business generates by means of its sales.",
-      "formula": "",
+      "formula": "R=P\\times Q",
       "unit": 4,
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
@@ -257,7 +262,7 @@
       "id": "revenue-stream",
       "term": "Revenue stream",
       "definition": "A distinct source of business income, such as one of the different services a business offers.",
-      "formula": "",
+      "formula": "R=\\sum_{k=1}^{n}R_{k}",
       "unit": 4,
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
@@ -280,7 +285,7 @@
       "id": "fixed-costs",
       "term": "Fixed costs",
       "definition": "Costs incurred regularly irrespective of production and sales, usually calculated monthly, such as salary, rent and interest.",
-      "formula": "",
+      "formula": "\\frac{d(\\text{FC})}{dQ}=0",
       "unit": 4,
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
@@ -291,7 +296,7 @@
       "id": "variable-costs",
       "term": "Variable costs",
       "definition": "Costs that depend on the number of units produced and sold, such as raw material and packaging.",
-      "formula": "",
+      "formula": "\\text{VC}=v\\,Q",
       "unit": 4,
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
@@ -302,7 +307,8 @@
       "id": "break-even-point",
       "term": "Break-even point",
       "definition": "Point at which costs or expenses and revenues are equal, leaving no net loss or gain.",
-      "formula": "",
+      "formula": "\\text{TR}=\\text{TC}\\ \\Rightarrow\\ Q_{\\text{BEP}}=\\frac{\\text{FC}}{P-\\text{AVC}}",
+      "diagram": "break-even",
       "unit": 4,
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
@@ -313,7 +319,7 @@
       "id": "angel-investor",
       "term": "Angel investor",
       "definition": "High-net-worth individual who provides financial backing to small startups, typically in exchange for ownership equity in the company.",
-      "formula": "",
+      "formula": "s=\\frac{I}{V_{\\text{post}}}",
       "unit": 4,
       "unitTitle": "Economics & Financial Analysis",
       "sources": [
@@ -490,6 +496,7 @@
       "term": "Channels",
       "definition": "Means adopted by a company to communicate with its customers or deliver products or services to them.",
       "formula": "",
+      "diagram": "marketing-mix",
       "unit": 6,
       "unitTitle": "Marketing and Business Regulations",
       "sources": [
@@ -500,7 +507,7 @@
       "id": "customer-acquisition",
       "term": "Customer acquisition",
       "definition": "Gaining new consumers by persuading them to purchase a company's products or services.",
-      "formula": "",
+      "formula": "\\text{CAC}=\\frac{\\text{Acquisition spend}}{\\text{New customers}}",
       "unit": 6,
       "unitTitle": "Marketing and Business Regulations",
       "sources": [
@@ -544,7 +551,7 @@
       "id": "partnership",
       "term": "Partnership",
       "definition": "Arrangement in which two or more individuals share the profits and liabilities of a business venture.",
-      "formula": "",
+      "formula": "\\text{Profit}_{i}=s_{i}\\,\\Pi,\\quad \\sum_{i}s_{i}=1",
       "unit": 6,
       "unitTitle": "Marketing and Business Regulations",
       "sources": [

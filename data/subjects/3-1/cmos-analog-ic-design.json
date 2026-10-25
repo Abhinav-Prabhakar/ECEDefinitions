@@ -20,7 +20,8 @@
       "unitTitle": "MOS Devices",
       "sources": [
         "cmos-unit-1#slide.2"
-      ]
+      ],
+      "diagram": "chip-floorplan"
     },
     {
       "id": "analog-ic-design",
@@ -37,7 +38,7 @@
       "id": "gate-threshold-voltage",
       "term": "Gate threshold voltage",
       "definition": "Minimum gate-to-source voltage required to create a conductive channel between the source and drain terminals of a field-effect transistor.",
-      "formula": "VTH",
+      "formula": "V_{TH}=V_{FB}+2\\phi_F+\\frac{\\sqrt{2q\\varepsilon_s N_A(2\\phi_F)}}{C_{ox}}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -48,7 +49,7 @@
       "id": "drain-source-on-resistance",
       "term": "Drain-source on-resistance",
       "definition": "Resistance between the drain and source terminals of a MOSFET when it is turned on, set in ohms.",
-      "formula": "RDS(ON)",
+      "formula": "R_{DS(on)}=\\frac{1}{\\mu_n C_{ox}\\frac{W}{L}(V_{GS}-V_{TH})}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -59,7 +60,7 @@
       "id": "drain-cut-off-current",
       "term": "Drain cut-off current",
       "definition": "Small leakage current flowing between the drain and source terminals of a FET when the gate-to-source voltage is zero.",
-      "formula": "IDSS",
+      "formula": "I_{DSS}\\approx I_{0}\\frac{W}{L}e^{-V_{TH}/(nV_T)}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -70,7 +71,7 @@
       "id": "gate-leakage-current",
       "term": "Gate leakage current",
       "definition": "Small current flowing between the gate and source terminals of a MOSFET when a specified voltage is applied between them.",
-      "formula": "IGSS",
+      "formula": "J_{G}\\propto e^{-2t_{ox}\\sqrt{2m\\phi_B}/\\hbar}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -81,7 +82,7 @@
       "id": "drain-source-breakdown-voltage",
       "term": "Drain-source breakdown voltage",
       "definition": "Maximum voltage that can be applied between drain and source, with the gate shorted to the source, without damaging avalanche breakdown.",
-      "formula": "V(BR)DSS",
+      "formula": "V_{(BR)DSS}=\\frac{\\varepsilon_s E_{crit}^{2}}{2qN_B}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -92,7 +93,7 @@
       "id": "input-capacitance",
       "term": "Input capacitance",
       "definition": "Capacitance between the gate and source terminals with the drain shorted to the source, made up of gate-source and gate-drain capacitances.",
-      "formula": "Ciss",
+      "formula": "C_{iss}=C_{gs}+C_{gd}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -103,7 +104,7 @@
       "id": "reverse-transfer-capacitance",
       "term": "Reverse transfer capacitance",
       "definition": "Capacitance between the gate and drain terminals of a MOSFET, also called feedback or Miller capacitance, which affects switching speed.",
-      "formula": "Crss",
+      "formula": "C_{rss}=C_{gd}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -114,7 +115,7 @@
       "id": "output-capacitance",
       "term": "Output capacitance",
       "definition": "Parasitic capacitance measured across the drain-source terminals of a MOSFET in the off state, which affects switching speed.",
-      "formula": "Coss",
+      "formula": "C_{oss}=C_{ds}+C_{gd}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -125,41 +126,44 @@
       "id": "mosfet-operating-regions",
       "term": "MOSFET operating regions",
       "definition": "Cutoff, linear (triode) and saturation, set by the gate-to-source and drain-to-source voltages relative to the threshold voltage.",
-      "formula": "",
+      "formula": "V_{DS}<V_{GS}-V_{TH}\\Rightarrow\\text{triode};\\quad V_{DS}>V_{GS}-V_{TH}\\Rightarrow\\text{sat}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
         "cmos-unit-2#slide.45"
-      ]
+      ],
+      "diagram": "mosfet-curves"
     },
     {
       "id": "mosfet",
       "term": "MOSFET",
       "definition": "Three-terminal device with gate, drain and source terminals, used to control current.",
-      "formula": "",
+      "formula": "I_{D}=\\frac{1}{2}\\mu_n C_{ox}\\frac{W}{L}(V_{GS}-V_{TH})^{2}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
         "cmos-unit-3#slide.2"
-      ]
+      ],
+      "diagram": "mosfet"
     },
     {
       "id": "active-resistor",
       "term": "Active resistor",
       "definition": "Transistor used as a resistor in the triode region, giving compact on-chip area and electronically controllable resistance.",
-      "formula": "",
+      "formula": "R_{eq}=\\frac{1}{\\mu_n C_{ox}\\frac{W}{L}\\left(V_{GS}-V_{TH}-\\frac{V_{DS}}{2}\\right)}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
         "cmos-unit-3#slide.12",
         "cmos-unit-3#slide.13"
-      ]
+      ],
+      "diagram": "mosfet-curves"
     },
     {
       "id": "current-sink",
       "term": "Current sink",
       "definition": "Two-terminal component whose current at any instant of time is independent of the voltage across it.",
-      "formula": "",
+      "formula": "r_{out}=\\frac{\\partial V_{DS}}{\\partial I_{D}}\\to\\infty",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -170,18 +174,19 @@
       "id": "current-mirror",
       "term": "Current mirror",
       "definition": "Circuit in which two matched transistors share the same gate-to-source voltage, so the output current is a copy of the input current.",
-      "formula": "",
+      "formula": "I_{out}=\\frac{(W/L)_{2}}{(W/L)_{1}}I_{ref}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
         "cmos-unit-3#slide.21"
-      ]
+      ],
+      "diagram": "current-mirror"
     },
     {
       "id": "mos-switch",
       "term": "MOS switch",
       "definition": "Transistor operated as a switch, off in cutoff with negligible drain current and on in the triode region.",
-      "formula": "",
+      "formula": "\\tau_{sw}=R_{on}(C_{gd}+C_{db}+C_{L})",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -192,18 +197,19 @@
       "id": "differential-amplifier",
       "term": "Differential amplifier",
       "definition": "Circuit that amplifies the difference between two input signals and is immune to external noise and interference.",
-      "formula": "",
+      "formula": "A_{d}=g_{m}(r_{o2}\\parallel r_{o4})",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
         "cmos-unit-4-cmos#p.4"
-      ]
+      ],
+      "diagram": "differential-pair"
     },
     {
       "id": "early-voltage",
       "term": "Early voltage",
       "definition": "Parameter representing channel-length modulation, showing how drain current rises slightly with drain-to-source voltage even in saturation.",
-      "formula": "VA",
+      "formula": "I_{D}=I_{D0}\\left(1+\\frac{V_{DS}}{V_{A}}\\right)",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
@@ -225,7 +231,7 @@
       "id": "cascode-amplifier",
       "term": "Cascode amplifier",
       "definition": "Configuration that raises the output resistance of a common-source amplifier in order to achieve higher intrinsic gain.",
-      "formula": "",
+      "formula": "R_{out}\\approx g_{m2}r_{o2}r_{o1},\\quad A_{v}\\approx-g_{m1}R_{out}",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
@@ -236,7 +242,7 @@
       "id": "intrinsic-gain",
       "term": "Intrinsic gain",
       "definition": "Voltage gain of a transistor stage given by the product of its transconductance and its output resistance.",
-      "formula": "gm·ro",
+      "formula": "A_{v}=g_{m}r_{o}=\\frac{2V_{A}}{V_{OV}}",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
@@ -247,7 +253,7 @@
       "id": "open-loop-voltage-gain",
       "term": "Open-loop voltage gain",
       "definition": "Ratio of the change in output voltage to the change in differential input voltage of an op-amp.",
-      "formula": "",
+      "formula": "A_{OL}=\\frac{\\Delta V_{out}}{\\Delta(V_{+}-V_{-})}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -258,29 +264,31 @@
       "id": "bandwidth",
       "term": "Bandwidth",
       "definition": "Frequency range over which an amplifier can operate effectively.",
-      "formula": "",
+      "formula": "BW=f_{H}-f_{L}\\approx f_{H}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
         "cmos-unit-5-cmos#p.6"
-      ]
+      ],
+      "diagram": "bode"
     },
     {
       "id": "gain-bandwidth-product",
       "term": "Gain-bandwidth product",
       "definition": "Product of open-loop gain and bandwidth, which stays approximately constant as gain falls after the dominant pole.",
-      "formula": "GBW = Avo × BW",
+      "formula": "GBW=A_{v0}f_{-3dB}=f_{u}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
         "cmos-unit-5-cmos#p.6"
-      ]
+      ],
+      "diagram": "bode"
     },
     {
       "id": "cmrr",
       "term": "CMRR",
       "definition": "Ability of an op-amp to reject signals common to both inputs, given by the ratio of differential gain to common-mode gain.",
-      "formula": "CMRR = Ad / Acm",
+      "formula": "\\text{CMRR}=20\\log_{10}\\left|\\frac{A_{d}}{A_{cm}}\\right|",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -291,7 +299,7 @@
       "id": "psrr",
       "term": "PSRR",
       "definition": "Measure of how well an op-amp rejects variations or noise in the supply voltage, as a ratio of differential gain to supply-noise gain.",
-      "formula": "",
+      "formula": "\\text{PSRR}=20\\log_{10}\\left|\\frac{A_{d}}{A_{dd}}\\right|",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -302,7 +310,7 @@
       "id": "icmr",
       "term": "ICMR",
       "definition": "Range of input voltages over which an op-amp operates correctly without distortion.",
-      "formula": "",
+      "formula": "\\text{ICMR}=V_{in,max}-V_{in,min}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -313,7 +321,7 @@
       "id": "output-voltage-swing",
       "term": "Output voltage swing",
       "definition": "Maximum positive and negative output levels reachable before the output transistor enters saturation.",
-      "formula": "",
+      "formula": "V_{out}\\in[V_{DS,sat},\\,V_{DD}-V_{DS,sat}]",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -324,7 +332,7 @@
       "id": "thermal-noise",
       "term": "Thermal noise",
       "definition": "Noise component of a CMOS op-amp that is proportional to channel resistance.",
-      "formula": "",
+      "formula": "\\overline{i_{n}^{2}}=4kT\\gamma g_{m}\\Delta f",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -335,7 +343,7 @@
       "id": "flicker-noise",
       "term": "Flicker noise",
       "definition": "Low-frequency noise, also called 1/f noise, that dominates at low frequencies and is higher in MOSFETs.",
-      "formula": "",
+      "formula": "\\overline{v_{n}^{2}}=\\frac{K}{C_{ox}WL}\\frac{1}{f}\\Delta f",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -346,7 +354,7 @@
       "id": "multistage-amplifier",
       "term": "Multistage amplifier",
       "definition": "Cascade of amplifier stages that achieves higher gain and better impedance matching than one stage, with a high-impedance input and low-impedance output.",
-      "formula": "",
+      "formula": "A_{v}=\\prod_{i=1}^{n}A_{vi}",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -358,18 +366,19 @@
       "id": "two-stage-op-amp",
       "term": "Two-stage op-amp",
       "definition": "Operational amplifier made of a differential input stage followed by a common-source gain stage.",
-      "formula": "",
+      "formula": "A_{v}=g_{m1}(r_{o2}\\parallel r_{o4})\\,g_{m6}(r_{o6}\\parallel r_{o7})",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
         "cmos-unit-6-cmos#p.45"
-      ]
+      ],
+      "diagram": "opamp"
     },
     {
       "id": "settling-time",
       "term": "Settling time",
       "definition": "Time taken for the output to settle within 0.1% or 1% of its final value after a step input.",
-      "formula": "",
+      "formula": "t_{s}\\approx-\\tau\\ln\\epsilon",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -380,18 +389,19 @@
       "id": "mos-capacitor",
       "term": "MOS capacitor",
       "definition": "Structure equivalent to a planar capacitor with one electrode replaced by a semiconductor, forming the heart of the MOSFET.",
-      "formula": "",
+      "formula": "C_{ox}=\\frac{\\varepsilon_{ox}}{t_{ox}}WL",
       "unit": 1,
       "unitTitle": "MOS Devices",
       "sources": [
         "cmos-wiki-mos-capacitor#overview"
-      ]
+      ],
+      "diagram": "cmos-cross-section"
     },
     {
       "id": "depletion-region",
       "term": "Depletion region",
       "definition": "Carrier-free region of immobile, negatively charged acceptor ions left when a positive gate voltage pushes holes away from the interface.",
-      "formula": "",
+      "formula": "x_{d}=\\sqrt{\\frac{2\\varepsilon_s\\phi_s}{qN_A}}",
       "unit": 1,
       "unitTitle": "MOS Devices",
       "sources": [
@@ -402,29 +412,31 @@
       "id": "inversion-layer",
       "term": "Inversion layer",
       "definition": "Surface layer in which a p-type body flips to n-type, with electrons as majority carriers, once the gate voltage is high enough.",
-      "formula": "",
+      "formula": "Q_{inv}=-C_{ox}(V_{GS}-V_{TH})",
       "unit": 1,
       "unitTitle": "MOS Devices",
       "sources": [
         "cmos-wiki-mos-capacitor#operation"
-      ]
+      ],
+      "diagram": "cmos-cross-section"
     },
     {
       "id": "gate-dielectric",
       "term": "Gate dielectric",
       "definition": "Insulator lying directly below the gate electrode and above the channel, separating the gate from the channel.",
-      "formula": "",
+      "formula": "E_{ox}=\\frac{V_{GS}}{t_{ox}}",
       "unit": 1,
       "unitTitle": "MOS Devices",
       "sources": [
         "cmos-wiki-mos-capacitor#overview"
-      ]
+      ],
+      "diagram": "cmos-cross-section"
     },
     {
       "id": "overdrive-voltage",
       "term": "Overdrive voltage",
       "definition": "Amount by which the gate-to-source voltage exceeds the threshold value.",
-      "formula": "",
+      "formula": "V_{OV}=V_{GS}-V_{TH}",
       "unit": 1,
       "unitTitle": "MOS Devices",
       "sources": [
@@ -440,24 +452,26 @@
       "unitTitle": "MOS Devices",
       "sources": [
         "cmos-wiki-ic-layout#overview"
-      ]
+      ],
+      "diagram": "cmos-layout"
     },
     {
       "id": "channel-length-modulation",
       "term": "Channel length modulation",
       "definition": "Shortening of the inverted channel region as drain bias increases, which raises saturation drain current and sets the MOSFET output resistance.",
-      "formula": "",
+      "formula": "I_{D}=\\frac{1}{2}\\mu_n C_{ox}\\frac{W}{L}(V_{GS}-V_{TH})^{2}(1+\\lambda V_{DS})",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
         "cmos-wiki-clm#overview"
-      ]
+      ],
+      "diagram": "mosfet-curves"
     },
     {
       "id": "subthreshold-conduction",
       "term": "Subthreshold conduction",
       "definition": "Current between source and drain of a MOSFET when the gate voltage is below the threshold voltage.",
-      "formula": "",
+      "formula": "I_{D}=I_{0}\\frac{W}{L}e^{(V_{GS}-V_{TH})/(nV_{T})}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -468,7 +482,7 @@
       "id": "subthreshold-slope",
       "term": "Subthreshold slope",
       "definition": "Log-linear slope of drain current against gate voltage in the subthreshold region, used as a figure of merit for switching efficiency.",
-      "formula": "",
+      "formula": "S=\\frac{kT}{q}\\ln(10)\\left(1+\\frac{C_{dep}}{C_{ox}}\\right)",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -479,7 +493,7 @@
       "id": "weak-inversion",
       "term": "Weak inversion",
       "definition": "Another name for the subthreshold operating region, which is an efficient region for analog micropower design.",
-      "formula": "",
+      "formula": "\\frac{g_{m}}{I_{D}}=\\frac{1}{nV_{T}}",
       "unit": 2,
       "unitTitle": "CMOS Device Modeling",
       "sources": [
@@ -490,7 +504,7 @@
       "id": "compliance-range",
       "term": "Compliance range",
       "definition": "Range of voltages over which a current mirror works, bounded by its compliance voltage.",
-      "formula": "",
+      "formula": "V_{out,min}=V_{DS,sat}=V_{GS}-V_{TH}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -501,7 +515,7 @@
       "id": "source-degeneration",
       "term": "Source degeneration",
       "definition": "Resistor in a transistor's source that can offset threshold variation in a mirror but lowers its output resistance.",
-      "formula": "",
+      "formula": "I_{out}\\approx\\frac{(W/L)_{2}}{(W/L)_{1}}\\frac{I_{ref}}{1+g_{m}R_{S}}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -512,7 +526,7 @@
       "id": "bandgap-voltage-reference",
       "term": "Bandgap voltage reference",
       "definition": "Voltage reference circuit widely used in integrated circuits that gives a nearly constant output tied to the band gap, varying little with supply, load, time or temperature.",
-      "formula": "",
+      "formula": "V_{ref}=V_{BE}+K\\frac{kT}{q}\\ln N",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -523,7 +537,7 @@
       "id": "ptat-quantity",
       "term": "PTAT quantity",
       "definition": "Quantity generated from the voltage difference between two p-n junctions at different current densities, rising in proportion to absolute temperature.",
-      "formula": "",
+      "formula": "\\Delta V_{BE}=\\frac{kT}{q}\\ln N\\propto T",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -534,7 +548,7 @@
       "id": "ctat-voltage",
       "term": "CTAT voltage",
       "definition": "Voltage across a diode held at constant current, which falls as temperature rises at about −2 mV per kelvin.",
-      "formula": "",
+      "formula": "\\frac{\\partial V_{BE}}{\\partial T}\\approx-2\\ \\text{mV/K}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -545,7 +559,7 @@
       "id": "cascode-current-source",
       "term": "Cascode current source",
       "definition": "Multi-transistor current source that stacks transistors to give higher output resistance than a single mirror.",
-      "formula": "",
+      "formula": "R_{out}\\approx g_{m}r_{o}^{2}",
       "unit": 3,
       "unitTitle": "Analog CMOS Sub-Circuits",
       "sources": [
@@ -556,7 +570,7 @@
       "id": "cascode",
       "term": "Cascode",
       "definition": "Two-stage amplifier, a common-source stage feeding a common-gate stage in FETs, giving very large output resistance.",
-      "formula": "",
+      "formula": "A_{v}\\approx-g_{m1}g_{m2}r_{o1}r_{o2}",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
@@ -567,29 +581,31 @@
       "id": "miller-effect",
       "term": "Miller effect",
       "definition": "Increase in the equivalent input capacitance of an inverting voltage amplifier caused by the capacitance between its input and output.",
-      "formula": "C_M = C(1 + Av)",
+      "formula": "C_{M}=C(1+|A_{v}|)",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
         "cmos-wiki-miller#overview"
-      ]
+      ],
+      "diagram": "opamp-inverting"
     },
     {
       "id": "pole-splitting",
       "term": "Pole splitting",
       "definition": "Technique used when a gain stage also serves as a high-impedance output, to counter the effect of feedback capacitance on performance.",
-      "formula": "",
+      "formula": "\\omega_{p1}\\approx\\frac{1}{g_{m2}R_{1}R_{2}C_{c}},\\quad\\omega_{p2}\\approx\\frac{g_{m2}C_{c}}{C_{1}C_{2}}",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
         "cmos-wiki-miller#overview"
-      ]
+      ],
+      "diagram": "bode"
     },
     {
       "id": "mosfet-output-resistance",
       "term": "MOSFET output resistance",
       "definition": "Resistance at the drain set by channel length modulation, infinite when the modulation parameter is zero.",
-      "formula": "rO = (1 + λVDS) / (λID)",
+      "formula": "r_{o}=\\frac{1}{\\lambda I_{D}}=\\frac{V_{A}}{I_{D}}",
       "unit": 4,
       "unitTitle": "CMOS Amplifiers",
       "sources": [
@@ -600,18 +616,19 @@
       "id": "operational-amplifier",
       "term": "Operational amplifier",
       "definition": "DC-coupled electronic amplifier with a differential input, a single-ended output and very high gain.",
-      "formula": "",
+      "formula": "V_{out}=A_{OL}(V_{+}-V_{-})",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
         "cmos-wiki-opamp#overview"
-      ]
+      ],
+      "diagram": "opamp"
     },
     {
       "id": "input-offset-voltage",
       "term": "Input offset voltage",
       "definition": "Voltage required across the input terminals of an op-amp to drive its output voltage to zero, arising from imperfections in the input stage.",
-      "formula": "",
+      "formula": "V_{OS}=\\Delta V_{TH}+\\frac{V_{OV}}{2}\\frac{\\Delta(W/L)}{(W/L)}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -622,7 +639,7 @@
       "id": "slew-rate",
       "term": "Slew rate",
       "definition": "Maximum rate at which an output voltage can change, usually specified in volts per microsecond.",
-      "formula": "",
+      "formula": "SR=\\left.\\frac{dV_{out}}{dt}\\right|_{max}=\\frac{I_{tail}}{C_{L}}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -633,18 +650,19 @@
       "id": "frequency-compensation",
       "term": "Frequency compensation",
       "definition": "Method of stabilising feedback circuits that increases the gain or phase margin, using external parts or an internal dominant pole.",
-      "formula": "",
+      "formula": "\\text{PM}=180^{\\circ}-\\left|\\angle A(j\\omega_{u})\\right|",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
         "cmos-wiki-opamp#stability"
-      ]
+      ],
+      "diagram": "control-loop"
     },
     {
       "id": "input-bias-current",
       "term": "Input bias current",
       "definition": "Small current that flows into the inputs of an op-amp because of biasing requirements or leakage.",
-      "formula": "",
+      "formula": "I_{B}=\\frac{I_{B+}+I_{B-}}{2}",
       "unit": 5,
       "unitTitle": "CMOS Operational Amplifiers",
       "sources": [
@@ -655,7 +673,7 @@
       "id": "comparator",
       "term": "Comparator",
       "definition": "Device that compares two voltages or currents and outputs a digital signal indicating which is larger.",
-      "formula": "",
+      "formula": "V_{out}=V_{DD}\\operatorname{sgn}(V_{+}-V_{-})",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -666,7 +684,7 @@
       "id": "open-loop-comparator",
       "term": "Open-loop comparator",
       "definition": "Comparator built from an amplifier without feedback, which heavily amplifies the input difference so its output saturates high or low.",
-      "formula": "",
+      "formula": "\\Delta V_{in,min}=\\frac{V_{OH}-V_{OL}}{A_{OL}}",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -677,7 +695,7 @@
       "id": "hysteresis",
       "term": "Hysteresis",
       "definition": "Use of two switching points, one for rising and one for falling input voltages, whose gap is the trip-point difference.",
-      "formula": "",
+      "formula": "\\Delta V_{H}=\\frac{R_{1}}{R_{1}+R_{2}}(V_{OH}-V_{OL})",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -688,7 +706,7 @@
       "id": "latched-comparator",
       "term": "Latched comparator",
       "definition": "Clocked, dynamic comparator that uses strong positive feedback during a regeneration phase while the clock is high and resets when it is low.",
-      "formula": "",
+      "formula": "\\tau_{reg}=\\frac{C_{L}}{g_{m}},\\quad V_{out}\\propto e^{t/\\tau_{reg}}",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -699,7 +717,7 @@
       "id": "rail-to-rail-comparator",
       "term": "Rail-to-rail comparator",
       "definition": "Comparator that accepts any differential voltage within the power-supply range.",
-      "formula": "",
+      "formula": "V_{SS}\\le V_{in}\\le V_{DD}",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [
@@ -710,7 +728,7 @@
       "id": "propagation-delay",
       "term": "Propagation delay",
       "definition": "Time a comparator takes to respond, ranging from tens of microseconds for op-amps used as comparators down to a few nanoseconds.",
-      "formula": "",
+      "formula": "t_{p}=\\frac{t_{PHL}+t_{PLH}}{2}",
       "unit": 6,
       "unitTitle": "Comparators",
       "sources": [

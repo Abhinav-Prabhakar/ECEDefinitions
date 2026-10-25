@@ -14,18 +14,19 @@
       "id": "butterworth-filter",
       "term": "Butterworth filter",
       "definition": "IIR filter whose magnitude response decreases monotonically with frequency and approximates the ideal response as order increases; poles lie on a circle.",
-      "formula": "|H(jΩ)| = 1/√(1+(Ω/Ωc)^(2N))",
+      "formula": "|H(j\\Omega)|=\\frac{1}{\\sqrt{1+(\\Omega/\\Omega_{c})^{2N}}}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-unit-4-dsp-questions#p.1"
-      ]
+      ],
+      "diagram": "bode"
     },
     {
       "id": "chebyshev-filter",
       "term": "Chebyshev filter",
       "definition": "IIR filter whose magnitude response exhibits ripple in the passband or stopband; poles lie on an ellipse.",
-      "formula": "",
+      "formula": "T_{N}(\\cos\\theta)=\\cos(N\\theta)",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -36,7 +37,7 @@
       "id": "chebyshev-type-i-filter",
       "term": "Chebyshev type I filter",
       "definition": "All-pole Chebyshev filter with equiripple behaviour in the passband and monotonic behaviour in the stopband.",
-      "formula": "",
+      "formula": "|H(j\\Omega)|^{2}=\\frac{1}{1+\\varepsilon^{2}T_{N}^{2}(\\Omega/\\Omega_{p})}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -47,7 +48,7 @@
       "id": "chebyshev-type-ii-filter",
       "term": "Chebyshev type II filter",
       "definition": "Chebyshev filter with both poles and zeros, monotonic in the passband and equiripple in the stopband.",
-      "formula": "",
+      "formula": "|H(j\\Omega)|^{2}=\\frac{T_{N}^{2}(\\Omega_{s}/\\Omega)}{T_{N}^{2}(\\Omega_{s}/\\Omega)+\\varepsilon^{2}}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -58,40 +59,43 @@
       "id": "iir-filter",
       "term": "IIR filter",
       "definition": "Recursive digital filter whose present output depends on present and past inputs and past outputs.",
-      "formula": "H(z) = (Σ b_k z^-k)/(1+Σ a_k z^-k)",
+      "formula": "H(z)=\\frac{\\sum_{k=0}^{M}b_{k}z^{-k}}{1+\\sum_{k=1}^{N}a_{k}z^{-k}}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-dsp-unit-5-questions#p.1"
-      ]
+      ],
+      "diagram": "iir-filter"
     },
     {
       "id": "recursive-realization",
       "term": "Recursive realization",
       "definition": "Realization where the present output is a function of past outputs, past and present inputs; corresponds to an IIR filter.",
-      "formula": "",
+      "formula": "y[n]=\\sum_{k=0}^{M}b_{k}x[n-k]-\\sum_{k=1}^{N}a_{k}y[n-k]",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-unit-4-dsp-questions#p.10"
-      ]
+      ],
+      "diagram": "iir-filter"
     },
     {
       "id": "non-recursive-realization",
       "term": "Non-recursive realization",
       "definition": "Realization where the present output depends only on past and present inputs; corresponds to an FIR filter.",
-      "formula": "",
+      "formula": "y[n]=\\sum_{k=0}^{M}h[k]\\,x[n-k]",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-unit-4-dsp-questions#p.10"
-      ]
+      ],
+      "diagram": "fir-filter"
     },
     {
       "id": "impulse-invariance-method",
       "term": "Impulse invariance method",
       "definition": "IIR design method that digitizes an analog filter by sampling its impulse response.",
-      "formula": "",
+      "formula": "h[n]=T\\,h_{a}(nT)",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -102,18 +106,19 @@
       "id": "bilinear-transformation",
       "term": "Bilinear transformation",
       "definition": "One-to-one mapping from the s-plane to the z-plane that maps the left half-plane into the unit circle, avoiding aliasing.",
-      "formula": "s = (2/T)((1-z^-1)/(1+z^-1))",
+      "formula": "s=\\frac{2}{T}\\,\\frac{1-z^{-1}}{1+z^{-1}}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-unit-4-dsp-questions#p.5"
-      ]
+      ],
+      "diagram": "z-plane"
     },
     {
       "id": "warping-effect",
       "term": "Warping effect",
       "definition": "Non-linear frequency compression at high frequencies introduced by the bilinear transformation.",
-      "formula": "",
+      "formula": "\\omega=2\\tan^{-1}\\!\\left(\\frac{\\Omega T}{2}\\right)",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -124,7 +129,7 @@
       "id": "prewarping",
       "term": "Prewarping",
       "definition": "Compensates warping by prescaling critical frequencies before applying the bilinear transformation.",
-      "formula": "Ω = (2/T) tan(ω/2)",
+      "formula": "\\Omega=\\frac{2}{T}\\tan\\!\\left(\\frac{\\omega}{2}\\right)",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -135,7 +140,7 @@
       "id": "backward-difference",
       "term": "Backward difference",
       "definition": "Simplest analog-to-digital conversion approximating the derivative as (y(n)-y(n-1))/T.",
-      "formula": "dy/dt ≈ (y(n)-y(n-1))/T",
+      "formula": "s=\\frac{1-z^{-1}}{T}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -146,18 +151,19 @@
       "id": "matched-z-transformation",
       "term": "Matched z-transformation",
       "definition": "Converts an analog filter to digital by mapping each s-plane zero/pole z to e^(sT).",
-      "formula": "z = e^(sT)",
+      "formula": "z=e^{sT}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
         "dsp-unit-4-dsp-questions#p.7"
-      ]
+      ],
+      "diagram": "z-plane"
     },
     {
       "id": "direct-form-i",
       "term": "Direct-form I structure",
       "definition": "IIR realization with separate delay chains for the numerator (zeros) and denominator (poles).",
-      "formula": "",
+      "formula": "H(z)=\\left(\\sum_{k=0}^{M}b_{k}z^{-k}\\right)\\frac{1}{1+\\sum_{k=1}^{N}a_{k}z^{-k}}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -168,7 +174,7 @@
       "id": "direct-form-ii",
       "term": "Direct-form II structure",
       "definition": "IIR realization sharing one delay chain, requiring max(M,N) memory locations.",
-      "formula": "",
+      "formula": "w[n]=x[n]-\\sum_{k=1}^{N}a_{k}w[n-k]",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -179,7 +185,7 @@
       "id": "signal-flow-graph",
       "term": "Signal flow graph",
       "definition": "Graphical representation of the relationships among variables of a set of linear difference equations.",
-      "formula": "",
+      "formula": "H=\\frac{1}{\\Delta}\\sum_{k}P_{k}\\Delta_{k}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -190,7 +196,7 @@
       "id": "transposition-theorem",
       "term": "Transposition theorem",
       "definition": "Reversing branch directions and interchanging input/output leaves the system function unchanged.",
-      "formula": "",
+      "formula": "H_{\\text{tr}}(z)=H(z)",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -201,7 +207,7 @@
       "id": "cascade-form",
       "term": "Cascade form",
       "definition": "Realization of a system as a product of lower-order sections to minimize quantization errors.",
-      "formula": "H(z)=H1(z)H2(z)...",
+      "formula": "H(z)=\\prod_{k=1}^{K}H_{k}(z)",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -212,7 +218,7 @@
       "id": "parallel-form",
       "term": "Parallel form",
       "definition": "Realization obtained by partial-fraction expansion of H(z) into parallel first/second-order sections.",
-      "formula": "H(z)=C+Σ Ak/(1-pk z^-1)",
+      "formula": "H(z)=C+\\sum_{k=1}^{K}\\frac{A_{k}}{1-p_{k}z^{-1}}",
       "unit": 4,
       "unitTitle": "IIR filter design",
       "sources": [
@@ -234,18 +240,19 @@
       "id": "fir-filter",
       "term": "FIR filter",
       "definition": "Non-recursive digital filter whose present output depends on the present and past inputs only; always stable.",
-      "formula": "H(z)=Σ h(n) z^-n",
+      "formula": "H(z)=\\sum_{n=0}^{N-1}h[n]z^{-n}",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
         "dsp-dsp-unit-5-questions#p.1"
-      ]
+      ],
+      "diagram": "fir-filter"
     },
     {
       "id": "linear-phase-filter",
       "term": "Linear phase filter",
       "definition": "System whose delay is constant across frequency, preserving signal shape; FIR can be exact if impulse response is symmetric.",
-      "formula": "θ(ω) = -αω",
+      "formula": "\\theta(\\omega)=-\\alpha\\omega",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
@@ -256,7 +263,7 @@
       "id": "gibbs-phenomenon",
       "term": "Gibbs phenomenon",
       "definition": "Oscillations in passband and stopband caused by abrupt truncation of the infinite Fourier series.",
-      "formula": "",
+      "formula": "\\Delta\\approx8.95\\%",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
@@ -267,29 +274,31 @@
       "id": "window-function",
       "term": "Window function",
       "definition": "Finite weighing sequence multiplied with the infinite impulse response to reduce Gibbs oscillations.",
-      "formula": "h(n)=hd(n)w(n)",
+      "formula": "h[n]=h_{d}[n]\\,w[n]",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
         "dsp-dsp-unit-5-questions#p.8"
-      ]
+      ],
+      "diagram": "windowing"
     },
     {
       "id": "kaiser-window",
       "term": "Kaiser window",
       "definition": "Adjustable window whose main-lobe width and side-lobe level can be varied via a parameter using a Bessel function.",
-      "formula": "w(n)=I0(β√(1-(2n/(N-1))^2))/I0(β)",
+      "formula": "w[n]=\\frac{I_{0}\\!\\left(\\beta\\sqrt{1-\\left(\\frac{2n}{N-1}\\right)^{2}}\\right)}{I_{0}(\\beta)}",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
         "dsp-dsp-unit-5-questions#p.11"
-      ]
+      ],
+      "diagram": "windowing"
     },
     {
       "id": "frequency-sampling-method",
       "term": "Frequency sampling method",
       "definition": "FIR design technique that specifies the desired response at discrete points and obtains coefficients by IDFT.",
-      "formula": "",
+      "formula": "h[n]=\\frac{1}{N}\\sum_{k=0}^{N-1}H[k]\\,e^{j2\\pi kn/N}",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
@@ -300,7 +309,7 @@
       "id": "fir-stability",
       "term": "FIR filter stability",
       "definition": "An FIR filter is always stable because all its poles are at the origin.",
-      "formula": "",
+      "formula": "\\text{ROC}: |z|>0",
       "unit": 5,
       "unitTitle": "FIR filter design",
       "sources": [
@@ -322,18 +331,19 @@
       "id": "downsampling",
       "term": "Downsampling",
       "definition": "Reducing the sampling rate by factor M by keeping every M-th sample and discarding the rest.",
-      "formula": "y(n)=x(Mn)",
+      "formula": "y[n]=x[Mn]",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
         "dsp-dsp-unit-6#p.1"
-      ]
+      ],
+      "diagram": "multirate"
     },
     {
       "id": "upsampling",
       "term": "Upsampling",
       "definition": "Increasing the sampling rate by factor L by inserting L-1 zeros between consecutive samples.",
-      "formula": "y(n)=x(n/L) if L|n else 0",
+      "formula": "y[n]=x[n/L]\\ \\text{if }L\\mid n,\\ 0\\ \\text{otherwise}",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
@@ -344,7 +354,7 @@
       "id": "decimation",
       "term": "Decimation",
       "definition": "Filtering a signal with an anti-aliasing filter followed by downsampling to avoid aliasing.",
-      "formula": "",
+      "formula": "y[n]=(x*h)[Mn]",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
@@ -355,18 +365,19 @@
       "id": "interpolation",
       "term": "Interpolation",
       "definition": "Upsampling followed by filtering with an anti-imaging filter to remove image spectra.",
-      "formula": "",
+      "formula": "y[n]=(x_{\\uparrow L}*h)[n]",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
         "dsp-dsp-unit-6#p.12"
-      ]
+      ],
+      "diagram": "multirate"
     },
     {
       "id": "anti-aliasing-filter",
       "term": "Anti-aliasing filter",
       "definition": "Lowpass filter applied before downsampling with cutoff π/M to prevent aliasing.",
-      "formula": "ωc = π/M",
+      "formula": "\\omega_{c}=\\pi/M",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
@@ -377,7 +388,7 @@
       "id": "anti-imaging-filter",
       "term": "Anti-imaging filter",
       "definition": "Lowpass filter applied after upsampling with cutoff π/L to remove image spectra.",
-      "formula": "ωc = π/L",
+      "formula": "\\omega_{c}=\\pi/L",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
@@ -388,7 +399,7 @@
       "id": "sampling-rate-conversion",
       "term": "Sampling rate conversion",
       "definition": "Converting a signal from one sampling rate to another by rational factor L/M using interpolation then decimation.",
-      "formula": "F = L/M",
+      "formula": "F_{\\text{new}}=\\frac{L}{M}F_{s}",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
@@ -399,18 +410,19 @@
       "id": "aliasing",
       "term": "Aliasing",
       "definition": "Spectral overlap that occurs when downsampling a signal not band-limited to π/M.",
-      "formula": "",
+      "formula": "f_{a}=\\left|f-\\operatorname{round}\\!\\left(\\frac{f}{F_{s}}\\right)F_{s}\\right|",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
         "dsp-dsp-unit-6#p.5"
-      ]
+      ],
+      "diagram": "aliasing"
     },
     {
       "id": "imaging",
       "term": "Imaging",
       "definition": "Extra spectral copies introduced by upsampling a discrete-time signal.",
-      "formula": "",
+      "formula": "X_{\\uparrow L}(e^{j\\omega})=X\\!\\left(e^{j\\omega L}\\right)",
       "unit": 6,
       "unitTitle": "Multirate signal processing",
       "sources": [
@@ -421,18 +433,19 @@
       "id": "discrete-time-signal",
       "term": "Discrete-time signal",
       "definition": "Sequence of quantities defined only at separate instants, obtainable by sampling a continuously varying waveform.",
-      "formula": "",
+      "formula": "x[n]=x_{a}(nT)",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
         "dsp-wiki-discrete-signal#discrete-time"
-      ]
+      ],
+      "diagram": "sampling"
     },
     {
       "id": "periodic-sequence",
       "term": "Periodic sequence",
       "definition": "Series of samples satisfying x[n + N] = x[n] for every n, so the pattern repeats every N samples.",
-      "formula": "x[n + N] = x[n]",
+      "formula": "x[n+N]=x[n]",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -443,7 +456,7 @@
       "id": "unit-impulse",
       "term": "Unit impulse",
       "definition": "Sample pattern equal to one at index zero and zero at every other index, also called the Kronecker delta.",
-      "formula": "δ[n]",
+      "formula": "\\delta[n]=1\\ \\text{for }n=0,\\quad 0\\ \\text{otherwise}",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -454,7 +467,7 @@
       "id": "linear-shift-invariant-system",
       "term": "Linear shift-invariant system",
       "definition": "Discrete-domain processor obeying superposition whose behavior is unchanged by delaying the input, fully described by its impulse response.",
-      "formula": "",
+      "formula": "T\\{x[n-k]\\}=y[n-k],\\quad T\\{ax_{1}+bx_{2}\\}=aT\\{x_{1}\\}+bT\\{x_{2}\\}",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -465,7 +478,7 @@
       "id": "impulse-response",
       "term": "Impulse response",
       "definition": "Output h[n] produced when a unit sample at index zero is applied, completely characterizing a linear shift-invariant processor.",
-      "formula": "h[n]",
+      "formula": "h[n]=T\\{\\delta[n]\\}",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -476,18 +489,19 @@
       "id": "convolution-sum",
       "term": "Convolution sum",
       "definition": "Output formula expressing a linear shift-invariant processor's response as the input combined with its characteristic output h[n].",
-      "formula": "y[n] = Σ x[k]h[n − k]",
+      "formula": "y[n]=\\sum_{k=-\\infty}^{\\infty}x[k]\\,h[n-k]",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
         "dsp-wiki-lti#impulse-response-and-convolution"
-      ]
+      ],
+      "diagram": "convolution"
     },
     {
       "id": "causality",
       "term": "Causality",
       "definition": "Property that the output at any instant depends only on present and past inputs, equivalent to an impulse response that is zero for n < 0.",
-      "formula": "h[n] = 0 for n < 0",
+      "formula": "h[n]=0\\ \\text{for }n<0",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -498,7 +512,7 @@
       "id": "bibo-stability",
       "term": "BIBO stability",
       "definition": "Property guaranteeing finite outputs for every finite-amplitude excitation, which for discrete shift-invariant processors holds when the impulse response is absolutely summable.",
-      "formula": "Σ|h[n]| < ∞",
+      "formula": "\\sum_{n=-\\infty}^{\\infty}|h[n]|<\\infty",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -509,7 +523,7 @@
       "id": "linear-constant-coefficient-difference-equation",
       "term": "Linear constant-coefficient difference equation",
       "definition": "Recurrence expressing each term of a sequence as a fixed-weight combination of earlier terms, used to describe discrete processors.",
-      "formula": "",
+      "formula": "\\sum_{k=0}^{N}a_{k}y[n-k]=\\sum_{m=0}^{M}b_{m}x[n-m]",
       "unit": 1,
       "unitTitle": "Introduction to Discrete-Time Signals and Systems",
       "sources": [
@@ -520,7 +534,7 @@
       "id": "discrete-fourier-series",
       "term": "Discrete Fourier series",
       "definition": "Expansion of a repeating sample pattern into N complex exponentials that are harmonics of the fundamental digital frequency 1/N.",
-      "formula": "",
+      "formula": "c_{k}=\\frac{1}{N}\\sum_{n=0}^{N-1}x[n]\\,e^{-j2\\pi kn/N}",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -531,18 +545,19 @@
       "id": "dtft",
       "term": "DTFT",
       "definition": "Transform mapping a sample sequence to a continuous function of angular frequency that repeats every 2π.",
-      "formula": "S(ω) = Σ s[n]e^(−iωn)",
+      "formula": "X(e^{j\\omega})=\\sum_{n=-\\infty}^{\\infty}x[n]\\,e^{-j\\omega n}",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
         "dsp-wiki-dtft#definition"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "dft",
       "term": "DFT",
       "definition": "Transform mapping N complex numbers to N complex numbers, giving equally spaced samples of the DTFT of a finite sequence.",
-      "formula": "X_k = Σ x_n e^(−i2πkn/N)",
+      "formula": "X[k]=\\sum_{n=0}^{N-1}x[n]\\,e^{-j2\\pi kn/N}",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -553,7 +568,7 @@
       "id": "inverse-dft",
       "term": "Inverse DFT",
       "definition": "Transform recovering the original N samples using the opposite exponent sign and a 1/N normalization.",
-      "formula": "x_n = (1/N) Σ X_k e^(i2πkn/N)",
+      "formula": "x[n]=\\frac{1}{N}\\sum_{k=0}^{N-1}X[k]\\,e^{j2\\pi kn/N}",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -564,7 +579,7 @@
       "id": "circular-shift-property",
       "term": "Circular shift property",
       "definition": "Duality where multiplying the input by a linear phase rotates the output indices modulo N, and a rotated input multiplies the output by a linear phase.",
-      "formula": "",
+      "formula": "x[(n-m)\\bmod N]\\ \\leftrightarrow\\ X[k]\\,e^{-j2\\pi km/N}",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -575,7 +590,7 @@
       "id": "circular-convolution",
       "term": "Circular convolution",
       "definition": "Operation combining two length-N sequences with indices wrapped modulo N, corresponding to pointwise multiplication of their DFTs.",
-      "formula": "",
+      "formula": "y[n]=\\sum_{m=0}^{N-1}x[m]\\,h[(n-m)\\bmod N]",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -586,7 +601,7 @@
       "id": "overlap-add",
       "term": "Overlap-add",
       "definition": "Block-processing technique that splits a long input into segments, filters each using FFT-based circular operations after appended zeros, and sums the intersecting output pieces.",
-      "formula": "",
+      "formula": "y[n]=\\sum_{m}y_{m}[n-mL]",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -597,7 +612,7 @@
       "id": "overlap-save",
       "term": "Overlap-save",
       "definition": "Block-processing technique that reuses the last M−1 input samples of each block, filters by circular operations, and discards the first M−1 corrupted outputs.",
-      "formula": "",
+      "formula": "N\\ge L+M-1",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -608,7 +623,7 @@
       "id": "direct-evaluation",
       "term": "Direct evaluation",
       "definition": "Brute-force computation straight from the defining sum of the transform, requiring N terms for each of N outputs, about N² operations.",
-      "formula": "O(N²)",
+      "formula": "O(N^{2})",
       "unit": 2,
       "unitTitle": "Discrete Fourier Transform",
       "sources": [
@@ -619,40 +634,43 @@
       "id": "fft",
       "term": "FFT",
       "definition": "Any algorithm computing the DFT or its inverse in O(N log N) operations, producing the same results as direct evaluation.",
-      "formula": "O(N log N)",
+      "formula": "O(N\\log_{2}N)",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
         "dsp-wiki-fft#definition"
-      ]
+      ],
+      "diagram": "fft-stages"
     },
     {
       "id": "radix-2-fft",
       "term": "Radix-2 FFT",
       "definition": "Divide-and-conquer scheme for power-of-two lengths that splits each transform into two half-length transforms, needing (N/2)log₂N complex multiplications.",
-      "formula": "(N/2)·log₂N multiplications",
+      "formula": "\\frac{N}{2}\\log_{2}N\\ \\text{complex multiplications}",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
         "dsp-wiki-fft#radix-2-cooley-tukey"
-      ]
+      ],
+      "diagram": "fft-stages"
     },
     {
       "id": "decimation-in-time",
       "term": "Decimation in time",
       "definition": "Radix-2 splitting that separates the input into even-indexed and odd-indexed samples, transforms each half and combines the results.",
-      "formula": "",
+      "formula": "X[k]=E[k]+W_{N}^{k}O[k]",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
         "dsp-wiki-cooley-tukey#radix-2-dit"
-      ]
+      ],
+      "diagram": "fft-stages"
     },
     {
       "id": "decimation-in-frequency",
       "term": "Decimation in frequency",
       "definition": "Radix-2 variant, also known as the Sande–Tukey algorithm, obtained by reversing the order of the splitting steps of its time-domain counterpart.",
-      "formula": "",
+      "formula": "X[2k]=\\sum_{n=0}^{N/2-1}\\left(x[n]+x[n+N/2]\\right)W_{N/2}^{kn}",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
@@ -663,18 +681,19 @@
       "id": "butterfly",
       "term": "Butterfly",
       "definition": "Size-2 transform that combines even and odd sub-results by forming their sum and difference after scaling the odd part by a twiddle factor.",
-      "formula": "",
+      "formula": "y_{0}=a+W_{N}^{k}b,\\quad y_{1}=a-W_{N}^{k}b",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
         "dsp-wiki-cooley-tukey#butterfly"
-      ]
+      ],
+      "diagram": "dft-butterfly"
     },
     {
       "id": "twiddle-factor",
       "term": "Twiddle factor",
       "definition": "Complex root of unity that multiplies intermediate results between stages of a divide-and-conquer transform.",
-      "formula": "",
+      "formula": "W_{N}^{k}=e^{-j2\\pi k/N}",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
@@ -685,7 +704,7 @@
       "id": "bit-reversal",
       "term": "Bit reversal",
       "definition": "Permutation that swaps each index with the one whose binary digits are written in opposite order, restoring natural output order of in-place radix-2 algorithms.",
-      "formula": "",
+      "formula": "n=\\sum_{i=0}^{m-1}b_{i}2^{i}\\ \\mapsto\\ \\sum_{i=0}^{m-1}b_{i}2^{m-1-i}",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
@@ -696,7 +715,7 @@
       "id": "inverse-fft",
       "term": "Inverse FFT",
       "definition": "Fast evaluation of x_n = (1/N)ΣX_k e^(i2πkn/N), obtained from a forward algorithm by flipping the exponent sign and scaling by 1/N.",
-      "formula": "x_n = (1/N) Σ X_k e^(i2πkn/N)",
+      "formula": "x[n]=\\frac{1}{N}\\sum_{k=0}^{N-1}X[k]\\,e^{j2\\pi kn/N}",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [
@@ -707,7 +726,7 @@
       "id": "ofdm",
       "term": "OFDM",
       "definition": "Multicarrier modulation splitting data into parallel streams on closely spaced subcarriers whose mutual crosstalk is eliminated, generated by an inverse FFT at the transmitter.",
-      "formula": "",
+      "formula": "\\Delta f=\\frac{F_{s}}{N}=\\frac{1}{T_{\\text{u}}}",
       "unit": 3,
       "unitTitle": "Fast Fourier Transform",
       "sources": [

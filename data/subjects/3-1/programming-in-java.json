@@ -350,7 +350,8 @@
       "unitTitle": "Packages, I/O and Collections",
       "sources": [
         "java-oracle-collections#framework-contents"
-      ]
+      ],
+      "diagram": "sorting"
     },
     {
       "id": "exception",
@@ -383,7 +384,8 @@
       "unitTitle": "Exception Handling and Multi-Threading",
       "sources": [
         "java-oracle-exceptions#exception"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "exception-handler",
@@ -427,7 +429,8 @@
       "unitTitle": "Exception Handling and Multi-Threading",
       "sources": [
         "java-oracle-procthread#processes-and-threads"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "thread",
@@ -504,7 +507,8 @@
       "unitTitle": "GUI Programming, Swings and Event Handling",
       "sources": [
         "java-oracle-toplevel#containment-hierarchy"
-      ]
+      ],
+      "diagram": "binary-tree"
     },
     {
       "id": "top-level-container",
@@ -543,7 +547,7 @@
       "id": "gridlayout",
       "term": "GridLayout",
       "definition": "Layout manager suited to displaying a few components of the same size in rows and columns.",
-      "formula": "",
+      "formula": "N_{\\text{cells}}=r\\times c",
       "unit": 5,
       "unitTitle": "GUI Programming, Swings and Event Handling",
       "sources": [
@@ -631,7 +635,7 @@
       "id": "port-number",
       "term": "Port number",
       "definition": "16-bit number from 0 to 65535 that TCP and UDP use to deliver data to the right application.",
-      "formula": "",
+      "formula": "0 \\le p \\le 2^{16}-1",
       "unit": 6,
       "unitTitle": "Applets and Networking",
       "sources": [
@@ -642,7 +646,7 @@
       "id": "well-known-ports",
       "term": "Well-known ports",
       "definition": "Port numbers 0 to 1023, reserved for services such as HTTP and FTP, which applications should not bind to.",
-      "formula": "",
+      "formula": "0 \\le p \\le 2^{10}-1",
       "unit": 6,
       "unitTitle": "Applets and Networking",
       "sources": [

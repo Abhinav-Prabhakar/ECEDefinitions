@@ -107,7 +107,7 @@
       "id": "dynamic-range",
       "term": "Dynamic range",
       "definition": "Ratio of the largest to the smallest measurable value of a quantity, often expressed in decibels or bits.",
-      "formula": "",
+      "formula": "\\text{DR}=20\\log_{10}\\!\\left(\\frac{V_{\\max}}{V_{\\min}}\\right)",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
@@ -118,7 +118,7 @@
       "id": "noise-floor",
       "term": "Noise floor",
       "definition": "Background noise level of a system, formed by combining several noise sources, used as the reference for judging the weakest detectable signal.",
-      "formula": "",
+      "formula": "P_{n}=kTB",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
@@ -130,51 +130,55 @@
       "id": "superheterodyne-receiver",
       "term": "Superheterodyne receiver",
       "definition": "Radio that shifts incoming signals to one fixed lower frequency, where most amplification and filtering take place.",
-      "formula": "",
+      "formula": "f_{\\text{IF}}=\\left|f_{\\text{RF}}-f_{\\text{LO}}\\right|",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
         "sdr-wikipedia-superheterodyne-receiver#para.1"
-      ]
+      ],
+      "diagram": "superhet"
     },
     {
       "id": "intermediate-frequency",
       "term": "Intermediate frequency",
       "definition": "Fixed frequency to which incoming signals are converted so that a receiver can amplify and filter them.",
-      "formula": "",
+      "formula": "f_{\\text{IF}}=f_{\\text{LO}}-f_{\\text{RF}}=\\text{const}",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
         "sdr-wikipedia-superheterodyne-receiver#para.1"
-      ]
+      ],
+      "diagram": "superhet"
     },
     {
       "id": "mixer",
       "term": "Mixer",
       "definition": "Nonlinear component that combines an incoming signal with a locally generated one, producing sum and difference frequencies.",
-      "formula": "",
+      "formula": "\\cos\\omega_{1}t\\cos\\omega_{2}t=\\tfrac{1}{2}\\left[\\cos(\\omega_{1}-\\omega_{2})t+\\cos(\\omega_{1}+\\omega_{2})t\\right]",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
         "sdr-wikipedia-superheterodyne-receiver#para.57"
-      ]
+      ],
+      "diagram": "superhet"
     },
     {
       "id": "image-frequency",
       "term": "Image frequency",
       "definition": "Unwanted signal lying twice the intermediate frequency away from the desired one that converts to the same intermediate frequency.",
-      "formula": "",
+      "formula": "f_{\\text{im}}=f_{\\text{RF}}+2f_{\\text{IF}}",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
         "sdr-wikipedia-superheterodyne-receiver#para.79"
-      ]
+      ],
+      "diagram": "if-filter"
     },
     {
       "id": "direct-conversion-receiver",
       "term": "Direct-conversion receiver",
       "definition": "Receiver that demodulates by synchronous detection, using an oscillator tuned at or very near the carrier frequency, with only one frequency conversion.",
-      "formula": "",
+      "formula": "f_{\\text{LO}}\\approx f_{c},\\quad f_{\\text{IF}}=0",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
@@ -186,7 +190,7 @@
       "id": "dc-offset",
       "term": "DC offset",
       "definition": "Steady voltage error produced when oscillator energy leaks to the antenna, reflects back and self-mixes, which can overload baseband amplifiers.",
-      "formula": "",
+      "formula": "V_{\\text{DC}}\\propto A_{\\text{LO}}A_{\\text{leak}}\\cos\\Delta\\phi",
       "unit": 2,
       "unitTitle": "RF Front-End and Receiver Design",
       "sources": [
@@ -209,7 +213,7 @@
       "id": "multiply-accumulate",
       "term": "Multiply-accumulate",
       "definition": "Combined multiply-and-add operation that signal-processing hardware can complete in a single instruction.",
-      "formula": "",
+      "formula": "y_{n}=y_{n-1}+a_{n}b_{n}",
       "unit": 3,
       "unitTitle": "Digital Hardware for Software Radio",
       "sources": [
@@ -231,7 +235,7 @@
       "id": "fixed-point-processor",
       "term": "Fixed-point processor",
       "definition": "Signal processor using integer-style arithmetic, favoured because it offers major speed and cost advantages when wide numeric range is unneeded.",
-      "formula": "",
+      "formula": "x_{\\text{int}}=\\operatorname{round}\\!\\left(x\\cdot2^{F}\\right)",
       "unit": 3,
       "unitTitle": "Digital Hardware for Software Radio",
       "sources": [
@@ -266,7 +270,7 @@
       "id": "lookup-table",
       "term": "Lookup table",
       "definition": "Small memory-based element inside a logic cell that implements a logic function; a typical one has four inputs.",
-      "formula": "",
+      "formula": "N_{\\text{entries}}=2^{k}",
       "unit": 3,
       "unitTitle": "Digital Hardware for Software Radio",
       "sources": [
@@ -289,7 +293,7 @@
       "id": "programmable-logic-versus-custom-chip-trade-off",
       "term": "Programmable logic versus custom chip trade-off",
       "definition": "Reprogrammable logic has lower up-front engineering cost but higher per-unit cost, area and power than a custom-fabricated chip.",
-      "formula": "",
+      "formula": "N^{*}=\\frac{C_{\\text{NRE}}}{c_{\\text{FPGA}}-c_{\\text{ASIC}}}",
       "unit": 3,
       "unitTitle": "Digital Hardware for Software Radio",
       "sources": [
@@ -301,7 +305,7 @@
       "id": "direct-digital-synthesis",
       "term": "Direct digital synthesis",
       "definition": "Frequency-synthesis method that generates arbitrary waveforms from a single fixed-frequency reference clock using a digital oscillator and a converter.",
-      "formula": "",
+      "formula": "f_{\\text{out}}=\\frac{\\text{FCW}\\cdot f_{c}}{2^{N}}",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
@@ -313,7 +317,7 @@
       "id": "numerically-controlled-oscillator",
       "term": "Numerically controlled oscillator",
       "definition": "Digital core that outputs a discrete-time, quantized version of a waveform whose period is set by a digital control word.",
-      "formula": "",
+      "formula": "\\phi[n]=\\left(\\phi[n-1]+\\frac{2\\pi\\,\\text{FCW}}{2^{N}}\\right)\\bmod 2\\pi",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
@@ -325,7 +329,7 @@
       "id": "frequency-control-word",
       "term": "Frequency control word",
       "definition": "Digital value held in a register that sets the step size of the oscillator and hence the output frequency.",
-      "formula": "",
+      "formula": "\\Delta f=\\frac{f_{c}}{2^{N}}",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
@@ -348,23 +352,25 @@
       "id": "nyquist-image",
       "term": "Nyquist image",
       "definition": "Unwanted copy of the output spectrum around multiples of the clock frequency, the primary one lying at clock frequency minus output frequency.",
-      "formula": "",
+      "formula": "f_{\\text{image}}=f_{c}-f_{\\text{out}}",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
         "sdr-wikipedia-direct-digital-synthesis#para.5"
-      ]
+      ],
+      "diagram": "aliasing"
     },
     {
       "id": "reconstruction-filter",
       "term": "Reconstruction filter",
       "definition": "Filter placed after the converter in a synthesizer to remove Nyquist images from the output.",
-      "formula": "",
+      "formula": "f_{\\text{out}}<f_{\\text{cut}}<f_{s}-f_{\\text{out}}",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
         "sdr-wikipedia-direct-digital-synthesis#para.5"
-      ]
+      ],
+      "diagram": "filter-response"
     },
     {
       "id": "frequency-agility",
@@ -381,7 +387,7 @@
       "id": "close-in-phase-noise",
       "term": "Close-in phase noise",
       "definition": "Phase noise at small offsets from the carrier, which in digital synthesis is superior because reference clock jitter is proportionally reduced.",
-      "formula": "",
+      "formula": "\\mathcal{L}_{\\text{out}}(\\Delta f)=\\mathcal{L}_{\\text{ref}}(\\Delta f)+20\\log_{10}\\frac{f_{\\text{out}}}{f_{c}}",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
@@ -392,7 +398,7 @@
       "id": "reference-clock-jitter",
       "term": "Reference clock jitter",
       "definition": "Timing uncertainty of the reference oscillator, which passes to the output but as a smaller fraction of the output period.",
-      "formula": "",
+      "formula": "\\sigma_{\\phi}=2\\pi f_{\\text{out}}\\sigma_{t}",
       "unit": 4,
       "unitTitle": "Direct Digital Synthesis",
       "sources": [
@@ -404,67 +410,72 @@
       "id": "analog-to-digital-converter",
       "term": "Analog-to-digital converter",
       "definition": "System that turns an analog signal into a digital one, usually a binary number representing the measured voltage or current.",
-      "formula": "",
+      "formula": "x[n]=Q\\left\\{x_{a}(nT_{s})\\right\\}",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
         "sdr-wikipedia-analog-to-digital-converter#para.1",
         "sdr-wikipedia-analog-to-digital-converter#para.2"
-      ]
+      ],
+      "diagram": "adc-dac"
     },
     {
       "id": "resolution",
       "term": "Resolution",
       "definition": "Number of distinct output values a converter can produce across its input range, usually given in bits; full-scale range divided by 2^M gives one step.",
-      "formula": "",
+      "formula": "\\Delta=\\frac{V_{\\text{FS}}}{2^{M}}",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
         "sdr-wikipedia-analog-to-digital-converter#para.7",
         "sdr-wikipedia-analog-to-digital-converter#para.8"
-      ]
+      ],
+      "diagram": "quantization"
     },
     {
       "id": "quantization-error",
       "term": "Quantization error",
       "definition": "Rounding difference between the true input and the digital output value; for an ideal converter the signal-to-noise ratio is about 6.02 dB per bit.",
-      "formula": "",
+      "formula": "\\text{SNR}_{\\text{dB}}=6.02M+1.76",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
         "sdr-wikipedia-analog-to-digital-converter#para.12",
         "sdr-wikipedia-analog-to-digital-converter#para.13"
-      ]
+      ],
+      "diagram": "quantization"
     },
     {
       "id": "aliasing",
       "term": "Aliasing",
       "definition": "Effect in which content above half the sampling rate appears at a false lower frequency, prevented by a low-pass filter before conversion.",
-      "formula": "",
+      "formula": "f_{a}=\\left|f_{0}-kf_{s}\\right|,\\quad f_{a}\\le f_{s}/2",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
         "sdr-wikipedia-analog-to-digital-converter#para.23",
         "sdr-wikipedia-analog-to-digital-converter#para.24"
-      ]
+      ],
+      "diagram": "aliasing"
     },
     {
       "id": "oversampling",
       "term": "Oversampling",
       "definition": "Sampling well above the Nyquist rate and then filtering digitally, which moves quantization noise out of band and eases filter design.",
-      "formula": "",
+      "formula": "\\text{SNR}_{\\text{gain}}=10\\log_{10}(\\text{OSR})",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
         "sdr-wikipedia-analog-to-digital-converter#para.26",
         "sdr-wikipedia-analog-to-digital-converter#para.27"
-      ]
+      ],
+      "diagram": "multirate"
     },
     {
       "id": "flash-converter",
       "term": "Flash converter",
       "definition": "Parallel analog-to-digital design in which many comparators operate at once and an encoder forms the output; very fast but large and power-hungry.",
-      "formula": "",
+      "formula": "N_{\\text{comp}}=2^{M}-1",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
@@ -476,18 +487,19 @@
       "id": "digital-to-analog-converter",
       "term": "Digital-to-analog converter",
       "definition": "System that turns a digital signal into an analog one, the reverse of sampling and quantizing.",
-      "formula": "",
+      "formula": "y(t)=\\sum_{n}x[n]\\,p(t-nT_{s})",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
         "sdr-wikipedia-digital-to-analog-converter#para.1"
-      ]
+      ],
+      "diagram": "adc-dac"
     },
     {
       "id": "integral-nonlinearity",
       "term": "Integral nonlinearity",
       "definition": "Deviation of a converter's output at each code from the ideal straight-line transfer curve, measured in least-significant-bit units.",
-      "formula": "",
+      "formula": "\\text{INL}_{k}=\\frac{V_{\\text{act},k}-V_{\\text{ideal},k}}{\\text{LSB}}",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
@@ -498,7 +510,7 @@
       "id": "spurious-free-dynamic-range",
       "term": "Spurious-free dynamic range",
       "definition": "Ratio in decibels between the power of the converted main signal and the power of the largest unwanted spur.",
-      "formula": "",
+      "formula": "\\text{SFDR}=10\\log_{10}\\frac{P_{\\text{signal}}}{P_{\\text{spur}}}",
       "unit": 5,
       "unitTitle": "Data Converters",
       "sources": [
@@ -544,7 +556,7 @@
       "id": "spectrum-sensing",
       "term": "Spectrum sensing",
       "definition": "Detecting whether a frequency band is occupied so that unused bands can be used without harmful interference; accurate detection is the main difficulty.",
-      "formula": "",
+      "formula": "H_{0}:y[n]=w[n],\\quad H_{1}:y[n]=s[n]+w[n]",
       "unit": 6,
       "unitTitle": "Cognitive Radio and Spectrum Management",
       "sources": [
@@ -590,7 +602,7 @@
       "id": "energy-detection",
       "term": "Energy detection",
       "definition": "Sensing technique that identifies a signal by measuring received power; it needs noise information and can fail at low signal-to-noise ratios.",
-      "formula": "",
+      "formula": "T=\\frac{1}{N}\\sum_{n=0}^{N-1}\\left|y[n]\\right|^{2}\\gtrless\\lambda",
       "unit": 6,
       "unitTitle": "Cognitive Radio and Spectrum Management",
       "sources": [
@@ -602,7 +614,7 @@
       "id": "cyclostationary-detection",
       "term": "Cyclostationary detection",
       "definition": "Sensing technique that identifies signals by their periodic statistical patterns, which noise lacks, so it is robust to noise-variance uncertainty.",
-      "formula": "",
+      "formula": "R_{x}^{\\alpha}(\\tau)=\\frac{1}{N}\\sum_{n=0}^{N-1}x[n]x^{*}[n+\\tau]e^{-j2\\pi\\alpha n}",
       "unit": 6,
       "unitTitle": "Cognitive Radio and Spectrum Management",
       "sources": [

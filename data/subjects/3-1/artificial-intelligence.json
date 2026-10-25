@@ -25,7 +25,7 @@
       "id": "rational-agent",
       "term": "Rational agent",
       "definition": "An agent that acts to achieve the best outcome or best expected outcome.",
-      "formula": "",
+      "formula": "a^{*}=\\arg\\max_{a}\\sum_{s'}P(s'\\mid s,a)\\,U(s')",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
@@ -36,7 +36,7 @@
       "id": "agent",
       "term": "Agent",
       "definition": "An entity that perceives its environment through sensors and acts through actuators.",
-      "formula": "",
+      "formula": "f:\\mathcal{P}^{*}\\to\\mathcal{A}",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
@@ -74,13 +74,14 @@
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
         "ai-ai-unit-i#slide.30"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "model-based-reflex-agent",
       "term": "Model-based reflex agent",
       "definition": "An agent that uses an internal world model to handle partially observable environments.",
-      "formula": "",
+      "formula": "\\hat{s}_{t+1}=\\text{Update}(\\hat{s}_t,a_t,o_{t+1})",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
@@ -102,7 +103,7 @@
       "id": "utility-based-agent",
       "term": "Utility-based agent",
       "definition": "An agent that chooses the action with the highest utility among alternatives.",
-      "formula": "",
+      "formula": "a^{*}=\\arg\\max_{a\\in A}U(a)",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
@@ -113,29 +114,31 @@
       "id": "breadth-first-search",
       "term": "Breadth-first search",
       "definition": "A search that expands all nodes at the current depth before moving to the next level.",
-      "formula": "",
+      "formula": "T_{\\text{BFS}}=O(b^{d})",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
         "ai-ai-unit-i#slide.45"
-      ]
+      ],
+      "diagram": "graph-search"
     },
     {
       "id": "depth-first-search",
       "term": "Depth-first search",
       "definition": "A search that follows each path to its greatest depth before backtracking.",
-      "formula": "",
+      "formula": "T_{\\text{DFS}}=O(b^{m})",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
         "ai-ai-unit-i#slide.50"
-      ]
+      ],
+      "diagram": "graph-search"
     },
     {
       "id": "hill-climbing",
       "term": "Hill climbing",
       "definition": "A local search that iteratively moves to the neighboring state with highest value.",
-      "formula": "",
+      "formula": "s_{t+1}=\\arg\\max_{s\\in N(s_t)}f(s)",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
@@ -146,7 +149,7 @@
       "id": "simulated-annealing",
       "term": "Simulated annealing",
       "definition": "A local search combining hill climbing with random moves to escape local maxima.",
-      "formula": "",
+      "formula": "P_{\\text{accept}}=e^{-\\Delta E/T}",
       "unit": 1,
       "unitTitle": "Introduction to AI and Agents",
       "sources": [
@@ -157,7 +160,7 @@
       "id": "zero-sum-game",
       "term": "Zero-sum game",
       "definition": "A game where one agent's gain is exactly balanced by the other's loss.",
-      "formula": "",
+      "formula": "u_1(s)+u_2(s)=0",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
@@ -179,7 +182,7 @@
       "id": "utility-function",
       "term": "Utility function",
       "definition": "A function giving the final numeric value of a terminal game state.",
-      "formula": "",
+      "formula": "U:\\mathcal{S}\\to\\mathbb{R}",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
@@ -190,18 +193,19 @@
       "id": "minimax-algorithm",
       "term": "Minimax algorithm",
       "definition": "A recursive algorithm that chooses the optimal move assuming the opponent plays optimally.",
-      "formula": "",
+      "formula": "V(s)=\\max_{a}\\min_{a^{\\prime}}V\\!\\left(\\text{Result}(\\text{Result}(s,a),a^{\\prime})\\right)",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
         "ai-ai-unit-ii#slide.14"
-      ]
+      ],
+      "diagram": "recursion-tree"
     },
     {
       "id": "alpha-beta-pruning",
       "term": "Alpha-beta pruning",
       "definition": "A technique that prunes game-tree branches without changing the minimax result.",
-      "formula": "",
+      "formula": "\\alpha\\ge\\beta\\Rightarrow\\text{prune}",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
@@ -212,7 +216,7 @@
       "id": "constraint-satisfaction-problem",
       "term": "Constraint satisfaction problem",
       "definition": "A problem of finding values for variables that satisfy all given constraints.",
-      "formula": "",
+      "formula": "\\langle X,D,C\\rangle",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
@@ -223,7 +227,7 @@
       "id": "horn-clause",
       "term": "Horn clause",
       "definition": "A disjunction of literals with at most one positive literal.",
-      "formula": "",
+      "formula": "\\neg p_1\\lor\\cdots\\lor\\neg p_n\\lor q",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
@@ -256,7 +260,7 @@
       "id": "unification",
       "term": "Unification",
       "definition": "An algorithm to find substitutions that make two logical expressions identical.",
-      "formula": "",
+      "formula": "\\sigma=\\text{mgu}(L_1,L_2)",
       "unit": 2,
       "unitTitle": "Problem Solving and Search",
       "sources": [
@@ -278,7 +282,7 @@
       "id": "propositional-logic",
       "term": "Propositional logic",
       "definition": "A declarative logic representing facts as true or false using connectives.",
-      "formula": "",
+      "formula": "\\phi::=p\\mid\\neg\\phi\\mid\\phi\\land\\psi\\mid\\phi\\lor\\psi",
       "unit": 3,
       "unitTitle": "Knowledge Representation and Logic",
       "sources": [
@@ -300,7 +304,7 @@
       "id": "universal-quantifier",
       "term": "Universal quantifier",
       "definition": "Symbol ∀ indicating a statement holds for all instances.",
-      "formula": "∀",
+      "formula": "\\forall x\\,P(x)",
       "unit": 3,
       "unitTitle": "Knowledge Representation and Logic",
       "sources": [
@@ -311,7 +315,7 @@
       "id": "existential-quantifier",
       "term": "Existential quantifier",
       "definition": "Symbol ∃ indicating a statement holds for at least one instance.",
-      "formula": "∃",
+      "formula": "\\exists x\\,P(x)",
       "unit": 3,
       "unitTitle": "Knowledge Representation and Logic",
       "sources": [
@@ -344,7 +348,7 @@
       "id": "resolution",
       "term": "Resolution",
       "definition": "An inference rule combining clauses with conflicting literals to derive a new clause.",
-      "formula": "",
+      "formula": "\\frac{p\\lor A,\\;\\neg p\\lor B}{A\\lor B}",
       "unit": 3,
       "unitTitle": "Knowledge Representation and Logic",
       "sources": [
@@ -355,7 +359,7 @@
       "id": "classical-planning",
       "term": "Classical planning",
       "definition": "Finding a sequence of actions that achieves a goal in a deterministic, fully observable world.",
-      "formula": "",
+      "formula": "s_0\\xrightarrow{a_1,\\ldots,a_n}s_g",
       "unit": 4,
       "unitTitle": "Planning",
       "sources": [
@@ -377,7 +381,7 @@
       "id": "action-schema",
       "term": "Action schema",
       "definition": "A lifted template defining an action's name, preconditions and effects.",
-      "formula": "",
+      "formula": "\\text{Action}(x):\\;\\text{Pre}(x)\\Rightarrow\\text{Eff}(x)",
       "unit": 4,
       "unitTitle": "Planning",
       "sources": [
@@ -437,13 +441,14 @@
       "unitTitle": "Planning",
       "sources": [
         "ai-ai-unit-iv#slide.84"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "bayesian-network",
       "term": "Bayesian network",
       "definition": "A directed acyclic graph annotated with conditional probability distributions.",
-      "formula": "",
+      "formula": "P(X_1,\\ldots,X_n)=\\prod_{i=1}^{n}P(X_i\\mid\\mathrm{Pa}(X_i))",
       "unit": 5,
       "unitTitle": "Probabilistic Reasoning",
       "sources": [
@@ -454,7 +459,7 @@
       "id": "prior-probability",
       "term": "Prior probability",
       "definition": "The unconditional probability of a proposition without other information.",
-      "formula": "",
+      "formula": "P(A)=\\sum_{b}P(A,B=b)",
       "unit": 5,
       "unitTitle": "Probabilistic Reasoning",
       "sources": [
@@ -465,7 +470,7 @@
       "id": "conditional-probability",
       "term": "Conditional probability",
       "definition": "The probability of an event given that another event is known.",
-      "formula": "",
+      "formula": "P(A\\mid B)=\\frac{P(A,B)}{P(B)}",
       "unit": 5,
       "unitTitle": "Probabilistic Reasoning",
       "sources": [
@@ -476,29 +481,31 @@
       "id": "bayes-rule",
       "term": "Bayes' rule",
       "definition": "A rule computing posterior probability from likelihood, prior and evidence probability.",
-      "formula": "",
+      "formula": "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}",
       "unit": 5,
       "unitTitle": "Probabilistic Reasoning",
       "sources": [
         "ai-ai-unit-v#slide.35"
-      ]
+      ],
+      "diagram": "bayes-tree"
     },
     {
       "id": "full-joint-probability-distribution",
       "term": "Full joint probability distribution",
       "definition": "A distribution specifying probabilities for all combinations of variable values.",
-      "formula": "",
+      "formula": "\\sum_{\\mathbf{x}}P(\\mathbf{x})=1",
       "unit": 5,
       "unitTitle": "Probabilistic Reasoning",
       "sources": [
         "ai-ai-unit-v#slide.30"
-      ]
+      ],
+      "diagram": "probability-tree"
     },
     {
       "id": "dempster-shafer-theory",
       "term": "Dempster-Shafer theory",
       "definition": "A theory using belief functions and interval-valued degrees of belief.",
-      "formula": "",
+      "formula": "\\mathrm{Bel}(A)=\\sum_{B\\subseteq A}m(B)",
       "unit": 5,
       "unitTitle": "Probabilistic Reasoning",
       "sources": [
@@ -520,7 +527,7 @@
       "id": "supervised-learning",
       "term": "Supervised learning",
       "definition": "Learning a function from input-output pairs provided by a teacher.",
-      "formula": "",
+      "formula": "f^{*}=\\arg\\min_{f}\\frac{1}{n}\\sum_{i=1}^{n}L(y_i,f(x_i))",
       "unit": 6,
       "unitTitle": "Learning",
       "sources": [
@@ -531,18 +538,19 @@
       "id": "unsupervised-learning",
       "term": "Unsupervised learning",
       "definition": "Learning patterns in input without explicit feedback, such as clustering.",
-      "formula": "",
+      "formula": "\\min_{C}\\sum_{k}\\sum_{x\\in C_k}\\lVert x-\\mu_k\\rVert^{2}",
       "unit": 6,
       "unitTitle": "Learning",
       "sources": [
         "ai-ai-unit-vi#slide.10"
-      ]
+      ],
+      "diagram": "kmeans"
     },
     {
       "id": "reinforcement-learning",
       "term": "Reinforcement learning",
       "definition": "Learning from rewards or punishments to maximize long-term performance.",
-      "formula": "",
+      "formula": "V^{\\pi}(s)=\\mathbb{E}\\left[\\sum_{t=0}^{\\infty}\\gamma^{t}r_t\\mid s_0=s\\right]",
       "unit": 6,
       "unitTitle": "Learning",
       "sources": [
@@ -553,12 +561,13 @@
       "id": "decision-tree",
       "term": "Decision tree",
       "definition": "Structure of attribute tests leading to a classification outcome.",
-      "formula": "",
+      "formula": "IG(D,A)=H(D)-\\sum_{v}\\frac{|D_v|}{|D|}H(D_v)",
       "unit": 6,
       "unitTitle": "Learning",
       "sources": [
         "ai-ai-unit-vi#slide.20"
-      ]
+      ],
+      "diagram": "decision-tree"
     }
   ]
 }

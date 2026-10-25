@@ -30,7 +30,7 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.12"
       ],
-      "formula": ""
+      "formula": "Y(s)=G(s)R(s)"
     },
     {
       "id": "closed-loop-control-system",
@@ -41,7 +41,8 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.15"
       ],
-      "formula": ""
+      "formula": "Y(s)=\\frac{G(s)}{1+G(s)H(s)}\\,R(s)",
+      "diagram": "control-loop"
     },
     {
       "id": "feedback",
@@ -52,13 +53,13 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.19"
       ],
-      "formula": ""
+      "formula": "E(s)=R(s)-H(s)Y(s)"
     },
     {
       "id": "positive-feedback",
       "term": "Positive feedback",
       "definition": "Feedback configuration in which the feedback output is added to the reference input before feeding the error into the open-loop process.",
-      "formula": "T=G/(1-GH)",
+      "formula": "T(s)=\\frac{G(s)}{1-G(s)H(s)}",
       "unit": 1,
       "unitTitle": "Modeling and transfer functions",
       "sources": [
@@ -69,12 +70,13 @@
       "id": "negative-feedback",
       "term": "Negative feedback",
       "definition": "Feedback subtracted from the reference input to reduce error.",
-      "formula": "T=G/(1+GH)",
+      "formula": "T(s)=\\frac{G(s)}{1+G(s)H(s)}",
       "unit": 1,
       "unitTitle": "Modeling and transfer functions",
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.21"
-      ]
+      ],
+      "diagram": "control-loop"
     },
     {
       "id": "plant",
@@ -96,13 +98,13 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.7"
       ],
-      "formula": ""
+      "formula": "U(s)=C(s)E(s)"
     },
     {
       "id": "transfer-function",
       "term": "Transfer function",
       "definition": "Ratio of Laplace transform of output to input assuming zero initial conditions.",
-      "formula": "G(s)=Y(s)/X(s)",
+      "formula": "G(s)=\\left.\\frac{Y(s)}{X(s)}\\right|_{\\text{zero initial conditions}}",
       "unit": 1,
       "unitTitle": "Modeling and transfer functions",
       "sources": [
@@ -118,7 +120,8 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.52"
       ],
-      "formula": ""
+      "formula": "G_{\\text{eq}}(s)=G_1(s)G_2(s)",
+      "diagram": "control-loop"
     },
     {
       "id": "signal-flow-graph",
@@ -129,13 +132,13 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.73"
       ],
-      "formula": ""
+      "formula": "x_j=\\sum_{i}a_{ij}x_i"
     },
     {
       "id": "masons-gain-formula",
       "term": "Mason's gain formula",
       "definition": "Formula for overall transfer function of a signal flow graph.",
-      "formula": "T=ΣP_kΔ_k/Δ",
+      "formula": "T=\\frac{\\sum_k P_k\\Delta_k}{\\Delta},\\quad \\Delta=1-\\sum L_i+\\sum L_iL_j-\\cdots",
       "unit": 1,
       "unitTitle": "Modeling and transfer functions",
       "sources": [
@@ -151,7 +154,7 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.48"
       ],
-      "formula": ""
+      "formula": "e(t)=E_m\\sin\\theta\\cos\\omega t"
     },
     {
       "id": "synchro-receiver",
@@ -162,7 +165,7 @@
       "sources": [
         "lcs-lcs-unit-i-by-gr#p.50"
       ],
-      "formula": ""
+      "formula": "T=K\\sin(\\theta_t-\\theta_r)"
     },
     {
       "id": "transient-response",
@@ -173,7 +176,8 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.4"
       ],
-      "formula": ""
+      "formula": "y(t)=y_{\\text{tr}}(t)+y_{\\text{ss}}(t)",
+      "diagram": "rlc-transient"
     },
     {
       "id": "steady-state-response",
@@ -184,7 +188,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.4"
       ],
-      "formula": ""
+      "formula": "y(\\infty)=\\lim_{s\\to0}sY(s)"
     },
     {
       "id": "standard-test-signal",
@@ -195,7 +199,8 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.5"
       ],
-      "formula": ""
+      "formula": "\\delta(t),\\;u(t),\\;t\\,u(t),\\;\\frac{t^2}{2}u(t)",
+      "diagram": "step-impulse"
     },
     {
       "id": "order-of-system",
@@ -206,7 +211,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.7"
       ],
-      "formula": ""
+      "formula": "n=\\deg D(s)"
     },
     {
       "id": "first-order-system",
@@ -217,7 +222,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.7"
       ],
-      "formula": ""
+      "formula": "G(s)=\\frac{K}{1+\\tau s},\\quad y(t)=K(1-e^{-t/\\tau})"
     },
     {
       "id": "second-order-system",
@@ -228,7 +233,8 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.7"
       ],
-      "formula": ""
+      "formula": "T(s)=\\frac{\\omega_n^2}{s^2+2\\zeta\\omega_n s+\\omega_n^2}",
+      "diagram": "rlc-transient"
     },
     {
       "id": "steady-state-error",
@@ -239,7 +245,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.49"
       ],
-      "formula": ""
+      "formula": "e_{\\text{ss}}=\\lim_{s\\to0}\\frac{sR(s)}{1+G(s)H(s)}"
     },
     {
       "id": "error-constant",
@@ -250,7 +256,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.49"
       ],
-      "formula": ""
+      "formula": "K_p=\\lim_{s\\to0}G(s)"
     },
     {
       "id": "rise-time",
@@ -261,7 +267,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": ""
+      "formula": "t_r=\\frac{\\pi-\\cos^{-1}\\zeta}{\\omega_d}"
     },
     {
       "id": "peak-time",
@@ -272,7 +278,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": ""
+      "formula": "t_p=\\frac{\\pi}{\\omega_d}=\\frac{\\pi}{\\omega_n\\sqrt{1-\\zeta^2}}"
     },
     {
       "id": "settling-time",
@@ -283,7 +289,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": ""
+      "formula": "t_s\\approx\\frac{4}{\\zeta\\omega_n}"
     },
     {
       "id": "overshoot",
@@ -294,7 +300,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": ""
+      "formula": "M_p=e^{-\\pi\\zeta/\\sqrt{1-\\zeta^2}}"
     },
     {
       "id": "delay-time",
@@ -305,7 +311,7 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": ""
+      "formula": "t_d\\approx\\frac{1+0.7\\zeta}{\\omega_n}"
     },
     {
       "id": "pid-controller",
@@ -316,7 +322,8 @@
       "sources": [
         "lcs-lcs-unit-ii-bygr#p.2"
       ],
-      "formula": ""
+      "formula": "C(s)=K_p+\\frac{K_i}{s}+K_ds",
+      "diagram": "pid"
     },
     {
       "id": "stability",
@@ -327,7 +334,7 @@
       "sources": [
         "lcs-lcs-unit3#p.10"
       ],
-      "formula": ""
+      "formula": "\\int_0^{\\infty}|h(t)|\\,dt<\\infty"
     },
     {
       "id": "asymptotic-stability",
@@ -338,7 +345,7 @@
       "sources": [
         "lcs-lcs-unit3#p.2"
       ],
-      "formula": ""
+      "formula": "\\operatorname{Re}(p_i)<0\\quad\\forall i"
     },
     {
       "id": "marginal-stability",
@@ -349,7 +356,7 @@
       "sources": [
         "lcs-lcs-unit3#p.2"
       ],
-      "formula": ""
+      "formula": "p_{1,2}=\\pm j\\omega_n"
     },
     {
       "id": "routh-hurwitz-criterion",
@@ -360,7 +367,7 @@
       "sources": [
         "lcs-lcs-unit3#p.2"
       ],
-      "formula": ""
+      "formula": "N_{\\text{RHP}}=\\text{sign changes in first column}"
     },
     {
       "id": "routh-array",
@@ -371,7 +378,7 @@
       "sources": [
         "lcs-lcs-unit3#p.2"
       ],
-      "formula": ""
+      "formula": "s^n:a_0,a_2,a_4,\\dots;\\quad s^{n-1}:a_1,a_3,a_5,\\dots"
     },
     {
       "id": "root-locus",
@@ -382,7 +389,8 @@
       "sources": [
         "lcs-lcs-unit3#p.2"
       ],
-      "formula": ""
+      "formula": "1+KG(s)H(s)=0",
+      "diagram": "root-locus"
     },
     {
       "id": "breakaway-point",
@@ -393,7 +401,8 @@
       "sources": [
         "lcs-lcs-unit3#p.9"
       ],
-      "formula": ""
+      "formula": "\\frac{dK}{ds}=0",
+      "diagram": "root-locus"
     },
     {
       "id": "asymptote",
@@ -404,7 +413,8 @@
       "sources": [
         "lcs-lcs-unit3#p.9"
       ],
-      "formula": ""
+      "formula": "\\phi_a=\\frac{(2q+1)180^{\\circ}}{n-m}",
+      "diagram": "root-locus"
     },
     {
       "id": "frequency-response",
@@ -415,7 +425,7 @@
       "sources": [
         "lcs-lcs-unit4#p.2"
       ],
-      "formula": ""
+      "formula": "G(j\\omega)=|G(j\\omega)|e^{j\\angle G(j\\omega)}"
     },
     {
       "id": "bode-plot",
@@ -426,7 +436,8 @@
       "sources": [
         "lcs-lcs-unit4#p.2"
       ],
-      "formula": ""
+      "formula": "L(\\omega)=20\\log_{10}|G(j\\omega)|",
+      "diagram": "bode"
     },
     {
       "id": "gain-margin",
@@ -437,7 +448,8 @@
       "sources": [
         "lcs-lcs-unit4#p.2"
       ],
-      "formula": ""
+      "formula": "GM=-20\\log_{10}|G(j\\omega_{pc})|",
+      "diagram": "bode"
     },
     {
       "id": "phase-margin",
@@ -448,7 +460,8 @@
       "sources": [
         "lcs-lcs-unit4#p.2"
       ],
-      "formula": ""
+      "formula": "PM=180^{\\circ}+\\angle G(j\\omega_{gc})",
+      "diagram": "bode"
     },
     {
       "id": "gain-crossover-frequency",
@@ -459,7 +472,7 @@
       "sources": [
         "lcs-lcs-unit4#p.2"
       ],
-      "formula": ""
+      "formula": "|G(j\\omega_{gc})H(j\\omega_{gc})|=1"
     },
     {
       "id": "phase-crossover-frequency",
@@ -470,7 +483,7 @@
       "sources": [
         "lcs-lcs-unit4#p.2"
       ],
-      "formula": ""
+      "formula": "\\angle G(j\\omega_{pc})H(j\\omega_{pc})=-180^{\\circ}"
     },
     {
       "id": "polar-plot",
@@ -481,7 +494,8 @@
       "sources": [
         "lcs-lcs-unit5#p.2"
       ],
-      "formula": ""
+      "formula": "G(j\\omega)=u(\\omega)+jv(\\omega)",
+      "diagram": "nyquist-plot"
     },
     {
       "id": "state",
@@ -514,7 +528,7 @@
       "sources": [
         "lcs-lcs-unit6#p.5"
       ],
-      "formula": ""
+      "formula": "\\mathbf{x}(t)=[x_1(t)\\;x_2(t)\\;\\cdots\\;x_n(t)]^{T}"
     },
     {
       "id": "state-space",
@@ -525,24 +539,26 @@
       "sources": [
         "lcs-lcs-unit6#p.5"
       ],
-      "formula": ""
+      "formula": "\\mathbf{x}(t)\\in\\mathbb{R}^{n}",
+      "diagram": "state-space"
     },
     {
       "id": "state-equation",
       "term": "State equation",
       "definition": "Differential relation linking the derivative of the condition vector to that vector and the input.",
-      "formula": "Ẋ=AX+BU",
+      "formula": "\\dot{\\mathbf{x}}=A\\mathbf{x}+B\\mathbf{u}",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
         "lcs-lcs-unit6#p.10"
-      ]
+      ],
+      "diagram": "state-space"
     },
     {
       "id": "output-equation",
       "term": "Output equation",
       "definition": "Relation expressing the system response as a linear combination of condition variables and inputs, y(t)=Cx(t)+Du(t) in matrix form.",
-      "formula": "Y=CX+DU",
+      "formula": "\\mathbf{y}=C\\mathbf{x}+D\\mathbf{u}",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
@@ -553,7 +569,7 @@
       "id": "state-transition-matrix",
       "term": "State transition matrix",
       "definition": "Matrix giving the free response of the state vector to its initial conditions in an unforced linear state-space system.",
-      "formula": "Φ(t)=e^(At)",
+      "formula": "\\Phi(t)=e^{At}=\\mathcal{L}^{-1}\\{(sI-A)^{-1}\\}",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [
@@ -564,7 +580,7 @@
       "id": "resolvent-matrix",
       "term": "Resolvent matrix",
       "definition": "Inverse of the matrix (sI-A) appearing in the s-domain solution of the state equations, which transforms into the state transition matrix.",
-      "formula": "[sI-A]^-1",
+      "formula": "\\Phi(s)=(sI-A)^{-1}",
       "unit": 6,
       "unitTitle": "State space analysis",
       "sources": [

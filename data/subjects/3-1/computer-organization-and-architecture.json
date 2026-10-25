@@ -92,7 +92,7 @@
       "id": "selective-set",
       "term": "Selective set",
       "definition": "Operation in which each 1 in a second register forces the matching bit of the first register to 1, leaving other bits unchanged.",
-      "formula": "",
+      "formula": "A \\leftarrow A \\lor B",
       "unit": 1,
       "unitTitle": "Digital Computers",
       "sources": [
@@ -103,7 +103,7 @@
       "id": "selective-complement",
       "term": "Selective complement",
       "definition": "Operation in which each 1 in a second register inverts the matching bit of the first register, leaving other bits unchanged.",
-      "formula": "",
+      "formula": "A \\leftarrow A \\oplus B",
       "unit": 1,
       "unitTitle": "Digital Computers",
       "sources": [
@@ -114,7 +114,7 @@
       "id": "mask-operation",
       "term": "Mask operation",
       "definition": "Operation in which each 0 in a second register clears the matching bit of the first register to 0, leaving other bits unchanged.",
-      "formula": "",
+      "formula": "A \\leftarrow A \\land B",
       "unit": 1,
       "unitTitle": "Digital Computers",
       "sources": [
@@ -136,34 +136,37 @@
       "id": "logical-shift",
       "term": "Logical shift",
       "definition": "Shift in which the serial input bit fed into the register is always zero.",
-      "formula": "",
+      "formula": "A \\leftarrow A \\ll 1",
       "unit": 1,
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1a#slide.38"
-      ]
+      ],
+      "diagram": "shift-register"
     },
     {
       "id": "circular-shift",
       "term": "Circular shift",
       "definition": "Shift in which the bit shifted out at one end of the register is fed back as the serial input at the other end.",
-      "formula": "",
+      "formula": "A \\leftarrow (A \\ll 1) \\lor (A \\gg (n-1))",
       "unit": 1,
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1a#slide.39"
-      ]
+      ],
+      "diagram": "shift-register"
     },
     {
       "id": "arithmetic-shift",
       "term": "Arithmetic shift",
       "definition": "Shift meant for signed binary numbers that keeps the sign of the number unchanged while performing multiplication or division.",
-      "formula": "",
+      "formula": "A \\leftarrow \\lfloor A/2 \\rfloor",
       "unit": 1,
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1a#slide.40"
-      ]
+      ],
+      "diagram": "shift-register"
     },
     {
       "id": "machine-instruction",
@@ -196,7 +199,8 @@
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1b#slide.15"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "hardwired-control",
@@ -229,7 +233,8 @@
       "unitTitle": "Digital Computers",
       "sources": [
         "coa-unit-1b#slide.29"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "stack",
@@ -240,7 +245,8 @@
       "unitTitle": "Microprogrammed Control",
       "sources": [
         "coa-unit-2#slide.7"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "reverse-polish-notation",
@@ -279,7 +285,7 @@
       "id": "immediate-mode",
       "term": "Immediate mode",
       "definition": "Mode in which the operand itself is given in the instruction instead of its address, so the operand is fast to acquire.",
-      "formula": "",
+      "formula": "\\text{operand}=\\text{IR}(\\text{address})",
       "unit": 2,
       "unitTitle": "Microprogrammed Control",
       "sources": [
@@ -290,7 +296,7 @@
       "id": "register-indirect-mode",
       "term": "Register indirect mode",
       "definition": "Mode in which the instruction names a register that holds the memory address of the operand, saving instruction bits.",
-      "formula": "",
+      "formula": "\\text{EA}=[R]",
       "unit": 2,
       "unitTitle": "Microprogrammed Control",
       "sources": [
@@ -301,7 +307,7 @@
       "id": "direct-address-mode",
       "term": "Direct address mode",
       "definition": "Mode in which the address field of the instruction gives the physical memory address used directly for the operand.",
-      "formula": "EA = IR(address)",
+      "formula": "\\text{EA}=\\text{IR}(\\text{address})",
       "unit": 2,
       "unitTitle": "Microprogrammed Control",
       "sources": [
@@ -312,7 +318,7 @@
       "id": "indirect-addressing-mode",
       "term": "Indirect addressing mode",
       "definition": "Mode in which the address field points to a memory location that contains the operand address, needing an extra memory access.",
-      "formula": "EA = M[IR(address)]",
+      "formula": "\\text{EA}=M[\\text{IR}(\\text{address})]",
       "unit": 2,
       "unitTitle": "Microprogrammed Control",
       "sources": [
@@ -323,7 +329,7 @@
       "id": "indexed-addressing-mode",
       "term": "Indexed addressing mode",
       "definition": "Mode that forms the operand address by adding the address field of the instruction to the contents of an index register.",
-      "formula": "EA = XR + IR(address)",
+      "formula": "\\text{EA}=\\text{XR}+\\text{IR}(\\text{address})",
       "unit": 2,
       "unitTitle": "Microprogrammed Control",
       "sources": [
@@ -339,7 +345,8 @@
       "unitTitle": "Microprogrammed Control",
       "sources": [
         "coa-unit-2#slide.24"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "internal-interrupt",
@@ -427,7 +434,8 @@
       "unitTitle": "Microprogrammed Control",
       "sources": [
         "coa-unit-2#slide.29"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "op-code-mapping",
@@ -444,7 +452,7 @@
       "id": "base-r-number-system",
       "term": "Base r number system",
       "definition": "Number system that uses r distinct digit symbols, where each digit is multiplied by an integer power of r.",
-      "formula": "",
+      "formula": "N=\\sum_{i=0}^{n-1} d_i r^{i}",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -455,7 +463,7 @@
       "id": "r-s-complement",
       "term": "r's complement",
       "definition": "Result of subtracting an n-digit number N from rⁿ, where r is the base.",
-      "formula": "rⁿ − N",
+      "formula": "r^{n}-N",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -466,7 +474,7 @@
       "id": "r-1-s-complement",
       "term": "(r−1)'s complement",
       "definition": "Result of subtracting an n-digit number N from rⁿ − 1, where r is the base.",
-      "formula": "(rⁿ − 1) − N",
+      "formula": "(r^{n}-1)-N",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -488,7 +496,7 @@
       "id": "floating-point-representation",
       "term": "Floating-point representation",
       "definition": "Scheme storing a number as a mantissa times a radix raised to an exponent, widening the range a register can hold.",
-      "formula": "m × rᵉ",
+      "formula": "m\\times r^{e}",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -499,7 +507,7 @@
       "id": "normalized-number",
       "term": "Normalized number",
       "definition": "Floating-point number whose mantissa has a nonzero most significant digit; the number zero cannot be put in this form.",
-      "formula": "",
+      "formula": "1/r \\le |m| < 1",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -510,7 +518,7 @@
       "id": "alignment",
       "term": "Alignment",
       "definition": "Shifting one mantissa while adjusting its exponent until both exponents are equal, needed before adding or subtracting floating-point numbers.",
-      "formula": "",
+      "formula": "m_2 \\leftarrow m_2\\,r^{e_2-e_1}",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -521,7 +529,7 @@
       "id": "overflow",
       "term": "Overflow",
       "definition": "Condition in which an addition result needs more digits than the register holds, detected when the last two carries differ.",
-      "formula": "",
+      "formula": "V=c_{\\text{in}}\\oplus c_{\\text{out}}",
       "unit": 3,
       "unitTitle": "Data Representation",
       "sources": [
@@ -599,12 +607,13 @@
       "id": "asynchronous-serial-transfer",
       "term": "Asynchronous serial transfer",
       "definition": "Character-by-character transmission in which each character is framed by a start bit of 0, data bits and stop bits, with the idle line at 1.",
-      "formula": "",
+      "formula": "T_{\\text{frame}}=(1+n+p+s)T_{\\text{bit}}",
       "unit": 4,
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4a#slide.15"
-      ]
+      ],
+      "diagram": "uart-frame"
     },
     {
       "id": "interrupt-initiated-i-o",
@@ -615,7 +624,8 @@
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4a#slide.19"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "priority-interrupt",
@@ -626,7 +636,8 @@
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4a#slide.21"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "dma-controller",
@@ -637,7 +648,8 @@
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4a#slide.27"
-      ]
+      ],
+      "diagram": "dma"
     },
     {
       "id": "memory-hierarchy",
@@ -648,18 +660,20 @@
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4b#slide.3"
-      ]
+      ],
+      "diagram": "memory-hierarchy"
     },
     {
       "id": "cache-memory",
       "term": "Cache memory",
       "definition": "Fast, small-capacity memory that holds the information most likely to be accessed.",
-      "formula": "",
+      "formula": "T_{\\text{avg}}=h\\,T_c+(1-h)T_m",
       "unit": 4,
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4b#slide.8"
-      ]
+      ],
+      "diagram": "cache-map"
     },
     {
       "id": "locality-of-reference",
@@ -687,18 +701,19 @@
       "id": "page",
       "term": "Page",
       "definition": "Fixed-size group of words into which the address space and the memory space are each divided.",
-      "formula": "",
+      "formula": "b_{\\text{offset}}=\\log_2 S",
       "unit": 4,
       "unitTitle": "Input-Output Organization",
       "sources": [
         "coa-unit-4b#slide.17"
-      ]
+      ],
+      "diagram": "paging"
     },
     {
       "id": "parallel-processing",
       "term": "Parallel processing",
       "definition": "Execution of concurrent events in the computing process to achieve faster computational speed.",
-      "formula": "",
+      "formula": "S=\\frac{T_1}{T_p}",
       "unit": 5,
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
@@ -736,7 +751,8 @@
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
         "coa-unit-5a#slide.25"
-      ]
+      ],
+      "diagram": "pipeline"
     },
     {
       "id": "data-hazard",
@@ -747,7 +763,8 @@
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
         "coa-unit-5a#slide.26"
-      ]
+      ],
+      "diagram": "pipeline"
     },
     {
       "id": "control-hazard",
@@ -758,7 +775,8 @@
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
         "coa-unit-5a#slide.24"
-      ]
+      ],
+      "diagram": "pipeline"
     },
     {
       "id": "forwarding",
@@ -797,7 +815,7 @@
       "id": "branch-prediction",
       "term": "Branch prediction",
       "definition": "Guessing the branch condition and fetching an instruction stream based on the guess, so a correct guess removes the branch penalty.",
-      "formula": "",
+      "formula": "T_{\\text{penalty}}=(1-p_{\\text{hit}})T_{\\text{mispredict}}",
       "unit": 5,
       "unitTitle": "Reduced Instruction Set Computer",
       "sources": [
@@ -841,7 +859,7 @@
       "id": "crossbar-switch",
       "term": "Crossbar switch",
       "definition": "Non-blocking switch with crosspoints at the intersections of processor buses and memory module paths, giving a separate path to each module.",
-      "formula": "",
+      "formula": "N_{\\text{crosspoints}}=p\\,m",
       "unit": 6,
       "unitTitle": "Multi Processors",
       "sources": [
@@ -864,7 +882,7 @@
       "id": "omega-network",
       "term": "Omega network",
       "definition": "Multistage network of 2×2 switching elements joined by perfect shuffle, with exactly one path from each source to each destination.",
-      "formula": "",
+      "formula": "N_{\\text{switches}}=\\frac{N}{2}\\log_2 N",
       "unit": 6,
       "unitTitle": "Multi Processors",
       "sources": [

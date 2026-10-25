@@ -30,7 +30,7 @@
       "sources": [
         "ica-unit-1-ica#slide.26"
       ],
-      "formula": "Vo = K(Vin1 - Vin2)"
+      "formula": "V_{o}=A_{d}(V_{1}-V_{2})"
     },
     {
       "id": "operational-amplifier",
@@ -41,7 +41,8 @@
       "sources": [
         "ica-unit-1-ica#slide.41"
       ],
-      "formula": ""
+      "formula": "V_{o}=A_{d}(V_{+}-V_{-})",
+      "diagram": "opamp"
     },
     {
       "id": "open-loop-op-amp",
@@ -52,7 +53,7 @@
       "sources": [
         "ica-unit-1-ica#slide.42"
       ],
-      "formula": ""
+      "formula": "V_{o}=\\pm V_{\\text{sat}}"
     },
     {
       "id": "closed-loop-op-amp",
@@ -63,7 +64,7 @@
       "sources": [
         "ica-unit-1-ica#slide.42"
       ],
-      "formula": ""
+      "formula": "A_{cl}=\\frac{A}{1+A\\beta}"
     },
     {
       "id": "virtual-ground",
@@ -74,7 +75,8 @@
       "sources": [
         "ica-unit-1-ica#slide.47"
       ],
-      "formula": ""
+      "formula": "V_{+}-V_{-}=\\frac{V_{o}}{A_{d}}\\approx 0",
+      "diagram": "opamp-inverting"
     },
     {
       "id": "ideal-op-amp",
@@ -85,7 +87,7 @@
       "sources": [
         "ica-unit-1-ica#slide.67"
       ],
-      "formula": ""
+      "formula": "A_{d}\\to\\infty,\\ R_{in}\\to\\infty,\\ R_{out}\\to 0"
     },
     {
       "id": "input-offset-current",
@@ -96,7 +98,7 @@
       "sources": [
         "ica-unit-1-ica#slide.70"
       ],
-      "formula": "Iios = |Ib1 - Ib2|"
+      "formula": "I_{ios}=|I_{b1}-I_{b2}|"
     },
     {
       "id": "slew-rate",
@@ -107,7 +109,7 @@
       "sources": [
         "ica-unit-1-ica#slide.81"
       ],
-      "formula": "S = 2πfVm"
+      "formula": "\\text{SR}=\\left|\\frac{dV_{o}}{dt}\\right|_{\\max}"
     },
     {
       "id": "summer-adder",
@@ -118,7 +120,7 @@
       "sources": [
         "ica-unit-2-ica#slide.3"
       ],
-      "formula": ""
+      "formula": "V_{o}=-\\sum_{i=1}^{n}V_{i}"
     },
     {
       "id": "inverting-summer",
@@ -129,7 +131,7 @@
       "sources": [
         "ica-unit-2-ica#slide.4"
       ],
-      "formula": "Vo = -(V1 + V2)"
+      "formula": "V_{o}=-\\left(\\frac{R_{f}}{R_{1}}V_{1}+\\frac{R_{f}}{R_{2}}V_{2}\\right)"
     },
     {
       "id": "difference-amplifier",
@@ -140,7 +142,7 @@
       "sources": [
         "ica-unit-2-ica#slide.8"
       ],
-      "formula": "Vo = V2 - V1"
+      "formula": "V_{o}=\\frac{R_{f}}{R_{1}}(V_{2}-V_{1})"
     },
     {
       "id": "instrumentation-amplifier",
@@ -151,7 +153,7 @@
       "sources": [
         "ica-unit-2-ica#slide.9"
       ],
-      "formula": ""
+      "formula": "V_{o}=\\left(1+\\frac{2R}{R_{G}}\\right)(V_{2}-V_{1})"
     },
     {
       "id": "integrator",
@@ -162,7 +164,8 @@
       "sources": [
         "ica-unit-2-ica#slide.18"
       ],
-      "formula": ""
+      "formula": "V_{o}(t)=-\\frac{1}{RC}\\int_{0}^{t}V_{i}(\\tau)\\,d\\tau",
+      "diagram": "opamp-integrator"
     },
     {
       "id": "differentiator",
@@ -173,7 +176,7 @@
       "sources": [
         "ica-unit-2-ica#slide.30"
       ],
-      "formula": ""
+      "formula": "V_{o}(t)=-RC\\frac{dV_{i}}{dt}"
     },
     {
       "id": "current-to-voltage-converter",
@@ -184,7 +187,7 @@
       "sources": [
         "ica-unit-2-ica#slide.40"
       ],
-      "formula": ""
+      "formula": "V_{o}=-I_{i}R_{f}"
     },
     {
       "id": "voltage-to-current-converter",
@@ -195,7 +198,7 @@
       "sources": [
         "ica-unit-2-ica#slide.42"
       ],
-      "formula": ""
+      "formula": "I_{L}=\\frac{V_{i}}{R}"
     },
     {
       "id": "comparator",
@@ -206,7 +209,7 @@
       "sources": [
         "ica-unit-2-ica#slide.47"
       ],
-      "formula": ""
+      "formula": "V_{o}=V_{\\text{sat}}\\,\\text{sgn}(V_{i}-V_{\\text{ref}})"
     },
     {
       "id": "zero-crossing-detector",
@@ -217,7 +220,7 @@
       "sources": [
         "ica-unit-2-ica#slide.57"
       ],
-      "formula": ""
+      "formula": "V_{o}=V_{\\text{sat}}\\,\\text{sgn}(V_{i})"
     },
     {
       "id": "sample-and-hold",
@@ -228,7 +231,7 @@
       "sources": [
         "ica-unit-2-ica#slide.73"
       ],
-      "formula": ""
+      "formula": "V_{o}(t)=V_{i}(nT_{s}),\\ nT_{s}\\le t<(n+1)T_{s}"
     },
     {
       "id": "clipper",
@@ -239,7 +242,8 @@
       "sources": [
         "ica-unit-2-ica#slide.69"
       ],
-      "formula": ""
+      "formula": "V_{o}=\\min(V_{i},V_{\\text{ref}})",
+      "diagram": "clipper-clamper"
     },
     {
       "id": "clamper",
@@ -250,7 +254,8 @@
       "sources": [
         "ica-unit-2-ica#slide.71"
       ],
-      "formula": ""
+      "formula": "V_{o}(t)=V_{i}(t)+V_{C}",
+      "diagram": "clipper-clamper"
     },
     {
       "id": "peak-detector",
@@ -261,7 +266,7 @@
       "sources": [
         "ica-unit-2-ica#slide.72"
       ],
-      "formula": ""
+      "formula": "V_{o}=\\max_{t}V_{i}(t)"
     },
     {
       "id": "monostable-multivibrator",
@@ -272,7 +277,8 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.8"
       ],
-      "formula": ""
+      "formula": "T=RC\\ln 3\\approx 1.1RC",
+      "diagram": "rc-charge"
     },
     {
       "id": "astable-multivibrator",
@@ -283,7 +289,7 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.24"
       ],
-      "formula": ""
+      "formula": "f=\\frac{1.44}{(R_{A}+2R_{B})C}"
     },
     {
       "id": "schmitt-trigger",
@@ -294,7 +300,7 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.40"
       ],
-      "formula": ""
+      "formula": "V_{H}=V_{UT}-V_{LT}"
     },
     {
       "id": "filter",
@@ -305,7 +311,8 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.3"
       ],
-      "formula": ""
+      "formula": "H(j\\omega)=\\frac{V_{o}(j\\omega)}{V_{i}(j\\omega)}",
+      "diagram": "filter-response"
     },
     {
       "id": "active-filter",
@@ -316,7 +323,7 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.5"
       ],
-      "formula": ""
+      "formula": "H(s)=-\\frac{Z_{f}(s)}{Z_{i}(s)}"
     },
     {
       "id": "low-pass-filter",
@@ -327,7 +334,8 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.9"
       ],
-      "formula": ""
+      "formula": "|H(j\\omega)|=\\frac{1}{\\sqrt{1+(\\omega/\\omega_{c})^{2}}}",
+      "diagram": "filter-response"
     },
     {
       "id": "high-pass-filter",
@@ -338,7 +346,7 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.9"
       ],
-      "formula": ""
+      "formula": "|H(j\\omega)|=\\frac{\\omega/\\omega_{c}}{\\sqrt{1+(\\omega/\\omega_{c})^{2}}}"
     },
     {
       "id": "band-pass-filter",
@@ -349,7 +357,8 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.27"
       ],
-      "formula": ""
+      "formula": "Q=\\frac{f_{c}}{f_{H}-f_{L}}",
+      "diagram": "resonance-curve"
     },
     {
       "id": "band-reject-filter",
@@ -360,7 +369,7 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.40"
       ],
-      "formula": ""
+      "formula": "f_{0}=\\sqrt{f_{L}f_{H}}"
     },
     {
       "id": "all-pass-filter",
@@ -371,7 +380,7 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.12"
       ],
-      "formula": ""
+      "formula": "\\angle H(j\\omega)=-2\\tan^{-1}\\left(\\frac{\\omega}{\\omega_{0}}\\right)"
     },
     {
       "id": "butterworth-filter",
@@ -382,7 +391,8 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.13"
       ],
-      "formula": ""
+      "formula": "|H(j\\omega)|=\\frac{1}{\\sqrt{1+(\\omega/\\omega_{c})^{2n}}}",
+      "diagram": "bode"
     },
     {
       "id": "notch-filter",
@@ -393,7 +403,8 @@
       "sources": [
         "ica-unit-3-ica-part-1#slide.46"
       ],
-      "formula": "fN = 1/(2πRC)"
+      "formula": "f_{N}=\\frac{1}{2\\pi RC}",
+      "diagram": "filter-response"
     },
     {
       "id": "oscillator",
@@ -404,7 +415,8 @@
       "sources": [
         "ica-unit-2-ica#slide.2"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "oscillator-loop"
     },
     {
       "id": "barkhausen-criterion",
@@ -415,7 +427,8 @@
       "sources": [
         "ica-unit-2-ica#slide.6"
       ],
-      "formula": ""
+      "formula": "|A\\beta|\\ge 1,\\ \\angle A\\beta=0^{\\circ}",
+      "diagram": "oscillator-loop"
     },
     {
       "id": "loop-gain",
@@ -426,7 +439,7 @@
       "sources": [
         "ica-unit-2-ica#slide.9"
       ],
-      "formula": "Aβ"
+      "formula": "T=A\\beta"
     },
     {
       "id": "rc-phase-shift-oscillator",
@@ -437,7 +450,7 @@
       "sources": [
         "ica-unit-2-ica#slide.5"
       ],
-      "formula": ""
+      "formula": "f_{0}=\\frac{1}{2\\pi RC\\sqrt{6}}"
     },
     {
       "id": "wein-bridge-oscillator",
@@ -448,7 +461,7 @@
       "sources": [
         "ica-unit-2-ica#slide.17"
       ],
-      "formula": ""
+      "formula": "f_{0}=\\frac{1}{2\\pi\\sqrt{R_{1}R_{2}C_{1}C_{2}}}"
     },
     {
       "id": "timer-555",
@@ -459,7 +472,7 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.3"
       ],
-      "formula": ""
+      "formula": "V_{TH}=\\frac{2}{3}V_{CC},\\ V_{TL}=\\frac{1}{3}V_{CC}"
     },
     {
       "id": "phase-locked-loop",
@@ -470,7 +483,8 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.44"
       ],
-      "formula": ""
+      "formula": "\\Delta f=f_{o}-f_{r}\\to 0",
+      "diagram": "pll"
     },
     {
       "id": "lock-range",
@@ -481,7 +495,7 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.52"
       ],
-      "formula": "fmin ≤ fin ≤ fmax"
+      "formula": "\\Delta f_{L}=f_{\\max}-f_{\\min}"
     },
     {
       "id": "capture-range",
@@ -492,7 +506,7 @@
       "sources": [
         "ica-unit-3-ica-part-2#slide.52"
       ],
-      "formula": "fo - fc ≤ fin ≤ fo + fc"
+      "formula": "\\Delta f_{C}=2f_{c}"
     },
     {
       "id": "voltage-regulator",
@@ -503,7 +517,8 @@
       "sources": [
         "ica-unit-4-ica-2021#slide.78"
       ],
-      "formula": ""
+      "formula": "\\text{Reg}=\\frac{V_{NL}-V_{FL}}{V_{FL}}\\times 100\\%",
+      "diagram": "regulator"
     },
     {
       "id": "shunt-regulator",
@@ -514,7 +529,7 @@
       "sources": [
         "ica-unit-4-ica-2021#slide.77"
       ],
-      "formula": ""
+      "formula": "V_{o}=V_{Z}"
     },
     {
       "id": "dac-resolution",
@@ -525,7 +540,8 @@
       "sources": [
         "ica-unit-2-ica#slide.54"
       ],
-      "formula": "2^n  or  Vofs/(2^n-1)"
+      "formula": "\\text{LSB}=\\frac{V_{FS}}{2^{n}-1}",
+      "diagram": "adc-dac"
     },
     {
       "id": "adc-resolution",
@@ -536,7 +552,8 @@
       "sources": [
         "ica-unit-2-ica#slide.54"
       ],
-      "formula": "VIFS/(2^n-1)"
+      "formula": "D=\\frac{V_{in}}{V_{FS}}\\,(2^{n}-1)",
+      "diagram": "adc-dac"
     },
     {
       "id": "ttl",
@@ -547,7 +564,7 @@
       "sources": [
         "ica-unit-2-ica#slide.5"
       ],
-      "formula": ""
+      "formula": "P_{\\text{static}}=V_{CC}I_{CC}"
     },
     {
       "id": "cmos",
@@ -558,7 +575,8 @@
       "sources": [
         "ica-unit-2-ica#slide.5"
       ],
-      "formula": ""
+      "formula": "P_{\\text{dyn}}=\\alpha CV_{DD}^{2}f",
+      "diagram": "cmos-inverter"
     }
   ]
 }

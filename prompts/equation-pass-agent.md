@@ -69,76 +69,24 @@ Rules of notation:
 
 ## 3. Diagrams
 
-The shared sprite lives in `assets/diagrams.svg`; the app injects it once. On the subject
-page a diagram is revealed on hover; in a quiz it is shown with the answer. Use them
-sparingly: **0–8 per subject**, only when the drawing is the clearest explanation of that
-row. Reuse an id across closely related definitions is fine, but do not staple the same
-picture to a whole unit.
+The shared sprite lives in `assets/diagrams.svg` (193 symbols). On the subject page a
+diagram is revealed on hover; in a quiz it is shown with the answer.
 
-Available ids (viewBox 240×150, thin line art, theme-aware):
+**Read `prompts/diagram-catalog.md` before choosing one.** It lists every id, what it
+draws, and the per-subject coverage guide. Use it thoughtfully:
 
-| id | what it shows | good for |
-| --- | --- | --- |
-| `pn-junction` | p/n blocks, depletion band, field | junction, depletion region, barrier potential, diode |
-| `diode-iv` | exponential I–V curve with knee | diode, forward/reverse bias, cut-in, breakdown |
-| `bjt` | NPN symbol with terminal currents | BJT regions, emitter/collector/base, current gain |
-| `mosfet` | n-channel enhancement symbol | MOSFET, channel, threshold, gate control |
-| `opamp` | inverting amplifier with feedback | op-amp, virtual ground, feedback, gain |
-| `cmos-inverter` | PMOS/NMOS pair, VDD/GND | CMOS inverter, logic family, static power |
-| `logic-gates` | AND, OR, NOT symbols | gates, Boolean realisation, combinational logic |
-| `d-flipflop` | D flip-flop block with clock edge | flip-flop, latch, clocking, setup/hold |
-| `cmos-cross-section` | gate oxide, wells, substrate | CMOS process, lithography layers, gate stack |
-| `chip-floorplan` | die with CPU/GPU/SRAM/IO blocks | floorplanning, SoC, physical design, partitioning |
-| `memory-hierarchy` | registers → cache → DRAM → disk | memory hierarchy, locality, latency |
-| `pipeline` | IF/ID/EX/MEM/WB and staggered rows | pipelining, hazards, throughput, speedup |
-| `cache-map` | address tag/index/offset and sets | cache mapping, associativity, tag/index |
-| `fourier` | time waveform and spectrum | Fourier series/transform, harmonics, spectrum |
-| `sampling` | continuous wave, samples, reconstruction | sampling, Nyquist, aliasing, discrete time |
-| `convolution` | x(τ), h(t), y(t) panels | convolution, impulse response, LTI output |
-| `z-plane` | unit circle, pole, zero | z-transform, ROC, stability, poles/zeros |
-| `bode` | magnitude and phase asymptotes | Bode plot, cutoff, roll-off, phase margin |
-| `control-loop` | R→Σ→G→Y with H feedback | feedback, closed loop, plant, error |
-| `gaussian` | bell curve with μ and ±σ | normal distribution, PDF, confidence, noise |
-| `matrix-transform` | unit square mapped to a parallelogram | matrix, linear transformation, basis, eigen idea |
-| `am-modulation` | envelope and carrier | AM, modulation index, envelope, carrier |
-| `qam` | I/Q constellation | QAM, constellation, I/Q, digital modulation |
-| `superhet` | RF→mixer→IF→demod chain | superheterodyne, mixer, IF, receiver |
-| `dipole` | half-wave dipole and lobes | antenna, radiation pattern, dipole, beamwidth |
-| `tx-line` | line, load, standing wave | transmission line, reflection, VSWR, impedance |
-| `em-wave` | E and H waves along z | EM wave, propagation, polarization, phase |
-| `osi-stack` | seven protocol layers | OSI, layer, encapsulation, protocol stack |
-| `tcp-handshake` | SYN / SYN-ACK / ACK | TCP, connection setup, handshake, reliability |
-| `process-states` | new/ready/run/wait/exit | process state, scheduler, context switch |
-| `linked-list` | nodes and next pointers | linked list, node, pointer, traversal |
-| `binary-tree` | binary tree with a highlighted node | tree, BST, traversal, height, search |
-| `graph-search` | graph with frontier and path | graph, BFS/DFS, frontier, traversal, shortest path |
-| `dft-butterfly` | radix-2 butterfly | DFT, FFT, butterfly, twiddle factor |
-| `neural-net` | three layers of neurons | perceptron, hidden layer, backprop, network |
-| `image-pipeline` | pixel → blur → edge → mask | image processing, filtering, edge detection |
-| `satellite-link` | earth, satellite, uplink/downlink | satellite, link budget, transponder, orbit |
-| `iot-layers` | device/edge/cloud bands | IoT architecture, gateway, edge, cloud |
-| `soc-blocks` | CPU/GPU/NPU/DDR/IO on a die | SoC, interconnect, accelerator, heterogeneous |
-| `rtos-timeline` | periodic tasks and deadlines | scheduling, deadline, period, real-time task |
-| `supply-demand` | demand and supply crossing | demand, supply, equilibrium, elasticity |
-| `break-even` | cost/revenue lines and BEP | fixed cost, variable cost, break-even, profit |
-| `carbon-cycle` | atmosphere/plants/ocean/soil loop | carbon cycle, greenhouse, sequestration |
-| `water-cycle` | evaporation, cloud, rain, runoff | water cycle, precipitation, runoff, evaporation |
-| `venn` | two sets and intersection | set, union/intersection, Venn, inclusion |
-| `electric-dipole` | ±q charges, field lines, separation d | electric dipole, dipole moment, polarization |
-| `eigen-directions` | unit square, mapped parallelogram, invariant axes | eigenvalue, eigenvector, diagonalization, basis |
-| `memory-layout` | text/data/BSS/heap/stack address map | storage class, scope, process memory, stack/heap |
-| `stack-queue` | stack with top, queue with front/rear and wrap | stack, queue, circular queue, LIFO/FIFO |
-| `d-orbital-splitting` | free-ion level → t₂g/eg with Δ₀ | crystal field, CFSE, d-orbital splitting |
-| `electrochemical-cell` | anode/cathode, salt bridge, electron flow | galvanic cell, EMF, Nernst, electrode potential |
-| `series-parallel` | series and parallel resistor pairs | series, parallel, equivalent resistance |
-| `thevenin-equiv` | network → V_th/R_th with load | Thevenin, Norton, equivalent source |
-| `rlc-transient` | under/over/critically damped step responses | damping, transient, RLC response |
-| `phasor` | rotating vector, angle φ, projection | phasor, phase, AC, impedance angle |
-| `vector-field` | closed surface flux and boundary circulation | divergence, curl, Gauss, Stokes, line integral |
-| `two-port` | two-port block with V₁/I₁ and V₂/I₂ | two-port, Z/Y/H/ABCD parameters |
-
-If none of these fits, leave the diagram out. **Do not invent new ids and do not edit the
-sprite.** If a subject clearly needs a new diagram, report it instead of adding the key.
+- A diagram must carry structure the sentence cannot: a curve, field, circuit, state,
+  stack, pipeline, geometry, before/after.
+- Do not put a drawing on a syntax keyword, API name, policy label, management term, or a
+  row whose definition is already complete.
+- Prefer 1 diagram per 3–5 rows in a visual subject, 1 per 8–15 in maths/programming, and
+  0–3 in a values/policy subject. Do not exceed ~40% of any subject.
+- Do not reuse one symbol on more than ~5 rows; if a whole unit shares an idea, put it on
+  the 2–3 defining rows.
+- Keep an existing `diagram` if it is right; replace it only when the catalog has a clearly
+  better fit; remove it if it is misleading.
+- **Do not invent ids and do not edit the sprite.** If a row truly needs an absent drawing,
+  leave it bare and report the gap.
 
 ## 4. How to edit
 
