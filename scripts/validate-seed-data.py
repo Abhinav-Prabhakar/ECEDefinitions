@@ -54,7 +54,7 @@ def main():
         if not sid or not re.fullmatch(r"[a-z0-9-]+", sid): err(f"bad source id {sid!r}"); continue
         if sid in src_ids: err(f"duplicate source id {sid}")
         src_ids[sid]=st
-        if st.get("status") not in ("downloaded","parsed","inaccessible","needs_ocr","skipped"):
+        if st.get("status") not in ("downloaded","parsed","accessed","inaccessible","needs_ocr","skipped"):
             err(f"source {sid} bad status {st.get('status')!r}")
         if st.get("subjectId") and sems and st.get("semester") not in expected_semesters:
             err(f"source {sid} bad semester {st.get('semester')}")
