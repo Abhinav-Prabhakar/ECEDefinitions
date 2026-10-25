@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-25",
+  "collections": [
+    {
+      "id": "software-interview-glossary",
+      "name": "Software Interview Glossary",
+      "tagline": "Software, in one line.",
+      "path": "data/collections/software-interview-glossary",
+      "subjects": 6,
+      "definitions": 356,
+      "generatedAt": "2026-10-25"
+    }
+  ]
+}
