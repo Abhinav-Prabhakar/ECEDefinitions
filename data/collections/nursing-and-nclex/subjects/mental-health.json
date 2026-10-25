@@ -1,0 +1,1009 @@
+{
+  "version": 1,
+  "id": "mental-health",
+  "collectionId": "nursing-and-nclex",
+  "section": "clinical",
+  "name": "Mental Health Nursing",
+  "shortName": "Mental health",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#9b6ae0",
+  "dark": "#bb95ff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Therapeutic communication"
+    },
+    {
+      "number": 2,
+      "title": "Mood disorders"
+    },
+    {
+      "number": 3,
+      "title": "Psychotic disorders"
+    },
+    {
+      "number": 4,
+      "title": "Anxiety and trauma"
+    },
+    {
+      "number": 5,
+      "title": "Substance use"
+    },
+    {
+      "number": 6,
+      "title": "Crisis and suicide"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "active-listening",
+      "term": "Active listening",
+      "definition": "Focused attention to a client's words, tone, and body language without judgment or interruption.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic communication",
+        "Empathy",
+        "Therapeutic relationship"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "empathy",
+      "term": "Empathy",
+      "definition": "Understanding and acknowledging a client's feelings while maintaining professional objectivity and respect.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic communication",
+        "Active listening",
+        "Therapeutic relationship"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "johari-window",
+      "term": "Johari window",
+      "definition": "A four-quadrant model of self-awareness used to improve interpersonal communication and insight.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Self-awareness",
+        "Therapeutic communication",
+        "Active listening"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "nonverbal-communication",
+      "term": "Nonverbal communication",
+      "definition": "Messages conveyed through body language, facial expression, gestures, and tone rather than words.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Affect",
+        "Active listening",
+        "Therapeutic communication"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "orientation-phase",
+      "term": "Orientation phase",
+      "definition": "Phase focused on building rapport, trust, and mutual goals at the start of the relationship.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Pre-orientation phase",
+        "Therapeutic communication",
+        "Active listening"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "pre-orientation-phase",
+      "term": "Pre-orientation phase",
+      "definition": "Initial phase in which the nurse self-reflects and gathers information before meeting the client.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Orientation phase",
+        "Therapeutic communication",
+        "Active listening"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "professional-boundaries",
+      "term": "Professional boundaries",
+      "definition": "Limits that keep nurse-client interactions safe, ethical, and focused on the client's care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic relationship",
+        "Therapeutic communication",
+        "Active listening"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "self-awareness",
+      "term": "Self-awareness",
+      "definition": "Recognition of one's own thoughts, feelings, and behaviors during interactions with clients.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Johari window",
+        "Therapeutic communication",
+        "Active listening"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "therapeutic-communication",
+      "term": "Therapeutic communication",
+      "definition": "Purposeful, client-centered interaction that builds trust and supports assessment, treatment, and recovery.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Active listening",
+        "Nonverbal communication",
+        "Therapeutic relationship"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "therapeutic-relationship",
+      "term": "Therapeutic relationship",
+      "definition": "A professional, trust-based partnership focused on the client's needs and guided by nursing process.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Therapeutic communication",
+      "aliases": [],
+      "confusables": [
+        "Professional boundaries",
+        "Therapeutic communication",
+        "Active listening"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "anhedonia",
+      "term": "Anhedonia",
+      "definition": "Loss of interest or pleasure in activities that were previously enjoyable.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Mood disorder",
+        "Major depressive disorder",
+        "Persistent depressive disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "bipolar-i-disorder",
+      "term": "Bipolar I disorder",
+      "definition": "A mood disorder with full manic episodes, often accompanied by depressive episodes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Bipolar II disorder",
+        "Major depressive disorder",
+        "Mood disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "bipolar-ii-disorder",
+      "term": "Bipolar II disorder",
+      "definition": "A mood disorder with depressive and hypomanic episodes but no full manic episodes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Bipolar I disorder",
+        "Major depressive disorder",
+        "Hypomania"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "hypomania",
+      "term": "Hypomania",
+      "definition": "A milder elevated mood state that does not cause severe impairment or hospitalization.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Mania",
+        "Bipolar II disorder",
+        "Mood disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "major-depressive-disorder",
+      "term": "Major depressive disorder",
+      "definition": "A condition characterized by persistent sadness and loss of interest that impairs daily functioning.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [
+        "MDD"
+      ],
+      "confusables": [
+        "Persistent depressive disorder",
+        "Mood disorder",
+        "Mania"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "mania",
+      "term": "Mania",
+      "definition": "An abnormally elevated mood with high energy or activity that disrupts normal functioning.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Hypomania",
+        "Mood disorder",
+        "Major depressive disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "mood-disorder",
+      "term": "Mood disorder",
+      "definition": "A mental health condition marked by persistent disturbances in mood, emotions, and affect.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Major depressive disorder",
+        "Persistent depressive disorder",
+        "Mania"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "persistent-depressive-disorder",
+      "term": "Persistent depressive disorder",
+      "definition": "A milder but longer-lasting form of depression formerly called dysthymia.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [
+        "Dysthymia"
+      ],
+      "confusables": [
+        "Major depressive disorder",
+        "Bipolar II disorder",
+        "Mood disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "rapid-cycling",
+      "term": "Rapid cycling",
+      "definition": "Occurrence of at least four mood episodes within a twelve-month period.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mood disorders",
+      "aliases": [],
+      "confusables": [
+        "Mania",
+        "Mood disorder",
+        "Major depressive disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "brief-psychotic-disorder",
+      "term": "Brief psychotic disorder",
+      "definition": "Sudden psychotic symptoms lasting more than one day but less than one month.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Schizophrenia",
+        "Psychosis",
+        "Positive symptoms"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "catatonia",
+      "term": "Catatonia",
+      "definition": "A syndrome of psychomotor abnormalities such as immobility, rigidity, or posturing.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Psychosis",
+        "Schizophrenia",
+        "Positive symptoms"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "delusion",
+      "term": "Delusion",
+      "definition": "A fixed false belief that persists despite contradictory evidence.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Hallucination",
+        "Psychosis",
+        "Schizophrenia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "hallucination",
+      "term": "Hallucination",
+      "definition": "A sensory perception experienced without an external stimulus.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Delusion",
+        "Psychosis",
+        "Schizophrenia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "negative-symptoms",
+      "term": "Negative symptoms",
+      "definition": "Reductions in normal function, such as flat affect, avolition, and social withdrawal.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Positive symptoms",
+        "Psychosis",
+        "Schizophrenia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "positive-symptoms",
+      "term": "Positive symptoms",
+      "definition": "Symptoms added by illness, such as hallucinations, delusions, and disorganized speech.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Negative symptoms",
+        "Psychosis",
+        "Schizophrenia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "psychosis",
+      "term": "Psychosis",
+      "definition": "A loss of contact with reality that impairs perception, thinking, and functioning.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Hallucination",
+        "Schizophrenia",
+        "Positive symptoms"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "schizoaffective-disorder",
+      "term": "Schizoaffective disorder",
+      "definition": "A condition combining psychotic symptoms with mood episode features.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Schizophrenia",
+        "Major depressive disorder",
+        "Psychosis"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "schizophrenia",
+      "term": "Schizophrenia",
+      "definition": "A chronic psychotic disorder with positive and negative symptoms and impaired functioning.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Psychotic disorders",
+      "aliases": [],
+      "confusables": [
+        "Schizoaffective disorder",
+        "Psychosis",
+        "Positive symptoms"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "acute-stress-disorder",
+      "term": "Acute stress disorder",
+      "definition": "Trauma-related symptoms lasting from three days to one month after a traumatic event.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [
+        "ASD"
+      ],
+      "confusables": [
+        "Post-traumatic stress disorder",
+        "Anxiety",
+        "Generalized anxiety disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "anxiety",
+      "term": "Anxiety",
+      "definition": "A state of apprehension or fear that may be adaptive or excessive.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [],
+      "confusables": [
+        "Generalized anxiety disorder",
+        "Panic attack",
+        "Phobia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "exposure-therapy",
+      "term": "Exposure therapy",
+      "definition": "Gradual, controlled confrontation with feared stimuli to reduce anxiety responses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [],
+      "confusables": [
+        "Anxiety",
+        "Generalized anxiety disorder",
+        "Panic attack"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "generalized-anxiety-disorder",
+      "term": "Generalized anxiety disorder",
+      "definition": "Excessive, uncontrollable worry about multiple life areas for at least six months.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [
+        "GAD"
+      ],
+      "confusables": [
+        "Anxiety",
+        "Panic attack",
+        "Phobia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "obsessive-compulsive-disorder",
+      "term": "Obsessive-compulsive disorder",
+      "definition": "Recurrent obsessions and compulsions that cause distress and impair functioning.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [
+        "OCD"
+      ],
+      "confusables": [
+        "Generalized anxiety disorder",
+        "Anxiety",
+        "Panic attack"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "panic-attack",
+      "term": "Panic attack",
+      "definition": "A sudden surge of intense fear with physical symptoms such as palpitations and shortness of breath.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [],
+      "confusables": [
+        "Anxiety",
+        "Generalized anxiety disorder",
+        "Phobia"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "phobia",
+      "term": "Phobia",
+      "definition": "An intense, irrational fear of a specific object or situation leading to avoidance.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [],
+      "confusables": [
+        "Anxiety",
+        "Generalized anxiety disorder",
+        "Panic attack"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "post-traumatic-stress-disorder",
+      "term": "Post-traumatic stress disorder",
+      "definition": "Trauma-related symptoms persisting beyond one month after exposure to a traumatic event.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [
+        "PTSD"
+      ],
+      "confusables": [
+        "Acute stress disorder",
+        "Anxiety",
+        "Generalized anxiety disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "trauma-informed-care",
+      "term": "Trauma-informed care",
+      "definition": "An approach that recognizes trauma's impact and promotes safety, trust, and empowerment.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Anxiety and trauma",
+      "aliases": [],
+      "confusables": [
+        "Crisis intervention",
+        "Anxiety",
+        "Generalized anxiety disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "alcohol-use-disorder",
+      "term": "Alcohol use disorder",
+      "definition": "Problematic alcohol use leading to clinically significant impairment or distress.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [
+        "AUD"
+      ],
+      "confusables": [
+        "Substance use disorder",
+        "Tolerance",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "detoxification",
+      "term": "Detoxification",
+      "definition": "Medically supervised process of clearing a substance from the body safely.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [
+        "Detox"
+      ],
+      "confusables": [
+        "Withdrawal",
+        "Substance use disorder",
+        "Tolerance"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "harm-reduction",
+      "term": "Harm reduction",
+      "definition": "Strategies that minimize negative health consequences of substance use without requiring abstinence.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Substance use disorder",
+        "Tolerance",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "intoxication",
+      "term": "Intoxication",
+      "definition": "Reversible substance-specific syndrome developing during or shortly after use.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Withdrawal",
+        "Tolerance",
+        "Substance use disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "relapse",
+      "term": "Relapse",
+      "definition": "Return to substance use after a period of abstinence or recovery.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Substance use disorder",
+        "Tolerance",
+        "Withdrawal"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "sbirt",
+      "term": "SBIRT",
+      "definition": "Screening, Brief Intervention, and Referral to Treatment for substance use concerns.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Detoxification",
+        "Harm reduction",
+        "Substance use disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "substance-use-disorder",
+      "term": "Substance use disorder",
+      "definition": "A pattern of substance use causing significant impairment or distress.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Tolerance",
+        "Withdrawal",
+        "Alcohol use disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "tolerance",
+      "term": "Tolerance",
+      "definition": "Need for increasing amounts of a substance to achieve the same effect.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Withdrawal",
+        "Substance use disorder",
+        "Alcohol use disorder"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "term": "Withdrawal",
+      "definition": "Symptoms occurring when substance use is reduced or stopped after heavy use.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Substance use",
+      "aliases": [],
+      "confusables": [
+        "Tolerance",
+        "Intoxication",
+        "Detoxification"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "crisis",
+      "term": "Crisis",
+      "definition": "A time-limited state of disequilibrium triggered by a stressful event.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Suicidal ideation",
+        "Suicide attempt",
+        "Suicide risk assessment"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "crisis-intervention",
+      "term": "Crisis intervention",
+      "definition": "Short-term, focused support to restore safety and functioning during a crisis.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "De-escalation",
+        "Crisis",
+        "Suicidal ideation"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "de-escalation",
+      "term": "De-escalation",
+      "definition": "Techniques used to reduce agitation and prevent violence in tense situations.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Restraint",
+        "Seclusion",
+        "Crisis intervention"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "means-restriction",
+      "term": "Means restriction",
+      "definition": "Limiting access to methods that could be used for self-harm.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Safety planning",
+        "Restraints",
+        "Crisis"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "postvention",
+      "term": "Postvention",
+      "definition": "Support and intervention provided to survivors after a suicide death.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Crisis",
+        "Suicidal ideation",
+        "Suicide attempt"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "protective-factors",
+      "term": "Protective factors",
+      "definition": "Characteristics or resources that reduce the likelihood of suicide.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Crisis",
+        "Suicidal ideation",
+        "Suicide attempt"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    },
+    {
+      "id": "safety-planning",
+      "term": "Safety planning",
+      "definition": "Collaborative plan identifying warning signs, coping steps, and emergency contacts.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Crisis",
+        "Suicidal ideation",
+        "Suicide attempt"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "suicidal-ideation",
+      "term": "Suicidal ideation",
+      "definition": "Thoughts about ending one's life, with or without a plan.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Suicide attempt",
+        "Crisis",
+        "Suicide risk assessment"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "suicide-attempt",
+      "term": "Suicide attempt",
+      "definition": "A nonfatal, self-directed behavior with intent to die.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Suicidal ideation",
+        "Crisis",
+        "Suicide risk assessment"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.16"
+      ]
+    },
+    {
+      "id": "suicide-risk-assessment",
+      "term": "Suicide risk assessment",
+      "definition": "Systematic evaluation of risk factors, protective factors, and suicidal intent.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Crisis and suicide",
+      "aliases": [],
+      "confusables": [
+        "Safety planning",
+        "Crisis intervention",
+        "Crisis"
+      ],
+      "sources": [
+        "openstax-psychiatric-mental-health-nursing#ch.3"
+      ]
+    }
+  ]
+}

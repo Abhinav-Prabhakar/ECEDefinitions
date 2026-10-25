@@ -1,0 +1,1017 @@
+{
+  "version": 1,
+  "id": "maternal-and-child",
+  "collectionId": "nursing-and-nclex",
+  "section": "clinical",
+  "name": "Maternal and Child Health",
+  "shortName": "Maternal and child",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "id": "antepartum",
+      "title": "Antepartum",
+      "number": 1
+    },
+    {
+      "id": "intrapartum",
+      "title": "Intrapartum",
+      "number": 2
+    },
+    {
+      "id": "postpartum",
+      "title": "Postpartum",
+      "number": 3
+    },
+    {
+      "id": "newborn",
+      "title": "Newborn",
+      "number": 4
+    },
+    {
+      "id": "pediatric-growth-and-development",
+      "title": "Pediatric growth and development",
+      "number": 5
+    },
+    {
+      "id": "pediatric-illness",
+      "title": "Pediatric illness",
+      "number": 6
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Braxton Hicks contractions",
+      "definition": "Irregular, painless uterine contractions that occur throughout pregnancy without changing the cervix.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Presumptive signs of pregnancy",
+        "Probable signs of pregnancy",
+        "Positive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "braxton-hicks-contractions"
+    },
+    {
+      "term": "Chadwick sign",
+      "definition": "Bluish discoloration of the vagina and cervix due to vasocongestion in pregnancy.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Goodell sign",
+        "Hegar sign",
+        "Presumptive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "chadwick-sign"
+    },
+    {
+      "term": "Goodell sign",
+      "definition": "Softening of the cervix and vagina with increased mucus discharge during pregnancy.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Chadwick sign",
+        "Hegar sign",
+        "Presumptive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "goodell-sign"
+    },
+    {
+      "term": "Hegar sign",
+      "definition": "Softening of the lower uterine segment in early pregnancy.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Chadwick sign",
+        "Goodell sign",
+        "Presumptive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "hegar-sign"
+    },
+    {
+      "term": "Human chorionic gonadotropin",
+      "definition": "Placental hormone that maintains the corpus luteum and stimulates estrogen and progesterone production.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Presumptive signs of pregnancy",
+        "Probable signs of pregnancy",
+        "Positive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "human-chorionic-gonadotropin"
+    },
+    {
+      "term": "Linea nigra",
+      "definition": "Vertical hyperpigmented line on the abdomen from the pubic area to the xiphoid process during pregnancy.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Presumptive signs of pregnancy",
+        "Probable signs of pregnancy",
+        "Positive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "linea-nigra"
+    },
+    {
+      "term": "Physiologic anemia of pregnancy",
+      "definition": "Hemodilution caused by a greater increase in plasma volume than in red blood cells.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Presumptive signs of pregnancy",
+        "Probable signs of pregnancy",
+        "Positive signs of pregnancy"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "physiologic-anemia-of-pregnancy"
+    },
+    {
+      "term": "Positive signs of pregnancy",
+      "definition": "Definitive evidence of pregnancy including fetal heartbeat, fetal movement felt by provider, or ultrasound visualization.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Presumptive signs of pregnancy",
+        "Probable signs of pregnancy",
+        "Braxton Hicks contractions"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "positive-signs-of-pregnancy"
+    },
+    {
+      "term": "Presumptive signs of pregnancy",
+      "definition": "Subjective symptoms such as amenorrhea, nausea, fatigue, and quickening that suggest but do not confirm pregnancy.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Probable signs of pregnancy",
+        "Positive signs of pregnancy",
+        "Braxton Hicks contractions"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "presumptive-signs-of-pregnancy"
+    },
+    {
+      "term": "Probable signs of pregnancy",
+      "definition": "Objective findings such as Chadwick sign, Goodell sign, Hegar sign, and a positive pregnancy test.",
+      "unit": 1,
+      "unitTitle": "Antepartum",
+      "confusables": [
+        "Presumptive signs of pregnancy",
+        "Positive signs of pregnancy",
+        "Braxton Hicks contractions"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.10"
+      ],
+      "formula": "",
+      "id": "probable-signs-of-pregnancy"
+    },
+    {
+      "term": "Cervical dilation",
+      "definition": "Opening of the cervical os to allow passage of the fetus during labor.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Cervical effacement",
+        "Labor",
+        "Fetal station"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "cervical-dilation"
+    },
+    {
+      "term": "Cervical effacement",
+      "definition": "Thinning and shortening of the cervix that occurs during labor.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Cervical dilation",
+        "Labor",
+        "Fetal station"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "cervical-effacement"
+    },
+    {
+      "term": "Fetal engagement",
+      "definition": "Entry of the fetal presenting part into the maternal pelvic inlet.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Fetal station",
+        "Labor",
+        "Cervical effacement"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "fetal-engagement"
+    },
+    {
+      "term": "Fetal heart rate",
+      "definition": "Number of fetal heartbeats per minute, with a normal range of 110 to 160.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Labor",
+        "Cervical effacement",
+        "Cervical dilation"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.16"
+      ],
+      "formula": "",
+      "id": "fetal-heart-rate"
+    },
+    {
+      "term": "Fetal station",
+      "definition": "Position of the fetal presenting part relative to the maternal ischial spines.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Labor",
+        "Cervical effacement",
+        "Cervical dilation"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "fetal-station"
+    },
+    {
+      "term": "First stage of labor",
+      "definition": "Stage from onset of labor to full cervical dilation at 10 centimeters.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Second stage of labor",
+        "Third stage of labor",
+        "Labor"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "first-stage-of-labor"
+    },
+    {
+      "term": "Labor",
+      "definition": "Physiologic process of uterine contractions and cervical change leading to birth of the fetus.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Cervical effacement",
+        "Cervical dilation",
+        "Fetal station"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "labor"
+    },
+    {
+      "term": "Second stage of labor",
+      "definition": "Stage from full cervical dilation to birth of the fetus.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "First stage of labor",
+        "Third stage of labor",
+        "Labor"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "second-stage-of-labor"
+    },
+    {
+      "term": "Third stage of labor",
+      "definition": "Stage from birth of the fetus to delivery of the placenta.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "First stage of labor",
+        "Second stage of labor",
+        "Labor"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "third-stage-of-labor"
+    },
+    {
+      "term": "Uterine contraction",
+      "definition": "Rhythmic tightening of the uterine muscle that occurs during labor.",
+      "unit": 2,
+      "unitTitle": "Intrapartum",
+      "confusables": [
+        "Braxton Hicks contractions",
+        "Labor",
+        "Cervical effacement"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.15"
+      ],
+      "formula": "",
+      "id": "uterine-contraction"
+    },
+    {
+      "term": "Lactogenesis",
+      "definition": "Process of milk production and secretion beginning after delivery.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Colostrum",
+        "Postpartum period",
+        "Lochia"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.20"
+      ],
+      "formula": "",
+      "id": "lactogenesis"
+    },
+    {
+      "term": "Lochia",
+      "definition": "Vaginal discharge of blood, mucus, and tissue after childbirth.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Postpartum period",
+        "Uterine involution",
+        "Uterine atony"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.20"
+      ],
+      "formula": "",
+      "id": "lochia"
+    },
+    {
+      "term": "Postpartum blues",
+      "definition": "Mild, transient mood changes occurring in the first two weeks after birth.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Postpartum depression",
+        "Postpartum psychosis",
+        "Postpartum period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.20"
+      ],
+      "formula": "",
+      "id": "postpartum-blues"
+    },
+    {
+      "term": "Postpartum depression",
+      "definition": "Mood disorder with persistent sadness and anxiety after childbirth.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Postpartum blues",
+        "Postpartum psychosis",
+        "Postpartum period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.20"
+      ],
+      "formula": "",
+      "id": "postpartum-depression"
+    },
+    {
+      "term": "Postpartum hemorrhage",
+      "definition": "Excessive bleeding after childbirth, usually more than 500 mL after vaginal birth.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Uterine atony",
+        "Lochia",
+        "Postpartum period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.21"
+      ],
+      "formula": "",
+      "id": "postpartum-hemorrhage"
+    },
+    {
+      "term": "Postpartum period",
+      "definition": "Time from birth of the placenta through the first six weeks after delivery.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Postpartum depression",
+        "Lochia",
+        "Uterine involution"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.20"
+      ],
+      "formula": "",
+      "id": "postpartum-period"
+    },
+    {
+      "term": "Postpartum psychosis",
+      "definition": "Severe psychiatric emergency with hallucinations or delusions after childbirth.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Postpartum blues",
+        "Postpartum depression",
+        "Postpartum period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.21"
+      ],
+      "formula": "",
+      "id": "postpartum-psychosis"
+    },
+    {
+      "term": "Uterine atony",
+      "definition": "Failure of the uterus to contract effectively after delivery, causing bleeding.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Uterine involution",
+        "Postpartum hemorrhage",
+        "Postpartum period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.21"
+      ],
+      "formula": "",
+      "id": "uterine-atony"
+    },
+    {
+      "term": "Uterine involution",
+      "definition": "Process by which the uterus returns to its pre-pregnancy size after birth.",
+      "unit": 3,
+      "unitTitle": "Postpartum",
+      "confusables": [
+        "Uterine atony",
+        "Postpartum period",
+        "Lochia"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.20"
+      ],
+      "formula": "",
+      "id": "uterine-involution"
+    },
+    {
+      "term": "Apgar score",
+      "definition": "Standardized assessment of newborn status at one and five minutes after birth.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Colostrum",
+        "Neonatal period",
+        "Rooting reflex"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "apgar-score"
+    },
+    {
+      "term": "Bonding",
+      "definition": "Emotional attachment process between parent and newborn after birth.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Separation anxiety",
+        "Apgar score",
+        "Colostrum"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "bonding"
+    },
+    {
+      "term": "Colostrum",
+      "definition": "First milk produced after birth, rich in antibodies for the newborn.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Lactogenesis",
+        "Apgar score",
+        "Neonatal period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.22"
+      ],
+      "formula": "",
+      "id": "colostrum"
+    },
+    {
+      "term": "Jaundice",
+      "definition": "Yellowing of skin and eyes from elevated bilirubin in newborns.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Apgar score",
+        "Colostrum",
+        "Neonatal period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.23"
+      ],
+      "formula": "",
+      "id": "jaundice"
+    },
+    {
+      "term": "Neonatal period",
+      "definition": "The first twenty-eight days of life after birth for a newborn.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Apgar score",
+        "Colostrum",
+        "Rooting reflex"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "neonatal-period"
+    },
+    {
+      "term": "Newborn weight loss",
+      "definition": "Expected loss of 7 to 10 percent of birth weight in first days after birth.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Failure to thrive",
+        "Dehydration",
+        "Apgar score"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "newborn-weight-loss"
+    },
+    {
+      "term": "Rooting reflex",
+      "definition": "Innate response to facial stimulation that helps newborn find and latch onto nipple.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Suck reflex",
+        "Apgar score",
+        "Colostrum"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "rooting-reflex"
+    },
+    {
+      "term": "Suck reflex",
+      "definition": "Automatic response to oral stimulation causing sucking and swallowing in newborns.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Rooting reflex",
+        "Apgar score",
+        "Colostrum"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "suck-reflex"
+    },
+    {
+      "term": "Surfactant",
+      "definition": "Substance that keeps alveoli open, developing around twenty-eight weeks gestation.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Apgar score",
+        "Colostrum",
+        "Neonatal period"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "surfactant"
+    },
+    {
+      "term": "Thermoregulation",
+      "definition": "Maintenance of stable body temperature, critical for newborns after birth.",
+      "unit": 4,
+      "unitTitle": "Newborn",
+      "confusables": [
+        "Apgar score",
+        "Colostrum",
+        "Neonatal period"
+      ],
+      "sources": [
+        "openstax-maternal-newborn-nursing#ch.22"
+      ],
+      "formula": "",
+      "id": "thermoregulation"
+    },
+    {
+      "term": "Cephalocaudal development",
+      "definition": "Growth pattern progressing from head downward toward trunk and extremities.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Proximodistal development",
+        "Growth",
+        "Developmental milestones"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "cephalocaudal-development"
+    },
+    {
+      "term": "Developmental milestones",
+      "definition": "Skills most children can perform by a given age.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Growth",
+        "Cephalocaudal development",
+        "Proximodistal development"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "developmental-milestones"
+    },
+    {
+      "term": "Growth",
+      "definition": "Increase in height and weight as children mature.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Cephalocaudal development",
+        "Proximodistal development",
+        "Developmental milestones"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "growth"
+    },
+    {
+      "term": "Menarche",
+      "definition": "The first menstrual period, marking the onset of puberty in females.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Puberty",
+        "Cephalocaudal development",
+        "Proximodistal development"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "menarche"
+    },
+    {
+      "term": "Object permanence",
+      "definition": "Understanding that objects continue to exist when out of sight.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Separation anxiety",
+        "Cephalocaudal development",
+        "Proximodistal development"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "object-permanence"
+    },
+    {
+      "term": "Parallel play",
+      "definition": "Toddlers playing near each other without direct interaction.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Cephalocaudal development",
+        "Proximodistal development",
+        "Developmental milestones"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "parallel-play"
+    },
+    {
+      "term": "Proximodistal development",
+      "definition": "Growth pattern progressing from midline outward to extremities.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Cephalocaudal development",
+        "Developmental milestones",
+        "Separation anxiety"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "proximodistal-development"
+    },
+    {
+      "term": "Puberty",
+      "definition": "The process of sexual maturation that occurs during adolescence.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Menarche",
+        "Cephalocaudal development",
+        "Proximodistal development"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "puberty"
+    },
+    {
+      "term": "Separation anxiety",
+      "definition": "Fear of abandonment when primary caregiver leaves, common in infants.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Cephalocaudal development",
+        "Proximodistal development",
+        "Developmental milestones"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "separation-anxiety"
+    },
+    {
+      "term": "Teratogen",
+      "definition": "External agent that can cause fetal abnormalities during development.",
+      "unit": 5,
+      "unitTitle": "Pediatric growth and development",
+      "confusables": [
+        "Cephalocaudal development",
+        "Proximodistal development",
+        "Developmental milestones"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.39"
+      ],
+      "formula": "",
+      "id": "teratogen"
+    },
+    {
+      "term": "Asthma",
+      "definition": "Chronic condition with airway inflammation and narrowing causing wheezing and breathlessness.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Bronchiolitis",
+        "Croup",
+        "Dehydration"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "asthma"
+    },
+    {
+      "term": "Bronchiolitis",
+      "definition": "A viral lower respiratory infection that is common in infants.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Asthma",
+        "Pneumonia",
+        "Dehydration"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "bronchiolitis"
+    },
+    {
+      "term": "Croup",
+      "definition": "Viral respiratory illness causing barking cough and stridor in children.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Asthma",
+        "Dehydration",
+        "Fever"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "croup"
+    },
+    {
+      "term": "Dehydration",
+      "definition": "Condition of excessive fluid loss leading to impaired body function.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Fluid volume deficit",
+        "Asthma",
+        "Fever"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "dehydration"
+    },
+    {
+      "term": "Failure to thrive",
+      "definition": "Inadequate growth in children due to medical or psychosocial factors.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Asthma",
+        "Dehydration",
+        "Fever"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "failure-to-thrive"
+    },
+    {
+      "term": "Febrile seizure",
+      "definition": "Seizure triggered by rapid rise in body temperature in young children.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Fever",
+        "Asthma",
+        "Dehydration"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "febrile-seizure"
+    },
+    {
+      "term": "Fever",
+      "definition": "Elevated body temperature, often a sign of infection in children.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Febrile seizure",
+        "Asthma",
+        "Dehydration"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "fever"
+    },
+    {
+      "term": "Gastroenteritis",
+      "definition": "Inflammation of stomach and intestines causing vomiting and diarrhea.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Dehydration",
+        "Asthma",
+        "Fever"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "gastroenteritis"
+    },
+    {
+      "term": "Otitis media",
+      "definition": "A middle ear infection that is common in young children.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Asthma",
+        "Dehydration",
+        "Fever"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "otitis-media"
+    },
+    {
+      "term": "Respiratory syncytial virus",
+      "definition": "Common virus causing respiratory infections in infants and young children.",
+      "unit": 6,
+      "unitTitle": "Pediatric illness",
+      "confusables": [
+        "Bronchiolitis",
+        "Asthma",
+        "Dehydration"
+      ],
+      "sources": [
+        "openstax-population-health-nurses#ch.26"
+      ],
+      "formula": "",
+      "id": "respiratory-syncytial-virus"
+    }
+  ],
+  "sources": [
+    {
+      "id": "openstax-maternal-newborn-nursing",
+      "title": "Maternal Newborn Nursing",
+      "publisher": "OpenStax",
+      "url": "https://openstax.org/details/books/maternal-newborn-nursing",
+      "license": "CC BY-NC-SA 4.0",
+      "accessDate": "2026-10-25"
+    },
+    {
+      "id": "openstax-fundamentals-nursing",
+      "title": "Fundamentals of Nursing",
+      "publisher": "OpenStax",
+      "url": "https://openstax.org/details/books/fundamentals-nursing",
+      "license": "CC BY-NC-SA 4.0",
+      "accessDate": "2026-10-25"
+    },
+    {
+      "id": "openstax-population-health-nurses",
+      "title": "Population Health for Nurses",
+      "publisher": "OpenStax",
+      "url": "https://openstax.org/details/books/population-health",
+      "license": "CC BY-NC-SA 4.0",
+      "accessDate": "2026-10-25"
+    }
+  ]
+}

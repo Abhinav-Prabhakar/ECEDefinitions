@@ -1,0 +1,1009 @@
+{
+  "version": 1,
+  "id": "health-assessment",
+  "collectionId": "nursing-and-nclex",
+  "section": "core",
+  "name": "Health Assessment",
+  "shortName": "Health assessment",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Health history"
+    },
+    {
+      "number": 2,
+      "title": "Physical exam techniques"
+    },
+    {
+      "number": 3,
+      "title": "Head and neck"
+    },
+    {
+      "number": 4,
+      "title": "Thorax and lungs"
+    },
+    {
+      "number": 5,
+      "title": "Abdomen"
+    },
+    {
+      "number": 6,
+      "title": "Extremities and skin"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "activities-of-daily-living",
+      "term": "Activities of daily living",
+      "definition": "Basic self-care tasks such as bathing, dressing, and eating.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [
+        "ADLs"
+      ],
+      "confusables": [
+        "Functional health",
+        "Mobility",
+        "Health history"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "chief-complaint",
+      "term": "Chief complaint",
+      "definition": "The patient's primary reason for seeking health care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [],
+      "confusables": [
+        "History of present illness",
+        "Past medical history",
+        "Health history"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "demographic-data",
+      "term": "Demographic data",
+      "definition": "Personal information including age, sex, and contact details.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [],
+      "confusables": [
+        "Health history",
+        "Chief complaint",
+        "History of present illness"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "family-health-history",
+      "term": "Family health history",
+      "definition": "Information about health conditions present in the patient's family.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [],
+      "confusables": [
+        "Past medical history",
+        "Health history",
+        "Chief complaint"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "functional-health",
+      "term": "Functional health",
+      "definition": "Ability to perform activities supporting daily living and well-being.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [],
+      "confusables": [
+        "Activities of daily living",
+        "Mobility",
+        "Health history"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "health-history",
+      "term": "Health history",
+      "definition": "A comprehensive interview gathering subjective data to guide nursing care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [],
+      "confusables": [
+        "Review of systems",
+        "Chief complaint",
+        "History of present illness"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "history-of-present-illness",
+      "term": "History of present illness",
+      "definition": "Detailed description of the current health problem and its course.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [
+        "HPI"
+      ],
+      "confusables": [
+        "Chief complaint",
+        "Past medical history",
+        "Review of systems"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "past-medical-history",
+      "term": "Past medical history",
+      "definition": "Record of previous illnesses, surgeries, and chronic conditions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [
+        "PMH"
+      ],
+      "confusables": [
+        "Family health history",
+        "Health history",
+        "Chief complaint"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "review-of-systems",
+      "term": "Review of systems",
+      "definition": "Systematic questions about symptoms across all body systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Health history",
+      "aliases": [
+        "ROS"
+      ],
+      "confusables": [
+        "Health history",
+        "Chief complaint",
+        "History of present illness"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "affect",
+      "term": "Affect",
+      "definition": "Outward display of a person's current emotional state.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Inspection",
+        "Palpation",
+        "Percussion"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.1"
+      ]
+    },
+    {
+      "id": "auscultation",
+      "term": "Auscultation",
+      "definition": "Listening to internal body sounds with a stethoscope.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Percussion",
+        "Palpation",
+        "Inspection"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "body-mass-index",
+      "term": "Body mass index",
+      "definition": "Measure of body fat based on height and weight.",
+      "formula": "BMI",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [
+        "BMI"
+      ],
+      "confusables": [
+        "Inspection",
+        "Palpation",
+        "Percussion"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.1"
+      ]
+    },
+    {
+      "id": "gait",
+      "term": "Gait",
+      "definition": "Pattern of walking observed for balance and coordination.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Mobility",
+        "Inspection",
+        "Palpation"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.1"
+      ]
+    },
+    {
+      "id": "general-survey",
+      "term": "General survey",
+      "definition": "Overall observation of appearance, behavior, and vital signs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Primary survey",
+        "Health history",
+        "Inspection"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.1"
+      ]
+    },
+    {
+      "id": "inspection",
+      "term": "Inspection",
+      "definition": "Visual examination of the patient for abnormalities or distress.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Palpation",
+        "Percussion",
+        "Auscultation"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "palpation",
+      "term": "Palpation",
+      "definition": "Using touch to assess texture, temperature, and tenderness.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Inspection",
+        "Percussion",
+        "Auscultation"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "percussion",
+      "term": "Percussion",
+      "definition": "Tapping the body surface to evaluate underlying structures.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "Palpation",
+        "Auscultation",
+        "Inspection"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "primary-survey",
+      "term": "Primary survey",
+      "definition": "Brief initial check of airway, breathing, and circulation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Physical exam techniques",
+      "aliases": [],
+      "confusables": [
+        "General survey",
+        "Inspection",
+        "Palpation"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.1"
+      ]
+    },
+    {
+      "id": "cranium",
+      "term": "Cranium",
+      "definition": "The bony structure that encloses and protects the brain.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Suture",
+        "Paranasal sinuses",
+        "Nasal septum"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "dysphagia",
+      "term": "Dysphagia",
+      "definition": "Difficulty swallowing due to nerve or structural problems.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Dyspnea",
+        "Cranium",
+        "Suture"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "facial-drooping",
+      "term": "Facial drooping",
+      "definition": "An asymmetrical facial expression caused by nerve damage.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Cranium",
+        "Suture",
+        "Paranasal sinuses"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "larynx",
+      "term": "Larynx",
+      "definition": "Voice box connecting pharynx to trachea and regulating airflow.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [
+        "Voice box"
+      ],
+      "confusables": [
+        "Cranium",
+        "Suture",
+        "Paranasal sinuses"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "lymph-node",
+      "term": "Lymph node",
+      "definition": "Small immune filter that swells during infection response.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Cranium",
+        "Suture",
+        "Paranasal sinuses"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "nasal-septum",
+      "term": "Nasal septum",
+      "definition": "Wall of bone and cartilage dividing the nasal cavity.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Cranium",
+        "Suture",
+        "Paranasal sinuses"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "paranasal-sinuses",
+      "term": "Paranasal sinuses",
+      "definition": "Air-filled spaces in skull bones connected to nasal cavity.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Cranium",
+        "Suture",
+        "Nasal septum"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "sternocleidomastoid",
+      "term": "Sternocleidomastoid",
+      "definition": "Neck muscle that rotates and flexes the head.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Cranium",
+        "Suture",
+        "Paranasal sinuses"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "suture",
+      "term": "Suture",
+      "definition": "Fibrous joint connecting adjacent bones of the skull.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Head and neck",
+      "aliases": [],
+      "confusables": [
+        "Cranium",
+        "Paranasal sinuses",
+        "Nasal septum"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.7"
+      ]
+    },
+    {
+      "id": "barrel-chest",
+      "term": "Barrel chest",
+      "definition": "Chest shape with equal front-to-back and side-to-side diameters.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Ventilation",
+        "Respiration",
+        "Dyspnea"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "clubbing",
+      "term": "Clubbing",
+      "definition": "Bulbous enlargement of the fingertips from chronic hypoxia.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Cyanosis",
+        "Ventilation",
+        "Respiration"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "crackles",
+      "term": "Crackles",
+      "definition": "Popping or crackling lung sounds from fluid in alveoli.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [
+        "Rales"
+      ],
+      "confusables": [
+        "Wheezes",
+        "Ventilation",
+        "Respiration"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "cyanosis",
+      "term": "Cyanosis",
+      "definition": "Bluish discoloration of the skin from poor oxygenation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Jaundice",
+        "Ventilation",
+        "Respiration"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "dyspnea",
+      "term": "Dyspnea",
+      "definition": "Subjective feeling of shortness of breath or air hunger.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Dysphagia",
+        "Tachypnea",
+        "Ventilation"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "hypoxemia",
+      "term": "Hypoxemia",
+      "definition": "Abnormally low level of oxygen in the blood.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Cyanosis",
+        "Ventilation",
+        "Respiration"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "respiration",
+      "term": "Respiration",
+      "definition": "Ventilation plus gas exchange at the alveolar level.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Ventilation",
+        "Dyspnea",
+        "Tachypnea"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "tachypnea",
+      "term": "Tachypnea",
+      "definition": "Respiratory rate greater than twenty breaths per minute.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Dyspnea",
+        "Ventilation",
+        "Respiration"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "ventilation",
+      "term": "Ventilation",
+      "definition": "Mechanical movement of air into and out of lungs.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Respiration",
+        "Dyspnea",
+        "Tachypnea"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "wheezes",
+      "term": "Wheezes",
+      "definition": "High-pitched whistling sounds produced by the narrowed airways.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Thorax and lungs",
+      "aliases": [],
+      "confusables": [
+        "Crackles",
+        "Ventilation",
+        "Respiration"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.10"
+      ]
+    },
+    {
+      "id": "borborygmus",
+      "term": "Borborygmus",
+      "definition": "Audible stomach growling caused by hyperactive bowel sounds.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds",
+        "Rebound tenderness"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "distention",
+      "term": "Distention",
+      "definition": "Abnormal swelling or outward enlargement of the abdomen.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds",
+        "Borborygmus"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "hematemesis",
+      "term": "Hematemesis",
+      "definition": "Vomiting blood, a common sign of gastrointestinal bleeding.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Melena",
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "hyperactive-bowel-sounds",
+      "term": "Hyperactive bowel sounds",
+      "definition": "Loud frequent gurgling suggesting bowel obstruction or gastroenteritis.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Hypoactive bowel sounds",
+        "Borborygmus",
+        "Rebound tenderness"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "hypoactive-bowel-sounds",
+      "term": "Hypoactive bowel sounds",
+      "definition": "Decreased bowel sounds associated with constipation or ileus.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Hyperactive bowel sounds",
+        "Borborygmus",
+        "Rebound tenderness"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "melena",
+      "term": "Melena",
+      "definition": "Dark tarry stools indicating upper gastrointestinal tract bleeding.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Hematemesis",
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "rebound-tenderness",
+      "term": "Rebound tenderness",
+      "definition": "Pain felt when abdominal pressure is suddenly released.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Rigidity",
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "rigidity",
+      "term": "Rigidity",
+      "definition": "Involuntary abdominal muscle contraction due to peritoneal inflammation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds",
+        "Borborygmus"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "voluntary-guarding",
+      "term": "Voluntary guarding",
+      "definition": "Conscious tensing of abdominal muscles during the exam.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Abdomen",
+      "aliases": [],
+      "confusables": [
+        "Rigidity",
+        "Hyperactive bowel sounds",
+        "Hypoactive bowel sounds"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.12"
+      ]
+    },
+    {
+      "id": "bulla",
+      "term": "Bulla",
+      "definition": "A fluid-filled blister larger than five millimeters in diameter.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Vesicle",
+        "Pustule",
+        "Epidermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "dermis",
+      "term": "Dermis",
+      "definition": "Inner thick layer containing vessels, follicles, and nerves.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Epidermis",
+        "Hypodermis",
+        "Melanin"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "epidermis",
+      "term": "Epidermis",
+      "definition": "Outermost thin layer of skin made of epithelial cells.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Dermis",
+        "Hypodermis",
+        "Melanin"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "hypodermis",
+      "term": "Hypodermis",
+      "definition": "Subcutaneous layer of fat connecting skin to muscle.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [
+        "Subcutaneous tissue"
+      ],
+      "confusables": [
+        "Dermis",
+        "Epidermis",
+        "Melanin"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "lesion",
+      "term": "Lesion",
+      "definition": "An area of abnormal or damaged body tissue.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Epidermis",
+        "Dermis",
+        "Hypodermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "macule",
+      "term": "Macule",
+      "definition": "A flat discolored spot on the skin surface.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Papule",
+        "Epidermis",
+        "Dermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "melanin",
+      "term": "Melanin",
+      "definition": "Pigment that produces skin color and UV protection.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Epidermis",
+        "Dermis",
+        "Hypodermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "papule",
+      "term": "Papule",
+      "definition": "A small raised solid bump on the skin.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Macule",
+        "Pustule",
+        "Epidermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "pustule",
+      "term": "Pustule",
+      "definition": "A raised pus-filled bump on the skin surface.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Papule",
+        "Vesicle",
+        "Epidermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "vesicle",
+      "term": "Vesicle",
+      "definition": "A small fluid-filled blister on the skin surface.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Extremities and skin",
+      "aliases": [],
+      "confusables": [
+        "Bulla",
+        "Pustule",
+        "Epidermis"
+      ],
+      "sources": [
+        "nursingskills-openrn#ch.14"
+      ]
+    }
+  ]
+}

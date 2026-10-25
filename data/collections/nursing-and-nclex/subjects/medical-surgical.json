@@ -1,0 +1,1061 @@
+{
+  "version": 1,
+  "id": "medical-surgical",
+  "collectionId": "nursing-and-nclex",
+  "section": "clinical",
+  "name": "Medical-Surgical Nursing",
+  "shortName": "Med-surg",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Cardiovascular"
+    },
+    {
+      "number": 2,
+      "title": "Respiratory"
+    },
+    {
+      "number": 3,
+      "title": "Endocrine"
+    },
+    {
+      "number": 4,
+      "title": "Gastrointestinal and renal"
+    },
+    {
+      "number": 5,
+      "title": "Neurological and musculoskeletal"
+    },
+    {
+      "number": 6,
+      "title": "Fluids and electrolytes"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "afterload",
+      "term": "Afterload",
+      "definition": "The pressure the heart must overcome to eject blood during ventricular contraction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Preload",
+        "Stroke volume",
+        "Cardiac output"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "atrial-fibrillation",
+      "term": "Atrial fibrillation",
+      "definition": "An irregular, often rapid rhythm caused by disorganized electrical activity in the atria.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Dysrhythmia",
+        "Cardiac output",
+        "Stroke volume"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "cardiac-output",
+      "term": "Cardiac output",
+      "definition": "The volume of blood the heart pumps into the aorta each minute.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Stroke volume",
+        "Preload",
+        "Afterload"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "dysrhythmia",
+      "term": "Dysrhythmia",
+      "definition": "An interruption of the heart's normal electrical conduction, causing irregular rhythm.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Atrial fibrillation",
+        "Heart failure",
+        "Cardiac output"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "heart-failure",
+      "term": "Heart failure",
+      "definition": "A chronic condition where inefficient pumping reduces perfusion throughout the body.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Myocardial infarction",
+        "Hypertension",
+        "Dysrhythmia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "hypertension",
+      "term": "Hypertension",
+      "definition": "Persistently elevated blood pressure that increases risk of heart, brain, and kidney disease.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Heart failure",
+        "Myocardial infarction",
+        "Cardiac output"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "myocardial-infarction",
+      "term": "Myocardial infarction",
+      "definition": "Death of heart muscle from prolonged interruption of coronary blood supply.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Heart failure",
+        "Cardiac output",
+        "Stroke volume"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "peripheral-vascular-disease",
+      "term": "Peripheral vascular disease",
+      "definition": "Narrowed blood vessels reducing circulation to the limbs, often from atherosclerosis.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Hypertension",
+        "Myocardial infarction",
+        "Cardiac output"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "preload",
+      "term": "Preload",
+      "definition": "The initial stretch of cardiac muscle cells before contraction, reflecting ventricular filling.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Afterload",
+        "Stroke volume",
+        "Cardiac output"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "stroke-volume",
+      "term": "Stroke volume",
+      "definition": "The amount of blood ejected from the left ventricle during one systolic contraction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Cardiovascular",
+      "aliases": [],
+      "confusables": [
+        "Cardiac output",
+        "Preload",
+        "Afterload"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.12"
+      ]
+    },
+    {
+      "id": "acute-respiratory-distress-syndrome",
+      "term": "Acute respiratory distress syndrome",
+      "definition": "Severe inflammatory lung injury causing hypoxemia and respiratory failure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Pneumonia",
+        "Pneumothorax",
+        "Atelectasis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "asthma",
+      "term": "Asthma",
+      "definition": "A chronic inflammatory airway disorder causing wheezing, breathlessness, and reversible airflow obstruction.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Chronic obstructive pulmonary disease",
+        "Bronchiectasis",
+        "Pneumonia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "atelectasis",
+      "term": "Atelectasis",
+      "definition": "Collapse of lung tissue or alveoli, reducing gas exchange.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Pneumothorax",
+        "Pleural effusion",
+        "Pneumonia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "bronchiectasis",
+      "term": "Bronchiectasis",
+      "definition": "Permanent dilation of bronchi from chronic inflammation, causing cough and sputum.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Asthma",
+        "Cystic fibrosis",
+        "Chronic obstructive pulmonary disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "chronic-obstructive-pulmonary-disease",
+      "term": "Chronic obstructive pulmonary disease",
+      "definition": "A progressive lung disease with persistent airflow limitation, often from smoking.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Asthma",
+        "Bronchiectasis",
+        "Pneumonia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "cystic-fibrosis",
+      "term": "Cystic fibrosis",
+      "definition": "A genetic disorder causing thick mucus buildup that obstructs lungs and digestive tract.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Bronchiectasis",
+        "Asthma",
+        "Pneumonia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "pleural-effusion",
+      "term": "Pleural effusion",
+      "definition": "Excess fluid accumulation in the pleural space surrounding the lungs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Pneumothorax",
+        "Atelectasis",
+        "Pneumonia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "pneumonia",
+      "term": "Pneumonia",
+      "definition": "Infection inflaming the air sacs, which may fill with fluid or pus.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Pneumothorax",
+        "Pleural effusion",
+        "Tuberculosis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "pneumothorax",
+      "term": "Pneumothorax",
+      "definition": "Air in the pleural space causing partial or complete lung collapse.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Pleural effusion",
+        "Atelectasis",
+        "Pneumonia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "tuberculosis",
+      "term": "Tuberculosis",
+      "definition": "A contagious bacterial infection primarily affecting the lungs and spread by airborne droplets.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Respiratory",
+      "aliases": [],
+      "confusables": [
+        "Pneumonia",
+        "Cystic fibrosis",
+        "Bronchiectasis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.11"
+      ]
+    },
+    {
+      "id": "addison-disease",
+      "term": "Addison disease",
+      "definition": "Adrenal insufficiency causing cortisol deficiency, fatigue, and hypotension.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Cushing syndrome",
+        "Hypothyroidism",
+        "Diabetes mellitus"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "cushing-syndrome",
+      "term": "Cushing syndrome",
+      "definition": "Chronic excess cortisol causing weight gain, hypertension, and skin changes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Addison disease",
+        "Hyperthyroidism",
+        "Diabetes mellitus"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "diabetes-mellitus",
+      "term": "Diabetes mellitus",
+      "definition": "A metabolic disorder of chronic hyperglycemia from insulin deficiency or resistance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Type 1 diabetes mellitus",
+        "Type 2 diabetes mellitus",
+        "Diabetic ketoacidosis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "diabetic-ketoacidosis",
+      "term": "Diabetic ketoacidosis",
+      "definition": "A life-threatening hyperglycemic emergency with ketosis and metabolic acidosis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Diabetes mellitus",
+        "Type 1 diabetes mellitus",
+        "Type 2 diabetes mellitus"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "hyperparathyroidism",
+      "term": "Hyperparathyroidism",
+      "definition": "Excess parathyroid hormone raising blood calcium and weakening bones.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Hypoparathyroidism",
+        "Hypercalcemia",
+        "Osteoporosis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "hyperthyroidism",
+      "term": "Hyperthyroidism",
+      "definition": "Excess thyroid hormone production increasing metabolism and heart rate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Hypothyroidism",
+        "Diabetes mellitus",
+        "Type 1 diabetes mellitus"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "hypoparathyroidism",
+      "term": "Hypoparathyroidism",
+      "definition": "Insufficient parathyroid hormone lowering blood calcium and causing tetany.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Hyperparathyroidism",
+        "Hypocalcemia",
+        "Hypercalcemia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "hypothyroidism",
+      "term": "Hypothyroidism",
+      "definition": "Insufficient thyroid hormone slowing metabolism and causing fatigue and cold intolerance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Hyperthyroidism",
+        "Diabetes mellitus",
+        "Type 1 diabetes mellitus"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "type-1-diabetes-mellitus",
+      "term": "Type 1 diabetes mellitus",
+      "definition": "Autoimmune destruction of pancreatic beta cells causing absolute insulin deficiency.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Type 2 diabetes mellitus",
+        "Diabetes mellitus",
+        "Diabetic ketoacidosis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "type-2-diabetes-mellitus",
+      "term": "Type 2 diabetes mellitus",
+      "definition": "Insulin resistance with relative insulin deficiency, often linked to obesity.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Endocrine",
+      "aliases": [],
+      "confusables": [
+        "Type 1 diabetes mellitus",
+        "Diabetes mellitus",
+        "Diabetic ketoacidosis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.21"
+      ]
+    },
+    {
+      "id": "cholecystitis",
+      "term": "Cholecystitis",
+      "definition": "Inflammation of the gallbladder, usually from gallstone obstruction.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Pancreatitis",
+        "Hepatitis",
+        "Gastroesophageal reflux disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "chronic-kidney-disease",
+      "term": "Chronic kidney disease",
+      "definition": "Progressive loss of kidney function over months to years.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Gastroesophageal reflux disease",
+        "Peptic ulcer disease",
+        "Inflammatory bowel disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.20"
+      ]
+    },
+    {
+      "id": "cirrhosis",
+      "term": "Cirrhosis",
+      "definition": "Late-stage liver scarring from chronic disease, impairing liver function.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Hepatitis",
+        "Gastroesophageal reflux disease",
+        "Peptic ulcer disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "crohn-disease",
+      "term": "Crohn disease",
+      "definition": "Chronic transmural inflammation that can affect any part of the gastrointestinal tract.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Ulcerative colitis",
+        "Inflammatory bowel disease",
+        "Gastroesophageal reflux disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "gastroesophageal-reflux-disease",
+      "term": "Gastroesophageal reflux disease",
+      "definition": "Backflow of stomach acid into the esophagus causing heartburn.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Peptic ulcer disease",
+        "Dysphagia",
+        "Inflammatory bowel disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "hepatitis",
+      "term": "Hepatitis",
+      "definition": "Inflammation of the liver, often from viral infection or toxins.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Cirrhosis",
+        "Cholecystitis",
+        "Pancreatitis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "inflammatory-bowel-disease",
+      "term": "Inflammatory bowel disease",
+      "definition": "Chronic inflammation of the gastrointestinal tract, including Crohn disease and ulcerative colitis.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Crohn disease",
+        "Ulcerative colitis",
+        "Gastroesophageal reflux disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "pancreatitis",
+      "term": "Pancreatitis",
+      "definition": "Inflammation of the pancreas causing severe abdominal pain and enzyme release.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Cholecystitis",
+        "Peptic ulcer disease",
+        "Hepatitis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "peptic-ulcer-disease",
+      "term": "Peptic ulcer disease",
+      "definition": "Open sores in stomach or duodenal lining from acid or infection.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Gastroesophageal reflux disease",
+        "Inflammatory bowel disease",
+        "Crohn disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "ulcerative-colitis",
+      "term": "Ulcerative colitis",
+      "definition": "Chronic inflammation limited to the colon and rectal mucosa.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Gastrointestinal and renal",
+      "aliases": [],
+      "confusables": [
+        "Crohn disease",
+        "Inflammatory bowel disease",
+        "Gastroesophageal reflux disease"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.19"
+      ]
+    },
+    {
+      "id": "alzheimer-disease",
+      "term": "Alzheimer disease",
+      "definition": "Progressive neurodegenerative disorder causing memory loss and cognitive decline.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Parkinson disease",
+        "Multiple sclerosis",
+        "Ischemic stroke"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "bone-fracture",
+      "term": "Bone fracture",
+      "definition": "A break in the continuity of a bone from trauma or stress.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Osteoporosis",
+        "Ischemic stroke",
+        "Hemorrhagic stroke"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.13"
+      ]
+    },
+    {
+      "id": "hemorrhagic-stroke",
+      "term": "Hemorrhagic stroke",
+      "definition": "Brain injury from bleeding into or around the brain tissue.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Ischemic stroke",
+        "Transient ischemic attack",
+        "Seizure"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "ischemic-stroke",
+      "term": "Ischemic stroke",
+      "definition": "Brain infarction from blocked cerebral blood flow, often thrombotic or embolic.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Hemorrhagic stroke",
+        "Transient ischemic attack",
+        "Seizure"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "multiple-sclerosis",
+      "term": "Multiple sclerosis",
+      "definition": "Autoimmune demyelination of central nervous system neurons disrupting nerve conduction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Parkinson disease",
+        "Alzheimer disease",
+        "Ischemic stroke"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "osteoarthritis",
+      "term": "Osteoarthritis",
+      "definition": "Degenerative joint disease with cartilage breakdown and bone changes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Osteoporosis",
+        "Ischemic stroke",
+        "Hemorrhagic stroke"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.13"
+      ]
+    },
+    {
+      "id": "osteoporosis",
+      "term": "Osteoporosis",
+      "definition": "Reduced bone density and mass increasing fracture risk.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Osteoarthritis",
+        "Bone fracture",
+        "Ischemic stroke"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.13"
+      ]
+    },
+    {
+      "id": "parkinson-disease",
+      "term": "Parkinson disease",
+      "definition": "Progressive neurodegeneration causing tremor, rigidity, and slowed movement.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Multiple sclerosis",
+        "Alzheimer disease",
+        "Ischemic stroke"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "seizure",
+      "term": "Seizure",
+      "definition": "Sudden, uncontrolled electrical disturbance in the brain altering behavior or consciousness.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Ischemic stroke",
+        "Hemorrhagic stroke",
+        "Transient ischemic attack"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.17"
+      ]
+    },
+    {
+      "id": "transient-ischemic-attack",
+      "term": "Transient ischemic attack",
+      "definition": "Brief neurological dysfunction from temporary focal brain ischemia without infarction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Neurological and musculoskeletal",
+      "aliases": [],
+      "confusables": [
+        "Ischemic stroke",
+        "Hemorrhagic stroke",
+        "Seizure"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.15"
+      ]
+    },
+    {
+      "id": "acid-base-imbalance",
+      "term": "Acid-base imbalance",
+      "definition": "Disruption of blood pH homeostasis from respiratory or metabolic causes.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Homeostasis",
+        "Fluid volume deficit",
+        "Fluid volume excess"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "fluid-volume-deficit",
+      "term": "Fluid volume deficit",
+      "definition": "Loss of body fluid exceeding intake, causing dehydration and hypovolemia.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Fluid volume excess",
+        "Dehydration",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "fluid-volume-excess",
+      "term": "Fluid volume excess",
+      "definition": "Retention of body fluid leading to edema and hypervolemia.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Fluid volume deficit",
+        "Homeostasis",
+        "Hyponatremia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "homeostasis",
+      "term": "Homeostasis",
+      "definition": "Maintenance of stable internal environment through physiological regulatory mechanisms.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Fluid volume deficit",
+        "Fluid volume excess",
+        "Acid-base imbalance"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "hypercalcemia",
+      "term": "Hypercalcemia",
+      "definition": "Serum calcium above normal, causing weakness, confusion, and kidney stones.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Hypocalcemia",
+        "Hyperparathyroidism",
+        "Hyperkalemia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "hyperkalemia",
+      "term": "Hyperkalemia",
+      "definition": "Serum potassium above normal, risking cardiac conduction abnormalities.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Hypokalemia",
+        "Hypernatremia",
+        "Hypocalcemia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "hypernatremia",
+      "term": "Hypernatremia",
+      "definition": "Serum sodium above normal, usually from water loss and dehydration.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Hyponatremia",
+        "Hypokalemia",
+        "Fluid volume deficit"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "hypocalcemia",
+      "term": "Hypocalcemia",
+      "definition": "Serum calcium below normal, causing neuromuscular irritability and tetany.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Hypercalcemia",
+        "Hypokalemia",
+        "Homeostasis"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "hypokalemia",
+      "term": "Hypokalemia",
+      "definition": "Serum potassium below normal, predisposing to muscle weakness and arrhythmias.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Hyperkalemia",
+        "Hyponatremia",
+        "Hypocalcemia"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    },
+    {
+      "id": "hyponatremia",
+      "term": "Hyponatremia",
+      "definition": "Serum sodium below normal, causing cellular swelling and neurological symptoms.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Fluids and electrolytes",
+      "aliases": [],
+      "confusables": [
+        "Hypernatremia",
+        "Hypokalemia",
+        "Fluid volume excess"
+      ],
+      "sources": [
+        "openstax-medical-surgical-nursing#ch.10"
+      ]
+    }
+  ]
+}

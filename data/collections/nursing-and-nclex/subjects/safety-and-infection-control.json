@@ -1,0 +1,993 @@
+{
+  "version": 1,
+  "id": "safety-and-infection-control",
+  "collectionId": "nursing-and-nclex",
+  "section": "core",
+  "name": "Safety and Infection Control",
+  "shortName": "Safety and infection",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Infection control principles"
+    },
+    {
+      "number": 2,
+      "title": "Hand hygiene and PPE"
+    },
+    {
+      "number": 3,
+      "title": "Isolation precautions"
+    },
+    {
+      "number": 4,
+      "title": "Medication safety"
+    },
+    {
+      "number": 5,
+      "title": "Fall and restraint safety"
+    },
+    {
+      "number": 6,
+      "title": "Emergency preparedness"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "aseptic-technique",
+      "term": "Aseptic technique",
+      "definition": "Practices that prevent transfer of microorganisms during care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Disinfection",
+        "Sterilization",
+        "Infection"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-6-preventing-infection"
+      ]
+    },
+    {
+      "id": "chain-of-infection",
+      "term": "Chain of infection",
+      "definition": "Cyclic process describing how an infection spreads from source to host.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Infection",
+        "Standard precautions",
+        "Disinfection"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-6-preventing-infection"
+      ]
+    },
+    {
+      "id": "disinfection",
+      "term": "Disinfection",
+      "definition": "Process that removes microorganisms from surfaces and equipment.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Sterilization",
+        "Aseptic technique",
+        "Chain of infection"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-6-preventing-infection"
+      ]
+    },
+    {
+      "id": "healthcare-associated-infection",
+      "term": "Healthcare-associated infection",
+      "definition": "An infection acquired while receiving care in a healthcare facility.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Infection",
+        "Pathogen",
+        "Standard precautions"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-4-infection"
+      ]
+    },
+    {
+      "id": "infection",
+      "term": "Infection",
+      "definition": "Invasion and growth of a microorganism within the body.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Pathogen",
+        "Virulence",
+        "Healthcare-associated infection"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-4-infection"
+      ]
+    },
+    {
+      "id": "pathogen",
+      "term": "Pathogen",
+      "definition": "A microorganism capable of causing disease in a host.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Infection",
+        "Virulence",
+        "Healthcare-associated infection"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-4-infection"
+      ]
+    },
+    {
+      "id": "standard-precautions",
+      "term": "Standard precautions",
+      "definition": "Minimum infection prevention practices applied to all patient care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Transmission-based precautions",
+        "Isolation",
+        "Healthcare-associated infection"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "sterilization",
+      "term": "Sterilization",
+      "definition": "Process that destroys all pathogens including spores and viruses.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Disinfection",
+        "Aseptic technique",
+        "Standard precautions"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-6-preventing-infection"
+      ]
+    },
+    {
+      "id": "virulence",
+      "term": "Virulence",
+      "definition": "Degree to which a microorganism is likely to cause disease.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Infection control principles",
+      "aliases": [],
+      "confusables": [
+        "Pathogen",
+        "Infection",
+        "Healthcare-associated infection"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.9-4-infection"
+      ]
+    },
+    {
+      "id": "alcohol-based-hand-rub",
+      "term": "Alcohol-based hand rub",
+      "definition": "Antiseptic rub used when hands are not visibly soiled.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Hand hygiene",
+        "Gloves",
+        "Personal protective equipment"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "eye-protection",
+      "term": "Eye protection",
+      "definition": "Goggles or face shield protecting eyes from splashes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Mask",
+        "Gown",
+        "Respirator"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "gloves",
+      "term": "Gloves",
+      "definition": "Hand covering used to prevent contact with infectious material.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Gown",
+        "Mask",
+        "Hand hygiene"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "gown",
+      "term": "Gown",
+      "definition": "Protective garment worn to prevent contamination of clothing.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Gloves",
+        "Mask",
+        "Eye protection"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "hand-hygiene",
+      "term": "Hand hygiene",
+      "definition": "Cleaning hands with soap and water or alcohol rub.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Alcohol-based hand rub",
+        "Gloves",
+        "Respiratory hygiene"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "mask",
+      "term": "Mask",
+      "definition": "Face covering that protects against respiratory droplet exposure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Respirator",
+        "Gown",
+        "Eye protection"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "personal-protective-equipment",
+      "term": "Personal protective equipment",
+      "definition": "Gloves, gowns, masks, and eyewear protecting against exposure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Gloves",
+        "Gown",
+        "Mask"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "respirator",
+      "term": "Respirator",
+      "definition": "Tight-fitting mask filtering airborne particles from inhaled air.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Mask",
+        "Eye protection",
+        "Personal protective equipment"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "respiratory-hygiene",
+      "term": "Respiratory hygiene",
+      "definition": "Measures to contain respiratory secretions and reduce transmission.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Hand hygiene and PPE",
+      "aliases": [],
+      "confusables": [
+        "Hand hygiene",
+        "Mask",
+        "Standard precautions"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "airborne-infection-isolation-room",
+      "term": "Airborne infection isolation room",
+      "definition": "Negative pressure room used to isolate airborne infections.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Airborne precautions",
+        "Respirator",
+        "Isolation"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "airborne-precautions",
+      "term": "Airborne precautions",
+      "definition": "Precautions for infections spread by small airborne particles.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Droplet precautions",
+        "Contact precautions",
+        "Respirator"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "cohorting",
+      "term": "Cohorting",
+      "definition": "Placing patients with same infection together in one area.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Isolation",
+        "Transmission-based precautions",
+        "Standard precautions"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "contact-precautions",
+      "term": "Contact precautions",
+      "definition": "Precautions for infections spread by direct or indirect contact.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Droplet precautions",
+        "Airborne precautions",
+        "Enteric precautions"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "droplet-precautions",
+      "term": "Droplet precautions",
+      "definition": "Precautions for infections spread by large respiratory droplets.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Contact precautions",
+        "Airborne precautions",
+        "Respiratory hygiene"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "enteric-precautions",
+      "term": "Enteric precautions",
+      "definition": "Precautions for gastrointestinal pathogens spread through fecal contamination.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Contact precautions",
+        "Reverse isolation",
+        "Isolation"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "isolation",
+      "term": "Isolation",
+      "definition": "Separation of a patient to prevent spread of infection.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Reverse isolation",
+        "Transmission-based precautions",
+        "Standard precautions"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "reverse-isolation",
+      "term": "Reverse isolation",
+      "definition": "Protection of immunocompromised patients from environmental pathogens in healthcare.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Isolation",
+        "Enteric precautions",
+        "Standard precautions"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "transmission-based-precautions",
+      "term": "Transmission-based precautions",
+      "definition": "Extra precautions for patients with highly transmissible pathogens.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Isolation precautions",
+      "aliases": [],
+      "confusables": [
+        "Standard precautions",
+        "Contact precautions",
+        "Isolation"
+      ],
+      "sources": [
+        "cdc-standard-precautions#sec.standard-precautions"
+      ]
+    },
+    {
+      "id": "barcode-medication-administration",
+      "term": "Barcode medication administration",
+      "definition": "Technology matching patient and medication barcodes before dosing.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Rights of medication administration",
+        "Medication reconciliation",
+        "Independent double check"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "error-prone-abbreviation",
+      "term": "Error-prone abbreviation",
+      "definition": "Abbreviation frequently misinterpreted and linked to medication errors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Look-alike sound-alike drug",
+        "Tall man lettering",
+        "Medication error"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "high-alert-medication",
+      "term": "High-alert medication",
+      "definition": "Medication with high risk of significant harm if misused.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Look-alike sound-alike drug",
+        "Tall man lettering",
+        "Medication error"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "independent-double-check",
+      "term": "Independent double check",
+      "definition": "Second clinician independently verifies high-risk medication before administration.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Barcode medication administration",
+        "Rights of medication administration",
+        "Medication error"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "look-alike-sound-alike-drug",
+      "term": "Look-alike sound-alike drug",
+      "definition": "Medication whose name looks or sounds like another drug.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "High-alert medication",
+        "Tall man lettering",
+        "Error-prone abbreviation"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "medication-error",
+      "term": "Medication error",
+      "definition": "Any preventable event causing inappropriate medication use or harm.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "High-alert medication",
+        "Medication reconciliation",
+        "Independent double check"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "medication-reconciliation",
+      "term": "Medication reconciliation",
+      "definition": "Process of comparing and updating medications across care transitions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Medication error",
+        "Rights of medication administration",
+        "Barcode medication administration"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "rights-of-medication-administration",
+      "term": "Rights of medication administration",
+      "definition": "Checklist of rights nurses verify for safe medication delivery.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Medication error",
+        "Barcode medication administration",
+        "Medication reconciliation"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "tall-man-lettering",
+      "term": "Tall man lettering",
+      "definition": "Mixed-case lettering highlighting differences in similar drug names.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Medication safety",
+      "aliases": [],
+      "confusables": [
+        "Look-alike sound-alike drug",
+        "High-alert medication",
+        "Error-prone abbreviation"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-3-safety-strategies"
+      ]
+    },
+    {
+      "id": "behavioral-restraint",
+      "term": "Behavioral restraint",
+      "definition": "Restraint used for violent or self-destructive patient behavior.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Medical restraint",
+        "Restraints",
+        "Seclusion"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-7-restraints"
+      ]
+    },
+    {
+      "id": "chemical-restraint",
+      "term": "Chemical restraint",
+      "definition": "Medication used to control behavior or restrict movement.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Restraints",
+        "Seclusion",
+        "Behavioral restraint"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-7-restraints"
+      ]
+    },
+    {
+      "id": "fall",
+      "term": "Fall",
+      "definition": "Unintentional descent to the ground or lower surface.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Fall risk assessment",
+        "Universal fall precautions",
+        "Restraints"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-6-preventing-falls"
+      ]
+    },
+    {
+      "id": "fall-risk-assessment",
+      "term": "Fall risk assessment",
+      "definition": "Evaluation identifying patient factors increasing likelihood of falling.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Fall",
+        "Universal fall precautions",
+        "Morse Fall Scale"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-6-preventing-falls"
+      ]
+    },
+    {
+      "id": "medical-restraint",
+      "term": "Medical restraint",
+      "definition": "Restraint used to manage nonviolent behavior such as tube removal.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Behavioral restraint",
+        "Restraints",
+        "Chemical restraint"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-7-restraints"
+      ]
+    },
+    {
+      "id": "morse-fall-scale",
+      "term": "Morse Fall Scale",
+      "definition": "Tool scoring patient fall risk from clinical factors.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Fall risk assessment",
+        "Universal fall precautions",
+        "Scheduled hourly rounding"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-6-preventing-falls"
+      ]
+    },
+    {
+      "id": "restraints",
+      "term": "Restraints",
+      "definition": "Devices that restrict patient movement to prevent harm.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Chemical restraint",
+        "Seclusion",
+        "Medical restraint"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-7-restraints"
+      ]
+    },
+    {
+      "id": "scheduled-hourly-rounding",
+      "term": "Scheduled hourly rounding",
+      "definition": "Regular checks meeting patient needs to reduce falls.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Universal fall precautions",
+        "Fall risk assessment",
+        "Restraints"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-6-preventing-falls"
+      ]
+    },
+    {
+      "id": "seclusion",
+      "term": "Seclusion",
+      "definition": "Confinement of a patient in a locked room.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Restraints",
+        "Chemical restraint",
+        "Behavioral restraint"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-7-restraints"
+      ]
+    },
+    {
+      "id": "universal-fall-precautions",
+      "term": "Universal fall precautions",
+      "definition": "Safety measures applied to all patients to prevent falls.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Fall and restraint safety",
+      "aliases": [],
+      "confusables": [
+        "Fall risk assessment",
+        "Scheduled hourly rounding",
+        "Restraints"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-6-preventing-falls"
+      ]
+    },
+    {
+      "id": "decontamination",
+      "term": "Decontamination",
+      "definition": "Removing hazardous substances from a person or equipment.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Mitigation",
+        "RACE",
+        "PASS"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "disaster",
+      "term": "Disaster",
+      "definition": "Serious disruption of community functioning from hazardous events.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Emergency preparedness",
+        "Mitigation",
+        "Triage"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "disaster-triage",
+      "term": "Disaster triage",
+      "definition": "Distributing injured victims to facilities according to severity.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Triage",
+        "Field triage",
+        "START triage"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "emergency-preparedness",
+      "term": "Emergency preparedness",
+      "definition": "Planning to reduce disaster risks and protect population health.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Disaster",
+        "Mitigation",
+        "Triage"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "field-triage",
+      "term": "Field triage",
+      "definition": "Sorting victims by injury severity at disaster scene.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Triage",
+        "Disaster triage",
+        "START triage"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "mitigation",
+      "term": "Mitigation",
+      "definition": "Actions taken to reduce cause or impact of disasters.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Emergency preparedness",
+        "Disaster",
+        "Decontamination"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "pass",
+      "term": "PASS",
+      "definition": "Steps for using a fire extinguisher: Pull, Aim, Squeeze, Sweep.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "RACE",
+        "Decontamination",
+        "Disaster"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "race",
+      "term": "RACE",
+      "definition": "Fire response acronym: Rescue, Alarm, Confine, Extinguish or Evacuate.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "PASS",
+        "Decontamination",
+        "Disaster"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "start-triage",
+      "term": "START triage",
+      "definition": "Simple Triage and Rapid Treatment system using color tags.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Triage",
+        "Field triage",
+        "Disaster triage"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    },
+    {
+      "id": "triage",
+      "term": "Triage",
+      "definition": "Prioritizing patients by severity to allocate limited resources.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Emergency preparedness",
+      "aliases": [],
+      "confusables": [
+        "Field triage",
+        "Disaster triage",
+        "START triage"
+      ],
+      "sources": [
+        "nursingfund-openrn-sec#sec.5-9-environmental-safety"
+      ]
+    }
+  ]
+}

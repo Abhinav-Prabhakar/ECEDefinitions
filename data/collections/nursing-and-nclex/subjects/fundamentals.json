@@ -1,0 +1,1079 @@
+{
+  "version": 1,
+  "id": "fundamentals",
+  "collectionId": "nursing-and-nclex",
+  "section": "core",
+  "name": "Fundamentals of Nursing",
+  "shortName": "Fundamentals",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Nursing process"
+    },
+    {
+      "number": 2,
+      "title": "Vital signs"
+    },
+    {
+      "number": 3,
+      "title": "Hygiene and comfort"
+    },
+    {
+      "number": 4,
+      "title": "Mobility and safety"
+    },
+    {
+      "number": 5,
+      "title": "Nutrition and elimination"
+    },
+    {
+      "number": 6,
+      "title": "Documentation and communication"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "adopie",
+      "term": "ADOPIE",
+      "definition": "A mnemonic for the six components of the nursing process: assessment, diagnosis, outcomes identification, planning, implementation, and evaluation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Nursing process",
+        "PES format",
+        "SOAPIE"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "clinical-judgment",
+      "term": "Clinical judgment",
+      "definition": "The observed outcome of critical thinking and decision-making used to deliver safe client care.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Nursing process",
+        "ADOPIE",
+        "Nursing diagnosis"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "delegation",
+      "term": "Delegation",
+      "definition": "The assignment of client care tasks to unlicensed assistive personnel while retaining accountability for the outcome.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Clinical judgment",
+        "Nursing process",
+        "ADOPIE"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "expected-outcomes",
+      "term": "Expected outcomes",
+      "definition": "Statements of measurable action for the client within a specific time frame in response to nursing interventions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Nursing interventions",
+        "Nursing process",
+        "ADOPIE"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "nursing-diagnosis",
+      "term": "Nursing diagnosis",
+      "definition": "A clinical judgment concerning a human response to health conditions or life processes by an individual, family, group, or community.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Nursing process",
+        "ADOPIE",
+        "PES format"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "nursing-interventions",
+      "term": "Nursing interventions",
+      "definition": "Evidence-based actions that the nurse performs to achieve client outcomes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Nursing process",
+        "ADOPIE",
+        "Nursing diagnosis"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "nursing-process",
+      "term": "Nursing process",
+      "definition": "A systematic approach to client-centered care with steps including assessment, diagnosis, outcome identification, planning, implementation, and evaluation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Clinical judgment",
+        "Delegation",
+        "Nursing diagnosis"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "objective-data",
+      "term": "Objective data",
+      "definition": "Data the nurse can see, touch, smell, or hear or that is reproducible, such as vital signs or lab results.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Subjective data",
+        "Nursing process",
+        "ADOPIE"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "pes-format",
+      "term": "PES format",
+      "definition": "The format of a nursing diagnosis statement including problem, etiology, and signs and symptoms.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Nursing diagnosis",
+        "Nursing process",
+        "ADOPIE"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "subjective-data",
+      "term": "Subjective data",
+      "definition": "Data that the client or family reports or that the nurse infers, such as noting the client appears anxious.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Nursing process",
+      "aliases": [],
+      "confusables": [
+        "Objective data",
+        "Nursing process",
+        "ADOPIE"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.4"
+      ]
+    },
+    {
+      "id": "blood-pressure",
+      "term": "Blood pressure",
+      "definition": "The pressure of blood pushing against the walls of the arteries, recorded as systolic over diastolic.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [],
+      "confusables": [
+        "Pulse pressure",
+        "Mean arterial pressure",
+        "Pulse"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "homeostasis",
+      "term": "Homeostasis",
+      "definition": "The process of self-regulation that bodies maintain through multiple, interdependent physiological processes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [],
+      "confusables": [
+        "Thermoregulation",
+        "Vital signs",
+        "Pyrexia"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "mean-arterial-pressure",
+      "term": "Mean arterial pressure",
+      "definition": "The average pressure of blood in the arteries driving blood into tissues.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [
+        "MAP"
+      ],
+      "confusables": [
+        "Blood pressure",
+        "Pulse pressure",
+        "Vital signs"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "oxygen-saturation",
+      "term": "Oxygen saturation",
+      "definition": "The percentage ratio of actual oxygen content of hemoglobin to its maximum oxygen-carrying capacity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [
+        "SpO2"
+      ],
+      "confusables": [
+        "Hypoxemia",
+        "Respiratory rate",
+        "Vital signs"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "pulse",
+      "term": "Pulse",
+      "definition": "The palpable pressure wave that expands and recoils arteries when the left ventricle contracts, assessing heart rate.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [
+        "Heart rate"
+      ],
+      "confusables": [
+        "Blood pressure",
+        "Respiratory rate",
+        "Oxygen saturation"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "pulse-pressure",
+      "term": "Pulse pressure",
+      "definition": "The difference between systolic and diastolic blood pressure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [],
+      "confusables": [
+        "Blood pressure",
+        "Mean arterial pressure",
+        "Hypertension"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "pyrexia",
+      "term": "Pyrexia",
+      "definition": "A body temperature greater than 100.4 degrees Fahrenheit, commonly called a fever.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [
+        "Fever"
+      ],
+      "confusables": [
+        "Vital signs",
+        "Homeostasis",
+        "Thermoregulation"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "respiratory-rate",
+      "term": "Respiratory rate",
+      "definition": "The number of complete respiratory cycles of inspiration and expiration counted per minute.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [],
+      "confusables": [
+        "Pulse",
+        "Oxygen saturation",
+        "Hypoxemia"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "thermoregulation",
+      "term": "Thermoregulation",
+      "definition": "The body's ability to maintain its temperature within normal ranges, regulated by the hypothalamus.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [],
+      "confusables": [
+        "Homeostasis",
+        "Pyrexia",
+        "Vital signs"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "vital-signs",
+      "term": "Vital signs",
+      "definition": "Measurements of temperature, pulse, respiratory rate, blood pressure, and oxygen saturation that reflect the body's homeostatic functioning.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Vital signs",
+      "aliases": [],
+      "confusables": [
+        "Homeostasis",
+        "Blood pressure",
+        "Oxygen saturation"
+      ],
+      "sources": [
+        "openstax-fundamentals-nursing#ch.7"
+      ]
+    },
+    {
+      "id": "acute-pain",
+      "term": "Acute pain",
+      "definition": "Pain that is limited in duration and associated with a specific cause.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Chronic pain",
+        "Pain",
+        "Referred pain"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "analgesics",
+      "term": "Analgesics",
+      "definition": "Medications used to relieve pain by acting on the nervous system.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Patient-Controlled Analgesia",
+        "Pain",
+        "Acute pain"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "chronic-pain",
+      "term": "Chronic pain",
+      "definition": "Pain that is ongoing and persistent for longer than six months.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Acute pain",
+        "Pain",
+        "Tolerance"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "nociceptor",
+      "term": "Nociceptor",
+      "definition": "A sensory receptor that responds to painful stimuli.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Pain",
+        "Referred pain",
+        "Analgesics"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "pain",
+      "term": "Pain",
+      "definition": "An unpleasant sensory and emotional experience associated with actual or potential tissue damage.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Acute pain",
+        "Chronic pain",
+        "Referred pain"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "patient-controlled-analgesia",
+      "term": "Patient-Controlled Analgesia",
+      "definition": "A method allowing hospitalized clients with severe pain to self-administer opioid medications using a programmed pump.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [
+        "PCA"
+      ],
+      "confusables": [
+        "Analgesics",
+        "Tolerance",
+        "Physical dependence"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "physical-dependence",
+      "term": "Physical dependence",
+      "definition": "Withdrawal symptoms that occur when chronic pain medication is suddenly reduced or stopped.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Tolerance",
+        "Withdrawal",
+        "Substance use disorder"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "referred-pain",
+      "term": "Referred pain",
+      "definition": "Pain perceived at a location other than the site of the painful stimulus.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Acute pain",
+        "Chronic pain",
+        "Nociceptor"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "tolerance",
+      "term": "Tolerance",
+      "definition": "A diminished effect with continued use of the same opioid amount, requiring more for the desired effect.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Physical dependence",
+        "Withdrawal",
+        "Pain"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "withdrawal",
+      "term": "Withdrawal",
+      "definition": "Symptoms causing significant distress after stopping or reducing substance use, including nausea, aches, and insomnia.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Hygiene and comfort",
+      "aliases": [],
+      "confusables": [
+        "Physical dependence",
+        "Tolerance",
+        "Pain"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.11"
+      ]
+    },
+    {
+      "id": "contracture",
+      "term": "Contracture",
+      "definition": "The lack of full passive range of motion due to joint, muscle, or soft tissue limitations.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Mobility",
+        "Range-of-motion exercises",
+        "Orthostatic hypotension"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.13"
+      ]
+    },
+    {
+      "id": "functional-mobility",
+      "term": "Functional mobility",
+      "definition": "The ability to move around in the environment, including walking, standing, and moving in bed.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Mobility",
+        "Range-of-motion exercises",
+        "Contracture"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.13"
+      ]
+    },
+    {
+      "id": "mobility",
+      "term": "Mobility",
+      "definition": "The ability of a client to change and control body position.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Functional mobility",
+        "Range-of-motion exercises",
+        "Contracture"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.13"
+      ]
+    },
+    {
+      "id": "never-events",
+      "term": "Never events",
+      "definition": "Adverse events that are clearly identifiable, measurable, serious, and preventable.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Sentinel event",
+        "Root cause analysis",
+        "Mobility"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.5"
+      ]
+    },
+    {
+      "id": "orthostatic-hypotension",
+      "term": "Orthostatic hypotension",
+      "definition": "Low blood pressure occurring when changing from lying to sitting or standing, causing dizziness.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Mobility",
+        "Functional mobility",
+        "Range-of-motion exercises"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.13"
+      ]
+    },
+    {
+      "id": "range-of-motion-exercises",
+      "term": "Range-of-motion exercises",
+      "definition": "Activities aimed to facilitate movement of specific joints and promote mobility of extremities.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [
+        "ROM exercises"
+      ],
+      "confusables": [
+        "Contracture",
+        "Mobility",
+        "Functional mobility"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.13"
+      ]
+    },
+    {
+      "id": "restraint",
+      "term": "Restraint",
+      "definition": "A device, method, or process used to restrict a client's freedom of movement without permission.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Seclusion",
+        "Mobility",
+        "Functional mobility"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.5"
+      ]
+    },
+    {
+      "id": "root-cause-analysis",
+      "term": "Root cause analysis",
+      "definition": "A structured method to analyze serious adverse events and identify underlying problems increasing error likelihood.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Sentinel event",
+        "Never events",
+        "Mobility"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.5"
+      ]
+    },
+    {
+      "id": "sentinel-event",
+      "term": "Sentinel event",
+      "definition": "A client safety event that reaches a client and results in death, permanent harm, or severe temporary harm.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Never events",
+        "Root cause analysis",
+        "Mobility"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.5"
+      ]
+    },
+    {
+      "id": "universal-fall-precautions",
+      "term": "Universal fall precautions",
+      "definition": "Interventions to reduce fall risk for all clients by keeping the environment safe and comfortable.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Mobility and safety",
+      "aliases": [],
+      "confusables": [
+        "Sentinel event",
+        "Never events",
+        "Mobility"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.5"
+      ]
+    },
+    {
+      "id": "carbohydrates",
+      "term": "Carbohydrates",
+      "definition": "Sugars and starches providing an important energy source at four kilocalories per gram.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Proteins",
+        "Macronutrients",
+        "Enteral nutrition"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "constipation",
+      "term": "Constipation",
+      "definition": "Infrequent or difficult evacuation of feces that may require bowel retraining or laxatives.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Diarrhea",
+        "Macronutrients",
+        "Carbohydrates"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.16"
+      ]
+    },
+    {
+      "id": "diarrhea",
+      "term": "Diarrhea",
+      "definition": "More than three unformed stools in twenty-four hours indicating increased intestinal motility.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Constipation",
+        "Macronutrients",
+        "Carbohydrates"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.16"
+      ]
+    },
+    {
+      "id": "dysphagia",
+      "term": "Dysphagia",
+      "definition": "Difficulty swallowing that may require modified food textures or alternative feeding routes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Enteral nutrition",
+        "Parenteral nutrition",
+        "Macronutrients"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "enteral-nutrition",
+      "term": "Enteral nutrition",
+      "definition": "Liquid nutrition given through the gastrointestinal tract via a tube, bypassing chewing and swallowing.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Parenteral nutrition",
+        "Dysphagia",
+        "Macronutrients"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "macronutrients",
+      "term": "Macronutrients",
+      "definition": "Nutrients needed in larger amounts for energy, including carbohydrates, proteins, and fats.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Carbohydrates",
+        "Proteins",
+        "Enteral nutrition"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "oliguria",
+      "term": "Oliguria",
+      "definition": "Decreased urine output, defined as less than five hundred milliliters in adults over twenty-four hours.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Urinary retention",
+        "Macronutrients",
+        "Carbohydrates"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.16"
+      ]
+    },
+    {
+      "id": "parenteral-nutrition",
+      "term": "Parenteral nutrition",
+      "definition": "An intravenous solution containing glucose, amino acids, minerals, electrolytes, and vitamins with supplemental lipids.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Enteral nutrition",
+        "Dysphagia",
+        "Macronutrients"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "proteins",
+      "term": "Proteins",
+      "definition": "Peptides and amino acids necessary for tissue repair, growth, energy, and fluid balance.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Carbohydrates",
+        "Macronutrients",
+        "Enteral nutrition"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.14"
+      ]
+    },
+    {
+      "id": "urinary-retention",
+      "term": "Urinary retention",
+      "definition": "A condition when the client cannot empty all of the urine from the bladder.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Nutrition and elimination",
+      "aliases": [],
+      "confusables": [
+        "Oliguria",
+        "Macronutrients",
+        "Carbohydrates"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.16"
+      ]
+    },
+    {
+      "id": "active-listening",
+      "term": "Active listening",
+      "definition": "Communicating verbally and nonverbally interest in what the other person says while verifying understanding.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "Therapeutic communication",
+        "Nonverbal communication",
+        "Handoff report"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "charting-by-exception",
+      "term": "Charting by exception",
+      "definition": "A documentation method where nurses confirm normal findings and note only abnormal findings.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [
+        "CBE"
+      ],
+      "confusables": [
+        "Narrative note",
+        "SOAPIE",
+        "DAR"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "dar",
+      "term": "DAR",
+      "definition": "A documentation format standing for data, action, and response, focused on one client problem.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "SOAPIE",
+        "Charting by exception",
+        "Narrative note"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "electronic-health-record",
+      "term": "Electronic Health Record",
+      "definition": "A digital version of a client's paper chart available instantly and securely to authorized users.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [
+        "EHR"
+      ],
+      "confusables": [
+        "Charting by exception",
+        "Narrative note",
+        "Therapeutic communication"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "handoff-report",
+      "term": "Handoff report",
+      "definition": "A process of exchanging vital client information, responsibility, and accountability between off-going and incoming nurses.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "ISBARR",
+        "Incident reports",
+        "Therapeutic communication"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "isbarr",
+      "term": "ISBARR",
+      "definition": "A mnemonic for professional communication including introduction, situation, background, assessment, request, and repeat back.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "Handoff report",
+        "SOAPIE",
+        "DAR"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "incident-reports",
+      "term": "Incident reports",
+      "definition": "Documentation completed when an unexpected occurrence or near miss happens, such as a medication error or fall.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [
+        "Variance reports"
+      ],
+      "confusables": [
+        "Handoff report",
+        "Narrative note",
+        "Charting by exception"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "narrative-note",
+      "term": "Narrative note",
+      "definition": "A documentation type that chronicles all assessment findings and nursing activities throughout the shift.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "Charting by exception",
+        "SOAPIE",
+        "DAR"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "soapie",
+      "term": "SOAPIE",
+      "definition": "A mnemonic organizing documentation by subjective, objective, assessment, plan, interventions, and evaluation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "ISBARR",
+        "DAR",
+        "Charting by exception"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    },
+    {
+      "id": "therapeutic-communication",
+      "term": "Therapeutic communication",
+      "definition": "The purposeful, interpersonal information transmitting process through words and behaviors leading to client understanding.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Documentation and communication",
+      "aliases": [],
+      "confusables": [
+        "Active listening",
+        "Handoff report",
+        "ISBARR"
+      ],
+      "sources": [
+        "nursingfund-openrn#ch.2"
+      ]
+    }
+  ]
+}
