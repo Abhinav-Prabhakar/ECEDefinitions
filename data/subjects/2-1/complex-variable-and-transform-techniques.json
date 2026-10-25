@@ -184,7 +184,8 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.16"
       ],
-      "formula": "f(z)=\\sum_{k=-n}^{\\infty}a_{k}(z-z_{0})^{k},\\quad a_{-n}\\neq 0"
+      "formula": "f(z)=\\sum_{k=-n}^{\\infty}a_{k}(z-z_{0})^{k},\\quad a_{-n}\\neq 0",
+      "diagram": "z-plane"
     },
     {
       "id": "cauchy-integral-theorem",
@@ -207,7 +208,8 @@
       "unitTitle": "Conformal mapping/Cauchy",
       "sources": [
         "cvtt-cvtt-unit-2-notes#p.2"
-      ]
+      ],
+      "diagram": "vector-field"
     },
     {
       "id": "simply-connected",
@@ -307,7 +309,8 @@
       "unitTitle": "Series/residues",
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.14"
-      ]
+      ],
+      "diagram": "z-plane"
     },
     {
       "id": "pole-order",
@@ -329,7 +332,8 @@
       "unitTitle": "Series/residues",
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.42"
-      ]
+      ],
+      "diagram": "vector-field"
     },
     {
       "id": "laplace-transform",
@@ -428,7 +432,8 @@
       "sources": [
         "cvtt-cvtt-unit-3-notes#p.18"
       ],
-      "formula": "f(t)=a_{0}+\\sum_{n=1}^{\\infty}\\left(a_{n}\\cos n\\omega_{0}t+b_{n}\\sin n\\omega_{0}t\\right)"
+      "formula": "f(t)=a_{0}+\\sum_{n=1}^{\\infty}\\left(a_{n}\\cos n\\omega_{0}t+b_{n}\\sin n\\omega_{0}t\\right)",
+      "diagram": "fourier"
     },
     {
       "id": "fourier-transform",
@@ -485,7 +490,8 @@
       "sources": [
         "cvtt-unit-iv-v-and-vi-refrence-questions#para.27"
       ],
-      "formula": "R_{1}<|z|<R_{2}"
+      "formula": "R_{1}<|z|<R_{2}",
+      "diagram": "z-plane"
     },
     {
       "id": "inverse-z-transform",

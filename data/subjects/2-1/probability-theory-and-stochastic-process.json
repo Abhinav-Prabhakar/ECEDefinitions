@@ -52,7 +52,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.25"
-      ]
+      ],
+      "diagram": "venn"
     },
     {
       "id": "conditional-probability",
@@ -63,7 +64,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.93"
-      ]
+      ],
+      "diagram": "probability-tree"
     },
     {
       "id": "total-probability",
@@ -74,7 +76,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.20"
-      ]
+      ],
+      "diagram": "probability-tree"
     },
     {
       "id": "bayes-theorem",
@@ -85,7 +88,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.20"
-      ]
+      ],
+      "diagram": "bayes-tree"
     },
     {
       "id": "statistical-independence",
@@ -107,7 +111,8 @@
       "unitTitle": "Probability Theory",
       "sources": [
         "ptsp-unit-1-ptsp#slide.90"
-      ]
+      ],
+      "diagram": "venn"
     },
     {
       "id": "random-variable",
@@ -351,7 +356,8 @@
       "sources": [
         "ptsp-unit-3-ptsp#slide.3"
       ],
-      "formula": "f_{\\mathbf{X}}(\\mathbf{x})=(2\\pi)^{-n/2}|\\Sigma|^{-1/2}e^{-\\frac{1}{2}(\\mathbf{x}-\\mu)^{T}\\Sigma^{-1}(\\mathbf{x}-\\mu)}"
+      "formula": "f_{\\mathbf{X}}(\\mathbf{x})=(2\\pi)^{-n/2}|\\Sigma|^{-1/2}e^{-\\frac{1}{2}(\\mathbf{x}-\\mu)^{T}\\Sigma^{-1}(\\mathbf{x}-\\mu)}",
+      "diagram": "gaussian"
     },
     {
       "id": "random-process",
@@ -485,7 +491,8 @@
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
         "ptsp-unit-6-ptsp#p.110"
-      ]
+      ],
+      "diagram": "convolution"
     },
     {
       "id": "thermal-noise",
@@ -496,7 +503,8 @@
       "sources": [
         "ptsp-unit-6-ptsp#p.4"
       ],
-      "formula": "S_{nn}(f)=4kTR"
+      "formula": "S_{nn}(f)=4kTR",
+      "diagram": "gaussian"
     },
     {
       "id": "shot-noise",

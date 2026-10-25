@@ -19,7 +19,8 @@
       "sources": [
         "edc-edc-unit-1#slide.13"
       ],
-      "formula": "n_{i}=\\sqrt{N_{C}N_{V}}\\,e^{-E_{g}/(2k_{B}T)}"
+      "formula": "n_{i}=\\sqrt{N_{C}N_{V}}\\,e^{-E_{g}/(2k_{B}T)}",
+      "diagram": "energy-bands"
     },
     {
       "id": "extrinsic-semiconductor",
@@ -30,7 +31,8 @@
       "sources": [
         "edc-edc-unit-1#slide.12"
       ],
-      "formula": "np=n_{i}^{2}"
+      "formula": "np=n_{i}^{2}",
+      "diagram": "doping-bands"
     },
     {
       "id": "n-type-semiconductor",
@@ -41,7 +43,8 @@
       "sources": [
         "edc-edc-unit-1#slide.5"
       ],
-      "formula": "n_{n}\\approx N_{D},\\quad p_{n}\\approx\\frac{n_{i}^{2}}{N_{D}}"
+      "formula": "n_{n}\\approx N_{D},\\quad p_{n}\\approx\\frac{n_{i}^{2}}{N_{D}}",
+      "diagram": "doping-bands"
     },
     {
       "id": "p-type-semiconductor",
@@ -52,7 +55,8 @@
       "sources": [
         "edc-edc-unit-1#slide.30"
       ],
-      "formula": "p_{p}\\approx N_{A},\\quad n_{p}\\approx\\frac{n_{i}^{2}}{N_{A}}"
+      "formula": "p_{p}\\approx N_{A},\\quad n_{p}\\approx\\frac{n_{i}^{2}}{N_{A}}",
+      "diagram": "doping-bands"
     },
     {
       "id": "depletion-region",
@@ -165,7 +169,8 @@
       "sources": [
         "edc-edc-unit-1#slide.100"
       ],
-      "formula": "\\eta=\\frac{P_{\\text{dc}}}{P_{\\text{ac}}}\\times100\\%"
+      "formula": "\\eta=\\frac{P_{\\text{dc}}}{P_{\\text{ac}}}\\times100\\%",
+      "diagram": "rectifier-waveforms"
     },
     {
       "id": "ripple-factor",
@@ -210,7 +215,8 @@
       "sources": [
         "edc-edc-unit-2#slide.9"
       ],
-      "formula": "I_{C}=\\beta I_{B},\\quad I_{B}>0"
+      "formula": "I_{C}=\\beta I_{B},\\quad I_{B}>0",
+      "diagram": "bjt"
     },
     {
       "id": "saturation-region",
@@ -254,7 +260,8 @@
       "sources": [
         "edc-edc-unit-2#slide.8"
       ],
-      "formula": "A_{v}=-g_{m}R_{C},\\quad A_{i}=\\beta"
+      "formula": "A_{v}=-g_{m}R_{C},\\quad A_{i}=\\beta",
+      "diagram": "bjt-biasing"
     },
     {
       "id": "common-collector",
@@ -309,7 +316,8 @@
       "sources": [
         "edc-edc-unit-3#slide.6"
       ],
-      "formula": "V_{1}=h_{11}I_{1}+h_{12}V_{2},\\quad I_{2}=h_{21}I_{1}+h_{22}V_{2}"
+      "formula": "V_{1}=h_{11}I_{1}+h_{12}V_{2},\\quad I_{2}=h_{21}I_{1}+h_{22}V_{2}",
+      "diagram": "two-port"
     },
     {
       "id": "millers-theorem",
@@ -454,7 +462,8 @@
       "sources": [
         "edc-edc-fet-unit4#slide.3"
       ],
-      "formula": "Q_{n}=C_{ox}\\left(V_{GS}-V_{th}\\right)"
+      "formula": "Q_{n}=C_{ox}\\left(V_{GS}-V_{th}\\right)",
+      "diagram": "mosfet"
     },
     {
       "id": "depletion-mosfet",
@@ -465,7 +474,8 @@
       "sources": [
         "edc-edc-fet-unit4#slide.3"
       ],
-      "formula": "V_{GS}=0\\;\\Rightarrow\\;I_{D}=I_{DSS}"
+      "formula": "V_{GS}=0\\;\\Rightarrow\\;I_{D}=I_{DSS}",
+      "diagram": "mosfet"
     },
     {
       "id": "self-bias-fet",
@@ -487,7 +497,8 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.9"
       ],
-      "formula": "A_{f}=\\frac{A}{1+A\\beta}"
+      "formula": "A_{f}=\\frac{A}{1+A\\beta}",
+      "diagram": "control-loop"
     },
     {
       "id": "positive-feedback",
@@ -532,7 +543,8 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.45"
       ],
-      "formula": "v_{o}(t)=V_{m}\\sin\\left(2\\pi f_{0}t\\right)"
+      "formula": "v_{o}(t)=V_{m}\\sin\\left(2\\pi f_{0}t\\right)",
+      "diagram": "oscillator-loop"
     },
     {
       "id": "resonant-frequency",
@@ -543,7 +555,8 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.57"
       ],
-      "formula": "f_{r}=\\frac{1}{2\\pi\\sqrt{LC}}"
+      "formula": "f_{r}=\\frac{1}{2\\pi\\sqrt{LC}}",
+      "diagram": "resonance-curve"
     },
     {
       "id": "piezoelectric-effect",
@@ -565,7 +578,8 @@
       "sources": [
         "edc-edc-syllabus#para.23"
       ],
-      "formula": "V_{\\text{out}}=V_{Z}\\left(1+\\frac{R_{1}}{R_{2}}\\right)"
+      "formula": "V_{\\text{out}}=V_{Z}\\left(1+\\frac{R_{1}}{R_{2}}\\right)",
+      "diagram": "regulator"
     }
   ]
 }

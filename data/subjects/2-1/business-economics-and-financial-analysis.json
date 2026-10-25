@@ -75,7 +75,8 @@
       "sources": [
         "befa-unit-1-befa#slide.19"
       ],
-      "formula": "\\frac{dQ_{d}}{dP}<0"
+      "formula": "\\frac{dQ_{d}}{dP}<0",
+      "diagram": "supply-demand"
     },
     {
       "id": "price-elasticity-of-demand",
@@ -86,7 +87,8 @@
       "formula": "E_{p}=\\frac{\\Delta Q_{d}/Q_{d}}{\\Delta P/P}",
       "sources": [
         "befa-unit-1-befa#slide.33"
-      ]
+      ],
+      "diagram": "supply-demand"
     },
     {
       "id": "income-elasticity-of-demand",
@@ -363,7 +365,8 @@
       "sources": [
         "befa-unit-2-befa#slide.50"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "break-even"
     },
     {
       "id": "market",

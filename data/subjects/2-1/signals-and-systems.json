@@ -96,7 +96,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "even-odd"
     },
     {
       "id": "odd-signal",
@@ -107,7 +108,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "even-odd"
     },
     {
       "id": "causal-signal",
@@ -129,7 +131,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "step-impulse"
     },
     {
       "id": "unit-impulse",
@@ -140,7 +143,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "step-impulse"
     },
     {
       "id": "time-shift",
@@ -151,7 +155,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "signal-ops"
     },
     {
       "id": "time-scale",
@@ -162,7 +167,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "signal-ops"
     },
     {
       "id": "time-reversal",
@@ -173,7 +179,8 @@
       "unitTitle": "Signal classification & operations",
       "sources": [
         "ss-unit-1-ss#slide.1"
-      ]
+      ],
+      "diagram": "signal-ops"
     },
     {
       "id": "system",
@@ -330,7 +337,8 @@
       "unitTitle": "Fourier transform",
       "sources": [
         "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "inverse-fourier-transform",
@@ -364,7 +372,8 @@
       "unitTitle": "Fourier transform",
       "sources": [
         "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "convolution-property-ft",
@@ -541,7 +550,8 @@
       "sources": [
         "ss-z-transforms#slide.12"
       ],
-      "formula": "\\text{ROC}:|z|>|p|_{\\max}"
+      "formula": "\\text{ROC}:|z|>|p|_{\\max}",
+      "diagram": "z-plane"
     },
     {
       "id": "stability-z",
@@ -576,7 +586,8 @@
       "unitTitle": "Sampling theorem",
       "sources": [
         "ss-unit5-sampling-theorem#slide.9"
-      ]
+      ],
+      "diagram": "sampling"
     },
     {
       "id": "nyquist-interval",
@@ -610,7 +621,8 @@
       "sources": [
         "ss-unit5-sampling-theorem#slide.19"
       ],
-      "formula": "f_{c}\\le\\frac{f_{s}}{2}"
+      "formula": "f_{c}\\le\\frac{f_{s}}{2}",
+      "diagram": "filter-response"
     },
     {
       "id": "natural-sampling",
