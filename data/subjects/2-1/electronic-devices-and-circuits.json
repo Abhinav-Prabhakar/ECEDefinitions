@@ -19,7 +19,7 @@
       "sources": [
         "edc-edc-unit-1#slide.13"
       ],
-      "formula": ""
+      "formula": "n_{i}=\\sqrt{N_{C}N_{V}}\\,e^{-E_{g}/(2k_{B}T)}"
     },
     {
       "id": "extrinsic-semiconductor",
@@ -30,7 +30,7 @@
       "sources": [
         "edc-edc-unit-1#slide.12"
       ],
-      "formula": ""
+      "formula": "np=n_{i}^{2}"
     },
     {
       "id": "n-type-semiconductor",
@@ -41,7 +41,7 @@
       "sources": [
         "edc-edc-unit-1#slide.5"
       ],
-      "formula": ""
+      "formula": "n_{n}\\approx N_{D},\\quad p_{n}\\approx\\frac{n_{i}^{2}}{N_{D}}"
     },
     {
       "id": "p-type-semiconductor",
@@ -52,7 +52,7 @@
       "sources": [
         "edc-edc-unit-1#slide.30"
       ],
-      "formula": ""
+      "formula": "p_{p}\\approx N_{A},\\quad n_{p}\\approx\\frac{n_{i}^{2}}{N_{A}}"
     },
     {
       "id": "depletion-region",
@@ -63,13 +63,14 @@
       "sources": [
         "edc-edc-unit-1#slide.43"
       ],
-      "formula": ""
+      "formula": "W=\\sqrt{\\frac{2\\varepsilon_{s}}{q}\\left(\\frac{1}{N_{A}}+\\frac{1}{N_{D}}\\right)\\left(V_{bi}-V\\right)}",
+      "diagram": "pn-junction"
     },
     {
       "id": "barrier-potential",
       "term": "Barrier potential",
       "definition": "The potential difference developed across a pn junction that opposes further diffusion of carriers.",
-      "formula": "0.3 V (Ge), 0.7 V (Si)",
+      "formula": "V_{bi}=V_{T}\\ln\\frac{N_{A}N_{D}}{n_{i}^{2}}",
       "unit": 1,
       "unitTitle": "PN Junction Diodes and Rectifiers",
       "sources": [
@@ -85,7 +86,8 @@
       "sources": [
         "edc-edc-unit-1#slide.46"
       ],
-      "formula": ""
+      "formula": "I_{D}=I_{S}\\left(e^{V_{D}/(\\eta V_{T})}-1\\right)",
+      "diagram": "diode-iv"
     },
     {
       "id": "reverse-saturation-current",
@@ -96,7 +98,7 @@
       "sources": [
         "edc-edc-unit-1#slide.55"
       ],
-      "formula": ""
+      "formula": "I_{S}=qA\\left(\\frac{D_{p}}{L_{p}N_{D}}+\\frac{D_{n}}{L_{n}N_{A}}\\right)n_{i}^{2}"
     },
     {
       "id": "zener-diode",
@@ -107,7 +109,7 @@
       "sources": [
         "edc-edc-unit-1#slide.66"
       ],
-      "formula": ""
+      "formula": "I_{Z}=\\frac{V_{S}-V_{Z}}{R_{S}}-I_{L}"
     },
     {
       "id": "zener-breakdown",
@@ -118,7 +120,8 @@
       "sources": [
         "edc-edc-unit-1#slide.80"
       ],
-      "formula": ""
+      "formula": "E_{\\text{crit}}=\\frac{2V_{Z}}{W}",
+      "diagram": "diode-iv"
     },
     {
       "id": "avalanche-breakdown",
@@ -129,7 +132,7 @@
       "sources": [
         "edc-edc-unit-1#slide.79"
       ],
-      "formula": ""
+      "formula": "M=\\frac{1}{1-\\left(V/V_{B}\\right)^{n}}"
     },
     {
       "id": "transition-capacitance",
@@ -140,7 +143,7 @@
       "sources": [
         "edc-edc-unit-1#slide.87"
       ],
-      "formula": ""
+      "formula": "C_{T}=\\frac{C_{T0}}{\\left(1+V_{R}/V_{bi}\\right)^{n}}"
     },
     {
       "id": "diffusion-capacitance",
@@ -151,7 +154,7 @@
       "sources": [
         "edc-edc-unit-1#slide.83"
       ],
-      "formula": ""
+      "formula": "C_{D}=\\tau\\frac{dI_{D}}{dV_{D}}=\\frac{\\tau I_{D}}{\\eta V_{T}}"
     },
     {
       "id": "rectifier",
@@ -162,7 +165,7 @@
       "sources": [
         "edc-edc-unit-1#slide.100"
       ],
-      "formula": ""
+      "formula": "\\eta=\\frac{P_{\\text{dc}}}{P_{\\text{ac}}}\\times100\\%"
     },
     {
       "id": "ripple-factor",
@@ -173,7 +176,7 @@
       "sources": [
         "edc-edc-unit-1#slide.125"
       ],
-      "formula": ""
+      "formula": "r=\\sqrt{\\left(\\frac{V_{\\text{rms}}}{V_{\\text{dc}}}\\right)^{2}-1}"
     },
     {
       "id": "peak-inverse-voltage",
@@ -184,7 +187,7 @@
       "sources": [
         "edc-edc-unit-1#slide.127"
       ],
-      "formula": ""
+      "formula": "\\text{PIV}_{\\text{centre-tap}}=2V_{m},\\quad \\text{PIV}_{\\text{bridge}}=V_{m}"
     },
     {
       "id": "bjt",
@@ -195,7 +198,8 @@
       "sources": [
         "edc-edc-unit-2#slide.2"
       ],
-      "formula": ""
+      "formula": "I_{E}=I_{B}+I_{C}",
+      "diagram": "bjt"
     },
     {
       "id": "active-region",
@@ -206,7 +210,7 @@
       "sources": [
         "edc-edc-unit-2#slide.9"
       ],
-      "formula": ""
+      "formula": "I_{C}=\\beta I_{B},\\quad I_{B}>0"
     },
     {
       "id": "saturation-region",
@@ -217,7 +221,7 @@
       "sources": [
         "edc-edc-unit-2#slide.9"
       ],
-      "formula": ""
+      "formula": "I_{C}<\\beta I_{B},\\quad V_{CE}\\approx0"
     },
     {
       "id": "cutoff-region",
@@ -228,7 +232,7 @@
       "sources": [
         "edc-edc-unit-2#slide.9"
       ],
-      "formula": ""
+      "formula": "I_{B}=0\\;\\Rightarrow\\;I_{C}\\approx I_{CEO}\\approx0"
     },
     {
       "id": "common-base",
@@ -239,7 +243,7 @@
       "sources": [
         "edc-edc-unit-2#slide.7"
       ],
-      "formula": ""
+      "formula": "R_{\\text{in}}=r_{e}=\\frac{V_{T}}{I_{E}}"
     },
     {
       "id": "common-emitter",
@@ -250,7 +254,7 @@
       "sources": [
         "edc-edc-unit-2#slide.8"
       ],
-      "formula": ""
+      "formula": "A_{v}=-g_{m}R_{C},\\quad A_{i}=\\beta"
     },
     {
       "id": "common-collector",
@@ -261,7 +265,7 @@
       "sources": [
         "edc-edc-unit-2#slide.8"
       ],
-      "formula": ""
+      "formula": "A_{v}=\\frac{R_{E}}{r_{e}+R_{E}}\\approx1"
     },
     {
       "id": "early-effect",
@@ -272,7 +276,7 @@
       "sources": [
         "edc-edc-unit-2#slide.29"
       ],
-      "formula": ""
+      "formula": "I_{C}=I_{S}e^{V_{BE}/V_{T}}\\left(1+\\frac{V_{CE}}{V_{A}}\\right)"
     },
     {
       "id": "punch-through",
@@ -283,13 +287,13 @@
       "sources": [
         "edc-edc-unit-2#slide.44"
       ],
-      "formula": ""
+      "formula": "V_{PT}\\approx\\frac{qN_{B}W_{B}^{2}}{2\\varepsilon_{s}}"
     },
     {
       "id": "current-gain-alpha",
       "term": "Current gain alpha",
       "definition": "Ratio of collector current to emitter current in a BJT, typically 0.9 to 0.995.",
-      "formula": "α=I_C/I_E",
+      "formula": "\\alpha=\\frac{I_{C}}{I_{E}},\\quad\\beta=\\frac{\\alpha}{1-\\alpha}",
       "unit": 2,
       "unitTitle": "Bipolar Junction Transistor",
       "sources": [
@@ -305,7 +309,7 @@
       "sources": [
         "edc-edc-unit-3#slide.6"
       ],
-      "formula": ""
+      "formula": "V_{1}=h_{11}I_{1}+h_{12}V_{2},\\quad I_{2}=h_{21}I_{1}+h_{22}V_{2}"
     },
     {
       "id": "millers-theorem",
@@ -316,7 +320,7 @@
       "sources": [
         "edc-edc-unit-3#slide.52"
       ],
-      "formula": ""
+      "formula": "Z_{1}=\\frac{Z}{1-A_{v}},\\quad Z_{2}=\\frac{Z}{1-1/A_{v}}"
     },
     {
       "id": "frequency-response",
@@ -327,7 +331,8 @@
       "sources": [
         "edc-edc-unit-3#slide.59"
       ],
-      "formula": ""
+      "formula": "A_{v}(j\\omega)=\\frac{A_{v0}}{1+j\\omega/\\omega_{H}}",
+      "diagram": "bode"
     },
     {
       "id": "lower-cutoff-frequency",
@@ -338,13 +343,13 @@
       "sources": [
         "edc-edc-unit-3#slide.61"
       ],
-      "formula": ""
+      "formula": "|A_{v}(f_{L})|=\\frac{|A_{v,\\text{mid}}|}{\\sqrt{2}}"
     },
     {
       "id": "bandwidth",
       "term": "Bandwidth",
       "definition": "Frequency interval between lower and upper cut-off frequencies.",
-      "formula": "BW=f_U-f_L",
+      "formula": "\\text{BW}=f_{U}-f_{L}",
       "unit": 3,
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
@@ -360,7 +365,7 @@
       "sources": [
         "edc-edc-unit-3#slide.62"
       ],
-      "formula": ""
+      "formula": "A_{v}=\\prod_{k=1}^{n}A_{vk}"
     },
     {
       "id": "rc-coupled-amplifier",
@@ -371,7 +376,7 @@
       "sources": [
         "edc-edc-unit-3#slide.68"
       ],
-      "formula": ""
+      "formula": "f_{L}=\\frac{1}{2\\pi\\left(R_{C}+R_{L}\\right)C_{C}}"
     },
     {
       "id": "hybrid-pi-model",
@@ -382,13 +387,13 @@
       "sources": [
         "edc-edc-unit-3#slide.100"
       ],
-      "formula": ""
+      "formula": "g_{m}=\\frac{I_{C}}{V_{T}},\\quad r_{\\pi}=\\frac{\\beta}{g_{m}}"
     },
     {
       "id": "transconductance",
       "term": "Transconductance",
       "definition": "Ratio of change in collector current to change in base-emitter voltage at constant collector-emitter voltage.",
-      "formula": "g_m=ΔI_C/ΔV_BE",
+      "formula": "g_{m}=\\frac{\\Delta I_{C}}{\\Delta V_{BE}}=\\frac{I_{C}}{V_{T}}",
       "unit": 3,
       "unitTitle": "Small Signal and High Frequency Analysis of BJT",
       "sources": [
@@ -404,7 +409,7 @@
       "sources": [
         "edc-unit-iv#slide.1"
       ],
-      "formula": ""
+      "formula": "g_{m}=\\frac{\\partial I_{D}}{\\partial V_{GS}}"
     },
     {
       "id": "jfet",
@@ -415,7 +420,7 @@
       "sources": [
         "edc-unit-iv#slide.4"
       ],
-      "formula": ""
+      "formula": "I_{D}=I_{DSS}\\left(1-\\frac{V_{GS}}{V_{P}}\\right)^{2}"
     },
     {
       "id": "pinch-off-voltage",
@@ -426,7 +431,7 @@
       "sources": [
         "edc-unit-iv#slide.6"
       ],
-      "formula": ""
+      "formula": "V_{DS(\\text{sat})}=V_{GS}-V_{P}"
     },
     {
       "id": "mosfet",
@@ -437,7 +442,8 @@
       "sources": [
         "edc-edc-fet-unit4#slide.3"
       ],
-      "formula": ""
+      "formula": "I_{D}=\\frac{1}{2}\\mu_{n}C_{ox}\\frac{W}{L}\\left(V_{GS}-V_{th}\\right)^{2}",
+      "diagram": "mosfet"
     },
     {
       "id": "enhancement-mosfet",
@@ -448,7 +454,7 @@
       "sources": [
         "edc-edc-fet-unit4#slide.3"
       ],
-      "formula": ""
+      "formula": "Q_{n}=C_{ox}\\left(V_{GS}-V_{th}\\right)"
     },
     {
       "id": "depletion-mosfet",
@@ -459,7 +465,7 @@
       "sources": [
         "edc-edc-fet-unit4#slide.3"
       ],
-      "formula": ""
+      "formula": "V_{GS}=0\\;\\Rightarrow\\;I_{D}=I_{DSS}"
     },
     {
       "id": "self-bias-fet",
@@ -470,7 +476,7 @@
       "sources": [
         "edc-fet-biasing#p.2"
       ],
-      "formula": ""
+      "formula": "V_{GS}=-I_{D}R_{S}"
     },
     {
       "id": "feedback-amplifier",
@@ -481,7 +487,7 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.9"
       ],
-      "formula": ""
+      "formula": "A_{f}=\\frac{A}{1+A\\beta}"
     },
     {
       "id": "positive-feedback",
@@ -492,7 +498,7 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.11"
       ],
-      "formula": ""
+      "formula": "A_{f}=\\frac{A}{1-A\\beta}"
     },
     {
       "id": "negative-feedback",
@@ -503,7 +509,8 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.15"
       ],
-      "formula": ""
+      "formula": "\\frac{dA_{f}}{A_{f}}=\\frac{1}{1+A\\beta}\\frac{dA}{A}",
+      "diagram": "control-loop"
     },
     {
       "id": "barkhausen-criterion",
@@ -514,7 +521,7 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.47"
       ],
-      "formula": ""
+      "formula": "|A\\beta|=1,\\quad\\angle A\\beta=0^{\\circ}\\ (360^{\\circ})"
     },
     {
       "id": "oscillator",
@@ -525,7 +532,7 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.45"
       ],
-      "formula": ""
+      "formula": "v_{o}(t)=V_{m}\\sin\\left(2\\pi f_{0}t\\right)"
     },
     {
       "id": "resonant-frequency",
@@ -536,7 +543,7 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.57"
       ],
-      "formula": ""
+      "formula": "f_{r}=\\frac{1}{2\\pi\\sqrt{LC}}"
     },
     {
       "id": "piezoelectric-effect",
@@ -547,7 +554,7 @@
       "sources": [
         "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.79"
       ],
-      "formula": ""
+      "formula": "Q=d_{33}F,\\quad S_{3}=d_{33}E_{3}"
     },
     {
       "id": "voltage-regulator",
@@ -558,7 +565,7 @@
       "sources": [
         "edc-edc-syllabus#para.23"
       ],
-      "formula": ""
+      "formula": "V_{\\text{out}}=V_{Z}\\left(1+\\frac{R_{1}}{R_{2}}\\right)"
     }
   ]
 }

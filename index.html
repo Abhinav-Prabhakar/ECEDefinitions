@@ -3521,7 +3521,7 @@ function defMarkup(s, d, i){
       style="animation-delay:${i * 24}ms">
     <span class="node"></span>
     <div class="term">${esc(d[0])}${dg ? `<button class="dg-btn" type="button"
-      aria-label="show diagram for ${esc(d[0])}" aria-expanded="false">${DG_ICON}</button>` : ''}</div>
+      aria-label="show diagram for ${esc(d[0])}" title="diagram — hover or tap" aria-expanded="false">${DG_ICON}</button>` : ''}</div>
     <div class="line">${esc(d[1])}${d[2] ? `<span class="eq">${mathHTML(d[2])}</span>` : ''}</div>
     <span class="def-side" data-tip='${tip}'>
       <span class="mstat">${shown ? pct + '%' : 'new'}</span>
@@ -4390,7 +4390,9 @@ setInterval(() => {
    ============================================================ */
 if ('serviceWorker' in navigator && (location.protocol === 'http:' || location.protocol === 'https:')){
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    navigator.serviceWorker.register('./sw.js', { updateViaCache: 'none' })
+      .then(reg => reg.update().catch(() => {}))
+      .catch(() => {});
   });
 }
 

@@ -52,7 +52,8 @@
       "sources": [
         "befa-unit-1-befa#slide.15"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "supply-demand"
     },
     {
       "id": "demand-function",
@@ -60,7 +61,7 @@
       "definition": "A mathematical expression of the relationship between quantity demanded and its determinants.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Qd = f(P, I, T, ...)",
+      "formula": "Q_{d}=f(P,I,T,\\dots)",
       "sources": [
         "befa-unit-1-befa#slide.17"
       ]
@@ -74,7 +75,7 @@
       "sources": [
         "befa-unit-1-befa#slide.19"
       ],
-      "formula": ""
+      "formula": "\\frac{dQ_{d}}{dP}<0"
     },
     {
       "id": "price-elasticity-of-demand",
@@ -82,7 +83,7 @@
       "definition": "The degree to which quantity demanded responds to a change in price.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ep = %ΔQd / %ΔP",
+      "formula": "E_{p}=\\frac{\\Delta Q_{d}/Q_{d}}{\\Delta P/P}",
       "sources": [
         "befa-unit-1-befa#slide.33"
       ]
@@ -93,7 +94,7 @@
       "definition": "The responsiveness of quantity demanded to changes in consumer income.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ei = %ΔQd / %ΔI",
+      "formula": "E_{I}=\\frac{\\Delta Q_{d}/Q_{d}}{\\Delta I/I}",
       "sources": [
         "befa-unit-1-befa#slide.37"
       ]
@@ -104,7 +105,7 @@
       "definition": "The responsiveness of quantity demanded to changes in prices of related goods.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ec = %ΔQd / %ΔPr",
+      "formula": "E_{c}=\\frac{\\Delta Q_{d}/Q_{d}}{\\Delta P_{r}/P_{r}}",
       "sources": [
         "befa-unit-1-befa#slide.38"
       ]
@@ -115,7 +116,7 @@
       "definition": "The responsiveness of quantity demanded to changes in advertisement efforts or cost.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ea = %ΔQd / %ΔA",
+      "formula": "E_{a}=\\frac{\\Delta Q_{d}/Q_{d}}{\\Delta A/A}",
       "sources": [
         "befa-unit-1-befa#slide.39"
       ]
@@ -126,7 +127,7 @@
       "definition": "A small change in price leads to an infinite expansion in demand.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ep = ∞",
+      "formula": "E_{p}=\\infty",
       "sources": [
         "befa-unit-1-befa#slide.42"
       ]
@@ -137,7 +138,7 @@
       "definition": "Quantity demanded does not change despite a great fall or rise in price.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ep = 0",
+      "formula": "E_{p}=0",
       "sources": [
         "befa-unit-1-befa#slide.44"
       ]
@@ -148,7 +149,7 @@
       "definition": "A proportionate change in price leads to an equal proportionate change in quantity demanded.",
       "unit": 2,
       "unitTitle": "Demand and Supply",
-      "formula": "Ep = 1",
+      "formula": "|E_{p}|=1",
       "sources": [
         "befa-unit-1-befa#slide.46"
       ]
@@ -170,7 +171,7 @@
       "definition": "The technological relationship expressing the relation between output and the combinations of inputs used.",
       "unit": 3,
       "unitTitle": "Production and Cost",
-      "formula": "Q = f(L, K, ...)",
+      "formula": "Q=f(L,K,\\dots)",
       "sources": [
         "befa-unit-2-befa#slide.4"
       ]
@@ -184,7 +185,7 @@
       "sources": [
         "befa-unit-2-befa#slide.6"
       ],
-      "formula": ""
+      "formula": "f(L,K)=\\overline{Q}"
     },
     {
       "id": "isocost",
@@ -195,7 +196,7 @@
       "sources": [
         "befa-unit-2-befa#slide.9"
       ],
-      "formula": ""
+      "formula": "C=wL+rK"
     },
     {
       "id": "law-of-variable-proportions",
@@ -206,7 +207,7 @@
       "sources": [
         "befa-unit-2-befa#slide.12"
       ],
-      "formula": ""
+      "formula": "Q=f(L,\\overline{K})"
     },
     {
       "id": "returns-to-scale",
@@ -217,7 +218,7 @@
       "sources": [
         "befa-unit-2-befa#slide.16"
       ],
-      "formula": ""
+      "formula": "f(\\lambda L,\\lambda K)=\\lambda^{n}f(L,K)"
     },
     {
       "id": "increasing-returns-to-scale",
@@ -228,7 +229,7 @@
       "sources": [
         "befa-unit-2-befa#slide.18"
       ],
-      "formula": ""
+      "formula": "f(\\lambda L,\\lambda K)>\\lambda f(L,K)"
     },
     {
       "id": "decreasing-returns-to-scale",
@@ -239,7 +240,7 @@
       "sources": [
         "befa-unit-2-befa#slide.20"
       ],
-      "formula": ""
+      "formula": "f(\\lambda L,\\lambda K)<\\lambda f(L,K)"
     },
     {
       "id": "economies-of-scale",
@@ -250,7 +251,7 @@
       "sources": [
         "befa-unit-2-befa#slide.21"
       ],
-      "formula": ""
+      "formula": "C(\\lambda Q)<\\lambda C(Q),\\ \\lambda>1"
     },
     {
       "id": "fixed-cost",
@@ -261,7 +262,7 @@
       "sources": [
         "befa-unit-2-befa#slide.33"
       ],
-      "formula": ""
+      "formula": "\\text{FC}=\\text{TC}(0)"
     },
     {
       "id": "variable-cost",
@@ -272,7 +273,7 @@
       "sources": [
         "befa-unit-2-befa#slide.34"
       ],
-      "formula": ""
+      "formula": "\\text{TVC}(Q)=\\text{TC}(Q)-\\text{FC}"
     },
     {
       "id": "marginal-cost",
@@ -283,7 +284,7 @@
       "sources": [
         "befa-unit-2-befa#slide.35"
       ],
-      "formula": ""
+      "formula": "\\text{MC}=\\frac{\\Delta \\text{TC}}{\\Delta Q}"
     },
     {
       "id": "opportunity-cost",
@@ -324,10 +325,11 @@
       "definition": "The point of no profit and no loss where total revenue equals total cost.",
       "unit": 3,
       "unitTitle": "Production and Cost",
-      "formula": "TR = TC",
+      "formula": "\\text{TR}=\\text{TC}\\ \\Rightarrow\\ Q_{\\text{BEP}}=\\frac{\\text{FC}}{P-\\text{AVC}}",
       "sources": [
         "befa-unit-2-befa#slide.41"
-      ]
+      ],
+      "diagram": "break-even"
     },
     {
       "id": "contribution-margin",
@@ -335,7 +337,7 @@
       "definition": "The difference between sales receipts and variable expenses.",
       "unit": 3,
       "unitTitle": "Production and Cost",
-      "formula": "CM = SP - VC",
+      "formula": "\\text{CM}=S-\\text{TVC}",
       "sources": [
         "befa-unit-2-befa#slide.59"
       ]
@@ -346,10 +348,11 @@
       "definition": "The excess of actual or budgeted sales over break-even sales, showing the cushion available before a loss occurs.",
       "unit": 3,
       "unitTitle": "Production and Cost",
-      "formula": "MOS = Total sales - BE sales",
+      "formula": "\\text{MOS}=\\text{Sales}-S_{\\text{BEP}}",
       "sources": [
         "befa-unit-2-befa#slide.50"
-      ]
+      ],
+      "diagram": "break-even"
     },
     {
       "id": "angle-of-incidence",
@@ -382,7 +385,7 @@
       "sources": [
         "befa-unit-3-befa#slide.10"
       ],
-      "formula": ""
+      "formula": "P=\\text{AR}=\\text{MR}"
     },
     {
       "id": "imperfect-competition",
@@ -393,7 +396,7 @@
       "sources": [
         "befa-unit-3-befa#slide.12"
       ],
-      "formula": ""
+      "formula": "\\text{MR}<P"
     },
     {
       "id": "monopoly",
@@ -404,7 +407,7 @@
       "sources": [
         "befa-unit-3-befa#slide.14"
       ],
-      "formula": ""
+      "formula": "\\text{MR}=\\text{MC}"
     },
     {
       "id": "monopolistic-competition",
@@ -456,7 +459,7 @@
       "definition": "An account prepared to assess the gross profit or loss of a period.",
       "unit": 5,
       "unitTitle": "Financial Statements",
-      "formula": "Gross profit = Net sales - COGS",
+      "formula": "\\text{GP}=\\text{Net sales}-\\text{COGS}",
       "sources": [
         "befa-unit-v-befa#slide.7"
       ]
@@ -470,7 +473,7 @@
       "sources": [
         "befa-unit-v-befa#slide.10"
       ],
-      "formula": ""
+      "formula": "\\text{NP}=\\text{GP}+\\text{Other income}-\\text{Expenses}"
     },
     {
       "id": "balance-sheet",
@@ -481,7 +484,7 @@
       "sources": [
         "befa-unit-v-befa#slide.14"
       ],
-      "formula": ""
+      "formula": "\\text{Assets}=\\text{Liabilities}+\\text{Equity}"
     },
     {
       "id": "ratio-analysis",
@@ -500,7 +503,7 @@
       "definition": "Liquid assets divided by short-term obligations, measuring a firm's ability to meet dues.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
-      "formula": "CA / CL",
+      "formula": "\\text{CR}=\\frac{\\text{CA}}{\\text{CL}}",
       "sources": [
         "befa-unit-vi-befa#slide.4"
       ]
@@ -514,7 +517,7 @@
       "sources": [
         "befa-unit-vi-befa#slide.4"
       ],
-      "formula": ""
+      "formula": "\\text{QR}=\\frac{\\text{CA}-\\text{Inventory}}{\\text{CL}}"
     },
     {
       "id": "inventory-turnover-ratio",
@@ -522,7 +525,7 @@
       "definition": "Cost of goods sold divided by average stock.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
-      "formula": "COGS / Avg stock",
+      "formula": "\\text{ITR}=\\frac{\\text{COGS}}{\\overline{\\text{Stock}}}",
       "sources": [
         "befa-unit-vi-befa#slide.1"
       ]
@@ -533,7 +536,7 @@
       "definition": "The number of days inventory is held, equal to 365 divided by stock turnover ratio.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
-      "formula": "365 / STR",
+      "formula": "\\text{IHP}=\\frac{365}{\\text{ITR}}",
       "sources": [
         "befa-unit-vi-befa#slide.9"
       ]
@@ -544,7 +547,7 @@
       "definition": "Gross profit divided by net sales, expressed as a percentage to gauge the company's trading efficiency.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
-      "formula": "GP / Net sales",
+      "formula": "\\text{GPR}=\\frac{\\text{GP}}{\\text{Net sales}}\\times 100",
       "sources": [
         "befa-unit-vi-befa#slide.1"
       ]
@@ -555,7 +558,7 @@
       "definition": "Net profit after taxes divided by net sales.",
       "unit": 6,
       "unitTitle": "Capital Budgeting and Financial Analysis",
-      "formula": "NPAT / Net sales",
+      "formula": "\\text{NPR}=\\frac{\\text{NPAT}}{\\text{Net sales}}\\times 100",
       "sources": [
         "befa-unit-vi-befa#slide.1"
       ]

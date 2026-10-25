@@ -14,7 +14,7 @@
       "id": "sample-space",
       "term": "Sample space",
       "definition": "Set of all possible outcomes of a random experiment.",
-      "formula": "S",
+      "formula": "S=\\{\\omega_1,\\omega_2,\\dots,\\omega_N\\}",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -30,7 +30,7 @@
       "sources": [
         "ptsp-unit-1-ptsp#slide.51"
       ],
-      "formula": ""
+      "formula": "A\\subseteq S"
     },
     {
       "id": "random-experiment",
@@ -47,7 +47,7 @@
       "id": "mutually-exclusive-events",
       "term": "Mutually exclusive events",
       "definition": "Events that cannot occur together; their intersection is empty.",
-      "formula": "A∩B=∅",
+      "formula": "A\\cap B=\\varnothing\\;\\Rightarrow\\;P(A\\cap B)=0",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -58,7 +58,7 @@
       "id": "conditional-probability",
       "term": "Conditional probability",
       "definition": "Probability of A given that B has occurred.",
-      "formula": "P(A|B)=P(A∩B)/P(B)",
+      "formula": "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)},\\;P(B)>0",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -69,7 +69,7 @@
       "id": "total-probability",
       "term": "Total probability theorem",
       "definition": "Probability of A via a partition {Bi} of the sample space.",
-      "formula": "P(A)=Σ P(A|Bi)P(Bi)",
+      "formula": "P(A)=\\sum_{i=1}^{n}P(A\\mid B_i)\\,P(B_i)",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -80,7 +80,7 @@
       "id": "bayes-theorem",
       "term": "Bayes theorem",
       "definition": "Updates probability of a cause given an observed event.",
-      "formula": "P(Bi|A)=P(A|Bi)P(Bi)/ΣP(A|Bj)P(Bj)",
+      "formula": "P(B_i\\mid A)=\\frac{P(A\\mid B_i)\\,P(B_i)}{\\sum_{j}P(A\\mid B_j)\\,P(B_j)}",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -91,7 +91,7 @@
       "id": "statistical-independence",
       "term": "Statistical independence",
       "definition": "Events A,B are independent if joint probability equals product.",
-      "formula": "P(A∩B)=P(A)P(B)",
+      "formula": "P(A\\cap B)=P(A)\\,P(B)",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -102,7 +102,7 @@
       "id": "joint-probability",
       "term": "Joint probability",
       "definition": "Probability that two or more events occur together at the same time, written as P(A∩B) for events A and B.",
-      "formula": "P(A∩B)",
+      "formula": "P(A\\cap B)=P(A\\mid B)\\,P(B)",
       "unit": 1,
       "unitTitle": "Probability Theory",
       "sources": [
@@ -118,13 +118,13 @@
       "sources": [
         "ptsp-unit-2-ptsp#slide.2"
       ],
-      "formula": ""
+      "formula": "X:S\\to\\mathbb{R}"
     },
     {
       "id": "pmf",
       "term": "Probability mass function",
       "definition": "Gives probability P(X=x) for a discrete random variable.",
-      "formula": "p_X(x)",
+      "formula": "p_X(x)=P(X=x),\\;\\sum_{x}p_X(x)=1",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -135,7 +135,7 @@
       "id": "pdf",
       "term": "Probability density function",
       "definition": "Nonnegative f_X with probability as integral over intervals.",
-      "formula": "P(a<X≤b)=∫_a^b f_X(x)dx",
+      "formula": "P(a<X\\le b)=\\int_{a}^{b}f_X(x)\\,dx",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -146,7 +146,7 @@
       "id": "cdf",
       "term": "Cumulative distribution function",
       "definition": "Probability that X takes value at most x.",
-      "formula": "F_X(x)=P(X≤x)",
+      "formula": "F_X(x)=P(X\\le x)=\\int_{-\\infty}^{x}f_X(u)\\,du",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -157,7 +157,7 @@
       "id": "expected-value",
       "term": "Expected value",
       "definition": "Mean or average value of a random variable.",
-      "formula": "E[X]=Σ x p_X(x) or ∫ x f_X(x)dx",
+      "formula": "E[X]=\\sum_{x}x\\,p_X(x)=\\int_{-\\infty}^{\\infty}x\\,f_X(x)\\,dx",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -168,7 +168,7 @@
       "id": "variance",
       "term": "Variance",
       "definition": "Measure of spread of a random variable around its mean.",
-      "formula": "Var(X)=E[(X-μ)^2]",
+      "formula": "\\sigma_X^2=E[(X-\\mu_X)^2]=E[X^2]-\\mu_X^2",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -179,7 +179,7 @@
       "id": "characteristic-function",
       "term": "Characteristic function",
       "definition": "Fourier transform of the PDF or PMF of a random variable.",
-      "formula": "φ_X(ω)=E[e^{jωX}]",
+      "formula": "\\varphi_X(\\omega)=E[e^{j\\omega X}]",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -190,7 +190,7 @@
       "id": "binomial-distribution",
       "term": "Binomial distribution",
       "definition": "Counts successes in n independent Bernoulli trials with success prob p.",
-      "formula": "P(X=k)=C(n,k)p^k(1-p)^{n-k}",
+      "formula": "P(X=k)=\\binom{n}{k}p^{k}(1-p)^{n-k}",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -201,7 +201,7 @@
       "id": "poisson-distribution",
       "term": "Poisson distribution",
       "definition": "Models number of rare events in fixed interval with rate λ.",
-      "formula": "P(X=k)=e^{-λ}λ^k/k!",
+      "formula": "P(X=k)=\\frac{\\lambda^{k}e^{-\\lambda}}{k!}",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -217,24 +217,25 @@
       "sources": [
         "ptsp-unit-2-ptsp#slide.3"
       ],
-      "formula": ""
+      "formula": "f_X(x)=\\frac{1}{b-a},\\;a\\le x\\le b"
     },
     {
       "id": "gaussian-distribution",
       "term": "Gaussian distribution",
       "definition": "Bell-shaped distribution with mean μ and variance σ².",
-      "formula": "f(x)=1/(σ√(2π)) e^{-(x-μ)^2/(2σ²)}",
+      "formula": "f_X(x)=\\frac{1}{\\sigma\\sqrt{2\\pi}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
         "ptsp-unit-2-ptsp#slide.3"
-      ]
+      ],
+      "diagram": "gaussian"
     },
     {
       "id": "exponential-distribution",
       "term": "Exponential distribution",
       "definition": "A continuous distribution modelling inter-arrival times of events occurring at a constant average rate λ, characterised by the memoryless property.",
-      "formula": "f(x)=λ e^{-λx}, x≥0",
+      "formula": "f_X(x)=\\lambda e^{-\\lambda x},\\;x\\ge 0",
       "unit": 2,
       "unitTitle": "Random Variables",
       "sources": [
@@ -250,13 +251,13 @@
       "sources": [
         "ptsp-unit-2-ptsp#slide.3"
       ],
-      "formula": ""
+      "formula": "f_X(x)=\\frac{x}{\\sigma^2}e^{-x^{2}/(2\\sigma^{2})},\\;x\\ge 0"
     },
     {
       "id": "joint-cdf",
       "term": "Joint CDF",
       "definition": "Cumulative distribution function giving the probability that X≤x and Y≤y simultaneously for the two-dimensional random vector (X, Y).",
-      "formula": "F_{X,Y}(x,y)=P(X≤x,Y≤y)",
+      "formula": "F_{X,Y}(x,y)=P(X\\le x,\\,Y\\le y)",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
@@ -267,7 +268,7 @@
       "id": "joint-pdf",
       "term": "Joint PDF",
       "definition": "Density function for a pair of random variables.",
-      "formula": "f_{X,Y}(x,y)",
+      "formula": "f_{X,Y}(x,y)=\\frac{\\partial^{2}F_{X,Y}(x,y)}{\\partial x\\,\\partial y}",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
@@ -283,13 +284,13 @@
       "sources": [
         "ptsp-unit-3-ptsp#slide.2"
       ],
-      "formula": ""
+      "formula": "f_X(x)=\\int_{-\\infty}^{\\infty}f_{X,Y}(x,y)\\,dy"
     },
     {
       "id": "conditional-pdf",
       "term": "Conditional PDF",
       "definition": "Probability density of X evaluated under the condition that Y has taken the specific value y, written as fX|Y(x|y).",
-      "formula": "f_{X|Y}(x|y)=f_{XY}(x,y)/f_Y(y)",
+      "formula": "f_{X\\mid Y}(x\\mid y)=\\frac{f_{X,Y}(x,y)}{f_Y(y)}",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
@@ -300,7 +301,7 @@
       "id": "covariance",
       "term": "Covariance",
       "definition": "Expected value of the product of deviations of two random variables from their respective means, measuring their joint linear variation.",
-      "formula": "Cov(X,Y)=E[(X-μ_X)(Y-μ_Y)]",
+      "formula": "\\operatorname{Cov}(X,Y)=E[(X-\\mu_X)(Y-\\mu_Y)]=E[XY]-\\mu_X\\mu_Y",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
@@ -311,7 +312,7 @@
       "id": "correlation-coefficient",
       "term": "Correlation coefficient",
       "definition": "Normalized measure of linear dependence between two random variables, obtained as covariance divided by the product of their standard deviations.",
-      "formula": "ρ_{XY}=Cov(X,Y)/(σ_X σ_Y)",
+      "formula": "\\rho_{XY}=\\frac{\\operatorname{Cov}(X,Y)}{\\sigma_X\\sigma_Y},\\;-1\\le\\rho_{XY}\\le 1",
       "unit": 3,
       "unitTitle": "Random Vectors",
       "sources": [
@@ -327,7 +328,7 @@
       "sources": [
         "ptsp-unit-3-ptsp#slide.2"
       ],
-      "formula": ""
+      "formula": "f_{X,Y}(x,y)=f_X(x)\\,f_Y(y)"
     },
     {
       "id": "central-limit-theorem",
@@ -338,7 +339,8 @@
       "sources": [
         "ptsp-unit-3-ptsp#slide.2"
       ],
-      "formula": ""
+      "formula": "Z_n=\\frac{\\sum_{i=1}^{n}X_i-n\\mu}{\\sigma\\sqrt{n}}\\xrightarrow{d}N(0,1)",
+      "diagram": "gaussian"
     },
     {
       "id": "jointly-gaussian",
@@ -349,13 +351,13 @@
       "sources": [
         "ptsp-unit-3-ptsp#slide.3"
       ],
-      "formula": ""
+      "formula": "f_{\\mathbf{X}}(\\mathbf{x})=(2\\pi)^{-n/2}|\\Sigma|^{-1/2}e^{-\\frac{1}{2}(\\mathbf{x}-\\mu)^{T}\\Sigma^{-1}(\\mathbf{x}-\\mu)}"
     },
     {
       "id": "random-process",
       "term": "Random process",
       "definition": "Family of time functions indexed by random outcomes.",
-      "formula": "X(t,ζ)",
+      "formula": "X(t,\\zeta),\\quad t\\in T,\\ \\zeta\\in S",
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
@@ -366,7 +368,7 @@
       "id": "ensemble-average",
       "term": "Ensemble average",
       "definition": "Expected value over all realizations at a given time.",
-      "formula": "E[X(t)]",
+      "formula": "\\mu_X(t)=E[X(t)]=\\int_{-\\infty}^{\\infty}x\\,f_{X(t)}(x)\\,dx",
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
@@ -377,7 +379,7 @@
       "id": "autocorrelation",
       "term": "Autocorrelation function",
       "definition": "Expected product of process values at two times.",
-      "formula": "R_XX(t1,t2)=E[X(t1)X(t2)]",
+      "formula": "R_{XX}(t_1,t_2)=E[X(t_1)X(t_2)]",
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
@@ -388,7 +390,7 @@
       "id": "autocovariance",
       "term": "Autocovariance function",
       "definition": "Covariance of process values at two time instants.",
-      "formula": "C_XX(t1,t2)=E[(X(t1)-μ)(X(t2)-μ)]",
+      "formula": "C_{XX}(t_1,t_2)=R_{XX}(t_1,t_2)-\\mu_X(t_1)\\mu_X(t_2)",
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
@@ -399,7 +401,7 @@
       "id": "cross-correlation",
       "term": "Cross-correlation function",
       "definition": "Measure of similarity between two random processes given by the expected product of their samples at specified time instants.",
-      "formula": "R_XY(t1,t2)=E[X(t1)Y(t2)]",
+      "formula": "R_{XY}(t_1,t_2)=E[X(t_1)Y(t_2)]",
       "unit": 4,
       "unitTitle": "Random Processes",
       "sources": [
@@ -415,13 +417,13 @@
       "sources": [
         "ptsp-unit-5-ptsp#p.1"
       ],
-      "formula": ""
+      "formula": "F_X(x_1,\\dots,x_n;t_1+\\tau,\\dots,t_n+\\tau)=F_X(x_1,\\dots,x_n;t_1,\\dots,t_n)"
     },
     {
       "id": "wss",
       "term": "Wide-sense stationarity",
       "definition": "Constant mean and autocorrelation depends only on time difference.",
-      "formula": "R_XX(t,t+τ)=R_XX(τ)",
+      "formula": "E[X(t)]=\\mu_X,\\quad R_{XX}(t,t+\\tau)=R_{XX}(\\tau)",
       "unit": 5,
       "unitTitle": "Stationarity and Correlation Theory",
       "sources": [
@@ -432,12 +434,13 @@
       "id": "psd",
       "term": "Power spectral density",
       "definition": "Fourier transform of autocorrelation of a WSS process.",
-      "formula": "S_XX(ω)=∫ R_XX(τ)e^{-jωτ}dτ",
+      "formula": "S_{XX}(\\omega)=\\int_{-\\infty}^{\\infty}R_{XX}(\\tau)e^{-j\\omega\\tau}\\,d\\tau",
       "unit": 5,
       "unitTitle": "Stationarity and Correlation Theory",
       "sources": [
         "ptsp-unit-5-ptsp#p.13"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "wiener-khinchine",
@@ -448,7 +451,8 @@
       "sources": [
         "ptsp-unit-5-ptsp#p.4"
       ],
-      "formula": ""
+      "formula": "R_{XX}(\\tau)=\\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty}S_{XX}(\\omega)e^{j\\omega\\tau}\\,d\\omega",
+      "diagram": "fourier"
     },
     {
       "id": "ergodicity",
@@ -459,7 +463,7 @@
       "sources": [
         "ptsp-unit-5-ptsp#p.4"
       ],
-      "formula": ""
+      "formula": "\\langle X(t)\\rangle=\\lim_{T\\to\\infty}\\frac{1}{2T}\\int_{-T}^{T}X(t)\\,dt=E[X(t)]"
     },
     {
       "id": "cross-psd",
@@ -470,13 +474,13 @@
       "sources": [
         "ptsp-unit-5-ptsp#p.3"
       ],
-      "formula": ""
+      "formula": "S_{XY}(\\omega)=\\int_{-\\infty}^{\\infty}R_{XY}(\\tau)e^{-j\\omega\\tau}\\,d\\tau"
     },
     {
       "id": "lti-response",
       "term": "Linear system response",
       "definition": "Output is convolution of input with impulse response.",
-      "formula": "Y(t)=∫ h(α)X(t-α)dα",
+      "formula": "Y(t)=\\int_{-\\infty}^{\\infty}h(\\alpha)X(t-\\alpha)\\,d\\alpha",
       "unit": 6,
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
@@ -492,7 +496,7 @@
       "sources": [
         "ptsp-unit-6-ptsp#p.4"
       ],
-      "formula": ""
+      "formula": "S_{nn}(f)=4kTR"
     },
     {
       "id": "shot-noise",
@@ -503,13 +507,13 @@
       "sources": [
         "ptsp-unit-6-ptsp#p.4"
       ],
-      "formula": ""
+      "formula": "S_{ii}(f)=2qI"
     },
     {
       "id": "entropy",
       "term": "Entropy",
       "definition": "Average information content per symbol of a random variable.",
-      "formula": "H(X)=-Σ p(x)log p(x)",
+      "formula": "H(X)=-\\sum_{x}p(x)\\log_2 p(x)",
       "unit": 6,
       "unitTitle": "Linear Systems with Random Inputs",
       "sources": [
@@ -525,7 +529,7 @@
       "sources": [
         "ptsp-unit-6-ptsp#p.19"
       ],
-      "formula": ""
+      "formula": "X(t)=X_c(t)\\cos\\omega_c t-X_s(t)\\sin\\omega_c t"
     }
   ]
 }

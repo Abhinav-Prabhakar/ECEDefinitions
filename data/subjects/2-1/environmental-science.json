@@ -52,7 +52,7 @@
       "sources": [
         "ese-unit-i-ecosystem-2024-25#slide.13"
       ],
-      "formula": ""
+      "formula": "\\eta=\\frac{E_{n+1}}{E_{n}}\\approx 0.1"
     },
     {
       "id": "food-web",
@@ -85,7 +85,7 @@
       "sources": [
         "ese-unit-i-ecosystem-2024-25#slide.29"
       ],
-      "formula": ""
+      "formula": "\\text{BMF}=\\frac{C_{n+1}}{C_{n}}>1"
     },
     {
       "id": "bioaccumulation",
@@ -96,7 +96,7 @@
       "sources": [
         "ese-unit-i-ecosystem-2024-25#slide.29"
       ],
-      "formula": ""
+      "formula": "\\text{BAF}=\\frac{C_{\\text{org}}}{C_{\\text{env}}}"
     },
     {
       "id": "carrying-capacity",
@@ -107,7 +107,7 @@
       "sources": [
         "ese-unit-i-ecosystem-2024-25#slide.31"
       ],
-      "formula": ""
+      "formula": "\\frac{dN}{dt}=rN\\left(1-\\frac{N}{K}\\right)"
     },
     {
       "id": "biogeochemical-cycle",
@@ -118,7 +118,8 @@
       "sources": [
         "ese-unit-i-ecosystem-2024-25#slide.19"
       ],
-      "formula": ""
+      "formula": "\\tau=\\frac{M}{F}",
+      "diagram": "carbon-cycle"
     },
     {
       "id": "natural-resources",
@@ -173,7 +174,8 @@
       "sources": [
         "ese-unit-ii-natural-resources-2024-25#slide.12"
       ],
-      "formula": ""
+      "formula": "V=R\\,A\\,C_{r}",
+      "diagram": "water-cycle"
     },
     {
       "id": "drought",
@@ -206,7 +208,7 @@
       "sources": [
         "ese-unit-ii-natural-resources-2024-25#slide.29"
       ],
-      "formula": ""
+      "formula": "E=\\Delta m\\,c^{2}"
     },
     {
       "id": "mineral",
@@ -240,7 +242,7 @@
       "sources": [
         "ese-unit-iii-biodiversity-ppt-2024-25#slide.5"
       ],
-      "formula": ""
+      "formula": "H_{e}=1-\\sum_{i}p_{i}^{2}"
     },
     {
       "id": "species-diversity",
@@ -251,7 +253,7 @@
       "sources": [
         "ese-unit-iii-biodiversity-ppt-2024-25#slide.6"
       ],
-      "formula": ""
+      "formula": "H'=-\\sum_{i=1}^{S}p_{i}\\ln p_{i}"
     },
     {
       "id": "ecological-diversity",
@@ -328,7 +330,7 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.4"
       ],
-      "formula": ""
+      "formula": "C_{\\text{SPM}}=\\frac{m}{V}"
     },
     {
       "id": "acid-rain",
@@ -339,7 +341,7 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.9"
       ],
-      "formula": ""
+      "formula": "\\text{pH}=-\\log_{10}\\left[\\mathrm{H}^{+}\\right]"
     },
     {
       "id": "greenhouse-effect",
@@ -350,7 +352,7 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.11"
       ],
-      "formula": ""
+      "formula": "\\Delta F=5.35\\ln\\left(\\frac{C}{C_{0}}\\right)"
     },
     {
       "id": "global-warming",
@@ -361,7 +363,7 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.11"
       ],
-      "formula": ""
+      "formula": "\\Delta T=\\lambda\\,\\Delta F"
     },
     {
       "id": "ozone-layer-depletion",
@@ -428,7 +430,7 @@
       "sources": [
         "ese-unit-iv-pollution-control-and-environmental-technology#p.42"
       ],
-      "formula": ""
+      "formula": "L_{p}=20\\log_{10}\\left(\\frac{p}{p_{0}}\\right)"
     },
     {
       "id": "e-waste",
@@ -483,7 +485,7 @@
       "sources": [
         "ese-unit-v-sustainable-development#slide.28"
       ],
-      "formula": ""
+      "formula": "C_{\\text{social}}=C_{\\text{private}}+C_{\\text{external}}"
     },
     {
       "id": "green-building",

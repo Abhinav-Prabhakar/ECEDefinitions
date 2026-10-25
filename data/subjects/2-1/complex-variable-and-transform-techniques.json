@@ -14,7 +14,7 @@
       "id": "complex-number",
       "term": "Complex number",
       "definition": "A number x+iy with real x,y and i^2=-1.",
-      "formula": "z=x+iy",
+      "formula": "z=x+iy,\\quad i^{2}=-1",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -25,7 +25,7 @@
       "id": "real-part",
       "term": "Real part",
       "definition": "Component Re(z)=x of the complex number z=x+iy, plotted along the horizontal axis of the complex plane.",
-      "formula": "Re(z)=x",
+      "formula": "\\operatorname{Re}(z)=x=\\frac{z+\\overline{z}}{2}",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -36,7 +36,7 @@
       "id": "imaginary-part",
       "term": "Imaginary part",
       "definition": "Component Im(z)=y of the complex number z=x+iy, the real coefficient multiplying i and plotted along the vertical axis.",
-      "formula": "Im(z)=y",
+      "formula": "\\operatorname{Im}(z)=y=\\frac{z-\\overline{z}}{2i}",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -47,7 +47,7 @@
       "id": "modulus",
       "term": "Modulus",
       "definition": "Distance from origin to point (x,y) in complex plane.",
-      "formula": "|z|=sqrt(x^2+y^2)",
+      "formula": "|z|=\\sqrt{x^{2}+y^{2}}=\\sqrt{z\\overline{z}}",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -58,7 +58,7 @@
       "id": "argument",
       "term": "Argument",
       "definition": "Angle between positive real axis and radius vector to z.",
-      "formula": "arg z=tan^-1(y/x)",
+      "formula": "\\arg z=\\arctan\\left(\\frac{y}{x}\\right)",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -69,7 +69,7 @@
       "id": "complex-conjugate",
       "term": "Complex conjugate",
       "definition": "Complex number z*=x-iy obtained by changing the sign of the imaginary part, reflecting z across the real axis.",
-      "formula": "conj(z)=x-iy",
+      "formula": "\\overline{z}=x-iy",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -80,7 +80,7 @@
       "id": "limit-complex",
       "term": "Limit of complex function",
       "definition": "Value approached by f(z) as z tends to z0 independent of path.",
-      "formula": "lim_{z->z0} f(z)",
+      "formula": "\\lim_{z\\to z_{0}}f(z)=L",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -91,7 +91,7 @@
       "id": "differentiability",
       "term": "Differentiability",
       "definition": "Existence of complex derivative independent of approach direction.",
-      "formula": "f'(z0)=lim_{z->z0} (f(z)-f(z0))/(z-z0)",
+      "formula": "f'(z_{0})=\\lim_{z\\to z_{0}}\\frac{f(z)-f(z_{0})}{z-z_{0}}",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -107,7 +107,7 @@
       "sources": [
         "cvtt-cvtt-unit-1-notes#p.10"
       ],
-      "formula": ""
+      "formula": "\\frac{\\partial f}{\\partial\\overline{z}}=0\\ \\text{in }D"
     },
     {
       "id": "entire-function",
@@ -118,13 +118,13 @@
       "sources": [
         "cvtt-cvtt-unit-1-notes#p.11"
       ],
-      "formula": ""
+      "formula": "f(z)=\\sum_{n=0}^{\\infty}a_{n}z^{n},\\quad R=\\infty"
     },
     {
       "id": "harmonic-function",
       "term": "Harmonic function",
       "definition": "Twice-differentiable real-valued u(x,y) satisfying Laplace's equation ∇²u=0 in a region; the real and imaginary parts of every analytic map satisfy it.",
-      "formula": "u_xx+u_yy=0",
+      "formula": "\\nabla^{2}u=u_{xx}+u_{yy}=0",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -140,13 +140,13 @@
       "sources": [
         "cvtt-cvtt-unit-1-notes#p.11"
       ],
-      "formula": ""
+      "formula": "v=\\int_{(x_{0},y_{0})}^{(x,y)}\\left(-u_{y}\\,dx+u_{x}\\,dy\\right)+C"
     },
     {
       "id": "cauchy-riemann",
       "term": "Cauchy-Riemann equations",
       "definition": "Partial differential conditions ux=vy and uy=-vx that are necessary for differentiability of f=u+iv and sufficient when the partials are continuous.",
-      "formula": "u_x=v_y, u_y=-v_x",
+      "formula": "u_{x}=v_{y},\\qquad u_{y}=-v_{x}",
       "unit": 1,
       "unitTitle": "Complex numbers/analytic functions",
       "sources": [
@@ -173,7 +173,7 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.7"
       ],
-      "formula": ""
+      "formula": "f\\ \\text{analytic on }0<|z-z_{0}|<R"
     },
     {
       "id": "pole",
@@ -184,24 +184,25 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.16"
       ],
-      "formula": ""
+      "formula": "f(z)=\\sum_{k=-n}^{\\infty}a_{k}(z-z_{0})^{k},\\quad a_{-n}\\neq 0"
     },
     {
       "id": "cauchy-integral-theorem",
       "term": "Cauchy's integral theorem",
       "definition": "Integral of analytic function over closed contour in simply connected domain is zero.",
-      "formula": "oint_C f(z) dz=0",
+      "formula": "\\oint_{C}f(z)\\,dz=0",
       "unit": 2,
       "unitTitle": "Conformal mapping/Cauchy",
       "sources": [
         "cvtt-cvtt-unit-2-notes#p.2"
-      ]
+      ],
+      "diagram": "vector-field"
     },
     {
       "id": "cauchy-integral-formula",
       "term": "Cauchy's integral formula",
       "definition": "Value of analytic function inside contour from boundary values.",
-      "formula": "f(a)=(1/2pi i) oint_C f(z)/(z-a) dz",
+      "formula": "f(a)=\\frac{1}{2\\pi i}\\oint_{C}\\frac{f(z)}{z-a}\\,dz",
       "unit": 2,
       "unitTitle": "Conformal mapping/Cauchy",
       "sources": [
@@ -228,13 +229,14 @@
       "sources": [
         "cvtt-cvtt-unit-2-notes#p.1"
       ],
-      "formula": ""
+      "formula": "w=f(z),\\quad f'(z_{0})\\neq 0",
+      "diagram": "eigen-directions"
     },
     {
       "id": "bilinear-transform",
       "term": "Bilinear (Mobius) transform",
       "definition": "Rational fractional transformation w=(az+b)/(cz+d) with nonzero determinant ad-bc, mapping circles and lines onto circles and lines in the extended plane.",
-      "formula": "w=(az+b)/(cz+d)",
+      "formula": "w=\\frac{az+b}{cz+d},\\quad ad-bc\\neq 0",
       "unit": 2,
       "unitTitle": "Conformal mapping/Cauchy",
       "sources": [
@@ -250,7 +252,7 @@
       "sources": [
         "cvtt-cvtt-unit-3-notes#p.12"
       ],
-      "formula": ""
+      "formula": "(z_{1},z_{2};z_{3},z_{4})=\\frac{(z_{1}-z_{3})(z_{2}-z_{4})}{(z_{1}-z_{4})(z_{2}-z_{3})}"
     },
     {
       "id": "fixed-point",
@@ -261,13 +263,13 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.23"
       ],
-      "formula": ""
+      "formula": "f(z_{0})=z_{0}"
     },
     {
       "id": "taylor-series",
       "term": "Taylor series",
       "definition": "Power series expansion of analytic function about a point.",
-      "formula": "f(z)=sum f^(n)(a)(z-a)^n/n!",
+      "formula": "f(z)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(a)}{n!}(z-a)^{n},\\quad |z-a|<R",
       "unit": 3,
       "unitTitle": "Series/residues",
       "sources": [
@@ -283,7 +285,7 @@
       "sources": [
         "cvtt-cvtt-unit-3-notes#p.1"
       ],
-      "formula": ""
+      "formula": "f(z)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(0)}{n!}z^{n}"
     },
     {
       "id": "laurent-series",
@@ -294,13 +296,13 @@
       "sources": [
         "cvtt-cvtt-unit-3-notes#p.1"
       ],
-      "formula": ""
+      "formula": "f(z)=\\sum_{n=-\\infty}^{\\infty}a_{n}(z-z_{0})^{n},\\quad r<|z-z_{0}|<R"
     },
     {
       "id": "residue",
       "term": "Residue",
       "definition": "Coefficient of the (z-z0)^-1 term in the Laurent expansion of f about an isolated singularity, the key quantity for evaluating contour integrals.",
-      "formula": "Res(f,z0)=a_{-1}",
+      "formula": "\\operatorname{Res}_{z=z_{0}}f(z)=a_{-1}=\\frac{1}{2\\pi i}\\oint_{C}f(z)\\,dz",
       "unit": 3,
       "unitTitle": "Series/residues",
       "sources": [
@@ -316,13 +318,13 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.16"
       ],
-      "formula": ""
+      "formula": "f(z)=\\frac{\\phi(z)}{(z-z_{0})^{n}},\\quad \\phi(z_{0})\\neq 0"
     },
     {
       "id": "residue-theorem",
       "term": "Residue theorem",
       "definition": "Contour integral equals 2pi i times sum of enclosed residues.",
-      "formula": "oint_C f dz=2pi i sum Res",
+      "formula": "\\oint_{C}f(z)\\,dz=2\\pi i\\sum_{k=1}^{n}\\operatorname{Res}_{z=z_{k}}f(z)",
       "unit": 3,
       "unitTitle": "Series/residues",
       "sources": [
@@ -333,7 +335,7 @@
       "id": "laplace-transform",
       "term": "Laplace transform",
       "definition": "Integral transform F(s)=∫f(t)e^(-st)dt of a function f(t) defined for t≥0, converting differential equations into algebraic equations in s.",
-      "formula": "F(s)=int_0^infty e^{-st} f(t) dt",
+      "formula": "F(s)=\\int_{0}^{\\infty}f(t)e^{-st}\\,dt",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -349,13 +351,13 @@
       "sources": [
         "cvtt-umr-laplace-transform-lecture-1#p.9"
       ],
-      "formula": ""
+      "formula": "|f(t)|\\le Me^{at},\\quad t\\ge 0"
     },
     {
       "id": "inverse-laplace",
       "term": "Inverse Laplace transform",
       "definition": "Operation that recovers the original time function f(t) from its transform F(s), most often computed using partial fraction decomposition of F(s).",
-      "formula": "f(t)=L^{-1}{F(s)}",
+      "formula": "F(s)=\\sum_{k}\\frac{A_{k}}{s-s_{k}}\\ \\Rightarrow\\ f(t)=\\sum_{k}A_{k}e^{s_{k}t}",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -366,7 +368,7 @@
       "id": "first-shifting",
       "term": "First shifting theorem",
       "definition": "Shifting theorem stating that multiplication of f(t) by e^(at) shifts the transform from F(s) to F(s-a) in the s-domain.",
-      "formula": "L{e^{at} f(t)}=F(s-a)",
+      "formula": "\\mathcal{L}\\{e^{at}f(t)\\}=F(s-a)",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -377,7 +379,7 @@
       "id": "second-shifting",
       "term": "Second shifting theorem",
       "definition": "Shifting theorem stating that a delayed function f(t-a)u(t-a) has transform e^(-as)F(s), so a time shift introduces an exponential factor.",
-      "formula": "L{f(t-a) u(t-a)}=e^{-as} F(s)",
+      "formula": "\\mathcal{L}\\{f(t-a)u(t-a)\\}=e^{-as}F(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -388,7 +390,7 @@
       "id": "initial-value-theorem",
       "term": "Initial value theorem",
       "definition": "Result giving f(0+) as the limit of sF(s) as s tends to infinity, valid when F(s) is a proper rational function.",
-      "formula": "f(0+)=lim_{s->infty} sF(s)",
+      "formula": "f(0^{+})=\\lim_{s\\to\\infty}sF(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -399,7 +401,7 @@
       "id": "final-value-theorem",
       "term": "Final value theorem",
       "definition": "Result giving f(∞) as the limit of sF(s) as s tends to zero, valid when sF(s) has poles only in the left half plane.",
-      "formula": "f(infty)=lim_{s->0} sF(s)",
+      "formula": "f(\\infty)=\\lim_{s\\to 0}sF(s)",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -410,7 +412,7 @@
       "id": "convolution-theorem",
       "term": "Convolution theorem",
       "definition": "Result stating that the Laplace transform of ∫₀ᵗ f(τ)g(t−τ)dτ equals the product of the individual Laplace transforms F(s)G(s).",
-      "formula": "L{f*g}=F(s)G(s)",
+      "formula": "\\mathcal{L}\\{f*g\\}=F(s)G(s),\\quad (f*g)(t)=\\int_{0}^{t}f(\\tau)g(t-\\tau)\\,d\\tau",
       "unit": 4,
       "unitTitle": "Laplace transform",
       "sources": [
@@ -426,18 +428,19 @@
       "sources": [
         "cvtt-cvtt-unit-3-notes#p.18"
       ],
-      "formula": ""
+      "formula": "f(t)=a_{0}+\\sum_{n=1}^{\\infty}\\left(a_{n}\\cos n\\omega_{0}t+b_{n}\\sin n\\omega_{0}t\\right)"
     },
     {
       "id": "fourier-transform",
       "term": "Fourier transform",
       "definition": "Integral transform F(ω) of e^(-jωt)f(t) that converts a nonperiodic time signal into its continuous frequency-domain spectrum.",
-      "formula": "X(ω)=∫f(t)e^{-jωt}dt",
+      "formula": "X(\\omega)=\\int_{-\\infty}^{\\infty}x(t)e^{-j\\omega t}\\,dt",
       "unit": 5,
       "unitTitle": "Fourier transform",
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.17"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "inverse-fourier",
@@ -448,7 +451,7 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.17"
       ],
-      "formula": ""
+      "formula": "x(t)=\\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty}X(\\omega)e^{j\\omega t}\\,d\\omega"
     },
     {
       "id": "parseval-theorem",
@@ -459,18 +462,19 @@
       "sources": [
         "cvtt-cvtt-reference-questions-unit-1-6#para.21"
       ],
-      "formula": ""
+      "formula": "\\int_{-\\infty}^{\\infty}|x(t)|^{2}\\,dt=\\frac{1}{2\\pi}\\int_{-\\infty}^{\\infty}|X(\\omega)|^{2}\\,d\\omega"
     },
     {
       "id": "z-transform",
       "term": "Z-transform",
       "definition": "Mapping X(z) of a discrete sequence u_n, defined as the power series Σu_n z^-n and analogous to the Laplace domain representation for continuous signals.",
-      "formula": "Z{u_n}=sum_{n=0}^{infty} u_n z^{-n}",
+      "formula": "X(z)=\\sum_{n=0}^{\\infty}u_{n}z^{-n}",
       "unit": 6,
       "unitTitle": "Z-transform",
       "sources": [
         "cvtt-unit-iv-v-and-vi-refrence-questions#para.27"
-      ]
+      ],
+      "diagram": "z-plane"
     },
     {
       "id": "region-of-convergence",
@@ -481,7 +485,7 @@
       "sources": [
         "cvtt-unit-iv-v-and-vi-refrence-questions#para.27"
       ],
-      "formula": ""
+      "formula": "R_{1}<|z|<R_{2}"
     },
     {
       "id": "inverse-z-transform",
@@ -492,13 +496,13 @@
       "sources": [
         "cvtt-unit-iv-v-and-vi-refrence-questions#para.14"
       ],
-      "formula": ""
+      "formula": "u_{n}=\\frac{1}{2\\pi j}\\oint_{C}X(z)z^{n-1}\\,dz"
     },
     {
       "id": "initial-value-z",
       "term": "Initial value (Z)",
       "definition": "Theorem giving the first sample u_0 of the sequence as the limit of F(z) as z tends to infinity.",
-      "formula": "u_0=lim_{z->infty} F(z)",
+      "formula": "u_{0}=\\lim_{z\\to\\infty}F(z)",
       "unit": 6,
       "unitTitle": "Z-transform",
       "sources": [
@@ -509,7 +513,7 @@
       "id": "final-value-z",
       "term": "Final value (Z)",
       "definition": "Theorem giving the limiting value u_∞ of the sequence as the limit of (1-z^-1)F(z) as z approaches unity.",
-      "formula": "lim_{n->infty} u_n=lim_{z->1} (z-1)F(z)",
+      "formula": "u_{\\infty}=\\lim_{z\\to 1}(1-z^{-1})F(z)",
       "unit": 6,
       "unitTitle": "Z-transform",
       "sources": [
@@ -525,7 +529,7 @@
       "sources": [
         "cvtt-unit-iv-v-and-vi-refrence-questions#para.12"
       ],
-      "formula": ""
+      "formula": "\\mathcal{Z}\\left\\{\\sum_{k}x(k)y(n-k)\\right\\}=X(z)Y(z)"
     }
   ]
 }
