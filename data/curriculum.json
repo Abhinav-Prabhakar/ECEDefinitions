@@ -51,11 +51,11 @@
           "folderId": "1-mWpn3WSll2yrWeDpFkwxLV0Xbj7RCd7",
           "folderUrl": "https://drive.google.com/drive/folders/1-mWpn3WSll2yrWeDpFkwxLV0Xbj7RCd7",
           "data": "data/subjects/1-1/matrix-algebra-and-calculus.json",
-          "definitionCount": 5,
+          "definitionCount": 48,
           "unitCount": 6,
-          "coveredUnits": 1,
-          "status": "partial",
-          "sourceCount": 1
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 22
         },
         {
           "id": "problem-solving-using-c",
@@ -711,9 +711,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 41,
-    "definitions": 1602,
-    "completeSubjects": 27,
-    "partialSubjects": 7,
+    "definitions": 1645,
+    "completeSubjects": 28,
+    "partialSubjects": 6,
     "inaccessibleSubjects": 8
   }
 }
