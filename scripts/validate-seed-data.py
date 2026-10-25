@@ -67,7 +67,8 @@ def main():
         for sub in sem.get("subjects",[]):
             need={"id","name","shortName","code","courseType","folderId","folderUrl","data","definitionCount","unitCount","coveredUnits","status","sourceCount"}
             if need-set(sub.keys()): err(f"subject {sub.get('id')}: missing key(s) {sorted(need-set(sub.keys()))}")
-            if set(sub.keys())-need: err(f"subject {sub.get('id')}: extra keys {sorted(set(sub.keys())-need)}")
+            extra=set(sub.keys())-need-{'elective'}  # optional slot name for elective options
+            if extra: err(f"subject {sub.get('id')}: extra keys {sorted(extra)}")
             sid=sub["id"]
             sid_list.append(sid)
             if sid in subj_ids: err(f"duplicate subject id {sid}")
