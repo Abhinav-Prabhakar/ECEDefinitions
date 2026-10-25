@@ -453,6 +453,205 @@
         "ertos-unix-file-io-unit-1#slide.18"
       ],
       "formula": ""
+    },
+    {
+      "id": "interrupt",
+      "term": "Interrupt",
+      "definition": "Signal asking the processor to pause its current code so an event can be handled promptly, after which execution often resumes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-interrupt#Lead-section"
+      ]
+    },
+    {
+      "id": "isr",
+      "term": "ISR",
+      "definition": "Function the processor runs to deal with a hardware or software request that has paused its current code.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-interrupt#Lead-section"
+      ]
+    },
+    {
+      "id": "exception",
+      "term": "Exception",
+      "definition": "Synchronous processor event raised by an exceptional condition in the running instruction, such as division by zero.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-interrupt#Software-interrupts"
+      ]
+    },
+    {
+      "id": "nmi",
+      "term": "NMI",
+      "definition": "Hardware request that cannot be disabled by the mask register, used for high-priority events such as watchdog timeouts.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-interrupt#Masking"
+      ]
+    },
+    {
+      "id": "spurious-interrupt",
+      "term": "Spurious Interrupt",
+      "definition": "Hardware request for which no source can be found, often caused by wired-OR circuits, electrical noise or timing problems.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-interrupt#Spurious-interrupts"
+      ]
+    },
+    {
+      "id": "interrupt-controller",
+      "term": "Interrupt Controller",
+      "definition": "Component that multiplexes many request sources onto the processor's one or two request lines, and on a system-on-chip aggregates them for the cores.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-interrupt#System-implementation"
+      ]
+    },
+    {
+      "id": "real-time-clock",
+      "term": "Real-Time Clock",
+      "definition": "Electronic timekeeping device, usually an integrated circuit, that keeps accurate time of day and runs from a backup battery when main power is off.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-rtc#Terminology",
+        "ertos-web-rtc#Power-source"
+      ]
+    },
+    {
+      "id": "programmable-interval-timer",
+      "term": "Programmable Interval Timer",
+      "definition": "Counter that produces an output signal on reaching a programmed count, which may be used to trigger a processor request.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-pit#Lead-section"
+      ]
+    },
+    {
+      "id": "one-shot-timer",
+      "term": "One-Shot Timer",
+      "definition": "Timer that signals only once on reaching its programmed count and then stops counting, unlike a periodic one.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Exceptions, Interrupts and Timers",
+      "sources": [
+        "ertos-web-pit#Common-features"
+      ]
+    },
+    {
+      "id": "rt-linux",
+      "term": "RT Linux",
+      "definition": "Hard real-time microkernel that runs a general-purpose Linux system as its lowest-priority, fully preemptible task beside real-time tasks.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-rtlinux#Background"
+      ]
+    },
+    {
+      "id": "micro-c-os-ii",
+      "term": "Micro C/OS-II",
+      "definition": "Portable, scalable preemptive real-time kernel for microprocessors and DSPs with a footprint of roughly 5 to 24 KB and priority-based scheduling.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-ucos#Micro-Controller-Operating-Systems"
+      ]
+    },
+    {
+      "id": "vxworks",
+      "term": "VxWorks",
+      "definition": "Proprietary embedded real-time operating system from Wind River offering multitasking with preemptive and round-robin scheduling and fast interrupt response.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-vxworks#Lead-section"
+      ]
+    },
+    {
+      "id": "tinyos",
+      "term": "TinyOS",
+      "definition": "Embedded operating system for low-power wireless sensor devices, built from components with a single call stack and non-blocking operation.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-tinyos#Implementation"
+      ]
+    },
+    {
+      "id": "nesc",
+      "term": "nesC",
+      "definition": "Variant of C designed for the tight memory limits of sensor networks, in which event-driven component-based programs are written.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-tinyos#Implementation"
+      ]
+    },
+    {
+      "id": "tinyos-task",
+      "term": "TinyOS Task",
+      "definition": "Deferred longer computation posted by a component and run later, non-preemptively and in first-in first-out order.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-tinyos#Implementation"
+      ]
+    },
+    {
+      "id": "embedded-linux",
+      "term": "Embedded Linux",
+      "definition": "Use of the Linux kernel in embedded systems, valued for versatility, community support and adaptability to size and power limits.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-embedded-linux#Lead-section"
+      ]
+    },
+    {
+      "id": "uclinux",
+      "term": "uClinux",
+      "definition": "Linux variant that enabled ports to microprocessors lacking a memory management unit.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-embedded-linux#History"
+      ]
+    },
+    {
+      "id": "preempt-rt",
+      "term": "PREEMPT_RT",
+      "definition": "Kernel patch started in 2005 to give Linux deterministic real-time behaviour, merged into the mainline kernel in 2024 for supported architectures.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Studies of RTOS",
+      "sources": [
+        "ertos-web-embedded-linux#Real-time"
+      ]
     }
   ]
 }

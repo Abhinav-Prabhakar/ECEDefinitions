@@ -157,6 +157,9 @@ def check_defs(sid, d, src_ids):
                 err(f"{sid} def#{i} '{term}': cites inaccessible source {srcid}")
             if st.get("subjectId")!=sid:
                 err(f"{sid} def#{i} '{term}': source {srcid} belongs to {st.get('subjectId')}")
+            if st.get("kind")=="web":
+                if not re.fullmatch(r"[A-Za-z0-9._-]+", locpart): err(f"{sid} def#{i} '{term}': web locator {locpart!r} not a section slug")
+                continue
             mm=re.fullmatch(r"p\.\d+", locpart) or re.fullmatch(r"slide\.\d+", locpart) or re.fullmatch(r"para\.\d+", locpart)
             if not mm and st.get("kind")=="web": mm=re.fullmatch(r"[a-z][a-z0-9-]*", locpart)  # section slug of a web page
             if not mm: err(f"{sid} def#{i} '{term}': locator {locpart!r} not p.N / slide.N / para.N")

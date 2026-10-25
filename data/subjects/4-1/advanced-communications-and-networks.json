@@ -8,11 +8,14 @@
   "courseType": "PC",
   "folderId": "1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
   "folderUrl": "https://drive.google.com/drive/folders/1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
-  "status": "partial",
+  "status": "complete",
   "coveredUnits": [
     1,
     2,
-    3
+    3,
+    4,
+    5,
+    6
   ],
   "definitions": [
     {
@@ -487,6 +490,303 @@
       ],
       "id": "internet-protocol-version-6-ipv6",
       "formula": ""
+    },
+    {
+      "id": "ssid",
+      "term": "SSID",
+      "definition": "Network name that an access point announces in beacon frames and that a station names in its association request.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Layer-2-Datagrams"
+      ]
+    },
+    {
+      "id": "ieee-802-11b",
+      "term": "IEEE 802.11b",
+      "definition": "WLAN amendment using the 2.4 GHz band at up to 11 Mbit/s raw rate with DSSS and CCK modulation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Protocol"
+      ]
+    },
+    {
+      "id": "ieee-802-11g",
+      "term": "IEEE 802.11g",
+      "definition": "WLAN amendment using the 2.4 GHz band with OFDM for up to 54 Mbit/s and backward compatibility with the 11 Mbit/s standard.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Protocol"
+      ]
+    },
+    {
+      "id": "ieee-802-11a",
+      "term": "IEEE 802.11a",
+      "definition": "WLAN amendment using the 5 GHz band with OFDM modulation for a raw rate of up to 54 Mbit/s.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Protocol"
+      ]
+    },
+    {
+      "id": "ieee-802-11n",
+      "term": "IEEE 802.11n",
+      "definition": "WLAN amendment using MIMO-OFDM with up to 64-QAM in the 2.4 and 5 GHz bands for rates up to about 600 Mbit/s.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Protocol"
+      ]
+    },
+    {
+      "id": "ieee-802-11ac",
+      "term": "IEEE 802.11ac",
+      "definition": "5 GHz-only WLAN amendment using wide channels up to 160 MHz and up to 256-QAM for multi-gigabit rates.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Protocol"
+      ]
+    },
+    {
+      "id": "csma-ca",
+      "term": "CSMA/CA",
+      "definition": "Medium access method where a station listens to the channel before each frame, optionally exchanging RTS and CTS to handle hidden stations.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-ieee-802-11#Protocol"
+      ]
+    },
+    {
+      "id": "hiperlan-2",
+      "term": "HiperLAN/2",
+      "definition": "ETSI 5 GHz wireless LAN standard using OFDM with dynamic TDMA access and quality-of-service support, with a physical layer similar to 802.11a.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-hiperlan#HiperLAN-2"
+      ]
+    },
+    {
+      "id": "virtual-private-network-vpn",
+      "term": "Virtual Private Network (VPN)",
+      "definition": "Overlay that extends a private network across a public one such as the internet, using encryption and tunneling.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Wireless LANs",
+      "sources": [
+        "acn-web-vpn#Background"
+      ]
+    },
+    {
+      "id": "bluetooth",
+      "term": "Bluetooth",
+      "definition": "Short-range wireless standard for exchanging data between devices over about ten metres, standardised by the IEEE as 802.15.1.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-bluetooth#Specifications-and-features"
+      ]
+    },
+    {
+      "id": "piconet",
+      "term": "Piconet",
+      "definition": "Small ad hoc network in which one master device communicates with up to seven active slaves that all follow the master's clock.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-bluetooth#Technical-information"
+      ]
+    },
+    {
+      "id": "scatternet",
+      "term": "Scatternet",
+      "definition": "Interconnection of two or more small master-slave networks in which some device is master in one and slave in another.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-bluetooth#Technical-information"
+      ]
+    },
+    {
+      "id": "bluetooth-frequency-hopping",
+      "term": "Bluetooth Frequency Hopping",
+      "definition": "Radio technique sending each packet on one of 79 one-megahertz channels, about 1,600 hops per second, with adaptive hopping to avoid crowded frequencies.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-bluetooth#Technical-information"
+      ]
+    },
+    {
+      "id": "link-manager",
+      "term": "Link Manager",
+      "definition": "Software on the device's processor that sets up, authenticates and configures connections between Bluetooth devices using LMP.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-bluetooth#Technical-information"
+      ]
+    },
+    {
+      "id": "link-controller",
+      "term": "Link Controller",
+      "definition": "Part of the Bluetooth digital controller that handles baseband processing, error correction and retransmission, audio coding and encryption.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-bluetooth#Technical-information"
+      ]
+    },
+    {
+      "id": "wimax",
+      "term": "WiMAX",
+      "definition": "Family of wireless broadband standards based on IEEE 802.16, which defines both the physical layer and the MAC layer.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-wimax#Terminology"
+      ]
+    },
+    {
+      "id": "connection-oriented-mac",
+      "term": "Connection-Oriented MAC",
+      "definition": "Medium access design of 802.16 in which a base station assigns each subscriber station a fixed time slot, unlike contention-based CSMA/CA.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-wimax#Media-access-control-layer"
+      ]
+    },
+    {
+      "id": "subscriber-station",
+      "term": "Subscriber Station",
+      "definition": "Device such as a handset, USB dongle or laptop module that connects to a WiMAX base station.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wireless PANs and MANs",
+      "sources": [
+        "acn-web-wimax#Connecting"
+      ]
+    },
+    {
+      "id": "ofdm",
+      "term": "OFDM",
+      "definition": "Multicarrier scheme sending data over closely spaced orthogonal subcarriers so that they do not interfere and need no guard bands.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-ofdm#Orthogonality"
+      ]
+    },
+    {
+      "id": "cyclic-prefix",
+      "term": "Cyclic Prefix",
+      "definition": "Copy of the end of each symbol sent ahead of it in the guard interval, so multipath echoes cause no intersymbol interference.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-ofdm#Guard-interval-for-elimination-of-intersymbol-interference"
+      ]
+    },
+    {
+      "id": "papr",
+      "term": "PAPR",
+      "definition": "Ratio of peak to average transmitted power, high in multicarrier signals because independent subcarriers often add constructively, demanding linear power amplifiers.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-ofdm#Linear-transmitter-power-amplifier"
+      ]
+    },
+    {
+      "id": "mimo",
+      "term": "MIMO",
+      "definition": "Wireless technique using several transmit and receive antennas to raise link capacity through spatial diversity and spatial multiplexing.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-mimo#Functions"
+      ]
+    },
+    {
+      "id": "spatial-multiplexing",
+      "term": "Spatial Multiplexing",
+      "definition": "Splitting a high-rate stream into several lower-rate streams sent simultaneously on the same frequency and separated by their spatial signatures.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-mimo#Functions"
+      ]
+    },
+    {
+      "id": "enodeb",
+      "term": "eNodeB",
+      "definition": "Only network element on the radio access side of LTE's E-UTRAN, serving the mobile devices directly.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-lte#Overview"
+      ]
+    },
+    {
+      "id": "mme",
+      "term": "MME",
+      "definition": "Key control node of the LTE core handling paging, bearer setup, gateway selection, NAS signalling and user authentication with the subscriber database.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-epc#SAE-Architecture"
+      ]
+    },
+    {
+      "id": "td-lte",
+      "term": "TD-LTE",
+      "definition": "Time-division variant of LTE in which uplink and downlink share one frequency channel.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-lte#LTE-TDD-and-LTE-FDD"
+      ]
+    },
+    {
+      "id": "volte",
+      "term": "VoLTE",
+      "definition": "Industry-standardised method of carrying voice calls over LTE using the IP multimedia subsystem, typically with a wideband AMR codec.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "OFDM, MIMO and LTE",
+      "sources": [
+        "acn-web-lte#Voice-calls"
+      ]
     }
   ]
 }

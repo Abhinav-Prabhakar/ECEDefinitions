@@ -612,11 +612,11 @@
           "folderId": "1QCzsKSV2gp_IjYXLEirUw_SUg8v_oNrN",
           "folderUrl": "https://drive.google.com/drive/folders/1QCzsKSV2gp_IjYXLEirUw_SUg8v_oNrN",
           "data": "data/subjects/3-2/vlsi-technology-and-design.json",
-          "definitionCount": 50,
+          "definitionCount": 61,
           "unitCount": 6,
-          "coveredUnits": 5,
-          "status": "partial",
-          "sourceCount": 6
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 11
         },
         {
           "id": "advanced-entrepreneurship",
@@ -780,11 +780,11 @@
           "folderId": "1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
           "folderUrl": "https://drive.google.com/drive/folders/1jIpX-aHZt3vyhHMkZoLcuV8Ntr0bOy5o",
           "data": "data/subjects/4-1/advanced-communications-and-networks.json",
-          "definitionCount": 43,
+          "definitionCount": 70,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 12
         },
         {
           "id": "computer-networks",
@@ -810,11 +810,11 @@
           "folderId": "1kecqObpSdxgTDP0JbzrswXfzaiWLDOQr",
           "folderUrl": "https://drive.google.com/drive/folders/1kecqObpSdxgTDP0JbzrswXfzaiWLDOQr",
           "data": "data/subjects/4-1/embedded-real-time-operating-systems.json",
-          "definitionCount": 40,
+          "definitionCount": 58,
           "unitCount": 6,
-          "coveredUnits": 4,
-          "status": "partial",
-          "sourceCount": 5
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 13
         },
         {
           "id": "internet-of-things-and-applications",
@@ -825,11 +825,11 @@
           "folderId": "1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
           "folderUrl": "https://drive.google.com/drive/folders/1L8P5v5PIlwiAodMCdZmqdEsWg2cjvYLV",
           "data": "data/subjects/4-1/internet-of-things-and-applications.json",
-          "definitionCount": 40,
+          "definitionCount": 67,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 17
         },
         {
           "id": "system-on-chip-architecture",
@@ -840,11 +840,11 @@
           "folderId": "1arVAiVCv0eOiwsK7Db6Q4NDBCRdssMS1",
           "folderUrl": "https://drive.google.com/drive/folders/1arVAiVCv0eOiwsK7Db6Q4NDBCRdssMS1",
           "data": "data/subjects/4-1/system-on-chip-architecture.json",
-          "definitionCount": 40,
+          "definitionCount": 67,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 9
         },
         {
           "id": "operating-systems-concepts",

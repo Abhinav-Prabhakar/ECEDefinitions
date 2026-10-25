@@ -3753,6 +3753,426 @@
       "sha256": "5baf53bf4cf92588369c3200eb9c3bee88e08f282a4e01e52746b5521710420b"
     },
     {
+      "id": "acn-web-ieee-802-11",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "IEEE 802.11 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/IEEE_802.11",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-hiperlan",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "HiperLAN (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/HiperLAN",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-vpn",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Virtual private network (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Virtual_private_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-bluetooth",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Bluetooth (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bluetooth",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-wimax",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "WiMAX (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/WiMAX",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-ofdm",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Orthogonal frequency-division multiplexing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Orthogonal_frequency-division_multiplexing",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-mimo",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "MIMO (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/MIMO",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-lte",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "LTE (telecommunication) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/LTE_(telecommunication)",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "acn-web-epc",
+      "semester": "4-1",
+      "subjectId": "advanced-communications-and-networks",
+      "name": "Evolved Packet Core (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Evolved_Packet_Core",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-interrupt",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Interrupt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Interrupt",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-rtc",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Real-time clock (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Real-time_clock",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-pit",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Programmable interval timer (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Programmable_interval_timer",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-rtlinux",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "RTLinux (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/RTLinux",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-ucos",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Micro-Controller Operating Systems (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Micro-Controller_Operating_Systems",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-vxworks",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "VxWorks (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/VxWorks",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-tinyos",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "TinyOS (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/TinyOS",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "ertos-web-embedded-linux",
+      "semester": "4-1",
+      "subjectId": "embedded-real-time-operating-systems",
+      "name": "Embedded Linux (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Embedded_Linux",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-mqtt",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "MQTT (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/MQTT",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-coap",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Constrained Application Protocol (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Constrained_Application_Protocol",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-amqp",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Advanced Message Queuing Protocol (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-dds",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Data Distribution Service (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Data_Distribution_Service",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-xmpp",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "XMPP (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Extensible_Messaging_and_Presence_Protocol",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-rest",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "REST (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/REST",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-design-methodology-slides",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "IoT Platform Design Methodology (SlideShare slides)",
+      "url": "https://www.slideshare.net/poonamkumawat11/iot-platform-design-methodologypptx",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-wsn",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Wireless sensor network (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wireless_sensor_network",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-home-automation",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Home automation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_automation",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-weather-station",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Weather station (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Weather_station",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-smart-lighting",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Lighting control system (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Smart_lighting",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-security-alarm",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Security alarm (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Security_alarm",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-irrigation-scheduling",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Irrigation scheduling (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Irrigation_scheduling",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "iota-web-air-pollution-measurement",
+      "semester": "4-1",
+      "subjectId": "internet-of-things-and-applications",
+      "name": "Air pollution measurement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Air_pollution_measurement",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-soc",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "System on a chip (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/System_on_a_chip",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-amba",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Advanced Microcontroller Bus Architecture (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Microcontroller_Bus_Architecture",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-reconfigurable-computing",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Reconfigurable computing (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reconfigurable_computing",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-soft-microprocessor",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Soft microprocessor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soft_microprocessor",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-aes",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "Advanced Encryption Standard (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Advanced_Encryption_Standard",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "soca-web-jpeg",
+      "semester": "4-1",
+      "subjectId": "system-on-chip-architecture",
+      "name": "JPEG (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/JPEG",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-sheet-resistance",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Sheet resistance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sheet_resistance",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-propagation-delay",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Propagation delay (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Propagation_delay",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-fan-out",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Fan-out (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fan-out",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-pld",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Programmable logic device (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Programmable_logic_device",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
+      "id": "vlsitd-web-fpga",
+      "semester": "3-2",
+      "subjectId": "vlsi-technology-and-design",
+      "name": "Field-programmable gate array (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Field-programmable_gate_array",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "section slug"
+    },
+    {
       "id": "boe-u1",
       "semester": "3-1",
       "subjectId": "basics-of-entrepreneurship",
