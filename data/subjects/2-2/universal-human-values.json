@@ -19,7 +19,8 @@
       "sources": [
         "uhv-uhv-i#p.13"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "values-circle"
     },
     {
       "id": "value",
@@ -261,7 +262,8 @@
       "sources": [
         "uhv-unit-4#p.1"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "harmony-orders"
     },
     {
       "id": "mutual-fulfillment",

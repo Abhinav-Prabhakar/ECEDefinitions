@@ -19,7 +19,7 @@
       "sources": [
         "adc-adc-unit-i#slide.8"
       ],
-      "formula": ""
+      "formula": "s(t)=A(t)\\cos\\left[\\omega_{c}t+\\phi(t)\\right]"
     },
     {
       "id": "am",
@@ -30,18 +30,20 @@
       "sources": [
         "adc-adc-unit-i#slide.4"
       ],
-      "formula": ""
+      "formula": "s(t)=A_{c}\\left[1+\\mu\\,m(t)\\right]\\cos\\omega_{c}t",
+      "diagram": "am-modulation"
     },
     {
       "id": "modulation-index-am",
       "term": "Modulation index (AM)",
       "definition": "Ratio of the message-signal amplitude to the amplitude of the unmodulated carrier wave.",
-      "formula": "μ = A_m/A_c",
+      "formula": "\\mu=\\frac{A_{m}}{A_{c}}",
       "unit": 1,
       "unitTitle": "Amplitude Modulation",
       "sources": [
         "adc-adc-unit-i#slide.8"
-      ]
+      ],
+      "diagram": "am-modulation"
     },
     {
       "id": "dsbsc",
@@ -52,7 +54,7 @@
       "sources": [
         "adc-adc-unit-i#slide.8"
       ],
-      "formula": ""
+      "formula": "s(t)=A_{c}\\,m(t)\\cos\\omega_{c}t"
     },
     {
       "id": "ssb",
@@ -63,7 +65,7 @@
       "sources": [
         "adc-adc-unit-i#slide.8"
       ],
-      "formula": ""
+      "formula": "s(t)=\\frac{A_{c}}{2}\\left[m(t)\\cos\\omega_{c}t\\mp\\hat{m}(t)\\sin\\omega_{c}t\\right]"
     },
     {
       "id": "vsb",
@@ -74,7 +76,7 @@
       "sources": [
         "adc-adc-unit-i#slide.8"
       ],
-      "formula": ""
+      "formula": "B_{\\text{VSB}}=f_{m}+f_{v}"
     },
     {
       "id": "envelope-detector",
@@ -85,7 +87,7 @@
       "sources": [
         "adc-adc-unit-i#slide.9"
       ],
-      "formula": ""
+      "formula": "\\frac{1}{2\\pi f_{c}}\\ll RC\\ll\\frac{1}{2\\pi f_{m}}"
     },
     {
       "id": "fm",
@@ -96,7 +98,8 @@
       "sources": [
         "adc-adc-unit-ii#slide.2"
       ],
-      "formula": ""
+      "formula": "s(t)=A_{c}\\cos\\left(\\omega_{c}t+k_{f}\\int_{0}^{t}m(\\tau)\\,d\\tau\\right)",
+      "diagram": "fm-modulation"
     },
     {
       "id": "pm",
@@ -107,13 +110,13 @@
       "sources": [
         "adc-adc-unit-ii#slide.2"
       ],
-      "formula": ""
+      "formula": "s(t)=A_{c}\\cos\\left(\\omega_{c}t+k_{p}\\,m(t)\\right)"
     },
     {
       "id": "freq-deviation",
       "term": "Frequency deviation",
       "definition": "Maximum change in carrier frequency from its unmodulated value.",
-      "formula": "Δf = k_f A_m",
+      "formula": "\\Delta f=k_{f}A_{m}",
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
@@ -124,7 +127,7 @@
       "id": "modulation-index-fm",
       "term": "Modulation index (FM)",
       "definition": "Ratio of the peak frequency deviation of the carrier to the frequency of the message signal.",
-      "formula": "β = Δf/f_m",
+      "formula": "\\beta=\\frac{\\Delta f}{f_{m}}",
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
@@ -140,7 +143,7 @@
       "sources": [
         "adc-adc-unit-ii#slide.10"
       ],
-      "formula": ""
+      "formula": "B_{\\text{NBFM}}\\approx2f_{m}"
     },
     {
       "id": "wbfm",
@@ -151,18 +154,19 @@
       "sources": [
         "adc-adc-unit-ii#slide.10"
       ],
-      "formula": ""
+      "formula": "n_{\\text{sb}}\\approx\\beta+1"
     },
     {
       "id": "carsons-rule",
       "term": "Carson's rule",
       "definition": "Rule of thumb estimating FM transmission bandwidth as approximately twice the sum of the frequency deviation and the modulating frequency.",
-      "formula": "B ≈ 2(Δf+f_m)",
+      "formula": "B_{T}\\approx2(\\Delta f+f_{m})=2f_{m}(\\beta+1)",
       "unit": 2,
       "unitTitle": "Angle Modulation",
       "sources": [
         "adc-adc-unit-ii#slide.47"
-      ]
+      ],
+      "diagram": "fm-modulation"
     },
     {
       "id": "pre-emphasis",
@@ -173,7 +177,8 @@
       "sources": [
         "adc-adc-unit-ii#slide.3"
       ],
-      "formula": ""
+      "formula": "H_{pe}(f)=1+j\\frac{f}{f_{1}}",
+      "diagram": "bode"
     },
     {
       "id": "de-emphasis",
@@ -184,7 +189,7 @@
       "sources": [
         "adc-adc-unit-ii#slide.3"
       ],
-      "formula": ""
+      "formula": "H_{de}(f)=\\frac{1}{1+jf/f_{1}}"
     },
     {
       "id": "fdm",
@@ -195,7 +200,7 @@
       "sources": [
         "adc-adc-unit-ii#slide.3"
       ],
-      "formula": ""
+      "formula": "B_{\\text{FDM}}=\\sum_{i=1}^{N}B_{i}+(N-1)B_{g}"
     },
     {
       "id": "superheterodyne",
@@ -206,7 +211,8 @@
       "sources": [
         "adc-adc-unit-iii#slide.2"
       ],
-      "formula": ""
+      "formula": "f_{IF}=|f_{LO}-f_{RF}|",
+      "diagram": "superhet"
     },
     {
       "id": "if",
@@ -217,7 +223,8 @@
       "sources": [
         "adc-adc-unit-iii#slide.3"
       ],
-      "formula": ""
+      "formula": "f_{IF}=\\frac{1}{2}\\left(f_{\\text{img}}-f_{RF}\\right)",
+      "diagram": "if-filter"
     },
     {
       "id": "image-frequency",
@@ -228,7 +235,8 @@
       "sources": [
         "adc-adc-unit-iii#slide.3"
       ],
-      "formula": ""
+      "formula": "f_{\\text{img}}=f_{RF}+2f_{IF}",
+      "diagram": "if-filter"
     },
     {
       "id": "selectivity",
@@ -239,7 +247,7 @@
       "sources": [
         "adc-adc-unit-iii#slide.23"
       ],
-      "formula": ""
+      "formula": "Q=\\frac{f_{c}}{B}"
     },
     {
       "id": "sensitivity",
@@ -250,7 +258,7 @@
       "sources": [
         "adc-adc-unit-iii#slide.23"
       ],
-      "formula": ""
+      "formula": "P_{\\min}=kTB\\,F\\,(S/N)_{\\min}"
     },
     {
       "id": "agc",
@@ -261,7 +269,7 @@
       "sources": [
         "adc-adc-unit-iii#slide.25"
       ],
-      "formula": ""
+      "formula": "\\overline{V}_{\\text{out}}=V_{\\text{ref}}"
     },
     {
       "id": "amplitude-limiting",
@@ -272,7 +280,7 @@
       "sources": [
         "adc-adc-unit-iii#slide.3"
       ],
-      "formula": ""
+      "formula": "v_{o}=V_{L}\\,\\text{sgn}(v_{i})"
     },
     {
       "id": "sampling-theorem",
@@ -283,18 +291,20 @@
       "sources": [
         "adc-adc-unit-iv#slide.27"
       ],
-      "formula": ""
+      "formula": "x(t)=\\sum_{n=-\\infty}^{\\infty}x(nT_{s})\\,\\text{sinc}\\!\\left(\\frac{t-nT_{s}}{T_{s}}\\right)",
+      "diagram": "sampling"
     },
     {
       "id": "nyquist-rate",
       "term": "Nyquist rate",
       "definition": "Minimum sampling rate equal to twice the signal bandwidth.",
-      "formula": "f_s = 2f_m",
+      "formula": "f_{s,\\min}=2f_{m}",
       "unit": 4,
       "unitTitle": "Pulse Modulation",
       "sources": [
         "adc-adc-unit-iv#slide.6"
-      ]
+      ],
+      "diagram": "sampling"
     },
     {
       "id": "pcm",
@@ -305,7 +315,8 @@
       "sources": [
         "adc-adc-unit-iv#slide.2"
       ],
-      "formula": ""
+      "formula": "R_{b}=f_{s}\\log_{2}L=f_{s}n",
+      "diagram": "pcm"
     },
     {
       "id": "quantization",
@@ -316,7 +327,8 @@
       "sources": [
         "adc-adc-unit-iv#slide.3"
       ],
-      "formula": ""
+      "formula": "\\Delta=\\frac{V_{\\text{FS}}}{L}=\\frac{V_{\\text{FS}}}{2^{n}}",
+      "diagram": "quantization"
     },
     {
       "id": "quantization-error",
@@ -327,7 +339,7 @@
       "sources": [
         "adc-adc-unit-iv#slide.3"
       ],
-      "formula": ""
+      "formula": "e=x_{q}-x,\\quad|e|\\le\\frac{\\Delta}{2}"
     },
     {
       "id": "companding",
@@ -338,7 +350,7 @@
       "sources": [
         "adc-adc-unit-iv#slide.3"
       ],
-      "formula": ""
+      "formula": "y=\\frac{\\ln(1+\\mu|x|)}{\\ln(1+\\mu)}\\,\\text{sgn}(x)"
     },
     {
       "id": "dpcm",
@@ -349,7 +361,7 @@
       "sources": [
         "adc-adc-unit-iv#slide.3"
       ],
-      "formula": ""
+      "formula": "e[n]=x[n]-\\hat{x}[n-1]"
     },
     {
       "id": "delta-modulation",
@@ -360,7 +372,7 @@
       "sources": [
         "adc-adc-unit-iv#slide.2"
       ],
-      "formula": ""
+      "formula": "y[n]=y[n-1]+\\Delta\\,\\text{sgn}\\left(x[n]-y[n-1]\\right)"
     },
     {
       "id": "slope-overload",
@@ -371,7 +383,7 @@
       "sources": [
         "adc-adc-unit-iv#slide.92"
       ],
-      "formula": ""
+      "formula": "\\left|\\frac{dx}{dt}\\right|_{\\max}>\\frac{\\Delta}{T_{s}}"
     },
     {
       "id": "granular-noise",
@@ -382,7 +394,7 @@
       "sources": [
         "adc-adc-unit-iv#slide.3"
       ],
-      "formula": ""
+      "formula": "\\overline{e^{2}}=\\frac{\\Delta^{2}}{3}"
     },
     {
       "id": "line-coding",
@@ -393,7 +405,8 @@
       "sources": [
         "adc-adc-unit-v#slide.2"
       ],
-      "formula": ""
+      "formula": "c(t)=\\sum_{n}a_{n}\\,p(t-nT_{b})",
+      "diagram": "line-coding"
     },
     {
       "id": "isi",
@@ -404,7 +417,8 @@
       "sources": [
         "adc-adc-unit-v#slide.14"
       ],
-      "formula": ""
+      "formula": "y(t_{k})=a_{k}h(0)+\\sum_{n\\neq k}a_{n}\\,h(t_{k}-nT_{s})",
+      "diagram": "eye-diagram"
     },
     {
       "id": "eye-diagram",
@@ -415,7 +429,8 @@
       "sources": [
         "adc-adc-unit-v#slide.2"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "eye-diagram"
     },
     {
       "id": "matched-filter",
@@ -426,7 +441,7 @@
       "sources": [
         "adc-adc-unit-v#slide.14"
       ],
-      "formula": ""
+      "formula": "h(t)=s(T_{0}-t)"
     },
     {
       "id": "ask",
@@ -437,7 +452,8 @@
       "sources": [
         "adc-adc-unit-v#slide.7"
       ],
-      "formula": ""
+      "formula": "s(t)=A\\,b_{n}\\cos\\omega_{c}t,\\quad b_{n}\\in\\{0,1\\}",
+      "diagram": "ask-fsk-psk"
     },
     {
       "id": "fsk",
@@ -448,7 +464,8 @@
       "sources": [
         "adc-adc-unit-v#slide.4"
       ],
-      "formula": ""
+      "formula": "s(t)=A\\cos\\left(2\\pi f_{i}t\\right),\\quad f_{i}=f_{c}\\pm\\Delta f",
+      "diagram": "ask-fsk-psk"
     },
     {
       "id": "psk",
@@ -459,7 +476,8 @@
       "sources": [
         "adc-adc-unit-v#slide.10"
       ],
-      "formula": ""
+      "formula": "s(t)=A\\cos\\left(\\omega_{c}t+\\phi_{n}\\right)",
+      "diagram": "ask-fsk-psk"
     },
     {
       "id": "qpsk",
@@ -470,7 +488,8 @@
       "sources": [
         "adc-adc-unit-v#slide.2"
       ],
-      "formula": ""
+      "formula": "s(t)=A\\cos\\left(\\omega_{c}t+\\frac{(2n-1)\\pi}{4}\\right)",
+      "diagram": "qam"
     },
     {
       "id": "dpsk",
@@ -481,7 +500,7 @@
       "sources": [
         "adc-adc-unit-v#slide.2"
       ],
-      "formula": ""
+      "formula": "\\Delta\\phi_{n}=\\phi_{n}-\\phi_{n-1}\\in\\{0,\\pi\\}"
     },
     {
       "id": "ber",
@@ -492,13 +511,13 @@
       "sources": [
         "adc-adc-unit-v#slide.2"
       ],
-      "formula": ""
+      "formula": "P_{e}=\\frac{N_{e}}{N}"
     },
     {
       "id": "entropy",
       "term": "Entropy",
       "definition": "Average amount of information conveyed per symbol by a source, given by the expectation of the self-information of its symbols.",
-      "formula": "H = -Σ p log2 p",
+      "formula": "H=-\\sum_{i}p_{i}\\log_{2}p_{i}",
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
@@ -514,13 +533,13 @@
       "sources": [
         "adc-adc-unit-vi#slide.2"
       ],
-      "formula": ""
+      "formula": "C=\\max_{p(x)}I(X;Y)"
     },
     {
       "id": "shannon-hartley",
       "term": "Shannon-Hartley theorem",
       "definition": "Theorem giving channel capacity C = B log₂(1 + S/N) for a channel corrupted by additive white Gaussian noise.",
-      "formula": "C = B log2(1+S/N)",
+      "formula": "C=B\\log_{2}\\left(1+\\frac{S}{N}\\right)",
       "unit": 6,
       "unitTitle": "Information Theory & Coding",
       "sources": [
@@ -536,7 +555,7 @@
       "sources": [
         "adc-adc-unit-vi#slide.2"
       ],
-      "formula": ""
+      "formula": "\\bar{L}=\\sum_{i}p_{i}l_{i},\\quad H\\le\\bar{L}<H+1"
     },
     {
       "id": "hamming-distance",
@@ -547,7 +566,7 @@
       "sources": [
         "adc-adc-unit-vi#slide.2"
       ],
-      "formula": ""
+      "formula": "d(\\mathbf{x},\\mathbf{y})=\\sum_{i}x_{i}\\oplus y_{i}"
     },
     {
       "id": "crc",
@@ -558,7 +577,7 @@
       "sources": [
         "adc-adc-unit-vi#slide.2"
       ],
-      "formula": ""
+      "formula": "r(x)=\\text{rem}\\left[\\frac{x^{n-k}m(x)}{g(x)}\\right]"
     }
   ]
 }

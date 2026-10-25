@@ -19,7 +19,7 @@
       "sources": [
         "dld-dld-unit-1#slide.15"
       ],
-      "formula": ""
+      "formula": "N=\\sum_{i=0}^{n-1}b_{i}\\,2^{i},\\quad b_{i}\\in\\{0,1\\}"
     },
     {
       "id": "decimal-number-system",
@@ -41,7 +41,7 @@
       "sources": [
         "dld-dld-unit-1#slide.18"
       ],
-      "formula": ""
+      "formula": "(d)_{8}=(b_{2}b_{1}b_{0})_{2},\\quad d\\in\\{0,\\dots,7\\}"
     },
     {
       "id": "hexadecimal-number-system",
@@ -52,7 +52,7 @@
       "sources": [
         "dld-dld-unit-1#slide.19"
       ],
-      "formula": ""
+      "formula": "(d)_{16}=(b_{3}b_{2}b_{1}b_{0})_{2},\\quad d\\in\\{0,\\dots,F\\}"
     },
     {
       "id": "gray-code",
@@ -63,7 +63,7 @@
       "sources": [
         "dld-dld-unit-1#slide.33"
       ],
-      "formula": ""
+      "formula": "g_{i}=b_{i}\\oplus b_{i+1},\\quad g_{n-1}=b_{n-1}"
     },
     {
       "id": "excess-3-code",
@@ -74,7 +74,7 @@
       "sources": [
         "dld-dld-unit-1#slide.37"
       ],
-      "formula": ""
+      "formula": "N_{\\text{XS3}}=N+3,\\quad 0\\le N\\le 9"
     },
     {
       "id": "ones-complement",
@@ -85,7 +85,7 @@
       "sources": [
         "dld-dld-unit-1#slide.50"
       ],
-      "formula": ""
+      "formula": "N_{1}=(2^{n}-1)-N"
     },
     {
       "id": "boolean-algebra",
@@ -96,7 +96,7 @@
       "sources": [
         "dld-dld-unit-1#slide.39"
       ],
-      "formula": ""
+      "formula": "x+\\overline{x}=1,\\quad x\\cdot\\overline{x}=0,\\quad x\\in\\{0,1\\}"
     },
     {
       "id": "maxterm",
@@ -107,7 +107,7 @@
       "sources": [
         "dld-dld-unit-1#slide.66"
       ],
-      "formula": ""
+      "formula": "M_{j}=\\overline{m_{j}},\\quad m_{j}=\\prod_{k=1}^{n}l_{k}"
     },
     {
       "id": "pos-form",
@@ -118,7 +118,7 @@
       "sources": [
         "dld-dld-unit-1#slide.60"
       ],
-      "formula": "Product of Sums"
+      "formula": "F=\\bigwedge_{j=1}^{k}\\left(l_{j1}+l_{j2}+\\cdots+l_{jn}\\right)"
     },
     {
       "id": "logic-gate",
@@ -129,7 +129,8 @@
       "sources": [
         "dld-dld-unit-2#slide.3"
       ],
-      "formula": ""
+      "formula": "Y=f(A,B,\\dots),\\quad Y\\in\\{0,1\\}",
+      "diagram": "logic-gates"
     },
     {
       "id": "universal-gate",
@@ -140,7 +141,7 @@
       "sources": [
         "dld-dld-unit-2#slide.17"
       ],
-      "formula": ""
+      "formula": "\\overline{A\\cdot B}=\\overline{A}+\\overline{B},\\quad \\overline{A+B}=\\overline{A}\\cdot\\overline{B}"
     },
     {
       "id": "karnaugh-map",
@@ -151,7 +152,8 @@
       "sources": [
         "dld-dld-unit-2#slide.21"
       ],
-      "formula": ""
+      "formula": "x\\,y+x\\,\\overline{y}=x",
+      "diagram": "kmap"
     },
     {
       "id": "prime-implicant",
@@ -162,7 +164,7 @@
       "sources": [
         "dld-dld-unit-2#slide.32"
       ],
-      "formula": ""
+      "formula": "P\\Rightarrow F,\\ \\nexists\\,P'\\subsetneq P:\\ P'\\Rightarrow F"
     },
     {
       "id": "essential-prime-implicant",
@@ -173,7 +175,7 @@
       "sources": [
         "dld-dld-unit-2#slide.32"
       ],
-      "formula": ""
+      "formula": "\\exists\\,m_{i}\\in P:\\ m_{i}\\notin\\bigcup_{P'\\neq P}P'"
     },
     {
       "id": "dont-care",
@@ -184,7 +186,8 @@
       "sources": [
         "dld-dld-unit-2#slide.33"
       ],
-      "formula": ""
+      "formula": "F=\\sum_{i}m_{i}+\\sum_{j}x_{j}\\,d_{j},\\quad x_{j}\\in\\{0,1\\}",
+      "diagram": "kmap"
     },
     {
       "id": "quine-mccluskey",
@@ -195,7 +198,7 @@
       "sources": [
         "dld-dld-unit-2#slide.45"
       ],
-      "formula": ""
+      "formula": "A\\,B\\,C+A\\,B\\,\\overline{C}=A\\,B"
     },
     {
       "id": "combinational-circuit",
@@ -206,7 +209,8 @@
       "sources": [
         "dld-dld-unit-3#slide.2"
       ],
-      "formula": ""
+      "formula": "Y(t)=f\\bigl(X(t)\\bigr)",
+      "diagram": "logic-gates"
     },
     {
       "id": "half-adder",
@@ -217,7 +221,7 @@
       "sources": [
         "dld-dld-unit-3#slide.21"
       ],
-      "formula": ""
+      "formula": "S=A\\oplus B,\\quad C=A\\cdot B"
     },
     {
       "id": "full-adder",
@@ -228,7 +232,7 @@
       "sources": [
         "dld-dld-unit-3#slide.25"
       ],
-      "formula": ""
+      "formula": "S=A\\oplus B\\oplus C_{\\text{in}},\\quad C_{\\text{out}}=A\\,B+C_{\\text{in}}(A\\oplus B)"
     },
     {
       "id": "half-subtractor",
@@ -239,7 +243,7 @@
       "sources": [
         "dld-dld-unit-3#slide.33"
       ],
-      "formula": ""
+      "formula": "D=A\\oplus B,\\quad B_{\\text{out}}=\\overline{A}\\,B"
     },
     {
       "id": "full-subtractor",
@@ -250,7 +254,7 @@
       "sources": [
         "dld-dld-unit-3#slide.37"
       ],
-      "formula": ""
+      "formula": "D=A\\oplus B\\oplus B_{\\text{in}},\\quad B_{\\text{out}}=\\overline{A}\\,B+B_{\\text{in}}\\,\\overline{A\\oplus B}"
     },
     {
       "id": "multiplexer",
@@ -261,7 +265,7 @@
       "sources": [
         "dld-dld-unit-3#slide.61"
       ],
-      "formula": ""
+      "formula": "Y=\\sum_{i=0}^{2^{n}-1}m_{i}\\,D_{i}"
     },
     {
       "id": "demultiplexer",
@@ -272,7 +276,7 @@
       "sources": [
         "dld-dld-unit-3#slide.83"
       ],
-      "formula": ""
+      "formula": "D_{i}=Y\\cdot m_{i},\\quad i\\in\\{0,\\dots,2^{n}-1\\}"
     },
     {
       "id": "encoder",
@@ -283,7 +287,7 @@
       "sources": [
         "dld-dld-unit-3#slide.49"
       ],
-      "formula": ""
+      "formula": "n=\\lceil\\log_{2}N\\rceil"
     },
     {
       "id": "decoder",
@@ -294,7 +298,7 @@
       "sources": [
         "dld-dld-unit-3#slide.53"
       ],
-      "formula": ""
+      "formula": "N_{\\text{out}}=2^{n}"
     },
     {
       "id": "parity-bit",
@@ -305,7 +309,7 @@
       "sources": [
         "dld-dld-unit-3#slide.97"
       ],
-      "formula": ""
+      "formula": "P=b_{1}\\oplus b_{2}\\oplus\\cdots\\oplus b_{n}"
     },
     {
       "id": "sequential-circuit",
@@ -316,7 +320,7 @@
       "sources": [
         "dld-dld-unit-4#slide.3"
       ],
-      "formula": ""
+      "formula": "Y(t)=f\\bigl(X(t),Q(t)\\bigr),\\quad Q(t+1)=g\\bigl(X(t),Q(t)\\bigr)"
     },
     {
       "id": "synchronous-circuit",
@@ -327,7 +331,7 @@
       "sources": [
         "dld-dld-unit-4#slide.1"
       ],
-      "formula": ""
+      "formula": "Q(t+1)=\\left.f\\bigl(X(t),Q(t)\\bigr)\\right|_{\\text{clk}\\uparrow}"
     },
     {
       "id": "asynchronous-circuit",
@@ -349,7 +353,7 @@
       "sources": [
         "dld-dld-unit-4#slide.16"
       ],
-      "formula": ""
+      "formula": "Q(t+1)=E\\,D+\\overline{E}\\,Q(t)"
     },
     {
       "id": "flip-flop",
@@ -360,7 +364,8 @@
       "sources": [
         "dld-dld-unit-4#slide.16"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "d-flipflop"
     },
     {
       "id": "sr-flip-flop",
@@ -371,7 +376,7 @@
       "sources": [
         "dld-dld-unit-4#slide.20"
       ],
-      "formula": ""
+      "formula": "Q(t+1)=S+\\overline{R}\\,Q(t),\\quad S\\,R=0"
     },
     {
       "id": "jk-flip-flop",
@@ -382,7 +387,8 @@
       "sources": [
         "dld-dld-unit-4#slide.2"
       ],
-      "formula": ""
+      "formula": "Q(t+1)=J\\,\\overline{Q(t)}+\\overline{K}\\,Q(t)",
+      "diagram": "d-flipflop"
     },
     {
       "id": "d-flip-flop",
@@ -393,7 +399,8 @@
       "sources": [
         "dld-dld-unit-4#slide.2"
       ],
-      "formula": ""
+      "formula": "Q(t+1)=D",
+      "diagram": "d-flipflop"
     },
     {
       "id": "t-flip-flop",
@@ -404,7 +411,7 @@
       "sources": [
         "dld-dld-unit-4#slide.2"
       ],
-      "formula": ""
+      "formula": "Q(t+1)=T\\oplus Q(t)"
     },
     {
       "id": "counter",
@@ -415,7 +422,8 @@
       "sources": [
         "dld-dld-unit-5#slide.6"
       ],
-      "formula": ""
+      "formula": "M=2^{n},\\quad f_{\\text{MSB}}=\\frac{f_{\\text{clk}}}{2^{n}}",
+      "diagram": "counter-timing"
     },
     {
       "id": "ripple-counter",
@@ -426,7 +434,8 @@
       "sources": [
         "dld-dld-unit-5#slide.7"
       ],
-      "formula": ""
+      "formula": "t_{\\text{pd}}=n\\,t_{\\text{pd,FF}}",
+      "diagram": "counter-timing"
     },
     {
       "id": "synchronous-counter",
@@ -437,7 +446,8 @@
       "sources": [
         "dld-dld-unit-5#slide.4"
       ],
-      "formula": ""
+      "formula": "f_{\\max}=\\frac{1}{t_{\\text{pd}}+t_{\\text{setup}}+t_{\\text{skew}}}",
+      "diagram": "counter-timing"
     },
     {
       "id": "ring-counter",
@@ -448,7 +458,8 @@
       "sources": [
         "dld-dld-unit-5#slide.20"
       ],
-      "formula": ""
+      "formula": "M=n",
+      "diagram": "shift-register"
     },
     {
       "id": "johnson-counter",
@@ -459,7 +470,8 @@
       "sources": [
         "dld-dld-unit-5#slide.22"
       ],
-      "formula": ""
+      "formula": "M=2n",
+      "diagram": "shift-register"
     },
     {
       "id": "shift-register",
@@ -470,7 +482,8 @@
       "sources": [
         "dld-dld-unit-5#slide.25"
       ],
-      "formula": ""
+      "formula": "Q_{i}(t+1)=Q_{i-1}(t)",
+      "diagram": "shift-register"
     },
     {
       "id": "programmable-logic-device",
@@ -492,7 +505,7 @@
       "sources": [
         "dld-dld-unit-6#slide.7"
       ],
-      "formula": ""
+      "formula": "N_{\\text{bits}}=2^{n}\\cdot m"
     },
     {
       "id": "prom",
@@ -503,7 +516,7 @@
       "sources": [
         "dld-dld-unit-6#slide.9"
       ],
-      "formula": ""
+      "formula": "N_{\\text{fuses}}=2^{n}\\cdot m"
     },
     {
       "id": "pla",
@@ -514,7 +527,7 @@
       "sources": [
         "dld-dld-unit-6#slide.20"
       ],
-      "formula": ""
+      "formula": "F_{j}=\\sum_{i}P_{i}\\,c_{ij},\\quad c_{ij}\\in\\{0,1\\}"
     },
     {
       "id": "asm-chart",

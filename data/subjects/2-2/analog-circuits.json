@@ -19,7 +19,7 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "A_{v}=\\frac{v_{\\text{out}}}{v_{\\text{in}}}"
     },
     {
       "id": "faithful-amplification",
@@ -30,7 +30,7 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "v_{\\text{out}}(t)=A_{v}\\,v_{\\text{in}}(t)"
     },
     {
       "id": "distortion",
@@ -52,7 +52,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "\\text{THD}=\\frac{\\sqrt{V_{2}^{2}+V_{3}^{2}+\\cdots+V_{n}^{2}}}{V_{1}}",
+      "diagram": "fourier"
     },
     {
       "id": "class-a-amplifier",
@@ -63,7 +64,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "\\theta_{c}=360^{\\circ},\\quad \\eta_{\\max}=\\frac{1}{4}",
+      "diagram": "power-amp"
     },
     {
       "id": "class-b-amplifier",
@@ -74,7 +76,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "\\theta_{c}=180^{\\circ},\\quad \\eta_{\\max}=\\frac{\\pi}{4}\\approx78.5\\%",
+      "diagram": "power-amp"
     },
     {
       "id": "class-c-amplifier",
@@ -85,7 +88,7 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "\\theta_{c}<180^{\\circ}"
     },
     {
       "id": "small-signal-amplifier",
@@ -96,7 +99,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "A_{v}=-g_{m}\\left(R_{C}\\parallel R_{L}\\right)",
+      "diagram": "bjt"
     },
     {
       "id": "power-amplifier",
@@ -107,7 +111,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "P_{\\text{out}}=\\frac{V_{\\text{rms}}^{2}}{R_{L}}",
+      "diagram": "power-amp"
     },
     {
       "id": "rc-coupling",
@@ -118,7 +123,7 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "f_{L}=\\frac{1}{2\\pi\\left(R_{o}+R_{i}\\right)C_{C}}"
     },
     {
       "id": "transformer-coupling",
@@ -129,7 +134,7 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "\\frac{R_{L}^{\\prime}}{R_{L}}=\\left(\\frac{N_{1}}{N_{2}}\\right)^{2}"
     },
     {
       "id": "multistage-amplifier",
@@ -140,13 +145,13 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "f_{H}=f_{H1}\\sqrt{2^{1/n}-1}"
     },
     {
       "id": "overall-gain",
       "term": "Overall gain",
       "definition": "The product of the voltage gains of individual amplifier stages.",
-      "formula": "A_v = A_v1 * A_v2 * ...",
+      "formula": "A_{v}=\\prod_{k=1}^{n}A_{vk}",
       "unit": 2,
       "unitTitle": "Multistage Amplifiers",
       "sources": [
@@ -162,13 +167,15 @@
       "sources": [
         "ac-single-tuned-amplifier-analysis#p.1"
       ],
-      "formula": ""
+      "formula": "A_{v}(f)=\\frac{A_{v0}}{\\sqrt{1+Q^{2}\\left(f/f_{r}-f_{r}/f\\right)^{2}}}",
+      "diagram": "resonance-curve"
     },
     {
       "id": "resonant-frequency",
       "term": "Resonant frequency",
       "definition": "The frequency at which an LC circuit's inductive and capacitive reactances cancel.",
-      "formula": "f_r = 1/(2*pi*sqrt(L*C))",
+      "formula": "f_{r}=\\frac{1}{2\\pi\\sqrt{LC}}",
+      "diagram": "resonance-curve",
       "unit": 2,
       "unitTitle": "Multistage Amplifiers",
       "sources": [
@@ -179,7 +186,7 @@
       "id": "quality-factor",
       "term": "Quality factor (Q)",
       "definition": "Ratio of resonant frequency to the -3 dB bandwidth of a tuned circuit.",
-      "formula": "Q = f_r / BW",
+      "formula": "Q=\\frac{f_{r}}{BW}=\\frac{\\omega_{r}L}{R}",
       "unit": 2,
       "unitTitle": "Multistage Amplifiers",
       "sources": [
@@ -195,7 +202,8 @@
       "sources": [
         "ac-single-tuned-amplifier-analysis#p.1"
       ],
-      "formula": ""
+      "formula": "BW=f_{H}-f_{L}",
+      "diagram": "bode"
     },
     {
       "id": "feedback",
@@ -206,7 +214,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "v_{f}=\\beta\\,v_{o}",
+      "diagram": "control-loop"
     },
     {
       "id": "negative-feedback",
@@ -217,7 +226,8 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "BW_{f}=BW\\left(1+A\\beta\\right)",
+      "diagram": "opamp"
     },
     {
       "id": "positive-feedback",
@@ -228,13 +238,14 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "A_{f}=\\frac{A}{1-A\\beta}"
     },
     {
       "id": "feedback-factor",
       "term": "Feedback factor",
       "definition": "The fraction of the output signal that is fed back to the input.",
-      "formula": "beta",
+      "formula": "\\beta=\\frac{v_{f}}{v_{o}}",
+      "diagram": "control-loop",
       "unit": 3,
       "unitTitle": "Feedback Amplifiers",
       "sources": [
@@ -245,12 +256,13 @@
       "id": "closed-loop-gain",
       "term": "Closed-loop gain",
       "definition": "The overall gain of an amplifier operating with feedback applied, given by Af = A/(1+Aβ) and far less sensitive to parameter variations.",
-      "formula": "A_f = A/(1 + A*beta)",
+      "formula": "A_{f}=\\frac{A}{1+A\\beta}",
       "unit": 3,
       "unitTitle": "Feedback Amplifiers",
       "sources": [
         "ac-unit-1-2-and-3#p.1"
-      ]
+      ],
+      "diagram": "control-loop"
     },
     {
       "id": "desensitivity",
@@ -261,7 +273,7 @@
       "sources": [
         "ac-unit-1-2-and-3#p.1"
       ],
-      "formula": ""
+      "formula": "\\frac{dA_{f}}{A_{f}}=\\frac{1}{1+A\\beta}\\,\\frac{dA}{A}"
     },
     {
       "id": "oscillator",
@@ -272,7 +284,8 @@
       "sources": [
         "ac-iv-multivibrator#p.1"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "oscillator-loop"
     },
     {
       "id": "barkhausen-criterion",
@@ -283,7 +296,8 @@
       "sources": [
         "ac-iv-multivibrator#p.1"
       ],
-      "formula": ""
+      "formula": "|A\\beta|\\ge1,\\quad \\angle A\\beta=0^{\\circ}",
+      "diagram": "oscillator-loop"
     },
     {
       "id": "multivibrator",
@@ -305,7 +319,7 @@
       "sources": [
         "ac-iv-multivibrator#p.2"
       ],
-      "formula": ""
+      "formula": "T=2R_{B}C\\ln2\\approx1.4R_{B}C"
     },
     {
       "id": "monostable-multivibrator",
@@ -316,7 +330,7 @@
       "sources": [
         "ac-iv-multivibrator#p.1"
       ],
-      "formula": ""
+      "formula": "T=R_{B}C\\ln2\\approx0.69R_{B}C"
     },
     {
       "id": "bistable-multivibrator",
@@ -338,13 +352,13 @@
       "sources": [
         "ac-v-time-base-generator#p.2"
       ],
-      "formula": ""
+      "formula": "V_{P}=\\eta V_{BB}+V_{D}"
     },
     {
       "id": "intrinsic-standoff-ratio",
       "term": "Intrinsic standoff ratio",
       "definition": "UJT parameter determining the peak-point (firing) voltage relative to the interbase voltage.",
-      "formula": "eta = R_B1/(R_B1+R_B2)",
+      "formula": "\\eta=\\frac{R_{B1}}{R_{B1}+R_{B2}}",
       "unit": 4,
       "unitTitle": "Oscillators and Multivibrators",
       "sources": [
@@ -360,7 +374,7 @@
       "sources": [
         "ac-v-time-base-generator#p.10"
       ],
-      "formula": ""
+      "formula": "T=RC\\ln\\frac{1}{1-\\eta}"
     },
     {
       "id": "time-base-generator",
@@ -371,7 +385,7 @@
       "sources": [
         "ac-v-time-base-generator#p.11"
       ],
-      "formula": ""
+      "formula": "v_{o}(t)=\\frac{I}{C}t"
     },
     {
       "id": "sweep-circuit",
@@ -382,7 +396,7 @@
       "sources": [
         "ac-v-time-base-generator#p.11"
       ],
-      "formula": ""
+      "formula": "\\frac{dv_{o}}{dt}=\\frac{I}{C}"
     },
     {
       "id": "sawtooth-wave",
@@ -393,7 +407,7 @@
       "sources": [
         "ac-v-time-base-generator#p.11"
       ],
-      "formula": ""
+      "formula": "v(t)=\\frac{V_{m}}{T}\\,t,\\quad 0\\le t<T"
     },
     {
       "id": "bootstrap-time-base",
@@ -404,7 +418,7 @@
       "sources": [
         "ac-boot-strap-time-base-generator#p.1"
       ],
-      "formula": ""
+      "formula": "\\frac{dv_{o}}{dt}\\approx\\frac{V_{CC}}{RC}"
     },
     {
       "id": "miller-time-base",
@@ -415,7 +429,7 @@
       "sources": [
         "ac-miller-time-base-generator#p.1"
       ],
-      "formula": ""
+      "formula": "v_{o}(t)=-\\frac{V_{i}}{RC}\\,t"
     },
     {
       "id": "ujt-sweep-circuit",
@@ -426,7 +440,7 @@
       "sources": [
         "ac-ujt-sweep-circuit#p.1"
       ],
-      "formula": ""
+      "formula": "T=RC\\ln\\frac{V_{BB}-V_{V}}{V_{BB}-V_{P}}"
     },
     {
       "id": "clipper",
@@ -437,7 +451,8 @@
       "sources": [
         "ac-clampers#p.1"
       ],
-      "formula": ""
+      "formula": "v_{o}=\\min\\left(v_{i},V_{R}\\right)",
+      "diagram": "clipper-clamper"
     },
     {
       "id": "clamper",
@@ -448,7 +463,8 @@
       "sources": [
         "ac-clampers#p.1"
       ],
-      "formula": ""
+      "formula": "v_{o}(t)=v_{i}(t)+V_{C}",
+      "diagram": "clipper-clamper"
     },
     {
       "id": "voltage-comparator",
@@ -459,7 +475,7 @@
       "sources": [
         "ac-voltage-comparator#p.1"
       ],
-      "formula": ""
+      "formula": "v_{o}=V_{\\text{sat}}\\,\\text{sgn}\\left(v_{+}-v_{-}\\right)"
     },
     {
       "id": "sampling-gate",
@@ -470,7 +486,7 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.2"
       ],
-      "formula": ""
+      "formula": "v_{o}(t)=v_{i}(t)\\,g(t)"
     },
     {
       "id": "gating-signal",
@@ -481,7 +497,7 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.4"
       ],
-      "formula": ""
+      "formula": "\\tau=t_{2}-t_{1}"
     },
     {
       "id": "unidirectional-sampling-gate",
@@ -514,7 +530,7 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.15"
       ],
-      "formula": ""
+      "formula": "v_{o}(t)=v_{s}(t)+V_{\\text{ped}}"
     },
     {
       "id": "logic-gate",
@@ -525,7 +541,8 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.38"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "logic-gates"
     },
     {
       "id": "fan-out",
@@ -536,7 +553,7 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.69"
       ],
-      "formula": ""
+      "formula": "N=\\min\\left(\\frac{I_{OL}}{I_{IL}},\\frac{I_{OH}}{I_{IH}}\\right)"
     },
     {
       "id": "propagation-delay",
@@ -547,7 +564,7 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.10"
       ],
-      "formula": ""
+      "formula": "t_{pd}=\\frac{t_{PHL}+t_{PLH}}{2}"
     },
     {
       "id": "noise-margin",
@@ -558,7 +575,8 @@
       "sources": [
         "ac-unit-6-sampling-gates#slide.69"
       ],
-      "formula": ""
+      "formula": "NM_{H}=V_{OH}-V_{IH},\\quad NM_{L}=V_{IL}-V_{OL}",
+      "diagram": "cmos-inverter"
     }
   ]
 }
