@@ -82,19 +82,19 @@ it. Do not move a partial collection to Completed just to clear the line.
 
 ### Trades and licenses
 
-- [ ] **Electrical licensing (NEC)** — `electrical-licensing-nec`
+- [x] **Electrical licensing (NEC)** — `electrical-licensing-nec`
   - Scope: conductors and wiring methods; overcurrent protection; grounding and bonding;
     GFCI and AFCI; load calculations.
   - Audience: electrician apprentices and journeyman exam candidates.
   - Target: 5 subjects, 200–260 definitions.
 
-- [ ] **HVAC licensing** — `hvac-licensing`
+- [x] **HVAC licensing** — `hvac-licensing`
   - Scope: refrigeration cycle; superheat and subcooling; psychrometrics; electrical
     controls; codes and safety.
   - Audience: HVAC apprentices and licensing candidates.
   - Target: 5 subjects, 180–240 definitions.
 
-- [ ] **Plumbing licensing** — `plumbing-licensing`
+- [x] **Plumbing licensing** — `plumbing-licensing`
   - Scope: supply systems; drain-waste-vent; traps and vents; backflow and fixtures; code.
   - Audience: plumbing apprentices and journeyman exam candidates.
   - Target: 5 subjects, 180–240 definitions.
@@ -182,6 +182,9 @@ library has a history.
 | 2026-10-25 | Anatomy and physiology | data/collections/anatomy-and-physiology | 285 | PR #3 draft |
 | 2026-10-25 | Pharmacology | data/collections/pharmacology | 270 | validation passed; PR draft |
 | 2026-10-25 | Nursing and NCLEX | data/collections/nursing-and-nclex | 347 | validation passed |
+| 2026-10-25 | Electrical licensing (NEC) | data/collections/electrical-licensing-nec | 220 | validation passed; PR #8 draft |
+| 2026-10-25 | HVAC licensing | data/collections/hvac-licensing | 206 | validation passed; PR #9 draft |
+| 2026-10-25 | Plumbing licensing | data/collections/plumbing-licensing | 206 | validation passed; PR #10 draft |
 
 ---
 
