@@ -12,7 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, os.path.dirname(HERE))
 
-FAMILIES = ['physics', 'electronics', 'signals', 'computing', 'software', 'business']
+FAMILIES = ['physics', 'electronics', 'signals', 'computing', 'software', 'business', 'extra']
 
 
 def main():

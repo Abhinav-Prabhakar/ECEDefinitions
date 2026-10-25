@@ -130,6 +130,11 @@ sentence.
 | `windowing` | rect/Hann/Hamming |
 | `multirate` | decimator/interpolator |
 | `fft-stages` | 8-point radix-2 flow |
+| `histogram` | image histogram + CDF |
+| `convolution-2d` | kernel over a pixel neighbourhood |
+| `edge-detection` | intensity step and gradient |
+| `smith-chart` | impedance circles, Γ point, VSWR circle |
+| `waveguide` | rectangular guide, TE₁₀ field |
 | `fourier` | time waveform + spectrum |
 | `sampling` | continuous, samples, reconstruction |
 | `convolution` | x(τ), h(t), y(t) |

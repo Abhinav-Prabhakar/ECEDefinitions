@@ -16,6 +16,7 @@ from diagrams.signals import DIAGRAMS as SIGNALS
 from diagrams.computing import DIAGRAMS as COMPUTING
 from diagrams.software import DIAGRAMS as SOFTWARE
 from diagrams.business import DIAGRAMS as BUSINESS
+from diagrams.extra import DIAGRAMS as EXTRA
 
 W, H = 240, 150
 INK = 'currentColor'
@@ -1030,7 +1031,7 @@ DIAGRAMS = {
     'two-port': two_port,
 }
 
-for _family in (PHYSICS, ELECTRONICS, SIGNALS, COMPUTING, SOFTWARE, BUSINESS):
+for _family in (PHYSICS, ELECTRONICS, SIGNALS, COMPUTING, SOFTWARE, BUSINESS, EXTRA):
     DIAGRAMS.update(_family)
 
 
