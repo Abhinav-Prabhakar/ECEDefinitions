@@ -527,12 +527,12 @@
           "elective": "Professional Elective I",
           "folderId": "1aTo4KMOGidEMFWvbO3_4lsc-8X3S9Dek",
           "folderUrl": "https://drive.google.com/drive/folders/1aTo4KMOGidEMFWvbO3_4lsc-8X3S9Dek",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "no_materials",
-          "sourceCount": 0
+          "data": "data/subjects/3-1/software-defined-radio.json",
+          "definitionCount": 52,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 10
         }
       ]
     },
@@ -893,8 +893,8 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2002,
-    "completeSubjects": 32,
+    "definitions": 2054,
+    "completeSubjects": 33,
     "partialSubjects": 11,
     "inaccessibleSubjects": 10
   }

@@ -1,0 +1,613 @@
+{
+  "version": 1,
+  "id": "software-defined-radio",
+  "semester": "3-1",
+  "name": "Software Defined Radio",
+  "shortName": "SDR",
+  "code": "9C516",
+  "courseType": "PE",
+  "elective": "Professional Elective I",
+  "folderId": "1aTo4KMOGidEMFWvbO3_4lsc-8X3S9Dek",
+  "folderUrl": "https://drive.google.com/drive/folders/1aTo4KMOGidEMFWvbO3_4lsc-8X3S9Dek",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "software-defined-radio",
+      "term": "Software-defined radio",
+      "definition": "Radio system in which parts traditionally built as analog hardware, such as mixers, filters and modulators, run as software on a computer or embedded system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.1"
+      ]
+    },
+    {
+      "id": "waveform",
+      "term": "Waveform",
+      "definition": "Radio protocol or signal format that a software-programmable radio can select to communicate with different systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.2"
+      ]
+    },
+    {
+      "id": "multimode-operation",
+      "term": "Multimode operation",
+      "definition": "Ability of a single hardware platform to handle many different protocols, chosen only by the software loaded.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.2"
+      ]
+    },
+    {
+      "id": "reconfigurability",
+      "term": "Reconfigurability",
+      "definition": "Capability of a radio to change its protocol and operating frequency through software alone, in a fraction of a second.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.18",
+        "sdr-wikipedia-software-defined-radio#para.23"
+      ]
+    },
+    {
+      "id": "dynamic-spectrum-use",
+      "term": "Dynamic spectrum use",
+      "definition": "Allocation approach that replaces fixed, static assignment of frequency bands with flexible use of the radio spectrum.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.6"
+      ]
+    },
+    {
+      "id": "software-communications-architecture",
+      "term": "Software Communications Architecture",
+      "definition": "Open standard that uses CORBA middleware on POSIX operating systems to coordinate the software modules of a radio.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.26"
+      ]
+    },
+    {
+      "id": "speakeasy",
+      "term": "SpeakEasy",
+      "definition": "Military programme whose first phase used DSP chips and whose second phase was the first known use of programmable logic for radio processing.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Software Radio",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.17",
+        "sdr-wikipedia-software-defined-radio#para.23"
+      ]
+    },
+    {
+      "id": "rf-front-end",
+      "term": "RF front end",
+      "definition": "Initial receiver stage, typically antenna, filters and low-noise amplifier, that conditions the incoming signal before conversion.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-software-defined-radio#para.2",
+        "sdr-wikipedia-software-defined-radio#para.5",
+        "sdr-wikipedia-superheterodyne-receiver#para.49"
+      ]
+    },
+    {
+      "id": "dynamic-range",
+      "term": "Dynamic range",
+      "definition": "Ratio of the largest to the smallest measurable value of a quantity, often expressed in decibels or bits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-dynamic-range#para.1"
+      ]
+    },
+    {
+      "id": "noise-floor",
+      "term": "Noise floor",
+      "definition": "Background noise level of a system, formed by combining several noise sources, used as the reference for judging the weakest detectable signal.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-dynamic-range#para.7",
+        "sdr-wikipedia-dynamic-range#para.12"
+      ]
+    },
+    {
+      "id": "superheterodyne-receiver",
+      "term": "Superheterodyne receiver",
+      "definition": "Radio that shifts incoming signals to one fixed lower frequency, where most amplification and filtering take place.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-superheterodyne-receiver#para.1"
+      ]
+    },
+    {
+      "id": "intermediate-frequency",
+      "term": "Intermediate frequency",
+      "definition": "Fixed frequency to which incoming signals are converted so that a receiver can amplify and filter them.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-superheterodyne-receiver#para.1"
+      ]
+    },
+    {
+      "id": "mixer",
+      "term": "Mixer",
+      "definition": "Nonlinear component that combines an incoming signal with a locally generated one, producing sum and difference frequencies.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-superheterodyne-receiver#para.57"
+      ]
+    },
+    {
+      "id": "image-frequency",
+      "term": "Image frequency",
+      "definition": "Unwanted signal lying twice the intermediate frequency away from the desired one that converts to the same intermediate frequency.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-superheterodyne-receiver#para.79"
+      ]
+    },
+    {
+      "id": "direct-conversion-receiver",
+      "term": "Direct-conversion receiver",
+      "definition": "Receiver that demodulates by synchronous detection, using an oscillator tuned at or very near the carrier frequency, with only one frequency conversion.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-direct-conversion-receiver#para.1",
+        "sdr-wikipedia-direct-conversion-receiver#para.3"
+      ]
+    },
+    {
+      "id": "dc-offset",
+      "term": "DC offset",
+      "definition": "Steady voltage error produced when oscillator energy leaks to the antenna, reflects back and self-mixes, which can overload baseband amplifiers.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "RF Front-End and Receiver Design",
+      "sources": [
+        "sdr-wikipedia-direct-conversion-receiver#para.7"
+      ]
+    },
+    {
+      "id": "digital-signal-processor",
+      "term": "Digital signal processor",
+      "definition": "Microprocessor whose architecture is tailored to signal processing, used to measure, filter or compress real-world analog signals.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-digital-signal-processor#para.1",
+        "sdr-wikipedia-digital-signal-processor#para.2"
+      ]
+    },
+    {
+      "id": "multiply-accumulate",
+      "term": "Multiply-accumulate",
+      "definition": "Combined multiply-and-add operation that signal-processing hardware can complete in a single instruction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-digital-signal-processor#para.13"
+      ]
+    },
+    {
+      "id": "harvard-architecture",
+      "term": "Harvard architecture",
+      "definition": "Design with separate program and data memories, sometimes with several data buses, letting several items be fetched at once.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-digital-signal-processor#para.9"
+      ]
+    },
+    {
+      "id": "fixed-point-processor",
+      "term": "Fixed-point processor",
+      "definition": "Signal processor using integer-style arithmetic, favoured because it offers major speed and cost advantages when wide numeric range is unneeded.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-digital-signal-processor#para.30"
+      ]
+    },
+    {
+      "id": "fpga",
+      "term": "FPGA",
+      "definition": "Chip whose logic can be reprogrammed after manufacture, built from a grid of linked programmable blocks.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-field-programmable-gate-array#para.1",
+        "sdr-wikipedia-field-programmable-gate-array#para.4"
+      ]
+    },
+    {
+      "id": "configurable-logic-block",
+      "term": "Configurable logic block",
+      "definition": "Basic repeating unit of a reprogrammable logic array, made up of a few logic cells.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-field-programmable-gate-array#para.18",
+        "sdr-wikipedia-field-programmable-gate-array#para.20"
+      ]
+    },
+    {
+      "id": "lookup-table",
+      "term": "Lookup table",
+      "definition": "Small memory-based element inside a logic cell that implements a logic function; a typical one has four inputs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-field-programmable-gate-array#para.19",
+        "sdr-wikipedia-field-programmable-gate-array#para.20"
+      ]
+    },
+    {
+      "id": "soft-core",
+      "term": "Soft core",
+      "definition": "Processor design implemented in the programmable fabric of a reconfigurable chip rather than as fixed silicon.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-field-programmable-gate-array#para.23"
+      ]
+    },
+    {
+      "id": "programmable-logic-versus-custom-chip-trade-off",
+      "term": "Programmable logic versus custom chip trade-off",
+      "definition": "Reprogrammable logic has lower up-front engineering cost but higher per-unit cost, area and power than a custom-fabricated chip.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Digital Hardware for Software Radio",
+      "sources": [
+        "sdr-wikipedia-field-programmable-gate-array#para.15",
+        "sdr-wikipedia-field-programmable-gate-array#para.54"
+      ]
+    },
+    {
+      "id": "direct-digital-synthesis",
+      "term": "Direct digital synthesis",
+      "definition": "Frequency-synthesis method that generates arbitrary waveforms from a single fixed-frequency reference clock using a digital oscillator and a converter.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.1",
+        "sdr-wikipedia-direct-digital-synthesis#para.2"
+      ]
+    },
+    {
+      "id": "numerically-controlled-oscillator",
+      "term": "Numerically controlled oscillator",
+      "definition": "Digital core that outputs a discrete-time, quantized version of a waveform whose period is set by a digital control word.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.2",
+        "sdr-wikipedia-direct-digital-synthesis#para.3"
+      ]
+    },
+    {
+      "id": "frequency-control-word",
+      "term": "Frequency control word",
+      "definition": "Digital value held in a register that sets the step size of the oscillator and hence the output frequency.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.2",
+        "sdr-wikipedia-direct-digital-synthesis#para.6"
+      ]
+    },
+    {
+      "id": "spurious-component",
+      "term": "Spurious component",
+      "definition": "Unwanted spectral line in a synthesized output, arising mainly from truncation effects in the digital oscillator.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.4"
+      ]
+    },
+    {
+      "id": "nyquist-image",
+      "term": "Nyquist image",
+      "definition": "Unwanted copy of the output spectrum around multiples of the clock frequency, the primary one lying at clock frequency minus output frequency.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.5"
+      ]
+    },
+    {
+      "id": "reconstruction-filter",
+      "term": "Reconstruction filter",
+      "definition": "Filter placed after the converter in a synthesizer to remove Nyquist images from the output.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.5"
+      ]
+    },
+    {
+      "id": "frequency-agility",
+      "term": "Frequency agility",
+      "definition": "Ability of a synthesizer to change output frequency almost instantly, at the clock edge where the control register changes.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.6"
+      ]
+    },
+    {
+      "id": "close-in-phase-noise",
+      "term": "Close-in phase noise",
+      "definition": "Phase noise at small offsets from the carrier, which in digital synthesis is superior because reference clock jitter is proportionally reduced.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.7"
+      ]
+    },
+    {
+      "id": "reference-clock-jitter",
+      "term": "Reference clock jitter",
+      "definition": "Timing uncertainty of the reference oscillator, which passes to the output but as a smaller fraction of the output period.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Direct Digital Synthesis",
+      "sources": [
+        "sdr-wikipedia-direct-digital-synthesis#para.3",
+        "sdr-wikipedia-direct-digital-synthesis#para.7"
+      ]
+    },
+    {
+      "id": "analog-to-digital-converter",
+      "term": "Analog-to-digital converter",
+      "definition": "System that turns an analog signal into a digital one, usually a binary number representing the measured voltage or current.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-analog-to-digital-converter#para.1",
+        "sdr-wikipedia-analog-to-digital-converter#para.2"
+      ]
+    },
+    {
+      "id": "resolution",
+      "term": "Resolution",
+      "definition": "Number of distinct output values a converter can produce across its input range, usually given in bits; full-scale range divided by 2^M gives one step.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-analog-to-digital-converter#para.7",
+        "sdr-wikipedia-analog-to-digital-converter#para.8"
+      ]
+    },
+    {
+      "id": "quantization-error",
+      "term": "Quantization error",
+      "definition": "Rounding difference between the true input and the digital output value; for an ideal converter the signal-to-noise ratio is about 6.02 dB per bit.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-analog-to-digital-converter#para.12",
+        "sdr-wikipedia-analog-to-digital-converter#para.13"
+      ]
+    },
+    {
+      "id": "aliasing",
+      "term": "Aliasing",
+      "definition": "Effect in which content above half the sampling rate appears at a false lower frequency, prevented by a low-pass filter before conversion.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-analog-to-digital-converter#para.23",
+        "sdr-wikipedia-analog-to-digital-converter#para.24"
+      ]
+    },
+    {
+      "id": "oversampling",
+      "term": "Oversampling",
+      "definition": "Sampling well above the Nyquist rate and then filtering digitally, which moves quantization noise out of band and eases filter design.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-analog-to-digital-converter#para.26",
+        "sdr-wikipedia-analog-to-digital-converter#para.27"
+      ]
+    },
+    {
+      "id": "flash-converter",
+      "term": "Flash converter",
+      "definition": "Parallel analog-to-digital design in which many comparators operate at once and an encoder forms the output; very fast but large and power-hungry.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-analog-to-digital-converter#para.30",
+        "sdr-wikipedia-analog-to-digital-converter#para.31"
+      ]
+    },
+    {
+      "id": "digital-to-analog-converter",
+      "term": "Digital-to-analog converter",
+      "definition": "System that turns a digital signal into an analog one, the reverse of sampling and quantizing.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-digital-to-analog-converter#para.1"
+      ]
+    },
+    {
+      "id": "integral-nonlinearity",
+      "term": "Integral nonlinearity",
+      "definition": "Deviation of a converter's output at each code from the ideal straight-line transfer curve, measured in least-significant-bit units.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-digital-to-analog-converter#para.46"
+      ]
+    },
+    {
+      "id": "spurious-free-dynamic-range",
+      "term": "Spurious-free dynamic range",
+      "definition": "Ratio in decibels between the power of the converted main signal and the power of the largest unwanted spur.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Data Converters",
+      "sources": [
+        "sdr-wikipedia-digital-to-analog-converter#para.48"
+      ]
+    },
+    {
+      "id": "cognitive-radio",
+      "term": "Cognitive radio",
+      "definition": "Radio that reconfigures itself to use the best nearby channels, monitoring its own performance to reduce interference and congestion.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.1",
+        "sdr-wikipedia-cognitive-radio#para.2"
+      ]
+    },
+    {
+      "id": "dynamic-spectrum-access",
+      "term": "Dynamic spectrum access",
+      "definition": "Flexible use of spectrum bands by unlicensed radios instead of fixed assignment, a main application of self-adapting radios.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.6",
+        "sdr-wikipedia-cognitive-radio#para.17"
+      ]
+    },
+    {
+      "id": "white-space",
+      "term": "White space",
+      "definition": "Unused television channels in a geographic area, identified through geolocation and a database and available for opportunistic use.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.7"
+      ]
+    },
+    {
+      "id": "spectrum-sensing",
+      "term": "Spectrum sensing",
+      "definition": "Detecting whether a frequency band is occupied so that unused bands can be used without harmful interference; accurate detection is the main difficulty.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.9",
+        "sdr-wikipedia-cognitive-radio#para.11"
+      ]
+    },
+    {
+      "id": "spectrum-decision",
+      "term": "Spectrum decision",
+      "definition": "Spectrum-management step of choosing the best available band to meet communication needs without causing undue interference.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.11",
+        "sdr-wikipedia-cognitive-radio#para.12"
+      ]
+    },
+    {
+      "id": "spectrum-mobility",
+      "term": "Spectrum mobility",
+      "definition": "Changing operating frequency to another band while keeping communication seamless.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.8"
+      ]
+    },
+    {
+      "id": "spectrum-sharing",
+      "term": "Spectrum sharing",
+      "definition": "Arrangement in which unlicensed radios share licensed bands while holding transmit power below a threshold that limits interference.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.8"
+      ]
+    },
+    {
+      "id": "energy-detection",
+      "term": "Energy detection",
+      "definition": "Sensing technique that identifies a signal by measuring received power; it needs noise information and can fail at low signal-to-noise ratios.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.9",
+        "sdr-wikipedia-cognitive-radio#para.11"
+      ]
+    },
+    {
+      "id": "cyclostationary-detection",
+      "term": "Cyclostationary detection",
+      "definition": "Sensing technique that identifies signals by their periodic statistical patterns, which noise lacks, so it is robust to noise-variance uncertainty.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Cognitive Radio and Spectrum Management",
+      "sources": [
+        "sdr-wikipedia-cognitive-radio#para.11"
+      ]
+    }
+  ]
+}

@@ -4640,6 +4640,106 @@
       "kind": "web",
       "status": "accessed",
       "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-analog-to-digital-converter",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Analog-to-digital converter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Analog-to-digital_converter",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-cognitive-radio",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Cognitive radio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cognitive_radio",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-digital-to-analog-converter",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Digital-to-analog converter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital-to-analog_converter",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-direct-conversion-receiver",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Direct-conversion receiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Direct-conversion_receiver",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-direct-digital-synthesis",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Direct digital synthesis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Direct_digital_synthesis",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-dynamic-range",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Dynamic range - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dynamic_range",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-digital-signal-processor",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Digital signal processor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digital_signal_processor",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-field-programmable-gate-array",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Field-programmable gate array - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Field-programmable_gate_array",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-superheterodyne-receiver",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Superheterodyne receiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Superheterodyne_receiver",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
+    },
+    {
+      "id": "sdr-wikipedia-software-defined-radio",
+      "semester": "3-1",
+      "subjectId": "software-defined-radio",
+      "name": "Software-defined radio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Software-defined_radio",
+      "kind": "web",
+      "status": "accessed",
+      "locatorScheme": "para.<n>"
     }
   ]
 }
