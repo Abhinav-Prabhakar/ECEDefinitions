@@ -600,7 +600,7 @@
           "definitionCount": 40,
           "unitCount": 6,
           "coveredUnits": 3,
-          "status": "unresolved",
+          "status": "partial",
           "sourceCount": 3
         },
         {
@@ -878,7 +878,7 @@
     "subjects": 51,
     "definitions": 1915,
     "completeSubjects": 31,
-    "partialSubjects": 9,
-    "inaccessibleSubjects": 11
+    "partialSubjects": 10,
+    "inaccessibleSubjects": 10
   }
 }
