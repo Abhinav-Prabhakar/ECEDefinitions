@@ -47,7 +47,7 @@
       "id": "array-of-structures",
       "term": "Array of structures",
       "definition": "Contiguous sequence whose elements are grouped records, allowing multiple related variables to be stored together.",
-      "formula": "",
+      "formula": "\\text{addr}(A[i])=\\text{base}+i\\cdot\\text{sizeof}(\\text{record})",
       "unit": 1,
       "unitTitle": "Introduction, Arrays, Structures",
       "sources": [
@@ -81,7 +81,7 @@
       "id": "union",
       "term": "Union",
       "definition": "A derived data type whose members share one memory location, so only one member can be used at a time.",
-      "formula": "",
+      "formula": "\\text{sizeof}(U)=\\max_{i}\\text{sizeof}(m_i)",
       "unit": 1,
       "unitTitle": "Introduction, Arrays, Structures",
       "sources": [
@@ -171,12 +171,13 @@
       "id": "stack",
       "term": "Stack",
       "definition": "An ordered collection of homogeneous elements where insertion and deletion occur only at one end, called the top.",
-      "formula": "",
+      "formula": "\\text{top}\\in\\{-1,0,1,\\dots,n-1\\}",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
       "sources": [
         "ds-ds-unit-2#slide.5"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "lifo",
@@ -193,12 +194,13 @@
       "id": "queue",
       "term": "Queue",
       "definition": "Linear data structure where insertion occurs at the rear and deletion at the front.",
-      "formula": "",
+      "formula": "\\text{count}=\\text{rear}-\\text{front}+1",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
       "sources": [
         "ds-ds-unit-2#slide.23"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "fifo",
@@ -215,12 +217,13 @@
       "id": "circular-queue",
       "term": "Circular queue",
       "definition": "Linear structure that connects its last position back to the first, forming a ring buffer.",
-      "formula": "",
+      "formula": "\\text{rear}=(\\text{rear}+1)\\bmod n",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
       "sources": [
         "ds-ds-unit-2#slide.39"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "deque",
@@ -248,7 +251,7 @@
       "id": "push",
       "term": "Push",
       "definition": "Operation of inserting or adding an element onto a stack.",
-      "formula": "",
+      "formula": "\\text{top}\\leftarrow\\text{top}+1",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
       "sources": [
@@ -259,7 +262,7 @@
       "id": "pop",
       "term": "Pop",
       "definition": "Operation of deleting or removing an element from a stack.",
-      "formula": "",
+      "formula": "\\text{top}\\leftarrow\\text{top}-1",
       "unit": 2,
       "unitTitle": "Stacks and Queues",
       "sources": [
@@ -270,12 +273,13 @@
       "id": "linked-list",
       "term": "Linked list",
       "definition": "Linear collection of homogeneous nodes whose order is maintained by pointers.",
-      "formula": "",
+      "formula": "T_{\\text{access}}(k)=O(k)",
       "unit": 3,
       "unitTitle": "Linked Lists",
       "sources": [
         "ds-ds-unit-3#slide.8"
-      ]
+      ],
+      "diagram": "linked-list"
     },
     {
       "id": "node",
@@ -292,7 +296,7 @@
       "id": "singly-linked-list",
       "term": "Singly linked list",
       "definition": "List traversable in one direction whose last element ends with a null pointer.",
-      "formula": "",
+      "formula": "p_{\\text{last}}\\to\\text{next}=\\text{NULL}",
       "unit": 3,
       "unitTitle": "Linked Lists",
       "sources": [
@@ -303,7 +307,7 @@
       "id": "doubly-linked-list",
       "term": "Doubly linked list",
       "definition": "Two-way list where each element has forward and backward pointers.",
-      "formula": "",
+      "formula": "p\\to\\text{next}\\to\\text{prev}=p",
       "unit": 3,
       "unitTitle": "Linked Lists",
       "sources": [
@@ -314,7 +318,7 @@
       "id": "circular-linked-list",
       "term": "Circular linked list",
       "definition": "List in which the last element's pointer points back to the first element.",
-      "formula": "",
+      "formula": "p_{\\text{last}}\\to\\text{next}=p_{\\text{head}}",
       "unit": 3,
       "unitTitle": "Linked Lists",
       "sources": [
@@ -325,7 +329,7 @@
       "id": "tree",
       "term": "Tree",
       "definition": "Finite set of nodes with a specially designated root and disjoint subtrees.",
-      "formula": "",
+      "formula": "|E|=|V|-1",
       "unit": 4,
       "unitTitle": "Trees",
       "sources": [
@@ -336,29 +340,31 @@
       "id": "binary-tree",
       "term": "Binary tree",
       "definition": "Hierarchical structure where each node has at most two subtrees, left and right.",
-      "formula": "",
+      "formula": "n_{\\max}(h)=2^{h+1}-1",
       "unit": 4,
       "unitTitle": "Trees",
       "sources": [
         "ds-ds-unit-4#slide.15"
-      ]
+      ],
+      "diagram": "binary-tree"
     },
     {
       "id": "binary-search-tree",
       "term": "Binary search tree",
       "definition": "Ordered structure in which every left-subtree key is smaller and every right-subtree key larger than the root.",
-      "formula": "",
+      "formula": "T_{\\text{search}}(n)=O(h)",
       "unit": 4,
       "unitTitle": "Trees",
       "sources": [
         "ds-ds-unit-4#slide.40"
-      ]
+      ],
+      "diagram": "binary-tree"
     },
     {
       "id": "avl-tree",
       "term": "AVL tree",
       "definition": "Height-balanced search structure whose left and right subtree heights differ by at most one.",
-      "formula": "",
+      "formula": "|h_L-h_R|\\le 1",
       "unit": 4,
       "unitTitle": "Trees",
       "sources": [
@@ -369,7 +375,7 @@
       "id": "array-representation-of-binary-tree",
       "term": "Array representation of binary tree",
       "definition": "A binary tree stored in an array with the root at index 0 and children of node i at 2i+1 and 2i+2.",
-      "formula": "left = 2i + 1, right = 2i + 2",
+      "formula": "\\text{left}(i)=2i+1,\\ \\text{right}(i)=2i+2,\\ \\text{parent}(i)=\\lfloor(i-1)/2\\rfloor",
       "unit": 4,
       "unitTitle": "Trees",
       "sources": [
@@ -380,7 +386,7 @@
       "id": "linked-representation-of-binary-tree",
       "term": "Linked representation of binary tree",
       "definition": "A binary tree stored using nodes containing data with left and right pointers.",
-      "formula": "",
+      "formula": "\\text{node}=(\\text{data},\\text{left},\\text{right})",
       "unit": 4,
       "unitTitle": "Trees",
       "sources": [
@@ -391,7 +397,7 @@
       "id": "graph",
       "term": "Graph",
       "definition": "Pair G=(V,E) where V is a finite nonempty set of vertices and E is the set of edges.",
-      "formula": "",
+      "formula": "G=(V,E),\\quad |E|\\le\\frac{|V|(|V|-1)}{2}",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -402,7 +408,7 @@
       "id": "directed-graph",
       "term": "Directed graph",
       "definition": "Structure in which every edge has a direction.",
-      "formula": "",
+      "formula": "|E|\\le |V|(|V|-1)",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -413,7 +419,7 @@
       "id": "undirected-graph",
       "term": "Undirected graph",
       "definition": "Structure in which the edges have no direction.",
-      "formula": "",
+      "formula": "\\sum_{v\\in V}\\deg(v)=2|E|",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -424,7 +430,7 @@
       "id": "adjacency-matrix",
       "term": "Adjacency matrix",
       "definition": "Square bit matrix indicating by 1 or 0 whether an edge connects each pair of vertices.",
-      "formula": "",
+      "formula": "A_{ij}=1\\iff(v_i,v_j)\\in E",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -435,7 +441,7 @@
       "id": "adjacency-list",
       "term": "Adjacency list",
       "definition": "Linked representation where each vertex stores a list of its adjacent vertices.",
-      "formula": "",
+      "formula": "\\text{space}=O(|V|+|E|)",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -446,29 +452,31 @@
       "id": "depth-first-search",
       "term": "Depth-first search (DFS)",
       "definition": "Traversal that explores as far as possible along each branch before backtracking, using a stack.",
-      "formula": "",
+      "formula": "T=O(|V|+|E|)",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
         "ds-ds-unit-5#slide.17"
-      ]
+      ],
+      "diagram": "graph-search"
     },
     {
       "id": "breadth-first-search",
       "term": "Breadth-first search (BFS)",
       "definition": "Traversal that visits all vertices at one level before moving to the next level, using a queue.",
-      "formula": "",
+      "formula": "T=O(|V|+|E|)",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
         "ds-ds-unit-5#slide.18"
-      ]
+      ],
+      "diagram": "graph-search"
     },
     {
       "id": "max-heap",
       "term": "Max heap",
       "definition": "Complete or nearly complete binary tree where each node's key is greater than or equal to its descendants'.",
-      "formula": "",
+      "formula": "A[\\lfloor(i-1)/2\\rfloor]\\ge A[i]",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -479,7 +487,7 @@
       "id": "hash-table",
       "term": "Hash table",
       "definition": "Structure that stores key-value pairs and supports insertion, lookup and deletion in O(1) time.",
-      "formula": "",
+      "formula": "\\alpha=\\frac{n}{m},\\quad T_{\\text{lookup}}=O(1+\\alpha)",
       "unit": 5,
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
@@ -490,7 +498,7 @@
       "id": "linear-search",
       "term": "Linear search",
       "definition": "Method that sequentially checks each array element until the item is found or the array ends.",
-      "formula": "",
+      "formula": "T_{\\text{avg}}(n)=\\frac{n+1}{2}",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
       "sources": [
@@ -501,7 +509,7 @@
       "id": "binary-search",
       "term": "Binary search",
       "definition": "Method that repeatedly compares the key with the middle element of a sorted array and halves the interval.",
-      "formula": "",
+      "formula": "T(n)=T(n/2)+O(1)=O(\\log n)",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
       "sources": [
@@ -512,7 +520,7 @@
       "id": "selection-sort",
       "term": "Selection sort",
       "definition": "Method that repeatedly selects the smallest element from the unsorted portion and swaps it into place.",
-      "formula": "",
+      "formula": "T(n)=\\frac{n(n-1)}{2}=O(n^2)",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
       "sources": [
@@ -523,7 +531,7 @@
       "id": "insertion-sort",
       "term": "Insertion sort",
       "definition": "Method that builds a sorted segment by inserting each next element into its correct position.",
-      "formula": "",
+      "formula": "T_{\\text{worst}}(n)=O(n^2),\\ T_{\\text{best}}(n)=O(n)",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
       "sources": [
@@ -534,7 +542,7 @@
       "id": "merge-sort",
       "term": "Merge sort",
       "definition": "Method that divides the list into halves, sorts them, and merges the sorted halves.",
-      "formula": "",
+      "formula": "T(n)=2T(n/2)+\\Theta(n)=O(n\\log n)",
       "unit": 6,
       "unitTitle": "Searching and Sorting",
       "sources": [

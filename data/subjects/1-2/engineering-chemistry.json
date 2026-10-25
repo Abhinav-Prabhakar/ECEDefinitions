@@ -25,7 +25,7 @@
       "id": "molecular-orbital-theory",
       "term": "Molecular orbital theory",
       "definition": "Model in which atomic electron clouds combine to form new clouds spanning all nuclei in a molecule.",
-      "formula": "",
+      "formula": "\\psi_{\\pm}=\\frac{1}{\\sqrt{2}}\\left(\\phi_{A}\\pm\\phi_{B}\\right)",
       "unit": 1,
       "unitTitle": "Molecular structure",
       "sources": [
@@ -36,7 +36,7 @@
       "id": "bond-order",
       "term": "Bond order",
       "definition": "Half the difference between the numbers of bonding and antibonding electrons, indicating the strength and stability of a bond.",
-      "formula": "BO=(Nb-Na)/2",
+      "formula": "\\text{BO}=\\frac{N_{b}-N_{a}}{2}",
       "unit": 1,
       "unitTitle": "Molecular structure",
       "sources": [
@@ -69,34 +69,37 @@
       "id": "crystal-field-splitting",
       "term": "Crystal field splitting",
       "definition": "Lifting of degeneracy of d-orbitals in presence of a ligand field.",
-      "formula": "",
+      "formula": "\\Delta_{o}=10Dq",
       "unit": 1,
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.43"
-      ]
+      ],
+      "diagram": "d-orbital-splitting"
     },
     {
       "id": "cfse",
       "term": "Crystal field stabilization energy",
       "definition": "Net energy gain from preferential filling of lower-energy d-orbitals in complex.",
-      "formula": "",
+      "formula": "\\text{CFSE}=\\left(0.4n_{t_{2g}}-0.6n_{e_{g}}\\right)\\Delta_{o}",
       "unit": 1,
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.47"
-      ]
+      ],
+      "diagram": "d-orbital-splitting"
     },
     {
       "id": "low-spin-complex",
       "term": "Low spin complex",
       "definition": "Complex where electrons pair in lower-energy orbitals (strong field).",
-      "formula": "",
+      "formula": "\\Delta_{o}>P",
       "unit": 1,
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.53"
-      ]
+      ],
+      "diagram": "d-orbital-splitting"
     },
     {
       "id": "spectrochemical-series",
@@ -135,7 +138,7 @@
       "id": "aromaticity",
       "term": "Aromaticity",
       "definition": "Property of cyclic, planar, fully conjugated system with 4n+2 pi electrons.",
-      "formula": "",
+      "formula": "N_{\\pi}=4n+2",
       "unit": 1,
       "unitTitle": "Molecular structure",
       "sources": [
@@ -179,7 +182,7 @@
       "id": "degree-of-polymerization",
       "term": "Degree of polymerization",
       "definition": "Number of repeat (monomer) units in a polymer chain.",
-      "formula": "",
+      "formula": "\\text{DP}=\\frac{M}{M_{0}}",
       "unit": 2,
       "unitTitle": "Polymers & Lubricants",
       "sources": [
@@ -267,12 +270,13 @@
       "id": "electrochemical-cell",
       "term": "Electrochemical cell",
       "definition": "Device converting chemical energy to electrical energy and vice versa.",
-      "formula": "",
+      "formula": "\\Delta G=-nFE_{\\text{cell}}",
       "unit": 4,
       "unitTitle": "Electro chemistry",
       "sources": [
         "ec-unit-4-electro-chemistry#p.4"
-      ]
+      ],
+      "diagram": "electrochemical-cell"
     },
     {
       "id": "electrolyte",
@@ -289,7 +293,7 @@
       "id": "conductance",
       "term": "Conductance",
       "definition": "Ease with which a solution carries electric current, given by the reciprocal of resistance and measured in siemens (Ω⁻¹).",
-      "formula": "C=1/R",
+      "formula": "G=\\frac{1}{R}",
       "unit": 4,
       "unitTitle": "Electro chemistry",
       "sources": [
@@ -311,23 +315,25 @@
       "id": "emf-of-cell",
       "term": "EMF of cell",
       "definition": "Difference in electrode potentials of two half-cells driving current.",
-      "formula": "",
+      "formula": "E_{\\text{cell}}=E_{\\text{cathode}}-E_{\\text{anode}}",
       "unit": 4,
       "unitTitle": "Electro chemistry",
       "sources": [
         "ec-unit-4-electro-chemistry#p.30"
-      ]
+      ],
+      "diagram": "electrochemical-cell"
     },
     {
       "id": "nernst-equation",
       "term": "Nernst equation",
       "definition": "Relates cell potential to standard potential, temperature, reaction quotient.",
-      "formula": "E=E°-(RT/nF)ln Q",
+      "formula": "E=E^{\\circ}-\\frac{RT}{nF}\\ln Q",
       "unit": 4,
       "unitTitle": "Electro chemistry",
       "sources": [
         "ec-unit-4-electro-chemistry#p.36"
-      ]
+      ],
+      "diagram": "electrochemical-cell"
     },
     {
       "id": "battery",
@@ -388,7 +394,7 @@
       "id": "rust",
       "term": "Rust",
       "definition": "Hydrated iron oxide Fe2O3·3H2O formed by iron corrosion.",
-      "formula": "",
+      "formula": "4\\mathrm{Fe}+3\\mathrm{O}_{2}+6\\mathrm{H}_{2}\\mathrm{O}\\rightarrow 2\\mathrm{Fe}_{2}\\mathrm{O}_{3}\\cdot 3\\mathrm{H}_{2}\\mathrm{O}",
       "unit": 5,
       "unitTitle": "Corrosion",
       "sources": [
@@ -421,7 +427,7 @@
       "id": "sn1-reaction",
       "term": "SN1 reaction",
       "definition": "Unimolecular nucleophilic substitution proceeding through a planar carbocation intermediate, with rate depending only on the concentration of the substrate.",
-      "formula": "",
+      "formula": "\\text{rate}=k[\\text{RX}]",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",
       "sources": [
@@ -432,7 +438,7 @@
       "id": "sn2-reaction",
       "term": "SN2 reaction",
       "definition": "Bimolecular nucleophilic substitution with inversion in one step.",
-      "formula": "",
+      "formula": "\\text{rate}=k[\\text{RX}][\\text{Nu}^{-}]",
       "unit": 6,
       "unitTitle": "Organic reactions and drug molecules",
       "sources": [
