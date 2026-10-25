@@ -331,7 +331,8 @@
       "unitTitle": "Quadratic Forms",
       "sources": [
         "mac-wiki-quadratic-form#diagonalization-and-canonical-form"
-      ]
+      ],
+      "diagram": "matrix-transform"
     },
     {
       "id": "index",

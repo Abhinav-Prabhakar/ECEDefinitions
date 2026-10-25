@@ -185,7 +185,8 @@
       "unitTitle": "Multiple integrals",
       "sources": [
         "ac-ac-unit-2#p.12"
-      ]
+      ],
+      "diagram": "matrix-transform"
     },
     {
       "id": "polar-coordinates-integral",
@@ -329,7 +330,8 @@
       "unitTitle": "Fourier series",
       "sources": [
         "ac-ac-unit-4#p.7"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "even-function",
@@ -544,7 +546,8 @@
       "unitTitle": "Laplace transforms",
       "sources": [
         "ac-ac-unit-6#p.12"
-      ]
+      ],
+      "diagram": "convolution"
     },
     {
       "id": "initial-value-theorem",

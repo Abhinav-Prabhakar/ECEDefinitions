@@ -19,7 +19,8 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.5"
-      ]
+      ],
+      "diagram": "matter-wave"
     },
     {
       "id": "matter-wave",
@@ -30,7 +31,8 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.6"
-      ]
+      ],
+      "diagram": "matter-wave"
     },
     {
       "id": "de-broglie-wavelength",
@@ -41,7 +43,8 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.6"
-      ]
+      ],
+      "diagram": "matter-wave"
     },
     {
       "id": "heisenberg-uncertainty-principle",
@@ -52,7 +55,8 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.27"
-      ]
+      ],
+      "diagram": "uncertainty"
     },
     {
       "id": "schrodinger-time-independent-wave-equation",
@@ -96,7 +100,8 @@
       "unitTitle": "Quantum Mechanics",
       "sources": [
         "ep-unit-1-quantum-mechanics#p.40"
-      ]
+      ],
+      "diagram": "particle-box"
     },
     {
       "id": "energy-eigenvalue",
@@ -107,7 +112,8 @@
       "sources": [
         "ep-unit-1-quantum-mechanics#p.2"
       ],
-      "formula": "\\hat{H}\\psi_{n}=E_{n}\\psi_{n}"
+      "formula": "\\hat{H}\\psi_{n}=E_{n}\\psi_{n}",
+      "diagram": "energy-levels"
     },
     {
       "id": "davisson-germer-experiment",
@@ -118,7 +124,8 @@
       "sources": [
         "ep-unit-1-quantum-mechanics#p.1"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "bragg"
     },
     {
       "id": "laser",
@@ -129,7 +136,8 @@
       "sources": [
         "ep-unit-2-lasers#slide.2"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "laser-levels"
     },
     {
       "id": "stimulated-emission",
@@ -140,7 +148,8 @@
       "sources": [
         "ep-unit-2-lasers#slide.14"
       ],
-      "formula": "E_{2}-E_{1}=h\\nu"
+      "formula": "E_{2}-E_{1}=h\\nu",
+      "diagram": "laser-levels"
     },
     {
       "id": "spontaneous-emission",
@@ -162,7 +171,8 @@
       "sources": [
         "ep-unit-2-lasers#slide.26"
       ],
-      "formula": "N_{2}>N_{1}"
+      "formula": "N_{2}>N_{1}",
+      "diagram": "laser-levels"
     },
     {
       "id": "metastable-state",
@@ -195,7 +205,8 @@
       "sources": [
         "ep-unit-2-fiber-optics#slide.2"
       ],
-      "formula": "n_{\\text{core}}>n_{\\text{cladding}}"
+      "formula": "n_{\\text{core}}>n_{\\text{cladding}}",
+      "diagram": "optical-fiber"
     },
     {
       "id": "total-internal-reflection",
@@ -206,7 +217,8 @@
       "sources": [
         "ep-unit-2-fiber-optics#slide.7"
       ],
-      "formula": "\\sin\\theta_{c}=\\frac{n_{2}}{n_{1}}"
+      "formula": "\\sin\\theta_{c}=\\frac{n_{2}}{n_{1}}",
+      "diagram": "optical-fiber"
     },
     {
       "id": "numerical-aperture",
@@ -217,7 +229,8 @@
       "sources": [
         "ep-unit-2-fiber-optics#slide.15"
       ],
-      "formula": "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}"
+      "formula": "\\text{NA}=\\sin\\theta_{a}=\\sqrt{n_{1}^{2}-n_{2}^{2}}",
+      "diagram": "fiber-na"
     },
     {
       "id": "attenuation",
@@ -228,7 +241,8 @@
       "sources": [
         "ep-unit-2-fiber-optics#slide.31"
       ],
-      "formula": "\\alpha=\\frac{10}{L}\\log_{10}\\frac{P_{\\text{in}}}{P_{\\text{out}}}"
+      "formula": "\\alpha=\\frac{10}{L}\\log_{10}\\frac{P_{\\text{in}}}{P_{\\text{out}}}",
+      "diagram": "attenuation"
     },
     {
       "id": "magnetic-moment",
@@ -305,7 +319,8 @@
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.27"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "hysteresis-loop"
     },
     {
       "id": "superconductivity",
@@ -316,7 +331,8 @@
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.37"
       ],
-      "formula": "\\rho=0\\quad(T<T_{c})"
+      "formula": "\\rho=0\\quad(T<T_{c})",
+      "diagram": "meissner-effect"
     },
     {
       "id": "meissner-effect",
@@ -327,7 +343,8 @@
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.41"
       ],
-      "formula": "\\mathbf{B}_{\\text{in}}=0"
+      "formula": "\\mathbf{B}_{\\text{in}}=0",
+      "diagram": "meissner-effect"
     },
     {
       "id": "cooper-pair",
@@ -338,7 +355,8 @@
       "sources": [
         "ep-unit-3-magnetic-and-superconducting-materials#slide.50"
       ],
-      "formula": "q=-2e"
+      "formula": "q=-2e",
+      "diagram": "cooper-pair"
     },
     {
       "id": "dielectric",
@@ -349,7 +367,8 @@
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.2"
       ],
-      "formula": "\\mathbf{D}=\\varepsilon_{0}\\mathbf{E}+\\mathbf{P}"
+      "formula": "\\mathbf{D}=\\varepsilon_{0}\\mathbf{E}+\\mathbf{P}",
+      "diagram": "polarization-field"
     },
     {
       "id": "electric-dipole",
@@ -395,7 +414,8 @@
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.6"
       ],
-      "formula": "\\mathbf{P}=N\\mathbf{p}"
+      "formula": "\\mathbf{P}=N\\mathbf{p}",
+      "diagram": "polarization-field"
     },
     {
       "id": "polarizability",
@@ -439,7 +459,8 @@
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.23"
       ],
-      "formula": "\\alpha_{o}=\\frac{p_{0}^{2}}{3k_{B}T}"
+      "formula": "\\alpha_{o}=\\frac{p_{0}^{2}}{3k_{B}T}",
+      "diagram": "polarization-field"
     },
     {
       "id": "clausius-mossotti-equation",
@@ -461,7 +482,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.4"
       ],
-      "formula": "\\sigma=e(n\\mu_{e}+p\\mu_{h})"
+      "formula": "\\sigma=e(n\\mu_{e}+p\\mu_{h})",
+      "diagram": "energy-bands"
     },
     {
       "id": "intrinsic-semiconductor",
@@ -483,7 +505,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.10"
       ],
-      "formula": "np=n_{i}^{2}"
+      "formula": "np=n_{i}^{2}",
+      "diagram": "doping-bands"
     },
     {
       "id": "n-type-semiconductor",
@@ -494,7 +517,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.41"
       ],
-      "formula": "n\\approx N_{D}\\gg p"
+      "formula": "n\\approx N_{D}\\gg p",
+      "diagram": "doping-bands"
     },
     {
       "id": "p-type-semiconductor",
@@ -505,7 +529,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.51"
       ],
-      "formula": "p\\approx N_{A}\\gg n"
+      "formula": "p\\approx N_{A}\\gg n",
+      "diagram": "doping-bands"
     },
     {
       "id": "fermi-level",
@@ -516,7 +541,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.38"
       ],
-      "formula": "f(E)=\\frac{1}{1+e^{(E-E_{F})/k_{B}T}}"
+      "formula": "f(E)=\\frac{1}{1+e^{(E-E_{F})/k_{B}T}}",
+      "diagram": "fermi-dirac"
     },
     {
       "id": "energy-band-gap",
@@ -527,7 +553,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.17"
       ],
-      "formula": "E_{g}=E_{c}-E_{v}"
+      "formula": "E_{g}=E_{c}-E_{v}",
+      "diagram": "energy-bands"
     },
     {
       "id": "hall-effect",
@@ -538,7 +565,8 @@
       "sources": [
         "ep-unit-5-semiconductors#slide.64"
       ],
-      "formula": "V_{H}=\\frac{BI}{net}"
+      "formula": "V_{H}=\\frac{BI}{net}",
+      "diagram": "hall-effect"
     },
     {
       "id": "pn-junction",
@@ -561,7 +589,8 @@
       "sources": [
         "ep-unit-5-semiconductor-devices#slide.25"
       ],
-      "formula": "E_{g}=h\\nu=\\frac{hc}{\\lambda}"
+      "formula": "E_{g}=h\\nu=\\frac{hc}{\\lambda}",
+      "diagram": "led-recombination"
     },
     {
       "id": "nanotechnology",
@@ -605,7 +634,8 @@
       "sources": [
         "ep-unit-6-nano-technology#slide.8"
       ],
-      "formula": "E_{n}\\propto\\frac{1}{L^{2}}"
+      "formula": "E_{n}\\propto\\frac{1}{L^{2}}",
+      "diagram": "quantum-well"
     },
     {
       "id": "quantum-dot",
@@ -671,7 +701,8 @@
       "sources": [
         "ep-unit-6-nano-technology#slide.37"
       ],
-      "formula": "2d\\sin\\theta=n\\lambda"
+      "formula": "2d\\sin\\theta=n\\lambda",
+      "diagram": "bragg"
     }
   ]
 }

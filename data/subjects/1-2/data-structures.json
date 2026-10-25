@@ -119,7 +119,8 @@
       "unitTitle": "Introduction, Arrays, Structures",
       "sources": [
         "ds-ds-unit-1#slide.68"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "dynamic-memory-allocation",
@@ -131,7 +132,8 @@
       "sources": [
         "ds-ds-unit-1#slide.68",
         "ds-ds-unit-3#slide.13"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "malloc",
@@ -301,7 +303,8 @@
       "unitTitle": "Linked Lists",
       "sources": [
         "ds-ds-unit-3#slide.12"
-      ]
+      ],
+      "diagram": "linked-list"
     },
     {
       "id": "doubly-linked-list",
@@ -481,7 +484,8 @@
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
         "ds-ds-unit-5#slide.26"
-      ]
+      ],
+      "diagram": "heap"
     },
     {
       "id": "hash-table",
@@ -492,7 +496,8 @@
       "unitTitle": "Graphs, Heaps and Hashing",
       "sources": [
         "ds-ds-unit-5#slide.44"
-      ]
+      ],
+      "diagram": "hash-table"
     },
     {
       "id": "linear-search",

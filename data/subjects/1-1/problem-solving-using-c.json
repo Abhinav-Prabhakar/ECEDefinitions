@@ -305,7 +305,8 @@
       "unitTitle": "Functions",
       "sources": [
         "psuc-cp-unit-4#slide.69"
-      ]
+      ],
+      "diagram": "recursion-tree"
     },
     {
       "id": "base-case",
@@ -316,7 +317,8 @@
       "unitTitle": "Functions",
       "sources": [
         "psuc-cp-unit-4#slide.70"
-      ]
+      ],
+      "diagram": "recursion-tree"
     },
     {
       "id": "call-by-value",

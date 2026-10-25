@@ -107,7 +107,8 @@
       "unitTitle": "Introduction to electrical circuits",
       "sources": [
         "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.99"
-      ]
+      ],
+      "diagram": "node-mesh"
     },
     {
       "id": "kvl",
@@ -118,7 +119,8 @@
       "unitTitle": "Introduction to electrical circuits",
       "sources": [
         "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.102"
-      ]
+      ],
+      "diagram": "node-mesh"
     },
     {
       "id": "source-transformation",
@@ -129,7 +131,8 @@
       "unitTitle": "Introduction to electrical circuits",
       "sources": [
         "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.80"
-      ]
+      ],
+      "diagram": "source-transform"
     },
     {
       "id": "dependent-source",
@@ -386,7 +389,7 @@
       "sources": [
         "ecna-ecna-unit-4-network-theorems#p.31"
       ],
-      "diagram": "thevenin-equiv"
+      "diagram": "max-power"
     },
     {
       "id": "reciprocity-theorem",
@@ -454,7 +457,8 @@
       "unitTitle": "2-port parameters",
       "sources": [
         "ecna-ecna-unit-5-2-ports-parameters#slide.1"
-      ]
+      ],
+      "diagram": "two-port"
     },
     {
       "id": "h-parameters",
@@ -487,7 +491,8 @@
       "unitTitle": "Transients",
       "sources": [
         "ecna-ecna-unit-6-transients#slide.4"
-      ]
+      ],
+      "diagram": "rc-charge"
     },
     {
       "id": "time-constant-rl",
@@ -509,7 +514,8 @@
       "unitTitle": "Transients",
       "sources": [
         "ecna-ecna-unit-6-transients#slide.38"
-      ]
+      ],
+      "diagram": "rc-charge"
     },
     {
       "id": "inductor-at-t0",

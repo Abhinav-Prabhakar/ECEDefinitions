@@ -30,7 +30,8 @@
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.7"
-      ]
+      ],
+      "diagram": "mo-diagram"
     },
     {
       "id": "bond-order",
@@ -41,7 +42,8 @@
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.9"
-      ]
+      ],
+      "diagram": "mo-diagram"
     },
     {
       "id": "diamagnetic",
@@ -143,7 +145,8 @@
       "unitTitle": "Molecular structure",
       "sources": [
         "ec-unit-1-molecular-structure#slide.37"
-      ]
+      ],
+      "diagram": "aromatic-ring"
     },
     {
       "id": "polymer",
@@ -154,7 +157,8 @@
       "unitTitle": "Polymers & Lubricants",
       "sources": [
         "ec-unit-2-polymers-lubricants#slide.3"
-      ]
+      ],
+      "diagram": "polymer-chain"
     },
     {
       "id": "monomer",
@@ -165,7 +169,8 @@
       "unitTitle": "Polymers & Lubricants",
       "sources": [
         "ec-unit-2-polymers-lubricants#slide.3"
-      ]
+      ],
+      "diagram": "polymer-chain"
     },
     {
       "id": "polymerization",
@@ -176,7 +181,8 @@
       "unitTitle": "Polymers & Lubricants",
       "sources": [
         "ec-unit-2-polymers-lubricants#slide.4"
-      ]
+      ],
+      "diagram": "polymer-chain"
     },
     {
       "id": "degree-of-polymerization",
@@ -388,7 +394,8 @@
       "unitTitle": "Corrosion",
       "sources": [
         "ec-unit-5-corrosion#slide.4"
-      ]
+      ],
+      "diagram": "corrosion-cell"
     },
     {
       "id": "rust",
@@ -399,7 +406,8 @@
       "unitTitle": "Corrosion",
       "sources": [
         "ec-unit-5-corrosion#slide.4"
-      ]
+      ],
+      "diagram": "corrosion-cell"
     },
     {
       "id": "electrophile",
