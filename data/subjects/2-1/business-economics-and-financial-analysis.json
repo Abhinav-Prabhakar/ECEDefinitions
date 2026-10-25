@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "id": "business-economics-and-financial-analysis",
+  "semester": "2-1",
+  "name": "Business Economics and Financial Analysis",
+  "shortName": "BEFA",
+  "code": "9ZC01",
+  "courseType": "HS",
+  "folderId": "11NvDSB758iAX9D3EKOlfnOY3zvNzJOy_",
+  "folderUrl": "https://drive.google.com/drive/folders/11NvDSB758iAX9D3EKOlfnOY3zvNzJOy_",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "microeconomics",
+      "term": "Microeconomics",
+      "definition": "The branch of economics that studies the behaviour of individual decision takers such as individuals, households, and firms.",
+      "unit": 1,
+      "unitTitle": "Introduction to Economics",
+      "sources": [
+        "befa-unit-1-befa#slide.7"
+      ]
+    },
+    {
+      "id": "macroeconomics",
+      "term": "Macroeconomics",
+      "definition": "The branch of economics that studies economy-wide phenomena such as inflation, GDP, and unemployment.",
+      "unit": 1,
+      "unitTitle": "Introduction to Economics",
+      "sources": [
+        "befa-unit-1-befa#slide.8"
+      ]
+    },
+    {
+      "id": "managerial-economics",
+      "term": "Managerial economics",
+      "definition": "The integration of economic theory with business practice to facilitate decision making and forward planning.",
+      "unit": 1,
+      "unitTitle": "Introduction to Economics",
+      "sources": [
+        "befa-unit-1-befa#slide.9"
+      ]
+    },
+    {
+      "id": "demand",
+      "term": "Demand",
+      "definition": "The quantity of a commodity a consumer is willing to purchase per unit of time at a particular price.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "sources": [
+        "befa-unit-1-befa#slide.15"
+      ]
+    },
+    {
+      "id": "demand-function",
+      "term": "Demand function",
+      "definition": "A mathematical expression of the relationship between quantity demanded and its determinants.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Qd = f(P, I, T, ...)",
+      "sources": [
+        "befa-unit-1-befa#slide.17"
+      ]
+    },
+    {
+      "id": "law-of-demand",
+      "term": "Law of demand",
+      "definition": "The quantity demanded increases with a fall in price and diminishes with a rise in price.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "sources": [
+        "befa-unit-1-befa#slide.19"
+      ]
+    },
+    {
+      "id": "price-elasticity-of-demand",
+      "term": "Price elasticity of demand",
+      "definition": "The degree to which quantity demanded responds to a change in price.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ep = %ΔQd / %ΔP",
+      "sources": [
+        "befa-unit-1-befa#slide.33"
+      ]
+    },
+    {
+      "id": "income-elasticity-of-demand",
+      "term": "Income elasticity of demand",
+      "definition": "The responsiveness of quantity demanded to changes in consumer income.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ei = %ΔQd / %ΔI",
+      "sources": [
+        "befa-unit-1-befa#slide.37"
+      ]
+    },
+    {
+      "id": "cross-elasticity-of-demand",
+      "term": "Cross elasticity of demand",
+      "definition": "The responsiveness of quantity demanded to changes in prices of related goods.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ec = %ΔQd / %ΔPr",
+      "sources": [
+        "befa-unit-1-befa#slide.38"
+      ]
+    },
+    {
+      "id": "advertisement-elasticity-of-demand",
+      "term": "Advertisement elasticity of demand",
+      "definition": "The responsiveness of quantity demanded to changes in advertisement efforts or cost.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ea = %ΔQd / %ΔA",
+      "sources": [
+        "befa-unit-1-befa#slide.39"
+      ]
+    },
+    {
+      "id": "perfectly-elastic-demand",
+      "term": "Perfectly elastic demand",
+      "definition": "A small change in price leads to an infinite expansion in demand.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ep = ∞",
+      "sources": [
+        "befa-unit-1-befa#slide.42"
+      ]
+    },
+    {
+      "id": "perfectly-inelastic-demand",
+      "term": "Perfectly inelastic demand",
+      "definition": "Quantity demanded does not change despite a great fall or rise in price.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ep = 0",
+      "sources": [
+        "befa-unit-1-befa#slide.44"
+      ]
+    },
+    {
+      "id": "unit-elastic-demand",
+      "term": "Unit elastic demand",
+      "definition": "A proportionate change in price leads to an equal proportionate change in quantity demanded.",
+      "unit": 2,
+      "unitTitle": "Demand and Supply",
+      "formula": "Ep = 1",
+      "sources": [
+        "befa-unit-1-befa#slide.46"
+      ]
+    },
+    {
+      "id": "production",
+      "term": "Production",
+      "definition": "An activity that transforms inputs into output and creates utility.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.3"
+      ]
+    },
+    {
+      "id": "production-function",
+      "term": "Production function",
+      "definition": "The technological relationship expressing the relation between output and the combinations of inputs used.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "formula": "Q = f(L, K, ...)",
+      "sources": [
+        "befa-unit-2-befa#slide.4"
+      ]
+    },
+    {
+      "id": "isoquant",
+      "term": "Isoquant",
+      "definition": "A curve showing the various combinations of two inputs that produce the same output.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.6"
+      ]
+    },
+    {
+      "id": "isocost",
+      "term": "Isocost",
+      "definition": "A curve showing the combinations of inputs that cost the producer the same amount.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.9"
+      ]
+    },
+    {
+      "id": "law-of-variable-proportions",
+      "term": "Law of variable proportions",
+      "definition": "The short-run change in output when one factor of production is varied while others are held constant.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.12"
+      ]
+    },
+    {
+      "id": "returns-to-scale",
+      "term": "Returns to scale",
+      "definition": "The long-run relationship between output behaviour and variations in all factor inputs.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.16"
+      ]
+    },
+    {
+      "id": "increasing-returns-to-scale",
+      "term": "Increasing returns to scale",
+      "definition": "A given percentage increase in inputs leads to a greater percentage increase in output.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.18"
+      ]
+    },
+    {
+      "id": "decreasing-returns-to-scale",
+      "term": "Decreasing returns to scale",
+      "definition": "A given percentage increase in inputs leads to a smaller percentage increase in output.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.20"
+      ]
+    },
+    {
+      "id": "economies-of-scale",
+      "term": "Economies of scale",
+      "definition": "The advantages or cost reductions arising from large-scale production.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.21"
+      ]
+    },
+    {
+      "id": "fixed-cost",
+      "term": "Fixed cost",
+      "definition": "Costs that remain constant in the short run regardless of the level of production.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.33"
+      ]
+    },
+    {
+      "id": "variable-cost",
+      "term": "Variable cost",
+      "definition": "Costs that vary directly with the volume of production.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.34"
+      ]
+    },
+    {
+      "id": "marginal-cost",
+      "term": "Marginal cost",
+      "definition": "The additional cost incurred for producing one more unit of a product.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.35"
+      ]
+    },
+    {
+      "id": "opportunity-cost",
+      "term": "Opportunity cost",
+      "definition": "The cost of the next best alternative foregone.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.36"
+      ]
+    },
+    {
+      "id": "explicit-cost",
+      "term": "Explicit cost",
+      "definition": "An out-of-pocket cost involving actual payment of cash.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.38"
+      ]
+    },
+    {
+      "id": "implicit-cost",
+      "term": "Implicit cost",
+      "definition": "An imputed non-cash cost not actually incurred but would have been incurred.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.39"
+      ]
+    },
+    {
+      "id": "break-even-point",
+      "term": "Break-even point",
+      "definition": "The point of no profit and no loss where total revenue equals total cost.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "formula": "TR = TC",
+      "sources": [
+        "befa-unit-2-befa#slide.41"
+      ]
+    },
+    {
+      "id": "contribution-margin",
+      "term": "Contribution margin",
+      "definition": "The difference between sales receipts and variable expenses.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "formula": "CM = SP - VC",
+      "sources": [
+        "befa-unit-2-befa#slide.59"
+      ]
+    },
+    {
+      "id": "margin-of-safety",
+      "term": "Margin of safety",
+      "definition": "Sales achieved over and above break-even sales.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "formula": "MOS = Total sales - BE sales",
+      "sources": [
+        "befa-unit-2-befa#slide.50"
+      ]
+    },
+    {
+      "id": "angle-of-incidence",
+      "term": "Angle of incidence",
+      "definition": "The angle at the break-even point between the total cost and total revenue lines.",
+      "unit": 3,
+      "unitTitle": "Production and Cost",
+      "sources": [
+        "befa-unit-2-befa#slide.50"
+      ]
+    },
+    {
+      "id": "market",
+      "term": "Market",
+      "definition": "A place or point where buyers and sellers negotiate the exchange of well-defined products or services.",
+      "unit": 4,
+      "unitTitle": "Market Structures",
+      "sources": [
+        "befa-unit-3-befa#slide.3"
+      ]
+    },
+    {
+      "id": "perfect-competition",
+      "term": "Perfect competition",
+      "definition": "A market structure in which all firms are price takers with free entry and exit.",
+      "unit": 4,
+      "unitTitle": "Market Structures",
+      "sources": [
+        "befa-unit-3-befa#slide.10"
+      ]
+    },
+    {
+      "id": "imperfect-competition",
+      "term": "Imperfect competition",
+      "definition": "A market structure in which firms are price makers with restrictions on entry.",
+      "unit": 4,
+      "unitTitle": "Market Structures",
+      "sources": [
+        "befa-unit-3-befa#slide.12"
+      ]
+    },
+    {
+      "id": "monopoly",
+      "term": "Monopoly",
+      "definition": "A market with a single seller, many buyers, no close substitutes, and restricted entry.",
+      "unit": 4,
+      "unitTitle": "Market Structures",
+      "sources": [
+        "befa-unit-3-befa#slide.14"
+      ]
+    },
+    {
+      "id": "monopolistic-competition",
+      "term": "Monopolistic competition",
+      "definition": "A market where many firms produce differentiated products that are close substitutes.",
+      "unit": 4,
+      "unitTitle": "Market Structures",
+      "sources": [
+        "befa-unit-3-befa#slide.15"
+      ]
+    },
+    {
+      "id": "capital-expenditure",
+      "term": "Capital expenditure",
+      "definition": "Expenditure intended to benefit future periods, such as acquisition or improvement of assets.",
+      "unit": 5,
+      "unitTitle": "Financial Statements",
+      "sources": [
+        "befa-unit-v-befa#slide.3"
+      ]
+    },
+    {
+      "id": "revenue-expenditure",
+      "term": "Revenue expenditure",
+      "definition": "Expenditure incurred for generating revenue in the current accounting period.",
+      "unit": 5,
+      "unitTitle": "Financial Statements",
+      "sources": [
+        "befa-unit-v-befa#slide.4"
+      ]
+    },
+    {
+      "id": "deferred-revenue-expenditure",
+      "term": "Deferred revenue expenditure",
+      "definition": "Revenue expenditure whose benefit spreads over more than one accounting period.",
+      "unit": 5,
+      "unitTitle": "Financial Statements",
+      "sources": [
+        "befa-unit-v-befa#slide.5"
+      ]
+    },
+    {
+      "id": "trading-account",
+      "term": "Trading account",
+      "definition": "An account prepared to assess the gross profit or loss of a period.",
+      "unit": 5,
+      "unitTitle": "Financial Statements",
+      "formula": "Gross profit = Net sales - COGS",
+      "sources": [
+        "befa-unit-v-befa#slide.7"
+      ]
+    },
+    {
+      "id": "profit-and-loss-account",
+      "term": "Profit and loss account",
+      "definition": "An account prepared to ascertain the net profit or loss of a period.",
+      "unit": 5,
+      "unitTitle": "Financial Statements",
+      "sources": [
+        "befa-unit-v-befa#slide.10"
+      ]
+    },
+    {
+      "id": "balance-sheet",
+      "term": "Balance sheet",
+      "definition": "A statement prepared at a point in time reflecting the financial position with assets and liabilities.",
+      "unit": 5,
+      "unitTitle": "Financial Statements",
+      "sources": [
+        "befa-unit-v-befa#slide.14"
+      ]
+    },
+    {
+      "id": "ratio-analysis",
+      "term": "Ratio analysis",
+      "definition": "A technique for interpreting financial statements.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "sources": [
+        "befa-unit-vi-befa#slide.2"
+      ]
+    },
+    {
+      "id": "current-ratio",
+      "term": "Current ratio",
+      "definition": "The ratio of current assets to current liabilities.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "formula": "CA / CL",
+      "sources": [
+        "befa-unit-vi-befa#slide.4"
+      ]
+    },
+    {
+      "id": "quick-ratio",
+      "term": "Quick ratio",
+      "definition": "The ratio of quick assets to current liabilities.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "sources": [
+        "befa-unit-vi-befa#slide.4"
+      ]
+    },
+    {
+      "id": "inventory-turnover-ratio",
+      "term": "Inventory turnover ratio",
+      "definition": "Cost of goods sold divided by average stock.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "formula": "COGS / Avg stock",
+      "sources": [
+        "befa-unit-vi-befa#slide.8"
+      ]
+    },
+    {
+      "id": "inventory-holding-period",
+      "term": "Inventory holding period",
+      "definition": "The number of days inventory is held, equal to 365 divided by stock turnover ratio.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "formula": "365 / STR",
+      "sources": [
+        "befa-unit-vi-befa#slide.8"
+      ]
+    },
+    {
+      "id": "gross-profit-ratio",
+      "term": "Gross profit ratio",
+      "definition": "Gross profit divided by net sales.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "formula": "GP / Net sales",
+      "sources": [
+        "befa-unit-vi-befa#slide.9"
+      ]
+    },
+    {
+      "id": "net-profit-ratio",
+      "term": "Net profit ratio",
+      "definition": "Net profit after taxes divided by net sales.",
+      "unit": 6,
+      "unitTitle": "Capital Budgeting and Financial Analysis",
+      "formula": "NPAT / Net sales",
+      "sources": [
+        "befa-unit-vi-befa#slide.9"
+      ]
+    }
+  ]
+}

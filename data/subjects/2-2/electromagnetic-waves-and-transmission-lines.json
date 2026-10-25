@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "id": "electromagnetic-waves-and-transmission-lines",
+  "semester": "2-2",
+  "name": "Electromagnetic Waves and Transmission Lines",
+  "shortName": "EMTL",
+  "code": "9C407",
+  "courseType": "PC",
+  "folderId": "1-6I1xovYDsSxfYgsschy-FcCu5DLWZBc",
+  "folderUrl": "https://drive.google.com/drive/folders/1-6I1xovYDsSxfYgsschy-FcCu5DLWZBc",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "electrostatic-field",
+      "term": "Electrostatic field",
+      "definition": "The region around a stationary charge in which the charge's electric effect is felt.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.4"
+      ]
+    },
+    {
+      "id": "coulombs-law",
+      "term": "Coulomb's law",
+      "definition": "The force between two point charges is along their joining line, proportional to the product of charges and inversely proportional to the square of their separation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.6"
+      ]
+    },
+    {
+      "id": "electric-field",
+      "term": "Electric field",
+      "definition": "The force per unit positive charge exerted on a test charge placed at a point.",
+      "formula": "E = F/q",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.19"
+      ]
+    },
+    {
+      "id": "gauss-law",
+      "term": "Gauss's law",
+      "definition": "The total electric flux through a closed surface equals the enclosed charge divided by the permittivity.",
+      "formula": "∮D·dS = Q_enc",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.19"
+      ]
+    },
+    {
+      "id": "capacitance",
+      "term": "Capacitance",
+      "definition": "The ratio of charge stored on a conductor to the potential difference applied across it.",
+      "formula": "C = Q/V",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.29"
+      ]
+    },
+    {
+      "id": "parallel-plate-capacitor",
+      "term": "Parallel plate capacitor",
+      "definition": "A capacitor formed by two parallel conducting plates separated by a dielectric.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.30"
+      ]
+    },
+    {
+      "id": "coaxial-capacitor",
+      "term": "Coaxial capacitor",
+      "definition": "A capacitor formed by two coaxial cylindrical conductors separated by a dielectric.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.31"
+      ]
+    },
+    {
+      "id": "spherical-capacitor",
+      "term": "Spherical capacitor",
+      "definition": "A capacitor formed by two concentric spherical conducting shells separated by a dielectric.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.33"
+      ]
+    },
+    {
+      "id": "continuity-equation",
+      "term": "Continuity equation",
+      "definition": "The time rate of decrease of charge in a volume equals the outward current through its surface.",
+      "formula": "∇·J = -∂ρ/∂t",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.38"
+      ]
+    },
+    {
+      "id": "relaxation-time",
+      "term": "Relaxation time",
+      "definition": "The time for charge placed inside a material to fall to 1/e of its initial value.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.41"
+      ]
+    },
+    {
+      "id": "poisson-equation",
+      "term": "Poisson's equation",
+      "definition": "Relates the Laplacian of electric potential to the volume charge density.",
+      "formula": "∇²V = -ρ/ε",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.50"
+      ]
+    },
+    {
+      "id": "laplace-equation",
+      "term": "Laplace's equation",
+      "definition": "States that the Laplacian of potential is zero in charge-free regions.",
+      "formula": "∇²V = 0",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.50"
+      ]
+    },
+    {
+      "id": "maxwell-electrostatic",
+      "term": "Maxwell equations (electrostatic)",
+      "definition": "Gauss's law plus the conservative (irrotational) nature of the electrostatic field.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-u1-electrostatics#slide.52"
+      ]
+    },
+    {
+      "id": "magnetostatic-field",
+      "term": "Magnetostatic field",
+      "definition": "The magnetic field produced by steady (DC) currents or charges in uniform motion.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.3"
+      ]
+    },
+    {
+      "id": "biot-savart-law",
+      "term": "Biot-Savart law",
+      "definition": "The magnetic field due to a current element is proportional to the element and sine of the angle, and inversely proportional to the square of distance.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.6"
+      ]
+    },
+    {
+      "id": "amperes-circuital-law",
+      "term": "Ampere's circuital law",
+      "definition": "The line integral of magnetic field around a closed path equals the enclosed current.",
+      "formula": "∮H·dl = I_enc",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.8"
+      ]
+    },
+    {
+      "id": "lorentz-force",
+      "term": "Lorentz force",
+      "definition": "The force on a charge moving in electric and magnetic fields.",
+      "formula": "F = q(E + v×B)",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.31"
+      ]
+    },
+    {
+      "id": "inductance",
+      "term": "Inductance",
+      "definition": "The ratio of magnetic flux linkage to the current producing it.",
+      "formula": "L = λ/I",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.37"
+      ]
+    },
+    {
+      "id": "magnetic-scalar-potential",
+      "term": "Magnetic scalar potential",
+      "definition": "A scalar potential whose negative gradient gives magnetic field in current-free regions.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.46"
+      ]
+    },
+    {
+      "id": "magnetic-vector-potential",
+      "term": "Magnetic vector potential",
+      "definition": "A vector potential whose curl gives magnetic flux density.",
+      "formula": "B = ∇×A",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.48"
+      ]
+    },
+    {
+      "id": "maxwell-magnetostatic",
+      "term": "Maxwell equations (magnetostatic)",
+      "definition": "Ampere's law plus zero divergence of magnetic flux density.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Magnetostatics",
+      "sources": [
+        "emtl-u2-magnetostatics#slide.50"
+      ]
+    },
+    {
+      "id": "faradays-law",
+      "term": "Faraday's law",
+      "definition": "The emf induced in a closed loop equals the time rate of change of magnetic flux through it.",
+      "formula": "emf = -dΦ/dt",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.7"
+      ]
+    },
+    {
+      "id": "transformer-emf",
+      "term": "Transformer emf",
+      "definition": "Emf induced in a stationary loop by a time-varying magnetic field.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.11"
+      ]
+    },
+    {
+      "id": "motional-emf",
+      "term": "Motional emf",
+      "definition": "Emf induced in a loop moving through a static magnetic field.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.13"
+      ]
+    },
+    {
+      "id": "displacement-current",
+      "term": "Displacement current",
+      "definition": "Current due to time variation of electric displacement field.",
+      "formula": "J_d = ∂D/∂t",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.18"
+      ]
+    },
+    {
+      "id": "modified-amperes-law",
+      "term": "Modified Ampere's law",
+      "definition": "Magnetomotive force equals conduction current plus displacement current.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.18"
+      ]
+    },
+    {
+      "id": "maxwells-equations",
+      "term": "Maxwell's equations",
+      "definition": "Four equations relating electric and magnetic fields to charges and currents.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.22"
+      ]
+    },
+    {
+      "id": "tangential-e-continuity",
+      "term": "Tangential E continuity",
+      "definition": "Tangential component of electric field is continuous across any boundary.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.34"
+      ]
+    },
+    {
+      "id": "normal-d-continuity",
+      "term": "Normal D continuity",
+      "definition": "Normal component of electric flux density is continuous across a boundary except at a conductor surface.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.34"
+      ]
+    },
+    {
+      "id": "tangential-h-continuity",
+      "term": "Tangential H continuity",
+      "definition": "Tangential component of magnetic field is continuous across a boundary except at a conductor surface.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.35"
+      ]
+    },
+    {
+      "id": "normal-b-continuity",
+      "term": "Normal B continuity",
+      "definition": "Normal component of magnetic flux density is continuous across any boundary.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.35"
+      ]
+    },
+    {
+      "id": "tem-wave",
+      "term": "TEM wave",
+      "definition": "An electromagnetic wave with both electric and magnetic fields transverse to the direction of propagation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Time-varying fields",
+      "sources": [
+        "emtl-u3-time-varying-fields#slide.55"
+      ]
+    },
+    {
+      "id": "propagation-constant",
+      "term": "Propagation constant",
+      "definition": "Complex constant describing attenuation and phase change per unit length of a wave.",
+      "formula": "γ = α + jβ",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.10"
+      ]
+    },
+    {
+      "id": "attenuation-constant",
+      "term": "Attenuation constant",
+      "definition": "Real part of propagation constant representing amplitude decay per unit length.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.11"
+      ]
+    },
+    {
+      "id": "phase-constant",
+      "term": "Phase constant",
+      "definition": "Imaginary part of propagation constant representing phase change per unit length.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.11"
+      ]
+    },
+    {
+      "id": "wave-impedance",
+      "term": "Wave impedance",
+      "definition": "Ratio of electric field to magnetic field in an electromagnetic wave.",
+      "formula": "η = E/H",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.11"
+      ]
+    },
+    {
+      "id": "phase-velocity",
+      "term": "Phase velocity",
+      "definition": "Speed at which a point of constant phase propagates.",
+      "formula": "v_p = ω/β",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.11"
+      ]
+    },
+    {
+      "id": "poynting-vector",
+      "term": "Poynting vector",
+      "definition": "Vector representing power radiated per unit area in an electromagnetic field.",
+      "formula": "S = E×H",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.19"
+      ]
+    },
+    {
+      "id": "poynting-theorem",
+      "term": "Poynting theorem",
+      "definition": "Net power leaving a volume equals rate of decrease of stored energy plus ohmic losses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.20"
+      ]
+    },
+    {
+      "id": "normal-incidence",
+      "term": "Normal incidence",
+      "definition": "Incidence of a wave perpendicular to the boundary interface.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.27"
+      ]
+    },
+    {
+      "id": "oblique-incidence",
+      "term": "Oblique incidence",
+      "definition": "Incidence of a wave at an angle to the normal of the boundary interface.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Reflection/refraction of EM waves",
+      "sources": [
+        "emtl-u4-reflection-refraction-em-waves#slide.28"
+      ]
+    },
+    {
+      "id": "transmission-line",
+      "term": "Transmission line",
+      "definition": "Two parallel conductors used to connect a source to a load.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "LF transmission lines",
+      "sources": [
+        "emtl-u5-lf-transmission-lines#p.1"
+      ]
+    },
+    {
+      "id": "characteristic-impedance",
+      "term": "Characteristic impedance",
+      "definition": "Ratio of voltage to current for a wave travelling on a transmission line.",
+      "formula": "Z0 = sqrt((R+jωL)/(G+jωC))",
+      "unit": 5,
+      "unitTitle": "LF transmission lines",
+      "sources": [
+        "emtl-u5-lf-transmission-lines#p.3"
+      ]
+    },
+    {
+      "id": "reflection-coefficient",
+      "term": "Reflection coefficient",
+      "definition": "Ratio of reflected voltage to incident voltage at a load.",
+      "formula": "Γ = (ZL-Z0)/(ZL+Z0)",
+      "unit": 5,
+      "unitTitle": "LF transmission lines",
+      "sources": [
+        "emtl-u5-lf-transmission-lines#p.5"
+      ]
+    },
+    {
+      "id": "vswr",
+      "term": "VSWR",
+      "definition": "Ratio of maximum to minimum voltage on a transmission line.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "LF transmission lines",
+      "sources": [
+        "emtl-u5-lf-transmission-lines#p.6"
+      ]
+    },
+    {
+      "id": "distortionless-line",
+      "term": "Distortionless line",
+      "definition": "A line in which attenuation constant is frequency independent and phase velocity is constant.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "LF transmission lines",
+      "sources": [
+        "emtl-u5-lf-transmission-lines#p.6"
+      ]
+    },
+    {
+      "id": "matched-line",
+      "term": "Matched line",
+      "definition": "A transmission line whose load impedance equals its characteristic impedance.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "LF transmission lines",
+      "sources": [
+        "emtl-u5-lf-transmission-lines#p.6"
+      ]
+    },
+    {
+      "id": "smith-chart",
+      "term": "Smith chart",
+      "definition": "Graphical tool for solving transmission line impedance matching problems.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "HF transmission lines",
+      "sources": [
+        "emtl-u6-hf-transmission-lines#p.1"
+      ]
+    },
+    {
+      "id": "reflection-loss",
+      "term": "Reflection loss",
+      "definition": "Power lost due to reflection at a mismatched load.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "HF transmission lines",
+      "sources": [
+        "emtl-u6-hf-transmission-lines#p.6"
+      ]
+    },
+    {
+      "id": "stub-matching",
+      "term": "Stub matching",
+      "definition": "Technique of using a short-circuited or open-circuited stub to match a load.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "HF transmission lines",
+      "sources": [
+        "emtl-u6-hf-transmission-lines#p.6"
+      ]
+    },
+    {
+      "id": "gradient",
+      "term": "Gradient",
+      "definition": "Vector giving maximum rate of change of a scalar field with direction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-review-vectors-coordinate-system#slide.31"
+      ]
+    },
+    {
+      "id": "divergence",
+      "term": "Divergence",
+      "definition": "Scalar measure of net outflow of a vector field from a point.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-review-vectors-coordinate-system#slide.31"
+      ]
+    },
+    {
+      "id": "curl",
+      "term": "Curl",
+      "definition": "Vector measure of rotation or twisting of a vector field at a point.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Electrostatics",
+      "sources": [
+        "emtl-review-vectors-coordinate-system#slide.31"
+      ]
+    }
+  ]
+}

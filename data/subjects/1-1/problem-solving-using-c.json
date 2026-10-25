@@ -1,0 +1,542 @@
+{
+  "version": 1,
+  "id": "problem-solving-using-c",
+  "semester": "1-1",
+  "name": "Problem Solving using C",
+  "shortName": "PSUC",
+  "code": "9FC01",
+  "courseType": "ES",
+  "folderId": "1-egOoW7h-t0EtDliqwVKpaI46GeEDWN2",
+  "folderUrl": "https://drive.google.com/drive/folders/1-egOoW7h-t0EtDliqwVKpaI46GeEDWN2",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "algorithm",
+      "term": "Algorithm",
+      "definition": "An ordered sequence of unambiguous, well-defined instructions that performs a task and halts in finite time.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.30"
+      ]
+    },
+    {
+      "id": "pseudocode",
+      "term": "Pseudocode",
+      "definition": "An informal, English-like description of the steps in an algorithm using loosely defined syntax.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.34"
+      ]
+    },
+    {
+      "id": "flowchart",
+      "term": "Flowchart",
+      "definition": "A pictorial representation of an algorithm using graphic symbols to show the flow of steps.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.35"
+      ]
+    },
+    {
+      "id": "machine-language",
+      "term": "Machine language",
+      "definition": "The lowest-level language understood by computer hardware, consisting of zeros and ones.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.18"
+      ]
+    },
+    {
+      "id": "high-level-language",
+      "term": "High-level language",
+      "definition": "A programming language resembling natural language, translated to machine language by a compiler.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.22"
+      ]
+    },
+    {
+      "id": "compiler",
+      "term": "Compiler",
+      "definition": "A program that translates high-level language instructions into machine language instructions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.27"
+      ]
+    },
+    {
+      "id": "data-type",
+      "term": "Data type",
+      "definition": "Indicates the type of value stored, its memory size, range, and allowed operations.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.40"
+      ]
+    },
+    {
+      "id": "variable",
+      "term": "Variable",
+      "definition": "A named memory location storing a value that can change during program execution.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Problem Solving and C Basics",
+      "sources": [
+        "psuc-cp-unit-1#slide.55"
+      ]
+    },
+    {
+      "id": "identifier",
+      "term": "Identifier",
+      "definition": "A name given to variables, constants, or functions following C naming rules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.20"
+      ]
+    },
+    {
+      "id": "constant",
+      "term": "Constant",
+      "definition": "A data value that cannot be changed during program execution.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.22"
+      ]
+    },
+    {
+      "id": "keyword",
+      "term": "Keyword",
+      "definition": "A reserved word with fixed meaning that cannot be changed.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.17"
+      ]
+    },
+    {
+      "id": "operator",
+      "term": "Operator",
+      "definition": "A symbol that tells the computer to perform mathematical or logical operations.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.32"
+      ]
+    },
+    {
+      "id": "relational-operator",
+      "term": "Relational operator",
+      "definition": "Compares two values and yields one if true, zero if false.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.35"
+      ]
+    },
+    {
+      "id": "logical-operator",
+      "term": "Logical operator",
+      "definition": "Tests multiple conditions and yields one or zero based on their truth.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.36"
+      ]
+    },
+    {
+      "id": "expression",
+      "term": "Expression",
+      "definition": "A sequence of operands and operators that reduces to a single value.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.47"
+      ]
+    },
+    {
+      "id": "type-casting",
+      "term": "Type casting",
+      "definition": "Forces the compiler to convert one data type to another using a cast operator.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.69"
+      ]
+    },
+    {
+      "id": "infinite-loop",
+      "term": "Infinite loop",
+      "definition": "A loop that runs forever because its terminating condition never becomes false.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.130"
+      ]
+    },
+    {
+      "id": "switch-statement",
+      "term": "Switch statement",
+      "definition": "A multi-way conditional statement comparing one variable against several case labels.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Operators and Control Statements",
+      "sources": [
+        "psuc-cp-unit-2#slide.94"
+      ]
+    },
+    {
+      "id": "array",
+      "term": "Array",
+      "definition": "A collection of data holding a fixed number of values of the same type.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Arrays",
+      "sources": [
+        "psuc-cp-unit-3#slide.4"
+      ]
+    },
+    {
+      "id": "one-dimensional-array",
+      "term": "One-dimensional array",
+      "definition": "A linear list of related, similar data items stored in contiguous memory.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Arrays",
+      "sources": [
+        "psuc-cp-unit-3#slide.8"
+      ]
+    },
+    {
+      "id": "two-dimensional-array",
+      "term": "Two-dimensional array",
+      "definition": "An array of arrays represented as a table with rows and columns.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Arrays",
+      "sources": [
+        "psuc-cp-unit-3#slide.20"
+      ]
+    },
+    {
+      "id": "multidimensional-array",
+      "term": "Multidimensional array",
+      "definition": "An array with three or more dimensions whose exact limit is compiler-dependent.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Arrays",
+      "sources": [
+        "psuc-cp-unit-3#slide.29"
+      ]
+    },
+    {
+      "id": "string",
+      "term": "String",
+      "definition": "A variable-length array of characters delimited by a null character.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Arrays",
+      "sources": [
+        "psuc-cp-unit-3#slide.42"
+      ]
+    },
+    {
+      "id": "linear-search",
+      "term": "Linear search",
+      "definition": "A sequential search from the first element until the item is found or array ends.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Arrays",
+      "sources": [
+        "psuc-cp-unit-3#slide.40"
+      ]
+    },
+    {
+      "id": "function",
+      "term": "Function",
+      "definition": "A self-contained block of code carrying out a specific, well-defined task.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.8"
+      ]
+    },
+    {
+      "id": "function-prototype",
+      "term": "Function prototype",
+      "definition": "A declaration giving the return type and parameter types before definition.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.16"
+      ]
+    },
+    {
+      "id": "recursion",
+      "term": "Recursion",
+      "definition": "A process where a function calls itself to solve a problem.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.69"
+      ]
+    },
+    {
+      "id": "base-case",
+      "term": "Base case",
+      "definition": "The simplest case of a recursive problem that returns an answer directly.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.70"
+      ]
+    },
+    {
+      "id": "call-by-value",
+      "term": "Call by value",
+      "definition": "Parameter passing where copies of actual values are given to formal parameters.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.64"
+      ]
+    },
+    {
+      "id": "call-by-reference",
+      "term": "Call by reference",
+      "definition": "Parameter passing where addresses of actual arguments are copied to formal parameters.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.66"
+      ]
+    },
+    {
+      "id": "macro",
+      "term": "Macro",
+      "definition": "A preprocessor directive associating a name with a sequence of tokens.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.81"
+      ]
+    },
+    {
+      "id": "scope",
+      "term": "Scope",
+      "definition": "The region of the program in which a declared object is visible.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.54"
+      ]
+    },
+    {
+      "id": "storage-class",
+      "term": "Storage class",
+      "definition": "Determines where storage is allocated for an object and how long it persists.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Functions",
+      "sources": [
+        "psuc-cp-unit-4#slide.88"
+      ]
+    },
+    {
+      "id": "pointer",
+      "term": "Pointer",
+      "definition": "A variable containing an address used to access data.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.10"
+      ]
+    },
+    {
+      "id": "pointer-constant",
+      "term": "Pointer constant",
+      "definition": "A memory address that cannot be changed, only used to store data.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.5"
+      ]
+    },
+    {
+      "id": "address-operator",
+      "term": "Address operator",
+      "definition": "The & operator that extracts the address of a variable.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.8"
+      ]
+    },
+    {
+      "id": "dereference-operator",
+      "term": "Dereference operator",
+      "definition": "The * operator that accesses the value at a pointer's address.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.12"
+      ]
+    },
+    {
+      "id": "pointer-to-pointer",
+      "term": "Pointer to pointer",
+      "definition": "A pointer variable storing the address of another pointer variable.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.21"
+      ]
+    },
+    {
+      "id": "string-literal",
+      "term": "String literal",
+      "definition": "A sequence of characters enclosed in double quotes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.42"
+      ]
+    },
+    {
+      "id": "strlen",
+      "term": "strlen()",
+      "definition": "Returns the number of characters in a string up to the first null.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.61"
+      ]
+    },
+    {
+      "id": "strcat",
+      "term": "strcat()",
+      "definition": "Joins two strings by appending the second string to the first.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.62"
+      ]
+    },
+    {
+      "id": "strcmp",
+      "term": "strcmp()",
+      "definition": "Compares two strings and returns zero if they are equal.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Pointers and Strings",
+      "sources": [
+        "psuc-cp-unit-5#slide.64"
+      ]
+    },
+    {
+      "id": "file",
+      "term": "File",
+      "definition": "An external collection of related data treated as a unit.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "File Handling",
+      "sources": [
+        "psuc-cp-unit-6#slide.3"
+      ]
+    },
+    {
+      "id": "buffer",
+      "term": "Buffer",
+      "definition": "A temporary storage area holding data during transfer to or from memory.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "File Handling",
+      "sources": [
+        "psuc-cp-unit-6#slide.6"
+      ]
+    },
+    {
+      "id": "fopen",
+      "term": "fopen()",
+      "definition": "Opens a file and associates a stream with it for reading or writing.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "File Handling",
+      "sources": [
+        "psuc-cp-unit-6#slide.14"
+      ]
+    },
+    {
+      "id": "fclose",
+      "term": "fclose()",
+      "definition": "Closes an open file and writes its buffer back to disk.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "File Handling",
+      "sources": [
+        "psuc-cp-unit-6#slide.20"
+      ]
+    },
+    {
+      "id": "text-file",
+      "term": "Text file",
+      "definition": "A file storing data as lines of characters in human-readable form.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "File Handling",
+      "sources": [
+        "psuc-cp-unit-6#slide.41"
+      ]
+    },
+    {
+      "id": "binary-file",
+      "term": "Binary file",
+      "definition": "A file storing data in the computer's internal format, not human-readable.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "File Handling",
+      "sources": [
+        "psuc-cp-unit-6#slide.42"
+      ]
+    }
+  ]
+}

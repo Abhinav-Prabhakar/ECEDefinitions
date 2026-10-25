@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "id": "probability-theory-and-stochastic-process",
+  "semester": "2-1",
+  "name": "Probability Theory and Stochastic Process",
+  "shortName": "PTSP",
+  "code": "9CC03",
+  "courseType": "BS",
+  "folderId": "1293DShlPm0UJix1_SqCmAV5hKkBG3NKj",
+  "folderUrl": "https://drive.google.com/drive/folders/1293DShlPm0UJix1_SqCmAV5hKkBG3NKj",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "sample-space",
+      "term": "Sample space",
+      "definition": "Set of all possible outcomes of a random experiment.",
+      "formula": "S",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.47"
+      ]
+    },
+    {
+      "id": "event",
+      "term": "Event",
+      "definition": "Any subset of the sample space representing outcomes of interest.",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.51"
+      ]
+    },
+    {
+      "id": "random-experiment",
+      "term": "Random experiment",
+      "definition": "Experiment whose outcome cannot be predicted with certainty.",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.46"
+      ]
+    },
+    {
+      "id": "mutually-exclusive-events",
+      "term": "Mutually exclusive events",
+      "definition": "Events that cannot occur together; their intersection is empty.",
+      "formula": "A∩B=∅",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.25"
+      ]
+    },
+    {
+      "id": "conditional-probability",
+      "term": "Conditional probability",
+      "definition": "Probability of A given that B has occurred.",
+      "formula": "P(A|B)=P(A∩B)/P(B)",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.93"
+      ]
+    },
+    {
+      "id": "total-probability",
+      "term": "Total probability theorem",
+      "definition": "Probability of A via a partition {Bi} of the sample space.",
+      "formula": "P(A)=Σ P(A|Bi)P(Bi)",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-ptsp-model-qp-and-syllabus-a22#p.1"
+      ]
+    },
+    {
+      "id": "bayes-theorem",
+      "term": "Bayes theorem",
+      "definition": "Updates probability of a cause given an observed event.",
+      "formula": "P(Bi|A)=P(A|Bi)P(Bi)/ΣP(A|Bj)P(Bj)",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-ptsp-model-qp-and-syllabus-a22#p.1"
+      ]
+    },
+    {
+      "id": "statistical-independence",
+      "term": "Statistical independence",
+      "definition": "Events A,B are independent if joint probability equals product.",
+      "formula": "P(A∩B)=P(A)P(B)",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.90"
+      ]
+    },
+    {
+      "id": "joint-probability",
+      "term": "Joint probability",
+      "definition": "Probability of two events occurring simultaneously.",
+      "formula": "P(A∩B)",
+      "unit": 1,
+      "unitTitle": "Probability Theory",
+      "sources": [
+        "ptsp-unit-1-ptsp#slide.90"
+      ]
+    },
+    {
+      "id": "random-variable",
+      "term": "Random variable",
+      "definition": "Real-valued function mapping sample points to numbers.",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "pmf",
+      "term": "Probability mass function",
+      "definition": "Gives probability P(X=x) for a discrete random variable.",
+      "formula": "p_X(x)",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "pdf",
+      "term": "Probability density function",
+      "definition": "Nonnegative f_X with probability as integral over intervals.",
+      "formula": "P(a<X≤b)=∫_a^b f_X(x)dx",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "cdf",
+      "term": "Cumulative distribution function",
+      "definition": "Probability that X takes value at most x.",
+      "formula": "F_X(x)=P(X≤x)",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "expected-value",
+      "term": "Expected value",
+      "definition": "Mean or average value of a random variable.",
+      "formula": "E[X]=Σ x p_X(x) or ∫ x f_X(x)dx",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "variance",
+      "term": "Variance",
+      "definition": "Measure of spread of a random variable around its mean.",
+      "formula": "Var(X)=E[(X-μ)^2]",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "characteristic-function",
+      "term": "Characteristic function",
+      "definition": "Fourier transform of the PDF or PMF of a random variable.",
+      "formula": "φ_X(ω)=E[e^{jωX}]",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "binomial-distribution",
+      "term": "Binomial distribution",
+      "definition": "Counts successes in n independent Bernoulli trials with success prob p.",
+      "formula": "P(X=k)=C(n,k)p^k(1-p)^{n-k}",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "poisson-distribution",
+      "term": "Poisson distribution",
+      "definition": "Models number of rare events in fixed interval with rate λ.",
+      "formula": "P(X=k)=e^{-λ}λ^k/k!",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "uniform-distribution",
+      "term": "Uniform distribution",
+      "definition": "Equal probability over a finite interval [a,b].",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "gaussian-distribution",
+      "term": "Gaussian distribution",
+      "definition": "Bell-shaped distribution with mean μ and variance σ².",
+      "formula": "f(x)=1/(σ√(2π)) e^{-(x-μ)^2/(2σ²)}",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "exponential-distribution",
+      "term": "Exponential distribution",
+      "definition": "Models inter-arrival times with constant rate λ.",
+      "formula": "f(x)=λ e^{-λx}, x≥0",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "rayleigh-distribution",
+      "term": "Rayleigh distribution",
+      "definition": "Distribution of magnitude of a 2D Gaussian random vector.",
+      "unit": 2,
+      "unitTitle": "Random Variables",
+      "sources": [
+        "ptsp-unit-2-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "joint-cdf",
+      "term": "Joint CDF",
+      "definition": "Joint probability that X≤x and Y≤y.",
+      "formula": "F_{X,Y}(x,y)=P(X≤x,Y≤y)",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "joint-pdf",
+      "term": "Joint PDF",
+      "definition": "Density function for a pair of random variables.",
+      "formula": "f_{X,Y}(x,y)",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "marginal-pdf",
+      "term": "Marginal PDF",
+      "definition": "Obtained by integrating joint PDF over the other variable.",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "conditional-pdf",
+      "term": "Conditional PDF",
+      "definition": "Density of X given Y=y.",
+      "formula": "f_{X|Y}(x|y)=f_{XY}(x,y)/f_Y(y)",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "covariance",
+      "term": "Covariance",
+      "definition": "Expected product of deviations from means.",
+      "formula": "Cov(X,Y)=E[(X-μ_X)(Y-μ_Y)]",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "correlation-coefficient",
+      "term": "Correlation coefficient",
+      "definition": "Normalized covariance between two random variables.",
+      "formula": "ρ_{XY}=Cov(X,Y)/(σ_X σ_Y)",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "independence-rvs",
+      "term": "Independent random variables",
+      "definition": "Joint PDF factors into product of marginal PDFs.",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "central-limit-theorem",
+      "term": "Central limit theorem",
+      "definition": "Sum of iid random variables tends to Gaussian as n→∞.",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "jointly-gaussian",
+      "term": "Jointly Gaussian RVs",
+      "definition": "Random vector with multivariate normal distribution.",
+      "unit": 3,
+      "unitTitle": "Random Vectors",
+      "sources": [
+        "ptsp-unit-3-ptsp#slide.1"
+      ]
+    },
+    {
+      "id": "random-process",
+      "term": "Random process",
+      "definition": "Family of time functions indexed by random outcomes.",
+      "formula": "X(t,ζ)",
+      "unit": 4,
+      "unitTitle": "Random Processes",
+      "sources": [
+        "ptsp-unit-4-ptsp#p.22"
+      ]
+    },
+    {
+      "id": "ensemble-average",
+      "term": "Ensemble average",
+      "definition": "Expected value over all realizations at a given time.",
+      "formula": "E[X(t)]",
+      "unit": 4,
+      "unitTitle": "Random Processes",
+      "sources": [
+        "ptsp-unit-4-ptsp#p.35"
+      ]
+    },
+    {
+      "id": "autocorrelation",
+      "term": "Autocorrelation function",
+      "definition": "Expected product of process values at two times.",
+      "formula": "R_XX(t1,t2)=E[X(t1)X(t2)]",
+      "unit": 4,
+      "unitTitle": "Random Processes",
+      "sources": [
+        "ptsp-unit-4-ptsp#p.37"
+      ]
+    },
+    {
+      "id": "autocovariance",
+      "term": "Autocovariance function",
+      "definition": "Covariance of process values at two time instants.",
+      "formula": "C_XX(t1,t2)=E[(X(t1)-μ)(X(t2)-μ)]",
+      "unit": 4,
+      "unitTitle": "Random Processes",
+      "sources": [
+        "ptsp-unit-4-ptsp#p.37"
+      ]
+    },
+    {
+      "id": "cross-correlation",
+      "term": "Cross-correlation function",
+      "definition": "Expected product of values of two processes.",
+      "formula": "R_XY(t1,t2)=E[X(t1)Y(t2)]",
+      "unit": 4,
+      "unitTitle": "Random Processes",
+      "sources": [
+        "ptsp-unit-4-ptsp#p.38"
+      ]
+    },
+    {
+      "id": "sss",
+      "term": "Strict-sense stationarity",
+      "definition": "All finite-dimensional distributions are time-invariant.",
+      "unit": 5,
+      "unitTitle": "Stationarity and Correlation Theory",
+      "sources": [
+        "ptsp-unit-5-ptsp#p.1"
+      ]
+    },
+    {
+      "id": "wss",
+      "term": "Wide-sense stationarity",
+      "definition": "Constant mean and autocorrelation depends only on time difference.",
+      "formula": "R_XX(t,t+τ)=R_XX(τ)",
+      "unit": 5,
+      "unitTitle": "Stationarity and Correlation Theory",
+      "sources": [
+        "ptsp-unit-5-ptsp#p.1"
+      ]
+    },
+    {
+      "id": "psd",
+      "term": "Power spectral density",
+      "definition": "Fourier transform of autocorrelation of a WSS process.",
+      "formula": "S_XX(ω)=∫ R_XX(τ)e^{-jωτ}dτ",
+      "unit": 5,
+      "unitTitle": "Stationarity and Correlation Theory",
+      "sources": [
+        "ptsp-unit-5-ptsp#p.13"
+      ]
+    },
+    {
+      "id": "wiener-khinchine",
+      "term": "Wiener-Khinchine theorem",
+      "definition": "PSD and autocorrelation form a Fourier transform pair.",
+      "unit": 5,
+      "unitTitle": "Stationarity and Correlation Theory",
+      "sources": [
+        "ptsp-unit-5-ptsp#p.13"
+      ]
+    },
+    {
+      "id": "ergodicity",
+      "term": "Ergodicity",
+      "definition": "Time averages equal ensemble averages for the process.",
+      "unit": 5,
+      "unitTitle": "Stationarity and Correlation Theory",
+      "sources": [
+        "ptsp-unit-5-ptsp#p.20"
+      ]
+    },
+    {
+      "id": "cross-psd",
+      "term": "Cross power spectral density",
+      "definition": "Fourier transform of cross-correlation of two WSS processes.",
+      "unit": 5,
+      "unitTitle": "Stationarity and Correlation Theory",
+      "sources": [
+        "ptsp-unit-5-ptsp#p.17"
+      ]
+    },
+    {
+      "id": "lti-response",
+      "term": "Linear system response",
+      "definition": "Output is convolution of input with impulse response.",
+      "formula": "Y(t)=∫ h(α)X(t-α)dα",
+      "unit": 6,
+      "unitTitle": "Linear Systems with Random Inputs",
+      "sources": [
+        "ptsp-unit-6-ptsp#p.110"
+      ]
+    },
+    {
+      "id": "thermal-noise",
+      "term": "Thermal noise",
+      "definition": "Noise due to random motion of charge carriers in resistors.",
+      "unit": 6,
+      "unitTitle": "Linear Systems with Random Inputs",
+      "sources": [
+        "ptsp-unit-6-ptsp#p.778"
+      ]
+    },
+    {
+      "id": "shot-noise",
+      "term": "Shot noise",
+      "definition": "Noise due to discrete charge carriers crossing a barrier.",
+      "unit": 6,
+      "unitTitle": "Linear Systems with Random Inputs",
+      "sources": [
+        "ptsp-unit-6-ptsp#p.778"
+      ]
+    },
+    {
+      "id": "entropy",
+      "term": "Entropy",
+      "definition": "Average information content per symbol of a random variable.",
+      "formula": "H(X)=-Σ p(x)log p(x)",
+      "unit": 6,
+      "unitTitle": "Linear Systems with Random Inputs",
+      "sources": [
+        "ptsp-unit-6-ptsp#p.513"
+      ]
+    },
+    {
+      "id": "narrowband-process",
+      "term": "Narrowband process",
+      "definition": "Random process with PSD concentrated around a carrier frequency.",
+      "unit": 6,
+      "unitTitle": "Linear Systems with Random Inputs",
+      "sources": [
+        "ptsp-unit-6-ptsp#p.19"
+      ]
+    }
+  ]
+}

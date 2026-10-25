@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "id": "digital-logic-design",
+  "semester": "2-2",
+  "name": "Digital Logic Design",
+  "shortName": "DLD",
+  "code": "9CC05",
+  "courseType": "PC",
+  "folderId": "1-5AcRmfVBVIvFB7GnABlRQlUfxNQLtXp",
+  "folderUrl": "https://drive.google.com/drive/folders/1-5AcRmfVBVIvFB7GnABlRQlUfxNQLtXp",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "binary-number-system",
+      "term": "Binary number system",
+      "definition": "A base-2 number system that uses only the digits 0 and 1.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.15"
+      ]
+    },
+    {
+      "id": "decimal-number-system",
+      "term": "Decimal number system",
+      "definition": "A base-10 number system using digits 0 through 9.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.17"
+      ]
+    },
+    {
+      "id": "octal-number-system",
+      "term": "Octal number system",
+      "definition": "A base-8 number system using digits 0 through 7.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.18"
+      ]
+    },
+    {
+      "id": "hexadecimal-number-system",
+      "term": "Hexadecimal number system",
+      "definition": "A base-16 number system using digits 0-9 and letters A-F.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.19"
+      ]
+    },
+    {
+      "id": "gray-code",
+      "term": "Gray code",
+      "definition": "An unweighted code where adjacent values differ in only one bit.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.33"
+      ]
+    },
+    {
+      "id": "excess-3-code",
+      "term": "Excess-3 code",
+      "definition": "A self-complementing code obtained by adding 3 to each decimal digit.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.37"
+      ]
+    },
+    {
+      "id": "ones-complement",
+      "term": "1's complement",
+      "definition": "A binary number formed by toggling every bit of the original number.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.50"
+      ]
+    },
+    {
+      "id": "boolean-algebra",
+      "term": "Boolean algebra",
+      "definition": "An algebra of logic in which variables take only values 0 or 1.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.39"
+      ]
+    },
+    {
+      "id": "maxterm",
+      "term": "Maxterm",
+      "definition": "A sum term containing all literals of a Boolean function.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.66"
+      ]
+    },
+    {
+      "id": "pos-form",
+      "term": "POS form",
+      "definition": "A Boolean expression formed by ANDing sum terms.",
+      "unit": 1,
+      "unitTitle": "Number Systems and Boolean Algebra",
+      "sources": [
+        "dld-dld-unit-1#slide.60"
+      ],
+      "formula": "Product of Sums"
+    },
+    {
+      "id": "logic-gate",
+      "term": "Logic gate",
+      "definition": "A device that performs a basic logical function in digital circuits.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.3"
+      ]
+    },
+    {
+      "id": "universal-gate",
+      "term": "Universal gate",
+      "definition": "A gate (NAND or NOR) that can implement any logic function.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.17"
+      ]
+    },
+    {
+      "id": "karnaugh-map",
+      "term": "Karnaugh map",
+      "definition": "A graphical method for simplifying Boolean functions.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.21"
+      ]
+    },
+    {
+      "id": "prime-implicant",
+      "term": "Prime implicant",
+      "definition": "A product or sum term that cannot be further reduced.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.32"
+      ]
+    },
+    {
+      "id": "essential-prime-implicant",
+      "term": "Essential prime implicant",
+      "definition": "A prime implicant covering a minterm no other implicant covers.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.32"
+      ]
+    },
+    {
+      "id": "dont-care",
+      "term": "Don't care",
+      "definition": "An undefined output for some inputs, usable as 0 or 1 in minimization.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.33"
+      ]
+    },
+    {
+      "id": "quine-mccluskey",
+      "term": "Quine-McCluskey method",
+      "definition": "A tabular method for minimizing Boolean functions using prime implicants.",
+      "unit": 2,
+      "unitTitle": "Logic Gates and Minimization",
+      "sources": [
+        "dld-dld-unit-2#slide.45"
+      ]
+    },
+    {
+      "id": "combinational-circuit",
+      "term": "Combinational circuit",
+      "definition": "A circuit whose outputs depend only on present inputs.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.2"
+      ]
+    },
+    {
+      "id": "half-adder",
+      "term": "Half adder",
+      "definition": "A circuit that adds two bits and produces sum and carry.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.21"
+      ]
+    },
+    {
+      "id": "full-adder",
+      "term": "Full adder",
+      "definition": "A circuit that adds three binary bits producing sum and carry.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.25"
+      ]
+    },
+    {
+      "id": "half-subtractor",
+      "term": "Half subtractor",
+      "definition": "A circuit that subtracts two bits producing difference and borrow.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.33"
+      ]
+    },
+    {
+      "id": "full-subtractor",
+      "term": "Full subtractor",
+      "definition": "A circuit that subtracts three bits producing difference and borrow.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.37"
+      ]
+    },
+    {
+      "id": "multiplexer",
+      "term": "Multiplexer",
+      "definition": "A circuit that selects one of many inputs to a single output.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.61"
+      ]
+    },
+    {
+      "id": "demultiplexer",
+      "term": "Demultiplexer",
+      "definition": "A circuit that routes a single input to one of many outputs.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.83"
+      ]
+    },
+    {
+      "id": "encoder",
+      "term": "Encoder",
+      "definition": "A circuit converting 2^n inputs into an n-bit binary code.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.49"
+      ]
+    },
+    {
+      "id": "decoder",
+      "term": "Decoder",
+      "definition": "A circuit converting an n-bit code into 2^n outputs.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.53"
+      ]
+    },
+    {
+      "id": "parity-bit",
+      "term": "Parity bit",
+      "definition": "A bit added to data for detecting transmission errors.",
+      "unit": 3,
+      "unitTitle": "Combinational Logic Design",
+      "sources": [
+        "dld-dld-unit-3#slide.97"
+      ]
+    },
+    {
+      "id": "sequential-circuit",
+      "term": "Sequential circuit",
+      "definition": "A circuit whose outputs depend on present inputs and state.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.3"
+      ]
+    },
+    {
+      "id": "synchronous-circuit",
+      "term": "Synchronous circuit",
+      "definition": "A sequential circuit whose memory elements are clocked.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.8"
+      ]
+    },
+    {
+      "id": "asynchronous-circuit",
+      "term": "Asynchronous circuit",
+      "definition": "A sequential circuit using unclocked memory elements.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.8"
+      ]
+    },
+    {
+      "id": "latch",
+      "term": "Latch",
+      "definition": "A level-sensitive memory element storing one bit.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.16"
+      ]
+    },
+    {
+      "id": "flip-flop",
+      "term": "Flip-flop",
+      "definition": "A clocked bistable memory device storing one bit.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.16"
+      ]
+    },
+    {
+      "id": "sr-flip-flop",
+      "term": "SR flip-flop",
+      "definition": "A flip-flop with Set and Reset inputs controlling its state.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.20"
+      ]
+    },
+    {
+      "id": "jk-flip-flop",
+      "term": "JK flip-flop",
+      "definition": "A universal flip-flop with no invalid state, supporting toggle.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.31"
+      ]
+    },
+    {
+      "id": "d-flip-flop",
+      "term": "D flip-flop",
+      "definition": "A flip-flop that stores the data input on the clock edge.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.42"
+      ]
+    },
+    {
+      "id": "t-flip-flop",
+      "term": "T flip-flop",
+      "definition": "A flip-flop that toggles its state when T=1.",
+      "unit": 4,
+      "unitTitle": "Sequential Circuits and Flip-Flops",
+      "sources": [
+        "dld-dld-unit-4#slide.44"
+      ]
+    },
+    {
+      "id": "counter",
+      "term": "Counter",
+      "definition": "A circuit that counts applied clock pulses.",
+      "unit": 5,
+      "unitTitle": "Registers and Counters",
+      "sources": [
+        "dld-dld-unit-5#slide.6"
+      ]
+    },
+    {
+      "id": "ripple-counter",
+      "term": "Ripple counter",
+      "definition": "An asynchronous counter where each flip-flop clocks the next.",
+      "unit": 5,
+      "unitTitle": "Registers and Counters",
+      "sources": [
+        "dld-dld-unit-5#slide.7"
+      ]
+    },
+    {
+      "id": "synchronous-counter",
+      "term": "Synchronous counter",
+      "definition": "A counter with all flip-flops clocked simultaneously.",
+      "unit": 5,
+      "unitTitle": "Registers and Counters",
+      "sources": [
+        "dld-dld-unit-5#slide.4"
+      ]
+    },
+    {
+      "id": "ring-counter",
+      "term": "Ring counter",
+      "definition": "A shift register with feedback forming a ring of states.",
+      "unit": 5,
+      "unitTitle": "Registers and Counters",
+      "sources": [
+        "dld-dld-unit-5#slide.20"
+      ]
+    },
+    {
+      "id": "johnson-counter",
+      "term": "Johnson counter",
+      "definition": "A twisted ring counter with inverted feedback.",
+      "unit": 5,
+      "unitTitle": "Registers and Counters",
+      "sources": [
+        "dld-dld-unit-5#slide.22"
+      ]
+    },
+    {
+      "id": "shift-register",
+      "term": "Shift register",
+      "definition": "A sequential circuit that stores and shifts data.",
+      "unit": 5,
+      "unitTitle": "Registers and Counters",
+      "sources": [
+        "dld-dld-unit-5#slide.25"
+      ]
+    },
+    {
+      "id": "programmable-logic-device",
+      "term": "Programmable logic device",
+      "definition": "An IC with programmable AND/OR arrays implementing logic.",
+      "unit": 6,
+      "unitTitle": "Programmable Logic Devices",
+      "sources": [
+        "dld-dld-unit-6#slide.3"
+      ]
+    },
+    {
+      "id": "rom",
+      "term": "ROM",
+      "definition": "A non-volatile read-only memory storing fixed data.",
+      "unit": 6,
+      "unitTitle": "Programmable Logic Devices",
+      "sources": [
+        "dld-dld-unit-6#slide.7"
+      ]
+    },
+    {
+      "id": "prom",
+      "term": "PROM",
+      "definition": "A read-only memory programmable once by the user.",
+      "unit": 6,
+      "unitTitle": "Programmable Logic Devices",
+      "sources": [
+        "dld-dld-unit-6#slide.9"
+      ]
+    },
+    {
+      "id": "pla",
+      "term": "PLA",
+      "definition": "A device with programmable AND and OR arrays implementing SOP.",
+      "unit": 6,
+      "unitTitle": "Programmable Logic Devices",
+      "sources": [
+        "dld-dld-unit-6#slide.20"
+      ]
+    },
+    {
+      "id": "asm-chart",
+      "term": "ASM chart",
+      "definition": "A flowchart-like representation of digital hardware algorithms.",
+      "unit": 6,
+      "unitTitle": "Programmable Logic Devices",
+      "sources": [
+        "dld-dld-unit-6#slide.33"
+      ]
+    }
+  ]
+}

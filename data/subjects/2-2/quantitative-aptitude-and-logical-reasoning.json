@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "id": "quantitative-aptitude-and-logical-reasoning",
+  "semester": "2-2",
+  "name": "Quantitative Aptitude and Logical Reasoning",
+  "shortName": "QALR",
+  "code": "9HC16",
+  "courseType": "BS",
+  "folderId": "1-7ATdVsabh6QrBhovp7zOZp77KcGP11h",
+  "folderUrl": "https://drive.google.com/drive/folders/1-7ATdVsabh6QrBhovp7zOZp77KcGP11h",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "natural-number",
+      "term": "Natural number",
+      "definition": "A counting number: 1, 2, 3, ...",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.4"
+      ]
+    },
+    {
+      "id": "whole-number",
+      "term": "Whole number",
+      "definition": "A counting number including zero: 0, 1, 2, ...",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.4"
+      ]
+    },
+    {
+      "id": "integer",
+      "term": "Integer",
+      "definition": "A whole number or its negative: ..., -1, 0, 1, ...",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.4"
+      ]
+    },
+    {
+      "id": "composite-number",
+      "term": "Composite number",
+      "definition": "A positive integer with a divisor other than 1 and itself.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.8"
+      ]
+    },
+    {
+      "id": "co-prime-numbers",
+      "term": "Co-prime numbers",
+      "definition": "Two natural numbers whose highest common factor is 1.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.8"
+      ]
+    },
+    {
+      "id": "hcf",
+      "term": "Highest common factor (HCF)",
+      "definition": "The largest number that divides two or more numbers exactly.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.31"
+      ]
+    },
+    {
+      "id": "lcm",
+      "term": "Least common multiple (LCM)",
+      "definition": "The smallest number that is a multiple of two or more numbers.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.34"
+      ]
+    },
+    {
+      "id": "place-value",
+      "term": "Place value",
+      "definition": "The value of a digit based on its position in a numeral.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.3"
+      ]
+    },
+    {
+      "id": "average",
+      "term": "Average",
+      "definition": "The sum of values divided by their count.",
+      "formula": "Average = Sum / Count",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.47"
+      ]
+    },
+    {
+      "id": "ratio",
+      "term": "Ratio",
+      "definition": "A comparison of two quantities of the same kind.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.59"
+      ]
+    },
+    {
+      "id": "proportion",
+      "term": "Proportion",
+      "definition": "An equality between two ratios.",
+      "unit": 1,
+      "unitTitle": "Number System",
+      "sources": [
+        "qalr-unit-1#slide.59"
+      ]
+    },
+    {
+      "id": "percentage",
+      "term": "Percentage",
+      "definition": "A fraction or ratio expressed as parts per hundred.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.2"
+      ]
+    },
+    {
+      "id": "cost-price",
+      "term": "Cost price (CP)",
+      "definition": "The price at which an article is purchased.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.13"
+      ]
+    },
+    {
+      "id": "selling-price",
+      "term": "Selling price (SP)",
+      "definition": "The price at which an article is sold.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.13"
+      ]
+    },
+    {
+      "id": "profit",
+      "term": "Profit",
+      "definition": "The gain when selling price exceeds cost price.",
+      "formula": "Profit = SP - CP",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.13"
+      ]
+    },
+    {
+      "id": "loss",
+      "term": "Loss",
+      "definition": "The shortfall when selling price is less than cost price.",
+      "formula": "Loss = CP - SP",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.13"
+      ]
+    },
+    {
+      "id": "profit-percentage",
+      "term": "Profit percentage",
+      "definition": "Profit expressed as a percentage of cost price.",
+      "formula": "Profit% = (Profit / CP) x 100",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.14"
+      ]
+    },
+    {
+      "id": "discount",
+      "term": "Discount",
+      "definition": "A reduction from the marked price of an article.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.14"
+      ]
+    },
+    {
+      "id": "simple-interest",
+      "term": "Simple interest",
+      "definition": "Interest calculated only on the principal amount.",
+      "formula": "SI = (P x R x T) / 100",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.31"
+      ]
+    },
+    {
+      "id": "compound-interest",
+      "term": "Compound interest",
+      "definition": "Interest calculated on principal plus accumulated interest.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.37"
+      ]
+    },
+    {
+      "id": "partnership",
+      "term": "Partnership",
+      "definition": "A business run jointly by two or more persons.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.26"
+      ]
+    },
+    {
+      "id": "working-partner",
+      "term": "Working partner",
+      "definition": "A partner who manages the business.",
+      "unit": 2,
+      "unitTitle": "Percentages and Profit & Loss",
+      "sources": [
+        "qalr-unit-2#slide.26"
+      ]
+    },
+    {
+      "id": "time-and-work",
+      "term": "Time and work",
+      "definition": "Work done equals rate multiplied by time.",
+      "formula": "Work = Rate x Time",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-2#slide.46"
+      ]
+    },
+    {
+      "id": "efficiency",
+      "term": "Efficiency",
+      "definition": "Amount of work done per unit time.",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-2#slide.46"
+      ]
+    },
+    {
+      "id": "pipe-cistern",
+      "term": "Pipe and cistern",
+      "definition": "A channel that either fills or empties a cistern.",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-2#slide.54"
+      ]
+    },
+    {
+      "id": "speed",
+      "term": "Speed",
+      "definition": "Distance travelled per unit time.",
+      "formula": "Speed = Distance / Time",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-2#slide.58"
+      ]
+    },
+    {
+      "id": "relative-speed",
+      "term": "Relative speed",
+      "definition": "Speed of one body as observed from another.",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-2#slide.62"
+      ]
+    },
+    {
+      "id": "alligation",
+      "term": "Alligation",
+      "definition": "A method of mixing ingredients to obtain a mixture of desired price or quality.",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-3#slide.47"
+      ]
+    },
+    {
+      "id": "area",
+      "term": "Area",
+      "definition": "The amount of surface covered by a plane figure.",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-3#slide.55"
+      ]
+    },
+    {
+      "id": "volume",
+      "term": "Volume",
+      "definition": "The amount of space occupied by a solid object.",
+      "unit": 3,
+      "unitTitle": "Time, Work and Mensuration",
+      "sources": [
+        "qalr-unit-3#slide.72"
+      ]
+    },
+    {
+      "id": "opposite-faces",
+      "term": "Opposite faces",
+      "definition": "Two faces of a cube that do not share an edge.",
+      "unit": 4,
+      "unitTitle": "Reasoning",
+      "sources": [
+        "cubes-and-dices#p.1"
+      ]
+    },
+    {
+      "id": "adjacent-faces",
+      "term": "Adjacent faces",
+      "definition": "Two faces of a cube that share an edge.",
+      "unit": 4,
+      "unitTitle": "Reasoning",
+      "sources": [
+        "cubes-and-dices#p.1"
+      ]
+    },
+    {
+      "id": "venn-diagram",
+      "term": "Venn diagram",
+      "definition": "A diagram using overlapping circles to show logical relations between sets.",
+      "unit": 4,
+      "unitTitle": "Reasoning",
+      "sources": [
+        "qalr-unit-6-compressed-2#p.3"
+      ]
+    },
+    {
+      "id": "data-interpretation",
+      "term": "Data interpretation",
+      "definition": "The process of analysing given data to answer questions.",
+      "unit": 5,
+      "unitTitle": "Data Interpretation",
+      "sources": [
+        "qalr-unit-3#slide.81"
+      ]
+    },
+    {
+      "id": "statement",
+      "term": "Statement",
+      "definition": "A declarative sentence that is either true or false.",
+      "unit": 6,
+      "unitTitle": "Logical Reasoning",
+      "sources": [
+        "qalr-unit-6-compressed-2#p.2"
+      ]
+    },
+    {
+      "id": "argument",
+      "term": "Argument",
+      "definition": "A set of statements offered to support a conclusion.",
+      "unit": 6,
+      "unitTitle": "Logical Reasoning",
+      "sources": [
+        "statements-and-arguments#p.1"
+      ]
+    },
+    {
+      "id": "conclusion",
+      "term": "Conclusion",
+      "definition": "The statement that follows from given premises.",
+      "unit": 6,
+      "unitTitle": "Logical Reasoning",
+      "sources": [
+        "qalr-unit-6-compressed-2#p.2"
+      ]
+    },
+    {
+      "id": "assumption",
+      "term": "Assumption",
+      "definition": "An unstated premise taken for granted in an argument.",
+      "unit": 6,
+      "unitTitle": "Logical Reasoning",
+      "sources": [
+        "qalr-unit-6-compressed-2#p.2"
+      ]
+    },
+    {
+      "id": "syllogism",
+      "term": "Syllogism",
+      "definition": "A form of reasoning with two premises and a conclusion.",
+      "unit": 6,
+      "unitTitle": "Logical Reasoning",
+      "sources": [
+        "qalr-unit-6-compressed-2#p.2"
+      ]
+    },
+    {
+      "id": "data-sufficiency",
+      "term": "Data sufficiency",
+      "definition": "A question type asking whether given data is enough to answer.",
+      "unit": 6,
+      "unitTitle": "Logical Reasoning",
+      "sources": [
+        "qalr-unit-6-compressed-2#p.2"
+      ]
+    }
+  ]
+}

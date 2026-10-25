@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "electrical-circuits-and-networks-analysis",
+  "semester": "1-2",
+  "name": "Electrical Circuits & Networks Analysis",
+  "shortName": "ECNA",
+  "code": "9AC42",
+  "courseType": "ES",
+  "folderId": "1-UUZvdXEatKQixSn03iLvhLyuPv_pJTg",
+  "folderUrl": "https://drive.google.com/drive/folders/1-UUZvdXEatKQixSn03iLvhLyuPv_pJTg",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "ohms-law",
+      "term": "Ohm's Law",
+      "definition": "Voltage across a resistor is proportional to current through it.",
+      "formula": "V=IR",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.9"
+      ]
+    },
+    {
+      "id": "electric-current",
+      "term": "Electric current",
+      "definition": "Time rate of change of electric charge.",
+      "formula": "I=dq/dt",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.13"
+      ]
+    },
+    {
+      "id": "voltage",
+      "term": "Voltage",
+      "definition": "Electromotive force or potential difference.",
+      "formula": "V=W/q",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.13"
+      ]
+    },
+    {
+      "id": "electric-power",
+      "term": "Electric power",
+      "definition": "Rate at which energy is absorbed or supplied.",
+      "formula": "P=dW/dt=VI",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.14"
+      ]
+    },
+    {
+      "id": "active-element",
+      "term": "Active element",
+      "definition": "Circuit element that can generate energy.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.15"
+      ]
+    },
+    {
+      "id": "resistor",
+      "term": "Resistor",
+      "definition": "Passive element opposing current; voltage proportional to current.",
+      "formula": "V=IR",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.17"
+      ]
+    },
+    {
+      "id": "inductor",
+      "term": "Inductor",
+      "definition": "Passive element opposing sudden change in current.",
+      "formula": "V=L di/dt",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.19"
+      ]
+    },
+    {
+      "id": "capacitor",
+      "term": "Capacitor",
+      "definition": "Passive element storing charge; capacitance is charge per voltage.",
+      "formula": "C=Q/V",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.27"
+      ]
+    },
+    {
+      "id": "kcl",
+      "term": "Kirchhoff's Current Law",
+      "definition": "Algebraic sum of currents at any node is zero.",
+      "formula": "ΣI=0",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.99"
+      ]
+    },
+    {
+      "id": "kvl",
+      "term": "Kirchhoff's Voltage Law",
+      "definition": "Algebraic sum of voltages around any closed loop is zero.",
+      "formula": "ΣV=0",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.102"
+      ]
+    },
+    {
+      "id": "source-transformation",
+      "term": "Source transformation",
+      "definition": "Replace a series voltage source with an equivalent parallel current source.",
+      "formula": "Vs=Is R",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.80"
+      ]
+    },
+    {
+      "id": "dependent-source",
+      "term": "Dependent source",
+      "definition": "Source whose value depends on another voltage or current in the network.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to electrical circuits",
+      "sources": [
+        "ecna-ecna-unit-1-introduction-to-electrical-circuits#slide.75"
+      ]
+    },
+    {
+      "id": "frequency",
+      "term": "Frequency",
+      "definition": "Number of cycles completed per second.",
+      "formula": "f=1/T",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.13"
+      ]
+    },
+    {
+      "id": "angular-frequency",
+      "term": "Angular frequency",
+      "definition": "Number of radians covered per second.",
+      "formula": "ω=2πf",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.14"
+      ]
+    },
+    {
+      "id": "rms-value",
+      "term": "RMS value",
+      "definition": "Steady DC producing same heat in same resistance and time.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.22"
+      ]
+    },
+    {
+      "id": "form-factor",
+      "term": "Form factor",
+      "definition": "Ratio of RMS value to average value.",
+      "formula": "FF=Vrms/Vavg",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.25"
+      ]
+    },
+    {
+      "id": "peak-factor",
+      "term": "Peak factor",
+      "definition": "Ratio of maximum value to RMS value.",
+      "formula": "PF=Vmax/Vrms",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.26"
+      ]
+    },
+    {
+      "id": "phasor",
+      "term": "Phasor",
+      "definition": "Rotating line representing a sinusoidal quantity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.30"
+      ]
+    },
+    {
+      "id": "impedance",
+      "term": "Impedance",
+      "definition": "Total opposition to alternating current.",
+      "formula": "Z=R+jX",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.44"
+      ]
+    },
+    {
+      "id": "real-power",
+      "term": "Real (active) power",
+      "definition": "Power that does useful work in an AC circuit.",
+      "formula": "P=VI cosφ",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.45"
+      ]
+    },
+    {
+      "id": "reactive-power",
+      "term": "Reactive power",
+      "definition": "Power that flows but does no useful work.",
+      "formula": "Q=VI sinφ",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.45"
+      ]
+    },
+    {
+      "id": "apparent-power",
+      "term": "Apparent power",
+      "definition": "Total power in an AC circuit.",
+      "formula": "S=VI",
+      "unit": 2,
+      "unitTitle": "Single phase AC circuits",
+      "sources": [
+        "ecna-ecna-unit-2-single-phase-ac-circuits#slide.45"
+      ]
+    },
+    {
+      "id": "mmf",
+      "term": "Magnetomotive force (MMF)",
+      "definition": "Driving force in a magnetic circuit.",
+      "formula": "F=Ni",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.4"
+      ]
+    },
+    {
+      "id": "reluctance",
+      "term": "Reluctance",
+      "definition": "Opposition to magnetic flux in a magnetic circuit.",
+      "formula": "R=F/φ",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.5"
+      ]
+    },
+    {
+      "id": "magnetic-field-intensity",
+      "term": "Magnetic field intensity",
+      "definition": "MMF per unit length of magnetic path.",
+      "formula": "H=Ni/l",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.6"
+      ]
+    },
+    {
+      "id": "faradays-law",
+      "term": "Faraday's law of induction",
+      "definition": "Induced EMF proportional to rate of change of flux linkage.",
+      "formula": "e=-dΦ/dt",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.3"
+      ]
+    },
+    {
+      "id": "lenzs-law",
+      "term": "Lenz's law",
+      "definition": "Induced current opposes the change in magnetic flux.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.3"
+      ]
+    },
+    {
+      "id": "self-inductance",
+      "term": "Self-inductance",
+      "definition": "EMF induced in a coil due to its own changing current.",
+      "formula": "e=-L di/dt",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.13"
+      ]
+    },
+    {
+      "id": "mutual-inductance",
+      "term": "Mutual inductance",
+      "definition": "EMF induced in one coil due to changing current in another.",
+      "formula": "e=-M di/dt",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.15"
+      ]
+    },
+    {
+      "id": "coefficient-of-coupling",
+      "term": "Coefficient of coupling",
+      "definition": "Fraction of flux linking both coils.",
+      "formula": "k=M/√(L1 L2)",
+      "unit": 3,
+      "unitTitle": "Magnetic circuits",
+      "sources": [
+        "ecna-ecna-unit-3-magnetic-circuits#slide.16"
+      ]
+    },
+    {
+      "id": "superposition-theorem",
+      "term": "Superposition theorem",
+      "definition": "Response equals sum of responses to each independent source acting alone.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.2"
+      ]
+    },
+    {
+      "id": "thevenins-theorem",
+      "term": "Thevenin's theorem",
+      "definition": "Any two terminals replaceable by a voltage source in series with resistance.",
+      "formula": "Vth,Rth",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.11"
+      ]
+    },
+    {
+      "id": "nortons-theorem",
+      "term": "Norton's theorem",
+      "definition": "Any two terminals replaceable by a current source in parallel with resistance.",
+      "formula": "In,Rn",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.20"
+      ]
+    },
+    {
+      "id": "maximum-power-transfer",
+      "term": "Maximum power transfer theorem",
+      "definition": "Maximum power when load resistance equals source resistance.",
+      "formula": "RL=Rs",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.31"
+      ]
+    },
+    {
+      "id": "reciprocity-theorem",
+      "term": "Reciprocity theorem",
+      "definition": "Excitation-response ratio same when excitation and response positions interchange.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.38"
+      ]
+    },
+    {
+      "id": "millmans-theorem",
+      "term": "Millman's theorem",
+      "definition": "Parallel voltage sources replaceable by a single source and series resistance.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.45"
+      ]
+    },
+    {
+      "id": "tellegens-theorem",
+      "term": "Tellegen's theorem",
+      "definition": "Algebraic sum of powers in all branches of a network is zero.",
+      "formula": "Σp=0",
+      "unit": 4,
+      "unitTitle": "Network theorems",
+      "sources": [
+        "ecna-ecna-unit-4-network-theorems#p.51"
+      ]
+    },
+    {
+      "id": "two-port-network",
+      "term": "Two-port network",
+      "definition": "Network with two ports, each a pair of terminals.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "2-port parameters",
+      "sources": [
+        "ecna-ecna-unit-5-2-ports-parameters#slide.1"
+      ]
+    },
+    {
+      "id": "z-parameters",
+      "term": "Z parameters",
+      "definition": "Impedance parameters relating port voltages to currents.",
+      "formula": "V1=z11 I1+z12 I2",
+      "unit": 5,
+      "unitTitle": "2-port parameters",
+      "sources": [
+        "ecna-ecna-unit-5-2-ports-parameters#slide.5"
+      ]
+    },
+    {
+      "id": "y-parameters",
+      "term": "Y parameters",
+      "definition": "Admittance parameters relating port currents to voltages.",
+      "formula": "I1=y11 V1+y12 V2",
+      "unit": 5,
+      "unitTitle": "2-port parameters",
+      "sources": [
+        "ecna-ecna-unit-5-2-ports-parameters#slide.10"
+      ]
+    },
+    {
+      "id": "h-parameters",
+      "term": "H parameters",
+      "definition": "Hybrid parameters mixing impedance and admittance.",
+      "formula": "V1=h11 I1+h12 V2",
+      "unit": 5,
+      "unitTitle": "2-port parameters",
+      "sources": [
+        "ecna-ecna-unit-5-2-ports-parameters#slide.15"
+      ]
+    },
+    {
+      "id": "abcd-parameters",
+      "term": "ABCD parameters",
+      "definition": "Transmission parameters used for cascaded networks.",
+      "formula": "V1=A V2-B I2",
+      "unit": 5,
+      "unitTitle": "2-port parameters",
+      "sources": [
+        "ecna-ecna-unit-5-2-ports-parameters#slide.20"
+      ]
+    },
+    {
+      "id": "transient",
+      "term": "Transient",
+      "definition": "Sudden change of state; response depends on time.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.4"
+      ]
+    },
+    {
+      "id": "time-constant-rl",
+      "term": "Time constant (RL)",
+      "definition": "Time for transient to decay in an RL circuit.",
+      "formula": "τ=L/R",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.24"
+      ]
+    },
+    {
+      "id": "time-constant-rc",
+      "term": "Time constant (RC)",
+      "definition": "Time for transient to decay in an RC circuit.",
+      "formula": "τ=RC",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.38"
+      ]
+    },
+    {
+      "id": "inductor-at-t0",
+      "term": "Inductor at t=0+",
+      "definition": "Inductor behaves as an open circuit just after switching.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.8"
+      ]
+    },
+    {
+      "id": "capacitor-at-t0",
+      "term": "Capacitor at t=0+",
+      "definition": "Capacitor behaves as a short circuit just after switching.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.11"
+      ]
+    },
+    {
+      "id": "overdamped",
+      "term": "Overdamped response",
+      "definition": "RLC with real distinct roots; slow non-oscillatory response.",
+      "formula": "Δ>0",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.51"
+      ]
+    },
+    {
+      "id": "critically-damped",
+      "term": "Critically damped response",
+      "definition": "RLC with equal real roots; fastest non-oscillatory response.",
+      "formula": "Δ=0",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.51"
+      ]
+    },
+    {
+      "id": "underdamped",
+      "term": "Underdamped response",
+      "definition": "RLC with complex roots; oscillatory decaying response.",
+      "formula": "Δ<0",
+      "unit": 6,
+      "unitTitle": "Transients",
+      "sources": [
+        "ecna-ecna-unit-6-transients#slide.52"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "id": "ic-applications",
+  "semester": "3-1",
+  "name": "IC Applications",
+  "shortName": "ICA",
+  "code": "9CC09",
+  "courseType": "PC",
+  "folderId": "16ombVhb6YLWRNt3WQ7Yf7iJzZQHRWDAk",
+  "folderUrl": "https://drive.google.com/drive/folders/16ombVhb6YLWRNt3WQ7Yf7iJzZQHRWDAk",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "integrated-circuit",
+      "term": "Integrated Circuit (IC)",
+      "definition": "A miniature, low-cost electronic circuit of active and passive components irreparably joined on a single silicon crystal chip.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.7"
+      ]
+    },
+    {
+      "id": "differential-amplifier",
+      "term": "Differential amplifier",
+      "definition": "Amplifies the voltage difference between two input signals; output equals a constant times (Vin1 - Vin2).",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.26"
+      ],
+      "formula": "Vo = K(Vin1 - Vin2)"
+    },
+    {
+      "id": "operational-amplifier",
+      "term": "Operational amplifier",
+      "definition": "A direct-coupled high-gain amplifier of differential stages followed by a level translator and output stage; amplifies DC and AC signals.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.41"
+      ]
+    },
+    {
+      "id": "open-loop-op-amp",
+      "term": "Open-loop op-amp",
+      "definition": "Op-amp without feedback; output saturates to +Vsat or -Vsat and acts as a switch.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.42"
+      ]
+    },
+    {
+      "id": "closed-loop-op-amp",
+      "term": "Closed-loop op-amp",
+      "definition": "Op-amp with negative feedback; output is not saturated and circuit behaves linearly.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.42"
+      ]
+    },
+    {
+      "id": "virtual-ground",
+      "term": "Virtual ground",
+      "definition": "When one input terminal is grounded, the other terminal sits at ground potential due to virtual short.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.47"
+      ]
+    },
+    {
+      "id": "ideal-op-amp",
+      "term": "Ideal op-amp",
+      "definition": "Op-amp with infinite gain, bandwidth and input impedance, and zero output impedance and offset.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.67"
+      ]
+    },
+    {
+      "id": "input-offset-current",
+      "term": "Input offset current",
+      "definition": "Difference between the two input bias currents: Iios = |Ib1 - Ib2|.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.70"
+      ],
+      "formula": "Iios = |Ib1 - Ib2|"
+    },
+    {
+      "id": "slew-rate",
+      "term": "Slew rate",
+      "definition": "Maximum rate of change of the op-amp output voltage.",
+      "unit": 1,
+      "unitTitle": "Op-amp Fundamentals",
+      "sources": [
+        "ica-ica-unit-1#slide.81"
+      ],
+      "formula": "S = 2πfVm"
+    },
+    {
+      "id": "summer-adder",
+      "term": "Summer (adder)",
+      "definition": "Circuit whose output is the sum of the applied input signals.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.3"
+      ]
+    },
+    {
+      "id": "inverting-summer",
+      "term": "Inverting summer",
+      "definition": "Summer with output Vo = -(V1 + V2).",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.4"
+      ],
+      "formula": "Vo = -(V1 + V2)"
+    },
+    {
+      "id": "difference-amplifier",
+      "term": "Difference amplifier",
+      "definition": "Circuit whose output is proportional to the difference of two inputs: Vo = V2 - V1.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.8"
+      ],
+      "formula": "Vo = V2 - V1"
+    },
+    {
+      "id": "instrumentation-amplifier",
+      "term": "Instrumentation amplifier",
+      "definition": "Amplifier for low-level signals with high CMRR, low output impedance and low power consumption.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.9"
+      ]
+    },
+    {
+      "id": "integrator",
+      "term": "Integrator",
+      "definition": "Circuit whose output voltage is the integral of the input voltage.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.18"
+      ]
+    },
+    {
+      "id": "differentiator",
+      "term": "Differentiator",
+      "definition": "Circuit whose output voltage is the derivative of the input voltage.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.30"
+      ]
+    },
+    {
+      "id": "current-to-voltage-converter",
+      "term": "Current-to-voltage converter",
+      "definition": "Circuit whose output voltage is proportional to input current (transimpedance amplifier).",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.40"
+      ]
+    },
+    {
+      "id": "voltage-to-current-converter",
+      "term": "Voltage-to-current converter",
+      "definition": "Circuit whose output load current is proportional to input voltage (transconductance amplifier).",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.42"
+      ]
+    },
+    {
+      "id": "comparator",
+      "term": "Comparator",
+      "definition": "Circuit that compares a signal voltage with a reference and outputs high or low saturation voltage.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.47"
+      ]
+    },
+    {
+      "id": "zero-crossing-detector",
+      "term": "Zero crossing detector",
+      "definition": "Comparator detecting when input crosses zero; can convert sine wave to square wave.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.57"
+      ]
+    },
+    {
+      "id": "sample-and-hold",
+      "term": "Sample and hold circuit",
+      "definition": "Samples an input signal and holds its last sampled value until the next sample.",
+      "unit": 2,
+      "unitTitle": "Linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.73"
+      ]
+    },
+    {
+      "id": "clipper",
+      "term": "Clipper",
+      "definition": "Circuit that removes (clips) portions of an input waveform beyond a reference level.",
+      "unit": 3,
+      "unitTitle": "Non-linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.69"
+      ]
+    },
+    {
+      "id": "clamper",
+      "term": "Clamper",
+      "definition": "Circuit that shifts the DC level of a waveform without changing its shape.",
+      "unit": 3,
+      "unitTitle": "Non-linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.71"
+      ]
+    },
+    {
+      "id": "peak-detector",
+      "term": "Peak detector",
+      "definition": "Circuit that captures and holds the peak value of an input signal.",
+      "unit": 3,
+      "unitTitle": "Non-linear Applications",
+      "sources": [
+        "ica-ica-unit-2#slide.72"
+      ]
+    },
+    {
+      "id": "monostable-multivibrator",
+      "term": "Monostable multivibrator",
+      "definition": "Multivibrator with one stable state; produces a single pulse of fixed width when triggered.",
+      "unit": 3,
+      "unitTitle": "Non-linear Applications",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.8"
+      ]
+    },
+    {
+      "id": "astable-multivibrator",
+      "term": "Astable multivibrator",
+      "definition": "Free-running multivibrator with no stable state; produces continuous square-wave pulses.",
+      "unit": 3,
+      "unitTitle": "Non-linear Applications",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.24"
+      ]
+    },
+    {
+      "id": "schmitt-trigger",
+      "term": "Schmitt trigger",
+      "definition": "Comparator with hysteresis that converts noisy input into a clean digital output.",
+      "unit": 3,
+      "unitTitle": "Non-linear Applications",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.40"
+      ]
+    },
+    {
+      "id": "filter",
+      "term": "Filter",
+      "definition": "Frequency-selective circuit that passes a specified band of frequencies while attenuating others.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.3"
+      ]
+    },
+    {
+      "id": "active-filter",
+      "term": "Active filter",
+      "definition": "Filter using active elements such as op-amps/transistors along with R, L, C.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.5"
+      ]
+    },
+    {
+      "id": "low-pass-filter",
+      "term": "Low-pass filter",
+      "definition": "Filter that passes low frequencies and attenuates high frequencies.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.9"
+      ]
+    },
+    {
+      "id": "high-pass-filter",
+      "term": "High-pass filter",
+      "definition": "Filter that passes high frequencies and attenuates low frequencies.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.9"
+      ]
+    },
+    {
+      "id": "band-pass-filter",
+      "term": "Band-pass filter",
+      "definition": "Filter that passes a band of frequencies around a center (resonant) frequency fc.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.27"
+      ]
+    },
+    {
+      "id": "band-reject-filter",
+      "term": "Band-reject filter",
+      "definition": "Filter that attenuates a band of frequencies and has two pass bands.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.40"
+      ]
+    },
+    {
+      "id": "all-pass-filter",
+      "term": "All-pass filter",
+      "definition": "Filter that passes all frequencies but introduces a phase shift between input and output.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.12"
+      ]
+    },
+    {
+      "id": "butterworth-filter",
+      "term": "Butterworth filter",
+      "definition": "Filter type with maximally flat magnitude response in the pass band.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.13"
+      ]
+    },
+    {
+      "id": "notch-filter",
+      "term": "Notch filter",
+      "definition": "Narrow band-reject filter attenuating a specific frequency fN.",
+      "unit": 4,
+      "unitTitle": "Active Filters",
+      "sources": [
+        "ica-ica-unit-3-part-1#slide.46"
+      ],
+      "formula": "fN = 1/(2πRC)"
+    },
+    {
+      "id": "oscillator",
+      "term": "Oscillator",
+      "definition": "Waveform generator that produces a sinusoidal output without an external AC input.",
+      "unit": 5,
+      "unitTitle": "Oscillators",
+      "sources": [
+        "ica-ica-unit-4#slide.2"
+      ]
+    },
+    {
+      "id": "barkhausen-criterion",
+      "term": "Barkhausen criterion",
+      "definition": "Oscillation requires total phase shift 0°/360° and |Aβ| ≥ 1.",
+      "unit": 5,
+      "unitTitle": "Oscillators",
+      "sources": [
+        "ica-ica-unit-4#slide.6"
+      ]
+    },
+    {
+      "id": "loop-gain",
+      "term": "Loop gain",
+      "definition": "Product Aβ of amplifier open-loop gain A and feedback factor β.",
+      "unit": 5,
+      "unitTitle": "Oscillators",
+      "sources": [
+        "ica-ica-unit-4#slide.7"
+      ],
+      "formula": "Aβ"
+    },
+    {
+      "id": "rc-phase-shift-oscillator",
+      "term": "RC phase shift oscillator",
+      "definition": "Op-amp inverting amplifier with 3 RC sections (60° each) providing 180° phase shift.",
+      "unit": 5,
+      "unitTitle": "Oscillators",
+      "sources": [
+        "ica-ica-unit-4#slide.17"
+      ]
+    },
+    {
+      "id": "wein-bridge-oscillator",
+      "term": "Wein bridge oscillator",
+      "definition": "RC oscillator using frequency-sensitive arms R1C1 (series) and R2C2 (parallel).",
+      "unit": 5,
+      "unitTitle": "Oscillators",
+      "sources": [
+        "ica-ica-unit-4#slide.17"
+      ]
+    },
+    {
+      "id": "timer-555",
+      "term": "555 timer",
+      "definition": "Versatile monolithic timer IC used to generate accurate time delays or oscillations.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.3"
+      ]
+    },
+    {
+      "id": "phase-locked-loop",
+      "term": "Phase-locked loop (PLL)",
+      "definition": "Negative-feedback system of phase detector, low-pass filter and VCO that synchronizes output to a reference in frequency and phase.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.44"
+      ]
+    },
+    {
+      "id": "lock-range",
+      "term": "Lock range",
+      "definition": "Frequency range fmin ≤ fin ≤ fmax over which a locked PLL remains locked.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.52"
+      ],
+      "formula": "fmin ≤ fin ≤ fmax"
+    },
+    {
+      "id": "capture-range",
+      "term": "Capture range",
+      "definition": "Frequency range fo - fc ≤ fin ≤ fo + fc over which an unlocked PLL can become locked.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-3-part-2#slide.52"
+      ],
+      "formula": "fo - fc ≤ fin ≤ fo + fc"
+    },
+    {
+      "id": "voltage-regulator",
+      "term": "Voltage regulator",
+      "definition": "Circuit that maintains a constant output voltage despite input or load variations.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-4#slide.82"
+      ]
+    },
+    {
+      "id": "shunt-regulator",
+      "term": "Shunt regulator",
+      "definition": "Linear regulator connected in parallel with the load.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-4#slide.82"
+      ]
+    },
+    {
+      "id": "dac-resolution",
+      "term": "DAC resolution",
+      "definition": "Number of distinct analog output values a DAC can provide.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-4#slide.54"
+      ],
+      "formula": "2^n  or  Vofs/(2^n-1)"
+    },
+    {
+      "id": "adc-resolution",
+      "term": "ADC resolution",
+      "definition": "Input voltage change needed to change digital output by 1 LSB.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-4#slide.54"
+      ],
+      "formula": "VIFS/(2^n-1)"
+    },
+    {
+      "id": "ttl",
+      "term": "TTL",
+      "definition": "Transistor-transistor logic based on bipolar transistors.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-5#slide.5"
+      ]
+    },
+    {
+      "id": "cmos",
+      "term": "CMOS",
+      "definition": "Complementary metal-oxide-semiconductor logic based on MOSFETs.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators/555/Timers",
+      "sources": [
+        "ica-ica-unit-5#slide.5"
+      ]
+    }
+  ]
+}

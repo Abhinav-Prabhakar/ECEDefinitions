@@ -1,0 +1,511 @@
+{
+  "version": 1,
+  "id": "complex-variable-and-transform-techniques",
+  "semester": "2-1",
+  "name": "Complex Variable and Transform Techniques",
+  "shortName": "CVTT",
+  "code": "9HC14",
+  "courseType": "BS",
+  "folderId": "12SERVHOAs_x6yHb19FbD_voR3KwBTAhd",
+  "folderUrl": "https://drive.google.com/drive/folders/12SERVHOAs_x6yHb19FbD_voR3KwBTAhd",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "complex-number",
+      "term": "Complex number",
+      "definition": "A number x+iy with real x,y and i^2=-1.",
+      "formula": "z=x+iy",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.4"
+      ]
+    },
+    {
+      "id": "real-part",
+      "term": "Real part",
+      "definition": "The real component x of z=x+iy.",
+      "formula": "Re(z)=x",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.4"
+      ]
+    },
+    {
+      "id": "imaginary-part",
+      "term": "Imaginary part",
+      "definition": "The coefficient y of i in z=x+iy.",
+      "formula": "Im(z)=y",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.4"
+      ]
+    },
+    {
+      "id": "modulus",
+      "term": "Modulus",
+      "definition": "Distance from origin to point (x,y) in complex plane.",
+      "formula": "|z|=sqrt(x^2+y^2)",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.4"
+      ]
+    },
+    {
+      "id": "argument",
+      "term": "Argument",
+      "definition": "Angle between positive real axis and radius vector to z.",
+      "formula": "arg z=tan^-1(y/x)",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.4"
+      ]
+    },
+    {
+      "id": "complex-conjugate",
+      "term": "Complex conjugate",
+      "definition": "Reflection of z across the real axis.",
+      "formula": "conj(z)=x-iy",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.4"
+      ]
+    },
+    {
+      "id": "limit-complex",
+      "term": "Limit of complex function",
+      "definition": "Value approached by f(z) as z tends to z0 independent of path.",
+      "formula": "lim_{z->z0} f(z)",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.8"
+      ]
+    },
+    {
+      "id": "differentiability",
+      "term": "Differentiability",
+      "definition": "Existence of complex derivative independent of approach direction.",
+      "formula": "f'(z0)=lim_{z->z0} (f(z)-f(z0))/(z-z0)",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.9"
+      ]
+    },
+    {
+      "id": "analytic-function",
+      "term": "Analytic function",
+      "definition": "Function differentiable in a neighborhood of every point of a domain.",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.10"
+      ]
+    },
+    {
+      "id": "entire-function",
+      "term": "Entire function",
+      "definition": "Function analytic at every point of the complex plane.",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.11"
+      ]
+    },
+    {
+      "id": "harmonic-function",
+      "term": "Harmonic function",
+      "definition": "Real-valued function satisfying Laplace equation.",
+      "formula": "u_xx+u_yy=0",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.17"
+      ]
+    },
+    {
+      "id": "conjugate-harmonic",
+      "term": "Conjugate harmonic function",
+      "definition": "Function v such that u+iv is analytic.",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.11"
+      ]
+    },
+    {
+      "id": "cauchy-riemann",
+      "term": "Cauchy-Riemann equations",
+      "definition": "Necessary conditions for differentiability of u+iv.",
+      "formula": "u_x=v_y, u_y=-v_x",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-unit-1-notes#p.10"
+      ]
+    },
+    {
+      "id": "singular-point",
+      "term": "Singular point",
+      "definition": "Point where a complex function is not analytic.",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.13"
+      ]
+    },
+    {
+      "id": "isolated-singularity",
+      "term": "Isolated singularity",
+      "definition": "Singularity having a punctured neighborhood with no other singularities.",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.7"
+      ]
+    },
+    {
+      "id": "pole",
+      "term": "Pole",
+      "definition": "Isolated singularity where |f(z)| tends to infinity.",
+      "unit": 1,
+      "unitTitle": "Complex numbers/analytic functions",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.16"
+      ]
+    },
+    {
+      "id": "cauchy-integral-theorem",
+      "term": "Cauchy's integral theorem",
+      "definition": "Integral of analytic function over closed contour in simply connected domain is zero.",
+      "formula": "oint_C f(z) dz=0",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-unit-2-notes#p.2"
+      ]
+    },
+    {
+      "id": "cauchy-integral-formula",
+      "term": "Cauchy's integral formula",
+      "definition": "Value of analytic function inside contour from boundary values.",
+      "formula": "f(a)=(1/2pi i) oint_C f(z)/(z-a) dz",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-unit-2-notes#p.2"
+      ]
+    },
+    {
+      "id": "simply-connected",
+      "term": "Simply connected domain",
+      "definition": "Domain without holes where every closed curve shrinks to a point.",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-unit-2-notes#p.1"
+      ]
+    },
+    {
+      "id": "conformal-mapping",
+      "term": "Conformal mapping",
+      "definition": "Angle-preserving analytic map with nonzero derivative.",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-unit-2-notes#p.1"
+      ]
+    },
+    {
+      "id": "bilinear-transform",
+      "term": "Bilinear (Mobius) transform",
+      "definition": "Map w=(az+b)/(cz+d) with ad-bc nonzero.",
+      "formula": "w=(az+b)/(cz+d)",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.17"
+      ]
+    },
+    {
+      "id": "cross-ratio",
+      "term": "Cross ratio",
+      "definition": "Invariant ratio of four points under Mobius transformation.",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-unit-3-notes#p.12"
+      ]
+    },
+    {
+      "id": "fixed-point",
+      "term": "Fixed point",
+      "definition": "Point satisfying w=z under a transformation.",
+      "unit": 2,
+      "unitTitle": "Conformal mapping/Cauchy",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.23"
+      ]
+    },
+    {
+      "id": "taylor-series",
+      "term": "Taylor series",
+      "definition": "Power series expansion of analytic function about a point.",
+      "formula": "f(z)=sum f^(n)(a)(z-a)^n/n!",
+      "unit": 3,
+      "unitTitle": "Series/residues",
+      "sources": [
+        "cvtt-cvtt-unit-3-notes#p.1"
+      ]
+    },
+    {
+      "id": "maclaurin-series",
+      "term": "Maclaurin series",
+      "definition": "Taylor series expanded about zero.",
+      "unit": 3,
+      "unitTitle": "Series/residues",
+      "sources": [
+        "cvtt-cvtt-unit-3-notes#p.1"
+      ]
+    },
+    {
+      "id": "laurent-series",
+      "term": "Laurent series",
+      "definition": "Expansion with negative powers valid in annulus around singularity.",
+      "unit": 3,
+      "unitTitle": "Series/residues",
+      "sources": [
+        "cvtt-cvtt-unit-3-notes#p.1"
+      ]
+    },
+    {
+      "id": "residue",
+      "term": "Residue",
+      "definition": "Coefficient of (z-z0)^-1 in Laurent expansion.",
+      "formula": "Res(f,z0)=a_{-1}",
+      "unit": 3,
+      "unitTitle": "Series/residues",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.14"
+      ]
+    },
+    {
+      "id": "pole-order",
+      "term": "Pole of order n",
+      "definition": "Singularity where f behaves like 1/(z-z0)^n.",
+      "unit": 3,
+      "unitTitle": "Series/residues",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.16"
+      ]
+    },
+    {
+      "id": "residue-theorem",
+      "term": "Residue theorem",
+      "definition": "Contour integral equals 2pi i times sum of enclosed residues.",
+      "formula": "oint_C f dz=2pi i sum Res",
+      "unit": 3,
+      "unitTitle": "Series/residues",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.42"
+      ]
+    },
+    {
+      "id": "laplace-transform",
+      "term": "Laplace transform",
+      "definition": "Integral transform mapping f(t) to F(s).",
+      "formula": "F(s)=int_0^infty e^{-st} f(t) dt",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-1#p.8"
+      ]
+    },
+    {
+      "id": "sufficient-conditions",
+      "term": "Sufficient conditions",
+      "definition": "Piecewise continuity and exponential order ensure existence.",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-1#p.9"
+      ]
+    },
+    {
+      "id": "inverse-laplace",
+      "term": "Inverse Laplace transform",
+      "definition": "Recovers f(t) from F(s).",
+      "formula": "f(t)=L^{-1}{F(s)}",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-2#p.16"
+      ]
+    },
+    {
+      "id": "first-shifting",
+      "term": "First shifting theorem",
+      "definition": "Multiplication by e^{at} shifts s by a.",
+      "formula": "L{e^{at} f(t)}=F(s-a)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-2#p.11"
+      ]
+    },
+    {
+      "id": "second-shifting",
+      "term": "Second shifting theorem",
+      "definition": "Time shift introduces exponential factor.",
+      "formula": "L{f(t-a) u(t-a)}=e^{-as} F(s)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-2#p.11"
+      ]
+    },
+    {
+      "id": "initial-value-theorem",
+      "term": "Initial value theorem",
+      "definition": "Initial value from limit of sF(s).",
+      "formula": "f(0+)=lim_{s->infty} sF(s)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-5#p.20"
+      ]
+    },
+    {
+      "id": "final-value-theorem",
+      "term": "Final value theorem",
+      "definition": "Final value from limit of sF(s).",
+      "formula": "f(infty)=lim_{s->0} sF(s)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-5#p.22"
+      ]
+    },
+    {
+      "id": "convolution-theorem",
+      "term": "Convolution theorem",
+      "definition": "Transform of convolution is product of transforms.",
+      "formula": "L{f*g}=F(s)G(s)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "cvtt-umr-laplace-transform-lecture-7#p.18"
+      ]
+    },
+    {
+      "id": "fourier-series",
+      "term": "Fourier series",
+      "definition": "Expansion of periodic function as sine/cosine series.",
+      "unit": 5,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "cvtt-cvtt-unit-3-notes#p.18"
+      ]
+    },
+    {
+      "id": "fourier-transform",
+      "term": "Fourier transform",
+      "definition": "Integral transform expressing signal in frequency domain.",
+      "formula": "F(omega)=int_{-infty}^{infty} f(t) e^{-i omega t} dt",
+      "unit": 5,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.55"
+      ]
+    },
+    {
+      "id": "inverse-fourier",
+      "term": "Inverse Fourier transform",
+      "definition": "Recovers time signal from spectrum.",
+      "unit": 5,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.55"
+      ]
+    },
+    {
+      "id": "parseval-theorem",
+      "term": "Parseval's theorem",
+      "definition": "Energy equality between time and frequency domains.",
+      "unit": 5,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "cvtt-cvtt-reference-questions-unit-1-6#para.55"
+      ]
+    },
+    {
+      "id": "z-transform",
+      "term": "Z-transform",
+      "definition": "Discrete transform of sequence u_n.",
+      "formula": "Z{u_n}=sum_{n=0}^{infty} u_n z^{-n}",
+      "unit": 6,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "cvtt-unit-iv-v-and-vi-refrence-questions#para.27"
+      ]
+    },
+    {
+      "id": "region-of-convergence",
+      "term": "Region of convergence",
+      "definition": "Set of z for which Z-transform series converges.",
+      "unit": 6,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "cvtt-unit-iv-v-and-vi-refrence-questions#para.27"
+      ]
+    },
+    {
+      "id": "inverse-z-transform",
+      "term": "Inverse Z-transform",
+      "definition": "Recovers sequence from Z-transform.",
+      "unit": 6,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "cvtt-unit-iv-v-and-vi-refrence-questions#para.25"
+      ]
+    },
+    {
+      "id": "initial-value-z",
+      "term": "Initial value (Z)",
+      "definition": "First term from limit of F(z).",
+      "formula": "u_0=lim_{z->infty} F(z)",
+      "unit": 6,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "cvtt-unit-iv-v-and-vi-refrence-questions#para.24"
+      ]
+    },
+    {
+      "id": "final-value-z",
+      "term": "Final value (Z)",
+      "definition": "Limit of sequence from Z-transform.",
+      "formula": "lim_{n->infty} u_n=lim_{z->1} (z-1)F(z)",
+      "unit": 6,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "cvtt-unit-iv-v-and-vi-refrence-questions#para.24"
+      ]
+    },
+    {
+      "id": "convolution-z",
+      "term": "Convolution (Z)",
+      "definition": "Z-transform of convolution is product of transforms.",
+      "unit": 6,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "cvtt-unit-iv-v-and-vi-refrence-questions#para.27"
+      ]
+    }
+  ]
+}
