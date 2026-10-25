@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "analog-circuits",
+  "semester": "2-2",
+  "name": "Analog Circuits",
+  "shortName": "AC",
+  "code": "9CC04",
+  "courseType": "PC",
+  "folderId": "1--dXq7BMH5wBDHyUFDxU-llB4nMaLypV",
+  "folderUrl": "https://drive.google.com/drive/folders/1--dXq7BMH5wBDHyUFDxU-llB4nMaLypV",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "amplifier",
+      "term": "Amplifier",
+      "definition": "A device that increases the amplitude of a signal without changing its frequency.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "faithful-amplification",
+      "term": "Faithful amplification",
+      "definition": "Amplification in which the output waveform is an exact replica of the input waveform.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "distortion",
+      "term": "Distortion",
+      "definition": "Any change in the shape of the signal waveform during amplification.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "nonlinear-distortion",
+      "term": "Nonlinear distortion",
+      "definition": "Distortion that introduces new frequency components not present in the input.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "class-a-amplifier",
+      "term": "Class A amplifier",
+      "definition": "An amplifier in which the transistor conducts for the full 360 degrees of the input cycle.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "class-b-amplifier",
+      "term": "Class B amplifier",
+      "definition": "An amplifier in which the transistor conducts for 180 degrees of the input cycle.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "class-c-amplifier",
+      "term": "Class C amplifier",
+      "definition": "An amplifier in which the transistor conducts for less than 180 degrees of the input cycle.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "small-signal-amplifier",
+      "term": "Small-signal amplifier",
+      "definition": "An amplifier that handles small AC signals with the transistor in the active region.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "power-amplifier",
+      "term": "Power amplifier",
+      "definition": "An amplifier designed to deliver large power to a load.",
+      "unit": 1,
+      "unitTitle": "Transistor Amplifiers and Biasing",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "rc-coupling",
+      "term": "RC coupling",
+      "definition": "Interstage coupling using a capacitor and resistor between amplifier stages.",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "transformer-coupling",
+      "term": "Transformer coupling",
+      "definition": "Interstage coupling using a transformer for impedance matching.",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "multistage-amplifier",
+      "term": "Multistage amplifier",
+      "definition": "A cascade of single-stage amplifiers to achieve higher overall gain.",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "overall-gain",
+      "term": "Overall gain",
+      "definition": "The product of the voltage gains of individual amplifier stages.",
+      "formula": "A_v = A_v1 * A_v2 * ...",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ]
+    },
+    {
+      "id": "tuned-amplifier",
+      "term": "Tuned amplifier",
+      "definition": "An amplifier using a resonant LC circuit to select a narrow band of frequencies.",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-single-tuned-amplifier-analysis#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "resonant-frequency",
+      "term": "Resonant frequency",
+      "definition": "The frequency at which an LC circuit's inductive and capacitive reactances cancel.",
+      "formula": "f_r = 1/(2*pi*sqrt(L*C))",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-single-tuned-amplifier-analysis#p.1"
+      ]
+    },
+    {
+      "id": "quality-factor",
+      "term": "Quality factor (Q)",
+      "definition": "Ratio of resonant frequency to the -3 dB bandwidth of a tuned circuit.",
+      "formula": "Q = f_r / BW",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-single-tuned-amplifier-analysis#p.1"
+      ]
+    },
+    {
+      "id": "bandwidth",
+      "term": "Bandwidth",
+      "definition": "Frequency range over which amplifier gain is at least 70.7% of its maximum.",
+      "unit": 2,
+      "unitTitle": "Multistage Amplifiers",
+      "sources": [
+        "ac-single-tuned-amplifier-analysis#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "feedback",
+      "term": "Feedback",
+      "definition": "Returning a portion of the output signal to the input of an amplifier.",
+      "unit": 3,
+      "unitTitle": "Feedback Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "negative-feedback",
+      "term": "Negative feedback",
+      "definition": "Feedback that opposes the input, reducing gain but improving stability and bandwidth.",
+      "unit": 3,
+      "unitTitle": "Feedback Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "positive-feedback",
+      "term": "Positive feedback",
+      "definition": "Feedback that aids the input and can lead to oscillation.",
+      "unit": 3,
+      "unitTitle": "Feedback Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "feedback-factor",
+      "term": "Feedback factor",
+      "definition": "The fraction of the output signal that is fed back to the input.",
+      "formula": "beta",
+      "unit": 3,
+      "unitTitle": "Feedback Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ]
+    },
+    {
+      "id": "closed-loop-gain",
+      "term": "Closed-loop gain",
+      "definition": "The overall gain of an amplifier operating with feedback applied, given by Af = A/(1+Aβ) and far less sensitive to parameter variations.",
+      "formula": "A_f = A/(1 + A*beta)",
+      "unit": 3,
+      "unitTitle": "Feedback Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ]
+    },
+    {
+      "id": "desensitivity",
+      "term": "Desensitivity",
+      "definition": "Reduction in amplifier sensitivity to component and parameter variations due to feedback.",
+      "unit": 3,
+      "unitTitle": "Feedback Amplifiers",
+      "sources": [
+        "ac-unit-1-2-and-3#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "oscillator",
+      "term": "Oscillator",
+      "definition": "A circuit that generates a periodic output waveform without an external input signal.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-iv-multivibrator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "barkhausen-criterion",
+      "term": "Barkhausen criterion",
+      "definition": "Condition for sustained oscillation: loop gain magnitude at least 1 and total phase shift 0 or 360 degrees.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-iv-multivibrator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "multivibrator",
+      "term": "Multivibrator",
+      "definition": "A two-stage regenerative circuit that produces rectangular or square waveforms.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-iv-multivibrator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "astable-multivibrator",
+      "term": "Astable multivibrator",
+      "definition": "A multivibrator with no stable state that oscillates continuously between two quasi-stable states.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-iv-multivibrator#p.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "monostable-multivibrator",
+      "term": "Monostable multivibrator",
+      "definition": "A multivibrator with one stable state and one quasi-stable state, triggered by an input pulse.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-iv-multivibrator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bistable-multivibrator",
+      "term": "Bistable multivibrator",
+      "definition": "A multivibrator with two stable states, also called a flip-flop.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-iv-multivibrator#p.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ujt",
+      "term": "Unijunction transistor (UJT)",
+      "definition": "A three-terminal semiconductor device with one pn junction used as a trigger/switch.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-v-time-base-generator#p.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "intrinsic-standoff-ratio",
+      "term": "Intrinsic standoff ratio",
+      "definition": "UJT parameter determining the peak-point (firing) voltage relative to the interbase voltage.",
+      "formula": "eta = R_B1/(R_B1+R_B2)",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-v-time-base-generator#p.4"
+      ]
+    },
+    {
+      "id": "relaxation-oscillator",
+      "term": "Relaxation oscillator",
+      "definition": "An oscillator that charges a capacitor slowly and discharges it rapidly to produce a sawtooth wave.",
+      "unit": 4,
+      "unitTitle": "Oscillators and Multivibrators",
+      "sources": [
+        "ac-v-time-base-generator#p.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "time-base-generator",
+      "term": "Time-base generator",
+      "definition": "A circuit that produces a voltage or current that varies linearly with time.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-v-time-base-generator#p.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sweep-circuit",
+      "term": "Sweep circuit",
+      "definition": "A circuit that generates a linear ramp (sweep) voltage for time-base signals.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-v-time-base-generator#p.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sawtooth-wave",
+      "term": "Sawtooth wave",
+      "definition": "A waveform that rises linearly with time and then resets rapidly.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-v-time-base-generator#p.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bootstrap-time-base",
+      "term": "Bootstrap time-base generator",
+      "definition": "A sweep circuit using bootstrap feedback to maintain a constant charging current.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-boot-strap-time-base-generator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "miller-time-base",
+      "term": "Miller time-base generator",
+      "definition": "A sweep circuit using a Miller integrator to produce a linear ramp.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-miller-time-base-generator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ujt-sweep-circuit",
+      "term": "UJT sweep circuit",
+      "definition": "A time-base circuit where a UJT triggers the discharge of a timing capacitor.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-ujt-sweep-circuit#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "clipper",
+      "term": "Clipper",
+      "definition": "A circuit that removes (clips) the portion of a waveform beyond a threshold level.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-clampers#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "clamper",
+      "term": "Clamper",
+      "definition": "A circuit that shifts the DC level of a waveform without changing its shape.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-clampers#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "voltage-comparator",
+      "term": "Voltage comparator",
+      "definition": "A circuit that compares an input voltage with a reference and outputs a level indicating which is larger.",
+      "unit": 5,
+      "unitTitle": "Time-Base Generators and Wave Shaping",
+      "sources": [
+        "ac-voltage-comparator#p.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sampling-gate",
+      "term": "Sampling gate",
+      "definition": "A circuit that transmits the input signal only during a selected time interval.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "gating-signal",
+      "term": "Gating signal",
+      "definition": "The external signal that selects the time interval for transmission through a sampling gate.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "unidirectional-sampling-gate",
+      "term": "Unidirectional sampling gate",
+      "definition": "A sampling gate that transmits signals of only one polarity.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bidirectional-sampling-gate",
+      "term": "Bidirectional sampling gate",
+      "definition": "A sampling gate that transmits signals of both polarities.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "pedestal",
+      "term": "Pedestal",
+      "definition": "An unwanted DC offset superimposed on the sampled output signal.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "logic-gate",
+      "term": "Logic gate",
+      "definition": "A circuit that performs a basic Boolean operation on binary inputs.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.38"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fan-out",
+      "term": "Fan-out",
+      "definition": "The number of gate inputs that a single gate output can drive.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.69"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "propagation-delay",
+      "term": "Propagation delay",
+      "definition": "Time between an input change and the corresponding output change in a gate.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "noise-margin",
+      "term": "Noise margin",
+      "definition": "Maximum noise voltage a logic circuit can tolerate without changing its output.",
+      "unit": 6,
+      "unitTitle": "Sampling Gates and Logic Gates",
+      "sources": [
+        "ac-unit-6-sampling-gates#slide.69"
+      ],
+      "formula": ""
+    }
+  ]
+}

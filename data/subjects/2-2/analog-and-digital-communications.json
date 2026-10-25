@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "analog-and-digital-communications",
+  "semester": "2-2",
+  "name": "Analog & Digital Communications",
+  "shortName": "ADC",
+  "code": "9CC06",
+  "courseType": "PC",
+  "folderId": "1-3M2IAu2BzU8JY6v1HYC96pxUT5lK7NE",
+  "folderUrl": "https://drive.google.com/drive/folders/1-3M2IAu2BzU8JY6v1HYC96pxUT5lK7NE",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "modulation",
+      "term": "Modulation",
+      "definition": "Process of varying a carrier characteristic in accordance with the message signal.",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "am",
+      "term": "Amplitude modulation (AM)",
+      "definition": "Carrier amplitude varies with instantaneous amplitude of the modulating signal.",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "modulation-index-am",
+      "term": "Modulation index (AM)",
+      "definition": "Ratio of the amplitude of the modulating message signal to the amplitude of the unmodulated carrier in an AM wave.",
+      "formula": "μ = A_m/A_c",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.8"
+      ]
+    },
+    {
+      "id": "dsbsc",
+      "term": "DSBSC modulation",
+      "definition": "Amplitude modulation with the carrier suppressed, transmitting only sidebands.",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ssb",
+      "term": "SSB modulation",
+      "definition": "Transmission of only one sideband to save bandwidth and power.",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "vsb",
+      "term": "VSB modulation",
+      "definition": "Transmits one sideband plus a vestige of the other for easier filtering.",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "envelope-detector",
+      "term": "Envelope detector",
+      "definition": "Diode-RC circuit that recovers the envelope of an AM wave.",
+      "unit": 1,
+      "unitTitle": "Amplitude Modulation",
+      "sources": [
+        "adc-adc-unit-i#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fm",
+      "term": "Frequency modulation (FM)",
+      "definition": "Carrier frequency varies with instantaneous amplitude of the modulating signal.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "pm",
+      "term": "Phase modulation (PM)",
+      "definition": "Carrier phase varies with instantaneous amplitude of the modulating signal.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "freq-deviation",
+      "term": "Frequency deviation",
+      "definition": "Maximum change in carrier frequency from its unmodulated value.",
+      "formula": "Δf = k_f A_m",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.3"
+      ]
+    },
+    {
+      "id": "modulation-index-fm",
+      "term": "Modulation index (FM)",
+      "definition": "Ratio of the peak frequency deviation of the FM signal to the modulating frequency of the message signal.",
+      "formula": "β = Δf/f_m",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.2"
+      ]
+    },
+    {
+      "id": "nbfm",
+      "term": "Narrowband FM",
+      "definition": "Frequency modulation with modulation index less than one.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "wbfm",
+      "term": "Wideband FM",
+      "definition": "Frequency modulation with modulation index greater than one.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "carsons-rule",
+      "term": "Carson's rule",
+      "definition": "Rule of thumb estimating FM transmission bandwidth as approximately twice the sum of the frequency deviation and the modulating frequency.",
+      "formula": "B ≈ 2(Δf+f_m)",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.47"
+      ]
+    },
+    {
+      "id": "pre-emphasis",
+      "term": "Pre-emphasis",
+      "definition": "Boosting high audio frequencies at transmitter to improve SNR.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "de-emphasis",
+      "term": "De-emphasis",
+      "definition": "Attenuating high frequencies at receiver to restore balance.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fdm",
+      "term": "Frequency division multiplexing",
+      "definition": "Multiple signals transmitted on separate non-overlapping frequency bands.",
+      "unit": 2,
+      "unitTitle": "Angle Modulation",
+      "sources": [
+        "adc-adc-unit-ii#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "superheterodyne",
+      "term": "Superheterodyne receiver",
+      "definition": "Receiver that converts RF signals to a fixed intermediate frequency.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "if",
+      "term": "Intermediate frequency (IF)",
+      "definition": "Fixed frequency to which received RF is converted for amplification.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "image-frequency",
+      "term": "Image frequency",
+      "definition": "Unwanted frequency that also produces the same intermediate frequency.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "selectivity",
+      "term": "Selectivity",
+      "definition": "Ability to select desired band and reject unwanted signals.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.23"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sensitivity",
+      "term": "Sensitivity",
+      "definition": "Minimum input signal level detectable by a receiver.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.23"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "agc",
+      "term": "Automatic gain control",
+      "definition": "Automatically varies receiver gain to maintain constant output level.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.25"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "amplitude-limiting",
+      "term": "Amplitude limiting",
+      "definition": "Removal of unwanted amplitude variations from an FM signal using a limiter stage before demodulation, since noise produces amplitude changes.",
+      "unit": 3,
+      "unitTitle": "Transmitters and Receivers",
+      "sources": [
+        "adc-adc-unit-iii#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sampling-theorem",
+      "term": "Sampling theorem",
+      "definition": "Bandlimited signal recoverable if sampled at least twice its max frequency.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.27"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "nyquist-rate",
+      "term": "Nyquist rate",
+      "definition": "Minimum sampling rate equal to twice the signal bandwidth.",
+      "formula": "f_s = 2f_m",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.6"
+      ]
+    },
+    {
+      "id": "pcm",
+      "term": "Pulse code modulation (PCM)",
+      "definition": "Analog signal sampled, quantized, and encoded into digital bits.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "quantization",
+      "term": "Quantization",
+      "definition": "Mapping continuous amplitude values to a finite set of levels.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "quantization-error",
+      "term": "Quantization error",
+      "definition": "Difference between quantized value and original sample value.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "companding",
+      "term": "Companding",
+      "definition": "Compression at transmitter and expansion at receiver for nonuniform quantization.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "dpcm",
+      "term": "Differential PCM (DPCM)",
+      "definition": "Transmits difference between successive samples to reduce redundancy.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "delta-modulation",
+      "term": "Delta modulation",
+      "definition": "One-bit PCM transmitting whether sample increased or decreased.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "slope-overload",
+      "term": "Slope overload",
+      "definition": "Delta modulation distortion when signal changes faster than step size tracks.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.92"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "granular-noise",
+      "term": "Granular noise",
+      "definition": "Delta modulation noise for slowly varying signal amplitudes.",
+      "unit": 4,
+      "unitTitle": "Pulse Modulation",
+      "sources": [
+        "adc-adc-unit-iv#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "line-coding",
+      "term": "Line coding",
+      "definition": "Process of converting a sequence of binary data bits into a specific digital waveform suitable for transmission over a channel.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "isi",
+      "term": "Inter-symbol interference",
+      "definition": "Interference from previous symbols in a digital transmission.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.14"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "eye-diagram",
+      "term": "Eye diagram",
+      "definition": "Oscilloscope display used to assess digital signal quality.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "matched-filter",
+      "term": "Matched filter",
+      "definition": "Filter that maximizes SNR for a known pulse shape.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.14"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ask",
+      "term": "Amplitude shift keying (ASK)",
+      "definition": "Digital modulation scheme in which the amplitude of a sinusoidal carrier is varied in accordance with the binary data.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.7"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fsk",
+      "term": "Frequency shift keying (FSK)",
+      "definition": "Digital modulation scheme in which the frequency of a sinusoidal carrier is varied in accordance with the binary data.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "psk",
+      "term": "Phase shift keying (PSK)",
+      "definition": "Digital modulation scheme in which the phase of a sinusoidal carrier is varied in accordance with the binary data.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "qpsk",
+      "term": "Quadrature PSK (QPSK)",
+      "definition": "Four phase states encoding two bits per symbol.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "dpsk",
+      "term": "Differential PSK (DPSK)",
+      "definition": "Encodes data in phase difference, avoiding coherent carrier.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ber",
+      "term": "Bit error rate (BER)",
+      "definition": "Number of bit errors divided by total bits transmitted.",
+      "unit": 5,
+      "unitTitle": "Digital Modulation Techniques",
+      "sources": [
+        "adc-adc-unit-v#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "entropy",
+      "term": "Entropy",
+      "definition": "Average amount of information conveyed per symbol by a source, given by the expectation of the self-information of its symbols.",
+      "formula": "H = -Σ p log2 p",
+      "unit": 6,
+      "unitTitle": "Information Theory & Coding",
+      "sources": [
+        "adc-adc-unit-vi#slide.7"
+      ]
+    },
+    {
+      "id": "channel-capacity",
+      "term": "Channel capacity",
+      "definition": "Maximum rate of information transmissible over a channel.",
+      "unit": 6,
+      "unitTitle": "Information Theory & Coding",
+      "sources": [
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "shannon-hartley",
+      "term": "Shannon-Hartley theorem",
+      "definition": "Theorem giving channel capacity C = B log₂(1 + S/N) for a channel corrupted by additive white Gaussian noise.",
+      "formula": "C = B log2(1+S/N)",
+      "unit": 6,
+      "unitTitle": "Information Theory & Coding",
+      "sources": [
+        "adc-adc-unit-vi#slide.2"
+      ]
+    },
+    {
+      "id": "huffman-coding",
+      "term": "Huffman coding",
+      "definition": "Variable-length coding assigning shorter codes to frequent messages.",
+      "unit": 6,
+      "unitTitle": "Information Theory & Coding",
+      "sources": [
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "hamming-distance",
+      "term": "Hamming distance",
+      "definition": "Number of differing bit positions between two codewords.",
+      "unit": 6,
+      "unitTitle": "Information Theory & Coding",
+      "sources": [
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "crc",
+      "term": "Cyclic redundancy check",
+      "definition": "Error detection technique that appends a remainder obtained by polynomial division of the data to the transmitted frame.",
+      "unit": 6,
+      "unitTitle": "Information Theory & Coding",
+      "sources": [
+        "adc-adc-unit-vi#slide.2"
+      ],
+      "formula": ""
+    }
+  ]
+}

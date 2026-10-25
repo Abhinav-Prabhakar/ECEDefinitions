@@ -1,0 +1,641 @@
+{
+  "version": 1,
+  "id": "signals-and-systems",
+  "semester": "2-1",
+  "name": "Signals and Systems",
+  "shortName": "SS",
+  "code": "9CC02",
+  "courseType": "PC",
+  "folderId": "127z2rzz9eUmniBzfa0hwdKVrSFQLyY5N",
+  "folderUrl": "https://drive.google.com/drive/folders/127z2rzz9eUmniBzfa0hwdKVrSFQLyY5N",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "signal",
+      "term": "Signal",
+      "definition": "A function that conveys information, e.g. voltage vs time.",
+      "formula": "x(t), x[n]",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "ct-signal",
+      "term": "Continuous-time signal",
+      "definition": "Signal defined for every real value of time.",
+      "formula": "x(t), t∈ℝ",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "dt-signal",
+      "term": "Discrete-time signal",
+      "definition": "Signal defined only at discrete instants of time.",
+      "formula": "x[n], n∈ℤ",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "periodic-signal",
+      "term": "Periodic signal",
+      "definition": "Signal that repeats itself at regular intervals, satisfying x(t)=x(t+T) for every t and some fixed fundamental period T.",
+      "formula": "x(t+T)=x(t)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "aperiodic-signal",
+      "term": "Aperiodic signal",
+      "definition": "Signal that does not repeat at regular intervals and has no definite fundamental period, such as a speech signal or a single exponentially decaying pulse.",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "energy-signal",
+      "term": "Energy signal",
+      "definition": "Finite total energy signal with zero average power.",
+      "formula": "E=∫|x(t)|²dt<∞",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "power-signal",
+      "term": "Power signal",
+      "definition": "Signal with finite nonzero average power and infinite energy, such as periodic or stationary random signals; its average power P equals the energy per unit time.",
+      "formula": "P=lim (1/2T)∫|x(t)|²dt",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "even-signal",
+      "term": "Even signal",
+      "definition": "Signal satisfying x(-t)=x(t) for all t, so its waveform is symmetric about the vertical axis and reflects into itself under time reversal.",
+      "formula": "x(-t)=x(t)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "odd-signal",
+      "term": "Odd signal",
+      "definition": "Signal satisfying x(-t)=-x(t) for all t, so its waveform is antisymmetric about the origin and vanishes at t=0.",
+      "formula": "x(-t)=-x(t)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "causal-signal",
+      "term": "Causal signal",
+      "definition": "Signal having zero output for all negative time t<0, so its waveform starts at t=0 and exists only for future instants.",
+      "formula": "x(t)=0, t<0",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "unit-step",
+      "term": "Unit step u(t)",
+      "definition": "Signal that is 0 for t<0 and 1 for t≥0.",
+      "formula": "u(t)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "unit-impulse",
+      "term": "Unit impulse δ(t)",
+      "definition": "Generalized function δ(t) that is zero for t≠0 and has unit area at t=0, serving as the building block for representing any signal.",
+      "formula": "∫δ(t)dt=1",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "time-shift",
+      "term": "Time shifting",
+      "definition": "Delay or advance of a signal in time.",
+      "formula": "x(t-a)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "time-scale",
+      "term": "Time scaling",
+      "definition": "Operation replacing x(t) with x(at), compressing the waveform when a>1 and stretching the waveform when 0<a<1, thereby altering the signal's time scale.",
+      "formula": "x(at)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "time-reversal",
+      "term": "Time reversal",
+      "definition": "Operation replacing x(t) with x(-t), which reflects the waveform about the vertical axis and runs time backward at every instant.",
+      "formula": "x(-t)",
+      "unit": 1,
+      "unitTitle": "Signal classification & operations",
+      "sources": [
+        "ss-unit-1-ss#slide.1"
+      ]
+    },
+    {
+      "id": "system",
+      "term": "System",
+      "definition": "Entity that processes input signals to produce output signals.",
+      "formula": "y=T[x]",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.3"
+      ]
+    },
+    {
+      "id": "static-system",
+      "term": "Static (memoryless) system",
+      "definition": "Memoryless system whose output at any instant depends only on the present input value and not on any past or future input samples.",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "dynamic-system",
+      "term": "Dynamic system",
+      "definition": "System with memory whose output at any instant depends on past or future input values in addition to the present input.",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "causal-system",
+      "term": "Causal system",
+      "definition": "Output depends only on present and past inputs.",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.10"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "linear-system",
+      "term": "Linear system",
+      "definition": "System obeying superposition and additivity, so an input ax1+bx2 produces output aT[x1]+bT[x2] for any constants a and b.",
+      "formula": "T[ax1+bx2]=ay1+by2",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.12"
+      ]
+    },
+    {
+      "id": "time-invariant-system",
+      "term": "Time-invariant system",
+      "definition": "Behavior does not change with time; delayed input gives delayed output.",
+      "formula": "T[x(t-t0)]=y(t-t0)",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.19"
+      ]
+    },
+    {
+      "id": "stable-system",
+      "term": "Stable (BIBO) system",
+      "definition": "BIBO-stable system whose output remains bounded by some finite constant whenever the input is bounded, guaranteeing no unbounded growth for finite excitation.",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.24"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "lti-system",
+      "term": "LTI system",
+      "definition": "System possessing both linearity and time invariance, so superposition applies and a delayed input produces an identically delayed output.",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "impulse-response",
+      "term": "Impulse response h(t)",
+      "definition": "System output h(t) produced when the input is the unit impulse δ(t) applied at t=0, completely characterizing an LTI system.",
+      "formula": "h(t)=T[δ(t)]",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.29"
+      ]
+    },
+    {
+      "id": "convolution",
+      "term": "Convolution",
+      "definition": "Output of LTI system as integral of input and impulse response.",
+      "formula": "y(t)=x(t)*h(t)=∫x(τ)h(t-τ)dτ",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.31"
+      ]
+    },
+    {
+      "id": "transfer-function",
+      "term": "Transfer function H(s)",
+      "definition": "Ratio of output to input spectra; Fourier/Laplace transform of impulse response.",
+      "formula": "H(ω)=Y(ω)/X(ω)",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.33"
+      ]
+    },
+    {
+      "id": "frequency-response",
+      "term": "Frequency response",
+      "definition": "Steady-state response of an LTI system to the complex exponential input e^(jωt), with magnitude and phase given by H(jω).",
+      "formula": "H(jω)",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.33"
+      ]
+    },
+    {
+      "id": "correlation",
+      "term": "Correlation",
+      "definition": "Measure of similarity between two signals as a function of lag.",
+      "formula": "R_xy(τ)=∫x(t)y*(t-τ)dt",
+      "unit": 2,
+      "unitTitle": "LTI systems & convolution",
+      "sources": [
+        "ss-unit-iv-correlation-nsr#slide.1"
+      ]
+    },
+    {
+      "id": "fourier-transform",
+      "term": "Fourier transform",
+      "definition": "Integral transform X(jω) that decomposes an aperiodic signal into complex exponentials, depicting the signal's content across the continuous frequency domain.",
+      "formula": "X(ω)=∫x(t)e^(-jωt)dt",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
+      ]
+    },
+    {
+      "id": "inverse-fourier-transform",
+      "term": "Inverse Fourier transform",
+      "definition": "Operation that reconstructs the original time-domain signal by integrating the frequency spectrum X(jω) over all angular frequencies ω from -∞ to ∞.",
+      "formula": "x(t)=(1/2π)∫X(ω)e^(jωt)dω",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
+      ]
+    },
+    {
+      "id": "fourier-series",
+      "term": "Fourier series",
+      "definition": "Representation of periodic signal as sum of harmonics.",
+      "formula": "x(t)=Σ c_n e^(jnω0t)",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
+      ]
+    },
+    {
+      "id": "parseval-theorem",
+      "term": "Parseval's theorem",
+      "definition": "Energy in time domain equals energy in frequency domain.",
+      "formula": "∫|x(t)|²dt=(1/2π)∫|X(ω)|²dω",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-ii-s-s-including-hillbert-transform#slide.1"
+      ]
+    },
+    {
+      "id": "convolution-property-ft",
+      "term": "Convolution property (FT)",
+      "definition": "Fourier transform property stating that convolution of two signals in the time domain corresponds to simple multiplication of their individual transforms in frequency.",
+      "formula": "x(t)*h(t) ↔ X(ω)H(ω)",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-iii-ss-unit-3-lec-1#slide.32"
+      ]
+    },
+    {
+      "id": "modulation-property",
+      "term": "Modulation property",
+      "definition": "Fourier transform property stating that multiplying a signal by cos(ω0t) or sin(ω0t) shifts the original spectrum to ±ω0 in the frequency domain.",
+      "formula": "x(t)e^(jω0t) ↔ X(ω-ω0)",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-ii-s-s-including-hillbert-transform#slide.155"
+      ]
+    },
+    {
+      "id": "hilbert-transform",
+      "term": "Hilbert transform",
+      "definition": "Filters negative frequencies; produces quadrature signal in same domain.",
+      "formula": "ŷ(t)=x(t)*1/(πt)",
+      "unit": 3,
+      "unitTitle": "Fourier transform",
+      "sources": [
+        "ss-unit-ii-s-s-including-hillbert-transform#slide.81"
+      ]
+    },
+    {
+      "id": "laplace-transform",
+      "term": "Laplace transform",
+      "definition": "Bilateral integral transform X(s) of e^(-st)x(t) that extends Fourier analysis by using the complex frequency s=σ+jω, making growing signals tractable.",
+      "formula": "X(s)=∫_0^∞ x(t)e^(-st)dt",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "ss-laplace-transforms#slide.1"
+      ]
+    },
+    {
+      "id": "bilateral-laplace",
+      "term": "Bilateral Laplace transform",
+      "definition": "Laplace transform obtained by integrating x(t)e^(-st) from t=-∞ to t=∞ over the entire time axis, suited to signals defined for all time.",
+      "formula": "X(s)=∫_{-∞}^{∞} x(t)e^(-st)dt",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "ss-laplace-transforms#slide.1"
+      ]
+    },
+    {
+      "id": "roc",
+      "term": "Region of convergence (ROC)",
+      "definition": "Set of s values for which Laplace transform integral converges.",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "ss-laplace-transforms#slide.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "inverse-laplace",
+      "term": "Inverse Laplace transform",
+      "definition": "Process of recovering the time-domain signal x(t) from its transform X(s), typically through partial fraction expansion and table lookup of standard pairs.",
+      "formula": "x(t)=L^{-1}[X(s)]",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "ss-inverse-laplace#p.1"
+      ]
+    },
+    {
+      "id": "initial-value-theorem-lt",
+      "term": "Initial value theorem (LT)",
+      "definition": "Theorem stating that the initial value x(0+) of a causal signal equals the limit of sF(s) as s tends to infinity.",
+      "formula": "x(0+)=lim_{s→∞} sX(s)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "ss-properties-of-lt#p.1"
+      ]
+    },
+    {
+      "id": "final-value-theorem-lt",
+      "term": "Final value theorem (LT)",
+      "definition": "Theorem giving the steady-state value x(∞) as the limit of sF(s) as s approaches zero, valid when F(s) has only left-half-plane poles.",
+      "formula": "x(∞)=lim_{s→0} sX(s)",
+      "unit": 4,
+      "unitTitle": "Laplace transform",
+      "sources": [
+        "ss-properties-of-lt#p.1"
+      ]
+    },
+    {
+      "id": "z-transform",
+      "term": "Z-transform",
+      "definition": "Transform X(z)=Σx[n]z^-n that maps a discrete-time sequence into the complex z-domain, the discrete counterpart of the Laplace transform.",
+      "formula": "X(z)=Σ x[n] z^{-n}",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.1"
+      ]
+    },
+    {
+      "id": "bilateral-z",
+      "term": "Bilateral Z-transform",
+      "definition": "Sum over all n from -∞ to ∞.",
+      "formula": "X(z)=Σ_{n=-∞}^{∞} x[n]z^{-n}",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.1"
+      ]
+    },
+    {
+      "id": "roc-z",
+      "term": "ROC of Z-transform",
+      "definition": "Set of z-plane values of |z| for which the Z-transform power series converges absolutely, forming an annular region bounded by poles.",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "inverse-z",
+      "term": "Inverse Z-transform",
+      "definition": "Process of recovering the discrete-time sequence x[n] from its transform X(z), commonly performed by partial fractions, power series expansion, or residues.",
+      "formula": "x[n]=Z^{-1}[X(z)]",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.14"
+      ]
+    },
+    {
+      "id": "initial-value-theorem-z",
+      "term": "Initial value theorem (Z)",
+      "definition": "Theorem stating that the first sample x[0] of a causal sequence equals the limit of X(z) as z approaches infinity.",
+      "formula": "x[0]=lim_{z→∞} X(z)",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.8"
+      ]
+    },
+    {
+      "id": "final-value-theorem-z",
+      "term": "Final value theorem (Z)",
+      "definition": "Theorem stating that the limiting sample x[∞] of a sequence equals the limit of (1-z^-1)X(z) as z approaches unity.",
+      "formula": "x[∞]=lim_{z→1}(z-1)X(z)",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.8"
+      ]
+    },
+    {
+      "id": "causality-z",
+      "term": "Causality condition (Z)",
+      "definition": "ROC is outside outermost pole for causal LTI system.",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.12"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "stability-z",
+      "term": "Stability condition (Z)",
+      "definition": "BIBO stability requirement that every pole of a causal system's transfer function lie strictly inside the unit circle |z|=1 in the z-plane.",
+      "formula": "|z|=1 in ROC",
+      "unit": 5,
+      "unitTitle": "Z-transform",
+      "sources": [
+        "ss-z-transforms#slide.12"
+      ]
+    },
+    {
+      "id": "sampling-theorem",
+      "term": "Sampling theorem",
+      "definition": "Sampling theorem stating that a bandlimited signal with maximum frequency fm is completely recovered by sampling at the Nyquist rate 2fm or faster.",
+      "formula": "f_s≥2f_m",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.9"
+      ]
+    },
+    {
+      "id": "nyquist-rate",
+      "term": "Nyquist rate",
+      "definition": "Minimum sampling rate 2fm for a signal bandlimited to fm.",
+      "formula": "f_N=2f_m",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.9"
+      ]
+    },
+    {
+      "id": "nyquist-interval",
+      "term": "Nyquist interval",
+      "definition": "Maximum permissible spacing between successive samples of a bandlimited signal, equal to 1/(2fm) seconds for a signal of maximum frequency fm.",
+      "formula": "T_s=1/(2f_m)",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.9"
+      ]
+    },
+    {
+      "id": "aliasing",
+      "term": "Aliasing",
+      "definition": "Distortion arising when a signal is sampled below the Nyquist rate, causing overlapping spectral replicas that cannot be separated by filtering.",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "anti-aliasing-filter",
+      "term": "Anti-aliasing filter",
+      "definition": "Low-pass filter placed ahead of the sampler to bandlimit the input below half the sampling rate and thus prevent aliasing distortion.",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.19"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "natural-sampling",
+      "term": "Natural sampling",
+      "definition": "Sampling method in which the sampled pulse tops follow the natural variation of the message signal during each sampling interval, unlike flat-top sampling.",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.20"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "flat-top-sampling",
+      "term": "Flat-top sampling",
+      "definition": "Sample held constant for whole sample period (S/H).",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.23"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bandpass-sampling",
+      "term": "Bandpass sampling",
+      "definition": "Sampling a bandpass signal at rate based on bandwidth.",
+      "formula": "f_s≥2B(1+M/N)",
+      "unit": 6,
+      "unitTitle": "Sampling theorem",
+      "sources": [
+        "ss-unit5-sampling-theorem#slide.27"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "electronic-devices-and-circuits",
+  "semester": "2-1",
+  "name": "Electronic Devices and Circuits",
+  "shortName": "EDC",
+  "code": "9CC01",
+  "courseType": "PC",
+  "folderId": "12PUYxKQWBux-2V6QDwTwRF3Lrlo38r4H",
+  "folderUrl": "https://drive.google.com/drive/folders/12PUYxKQWBux-2V6QDwTwRF3Lrlo38r4H",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "intrinsic-semiconductor",
+      "term": "Intrinsic semiconductor",
+      "definition": "A pure semiconductor in which the number of free electrons equals the number of holes at room temperature.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.13"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "extrinsic-semiconductor",
+      "term": "Extrinsic semiconductor",
+      "definition": "A semiconductor whose electrical properties are altered by adding impurity atoms (doping).",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.12"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "n-type-semiconductor",
+      "term": "n-type semiconductor",
+      "definition": "A semiconductor doped with pentavalent impurity, where electrons are majority carriers.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.5"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "p-type-semiconductor",
+      "term": "p-type semiconductor",
+      "definition": "A semiconductor doped with trivalent impurity, where holes are majority carriers.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.30"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "depletion-region",
+      "term": "Depletion region",
+      "definition": "The region around a pn junction depleted of mobile charges, containing immobile ions.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.43"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "barrier-potential",
+      "term": "Barrier potential",
+      "definition": "The potential difference developed across a pn junction that opposes further diffusion of carriers.",
+      "formula": "0.3 V (Ge), 0.7 V (Si)",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.42"
+      ]
+    },
+    {
+      "id": "forward-bias",
+      "term": "Forward bias",
+      "definition": "Applied voltage that reduces the depletion width and barrier potential, allowing majority carrier current.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.46"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "reverse-saturation-current",
+      "term": "Reverse saturation current",
+      "definition": "Small current due to minority carriers that flows when a pn junction is reverse biased.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.55"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "zener-diode",
+      "term": "Zener diode",
+      "definition": "A heavily doped pn junction diode that maintains a constant voltage in reverse breakdown.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.66"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "zener-breakdown",
+      "term": "Zener breakdown",
+      "definition": "Breakdown in a heavily doped junction caused by rupture of covalent bonds in a strong electric field.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.80"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "avalanche-breakdown",
+      "term": "Avalanche breakdown",
+      "definition": "Breakdown in a lightly doped junction caused by carrier multiplication through collision ionization.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.79"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "transition-capacitance",
+      "term": "Transition capacitance",
+      "definition": "Capacitance of the depletion region in reverse bias due to uncovered immobile charges.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.87"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "diffusion-capacitance",
+      "term": "Diffusion capacitance",
+      "definition": "Capacitance due to stored minority charge in a forward-biased pn junction.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.83"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "rectifier",
+      "term": "Rectifier",
+      "definition": "A device that converts alternating current into pulsating direct current.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.100"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ripple-factor",
+      "term": "Ripple factor",
+      "definition": "Ratio of the RMS value of the AC component to the DC component in a rectifier output.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.125"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "peak-inverse-voltage",
+      "term": "Peak inverse voltage (PIV)",
+      "definition": "The maximum reverse voltage a diode can withstand without breakdown.",
+      "unit": 1,
+      "unitTitle": "PN Junction Diodes and Rectifiers",
+      "sources": [
+        "edc-edc-unit-1#slide.127"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bjt",
+      "term": "Bipolar junction transistor",
+      "definition": "A three-terminal active device in which current at one terminal is controlled by voltage at the other two.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "active-region",
+      "term": "Active region",
+      "definition": "Region where the emitter junction is forward biased and the collector junction is reverse biased, used for amplification.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "saturation-region",
+      "term": "Saturation region",
+      "definition": "Region where both emitter and collector junctions are forward biased, acting as a closed switch.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "cutoff-region",
+      "term": "Cut-off region",
+      "definition": "Region where both emitter and collector junctions are reverse biased, acting as an open switch.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "common-base",
+      "term": "Common base configuration",
+      "definition": "Transistor configuration with the base common to input and output; low input and high output resistance.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.7"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "common-emitter",
+      "term": "Common emitter configuration",
+      "definition": "Transistor configuration with the emitter common to input and output; used for amplification.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "common-collector",
+      "term": "Common collector configuration",
+      "definition": "Transistor configuration with the collector common to input and output; used for impedance matching.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "early-effect",
+      "term": "Early effect",
+      "definition": "Modulation of effective base width by collector-base voltage, increasing collector current.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.29"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "punch-through",
+      "term": "Punch-through",
+      "definition": "Breakdown when the collector-base depletion region extends through the base to the emitter.",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.44"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "current-gain-alpha",
+      "term": "Current gain alpha",
+      "definition": "Ratio of collector current to emitter current in a BJT, typically 0.9 to 0.995.",
+      "formula": "α=I_C/I_E",
+      "unit": 2,
+      "unitTitle": "Bipolar Junction Transistor",
+      "sources": [
+        "edc-edc-unit-2#slide.2"
+      ]
+    },
+    {
+      "id": "h-parameters",
+      "term": "h-parameters",
+      "definition": "Hybrid parameters describing a two-port network by input impedance, reverse voltage gain, forward current gain and output admittance.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "millers-theorem",
+      "term": "Miller's theorem",
+      "definition": "A bridging impedance between two nodes can be replaced by two shunt impedances to ground.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.52"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "frequency-response",
+      "term": "Frequency response",
+      "definition": "Curve of amplifier voltage gain versus signal frequency.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.59"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "lower-cutoff-frequency",
+      "term": "Lower cut-off frequency",
+      "definition": "Frequency at which amplifier gain falls to 1/sqrt(2) of mid-frequency gain in the low-frequency range.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.61"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bandwidth",
+      "term": "Bandwidth",
+      "definition": "Frequency interval between lower and upper cut-off frequencies.",
+      "formula": "BW=f_U-f_L",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.61"
+      ]
+    },
+    {
+      "id": "multistage-amplifier",
+      "term": "Multistage amplifier",
+      "definition": "Amplifier with cascaded stages to increase overall voltage gain.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.62"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "rc-coupled-amplifier",
+      "term": "RC coupled amplifier",
+      "definition": "Multistage amplifier using resistor-capacitor coupling between stages, suited for audio frequencies.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.68"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "hybrid-pi-model",
+      "term": "Hybrid-pi model",
+      "definition": "High-frequency small-signal equivalent circuit of a BJT using transconductance and junction capacitances.",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.100"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "transconductance",
+      "term": "Transconductance",
+      "definition": "Ratio of change in collector current to change in base-emitter voltage at constant collector-emitter voltage.",
+      "formula": "g_m=ΔI_C/ΔV_BE",
+      "unit": 3,
+      "unitTitle": "Small Signal and High Frequency Analysis of BJT",
+      "sources": [
+        "edc-edc-unit-3#slide.105"
+      ]
+    },
+    {
+      "id": "fet",
+      "term": "Field-effect transistor (FET)",
+      "definition": "A unipolar, voltage-controlled three-terminal semiconductor device whose conduction from source to drain relies only on majority carriers, modulated by the gate voltage.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-unit-iv#slide.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "jfet",
+      "term": "JFET",
+      "definition": "A FET in which a reverse-biased pn junction controls channel width and drain current.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-unit-iv#slide.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "pinch-off-voltage",
+      "term": "Pinch-off voltage",
+      "definition": "The gate voltage at which the channel is completely depleted and drain current saturates.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-unit-iv#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "mosfet",
+      "term": "MOSFET",
+      "definition": "A FET with an insulated gate, also called an insulated-gate field-effect transistor.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-edc-fet-unit4#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "enhancement-mosfet",
+      "term": "Enhancement MOSFET",
+      "definition": "MOSFET with no conducting channel at zero gate bias; channel is enhanced by gate voltage.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-edc-fet-unit4#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "depletion-mosfet",
+      "term": "Depletion MOSFET",
+      "definition": "MOSFET with a built-in channel that can be depleted or enhanced by gate voltage.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-edc-fet-unit4#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "self-bias-fet",
+      "term": "Self-bias",
+      "definition": "FET biasing method where the source resistor provides the gate-source bias voltage.",
+      "unit": 4,
+      "unitTitle": "Field Effect Transistor",
+      "sources": [
+        "edc-fet-biasing#p.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "feedback-amplifier",
+      "term": "Feedback amplifier",
+      "definition": "Amplifier in which a portion of the output is fed back and combined with the input.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "positive-feedback",
+      "term": "Positive feedback",
+      "definition": "Feedback where the output portion is added to the input, used in oscillators.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "negative-feedback",
+      "term": "Negative feedback",
+      "definition": "Feedback where the output portion is subtracted from the input to stabilize gain.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "barkhausen-criterion",
+      "term": "Barkhausen criterion",
+      "definition": "Conditions for oscillation: loop gain magnitude unity and total phase shift 0 or 360 degrees.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.47"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "oscillator",
+      "term": "Oscillator",
+      "definition": "Circuit that generates an AC output without an AC input using positive feedback.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.45"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "resonant-frequency",
+      "term": "Resonant frequency",
+      "definition": "Frequency at which the oscillator output is maximized.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.57"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "piezoelectric-effect",
+      "term": "Piezoelectric effect",
+      "definition": "Mechanical stress on a crystal produces voltage across it, and vice versa.",
+      "unit": 5,
+      "unitTitle": "Feedback Amplifiers and Oscillators",
+      "sources": [
+        "edc-edc-unit-5-feedback-amplifiers-oscillators#slide.79"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "voltage-regulator",
+      "term": "Voltage regulator",
+      "definition": "Circuit that produces a constant DC output voltage by reducing ripple to negligible amount.",
+      "unit": 6,
+      "unitTitle": "Voltage Regulators",
+      "sources": [
+        "edc-edc-syllabus#para.23"
+      ],
+      "formula": ""
+    }
+  ]
+}

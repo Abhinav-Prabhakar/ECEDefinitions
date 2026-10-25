@@ -1,0 +1,544 @@
+{
+  "version": 1,
+  "id": "environmental-science",
+  "semester": "2-1",
+  "name": "Environmental Science",
+  "shortName": "ESE",
+  "code": "9HC05",
+  "courseType": "MC",
+  "folderId": "12MieKCmLsZhrD3G_WgNsR8qQrGnf04nR",
+  "folderUrl": "https://drive.google.com/drive/folders/12MieKCmLsZhrD3G_WgNsR8qQrGnf04nR",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "ecosystem",
+      "term": "Ecosystem",
+      "definition": "Basic structural unit of environment; community of living organisms interacting with their environment.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "abiotic-components",
+      "term": "Abiotic components",
+      "definition": "Non-living components of an ecosystem: air, water, light, soil, rocks, minerals and nutrients.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "biotic-components",
+      "term": "Biotic components",
+      "definition": "Living components of an ecosystem: producers, consumers and decomposers.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "food-chain",
+      "term": "Food chain",
+      "definition": "Order in an ecosystem where organisms eat one another, transferring nutrients and energy across trophic levels.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.13"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "food-web",
+      "term": "Food web",
+      "definition": "Natural interconnection of food chains showing what-eats-what in an ecological community.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ecological-pyramid",
+      "term": "Ecological pyramid",
+      "definition": "Graphical representation of relationships among organisms at different trophic levels.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.16"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "biomagnification",
+      "term": "Biomagnification",
+      "definition": "Buildup of toxic chemicals or substances at higher trophic levels of a food chain.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.29"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "bioaccumulation",
+      "term": "Bioaccumulation",
+      "definition": "Accumulation of toxic chemicals in the human body via air, water, food or skin.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.29"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "carrying-capacity",
+      "term": "Carrying capacity",
+      "definition": "Average population density or size of a species below which numbers tend to increase and above which they decrease due to resource shortage.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.31"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "biogeochemical-cycle",
+      "term": "Biogeochemical cycle",
+      "definition": "Flow of elements and compounds between organisms and the physical environment.",
+      "unit": 1,
+      "unitTitle": "Ecosystem",
+      "sources": [
+        "ese-unit-i-ecosystem-2024-25#slide.19"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "natural-resources",
+      "term": "Natural resources",
+      "definition": "Materials from the Earth used to support life and meet human needs.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.2"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "renewable-resource",
+      "term": "Renewable resource",
+      "definition": "Resource available in infinite quantity that can be used repeatedly and replenishes quickly.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "non-renewable-resource",
+      "term": "Non-renewable resource",
+      "definition": "Resource limited in abundance that cannot be renewed once consumed.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "overexploitation",
+      "term": "Overexploitation",
+      "definition": "Unsustainable use of natural resources beyond their capacity to regenerate or replenish.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.8"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "rainwater-harvesting",
+      "term": "Rainwater harvesting",
+      "definition": "Collecting, storing, conveying and purifying rainwater for later use.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.12"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "drought",
+      "term": "Drought",
+      "definition": "Absence of water for a long period at a place where it is abnormal compared to usual conditions.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.19"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "fossil-fuels",
+      "term": "Fossil fuels",
+      "definition": "Buried flammable geologic deposits of organic substances converted to coal, petroleum and natural gas.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.24"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "nuclear-fuels",
+      "term": "Nuclear fuels",
+      "definition": "Materials used in nuclear reactors to produce energy through nuclear fission.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.29"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "mineral",
+      "term": "Mineral",
+      "definition": "Naturally occurring substance representable by a chemical formula, usually solid, inorganic, with a crystal structure.",
+      "unit": 2,
+      "unitTitle": "Natural resources",
+      "sources": [
+        "ese-unit-ii-natural-resources-2024-25#slide.40"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "biodiversity",
+      "term": "Biodiversity",
+      "definition": "Variety of organisms in a region; variability among living organisms from all sources.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.2",
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "genetic-diversity",
+      "term": "Genetic diversity",
+      "definition": "Diversity expressed at the genetic level among individuals of a species.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.5"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "species-diversity",
+      "term": "Species diversity",
+      "definition": "All different types of species found in a selected region.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.6"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ecological-diversity",
+      "term": "Ecological diversity",
+      "definition": "Diversity observed among the ecosystems in a region.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.7"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "biodiversity-hotspot",
+      "term": "Biodiversity hotspot",
+      "definition": "Region with high species richness and high species endemism needing conservation attention.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "mega-diverse-countries",
+      "term": "Mega-diverse countries",
+      "definition": "Countries that house the largest indices of biodiversity including many endemic species.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.14"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "in-situ-conservation",
+      "term": "In situ conservation",
+      "definition": "On-site conservation of biodiversity in its natural habitat.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.25"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ex-situ-conservation",
+      "term": "Ex situ conservation",
+      "definition": "Off-site conservation of biodiversity outside its natural habitat.",
+      "unit": 3,
+      "unitTitle": "Biodiversity",
+      "sources": [
+        "ese-unit-iii-biodiversity-ppt-2024-25#slide.25"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "air-pollution",
+      "term": "Air pollution",
+      "definition": "Presence of undesirable solid or gaseous particles in the air harmful to human health and environment.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.3"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "spm",
+      "term": "Suspended particulate matter",
+      "definition": "Solid or liquid particles suspended in air, dangerous due to toxic content and small size.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.4"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "acid-rain",
+      "term": "Acid rain",
+      "definition": "Rainwater with pH below 5.6 formed when SOx and NOx dissolve in rain.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.9"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "greenhouse-effect",
+      "term": "Greenhouse effect",
+      "definition": "Trapping of heat near Earth's surface by greenhouse gases like a blanket.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "global-warming",
+      "term": "Global warming",
+      "definition": "Rise in temperature due to increased concentration of greenhouse gases trapping heat.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.11"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "ozone-layer-depletion",
+      "term": "Ozone layer depletion",
+      "definition": "Thinning of stratospheric ozone layer mainly by chlorofluorocarbons.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.14",
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.15"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "photochemical-smog",
+      "term": "Photochemical smog",
+      "definition": "Toxic mixture of reactive oxidizing air pollutants including NOx, VOCs and ozone.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.18"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "water-pollution",
+      "term": "Water pollution",
+      "definition": "Change in water quality that is injurious to its existing or intended uses.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.20"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "soil-pollution",
+      "term": "Soil pollution",
+      "definition": "Buildup of persistent toxic compounds, salts or radioactive materials in soils.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.26"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "solid-waste",
+      "term": "Solid waste",
+      "definition": "Discarded solid materials from municipal, industrial, medical and agricultural activities.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.29"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "noise-pollution",
+      "term": "Noise pollution",
+      "definition": "Unwanted sound that disrupts normal activities and quality of life.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.42"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "e-waste",
+      "term": "E-waste",
+      "definition": "Waste electronic or electrical goods not fit for their originally intended use.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.48"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "biofertilizers",
+      "term": "Biofertilizers",
+      "definition": "Preparations containing microorganisms that improve soil fertility by natural means.",
+      "unit": 4,
+      "unitTitle": "Pollution control & environmental technology",
+      "sources": [
+        "ese-unit-iv-pollution-control-and-environmental-technology#p.37"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "sustainable-development",
+      "term": "Sustainable development",
+      "definition": "Development that meets present needs without compromising future generations' ability to meet theirs.",
+      "unit": 5,
+      "unitTitle": "Sustainable development",
+      "sources": [
+        "ese-unit-v-sustainable-development#slide.1"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "environmental-ethics",
+      "term": "Environmental ethics",
+      "definition": "Branch of ethics studying the relation of human beings and the environment.",
+      "unit": 5,
+      "unitTitle": "Sustainable development",
+      "sources": [
+        "ese-unit-v-sustainable-development#slide.26"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "environmental-economics",
+      "term": "Environmental economics",
+      "definition": "Branch of economics that values both environment and economic activity and balances their costs and benefits.",
+      "unit": 5,
+      "unitTitle": "Sustainable development",
+      "sources": [
+        "ese-unit-v-sustainable-development#slide.28"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "green-building",
+      "term": "Green building",
+      "definition": "Building that uses less water and energy, conserves resources, generates less waste and provides healthier spaces.",
+      "unit": 5,
+      "unitTitle": "Sustainable development",
+      "sources": [
+        "ese-unit-v-sustainable-development#slide.30"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "cdm",
+      "term": "Clean Development Mechanism",
+      "definition": "Mechanism under Kyoto Protocol promoting clean development in developing countries.",
+      "unit": 5,
+      "unitTitle": "Sustainable development",
+      "sources": [
+        "ese-unit-v-sustainable-development#slide.36"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "environmental-impact-assessment",
+      "term": "Environmental Impact Assessment",
+      "definition": "Tool used to identify environmental and economic impacts of a project prior to decision making.",
+      "unit": 6,
+      "unitTitle": "Environmental policy/legislation/EIA",
+      "sources": [
+        "ese-unit-vib-environmental-policy-legislation-environment-im#slide.27"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "environmental-management-plan",
+      "term": "Environmental Management Plan",
+      "definition": "Plan for formulation, implementation and monitoring of environmental protection measures during and after commissioning.",
+      "unit": 6,
+      "unitTitle": "Environmental policy/legislation/EIA",
+      "sources": [
+        "ese-unit-vib-environmental-policy-legislation-environment-im#slide.30"
+      ],
+      "formula": ""
+    },
+    {
+      "id": "air-pollutant",
+      "term": "Air pollutant",
+      "definition": "Solid, liquid or gaseous substance (including noise) present in atmosphere in injurious concentration.",
+      "unit": 6,
+      "unitTitle": "Environmental policy/legislation/EIA",
+      "sources": [
+        "ese-unit-vib-environmental-policy-legislation-environment-im#slide.4"
+      ],
+      "formula": ""
+    }
+  ]
+}
