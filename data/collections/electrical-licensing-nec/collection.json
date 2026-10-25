@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "id": "electrical-licensing-nec",
+  "name": "Electrical Licensing (NEC)",
+  "tagline": "Electricity, in one line.",
+  "topic": "Electrical licensing (NEC) for electrician apprentices and journeyman exam candidates",
+  "audience": "Electrician apprentices and journeyman exam candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "generatedAt": "2026-10-25",
+  "scope": {
+    "includes": [
+      "conductors and wiring methods",
+      "overcurrent protection",
+      "grounding and bonding",
+      "GFCI and AFCI",
+      "load calculations"
+    ],
+    "excludes": [
+      "motor control and advanced automation",
+      "renewable energy systems",
+      "communication and low-voltage specialty codes",
+      "state amendments beyond core NEC",
+      "design project solutions"
+    ]
+  },
+  "assumptions": [
+    "US NEC (current published edition as commonly tested)",
+    "focus on definitions and core concepts",
+    "exam-oriented vocabulary",
+    "electrical safety concepts only (no codebook excerpts copied verbatim)"
+  ],
+  "disclaimer": "Educational vocabulary only; not electrical advice or code compliance guidance.",
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "conductors-wiring-methods",
+          "name": "Conductors and Wiring Methods",
+          "shortName": "Conductors and wiring",
+          "code": null,
+          "courseType": "core",
+          "color": "#5b6ee1",
+          "dark": "#8a9bff",
+          "data": "data/collections/electrical-licensing-nec/subjects/conductors-wiring-methods.json",
+          "definitionCount": 48,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "overcurrent-protection",
+          "name": "Overcurrent Protection",
+          "shortName": "Overcurrent protection",
+          "code": null,
+          "courseType": "core",
+          "color": "#12b3a6",
+          "dark": "#3bd6c7",
+          "data": "data/collections/electrical-licensing-nec/subjects/overcurrent-protection.json",
+          "definitionCount": 40,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "grounding-bonding",
+          "name": "Grounding and Bonding",
+          "shortName": "Grounding and bonding",
+          "code": null,
+          "courseType": "core",
+          "color": "#eaa22b",
+          "dark": "#f3b552",
+          "data": "data/collections/electrical-licensing-nec/subjects/grounding-bonding.json",
+          "definitionCount": 47,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        },
+        {
+          "id": "gfci-afci",
+          "name": "GFCI and AFCI",
+          "shortName": "GFCI and AFCI",
+          "code": null,
+          "courseType": "core",
+          "color": "#e0567f",
+          "dark": "#ff7f9f",
+          "data": "data/collections/electrical-licensing-nec/subjects/gfci-afci.json",
+          "definitionCount": 35,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "partial",
+          "sourceCount": 1
+        },
+        {
+          "id": "load-calculations",
+          "name": "Load Calculations",
+          "shortName": "Load calculations",
+          "code": null,
+          "courseType": "core",
+          "color": "#22a06b",
+          "dark": "#4bd399",
+          "data": "data/collections/electrical-licensing-nec/subjects/load-calculations.json",
+          "definitionCount": 45,
+          "unitCount": 5,
+          "coveredUnits": 5,
+          "status": "complete",
+          "sourceCount": 1
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "sections": 1,
+    "subjects": 5,
+    "definitions": 215,
+    "completeSubjects": 4,
+    "partialSubjects": 1,
+    "inaccessibleSubjects": 0
+  }
+}

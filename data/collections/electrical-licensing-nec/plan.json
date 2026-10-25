@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "topic": "Electrical licensing (NEC) for electrician apprentices and journeyman exam candidates",
+  "collectionId": "electrical-licensing-nec",
+  "type": "exam",
+  "audience": "Electrician apprentices and journeyman exam candidates",
+  "level": "intro",
+  "jurisdiction": "US",
+  "spelling": "US",
+  "language": "en",
+  "regulated": true,
+  "includes": [
+    "conductors and wiring methods",
+    "overcurrent protection",
+    "grounding and bonding",
+    "GFCI and AFCI",
+    "load calculations"
+  ],
+  "excludes": [
+    "motor control and advanced automation",
+    "renewable energy systems",
+    "communication and low-voltage specialty codes",
+    "state amendments beyond core NEC",
+    "design project solutions"
+  ],
+  "assumptions": [
+    "US NEC (current published edition as commonly tested)",
+    "focus on definitions and core concepts",
+    "exam-oriented vocabulary",
+    "electrical safety concepts only (no codebook excerpts copied verbatim)"
+  ],
+  "sections": [
+    {
+      "id": "core",
+      "label": "Core",
+      "subjects": [
+        {
+          "id": "conductors-wiring-methods",
+          "name": "Conductors and Wiring Methods",
+          "shortName": "Conductors and wiring",
+          "units": ["Conductors", "Ampacity", "Boxes and fittings", "Raceways", "Cables"],
+          "targetDefinitions": 45,
+          "sourceQueries": ["NFPA 70 NEC conductors wiring methods glossary"]
+        },
+        {
+          "id": "overcurrent-protection",
+          "name": "Overcurrent Protection",
+          "shortName": "Overcurrent protection",
+          "units": ["Overcurrent basics", "Fuses", "Circuit breakers", "Protection requirements", "Selective coordination"],
+          "targetDefinitions": 40,
+          "sourceQueries": ["NFPA 70 NEC overcurrent protection glossary"]
+        },
+        {
+          "id": "grounding-bonding",
+          "name": "Grounding and Bonding",
+          "shortName": "Grounding and bonding",
+          "units": ["Grounding concepts", "Bonding", "Electrodes", "Systems and equipment", "Grounding paths"],
+          "targetDefinitions": 45,
+          "sourceQueries": ["NFPA 70 NEC grounding bonding glossary"]
+        },
+        {
+          "id": "gfci-afci",
+          "name": "GFCI and AFCI",
+          "shortName": "GFCI and AFCI",
+          "units": ["GFCI basics", "GFCI requirements", "AFCI basics", "AFCI requirements", "Protection applications"],
+          "targetDefinitions": 35,
+          "sourceQueries": ["NFPA 70 NEC GFCI AFCI requirements glossary"]
+        },
+        {
+          "id": "load-calculations",
+          "name": "Load Calculations",
+          "shortName": "Load calculations",
+          "units": ["General load concepts", "Dwelling calculations", "Non-dwelling calculations", "Demand factors", "Service sizing"],
+          "targetDefinitions": 45,
+          "sourceQueries": ["NFPA 70 NEC load calculations article glossary"]
+        }
+      ]
+    }
+  ],
+  "definitionBudget": { "min": 200, "max": 260 },
+  "disclaimer": "Educational vocabulary only; not electrical advice or code compliance guidance."
+}

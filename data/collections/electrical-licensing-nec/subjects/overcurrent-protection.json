@@ -1,0 +1,757 @@
+{
+  "version": 1,
+  "id": "overcurrent-protection",
+  "collectionId": "electrical-licensing-nec",
+  "section": "core",
+  "name": "Overcurrent Protection",
+  "shortName": "Overcurrent protection",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Overcurrent basics"
+    },
+    {
+      "number": 2,
+      "title": "Fuses"
+    },
+    {
+      "number": 3,
+      "title": "Circuit breakers"
+    },
+    {
+      "number": 4,
+      "title": "Protection requirements"
+    },
+    {
+      "number": 5,
+      "title": "Selective coordination"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "overcurrent",
+      "term": "Overcurrent",
+      "definition": "Any current in excess of the rated current of equipment or the ampacity of a conductor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [],
+      "confusables": [
+        "Overload",
+        "Short Circuit",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "overload",
+      "term": "Overload",
+      "definition": "An excessive current in a circuit that occurs within its normal ampacity rating.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [],
+      "confusables": [
+        "Short Circuit",
+        "Overcurrent",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "short-circuit",
+      "term": "Short Circuit",
+      "definition": "An accidental connection of relatively low impedance between two points of different potential in an electric circuit.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [
+        "Short circuit"
+      ],
+      "confusables": [
+        "Overload",
+        "Ground Fault"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "ground-fault",
+      "term": "Ground Fault",
+      "definition": "An unintentional electrical connection between an ungrounded conductor and ground or equipment grounding conductor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [],
+      "confusables": [
+        "Short Circuit",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "fault-current",
+      "term": "Fault Current",
+      "definition": "The current delivered at a point on the system during a short circuit or ground fault condition.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [
+        "Available fault current"
+      ],
+      "confusables": [
+        "Let-Through Current",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#art.240"
+      ]
+    },
+    {
+      "id": "available-fault-current",
+      "term": "Available Fault Current",
+      "definition": "The largest amount of current capable of being delivered at a point on the system during a short-circuit condition.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [
+        "AFC"
+      ],
+      "confusables": [
+        "Fault Current",
+        "Interrupting Rating"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.110.24"
+      ]
+    },
+    {
+      "id": "interrupting-rating",
+      "term": "Interrupting Rating",
+      "definition": "The highest current at rated voltage that a device is intended to interrupt under standard test conditions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [
+        "Interrupting capacity"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.110.9"
+      ]
+    },
+    {
+      "id": "overcurrent-protective-device",
+      "term": "Overcurrent Protective Device",
+      "definition": "A device used to protect conductors and equipment from overcurrent by opening the circuit.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Overcurrent basics",
+      "aliases": [
+        "OCPD"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240"
+      ]
+    },
+    {
+      "id": "fuse",
+      "term": "Fuse",
+      "definition": "An overcurrent protective device with a circuit-opening fusible part that is heated and severed by the passage of overcurrent through it.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [],
+      "confusables": [
+        "Circuit Breaker",
+        "Cartridge Fuse"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "plug-fuse",
+      "term": "Plug Fuse",
+      "definition": "A fuse with a screw shell and contact and an adapter or other body for use in Edison-base fuseholders.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [
+        "Edison-base fuse"
+      ],
+      "confusables": [
+        "Cartridge Fuse",
+        "Type S Fuse"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "cartridge-fuse",
+      "term": "Cartridge Fuse",
+      "definition": "A fuse having an insulating tube with metallic ferrules or blades at each end to which the fusible element is attached.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [],
+      "confusables": [
+        "Plug Fuse",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "time-delay-fuse",
+      "term": "Time-Delay Fuse",
+      "definition": "A fuse that has a delay in opening to allow for temporary inrush currents while still opening on sustained overloads.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [
+        "Delay-action fuse"
+      ],
+      "confusables": [
+        "Dual-Element Fuse",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "dual-element-fuse",
+      "term": "Dual-Element Fuse",
+      "definition": "A fuse containing two elements, one for overload protection and one for short-circuit protection.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [
+        "Time-delay dual-element fuse"
+      ],
+      "confusables": [
+        "Time-Delay Fuse",
+        "Current-Limiting Fuse"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "current-limiting-fuse",
+      "term": "Current-Limiting Fuse",
+      "definition": "A fuse that reduces the let-through current during high fault currents by interrupting the circuit in less than a half-cycle.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [
+        "Current-limiting overcurrent device"
+      ],
+      "confusables": [
+        "Time-Delay Fuse",
+        "Let-Through Current"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240.2"
+      ]
+    },
+    {
+      "id": "type-s-fuse",
+      "term": "Type S Fuse",
+      "definition": "A plug fuse with a rejection feature that prevents interchange with fuses of different ampere ratings when used with the proper adapter.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [
+        "Type S plug fuse"
+      ],
+      "confusables": [
+        "Plug Fuse",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240.50"
+      ]
+    },
+    {
+      "id": "fuseholder",
+      "term": "Fuseholder",
+      "definition": "A device for holding a fuse and connecting it into an electrical circuit.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Fuses",
+      "aliases": [],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "circuit-breaker",
+      "term": "Circuit Breaker",
+      "definition": "A device designed to open and close a circuit by non-automatic means and to open automatically on overcurrent.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "Breaker"
+      ],
+      "confusables": [
+        "Fuse",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "molded-case-circuit-breaker",
+      "term": "Molded-Case Circuit Breaker",
+      "definition": "A circuit breaker assembled as an integral unit in a supportive and enclosing housing of insulating material.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "MCCB"
+      ],
+      "confusables": [
+        "Molded-Case Switch",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "thermal-magnetic-circuit-breaker",
+      "term": "Thermal-Magnetic Circuit Breaker",
+      "definition": "A circuit breaker that uses a bimetallic element for overload protection and a magnetic trip for short-circuit protection.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "Thermal-magnetic breaker"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "instantaneous-trip",
+      "term": "Instantaneous Trip",
+      "definition": "The portion of a circuit breaker trip unit that operates with no intentional time delay on short-circuit currents.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "Instantaneous magnetic trip"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "adjustable-trip",
+      "term": "Adjustable Trip",
+      "definition": "A circuit breaker trip unit that allows adjustment of the trip current or time settings.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "Adjustable-trip circuit breaker"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "electronic-trip-circuit-breaker",
+      "term": "Electronic-Trip Circuit Breaker",
+      "definition": "A circuit breaker using solid-state components to sense current and provide adjustable trip functions.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "Solid-state trip breaker"
+      ],
+      "confusables": [
+        "Thermal-Magnetic Circuit Breaker",
+        "Instantaneous Trip"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "supplementary-protector",
+      "term": "Supplementary Protector",
+      "definition": "A device intended to provide limited overcurrent protection for specific equipment or internal circuits, not generally for branch circuit or feeder conductor protection.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [
+        "Supplementary overcurrent protector"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240.10"
+      ]
+    },
+    {
+      "id": "molded-case-switch",
+      "term": "Molded-Case Switch",
+      "definition": "A switch assembled as an integral unit in a supportive and enclosing housing of insulating material, not providing automatic overcurrent protection.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Circuit breakers",
+      "aliases": [],
+      "confusables": [
+        "Molded-Case Circuit Breaker",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "conductor-protection",
+      "term": "Conductor Protection",
+      "definition": "Requirement that overcurrent protection be provided to protect conductors from overcurrent in accordance with their ampacity.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [],
+      "confusables": [
+        "Branch Circuit Protection",
+        "Feeder Protection"
+      ],
+      "sources": [
+        "nec-2023#art.240.4",
+        "nec-2023#art.240.5"
+      ]
+    },
+    {
+      "id": "branch-circuit-protection",
+      "term": "Branch Circuit Protection",
+      "definition": "Overcurrent protection provided for branch circuits in accordance with the ampere rating and conductor ampacity requirements.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [],
+      "confusables": [
+        "Feeder Protection",
+        "Service Protection",
+        "Supplementary Protector"
+      ],
+      "sources": [
+        "nec-2023#art.240",
+        "nec-2023#art.210"
+      ]
+    },
+    {
+      "id": "feeder-protection",
+      "term": "Feeder Protection",
+      "definition": "Overcurrent protection provided for feeders to protect conductors and meet system requirements.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [],
+      "confusables": [
+        "Branch Circuit Protection",
+        "Service Protection"
+      ],
+      "sources": [
+        "nec-2023#art.240",
+        "nec-2023#art.215"
+      ]
+    },
+    {
+      "id": "service-protection",
+      "term": "Service Protection",
+      "definition": "Overcurrent protection provided at the service entrance to protect the service conductors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [],
+      "confusables": [
+        "Feeder Protection",
+        "Branch Circuit Protection"
+      ],
+      "sources": [
+        "nec-2023#art.230",
+        "nec-2023#art.240"
+      ]
+    },
+    {
+      "id": "location-of-overcurrent-protective-devices",
+      "term": "Location of Overcurrent Protective Devices",
+      "definition": "NEC provisions specifying where OCPDs must be located for accessibility and protection.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [
+        "OCPD location"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#art.240.24"
+      ]
+    },
+    {
+      "id": "ampere-rating-of-overcurrent-device",
+      "term": "Ampere Rating of Overcurrent Device",
+      "definition": "The rating in amperes of the overcurrent protective device, which shall not exceed the conductor ampacity unless otherwise permitted.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [
+        "OCPD ampere rating"
+      ],
+      "confusables": [
+        "Interrupting Rating",
+        "Continuous load"
+      ],
+      "sources": [
+        "nec-2023#art.240.4",
+        "nec-2023#art.240.6"
+      ]
+    },
+    {
+      "id": "continuous-load",
+      "term": "Continuous Load",
+      "definition": "A load where the maximum current is expected to continue for three hours or more.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "tap-conductors",
+      "term": "Tap Conductors",
+      "definition": "Conductors permitted to be protected by the overcurrent device of the feeder or larger conductor in accordance with tap rules.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Protection requirements",
+      "aliases": [
+        "Taps"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#art.240.21"
+      ]
+    },
+    {
+      "id": "selective-coordination",
+      "term": "Selective Coordination",
+      "definition": "Localization of an overcurrent condition to restrict outages to the circuit or equipment affected, accomplished by the selection and application of overcurrent protective devices.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Coordination",
+        "Selective coordination of OCPDs"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240.12",
+        "nec-2023#art.700.28"
+      ]
+    },
+    {
+      "id": "total-clearing-time",
+      "term": "Total Clearing Time",
+      "definition": "The total time from the beginning of a fault until the overcurrent device opens and interrupts the fault current.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Clearing time"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#art.240",
+        "nec-2023#art.240"
+      ]
+    },
+    {
+      "id": "let-through-current",
+      "term": "Let-Through Current",
+      "definition": "The current passed through a current-limiting overcurrent device during a fault, less than the available fault current.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Let-through"
+      ],
+      "confusables": [
+        "Fault Current",
+        "Available Fault Current"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240.2"
+      ]
+    },
+    {
+      "id": "i-squared-t",
+      "term": "I\u00b2t",
+      "definition": "The thermal energy let-through by an overcurrent device during fault interruption, used in evaluating damage to conductors and equipment.",
+      "formula": "I^2 \u00d7 t",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Energy let-through"
+      ],
+      "confusables": [
+        "Let-Through Current",
+        "Overcurrent"
+      ],
+      "sources": [
+        "nec-2023#art.240",
+        "nec-2023#art.240.12"
+      ]
+    },
+    {
+      "id": "current-limiting",
+      "term": "Current-Limiting (Operation)",
+      "definition": "A property of an overcurrent device where it interrupts a fault current before its first peak, reducing let-through current and energy.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Current-limiting action"
+      ],
+      "confusables": [
+        "Let-Through Current",
+        "Current-Limiting Fuse"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.240.2"
+      ]
+    },
+    {
+      "id": "series-rating",
+      "term": "Series Rating",
+      "definition": "A combination of two overcurrent devices in series that allows the downstream device to have a lower interrupting rating under tested conditions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Series combination rating"
+      ],
+      "confusables": [
+        "Fully Rated System",
+        "Selective Coordination"
+      ],
+      "sources": [
+        "nec-2023#art.240.86"
+      ]
+    },
+    {
+      "id": "fully-rated-system",
+      "term": "Fully Rated System",
+      "definition": "An overcurrent protective device system where each device has an interrupting rating equal to or greater than the available fault current at its location.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Fully rated"
+      ],
+      "confusables": [
+        "Series Rating",
+        "Selective Coordination",
+        "Interrupting Rating"
+      ],
+      "sources": [
+        "nec-2023#art.110.9",
+        "nec-2023#art.240"
+      ]
+    },
+    {
+      "id": "coordination-study",
+      "term": "Coordination Study",
+      "definition": "An analysis of overcurrent protective devices to verify selective coordination for specified fault currents.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Selective coordination",
+      "aliases": [
+        "Short-circuit coordination study"
+      ],
+      "confusables": [
+        "Overcurrent",
+        "Overload"
+      ],
+      "sources": [
+        "nec-2023#art.240.12",
+        "nec-2023#art.700.28"
+      ]
+    }
+  ]
+}

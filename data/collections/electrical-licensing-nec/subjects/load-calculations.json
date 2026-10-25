@@ -1,0 +1,790 @@
+{
+  "version": 1,
+  "id": "load-calculations",
+  "collectionId": "electrical-licensing-nec",
+  "section": "core",
+  "name": "Load Calculations",
+  "shortName": "Load calculations",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "General load concepts"
+    },
+    {
+      "number": 2,
+      "title": "Dwelling calculations"
+    },
+    {
+      "number": 3,
+      "title": "Non-dwelling calculations"
+    },
+    {
+      "number": 4,
+      "title": "Demand factors"
+    },
+    {
+      "number": 5,
+      "title": "Service sizing"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "load",
+      "term": "Load",
+      "definition": "The amount of electric power or current consumed by connected equipment or circuits.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Connected load",
+        "Demand load",
+        "Calculated load"
+      ],
+      "sources": [
+        "nec-70#cl.220.1"
+      ]
+    },
+    {
+      "id": "connected-load",
+      "term": "Connected load",
+      "definition": "The total rating of all equipment and outlets connected to a circuit or system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Load",
+        "Demand load",
+        "Calculated load"
+      ],
+      "sources": [
+        "nec-70#cl.220.2"
+      ]
+    },
+    {
+      "id": "demand-load",
+      "term": "Demand load",
+      "definition": "The portion of connected load expected to be used at the same time under normal conditions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Connected load",
+        "Calculated load"
+      ],
+      "sources": [
+        "nec-70#cl.220.3"
+      ]
+    },
+    {
+      "id": "continuous-load",
+      "term": "Continuous load",
+      "definition": "A load where maximum current is expected to continue for three hours or more.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Noncontinuous load",
+        "Demand load",
+        "Connected load"
+      ],
+      "sources": [
+        "nec-70#cl.100"
+      ]
+    },
+    {
+      "id": "noncontinuous-load",
+      "term": "Noncontinuous load",
+      "definition": "A load where maximum current is not expected to continue for three hours or more.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Continuous load",
+        "Demand load",
+        "Calculated load"
+      ],
+      "sources": [
+        "nec-70#cl.100"
+      ]
+    },
+    {
+      "id": "calculated-load",
+      "term": "Calculated load",
+      "definition": "The load value determined by applying NEC rules for sizing conductors or equipment.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Connected load",
+        "Demand load",
+        "Feeder load"
+      ],
+      "sources": [
+        "nec-70#cl.220.1"
+      ]
+    },
+    {
+      "id": "branch-circuit-load",
+      "term": "Branch circuit load",
+      "definition": "The total load placed on a branch circuit as determined by NEC calculation rules.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Feeder load",
+        "Service load",
+        "Calculated load"
+      ],
+      "sources": [
+        "nec-70#cl.220.10"
+      ]
+    },
+    {
+      "id": "feeder-load",
+      "term": "Feeder load",
+      "definition": "The total calculated load supplied by a feeder to one or more branch circuits or loads.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Service load",
+        "Branch circuit load",
+        "Demand load"
+      ],
+      "sources": [
+        "nec-70#cl.215.2"
+      ]
+    },
+    {
+      "id": "service-load",
+      "term": "Service load",
+      "definition": "The total calculated load supplied by the service conductors to the premises.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "General load concepts",
+      "aliases": [],
+      "confusables": [
+        "Feeder load",
+        "Calculated load",
+        "Demand load"
+      ],
+      "sources": [
+        "nec-70#cl.230.1"
+      ]
+    },
+    {
+      "id": "general-lighting-load-dwelling",
+      "term": "Dwelling general lighting load",
+      "definition": "A unit-area lighting load applied to habitable space in a dwelling per NEC tables.",
+      "formula": "3 VA/ft\u00b2",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Dwelling receptacle load",
+        "Load"
+      ],
+      "sources": [
+        "nec-70#cl.220.12"
+      ]
+    },
+    {
+      "id": "small-appliance-branch-circuits",
+      "term": "Small appliance branch circuits",
+      "definition": "Dwelling branch circuits serving receptacles in kitchen and dining areas per NEC requirements.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Laundry circuit",
+        "Dwelling general lighting load",
+        "Dwelling receptacle load"
+      ],
+      "sources": [
+        "nec-70#cl.210.11(C)(1)"
+      ]
+    },
+    {
+      "id": "laundry-circuit",
+      "term": "Laundry circuit",
+      "definition": "A required dwelling branch circuit serving the laundry area receptacle outlet per NEC rules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Small appliance branch circuits",
+        "Dwelling receptacle load",
+        "Fixed appliance load"
+      ],
+      "sources": [
+        "nec-70#cl.210.11(C)(2)"
+      ]
+    },
+    {
+      "id": "receptacle-load-dwelling",
+      "term": "Dwelling receptacle load",
+      "definition": "Outlets not part of small appliance or laundry circuits counted for load calculation in dwellings.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Small appliance branch circuits",
+        "Dwelling general lighting load",
+        "Laundry circuit"
+      ],
+      "sources": [
+        "nec-70#cl.220.14(I)"
+      ]
+    },
+    {
+      "id": "fixed-appliance-load",
+      "term": "Fixed appliance load",
+      "definition": "The load of permanently installed appliances in a dwelling not counted under other circuits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Range load",
+        "Dryer load",
+        "Appliance demand factor"
+      ],
+      "sources": [
+        "nec-70#cl.220.53"
+      ]
+    },
+    {
+      "id": "range-load",
+      "term": "Range load",
+      "definition": "The calculated load for an electric cooking range or cooktop in a dwelling per NEC tables.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Dryer load",
+        "Fixed appliance load",
+        "Cooking appliance demand factor"
+      ],
+      "sources": [
+        "nec-70#cl.220.55"
+      ]
+    },
+    {
+      "id": "dryer-load",
+      "term": "Dryer load",
+      "definition": "The calculated load for an electric clothes dryer in a dwelling per NEC demand rules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Range load",
+        "Fixed appliance load",
+        "Dryer demand factor"
+      ],
+      "sources": [
+        "nec-70#cl.220.54"
+      ]
+    },
+    {
+      "id": "heating-cooling-load-dwelling",
+      "term": "Dwelling heating or cooling load",
+      "definition": "The larger of heating or air-conditioning load used when sizing dwelling service per NEC rules.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Fixed appliance load",
+        "Calculated load",
+        "Service load"
+      ],
+      "sources": [
+        "nec-70#cl.220.51"
+      ]
+    },
+    {
+      "id": "optional-calculation-dwelling",
+      "term": "Dwelling optional calculation",
+      "definition": "An alternate method for dwelling service sizing using specific NEC demand factors.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Demand factor",
+        "Service load"
+      ],
+      "sources": [
+        "nec-70#cl.220.82"
+      ]
+    },
+    {
+      "id": "general-lighting-load-nondwelling",
+      "term": "Non-dwelling general lighting load",
+      "definition": "A unit-area lighting load applied to occupancies other than dwellings per NEC tables.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Show window load",
+        "Track lighting load",
+        "Non-dwelling receptacle load"
+      ],
+      "sources": [
+        "nec-70#cl.220.12"
+      ]
+    },
+    {
+      "id": "show-window-load",
+      "term": "Show window load",
+      "definition": "A calculated load for show windows based on linear length per NEC rules.",
+      "formula": "200 VA/ft",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Track lighting load",
+        "Non-dwelling general lighting load",
+        "Sign outlet load"
+      ],
+      "sources": [
+        "nec-70#cl.220.43(A)"
+      ]
+    },
+    {
+      "id": "sign-outlet-load",
+      "term": "Sign outlet load",
+      "definition": "A minimum load assigned to each sign or outline lighting outlet per NEC requirements.",
+      "formula": "1200 VA",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Show window load",
+        "Track lighting load",
+        "Non-dwelling receptacle load"
+      ],
+      "sources": [
+        "nec-70#cl.220.14(F)"
+      ]
+    },
+    {
+      "id": "track-lighting-load",
+      "term": "Track lighting load",
+      "definition": "A calculated load for track lighting based on length or specified minimums per NEC rules.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Show window load",
+        "Non-dwelling general lighting load",
+        "Sign outlet load"
+      ],
+      "sources": [
+        "nec-70#cl.220.43(B)"
+      ]
+    },
+    {
+      "id": "receptacle-load-nondwelling",
+      "term": "Non-dwelling receptacle load",
+      "definition": "Load for general-use receptacles calculated with specific NEC rules for non-dwelling occupancies.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Non-dwelling general lighting load",
+        "Fixed multioutlet assembly",
+        "Demand factor"
+      ],
+      "sources": [
+        "nec-70#cl.220.44"
+      ]
+    },
+    {
+      "id": "motor-loads",
+      "term": "Motor loads",
+      "definition": "Loads from motors calculated with NEC requirements including full-load current and adjustments.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Continuous load",
+        "Demand load"
+      ],
+      "sources": [
+        "nec-70#cl.430.24"
+      ]
+    },
+    {
+      "id": "fixed-multioutlet-assembly",
+      "term": "Fixed multioutlet assembly",
+      "definition": "A type of assembly with multiple receptacles calculated per NEC length-based rules.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Non-dwelling receptacle load",
+        "Show window load",
+        "Track lighting load"
+      ],
+      "sources": [
+        "nec-70#cl.220.14(H)"
+      ]
+    },
+    {
+      "id": "outside-lighting-load",
+      "term": "Outside lighting load",
+      "definition": "Calculated load for exterior lighting in non-dwelling applications per NEC requirements.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Non-dwelling general lighting load",
+        "Sign outlet load",
+        "Continuous load"
+      ],
+      "sources": [
+        "nec-70#cl.220.12"
+      ]
+    },
+    {
+      "id": "optional-calculation-nondwelling",
+      "term": "Non-dwelling optional calculation",
+      "definition": "An alternate method for certain non-dwelling loads using approved NEC demand factors.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Non-dwelling calculations",
+      "aliases": [],
+      "confusables": [
+        "Demand factor",
+        "Calculated load",
+        "Feeder load"
+      ],
+      "sources": [
+        "nec-70#cl.220.87"
+      ]
+    },
+    {
+      "id": "demand-factor",
+      "term": "Demand factor",
+      "definition": "The ratio of maximum demand to total connected load expressed as a percent or decimal.",
+      "formula": "(Max demand / Connected load)",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Diversity factor",
+        "Load"
+      ],
+      "sources": [
+        "nec-70#cl.220.3"
+      ]
+    },
+    {
+      "id": "diversity-factor",
+      "term": "Diversity factor",
+      "definition": "The ratio of sum of individual demands to maximum system demand for a group of loads.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Demand factor",
+        "Load"
+      ],
+      "sources": [
+        "nec-70#cl.220.3"
+      ]
+    },
+    {
+      "id": "lighting-demand-factor",
+      "term": "Lighting demand factor",
+      "definition": "A reduced percentage applied to general lighting loads based on occupancy and NEC tables.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Receptacle demand factor",
+        "Demand factor",
+        "Non-dwelling general lighting load"
+      ],
+      "sources": [
+        "nec-70#cl.220.42"
+      ]
+    },
+    {
+      "id": "receptacle-demand-factor",
+      "term": "Receptacle demand factor",
+      "definition": "A factor applied to certain receptacle loads to account for non-coincident use per NEC rules.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Lighting demand factor",
+        "Demand factor",
+        "Non-dwelling receptacle load"
+      ],
+      "sources": [
+        "nec-70#cl.220.44"
+      ]
+    },
+    {
+      "id": "appliance-demand-factor",
+      "term": "Appliance demand factor",
+      "definition": "A factor applied to fixed appliance loads when more than four are present in a dwelling.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Cooking appliance demand factor",
+        "Dryer demand factor",
+        "Fixed appliance load"
+      ],
+      "sources": [
+        "nec-70#cl.220.53"
+      ]
+    },
+    {
+      "id": "cooking-appliance-demand-factor",
+      "term": "Cooking appliance demand factor",
+      "definition": "A factor applied to cooking ranges or ovens based on number and rating per NEC tables.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Range load",
+        "Appliance demand factor",
+        "Demand factor"
+      ],
+      "sources": [
+        "nec-70#cl.220.55"
+      ]
+    },
+    {
+      "id": "dryer-demand-factor",
+      "term": "Dryer demand factor",
+      "definition": "A factor applied to electric clothes dryer loads in dwellings per NEC demand tables.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Range load",
+        "Appliance demand factor",
+        "Dryer load"
+      ],
+      "sources": [
+        "nec-70#cl.220.54"
+      ]
+    },
+    {
+      "id": "neutral-demand-factor",
+      "term": "Neutral demand factor",
+      "definition": "A reduction applied to the neutral conductor load based on unbalanced load calculations.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Demand factor",
+        "Feeder load",
+        "Service load"
+      ],
+      "sources": [
+        "nec-70#cl.220.61"
+      ]
+    },
+    {
+      "id": "demand-factor-vs-derating",
+      "term": "Demand factor vs ampacity adjustment",
+      "definition": "Demand factors reduce calculated load while ampacity adjustments address conductor temperature or bundling.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Demand factors",
+      "aliases": [],
+      "confusables": [
+        "Demand factor",
+        "Continuous load"
+      ],
+      "sources": [
+        "nec-70#cl.220.3"
+      ]
+    },
+    {
+      "id": "service-conductors",
+      "term": "Service conductors",
+      "definition": "The conductors from the service point to the service disconnecting means per NEC requirements.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Load",
+        "Connected load"
+      ],
+      "sources": [
+        "nec-70#cl.230.2"
+      ]
+    },
+    {
+      "id": "service-rating",
+      "term": "Service rating",
+      "definition": "The ampere rating of the service equipment as determined by load calculation per NEC rules.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Service load",
+        "Calculated load",
+        "Service conductors"
+      ],
+      "sources": [
+        "nec-70#cl.230.79"
+      ]
+    },
+    {
+      "id": "service-ampacity",
+      "term": "Service conductor ampacity",
+      "definition": "The required ampacity of service conductors based on the calculated service load.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Service conductors",
+        "Load"
+      ],
+      "sources": [
+        "nec-70#cl.230.42"
+      ]
+    },
+    {
+      "id": "calculated-service-load",
+      "term": "Calculated service load",
+      "definition": "The total load used to size service conductors and equipment after applying NEC rules.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Service load",
+        "Feeder load",
+        "Calculated load"
+      ],
+      "sources": [
+        "nec-70#cl.230.1"
+      ]
+    },
+    {
+      "id": "neutral-conductor-sizing",
+      "term": "Neutral conductor sizing",
+      "definition": "Sizing the neutral based on maximum unbalanced load with permitted reductions per NEC rules.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Neutral demand factor",
+        "Service conductors"
+      ],
+      "sources": [
+        "nec-70#cl.220.61"
+      ]
+    },
+    {
+      "id": "service-overload-protection",
+      "term": "Service overload protection",
+      "definition": "Overcurrent protection for service conductors sized per NEC ampacity requirements.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Service conductors",
+        "Load"
+      ],
+      "sources": [
+        "nec-70#cl.230.90"
+      ]
+    },
+    {
+      "id": "service-equipment-rating",
+      "term": "Service equipment rating",
+      "definition": "The minimum rating of service disconnecting means based on calculated service load.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Service rating",
+        "Service load"
+      ],
+      "sources": [
+        "nec-70#cl.230.79"
+      ]
+    },
+    {
+      "id": "minimum-service-size",
+      "term": "Minimum service size",
+      "definition": "The smallest allowable service ampacity for a given occupancy per NEC minimum requirements.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Service rating",
+        "Calculated service load",
+        "Service conductor ampacity"
+      ],
+      "sources": [
+        "nec-70#cl.230.79"
+      ]
+    },
+    {
+      "id": "combined-load",
+      "term": "Combined load",
+      "definition": "Multiple loads grouped together when applying NEC demand factors or sizing equipment.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service sizing",
+      "aliases": [],
+      "confusables": [
+        "Demand load",
+        "Calculated load",
+        "Feeder load"
+      ],
+      "sources": [
+        "nec-70#cl.220.1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "version": 1,
+  "id": "grounding-bonding",
+  "collectionId": "electrical-licensing-nec",
+  "section": "core",
+  "name": "Grounding and Bonding",
+  "shortName": "Grounding and bonding",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Grounding concepts"
+    },
+    {
+      "number": 2,
+      "title": "Bonding"
+    },
+    {
+      "number": 3,
+      "title": "Electrodes"
+    },
+    {
+      "number": 4,
+      "title": "Systems and equipment"
+    },
+    {
+      "number": 5,
+      "title": "Grounding paths"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "grounding",
+      "term": "Grounding",
+      "definition": "The process of connecting electrical systems or equipment to earth or to a conductive body that serves in place of earth.",
+      "aliases": [],
+      "confusables": [
+        "Bonding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounded-conductor",
+      "term": "Grounded Conductor",
+      "definition": "A system or circuit conductor that is intentionally grounded.",
+      "aliases": [
+        "Neutral conductor"
+      ],
+      "confusables": [
+        "Grounding Conductor",
+        "Ungrounded Conductor"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ungrounded-conductor",
+      "term": "Ungrounded Conductor",
+      "definition": "A conductor not intentionally connected to ground in a grounded electrical system.",
+      "aliases": [
+        "Hot conductor",
+        "Line conductor"
+      ],
+      "confusables": [
+        "Grounded Conductor",
+        "Grounding Conductor"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounding-conductor",
+      "term": "Grounding Conductor",
+      "definition": "A conductor used to connect equipment or the grounded circuit of a wiring system to a grounding electrode or electrodes.",
+      "aliases": [
+        "Equipment grounding conductor path"
+      ],
+      "confusables": [
+        "Grounded Conductor",
+        "Bonding Conductor"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "equipment-grounding-conductor",
+      "term": "Equipment Grounding Conductor",
+      "definition": "A conductor used to connect the non-current-carrying metal parts of equipment, raceways, and other enclosures to the system grounded conductor.",
+      "aliases": [
+        "EGC"
+      ],
+      "confusables": [
+        "Grounding Electrode Conductor",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounded-system",
+      "term": "Grounded System",
+      "definition": "An electrical system in which at least one conductor or point is intentionally connected to earth.",
+      "aliases": [],
+      "confusables": [
+        "Ungrounded System",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ungrounded-system",
+      "term": "Ungrounded System",
+      "definition": "An electrical system with no conductor intentionally grounded.",
+      "aliases": [
+        "Isolated system"
+      ],
+      "confusables": [
+        "Grounded System",
+        "High-Impedance Grounded System"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "solidly-grounded",
+      "term": "Solidly Grounded",
+      "definition": "A system or circuit grounded directly to earth without the insertion of any resistor or impedance.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "earth",
+      "term": "Earth",
+      "definition": "The conductive mass of the earth, which is taken as zero potential.",
+      "aliases": [
+        "Ground"
+      ],
+      "confusables": [
+        "Grounding",
+        "Bonding"
+      ],
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Grounding concepts",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "bonding",
+      "term": "Bonding",
+      "definition": "The permanent joining of metallic parts to form an electrically conductive path that ensures electrical continuity and the capacity to conduct safely any current likely to be imposed.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "bonded",
+      "term": "Bonded",
+      "definition": "Connected together to establish electrical continuity and a common conductive path.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "bonding-conductor",
+      "term": "Bonding Conductor",
+      "definition": "A conductor used to connect metallic parts to provide electrical continuity.",
+      "aliases": [
+        "Bonding jumper"
+      ],
+      "confusables": [
+        "Grounding Conductor",
+        "Equipment Grounding Conductor",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "main-bonding-jumper",
+      "term": "Main Bonding Jumper",
+      "definition": "The connection between the grounded circuit conductor and the equipment grounding conductor at the service.",
+      "aliases": [
+        "MBJ"
+      ],
+      "confusables": [
+        "System Bonding Jumper",
+        "Supply-Side Bonding Jumper",
+        "Equipment Bonding Jumper"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "system-bonding-jumper",
+      "term": "System Bonding Jumper",
+      "definition": "The connection between the grounded circuit conductor and the supply-side bonding jumper, or the equipment grounding conductor, or both, at a separately derived system.",
+      "aliases": [
+        "SBJ"
+      ],
+      "confusables": [
+        "Main Bonding Jumper",
+        "Supply-Side Bonding Jumper"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "supply-side-bonding-jumper",
+      "term": "Supply-Side Bonding Jumper",
+      "definition": "A conductor installed on the supply side of a service or separately derived system to ensure electrical continuity and conductivity.",
+      "aliases": [],
+      "confusables": [
+        "Main Bonding Jumper",
+        "Equipment Bonding Jumper"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "equipment-bonding-jumper",
+      "term": "Equipment Bonding Jumper",
+      "definition": "The connection between two or more portions of the equipment grounding conductor system.",
+      "aliases": [],
+      "confusables": [
+        "Main Bonding Jumper",
+        "Bonding Conductor"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "electrically-continuous",
+      "term": "Electrically Continuous",
+      "definition": "A path that provides unbroken conductivity for fault current.",
+      "aliases": [],
+      "confusables": [
+        "Bonded",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "metal-enclosure-bonding",
+      "term": "Metal Enclosure Bonding",
+      "definition": "The practice of bonding metal raceways, enclosures, and cabinets together and to the grounding system.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Bonding",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounding-electrode",
+      "term": "Grounding Electrode",
+      "definition": "A conducting object through which a direct connection to earth is established.",
+      "aliases": [],
+      "confusables": [
+        "Grounding Electrode Conductor",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounding-electrode-conductor",
+      "term": "Grounding Electrode Conductor",
+      "definition": "A conductor used to connect the system grounded conductor or the equipment to a grounding electrode or to a point on the grounding electrode system.",
+      "aliases": [
+        "GEC"
+      ],
+      "confusables": [
+        "Equipment Grounding Conductor",
+        "Main Bonding Jumper",
+        "Bonding Conductor"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounding-electrode-system",
+      "term": "Grounding Electrode System",
+      "definition": "All grounding electrodes that are bonded together and used for grounding a system or equipment.",
+      "aliases": [
+        "Electrode system"
+      ],
+      "confusables": [
+        "Grounding Electrode",
+        "Ground Ring"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "metal-underground-water-pipe",
+      "term": "Metal Underground Water Pipe",
+      "definition": "A metal water pipe in direct contact with earth for 10 feet or more that may be used as a grounding electrode.",
+      "aliases": [],
+      "confusables": [
+        "Ground Ring",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "concrete-encased-electrode",
+      "term": "Concrete-Encased Electrode",
+      "definition": "A grounding electrode consisting of at least 20 feet of bare copper conductor encased in concrete in direct contact with earth.",
+      "aliases": [
+        "Ufer ground"
+      ],
+      "confusables": [
+        "Ground Ring",
+        "Rod Electrode",
+        "Plate Electrode"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ground-ring",
+      "term": "Ground Ring",
+      "definition": "A ring encircling a building or structure, in direct contact with earth, consisting of at least 20 feet of bare copper conductor.",
+      "aliases": [],
+      "confusables": [
+        "Concrete-Encased Electrode",
+        "Plate Electrode"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "rod-electrode",
+      "term": "Rod Electrode",
+      "definition": "A metal rod driven into the ground to serve as a grounding electrode.",
+      "aliases": [
+        "Ground rod"
+      ],
+      "confusables": [
+        "Plate Electrode",
+        "Ground Ring"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "plate-electrode",
+      "term": "Plate Electrode",
+      "definition": "A metal plate buried in the earth to serve as a grounding electrode.",
+      "aliases": [],
+      "confusables": [
+        "Rod Electrode",
+        "Concrete-Encased Electrode"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "made-electrode",
+      "term": "Made Electrode",
+      "definition": "A grounding electrode that is manufactured and installed for the purpose of establishing a ground connection.",
+      "aliases": [],
+      "confusables": [
+        "Grounding Electrode",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Electrodes",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "separately-derived-system",
+      "term": "Separately Derived System",
+      "definition": "An electrical source, other than a service, with no direct electrical connection to supply conductors originating in another system.",
+      "aliases": [
+        "SDS"
+      ],
+      "confusables": [
+        "Service",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "service",
+      "term": "Service",
+      "definition": "The conductors and equipment for delivering energy from the serving utility to the premises wiring system.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "service-entrance-conductors",
+      "term": "Service Entrance Conductors",
+      "definition": "The conductors from the service point to the service disconnecting means.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "service-point",
+      "term": "Service Point",
+      "definition": "The point of connection between the facilities of the serving utility and the premises wiring.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "neutral-point",
+      "term": "Neutral Point",
+      "definition": "The common point on a star-connected transformer or generator winding.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "high-impedance-grounded-system",
+      "term": "High-Impedance Grounded System",
+      "definition": "A system grounded through an impedance, typically to limit ground-fault current.",
+      "aliases": [],
+      "confusables": [
+        "Resistance Grounded System",
+        "Ungrounded System"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "resistance-grounded-system",
+      "term": "Resistance Grounded System",
+      "definition": "A system grounded through a resistor to limit ground-fault current.",
+      "aliases": [],
+      "confusables": [
+        "High-Impedance Grounded System",
+        "Ungrounded System"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "effective-ground-fault-current-path",
+      "term": "Effective Ground-Fault Current Path",
+      "definition": "An intentionally constructed path of low impedance to facilitate the operation of overcurrent protective devices during a ground fault.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ground-fault-current",
+      "term": "Ground-Fault Current",
+      "definition": "Current that flows from an ungrounded conductor to ground, ground return, or equipment during a ground fault.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounded-conductor-bonding",
+      "term": "Grounded Conductor Bonding",
+      "definition": "The connection of the grounded conductor to equipment enclosures and to the grounding electrode at specific points.",
+      "aliases": [],
+      "confusables": [
+        "Main Bonding Jumper",
+        "System Bonding Jumper"
+      ],
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Systems and equipment",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "grounding-path",
+      "term": "Grounding Path",
+      "definition": "A continuous conductive path for fault current from the point of a ground fault to the electrical supply source.",
+      "aliases": [],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ground-fault-return-path",
+      "term": "Ground-Fault Return Path",
+      "definition": "The path taken by ground-fault current to return to the source of supply.",
+      "aliases": [],
+      "confusables": [
+        "Equipment Grounding Path",
+        "Effective Ground-Fault Current Path"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "low-impedance-path",
+      "term": "Low-Impedance Path",
+      "definition": "A conductive path with low resistance and reactance that allows large fault currents to flow.",
+      "aliases": [],
+      "confusables": [
+        "Effective Ground-Fault Current Path",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "circuit-protective-device",
+      "term": "Circuit Protective Device",
+      "definition": "A device that opens a circuit under predetermined overcurrent conditions.",
+      "aliases": [
+        "Overcurrent protective device"
+      ],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ground-fault-protection-of-equipment",
+      "term": "Ground-Fault Protection of Equipment",
+      "definition": "A system intended to provide protection of equipment from damaging line-to-ground fault currents.",
+      "aliases": [
+        "GFPE"
+      ],
+      "confusables": [
+        "Grounding",
+        "Grounded Conductor"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ground-fault-protection-for-personnel",
+      "term": "Ground-Fault Protection for Personnel",
+      "definition": "Protection intended to reduce the risk of electric shock to people.",
+      "aliases": [
+        "GFCI protection"
+      ],
+      "confusables": [
+        "Ground-Fault Protection of Equipment",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "touch-potential",
+      "term": "Touch Potential",
+      "definition": "The voltage between an energized object and a person's feet when the person is touching the object.",
+      "aliases": [],
+      "confusables": [
+        "Step Potential",
+        "Grounding"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "step-potential",
+      "term": "Step Potential",
+      "definition": "The voltage between a person's feet at two different points in the earth near an energized object.",
+      "aliases": [],
+      "confusables": [
+        "Touch Potential",
+        "Ground Potential Rise"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "ground-potential-rise",
+      "term": "Ground Potential Rise",
+      "definition": "The maximum voltage a grounded structure may attain relative to a distant grounding point during a ground fault.",
+      "aliases": [
+        "GPR"
+      ],
+      "confusables": [
+        "Touch Potential",
+        "Step Potential"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    },
+    {
+      "id": "equipment-grounding-path",
+      "term": "Equipment Grounding Path",
+      "definition": "The path of a ground fault from equipment to the electrical supply source via the equipment grounding conductor.",
+      "aliases": [],
+      "confusables": [
+        "Ground-Fault Return Path",
+        "Effective Ground-Fault Current Path"
+      ],
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Grounding paths",
+      "sources": [
+        "nec-article-100#art.100"
+      ]
+    }
+  ]
+}

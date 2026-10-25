@@ -1,0 +1,923 @@
+{
+  "version": 1,
+  "id": "conductors-wiring-methods",
+  "collectionId": "electrical-licensing-nec",
+  "section": "core",
+  "name": "Conductors and Wiring Methods",
+  "shortName": "Conductors and wiring",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Conductors"
+    },
+    {
+      "number": 2,
+      "title": "Ampacity"
+    },
+    {
+      "number": 3,
+      "title": "Boxes and fittings"
+    },
+    {
+      "number": 4,
+      "title": "Raceways"
+    },
+    {
+      "number": 5,
+      "title": "Cables"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "conductor",
+      "term": "Conductor",
+      "definition": "A material, usually in the form of a wire, cable, or busbar, suitable for carrying electric current.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [],
+      "confusables": [
+        "Insulated Conductor",
+        "Bare Conductor",
+        "Covered Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "bare-conductor",
+      "term": "Bare Conductor",
+      "definition": "A conductor with no covering or electrical insulation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [],
+      "confusables": [
+        "Covered Conductor",
+        "Insulated Conductor",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "covered-conductor",
+      "term": "Covered Conductor",
+      "definition": "A conductor encased within material of composition or thickness not recognized by the NEC as electrical insulation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [],
+      "confusables": [
+        "Bare Conductor",
+        "Insulated Conductor",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "insulated-conductor",
+      "term": "Insulated Conductor",
+      "definition": "A conductor encased within material recognized as electrical insulation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [],
+      "confusables": [
+        "Covered Conductor",
+        "Bare Conductor",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "stranded-conductor",
+      "term": "Stranded Conductor",
+      "definition": "A conductor composed of a group of wires twisted together or otherwise combined to form a single conductor.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [
+        "stranded"
+      ],
+      "confusables": [
+        "Solid Conductor",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.310"
+      ]
+    },
+    {
+      "id": "solid-conductor",
+      "term": "Solid Conductor",
+      "definition": "A conductor consisting of a single wire of solid metal rather than strands.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [],
+      "confusables": [
+        "Stranded Conductor",
+        "Cable",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.310"
+      ]
+    },
+    {
+      "id": "cable",
+      "term": "Cable",
+      "definition": "A factory assembly of two or more insulated conductors having an overall covering.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [],
+      "confusables": [
+        "Cord",
+        "Conductor",
+        "Raceway"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "cord",
+      "term": "Cord",
+      "definition": "A flexible conductor assembly with insulation, often with a jacket, intended for temporary or movable use.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [
+        "flexible-cord"
+      ],
+      "confusables": [
+        "Cable",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.400"
+      ]
+    },
+    {
+      "id": "busbar",
+      "term": "Busbar",
+      "definition": "A conductor or group of conductors that serves as a common connection for two or more circuits.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Conductors",
+      "aliases": [
+        "bus"
+      ],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.368"
+      ]
+    },
+    {
+      "id": "conductor-ampacity",
+      "term": "Ampacity",
+      "definition": "The maximum current, in amperes, that a conductor can carry continuously under the conditions of use without exceeding its temperature rating.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [
+        "current-carrying-capacity"
+      ],
+      "confusables": [
+        "Allowable Ampacity",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.310"
+      ]
+    },
+    {
+      "id": "allowable-ampacity",
+      "term": "Allowable Ampacity",
+      "definition": "The ampacity of a conductor adjusted for conditions of use, as determined by the applicable ampacity tables and correction/adjustment factors.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.310.15"
+      ]
+    },
+    {
+      "id": "free-air",
+      "term": "Free Air (as applied to conductors)",
+      "definition": "An open or ventilated environment that allows for heat dissipation and air flow around an installed conductor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [
+        "in-free-air"
+      ],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "ambient-temperature",
+      "term": "Ambient Temperature",
+      "definition": "The temperature of the air or medium surrounding a conductor or equipment.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [],
+      "confusables": [
+        "Termination Temperature",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.310.15(A)"
+      ]
+    },
+    {
+      "id": "temperature-correction-factor",
+      "term": "Temperature Correction Factor",
+      "definition": "A multiplier applied to ampacity values when the ambient temperature differs from the temperature used in the ampacity table.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [
+        "ambient-correction-factor"
+      ],
+      "confusables": [
+        "Ampacity",
+        "Adjustment Factor"
+      ],
+      "sources": [
+        "nec-2023#art.310.15(B)(1)"
+      ]
+    },
+    {
+      "id": "adjustment-factor",
+      "term": "Adjustment Factor",
+      "definition": "A multiplier applied to ampacity values when more than three current-carrying conductors are installed in a raceway or cable without maintaining spacing for heat dissipation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [
+        "conductor-bundle-derating"
+      ],
+      "confusables": [
+        "Temperature Correction Factor",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#art.310.15(C)(1)"
+      ]
+    },
+    {
+      "id": "current-carrying-conductor",
+      "term": "Current-Carrying Conductor",
+      "definition": "A conductor used to carry electric current under normal operating conditions.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [
+        "CCC"
+      ],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#art.310.15(E)"
+      ]
+    },
+    {
+      "id": "termination-temperature",
+      "term": "Termination Temperature",
+      "definition": "The maximum temperature rating associated with equipment terminations, which can limit the ampacity of conductors connected to that equipment.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [],
+      "confusables": [
+        "Ambient Temperature",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#art.110.14(C)",
+        "nec-2023#art.310.15(A)(3)"
+      ]
+    },
+    {
+      "id": "continuous-load-ampacity",
+      "term": "Continuous Load (ampacity consideration)",
+      "definition": "A load where the maximum current is expected to continue for 3 hours or more; conductors and overcurrent devices for continuous loads are sized with higher loading requirements.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Ampacity",
+      "aliases": [],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.210.19(A)(1)",
+        "nec-2023#art.215.2(A)(1)"
+      ]
+    },
+    {
+      "id": "box",
+      "term": "Box",
+      "definition": "An enclosure for conductors, connections, or devices, intended to provide protection and facilitate access.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "electrical-box"
+      ],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "junction-box",
+      "term": "Junction Box",
+      "definition": "A box used to enclose conductor splices or connections.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "splice-box"
+      ],
+      "confusables": [
+        "Outlet Box",
+        "Pull Box"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.314"
+      ]
+    },
+    {
+      "id": "outlet-box",
+      "term": "Outlet Box",
+      "definition": "A box used to provide a mounting point for receptacles, switches, luminaires, or other equipment.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "device-box",
+        "switch-box"
+      ],
+      "confusables": [
+        "Junction Box",
+        "Pull Box",
+        "Handhole Enclosure"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.314"
+      ]
+    },
+    {
+      "id": "pull-box",
+      "term": "Pull Box",
+      "definition": "A box used to facilitate pulling conductors through a raceway system, without necessarily enclosing splices.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [],
+      "confusables": [
+        "Junction Box",
+        "Conduit Body"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.314.28"
+      ]
+    },
+    {
+      "id": "handhole-enclosure",
+      "term": "Handhole Enclosure",
+      "definition": "An enclosure for use in underground systems that is intended to be accessed by hand rather than by persons entering the enclosure.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "handhole"
+      ],
+      "confusables": [
+        "Pull Box",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "box-fill",
+      "term": "Box Fill",
+      "definition": "The volume occupied by conductors, devices, fittings, and equipment grounds within a box, limited to prevent overcrowding and overheating.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "conductor-fill-in-box"
+      ],
+      "confusables": [
+        "Conduit Fill",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#art.314.16"
+      ]
+    },
+    {
+      "id": "fitting",
+      "term": "Fitting",
+      "definition": "An accessory such as a locknut, bushing, connector, or coupling used to connect or terminate wiring components.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "electrical-fitting"
+      ],
+      "confusables": [
+        "Conductor",
+        "Bare Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "bushing",
+      "term": "Bushing",
+      "definition": "A fitting installed at the end of a raceway or in a box to provide a smooth, rounded edge to protect conductors from abrasion.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [],
+      "confusables": [
+        "Locknut",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "locknut",
+      "term": "Locknut",
+      "definition": "A fitting used to secure a raceway or fitting to a box or enclosure, typically in conjunction with a bushing or connector.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [],
+      "confusables": [
+        "Bushing",
+        "Chase Nipple"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "chase-nipple",
+      "term": "Chase Nipple",
+      "definition": "A short length of conduit or threaded nipple used to connect two boxes or enclosures through a wall or partition.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "nipple"
+      ],
+      "confusables": [
+        "Locknut",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "conduit-body",
+      "term": "Conduit Body",
+      "definition": "A separate portion of a conduit or tubing system that provides access to the interior and facilitates pulling or changes in direction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Boxes and fittings",
+      "aliases": [
+        "conduit-fitting-body"
+      ],
+      "confusables": [
+        "Box",
+        "Junction Box"
+      ],
+      "sources": [
+        "nec-2023#cl.100",
+        "nec-2023#art.314.16(C)"
+      ]
+    },
+    {
+      "id": "raceway",
+      "term": "Raceway",
+      "definition": "An enclosed channel designed expressly for holding wires, cables, or busbars, with additional functions as permitted in the NEC.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [],
+      "confusables": [
+        "Conduit",
+        "Wireway"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "conduit",
+      "term": "Conduit",
+      "definition": "A raceway of circular cross section with additional requirements for wall thickness and installation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [],
+      "confusables": [
+        "Raceway",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.100"
+      ]
+    },
+    {
+      "id": "emt",
+      "term": "Electrical Metallic Tubing (EMT)",
+      "definition": "A thin-wall steel raceway that is not threaded and is installed with couplings and connectors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "EMT"
+      ],
+      "confusables": [
+        "Intermediate Metal Conduit (IMC)",
+        "Rigid Metal Conduit (RMC)",
+        "Electrical Nonmetallic Tubing (ENT)"
+      ],
+      "sources": [
+        "nec-2023#cl.358.2",
+        "nec-2023#art.358"
+      ]
+    },
+    {
+      "id": "imc",
+      "term": "Intermediate Metal Conduit (IMC)",
+      "definition": "A steel raceway of intermediate wall thickness, threaded or used with fittings, heavier than EMT and lighter than RMC.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "IMC"
+      ],
+      "confusables": [
+        "Rigid Metal Conduit (RMC)",
+        "Electrical Metallic Tubing (EMT)"
+      ],
+      "sources": [
+        "nec-2023#cl.342.2",
+        "nec-2023#art.342"
+      ]
+    },
+    {
+      "id": "rmc",
+      "term": "Rigid Metal Conduit (RMC)",
+      "definition": "A thick-wall threaded metal raceway of circular cross section, suitable for general use in harsh environments.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "RMC",
+        "Rigid conduit"
+      ],
+      "confusables": [
+        "Intermediate Metal Conduit (IMC)",
+        "Electrical Metallic Tubing (EMT)",
+        "PVC Conduit (Rigid Polyvinyl Chloride Conduit)"
+      ],
+      "sources": [
+        "nec-2023#cl.344.2",
+        "nec-2023#art.344"
+      ]
+    },
+    {
+      "id": "ent",
+      "term": "Electrical Nonmetallic Tubing (ENT)",
+      "definition": "A pliable, nonmetallic raceway of circular cross section intended for use in concealed, dry locations and installed with fittings.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "ENT",
+        "Smurf tube"
+      ],
+      "confusables": [
+        "Electrical Metallic Tubing (EMT)",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.362.2",
+        "nec-2023#art.362"
+      ]
+    },
+    {
+      "id": "pvc-conduit",
+      "term": "PVC Conduit (Rigid Polyvinyl Chloride Conduit)",
+      "definition": "A nonmetallic raceway of circular cross section, available for use in exposed or concealed locations depending on type and installation conditions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "PVC",
+        "Rigid PVC conduit"
+      ],
+      "confusables": [
+        "Electrical Nonmetallic Tubing (ENT)",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.352.2",
+        "nec-2023#art.352"
+      ]
+    },
+    {
+      "id": "lfmc",
+      "term": "Liquidtight Flexible Metal Conduit (LFMC)",
+      "definition": "A flexible metal raceway covered with a liquidtight, nonmetallic jacket, used where flexibility and liquidtight protection are required.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "LFMC",
+        "Sealtight (generic)"
+      ],
+      "confusables": [
+        "Flexible Metal Conduit (FMC)",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.350.2",
+        "nec-2023#art.350"
+      ]
+    },
+    {
+      "id": "fmc",
+      "term": "Flexible Metal Conduit (FMC)",
+      "definition": "A circular metal raceway of flexible construction formed without seams, used where flexibility is needed without a liquidtight requirement.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "FMC",
+        "Greenfield"
+      ],
+      "confusables": [
+        "Liquidtight Flexible Metal Conduit (LFMC)",
+        "Metal-Clad Cable (Type MC)",
+        "Armored Cable (Type AC)"
+      ],
+      "sources": [
+        "nec-2023#cl.348.2",
+        "nec-2023#art.348"
+      ]
+    },
+    {
+      "id": "wireway",
+      "term": "Wireway",
+      "definition": "A sheet metal enclosure with hinged or removable covers, designed for holding insulated conductors and cables, used as a wiring method.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "metal-wireway",
+        "auxiliary-gutter"
+      ],
+      "confusables": [
+        "Cable Tray",
+        "Conduit",
+        "Raceway"
+      ],
+      "sources": [
+        "nec-2023#cl.376.2",
+        "nec-2023#art.376"
+      ]
+    },
+    {
+      "id": "cable-tray",
+      "term": "Cable Tray",
+      "definition": "A unit or assembly of units or sections and associated fittings forming a rigid structural system used to securely fasten or support cables and raceways.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [],
+      "confusables": [
+        "Wireway",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.392.2",
+        "nec-2023#art.392"
+      ]
+    },
+    {
+      "id": "conduit-fill",
+      "term": "Conduit Fill",
+      "definition": "The percentage or space occupied by conductors in a raceway, limited to allow heat dissipation and ease of pulling.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Raceways",
+      "aliases": [
+        "raceway-fill"
+      ],
+      "confusables": [
+        "Box Fill",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#art.300.17",
+        "nec-2023#ch.9-tables"
+      ]
+    },
+    {
+      "id": "nm-cable",
+      "term": "Nonmetallic-Sheathed Cable (Type NM)",
+      "definition": "A factory assembly of two or more insulated conductors enclosed within a nonmetallic jacket, commonly used in residential wiring.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "NM",
+        "Romex (generic)"
+      ],
+      "confusables": [
+        "Metal-Clad Cable (Type MC)",
+        "Armored Cable (Type AC)"
+      ],
+      "sources": [
+        "nec-2023#cl.334.2",
+        "nec-2023#art.334"
+      ]
+    },
+    {
+      "id": "uf-cable",
+      "term": "Type UF Cable",
+      "definition": "A moisture-resistant, corrosion-resistant cable for use underground, including direct burial, with an overall nonmetallic jacket.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "UF",
+        "UF-B"
+      ],
+      "confusables": [
+        "Metal-Clad Cable (Type MC)",
+        "Underground Service-Entrance Cable (Type USE)"
+      ],
+      "sources": [
+        "nec-2023#cl.340.2",
+        "nec-2023#art.340"
+      ]
+    },
+    {
+      "id": "mc-cable",
+      "term": "Metal-Clad Cable (Type MC)",
+      "definition": "A factory assembly of one or more insulated conductors enclosed within an armor of interlocking metal tape or a smooth or corrugated metallic sheath.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "MC",
+        "Metal-clad"
+      ],
+      "confusables": [
+        "Armored Cable (Type AC)",
+        "Conductor"
+      ],
+      "sources": [
+        "nec-2023#cl.330.2",
+        "nec-2023#art.330"
+      ]
+    },
+    {
+      "id": "ac-cable",
+      "term": "Armored Cable (Type AC)",
+      "definition": "A factory assembly of insulated conductors in a flexible metallic enclosure, with an internal bonding strip or means, used in specific locations.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "AC",
+        "BX (generic)"
+      ],
+      "confusables": [
+        "Metal-Clad Cable (Type MC)",
+        "Flexible Metal Conduit (FMC)"
+      ],
+      "sources": [
+        "nec-2023#cl.320.2",
+        "nec-2023#art.320"
+      ]
+    },
+    {
+      "id": "se-cable",
+      "term": "Service-Entrance Cable (Type SE)",
+      "definition": "A single-conductor or multiconductor assembly for service-entrance or feeder use, with or without an outer covering, as specified for the cable type.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "SE",
+        "SER",
+        "SEU"
+      ],
+      "confusables": [
+        "Underground Service-Entrance Cable (Type USE)",
+        "Cable"
+      ],
+      "sources": [
+        "nec-2023#cl.338.2",
+        "nec-2023#art.338"
+      ]
+    },
+    {
+      "id": "use-cable",
+      "term": "Underground Service-Entrance Cable (Type USE)",
+      "definition": "A moisture-resistant cable suitable for use underground, including direct burial, for service-entrance or feeder applications.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "USE"
+      ],
+      "confusables": [
+        "Type UF Cable",
+        "Service-Entrance Cable (Type SE)"
+      ],
+      "sources": [
+        "nec-2023#cl.338.2",
+        "nec-2023#art.338"
+      ]
+    },
+    {
+      "id": "tc-cable",
+      "term": "Tray Cable (Type TC)",
+      "definition": "A factory assembly of two or more insulated conductors with a nonmetallic jacket, suitable for installation in cable trays and other approved locations.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Cables",
+      "aliases": [
+        "TC"
+      ],
+      "confusables": [
+        "Metal-Clad Cable (Type MC)",
+        "Cable Tray"
+      ],
+      "sources": [
+        "nec-2023#cl.336.2",
+        "nec-2023#art.336"
+      ]
+    }
+  ]
+}

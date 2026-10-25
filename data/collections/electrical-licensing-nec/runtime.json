@@ -1,0 +1,1128 @@
+{
+  "version": 1,
+  "id": "electrical-licensing-nec",
+  "name": "Electrical Licensing (NEC)",
+  "short": "Electrical",
+  "subjects": [
+    {
+      "id": "conductors-wiring-methods",
+      "name": "Conductors and Wiring Methods",
+      "short": "Conductors and wiring",
+      "color": "#5b6ee1",
+      "dark": "#8a9bff",
+      "defs": [
+        [
+          "Bare Conductor",
+          "A conductor with no covering or electrical insulation.",
+          ""
+        ],
+        [
+          "Busbar",
+          "A conductor or group of conductors that serves as a common connection for two or more circuits.",
+          ""
+        ],
+        [
+          "Cable",
+          "A factory assembly of two or more insulated conductors having an overall covering.",
+          ""
+        ],
+        [
+          "Conductor",
+          "A material, usually in the form of a wire, cable, or busbar, suitable for carrying electric current.",
+          ""
+        ],
+        [
+          "Cord",
+          "A flexible conductor assembly with insulation, often with a jacket, intended for temporary or movable use.",
+          ""
+        ],
+        [
+          "Covered Conductor",
+          "A conductor encased within material of composition or thickness not recognized by the NEC as electrical insulation.",
+          ""
+        ],
+        [
+          "Insulated Conductor",
+          "A conductor encased within material recognized as electrical insulation.",
+          ""
+        ],
+        [
+          "Solid Conductor",
+          "A conductor consisting of a single wire of solid metal rather than strands.",
+          ""
+        ],
+        [
+          "Stranded Conductor",
+          "A conductor composed of a group of wires twisted together or otherwise combined to form a single conductor.",
+          ""
+        ],
+        [
+          "Adjustment Factor",
+          "A multiplier applied to ampacity values when more than three current-carrying conductors are installed in a raceway or cable without maintaining spacing for heat dissipation.",
+          ""
+        ],
+        [
+          "Allowable Ampacity",
+          "The ampacity of a conductor adjusted for conditions of use, as determined by the applicable ampacity tables and correction/adjustment factors.",
+          ""
+        ],
+        [
+          "Ambient Temperature",
+          "The temperature of the air or medium surrounding a conductor or equipment.",
+          ""
+        ],
+        [
+          "Ampacity",
+          "The maximum current, in amperes, that a conductor can carry continuously under the conditions of use without exceeding its temperature rating.",
+          ""
+        ],
+        [
+          "Continuous Load (ampacity consideration)",
+          "A load where the maximum current is expected to continue for 3 hours or more; conductors and overcurrent devices for continuous loads are sized with higher loading requirements.",
+          ""
+        ],
+        [
+          "Current-Carrying Conductor",
+          "A conductor used to carry electric current under normal operating conditions.",
+          ""
+        ],
+        [
+          "Free Air (as applied to conductors)",
+          "An open or ventilated environment that allows for heat dissipation and air flow around an installed conductor.",
+          ""
+        ],
+        [
+          "Temperature Correction Factor",
+          "A multiplier applied to ampacity values when the ambient temperature differs from the temperature used in the ampacity table.",
+          ""
+        ],
+        [
+          "Termination Temperature",
+          "The maximum temperature rating associated with equipment terminations, which can limit the ampacity of conductors connected to that equipment.",
+          ""
+        ],
+        [
+          "Box",
+          "An enclosure for conductors, connections, or devices, intended to provide protection and facilitate access.",
+          ""
+        ],
+        [
+          "Box Fill",
+          "The volume occupied by conductors, devices, fittings, and equipment grounds within a box, limited to prevent overcrowding and overheating.",
+          ""
+        ],
+        [
+          "Bushing",
+          "A fitting installed at the end of a raceway or in a box to provide a smooth, rounded edge to protect conductors from abrasion.",
+          ""
+        ],
+        [
+          "Chase Nipple",
+          "A short length of conduit or threaded nipple used to connect two boxes or enclosures through a wall or partition.",
+          ""
+        ],
+        [
+          "Conduit Body",
+          "A separate portion of a conduit or tubing system that provides access to the interior and facilitates pulling or changes in direction.",
+          ""
+        ],
+        [
+          "Fitting",
+          "An accessory such as a locknut, bushing, connector, or coupling used to connect or terminate wiring components.",
+          ""
+        ],
+        [
+          "Handhole Enclosure",
+          "An enclosure for use in underground systems that is intended to be accessed by hand rather than by persons entering the enclosure.",
+          ""
+        ],
+        [
+          "Junction Box",
+          "A box used to enclose conductor splices or connections.",
+          ""
+        ],
+        [
+          "Locknut",
+          "A fitting used to secure a raceway or fitting to a box or enclosure, typically in conjunction with a bushing or connector.",
+          ""
+        ],
+        [
+          "Outlet Box",
+          "A box used to provide a mounting point for receptacles, switches, luminaires, or other equipment.",
+          ""
+        ],
+        [
+          "Pull Box",
+          "A box used to facilitate pulling conductors through a raceway system, without necessarily enclosing splices.",
+          ""
+        ],
+        [
+          "Cable Tray",
+          "A unit or assembly of units or sections and associated fittings forming a rigid structural system used to securely fasten or support cables and raceways.",
+          ""
+        ],
+        [
+          "Conduit",
+          "A raceway of circular cross section with additional requirements for wall thickness and installation.",
+          ""
+        ],
+        [
+          "Conduit Fill",
+          "The percentage or space occupied by conductors in a raceway, limited to allow heat dissipation and ease of pulling.",
+          ""
+        ],
+        [
+          "Electrical Metallic Tubing (EMT)",
+          "A thin-wall steel raceway that is not threaded and is installed with couplings and connectors.",
+          ""
+        ],
+        [
+          "Electrical Nonmetallic Tubing (ENT)",
+          "A pliable, nonmetallic raceway of circular cross section intended for use in concealed, dry locations and installed with fittings.",
+          ""
+        ],
+        [
+          "Flexible Metal Conduit (FMC)",
+          "A circular metal raceway of flexible construction formed without seams, used where flexibility is needed without a liquidtight requirement.",
+          ""
+        ],
+        [
+          "Intermediate Metal Conduit (IMC)",
+          "A steel raceway of intermediate wall thickness, threaded or used with fittings, heavier than EMT and lighter than RMC.",
+          ""
+        ],
+        [
+          "Liquidtight Flexible Metal Conduit (LFMC)",
+          "A flexible metal raceway covered with a liquidtight, nonmetallic jacket, used where flexibility and liquidtight protection are required.",
+          ""
+        ],
+        [
+          "PVC Conduit (Rigid Polyvinyl Chloride Conduit)",
+          "A nonmetallic raceway of circular cross section, available for use in exposed or concealed locations depending on type and installation conditions.",
+          ""
+        ],
+        [
+          "Raceway",
+          "An enclosed channel designed expressly for holding wires, cables, or busbars, with additional functions as permitted in the NEC.",
+          ""
+        ],
+        [
+          "Rigid Metal Conduit (RMC)",
+          "A thick-wall threaded metal raceway of circular cross section, suitable for general use in harsh environments.",
+          ""
+        ],
+        [
+          "Wireway",
+          "A sheet metal enclosure with hinged or removable covers, designed for holding insulated conductors and cables, used as a wiring method.",
+          ""
+        ],
+        [
+          "Armored Cable (Type AC)",
+          "A factory assembly of insulated conductors in a flexible metallic enclosure, with an internal bonding strip or means, used in specific locations.",
+          ""
+        ],
+        [
+          "Metal-Clad Cable (Type MC)",
+          "A factory assembly of one or more insulated conductors enclosed within an armor of interlocking metal tape or a smooth or corrugated metallic sheath.",
+          ""
+        ],
+        [
+          "Nonmetallic-Sheathed Cable (Type NM)",
+          "A factory assembly of two or more insulated conductors enclosed within a nonmetallic jacket, commonly used in residential wiring.",
+          ""
+        ],
+        [
+          "Service-Entrance Cable (Type SE)",
+          "A single-conductor or multiconductor assembly for service-entrance or feeder use, with or without an outer covering, as specified for the cable type.",
+          ""
+        ],
+        [
+          "Tray Cable (Type TC)",
+          "A factory assembly of two or more insulated conductors with a nonmetallic jacket, suitable for installation in cable trays and other approved locations.",
+          ""
+        ],
+        [
+          "Type UF Cable",
+          "A moisture-resistant, corrosion-resistant cable for use underground, including direct burial, with an overall nonmetallic jacket.",
+          ""
+        ],
+        [
+          "Underground Service-Entrance Cable (Type USE)",
+          "A moisture-resistant cable suitable for use underground, including direct burial, for service-entrance or feeder applications.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "overcurrent-protection",
+      "name": "Overcurrent Protection",
+      "short": "Overcurrent protection",
+      "color": "#12b3a6",
+      "dark": "#3bd6c7",
+      "defs": [
+        [
+          "Available Fault Current",
+          "The largest amount of current capable of being delivered at a point on the system during a short-circuit condition.",
+          ""
+        ],
+        [
+          "Fault Current",
+          "The current delivered at a point on the system during a short circuit or ground fault condition.",
+          ""
+        ],
+        [
+          "Ground Fault",
+          "An unintentional electrical connection between an ungrounded conductor and ground or equipment grounding conductor.",
+          ""
+        ],
+        [
+          "Interrupting Rating",
+          "The highest current at rated voltage that a device is intended to interrupt under standard test conditions.",
+          ""
+        ],
+        [
+          "Overcurrent",
+          "Any current in excess of the rated current of equipment or the ampacity of a conductor.",
+          ""
+        ],
+        [
+          "Overcurrent Protective Device",
+          "A device used to protect conductors and equipment from overcurrent by opening the circuit.",
+          ""
+        ],
+        [
+          "Overload",
+          "An excessive current in a circuit that occurs within its normal ampacity rating.",
+          ""
+        ],
+        [
+          "Short Circuit",
+          "An accidental connection of relatively low impedance between two points of different potential in an electric circuit.",
+          ""
+        ],
+        [
+          "Cartridge Fuse",
+          "A fuse having an insulating tube with metallic ferrules or blades at each end to which the fusible element is attached.",
+          ""
+        ],
+        [
+          "Current-Limiting Fuse",
+          "A fuse that reduces the let-through current during high fault currents by interrupting the circuit in less than a half-cycle.",
+          ""
+        ],
+        [
+          "Dual-Element Fuse",
+          "A fuse containing two elements, one for overload protection and one for short-circuit protection.",
+          ""
+        ],
+        [
+          "Fuse",
+          "An overcurrent protective device with a circuit-opening fusible part that is heated and severed by the passage of overcurrent through it.",
+          ""
+        ],
+        [
+          "Fuseholder",
+          "A device for holding a fuse and connecting it into an electrical circuit.",
+          ""
+        ],
+        [
+          "Plug Fuse",
+          "A fuse with a screw shell and contact and an adapter or other body for use in Edison-base fuseholders.",
+          ""
+        ],
+        [
+          "Time-Delay Fuse",
+          "A fuse that has a delay in opening to allow for temporary inrush currents while still opening on sustained overloads.",
+          ""
+        ],
+        [
+          "Type S Fuse",
+          "A plug fuse with a rejection feature that prevents interchange with fuses of different ampere ratings when used with the proper adapter.",
+          ""
+        ],
+        [
+          "Adjustable Trip",
+          "A circuit breaker trip unit that allows adjustment of the trip current or time settings.",
+          ""
+        ],
+        [
+          "Circuit Breaker",
+          "A device designed to open and close a circuit by non-automatic means and to open automatically on overcurrent.",
+          ""
+        ],
+        [
+          "Electronic-Trip Circuit Breaker",
+          "A circuit breaker using solid-state components to sense current and provide adjustable trip functions.",
+          ""
+        ],
+        [
+          "Instantaneous Trip",
+          "The portion of a circuit breaker trip unit that operates with no intentional time delay on short-circuit currents.",
+          ""
+        ],
+        [
+          "Molded-Case Circuit Breaker",
+          "A circuit breaker assembled as an integral unit in a supportive and enclosing housing of insulating material.",
+          ""
+        ],
+        [
+          "Molded-Case Switch",
+          "A switch assembled as an integral unit in a supportive and enclosing housing of insulating material, not providing automatic overcurrent protection.",
+          ""
+        ],
+        [
+          "Supplementary Protector",
+          "A device intended to provide limited overcurrent protection for specific equipment or internal circuits, not generally for branch circuit or feeder conductor protection.",
+          ""
+        ],
+        [
+          "Thermal-Magnetic Circuit Breaker",
+          "A circuit breaker that uses a bimetallic element for overload protection and a magnetic trip for short-circuit protection.",
+          ""
+        ],
+        [
+          "Ampere Rating of Overcurrent Device",
+          "The rating in amperes of the overcurrent protective device, which shall not exceed the conductor ampacity unless otherwise permitted.",
+          ""
+        ],
+        [
+          "Branch Circuit Protection",
+          "Overcurrent protection provided for branch circuits in accordance with the ampere rating and conductor ampacity requirements.",
+          ""
+        ],
+        [
+          "Conductor Protection",
+          "Requirement that overcurrent protection be provided to protect conductors from overcurrent in accordance with their ampacity.",
+          ""
+        ],
+        [
+          "Continuous Load",
+          "A load where the maximum current is expected to continue for three hours or more.",
+          ""
+        ],
+        [
+          "Feeder Protection",
+          "Overcurrent protection provided for feeders to protect conductors and meet system requirements.",
+          ""
+        ],
+        [
+          "Location of Overcurrent Protective Devices",
+          "NEC provisions specifying where OCPDs must be located for accessibility and protection.",
+          ""
+        ],
+        [
+          "Service Protection",
+          "Overcurrent protection provided at the service entrance to protect the service conductors.",
+          ""
+        ],
+        [
+          "Tap Conductors",
+          "Conductors permitted to be protected by the overcurrent device of the feeder or larger conductor in accordance with tap rules.",
+          ""
+        ],
+        [
+          "Coordination Study",
+          "An analysis of overcurrent protective devices to verify selective coordination for specified fault currents.",
+          ""
+        ],
+        [
+          "Current-Limiting (Operation)",
+          "A property of an overcurrent device where it interrupts a fault current before its first peak, reducing let-through current and energy.",
+          ""
+        ],
+        [
+          "Fully Rated System",
+          "An overcurrent protective device system where each device has an interrupting rating equal to or greater than the available fault current at its location.",
+          ""
+        ],
+        [
+          "I\u00b2t",
+          "The thermal energy let-through by an overcurrent device during fault interruption, used in evaluating damage to conductors and equipment.",
+          "I^2 \u00d7 t"
+        ],
+        [
+          "Let-Through Current",
+          "The current passed through a current-limiting overcurrent device during a fault, less than the available fault current.",
+          ""
+        ],
+        [
+          "Selective Coordination",
+          "Localization of an overcurrent condition to restrict outages to the circuit or equipment affected, accomplished by the selection and application of overcurrent protective devices.",
+          ""
+        ],
+        [
+          "Series Rating",
+          "A combination of two overcurrent devices in series that allows the downstream device to have a lower interrupting rating under tested conditions.",
+          ""
+        ],
+        [
+          "Total Clearing Time",
+          "The total time from the beginning of a fault until the overcurrent device opens and interrupts the fault current.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "grounding-bonding",
+      "name": "Grounding and Bonding",
+      "short": "Grounding and bonding",
+      "color": "#eaa22b",
+      "dark": "#f3b552",
+      "defs": [
+        [
+          "Earth",
+          "The conductive mass of the earth, which is taken as zero potential.",
+          ""
+        ],
+        [
+          "Equipment Grounding Conductor",
+          "A conductor used to connect the non-current-carrying metal parts of equipment, raceways, and other enclosures to the system grounded conductor.",
+          ""
+        ],
+        [
+          "Grounded Conductor",
+          "A system or circuit conductor that is intentionally grounded.",
+          ""
+        ],
+        [
+          "Grounded System",
+          "An electrical system in which at least one conductor or point is intentionally connected to earth.",
+          ""
+        ],
+        [
+          "Grounding",
+          "The process of connecting electrical systems or equipment to earth or to a conductive body that serves in place of earth.",
+          ""
+        ],
+        [
+          "Grounding Conductor",
+          "A conductor used to connect equipment or the grounded circuit of a wiring system to a grounding electrode or electrodes.",
+          ""
+        ],
+        [
+          "Solidly Grounded",
+          "A system or circuit grounded directly to earth without the insertion of any resistor or impedance.",
+          ""
+        ],
+        [
+          "Ungrounded Conductor",
+          "A conductor not intentionally connected to ground in a grounded electrical system.",
+          ""
+        ],
+        [
+          "Ungrounded System",
+          "An electrical system with no conductor intentionally grounded.",
+          ""
+        ],
+        [
+          "Bonded",
+          "Connected together to establish electrical continuity and a common conductive path.",
+          ""
+        ],
+        [
+          "Bonding",
+          "The permanent joining of metallic parts to form an electrically conductive path that ensures electrical continuity and the capacity to conduct safely any current likely to be imposed.",
+          ""
+        ],
+        [
+          "Bonding Conductor",
+          "A conductor used to connect metallic parts to provide electrical continuity.",
+          ""
+        ],
+        [
+          "Electrically Continuous",
+          "A path that provides unbroken conductivity for fault current.",
+          ""
+        ],
+        [
+          "Equipment Bonding Jumper",
+          "The connection between two or more portions of the equipment grounding conductor system.",
+          ""
+        ],
+        [
+          "Main Bonding Jumper",
+          "The connection between the grounded circuit conductor and the equipment grounding conductor at the service.",
+          ""
+        ],
+        [
+          "Metal Enclosure Bonding",
+          "The practice of bonding metal raceways, enclosures, and cabinets together and to the grounding system.",
+          ""
+        ],
+        [
+          "Supply-Side Bonding Jumper",
+          "A conductor installed on the supply side of a service or separately derived system to ensure electrical continuity and conductivity.",
+          ""
+        ],
+        [
+          "System Bonding Jumper",
+          "The connection between the grounded circuit conductor and the supply-side bonding jumper, or the equipment grounding conductor, or both, at a separately derived system.",
+          ""
+        ],
+        [
+          "Concrete-Encased Electrode",
+          "A grounding electrode consisting of at least 20 feet of bare copper conductor encased in concrete in direct contact with earth.",
+          ""
+        ],
+        [
+          "Ground Ring",
+          "A ring encircling a building or structure, in direct contact with earth, consisting of at least 20 feet of bare copper conductor.",
+          ""
+        ],
+        [
+          "Grounding Electrode",
+          "A conducting object through which a direct connection to earth is established.",
+          ""
+        ],
+        [
+          "Grounding Electrode Conductor",
+          "A conductor used to connect the system grounded conductor or the equipment to a grounding electrode or to a point on the grounding electrode system.",
+          ""
+        ],
+        [
+          "Grounding Electrode System",
+          "All grounding electrodes that are bonded together and used for grounding a system or equipment.",
+          ""
+        ],
+        [
+          "Made Electrode",
+          "A grounding electrode that is manufactured and installed for the purpose of establishing a ground connection.",
+          ""
+        ],
+        [
+          "Metal Underground Water Pipe",
+          "A metal water pipe in direct contact with earth for 10 feet or more that may be used as a grounding electrode.",
+          ""
+        ],
+        [
+          "Plate Electrode",
+          "A metal plate buried in the earth to serve as a grounding electrode.",
+          ""
+        ],
+        [
+          "Rod Electrode",
+          "A metal rod driven into the ground to serve as a grounding electrode.",
+          ""
+        ],
+        [
+          "Effective Ground-Fault Current Path",
+          "An intentionally constructed path of low impedance to facilitate the operation of overcurrent protective devices during a ground fault.",
+          ""
+        ],
+        [
+          "Ground-Fault Current",
+          "Current that flows from an ungrounded conductor to ground, ground return, or equipment during a ground fault.",
+          ""
+        ],
+        [
+          "Grounded Conductor Bonding",
+          "The connection of the grounded conductor to equipment enclosures and to the grounding electrode at specific points.",
+          ""
+        ],
+        [
+          "High-Impedance Grounded System",
+          "A system grounded through an impedance, typically to limit ground-fault current.",
+          ""
+        ],
+        [
+          "Neutral Point",
+          "The common point on a star-connected transformer or generator winding.",
+          ""
+        ],
+        [
+          "Resistance Grounded System",
+          "A system grounded through a resistor to limit ground-fault current.",
+          ""
+        ],
+        [
+          "Separately Derived System",
+          "An electrical source, other than a service, with no direct electrical connection to supply conductors originating in another system.",
+          ""
+        ],
+        [
+          "Service",
+          "The conductors and equipment for delivering energy from the serving utility to the premises wiring system.",
+          ""
+        ],
+        [
+          "Service Entrance Conductors",
+          "The conductors from the service point to the service disconnecting means.",
+          ""
+        ],
+        [
+          "Service Point",
+          "The point of connection between the facilities of the serving utility and the premises wiring.",
+          ""
+        ],
+        [
+          "Circuit Protective Device",
+          "A device that opens a circuit under predetermined overcurrent conditions.",
+          ""
+        ],
+        [
+          "Equipment Grounding Path",
+          "The path of a ground fault from equipment to the electrical supply source via the equipment grounding conductor.",
+          ""
+        ],
+        [
+          "Ground Potential Rise",
+          "The maximum voltage a grounded structure may attain relative to a distant grounding point during a ground fault.",
+          ""
+        ],
+        [
+          "Ground-Fault Protection for Personnel",
+          "Protection intended to reduce the risk of electric shock to people.",
+          ""
+        ],
+        [
+          "Ground-Fault Protection of Equipment",
+          "A system intended to provide protection of equipment from damaging line-to-ground fault currents.",
+          ""
+        ],
+        [
+          "Ground-Fault Return Path",
+          "The path taken by ground-fault current to return to the source of supply.",
+          ""
+        ],
+        [
+          "Grounding Path",
+          "A continuous conductive path for fault current from the point of a ground fault to the electrical supply source.",
+          ""
+        ],
+        [
+          "Low-Impedance Path",
+          "A conductive path with low resistance and reactance that allows large fault currents to flow.",
+          ""
+        ],
+        [
+          "Step Potential",
+          "The voltage between a person's feet at two different points in the earth near an energized object.",
+          ""
+        ],
+        [
+          "Touch Potential",
+          "The voltage between an energized object and a person's feet when the person is touching the object.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "gfci-afci",
+      "name": "GFCI and AFCI",
+      "short": "GFCI and AFCI",
+      "color": "#e0567f",
+      "dark": "#ff7f9f",
+      "defs": [
+        [
+          "Class A GFCI",
+          "A GFCI that trips when ground-fault current is between four and six milliamperes.",
+          ""
+        ],
+        [
+          "Current Imbalance",
+          "A difference between current in the ungrounded and grounded conductors of a circuit.",
+          ""
+        ],
+        [
+          "GFCI Circuit Breaker",
+          "A circuit breaker that provides ground-fault protection for an entire branch circuit.",
+          ""
+        ],
+        [
+          "GFCI Receptacle",
+          "A receptacle incorporating integral ground-fault circuit interrupter protection.",
+          ""
+        ],
+        [
+          "Ground Fault",
+          "An unintentional electrical path between an energized conductor and ground or grounded parts.",
+          ""
+        ],
+        [
+          "Ground-Fault Circuit Interrupter",
+          "A device that de-energizes a circuit upon detecting current imbalance between conductors.",
+          ""
+        ],
+        [
+          "Leakage Current",
+          "Small unintended current flowing from an energized conductor to ground through insulation.",
+          ""
+        ],
+        [
+          "Personnel Protection",
+          "Protection intended to reduce the risk of electric shock to people.",
+          ""
+        ],
+        [
+          "Bathroom GFCI Requirement",
+          "NEC requirement for GFCI protection of receptacles in bathroom locations.",
+          ""
+        ],
+        [
+          "Boathouse GFCI Requirement",
+          "NEC requirement for GFCI protection of receptacles in boathouses and similar locations.",
+          ""
+        ],
+        [
+          "Feed-Through Protection",
+          "GFCI protection provided to downstream receptacles connected to the load side of a GFCI device.",
+          ""
+        ],
+        [
+          "Garage GFCI Requirement",
+          "NEC requirement for GFCI protection of receptacles in attached or detached garages.",
+          ""
+        ],
+        [
+          "Kitchen Countertop GFCI",
+          "NEC requirement for GFCI protection of receptacles serving kitchen countertops.",
+          ""
+        ],
+        [
+          "Outdoor GFCI Requirement",
+          "NEC requirement for GFCI protection of receptacles installed outdoors.",
+          ""
+        ],
+        [
+          "Unfinished Basement GFCI",
+          "NEC requirement for GFCI protection of receptacles in unfinished basement areas.",
+          ""
+        ],
+        [
+          "Arc Fault",
+          "An unintended arc produced by current flowing through an unintentional path.",
+          ""
+        ],
+        [
+          "Arc-Fault Circuit Interrupter",
+          "A device that de-energizes a circuit upon detecting a potentially dangerous electrical arc.",
+          ""
+        ],
+        [
+          "Branch/Feeder AFCI",
+          "An AFCI that provides protection against parallel arcs in branch circuit and feeder wiring.",
+          ""
+        ],
+        [
+          "Combination-Type AFCI",
+          "An AFCI that provides protection against both series and parallel arc faults.",
+          ""
+        ],
+        [
+          "Fire Prevention Protection",
+          "Protection intended to mitigate arc faults that could ignite combustible materials.",
+          ""
+        ],
+        [
+          "Parallel Arc",
+          "An arc between two conductors of opposite polarity or between conductor and ground.",
+          ""
+        ],
+        [
+          "Series Arc",
+          "An arc in series with a conductor due to a break or loose connection.",
+          ""
+        ],
+        [
+          "AFCI Circuit Breaker",
+          "A circuit breaker providing arc-fault protection for an entire branch circuit.",
+          ""
+        ],
+        [
+          "AFCI Exception List",
+          "Specific circuits or locations exempt from AFCI protection under NEC provisions.",
+          ""
+        ],
+        [
+          "Dual-Function Breaker",
+          "A circuit breaker providing both ground-fault and arc-fault protection.",
+          ""
+        ],
+        [
+          "Dwelling Unit Bedroom Requirement",
+          "NEC requirement for AFCI protection of bedroom branch circuits in dwelling units.",
+          ""
+        ],
+        [
+          "Extended Dwelling AFCI Areas",
+          "NEC areas beyond bedrooms requiring AFCI protection in most dwelling unit circuits.",
+          ""
+        ],
+        [
+          "Outlet Branch Circuit",
+          "A branch circuit supplying receptacle outlets, often subject to AFCI protection requirements.",
+          ""
+        ],
+        [
+          "Circuit GFCI Protection",
+          "GFCI protection applied at the breaker to protect an entire branch circuit.",
+          ""
+        ],
+        [
+          "Damp Location Protection",
+          "GFCI protection considerations for receptacles in damp but not wet locations.",
+          ""
+        ],
+        [
+          "Existing Installation Consideration",
+          "NEC provisions that address GFCI or AFCI protection requirements for existing installations.",
+          ""
+        ],
+        [
+          "Portable Appliance Protection",
+          "GFCI protection used for cord-and-plug connected portable appliances in required locations.",
+          ""
+        ],
+        [
+          "Receptacle GFCI Protection",
+          "GFCI protection applied to a receptacle outlet to protect users from ground faults.",
+          ""
+        ],
+        [
+          "Replacement Receptacle Requirement",
+          "NEC requirement to provide GFCI or AFCI protection when replacing receptacles in certain locations.",
+          ""
+        ],
+        [
+          "Wet Location Protection",
+          "GFCI protection required for receptacles in wet locations due to shock hazard.",
+          ""
+        ]
+      ]
+    },
+    {
+      "id": "load-calculations",
+      "name": "Load Calculations",
+      "short": "Load calculations",
+      "color": "#22a06b",
+      "dark": "#4bd399",
+      "defs": [
+        [
+          "Branch circuit load",
+          "The total load placed on a branch circuit as determined by NEC calculation rules.",
+          ""
+        ],
+        [
+          "Calculated load",
+          "The load value determined by applying NEC rules for sizing conductors or equipment.",
+          ""
+        ],
+        [
+          "Connected load",
+          "The total rating of all equipment and outlets connected to a circuit or system.",
+          ""
+        ],
+        [
+          "Continuous load",
+          "A load where maximum current is expected to continue for three hours or more.",
+          ""
+        ],
+        [
+          "Demand load",
+          "The portion of connected load expected to be used at the same time under normal conditions.",
+          ""
+        ],
+        [
+          "Feeder load",
+          "The total calculated load supplied by a feeder to one or more branch circuits or loads.",
+          ""
+        ],
+        [
+          "Load",
+          "The amount of electric power or current consumed by connected equipment or circuits.",
+          ""
+        ],
+        [
+          "Noncontinuous load",
+          "A load where maximum current is not expected to continue for three hours or more.",
+          ""
+        ],
+        [
+          "Service load",
+          "The total calculated load supplied by the service conductors to the premises.",
+          ""
+        ],
+        [
+          "Dryer load",
+          "The calculated load for an electric clothes dryer in a dwelling per NEC demand rules.",
+          ""
+        ],
+        [
+          "Dwelling general lighting load",
+          "A unit-area lighting load applied to habitable space in a dwelling per NEC tables.",
+          "3 VA/ft\u00b2"
+        ],
+        [
+          "Dwelling heating or cooling load",
+          "The larger of heating or air-conditioning load used when sizing dwelling service per NEC rules.",
+          ""
+        ],
+        [
+          "Dwelling optional calculation",
+          "An alternate method for dwelling service sizing using specific NEC demand factors.",
+          ""
+        ],
+        [
+          "Dwelling receptacle load",
+          "Outlets not part of small appliance or laundry circuits counted for load calculation in dwellings.",
+          ""
+        ],
+        [
+          "Fixed appliance load",
+          "The load of permanently installed appliances in a dwelling not counted under other circuits.",
+          ""
+        ],
+        [
+          "Laundry circuit",
+          "A required dwelling branch circuit serving the laundry area receptacle outlet per NEC rules.",
+          ""
+        ],
+        [
+          "Range load",
+          "The calculated load for an electric cooking range or cooktop in a dwelling per NEC tables.",
+          ""
+        ],
+        [
+          "Small appliance branch circuits",
+          "Dwelling branch circuits serving receptacles in kitchen and dining areas per NEC requirements.",
+          ""
+        ],
+        [
+          "Fixed multioutlet assembly",
+          "A type of assembly with multiple receptacles calculated per NEC length-based rules.",
+          ""
+        ],
+        [
+          "Motor loads",
+          "Loads from motors calculated with NEC requirements including full-load current and adjustments.",
+          ""
+        ],
+        [
+          "Non-dwelling general lighting load",
+          "A unit-area lighting load applied to occupancies other than dwellings per NEC tables.",
+          ""
+        ],
+        [
+          "Non-dwelling optional calculation",
+          "An alternate method for certain non-dwelling loads using approved NEC demand factors.",
+          ""
+        ],
+        [
+          "Non-dwelling receptacle load",
+          "Load for general-use receptacles calculated with specific NEC rules for non-dwelling occupancies.",
+          ""
+        ],
+        [
+          "Outside lighting load",
+          "Calculated load for exterior lighting in non-dwelling applications per NEC requirements.",
+          ""
+        ],
+        [
+          "Show window load",
+          "A calculated load for show windows based on linear length per NEC rules.",
+          "200 VA/ft"
+        ],
+        [
+          "Sign outlet load",
+          "A minimum load assigned to each sign or outline lighting outlet per NEC requirements.",
+          "1200 VA"
+        ],
+        [
+          "Track lighting load",
+          "A calculated load for track lighting based on length or specified minimums per NEC rules.",
+          ""
+        ],
+        [
+          "Appliance demand factor",
+          "A factor applied to fixed appliance loads when more than four are present in a dwelling.",
+          ""
+        ],
+        [
+          "Cooking appliance demand factor",
+          "A factor applied to cooking ranges or ovens based on number and rating per NEC tables.",
+          ""
+        ],
+        [
+          "Demand factor",
+          "The ratio of maximum demand to total connected load expressed as a percent or decimal.",
+          "(Max demand / Connected load)"
+        ],
+        [
+          "Demand factor vs ampacity adjustment",
+          "Demand factors reduce calculated load while ampacity adjustments address conductor temperature or bundling.",
+          ""
+        ],
+        [
+          "Diversity factor",
+          "The ratio of sum of individual demands to maximum system demand for a group of loads.",
+          ""
+        ],
+        [
+          "Dryer demand factor",
+          "A factor applied to electric clothes dryer loads in dwellings per NEC demand tables.",
+          ""
+        ],
+        [
+          "Lighting demand factor",
+          "A reduced percentage applied to general lighting loads based on occupancy and NEC tables.",
+          ""
+        ],
+        [
+          "Neutral demand factor",
+          "A reduction applied to the neutral conductor load based on unbalanced load calculations.",
+          ""
+        ],
+        [
+          "Receptacle demand factor",
+          "A factor applied to certain receptacle loads to account for non-coincident use per NEC rules.",
+          ""
+        ],
+        [
+          "Calculated service load",
+          "The total load used to size service conductors and equipment after applying NEC rules.",
+          ""
+        ],
+        [
+          "Combined load",
+          "Multiple loads grouped together when applying NEC demand factors or sizing equipment.",
+          ""
+        ],
+        [
+          "Minimum service size",
+          "The smallest allowable service ampacity for a given occupancy per NEC minimum requirements.",
+          ""
+        ],
+        [
+          "Neutral conductor sizing",
+          "Sizing the neutral based on maximum unbalanced load with permitted reductions per NEC rules.",
+          ""
+        ],
+        [
+          "Service conductor ampacity",
+          "The required ampacity of service conductors based on the calculated service load.",
+          ""
+        ],
+        [
+          "Service conductors",
+          "The conductors from the service point to the service disconnecting means per NEC requirements.",
+          ""
+        ],
+        [
+          "Service equipment rating",
+          "The minimum rating of service disconnecting means based on calculated service load.",
+          ""
+        ],
+        [
+          "Service overload protection",
+          "Overcurrent protection for service conductors sized per NEC ampacity requirements.",
+          ""
+        ],
+        [
+          "Service rating",
+          "The ampere rating of the service equipment as determined by load calculation per NEC rules.",
+          ""
+        ]
+      ]
+    }
+  ]
+}
