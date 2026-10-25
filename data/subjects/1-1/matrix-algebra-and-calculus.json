@@ -185,7 +185,7 @@
       "sources": [
         "mac-wiki-eigen#key-definitions"
       ],
-      "diagram": "matrix-transform"
+      "diagram": "eigen-directions"
     },
     {
       "id": "eigenvector",
@@ -196,7 +196,8 @@
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
         "mac-wiki-eigen#key-definitions"
-      ]
+      ],
+      "diagram": "eigen-directions"
     },
     {
       "id": "characteristic-equation",
@@ -241,7 +242,7 @@
       "sources": [
         "mac-wiki-diagonalizable#definition"
       ],
-      "diagram": "matrix-transform"
+      "diagram": "eigen-directions"
     },
     {
       "id": "hermitian-matrix",

@@ -124,6 +124,18 @@ Available ids (viewBox 240×150, thin line art, theme-aware):
 | `carbon-cycle` | atmosphere/plants/ocean/soil loop | carbon cycle, greenhouse, sequestration |
 | `water-cycle` | evaporation, cloud, rain, runoff | water cycle, precipitation, runoff, evaporation |
 | `venn` | two sets and intersection | set, union/intersection, Venn, inclusion |
+| `electric-dipole` | ±q charges, field lines, separation d | electric dipole, dipole moment, polarization |
+| `eigen-directions` | unit square, mapped parallelogram, invariant axes | eigenvalue, eigenvector, diagonalization, basis |
+| `memory-layout` | text/data/BSS/heap/stack address map | storage class, scope, process memory, stack/heap |
+| `stack-queue` | stack with top, queue with front/rear and wrap | stack, queue, circular queue, LIFO/FIFO |
+| `d-orbital-splitting` | free-ion level → t₂g/eg with Δ₀ | crystal field, CFSE, d-orbital splitting |
+| `electrochemical-cell` | anode/cathode, salt bridge, electron flow | galvanic cell, EMF, Nernst, electrode potential |
+| `series-parallel` | series and parallel resistor pairs | series, parallel, equivalent resistance |
+| `thevenin-equiv` | network → V_th/R_th with load | Thevenin, Norton, equivalent source |
+| `rlc-transient` | under/over/critically damped step responses | damping, transient, RLC response |
+| `phasor` | rotating vector, angle φ, projection | phasor, phase, AC, impedance angle |
+| `vector-field` | closed surface flux and boundary circulation | divergence, curl, Gauss, Stokes, line integral |
+| `two-port` | two-port block with V₁/I₁ and V₂/I₂ | two-port, Z/Y/H/ABCD parameters |
 
 If none of these fits, leave the diagram out. **Do not invent new ids and do not edit the
 sprite.** If a subject clearly needs a new diagram, report it instead of adding the key.

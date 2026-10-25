@@ -757,6 +757,209 @@ def venn():
     ])
 
 
+def electric_dipole():
+    return ''.join([
+        line(50, 76, 190, 76, .3, 1, '3 4'),
+        dot(50, 76, 6, .9, ACCENT), dot(190, 76, 6, .9, ACCENT),
+        text(50, 79, '−', o=.9, size=10, ls='0'), text(190, 79, '+', o=.9, size=10, ls='0'),
+        path('M190 70 C 170 30, 70 30, 50 70', .55),
+        path('M190 82 C 170 122, 70 122, 50 82', .55),
+        path('M190 76 C 168 56, 72 56, 50 76', .3, 1, '2 4'),
+        text(120, 96, 'd', o=.45, size=5.6, ls='.08em'),
+        amp(120, 24, 'ELECTRIC DIPOLE', o=.4, size=5.2),
+        amp(214, 79, 'p', o=.45),
+    ])
+
+
+def eigen_directions():
+    return ''.join([
+        line(34, 116, 206, 116, .3), line(34, 116, 34, 26, .3),
+        path('M34 116 L96 116 L96 54 L34 54 Z', .25, 1, '3 4'),
+        path('M34 116 L126 116 L164 62 L72 62 Z', .5),
+        arrow(34, 116, 154, 30, .85, ACCENT),
+        arrow(34, 116, 196, 116, .85, ACCENT),
+        path('M34 116 L104 66', .35, 1, '2 4'),
+        path('M34 116 L90 116', .35, 1, '2 4'),
+        amp(162, 24, 'v₁'), amp(198, 122, 'v₂'),
+        amp(120, 140, 'EIGEN-DIRECTIONS', o=.35, size=5),
+        amp(166, 54, 'A', o=.4, size=6, ls='0'),
+    ])
+
+
+def memory_layout():
+    return ''.join([
+        rect(52, 18, 104, 14, 1, .45), rect(52, 34, 104, 14, 1, .45),
+        rect(52, 50, 104, 14, 1, .45), rect(52, 66, 104, 14, 1, .45),
+        rect(52, 96, 104, 16, 1, .45),
+        text(104, 28, 'TEXT', o=.65, size=5.4, ls='.12em'), text(104, 44, 'DATA', o=.65, size=5.4, ls='.12em'),
+        text(104, 60, 'BSS', o=.65, size=5.4, ls='.12em'), text(104, 76, 'HEAP', o=.65, size=5.4, ls='.12em'),
+        text(104, 107, 'STACK', o=.65, size=5.4, ls='.12em'),
+        arrow(170, 68, 170, 90, .55, ACCENT, 3),
+        arrow(170, 111, 170, 92, .55, ACCENT, 3),
+        amp(120, 136, 'LOW → HIGH ADDRESS', o=.35, size=4.6),
+        amp(190, 80, '↓'), amp(190, 104, '↑'),
+    ])
+
+
+def stack_queue():
+    return ''.join([
+        rect(32, 34, 32, 78, 2, .55),
+        *[line(32, 34 + i * 15.6, 64, 34 + i * 15.6, .25) for i in range(1, 5)],
+        rect(32, 34, 32, 15.6, 2, .8, color=ACCENT),
+        text(48, 45, 'A', o=.75, size=6, ls='0'),
+        arrow(84, 38, 70, 38, .65, ACCENT, 3),
+        arrow(70, 64, 84, 64, .65, ACCENT, 3),
+        amp(98, 36, 'PUSH', o=.45, size=4.2, ls='.04em'), amp(98, 66, 'POP', o=.45, size=4.2, ls='.04em'),
+        amp(48, 130, 'STACK', o=.5, size=5),
+        rect(124, 58, 84, 26, 2, .5),
+        *[line(124 + i * 21, 58, 124 + i * 21, 84, .25) for i in range(1, 4)],
+        text(136, 74, 'A', o=.6, size=5.4, ls='0'), text(157, 74, 'B', o=.6, size=5.4, ls='0'),
+        text(178, 74, 'C', o=.6, size=5.4, ls='0'),
+        arrow(136, 52, 136, 58, .6, ACCENT, 3), arrow(196, 52, 196, 58, .6, ACCENT, 3),
+        amp(136, 46, 'FRONT', o=.45, size=4.2), amp(196, 46, 'REAR', o=.45, size=4.2),
+        amp(166, 130, 'QUEUE', o=.5, size=5),
+        path('M206 84 C 222 74, 222 68, 208 60', .4, 1, '2 3', ACCENT),
+        amp(224, 92, 'WRAP', o=.35, size=4.2),
+        amp(120, 18, 'LINEAR STRUCTURES', o=.3, size=4.6),
+    ])
+
+
+def d_orbital_splitting():
+    return ''.join([
+        axis(48, 118, 48, 26, .4),
+        *[line(36, 118 - i * 14, 52, 118 - i * 14, .2) for i in range(1, 7)],
+        line(84, 52, 164, 52, .6, 1.4),
+        line(84, 78, 140, 78, .8, 1.4, color=ACCENT),
+        line(140, 78, 196, 78, .8, 1.4, color=ACCENT),
+        line(84, 104, 140, 104, .8, 1.4, color=ACCENT),
+        line(140, 104, 196, 104, .8, 1.4, color=ACCENT),
+        amp(170, 48, 'FREE ION', o=.4, size=4.6),
+        amp(170, 74, 'e_g', o=.55, size=5.2),
+        amp(170, 100, 't_{2g}', o=.55, size=5.2),
+        path('M214 78 V104', .45, 1, '2 3'),
+        path('M210 78 l4 -3 M210 104 l4 3', .45),
+        amp(228, 92, 'Δ₀', o=.5, size=5),
+        amp(120, 140, 'OCTAHEDRAL FIELD', o=.3, size=4.6),
+    ])
+
+
+def electrochemical_cell():
+    return ''.join([
+        path('M42 62 V112 H102 V62', .55),
+        path('M138 62 V112 H198 V62', .55),
+        line(42, 74, 102, 74, .3), line(138, 74, 198, 74, .3),
+        line(72, 50, 72, 112, .8, 1.3, color=ACCENT),
+        line(168, 50, 168, 112, .8, 1.3),
+        path('M72 50 H106 V34 H134 V50 H168', .5),
+        circle(120, 34, 8, .6),
+        text(120, 37, 'V', o=.6, size=6, ls='0'),
+        path('M102 80 H138', .5, 1, '2 3'),
+        amp(120, 92, 'SALT BRIDGE', o=.4, size=4.2),
+        amp(72, 128, 'ANODE', o=.4, size=4.4), amp(168, 128, 'CATHODE', o=.4, size=4.4),
+        arrow(72, 58, 168, 58, .55, ACCENT, 3),
+        amp(120, 54, 'e⁻', o=.5, size=4.8),
+        amp(120, 146, 'GALVANIC CELL', o=.3, size=4.6),
+    ])
+
+
+def series_parallel():
+    return ''.join([
+        amp(58, 24, 'SERIES', o=.4, size=4.6),
+        line(24, 46, 38, 46, .7), rect(38, 38, 26, 16, 1, .7),
+        line(64, 46, 88, 46, .7), rect(88, 38, 26, 16, 1, .7),
+        line(114, 46, 128, 46, .7),
+        amp(51, 48, 'R₁', o=.5, size=4.4), amp(101, 48, 'R₂', o=.5, size=4.4),
+        amp(76, 68, 'R_eq=R₁+R₂', o=.5, size=4.6),
+        amp(178, 24, 'PARALLEL', o=.4, size=4.6),
+        line(144, 46, 158, 46, .7), line(158, 34, 158, 58, .7),
+        rect(158, 28, 26, 14, 1, .7), rect(158, 50, 26, 14, 1, .7),
+        line(184, 34, 198, 34, .7), line(184, 58, 198, 58, .7),
+        line(198, 34, 198, 58, .7), line(198, 46, 214, 46, .7),
+        amp(170, 38, 'R₁', o=.45, size=4.2), amp(170, 60, 'R₂', o=.45, size=4.2),
+        amp(179, 80, 'R_eq=R₁R₂/(R₁+R₂)', o=.45, size=4.2),
+    ])
+
+
+def thevenin_equiv():
+    return ''.join([
+        rect(24, 40, 72, 62, 3, .55),
+        text(60, 66, 'LINEAR', o=.55, size=5, ls='.1em'), text(60, 78, 'NETWORK', o=.55, size=5, ls='.1em'),
+        line(96, 54, 122, 54, .7), line(96, 88, 122, 88, .7),
+        dot(122, 54, 2.5, .6), dot(122, 88, 2.5, .6),
+        amp(114, 112, 'a', o=.4), amp(114, 36, 'b', o=.4),
+        arrow(130, 71, 154, 71, .5, ACCENT, 3),
+        line(162, 54, 162, 88, .7), rect(154, 60, 16, 22, 1, .7, color=ACCENT),
+        line(162, 54, 206, 54, .7), line(162, 88, 206, 88, .7),
+        rect(190, 46, 16, 16, 1, .6), line(198, 46, 198, 36, .5),
+        amp(162, 46, 'R_th', o=.55, size=4.2), amp(198, 34, 'LOAD', o=.35, size=4),
+        amp(120, 124, 'THEVENIN EQUIVALENT', o=.35, size=4.6),
+        amp(86, 112, 'V_th', o=.45, size=4.4),
+    ])
+
+
+def rlc_transient():
+    import math
+    under = []
+    over = []
+    for i in range(61):
+        x = 40 + i * 2.6
+        t = i / 60
+        under.append(f'{x:.1f},{86 - 34 * math.exp(-3.2 * t) * math.cos(9 * t):.1f}')
+        over.append(f'{x:.1f},{86 - 34 * math.exp(-2.6 * t):.1f}')
+    return ''.join([
+        axis(40, 86, 210, 86, .35), axis(40, 86, 40, 26, .35),
+        path('M' + ' L'.join(under), .9, 1.3, ACCENT),
+        path('M' + ' L'.join(over), .55, 1, '3 4'),
+        path(f'M40 52 C 80 52, 100 78, 130 82 S 190 86, 210 86', .5, 1, '2 3'),
+        amp(176, 38, 'UNDER', o=.45, size=4.2), amp(176, 62, 'OVER', o=.35, size=4.2),
+        amp(120, 108, 'STEP RESPONSE', o=.35, size=4.6),
+        amp(212, 88, 't', o=.4, size=5),
+    ])
+
+
+def phasor():
+    return ''.join([
+        circle(112, 76, 44, .35),
+        line(56, 76, 182, 76, .3), line(112, 18, 112, 134, .3),
+        arrow(112, 76, 148, 44, .85, ACCENT),
+        path('M132 76 A 20 20 0 0 0 126 63', .45),
+        amp(128, 68, 'φ', o=.5, size=5),
+        line(148, 44, 148, 76, .3, 1, '2 3'), line(112, 44, 148, 44, .3, 1, '2 3'),
+        text(118, 40, 'V_m', 'start', .45, 4.6),
+        amp(150, 40, 'V', o=.5), amp(186, 79, 'Re', o=.35, size=4.4),
+        amp(116, 14, 'Im', o=.35, size=4.4),
+        sine(112, 210, 76, 22, 1), 
+        amp(160, 116, 'PROJECTION', o=.35, size=4.4),
+    ])
+
+
+def vector_field():
+    return ''.join([
+        path('M52 76 C 52 42, 92 28, 124 34 C 164 42, 188 62, 182 88 C 176 116, 140 128, 104 122 C 68 116, 52 102, 52 76 Z', .6),
+        *[arrow(52 + 20 * __import__('math').cos(a), 76 + 20 * __import__('math').sin(a),
+                52 + 44 * __import__('math').cos(a), 76 + 44 * __import__('math').sin(a), .45, INK, 3)
+          for a in [0, .7, 1.4, 2.1, 2.8, 3.5, 4.2, 4.9, 5.6]],
+        path('M120 76 C 112 48, 136 30, 158 46 C 176 60, 166 84, 146 92 C 128 100, 112 92, 120 76 Z', .5, 1, '3 4', ACCENT),
+        arrow(140, 62, 154, 52, .8, ACCENT, 3),
+        amp(120, 140, 'FLUX · CIRCULATION', o=.35, size=4.6),
+    ])
+
+
+def two_port():
+    return ''.join([
+        rect(72, 42, 96, 66, 3, .6),
+        line(32, 58, 72, 58, .7), line(32, 92, 72, 92, .7),
+        line(168, 58, 208, 58, .7), line(168, 92, 208, 92, .7),
+        arrow(74, 58, 90, 58, .45, ACCENT, 3), arrow(150, 58, 166, 58, .45, ACCENT, 3),
+        arrow(90, 92, 74, 92, .45, INK, 3), arrow(166, 92, 150, 92, .45, INK, 3),
+        text(120, 72, 'TWO-PORT', o=.6, size=5.4, ls='.1em'),
+        text(120, 84, 'NETWORK', o=.5, size=5.4, ls='.1em'),
+        amp(44, 52, 'V₁', o=.45, size=4.6), amp(44, 104, 'I₁', o=.45, size=4.6),
+        amp(196, 52, 'V₂', o=.45, size=4.6), amp(196, 104, 'I₂', o=.45, size=4.6),
+        amp(120, 130, 'PORT RELATIONS', o=.3, size=4.6),
+    ])
+
+
 DIAGRAMS = {
     'pn-junction': pn_junction,
     'diode-iv': diode_iv,
@@ -803,6 +1006,18 @@ DIAGRAMS = {
     'carbon-cycle': carbon_cycle,
     'water-cycle': water_cycle,
     'venn': venn,
+    'electric-dipole': electric_dipole,
+    'eigen-directions': eigen_directions,
+    'memory-layout': memory_layout,
+    'stack-queue': stack_queue,
+    'd-orbital-splitting': d_orbital_splitting,
+    'electrochemical-cell': electrochemical_cell,
+    'series-parallel': series_parallel,
+    'thevenin-equiv': thevenin_equiv,
+    'rlc-transient': rlc_transient,
+    'phasor': phasor,
+    'vector-field': vector_field,
+    'two-port': two_port,
 }
 
 

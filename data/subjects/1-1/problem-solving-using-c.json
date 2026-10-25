@@ -360,7 +360,8 @@
       "unitTitle": "Functions",
       "sources": [
         "psuc-cp-unit-4#slide.54"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "storage-class",
@@ -371,7 +372,8 @@
       "unitTitle": "Functions",
       "sources": [
         "psuc-cp-unit-4#slide.88"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "pointer",

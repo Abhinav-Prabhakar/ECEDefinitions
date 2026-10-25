@@ -360,7 +360,8 @@
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.2"
       ],
-      "formula": ""
+      "formula": "",
+      "diagram": "electric-dipole"
     },
     {
       "id": "dipole-moment",
@@ -371,7 +372,8 @@
       "unitTitle": "Dielectric Materials",
       "sources": [
         "ep-unit-4-dielectric-materials-and-their-properties#slide.4"
-      ]
+      ],
+      "diagram": "electric-dipole"
     },
     {
       "id": "dielectric-constant",
