@@ -1,0 +1,763 @@
+{
+  "version": 1,
+  "id": "operating-systems-concepts",
+  "semester": "4-1",
+  "name": "Operating Systems Concepts",
+  "shortName": "OSC",
+  "code": "9EC43",
+  "courseType": "OE",
+  "elective": "Open Elective III",
+  "folderId": "1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
+  "folderUrl": "https://drive.google.com/drive/folders/1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "operating-system",
+      "term": "Operating system",
+      "definition": "System software that manages computer hardware and software resources and provides common services for computer programs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#overview"
+      ]
+    },
+    {
+      "id": "kernel",
+      "term": "Kernel",
+      "definition": "The always-running core of an operating system, which enforces protection between programs and users and manages memory and I/O devices.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#kernel"
+      ]
+    },
+    {
+      "id": "multiprogramming",
+      "term": "Multiprogramming",
+      "definition": "Keeping several jobs in memory so that another job can use the CPU when one is blocked waiting for input or output.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#multitasking"
+      ]
+    },
+    {
+      "id": "preemptive-multitasking",
+      "term": "Preemptive multitasking",
+      "definition": "Multitasking in which the operating system can interrupt a running thread, unlike the cooperative form where a thread runs until it yields control.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#multitasking"
+      ]
+    },
+    {
+      "id": "time-sharing-system",
+      "term": "Time-sharing system",
+      "definition": "Operating system that schedules tasks for efficient use of the machine and may account for processor time and other resources.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#types"
+      ]
+    },
+    {
+      "id": "real-time-operating-system",
+      "term": "Real-time operating system",
+      "definition": "Operating system that guarantees to process events or data by or at a specific moment in time.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#types"
+      ]
+    },
+    {
+      "id": "user-mode",
+      "term": "User mode",
+      "definition": "Mode in which hardware checks that software executes only legal instructions, unlike the unrestricted powers of the kernel.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-os#kernel"
+      ]
+    },
+    {
+      "id": "system-call",
+      "term": "System call",
+      "definition": "The programmatic way in which a computer program requests a service from the operating system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-syscall#overview"
+      ]
+    },
+    {
+      "id": "process-control-calls",
+      "term": "Process control calls",
+      "definition": "Category of system calls for creating, ending, loading and running processes, waiting on events and allocating or freeing memory.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-syscall#categories"
+      ]
+    },
+    {
+      "id": "file-management-calls",
+      "term": "File management calls",
+      "definition": "Category of system calls for creating, deleting, opening, closing, reading and writing files and managing their attributes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-syscall#categories"
+      ]
+    },
+    {
+      "id": "thread",
+      "term": "Thread",
+      "definition": "Smallest sequence of programmed instructions that a scheduler can manage independently, usually as part of a process.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-thread#overview"
+      ]
+    },
+    {
+      "id": "kernel-level-thread",
+      "term": "Kernel-level thread",
+      "definition": "Thread that the kernel schedules directly; threads of one process share memory and files but each keeps its own stack and registers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-thread#kernel-and-user-threads"
+      ]
+    },
+    {
+      "id": "user-level-thread",
+      "term": "User-level thread",
+      "definition": "Thread managed and scheduled in userspace by a library, of which the kernel is unaware, so a blocking system call can stall all of them.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-thread#kernel-and-user-threads"
+      ]
+    },
+    {
+      "id": "multithreading",
+      "term": "Multithreading",
+      "definition": "Model in which several threads exist within the context of one process, sharing its resources while executing independently.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Operating Systems",
+      "sources": [
+        "osc-wiki-thread#overview"
+      ]
+    },
+    {
+      "id": "process",
+      "term": "Process",
+      "definition": "Instance of a computer program that is being executed by one or many threads.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-process#overview"
+      ]
+    },
+    {
+      "id": "process-control-block",
+      "term": "Process control block",
+      "definition": "Data structure in which the operating system keeps most of the information about an active process.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-process#representation"
+      ]
+    },
+    {
+      "id": "context-switch",
+      "term": "Context switch",
+      "definition": "Rapid swapping of the running process for another by the scheduler, which makes many processes appear to run at once on one processor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-process#process-states"
+      ]
+    },
+    {
+      "id": "scheduler",
+      "term": "Scheduler",
+      "definition": "Operating system module that selects the next jobs to be admitted into the system and which process runs next.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#types"
+      ]
+    },
+    {
+      "id": "long-term-scheduler",
+      "term": "Long-term scheduler",
+      "definition": "Admission scheduler that decides which jobs or processes are admitted to the ready queue, controlling the degree of multiprogramming.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#types"
+      ]
+    },
+    {
+      "id": "medium-term-scheduler",
+      "term": "Medium-term scheduler",
+      "definition": "Scheduler that temporarily removes processes from main memory and places them in secondary memory, freeing memory for others.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#types"
+      ]
+    },
+    {
+      "id": "short-term-scheduler",
+      "term": "Short-term scheduler",
+      "definition": "Scheduler that decides which of the ready, in-memory processes is to be executed next.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#types"
+      ]
+    },
+    {
+      "id": "preemptive-scheduling",
+      "term": "Preemptive scheduling",
+      "definition": "Policy in which the scheduler can forcibly remove a process from the CPU when it decides to allocate that CPU to another process.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#types"
+      ]
+    },
+    {
+      "id": "first-come-first-served",
+      "term": "First come, first served",
+      "definition": "The simplest scheduling algorithm, which runs processes in arrival order so long processes can delay short ones.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#algorithms"
+      ]
+    },
+    {
+      "id": "shortest-remaining-time",
+      "term": "Shortest remaining time",
+      "definition": "Scheduling that puts next in the queue the process with the least estimated processing time remaining, which requires time estimates.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#algorithms"
+      ]
+    },
+    {
+      "id": "round-robin",
+      "term": "Round robin",
+      "definition": "Scheduling that assigns a fixed time unit per process and cycles through them, rescheduling unfinished processes after others get a turn.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#algorithms"
+      ]
+    },
+    {
+      "id": "multilevel-queue",
+      "term": "Multilevel queue",
+      "definition": "Scheduling used when processes divide easily into groups, such as foreground interactive and background batch processes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#algorithms"
+      ]
+    },
+    {
+      "id": "dispatcher",
+      "term": "Dispatcher",
+      "definition": "Module that gives control of the CPU to the process selected by the short-term scheduler, performing the context switch.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Process Management and CPU Scheduling",
+      "sources": [
+        "osc-wiki-scheduling#dispatcher"
+      ]
+    },
+    {
+      "id": "critical-section",
+      "term": "Critical section",
+      "definition": "Protected section of code that cannot be executed by more than one process or thread at a time.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-critical-section#overview"
+      ]
+    },
+    {
+      "id": "semaphore",
+      "term": "Semaphore",
+      "definition": "Synchronization device used to control access to a common resource by multiple threads or processes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-semaphore#overview"
+      ]
+    },
+    {
+      "id": "binary-semaphore",
+      "term": "Binary semaphore",
+      "definition": "Semaphore restricted to the values 0 and 1, often used to build locks.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-semaphore#semantics"
+      ]
+    },
+    {
+      "id": "counting-semaphore",
+      "term": "Counting semaphore",
+      "definition": "Semaphore that allows an arbitrary resource count, tracking a pool of identical resources.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-semaphore#semantics"
+      ]
+    },
+    {
+      "id": "wait-operation",
+      "term": "Wait operation",
+      "definition": "Semaphore operation that decrements the semaphore value by one and blocks the caller if the result is negative.",
+      "formula": "P: S ← S − 1",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-semaphore#operations"
+      ]
+    },
+    {
+      "id": "signal-operation",
+      "term": "Signal operation",
+      "definition": "Semaphore operation that increments the semaphore value by one and wakes a waiting process if there is one.",
+      "formula": "V: S ← S + 1",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-semaphore#operations"
+      ]
+    },
+    {
+      "id": "mutex",
+      "term": "Mutex",
+      "definition": "Locking device that only the task that locked it is supposed to unlock.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-semaphore#mutex-vs-semaphore"
+      ]
+    },
+    {
+      "id": "inter-process-communication",
+      "term": "Inter-process communication",
+      "definition": "Sharing of data between running processes in a computer system, or between multiple such systems.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-ipc#overview"
+      ]
+    },
+    {
+      "id": "named-pipe",
+      "term": "Named pipe",
+      "definition": "Pipe that is treated like a file, which processes read and write as if it were an ordinary file.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-ipc#methods"
+      ]
+    },
+    {
+      "id": "message-queue",
+      "term": "Message queue",
+      "definition": "Data stream similar to a socket that usually keeps message boundaries intact and lets processes communicate without being directly connected.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-ipc#methods"
+      ]
+    },
+    {
+      "id": "shared-memory",
+      "term": "Shared memory",
+      "definition": "Method in which several processes are given access to the same block of memory, serving as a shared buffer for communication.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Process Synchronization and Inter Process Communication",
+      "sources": [
+        "osc-wiki-ipc#methods"
+      ]
+    },
+    {
+      "id": "deadlock",
+      "term": "Deadlock",
+      "definition": "Situation in which no member of a group can proceed because each is waiting for another member.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-deadlock#overview"
+      ]
+    },
+    {
+      "id": "mutual-exclusion-condition",
+      "term": "Mutual exclusion condition",
+      "definition": "Deadlock condition that resources are not shareable, so only one process at a time may use each resource.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-deadlock#necessary-conditions"
+      ]
+    },
+    {
+      "id": "hold-and-wait",
+      "term": "Hold and wait",
+      "definition": "Deadlock condition in which a process holds at least one resource while requesting others held elsewhere.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-deadlock#necessary-conditions"
+      ]
+    },
+    {
+      "id": "circular-wait",
+      "term": "Circular wait",
+      "definition": "Deadlock condition in which each process waits for a resource held by another process in the cycle.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-deadlock#necessary-conditions"
+      ]
+    },
+    {
+      "id": "deadlock-avoidance",
+      "term": "Deadlock avoidance",
+      "definition": "Approach that analyses each resource request to check whether granting it could still lead to deadlock, as the banker's algorithm does.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-deadlock#avoidance"
+      ]
+    },
+    {
+      "id": "deadlock-detection",
+      "term": "Deadlock detection",
+      "definition": "Approach that lets deadlocks occur and then examines the record of held and requested resources to find them.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-deadlock#detection"
+      ]
+    },
+    {
+      "id": "virtual-memory",
+      "term": "Virtual memory",
+      "definition": "Method of decoupling the memory organisation from the physical hardware, with virtual addresses translated to physical addresses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-memory-management#virtual-memory"
+      ]
+    },
+    {
+      "id": "external-fragmentation",
+      "term": "External fragmentation",
+      "definition": "Many small gaps between allocated memory blocks that can make the gaps unusable for new allocation requests.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-memory-management#fragmentation"
+      ]
+    },
+    {
+      "id": "paging",
+      "term": "Paging",
+      "definition": "Memory management scheme that adds a level of indirection between physical and logical addresses, letting a program's physical memory be non-contiguous.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-paging#overview"
+      ]
+    },
+    {
+      "id": "page-frame",
+      "term": "Page frame",
+      "definition": "Slot in physical memory that holds one page.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-paging#overview"
+      ]
+    },
+    {
+      "id": "page-table",
+      "term": "Page table",
+      "definition": "Structure that maps pages to page frames, letting scattered pages appear as one contiguous logical address space.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-paging#overview"
+      ]
+    },
+    {
+      "id": "page-fault",
+      "term": "Page fault",
+      "definition": "Event triggered when a process references a page that is not mapped to a frame in memory, passing control to the operating system.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-paging#page-faults"
+      ]
+    },
+    {
+      "id": "demand-paging",
+      "term": "Demand paging",
+      "definition": "Lazy scheme in which pages are loaded only when they are referenced.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-paging#demand-paging"
+      ]
+    },
+    {
+      "id": "page-replacement-algorithm",
+      "term": "Page replacement algorithm",
+      "definition": "Algorithm that decides which memory pages to page out to disk when a new page must be allocated.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-page-replacement#overview"
+      ]
+    },
+    {
+      "id": "optimal-page-replacement",
+      "term": "Optimal page replacement",
+      "definition": "Policy that swaps out the page whose next use will occur farthest in the future, which cannot be implemented in general.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-page-replacement#optimal"
+      ]
+    },
+    {
+      "id": "thrashing",
+      "term": "Thrashing",
+      "definition": "Condition in a paging system whose memory is overcommitted, so it keeps moving pages to and from disk and handling page faults.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Deadlocks and Memory Management",
+      "sources": [
+        "osc-wiki-thrashing#overview"
+      ]
+    },
+    {
+      "id": "file-system",
+      "term": "File system",
+      "definition": "Service that governs file organisation and access, letting applications share mass storage.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-file-system#overview"
+      ]
+    },
+    {
+      "id": "directory",
+      "term": "Directory",
+      "definition": "Grouping that segregates files, also called a folder, which in a hierarchical system forms a tree structure.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-file-system#directories"
+      ]
+    },
+    {
+      "id": "free-space-bitmap",
+      "term": "Free space bitmap",
+      "definition": "Structure used by a file system to track which blocks of storage are free.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-file-system#free-space"
+      ]
+    },
+    {
+      "id": "elevator-algorithm",
+      "term": "Elevator algorithm",
+      "definition": "Disk scheduling method in which the arm travels in one direction servicing requests until none remain, then reverses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-elevator#overview"
+      ]
+    },
+    {
+      "id": "circular-elevator-algorithm",
+      "term": "Circular elevator algorithm",
+      "definition": "Variant in which the head, after reaching the outer edge, returns to the start and services requests in the same direction again.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-elevator#variants"
+      ]
+    },
+    {
+      "id": "look-scheduling",
+      "term": "Look scheduling",
+      "definition": "Variant that goes only as far as the final request in a direction, then reverses direction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-elevator#variants"
+      ]
+    },
+    {
+      "id": "circular-look-scheduling",
+      "term": "Circular look scheduling",
+      "definition": "Variant that goes only as far as the final request, then jumps to the first request and continues in the same direction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "File System and Disk Scheduling",
+      "sources": [
+        "osc-wiki-elevator#variants"
+      ]
+    },
+    {
+      "id": "direct-memory-access",
+      "term": "Direct memory access",
+      "definition": "Feature that lets hardware subsystems access main memory independently of the CPU, so the CPU is not tied up during transfers.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-dma#overview"
+      ]
+    },
+    {
+      "id": "programmed-i-o",
+      "term": "Programmed I/O",
+      "definition": "Non-DMA approach in which the CPU moves the data itself, fully occupying it for the whole transfer.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-dma#overview"
+      ]
+    },
+    {
+      "id": "polling",
+      "term": "Polling",
+      "definition": "Actively sampling the status of an external device, generally less efficient than waiting to be notified.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-polling#overview"
+      ]
+    },
+    {
+      "id": "access-control-matrix",
+      "term": "Access control matrix",
+      "definition": "Abstract formal security model of protection state in which rows are subjects, columns are objects and cells list access rights.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-access-control-matrix#overview"
+      ]
+    },
+    {
+      "id": "access-control-list",
+      "term": "Access control list",
+      "definition": "List of permissions associated with a system resource, recording which subjects may perform which operations on it.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-acl#overview"
+      ]
+    },
+    {
+      "id": "capability",
+      "term": "Capability",
+      "definition": "Communicable, unforgeable token of authority that pairs a reference to an object with a set of access rights.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-capability#overview"
+      ]
+    },
+    {
+      "id": "principle-of-least-privilege",
+      "term": "Principle of least privilege",
+      "definition": "Rule that each module must be able to access only the information and resources necessary for its legitimate purpose.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "I/O Systems and Protection",
+      "sources": [
+        "osc-wiki-least-privilege#overview"
+      ]
+    }
+  ]
+}

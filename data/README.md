@@ -5,12 +5,13 @@ Machine-generated seed data for the one·liners app, extracted from the
 Google Drive folder. This is a coverage report, not marketing copy.
 
 - **Semesters:** 8 (1-1 … 4-2)
-- **Subjects:** 41 (33 with data, 8 stubs)
-- **Definitions:** 1575, all with ≥1 source locator (`p.N`, `slide.N`, `para.N`)
-- **Sources catalogued:** 250 (`data/sources.json`), all downloaded; 0 inaccessible
-- **Status spread:** 26 complete · 7 partial · 6 unresolved elective/PP stubs · 1 no-materials stub · 1 empty semester
+- **Subjects:** 52 (42 with data, 10 stubs) — includes the 17 elective options below
+- **Definitions:** 1948, all with ≥1 source locator (`p.N`, `slide.N`, `para.N`)
+- **Sources catalogued:** 298 (`data/sources.json`); 297 downloaded, 1 skipped (a textbook PDF); 0 inaccessible
+- **Status spread:** 31 complete · 11 partial · 3 unresolved stubs (JAVA, DBSC, OSC) · 7 named no-materials stubs
+  (Technical Seminar + 6 empty elective folders) · 1 empty semester
 - **Validator:** `python3 scripts/validate-seed-data.py` → `VALIDATION OK`
-  (41 subjects / 1575 definitions / 26-7-8)
+  (52 subjects / 1948 definitions / 31-11-10)
 
 Everything below derives from the college's own course files. **No raw source
 files are redistributed in this repository** — only definitions, formulas,
@@ -25,16 +26,12 @@ locators and the source manifest. See the "not redistributing" note at the end.
 | 1-1 | 113 | 3 | 2 | 1 | 0 |
 | 1-2 | 189 | 4 | 4 | 0 | 0 |
 | 2-1 | 299 | 6 | 6 | 0 | 0 |
-| 2-2 | 275 | 7 | 6 | 0 | 1 |
-| 3-1 | 237 | 5 | 4 | 1 | 2 |
-| 3-2 | 249 | 5 | 3 | 1 | 3+1* |
-| 4-1 | 213 | 5 | 1 | 4 | 1 |
+| 2-2 | 275 | 6 | 6 | 0 | 1 |
+| 3-1 | 398 | 8 | 6 | 2 | 3 |
+| 3-2 | 428 | 9 | 6 | 3 | 5 |
+| 4-1 | 246 | 6 | 1 | 5 | 1 |
 | 4-2 | 0 | 0 | 0 | 0 | — (entire semester `no_materials`) |
-| **Σ** | **1575** | **33** | **26** | **7** | **8** |
-
-\* Python Programming is counted here as a data subject (40 defs); its
-`status` is `unresolved` because the folder name does not identify the subject
-unambiguously.
+| **Σ** | **1948** | **42** | **31** | **11** | **10** |
 
 Complete = ≥20 definitions and ≥6 covered units.
 
@@ -84,8 +81,12 @@ Complete = ≥20 definitions and ≥6 covered units.
 | Digital Signal Processing | 9CC08 | partial | 37 | 3/6 | 3 |
 | IC Applications | 9CC09 | complete | 50 | 6/6 | 5 |
 | Linear Control Systems | 9AC07 | complete | 51 | 6/6 | 6 |
-| Open Elective I | — | unresolved | 0 | — | — |
-| Professional Elective I | — | unresolved | 0 | — | — |
+| Basics of Entrepreneurship (OE-I) | 8ZC22 | complete | 49 | 6/6 | 6 |
+| JAVA (OE-I) | — | unresolved | 0 | — | — |
+| Artificial Neural Networks (PE-I) | 9C517 | no_materials | 0 | — | — |
+| CMOS Analog IC Design (PE-I) | 9C518 | partial | 33 | 6/6 | 6 |
+| Computer Organization and Architecture (PE-I) | 9C519 | complete | 79 | 6/6 | 10 |
+| Software Defined Radio (PE-I) | 9C516 | no_materials | 0 | — | — |
 
 ### 3-2 · III Year II Semester
 | Subject | Code | Status | Defs | Units | Sources |
@@ -93,11 +94,17 @@ Complete = ≥20 definitions and ≥6 covered units.
 | Cyber Security | 9FC78 | complete | 50 | 6/6 | 6 |
 | Microprocessors and Microcontrollers | 9CC15 | complete | 59 | 6/6 | 5 |
 | Microwave and Optical Communications | 9C611 | complete | 50 | 6/6 | 8 |
-| Python Programming | 8FC22 | unresolved | 40 | 3/6 | 3 |
+| Python Programming | 8FC22 | partial | 40 | 3/6 | 3 |
 | VLSI Technology and Design | 9C612 | partial | 50 | 5/6 | 6 |
-| Open Elective II | — | unresolved | 0 | — | — |
-| Professional Elective II | — | unresolved | 0 | — | — |
-| Professional Elective III | — | unresolved | 0 | — | — |
+| Advanced Entrepreneurship (OE-II) | 8ZC23 | complete | 57 | 6/6 | 6 |
+| DBSC (OE-II) | — | unresolved | 0 | — | — |
+| Digital Image Processing (PE-II) | 9C621 | no_materials | 0 | — | — |
+| Embedded C Programming (PE-II) | 9C623 | complete | 34 | 6/6 | 8 |
+| Satellite Communication (PE-II) | 9C620 | no_materials | 0 | — | — |
+| VLSI Physical Design (PE-II) | 9C622 | partial | 35 | 3/6 | 3 |
+| Ad hoc and Wireless Sensor Networks (PE-III) | 9C724 | no_materials | 0 | — | — |
+| Design Verification using System Verilog (PE-III) | 9C726 | no_materials | 0 | — | — |
+| Embedded System Design using ARM (PE-III) | 9C727 | complete | 53 | 6/6 | 6 |
 
 ### 4-1 · IV Year I Semester
 | Subject | Code | Status | Defs | Units | Sources |
@@ -107,13 +114,56 @@ Complete = ≥20 definitions and ≥6 covered units.
 | Embedded Real Time Operating Systems | 9C731 | partial | 40 | 4/6 | 5 |
 | Internet of Things and Applications | 9C713 | partial | 40 | 3/6 | 3 |
 | System on Chip Architecture | 9C835 | partial | 40 | 3/6 | 3 |
-| Open Elective III | — | unresolved | 0 | — | — |
+| OSC (OE-III) | — | unresolved | 0 | — | — |
+| Product and Services (OE-III) | 8ZC24 | partial | 33 | 3/6 | 3 |
 
 ### 4-2 · IV Year II Semester
 No material was published in the Drive folder for 4-2; the semester is present
 in `curriculum.json` with an empty subject list.
 
 ---
+
+## Elective options
+
+Each elective slot folder holds several options; every option is its own subject
+in the slot's semester, with an `elective` field (e.g. `"Professional Elective I"`)
+in both its `curriculum.json` entry and its data file. The validator was
+extended to accept that optional key on curriculum entries.
+
+| Slot | Option (folder) | Full name | Code | Name confirmed from |
+|---|---|---|---|---|
+| OE-I (3-1) | BOE | Basics of Entrepreneurship | 8ZC22 | A22 CSE open-elective table ([PDF](https://sreenidhi.edu.in/wp-content/uploads/2024/02/A22-Regulation-CSE-I-to-II-year-complete.pdf), p.8) lists it in the Entrepreneurship stream; the BOE decks teach entrepreneurship, business models, finance, teams and marketing |
+| OE-I (3-1) | JAVA | JAVA (unresolved) | — | not confirmed; empty folder |
+| PE-I (3-1) | ANN | Artificial Neural Networks | 9C517 | A22 ECE 3rd/4th syllabus (PE-I list) |
+| PE-I (3-1) | CMOS | CMOS Analog IC Design | 9C518 | A22 ECE syllabus; deck title "Introduction to Analog IC Design" |
+| PE-I (3-1) | COA | Computer Organization and Architecture | 9C519 | A22 ECE syllabus; decks titled "Computer Organization and Architecture" |
+| PE-I (3-1) | SDR | Software Defined Radio | 9C516 | A22 ECE syllabus (PE-I list) |
+| OE-II (3-2) | AE | Advanced Entrepreneurship | 8ZC23 | deck title slide "ADVANCED ENTREPRENEURSHIP"; A22 CSE open-elective table |
+| OE-II (3-2) | DBSC | DBSC (unresolved) | — | not confirmed; empty folder |
+| PE-II (3-2) | DIP | Digital Image Processing | 9C621 | A22 ECE syllabus (PE-II list) |
+| PE-II (3-2) | ECP | Embedded C Programming | 9C623 | A22 ECE syllabus; deck title slide |
+| PE-II (3-2) | SC | Satellite Communication | 9C620 | A22 ECE syllabus: the only "SC" option in the PE-II list; empty folder |
+| PE-II (3-2) | VLSIPD | VLSI Physical Design | 9C622 | A22 ECE syllabus (PE-II list) |
+| PE-III (3-2) | AWSN | Ad hoc and Wireless Sensor Networks | 9C724 | A22 ECE syllabus (PE-III list) |
+| PE-III (3-2) | DVSV | Design Verification using System Verilog | 9C726 | A22 ECE syllabus (PE-III list) |
+| PE-III (3-2) | ESD | Embedded System Design using ARM | 9C727 | A22 ECE syllabus; the decks cover ARM (older slide header reads "Embedded System Design", code 7C724) |
+| OE-III (4-1) | OSC | OSC (unresolved) | — | not confirmed; empty folder |
+| OE-III (4-1) | P&S | Product and Services | 8ZC24 | deck title slide "Product & Services"; A22 CSE open-elective table |
+
+Notes:
+
+- The A22 ECE syllabus ([3rd & 4th year docx](https://drive.google.com/file/d/1AauDZ2R77O7dsJp-mPMRuMOHrpK5Smm6/view))
+  lists 9C516–9C519 as PE-I (III-I), 9C620–9C623 as PE-II (III-II) and
+  9C724–9C727 as PE-III (**IV-I**). The Drive keeps PE-III under 3-2, so it stays
+  there; move it in `curriculum.json` if the official order should win.
+- The entrepreneurship codes (8ZC22–8ZC24) are from the A22 CSE course structure,
+  where the same stream is listed as OE-I/II/III in 3-2/4-1/4-2. The A22 ECE
+  syllabus only lists ECE-offered open electives (9CC36–9CC38), none of which is a
+  Drive option. Semester placement follows the Drive folders.
+- Locators on the new subjects were checked mechanically: every cited slide/page
+  contains the term's tokens or enough of the definition's wording.
+- Unit titles for the entrepreneurship/product decks (BOE, AE, P&S) come from
+  the deck headers; where a deck has no title the `unitTitle` is `null`.
 
 ## Access gaps
 
@@ -125,8 +175,11 @@ gaps in the Drive folder itself:
 |---|---|---|
 | Semester 4-2 | `ECE 4-2` folder | Folder contains no subject material; semester seeded as empty. |
 | Technical Seminar (2-2) | `ECE 2-2/TS` | Folder exists but holds no extractable material; stub with `data: null`. |
-| Elective slots OE-I, PE-I, OE-II, PE-II, PE-III, OE-III | 3-1, 3-2, 4-1 | Folders exist, but the folder names alone do not say which elective each batch takes; left `unresolved` with `data: null`. App owner can resolve from a batch timetable and name the subjects. |
-| "PP" folder (3-2) | `ECE 3-2/PP` | Contains three "Python Programming" decks (code 8FC22 per course structure). Resolved as Python Programming but marked `unresolved` because the folder abbreviation alone is ambiguous. Units 1–3 extracted; units 4–6 had no decks. |
+| JAVA (OE-I), DBSC (OE-II), OSC (OE-III) | `ECE 3-1/OE-I/JAVA`, `ECE 3-2/OE-II/DBSC`, `ECE 4-1/OE-III/OSC` | Folders are empty (checked both via the embedded listing and the Drive web UI). The abbreviations could not be expanded from slides, the A22 ECE syllabus or the A22 CSE open-elective table, so they stay `unresolved` stubs named by their abbreviation. |
+| ANN, SDR (PE-I), DIP, SC (PE-II), AWSN, DVSV (PE-III) | `ECE 3-1/PE-I/…`, `ECE 3-2/PE-II/…`, `ECE 3-2/PE-III/…` | Folders are empty. Names and codes come from the A22 ECE syllabus, so they are `no_materials` stubs with `data: null`. |
+| CMOS Analog IC Design (PE-I) | `ECE 3-1/PE-I/CMOS` | Units 4–6 are PDFs where only about half the pages have a text layer (46/91, 14/29 and 26/56 pages); the rest are images. Definitions use only text-layer content; marked `partial`. |
+| Embedded C Programming (PE-II) | `ECE 3-2/PE-II/ECP` | A textbook PDF (*Embedded C*, Pont) is listed in `sources.json` as `skipped` and was not read; the A20 syllabus docx is catalogued but not cited. |
+| Python Programming (3-2) | `ECE 3-2/PP` | Three "Python Programming" decks (code 8FC22 per course structure). Identified as Python Programming and marked `partial`: units 1–3 extracted, units 4–6 have no decks. |
 | Matrix Algebra & Calculus (1-1) | `ECE 1-1/MAC` | Only one usable deck (Unit 4); 5 definitions, unit 4 only. |
 
 ## Extraction gaps (units with no definitions)
@@ -137,6 +190,9 @@ gaps in the Drive folder itself:
 | Digital Signal Processing (3-1) | 3/6 | Units 4-6 exist only as question papers, which are excluded as definition sources. |
 | VLSI Technology and Design (3-2) | 5/6 | No deck/handout with unit-6 content in the folder. |
 | Python Programming (3-2) | 3/6 | Folder contains decks only for units 1-3. |
+| VLSI Physical Design (3-2, PE-II) | 3/6 | Folder holds decks for units 1–3 only. |
+| Product and Services (4-1, OE-III) | 3/6 | Folder holds decks for units 1–3 only. |
+| CMOS Analog IC Design (3-1, PE-I) | 6/6 | All six units have a deck, but the unit 4–6 PDFs are mostly image-only, so those units are thin (see access gaps). |
 | Advanced Communications and Networks (4-1) | 3/6 | Units 4-6 decks not published in the folder. |
 | Internet of Things and Applications (4-1) | 3/6 | Material covers units 1-3 only. |
 | Embedded RTOS (4-1) | 4/6 | Units 5-6 not published (only ERTOS intro + Unix/RTS decks). |
@@ -224,13 +280,12 @@ unverified rather than silently dropped.
    though the official course structure lists UHV in 3-1/ESE elsewhere.
    Change in one place (`curriculum.json` semesters array) if the official
    order should win.
-2. **"PP" folder** resolved as *Python Programming* (8FC22) but left
-   `unresolved` for confirmation; material for units 4-6 is missing entirely.
+2. **"PP" folder** is Python Programming (8FC22), `partial`: material for
+   units 4-6 is missing entirely.
 3. **Elective singletons resolved:** PE-IV → *Embedded Real Time Operating
-   Systems* (9C731), PE-V → *System on Chip Architecture* (9C835). The other
-   multi-candidate elective folders (OE-I/PE-I/OE-II/PE-II/PE-III/OE-III) stay
-   `unresolved` stubs; fill them in `curriculum.json` when the batch timetable
-   is known.
+   Systems* (9C731), PE-V → *System on Chip Architecture* (9C835). The six
+   multi-option folders (OE-I, PE-I, OE-II, PE-II, PE-III, OE-III) are imported
+   as one subject per option; see "Elective options" below.
 4. **PTSP Bayes theorem / total probability** cite the unit-1 outline slide
    (`ptsp-unit-1-ptsp#slide.20`) because the material contains no statement
    slide for these theorems; treat as section-level sourcing.

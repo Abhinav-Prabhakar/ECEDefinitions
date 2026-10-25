@@ -1,0 +1,646 @@
+{
+  "version": 1,
+  "id": "advanced-entrepreneurship",
+  "semester": "3-2",
+  "name": "Advanced Entrepreneurship",
+  "shortName": "AE",
+  "code": "9ZC23",
+  "courseType": "OE",
+  "elective": "Open Elective II",
+  "folderId": "1IBB-yglNuufkpNeWzu_iWZQn-v8XQsG-",
+  "folderUrl": "https://drive.google.com/drive/folders/1IBB-yglNuufkpNeWzu_iWZQn-v8XQsG-",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "entrepreneurship",
+      "term": "Entrepreneurship",
+      "definition": "Professional application of knowledge, skills and competencies to generate a new business idea and launch an enterprise, pursuing growth while creating wealth, employment and social good.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.3"
+      ]
+    },
+    {
+      "id": "entrepreneur",
+      "term": "Entrepreneur",
+      "definition": "Person who starts an enterprise, being the actor in the process of creating it.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.4"
+      ]
+    },
+    {
+      "id": "enterprise",
+      "term": "Enterprise",
+      "definition": "Business organisation formed to provide goods and services, create jobs and contribute to national income, exports and overall economic development.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.4"
+      ]
+    },
+    {
+      "id": "business-model",
+      "term": "Business model",
+      "definition": "Outline of how a company plans to make money with its product and customer base in a specific market.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.13"
+      ]
+    },
+    {
+      "id": "lean-canvas",
+      "term": "Lean canvas",
+      "definition": "Entrepreneur-focused business model format for emerging businesses that takes minutes to create, capturing the idea and iterating on it with feedback.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.13"
+      ]
+    },
+    {
+      "id": "freemium",
+      "term": "Freemium",
+      "definition": "Pricing strategy in which a basic product or service is free while a charge is made for additional features, services or goods.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.29"
+      ]
+    },
+    {
+      "id": "saas",
+      "term": "SaaS",
+      "definition": "Software licensing and delivery model in which software is licensed on a subscription basis and centrally hosted, also called on-demand software.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.31"
+      ]
+    },
+    {
+      "id": "marketplace-model",
+      "term": "Marketplace model",
+      "definition": "Platform where vendors and customers buy and sell products.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.32"
+      ]
+    },
+    {
+      "id": "pivot",
+      "term": "Pivot",
+      "definition": "Fundamentally changing the direction of a business when current products or services fail to meet market needs, to improve revenue or survive.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.34"
+      ]
+    },
+    {
+      "id": "refining-the-business-model",
+      "term": "Refining the business model",
+      "definition": "Solving the same problem in a different way, which the course treats as equivalent to pivoting.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
+      "sources": [
+        "ae-unit-1#slide.42",
+        "ae-unit-1#slide.44"
+      ]
+    },
+    {
+      "id": "business-plan",
+      "term": "Business plan",
+      "definition": "Written document describing in detail how a business, usually a startup, defines its objectives and intends to achieve its goals.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.4"
+      ]
+    },
+    {
+      "id": "human-resource-planning",
+      "term": "Human resource planning",
+      "definition": "Continuous process of systematic planning ahead for optimum use of an organisation's employees, fitting people to jobs and avoiding shortages or surpluses.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.10"
+      ]
+    },
+    {
+      "id": "people-planning",
+      "term": "People planning",
+      "definition": "Identifying the strengths and skills people will need, the work they will do and when they will be needed to meet future objectives.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.11"
+      ]
+    },
+    {
+      "id": "financial-plan",
+      "term": "Financial plan",
+      "definition": "Document containing a person's current money situation and long-term monetary goals, along with strategies to achieve those goals.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.12"
+      ]
+    },
+    {
+      "id": "procurement-plan",
+      "term": "Procurement plan",
+      "definition": "Document used to manage finding and selecting a vendor, justifying the need for an external supplier and explaining how the search will proceed.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.17"
+      ]
+    },
+    {
+      "id": "revenue-stream",
+      "term": "Revenue stream",
+      "definition": "A distinct source of income that can be recurring, transaction-based or service revenue.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.21"
+      ]
+    },
+    {
+      "id": "customer-life-cycle-management",
+      "term": "Customer life cycle management",
+      "definition": "Practice that grows an existing customer relationship through upselling and cross-selling and builds loyalty by adding value at key points.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.22"
+      ]
+    },
+    {
+      "id": "reach",
+      "term": "Reach",
+      "definition": "First step of the customer lifecycle, where marketing content is placed where consumers will find it, developing awareness right away.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.23"
+      ]
+    },
+    {
+      "id": "secondary-revenue",
+      "term": "Secondary revenue",
+      "definition": "Income generated from goods or services that differ from a company's main product or service lines, also called ancillary or non-core income.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Business Planning & Exploring Revenue",
+      "sources": [
+        "ae-unit-2#slide.25"
+      ]
+    },
+    {
+      "id": "bootstrap-financing",
+      "term": "Bootstrap financing",
+      "definition": "Financing a venture from one's own resources, without the help of others.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.8"
+      ]
+    },
+    {
+      "id": "trade-credit",
+      "term": "Trade credit",
+      "definition": "Arrangement in which a supplier extends credit to a regular customer, normally for 30, 60 or 90 days without charging interest.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.12"
+      ]
+    },
+    {
+      "id": "factoring",
+      "term": "Factoring",
+      "definition": "Financing method that raises capital by selling accounts receivable to a buyer such as a commercial finance company.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.12",
+        "ae-unit-3#slide.13"
+      ]
+    },
+    {
+      "id": "angel-investor",
+      "term": "Angel investor",
+      "definition": "Affluent individual who provides capital for a business start-up, usually in exchange for convertible debt or ownership equity.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.16"
+      ]
+    },
+    {
+      "id": "archangel-investor",
+      "term": "Archangel investor",
+      "definition": "Relationship or idea investor with a track record of success in making other angels money.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.17"
+      ]
+    },
+    {
+      "id": "venture-capitalist",
+      "term": "Venture capitalist",
+      "definition": "Person or investment firm that makes venture investments.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.20"
+      ]
+    },
+    {
+      "id": "incubator",
+      "term": "Incubator",
+      "definition": "Organisation that is traditionally the first port of call for a budding entrepreneur and offers support such as mentoring.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.25",
+        "ae-unit-3#slide.26"
+      ]
+    },
+    {
+      "id": "startup-accelerator",
+      "term": "Startup accelerator",
+      "definition": "Organisation offering mentorship, capital and connections to select startups with promising early products, in order to rapidly scale their growth.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.27"
+      ]
+    },
+    {
+      "id": "debt-based-crowdfunding",
+      "term": "Debt-based crowdfunding",
+      "definition": "Peer-to-peer funding that works like a bank credit but borrows smaller amounts from multiple people instead of one larger amount.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.35"
+      ]
+    },
+    {
+      "id": "funding-plan",
+      "term": "Funding plan",
+      "definition": "Document that outlines how an entrepreneur's idea is going to be financed.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.41"
+      ]
+    },
+    {
+      "id": "pitch-deck",
+      "term": "Pitch deck",
+      "definition": "Brief presentation used to pitch an idea or company, generally to investors, giving an overview of the plan, products, services and growth traction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Funding the Growth & Building the A-Team",
+      "sources": [
+        "ae-unit-3#slide.43"
+      ]
+    },
+    {
+      "id": "brand",
+      "term": "Brand",
+      "definition": "Name given to a product or service so that it takes on an identity of its own, helping people identify a company or individual.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.4",
+        "ae-unit-4#slide.5"
+      ]
+    },
+    {
+      "id": "golden-circle",
+      "term": "Golden Circle",
+      "definition": "Simple way of articulating what a business does and defining its value proposition, built on the questions why and how.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.10"
+      ]
+    },
+    {
+      "id": "positioning",
+      "term": "Positioning",
+      "definition": "Place a brand occupies in the minds of customers and how it is distinguished from the products of competitors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.14"
+      ]
+    },
+    {
+      "id": "market-positioning",
+      "term": "Market positioning",
+      "definition": "Process of establishing the image or identity of a brand or product so that consumers perceive it in a certain way.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.14"
+      ]
+    },
+    {
+      "id": "positioning-statement",
+      "term": "Positioning statement",
+      "definition": "Concise description of the target market plus a compelling picture of how that market should perceive the brand.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.16"
+      ]
+    },
+    {
+      "id": "technology-platform",
+      "term": "Technology platform",
+      "definition": "Environment for building and running applications, systems and processes, viewed as toolsets for developing customised services.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.46"
+      ]
+    },
+    {
+      "id": "technology-planning",
+      "term": "Technology planning",
+      "definition": "Process that takes time and resources to understand what technology is appropriate for staff and the organisation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Brand and Channel Strategy & Leveraging Technology",
+      "sources": [
+        "ae-unit-4#slide.48"
+      ]
+    },
+    {
+      "id": "customer-acquisition",
+      "term": "Customer acquisition",
+      "definition": "Gaining new consumers by persuading them to purchase a company's products or services.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.3"
+      ]
+    },
+    {
+      "id": "customer-churn-rate",
+      "term": "Customer churn rate",
+      "definition": "Percentage of customers who have stopped making purchases over a certain period of time.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.8"
+      ]
+    },
+    {
+      "id": "repeat-purchase-rate",
+      "term": "Repeat purchase rate",
+      "definition": "Percentage of customers who repeatedly buy products from a store.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.10"
+      ]
+    },
+    {
+      "id": "profitability-per-order",
+      "term": "Profitability per order",
+      "definition": "Measure of profit made on an individual purchase, directly proportional to the total profits made.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.12"
+      ]
+    },
+    {
+      "id": "purchase-frequency",
+      "term": "Purchase frequency",
+      "definition": "How many repeat purchases are made by the average shopper rather than by a specific one.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.13"
+      ]
+    },
+    {
+      "id": "time-between-purchases",
+      "term": "Time between purchases",
+      "definition": "Measure of sales made to a consumer in a year, useful for preparing the customer for the next big sale.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.14"
+      ]
+    },
+    {
+      "id": "customer-lifetime-value",
+      "term": "Customer lifetime value",
+      "definition": "Estimation of how much money an average consumer will generate for a company over a certain period of time.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.15"
+      ]
+    },
+    {
+      "id": "redemption-rate",
+      "term": "Redemption rate",
+      "definition": "Percentage of loyalty rewards that have been redeemed, reflecting rewards customers value enough to use their collected points.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.15"
+      ]
+    },
+    {
+      "id": "customer-acquisition-cost",
+      "term": "Customer acquisition cost",
+      "definition": "Sales and marketing costs involved in winning one new customer within a timeframe, used to judge profitability and efficiency of growing companies.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.16"
+      ]
+    },
+    {
+      "id": "ebit",
+      "term": "EBIT",
+      "definition": "Measure of a firm's profit that includes all incomes and expenses except interest expenses and income tax expenses.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.20"
+      ]
+    },
+    {
+      "id": "economic-value-added",
+      "term": "Economic value added",
+      "definition": "Measure of financial performance based on residual wealth, found by deducting cost of capital from operating profit adjusted for cash taxes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.20"
+      ]
+    },
+    {
+      "id": "interest-cover",
+      "term": "Interest cover",
+      "definition": "Measure of how many times a company can pay its interest expenses from its earnings.",
+      "formula": "Operating profit / Interest expense",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.21"
+      ]
+    },
+    {
+      "id": "accounts-receivable-days",
+      "term": "Accounts receivable days",
+      "definition": "Number of days an invoice remains outstanding before it is collected, showing how long it takes to clear receivables.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.21"
+      ]
+    },
+    {
+      "id": "net-cash-flow",
+      "term": "Net cash flow",
+      "definition": "Gain or loss of funds over a period after all debts have been paid; a surplus after operating costs is positive.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.22"
+      ]
+    },
+    {
+      "id": "gross-profit-margin",
+      "term": "Gross profit margin",
+      "definition": "Metric of financial health calculated as the money left from product sales after subtracting the cost of goods sold.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.22"
+      ]
+    },
+    {
+      "id": "non-operating-revenue",
+      "term": "Non-operating revenue",
+      "definition": "Money earned from a business's side activities, such as interest and dividends.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.24"
+      ]
+    },
+    {
+      "id": "recurring-revenue",
+      "term": "Recurring revenue",
+      "definition": "Earnings from ongoing payments for continuing or after-sale services, a predictable model that assures a continuing source of income.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.26"
+      ]
+    },
+    {
+      "id": "re-forecasting",
+      "term": "Re-forecasting",
+      "definition": "Process of revising the existing budget holistically after a significant deviation from projected spending or income.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.27"
+      ]
+    },
+    {
+      "id": "legal-compliance",
+      "term": "Legal compliance",
+      "definition": "Process by which a company adheres to the complex rules, policies and processes that regulate business practice in a jurisdiction.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Measuring Progress and Legal Matters",
+      "sources": [
+        "ae-unit-5#slide.30"
+      ]
+    },
+    {
+      "id": "capstone-project",
+      "term": "Capstone project",
+      "definition": "Multifaceted assignment serving as a culminating academic and intellectual experience at the end of an academic program.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Seeking Support and Final Project",
+      "sources": [
+        "ae-unit-6#slide.28"
+      ]
+    }
+  ]
+}
