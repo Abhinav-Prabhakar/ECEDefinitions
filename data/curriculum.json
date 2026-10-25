@@ -708,11 +708,11 @@
           "folderId": "1BoTRdZk1tei1mGA8vlS7As4G2ejJfMJz",
           "folderUrl": "https://drive.google.com/drive/folders/1BoTRdZk1tei1mGA8vlS7As4G2ejJfMJz",
           "data": "data/subjects/3-2/vlsi-physical-design.json",
-          "definitionCount": 35,
+          "definitionCount": 60,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 11
         },
         {
           "id": "ad-hoc-and-wireless-sensor-networks",
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2174,
-    "completeSubjects": 35,
-    "partialSubjects": 10,
+    "definitions": 2199,
+    "completeSubjects": 36,
+    "partialSubjects": 9,
     "inaccessibleSubjects": 7
   }
 }
