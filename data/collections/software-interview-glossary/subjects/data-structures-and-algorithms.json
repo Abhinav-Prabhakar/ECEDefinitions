@@ -1,0 +1,1229 @@
+{
+  "version": 1,
+  "id": "data-structures-and-algorithms",
+  "collectionId": "software-interview-glossary",
+  "section": "core",
+  "name": "Data Structures and Algorithms",
+  "shortName": "DSA",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#12b3a6",
+  "dark": "#3bd6c7",
+  "units": [
+    {
+      "number": 1,
+      "title": "Complexity analysis"
+    },
+    {
+      "number": 2,
+      "title": "Arrays and linked lists"
+    },
+    {
+      "number": 3,
+      "title": "Stacks, queues and heaps"
+    },
+    {
+      "number": 4,
+      "title": "Trees and graphs"
+    },
+    {
+      "number": 5,
+      "title": "Hashing"
+    },
+    {
+      "number": 6,
+      "title": "Sorting and searching"
+    },
+    {
+      "number": 7,
+      "title": "Algorithm design techniques"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "amortized-analysis",
+      "term": "Amortized analysis",
+      "definition": "Averaging the cost of an operation over a sequence of operations.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Worst case",
+        "Average case",
+        "Time complexity"
+      ],
+      "sources": [
+        "opendsa#sec.AnalProgram"
+      ]
+    },
+    {
+      "id": "asymptotic-analysis",
+      "term": "Asymptotic analysis",
+      "definition": "Estimating algorithm efficiency as input size grows large.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Big-O notation",
+        "Time complexity",
+        "Space bound"
+      ],
+      "sources": [
+        "opendsa#sec.AnalAsymptotic"
+      ]
+    },
+    {
+      "id": "average-case",
+      "term": "Average case",
+      "definition": "Typical running time over the distribution of expected inputs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Best case",
+        "Worst case",
+        "Amortized analysis"
+      ],
+      "sources": [
+        "opendsa#sec.AnalCases"
+      ]
+    },
+    {
+      "id": "basic-operation",
+      "term": "Basic operation",
+      "definition": "A primitive step whose cost does not depend on operand values.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Time complexity",
+        "Asymptotic analysis",
+        "Space bound"
+      ],
+      "sources": [
+        "opendsa#sec.AnalIntro"
+      ]
+    },
+    {
+      "id": "best-case",
+      "term": "Best case",
+      "definition": "Running time for the most favorable input of a given size.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Worst case",
+        "Average case",
+        "Amortized analysis"
+      ],
+      "sources": [
+        "opendsa#sec.AnalCases"
+      ]
+    },
+    {
+      "id": "big-o-notation",
+      "term": "Big-O notation",
+      "definition": "Notation for an upper bound on an algorithm's growth rate.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [
+        "Big-Oh notation"
+      ],
+      "confusables": [
+        "Omega notation",
+        "Theta notation",
+        "Asymptotic analysis"
+      ],
+      "sources": [
+        "opendsa#sec.AnalAsymptotic"
+      ]
+    },
+    {
+      "id": "lower-bound",
+      "term": "Lower bound",
+      "definition": "Best possible cost for any algorithm solving a problem.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Big-O notation",
+        "Omega notation",
+        "Theta notation"
+      ],
+      "sources": [
+        "opendsa#sec.AnalLower"
+      ]
+    },
+    {
+      "id": "omega-notation",
+      "term": "Omega notation",
+      "definition": "Notation for a lower bound on an algorithm's growth rate.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Big-O notation",
+        "Theta notation",
+        "Asymptotic analysis"
+      ],
+      "sources": [
+        "opendsa#sec.AnalLower"
+      ]
+    },
+    {
+      "id": "overhead",
+      "term": "Overhead",
+      "definition": "Extra information stored beyond the actual data values.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Space bound",
+        "Space/time tradeoff",
+        "Time complexity"
+      ],
+      "sources": [
+        "opendsa#sec.AnalSpace"
+      ]
+    },
+    {
+      "id": "recurrence-relation",
+      "term": "Recurrence relation",
+      "definition": "Function defined in terms of smaller instances of itself.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Amortized analysis",
+        "Asymptotic analysis",
+        "Time complexity"
+      ],
+      "sources": [
+        "opendsa#sec.RecurrenceIntro"
+      ]
+    },
+    {
+      "id": "space-bound",
+      "term": "Space bound",
+      "definition": "Asymptotic limit on the memory an algorithm or structure needs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Time complexity",
+        "Overhead",
+        "Space/time tradeoff"
+      ],
+      "sources": [
+        "opendsa#sec.AnalSpace"
+      ]
+    },
+    {
+      "id": "space-time-tradeoff",
+      "term": "Space/time tradeoff",
+      "definition": "Trading reduced time for increased space, or vice versa.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Space bound",
+        "Time complexity",
+        "Overhead"
+      ],
+      "sources": [
+        "opendsa#sec.AnalSpace"
+      ]
+    },
+    {
+      "id": "theta-notation",
+      "term": "Theta notation",
+      "definition": "Notation for a tight bound on an algorithm's growth rate.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Big-O notation",
+        "Omega notation",
+        "Asymptotic analysis"
+      ],
+      "sources": [
+        "opendsa#sec.AnalLower"
+      ]
+    },
+    {
+      "id": "time-complexity",
+      "term": "Time complexity",
+      "definition": "Amount of computer time an algorithm takes to run.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Space bound",
+        "Asymptotic analysis",
+        "Basic operation"
+      ],
+      "sources": [
+        "wikipedia-algorithms#sec.Time_complexity"
+      ]
+    },
+    {
+      "id": "worst-case",
+      "term": "Worst case",
+      "definition": "Running time for the least favorable input of a given size.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Complexity analysis",
+      "aliases": [],
+      "confusables": [
+        "Best case",
+        "Average case",
+        "Amortized analysis"
+      ],
+      "sources": [
+        "opendsa#sec.AnalCases"
+      ]
+    },
+    {
+      "id": "array-based-list",
+      "term": "Array-based list",
+      "definition": "List implementation storing elements in a contiguous array.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Linked list",
+        "List",
+        "Freelist"
+      ],
+      "sources": [
+        "opendsa#sec.ListArray"
+      ]
+    },
+    {
+      "id": "doubly-linked-list",
+      "term": "Doubly linked list",
+      "definition": "Linked list where each node links to both neighbors.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Singly linked list",
+        "Linked list",
+        "List"
+      ],
+      "sources": [
+        "opendsa#sec.ListDouble"
+      ]
+    },
+    {
+      "id": "dynamic-memory-allocation",
+      "term": "Dynamic memory allocation",
+      "definition": "Allocating memory for new elements as they are needed.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Freelist",
+        "Linked list",
+        "Array-based list"
+      ],
+      "sources": [
+        "opendsa#sec.ListLinked"
+      ]
+    },
+    {
+      "id": "freelist",
+      "term": "Freelist",
+      "definition": "Linked list of freed nodes available for reuse.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Dynamic memory allocation",
+        "Linked list",
+        "Header node"
+      ],
+      "sources": [
+        "opendsa#sec.Freelist"
+      ]
+    },
+    {
+      "id": "header-node",
+      "term": "Header node",
+      "definition": "Extra first node whose value is ignored to simplify cases.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Node",
+        "Linked list",
+        "Doubly linked list"
+      ],
+      "sources": [
+        "opendsa#sec.ListLinked"
+      ]
+    },
+    {
+      "id": "linked-list",
+      "term": "Linked list",
+      "definition": "List built from nodes linked by pointers to successors.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Array-based list",
+        "Singly linked list",
+        "Doubly linked list"
+      ],
+      "sources": [
+        "opendsa#sec.ListLinked"
+      ]
+    },
+    {
+      "id": "list",
+      "term": "List",
+      "definition": "Finite ordered sequence of data items called elements.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Linked list",
+        "Array-based list",
+        "Stack"
+      ],
+      "sources": [
+        "opendsa#sec.ListADT"
+      ]
+    },
+    {
+      "id": "node",
+      "term": "Node",
+      "definition": "Element of a linked structure holding data and links.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [],
+      "confusables": [
+        "Header node",
+        "Linked list",
+        "List"
+      ],
+      "sources": [
+        "opendsa#sec.ListLinked"
+      ]
+    },
+    {
+      "id": "singly-linked-list",
+      "term": "Singly linked list",
+      "definition": "Linked list where each node links only to its successor.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Arrays and linked lists",
+      "aliases": [
+        "One-way list"
+      ],
+      "confusables": [
+        "Doubly linked list",
+        "Linked list",
+        "List"
+      ],
+      "sources": [
+        "opendsa#sec.ListLinked"
+      ]
+    },
+    {
+      "id": "fifo",
+      "term": "FIFO",
+      "definition": "Policy where the first element inserted is the first removed.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [
+        "First-In, First-Out"
+      ],
+      "confusables": [
+        "LIFO",
+        "Queue",
+        "Stack"
+      ],
+      "sources": [
+        "opendsa#sec.Queue"
+      ]
+    },
+    {
+      "id": "heap",
+      "term": "Heap",
+      "definition": "Complete binary tree with a partial order between parent and child.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [],
+      "confusables": [
+        "Max heap",
+        "Min heap",
+        "Priority queue"
+      ],
+      "sources": [
+        "opendsa#sec.Heaps"
+      ]
+    },
+    {
+      "id": "lifo",
+      "term": "LIFO",
+      "definition": "Policy where the last element inserted is the first removed.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [
+        "Last-In, First-Out"
+      ],
+      "confusables": [
+        "FIFO",
+        "Stack",
+        "Queue"
+      ],
+      "sources": [
+        "opendsa#sec.StackArray"
+      ]
+    },
+    {
+      "id": "max-heap",
+      "term": "Max heap",
+      "definition": "Heap where every node is at least as large as its children.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [],
+      "confusables": [
+        "Min heap",
+        "Heap",
+        "Priority queue"
+      ],
+      "sources": [
+        "opendsa#sec.Heaps"
+      ]
+    },
+    {
+      "id": "min-heap",
+      "term": "Min heap",
+      "definition": "Heap where every node is at most as large as its children.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [],
+      "confusables": [
+        "Max heap",
+        "Heap",
+        "Priority queue"
+      ],
+      "sources": [
+        "opendsa#sec.Heaps"
+      ]
+    },
+    {
+      "id": "priority-queue",
+      "term": "Priority queue",
+      "definition": "Collection organized by importance, yielding the highest priority first.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [],
+      "confusables": [
+        "Queue",
+        "Heap",
+        "Stack"
+      ],
+      "sources": [
+        "opendsa#sec.Heaps"
+      ]
+    },
+    {
+      "id": "queue",
+      "term": "Queue",
+      "definition": "List-like structure inserting at the rear and removing at front.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [],
+      "confusables": [
+        "Stack",
+        "Priority queue",
+        "FIFO"
+      ],
+      "sources": [
+        "opendsa#sec.Queue"
+      ]
+    },
+    {
+      "id": "stack",
+      "term": "Stack",
+      "definition": "List-like structure inserting and removing at only one end.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Stacks, queues and heaps",
+      "aliases": [],
+      "confusables": [
+        "Queue",
+        "LIFO",
+        "Priority queue"
+      ],
+      "sources": [
+        "opendsa#sec.StackArray"
+      ]
+    },
+    {
+      "id": "binary-search-tree",
+      "term": "Binary search tree",
+      "definition": "Binary tree where left descendants are no greater than the node.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [
+        "BST"
+      ],
+      "confusables": [
+        "Binary tree",
+        "Traversal",
+        "Graph"
+      ],
+      "sources": [
+        "opendsa#sec.BST"
+      ]
+    },
+    {
+      "id": "binary-tree",
+      "term": "Binary tree",
+      "definition": "Tree where each node has at most two children.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Binary search tree",
+        "Traversal",
+        "Graph"
+      ],
+      "sources": [
+        "opendsa#sec.BinaryTree"
+      ]
+    },
+    {
+      "id": "breadth-first-search",
+      "term": "Breadth-first search",
+      "definition": "Traversal exploring all neighbors before moving farther away.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [
+        "BFS"
+      ],
+      "confusables": [
+        "Depth-first search",
+        "Traversal",
+        "Graph"
+      ],
+      "sources": [
+        "opendsa#sec.GraphTraversal"
+      ]
+    },
+    {
+      "id": "complete-binary-tree",
+      "term": "Complete binary tree",
+      "definition": "Binary tree filled by levels from left to right.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Full binary tree",
+        "Binary tree",
+        "Heap"
+      ],
+      "sources": [
+        "opendsa#sec.BinaryTree"
+      ]
+    },
+    {
+      "id": "cycle",
+      "term": "Cycle",
+      "definition": "Path of length at least three connecting a vertex to itself.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Path",
+        "Graph",
+        "DAG"
+      ],
+      "sources": [
+        "opendsa#sec.GraphIntro"
+      ]
+    },
+    {
+      "id": "dag",
+      "term": "DAG",
+      "definition": "Directed graph that contains no cycles at all.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [
+        "Directed acyclic graph"
+      ],
+      "confusables": [
+        "Graph",
+        "Cycle",
+        "Path"
+      ],
+      "sources": [
+        "opendsa#sec.GraphIntro"
+      ]
+    },
+    {
+      "id": "depth-first-search",
+      "term": "Depth-first search",
+      "definition": "Traversal following one branch to its end before backtracking.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [
+        "DFS"
+      ],
+      "confusables": [
+        "Breadth-first search",
+        "Traversal",
+        "Graph"
+      ],
+      "sources": [
+        "opendsa#sec.GraphTraversal"
+      ]
+    },
+    {
+      "id": "full-binary-tree",
+      "term": "Full binary tree",
+      "definition": "Binary tree where each node has zero or two children.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Complete binary tree",
+        "Binary tree",
+        "Heap"
+      ],
+      "sources": [
+        "opendsa#sec.BinaryTree"
+      ]
+    },
+    {
+      "id": "graph",
+      "term": "Graph",
+      "definition": "A set of vertices together with a set of edges.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "DAG",
+        "Path",
+        "Cycle"
+      ],
+      "sources": [
+        "opendsa#sec.GraphIntro"
+      ]
+    },
+    {
+      "id": "height",
+      "term": "Height",
+      "definition": "Length of the longest path from root to a leaf.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Path",
+        "Leaf",
+        "Traversal"
+      ],
+      "sources": [
+        "opendsa#sec.BinaryTree"
+      ]
+    },
+    {
+      "id": "leaf",
+      "term": "Leaf",
+      "definition": "A node that has no children in a tree.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [
+        "Leaf node"
+      ],
+      "confusables": [
+        "Height",
+        "Path",
+        "Graph"
+      ],
+      "sources": [
+        "opendsa#sec.BinaryTree"
+      ]
+    },
+    {
+      "id": "minimal-cost-spanning-tree",
+      "term": "Minimal-cost spanning tree",
+      "definition": "Connected subgraph spanning vertices with minimum total edge cost.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [
+        "MCST"
+      ],
+      "confusables": [
+        "Graph",
+        "Path",
+        "DAG"
+      ],
+      "sources": [
+        "opendsa#sec.MCST"
+      ]
+    },
+    {
+      "id": "path",
+      "term": "Path",
+      "definition": "Sequence of vertices where consecutive vertices share an edge.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Cycle",
+        "Graph",
+        "DAG"
+      ],
+      "sources": [
+        "opendsa#sec.GraphIntro"
+      ]
+    },
+    {
+      "id": "topological-sort",
+      "term": "Topological sort",
+      "definition": "Linear ordering of vertices respecting all directed edges.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "DAG",
+        "Graph",
+        "Depth-first search"
+      ],
+      "sources": [
+        "opendsa#sec.GraphTopsort"
+      ]
+    },
+    {
+      "id": "traversal",
+      "term": "Traversal",
+      "definition": "Process of visiting every node in a tree exactly once.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Trees and graphs",
+      "aliases": [],
+      "confusables": [
+        "Depth-first search",
+        "Breadth-first search",
+        "Graph"
+      ],
+      "sources": [
+        "opendsa#sec.BinaryTreeTraversal"
+      ]
+    },
+    {
+      "id": "closed-hashing",
+      "term": "Closed hashing",
+      "definition": "Collision resolution storing colliding records in other table slots.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [
+        "Open addressing"
+      ],
+      "confusables": [
+        "Open hashing",
+        "Collision",
+        "Load factor"
+      ],
+      "sources": [
+        "opendsa#sec.OpenHash"
+      ]
+    },
+    {
+      "id": "collision",
+      "term": "Collision",
+      "definition": "Two keys mapping to the same hash table slot.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [],
+      "confusables": [
+        "Hash function",
+        "Hash table",
+        "Open hashing"
+      ],
+      "sources": [
+        "opendsa#sec.HashIntro"
+      ]
+    },
+    {
+      "id": "exact-match-query",
+      "term": "Exact-match query",
+      "definition": "Question asking which record has a given key value.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [],
+      "confusables": [
+        "Hash table",
+        "Hash function",
+        "Collision"
+      ],
+      "sources": [
+        "opendsa#sec.HashIntro"
+      ]
+    },
+    {
+      "id": "hash-function",
+      "term": "Hash function",
+      "definition": "Function mapping a search key to a hash table slot.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [],
+      "confusables": [
+        "Hash table",
+        "Collision",
+        "Load factor"
+      ],
+      "sources": [
+        "opendsa#sec.HashIntro"
+      ]
+    },
+    {
+      "id": "hash-table",
+      "term": "Hash table",
+      "definition": "Array used to store records by hashed key values.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [
+        "HT"
+      ],
+      "confusables": [
+        "Hash function",
+        "Collision",
+        "Open hashing"
+      ],
+      "sources": [
+        "opendsa#sec.HashIntro"
+      ]
+    },
+    {
+      "id": "load-factor",
+      "term": "Load factor",
+      "definition": "Ratio of stored records to hash table slots.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [],
+      "confusables": [
+        "Collision",
+        "Open hashing",
+        "Closed hashing"
+      ],
+      "sources": [
+        "opendsa#sec.HashAnal"
+      ]
+    },
+    {
+      "id": "open-hashing",
+      "term": "Open hashing",
+      "definition": "Collision resolution storing colliding records in external lists.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Hashing",
+      "aliases": [
+        "Separate chaining"
+      ],
+      "confusables": [
+        "Closed hashing",
+        "Collision",
+        "Load factor"
+      ],
+      "sources": [
+        "opendsa#sec.OpenHash"
+      ]
+    },
+    {
+      "id": "decision-tree",
+      "term": "Decision tree",
+      "definition": "Binary tree modeling the binary decisions of an algorithm.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Sorting problem",
+        "Stable",
+        "Reduction"
+      ],
+      "sources": [
+        "opendsa#sec.SortingLowerBound"
+      ]
+    },
+    {
+      "id": "heapsort",
+      "term": "Heapsort",
+      "definition": "Sorting algorithm using a heap to extract maximums.",
+      "formula": "O(n log n)",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Mergesort",
+        "Quicksort",
+        "Insertion sort"
+      ],
+      "sources": [
+        "opendsa#sec.Heapsort"
+      ]
+    },
+    {
+      "id": "insertion-sort",
+      "term": "Insertion sort",
+      "definition": "Sorting by inserting each element into its sorted position.",
+      "formula": "O(n^2)",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Heapsort",
+        "Mergesort",
+        "Quicksort"
+      ],
+      "sources": [
+        "opendsa#sec.InsertionSort"
+      ]
+    },
+    {
+      "id": "mergesort",
+      "term": "Mergesort",
+      "definition": "Sorting by recursively splitting and merging sorted halves.",
+      "formula": "O(n log n)",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Quicksort",
+        "Heapsort",
+        "Insertion sort"
+      ],
+      "sources": [
+        "opendsa#sec.Mergesort"
+      ]
+    },
+    {
+      "id": "quicksort",
+      "term": "Quicksort",
+      "definition": "Sorting by partitioning around a pivot and recursing.",
+      "formula": "O(n log n)",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Mergesort",
+        "Heapsort",
+        "Insertion sort"
+      ],
+      "sources": [
+        "opendsa#sec.Quicksort"
+      ]
+    },
+    {
+      "id": "radix-sort",
+      "term": "Radix sort",
+      "definition": "Sorting by distributing records according to key digits.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Insertion sort",
+        "Mergesort",
+        "Quicksort"
+      ],
+      "sources": [
+        "opendsa#sec.RadixSort"
+      ]
+    },
+    {
+      "id": "sorting-problem",
+      "term": "Sorting problem",
+      "definition": "Arranging records in order by key value, duplicates allowed.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Stable",
+        "Decision tree",
+        "Reduction"
+      ],
+      "sources": [
+        "opendsa#sec.SortNotation"
+      ]
+    },
+    {
+      "id": "stable",
+      "term": "Stable",
+      "definition": "Sorting algorithm preserving relative order of equal keys.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Sorting and searching",
+      "aliases": [],
+      "confusables": [
+        "Sorting problem",
+        "Decision tree",
+        "Reduction"
+      ],
+      "sources": [
+        "opendsa#sec.SortNotation"
+      ]
+    },
+    {
+      "id": "divide-and-conquer",
+      "term": "Divide and conquer",
+      "definition": "Solving a problem by splitting, solving parts, and combining.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Algorithm design techniques",
+      "aliases": [],
+      "confusables": [
+        "Dynamic programming",
+        "Greedy algorithm",
+        "Reduction"
+      ],
+      "sources": [
+        "opendsa#sec.Mergesort"
+      ]
+    },
+    {
+      "id": "dynamic-programming",
+      "term": "Dynamic programming",
+      "definition": "Simplifying a problem by breaking it into overlapping subproblems.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Algorithm design techniques",
+      "aliases": [
+        "DP"
+      ],
+      "confusables": [
+        "Divide and conquer",
+        "Greedy algorithm",
+        "Reduction"
+      ],
+      "sources": [
+        "wikipedia-algorithms#sec.Dynamic_programming"
+      ]
+    },
+    {
+      "id": "greedy-algorithm",
+      "term": "Greedy algorithm",
+      "definition": "Algorithm making the locally best choice at each step.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Algorithm design techniques",
+      "aliases": [],
+      "confusables": [
+        "Divide and conquer",
+        "Dynamic programming",
+        "Reduction"
+      ],
+      "sources": [
+        "opendsa#sec.HuffProof"
+      ]
+    },
+    {
+      "id": "memoization",
+      "term": "Memoization",
+      "definition": "Caching results of subproblems to avoid repeated computation.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Algorithm design techniques",
+      "aliases": [],
+      "confusables": [
+        "Dynamic programming",
+        "Divide and conquer",
+        "Reduction"
+      ],
+      "sources": [
+        "wikipedia-algorithms#sec.Dynamic_programming"
+      ]
+    },
+    {
+      "id": "optimal-substructure",
+      "term": "Optimal substructure",
+      "definition": "Property that an optimal solution combines optimal solutions to subproblems.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Algorithm design techniques",
+      "aliases": [],
+      "confusables": [
+        "Dynamic programming",
+        "Divide and conquer",
+        "Greedy algorithm"
+      ],
+      "sources": [
+        "wikipedia-algorithms#sec.Dynamic_programming"
+      ]
+    },
+    {
+      "id": "reduction",
+      "term": "Reduction",
+      "definition": "Deriving bounds for one problem from another problem's bounds.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Algorithm design techniques",
+      "aliases": [],
+      "confusables": [
+        "Divide and conquer",
+        "Dynamic programming",
+        "Greedy algorithm"
+      ],
+      "sources": [
+        "opendsa#sec.SortingLowerBound"
+      ]
+    }
+  ]
+}

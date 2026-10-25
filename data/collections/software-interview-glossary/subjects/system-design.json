@@ -1,0 +1,1106 @@
+{
+  "version": 1,
+  "id": "system-design",
+  "collectionId": "software-interview-glossary",
+  "section": "core",
+  "name": "System Design",
+  "shortName": "System design",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Scalability and performance"
+    },
+    {
+      "number": 2,
+      "title": "Reliability and availability"
+    },
+    {
+      "number": 3,
+      "title": "Consistency and replication"
+    },
+    {
+      "number": 4,
+      "title": "Partitioning and load balancing"
+    },
+    {
+      "number": 5,
+      "title": "Caching and messaging"
+    },
+    {
+      "number": 6,
+      "title": "Operations and architecture"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "auto-scaling-group",
+      "term": "Auto Scaling group",
+      "definition": "A logical grouping of instances that share similar characteristics and are managed together for scaling.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Auto scaling",
+        "Scaling activity",
+        "Capacity"
+      ],
+      "sources": [
+        "aws-glossary#sec.AutoScalingGroup"
+      ]
+    },
+    {
+      "id": "auto-scaling",
+      "term": "Auto scaling",
+      "definition": "Automatic launching or terminating of instances based on user-defined policies, schedules, and health checks.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [
+        "Amazon EC2 Auto Scaling"
+      ],
+      "confusables": [
+        "Auto Scaling group",
+        "Scaling policy",
+        "Capacity"
+      ],
+      "sources": [
+        "aws-glossary#sec.AutoScaling"
+      ]
+    },
+    {
+      "id": "breach",
+      "term": "Breach",
+      "definition": "A condition where a user-set threshold is passed, possibly triggering a scaling activity.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Cooldown period",
+        "Scaling activity",
+        "Throttling"
+      ],
+      "sources": [
+        "aws-glossary#sec.breach"
+      ]
+    },
+    {
+      "id": "capacity",
+      "term": "Capacity",
+      "definition": "The amount of available compute size at a given time within defined minimum and maximum values.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Auto Scaling group",
+        "Scale out",
+        "Throttling"
+      ],
+      "sources": [
+        "aws-glossary#sec.capacity"
+      ]
+    },
+    {
+      "id": "cooldown-period",
+      "term": "Cooldown period",
+      "definition": "The time Auto Scaling waits before allowing another scaling change from an alarm.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Breach",
+        "Scaling policy",
+        "Throttling"
+      ],
+      "sources": [
+        "aws-glossary#sec.cooldown"
+      ]
+    },
+    {
+      "id": "latency",
+      "term": "Latency",
+      "definition": "The time it takes to return a response to a request.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [
+        "Request latency"
+      ],
+      "confusables": [
+        "Throughput",
+        "Tail latency",
+        "Percentile"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "percentile",
+      "term": "Percentile",
+      "definition": "A value below which a given percentage of observations in a distribution fall.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Latency",
+        "Tail latency",
+        "Throughput"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "scale-in",
+      "term": "Scale in",
+      "definition": "Removing instances from an existing Auto Scaling group.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Scale out",
+        "Scaling activity",
+        "Capacity"
+      ],
+      "sources": [
+        "aws-glossary#sec.scale-in"
+      ]
+    },
+    {
+      "id": "scale-out",
+      "term": "Scale out",
+      "definition": "Adding instances to an existing Auto Scaling group.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Scale in",
+        "Scaling activity",
+        "Capacity"
+      ],
+      "sources": [
+        "aws-glossary#sec.scale-out"
+      ]
+    },
+    {
+      "id": "scaling-activity",
+      "term": "Scaling activity",
+      "definition": "A process that changes the size, configuration, or makeup of an Auto Scaling group.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Scaling policy",
+        "Auto scaling",
+        "Cooldown period"
+      ],
+      "sources": [
+        "aws-glossary#sec.ScalingActivity"
+      ]
+    },
+    {
+      "id": "scaling-policy",
+      "term": "Scaling policy",
+      "definition": "A description of how Auto Scaling scales a group in response to changing demand.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Scaling activity",
+        "Auto scaling",
+        "Cooldown period"
+      ],
+      "sources": [
+        "aws-glossary#sec.scalingpolicy"
+      ]
+    },
+    {
+      "id": "tail-latency",
+      "term": "Tail latency",
+      "definition": "The latency experienced by the slowest requests in the long tail of a distribution.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Latency",
+        "Percentile",
+        "Throughput"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "throttling",
+      "term": "Throttling",
+      "definition": "The automatic restricting or slowing down of a process based on one or more limits.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [],
+      "confusables": [
+        "Capacity",
+        "Breach",
+        "Cooldown period"
+      ],
+      "sources": [
+        "aws-glossary#sec.throttling"
+      ]
+    },
+    {
+      "id": "throughput",
+      "term": "Throughput",
+      "definition": "The rate at which a service processes requests, typically measured in requests per second.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Scalability and performance",
+      "aliases": [
+        "System throughput"
+      ],
+      "confusables": [
+        "Latency",
+        "Capacity",
+        "Throttling"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "active-active",
+      "term": "Active-active",
+      "definition": "A high availability strategy where a workload runs simultaneously in multiple regions and serves traffic from all.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [
+        "Active/active"
+      ],
+      "confusables": [
+        "Active-passive",
+        "Hot standby",
+        "Warm standby"
+      ],
+      "sources": [
+        "aws-glossary#sec.activeactive"
+      ]
+    },
+    {
+      "id": "active-passive",
+      "term": "Active-passive",
+      "definition": "A disaster recovery strategy involving a primary region and a standby region.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [
+        "Active/passive"
+      ],
+      "confusables": [
+        "Active-active",
+        "Hot standby",
+        "Pilot light"
+      ],
+      "sources": [
+        "aws-glossary#sec.activepassive"
+      ]
+    },
+    {
+      "id": "availability",
+      "term": "Availability",
+      "definition": "The fraction of time a service is usable, measured by successful requests over total.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Durability",
+        "Service level indicator (SLI)",
+        "Error budget"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "availability-zone",
+      "term": "Availability Zone",
+      "definition": "A distinct location within a region that is insulated from failures in other zones.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [
+        "AZ"
+      ],
+      "confusables": [
+        "Region",
+        "Edge location",
+        "Active-active"
+      ],
+      "sources": [
+        "aws-glossary#sec.AZ"
+      ]
+    },
+    {
+      "id": "back-up-and-restore",
+      "term": "Back up and restore",
+      "definition": "A disaster recovery strategy copying backups from a primary region to a standby region for restoration.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Hot standby",
+        "Pilot light",
+        "Warm standby"
+      ],
+      "sources": [
+        "aws-glossary#sec.backupand"
+      ]
+    },
+    {
+      "id": "durability",
+      "term": "Durability",
+      "definition": "The likelihood that data will be retained over a long period of time.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Availability",
+        "Consistency model",
+        "Cross-Region replication"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "edge-location",
+      "term": "Edge location",
+      "definition": "A data center that a service uses to perform service-specific operations closer to users.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Availability Zone",
+        "Region",
+        "Content delivery network (CDN)"
+      ],
+      "sources": [
+        "aws-glossary#sec.edgeloc"
+      ]
+    },
+    {
+      "id": "error-budget",
+      "term": "Error budget",
+      "definition": "The rate at which service level objectives may be missed within a period.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Service level objective (SLO)",
+        "Service level indicator (SLI)",
+        "Availability"
+      ],
+      "sources": [
+        "sre-book#ch.3"
+      ]
+    },
+    {
+      "id": "health-check",
+      "term": "Health check",
+      "definition": "A call that checks the health status of each instance in an Auto Scaling group.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Alarm",
+        "Availability",
+        "Auto scaling"
+      ],
+      "sources": [
+        "aws-glossary#sec.healthcheck"
+      ]
+    },
+    {
+      "id": "hot-standby",
+      "term": "Hot standby",
+      "definition": "An active-passive strategy where the workload is fully scaled in both primary and standby regions.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Warm standby",
+        "Pilot light",
+        "Back up and restore"
+      ],
+      "sources": [
+        "aws-glossary#sec.hotstandby"
+      ]
+    },
+    {
+      "id": "pilot-light",
+      "term": "Pilot light",
+      "definition": "An active-passive strategy replicating data to a standby and provisioning only core infrastructure.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Hot standby",
+        "Warm standby",
+        "Back up and restore"
+      ],
+      "sources": [
+        "aws-glossary#sec.pilotlight"
+      ]
+    },
+    {
+      "id": "region",
+      "term": "Region",
+      "definition": "A named set of resources in the same geographical area, comprised of at least three Availability Zones.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Availability Zone",
+        "Edge location",
+        "Shard"
+      ],
+      "sources": [
+        "aws-glossary#sec.region"
+      ]
+    },
+    {
+      "id": "service-level-agreement-sla",
+      "term": "Service level agreement (SLA)",
+      "definition": "An explicit or implicit contract with users including consequences of meeting or missing objectives.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [
+        "SLA"
+      ],
+      "confusables": [
+        "Service level objective (SLO)",
+        "Service level indicator (SLI)",
+        "Error budget"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "service-level-indicator-sli",
+      "term": "Service level indicator (SLI)",
+      "definition": "A carefully defined quantitative measure of some aspect of the level of service provided.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [
+        "SLI"
+      ],
+      "confusables": [
+        "Service level objective (SLO)",
+        "Service level agreement (SLA)",
+        "Availability"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "service-level-objective-slo",
+      "term": "Service level objective (SLO)",
+      "definition": "A target value or range of values for a service level measured by an indicator.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [
+        "SLO"
+      ],
+      "confusables": [
+        "Service level indicator (SLI)",
+        "Service level agreement (SLA)",
+        "Error budget"
+      ],
+      "sources": [
+        "sre-book#ch.4"
+      ]
+    },
+    {
+      "id": "warm-standby",
+      "term": "Warm standby",
+      "definition": "An active-passive strategy where the workload is scaled down in the passive standby region but functional.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Reliability and availability",
+      "aliases": [],
+      "confusables": [
+        "Hot standby",
+        "Pilot light",
+        "Back up and restore"
+      ],
+      "sources": [
+        "aws-glossary#sec.warmstandby"
+      ]
+    },
+    {
+      "id": "consistency-model",
+      "term": "Consistency model",
+      "definition": "The method a service uses to achieve high availability, such as replicating data across servers.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Eventual consistency",
+        "Strongly consistent read",
+        "Data consistency"
+      ],
+      "sources": [
+        "aws-glossary#sec.consistencymodel"
+      ]
+    },
+    {
+      "id": "cross-region-replication",
+      "term": "Cross-Region replication",
+      "definition": "A solution for replicating data across different regions in near-real time.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Read replica",
+        "Global consistency",
+        "Eventual consistency"
+      ],
+      "sources": [
+        "aws-glossary#sec.cross-region-replication"
+      ]
+    },
+    {
+      "id": "data-consistency",
+      "term": "Data consistency",
+      "definition": "A concept where data written successfully is updated in all copies across all regions over time.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Global consistency",
+        "Eventual consistency",
+        "Strongly consistent read"
+      ],
+      "sources": [
+        "aws-glossary#sec.data-consistency"
+      ]
+    },
+    {
+      "id": "eventual-consistency",
+      "term": "Eventual consistency",
+      "definition": "A method achieving high availability by replicating data, where an immediate read might not show recent writes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Strongly consistent read",
+        "Global consistency",
+        "Consistency model"
+      ],
+      "sources": [
+        "aws-glossary#sec.eventualconsistency"
+      ]
+    },
+    {
+      "id": "eventually-consistent-read",
+      "term": "Eventually consistent read",
+      "definition": "A read returning data from one region that might not show the most recent write.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Strongly consistent read",
+        "Eventual consistency",
+        "Read replica"
+      ],
+      "sources": [
+        "aws-glossary#sec.eventually-consistent-read"
+      ]
+    },
+    {
+      "id": "global-consistency",
+      "term": "Global consistency",
+      "definition": "A concept where data written successfully updates all copies in all regions.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Data consistency",
+        "Eventual consistency",
+        "Cross-Region replication"
+      ],
+      "sources": [
+        "aws-glossary#sec.globalconsistency"
+      ]
+    },
+    {
+      "id": "read-local-write-global",
+      "term": "Read local/write global",
+      "definition": "An active-active strategy where reads and writes occur in the originating region and replicate synchronously.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [
+        "Read local/write global"
+      ],
+      "confusables": [
+        "Read local/write local",
+        "Active-active",
+        "Cross-Region replication"
+      ],
+      "sources": [
+        "aws-glossary#sec.readlocalwriteglobal"
+      ]
+    },
+    {
+      "id": "read-local-write-local",
+      "term": "Read local/write local",
+      "definition": "An active-active strategy where writes go to one primary region and reads are served from the originating region.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [
+        "Read local/write local"
+      ],
+      "confusables": [
+        "Read local/write global",
+        "Active-active",
+        "Read replica"
+      ],
+      "sources": [
+        "aws-glossary#sec.readlocalwritelocal"
+      ]
+    },
+    {
+      "id": "read-replica",
+      "term": "Read replica",
+      "definition": "An active copy of a database instance receiving replicated updates from the source.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Cross-Region replication",
+        "Eventually consistent read",
+        "Strongly consistent read"
+      ],
+      "sources": [
+        "aws-glossary#sec.readreplica"
+      ]
+    },
+    {
+      "id": "strongly-consistent-read",
+      "term": "Strongly consistent read",
+      "definition": "A read returning the most up-to-date data reflecting all previous successful writes.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Consistency and replication",
+      "aliases": [],
+      "confusables": [
+        "Eventually consistent read",
+        "Eventual consistency",
+        "Global consistency"
+      ],
+      "sources": [
+        "aws-glossary#sec.strongly-consistent-read"
+      ]
+    },
+    {
+      "id": "global-secondary-index",
+      "term": "Global secondary index",
+      "definition": "An index with a partition key and sort key that can differ from the table and span all partitions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Partitioning and load balancing",
+      "aliases": [],
+      "confusables": [
+        "Local secondary index",
+        "Partition key",
+        "Sort key"
+      ],
+      "sources": [
+        "aws-glossary#sec.global-secondary-index"
+      ]
+    },
+    {
+      "id": "load-balancer",
+      "term": "Load balancer",
+      "definition": "A DNS name with ports that distributes incoming traffic across multiple instances and zones.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Partitioning and load balancing",
+      "aliases": [],
+      "confusables": [
+        "Shard",
+        "Partition key",
+        "Auto scaling"
+      ],
+      "sources": [
+        "aws-glossary#sec.loadbalancer"
+      ]
+    },
+    {
+      "id": "local-secondary-index",
+      "term": "Local secondary index",
+      "definition": "An index sharing the table partition key but using a different sort key.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Partitioning and load balancing",
+      "aliases": [],
+      "confusables": [
+        "Global secondary index",
+        "Partition key",
+        "Sort key"
+      ],
+      "sources": [
+        "aws-glossary#sec.local-secondary-index"
+      ]
+    },
+    {
+      "id": "partition-key",
+      "term": "Partition key",
+      "definition": "A simple primary key composed of one attribute used to distribute data.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Partitioning and load balancing",
+      "aliases": [
+        "Hash attribute"
+      ],
+      "confusables": [
+        "Sort key",
+        "Shard",
+        "Global secondary index"
+      ],
+      "sources": [
+        "aws-glossary#sec.partition-key"
+      ]
+    },
+    {
+      "id": "shard",
+      "term": "Shard",
+      "definition": "A partition of data in an index split into primary and replica shards.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Partitioning and load balancing",
+      "aliases": [],
+      "confusables": [
+        "Partition key",
+        "Sort key",
+        "Load balancer"
+      ],
+      "sources": [
+        "aws-glossary#sec.shard"
+      ]
+    },
+    {
+      "id": "sort-key",
+      "term": "Sort key",
+      "definition": "An attribute used to sort partition keys in a composite primary key.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Partitioning and load balancing",
+      "aliases": [
+        "Range attribute"
+      ],
+      "confusables": [
+        "Partition key",
+        "Global secondary index",
+        "Local secondary index"
+      ],
+      "sources": [
+        "aws-glossary#sec.sort-key"
+      ]
+    },
+    {
+      "id": "cache-cluster",
+      "term": "Cache cluster",
+      "definition": "A logical cache distributed over multiple cache nodes with a specific node count.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [],
+      "confusables": [
+        "Cache node",
+        "Content delivery network (CDN)",
+        "Queue"
+      ],
+      "sources": [
+        "aws-glossary#sec.CacheCluster"
+      ]
+    },
+    {
+      "id": "cache-node",
+      "term": "Cache node",
+      "definition": "A fixed-size chunk of secure network-attached memory running a cache service.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [],
+      "confusables": [
+        "Cache cluster",
+        "Content delivery network (CDN)",
+        "Queue"
+      ],
+      "sources": [
+        "aws-glossary#sec.CacheNode"
+      ]
+    },
+    {
+      "id": "content-delivery-network-cdn",
+      "term": "Content delivery network (CDN)",
+      "definition": "A web service speeding distribution of web content via a worldwide network of data centers.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [
+        "CDN"
+      ],
+      "confusables": [
+        "Cache node",
+        "Edge location",
+        "Queue"
+      ],
+      "sources": [
+        "aws-glossary#sec.content-delivery-network"
+      ]
+    },
+    {
+      "id": "queue",
+      "term": "Queue",
+      "definition": "A sequence of messages or jobs held in temporary storage awaiting transmission or processing.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [],
+      "confusables": [
+        "Topic",
+        "Visibility timeout",
+        "Cache cluster"
+      ],
+      "sources": [
+        "aws-glossary#sec.queue"
+      ]
+    },
+    {
+      "id": "queue-url",
+      "term": "Queue URL",
+      "definition": "A web address that uniquely identifies a queue.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [],
+      "confusables": [
+        "Queue",
+        "Topic",
+        "Visibility timeout"
+      ],
+      "sources": [
+        "aws-glossary#sec.queueURL"
+      ]
+    },
+    {
+      "id": "topic",
+      "term": "Topic",
+      "definition": "A communication channel for sending messages and subscribing to notifications.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [],
+      "confusables": [
+        "Queue",
+        "Visibility timeout",
+        "Cache cluster"
+      ],
+      "sources": [
+        "aws-glossary#sec.topic"
+      ]
+    },
+    {
+      "id": "visibility-timeout",
+      "term": "Visibility timeout",
+      "definition": "The period a message stays invisible after a component receives it from a queue.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Caching and messaging",
+      "aliases": [],
+      "confusables": [
+        "Queue",
+        "Topic",
+        "Queue URL"
+      ],
+      "sources": [
+        "aws-glossary#sec.visibilitytimeout"
+      ]
+    },
+    {
+      "id": "alarm",
+      "term": "Alarm",
+      "definition": "An item watching a metric over time and triggering actions when thresholds are crossed.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Health check",
+        "Basic monitoring",
+        "Detailed monitoring"
+      ],
+      "sources": [
+        "aws-glossary#sec.alarm"
+      ]
+    },
+    {
+      "id": "basic-monitoring",
+      "term": "Basic monitoring",
+      "definition": "Monitoring of provided metrics derived at a five-minute frequency.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Detailed monitoring",
+        "Alarm",
+        "Container"
+      ],
+      "sources": [
+        "aws-glossary#sec.basicmonitor"
+      ]
+    },
+    {
+      "id": "blue-green-deployment",
+      "term": "Blue/green deployment",
+      "definition": "A deployment method replacing original instances with a separate replacement environment.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Continuous delivery",
+        "Continuous integration",
+        "Container"
+      ],
+      "sources": [
+        "aws-glossary#sec.bluegreendeployment"
+      ]
+    },
+    {
+      "id": "container",
+      "term": "Container",
+      "definition": "A standard unit of software containing application code and all relevant dependencies.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Continuous integration",
+        "Continuous delivery",
+        "Alarm"
+      ],
+      "sources": [
+        "aws-glossary#sec.container"
+      ]
+    },
+    {
+      "id": "continuous-delivery",
+      "term": "Continuous delivery",
+      "definition": "A practice where code changes are automatically built, tested, and prepared for release.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Continuous integration",
+        "Blue/green deployment",
+        "Container"
+      ],
+      "sources": [
+        "aws-glossary#sec.continuous_delivery"
+      ]
+    },
+    {
+      "id": "continuous-integration",
+      "term": "Continuous integration",
+      "definition": "A practice where developers regularly merge code changes and automated builds and tests run.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Continuous delivery",
+        "Blue/green deployment",
+        "Container"
+      ],
+      "sources": [
+        "aws-glossary#sec.continuous_integration"
+      ]
+    },
+    {
+      "id": "detailed-monitoring",
+      "term": "Detailed monitoring",
+      "definition": "Monitoring of provided metrics derived at a one-minute frequency.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Basic monitoring",
+        "Alarm",
+        "Container"
+      ],
+      "sources": [
+        "aws-glossary#sec.detailedmonitoring"
+      ]
+    },
+    {
+      "id": "toil",
+      "term": "Toil",
+      "definition": "Work tied to running a production service that is manual, repetitive, and scales linearly.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Operations and architecture",
+      "aliases": [],
+      "confusables": [
+        "Continuous delivery",
+        "Container",
+        "Alarm"
+      ],
+      "sources": [
+        "sre-book#ch.5"
+      ]
+    }
+  ]
+}

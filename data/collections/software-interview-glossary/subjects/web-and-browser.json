@@ -1,0 +1,979 @@
+{
+  "version": 1,
+  "id": "web-and-browser",
+  "collectionId": "software-interview-glossary",
+  "section": "core",
+  "name": "Web and Browser",
+  "shortName": "Web",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#9b6ae0",
+  "dark": "#bb95ff",
+  "units": [
+    {
+      "number": 1,
+      "title": "HTTP and transport"
+    },
+    {
+      "number": 2,
+      "title": "Browser architecture and rendering"
+    },
+    {
+      "number": 3,
+      "title": "The DOM and events"
+    },
+    {
+      "number": 4,
+      "title": "Security policies"
+    },
+    {
+      "number": 5,
+      "title": "Storage and state"
+    },
+    {
+      "number": 6,
+      "title": "Web APIs and performance"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "cookie",
+      "term": "Cookie",
+      "definition": "A small piece of information left on a visitor's computer by a website via a web browser.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [],
+      "confusables": [
+        "Cache",
+        "Origin",
+        "Secure context"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Cookie"
+      ]
+    },
+    {
+      "id": "http",
+      "term": "HTTP",
+      "definition": "The network protocol that enables transfer of hypermedia documents on the Web.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [
+        "HyperText Transfer Protocol"
+      ],
+      "confusables": [
+        "HTTPS",
+        "HTTP/2",
+        "REST"
+      ],
+      "sources": [
+        "mdn-glossary#sec.HTTP"
+      ]
+    },
+    {
+      "id": "http-2",
+      "term": "HTTP/2",
+      "definition": "A major revision of HTTP that reduces latency through request multiplexing and header compression.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [],
+      "confusables": [
+        "HTTP",
+        "HTTP/3",
+        "QUIC"
+      ],
+      "sources": [
+        "mdn-glossary#sec.HTTP_2"
+      ]
+    },
+    {
+      "id": "http-3",
+      "term": "HTTP/3",
+      "definition": "A major revision of HTTP that runs over QUIC on UDP instead of TCP.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [],
+      "confusables": [
+        "HTTP",
+        "HTTP/2",
+        "QUIC"
+      ],
+      "sources": [
+        "mdn-glossary#sec.HTTP_3"
+      ]
+    },
+    {
+      "id": "https",
+      "term": "HTTPS",
+      "definition": "An encrypted version of HTTP that uses TLS to secure client-server communication.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [
+        "HyperText Transfer Protocol Secure"
+      ],
+      "confusables": [
+        "HTTP",
+        "Transport Layer Security (TLS)",
+        "HSTS"
+      ],
+      "sources": [
+        "mdn-glossary#sec.HTTPS"
+      ]
+    },
+    {
+      "id": "quic",
+      "term": "QUIC",
+      "definition": "A multiplexed transport protocol implemented on UDP used as HTTP/3's transport layer.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [],
+      "confusables": [
+        "TCP",
+        "UDP",
+        "HTTP/3"
+      ],
+      "sources": [
+        "mdn-glossary#sec.QUIC"
+      ]
+    },
+    {
+      "id": "rest",
+      "term": "REST",
+      "definition": "A group of software architecture constraints for efficient distributed systems.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [
+        "Representational State Transfer"
+      ],
+      "confusables": [
+        "HTTP",
+        "Cookie"
+      ],
+      "sources": [
+        "mdn-glossary#sec.REST"
+      ]
+    },
+    {
+      "id": "tcp",
+      "term": "TCP",
+      "definition": "A protocol that lets two hosts connect and exchange reliable ordered data streams.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [
+        "Transmission Control Protocol"
+      ],
+      "confusables": [
+        "UDP",
+        "QUIC",
+        "HTTP"
+      ],
+      "sources": [
+        "mdn-glossary#sec.TCP"
+      ]
+    },
+    {
+      "id": "transport-layer-security-tls",
+      "term": "Transport Layer Security (TLS)",
+      "definition": "A protocol used by applications to communicate securely across a network.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [
+        "TLS"
+      ],
+      "confusables": [
+        "HTTPS",
+        "HSTS"
+      ],
+      "sources": [
+        "mdn-glossary#sec.TLS"
+      ]
+    },
+    {
+      "id": "udp",
+      "term": "UDP",
+      "definition": "A connectionless protocol for sending data when speed matters more than reliability.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "HTTP and transport",
+      "aliases": [
+        "User Datagram Protocol"
+      ],
+      "confusables": [
+        "TCP",
+        "QUIC",
+        "HTTP"
+      ],
+      "sources": [
+        "mdn-glossary#sec.UDP"
+      ]
+    },
+    {
+      "id": "browser",
+      "term": "Browser",
+      "definition": "A program that retrieves and displays pages from the Web and follows hyperlinks.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [
+        "Web browser"
+      ],
+      "confusables": [
+        "Browsing context",
+        "Main thread"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Browser"
+      ]
+    },
+    {
+      "id": "browsing-context",
+      "term": "Browsing context",
+      "definition": "An environment in which a browser displays a document, such as a tab or frame.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Browser",
+        "Origin"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Browsing_context"
+      ]
+    },
+    {
+      "id": "client-side-rendering-csr",
+      "term": "Client-side rendering (CSR)",
+      "definition": "The practice of generating HTML content using JavaScript in the browser.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [
+        "CSR"
+      ],
+      "confusables": [
+        "Server-side rendering (SSR)",
+        "DOM (Document Object Model)"
+      ],
+      "sources": [
+        "mdn-glossary#sec.CSR"
+      ]
+    },
+    {
+      "id": "main-thread",
+      "term": "Main thread",
+      "definition": "The thread where a browser processes user events and paints the page.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Long task",
+        "Render-blocking"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Main_thread"
+      ]
+    },
+    {
+      "id": "progressive-enhancement",
+      "term": "Progressive enhancement",
+      "definition": "A design philosophy providing baseline functionality to all users while enhancing for capable browsers.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Polyfill",
+        "Client-side rendering (CSR)"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Progressive_Enhancement"
+      ]
+    },
+    {
+      "id": "reflow",
+      "term": "Reflow",
+      "definition": "A browser recalculating position and geometry of parts of a webpage.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Repaint",
+        "Render-blocking",
+        "Long task"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Reflow"
+      ]
+    },
+    {
+      "id": "render-blocking",
+      "term": "Render-blocking",
+      "definition": "Any part of page loading that blocks rendering of the user interface.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Reflow",
+        "Long task",
+        "Jank"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Render_blocking"
+      ]
+    },
+    {
+      "id": "repaint",
+      "term": "Repaint",
+      "definition": "A browser redrawing a webpage to show visual updates from a UI change.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Reflow",
+        "Render-blocking",
+        "Long task"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Repaint"
+      ]
+    },
+    {
+      "id": "server-side-rendering-ssr",
+      "term": "Server-side rendering (SSR)",
+      "definition": "The practice of generating HTML content on the server and sending it to the client.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [
+        "SSR"
+      ],
+      "confusables": [
+        "Client-side rendering (CSR)",
+        "Cache"
+      ],
+      "sources": [
+        "mdn-glossary#sec.SSR"
+      ]
+    },
+    {
+      "id": "speculative-parsing",
+      "term": "Speculative parsing",
+      "definition": "A browser parsing ahead while scripts download to start speculative resource loads.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Browser architecture and rendering",
+      "aliases": [],
+      "confusables": [
+        "Prefetch",
+        "Render-blocking"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Speculative_parsing"
+      ]
+    },
+    {
+      "id": "cssom",
+      "term": "CSS Object Model (CSSOM)",
+      "definition": "A set of APIs for reading and modifying a document's CSS information.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "The DOM and events",
+      "aliases": [
+        "CSSOM"
+      ],
+      "confusables": [
+        "DOM (Document Object Model)",
+        "Shadow tree",
+        "Element"
+      ],
+      "sources": [
+        "mdn-glossary#sec.CSSOM"
+      ]
+    },
+    {
+      "id": "dom",
+      "term": "DOM (Document Object Model)",
+      "definition": "An API representing and interacting with a markup document as a node tree.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "The DOM and events",
+      "aliases": [
+        "DOM"
+      ],
+      "confusables": [
+        "CSS Object Model (CSSOM)",
+        "Shadow tree",
+        "Node"
+      ],
+      "sources": [
+        "mdn-glossary#sec.DOM"
+      ]
+    },
+    {
+      "id": "element",
+      "term": "Element",
+      "definition": "A part of a webpage represented as a node in the DOM tree.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "The DOM and events",
+      "aliases": [],
+      "confusables": [
+        "Node",
+        "CSS Object Model (CSSOM)"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Element"
+      ]
+    },
+    {
+      "id": "event",
+      "term": "Event",
+      "definition": "An asset generated by DOM elements that JavaScript code can manipulate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "The DOM and events",
+      "aliases": [],
+      "confusables": [
+        "Long task",
+        "Jank"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Event"
+      ]
+    },
+    {
+      "id": "node",
+      "term": "Node",
+      "definition": "A single point in the DOM node tree, such as a document, element, or text.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "The DOM and events",
+      "aliases": [
+        "DOM node"
+      ],
+      "confusables": [
+        "Element",
+        "Shadow tree"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Node"
+      ]
+    },
+    {
+      "id": "shadow-tree",
+      "term": "Shadow tree",
+      "definition": "A hidden set of DOM nodes attached to a host element via a shadow root.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "The DOM and events",
+      "aliases": [
+        "Shadow DOM"
+      ],
+      "confusables": [
+        "DOM (Document Object Model)",
+        "Node",
+        "Element"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Shadow_tree"
+      ]
+    },
+    {
+      "id": "cors",
+      "term": "CORS",
+      "definition": "A system of HTTP headers determining whether browsers block cross-origin response access.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "Cross-Origin Resource Sharing"
+      ],
+      "confusables": [
+        "Same-origin policy",
+        "CSP",
+        "Preflight request"
+      ],
+      "sources": [
+        "mdn-glossary#sec.CORS"
+      ]
+    },
+    {
+      "id": "csp",
+      "term": "CSP",
+      "definition": "A policy used to detect and mitigate XSS, clickjacking, and data injection attacks.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "Content Security Policy"
+      ],
+      "confusables": [
+        "CORS",
+        "Same-origin policy"
+      ],
+      "sources": [
+        "mdn-glossary#sec.CSP"
+      ]
+    },
+    {
+      "id": "cross-site-request-forgery-csrf",
+      "term": "Cross-site request forgery (CSRF)",
+      "definition": "An attack tricking a browser into making an authenticated request from a malicious site.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "CSRF"
+      ],
+      "confusables": [
+        "Cross-site scripting (XSS)",
+        "Same-origin policy",
+        "CORS"
+      ],
+      "sources": [
+        "mdn-glossary#sec.CSRF"
+      ]
+    },
+    {
+      "id": "cross-site-scripting-xss",
+      "term": "Cross-site scripting (XSS)",
+      "definition": "An attack injecting malicious code that a target site executes as its own.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "XSS"
+      ],
+      "confusables": [
+        "Cross-site request forgery (CSRF)",
+        "CSP",
+        "Same-origin policy"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Cross-site_scripting"
+      ]
+    },
+    {
+      "id": "hsts",
+      "term": "HSTS",
+      "definition": "A policy telling browsers to use HTTPS for a site and convert HTTP requests.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "HTTP Strict Transport Security"
+      ],
+      "confusables": [
+        "HTTPS",
+        "Transport Layer Security (TLS)",
+        "CSP"
+      ],
+      "sources": [
+        "mdn-glossary#sec.HSTS"
+      ]
+    },
+    {
+      "id": "origin",
+      "term": "Origin",
+      "definition": "The scheme, hostname, and port that identify where web content originates.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [],
+      "confusables": [
+        "Site",
+        "Registrable domain",
+        "Same-origin policy"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Origin"
+      ]
+    },
+    {
+      "id": "preflight-request",
+      "term": "Preflight request",
+      "definition": "A CORS OPTIONS request checking whether a server permits a specific method or headers.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [],
+      "confusables": [
+        "CORS",
+        "Same-origin policy",
+        "Origin"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Preflight_request"
+      ]
+    },
+    {
+      "id": "registrable-domain",
+      "term": "Registrable domain",
+      "definition": "The highest-level domain for a single site, registered under an effective top-level domain.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "eTLD+1"
+      ],
+      "confusables": [
+        "Site",
+        "Origin"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Registrable_domain"
+      ]
+    },
+    {
+      "id": "sri",
+      "term": "SRI",
+      "definition": "A security feature letting browsers verify fetched files against a cryptographic hash.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [
+        "Subresource Integrity"
+      ],
+      "confusables": [
+        "CSP",
+        "CORS",
+        "HTTPS"
+      ],
+      "sources": [
+        "mdn-glossary#sec.SRI"
+      ]
+    },
+    {
+      "id": "same-origin-policy",
+      "term": "Same-origin policy",
+      "definition": "A security mechanism restricting interaction between resources from different origins.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [],
+      "confusables": [
+        "CORS",
+        "Origin",
+        "CSP"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Same-origin_policy"
+      ]
+    },
+    {
+      "id": "secure-context",
+      "term": "Secure context",
+      "definition": "A window or worker meeting minimum standards of authentication and confidentiality.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [],
+      "confusables": [
+        "HTTPS",
+        "Transport Layer Security (TLS)",
+        "Origin"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Secure_Context"
+      ]
+    },
+    {
+      "id": "site",
+      "term": "Site",
+      "definition": "A collection of pages served from the same registrable domain.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Security policies",
+      "aliases": [],
+      "confusables": [
+        "Origin",
+        "Registrable domain",
+        "Same-origin policy"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Site"
+      ]
+    },
+    {
+      "id": "cache",
+      "term": "Cache",
+      "definition": "A component storing HTTP responses temporarily for subsequent requests.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Storage and state",
+      "aliases": [
+        "Web cache",
+        "HTTP cache"
+      ],
+      "confusables": [
+        "bfcache",
+        "Cookie",
+        "IndexedDB"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Cache"
+      ]
+    },
+    {
+      "id": "cacheable",
+      "term": "Cacheable",
+      "definition": "A response that may be stored in a cache for reuse on later requests.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Storage and state",
+      "aliases": [],
+      "confusables": [
+        "Cache",
+        "bfcache",
+        "Cookie"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Cacheable"
+      ]
+    },
+    {
+      "id": "indexeddb",
+      "term": "IndexedDB",
+      "definition": "A transactional browser database storing JavaScript objects with indexing for fast search.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Storage and state",
+      "aliases": [],
+      "confusables": [
+        "Cache",
+        "Cookie",
+        "bfcache"
+      ],
+      "sources": [
+        "mdn-glossary#sec.IndexedDB"
+      ]
+    },
+    {
+      "id": "bfcache",
+      "term": "bfcache",
+      "definition": "A browser cache storing a full page snapshot for instant back and forward navigation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Storage and state",
+      "aliases": [
+        "Back/forward cache"
+      ],
+      "confusables": [
+        "Cache",
+        "Cookie",
+        "Secure context"
+      ],
+      "sources": [
+        "mdn-glossary#sec.bfcache"
+      ]
+    },
+    {
+      "id": "jank",
+      "term": "Jank",
+      "definition": "Sluggishness in a user interface caused by blocking the main thread.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Long task",
+        "Render-blocking",
+        "Reflow"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Jank"
+      ]
+    },
+    {
+      "id": "lazy-load",
+      "term": "Lazy load",
+      "definition": "A strategy delaying asset loading until the user needs them.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [
+        "Lazy loading"
+      ],
+      "confusables": [
+        "Prefetch",
+        "Prerender",
+        "Page load time"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Lazy_load"
+      ]
+    },
+    {
+      "id": "long-task",
+      "term": "Long task",
+      "definition": "A task taking more than 50 milliseconds to complete on the main thread.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Jank",
+        "Main thread",
+        "Render-blocking"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Long_task"
+      ]
+    },
+    {
+      "id": "page-load-time",
+      "term": "Page load time",
+      "definition": "The time from navigation start to the start of the load event.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Speed index",
+        "Perceived performance",
+        "Web performance"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Page_load_time"
+      ]
+    },
+    {
+      "id": "perceived-performance",
+      "term": "Perceived performance",
+      "definition": "How fast, responsive, and reliable a website feels to its users.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Web performance",
+        "Page load time",
+        "Speed index"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Perceived_performance"
+      ]
+    },
+    {
+      "id": "polyfill",
+      "term": "Polyfill",
+      "definition": "Code providing modern functionality on older browsers lacking native support.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Progressive enhancement",
+        "Client-side rendering (CSR)",
+        "Lazy load"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Polyfill"
+      ]
+    },
+    {
+      "id": "prefetch",
+      "term": "Prefetch",
+      "definition": "Speculatively fetching documents or subresources likely to be needed soon.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [
+        "Prefetching"
+      ],
+      "confusables": [
+        "Prerender",
+        "Lazy load",
+        "Speculative parsing"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Prefetch"
+      ]
+    },
+    {
+      "id": "prerender",
+      "term": "Prerender",
+      "definition": "Speculatively prefetching and rendering a likely next page in the background.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [
+        "Prerendering"
+      ],
+      "confusables": [
+        "Prefetch",
+        "Lazy load",
+        "Speculative parsing"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Prerender"
+      ]
+    },
+    {
+      "id": "rail",
+      "term": "RAIL",
+      "definition": "A performance model focused on response, animation, idle, and load user experience.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Web performance",
+        "Long task",
+        "Page load time"
+      ],
+      "sources": [
+        "mdn-glossary#sec.RAIL"
+      ]
+    },
+    {
+      "id": "speed-index",
+      "term": "Speed index",
+      "definition": "A metric measuring how quickly page contents are visibly populated.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Page load time",
+        "Perceived performance",
+        "Web performance"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Speed_index"
+      ]
+    },
+    {
+      "id": "web-performance",
+      "term": "Web performance",
+      "definition": "The time from requesting content until it displays and becomes interactive.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Web APIs and performance",
+      "aliases": [],
+      "confusables": [
+        "Perceived performance",
+        "Page load time",
+        "Speed index"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Web_performance"
+      ]
+    }
+  ]
+}

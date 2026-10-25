@@ -1,0 +1,1156 @@
+{
+  "version": 1,
+  "id": "databases-and-sql",
+  "collectionId": "software-interview-glossary",
+  "section": "core",
+  "name": "Databases and SQL",
+  "shortName": "Databases",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Relational model and schema"
+    },
+    {
+      "number": 2,
+      "title": "Keys and normalization"
+    },
+    {
+      "number": 3,
+      "title": "Querying and aggregation"
+    },
+    {
+      "number": 4,
+      "title": "Transactions and concurrency"
+    },
+    {
+      "number": 5,
+      "title": "Indexes and query execution"
+    },
+    {
+      "number": 6,
+      "title": "NoSQL and distributed storage"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "attribute",
+      "term": "Attribute",
+      "definition": "A named, typed element within a tuple or relation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Column",
+        "Tuple",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.attribute"
+      ]
+    },
+    {
+      "id": "column",
+      "term": "Column",
+      "definition": "An attribute found in a table or view.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Attribute",
+        "Tuple",
+        "Table"
+      ],
+      "sources": [
+        "postgres-glossary#sec.column"
+      ]
+    },
+    {
+      "id": "database",
+      "term": "Database",
+      "definition": "A named collection of local SQL objects within a cluster.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Schema",
+        "Table",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.database"
+      ]
+    },
+    {
+      "id": "materialized-view",
+      "term": "Materialized view",
+      "definition": "A relation defined by a SELECT statement that stores its data like a table.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "View",
+        "Table",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.materialized-view"
+      ]
+    },
+    {
+      "id": "null",
+      "term": "Null",
+      "definition": "A marker representing the absence of a definite value.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Attribute",
+        "Constraint",
+        "Attribute"
+      ],
+      "sources": [
+        "postgres-glossary#sec.null"
+      ]
+    },
+    {
+      "id": "relation",
+      "term": "Relation",
+      "definition": "A set of tuples sharing a fixed ordered list of named attributes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Table",
+        "View",
+        "Schema"
+      ],
+      "sources": [
+        "postgres-glossary#sec.relation"
+      ]
+    },
+    {
+      "id": "schema",
+      "term": "Schema",
+      "definition": "A namespace for SQL objects within a single database.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Database",
+        "Table",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.schema"
+      ]
+    },
+    {
+      "id": "table",
+      "term": "Table",
+      "definition": "A relation storing a collection of tuples with a common data structure.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "View",
+        "Materialized view",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.table"
+      ]
+    },
+    {
+      "id": "tuple",
+      "term": "Tuple",
+      "definition": "An ordered collection of attributes forming one row of a relation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [
+        "Row",
+        "Record"
+      ],
+      "confusables": [
+        "Attribute",
+        "Column",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.tuple"
+      ]
+    },
+    {
+      "id": "view",
+      "term": "View",
+      "definition": "A relation defined by a SELECT statement with no storage of its own.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Relational model and schema",
+      "aliases": [],
+      "confusables": [
+        "Materialized view",
+        "Table",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.view"
+      ]
+    },
+    {
+      "id": "check-constraint",
+      "term": "Check constraint",
+      "definition": "A constraint restricting allowed values in one or more attributes of a row.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Unique constraint",
+        "Constraint",
+        "Attribute"
+      ],
+      "sources": [
+        "postgres-glossary#sec.check-constraint"
+      ]
+    },
+    {
+      "id": "constraint",
+      "term": "Constraint",
+      "definition": "A restriction on the values of data allowed within a table or domain.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Check constraint",
+        "Unique constraint",
+        "Foreign key"
+      ],
+      "sources": [
+        "postgres-glossary#sec.constraint"
+      ]
+    },
+    {
+      "id": "foreign-key",
+      "term": "Foreign key",
+      "definition": "A constraint requiring column values to identify a row in another table.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Primary key",
+        "Referential integrity",
+        "Unique constraint"
+      ],
+      "sources": [
+        "postgres-glossary#sec.foreign-key"
+      ]
+    },
+    {
+      "id": "key",
+      "term": "Key",
+      "definition": "A means of identifying a row within a relation by attribute values.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Primary key",
+        "Foreign key",
+        "Index"
+      ],
+      "sources": [
+        "postgres-glossary#sec.key"
+      ]
+    },
+    {
+      "id": "primary-key",
+      "term": "Primary key",
+      "definition": "A unique constraint that also forbids null values in its columns.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Foreign key",
+        "Unique constraint",
+        "Key"
+      ],
+      "sources": [
+        "postgres-glossary#sec.primary-key"
+      ]
+    },
+    {
+      "id": "referential-integrity",
+      "term": "Referential integrity",
+      "definition": "A restriction ensuring foreign key data matches data in the referenced relation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Foreign key",
+        "Primary key",
+        "Constraint"
+      ],
+      "sources": [
+        "postgres-glossary#sec.referential-integrity"
+      ]
+    },
+    {
+      "id": "unique-constraint",
+      "term": "Unique constraint",
+      "definition": "A constraint ensuring each value or combination appears only once in a relation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Keys and normalization",
+      "aliases": [],
+      "confusables": [
+        "Primary key",
+        "Check constraint",
+        "Constraint"
+      ],
+      "sources": [
+        "postgres-glossary#sec.unique-constraint"
+      ]
+    },
+    {
+      "id": "aggregate-function",
+      "term": "Aggregate function",
+      "definition": "A function combining multiple input values into a single output value.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Window function",
+        "Query",
+        "Query"
+      ],
+      "sources": [
+        "postgres-glossary#sec.aggregate"
+      ]
+    },
+    {
+      "id": "delete",
+      "term": "Delete",
+      "definition": "The SQL command that removes rows from a table or relation.",
+      "formula": "DELETE",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Update",
+        "Insert",
+        "Merge"
+      ],
+      "sources": [
+        "postgres-glossary#sec.delete"
+      ]
+    },
+    {
+      "id": "insert",
+      "term": "Insert",
+      "definition": "The SQL command used to add new data into a table.",
+      "formula": "INSERT",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Update",
+        "Delete",
+        "Merge"
+      ],
+      "sources": [
+        "postgres-glossary#sec.insert"
+      ]
+    },
+    {
+      "id": "join",
+      "term": "Join",
+      "definition": "An operation combining data from multiple relations in a query.",
+      "formula": "JOIN",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Query",
+        "Select",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-docs#sec.tutorial-join"
+      ]
+    },
+    {
+      "id": "merge",
+      "term": "Merge",
+      "definition": "An SQL command that conditionally adds, modifies, or removes rows using source data.",
+      "formula": "MERGE",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Insert",
+        "Update",
+        "Delete"
+      ],
+      "sources": [
+        "postgres-glossary#sec.merge"
+      ]
+    },
+    {
+      "id": "query",
+      "term": "Query",
+      "definition": "A request sent to a database backend, usually to return or modify data.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Select",
+        "Result set",
+        "Join"
+      ],
+      "sources": [
+        "postgres-glossary#sec.query"
+      ]
+    },
+    {
+      "id": "result-set",
+      "term": "Result set",
+      "definition": "A relation transmitted from a backend to a client after an SQL command.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Query",
+        "Tuple",
+        "Relation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.result-set"
+      ]
+    },
+    {
+      "id": "select",
+      "term": "Select",
+      "definition": "The SQL command used to request data from a database.",
+      "formula": "SELECT",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Query",
+        "Insert",
+        "Join"
+      ],
+      "sources": [
+        "postgres-glossary#sec.select"
+      ]
+    },
+    {
+      "id": "update",
+      "term": "Update",
+      "definition": "The SQL command used to modify rows that may already exist in a table.",
+      "formula": "UPDATE",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [],
+      "confusables": [
+        "Insert",
+        "Delete",
+        "Merge"
+      ],
+      "sources": [
+        "postgres-glossary#sec.update"
+      ]
+    },
+    {
+      "id": "window-function",
+      "term": "Window function",
+      "definition": "A function applied to a partition of a query's result set.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Querying and aggregation",
+      "aliases": [
+        "Analytic function"
+      ],
+      "confusables": [
+        "Aggregate function",
+        "Query",
+        "Shard"
+      ],
+      "sources": [
+        "postgres-glossary#sec.window-function"
+      ]
+    },
+    {
+      "id": "acid",
+      "term": "ACID",
+      "definition": "The set of atomicity, consistency, isolation, and durability properties of transactions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Transaction",
+        "Atomicity",
+        "Isolation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.acid"
+      ]
+    },
+    {
+      "id": "atomicity",
+      "term": "Atomicity",
+      "definition": "The property that a transaction's operations all complete or none do.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Consistency",
+        "Isolation",
+        "Durability"
+      ],
+      "sources": [
+        "postgres-glossary#sec.atomicity"
+      ]
+    },
+    {
+      "id": "commit",
+      "term": "Commit",
+      "definition": "The act of finalizing a transaction, making changes visible and durable.",
+      "formula": "COMMIT",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Rollback",
+        "Savepoint",
+        "Transaction"
+      ],
+      "sources": [
+        "postgres-glossary#sec.commit"
+      ]
+    },
+    {
+      "id": "consistency",
+      "term": "Consistency",
+      "definition": "The property that database data always complies with integrity constraints.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Atomicity",
+        "Isolation",
+        "Durability"
+      ],
+      "sources": [
+        "postgres-glossary#sec.consistency"
+      ]
+    },
+    {
+      "id": "dirty-read",
+      "term": "Dirty read",
+      "definition": "A transaction reading data written by a concurrent uncommitted transaction.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Nonrepeatable read",
+        "Phantom read",
+        "Serialization anomaly"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "durability",
+      "term": "Durability",
+      "definition": "The assurance that committed changes survive system failure or crash.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Atomicity",
+        "Consistency",
+        "Isolation"
+      ],
+      "sources": [
+        "postgres-glossary#sec.durability"
+      ]
+    },
+    {
+      "id": "isolation",
+      "term": "Isolation",
+      "definition": "The property that a transaction's effects are invisible to others before commit.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Atomicity",
+        "Consistency",
+        "Durability"
+      ],
+      "sources": [
+        "postgres-glossary#sec.isolation"
+      ]
+    },
+    {
+      "id": "lock",
+      "term": "Lock",
+      "definition": "A mechanism limiting or preventing simultaneous access to a resource.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "MVCC",
+        "Isolation",
+        "Transaction"
+      ],
+      "sources": [
+        "postgres-glossary#sec.lock"
+      ]
+    },
+    {
+      "id": "mvcc",
+      "term": "MVCC",
+      "definition": "A mechanism allowing concurrent readers and writers to avoid blocking each other.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [
+        "Multi-version concurrency control"
+      ],
+      "confusables": [
+        "Lock",
+        "Isolation",
+        "Transaction"
+      ],
+      "sources": [
+        "postgres-glossary#sec.mvcc"
+      ]
+    },
+    {
+      "id": "nonrepeatable-read",
+      "term": "Nonrepeatable read",
+      "definition": "Re-reading data and finding it changed by another committed transaction.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Dirty read",
+        "Phantom read",
+        "Serialization anomaly"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "phantom-read",
+      "term": "Phantom read",
+      "definition": "Re-executing a query and finding the matching row set changed by another transaction.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Dirty read",
+        "Nonrepeatable read",
+        "Serialization anomaly"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "read-committed",
+      "term": "Read committed",
+      "definition": "An isolation level where each statement sees data committed before it began.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Repeatable read",
+        "Serializable",
+        "Read uncommitted"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "read-uncommitted",
+      "term": "Read uncommitted",
+      "definition": "An isolation level allowing reads of uncommitted data from concurrent transactions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Read committed",
+        "Repeatable read",
+        "Serializable"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "repeatable-read",
+      "term": "Repeatable read",
+      "definition": "An isolation level where a transaction sees a snapshot from its start.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Read committed",
+        "Serializable",
+        "Read uncommitted"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "rollback",
+      "term": "Rollback",
+      "definition": "The command undoing all operations performed since a transaction began.",
+      "formula": "ROLLBACK",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Commit",
+        "Savepoint",
+        "Transaction"
+      ],
+      "sources": [
+        "postgres-glossary#sec.rollback"
+      ]
+    },
+    {
+      "id": "savepoint",
+      "term": "Savepoint",
+      "definition": "A mark within a transaction allowing partial rollback to that point.",
+      "formula": "SAVEPOINT",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Commit",
+        "Rollback",
+        "Transaction"
+      ],
+      "sources": [
+        "postgres-glossary#sec.savepoint"
+      ]
+    },
+    {
+      "id": "serializable",
+      "term": "Serializable",
+      "definition": "An isolation level emulating serial execution of all committed transactions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Read committed",
+        "Repeatable read",
+        "Read uncommitted"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "serialization-anomaly",
+      "term": "Serialization anomaly",
+      "definition": "A committed group's result inconsistent with any serial execution order.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Dirty read",
+        "Nonrepeatable read",
+        "Phantom read"
+      ],
+      "sources": [
+        "postgres-docs#sec.transaction-iso"
+      ]
+    },
+    {
+      "id": "transaction",
+      "term": "Transaction",
+      "definition": "A set of commands that succeed or fail together as one atomic unit.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Transactions and concurrency",
+      "aliases": [],
+      "confusables": [
+        "Commit",
+        "Rollback",
+        "Savepoint"
+      ],
+      "sources": [
+        "postgres-glossary#sec.transaction"
+      ]
+    },
+    {
+      "id": "access-method",
+      "term": "Access method",
+      "definition": "An interface PostgreSQL uses to access data in tables and indexes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [],
+      "confusables": [
+        "Index",
+        "Query planner",
+        "B-tree"
+      ],
+      "sources": [
+        "postgres-glossary#sec.access-method"
+      ]
+    },
+    {
+      "id": "analyze",
+      "term": "Analyze",
+      "definition": "The act of collecting statistics to help the query planner decide execution.",
+      "formula": "ANALYZE",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [],
+      "confusables": [
+        "Vacuum",
+        "Query planner",
+        "Index"
+      ],
+      "sources": [
+        "postgres-glossary#sec.analyze"
+      ]
+    },
+    {
+      "id": "b-tree",
+      "term": "B-tree",
+      "definition": "A data structure commonly used by database systems to store indexes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [],
+      "confusables": [
+        "Index",
+        "Access method",
+        "Query planner"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-b-tree"
+      ]
+    },
+    {
+      "id": "index",
+      "term": "Index",
+      "definition": "A relation containing data derived from a table to support fast retrieval.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [],
+      "confusables": [
+        "B-tree",
+        "Query planner",
+        "Access method"
+      ],
+      "sources": [
+        "postgres-glossary#sec.index"
+      ]
+    },
+    {
+      "id": "parallel-query",
+      "term": "Parallel query",
+      "definition": "The ability to execute parts of a query using multiple CPU processes.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [],
+      "confusables": [
+        "Query planner",
+        "Index",
+        "Query"
+      ],
+      "sources": [
+        "postgres-glossary#sec.parallel-query"
+      ]
+    },
+    {
+      "id": "query-planner",
+      "term": "Query planner",
+      "definition": "The component determining the most efficient way to execute queries.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [
+        "Optimizer",
+        "Planner"
+      ],
+      "confusables": [
+        "Index",
+        "Analyze",
+        "Parallel query"
+      ],
+      "sources": [
+        "postgres-glossary#sec.planner"
+      ]
+    },
+    {
+      "id": "vacuum",
+      "term": "Vacuum",
+      "definition": "The process removing outdated tuple versions required by MVCC.",
+      "formula": "VACUUM",
+      "unit": 5,
+      "unitTitle": "Indexes and query execution",
+      "aliases": [],
+      "confusables": [
+        "Analyze",
+        "MVCC",
+        "Index"
+      ],
+      "sources": [
+        "postgres-glossary#sec.vacuum"
+      ]
+    },
+    {
+      "id": "cap-theorem",
+      "term": "CAP theorem",
+      "definition": "A distributed system can provide at most two of consistency, availability, and partition tolerance.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Eventual consistency",
+        "Consistency",
+        "Replication"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-cap-theorem"
+      ]
+    },
+    {
+      "id": "collection",
+      "term": "Collection",
+      "definition": "A grouping of documents equivalent to a relational table.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Document",
+        "Table",
+        "Relation"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-collection"
+      ]
+    },
+    {
+      "id": "document",
+      "term": "Document",
+      "definition": "A record in a collection and the basic unit of data in MongoDB.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Collection",
+        "Tuple",
+        "Relation"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-document"
+      ]
+    },
+    {
+      "id": "eventual-consistency",
+      "term": "Eventual consistency",
+      "definition": "A model where reads eventually return the most recently written value.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "CAP theorem",
+        "Consistency",
+        "Replication"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-eventual-consistency"
+      ]
+    },
+    {
+      "id": "primary",
+      "term": "Primary",
+      "definition": "The replica set member that receives all write operations.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Secondary",
+        "Replica set",
+        "Primary key"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-primary"
+      ]
+    },
+    {
+      "id": "replica-set",
+      "term": "Replica set",
+      "definition": "A group of servers maintaining the same data set for redundancy.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Replication",
+        "Shard",
+        "Primary"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-replica-set"
+      ]
+    },
+    {
+      "id": "replication",
+      "term": "Replication",
+      "definition": "A feature allowing multiple servers to share the same data.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Replica set",
+        "Sharding",
+        "Primary"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-replication"
+      ]
+    },
+    {
+      "id": "secondary",
+      "term": "Secondary",
+      "definition": "A replica set member that replicates the primary's data.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Primary",
+        "Replica set",
+        "Replication"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-secondary"
+      ]
+    },
+    {
+      "id": "shard",
+      "term": "Shard",
+      "definition": "A single instance or replica set storing part of a sharded cluster's data.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Sharding",
+        "Shard key",
+        "Replica set"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-shard"
+      ]
+    },
+    {
+      "id": "shard-key",
+      "term": "Shard key",
+      "definition": "The field used to distribute documents among members of a sharded cluster.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Shard",
+        "Primary key",
+        "Index"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-shard-key"
+      ]
+    },
+    {
+      "id": "sharded-cluster",
+      "term": "Sharded cluster",
+      "definition": "The set of nodes comprising a sharded MongoDB deployment.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Shard",
+        "Replica set",
+        "Replica set"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-sharded-cluster"
+      ]
+    },
+    {
+      "id": "sharding",
+      "term": "Sharding",
+      "definition": "A database architecture partitioning data by key ranges across multiple instances.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "NoSQL and distributed storage",
+      "aliases": [],
+      "confusables": [
+        "Shard",
+        "Shard",
+        "Replication"
+      ],
+      "sources": [
+        "mongodb-glossary#std-term-sharding"
+      ]
+    }
+  ]
+}

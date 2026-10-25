@@ -1,0 +1,890 @@
+{
+  "version": 1,
+  "id": "programming-fundamentals",
+  "collectionId": "software-interview-glossary",
+  "section": "core",
+  "name": "Programming Fundamentals",
+  "shortName": "Fundamentals",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Types and values"
+    },
+    {
+      "number": 2,
+      "title": "Variables, scope and binding"
+    },
+    {
+      "number": 3,
+      "title": "Functions and closures"
+    },
+    {
+      "number": 4,
+      "title": "Control flow and recursion"
+    },
+    {
+      "number": 5,
+      "title": "Memory and references"
+    },
+    {
+      "number": 6,
+      "title": "Paradigms and abstraction"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "callable",
+      "term": "Callable",
+      "definition": "An object supporting invocation with a set of arguments.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Function",
+        "Method",
+        "Closure"
+      ],
+      "sources": [
+        "python-glossary#sec.callable"
+      ]
+    },
+    {
+      "id": "hashable",
+      "term": "Hashable",
+      "definition": "An object with a hash value that never changes and equality comparison.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Immutable",
+        "Mutable",
+        "Object"
+      ],
+      "sources": [
+        "python-glossary#sec.hashable"
+      ]
+    },
+    {
+      "id": "immutable",
+      "term": "Immutable",
+      "definition": "An object whose value is fixed and cannot be altered after creation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Mutable",
+        "Hashable",
+        "Primitive"
+      ],
+      "sources": [
+        "python-glossary#sec.immutable"
+      ]
+    },
+    {
+      "id": "mapping",
+      "term": "Mapping",
+      "definition": "A container supporting arbitrary key lookups by hashable keys.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Sequence",
+        "Object",
+        "Primitive"
+      ],
+      "sources": [
+        "python-glossary#sec.mapping"
+      ]
+    },
+    {
+      "id": "mutable",
+      "term": "Mutable",
+      "definition": "An object whose state is allowed to change during program execution.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Immutable",
+        "Hashable",
+        "Object"
+      ],
+      "sources": [
+        "python-glossary#sec.mutable"
+      ]
+    },
+    {
+      "id": "object",
+      "term": "Object",
+      "definition": "Any data with state (attributes or value) and defined behavior (methods).",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Primitive",
+        "Value",
+        "Type"
+      ],
+      "sources": [
+        "python-glossary#sec.object"
+      ]
+    },
+    {
+      "id": "primitive",
+      "term": "Primitive",
+      "definition": "Data that is not an object and has no methods or properties.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [
+        "Primitive value"
+      ],
+      "confusables": [
+        "Object",
+        "Value",
+        "Type"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Primitive"
+      ]
+    },
+    {
+      "id": "sequence",
+      "term": "Sequence",
+      "definition": "An iterable supporting efficient element access using integer indices.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Mapping",
+        "Object",
+        "Primitive"
+      ],
+      "sources": [
+        "python-glossary#sec.sequence"
+      ]
+    },
+    {
+      "id": "type",
+      "term": "Type",
+      "definition": "A characteristic of a value affecting what kind of data it stores.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [
+        "Data type"
+      ],
+      "confusables": [
+        "Value",
+        "Primitive",
+        "Object"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Type"
+      ]
+    },
+    {
+      "id": "value",
+      "term": "Value",
+      "definition": "A primitive or an object reference held by a variable or property.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Types and values",
+      "aliases": [],
+      "confusables": [
+        "Type",
+        "Primitive",
+        "Object reference"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Value"
+      ]
+    },
+    {
+      "id": "binding",
+      "term": "Binding",
+      "definition": "An association of an identifier with a value.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Scope",
+        "Namespace",
+        "Object"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Binding"
+      ]
+    },
+    {
+      "id": "closure-variable",
+      "term": "Closure variable",
+      "definition": "A free variable from an outer scope captured by a nested function.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Free variable",
+        "Nested scope",
+        "Closure"
+      ],
+      "sources": [
+        "python-glossary#sec.closure-variable"
+      ]
+    },
+    {
+      "id": "free-variable",
+      "term": "Free variable",
+      "definition": "A variable used in a namespace that is not local to that namespace.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Closure variable",
+        "Nested scope",
+        "Scope"
+      ],
+      "sources": [
+        "python-glossary#sec.free-variable"
+      ]
+    },
+    {
+      "id": "global-state",
+      "term": "Global state",
+      "definition": "Data accessible throughout a program, such as module-level variables.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Scope",
+        "Binding",
+        "Namespace"
+      ],
+      "sources": [
+        "python-glossary#sec.global-state"
+      ]
+    },
+    {
+      "id": "hoisting",
+      "term": "Hoisting",
+      "definition": "The interpreter moving declarations to the top of their scope before execution.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Scope",
+        "Binding",
+        "Closure"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Hoisting"
+      ]
+    },
+    {
+      "id": "namespace",
+      "term": "Namespace",
+      "definition": "The place where a variable is stored, implemented as a dictionary.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Scope",
+        "Binding",
+        "Object"
+      ],
+      "sources": [
+        "python-glossary#sec.namespace"
+      ]
+    },
+    {
+      "id": "nested-scope",
+      "term": "Nested scope",
+      "definition": "The ability to refer to a variable in an enclosing definition.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Scope",
+        "Closure",
+        "Free variable"
+      ],
+      "sources": [
+        "python-glossary#sec.nested-scope"
+      ]
+    },
+    {
+      "id": "scope",
+      "term": "Scope",
+      "definition": "The current execution context where values and expressions are visible.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Variables, scope and binding",
+      "aliases": [],
+      "confusables": [
+        "Binding",
+        "Hoisting",
+        "Closure"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Scope"
+      ]
+    },
+    {
+      "id": "argument",
+      "term": "Argument",
+      "definition": "A value passed to a function when calling it.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Parameter",
+        "Function",
+        "Binding"
+      ],
+      "sources": [
+        "python-glossary#sec.argument"
+      ]
+    },
+    {
+      "id": "callback",
+      "term": "Callback",
+      "definition": "A subroutine function passed as an argument to execute later.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [
+        "Callback function"
+      ],
+      "confusables": [
+        "Function",
+        "Closure",
+        "Object"
+      ],
+      "sources": [
+        "python-glossary#sec.callback"
+      ]
+    },
+    {
+      "id": "closure",
+      "term": "Closure",
+      "definition": "A technique implementing lexically scoped name binding with first-class functions.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Scope",
+        "Hoisting",
+        "Callback"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Closure"
+      ]
+    },
+    {
+      "id": "coroutine-function",
+      "term": "Coroutine function",
+      "definition": "A function returning a coroutine object defined with async def.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Function",
+        "Generator function",
+        "Closure"
+      ],
+      "sources": [
+        "python-glossary#sec.coroutine-function"
+      ]
+    },
+    {
+      "id": "decorator",
+      "term": "Decorator",
+      "definition": "A function returning another function, applied as a transformation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Closure",
+        "Callback",
+        "Method"
+      ],
+      "sources": [
+        "python-glossary#sec.decorator"
+      ]
+    },
+    {
+      "id": "function",
+      "term": "Function",
+      "definition": "A code snippet callable by other code or by itself, optionally returning a value.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Method",
+        "Closure",
+        "Callable"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Function"
+      ]
+    },
+    {
+      "id": "generator-function",
+      "term": "Generator function",
+      "definition": "A function returning a generator object using yield expressions.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Function",
+        "Closure",
+        "Coroutine function"
+      ],
+      "sources": [
+        "python-glossary#sec.generator-function"
+      ]
+    },
+    {
+      "id": "lambda",
+      "term": "Lambda",
+      "definition": "An anonymous inline function consisting of a single expression.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [
+        "Anonymous function"
+      ],
+      "confusables": [
+        "Function",
+        "Closure",
+        "Callback"
+      ],
+      "sources": [
+        "python-glossary#sec.lambda"
+      ]
+    },
+    {
+      "id": "method",
+      "term": "Method",
+      "definition": "A function defined inside a class body operating on instances.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Function",
+        "Callable",
+        "Closure"
+      ],
+      "sources": [
+        "python-glossary#sec.method"
+      ]
+    },
+    {
+      "id": "parameter",
+      "term": "Parameter",
+      "definition": "A named entity in a function definition specifying an accepted argument.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Functions and closures",
+      "aliases": [],
+      "confusables": [
+        "Argument",
+        "Function",
+        "Binding"
+      ],
+      "sources": [
+        "python-glossary#sec.parameter"
+      ]
+    },
+    {
+      "id": "call-stack",
+      "term": "Call stack",
+      "definition": "A mechanism tracking the place in code calling multiple functions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Control flow and recursion",
+      "aliases": [],
+      "confusables": [
+        "Recursion",
+        "Control flow",
+        "Loop"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Call_stack"
+      ]
+    },
+    {
+      "id": "control-flow",
+      "term": "Control flow",
+      "definition": "The order in which the computer executes statements in a script.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Control flow and recursion",
+      "aliases": [],
+      "confusables": [
+        "Recursion",
+        "Loop",
+        "Call stack"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Control_flow"
+      ]
+    },
+    {
+      "id": "expression",
+      "term": "Expression",
+      "definition": "A piece of syntax evaluated to some value.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Control flow and recursion",
+      "aliases": [],
+      "confusables": [
+        "Statement",
+        "Control flow",
+        "Lambda"
+      ],
+      "sources": [
+        "python-glossary#sec.expression"
+      ]
+    },
+    {
+      "id": "loop",
+      "term": "Loop",
+      "definition": "A sequence of instructions repeated until a certain condition is met.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Control flow and recursion",
+      "aliases": [],
+      "confusables": [
+        "Recursion",
+        "Control flow",
+        "Call stack"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Loop"
+      ]
+    },
+    {
+      "id": "recursion",
+      "term": "Recursion",
+      "definition": "The act of a function calling itself to solve smaller sub-problems.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Control flow and recursion",
+      "aliases": [
+        "Recursive function"
+      ],
+      "confusables": [
+        "Loop",
+        "Control flow",
+        "Call stack"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Recursion"
+      ]
+    },
+    {
+      "id": "statement",
+      "term": "Statement",
+      "definition": "A part of a suite that is an expression or a keyword construct.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Control flow and recursion",
+      "aliases": [],
+      "confusables": [
+        "Expression",
+        "Control flow",
+        "Loop"
+      ],
+      "sources": [
+        "python-glossary#sec.statement"
+      ]
+    },
+    {
+      "id": "borrowed-reference",
+      "term": "Borrowed reference",
+      "definition": "A reference to an object not owned by the code using it.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [],
+      "confusables": [
+        "Strong reference",
+        "Reference count",
+        "Garbage collection"
+      ],
+      "sources": [
+        "python-glossary#sec.borrowed-reference"
+      ]
+    },
+    {
+      "id": "cyclic-isolate",
+      "term": "Cyclic isolate",
+      "definition": "A subgroup of objects referencing each other in a reference cycle.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [],
+      "confusables": [
+        "Garbage collection",
+        "Reference count",
+        "Strong reference"
+      ],
+      "sources": [
+        "python-glossary#sec.cyclic-isolate"
+      ]
+    },
+    {
+      "id": "garbage-collection",
+      "term": "Garbage collection",
+      "definition": "The process of freeing memory when it is not used anymore.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [],
+      "confusables": [
+        "Reference count",
+        "Strong reference",
+        "Borrowed reference"
+      ],
+      "sources": [
+        "python-glossary#sec.garbage-collection"
+      ]
+    },
+    {
+      "id": "immortal",
+      "term": "Immortal",
+      "definition": "An object whose reference count is never modified or deallocated.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [
+        "Immortal object"
+      ],
+      "confusables": [
+        "Reference count",
+        "Garbage collection",
+        "Strong reference"
+      ],
+      "sources": [
+        "python-glossary#sec.immortal"
+      ]
+    },
+    {
+      "id": "object-reference",
+      "term": "Object reference",
+      "definition": "A pointer to an object rather than a copy of its data.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [],
+      "confusables": [
+        "Strong reference",
+        "Borrowed reference",
+        "Value"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Object_reference"
+      ]
+    },
+    {
+      "id": "reference-count",
+      "term": "Reference count",
+      "definition": "The number of references to an object, freed when it drops to zero.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [],
+      "confusables": [
+        "Garbage collection",
+        "Strong reference",
+        "Borrowed reference"
+      ],
+      "sources": [
+        "python-glossary#sec.reference-count"
+      ]
+    },
+    {
+      "id": "strong-reference",
+      "term": "Strong reference",
+      "definition": "A reference to an object owned by the code holding it.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Memory and references",
+      "aliases": [],
+      "confusables": [
+        "Borrowed reference",
+        "Reference count",
+        "Garbage collection"
+      ],
+      "sources": [
+        "python-glossary#sec.strong-reference"
+      ]
+    },
+    {
+      "id": "abstraction",
+      "term": "Abstraction",
+      "definition": "A way to reduce complexity by hiding technical details behind simpler APIs.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [],
+      "confusables": [
+        "Duck typing",
+        "Metaclass",
+        "Object"
+      ],
+      "sources": [
+        "mdn-glossary#sec.Abstraction"
+      ]
+    },
+    {
+      "id": "descriptor",
+      "term": "Descriptor",
+      "definition": "An object defining __get__, __set__, or __delete__ methods.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [],
+      "confusables": [
+        "Metaclass",
+        "Abstraction",
+        "Method"
+      ],
+      "sources": [
+        "python-glossary#sec.descriptor"
+      ]
+    },
+    {
+      "id": "duck-typing",
+      "term": "Duck typing",
+      "definition": "A style determining interface by calling methods rather than checking types.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [],
+      "confusables": [
+        "Abstraction",
+        "Type",
+        "Object"
+      ],
+      "sources": [
+        "python-glossary#sec.duck-typing"
+      ]
+    },
+    {
+      "id": "eafp",
+      "term": "EAFP",
+      "definition": "A coding style trying an operation and catching exceptions if it fails.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [
+        "Easier to ask for forgiveness than permission"
+      ],
+      "confusables": [
+        "LBYL",
+        "Abstraction",
+        "Duck typing"
+      ],
+      "sources": [
+        "python-glossary#sec.EAFP"
+      ]
+    },
+    {
+      "id": "generic-function",
+      "term": "Generic function",
+      "definition": "A function composed of multiple implementations for different types.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [],
+      "confusables": [
+        "Single dispatch",
+        "Abstraction",
+        "Duck typing"
+      ],
+      "sources": [
+        "python-glossary#sec.generic-function"
+      ]
+    },
+    {
+      "id": "lbyl",
+      "term": "LBYL",
+      "definition": "A coding style testing pre-conditions before making calls or lookups.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [
+        "Look before you leap"
+      ],
+      "confusables": [
+        "EAFP",
+        "Abstraction",
+        "Duck typing"
+      ],
+      "sources": [
+        "python-glossary#sec.LBYL"
+      ]
+    },
+    {
+      "id": "metaclass",
+      "term": "Metaclass",
+      "definition": "The class of a class, responsible for creating class objects.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [],
+      "confusables": [
+        "Method",
+        "Abstraction",
+        "Descriptor"
+      ],
+      "sources": [
+        "python-glossary#sec.metaclass"
+      ]
+    },
+    {
+      "id": "single-dispatch",
+      "term": "Single dispatch",
+      "definition": "Generic function dispatch choosing implementation by one argument's type.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Paradigms and abstraction",
+      "aliases": [],
+      "confusables": [
+        "Generic function",
+        "Abstraction",
+        "Duck typing"
+      ],
+      "sources": [
+        "python-glossary#sec.single-dispatch"
+      ]
+    }
+  ]
+}

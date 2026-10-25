@@ -1,0 +1,1092 @@
+{
+  "version": 1,
+  "id": "operating-systems-and-networking",
+  "collectionId": "software-interview-glossary",
+  "section": "core",
+  "name": "Operating Systems and Networking",
+  "shortName": "OS & networks",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "Processes and threads"
+    },
+    {
+      "number": 2,
+      "title": "CPU scheduling"
+    },
+    {
+      "number": 3,
+      "title": "Memory management"
+    },
+    {
+      "number": 4,
+      "title": "Storage and file systems"
+    },
+    {
+      "number": 5,
+      "title": "Synchronization and deadlock"
+    },
+    {
+      "number": 6,
+      "title": "Network models and addressing"
+    },
+    {
+      "number": 7,
+      "title": "Transport and application protocols"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "concurrency",
+      "term": "Concurrency",
+      "definition": "Interleaved or simultaneous execution of multiple activities within one program or system.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Process",
+        "Thread",
+        "Race condition"
+      ],
+      "sources": [
+        "ostep#ch.26"
+      ]
+    },
+    {
+      "id": "context-switch",
+      "term": "Context switch",
+      "definition": "Saving one process state and restoring another to share the CPU.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Process",
+        "Thread",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.6"
+      ]
+    },
+    {
+      "id": "exec",
+      "term": "Exec",
+      "definition": "Replacing a process image with a new program.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Fork",
+        "Process",
+        "Wait"
+      ],
+      "sources": [
+        "ostep#ch.5"
+      ]
+    },
+    {
+      "id": "fork",
+      "term": "Fork",
+      "definition": "Creating a new process by duplicating an existing one.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Exec",
+        "Process",
+        "Wait"
+      ],
+      "sources": [
+        "ostep#ch.5"
+      ]
+    },
+    {
+      "id": "process",
+      "term": "Process",
+      "definition": "An instance of a running program with its own address space.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Thread",
+        "Context switch",
+        "Address space"
+      ],
+      "sources": [
+        "ostep#ch.4"
+      ]
+    },
+    {
+      "id": "race-condition",
+      "term": "Race condition",
+      "definition": "Behavior depending on the timing of unsynchronized concurrent operations.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Concurrency",
+        "Critical section",
+        "Deadlock"
+      ],
+      "sources": [
+        "ostep#ch.32"
+      ]
+    },
+    {
+      "id": "system-call",
+      "term": "System call",
+      "definition": "A controlled entry from user code into the operating system kernel.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Process",
+        "Thread",
+        "Context switch"
+      ],
+      "sources": [
+        "ostep#ch.5"
+      ]
+    },
+    {
+      "id": "thread",
+      "term": "Thread",
+      "definition": "A separate execution stream sharing one process address space.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Process",
+        "Concurrency",
+        "Context switch"
+      ],
+      "sources": [
+        "ostep#ch.12"
+      ]
+    },
+    {
+      "id": "wait",
+      "term": "Wait",
+      "definition": "Blocking a process until a child process exits.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Processes and threads",
+      "aliases": [],
+      "confusables": [
+        "Fork",
+        "Exec",
+        "Process"
+      ],
+      "sources": [
+        "ostep#ch.5"
+      ]
+    },
+    {
+      "id": "cpu-scheduling",
+      "term": "CPU scheduling",
+      "definition": "Choosing which ready process receives the processor next.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "Context switch",
+        "Throughput",
+        "Turnaround time"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "first-come-first-served",
+      "term": "First-come first-served",
+      "definition": "Scheduling processes strictly in arrival order without preemption.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [
+        "FCFS"
+      ],
+      "confusables": [
+        "Shortest job first",
+        "Round robin",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "lottery-scheduling",
+      "term": "Lottery scheduling",
+      "definition": "Allocating CPU time shares through randomized ticket draws.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "Stride scheduling",
+        "Multi-level feedback queue",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.9"
+      ]
+    },
+    {
+      "id": "multi-level-feedback-queue",
+      "term": "Multi-level feedback queue",
+      "definition": "Adaptive scheduler using multiple queues with dynamic priority adjustment.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [
+        "MLFQ"
+      ],
+      "confusables": [
+        "Lottery scheduling",
+        "Round robin",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.8"
+      ]
+    },
+    {
+      "id": "multi-processor-scheduling",
+      "term": "Multi-processor scheduling",
+      "definition": "Assigning and balancing runnable work across multiple CPUs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "CPU scheduling",
+        "Context switch",
+        "Throughput"
+      ],
+      "sources": [
+        "ostep#ch.10"
+      ]
+    },
+    {
+      "id": "response-time",
+      "term": "Response time",
+      "definition": "Elapsed time from request arrival to first response.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "Turnaround time",
+        "Throughput",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "round-robin",
+      "term": "Round robin",
+      "definition": "Cyclically giving each ready process a fixed time quantum.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "First-come first-served",
+        "Multi-level feedback queue",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "shortest-job-first",
+      "term": "Shortest job first",
+      "definition": "Running the ready process with the smallest execution time first.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [
+        "SJF"
+      ],
+      "confusables": [
+        "First-come first-served",
+        "Round robin",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "stride-scheduling",
+      "term": "Stride scheduling",
+      "definition": "Deterministic CPU allocation using stride values derived from tickets.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "Lottery scheduling",
+        "Multi-level feedback queue",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.9"
+      ]
+    },
+    {
+      "id": "throughput",
+      "term": "Throughput",
+      "definition": "Number of processes completed per unit of time.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "Turnaround time",
+        "Response time",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "turnaround-time",
+      "term": "Turnaround time",
+      "definition": "Elapsed time from process submission to its completion.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "CPU scheduling",
+      "aliases": [],
+      "confusables": [
+        "Response time",
+        "Throughput",
+        "CPU scheduling"
+      ],
+      "sources": [
+        "ostep#ch.7"
+      ]
+    },
+    {
+      "id": "address-space",
+      "term": "Address space",
+      "definition": "The set of addresses a process may reference.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Virtual memory",
+        "Page table",
+        "Segmentation"
+      ],
+      "sources": [
+        "ostep#ch.13"
+      ]
+    },
+    {
+      "id": "address-translation",
+      "term": "Address translation",
+      "definition": "Converting virtual memory addresses into physical memory addresses.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Page table",
+        "Translation lookaside buffer",
+        "Paging"
+      ],
+      "sources": [
+        "ostep#ch.15"
+      ]
+    },
+    {
+      "id": "free-space-management",
+      "term": "Free space management",
+      "definition": "Tracking and allocating unused memory regions in an efficient manner.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Segmentation",
+        "Paging",
+        "Swapping"
+      ],
+      "sources": [
+        "ostep#ch.17"
+      ]
+    },
+    {
+      "id": "page-fault",
+      "term": "Page fault",
+      "definition": "An access to a virtual page not currently in physical memory.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Paging",
+        "Page table",
+        "Swapping"
+      ],
+      "sources": [
+        "ostep#ch.21"
+      ]
+    },
+    {
+      "id": "page-table",
+      "term": "Page table",
+      "definition": "Data structure mapping virtual pages to physical frames.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Address translation",
+        "Translation lookaside buffer",
+        "Paging"
+      ],
+      "sources": [
+        "ostep#ch.18"
+      ]
+    },
+    {
+      "id": "paging",
+      "term": "Paging",
+      "definition": "Dividing memory into fixed-size pages and physical frames.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Segmentation",
+        "Page table",
+        "Virtual memory"
+      ],
+      "sources": [
+        "ostep#ch.18"
+      ]
+    },
+    {
+      "id": "segmentation",
+      "term": "Segmentation",
+      "definition": "Dividing memory into variable-size logical segments for programs.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Paging",
+        "Address space",
+        "Virtual memory"
+      ],
+      "sources": [
+        "ostep#ch.16"
+      ]
+    },
+    {
+      "id": "swapping",
+      "term": "Swapping",
+      "definition": "Moving memory pages between RAM and disk storage.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Page fault",
+        "Paging",
+        "Thrashing"
+      ],
+      "sources": [
+        "ostep#ch.21"
+      ]
+    },
+    {
+      "id": "thrashing",
+      "term": "Thrashing",
+      "definition": "Excessive paging that leaves little time for useful work.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Swapping",
+        "Paging",
+        "Page fault"
+      ],
+      "sources": [
+        "ostep#ch.22"
+      ]
+    },
+    {
+      "id": "translation-lookaside-buffer",
+      "term": "Translation lookaside buffer",
+      "definition": "Cache storing the most recent virtual-to-physical address translations.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [
+        "TLB"
+      ],
+      "confusables": [
+        "Page table",
+        "Address translation",
+        "Paging"
+      ],
+      "sources": [
+        "ostep#ch.19"
+      ]
+    },
+    {
+      "id": "virtual-memory",
+      "term": "Virtual memory",
+      "definition": "Abstraction giving processes a large private address space.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Memory management",
+      "aliases": [],
+      "confusables": [
+        "Address space",
+        "Paging",
+        "Segmentation"
+      ],
+      "sources": [
+        "ostep#ch.13"
+      ]
+    },
+    {
+      "id": "directory",
+      "term": "Directory",
+      "definition": "A file mapping names to other files or directories.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [],
+      "confusables": [
+        "File",
+        "Inode",
+        "File system"
+      ],
+      "sources": [
+        "ostep#ch.39"
+      ]
+    },
+    {
+      "id": "file",
+      "term": "File",
+      "definition": "A named collection of bytes stored on disk.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [],
+      "confusables": [
+        "Directory",
+        "Inode",
+        "File system"
+      ],
+      "sources": [
+        "ostep#ch.39"
+      ]
+    },
+    {
+      "id": "file-system",
+      "term": "File system",
+      "definition": "Software organizing and storing files on a device.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [],
+      "confusables": [
+        "File",
+        "Directory",
+        "Journaling"
+      ],
+      "sources": [
+        "ostep#ch.40"
+      ]
+    },
+    {
+      "id": "hard-disk-drive",
+      "term": "Hard disk drive",
+      "definition": "Magnetic storage device with spinning platters and heads.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [
+        "HDD"
+      ],
+      "confusables": [
+        "Solid-state drive",
+        "RAID",
+        "File system"
+      ],
+      "sources": [
+        "ostep#ch.37"
+      ]
+    },
+    {
+      "id": "inode",
+      "term": "Inode",
+      "definition": "Metadata structure describing a file attributes and blocks.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [],
+      "confusables": [
+        "File",
+        "Directory",
+        "File system"
+      ],
+      "sources": [
+        "ostep#ch.39"
+      ]
+    },
+    {
+      "id": "journaling",
+      "term": "Journaling",
+      "definition": "Logging pending file system changes to enable crash recovery.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [],
+      "confusables": [
+        "File system",
+        "RAID",
+        "Hard disk drive"
+      ],
+      "sources": [
+        "ostep#ch.42"
+      ]
+    },
+    {
+      "id": "raid",
+      "term": "RAID",
+      "definition": "Combining multiple disks to improve performance or redundancy.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [],
+      "confusables": [
+        "Hard disk drive",
+        "Solid-state drive",
+        "File system"
+      ],
+      "sources": [
+        "ostep#ch.38"
+      ]
+    },
+    {
+      "id": "solid-state-drive",
+      "term": "Solid-state drive",
+      "definition": "Flash-based storage device with no moving mechanical parts.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Storage and file systems",
+      "aliases": [
+        "SSD"
+      ],
+      "confusables": [
+        "Hard disk drive",
+        "RAID",
+        "File system"
+      ],
+      "sources": [
+        "ostep#ch.44"
+      ]
+    },
+    {
+      "id": "atomic-operation",
+      "term": "Atomic operation",
+      "definition": "An operation that completes without interruption or interleaving.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Lock",
+        "Critical section",
+        "Race condition"
+      ],
+      "sources": [
+        "ostep#ch.28"
+      ]
+    },
+    {
+      "id": "condition-variable",
+      "term": "Condition variable",
+      "definition": "Synchronization primitive letting threads wait for a condition.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Semaphore",
+        "Lock",
+        "Monitor"
+      ],
+      "sources": [
+        "ostep#ch.30"
+      ]
+    },
+    {
+      "id": "critical-section",
+      "term": "Critical section",
+      "definition": "Code region accessing shared state requiring mutual exclusion.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Lock",
+        "Atomic operation",
+        "Race condition"
+      ],
+      "sources": [
+        "ostep#ch.28"
+      ]
+    },
+    {
+      "id": "deadlock",
+      "term": "Deadlock",
+      "definition": "Circular wait among processes where none can proceed.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Livelock",
+        "Race condition",
+        "Lock"
+      ],
+      "sources": [
+        "ostep#ch.32"
+      ]
+    },
+    {
+      "id": "livelock",
+      "term": "Livelock",
+      "definition": "Processes keep responding to each other but make no progress.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Deadlock",
+        "Race condition",
+        "Lock"
+      ],
+      "sources": [
+        "ostep#ch.32"
+      ]
+    },
+    {
+      "id": "lock",
+      "term": "Lock",
+      "definition": "Mechanism that ensures mutual exclusion over shared data.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [
+        "Mutex"
+      ],
+      "confusables": [
+        "Semaphore",
+        "Spinlock",
+        "Monitor"
+      ],
+      "sources": [
+        "ostep#ch.28"
+      ]
+    },
+    {
+      "id": "monitor",
+      "term": "Monitor",
+      "definition": "High-level construct combining a lock with condition variables.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Lock",
+        "Semaphore",
+        "Condition variable"
+      ],
+      "sources": [
+        "ostep#ch.34"
+      ]
+    },
+    {
+      "id": "semaphore",
+      "term": "Semaphore",
+      "definition": "Counter-based synchronization primitive used to control shared access.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Lock",
+        "Condition variable",
+        "Monitor"
+      ],
+      "sources": [
+        "ostep#ch.31"
+      ]
+    },
+    {
+      "id": "spinlock",
+      "term": "Spinlock",
+      "definition": "Lock that busy-waits until the lock becomes free.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Synchronization and deadlock",
+      "aliases": [],
+      "confusables": [
+        "Lock",
+        "Semaphore",
+        "Monitor"
+      ],
+      "sources": [
+        "ostep#ch.28"
+      ]
+    },
+    {
+      "id": "basic-nat",
+      "term": "Basic NAT",
+      "definition": "Mapping private IP addresses to global addresses only.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [],
+      "confusables": [
+        "NAPT",
+        "NAT",
+        "Private address space"
+      ],
+      "sources": [
+        "rfc3022#sec.2.1"
+      ]
+    },
+    {
+      "id": "napt",
+      "term": "NAPT",
+      "definition": "Extending NAT to translate IP addresses and transport ports.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [
+        "Network Address Port Translation"
+      ],
+      "confusables": [
+        "Basic NAT",
+        "NAT",
+        "Port"
+      ],
+      "sources": [
+        "rfc3022#sec.2.2"
+      ]
+    },
+    {
+      "id": "nat",
+      "term": "NAT",
+      "definition": "Replacing IP addresses in packets to connect private and public networks.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [
+        "Network Address Translation"
+      ],
+      "confusables": [
+        "Basic NAT",
+        "NAPT",
+        "Router"
+      ],
+      "sources": [
+        "rfc3022#sec.2",
+        "nist-glossary#sec.network-address-translation"
+      ]
+    },
+    {
+      "id": "network",
+      "term": "Network",
+      "definition": "Collection of interconnected components such as routers and cabling.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [],
+      "confusables": [
+        "Router",
+        "Protocol",
+        "Port"
+      ],
+      "sources": [
+        "nist-glossary#sec.network"
+      ]
+    },
+    {
+      "id": "port",
+      "term": "Port",
+      "definition": "Entry or exit point for connecting communications devices.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [],
+      "confusables": [
+        "Router",
+        "Protocol",
+        "NAPT"
+      ],
+      "sources": [
+        "nist-glossary#sec.port"
+      ]
+    },
+    {
+      "id": "private-address-space",
+      "term": "Private address space",
+      "definition": "IP address ranges reserved for use inside private networks.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [],
+      "confusables": [
+        "Basic NAT",
+        "NAT",
+        "Router"
+      ],
+      "sources": [
+        "rfc3022#sec.5.2"
+      ]
+    },
+    {
+      "id": "protocol",
+      "term": "Protocol",
+      "definition": "Set of rules governing communication between computing systems.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [],
+      "confusables": [
+        "Network",
+        "Port",
+        "Router"
+      ],
+      "sources": [
+        "nist-glossary#sec.protocol"
+      ]
+    },
+    {
+      "id": "router",
+      "term": "Router",
+      "definition": "Gateway forwarding packets between networks at layer three.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Network models and addressing",
+      "aliases": [],
+      "confusables": [
+        "Network",
+        "Protocol",
+        "NAT"
+      ],
+      "sources": [
+        "nist-glossary#sec.router"
+      ]
+    },
+    {
+      "id": "dns",
+      "term": "DNS",
+      "definition": "System tracking and resolving Internet domain names and addresses.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Transport and application protocols",
+      "aliases": [
+        "Domain Name System"
+      ],
+      "confusables": [
+        "HTTP",
+        "TCP",
+        "UDP"
+      ],
+      "sources": [
+        "nist-glossary#sec.dns"
+      ]
+    },
+    {
+      "id": "http",
+      "term": "HTTP",
+      "definition": "Standard method for communication between clients and web servers.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Transport and application protocols",
+      "aliases": [
+        "Hypertext Transfer Protocol"
+      ],
+      "confusables": [
+        "DNS",
+        "TCP",
+        "UDP"
+      ],
+      "sources": [
+        "nist-glossary#sec.http"
+      ]
+    },
+    {
+      "id": "tcp",
+      "term": "TCP",
+      "definition": "Protocol enabling two hosts to establish a connection and exchange data streams reliably.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Transport and application protocols",
+      "aliases": [
+        "Transmission Control Protocol"
+      ],
+      "confusables": [
+        "UDP",
+        "DNS",
+        "HTTP"
+      ],
+      "sources": [
+        "nist-glossary#sec.tcp"
+      ]
+    },
+    {
+      "id": "udp",
+      "term": "UDP",
+      "definition": "Protocol letting applications send messages with minimal mechanism and no delivery guarantee.",
+      "formula": "",
+      "unit": 7,
+      "unitTitle": "Transport and application protocols",
+      "aliases": [
+        "User Datagram Protocol"
+      ],
+      "confusables": [
+        "TCP",
+        "DNS",
+        "HTTP"
+      ],
+      "sources": [
+        "rfc768#sec.introduction"
+      ]
+    }
+  ]
+}
