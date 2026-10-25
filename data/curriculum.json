@@ -847,20 +847,20 @@
           "sourceCount": 3
         },
         {
-          "id": "osc",
-          "name": "OSC",
+          "id": "operating-systems-concepts",
+          "name": "Operating Systems Concepts",
           "shortName": "OSC",
-          "code": "",
+          "code": "9EC43",
           "courseType": "OE",
           "elective": "Open Elective III",
           "folderId": "1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
           "folderUrl": "https://drive.google.com/drive/folders/1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
-          "data": null,
-          "definitionCount": 0,
-          "unitCount": 0,
-          "coveredUnits": 0,
-          "status": "unresolved",
-          "sourceCount": 0
+          "data": "data/subjects/4-1/operating-systems-concepts.json",
+          "definitionCount": 68,
+          "unitCount": 6,
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 22
         },
         {
           "id": "product-and-services",
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2075,
-    "completeSubjects": 33,
+    "definitions": 2143,
+    "completeSubjects": 34,
     "partialSubjects": 11,
-    "inaccessibleSubjects": 8
+    "inaccessibleSubjects": 7
   }
 }
