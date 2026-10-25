@@ -127,11 +127,13 @@ layout. The current seeded set:
 | 4-1 | Advanced Communications and Networks | `#3f6fb0` | `advanced-communications-and-networks` |
 | 4-1 | Internet of Things and Applications | `#2a9668` | `internet-of-things-and-applications` |
 | 4-1 | Computer Networks | `#5b7fa8` | `computer-networks` |
-| 4-1 | Embedded Real Time Operating Systems (inaccessible) | `#8a6a3f` | `embedded-real-time-operating-systems` |
-| 4-1 | System on Chip Architecture (inaccessible) | `#6b5fa8` | `system-on-chip-architecture` |
+| 4-1 | Embedded Real Time Operating Systems | `#8a6a3f` | `embedded-real-time-operating-systems` |
+| 4-1 | System on Chip Architecture | `#6b5fa8` | `system-on-chip-architecture` |
 
-The two inaccessible 4-1 electives keep palette entries for a future retry but currently
-have no definitions and are not rendered. Pre-mapped for later batches: Technical Seminar.
+The final data set has **41 subject slots**: 34 with definitions (33 complete/partial plus
+Python Programming as unresolved) and 7 no-data stubs. Stubs keep their palette entries for
+a future retry but render as quiet `not seeded` annotations, never as empty cards. The 4-2
+project semester renders as a single no-material note.
 
 Derived values from a subject colour `c`:
 
@@ -247,7 +249,14 @@ micro-labels.
 
 ## 07 · Data & persistence
 
-Everything is client-side. The static HTML app uses two localStorage keys:
+The study set is data-driven: `data/curriculum.json` (41 subject slots, 34 with
+definitions, 1,575 one-liners), one file per subject under `data/subjects/<semester>/`, and
+`data/sources.json` (250 catalogued source files). Every definition keeps its `sources[]`
+locators; the hover tooltip shows the first source file and page/slide. Unresolved and
+no-material slots are rendered as quiet `not seeded` annotations, never as empty cards.
+`4-2` renders as a no-material project-semester note.
+
+Everything else is client-side. The static HTML app uses two localStorage keys:
 
 ```
 oneliners.state.v1    // goal, mastery, history
@@ -357,34 +366,40 @@ hairline hatch.
   week, so today is visible immediately.
 
 ### Subject index
-A section head (`subjects`, visible/total count) and an inline search with `/` key hint.
-Subjects are grouped by **semester** in the A22 order (`1-1` → `4-2`). Each group has a
-two-digit index, the semester label, and a quiet `n subjects · n definitions` count.
-The grid inside a group is 3 → 2 → 1 columns. The search filters cards and whole semester
-groups live; a group disappears when none of its subjects match. Empty groups are not
-rendered, so future batches appear as new groups without a layout change.
+A section head (`subjects`, the studyable count, and `n not seeded`) and an inline search
+with `/` key hint. All **eight semesters** render in A22 order (`1-1` → `4-2`), even when a
+semester has no definitions. Each group has a two-digit index, the semester label, and a
+quiet `n subjects · n definitions` count. The grid inside a group is 3 → 2 → 1 columns.
+
+Unresolved and no-material slots sit under the grid in a hairline `not seeded` row
+(`Technical Seminar · no materials`, `Open Elective I · unresolved`, and so on). `4-2`
+renders as a dashed no-material note. Search filters cards and whole semester groups live;
+a group disappears when none of its subjects match. Clearing the search restores all eight
+groups.
 
 ### Subject cards
 White, hairline, 16px radius, min-height 196px. A large thin-line motif sits behind the
 content at 15% opacity, rising to 32% on hover. Top row: dot, name, a micro line with the
-official course code and `n units` (or `partial`), and overall mastery %. Bottom row:
-**one thin vertical bar per definition**, height and opacity scaled by that definition's
-mastery (4px baseline when new), and `solid/total solid`. The bars form a tiny memory
-profile for the subject. Hovering the bar strip reveals the overall summary. No fake
+official course code and `n units` (or `partial` / `unresolved`), and overall mastery %.
+Bottom row: **one thin vertical bar per definition**, height and opacity scaled by that
+definition's mastery (4px baseline when new), and `solid/total solid`. The bars form a tiny
+memory profile for the subject. Hovering the bar strip reveals the overall summary. No fake
 mini-contribution graph remains.
 
 ### Subject page
 Full-screen white sheet that rises 18px and fades in. Sticky toolbar: back, subject,
 filter, study-eye.
 
-- Hero: name, a context line (`semester · code · n units`, or `partial coverage`),
-  `n one-liners`, a 180px mastery rule filled to the overall %, `x% remembered`,
-  a `quiz yourself` pill with a `q` keycap, and a 20-tick daily strip.
+- Hero: name, a context line (`semester · code · coverage · n sources`, with
+  `partial · 3/6 units` where coverage is incomplete), `n one-liners`, a 180px mastery rule
+  filled to the overall %, `x% remembered`, a `quiz yourself` pill with a `q` keycap, and a
+  20-tick daily strip.
 - `focus` filters: `all · new · learning · solid` with counts. They combine with the
   text filter; the visible count reads `x of n`. An empty view offers a one-click clear.
 - Definitions are a chronological rail: 1px line, 9px hollow nodes, term 400, definition
   300. Each row has a right rail: the **mastery percentage** above a 2px 94px bar.
-  Hovering the row swaps the percentage for the formula and fills the node.
+  Hovering the row swaps the percentage for the formula and fills the node; the tooltip
+  adds the source file and page/slide locator.
 - On mobile the rail becomes a full-width mastery line under the definition, with the
   percentage at right; the formula is desktop-only.
 - Study mode hides definitions until hover (existing behaviour, `s` shortcut).
@@ -438,11 +453,11 @@ information.
 ### PWA shell
 - `manifest.webmanifest` — standalone display, scope `./`, light launch colours, 192/512
   icons, a maskable 512, and install screenshots (wide home, wide quiz, narrow phone).
-- `sw.js` — precaches the app shell (`index.html`, manifest, icons, Inter) and every
-  subject file listed in `data/curriculum.json`, uses network-first navigation with a
-  cached-index fallback, and stale-while-revalidate for same-origin assets. Curriculum
-  JSON is network-first so a new batch appears immediately while online and falls back to
-  the cached copy offline. It works fully offline after one visit.
+- `sw.js` — precaches the app shell (`index.html`, manifest, icons, Inter), the curriculum
+  index, `data/sources.json`, and every subject file listed in `data/curriculum.json`. It
+  uses network-first navigation with a cached-index fallback, network-first curriculum
+  JSON (so a new batch appears immediately online, with a cached fallback offline), and
+  stale-while-revalidate for same-origin assets. It works fully offline after one visit.
 - **No install dialog is ever shown.** No `beforeinstallprompt` handler exists. Installation
   is left to the browser/OS menu. The manifest has the stable id `/ECEDefinitions/` so it
   cannot collide with another app on the same origin; macOS Chrome exposes install from the
@@ -543,12 +558,14 @@ Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
   metadata. Any change to a precached asset requires a service-worker cache bump.
 - No install prompts, no OS-theme override, no analytics, no third-party runtime requests.
 - State lives in localStorage only. No network writes, no accounts.
-- Curriculum is loaded from `data/curriculum.json`; every subject has a file under
-  `data/subjects/<semester>/`. `scripts/build-curriculum-index.py` rebuilds the index
-  from those files, so adding a batch is: drop the JSON files in, run the script, commit.
-  `SUBJECT_STYLE` maps known identities; unknown subjects get a deterministic fallback
-  colour and the generic motif. Anything subject-coloured must degrade gracefully at 30
-  subjects: top-six stacking, neutral heatmap, one filter.
+- Curriculum is loaded from `data/curriculum.json`; every data-bearing subject has a file
+  under `data/subjects/<semester>/`, and `data/sources.json` holds the source manifest.
+  `scripts/build-curriculum-index.py` rebuilds the index from those files while preserving
+  unresolved/no-material stubs and syllabus unit counts; `scripts/validate-seed-data.py`
+  checks the final dataset. `SUBJECT_STYLE` maps known identities; unknown subjects get a
+  deterministic fallback colour and the generic motif. Anything subject-coloured must
+  degrade gracefully at 30+ subjects: top-six stacking, neutral heatmap, one filter, and
+  stubs as annotations rather than cards.
 - Reuse tokens and patterns: `.panel`, `.leg`, `.tip`, `.back`, `.btn`, `.filter`,
   `.mbar`, `.mticks`. Do not introduce a second visual language.
 - Before adding a new element, ask: can this be a line, a dot, a tick, or a hover?

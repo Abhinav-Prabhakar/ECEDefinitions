@@ -564,6 +564,10 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   font-size:10px;color:var(--ink-4);letter-spacing:.04em;
   font-variant-numeric:tabular-nums;
 }
+.sh-note{
+  font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-4);font-variant-numeric:tabular-nums;
+}
 .subject-find{
   display:flex;align-items:center;gap:8px;
   border-bottom:1px solid var(--hair);padding:3px 0;
@@ -605,6 +609,20 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
 }
 .semester-rule{flex:1 1 80px;height:1px;background:var(--hair);margin-left:4px}
 .semester-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.semester-stubs{
+  display:flex;align-items:baseline;gap:8px 14px;flex-wrap:wrap;
+  margin-top:13px;padding-top:10px;border-top:1px solid var(--hair-2);
+  font-size:9.5px;letter-spacing:.04em;color:var(--ink-4);
+}
+.semester-stubs-label{
+  font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-4);
+}
+.semester-stubs span em{font-style:normal;color:var(--ink-3)}
+.semester-empty{
+  margin-top:16px;padding:20px;border:1px dashed var(--hair);border-radius:16px;
+  font-size:11px;line-height:1.7;color:var(--ink-4);
+}
 .subjects-empty,.subjects-loading{
   padding:46px 0 20px;text-align:center;
   font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-4);
@@ -695,7 +713,8 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
    ============================================================ */
 .tip{
   position:fixed;z-index:220;pointer-events:none;
-  display:flex;align-items:center;gap:7px;
+  display:flex;flex-direction:column;align-items:stretch;gap:2px;
+  max-width:320px;
   background:var(--surface);border:1px solid var(--hair);
   box-shadow:0 12px 30px -14px rgba(20,22,26,.22);
   color:var(--ink);font-size:10.5px;font-weight:300;letter-spacing:.02em;
@@ -704,8 +723,14 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   transition:opacity .18s ease,transform .18s ease;
 }
 .tip.on{opacity:1;transform:translate(-50%,-100%) translateY(-4px)}
+.tip-line{display:flex;align-items:center;gap:7px;min-width:0}
 .tip i{width:7px;height:7px;border-radius:50%;display:block;flex:0 0 auto}
 .tip b{font-weight:400;color:var(--ink-3);margin-left:2px}
+.tip-src{
+  font-size:8.5px;letter-spacing:.03em;color:var(--ink-4);
+  padding-left:14px;max-width:290px;
+  overflow:hidden;text-overflow:ellipsis;
+}
 
 /* ============================================================
    SUBJECT PAGE
@@ -1698,6 +1723,7 @@ html[data-theme="dark"] .week-bars b.today{background:var(--ink-2)}
     <div class="sh-left">
       <h2>subjects</h2>
       <span class="sh-count" id="subjectCount">—</span>
+      <span class="sh-note" id="subjectPending"></span>
     </div>
     <label class="subject-find" for="subjectSearch">
       <svg viewBox="0 0 20 20" width="13" height="13" fill="none" stroke="currentColor"
@@ -2362,8 +2388,10 @@ function motifFor(s){
 let SUBJECTS = [];
 let SEMESTERS = [];
 let SUBJECT_BY_ID = {};
+let SOURCE_BY_ID = {};
 let DATA_ERROR = null;
 const DATA_INDEX = 'data/curriculum.json';
+const DATA_SOURCES = 'data/sources.json';
 const SEMESTER_ORDER = ['1-1', '1-2', '2-1', '2-2', '3-1', '3-2', '4-1', '4-2'];
 
 async function fetchJSON(url){
@@ -2380,7 +2408,8 @@ function subjectFromData(stub, semester, payload){
       d && d.definition ? String(d.definition) : '',
       d && d.formula ? String(d.formula) : '',
       d && Number.isInteger(d.unit) ? d.unit : null,
-      d && d.unitTitle ? String(d.unitTitle) : null
+      d && d.unitTitle ? String(d.unitTitle) : null,
+      d && Array.isArray(d.sources) ? d.sources.filter(Boolean).map(String) : []
     ])
     .filter(d => d[0] && d[1]);
   const style = styleFor(stub);
@@ -2392,7 +2421,7 @@ function subjectFromData(stub, semester, payload){
     shortName: stub.shortName || meta.shortName || '',
     code: stub.code || meta.code || '',
     courseType: stub.courseType || meta.courseType || '',
-    status: meta.status || stub.status || 'complete',
+    status: stub.status || meta.status || 'complete',
     semester: semester.id,
     semesterLabel: semester.label || semester.id,
     color: style.color,
@@ -2403,7 +2432,14 @@ function subjectFromData(stub, semester, payload){
 }
 
 async function loadCurriculum(){
-  const index = await fetchJSON(DATA_INDEX);
+  const [index, sources] = await Promise.all([
+    fetchJSON(DATA_INDEX),
+    fetchJSON(DATA_SOURCES).catch(() => null)
+  ]);
+  if (sources && Array.isArray(sources.sources)){
+    SOURCE_BY_ID = Object.fromEntries(sources.sources.map(s => [s.id, s]));
+  }
+
   const semesters = Array.isArray(index.semesters) ? index.semesters : [];
   semesters.sort((a, b) => {
     const ai = SEMESTER_ORDER.indexOf(a.id);
@@ -2414,28 +2450,45 @@ async function loadCurriculum(){
   const loadedSemesters = [];
   const loadedSubjects = [];
   for (const semester of semesters){
-    const stubs = Array.isArray(semester.subjects) ? semester.subjects : [];
-    const results = await Promise.all(stubs.map(async stub => {
-      if (!stub || !stub.data) return null;
+    const entries = Array.isArray(semester.subjects) ? semester.subjects : [];
+    const results = await Promise.all(entries.map(async entry => {
+      if (!entry) return null;
+      if (!entry.data){
+        return {
+          ...entry,
+          semester: semester.id,
+          semesterLabel: semester.label || semester.id,
+          defs: []
+        };
+      }
       try {
-        const payload = await fetchJSON(stub.data);
-        const subject = subjectFromData(stub, semester, payload);
+        const payload = await fetchJSON(entry.data);
+        const subject = subjectFromData(entry, semester, payload);
         return subject.defs.length ? subject : null;
       } catch (err){
-        console.warn('[one·liners] could not load subject', stub.id, err);
+        console.warn('[one·liners] could not load subject', entry.id, err);
         return null;
       }
     }));
 
-    const subjects = results.filter(Boolean);
-    subjects.forEach(s => loadedSubjects.push(s));
+    const subjects = [];
+    const stubs = [];
+    results.filter(Boolean).forEach(subject => {
+      if (subject.defs.length){
+        subjects.push(subject);
+        loadedSubjects.push(subject);
+      } else {
+        stubs.push(subject);
+      }
+    });
     loadedSemesters.push({
       id: semester.id,
       label: semester.label || semester.id,
       year: semester.year,
       term: semester.term,
       status: semester.status || '',
-      subjects
+      subjects,
+      stubs
     });
   }
 
@@ -2456,9 +2509,18 @@ const Q_CIRC = 2 * Math.PI * 52;
    TOOLTIPS
    ============================================================ */
 const tipEl = $('#tip');
+function sourceInfo(sources){
+  if (!Array.isArray(sources) || !sources.length) return '';
+  const raw = String(sources[0]);
+  const [id, locator] = raw.split('#');
+  const src = SOURCE_BY_ID[id];
+  const name = src && src.name ? src.name : id.replace(/-/g, ' ');
+  return [name, locator].filter(Boolean).join(' · ');
+}
 function tipContent(t){
-  return `<i style="background:${t.c || '#c3c8d1'}"></i>${esc(t.n || '')}` +
-         (t.v != null ? `<b>${esc(t.v)}</b>` : '');
+  return `<span class="tip-line"><i style="background:${t.c || '#c3c8d1'}"></i>${esc(t.n || '')}` +
+         (t.v != null ? `<b>${esc(t.v)}</b>` : '') + `</span>` +
+         (t.s ? `<span class="tip-src">${esc(t.s)}</span>` : '');
 }
 document.addEventListener('mouseover', e => {
   const el = e.target.closest('[data-tip]');
@@ -2996,6 +3058,7 @@ $('#actPick').addEventListener('click', () => {
 const subjectsEl = $('#subjects');
 const subjectSearch = $('#subjectSearch');
 const subjectCount = $('#subjectCount');
+const subjectPending = $('#subjectPending');
 const subjectsEmpty = $('#subjectsEmpty');
 const cardEls = new Map();
 
@@ -3010,8 +3073,15 @@ function coverageLabel(s){
 }
 
 function coverageContext(s){
-  if (s.status === 'partial') return 'partial coverage';
-  if (s.status === 'unresolved') return 'unresolved elective';
+  const unitPair = (s.unitCount && s.coveredUnits)
+    ? `${s.coveredUnits}/${s.unitCount} units`
+    : '';
+  if (s.status === 'partial'){
+    return unitPair ? `partial · ${unitPair}` : 'partial coverage';
+  }
+  if (s.status === 'unresolved'){
+    return unitPair ? `unresolved · ${unitPair}` : 'unresolved elective';
+  }
   if (s.status === 'inaccessible') return 'materials unavailable';
   return s.unitCount ? `${s.unitCount} ${s.unitCount === 1 ? 'unit' : 'units'}` : '';
 }
@@ -3051,14 +3121,25 @@ function buildCard(s, i){
   return card;
 }
 
+function stubStatus(stub){
+  if (stub.status === 'no_materials') return 'no materials';
+  if (stub.status === 'unresolved') return 'unresolved';
+  if (stub.status === 'inaccessible') return 'unavailable';
+  return 'not seeded';
+}
+
 function renderSemesterGroups(){
   subjectsEl.innerHTML = '';
   cardEls.clear();
   semesterEls.clear();
   let index = 0;
-  const populated = SEMESTERS.filter(sem => sem.subjects.length);
-  populated.forEach((sem, si) => {
+  SEMESTERS.forEach((sem, si) => {
     const total = sem.subjects.reduce((n, s) => n + s.defs.length, 0);
+    const hasSubjects = sem.subjects.length > 0;
+    const meta = hasSubjects
+      ? `${sem.subjects.length} ${sem.subjects.length === 1 ? 'subject' : 'subjects'} · ${fmt(total)} ${total === 1 ? 'definition' : 'definitions'}`
+      : (sem.id === '4-2' ? 'final semester' : 'no taught material');
+
     const section = document.createElement('section');
     section.className = 'semester';
     section.dataset.semester = sem.id;
@@ -3066,17 +3147,38 @@ function renderSemesterGroups(){
       <div class="semester-head">
         <span class="semester-no">${pad(si + 1)}</span>
         <h3>${esc(sem.label)}</h3>
-        <span class="semester-meta">${sem.subjects.length} ${sem.subjects.length === 1 ? 'subject' : 'subjects'} · ${fmt(total)} ${total === 1 ? 'definition' : 'definitions'}</span>
+        <span class="semester-meta">${meta}</span>
         <i class="semester-rule" aria-hidden="true"></i>
       </div>
-      <div class="semester-grid"></div>`;
-    const grid = section.querySelector('.semester-grid');
-    sem.subjects.forEach(s => grid.appendChild(buildCard(s, index++)));
+      ${hasSubjects ? '<div class="semester-grid"></div>' : ''}`;
+
+    if (hasSubjects){
+      const grid = section.querySelector('.semester-grid');
+      sem.subjects.forEach(s => grid.appendChild(buildCard(s, index++)));
+    } else {
+      const note = document.createElement('div');
+      note.className = 'semester-empty';
+      note.textContent = sem.id === '4-2'
+        ? 'Project semester — no taught material was published in the source folder.'
+        : 'No subjects are available for this semester yet.';
+      section.appendChild(note);
+    }
+
+    if (sem.stubs.length){
+      const stubs = document.createElement('div');
+      stubs.className = 'semester-stubs';
+      stubs.innerHTML = `<span class="semester-stubs-label">not seeded</span>` +
+        sem.stubs.map(stub => `<span>${esc(stub.name)} <em>${stubStatus(stub)}</em></span>`).join('');
+      section.appendChild(stubs);
+    }
+
     subjectsEl.appendChild(section);
     semesterEls.set(sem.id, section);
   });
   subjectsEl.setAttribute('aria-busy', 'false');
   subjectCount.textContent = String(SUBJECTS.length);
+  const pending = SEMESTERS.reduce((n, sem) => n + sem.stubs.length, 0);
+  subjectPending.textContent = pending ? `${pending} not seeded` : '';
 }
 
 function updateCards(){
@@ -3123,7 +3225,7 @@ function filterCards(){
     }
   });
   semesterEls.forEach((section, id) => {
-    section.hidden = (groupVisible.get(id) || 0) === 0;
+    section.hidden = q ? (groupVisible.get(id) || 0) === 0 : false;
   });
   subjectCount.textContent = q ? `${visible} / ${SUBJECTS.length}` : String(SUBJECTS.length);
   subjectsEmpty.hidden = visible > 0 || !SUBJECTS.length;
@@ -3227,14 +3329,16 @@ function refreshSubjectStats(s){
   buildSpDay(s);
 }
 
-function defTip(rec, score, color){
-  if (!rec || !rec.attempts) return { n: 'not attempted', c: color, v: 'new' };
-  const label = masteryLabel(score, true);
-  return {
-    n: `${rec.correct || 0} of ${rec.attempts} correct`,
-    c: color,
-    v: `${label} · ${Math.round(score * 100)}%`
-  };
+function defTip(rec, score, color, source){
+  const base = (!rec || !rec.attempts)
+    ? { n: 'not attempted', c: color, v: 'new' }
+    : {
+        n: `${rec.correct || 0} of ${rec.attempts} correct`,
+        c: color,
+        v: `${masteryLabel(score, true)} · ${Math.round(score * 100)}%`
+      };
+  if (source) base.s = source;
+  return base;
 }
 
 function defMarkup(s, d, i){
@@ -3243,9 +3347,11 @@ function defMarkup(s, d, i){
   const pct = Math.round(score * 100);
   const search = (d[0] + ' ' + d[1]).toLowerCase();
   const shown = rec && rec.attempts;
-  const tip = esc(JSON.stringify(defTip(rec, score, accentOf(s))));
+  const src = sourceInfo(d[5]);
+  const tip = esc(JSON.stringify(defTip(rec, score, accentOf(s), src)));
   return `<div class="def" data-term="${esc(d[0])}" data-score="${score}" data-seen="${rec ? (rec.attempts || 0) : 0}"
-      data-search="${esc(search)}" data-key="${esc(defKey(s.id, d[0]))}" style="animation-delay:${i * 24}ms">
+      data-search="${esc(search)}" data-key="${esc(defKey(s.id, d[0]))}" data-src="${esc(src)}"
+      style="animation-delay:${i * 24}ms">
     <span class="node"></span>
     <div class="term">${esc(d[0])}</div>
     <div class="line">${esc(d[1])}</div>
@@ -3312,7 +3418,7 @@ function refreshDefSides(s){
     if (stat) stat.textContent = seen ? pct + '%' : 'new';
     if (bar) bar.style.width = pct + '%';
     const side = el.querySelector('.def-side');
-    if (side) side.dataset.tip = JSON.stringify(defTip(rec, score, accentOf(s)));
+    if (side) side.dataset.tip = JSON.stringify(defTip(rec, score, accentOf(s), el.dataset.src || ''));
   });
 }
 
@@ -3342,7 +3448,8 @@ function openSubject(id){
   spContext.textContent = [
     s.semesterLabel,
     s.code,
-    coverageContext(s)
+    coverageContext(s),
+    s.sourceCount ? `${s.sourceCount} ${s.sourceCount === 1 ? 'source' : 'sources'}` : ''
   ].filter(Boolean).join(' · ');
   spContext.classList.toggle('partial', s.status !== 'complete');
   spMotif.innerHTML = motifFor(s);

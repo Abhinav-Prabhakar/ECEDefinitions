@@ -63,6 +63,13 @@
       "type": "image/png",
       "form_factor": "narrow",
       "label": "one·liners on a phone"
+    },
+    {
+      "src": "assets/screenshot-semesters.png",
+      "sizes": "1440x1320",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "The complete ECE semester map, including not-seeded slots"
     }
   ]
 }

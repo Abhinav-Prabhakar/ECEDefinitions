@@ -8,9 +8,9 @@
 
 **Electronics, in one line.**
 
-A quiet ECE study instrument: 1,495 real definitions across 32 subjects, grouped by
-semester, with a daily practice stack, adaptive two-way quizzes, and a memory of what you
-actually know.
+A quiet ECE study instrument: 1,575 real definitions across 34 subjects, grouped by
+semester, with a daily practice stack, adaptive two-way quizzes, source traceability, and
+a memory of what you actually know.
 
 <a href="https://abhinav-prabhakar.github.io/ECEDefinitions/">
   <img src="https://img.shields.io/badge/OPEN_THE_APP-live-5b6ee1?style=for-the-badge&logo=githubpages&logoColor=white" alt="Open the live app" />
@@ -86,10 +86,23 @@ The home page is the A22 map, not a flat list. Subjects sit under their semester
 count, and a subject-specific line diagram. Colour is the subject's identity, used in small
 doses.
 
-The shipped batches now cover **1-1 through 4-1** — seven semesters, 32 subjects, 1,495
-definitions. `4-2` is the final batch still to come. Two 4-1 professional electives
-(Embedded Real Time Operating Systems and System on Chip Architecture) are marked
-inaccessible in the source material and are not shown. The workflow is deliberately boring:
+The full A22 map is now in: **eight semesters**, **34 subject files** (33 complete/partial,
+plus Python Programming as an unresolved data set), and **1,575 one-liners**. Seven subject
+slots are honestly marked as not seeded (six unresolved elective slots and Technical
+Seminar, which has no published material); `4-2` is the project semester with no taught
+material in the source folder. Nothing is fabricated to fill a gap.
+
+Every definition carries a source locator. Hover a definition's mastery rail to see the
+source file and page/slide it came from; the subject header also shows its source count.
+The final dataset catalogues 250 source files in `data/sources.json`; raw source files are
+not redistributed.
+
+<div align="center">
+  <img src="assets/screenshot-semesters.png" alt="The complete ECE semester map with not-seeded elective slots and the 4-2 project semester" width="100%" />
+  <p><sub><strong>The complete map.</strong> Data-bearing cards, honest not-seeded annotations, and the 4-2 project semester.</sub></p>
+</div>
+
+The workflow is deliberately boring:
 
 ```bash
 # 1. subject JSON files arrive under data/subjects/<semester>/
@@ -243,9 +256,9 @@ sheet closes and held inside an open subject or quiz.
 | | |
 | --- | --- |
 | **Stack** | Static HTML, CSS and vanilla JavaScript. No framework. A stdlib Python script builds the data index. |
-| **Data** | `data/curriculum.json` + one file per subject under `data/subjects/<semester>/`. |
+| **Data** | `data/curriculum.json`, one file per subject under `data/subjects/<semester>/`, and `data/sources.json`. |
 | **Storage** | `localStorage` — `oneliners.state.v1` for progress, `oneliners.theme` for the theme. |
-| **Offline** | Hand-written service worker; precaches the app shell and every seeded subject file. |
+| **Offline** | Hand-written service worker; precaches the app shell, source manifest, and every seeded subject file. |
 | **Type** | Self-hosted Inter variable font. |
 | **Hosting** | GitHub Pages, static. |
 | **Privacy** | No accounts, no analytics, no network writes. Progress never leaves the device. |
@@ -300,9 +313,12 @@ curriculum index is already committed.
 ├── .nojekyll                         # keep GitHub Pages static
 ├── data/
 │   ├── curriculum.json               # semester index the app loads
+│   ├── sources.json                  # 250 source files + locator schemes
+│   ├── README.md                     # coverage and access report
 │   └── subjects/<semester>/*.json    # one file per subject
 ├── scripts/
-│   └── build-curriculum-index.py     # rebuild curriculum.json from subject files
+│   ├── build-curriculum-index.py     # rebuild curriculum.json from subject files
+│   └── validate-seed-data.py         # dependency-free data validator
 ├── prompts/
 │   └── seed-curriculum-agent.md      # source-extraction brief
 └── assets/
