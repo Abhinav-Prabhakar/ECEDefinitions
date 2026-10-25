@@ -37,6 +37,8 @@
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180" />
 <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="assets/katex/katex.min.css" />
+<script defer src="assets/katex/katex.min.js"></script>
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="one·liners" />
 <meta property="og:title" content="one·liners — Electronics, in one line." />
@@ -968,22 +970,15 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   position:absolute;right:12px;top:14px;width:94px;text-align:right;
   cursor:default;
 }
-.def-side .formula,
 .def-side .mstat{
   position:absolute;top:0;right:0;width:100%;
   transition:opacity .3s,transform .35s var(--ease);
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-.def-side .formula{
-  font-size:10.5px;color:var(--accent);letter-spacing:.01em;
-  opacity:0;transform:translateX(5px);font-variant-numeric:tabular-nums;
-}
 .def-side .mstat{
   font-size:10px;color:var(--ink-3);letter-spacing:.04em;
   font-variant-numeric:tabular-nums;line-height:1.2;
 }
-.def:hover .def-side .formula{opacity:.9;transform:none}
-.def:hover .def-side .mstat{opacity:0;transform:translateX(-4px)}
 .mbar{
   display:block;height:2px;background:var(--hair);border-radius:2px;
   overflow:hidden;margin-top:20px;
@@ -992,6 +987,57 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   display:block;height:100%;width:0;background:var(--accent);
   border-radius:2px;transition:width .65s var(--ease);
 }
+
+/* inline equation — always visible, quiet, and part of the definition line */
+.eq{
+  display:inline-block;vertical-align:middle;
+  margin-left:8px;padding-left:8px;
+  border-left:1px solid var(--hair);
+  color:var(--accent);opacity:.88;
+  font-size:12px;line-height:1.2;
+  max-width:100%;overflow-x:auto;overflow-y:hidden;
+  transition:opacity .3s;
+  scrollbar-width:none;
+}
+.eq::-webkit-scrollbar{display:none}
+.eq .katex{font-size:1.02em}
+.eq .tex,.q-eq .tex{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.86em;color:var(--ink-3);
+}
+.def:hover .eq{opacity:1}
+
+/* diagram — a hover layer, not a permanent block */
+.dg-btn{
+  width:18px;height:18px;margin-left:7px;padding:0;
+  display:inline-grid;place-items:center;vertical-align:-2px;
+  border:1px solid var(--hair);border-radius:50%;
+  background:var(--surface);color:var(--ink-4);
+  cursor:pointer;transition:.3s var(--ease);
+}
+.dg-btn svg{display:block}
+.dg-btn:hover,.dg-btn[aria-expanded="true"]{
+  border-color:var(--accent-line);color:var(--accent);background:var(--accent-tint);
+}
+.def-dg{
+  position:absolute;z-index:7;top:calc(100% - 1px);right:0;
+  width:min(310px,100%);padding:10px 12px 11px;
+  background:var(--surface);border:1px solid var(--hair);border-radius:12px;
+  box-shadow:0 22px 48px -34px rgba(20,22,26,.30);
+  opacity:0;visibility:hidden;transform:translateY(4px);
+  pointer-events:none;
+  transition:opacity .25s,transform .35s var(--ease),visibility .25s;
+}
+.dg-card{
+  display:block;width:100%;height:auto;
+  color:var(--accent);opacity:.9;
+}
+.dg-card svg{display:block;width:100%;height:auto}
+@media (hover:hover){
+  .def:hover .def-dg,
+  .def:focus-within .def-dg{opacity:1;visibility:visible;transform:none}
+}
+.def.dg-open .def-dg{opacity:1;visibility:visible;transform:none;pointer-events:auto}
 
 /* study mode */
 .sp.study .line{opacity:0}
@@ -1239,6 +1285,30 @@ html[data-theme="dark"] .theme-btn .moon{display:block}
   max-width:62ch;
 }
 .q-miss b{font-weight:400;color:var(--ink-2)}
+
+/* the equation and figure are part of the answer, not a hover layer */
+.q-eq{
+  margin:12px 0 0;padding:2px 0 2px 11px;
+  border-left:1px solid var(--accent-line);
+  color:var(--accent);
+  font-size:13px;line-height:1.3;
+  overflow-x:auto;overflow-y:hidden;
+  scrollbar-width:none;
+}
+.q-eq::-webkit-scrollbar{display:none}
+.q-eq .katex{font-size:1.06em}
+.q-fig{
+  margin:14px 0 0;padding:10px 12px 11px;
+  width:min(330px,100%);
+  border:1px solid var(--hair);border-radius:12px;
+  background:var(--surface-soft);
+  color:var(--accent);
+}
+.q-fig svg{display:block;width:100%;height:auto}
+.q-fig figcaption{
+  margin-top:7px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-4);
+}
 .q-mastery{
   display:flex;align-items:center;gap:8px;margin-top:12px;
   font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-4);
@@ -1491,10 +1561,11 @@ html[data-theme="dark"] .week-bars b.today{background:var(--ink-2)}
     position:static;width:auto;display:flex;align-items:center;gap:10px;
     margin-top:9px;text-align:left;
   }
-  .def-side .formula{display:none}
   .def-side .mstat{position:static;width:auto;flex:0 0 auto;opacity:1;transform:none;order:2;min-width:30px;text-align:right;font-size:9px}
   .def:hover .def-side .mstat{opacity:1;transform:none}
   .def-side .mbar{flex:1 1 auto;margin:0;order:1}
+  .eq{margin-left:6px;padding-left:7px}
+  .def-dg{left:0;right:0;width:auto}
   .search{width:70px}
   .search:focus{width:110px}
   .q-opts{grid-template-columns:1fr}
@@ -1880,6 +1951,8 @@ html[data-theme="dark"] .week-bars b.today{background:var(--ink-2)}
             <span class="q-why-tag">why</span>
             <p class="q-why" id="qWhy"></p>
           </div>
+          <div class="q-eq" id="qEq" hidden></div>
+          <figure class="q-fig" id="qFig" hidden></figure>
           <div class="q-expl-row" id="qMissRow" hidden>
             <span class="q-why-tag">your pick</span>
             <p class="q-miss" id="qMiss"></p>
@@ -1982,6 +2055,60 @@ const esc = s => String(s).replace(/[&<>"']/g, c => (
   { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]
 ));
 const fmt = n => Number(n || 0).toLocaleString('en-US');
+
+/* KaTeX is vendored, so equations render offline and inherit the theme colour.
+   Bad TeX degrades to the raw source instead of breaking the page. */
+const MATH_CACHE = new Map();
+function mathHTML(tex, big = false){
+  if (!tex) return '';
+  const key = (big ? 'b:' : 'i:') + tex;
+  if (MATH_CACHE.has(key)) return MATH_CACHE.get(key);
+  let html;
+  try {
+    if (!window.katex) throw new Error('katex unavailable');
+    html = window.katex.renderToString(big ? `\\displaystyle ${tex}` : tex, {
+      displayMode: false,
+      throwOnError: true,
+      strict: 'ignore',
+      trust: false,
+      output: 'html'
+    });
+  } catch (err){
+    html = `<code class="tex">${esc(tex)}</code>`;
+  }
+  MATH_CACHE.set(key, html);
+  return html;
+}
+
+/* Diagrams are one shared SVG sprite: thin line art that inherits currentColor. */
+const DG = { ready: false };
+const DG_ICON = `<svg viewBox="0 0 16 16" width="10" height="10" fill="none"
+  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+  aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/>
+  <path d="M4.2 10.2l2.2-2.8 2 1.8 1.6-1.7 1.8 2.1"/><circle cx="5" cy="6" r=".7"/></svg>`;
+
+function diagramMarkup(id, label){
+  if (!id || !DG.ready) return '';
+  return `<svg class="dg-card" viewBox="0 0 240 150" role="img"
+    aria-label="${esc(label ? `diagram of ${label}` : 'concept diagram')}">
+    <use href="#dg-${esc(id)}"></use></svg>`;
+}
+
+async function loadDiagrams(){
+  try {
+    const res = await fetch('assets/diagrams.svg', { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const host = document.createElement('div');
+    host.id = 'dg-sprite';
+    host.setAttribute('aria-hidden', 'true');
+    host.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+    host.innerHTML = await res.text();
+    document.body.prepend(host);
+    DG.ready = true;
+  } catch (err){
+    console.warn('[one·liners] diagrams unavailable', err);
+  }
+}
 
 function shuffle(arr){
   const a = [...arr];
@@ -2416,7 +2543,8 @@ function subjectFromData(stub, semester, payload){
       d && d.formula ? String(d.formula) : '',
       d && Number.isInteger(d.unit) ? d.unit : null,
       d && d.unitTitle ? String(d.unitTitle) : null,
-      d && Array.isArray(d.sources) ? d.sources.filter(Boolean).map(String) : []
+      d && Array.isArray(d.sources) ? d.sources.filter(Boolean).map(String) : [],
+      d && d.diagram ? String(d.diagram) : ''
     ])
     .filter(d => d[0] && d[1]);
   const style = styleFor(stub);
@@ -3307,6 +3435,20 @@ const quizBtn = $('#quizBtn');
 const defFilters = $('#defFilters');
 const defsCount = $('#defsCount');
 
+defsEl.addEventListener('click', e => {
+  const btn = e.target.closest('.dg-btn');
+  if (!btn) return;
+  const row = btn.closest('.def');
+  const open = !row.classList.contains('dg-open');
+  $$('.def.dg-open', defsEl).forEach(x => {
+    x.classList.remove('dg-open');
+    const b = x.querySelector('.dg-btn');
+    if (b) b.setAttribute('aria-expanded', 'false');
+  });
+  row.classList.toggle('dg-open', open);
+  btn.setAttribute('aria-expanded', String(open));
+});
+
 let currentId = null;
 let currentFilter = 'all';
 let subjectTrigger = null;
@@ -3373,17 +3515,19 @@ function defMarkup(s, d, i){
   const shown = rec && rec.attempts;
   const src = sourceInfo(d[5]);
   const tip = esc(JSON.stringify(defTip(rec, score, accentOf(s), src)));
-  return `<div class="def" data-term="${esc(d[0])}" data-score="${score}" data-seen="${rec ? (rec.attempts || 0) : 0}"
+  const dg = diagramMarkup(d[6], d[0]);
+  return `<div class="def${dg ? ' has-dg' : ''}" data-term="${esc(d[0])}" data-score="${score}" data-seen="${rec ? (rec.attempts || 0) : 0}"
       data-search="${esc(search)}" data-key="${esc(defKey(s.id, d[0]))}" data-src="${esc(src)}"
       style="animation-delay:${i * 24}ms">
     <span class="node"></span>
-    <div class="term">${esc(d[0])}</div>
-    <div class="line">${esc(d[1])}</div>
+    <div class="term">${esc(d[0])}${dg ? `<button class="dg-btn" type="button"
+      aria-label="show diagram for ${esc(d[0])}" aria-expanded="false">${DG_ICON}</button>` : ''}</div>
+    <div class="line">${esc(d[1])}${d[2] ? `<span class="eq">${mathHTML(d[2])}</span>` : ''}</div>
     <span class="def-side" data-tip='${tip}'>
-      <span class="formula">${esc(d[2] || '')}</span>
       <span class="mstat">${shown ? pct + '%' : 'new'}</span>
       <span class="mbar"><i style="width:${pct}%"></i></span>
     </span>
+    ${dg ? `<div class="def-dg">${dg}</div>` : ''}
   </div>`;
 }
 
@@ -3571,6 +3715,8 @@ const qFbIc = $('#qFbIc');
 const qFbText = $('#qFbText');
 const qAnswer = $('#qAnswer');
 const qWhy = $('#qWhy');
+const qEq = $('#qEq');
+const qFig = $('#qFig');
 const qMissRow = $('#qMissRow');
 const qMiss = $('#qMiss');
 const qMBar = $('#qMBar');
@@ -3674,6 +3820,10 @@ function renderQuestion(){
   qNext.querySelector('span').textContent = st.i === st.qs.length - 1 ? 'results' : 'next';
   qMissRow.hidden = true;
   qMiss.textContent = '';
+  qEq.hidden = true;
+  qEq.innerHTML = '';
+  qFig.hidden = true;
+  qFig.innerHTML = '';
   setHint('question');
 
   qCard.classList.remove('in');
@@ -3713,7 +3863,14 @@ function answer(index){
   qAnswer.innerHTML = ok
     ? `That's <b>${esc(q.d[0])}</b>.`
     : `It's <b>${esc(q.d[0])}</b>.`;
-  qWhy.innerHTML = `${esc(q.d[1])}${q.d[2] ? `<span class="q-cue"><b>cue</b>${esc(q.d[2])}</span>` : ''}`;
+  qWhy.textContent = q.d[1];
+  qEq.hidden = !q.d[2];
+  qEq.innerHTML = q.d[2] ? mathHTML(q.d[2], true) : '';
+  const qDiagram = diagramMarkup(q.d[6], q.d[0]);
+  qFig.hidden = !qDiagram;
+  qFig.innerHTML = qDiagram
+    ? `${qDiagram}<figcaption>${esc(q.d[0])}</figcaption>`
+    : '';
   qMissRow.hidden = ok;
   if (!ok){
     qMiss.innerHTML = `<b>${esc(chosen.term)}</b> — ${esc(chosen.def)}`;
@@ -4276,7 +4433,7 @@ async function init(){
   document.title = 'one·liners — ECE';
 
   try {
-    const data = await loadCurriculum();
+    const [data] = await Promise.all([loadCurriculum(), loadDiagrams()]);
     SEMESTERS = data.semesters;
     SUBJECTS = data.subjects;
     SUBJECT_BY_ID = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
@@ -4301,7 +4458,11 @@ async function init(){
   }
 }
 
-init();
+if (document.readyState === 'loading'){
+  window.addEventListener('DOMContentLoaded', init, { once: true });
+} else {
+  init();
+}
 
 function updateTicksSafe(){
   const st = quizState;

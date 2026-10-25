@@ -130,10 +130,10 @@ layout. The current seeded set:
 | 4-1 | Embedded Real Time Operating Systems | `#8a6a3f` | `embedded-real-time-operating-systems` |
 | 4-1 | System on Chip Architecture | `#6b5fa8` | `system-on-chip-architecture` |
 
-The final data set has **41 subject slots**: 34 with definitions (33 complete/partial plus
-Python Programming as unresolved) and 7 no-data stubs. Stubs keep their palette entries for
-a future retry but render as quiet `not seeded` annotations, never as empty cards. The 4-2
-project semester renders as a single no-material note.
+The final data set has **52 subject slots**: 51 with definitions (all complete) and one
+no-data stub. Stubs keep their palette entries for a future retry but render as quiet
+`not seeded` annotations, never as empty cards. The 4-2 project semester renders as a
+single no-material note.
 
 Derived values from a subject colour `c`:
 
@@ -249,11 +249,14 @@ micro-labels.
 
 ## 07 · Data & persistence
 
-The study set is data-driven: `data/curriculum.json` (41 subject slots, 34 with
-definitions, 1,575 one-liners), one file per subject under `data/subjects/<semester>/`, and
-`data/sources.json` (250 catalogued source files). Every definition keeps its `sources[]`
-locators; the hover tooltip shows the first source file and page/slide. Unresolved and
-no-material slots are rendered as quiet `not seeded` annotations, never as empty cards.
+The study set is data-driven: `data/curriculum.json` (52 subject slots, 51 with definitions,
+2,773 one-liners), one file per subject under `data/subjects/<semester>/`, and
+`data/sources.json` (587 catalogued source files). Every definition keeps its `sources[]`
+locators; the hover tooltip shows the first source file and page/slide. `formula` holds
+**bare inline TeX** (no `$`, no environments), rendered by the vendored KaTeX build;
+`diagram` is an optional id into the shared `assets/diagrams.svg` sprite. Both are notation,
+never a replacement for the one-line definition. Unresolved and no-material slots are
+rendered as quiet `not seeded` annotations, never as empty cards.
 `4-2` renders as a no-material project-semester note.
 
 Everything else is client-side. The static HTML app uses two localStorage keys:
@@ -397,12 +400,16 @@ filter, study-eye.
 - `focus` filters: `all · new · learning · solid` with counts. They combine with the
   text filter; the visible count reads `x of n`. An empty view offers a one-click clear.
 - Definitions are a chronological rail: 1px line, 9px hollow nodes, term 400, definition
-  300. Each row has a right rail: the **mastery percentage** above a 2px 94px bar.
-  Hovering the row swaps the percentage for the formula and fills the node; the tooltip
-  adds the source file and page/slide locator.
+  300. A definition with a formula carries it **inline, always visible**, separated by a
+  hairline: bare LaTeX rendered by the self-hosted KaTeX build, at definition-body size,
+  in the subject accent. A definition with a diagram gets an 18px frame glyph after the
+  term; hovering or focusing the row reveals a floating diagram card, and the glyph
+  toggles it on touch. Each row has a right rail: the **mastery percentage** above a 2px
+  94px bar. The tooltip adds the source file and page/slide locator.
 - On mobile the rail becomes a full-width mastery line under the definition, with the
-  percentage at right; the formula is desktop-only.
-- Study mode hides definitions until hover (existing behaviour, `s` shortcut).
+  percentage at right. Equations stay inline; diagram cards span the row.
+- Study mode hides definitions until hover (existing behaviour, `s` shortcut); the
+  equation and diagram hide with the definition.
 - Filtering or searching after a quiz that changed mastery re-evaluates the visible set.
 
 ### Quiz
@@ -425,7 +432,9 @@ mastery (communicated by the quiz CTA tooltip and the shortcuts note):
   + cross; others fade to 42%.
 - **Explanation block** appears below a hairline:
   - verdict (`correct` / `not quite`) + `That's <term>` / `It's <term>`
-  - `why` row: the canonical one-line definition + a `cue` formula chip
+  - `why` row: the canonical one-line definition
+  - equation block: the definition's LaTeX, set on an accent hairline
+  - figure: the definition's diagram, shown directly (not on hover), with a caption
   - `your pick` row on misses: the chosen term and its definition, for direct comparison
   - mastery row: current %, animated bar, and `+30%` / `−40%` delta.
 - Every option carries `aria-keyshortcuts`; letters and digits both answer.
@@ -512,7 +521,8 @@ Breakpoints: **1140 / 1040 / 980 / 960 / 900 / 820 / 700 / 680 / 620 / 600 / 520
 - Activity controls wrap; the less/more legend hides below 680.
 - Quiz definition options are 1 column always; term options 2 → 1 at 700; explanation
   labels stack above copy at 520.
-- Subject page definition formula hides at 700; mastery bar moves under the line.
+- Subject page definition equation stays inline; the mastery bar moves under the line and
+  the diagram card becomes full-row width.
 - Hero trace hides below 980; top-bar ring hides below 600; nav label hides below 820.
 - Top-bar subjects count hides below 380; definition counts hide below 380.
 - Page remains usable at 320px without horizontal page scroll.
@@ -558,6 +568,13 @@ Formula glyphs are short and real (`h(t)`, `V = IR`, `δ = √(2/ωμσ)`).
   metadata. Any change to a precached asset requires a service-worker cache bump.
 - No install prompts, no OS-theme override, no analytics, no third-party runtime requests.
 - State lives in localStorage only. No network writes, no accounts.
+- Equations are bare inline TeX in `formula`, validated with `node scripts/check-formulas.mjs`
+  against the vendored KaTeX build. KaTeX is self-hosted under `assets/katex/` (woff2 only)
+  and precached, so equations render offline and inherit the theme colour.
+- Diagrams are one shared sprite, `assets/diagrams.svg`, generated by
+  `scripts/build-diagrams.py`; a definition opts in with `"diagram": "<id>"`. The sprite is
+  injected once and drawn in `currentColor` + `var(--accent)` so both themes come for free.
+  Do not add a second illustration language or an inline raster.
 - Curriculum is loaded from `data/curriculum.json`; every data-bearing subject has a file
   under `data/subjects/<semester>/`, and `data/sources.json` holds the source manifest.
   `scripts/build-curriculum-index.py` rebuilds the index from those files while preserving

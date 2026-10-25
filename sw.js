@@ -1,5 +1,5 @@
 /* one·liners — offline app shell */
-const CACHE = 'oneliners-v7';
+const CACHE = 'oneliners-v8';
 const ASSETS = [
   './',
   './index.html',
@@ -12,7 +12,30 @@ const ASSETS = [
   './assets/icon-maskable-512.png',
   './assets/apple-touch-icon.png',
   './assets/favicon-32.png',
-  './assets/fonts/inter-latin-var.woff2'
+  './assets/diagrams.svg',
+  './assets/katex/katex.min.css',
+  './assets/katex/katex.min.js',
+  './assets/fonts/inter-latin-var.woff2',
+  './assets/katex/fonts/KaTeX_AMS-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Caligraphic-Bold.woff2',
+  './assets/katex/fonts/KaTeX_Caligraphic-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Fraktur-Bold.woff2',
+  './assets/katex/fonts/KaTeX_Fraktur-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Main-Bold.woff2',
+  './assets/katex/fonts/KaTeX_Main-BoldItalic.woff2',
+  './assets/katex/fonts/KaTeX_Main-Italic.woff2',
+  './assets/katex/fonts/KaTeX_Main-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Math-BoldItalic.woff2',
+  './assets/katex/fonts/KaTeX_Math-Italic.woff2',
+  './assets/katex/fonts/KaTeX_SansSerif-Bold.woff2',
+  './assets/katex/fonts/KaTeX_SansSerif-Italic.woff2',
+  './assets/katex/fonts/KaTeX_SansSerif-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Script-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Size1-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Size2-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Size3-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Size4-Regular.woff2',
+  './assets/katex/fonts/KaTeX_Typewriter-Regular.woff2'
 ];
 
 async function precacheCurriculum(cache) {

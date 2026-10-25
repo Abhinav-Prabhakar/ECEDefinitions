@@ -125,13 +125,14 @@ def main():
 def check_defs(sid, d, src_ids):
     seen_ids=set(); seen_terms=set(); seen_td=set()
     subject_sources=set()
+    diagram_ids=set(re.findall(r'<symbol id="dg-([a-z0-9-]+)"', open(os.path.join(REPO,'assets','diagrams.svg'),encoding='utf-8').read())) if os.path.isfile(os.path.join(REPO,'assets','diagrams.svg')) else set()
     for st in src_ids.values():
         if st.get("subjectId")==sid and st.get("status") in ("downloaded","parsed"):
             subject_sources.add(st["id"])
     for i,defn in enumerate(d.get("definitions",[])):
         keys={"id","term","definition","formula","unit","unitTitle","sources"}
         if keys-set(defn.keys()): err(f"{sid} def#{i}: missing {sorted(keys-set(defn.keys()))}")
-        if set(defn.keys())-keys: err(f"{sid} def#{i}: extra keys {sorted(set(defn.keys())-keys)}")
+        if set(defn.keys())-keys-{"diagram"}: err(f"{sid} def#{i}: extra keys {sorted(set(defn.keys())-keys-{'diagram'})}")
         term=defn.get("term","")
         text=defn.get("definition","")
         if len(term)>48: err(f"{sid} def#{i}: term too long ({len(term)})")
@@ -140,7 +141,15 @@ def check_defs(sid, d, src_ids):
         if not (8<=wc<=28): err(f"{sid} def#{i} '{term}': word count {wc}")
         if text.endswith(" ") or text!=text.strip(): err(f"{sid} def#{i}: definition not stripped")
         f=defn.get("formula","")
-        if len(f)>48: err(f"{sid} def#{i} '{term}': formula too long")
+        if len(f)>220: err(f"{sid} def#{i} '{term}': formula too long ({len(f)})")
+        if f and ('$' in f or '\\begin{' in f or '\\end{' in f):
+            err(f"{sid} def#{i} '{term}': formula must be bare inline TeX (no $ or environments)")
+        dg=defn.get("diagram")
+        if dg is not None:
+            if not isinstance(dg,str) or not re.fullmatch(r"[a-z0-9-]+", dg):
+                err(f"{sid} def#{i} '{term}': bad diagram {dg!r}")
+            elif diagram_ids and dg not in diagram_ids:
+                err(f"{sid} def#{i} '{term}': unknown diagram {dg!r}")
         u=defn.get("unit")
         if u is not None and (not isinstance(u,int) or not(1<=u<=6)): err(f"{sid} def#{i} '{term}': bad unit {u!r}")
         ut=defn.get("unitTitle")

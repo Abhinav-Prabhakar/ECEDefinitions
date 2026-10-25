@@ -80,7 +80,7 @@
       "id": "data-type",
       "term": "Data type",
       "definition": "Indicates the type of value stored, its memory size, range, and allowed operations.",
-      "formula": "",
+      "formula": "-2^{n-1}\\le x\\le 2^{n-1}-1",
       "unit": 1,
       "unitTitle": "Problem Solving and C Basics",
       "sources": [
@@ -179,7 +179,7 @@
       "id": "type-casting",
       "term": "Type casting",
       "definition": "Explicit conversion of a value from one representation to another using a unary operator.",
-      "formula": "",
+      "formula": "(\\text{int})\\,x=\\text{sgn}(x)\\lfloor |x|\\rfloor",
       "unit": 2,
       "unitTitle": "Operators and Control Statements",
       "sources": [
@@ -212,7 +212,7 @@
       "id": "array",
       "term": "Array",
       "definition": "A collection of data holding a fixed number of values of the same type.",
-      "formula": "",
+      "formula": "S=n\\cdot s",
       "unit": 3,
       "unitTitle": "Arrays",
       "sources": [
@@ -223,7 +223,7 @@
       "id": "one-dimensional-array",
       "term": "One-dimensional array",
       "definition": "A linear list of related, similar data items stored in contiguous memory.",
-      "formula": "",
+      "formula": "\\text{addr}(a[i])=\\text{base}+i\\cdot s",
       "unit": 3,
       "unitTitle": "Arrays",
       "sources": [
@@ -234,7 +234,7 @@
       "id": "two-dimensional-array",
       "term": "Two-dimensional array",
       "definition": "An array of arrays represented as a table with rows and columns.",
-      "formula": "",
+      "formula": "\\text{offset}(i,j)=(i\\cdot C+j)\\cdot s",
       "unit": 3,
       "unitTitle": "Arrays",
       "sources": [
@@ -245,7 +245,7 @@
       "id": "multidimensional-array",
       "term": "Multidimensional array",
       "definition": "An array with three or more dimensions whose exact limit is compiler-dependent.",
-      "formula": "",
+      "formula": "\\text{offset}(i_1,\\dots,i_n)=\\sum_{k=1}^{n}i_k\\prod_{m>k}D_m",
       "unit": 3,
       "unitTitle": "Arrays",
       "sources": [
@@ -256,7 +256,7 @@
       "id": "string",
       "term": "String",
       "definition": "A variable-length array of characters delimited by a null character.",
-      "formula": "",
+      "formula": "\\text{bytes}(s)=n+1",
       "unit": 3,
       "unitTitle": "Arrays",
       "sources": [
@@ -267,7 +267,7 @@
       "id": "linear-search",
       "term": "Linear search",
       "definition": "A sequential search from the first element until the item is found or array ends.",
-      "formula": "",
+      "formula": "T(n)=O(n)",
       "unit": 3,
       "unitTitle": "Arrays",
       "sources": [
@@ -377,7 +377,7 @@
       "id": "pointer",
       "term": "Pointer",
       "definition": "A variable containing an address used to access data.",
-      "formula": "",
+      "formula": "\\text{addr}(p+k)=\\text{addr}(p)+k\\cdot\\text{sizeof}(T)",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [
@@ -399,7 +399,7 @@
       "id": "address-operator",
       "term": "Address operator",
       "definition": "Unary operator that yields the memory location of a variable.",
-      "formula": "",
+      "formula": "\\&a[i]=a+i",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [
@@ -410,7 +410,7 @@
       "id": "dereference-operator",
       "term": "Dereference operator",
       "definition": "The * operator that accesses the value at a pointer's address.",
-      "formula": "",
+      "formula": "*(\\&x)\\equiv x",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [
@@ -421,7 +421,7 @@
       "id": "pointer-to-pointer",
       "term": "Pointer to pointer",
       "definition": "Variable storing the memory location of another such variable, allowing indirect access through two levels.",
-      "formula": "",
+      "formula": "p=\\&x,\\;pp=\\&p\\;\\Rightarrow\\;**pp=x",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [
@@ -443,7 +443,7 @@
       "id": "strlen",
       "term": "strlen()",
       "definition": "Returns the number of characters in a string up to the first null.",
-      "formula": "",
+      "formula": "\\text{strlen}(s)=\\left|\\{k:s_k\\neq 0\\}\\right|",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [
@@ -454,7 +454,7 @@
       "id": "strcat",
       "term": "strcat()",
       "definition": "Joins two strings by appending the second string to the first.",
-      "formula": "",
+      "formula": "\\text{strlen}(s_1 s_2)=\\text{strlen}(s_1)+\\text{strlen}(s_2)",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [
@@ -465,7 +465,7 @@
       "id": "strcmp",
       "term": "strcmp()",
       "definition": "Compares two strings and returns zero if they are equal.",
-      "formula": "",
+      "formula": "\\text{strcmp}(s_1,s_2)=0\\iff s_1=s_2",
       "unit": 5,
       "unitTitle": "Pointers and Strings",
       "sources": [

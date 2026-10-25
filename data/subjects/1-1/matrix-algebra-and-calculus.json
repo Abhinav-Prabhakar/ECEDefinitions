@@ -14,7 +14,7 @@
       "id": "rolles-theorem",
       "term": "Rolle's theorem",
       "definition": "If a function is continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then some c in (a,b) has f'(c)=0.",
-      "formula": "f'(c)=0",
+      "formula": "f(a)=f(b)\\;\\Rightarrow\\;f^{\\prime}(c)=0",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",
       "sources": [
@@ -25,7 +25,7 @@
       "id": "lagranges-mean-value-theorem",
       "term": "Lagrange's mean value theorem",
       "definition": "If a function is continuous on [a,b] and differentiable on (a,b), then some c in (a,b) satisfies f'(c)=(f(b)-f(a))/(b-a).",
-      "formula": "f'(c)=(f(b)-f(a))/(b-a)",
+      "formula": "f^{\\prime}(c)=\\frac{f(b)-f(a)}{b-a}",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",
       "sources": [
@@ -36,7 +36,7 @@
       "id": "cauchys-mean-value-theorem",
       "term": "Cauchy's mean value theorem",
       "definition": "If f and g are continuous on [a,b], differentiable on (a,b), and g'(x)≠0, then some c in (a,b) satisfies f'(c)/g'(c)=(f(b)-f(a))/(g(b)-g(a)).",
-      "formula": "f'(c)/g'(c)=(f(b)-f(a))/(g(b)-g(a))",
+      "formula": "\\frac{f^{\\prime}(c)}{g^{\\prime}(c)}=\\frac{f(b)-f(a)}{g(b)-g(a)}",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",
       "sources": [
@@ -47,7 +47,7 @@
       "id": "taylors-series",
       "term": "Taylor's series",
       "definition": "Expansion of f(x) about x=x0 as the sum over n of f^(n)(x0)(x-x0)^n/n!, assuming successive derivatives exist.",
-      "formula": "f(x)=Σ f⁽ⁿ⁾(x₀)(x-x₀)ⁿ/n!",
+      "formula": "f(x)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(x_{0})}{n!}(x-x_{0})^{n}",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",
       "sources": [
@@ -58,7 +58,7 @@
       "id": "maclaurin-series",
       "term": "Maclaurin series",
       "definition": "Expansion of f(x) about 0 as the sum over n of f^(n)(0) x^n/n!, assuming successive derivatives exist.",
-      "formula": "f(x)=Σ f⁽ⁿ⁾(0)xⁿ/n!",
+      "formula": "f(x)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(0)}{n!}x^{n}",
       "unit": 4,
       "unitTitle": "Single Variable Calculus",
       "sources": [
@@ -80,7 +80,7 @@
       "id": "elementary-row-operations",
       "term": "Elementary row operations",
       "definition": "Three reversible steps on a matrix: interchanging two rows, multiplying a row by a nonzero scalar, or adding a multiple of one row to another.",
-      "formula": "",
+      "formula": "R_{i}\\leftrightarrow R_{j},\\;R_{i}\\to cR_{i},\\;R_{i}\\to R_{i}+cR_{j}",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -91,7 +91,7 @@
       "id": "rank-of-a-matrix",
       "term": "Rank of a matrix",
       "definition": "Dimension of the space spanned by the columns, equal to the maximum number of linearly independent columns or rows.",
-      "formula": "",
+      "formula": "\\text{rank}(A)=\\text{rank}(A^{\\mathsf{T}})=r",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -102,7 +102,7 @@
       "id": "gauss-jordan-method",
       "term": "Gauss–Jordan method",
       "definition": "Elimination procedure that reduces an augmented matrix to reduced echelon form, yielding the inverse when the left block becomes the identity.",
-      "formula": "[A | I] → [I | A⁻¹]",
+      "formula": "[\\,A\\mid I\\,]\\to[\\,I\\mid A^{-1}\\,]",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -113,7 +113,7 @@
       "id": "gaussian-elimination",
       "term": "Gaussian elimination",
       "definition": "Algorithm that applies row operations to reach echelon form and then solves the unknowns in reverse order by back substitution.",
-      "formula": "",
+      "formula": "A\\mathbf{x}=\\mathbf{b}\\;\\longrightarrow\\;U\\mathbf{x}=\\mathbf{c}",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -124,7 +124,7 @@
       "id": "consistent-system",
       "term": "Consistent system",
       "definition": "Set of linear equations possessing at least one solution, which occurs exactly when coefficient and augmented matrices have equal rank.",
-      "formula": "rank(A) = rank([A|b])",
+      "formula": "\\text{rank}(A)=\\text{rank}([\\,A\\mid\\mathbf{b}\\,])",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -135,7 +135,7 @@
       "id": "homogeneous-system",
       "term": "Homogeneous system",
       "definition": "Set of linear equations whose right-hand sides are all zero, so the all-zero solution always exists.",
-      "formula": "Ax = 0",
+      "formula": "A\\mathbf{x}=\\mathbf{0}",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -146,7 +146,7 @@
       "id": "symmetric-matrix",
       "term": "Symmetric matrix",
       "definition": "Square array equal to its own transpose, so entries mirrored across the main diagonal are equal.",
-      "formula": "Aᵀ = A",
+      "formula": "A^{\\mathsf{T}}=A",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -157,7 +157,7 @@
       "id": "skew-symmetric-matrix",
       "term": "Skew-symmetric matrix",
       "definition": "Square array whose transpose equals its negative, forcing every main-diagonal entry to be zero.",
-      "formula": "Aᵀ = −A",
+      "formula": "A^{\\mathsf{T}}=-A",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -168,7 +168,7 @@
       "id": "orthogonal-matrix",
       "term": "Orthogonal matrix",
       "definition": "Real square array whose columns and rows are orthonormal vectors, so its transpose equals its inverse.",
-      "formula": "QᵀQ = QQᵀ = I",
+      "formula": "Q^{\\mathsf{T}}Q=QQ^{\\mathsf{T}}=I",
       "unit": 1,
       "unitTitle": "System of Linear Equations",
       "sources": [
@@ -179,18 +179,19 @@
       "id": "eigenvalue",
       "term": "Eigenvalue",
       "definition": "Scalar by which a square matrix stretches or reverses a nonzero vector without changing its line of direction.",
-      "formula": "Av = λv",
+      "formula": "A\\mathbf{v}=\\lambda\\mathbf{v}",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
         "mac-wiki-eigen#key-definitions"
-      ]
+      ],
+      "diagram": "matrix-transform"
     },
     {
       "id": "eigenvector",
       "term": "Eigenvector",
       "definition": "Nonzero vector whose direction is left unchanged or reversed by a linear transformation, which merely multiplies it by a constant factor.",
-      "formula": "Av = λv",
+      "formula": "A\\mathbf{v}=\\lambda\\mathbf{v},\\;\\mathbf{v}\\neq\\mathbf{0}",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -201,7 +202,7 @@
       "id": "characteristic-equation",
       "term": "Characteristic equation",
       "definition": "Determinant condition whose roots are exactly the scalars that merely scale some nonzero vector under the matrix.",
-      "formula": "det(A − λI) = 0",
+      "formula": "\\det(A-\\lambda I)=0",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -212,7 +213,7 @@
       "id": "eigenspace",
       "term": "Eigenspace",
       "definition": "Set of all vectors scaled by one given factor under a matrix, together with the zero vector; it equals the null space of A − λI.",
-      "formula": "",
+      "formula": "E_{\\lambda}=\\ker(A-\\lambda I)",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -223,7 +224,7 @@
       "id": "cayley-hamilton-theorem",
       "term": "Cayley–Hamilton theorem",
       "definition": "Result stating that every square matrix over a commutative ring satisfies its own characteristic polynomial, enabling inverses and powers from low-order terms.",
-      "formula": "p(A) = 0",
+      "formula": "p(A)=0,\\;p(\\lambda)=\\det(\\lambda I-A)",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -234,18 +235,19 @@
       "id": "diagonalization",
       "term": "Diagonalization",
       "definition": "Factorization A = PDP⁻¹ of a square matrix with D holding the scaling factors, possible when n independent eigenvectors exist.",
-      "formula": "P⁻¹AP = D",
+      "formula": "A=PDP^{-1},\\;P^{-1}AP=D",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
         "mac-wiki-diagonalizable#definition"
-      ]
+      ],
+      "diagram": "matrix-transform"
     },
     {
       "id": "hermitian-matrix",
       "term": "Hermitian matrix",
       "definition": "Complex square array equal to its own conjugate transpose, therefore having real diagonal entries and real eigenvalues.",
-      "formula": "A = Aᴴ",
+      "formula": "A=A^{\\mathsf{H}}",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -256,7 +258,7 @@
       "id": "skew-hermitian-matrix",
       "term": "Skew-Hermitian matrix",
       "definition": "Complex square array whose conjugate transpose equals its negative.",
-      "formula": "Aᴴ = −A",
+      "formula": "A^{\\mathsf{H}}=-A",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -267,7 +269,7 @@
       "id": "unitary-matrix",
       "term": "Unitary matrix",
       "definition": "Complex square array whose inverse equals its conjugate transpose, so all its eigenvalues lie on the unit circle.",
-      "formula": "U*U = UU* = I",
+      "formula": "U^{\\mathsf{H}}U=UU^{\\mathsf{H}}=I",
       "unit": 2,
       "unitTitle": "Eigenvalues and Eigenvectors",
       "sources": [
@@ -278,18 +280,19 @@
       "id": "quadratic-form",
       "term": "Quadratic form",
       "definition": "Homogeneous polynomial of degree two in several variables, expressible as xᵀAx with a symmetric coefficient array A.",
-      "formula": "q(x) = xᵀAx",
+      "formula": "q(\\mathbf{x})=\\mathbf{x}^{\\mathsf{T}}A\\mathbf{x}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
         "mac-wiki-quadratic-form#definition"
-      ]
+      ],
+      "diagram": "matrix-transform"
     },
     {
       "id": "positive-definite",
       "term": "Positive definite",
       "definition": "Property of a real quadratic form of taking values greater than zero for every nonzero input vector.",
-      "formula": "q(v) > 0 for v ≠ 0",
+      "formula": "\\mathbf{x}^{\\mathsf{T}}A\\mathbf{x}>0,\\;\\forall\\,\\mathbf{x}\\neq\\mathbf{0}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -300,7 +303,7 @@
       "id": "negative-definite",
       "term": "Negative definite",
       "definition": "Property of a real quadratic form of taking values less than zero for every nonzero input vector.",
-      "formula": "q(v) < 0 for v ≠ 0",
+      "formula": "\\mathbf{x}^{\\mathsf{T}}A\\mathbf{x}<0,\\;\\forall\\,\\mathbf{x}\\neq\\mathbf{0}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -311,7 +314,7 @@
       "id": "indefinite",
       "term": "Indefinite",
       "definition": "Property of a real quadratic form whose values include both signs depending on the input vector.",
-      "formula": "",
+      "formula": "\\exists\\,\\mathbf{x},\\mathbf{y}:\\;q(\\mathbf{x})>0>q(\\mathbf{y})",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -322,7 +325,7 @@
       "id": "canonical-form",
       "term": "Canonical form",
       "definition": "Sum-of-squares expression λ₁y₁² + … + λₙyₙ² obtained from a quadratic polynomial by an orthogonal change of variables.",
-      "formula": "λ₁y₁² + … + λₙyₙ²",
+      "formula": "q=\\sum_{i=1}^{n}\\lambda_{i}y_{i}^{2}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -333,7 +336,7 @@
       "id": "index",
       "term": "Index",
       "definition": "Number of positive terms in any diagonalized sum-of-squares expression, invariant under every invertible change of variables.",
-      "formula": "",
+      "formula": "p=\\#\\{\\lambda_{i}>0\\}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -344,7 +347,7 @@
       "id": "signature",
       "term": "Signature",
       "definition": "Difference between the counts of positive and negative terms in a diagonalized sum of squares, invariant under invertible variable changes.",
-      "formula": "n₊ − n₋",
+      "formula": "s=n_{+}-n_{-}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -355,7 +358,7 @@
       "id": "rank-of-a-quadratic-form",
       "term": "Rank of a quadratic form",
       "definition": "Number of nonzero terms in a diagonalized sum of squares, equal to n minus the nullity of the symmetric coefficient matrix.",
-      "formula": "n₊ + n₋ = n − n₀",
+      "formula": "n_{+}+n_{-}=n-n_{0}",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -366,7 +369,7 @@
       "id": "sylvester-s-law-of-inertia",
       "term": "Sylvester's law of inertia",
       "definition": "Result stating that the counts of positive, negative and zero coefficients in a diagonalized real quadratic form do not depend on the invertible change of variables used.",
-      "formula": "",
+      "formula": "n_{+},\\,n_{-},\\,n_{0}\\ \\text{invariant under }S^{\\mathsf{T}}AS",
       "unit": 3,
       "unitTitle": "Quadratic Forms",
       "sources": [
@@ -377,7 +380,7 @@
       "id": "exact-differential-equation",
       "term": "Exact differential equation",
       "definition": "Relation M dx + N dy = 0 for which a potential function exists whose partial derivatives are M and N, tested by M_y = N_x.",
-      "formula": "M_y = N_x",
+      "formula": "M\\,dx+N\\,dy=0,\\;\\frac{\\partial M}{\\partial y}=\\frac{\\partial N}{\\partial x}",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -388,7 +391,7 @@
       "id": "potential-function",
       "term": "Potential function",
       "definition": "Scalar field F(x, y) whose partial derivatives equal the coefficients M and N, so that F(x, y) = c defines the solutions.",
-      "formula": "F(x, y) = c",
+      "formula": "\\frac{\\partial F}{\\partial x}=M,\\;\\frac{\\partial F}{\\partial y}=N",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -399,7 +402,7 @@
       "id": "integrating-factor",
       "term": "Integrating factor",
       "definition": "Multiplying function chosen so that a non-exact first-order relation becomes solvable; for y′ + P(x)y = Q(x) it equals e^(∫P(x)dx).",
-      "formula": "μ = e^(∫P dx)",
+      "formula": "\\mu(x)=e^{\\int P(x)\\,dx}",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -410,7 +413,7 @@
       "id": "first-order-linear-equation",
       "term": "First-order linear equation",
       "definition": "Relation of the form y′ + P(x)y = Q(x) in which the unknown and its derivative appear only to the first power.",
-      "formula": "y′ + P(x)y = Q(x)",
+      "formula": "\\frac{dy}{dx}+P(x)y=Q(x)",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -421,7 +424,7 @@
       "id": "bernoulli-equation",
       "term": "Bernoulli equation",
       "definition": "Nonlinear relation of the form y′ + P(x)y = Q(x)yⁿ that becomes linear under the substitution u = y^(1−n).",
-      "formula": "y′ + Py = Qyⁿ",
+      "formula": "\\frac{dy}{dx}+P(x)y=Q(x)y^{n}",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -432,7 +435,7 @@
       "id": "newton-s-law-of-cooling",
       "term": "Newton's law of cooling",
       "definition": "Principle that a body's rate of heat loss is proportional to the temperature difference from its surroundings, giving exponential decay of that difference.",
-      "formula": "dT/dt = −r(T − T_env)",
+      "formula": "\\frac{dT}{dt}=-r\\,(T-T_{\\text{env}})",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -443,7 +446,7 @@
       "id": "natural-growth",
       "term": "Natural growth",
       "definition": "Process in which a quantity increases at a rate proportional to its current value, producing exponential behavior with a positive rate constant.",
-      "formula": "x(t) = x₀e^(kt), k > 0",
+      "formula": "x(t)=x_{0}e^{kt},\\;k>0",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -454,7 +457,7 @@
       "id": "natural-decay",
       "term": "Natural decay",
       "definition": "Process in which a quantity diminishes at a rate proportional to its current value, producing exponential behavior with a negative rate constant.",
-      "formula": "x(t) = x₀e^(kt), k < 0",
+      "formula": "x(t)=x_{0}e^{kt},\\;k<0",
       "unit": 5,
       "unitTitle": "First Order ODE",
       "sources": [
@@ -465,7 +468,7 @@
       "id": "constant-coefficient-linear-equation",
       "term": "Constant-coefficient linear equation",
       "definition": "Relation a₀y + a₁y′ + … + aₙy⁽ⁿ⁾ = f(x) in which the multipliers of y and its derivatives are fixed numbers.",
-      "formula": "",
+      "formula": "a_{0}y+a_{1}y^{\\prime}+\\cdots+a_{n}y^{(n)}=f(x)",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
@@ -476,7 +479,7 @@
       "id": "homogeneous-linear-equation",
       "term": "Homogeneous linear equation",
       "definition": "Linear relation in the unknown function and its derivatives whose right-hand side equals zero.",
-      "formula": "a₀y + … + aₙy⁽ⁿ⁾ = 0",
+      "formula": "a_{0}y+a_{1}y^{\\prime}+\\cdots+a_{n}y^{(n)}=0",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
@@ -487,7 +490,7 @@
       "id": "characteristic-polynomial",
       "term": "Characteristic polynomial",
       "definition": "Expression a₀ + a₁t + … + aₙtⁿ obtained by substituting e^(αx) into a homogeneous constant-coefficient relation, whose roots fix the basic solutions.",
-      "formula": "",
+      "formula": "p(t)=a_{0}+a_{1}t+\\cdots+a_{n}t^{n}",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
@@ -498,7 +501,7 @@
       "id": "complementary-function",
       "term": "Complementary function",
       "definition": "Solution of the associated homogeneous relation, carrying arbitrary constants, that is added to a particular solution to form the full answer.",
-      "formula": "",
+      "formula": "y=y_{c}+y_{p}",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
@@ -509,7 +512,7 @@
       "id": "particular-integral",
       "term": "Particular integral",
       "definition": "Any single solution of the full nonhomogeneous relation, containing no arbitrary constants, which is added to the homogeneous solution.",
-      "formula": "",
+      "formula": "L[y_{p}]=f(x)",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
@@ -520,7 +523,7 @@
       "id": "wronskian",
       "term": "Wronskian",
       "definition": "Determinant u₁u₂′ − u₂u₁′ of two solutions and their derivatives, whose being nonzero guarantees linear independence.",
-      "formula": "W = u₁u₂′ − u₂u₁′",
+      "formula": "W(u_{1},u_{2})=u_{1}u_{2}^{\\prime}-u_{2}u_{1}^{\\prime}",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
@@ -531,7 +534,7 @@
       "id": "variation-of-parameters",
       "term": "Variation of parameters",
       "definition": "Method seeking a particular solution A(x)u₁ + B(x)u₂ whose unknown coefficient functions come from a 2×2 linear system involving the Wronskian.",
-      "formula": "A′ = −u₂f/W, B′ = u₁f/W",
+      "formula": "A^{\\prime}=-\\frac{u_{2}f}{W},\\;B^{\\prime}=\\frac{u_{1}f}{W}",
       "unit": 6,
       "unitTitle": "Higher Order ODE",
       "sources": [
