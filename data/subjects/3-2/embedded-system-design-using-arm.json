@@ -1,0 +1,602 @@
+{
+  "version": 1,
+  "id": "embedded-system-design-using-arm",
+  "semester": "3-2",
+  "name": "Embedded System Design using ARM",
+  "shortName": "ESD",
+  "code": "9C727",
+  "courseType": "PE",
+  "elective": "Professional Elective III",
+  "folderId": "1v2KC1gwt1wmBtPCGJhGQ44jdDIFbFYpy",
+  "folderUrl": "https://drive.google.com/drive/folders/1v2KC1gwt1wmBtPCGJhGQ44jdDIFbFYpy",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "embedded-system",
+      "term": "Embedded system",
+      "definition": "Electronic or electro-mechanical system designed to perform a specific function, combining hardware and software, often as a component of a larger machine.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Embedded System",
+      "sources": [
+        "esd-unit-i#slide.7"
+      ]
+    },
+    {
+      "id": "cisc",
+      "term": "CISC",
+      "definition": "Processor architecture whose instructions are easy to program and make efficient use of memory, letting one instruction replace many simple ones.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Embedded System",
+      "sources": [
+        "esd-unit-i#slide.39",
+        "esd-unit-i#slide.48"
+      ]
+    },
+    {
+      "id": "risc",
+      "term": "RISC",
+      "definition": "Processor architecture that uses a small, highly optimised instruction set instead of specialised instructions, shortening the clock cycles needed per instruction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to Embedded System",
+      "sources": [
+        "esd-unit-i#slide.41",
+        "esd-unit-i#slide.48"
+      ]
+    },
+    {
+      "id": "cpsr",
+      "term": "CPSR",
+      "definition": "Register holding the condition code flags and interrupt disable bits, accessible in all processor modes with mode-dependent read and write privileges.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.17",
+        "esd-unit-ii#slide.24"
+      ]
+    },
+    {
+      "id": "user-mode",
+      "term": "User mode",
+      "definition": "Unprivileged mode in which user programs run with access to only a limited number of registers.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.19"
+      ]
+    },
+    {
+      "id": "irq-mode",
+      "term": "IRQ mode",
+      "definition": "Mode entered on a hardware interrupt request, for example when a disk tells the processor that data is ready to transfer.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.20"
+      ]
+    },
+    {
+      "id": "fiq-mode",
+      "term": "FIQ mode",
+      "definition": "Mode entered on a hardware fast interrupt request, which is handled with minimal latency.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.21"
+      ]
+    },
+    {
+      "id": "supervisor-mode",
+      "term": "Supervisor mode",
+      "definition": "Mode entered when a user program makes a system call so that the operating system can perform a privileged task.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.22"
+      ]
+    },
+    {
+      "id": "undefined-mode",
+      "term": "Undefined mode",
+      "definition": "Mode entered when the processor executes an instruction that it does not know.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.23"
+      ]
+    },
+    {
+      "id": "program-counter",
+      "term": "Program counter",
+      "definition": "Special register R15, where any instruction writing to it as its destination register causes a program branch.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.29"
+      ]
+    },
+    {
+      "id": "link-register",
+      "term": "Link register",
+      "definition": "Special register R14 that saves the return address when a subroutine call is made.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.25",
+        "esd-unit-ii#slide.29"
+      ]
+    },
+    {
+      "id": "register-banking",
+      "term": "Register banking",
+      "definition": "Arrangement of mode-specific copies of registers that is the minimum necessary for fast handling of overlapping exceptions of different types.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.30"
+      ]
+    },
+    {
+      "id": "halfword",
+      "term": "Halfword",
+      "definition": "Sixteen bits, or two bytes, in the 32-bit ARM architecture, where a full word means 32 bits.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.35"
+      ]
+    },
+    {
+      "id": "vector-table",
+      "term": "Vector table",
+      "definition": "Special memory address range to which the processor sets the program counter when an exception or interrupt occurs.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "ARM Architecture",
+      "sources": [
+        "esd-unit-ii#slide.36"
+      ]
+    },
+    {
+      "id": "barrel-shifter",
+      "term": "Barrel shifter",
+      "definition": "Feature of the ARM processor that shifts the 32-bit pattern in a source register left or right by a set number of positions before the ALU.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.6"
+      ]
+    },
+    {
+      "id": "data-processing-instructions",
+      "term": "Data processing instructions",
+      "definition": "Instructions that manipulate data within registers and, with the S suffix, update the flags in the status register.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.4"
+      ]
+    },
+    {
+      "id": "comparison-instructions",
+      "term": "Comparison instructions",
+      "definition": "Instructions that compare or test a register against a 32-bit value and update the status register flag bits according to the result.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.12"
+      ]
+    },
+    {
+      "id": "branch-instruction",
+      "term": "Branch instruction",
+      "definition": "Instruction that changes the flow of execution or calls a routine, allowing subroutines and if-then-else structures.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.15"
+      ]
+    },
+    {
+      "id": "load-store-instruction",
+      "term": "Load-store instruction",
+      "definition": "Instruction that transfers data between memory and processor registers.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.17"
+      ]
+    },
+    {
+      "id": "multiple-register-transfer",
+      "term": "Multiple-register transfer",
+      "definition": "Load-store form that moves several registers between memory and the processor with a single instruction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.23"
+      ]
+    },
+    {
+      "id": "swap-instruction",
+      "term": "Swap instruction",
+      "definition": "Instruction that exchanges the contents of memory with the contents of a register, reading and writing the location in the same bus operation.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.26"
+      ]
+    },
+    {
+      "id": "full-stack",
+      "term": "Full stack",
+      "definition": "Stack convention in which the stack pointer points to the last used, occupied location.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.29"
+      ]
+    },
+    {
+      "id": "empty-stack",
+      "term": "Empty stack",
+      "definition": "Stack convention in which the stack pointer points to the first unused location.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.29"
+      ]
+    },
+    {
+      "id": "atpcs",
+      "term": "ATPCS",
+      "definition": "ARM-defined standard that specifies stacks as full descending, so that LDMFD and STMFD provide the pop and push operations.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.29"
+      ]
+    },
+    {
+      "id": "software-interrupt-instruction",
+      "term": "Software interrupt instruction",
+      "definition": "Instruction that lets an operating system routine be called in a privileged mode by setting the program counter to offset 0x8 in the vector table.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.31"
+      ]
+    },
+    {
+      "id": "conditional-execution",
+      "term": "Conditional execution",
+      "definition": "Feature by which most ARM instructions run only if the condition code flags pass a given test.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.36"
+      ]
+    },
+    {
+      "id": "condition-field",
+      "term": "Condition field",
+      "definition": "Two-letter mnemonic appended to an instruction mnemonic to make the instruction conditional on the condition code flags.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "ARM Programming Model – I",
+      "sources": [
+        "esd-unit-iii#slide.36"
+      ]
+    },
+    {
+      "id": "thumb-instruction-set",
+      "term": "Thumb instruction set",
+      "definition": "Subset of the 32-bit ARM instructions encoded into a 16-bit instruction set space.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "ARM Programming Model – II",
+      "sources": [
+        "esd-unit-4#slide.3"
+      ]
+    },
+    {
+      "id": "arm-thumb-interworking",
+      "term": "ARM-Thumb interworking",
+      "definition": "Method of linking ARM and Thumb code, in which calling a routine of the other kind requires the core to change state.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "ARM Programming Model – II",
+      "sources": [
+        "esd-unit-4#slide.8"
+      ]
+    },
+    {
+      "id": "low-registers",
+      "term": "Low registers",
+      "definition": "Registers r0 to r7, the only ones fully accessible in Thumb state.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "ARM Programming Model – II",
+      "sources": [
+        "esd-unit-4#slide.7"
+      ]
+    },
+    {
+      "id": "thumb-stack-instructions",
+      "term": "Thumb stack instructions",
+      "definition": "Stack operations that use the traditional PUSH and POP concept, unlike the equivalent ARM load-store multiple instructions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "ARM Programming Model – II",
+      "sources": [
+        "esd-unit-4#slide.23"
+      ]
+    },
+    {
+      "id": "register-allocation",
+      "term": "Register allocation",
+      "definition": "Compiler's attempt to assign a processor register to each local variable used in a C function.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "ARM Programming",
+      "sources": [
+        "esd-unit-5#slide.13"
+      ]
+    },
+    {
+      "id": "spilled-variables",
+      "term": "Spilled variables",
+      "definition": "Local variables that the compiler stores on the processor stack when there are more of them than available registers.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "ARM Programming",
+      "sources": [
+        "esd-unit-5#slide.13"
+      ]
+    },
+    {
+      "id": "four-register-rule",
+      "term": "Four-register rule",
+      "definition": "Guideline that functions with four or fewer arguments are far more efficient to call than those with five or more.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "ARM Programming",
+      "sources": [
+        "esd-unit-5#slide.17"
+      ]
+    },
+    {
+      "id": "pointer-aliasing",
+      "term": "Pointer aliasing",
+      "definition": "Situation in which two pointers point to the same address, so writing through one changes the value read through the other.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "ARM Programming",
+      "sources": [
+        "esd-unit-5#slide.19"
+      ]
+    },
+    {
+      "id": "binary-point",
+      "term": "Binary point",
+      "definition": "Divider between the integer and fractional parts of a number, like the decimal point in a decimal system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "ARM Programming",
+      "sources": [
+        "esd-unit-5#slide.27"
+      ]
+    },
+    {
+      "id": "cache",
+      "term": "Cache",
+      "definition": "Small, fast array of memory placed between the processor core and main memory that stores portions of recently referenced main memory.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.3"
+      ]
+    },
+    {
+      "id": "l1-cache",
+      "term": "L1 cache",
+      "definition": "Array of high-speed, on-chip memory that temporarily holds code and data from a slower level.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.4"
+      ]
+    },
+    {
+      "id": "l2-cache",
+      "term": "L2 cache",
+      "definition": "Memory level located between the primary cache and slower memory, also known as the secondary cache.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.4"
+      ]
+    },
+    {
+      "id": "write-buffer",
+      "term": "Write buffer",
+      "definition": "Very small FIFO buffer that supports writes to main memory from the cache.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.4"
+      ]
+    },
+    {
+      "id": "cache-line",
+      "term": "Cache line",
+      "definition": "Small block of data transferred between the slower main memory and the faster cache memory.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.5"
+      ]
+    },
+    {
+      "id": "temporal-locality",
+      "term": "Temporal locality",
+      "definition": "Property that references to the same item recur close together in time.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.7"
+      ]
+    },
+    {
+      "id": "spatial-locality",
+      "term": "Spatial locality",
+      "definition": "Property that references are close together by address proximity.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.7"
+      ]
+    },
+    {
+      "id": "unified-cache",
+      "term": "Unified cache",
+      "definition": "Single cache used for both instructions and data, as in Von Neumann architecture based ARM processors.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.8"
+      ]
+    },
+    {
+      "id": "split-cache",
+      "term": "Split cache",
+      "definition": "Pair of caches, one for instructions and one for data, used in processor cores based on the Harvard architecture.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.8"
+      ]
+    },
+    {
+      "id": "cache-hit",
+      "term": "Cache hit",
+      "definition": "Outcome of a cache lookup in which both the status check and the comparison succeed.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.12"
+      ]
+    },
+    {
+      "id": "cache-miss",
+      "term": "Cache miss",
+      "definition": "Outcome of a cache lookup in which either the status check or the comparison fails.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.12"
+      ]
+    },
+    {
+      "id": "tag-field",
+      "term": "Tag field",
+      "definition": "Portion of the address that is compared to the cache-tag value found in the directory store.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.14"
+      ]
+    },
+    {
+      "id": "data-streaming",
+      "term": "Data streaming",
+      "definition": "Forwarding of loading data to the core at the same time it is copied into the cache during a line fill.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.20"
+      ]
+    },
+    {
+      "id": "eviction",
+      "term": "Eviction",
+      "definition": "Removal of an existing cache line as part of servicing a cache miss.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.20"
+      ]
+    },
+    {
+      "id": "thrashing",
+      "term": "Thrashing",
+      "definition": "Condition that results in the repeated loading and eviction of the same cache line.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.21"
+      ]
+    },
+    {
+      "id": "ways",
+      "term": "Ways",
+      "definition": "Smaller equal units into which cache memory is divided by a structural design change.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.24"
+      ]
+    },
+    {
+      "id": "write-through",
+      "term": "Write-through",
+      "definition": "Cache write policy that writes to both the cache and main memory when there is a cache hit on a write.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Memory Management",
+      "sources": [
+        "esd-unit-6#slide.25"
+      ]
+    }
+  ]
+}

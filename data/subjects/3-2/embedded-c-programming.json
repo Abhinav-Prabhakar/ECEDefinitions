@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "id": "embedded-c-programming",
+  "semester": "3-2",
+  "name": "Embedded C Programming",
+  "shortName": "ECP",
+  "code": "9C623",
+  "courseType": "PE",
+  "elective": "Professional Elective II",
+  "folderId": "1u69f48foXyRO0DJWktCSTR_sqKoOy6J4",
+  "folderUrl": "https://drive.google.com/drive/folders/1u69f48foXyRO0DJWktCSTR_sqKoOy6J4",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "system",
+      "term": "System",
+      "definition": "Way of working, organising or doing tasks according to a fixed plan, program or set of rules in order to achieve set goals.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Programming Embedded Systems in C",
+      "sources": [
+        "ecp-unit-1#slide.10"
+      ]
+    },
+    {
+      "id": "embedded-system",
+      "term": "Embedded system",
+      "definition": "Hardware with software embedded in it for a dedicated application, containing at least one programmable computer such as a microcontroller, processor or DSP chip.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Programming Embedded Systems in C",
+      "sources": [
+        "ecp-unit-1#slide.14",
+        "ecp-unit-1#slide.15"
+      ]
+    },
+    {
+      "id": "microprocessor",
+      "term": "Microprocessor",
+      "definition": "Single-chip semiconductor device that is a computer on a chip, but not a complete computer.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Programming Embedded Systems in C",
+      "sources": [
+        "ecp-unit-1#slide.35"
+      ]
+    },
+    {
+      "id": "microcontroller",
+      "term": "Microcontroller",
+      "definition": "Functional computer system on a chip containing a processor, memory and programmable input/output peripherals.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Programming Embedded Systems in C",
+      "sources": [
+        "ecp-unit-1#slide.36"
+      ]
+    },
+    {
+      "id": "operating-system",
+      "term": "Operating system",
+      "definition": "System software that manages computer hardware and software by providing common services among multiple services.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Programming Embedded Systems in C",
+      "sources": [
+        "ecp-unit-1#slide.52"
+      ]
+    },
+    {
+      "id": "c-language",
+      "term": "C language",
+      "definition": "Mid-level language combining high-level features such as functions and modules with low-level features such as good access to hardware through pointers.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Programming Embedded Systems in C",
+      "sources": [
+        "ecp-unit-1#slide.53"
+      ]
+    },
+    {
+      "id": "mcs-51",
+      "term": "MCS-51",
+      "definition": "Intel's designation for its family of 8051 devices, whose original member is the core for all of them.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.4"
+      ]
+    },
+    {
+      "id": "stack-pointer",
+      "term": "Stack pointer",
+      "definition": "Register incremented just before data is stored by a push, call or interrupt and initialised to 07H on reset.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.18"
+      ]
+    },
+    {
+      "id": "dynamic-ram",
+      "term": "Dynamic RAM",
+      "definition": "Read-write memory technology that stores information in a small capacitor, which discharges quickly and so must be refreshed frequently.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.21"
+      ]
+    },
+    {
+      "id": "static-ram",
+      "term": "Static RAM",
+      "definition": "Read-write memory technology that uses a form of electronic flip-flop to store the information.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.21"
+      ]
+    },
+    {
+      "id": "prom",
+      "term": "PROM",
+      "definition": "Memory form that is write-once, read-many, also called one-time programmable.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.23"
+      ]
+    },
+    {
+      "id": "bdata-area",
+      "term": "BDATA area",
+      "definition": "16-byte area of data memory that can also be accessed using bit addresses and is used to store bit-sized variables.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.27"
+      ]
+    },
+    {
+      "id": "8-bit-microcontroller",
+      "term": "8-bit microcontroller",
+      "definition": "Device whose registers and data bus are 8 bits wide, handling 8-bit data quickly and 16-bit or 32-bit data less efficiently.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.30"
+      ]
+    },
+    {
+      "id": "timer",
+      "term": "Timer",
+      "definition": "16-bit counting register that can hold values between 0 and 65535 in decimal.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.32"
+      ]
+    },
+    {
+      "id": "interrupt",
+      "term": "Interrupt",
+      "definition": "Hardware mechanism that notifies the processor that an internal or external event, such as timer overflow or serial data arrival, has occurred.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.34"
+      ]
+    },
+    {
+      "id": "isr",
+      "term": "ISR",
+      "definition": "Function written to handle an interrupt, located elsewhere in code memory.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Introducing the 8051 Microcontroller Family",
+      "sources": [
+        "ecp-unit-2#slide.37"
+      ]
+    },
+    {
+      "id": "switch-bounce",
+      "term": "Switch bounce",
+      "definition": "Repeated making and breaking of mechanical switch contacts after the switch is closed or opened, usually lasting under 20 ms.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Reading Switches",
+      "sources": [
+        "ecp-unit-3#slide.22"
+      ]
+    },
+    {
+      "id": "pull-up-resistor",
+      "term": "Pull-up resistor",
+      "definition": "Internal resistor on a port that pulls the pin up to the microcontroller supply voltage, typically 5V, when the switch is open.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Reading Switches",
+      "sources": [
+        "ecp-unit-3#slide.19",
+        "ecp-unit-3#slide.20"
+      ]
+    },
+    {
+      "id": "modular-programming",
+      "term": "Modular programming",
+      "definition": "Style well supported by C in which a source file acts as the class, its static data are private members and its functions are member functions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Adding Structure to the Code",
+      "sources": [
+        "ecp-unit-4#p.9",
+        "ecp-unit-4#p.10"
+      ]
+    },
+    {
+      "id": "project-header",
+      "term": "Project header",
+      "definition": "Header file included in all projects that groups key information about the 8051 device used, such as oscillator frequency and type definitions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Adding Structure to the Code",
+      "sources": [
+        "ecp-unit-4#p.16"
+      ]
+    },
+    {
+      "id": "device-header",
+      "term": "Device header",
+      "definition": "File produced by the compiler manufacturer, linked first in the project header, that makes the ports and other components of the device accessible.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Adding Structure to the Code",
+      "sources": [
+        "ecp-unit-4#p.18",
+        "ecp-unit-4#p.19"
+      ]
+    },
+    {
+      "id": "typedef",
+      "term": "typedef",
+      "definition": "C keyword that provides aliases for data types, so that the aliases can be used in place of the original types.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Adding Structure to the Code",
+      "sources": [
+        "ecp-unit-4#p.21"
+      ]
+    },
+    {
+      "id": "port-header",
+      "term": "Port header",
+      "definition": "Header file that pulls together the port access features of a whole project in one place, easing development and maintenance.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Adding Structure to the Code",
+      "sources": [
+        "ecp-unit-4#p.27"
+      ]
+    },
+    {
+      "id": "hardware-delay",
+      "term": "Hardware delay",
+      "definition": "Delay created with one of the on-chip timers of the 8051 family, allowing more accurate timing than software loops.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.9"
+      ]
+    },
+    {
+      "id": "timer-overflow",
+      "term": "Timer overflow",
+      "definition": "Event that occurs when a 16-bit timer is incremented past its maximum count of 65535.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.10",
+        "ecp-unit-5#p.17"
+      ]
+    },
+    {
+      "id": "tcon",
+      "term": "TCON",
+      "definition": "Special function register holding the timer run-control bits TR0 and TR1 and the external interrupt flags IE0 and IE1.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.12",
+        "ecp-unit-5#p.13"
+      ]
+    },
+    {
+      "id": "tmod",
+      "term": "TMOD",
+      "definition": "Special function register that selects the mode of operation of each timer using the M1 and M0 bits, with GATE and counter/timer controls.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.14",
+        "ecp-unit-5#p.15"
+      ]
+    },
+    {
+      "id": "timer-2",
+      "term": "Timer 2",
+      "definition": "Extra, more flexible timer found in devices based on the slightly later 8052 architecture.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.23"
+      ]
+    },
+    {
+      "id": "timeout-mechanism",
+      "term": "Timeout mechanism",
+      "definition": "Technique that prevents a system from hanging forever when an expected event, such as release of a switch, never occurs.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.24"
+      ]
+    },
+    {
+      "id": "loop-timeout",
+      "term": "Loop timeout",
+      "definition": "Timeout built from a loop variable that keeps running until it reaches its maximum value of 65535 and overflows.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.26"
+      ]
+    },
+    {
+      "id": "hardware-timeout",
+      "term": "Hardware timeout",
+      "definition": "Timeout created by using a timer, which allows precise timeout delays to be generated easily.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Meeting Real-Time Constraints",
+      "sources": [
+        "ecp-unit-5#p.33"
+      ]
+    },
+    {
+      "id": "multi-state-task",
+      "term": "Multi-state task",
+      "definition": "Software architecture with a series of system states, each calling one or more functions, with rules defining the transitions between states.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Study: Intruder Alarm System",
+      "sources": [
+        "ecp-unit-6#p.26"
+      ]
+    },
+    {
+      "id": "multi-state-timed-system",
+      "term": "Multi-state (timed) system",
+      "definition": "System in which the transition between states depends only on the passage of time.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Study: Intruder Alarm System",
+      "sources": [
+        "ecp-unit-6#p.27"
+      ]
+    },
+    {
+      "id": "multi-state-input-timed-system",
+      "term": "Multi-state (input/timed) system",
+      "definition": "System in which the transition between states, and behaviour in each state, depends on both the passage of time and system inputs.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Case Study: Intruder Alarm System",
+      "sources": [
+        "ecp-unit-6#p.28"
+      ]
+    }
+  ]
+}
