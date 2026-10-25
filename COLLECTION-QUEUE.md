@@ -130,7 +130,7 @@ it. Do not move a partial collection to Completed just to clear the line.
 
 ### Law
 
-- [ ] **US legal literacy** — `us-legal-literacy`
+- [x] **US legal literacy** — `us-legal-literacy`
   - Scope: sources of law and courts; contracts; torts; criminal law; constitutional
     rights; procedure.
   - Audience: non-lawyers and first-year law students.
@@ -182,6 +182,7 @@ library has a history.
 | 2026-10-25 | Anatomy and physiology | data/collections/anatomy-and-physiology | 285 | PR #3 draft |
 | 2026-10-25 | Pharmacology | data/collections/pharmacology | 270 | validation passed; PR draft |
 | 2026-10-25 | Nursing and NCLEX | data/collections/nursing-and-nclex | 347 | validation passed |
+| 2026-10-25 | US legal literacy | data/collections/us-legal-literacy | 277 | validation passed; 60 defs source-checked |
 
 ---
 

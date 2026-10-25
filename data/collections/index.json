@@ -37,6 +37,15 @@
       "subjects": 5,
       "definitions": 270,
       "generatedAt": "2026-10-25"
+    },
+    {
+      "id": "us-legal-literacy",
+      "name": "US Legal Literacy",
+      "tagline": "US legal literacy, in one line.",
+      "path": "data/collections/us-legal-literacy",
+      "subjects": 6,
+      "definitions": 277,
+      "generatedAt": "2026-10-25"
     }
   ]
 }
