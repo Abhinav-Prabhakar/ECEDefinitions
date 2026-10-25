@@ -442,7 +442,7 @@
           "id": "basics-of-entrepreneurship",
           "name": "Basics of Entrepreneurship",
           "shortName": "BOE",
-          "code": "8ZC22",
+          "code": "9ZC22",
           "courseType": "OE",
           "elective": "Open Elective I",
           "folderId": "1VdV6eIG6nSJNl7eNQXKY5cykP-X4MVkO",
@@ -622,7 +622,7 @@
           "id": "advanced-entrepreneurship",
           "name": "Advanced Entrepreneurship",
           "shortName": "AE",
-          "code": "8ZC23",
+          "code": "9ZC23",
           "courseType": "OE",
           "elective": "Open Elective II",
           "folderId": "1IBB-yglNuufkpNeWzu_iWZQn-v8XQsG-",
@@ -866,17 +866,17 @@
           "id": "product-and-services",
           "name": "Product and Services",
           "shortName": "P&S",
-          "code": "8ZC24",
+          "code": "9ZC24",
           "courseType": "OE",
           "elective": "Open Elective III",
           "folderId": "1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
           "folderUrl": "https://drive.google.com/drive/folders/1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
           "data": "data/subjects/4-1/product-and-services.json",
-          "definitionCount": 33,
+          "definitionCount": 65,
           "unitCount": 6,
-          "coveredUnits": 3,
-          "status": "partial",
-          "sourceCount": 3
+          "coveredUnits": 6,
+          "status": "complete",
+          "sourceCount": 12
         }
       ]
     },
@@ -893,9 +893,9 @@
     "semesters": 8,
     "semestersWithMaterials": 7,
     "subjects": 52,
-    "definitions": 2199,
-    "completeSubjects": 36,
-    "partialSubjects": 9,
+    "definitions": 2231,
+    "completeSubjects": 37,
+    "partialSubjects": 8,
     "inaccessibleSubjects": 7
   }
 }

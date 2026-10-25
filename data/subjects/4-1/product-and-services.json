@@ -4,12 +4,12 @@
   "semester": "4-1",
   "name": "Product and Services",
   "shortName": "P&S",
-  "code": "8ZC24",
+  "code": "9ZC24",
   "courseType": "OE",
   "elective": "Open Elective III",
   "folderId": "1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
   "folderUrl": "https://drive.google.com/drive/folders/1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
-  "status": "partial",
+  "status": "complete",
   "definitions": [
     {
       "id": "product",
@@ -193,7 +193,7 @@
       "definition": "Any product perceived by the customer as new, such as a repositioned product, a lower-priced existing product or an added product item.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.3"
       ]
@@ -204,7 +204,7 @@
       "definition": "Developed form of a product idea that consumers actually buy, since consumers do not buy mere ideas.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.9"
       ]
@@ -215,7 +215,7 @@
       "definition": "Creative technique that improves existing products or ideas by asking guided questions to modify something.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.18"
       ]
@@ -226,7 +226,7 @@
       "definition": "Creative technique for generating many ideas in a short time through free thinking without criticism or judgment.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.20"
       ]
@@ -237,7 +237,7 @@
       "definition": "Creative problem-solving technique that uses analogies, mentally taking things apart and putting them together to give new insight.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.23"
       ]
@@ -248,7 +248,7 @@
       "definition": "Analytical approach to recognise new forms of a system or product by identifying areas of improvement.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.25"
       ]
@@ -259,7 +259,7 @@
       "definition": "Technique that joins totally different ideas to come up with a fresh idea, often yielding useful combinations.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.29"
       ]
@@ -270,7 +270,7 @@
       "definition": "Cross-functional approach that involves many business function areas throughout the entire product innovation cycle.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.34"
       ]
@@ -281,7 +281,7 @@
       "definition": "Examination of financial information to reach business decisions.",
       "formula": "",
       "unit": 2,
-      "unitTitle": null,
+      "unitTitle": "Product Innovation and Validation",
       "sources": [
         "ps-unit-2-p-and-s#slide.50"
       ]
@@ -292,7 +292,7 @@
       "definition": "Systematic evaluation of all costs associated with launching a new product to support pricing, budgeting and profitability decisions.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.3"
       ]
@@ -303,7 +303,7 @@
       "definition": "Process of planning activities that make customers aware of a product and encourage them to buy it.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.17"
       ]
@@ -314,7 +314,7 @@
       "definition": "Promotion of products or services using digital technologies such as the internet, websites, social media, search engines, email and mobile apps.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.26"
       ]
@@ -325,7 +325,7 @@
       "definition": "Performance-based method in which an individual or business earns a commission for promoting and selling another company's products.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.31"
       ]
@@ -336,7 +336,7 @@
       "definition": "Form of digital promotion that uses popular online creators to advertise products or services to their established audience.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.32"
       ]
@@ -347,7 +347,7 @@
       "definition": "Business process of selling goods or services directly to individual consumers for their personal, non-business use.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.34"
       ]
@@ -358,7 +358,7 @@
       "definition": "Process allowing customers to search, select and purchase products, services and information remotely over the Internet.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.36"
       ]
@@ -369,9 +369,361 @@
       "definition": "Process of evaluating a product's performance after launch, to decide whether it achieved its marketing and business objectives.",
       "formula": "",
       "unit": 3,
-      "unitTitle": null,
+      "unitTitle": "Launching Product",
       "sources": [
         "ps-unit-3-p-and-s#slide.37"
+      ]
+    },
+    {
+      "id": "service",
+      "term": "Service",
+      "definition": "An act or use for which a consumer, company or government is willing to pay, an intangible performance through which the provider adds value.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-service#overview"
+      ]
+    },
+    {
+      "id": "intangibility",
+      "term": "Intangibility",
+      "definition": "Characteristic of services that they are not manufactured, transported or stocked.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-service#characteristics"
+      ]
+    },
+    {
+      "id": "inseparability",
+      "term": "Inseparability",
+      "definition": "Characteristic of services that they are produced and consumed simultaneously, so the consumer must be present for delivery.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-service#characteristics"
+      ]
+    },
+    {
+      "id": "heterogeneity",
+      "term": "Heterogeneity",
+      "definition": "Characteristic of services that each one is unique, can never be exactly repeated and is typically modified for each consumer.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-service#characteristics"
+      ]
+    },
+    {
+      "id": "perishability",
+      "term": "Perishability",
+      "definition": "Characteristic of services by which a rendered service irreversibly vanishes and unused capacity is lost.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-service#characteristics"
+      ]
+    },
+    {
+      "id": "lovelock-service-classification",
+      "term": "Lovelock service classification",
+      "definition": "Two-by-three matrix that classifies services by the number of delivery sites and the method of delivery.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-service#classification"
+      ]
+    },
+    {
+      "id": "marketing-mix",
+      "term": "Marketing mix",
+      "definition": "Set of marketing tools that a firm uses to pursue its marketing objectives in the target market.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-marketing-mix#overview"
+      ]
+    },
+    {
+      "id": "people-element",
+      "term": "People element",
+      "definition": "Extra service-marketing element covering the human actors who participate in service delivery.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-marketing-mix#extended-mix"
+      ]
+    },
+    {
+      "id": "process-element",
+      "term": "Process element",
+      "definition": "Extra service-marketing element covering the set of activities that results in delivery of the benefits of an offering.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-marketing-mix#extended-mix"
+      ]
+    },
+    {
+      "id": "physical-evidence",
+      "term": "Physical evidence",
+      "definition": "Extra service-marketing element covering the tangible setting and cues that facilitate performance and communication of the service.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-marketing-mix#extended-mix"
+      ]
+    },
+    {
+      "id": "servicescape",
+      "term": "Servicescape",
+      "definition": "The environment in which a service is assembled and in which the seller and customer interact.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-servicescape#overview"
+      ]
+    },
+    {
+      "id": "ambient-conditions",
+      "term": "Ambient conditions",
+      "definition": "Controllable factors of a physical service setting, such as temperature, air, sound, light, music and scent.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Introduction to Service",
+      "sources": [
+        "ps-wiki-servicescape#dimensions"
+      ]
+    },
+    {
+      "id": "service-design",
+      "term": "Service design",
+      "definition": "Activity of planning and arranging the people, infrastructure, communication and material components of a service.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-service-design#overview"
+      ]
+    },
+    {
+      "id": "service-blueprint",
+      "term": "Service blueprint",
+      "definition": "Extension of a user journey map that documents every interaction a user has with an organisation across their lifecycle.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-service-design#tools"
+      ]
+    },
+    {
+      "id": "touchpoint",
+      "term": "Touchpoint",
+      "definition": "Moment at which the user interacts with a service.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-service-design#tools"
+      ]
+    },
+    {
+      "id": "co-creative-principle",
+      "term": "Co-creative principle",
+      "definition": "Service design principle that all stakeholders should be included in the design process, since a service exists only with user participation.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-service-design#principles"
+      ]
+    },
+    {
+      "id": "distribution-channel",
+      "term": "Distribution channel",
+      "definition": "Network of people, organisations and activities necessary to transfer ownership of goods from producer to consumer.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-distribution#overview"
+      ]
+    },
+    {
+      "id": "intermediary",
+      "term": "Intermediary",
+      "definition": "Party authorised to act for a principal to facilitate exchange, typically without taking title to the goods.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-distribution#intermediaries"
+      ]
+    },
+    {
+      "id": "direct-distribution",
+      "term": "Direct distribution",
+      "definition": "Arrangement in which the producer or service provider handles delivery itself, without intermediaries.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-distribution#channels"
+      ]
+    },
+    {
+      "id": "intensive-distribution",
+      "term": "Intensive distribution",
+      "definition": "Approach of stocking a product in as many outlets as possible, which suits mass-produced goods.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-distribution#intensity"
+      ]
+    },
+    {
+      "id": "selective-distribution",
+      "term": "Selective distribution",
+      "definition": "Approach in which the producer uses a limited number of intermediaries, often specialist dealers.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-distribution#intensity"
+      ]
+    },
+    {
+      "id": "exclusive-distribution",
+      "term": "Exclusive distribution",
+      "definition": "Approach in which the producer works with a single intermediary, giving the manufacturer more control and typical of luxury goods.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Service Process Design and Service Distribution",
+      "sources": [
+        "ps-wiki-distribution#intensity"
+      ]
+    },
+    {
+      "id": "service-quality",
+      "term": "Service quality",
+      "definition": "Comparison of the perceived expectations of a service with its perceived performance.",
+      "formula": "SQ = P − E",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-service-quality#overview"
+      ]
+    },
+    {
+      "id": "service-quality-gap",
+      "term": "Service quality gap",
+      "definition": "Difference between customer expectations and perceptions, the only gap that can be measured directly.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#gap-model"
+      ]
+    },
+    {
+      "id": "gap-model",
+      "term": "Gap model",
+      "definition": "Model identifying five gaps between expected and experienced service that cause unsuccessful service delivery.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-service-quality#gap-analysis"
+      ]
+    },
+    {
+      "id": "servqual",
+      "term": "SERVQUAL",
+      "definition": "Scale that measures customer perception of service quality by comparing what customers expect with what they receive.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#overview"
+      ]
+    },
+    {
+      "id": "reliability",
+      "term": "Reliability",
+      "definition": "Service quality dimension of delivering the promised service dependably and on time.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#dimensions"
+      ]
+    },
+    {
+      "id": "assurance",
+      "term": "Assurance",
+      "definition": "Service quality dimension covering staff behaviour that builds customer confidence.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#dimensions"
+      ]
+    },
+    {
+      "id": "tangibles",
+      "term": "Tangibles",
+      "definition": "Service quality dimension covering the appearance of physical facilities, equipment and materials.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#dimensions"
+      ]
+    },
+    {
+      "id": "empathy",
+      "term": "Empathy",
+      "definition": "Service quality dimension of giving customers individual attention and convenient access.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#dimensions"
+      ]
+    },
+    {
+      "id": "responsiveness",
+      "term": "Responsiveness",
+      "definition": "Service quality dimension of willingness to help customers and provide prompt service.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-servqual#dimensions"
+      ]
+    },
+    {
+      "id": "cost-of-poor-quality",
+      "term": "Cost of poor quality",
+      "definition": "Costs that would disappear if systems, processes and products were perfect.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Quality of Service",
+      "sources": [
+        "ps-wiki-copq#overview"
       ]
     }
   ]
