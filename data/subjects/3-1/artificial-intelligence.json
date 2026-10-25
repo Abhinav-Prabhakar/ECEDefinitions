@@ -1,0 +1,564 @@
+{
+  "version": 1,
+  "id": "artificial-intelligence",
+  "semester": "3-1",
+  "name": "Artificial Intelligence",
+  "shortName": "AI",
+  "code": "9EC41",
+  "courseType": "MC",
+  "folderId": "15PUsow0log9o_jCmY2OwYl_o4cLs5ppZ",
+  "folderUrl": "https://drive.google.com/drive/folders/15PUsow0log9o_jCmY2OwYl_o4cLs5ppZ",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "artificial-intelligence",
+      "term": "Artificial Intelligence",
+      "definition": "Design of intelligence in an artificial device; a man-made thinking power.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.7"
+      ]
+    },
+    {
+      "id": "rational-agent",
+      "term": "Rational agent",
+      "definition": "An agent that acts to achieve the best outcome or best expected outcome.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.18"
+      ]
+    },
+    {
+      "id": "agent",
+      "term": "Agent",
+      "definition": "An entity that perceives its environment through sensors and acts through actuators.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.20"
+      ]
+    },
+    {
+      "id": "sensor",
+      "term": "Sensor",
+      "definition": "A device that detects changes in the environment and sends information to the agent.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.23"
+      ]
+    },
+    {
+      "id": "actuator",
+      "term": "Actuator",
+      "definition": "A component that converts energy into motion to perform actions.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.23"
+      ]
+    },
+    {
+      "id": "simple-reflex-agent",
+      "term": "Simple reflex agent",
+      "definition": "An agent that selects actions using condition-action rules on the current percept only.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.30"
+      ]
+    },
+    {
+      "id": "model-based-reflex-agent",
+      "term": "Model-based reflex agent",
+      "definition": "An agent that uses an internal world model to handle partially observable environments.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.31"
+      ]
+    },
+    {
+      "id": "goal-based-agent",
+      "term": "Goal-based agent",
+      "definition": "An agent that chooses actions to achieve a specified goal.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.32"
+      ]
+    },
+    {
+      "id": "utility-based-agent",
+      "term": "Utility-based agent",
+      "definition": "An agent that chooses the action with the highest utility among alternatives.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.33"
+      ]
+    },
+    {
+      "id": "breadth-first-search",
+      "term": "Breadth-first search",
+      "definition": "A search that expands all nodes at the current depth before moving to the next level.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.45"
+      ]
+    },
+    {
+      "id": "depth-first-search",
+      "term": "Depth-first search",
+      "definition": "A search that follows each path to its greatest depth before backtracking.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.50"
+      ]
+    },
+    {
+      "id": "hill-climbing",
+      "term": "Hill climbing",
+      "definition": "A local search that iteratively moves to the neighboring state with highest value.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.61"
+      ]
+    },
+    {
+      "id": "simulated-annealing",
+      "term": "Simulated annealing",
+      "definition": "A local search combining hill climbing with random moves to escape local maxima.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Introduction to AI and Agents",
+      "sources": [
+        "ai-ai-unit-i#slide.70"
+      ]
+    },
+    {
+      "id": "zero-sum-game",
+      "term": "Zero-sum game",
+      "definition": "A game where one agent's gain is exactly balanced by the other's loss.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.8"
+      ]
+    },
+    {
+      "id": "game-tree",
+      "term": "Game tree",
+      "definition": "A tree whose nodes are game states and edges are moves by players.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.10"
+      ]
+    },
+    {
+      "id": "utility-function",
+      "term": "Utility function",
+      "definition": "A function giving the final numeric value of a terminal game state.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.11"
+      ]
+    },
+    {
+      "id": "minimax-algorithm",
+      "term": "Minimax algorithm",
+      "definition": "A recursive algorithm that chooses the optimal move assuming the opponent plays optimally.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.14"
+      ]
+    },
+    {
+      "id": "alpha-beta-pruning",
+      "term": "Alpha-beta pruning",
+      "definition": "A technique that prunes game-tree branches without changing the minimax result.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.18"
+      ]
+    },
+    {
+      "id": "constraint-satisfaction-problem",
+      "term": "Constraint satisfaction problem",
+      "definition": "A problem of finding values for variables that satisfy all given constraints.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.28"
+      ]
+    },
+    {
+      "id": "horn-clause",
+      "term": "Horn clause",
+      "definition": "A disjunction of literals with at most one positive literal.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.2"
+      ]
+    },
+    {
+      "id": "forward-chaining",
+      "term": "Forward chaining",
+      "definition": "A data-driven inference that starts from known facts and derives new facts until the goal.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.74"
+      ]
+    },
+    {
+      "id": "backward-chaining",
+      "term": "Backward chaining",
+      "definition": "A goal-driven inference that starts from the goal and works back to known facts.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.9"
+      ]
+    },
+    {
+      "id": "unification",
+      "term": "Unification",
+      "definition": "An algorithm to find substitutions that make two logical expressions identical.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Problem Solving and Search",
+      "sources": [
+        "ai-ai-unit-ii#slide.112"
+      ]
+    },
+    {
+      "id": "knowledge-representation",
+      "term": "Knowledge representation",
+      "definition": "Representing real-world information in a formal language for reasoning.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.3"
+      ]
+    },
+    {
+      "id": "propositional-logic",
+      "term": "Propositional logic",
+      "definition": "A declarative logic representing facts as true or false using connectives.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.5"
+      ]
+    },
+    {
+      "id": "first-order-logic",
+      "term": "First-order logic",
+      "definition": "A logic using objects, relations and functions to express common-sense knowledge.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.8"
+      ]
+    },
+    {
+      "id": "universal-quantifier",
+      "term": "Universal quantifier",
+      "definition": "Symbol ∀ indicating a statement holds for all instances.",
+      "formula": "∀",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.15"
+      ]
+    },
+    {
+      "id": "existential-quantifier",
+      "term": "Existential quantifier",
+      "definition": "Symbol ∃ indicating a statement holds for at least one instance.",
+      "formula": "∃",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.16"
+      ]
+    },
+    {
+      "id": "ontology",
+      "term": "Ontology",
+      "definition": "A formal representation of a domain's concepts, types and relations.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.91"
+      ]
+    },
+    {
+      "id": "ontological-engineering",
+      "term": "Ontological engineering",
+      "definition": "Representing abstract concepts such as events, time and objects in an ontology.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.94"
+      ]
+    },
+    {
+      "id": "resolution",
+      "term": "Resolution",
+      "definition": "An inference rule combining clauses with conflicting literals to derive a new clause.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Knowledge Representation and Logic",
+      "sources": [
+        "ai-ai-unit-iii#slide.81"
+      ]
+    },
+    {
+      "id": "classical-planning",
+      "term": "Classical planning",
+      "definition": "Finding a sequence of actions that achieves a goal in a deterministic, fully observable world.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.3"
+      ]
+    },
+    {
+      "id": "pddl",
+      "term": "PDDL",
+      "definition": "Planning Domain Definition Language for expressing states, actions and goals.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.6"
+      ]
+    },
+    {
+      "id": "action-schema",
+      "term": "Action schema",
+      "definition": "A lifted template defining an action's name, preconditions and effects.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.9"
+      ]
+    },
+    {
+      "id": "planning-graph",
+      "term": "Planning graph",
+      "definition": "A layered graph of literals and actions used to estimate plan cost.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.31"
+      ]
+    },
+    {
+      "id": "mutex",
+      "term": "Mutex",
+      "definition": "A mutual-exclusion relation between conflicting actions or literals.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.49"
+      ]
+    },
+    {
+      "id": "htn-planning",
+      "term": "HTN planning",
+      "definition": "Hierarchical Task Network planning using high-level actions refined into primitives.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.72"
+      ]
+    },
+    {
+      "id": "sensorless-planning",
+      "term": "Sensorless planning",
+      "definition": "Conformant planning that builds sequential plans without using sensors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.83"
+      ]
+    },
+    {
+      "id": "conditional-planning",
+      "term": "Conditional planning",
+      "definition": "Planning that builds branches for different contingencies using sensing actions.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Planning",
+      "sources": [
+        "ai-ai-unit-iv#slide.84"
+      ]
+    },
+    {
+      "id": "bayesian-network",
+      "term": "Bayesian network",
+      "definition": "A directed acyclic graph annotated with conditional probability distributions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Probabilistic Reasoning",
+      "sources": [
+        "ai-ai-unit-v#slide.48"
+      ]
+    },
+    {
+      "id": "prior-probability",
+      "term": "Prior probability",
+      "definition": "The unconditional probability of a proposition without other information.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Probabilistic Reasoning",
+      "sources": [
+        "ai-ai-unit-v#slide.21"
+      ]
+    },
+    {
+      "id": "conditional-probability",
+      "term": "Conditional probability",
+      "definition": "The probability of an event given that another event is known.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Probabilistic Reasoning",
+      "sources": [
+        "ai-ai-unit-v#slide.23"
+      ]
+    },
+    {
+      "id": "bayes-rule",
+      "term": "Bayes' rule",
+      "definition": "A rule computing posterior probability from likelihood, prior and evidence probability.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Probabilistic Reasoning",
+      "sources": [
+        "ai-ai-unit-v#slide.35"
+      ]
+    },
+    {
+      "id": "full-joint-probability-distribution",
+      "term": "Full joint probability distribution",
+      "definition": "A distribution specifying probabilities for all combinations of variable values.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Probabilistic Reasoning",
+      "sources": [
+        "ai-ai-unit-v#slide.30"
+      ]
+    },
+    {
+      "id": "dempster-shafer-theory",
+      "term": "Dempster-Shafer theory",
+      "definition": "A theory using belief functions and interval-valued degrees of belief.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Probabilistic Reasoning",
+      "sources": [
+        "ai-ai-unit-v#slide.88"
+      ]
+    },
+    {
+      "id": "learning",
+      "term": "Learning",
+      "definition": "Improving future performance after making observations about the world.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Learning",
+      "sources": [
+        "ai-ai-unit-vi#slide.3"
+      ]
+    },
+    {
+      "id": "supervised-learning",
+      "term": "Supervised learning",
+      "definition": "Learning a function from input-output pairs provided by a teacher.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Learning",
+      "sources": [
+        "ai-ai-unit-vi#slide.12"
+      ]
+    },
+    {
+      "id": "unsupervised-learning",
+      "term": "Unsupervised learning",
+      "definition": "Learning patterns in input without explicit feedback, such as clustering.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Learning",
+      "sources": [
+        "ai-ai-unit-vi#slide.10"
+      ]
+    },
+    {
+      "id": "reinforcement-learning",
+      "term": "Reinforcement learning",
+      "definition": "Learning from rewards or punishments to maximize long-term performance.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Learning",
+      "sources": [
+        "ai-ai-unit-vi#slide.11"
+      ]
+    },
+    {
+      "id": "decision-tree",
+      "term": "Decision tree",
+      "definition": "A tree of attribute tests leading to a classification decision.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Learning",
+      "sources": [
+        "ai-ai-unit-vi#slide.20"
+      ]
+    }
+  ]
+}

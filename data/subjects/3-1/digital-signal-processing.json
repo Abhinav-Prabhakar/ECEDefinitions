@@ -1,0 +1,421 @@
+{
+  "version": 1,
+  "id": "digital-signal-processing",
+  "semester": "3-1",
+  "name": "Digital Signal Processing",
+  "shortName": "DSP",
+  "code": "9CC08",
+  "courseType": "PC",
+  "folderId": "1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
+  "folderUrl": "https://drive.google.com/drive/folders/1nLbYpitSRXGeI2BchP9BmcswOQirv4LD",
+  "status": "partial",
+  "definitions": [
+    {
+      "id": "butterworth-filter",
+      "term": "Butterworth filter",
+      "definition": "IIR filter whose magnitude response decreases monotonically with frequency and approximates the ideal response as order increases; poles lie on a circle.",
+      "formula": "|H(jΩ)| = 1/√(1+(Ω/Ωc)^(2N))",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.1"
+      ]
+    },
+    {
+      "id": "chebyshev-filter",
+      "term": "Chebyshev filter",
+      "definition": "IIR filter whose magnitude response exhibits ripple in the passband or stopband; poles lie on an ellipse.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.1"
+      ]
+    },
+    {
+      "id": "chebyshev-type-i-filter",
+      "term": "Chebyshev type I filter",
+      "definition": "All-pole Chebyshev filter with equiripple behaviour in the passband and monotonic behaviour in the stopband.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.2"
+      ]
+    },
+    {
+      "id": "chebyshev-type-ii-filter",
+      "term": "Chebyshev type II filter",
+      "definition": "Chebyshev filter with both poles and zeros, monotonic in the passband and equiripple in the stopband.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.2"
+      ]
+    },
+    {
+      "id": "iir-filter",
+      "term": "IIR filter",
+      "definition": "Recursive digital filter whose present output depends on present and past inputs and past outputs.",
+      "formula": "H(z) = (Σ b_k z^-k)/(1+Σ a_k z^-k)",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.1"
+      ]
+    },
+    {
+      "id": "recursive-realization",
+      "term": "Recursive realization",
+      "definition": "Realization where the present output is a function of past outputs, past and present inputs; corresponds to an IIR filter.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
+    },
+    {
+      "id": "non-recursive-realization",
+      "term": "Non-recursive realization",
+      "definition": "Realization where the present output depends only on past and present inputs; corresponds to an FIR filter.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
+    },
+    {
+      "id": "impulse-invariance-method",
+      "term": "Impulse invariance method",
+      "definition": "IIR design method that digitizes an analog filter by sampling its impulse response.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.5"
+      ]
+    },
+    {
+      "id": "bilinear-transformation",
+      "term": "Bilinear transformation",
+      "definition": "One-to-one mapping from the s-plane to the z-plane that maps the left half-plane into the unit circle, avoiding aliasing.",
+      "formula": "s = (2/T)((1-z^-1)/(1+z^-1))",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.5"
+      ]
+    },
+    {
+      "id": "warping-effect",
+      "term": "Warping effect",
+      "definition": "Non-linear frequency compression at high frequencies introduced by the bilinear transformation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.7"
+      ]
+    },
+    {
+      "id": "prewarping",
+      "term": "Prewarping",
+      "definition": "Compensates warping by prescaling critical frequencies before applying the bilinear transformation.",
+      "formula": "Ω = (2/T) tan(ω/2)",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.7"
+      ]
+    },
+    {
+      "id": "backward-difference",
+      "term": "Backward difference",
+      "definition": "Simplest analog-to-digital conversion approximating the derivative as (y(n)-y(n-1))/T.",
+      "formula": "dy/dt ≈ (y(n)-y(n-1))/T",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.6"
+      ]
+    },
+    {
+      "id": "matched-z-transformation",
+      "term": "Matched z-transformation",
+      "definition": "Converts an analog filter to digital by mapping each s-plane zero/pole z to e^(sT).",
+      "formula": "z = e^(sT)",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.7"
+      ]
+    },
+    {
+      "id": "direct-form-i",
+      "term": "Direct-form I structure",
+      "definition": "IIR realization with separate delay chains for the numerator (zeros) and denominator (poles).",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
+    },
+    {
+      "id": "direct-form-ii",
+      "term": "Direct-form II structure",
+      "definition": "IIR realization sharing one delay chain, requiring max(M,N) memory locations.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
+    },
+    {
+      "id": "signal-flow-graph",
+      "term": "Signal flow graph",
+      "definition": "Graphical representation of the relationships among variables of a set of linear difference equations.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.12"
+      ]
+    },
+    {
+      "id": "transposition-theorem",
+      "term": "Transposition theorem",
+      "definition": "Reversing branch directions and interchanging input/output leaves the system function unchanged.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.12"
+      ]
+    },
+    {
+      "id": "cascade-form",
+      "term": "Cascade form",
+      "definition": "Realization of a system as a product of lower-order sections to minimize quantization errors.",
+      "formula": "H(z)=H1(z)H2(z)...",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
+    },
+    {
+      "id": "parallel-form",
+      "term": "Parallel form",
+      "definition": "Realization obtained by partial-fraction expansion of H(z) into parallel first/second-order sections.",
+      "formula": "H(z)=C+Σ Ak/(1-pk z^-1)",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.10"
+      ]
+    },
+    {
+      "id": "iir-linear-phase",
+      "term": "Linear phase in IIR",
+      "definition": "A causal and stable IIR filter cannot have linear phase because it would require poles outside the unit circle.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "IIR filter design",
+      "sources": [
+        "dsp-unit-4-dsp-questions#p.6"
+      ]
+    },
+    {
+      "id": "fir-filter",
+      "term": "FIR filter",
+      "definition": "Non-recursive digital filter whose present output depends on the present and past inputs only; always stable.",
+      "formula": "H(z)=Σ h(n) z^-n",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.1"
+      ]
+    },
+    {
+      "id": "linear-phase-filter",
+      "term": "Linear phase filter",
+      "definition": "Filter whose phase response is proportional to frequency, preserving signal shape; FIR can have exact linear phase if impulse response is symmetric.",
+      "formula": "θ(ω) = -αω",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.1"
+      ]
+    },
+    {
+      "id": "gibbs-phenomenon",
+      "term": "Gibbs phenomenon",
+      "definition": "Oscillations in passband and stopband caused by abrupt truncation of the infinite Fourier series.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.7"
+      ]
+    },
+    {
+      "id": "window-function",
+      "term": "Window function",
+      "definition": "Finite weighing sequence multiplied with the infinite impulse response to reduce Gibbs oscillations.",
+      "formula": "h(n)=hd(n)w(n)",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.8"
+      ]
+    },
+    {
+      "id": "kaiser-window",
+      "term": "Kaiser window",
+      "definition": "Adjustable window whose main-lobe width and side-lobe level can be varied via a parameter using a Bessel function.",
+      "formula": "w(n)=I0(β√(1-(2n/(N-1))^2))/I0(β)",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.11"
+      ]
+    },
+    {
+      "id": "frequency-sampling-method",
+      "term": "Frequency sampling method",
+      "definition": "FIR design method that samples the desired frequency response and obtains coefficients by IDFT.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.2"
+      ]
+    },
+    {
+      "id": "fir-stability",
+      "term": "FIR filter stability",
+      "definition": "An FIR filter is always stable because all its poles are at the origin.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "FIR filter design",
+      "sources": [
+        "dsp-dsp-unit-5-questions#p.2"
+      ]
+    },
+    {
+      "id": "multirate-signal-processing",
+      "term": "Multirate signal processing",
+      "definition": "Processing discrete-time signals at more than one sampling rate within a system.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.1"
+      ]
+    },
+    {
+      "id": "downsampling",
+      "term": "Downsampling",
+      "definition": "Reducing the sampling rate by factor M by keeping every M-th sample and discarding the rest.",
+      "formula": "y(n)=x(Mn)",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.1"
+      ]
+    },
+    {
+      "id": "upsampling",
+      "term": "Upsampling",
+      "definition": "Increasing the sampling rate by factor L by inserting L-1 zeros between consecutive samples.",
+      "formula": "y(n)=x(n/L) if L|n else 0",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.9"
+      ]
+    },
+    {
+      "id": "decimation",
+      "term": "Decimation",
+      "definition": "Filtering a signal with an anti-aliasing filter followed by downsampling to avoid aliasing.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.5"
+      ]
+    },
+    {
+      "id": "interpolation",
+      "term": "Interpolation",
+      "definition": "Upsampling followed by filtering with an anti-imaging filter to remove image spectra.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.12"
+      ]
+    },
+    {
+      "id": "anti-aliasing-filter",
+      "term": "Anti-aliasing filter",
+      "definition": "Lowpass filter applied before downsampling with cutoff π/M to prevent aliasing.",
+      "formula": "ωc = π/M",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.5"
+      ]
+    },
+    {
+      "id": "anti-imaging-filter",
+      "term": "Anti-imaging filter",
+      "definition": "Lowpass filter applied after upsampling with cutoff π/L to remove image spectra.",
+      "formula": "ωc = π/L",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.12"
+      ]
+    },
+    {
+      "id": "sampling-rate-conversion",
+      "term": "Sampling rate conversion",
+      "definition": "Converting a signal from one sampling rate to another by rational factor L/M using interpolation then decimation.",
+      "formula": "F = L/M",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.19"
+      ]
+    },
+    {
+      "id": "aliasing",
+      "term": "Aliasing",
+      "definition": "Spectral overlap that occurs when downsampling a signal not band-limited to π/M.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.5"
+      ]
+    },
+    {
+      "id": "imaging",
+      "term": "Imaging",
+      "definition": "Extra spectral copies (images) introduced by upsampling a discrete-time signal.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Multirate signal processing",
+      "sources": [
+        "dsp-dsp-unit-6#p.12"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "version": 1,
+  "id": "antennas-and-wave-propagations",
+  "semester": "3-1",
+  "name": "Antennas and Wave Propagations",
+  "shortName": "AWP",
+  "code": "9C510",
+  "courseType": "PC",
+  "folderId": "1PwOdpM1sxnNK5OyzsAJ5-hW7b-bHsGxF",
+  "folderUrl": "https://drive.google.com/drive/folders/1PwOdpM1sxnNK5OyzsAJ5-hW7b-bHsGxF",
+  "status": "complete",
+  "definitions": [
+    {
+      "id": "hertzian-dipole",
+      "term": "Hertzian dipole",
+      "definition": "A small current element terminated at both ends with small spheres or discs.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.20"
+      ]
+    },
+    {
+      "id": "radiation-mechanism",
+      "term": "Radiation mechanism",
+      "definition": "Creating fields and coupling energy to free space in the desired direction produced by accelerated or decelerated charge.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.25"
+      ]
+    },
+    {
+      "id": "antenna",
+      "term": "Antenna",
+      "definition": "A transition device or transducer between a guided wave on a transmission line and a free-space wave.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.26"
+      ]
+    },
+    {
+      "id": "radiation-pattern",
+      "term": "Radiation pattern",
+      "definition": "A three-dimensional vector field showing field intensity or power as a function of spatial angle.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.36"
+      ]
+    },
+    {
+      "id": "major-lobe",
+      "term": "Major lobe",
+      "definition": "The radiation lobe that contains the maximum radiation, also called the main lobe.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.38"
+      ]
+    },
+    {
+      "id": "minor-lobe",
+      "term": "Minor lobe",
+      "definition": "A radiation lobe containing the minimum radiation in the pattern, representing power wasted in unwanted directions and best kept small.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.38"
+      ]
+    },
+    {
+      "id": "side-lobe",
+      "term": "Side lobe",
+      "definition": "A radiation lobe in any direction other than the intended main lobe.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.38"
+      ]
+    },
+    {
+      "id": "e-plane-pattern",
+      "term": "E-plane pattern",
+      "definition": "The plane containing the electric field vector in the direction of maximum radiation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.39"
+      ]
+    },
+    {
+      "id": "h-plane-pattern",
+      "term": "H-plane pattern",
+      "definition": "The plane containing the magnetic field vector in the direction of maximum radiation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.39"
+      ]
+    },
+    {
+      "id": "beamwidth",
+      "term": "Beamwidth",
+      "definition": "The angular separation between two identical points on opposite sides of the pattern maximum.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.42"
+      ]
+    },
+    {
+      "id": "hpbw",
+      "term": "Half-power beamwidth",
+      "definition": "The angle between directions where radiation intensity is half the maximum beam value.",
+      "formula": "HPBW",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.42"
+      ]
+    },
+    {
+      "id": "polarization",
+      "term": "Polarization",
+      "definition": "The orientation of the electric field vector in a particular direction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.45"
+      ]
+    },
+    {
+      "id": "linear-polarization",
+      "term": "Linear polarization",
+      "definition": "A wave is linearly polarized if its electric field remains along a straight line over time.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.46"
+      ]
+    },
+    {
+      "id": "circular-polarization",
+      "term": "Circular polarization",
+      "definition": "Polarization where the electric field vector traces a circle with equal semi-axes.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.50"
+      ]
+    },
+    {
+      "id": "antenna-bandwidth",
+      "term": "Antenna bandwidth",
+      "definition": "The range of frequencies over which the antenna maintains required characteristics.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.52"
+      ]
+    },
+    {
+      "id": "beam-solid-angle",
+      "term": "Beam solid angle",
+      "definition": "The solid angle over which the radiation intensity is maximum, denoted ΩA.",
+      "formula": "ΩA",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.53"
+      ]
+    },
+    {
+      "id": "directivity",
+      "term": "Directivity",
+      "definition": "The ratio of radiation intensity in a given direction to the average radiation intensity.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.55"
+      ]
+    },
+    {
+      "id": "antenna-gain",
+      "term": "Antenna gain",
+      "definition": "The realized quantity less than directivity due to ohmic losses in the antenna.",
+      "formula": "G = K D",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.57"
+      ]
+    },
+    {
+      "id": "radiation-intensity",
+      "term": "Radiation intensity",
+      "definition": "The power radiated from the antenna per unit solid angle in a given direction.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.59"
+      ]
+    },
+    {
+      "id": "reciprocity",
+      "term": "Reciprocity",
+      "definition": "The transmit and receive properties of an antenna are identical.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.61"
+      ]
+    },
+    {
+      "id": "effective-aperture",
+      "term": "Effective aperture",
+      "definition": "The area of the receiving antenna that absorbs most power from the incoming wavefront.",
+      "formula": "Aeff",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.62"
+      ]
+    },
+    {
+      "id": "antenna-efficiency",
+      "term": "Antenna efficiency",
+      "definition": "The ratio of power radiated to the total input power supplied to the antenna.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Fundamental Parameters of Antennas",
+      "sources": [
+        "awp-unit-1#p.64"
+      ]
+    },
+    {
+      "id": "short-dipole",
+      "term": "Short dipole",
+      "definition": "A dipole whose length is very small compared with the wavelength with uniform current.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Linear Wire Antennas and Arrays",
+      "sources": [
+        "awp-unit-2-part-1#p.19"
+      ]
+    },
+    {
+      "id": "half-wave-dipole",
+      "term": "Half-wave dipole",
+      "definition": "An antenna whose length equals half a wavelength.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Linear Wire Antennas and Arrays",
+      "sources": [
+        "awp-unit-2-part-1#p.2"
+      ]
+    },
+    {
+      "id": "antenna-array",
+      "term": "Antenna array",
+      "definition": "A set of two or more antennas combined for improved performance over a single antenna.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Linear Wire Antennas and Arrays",
+      "sources": [
+        "awp-unit-2-part-2#p.3"
+      ]
+    },
+    {
+      "id": "broadside-array",
+      "term": "Broadside array",
+      "definition": "An array with elements fed equal amplitude and same phase, maximum radiation perpendicular to the array axis.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Linear Wire Antennas and Arrays",
+      "sources": [
+        "awp-unit-2-part-2#p.18"
+      ]
+    },
+    {
+      "id": "end-fire-array",
+      "term": "End-fire array",
+      "definition": "An array with elements fed equal amplitude and opposite phase, maximum radiation along the array axis.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Linear Wire Antennas and Arrays",
+      "sources": [
+        "awp-unit-2-part-2#p.28"
+      ]
+    },
+    {
+      "id": "binomial-array",
+      "term": "Binomial array",
+      "definition": "An array whose element amplitudes follow binomial coefficients, eliminating side lobes.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Linear Wire Antennas and Arrays",
+      "sources": [
+        "awp-unit-2-part-2#p.53"
+      ]
+    },
+    {
+      "id": "uniqueness-theorem",
+      "term": "Uniqueness theorem",
+      "definition": "For given sources and boundary conditions in a lossy medium, Maxwell's equation solutions are unique.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Aperture and Reflector Antennas",
+      "sources": [
+        "awp-unit-3#p.3"
+      ]
+    },
+    {
+      "id": "method-of-images",
+      "term": "Method of images",
+      "definition": "A technique converting a problem into an equivalent simpler problem using image currents.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Aperture and Reflector Antennas",
+      "sources": [
+        "awp-unit-3#p.11"
+      ]
+    },
+    {
+      "id": "slot-antenna",
+      "term": "Slot antenna",
+      "definition": "An aperture cut in a metallic conductor excited by a transmission line.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Aperture and Reflector Antennas",
+      "sources": [
+        "awp-unit-3#p.16"
+      ]
+    },
+    {
+      "id": "horn-antenna",
+      "term": "Horn antenna",
+      "definition": "A flared waveguide that radiates electromagnetic waves into free space.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Aperture and Reflector Antennas",
+      "sources": [
+        "awp-unit-3#p.24"
+      ]
+    },
+    {
+      "id": "reflector-antenna",
+      "term": "Reflector antenna",
+      "definition": "A highly directional antenna with an active feed and a passive reflector.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Aperture and Reflector Antennas",
+      "sources": [
+        "awp-unit-3#p.29"
+      ]
+    },
+    {
+      "id": "lens-antenna",
+      "term": "Lens antenna",
+      "definition": "A device that collimates incident divergent energy into plane waves using lens material.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Aperture and Reflector Antennas",
+      "sources": [
+        "awp-unit-3#p.45"
+      ]
+    },
+    {
+      "id": "long-wire-antenna",
+      "term": "Long wire antenna",
+      "definition": "A single long wire generally two or more wavelengths long at the operating frequency.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "yagi-uda-antenna",
+      "term": "Yagi-Uda antenna",
+      "definition": "A high-gain antenna consisting of a driven element, a reflector and one or more directors.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "parasitic-element",
+      "term": "Parasitic element",
+      "definition": "A passive element electrically separated but magnetically linked to the driven element.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.11"
+      ]
+    },
+    {
+      "id": "helical-antenna",
+      "term": "Helical antenna",
+      "definition": "A broadband VHF and UHF antenna that provides circular polarization.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "axial-ratio",
+      "term": "Axial ratio",
+      "definition": "The ratio of the modulus of far-field strength of a short dipole to that of a small loop.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.17"
+      ]
+    },
+    {
+      "id": "turnstile-antenna",
+      "term": "Turnstile antenna",
+      "definition": "Two dipoles at right angles fed in phase quadrature.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "biconical-antenna",
+      "term": "Biconical antenna",
+      "definition": "A broadband antenna also known as a double cone antenna.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "log-periodic-antenna",
+      "term": "Log-periodic antenna",
+      "definition": "A frequency-independent antenna whose impedance and pattern remain constant with frequency.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Special Antennas and Measurements",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "ground-wave-propagation",
+      "term": "Ground wave propagation",
+      "definition": "A wave guided along the earth's surface, playing a vital role up to about 2 MHz.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wave Propagation",
+      "sources": [
+        "awp-unit-3#slide.22"
+      ]
+    },
+    {
+      "id": "sky-wave-propagation",
+      "term": "Sky wave propagation",
+      "definition": "A signal reflected by the ionosphere back to earth, used from 2 to 30 MHz.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wave Propagation",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "space-wave-propagation",
+      "term": "Space wave propagation",
+      "definition": "Direct line-of-sight transmission without reflection, refraction or deflection, above 30 MHz.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Wave Propagation",
+      "sources": [
+        "awp-unit-3#slide.1"
+      ]
+    },
+    {
+      "id": "ionosphere",
+      "term": "Ionosphere",
+      "definition": "The upper ionized layer of the atmosphere from 50 to 400 km above the earth.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Ionospheric Propagation",
+      "sources": [
+        "awp-unit-3#slide.9"
+      ]
+    },
+    {
+      "id": "critical-frequency",
+      "term": "Critical frequency",
+      "definition": "The highest frequency reflected by a layer at vertical incidence.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Ionospheric Propagation",
+      "sources": [
+        "awp-unit-3#slide.16"
+      ]
+    },
+    {
+      "id": "muf",
+      "term": "Maximum usable frequency",
+      "definition": "The highest frequency reflected from the ionosphere for a specific oblique incidence angle.",
+      "formula": "MUF = fc sec θ",
+      "unit": 6,
+      "unitTitle": "Ionospheric Propagation",
+      "sources": [
+        "awp-unit-3#slide.16"
+      ]
+    },
+    {
+      "id": "skip-distance",
+      "term": "Skip distance",
+      "definition": "The minimum distance from the transmitter where the sky wave is first received.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Ionospheric Propagation",
+      "sources": [
+        "awp-unit-3#slide.13"
+      ]
+    }
+  ]
+}
