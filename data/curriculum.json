@@ -847,19 +847,36 @@
           "sourceCount": 3
         },
         {
-          "id": "open-elective-iii",
-          "name": "Open Elective III",
-          "shortName": "OE-III",
+          "id": "osc",
+          "name": "OSC",
+          "shortName": "OSC",
           "code": "",
           "courseType": "OE",
-          "folderId": "1xXXwdMmxosGY6hwTKG4Up-UHFhe_QNOp",
-          "folderUrl": "https://drive.google.com/drive/folders/1xXXwdMmxosGY6hwTKG4Up-UHFhe_QNOp",
+          "elective": "Open Elective III",
+          "folderId": "1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
+          "folderUrl": "https://drive.google.com/drive/folders/1SRNI9qTWk4u9Ozd4Ub7CvCLHFgICwbwZ",
           "data": null,
           "definitionCount": 0,
           "unitCount": 0,
           "coveredUnits": 0,
           "status": "unresolved",
           "sourceCount": 0
+        },
+        {
+          "id": "product-and-services",
+          "name": "Product and Services",
+          "shortName": "P&S",
+          "code": "8ZC24",
+          "courseType": "OE",
+          "elective": "Open Elective III",
+          "folderId": "1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
+          "folderUrl": "https://drive.google.com/drive/folders/1S5I_O-eJ7di0yGJQ9VTABR7jhAmNk0kM",
+          "data": "data/subjects/4-1/product-and-services.json",
+          "definitionCount": 33,
+          "unitCount": 6,
+          "coveredUnits": 3,
+          "status": "partial",
+          "sourceCount": 3
         }
       ]
     },
@@ -875,10 +892,10 @@
   "coverage": {
     "semesters": 8,
     "semestersWithMaterials": 7,
-    "subjects": 51,
-    "definitions": 1915,
+    "subjects": 52,
+    "definitions": 1948,
     "completeSubjects": 31,
-    "partialSubjects": 10,
+    "partialSubjects": 11,
     "inaccessibleSubjects": 10
   }
 }

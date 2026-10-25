@@ -4425,6 +4425,51 @@
       "status": "downloaded",
       "locatorScheme": "slide.<n>",
       "sha256": "c61ff3c99becb7b721b3aa40160f500fd7c056dd1ee5ba770ba3abd7c6dd1bd3"
+    },
+    {
+      "id": "ps-unit-2-p-and-s",
+      "semester": "4-1",
+      "subjectId": "product-and-services",
+      "driveFileId": "1wTRTbgLgwadNWeDUE7yBQuYDN_dIX8MT",
+      "name": "UNIT 2 P&S.ppt",
+      "folderPath": "ECE 4-1/OE-III/P&S/UNIT 2 P&S.ppt",
+      "mimeType": "application/vnd.ms-powerpoint",
+      "fileType": "ppt",
+      "viewUrl": "https://drive.google.com/file/d/1wTRTbgLgwadNWeDUE7yBQuYDN_dIX8MT/view",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1wTRTbgLgwadNWeDUE7yBQuYDN_dIX8MT",
+      "status": "downloaded",
+      "locatorScheme": "slide.<n>",
+      "sha256": "0a7156ab09f982467c16e31202c5f84137e0d6c99c6916f05bced830ff738684"
+    },
+    {
+      "id": "ps-unit-3-p-and-s",
+      "semester": "4-1",
+      "subjectId": "product-and-services",
+      "driveFileId": "1CaxnDo5lnX1rJq1jC2ZbXbGenfvsLXOr",
+      "name": "UNIT 3 P&S.ppt",
+      "folderPath": "ECE 4-1/OE-III/P&S/UNIT 3 P&S.ppt",
+      "mimeType": "application/vnd.ms-powerpoint",
+      "fileType": "ppt",
+      "viewUrl": "https://drive.google.com/file/d/1CaxnDo5lnX1rJq1jC2ZbXbGenfvsLXOr/view",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1CaxnDo5lnX1rJq1jC2ZbXbGenfvsLXOr",
+      "status": "downloaded",
+      "locatorScheme": "slide.<n>",
+      "sha256": "4b818e7bf34af443491286b3d536ac2cff7133a526a60b8a583c1b505610199a"
+    },
+    {
+      "id": "ps-unit-i-p-and-s",
+      "semester": "4-1",
+      "subjectId": "product-and-services",
+      "driveFileId": "1yy4pyRvyuK8SSlWf6FgKUaGZxIqWWIsa",
+      "name": "UNIT I P&S.ppt",
+      "folderPath": "ECE 4-1/OE-III/P&S/UNIT I P&S.ppt",
+      "mimeType": "application/vnd.ms-powerpoint",
+      "fileType": "ppt",
+      "viewUrl": "https://drive.google.com/file/d/1yy4pyRvyuK8SSlWf6FgKUaGZxIqWWIsa/view",
+      "downloadUrl": "https://drive.google.com/uc?export=download&id=1yy4pyRvyuK8SSlWf6FgKUaGZxIqWWIsa",
+      "status": "downloaded",
+      "locatorScheme": "slide.<n>",
+      "sha256": "b82b03836f22e9e0911c470b0485f3b01b3ed1b140a812cc0875915f94209493"
     }
   ]
 }
