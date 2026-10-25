@@ -6,6 +6,16 @@ so the subject accent and the theme flow through without a second palette.
 Run: python3 scripts/build-diagrams.py
 """
 import os
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from diagrams.physics import DIAGRAMS as PHYSICS
+from diagrams.electronics import DIAGRAMS as ELECTRONICS
+from diagrams.signals import DIAGRAMS as SIGNALS
+from diagrams.computing import DIAGRAMS as COMPUTING
+from diagrams.software import DIAGRAMS as SOFTWARE
+from diagrams.business import DIAGRAMS as BUSINESS
 
 W, H = 240, 150
 INK = 'currentColor'
@@ -1019,6 +1029,9 @@ DIAGRAMS = {
     'vector-field': vector_field,
     'two-port': two_port,
 }
+
+for _family in (PHYSICS, ELECTRONICS, SIGNALS, COMPUTING, SOFTWARE, BUSINESS):
+    DIAGRAMS.update(_family)
 
 
 def main():
