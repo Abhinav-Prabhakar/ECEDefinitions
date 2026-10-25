@@ -68,11 +68,6 @@ it. Do not move a partial collection to Completed just to clear the line.
   - Audience: pre-health undergraduates and nursing students.
   - Target: 6 subjects, 280–360 definitions.
 
-- [~] **Anatomy and physiology** — `anatomy-and-physiology` (started 2026-10-25)
-  - Scope: cells and tissues; skeletal and muscular systems; cardiovascular and respiratory;
-    nervous and endocrine; digestive and urinary; homeostasis.
-  - Audience: pre-health and allied-health students.
-  - Target: 6 subjects, 250–320 definitions. Note in the README which definitions need an image.
 
 - [ ] **Pharmacology** — `pharmacology`
   - Scope: pharmacokinetics; pharmacodynamics; major drug classes; adverse effects and
@@ -196,6 +191,7 @@ library has a history.
 | --- | --- | --- | --- | --- |
 | 2026-10-25 | Software interview glossary | data/collections/software-interview-glossary | 356 | PR #1 draft |
 | 2026-10-25 | Medical terminology | data/collections/medical-terminology | 327 | validation passed |
+| 2026-10-25 | Anatomy and physiology | data/collections/anatomy-and-physiology | 285 | PR #3 draft |
 
 ---
 
