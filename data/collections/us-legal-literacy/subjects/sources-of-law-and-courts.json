@@ -1,0 +1,927 @@
+{
+  "version": 1,
+  "id": "sources-of-law-and-courts",
+  "collectionId": "us-legal-literacy",
+  "section": "foundations",
+  "name": "Sources of Law and Courts",
+  "shortName": "Courts and law",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#5b6ee1",
+  "dark": "#8a9bff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Sources of law"
+    },
+    {
+      "number": 2,
+      "title": "Federal courts"
+    },
+    {
+      "number": 3,
+      "title": "State courts"
+    },
+    {
+      "number": 4,
+      "title": "Jurisdiction and venue"
+    },
+    {
+      "number": 5,
+      "title": "Precedent and stare decisis"
+    },
+    {
+      "number": 6,
+      "title": "Legal authority and citation"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "case-law",
+      "term": "Case law",
+      "definition": "Law based on judicial decisions resolving concrete disputes, differing from one jurisdiction to another.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Common law",
+        "Statute",
+        "Primary authority"
+      ],
+      "sources": [
+        "usll-wex#sec.case_law"
+      ]
+    },
+    {
+      "id": "common-law",
+      "term": "Common law",
+      "definition": "Law developed through judicial decisions and precedent rather than enacted by a legislature.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Statute",
+        "Regulation",
+        "Ordinance"
+      ],
+      "sources": [
+        "usll-wex#sec.common_law"
+      ]
+    },
+    {
+      "id": "constitution",
+      "term": "Constitution",
+      "definition": "The most fundamental law of a sovereign body, creating government institutions and defining the limits of their power.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Statute",
+        "Supremacy Clause",
+        "Treaty"
+      ],
+      "sources": [
+        "usll-wex#sec.constitution"
+      ]
+    },
+    {
+      "id": "ordinance",
+      "term": "Ordinance",
+      "definition": "A local law enacted by a municipality that carries the same force as state law where local regulation is authorized.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Statute",
+        "Regulation",
+        "Treaty"
+      ],
+      "sources": [
+        "usll-wex#sec.ordinance"
+      ]
+    },
+    {
+      "id": "preemption",
+      "term": "Preemption",
+      "definition": "A doctrine in which a higher sovereign's law supersedes a lower law that would otherwise apply.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Supremacy Clause",
+        "Statute",
+        "Treaty"
+      ],
+      "sources": [
+        "usll-wex#sec.preemption"
+      ]
+    },
+    {
+      "id": "regulation",
+      "term": "Regulation",
+      "definition": "A rule made and maintained by a governmental agency exercising power delegated by a legislature.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Statute",
+        "Ordinance",
+        "Case law"
+      ],
+      "sources": [
+        "usll-wex#sec.regulation"
+      ]
+    },
+    {
+      "id": "statute",
+      "term": "Statute",
+      "definition": "A law enacted by a legislature, with federal statutes ultimately codified in the United States Code.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [
+        "act"
+      ],
+      "confusables": [
+        "Regulation",
+        "Ordinance",
+        "Case law"
+      ],
+      "sources": [
+        "usll-wex#sec.statute"
+      ]
+    },
+    {
+      "id": "supremacy-clause",
+      "term": "Supremacy Clause",
+      "definition": "The constitutional provision making the Constitution, federal statutes, and treaties supreme law over conflicting state law.",
+      "formula": "U.S. Const. art. VI",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Preemption",
+        "Treaty",
+        "Statute"
+      ],
+      "sources": [
+        "usll-wex#sec.supremacy_clause"
+      ]
+    },
+    {
+      "id": "treaty",
+      "term": "Treaty",
+      "definition": "A formally signed and ratified agreement between sovereigns that operates as federal law in the United States.",
+      "formula": "U.S. Const. art. II § 2",
+      "unit": 1,
+      "unitTitle": "Sources of law",
+      "aliases": [],
+      "confusables": [
+        "Statute",
+        "Ordinance",
+        "Supremacy Clause"
+      ],
+      "sources": [
+        "usll-wex#sec.treaty"
+      ]
+    },
+    {
+      "id": "amicus-curiae",
+      "term": "Amicus curiae",
+      "definition": "A nonparty with an interest in a case who petitions to file a brief influencing the court's decision.",
+      "formula": "Fed. R. App. P. 29",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [
+        "friend of the court",
+        "amicus"
+      ],
+      "confusables": [
+        "Writ of certiorari",
+        "Citation",
+        "Headnote"
+      ],
+      "sources": [
+        "usll-wex#sec.amicus_curiae"
+      ]
+    },
+    {
+      "id": "appellate-jurisdiction",
+      "term": "Appellate jurisdiction",
+      "definition": "The power of a court to review and correct decisions already made by lower courts.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [],
+      "confusables": [
+        "Original jurisdiction",
+        "Subject-matter jurisdiction",
+        "Personal jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.appellate_jurisdiction"
+      ]
+    },
+    {
+      "id": "circuit",
+      "term": "Circuit",
+      "definition": "One of twelve regional divisions of the federal system, each served by its own court of appeals.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [
+        "judicial circuit"
+      ],
+      "confusables": [
+        "Venue",
+        "U.S. court of appeals",
+        "U.S. district court"
+      ],
+      "sources": [
+        "usll-wex#sec.circuit_court",
+        "usll-uscourts-federal-courts#sec.us-courts-of-appeals"
+      ]
+    },
+    {
+      "id": "en-banc",
+      "term": "En banc",
+      "definition": "A special appellate proceeding in which all judges of a court hear a case instead of a panel.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [],
+      "confusables": [
+        "Writ of certiorari",
+        "Appellate jurisdiction",
+        "Original jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.en_banc",
+        "usll-uscourts-federal-courts#sec.appeals"
+      ]
+    },
+    {
+      "id": "original-jurisdiction",
+      "term": "Original jurisdiction",
+      "definition": "A court's authority to hear and decide a case first, before any appellate review.",
+      "formula": "28 U.S.C. § 1251",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [],
+      "confusables": [
+        "Appellate jurisdiction",
+        "Subject-matter jurisdiction",
+        "Concurrent jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.original_jurisdiction"
+      ]
+    },
+    {
+      "id": "us-supreme-court",
+      "term": "U.S. Supreme Court",
+      "definition": "The highest court in the federal system, holding both original and appellate jurisdiction under Article III.",
+      "formula": "U.S. Const. art. III",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [
+        "Supreme Court of the United States",
+        "SCOTUS"
+      ],
+      "confusables": [
+        "Court of last resort",
+        "U.S. court of appeals",
+        "Circuit"
+      ],
+      "sources": [
+        "usll-wex#sec.supreme_court",
+        "usll-uscourts-federal-courts#sec.court-role-and-structure"
+      ]
+    },
+    {
+      "id": "us-court-of-appeals",
+      "term": "U.S. court of appeals",
+      "definition": "An intermediate federal appellate court that reviews district court decisions for legal error without a jury.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [
+        "federal court of appeals",
+        "circuit court"
+      ],
+      "confusables": [
+        "U.S. district court",
+        "Intermediate appellate court",
+        "Court of last resort"
+      ],
+      "sources": [
+        "usll-wex#sec.appellate_court",
+        "usll-uscourts-federal-courts#sec.us-courts-of-appeals"
+      ]
+    },
+    {
+      "id": "us-district-court",
+      "term": "U.S. district court",
+      "definition": "A federal trial court that finds facts, applies law, and hears nearly all categories of federal cases.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [
+        "federal district court",
+        "district court"
+      ],
+      "confusables": [
+        "U.S. court of appeals",
+        "Superior court",
+        "Court of limited jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.district_court",
+        "usll-uscourts-federal-courts#sec.us-district-courts"
+      ]
+    },
+    {
+      "id": "writ-of-certiorari",
+      "term": "Writ of certiorari",
+      "definition": "A discretionary order directing a lower court to send its record so a higher court may review it.",
+      "formula": "28 U.S.C. § 1257",
+      "unit": 2,
+      "unitTitle": "Federal courts",
+      "aliases": [
+        "certiorari",
+        "cert"
+      ],
+      "confusables": [
+        "Appellate jurisdiction",
+        "En banc",
+        "Original jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.writ_of_certiorari",
+        "usll-uscourts-federal-courts#sec.appeals"
+      ]
+    },
+    {
+      "id": "chancery-court",
+      "term": "Chancery court",
+      "definition": "A court of equity found in a few states, granting remedies such as injunctions and specific performance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Probate court",
+        "Court of limited jurisdiction",
+        "Small claims court"
+      ],
+      "sources": [
+        "usll-wex#sec.chancery"
+      ]
+    },
+    {
+      "id": "court-of-general-jurisdiction",
+      "term": "Court of general jurisdiction",
+      "definition": "A court empowered to hear any type of case not assigned exclusively to another court.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Court of limited jurisdiction",
+        "Small claims court",
+        "Probate court"
+      ],
+      "sources": [
+        "usll-wex#sec.general_jurisdiction"
+      ]
+    },
+    {
+      "id": "court-of-last-resort",
+      "term": "Court of last resort",
+      "definition": "A state's highest court, whose decisions bind every lower court in that state's system.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "U.S. Supreme Court",
+        "Intermediate appellate court",
+        "Court of general jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.state_court",
+        "usll-uscourts-federal-courts#sec.comparing-federal-state-courts"
+      ]
+    },
+    {
+      "id": "court-of-limited-jurisdiction",
+      "term": "Court of limited jurisdiction",
+      "definition": "A court authorized to hear only particular categories of cases, such as probate or small claims.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Court of general jurisdiction",
+        "State court",
+        "Intermediate appellate court"
+      ],
+      "sources": [
+        "usll-wex#sec.limited_jurisdiction"
+      ]
+    },
+    {
+      "id": "intermediate-appellate-court",
+      "term": "Intermediate appellate court",
+      "definition": "In states that provide one, an appeals court sitting between trial courts and the court of last resort.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Court of last resort",
+        "U.S. court of appeals",
+        "Court of limited jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.state_court",
+        "usll-uscourts-federal-courts#sec.comparing-federal-state-courts"
+      ]
+    },
+    {
+      "id": "probate-court",
+      "term": "Probate court",
+      "definition": "A specialized court that proves a will valid and supervises administration of a decedent's estate.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Chancery court",
+        "Small claims court",
+        "Court of general jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.probate",
+        "usll-uscourts-federal-courts#sec.comparing-federal-state-courts"
+      ]
+    },
+    {
+      "id": "small-claims-court",
+      "term": "Small claims court",
+      "definition": "A state court that decides claims below a statutory dollar threshold under informal procedures.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Court of limited jurisdiction",
+        "Probate court",
+        "Venue"
+      ],
+      "sources": [
+        "usll-wex#sec.small_claims_court"
+      ]
+    },
+    {
+      "id": "state-court",
+      "term": "State court",
+      "definition": "A court created by a state constitution and statutes with authority over matters under state law.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "U.S. district court",
+        "Superior court",
+        "Court of last resort"
+      ],
+      "sources": [
+        "usll-wex#sec.state_court",
+        "usll-uscourts-federal-courts#sec.comparing-federal-state-courts"
+      ]
+    },
+    {
+      "id": "superior-court",
+      "term": "Superior court",
+      "definition": "The title used in many states for its trial-level court of general jurisdiction.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "State courts",
+      "aliases": [],
+      "confusables": [
+        "Court of last resort",
+        "Court of limited jurisdiction",
+        "State court"
+      ],
+      "sources": [
+        "usll-wex#sec.superior_court"
+      ]
+    },
+    {
+      "id": "concurrent-jurisdiction",
+      "term": "Concurrent jurisdiction",
+      "definition": "Authority shared by two or more courts to hear the same type of case.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [],
+      "confusables": [
+        "Diversity jurisdiction",
+        "Original jurisdiction",
+        "Jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.concurrent_jurisdiction"
+      ]
+    },
+    {
+      "id": "diversity-jurisdiction",
+      "term": "Diversity jurisdiction",
+      "definition": "Federal jurisdiction requiring the parties to be citizens of different states with more than $75,000 in dispute.",
+      "formula": "28 U.S.C. § 1332",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [],
+      "confusables": [
+        "Federal question jurisdiction",
+        "Concurrent jurisdiction",
+        "Personal jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.diversity_jurisdiction"
+      ]
+    },
+    {
+      "id": "federal-question-jurisdiction",
+      "term": "Federal question jurisdiction",
+      "definition": "Federal jurisdiction over a case arising under the Constitution, federal statutes, or other federal law.",
+      "formula": "28 U.S.C. § 1331",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [],
+      "confusables": [
+        "Diversity jurisdiction",
+        "Concurrent jurisdiction",
+        "Subject-matter jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.federal_question_jurisdiction"
+      ]
+    },
+    {
+      "id": "forum-non-conveniens",
+      "term": "Forum non conveniens",
+      "definition": "A doctrine allowing a court to decline a case because a more convenient forum can hear it.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [],
+      "confusables": [
+        "Venue",
+        "Personal jurisdiction",
+        "Concurrent jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.forum_non_conveniens"
+      ]
+    },
+    {
+      "id": "jurisdiction",
+      "term": "Jurisdiction",
+      "definition": "The power of a court to adjudicate cases and issue orders, or the territory where it may act.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [],
+      "confusables": [
+        "Venue",
+        "Subject-matter jurisdiction",
+        "Personal jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.jurisdiction"
+      ]
+    },
+    {
+      "id": "personal-jurisdiction",
+      "term": "Personal jurisdiction",
+      "definition": "A court's authority to issue a binding decision against the particular party being sued.",
+      "formula": "Fed. R. Civ. P. 12",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [
+        "in personam jurisdiction"
+      ],
+      "confusables": [
+        "Subject-matter jurisdiction",
+        "Jurisdiction",
+        "Venue"
+      ],
+      "sources": [
+        "usll-wex#sec.personal_jurisdiction"
+      ]
+    },
+    {
+      "id": "subject-matter-jurisdiction",
+      "term": "Subject-matter jurisdiction",
+      "definition": "A court's authority to decide a particular category of case and grant the remedy demanded.",
+      "formula": "Fed. R. Civ. P. 12",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [
+        "SMJ"
+      ],
+      "confusables": [
+        "Personal jurisdiction",
+        "Venue",
+        "Appellate jurisdiction"
+      ],
+      "sources": [
+        "usll-wex#sec.subject_matter_jurisdiction"
+      ]
+    },
+    {
+      "id": "venue",
+      "term": "Venue",
+      "definition": "The geographic place where a trial is held, fixed by statute rather than by the Constitution.",
+      "formula": "28 U.S.C. § 1391",
+      "unit": 4,
+      "unitTitle": "Jurisdiction and venue",
+      "aliases": [],
+      "confusables": [
+        "Jurisdiction",
+        "Subject-matter jurisdiction",
+        "Forum non conveniens"
+      ],
+      "sources": [
+        "usll-wex#sec.venue"
+      ]
+    },
+    {
+      "id": "binding-precedent",
+      "term": "Binding precedent",
+      "definition": "A rule stated by an appellate court that lower courts in its jurisdiction must follow.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [],
+      "confusables": [
+        "Persuasive authority",
+        "Precedent",
+        "Holding"
+      ],
+      "sources": [
+        "usll-wex#sec.binding_precedent"
+      ]
+    },
+    {
+      "id": "holding",
+      "term": "Holding",
+      "definition": "A court's resolution of a question of law that determines the outcome of the case.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [],
+      "confusables": [
+        "Obiter dictum",
+        "Precedent",
+        "Headnote"
+      ],
+      "sources": [
+        "usll-wex#sec.holding"
+      ]
+    },
+    {
+      "id": "horizontal-stare-decisis",
+      "term": "Horizontal stare decisis",
+      "definition": "A court's adherence to its own prior decisions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [],
+      "confusables": [
+        "Vertical stare decisis",
+        "Binding precedent",
+        "Obiter dictum"
+      ],
+      "sources": [
+        "usll-wex#sec.stare_decisis"
+      ]
+    },
+    {
+      "id": "obiter-dictum",
+      "term": "Obiter dictum",
+      "definition": "A statement in a judicial opinion that is unnecessary to the decision and therefore not binding.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [
+        "dictum",
+        "dicta"
+      ],
+      "confusables": [
+        "Holding",
+        "Binding precedent",
+        "Precedent"
+      ],
+      "sources": [
+        "usll-wex#sec.obiter_dictum"
+      ]
+    },
+    {
+      "id": "precedent",
+      "term": "Precedent",
+      "definition": "A court decision treated as authority for later cases involving identical or similar facts or issues.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [],
+      "confusables": [
+        "Binding precedent",
+        "Primary authority",
+        "Mandatory authority"
+      ],
+      "sources": [
+        "usll-wex#sec.precedent"
+      ]
+    },
+    {
+      "id": "stare-decisis",
+      "term": "Stare decisis",
+      "definition": "A doctrine requiring courts to adhere to precedent when deciding later cases with the same or related issues.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [],
+      "confusables": [
+        "Precedent",
+        "Binding precedent",
+        "Horizontal stare decisis"
+      ],
+      "sources": [
+        "usll-wex#sec.stare_decisis"
+      ]
+    },
+    {
+      "id": "vertical-stare-decisis",
+      "term": "Vertical stare decisis",
+      "definition": "A court's adherence to decisions issued by courts higher than it in the same system.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Precedent and stare decisis",
+      "aliases": [],
+      "confusables": [
+        "Horizontal stare decisis",
+        "Precedent",
+        "Persuasive authority"
+      ],
+      "sources": [
+        "usll-wex#sec.stare_decisis"
+      ]
+    },
+    {
+      "id": "citation",
+      "term": "Citation",
+      "definition": "A reference identifying a legal source that supports or relates to a statement.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Headnote",
+        "Primary authority",
+        "Precedent"
+      ],
+      "sources": [
+        "usll-wex#sec.citation"
+      ]
+    },
+    {
+      "id": "headnote",
+      "term": "Headnote",
+      "definition": "A publisher's summary of an opinion's key legal points, printed ahead of the decision.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Citation",
+        "Holding",
+        "Secondary authority"
+      ],
+      "sources": [
+        "usll-wex#sec.headnote"
+      ]
+    },
+    {
+      "id": "mandatory-authority",
+      "term": "Mandatory authority",
+      "definition": "Legal authority that a court must follow because it binds within that jurisdiction.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Persuasive authority",
+        "Primary authority",
+        "Secondary authority"
+      ],
+      "sources": [
+        "usll-wex#sec.mandatory_authority"
+      ]
+    },
+    {
+      "id": "persuasive-authority",
+      "term": "Persuasive authority",
+      "definition": "A source of law that a court may follow but is never required to follow.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Mandatory authority",
+        "Secondary authority",
+        "Binding precedent"
+      ],
+      "sources": [
+        "usll-wex#sec.persuasive_authority"
+      ]
+    },
+    {
+      "id": "primary-authority",
+      "term": "Primary authority",
+      "definition": "Statements of law issued by a legislature, court, or other body empowered to create binding rules.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Secondary authority",
+        "Persuasive authority",
+        "Mandatory authority"
+      ],
+      "sources": [
+        "usll-wex#sec.primary_authority"
+      ]
+    },
+    {
+      "id": "restatement",
+      "term": "Restatement",
+      "definition": "A secondary source summarizing what the law is or what its drafters believe it should be.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Treatise",
+        "Primary authority",
+        "Headnote"
+      ],
+      "sources": [
+        "usll-wex#sec.legal_research"
+      ]
+    },
+    {
+      "id": "secondary-authority",
+      "term": "Secondary authority",
+      "definition": "Commentary about the law from sources lacking power to establish binding rules in a jurisdiction.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Primary authority",
+        "Mandatory authority",
+        "Case law"
+      ],
+      "sources": [
+        "usll-wex#sec.secondary_authority"
+      ]
+    },
+    {
+      "id": "treatise",
+      "term": "Treatise",
+      "definition": "An exhaustive scholarly book analyzing one field of law, its principles, and its rules.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Legal authority and citation",
+      "aliases": [],
+      "confusables": [
+        "Restatement",
+        "Primary authority",
+        "Headnote"
+      ],
+      "sources": [
+        "usll-wex#sec.treatise"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,877 @@
+{
+  "version": 1,
+  "id": "criminal-law",
+  "collectionId": "us-legal-literacy",
+  "section": "doctrines",
+  "name": "Criminal Law",
+  "shortName": "Criminal law",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#9b6ae0",
+  "dark": "#bb95ff",
+  "units": [
+    {
+      "number": 1,
+      "title": "Elements and actus reus"
+    },
+    {
+      "number": 2,
+      "title": "Mens rea and culpability"
+    },
+    {
+      "number": 3,
+      "title": "Major offenses"
+    },
+    {
+      "number": 4,
+      "title": "Defenses"
+    },
+    {
+      "number": 5,
+      "title": "Punishment and sentencing"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "actus-reus",
+      "term": "Actus reus",
+      "definition": "The physical element of a crime, consisting of a voluntary act or a chargeable omission.",
+      "formula": "guilty act",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [
+        "guilty act"
+      ],
+      "confusables": [
+        "Mens rea",
+        "Omission",
+        "Voluntary act"
+      ],
+      "sources": [
+        "usll-wex#sec.actus-reus"
+      ]
+    },
+    {
+      "id": "causation",
+      "term": "Causation",
+      "definition": "The element that connects the defendant's conduct to the prohibited result, proven as but-for or proximate cause.",
+      "formula": "conduct → result",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [
+        "causal link"
+      ],
+      "confusables": [
+        "Proximate cause",
+        "Actus reus"
+      ],
+      "sources": [
+        "usll-wex#sec.criminal-law"
+      ]
+    },
+    {
+      "id": "corpus-delicti",
+      "term": "Corpus delicti",
+      "definition": "Proof that the essential parts of the charged crime actually occurred, required before a prosecution proceeds.",
+      "formula": "body of the crime",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [
+        "body of the crime"
+      ],
+      "confusables": [
+        "Actus reus",
+        "Causation"
+      ],
+      "sources": [
+        "usll-wex#sec.corpus-delicti"
+      ]
+    },
+    {
+      "id": "mala-in-se",
+      "term": "Mala in se",
+      "definition": "A crime treated as inherently wrong under general community standards, such as murder.",
+      "formula": "wrong in itself",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [],
+      "confusables": [
+        "Mala prohibita",
+        "Strict liability crime"
+      ],
+      "sources": [
+        "usll-wex#sec.crime"
+      ]
+    },
+    {
+      "id": "mala-prohibita",
+      "term": "Mala prohibita",
+      "definition": "A crime that statutes prohibit although it is not inherently wrong, such as a parking violation.",
+      "formula": "wrong only by statute",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [],
+      "confusables": [
+        "Mala in se",
+        "Strict liability crime"
+      ],
+      "sources": [
+        "usll-wex#sec.crime"
+      ]
+    },
+    {
+      "id": "omission",
+      "term": "Omission",
+      "definition": "A failure to act that satisfies actus reus only when a legal duty to act existed.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [
+        "failure to act"
+      ],
+      "confusables": [
+        "Actus reus",
+        "Voluntary act"
+      ],
+      "sources": [
+        "usll-wex#sec.actus-reus",
+        "usll-wex#sec.omission"
+      ]
+    },
+    {
+      "id": "proximate-cause",
+      "term": "Proximate cause",
+      "definition": "An actual cause that is also legally sufficient to support criminal liability for the result.",
+      "formula": "actual + legally sufficient",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [
+        "legal cause"
+      ],
+      "confusables": [
+        "Causation",
+        "Actus reus"
+      ],
+      "sources": [
+        "usll-wex#sec.proximate-cause"
+      ]
+    },
+    {
+      "id": "transferred-intent",
+      "term": "Transferred intent",
+      "definition": "Intent aimed at one victim that supplies the mental state for harm to a different victim.",
+      "formula": "intent shifts to actual victim",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [],
+      "confusables": [
+        "Specific intent",
+        "General intent",
+        "Mens rea"
+      ],
+      "sources": [
+        "usll-wex#sec.transferred-intent"
+      ]
+    },
+    {
+      "id": "voluntary-act",
+      "term": "Voluntary act",
+      "definition": "A bodily movement the defendant controls, excluding reflexes and convulsions from actus reus.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Elements and actus reus",
+      "aliases": [],
+      "confusables": [
+        "Actus reus",
+        "Omission"
+      ],
+      "sources": [
+        "usll-wex#sec.actus-reus"
+      ]
+    },
+    {
+      "id": "general-intent",
+      "term": "General intent",
+      "definition": "An intent to perform the prohibited act without a wish for its consequences.",
+      "formula": "intent to act only",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "Specific intent",
+        "Strict liability crime",
+        "Mens rea"
+      ],
+      "sources": [
+        "usll-wex#sec.general-intent"
+      ]
+    },
+    {
+      "id": "knowingly",
+      "term": "Knowingly",
+      "definition": "A Model Penal Code mental state in which the defendant is practically certain the conduct causes the result.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "Purposefully",
+        "Recklessly",
+        "Negligently"
+      ],
+      "sources": [
+        "usll-wex#sec.mens-rea",
+        "usll-wex#sec.criminal-intent"
+      ]
+    },
+    {
+      "id": "malice-aforethought",
+      "term": "Malice aforethought",
+      "definition": "The common-law mental state for murder, satisfied by intent to kill or harm, felony murder, or depraved heart.",
+      "formula": "mental state for murder",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "Specific intent",
+        "Felony murder",
+        "Purposefully"
+      ],
+      "sources": [
+        "usll-wex#sec.malice-aforethought"
+      ]
+    },
+    {
+      "id": "mens-rea",
+      "term": "Mens rea",
+      "definition": "The culpable state of mind a prosecutor must prove, such as purpose, knowledge, recklessness, or negligence.",
+      "formula": "guilty mind",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [
+        "guilty mind"
+      ],
+      "confusables": [
+        "Actus reus",
+        "Specific intent",
+        "Strict liability crime"
+      ],
+      "sources": [
+        "usll-wex#sec.mens-rea"
+      ]
+    },
+    {
+      "id": "negligently",
+      "term": "Negligently",
+      "definition": "A Model Penal Code mental state in which a defendant is unaware of a risk a careful person would notice.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "Recklessly",
+        "Knowingly",
+        "Purposefully"
+      ],
+      "sources": [
+        "usll-wex#sec.mens-rea",
+        "usll-wex#sec.criminal-intent"
+      ]
+    },
+    {
+      "id": "purposefully",
+      "term": "Purposefully",
+      "definition": "A Model Penal Code mental state in which the defendant has a conscious object to bring about the result.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "Knowingly",
+        "Recklessly",
+        "Specific intent"
+      ],
+      "sources": [
+        "usll-wex#sec.mens-rea",
+        "usll-wex#sec.criminal-intent"
+      ]
+    },
+    {
+      "id": "recklessly",
+      "term": "Recklessly",
+      "definition": "A Model Penal Code mental state in which the defendant consciously disregards a substantial and unjustified risk.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "Negligently",
+        "Knowingly",
+        "Purposefully"
+      ],
+      "sources": [
+        "usll-wex#sec.mens-rea",
+        "usll-wex#sec.criminal-intent"
+      ]
+    },
+    {
+      "id": "specific-intent",
+      "term": "Specific intent",
+      "definition": "An intent to bring about a particular result beyond simply performing the prohibited act.",
+      "formula": "intent to a result",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [],
+      "confusables": [
+        "General intent",
+        "Mens rea",
+        "Strict liability crime"
+      ],
+      "sources": [
+        "usll-wex#sec.specific-intent"
+      ]
+    },
+    {
+      "id": "strict-liability-crime",
+      "term": "Strict liability crime",
+      "definition": "An offense that requires proof of the act but no proof of any guilty state of mind.",
+      "formula": "no mens rea required",
+      "unit": 2,
+      "unitTitle": "Mens rea and culpability",
+      "aliases": [
+        "strict liability crime"
+      ],
+      "confusables": [
+        "General intent",
+        "Specific intent",
+        "Mens rea"
+      ],
+      "sources": [
+        "usll-wex#sec.strict-liability",
+        "usll-wex#sec.mens-rea"
+      ]
+    },
+    {
+      "id": "assault",
+      "term": "Assault",
+      "definition": "A common-law offense of intentionally putting another person in reasonable apprehension of imminent harmful or offensive contact.",
+      "formula": "apprehension of contact",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Battery",
+        "Attempt",
+        "Robbery"
+      ],
+      "sources": [
+        "usll-wex#sec.assault"
+      ]
+    },
+    {
+      "id": "attempt",
+      "term": "Attempt",
+      "definition": "An inchoate offense requiring intent to commit the target crime, plus dangerous proximity at common law or a substantial step under the Model Penal Code.",
+      "formula": "target crime not completed",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Conspiracy",
+        "Assault",
+        "Robbery"
+      ],
+      "sources": [
+        "usll-wex#sec.attempt",
+        "usll-wex#sec.inchoate-offense"
+      ]
+    },
+    {
+      "id": "battery",
+      "term": "Battery",
+      "definition": "A common-law offense of intentionally causing harmful or offensive physical contact with another person without consent.",
+      "formula": "contact occurs",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Assault",
+        "Robbery"
+      ],
+      "sources": [
+        "usll-wex#sec.battery"
+      ]
+    },
+    {
+      "id": "burglary",
+      "term": "Burglary",
+      "definition": "Unlawful entry into a building with intent to commit a crime inside, though the exact elements vary by jurisdiction.",
+      "formula": "entry with intent",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Robbery",
+        "Larceny",
+        "Attempt"
+      ],
+      "sources": [
+        "usll-wex#sec.burglary"
+      ]
+    },
+    {
+      "id": "conspiracy",
+      "term": "Conspiracy",
+      "definition": "An agreement between two or more people to commit an illegal act, plus intent and an overt act in most jurisdictions.",
+      "formula": "agreement to commit crime",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Attempt",
+        "Felony murder"
+      ],
+      "sources": [
+        "usll-wex#sec.conspiracy"
+      ]
+    },
+    {
+      "id": "felony-murder",
+      "term": "Felony murder",
+      "definition": "A rule that treats a death occurring during a dangerous felony as murder without any intent to kill.",
+      "formula": "felony + death = murder",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [
+        "felony murder rule"
+      ],
+      "confusables": [
+        "Murder",
+        "Voluntary manslaughter",
+        "Robbery"
+      ],
+      "sources": [
+        "usll-wex#sec.felony-murder-rule"
+      ]
+    },
+    {
+      "id": "involuntary-manslaughter",
+      "term": "Involuntary manslaughter",
+      "definition": "The negligent causing of another person's death, a killing punished as a lesser offense than murder.",
+      "formula": "negligent killing",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Voluntary manslaughter",
+        "Murder",
+        "Felony murder"
+      ],
+      "sources": [
+        "usll-wex#sec.manslaughter"
+      ]
+    },
+    {
+      "id": "larceny",
+      "term": "Larceny",
+      "definition": "The common-law taking of another person's property with the intent to deprive the owner of it.",
+      "formula": "theft at common law",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Robbery",
+        "Burglary"
+      ],
+      "sources": [
+        "usll-wex#sec.larceny"
+      ]
+    },
+    {
+      "id": "murder",
+      "term": "Murder",
+      "definition": "An unlawful killing of another person with malice aforethought, graded into degrees by most modern statutes.",
+      "formula": "killing with malice",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Voluntary manslaughter",
+        "Felony murder",
+        "Involuntary manslaughter"
+      ],
+      "sources": [
+        "usll-wex#sec.murder"
+      ]
+    },
+    {
+      "id": "robbery",
+      "term": "Robbery",
+      "definition": "The unlawful taking of property from a person or their presence by force or threat of force.",
+      "formula": "theft by force",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Larceny",
+        "Burglary",
+        "Assault"
+      ],
+      "sources": [
+        "usll-wex#sec.robbery"
+      ]
+    },
+    {
+      "id": "voluntary-manslaughter",
+      "term": "Voluntary manslaughter",
+      "definition": "An intentional killing without malice, charged for heat of passion at common law or extreme disturbance under the Model Penal Code.",
+      "formula": "provoked killing",
+      "unit": 3,
+      "unitTitle": "Major offenses",
+      "aliases": [],
+      "confusables": [
+        "Involuntary manslaughter",
+        "Murder",
+        "Felony murder"
+      ],
+      "sources": [
+        "usll-wex#sec.voluntary-manslaughter",
+        "usll-wex#sec.manslaughter"
+      ]
+    },
+    {
+      "id": "defense-of-others",
+      "term": "Defense of others",
+      "definition": "A criminal justification permitting reasonable force to protect another person from an imminent unlawful attack.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Self-defense",
+        "Justification",
+        "Duress (criminal law)"
+      ],
+      "sources": [
+        "usll-wex#sec.defense-of-others"
+      ]
+    },
+    {
+      "id": "diminished-capacity",
+      "term": "Diminished capacity",
+      "definition": "A claim that mental impairment prevented the specific intent required, reducing the charge instead of producing an acquittal.",
+      "formula": "reduces the charge",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Insanity defense",
+        "Intoxication",
+        "Excuse"
+      ],
+      "sources": [
+        "usll-wex#sec.diminished-capacity"
+      ]
+    },
+    {
+      "id": "duress-criminal-law",
+      "term": "Duress (criminal law)",
+      "definition": "A defense that a reasonable threat of imminent death or serious bodily injury compelled the criminal act.",
+      "formula": "threat by another person",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Necessity defense",
+        "Justification",
+        "Insanity defense"
+      ],
+      "sources": [
+        "usll-wex#sec.duress"
+      ]
+    },
+    {
+      "id": "excuse",
+      "term": "Excuse",
+      "definition": "A defense that exempts the defendant from liability without claiming the conduct itself was justified.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Justification",
+        "Diminished capacity",
+        "Insanity defense"
+      ],
+      "sources": [
+        "usll-wex#sec.excuse",
+        "usll-wex#sec.justification"
+      ]
+    },
+    {
+      "id": "insanity-defense",
+      "term": "Insanity defense",
+      "definition": "A defense that mental disease left the defendant unable to know wrongfulness or, under the Model Penal Code, to appreciate or conform.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [
+        "not guilty by reason of insanity"
+      ],
+      "confusables": [
+        "Diminished capacity",
+        "Intoxication",
+        "Excuse"
+      ],
+      "sources": [
+        "usll-wex#sec.insanity-defense"
+      ]
+    },
+    {
+      "id": "intoxication",
+      "term": "Intoxication",
+      "definition": "A defense that intoxication prevented the required mental state, with involuntary intoxication accepted more readily than voluntary.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Insanity defense",
+        "Diminished capacity",
+        "Duress (criminal law)"
+      ],
+      "sources": [
+        "usll-wex#sec.intoxication"
+      ]
+    },
+    {
+      "id": "justification",
+      "term": "Justification",
+      "definition": "A defense claiming the conduct itself was right or warranted, so punishment serves no purpose.",
+      "formula": "conduct was right",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Excuse",
+        "Necessity defense",
+        "Self-defense"
+      ],
+      "sources": [
+        "usll-wex#sec.justification"
+      ]
+    },
+    {
+      "id": "necessity-defense",
+      "term": "Necessity defense",
+      "definition": "A defense that illegal conduct was the lesser of two evils, with no reasonable alternative and no greater danger created.",
+      "formula": "lesser of two evils",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [
+        "lesser of two evils"
+      ],
+      "confusables": [
+        "Duress (criminal law)",
+        "Self-defense",
+        "Justification"
+      ],
+      "sources": [
+        "usll-wex#sec.necessity-defense"
+      ]
+    },
+    {
+      "id": "self-defense",
+      "term": "Self-defense",
+      "definition": "A criminal justification permitting reasonable and proportionate force to repel an imminent unlawful attack on oneself.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Defense of others",
+        "Justification",
+        "Duress (criminal law)"
+      ],
+      "sources": [
+        "usll-wex#sec.self-defense"
+      ]
+    },
+    {
+      "id": "capital-punishment",
+      "term": "Capital punishment",
+      "definition": "The death penalty imposed by a state as punishment for a crime and carried out by execution.",
+      "formula": "death as sentence",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [
+        "death penalty"
+      ],
+      "confusables": [
+        "Murder",
+        "Mandatory minimum",
+        "Three strikes"
+      ],
+      "sources": [
+        "usll-wex#sec.capital-punishment"
+      ]
+    },
+    {
+      "id": "federal-sentencing-guidelines",
+      "term": "Federal sentencing guidelines",
+      "definition": "Advisory rules that federal judges consult to calculate a sentence from offense seriousness and criminal history.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Guideline range",
+        "Mandatory minimum",
+        "Sentencing"
+      ],
+      "sources": [
+        "usll-wex#sec.federal-sentencing-guidelines",
+        "usll-ussc-glossary#sec.advisory-guidelines"
+      ]
+    },
+    {
+      "id": "guideline-range",
+      "term": "Guideline range",
+      "definition": "The imprisonment range found by intersecting a defendant's offense level with their criminal history category.",
+      "formula": "offense level × CHC",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Federal sentencing guidelines",
+        "Mandatory minimum"
+      ],
+      "sources": [
+        "usll-ussc-glossary#sec.guideline-range"
+      ]
+    },
+    {
+      "id": "mandatory-minimum",
+      "term": "Mandatory minimum",
+      "definition": "A minimum penalty set by statute that leaves the sentencing judge no discretion to go lower.",
+      "formula": "statutory floor",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Guideline range",
+        "Federal sentencing guidelines",
+        "Three strikes"
+      ],
+      "sources": [
+        "usll-ussc-glossary#sec.mandatory-minimum"
+      ]
+    },
+    {
+      "id": "parole",
+      "term": "Parole",
+      "definition": "Conditional release from prison before the sentence is fully served, subject to supervision and conditions.",
+      "formula": "release before sentence ends",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Probation",
+        "Supervised release",
+        "Sentencing"
+      ],
+      "sources": [
+        "usll-wex#sec.parole"
+      ]
+    },
+    {
+      "id": "probation",
+      "term": "Probation",
+      "definition": "A sentence of community supervision in place of incarceration, imposed with conditions set by the court.",
+      "formula": "community instead of prison",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Parole",
+        "Supervised release",
+        "Sentencing"
+      ],
+      "sources": [
+        "usll-wex#sec.probation",
+        "usll-ussc-glossary#sec.probation"
+      ]
+    },
+    {
+      "id": "recidivism",
+      "term": "Recidivism",
+      "definition": "An offender's tendency to commit new crimes that produce fresh convictions after a prior sentence.",
+      "formula": "reoffending",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Three strikes",
+        "Parole",
+        "Probation"
+      ],
+      "sources": [
+        "usll-wex#sec.recidivism"
+      ]
+    },
+    {
+      "id": "sentencing",
+      "term": "Sentencing",
+      "definition": "The stage at which a court imposes a penalty on a defendant after conviction.",
+      "formula": "penalty after conviction",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Probation",
+        "Parole",
+        "Capital punishment"
+      ],
+      "sources": [
+        "usll-wex#sec.sentencing"
+      ]
+    },
+    {
+      "id": "supervised-release",
+      "term": "Supervised release",
+      "definition": "A period of court supervision that follows a federal prison sentence to support the offender's return to the community.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [],
+      "confusables": [
+        "Parole",
+        "Probation",
+        "Sentencing"
+      ],
+      "sources": [
+        "usll-ussc-glossary#sec.supervised-release"
+      ]
+    },
+    {
+      "id": "three-strikes",
+      "term": "Three strikes",
+      "definition": "A sentencing structure that mandates a life term upon a third serious or violent felony conviction.",
+      "formula": "third strike = life",
+      "unit": 5,
+      "unitTitle": "Punishment and sentencing",
+      "aliases": [
+        "three-strikes law"
+      ],
+      "confusables": [
+        "Recidivism",
+        "Mandatory minimum",
+        "Capital punishment"
+      ],
+      "sources": [
+        "usll-wex#sec.three-strikes"
+      ]
+    }
+  ]
+}

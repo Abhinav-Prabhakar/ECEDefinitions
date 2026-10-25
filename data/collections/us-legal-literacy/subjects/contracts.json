@@ -1,0 +1,800 @@
+{
+  "version": 1,
+  "id": "contracts",
+  "collectionId": "us-legal-literacy",
+  "section": "doctrines",
+  "name": "Contracts",
+  "shortName": "Contract law",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#e0567f",
+  "dark": "#ff7f9f",
+  "units": [
+    {
+      "number": 1,
+      "title": "Formation: offer and acceptance"
+    },
+    {
+      "number": 2,
+      "title": "Consideration and capacity"
+    },
+    {
+      "number": 3,
+      "title": "Defenses to formation"
+    },
+    {
+      "number": 4,
+      "title": "Performance and breach"
+    },
+    {
+      "number": 5,
+      "title": "Remedies"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "acceptance",
+      "term": "Acceptance",
+      "definition": "An offeree's assent to an offer's terms, expressed in words or shown by conduct.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Offer",
+        "Counteroffer",
+        "Mirror image rule"
+      ],
+      "sources": [
+        "usll-wex#sec.acceptance"
+      ]
+    },
+    {
+      "id": "bilateral-contract",
+      "term": "Bilateral contract",
+      "definition": "A contract in which each party's promise serves as consideration for the other's promise.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Unilateral contract",
+        "Option contract",
+        "Offer"
+      ],
+      "sources": [
+        "usll-wex#sec.bilateral_contract"
+      ]
+    },
+    {
+      "id": "counteroffer",
+      "term": "Counteroffer",
+      "definition": "A reply that rejects the original offer while proposing a new one on different terms.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Acceptance",
+        "Offer",
+        "Mirror image rule"
+      ],
+      "sources": [
+        "usll-wex#sec.counteroffer"
+      ]
+    },
+    {
+      "id": "firm-offer",
+      "term": "Firm offer",
+      "definition": "Under UCC Article 2, a merchant's signed promise to hold a goods offer open without consideration.",
+      "formula": "UCC § 2-205",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [
+        "UCC firm offer"
+      ],
+      "confusables": [
+        "Option contract",
+        "Offer",
+        "Acceptance"
+      ],
+      "sources": [
+        "usll-wex#sec.firm_offer",
+        "usll-ucc-article-2#sec.2-205"
+      ]
+    },
+    {
+      "id": "mirror-image-rule",
+      "term": "Mirror image rule",
+      "definition": "A common-law doctrine requiring acceptance to match the offer exactly, with no changed or added terms.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Counteroffer",
+        "Acceptance",
+        "Mutual assent"
+      ],
+      "sources": [
+        "usll-wex#sec.mirror_image_rule"
+      ]
+    },
+    {
+      "id": "mutual-assent",
+      "term": "Mutual assent",
+      "definition": "Agreement by all parties to a contract, judged by their outward expressions rather than private thoughts.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Offer",
+        "Acceptance",
+        "Consideration"
+      ],
+      "sources": [
+        "usll-wex#sec.mutual_assent"
+      ]
+    },
+    {
+      "id": "offer",
+      "term": "Offer",
+      "definition": "A proposal to be bound on stated terms if the other party accepts it.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Acceptance",
+        "Counteroffer",
+        "Option contract"
+      ],
+      "sources": [
+        "usll-wex#sec.offer"
+      ]
+    },
+    {
+      "id": "option-contract",
+      "term": "Option contract",
+      "definition": "A supported promise to keep an offer open for a set time, during which the offeror cannot revoke.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Firm offer",
+        "Bilateral contract",
+        "Offer"
+      ],
+      "sources": [
+        "usll-wex#sec.option_contract"
+      ]
+    },
+    {
+      "id": "unilateral-contract",
+      "term": "Unilateral contract",
+      "definition": "A contract that the offeree accepts only by performing the act the offer calls for.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Formation: offer and acceptance",
+      "aliases": [],
+      "confusables": [
+        "Bilateral contract",
+        "Offer",
+        "Option contract"
+      ],
+      "sources": [
+        "usll-wex#sec.unilateral_contract"
+      ]
+    },
+    {
+      "id": "adequacy-of-consideration",
+      "term": "Adequacy of consideration",
+      "definition": "A doctrine that courts leave the fairness of the value exchanged to the parties themselves.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Pre-existing duty rule",
+        "Gratuitous promise"
+      ],
+      "sources": [
+        "usll-wex#sec.consideration"
+      ]
+    },
+    {
+      "id": "capacity",
+      "term": "Capacity",
+      "definition": "A person's legal ability to make binding contracts, requiring minimum age and sound mind.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Infancy",
+        "Voidable contract"
+      ],
+      "sources": [
+        "usll-wex#sec.capacity"
+      ]
+    },
+    {
+      "id": "consideration",
+      "term": "Consideration",
+      "definition": "Something of value each party gives or promises to induce the other party's promise.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Gratuitous promise",
+        "Promissory estoppel",
+        "Adequacy of consideration"
+      ],
+      "sources": [
+        "usll-wex#sec.consideration",
+        "usll-wex#sec.contract"
+      ]
+    },
+    {
+      "id": "gratuitous-promise",
+      "term": "Gratuitous promise",
+      "definition": "A gift promise that binds no one because nothing is exchanged for it.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Illusory promise",
+        "Promissory estoppel"
+      ],
+      "sources": [
+        "usll-wex#sec.contract",
+        "usll-wex#sec.consideration"
+      ]
+    },
+    {
+      "id": "illusory-promise",
+      "term": "Illusory promise",
+      "definition": "A promise so vague or conditional that it leaves the promisor bound to nothing.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Gratuitous promise",
+        "Promissory estoppel"
+      ],
+      "sources": [
+        "usll-wex#sec.illusory_promise"
+      ]
+    },
+    {
+      "id": "infancy",
+      "term": "Infancy",
+      "definition": "A doctrine that lets a minor avoid contracts because minors are presumed to lack capacity.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [
+        "Infancy doctrine"
+      ],
+      "confusables": [
+        "Capacity",
+        "Voidable contract",
+        "Duress (contract law)"
+      ],
+      "sources": [
+        "usll-wex#sec.infancy"
+      ]
+    },
+    {
+      "id": "pre-existing-duty-rule",
+      "term": "Pre-existing duty rule",
+      "definition": "A rule that performance already owed supplies no consideration for a promise to pay more.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Adequacy of consideration",
+        "Illusory promise"
+      ],
+      "sources": [
+        "usll-wex#sec.accord_and_satisfaction",
+        "usll-wex#sec.consideration"
+      ]
+    },
+    {
+      "id": "promissory-estoppel",
+      "term": "Promissory estoppel",
+      "definition": "A doctrine enforcing a promise without consideration when reasonable reliance would otherwise work injustice.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Gratuitous promise",
+        "Reliance damages"
+      ],
+      "sources": [
+        "usll-wex#sec.promissory_estoppel"
+      ]
+    },
+    {
+      "id": "voidable-contract",
+      "term": "Voidable contract",
+      "definition": "An otherwise valid contract that one protected party may choose to disaffirm.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Consideration and capacity",
+      "aliases": [],
+      "confusables": [
+        "Capacity",
+        "Infancy",
+        "Illusory promise"
+      ],
+      "sources": [
+        "usll-wex#sec.capacity",
+        "usll-wex#sec.duress"
+      ]
+    },
+    {
+      "id": "adhesion-contract",
+      "term": "Adhesion contract",
+      "definition": "A standardized form drafted by the stronger party and offered on a take-it-or-leave-it basis.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [
+        "Contract of adhesion"
+      ],
+      "confusables": [
+        "Unconscionability",
+        "Duress (contract law)",
+        "Undue influence"
+      ],
+      "sources": [
+        "usll-wex#sec.adhesion_contract"
+      ]
+    },
+    {
+      "id": "duress-contract-law",
+      "term": "Duress (contract law)",
+      "definition": "Coercion through unlawful threats that destroys free will and makes a contract voidable.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Undue influence",
+        "Misrepresentation",
+        "Mutual mistake"
+      ],
+      "sources": [
+        "usll-wex#sec.duress"
+      ]
+    },
+    {
+      "id": "legality",
+      "term": "Legality",
+      "definition": "A formation requirement that a contract's purpose be lawful before a court will enforce it.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Consideration",
+        "Capacity",
+        "Mutual assent"
+      ],
+      "sources": [
+        "usll-wex#sec.legality",
+        "usll-wex#sec.contract"
+      ]
+    },
+    {
+      "id": "misrepresentation",
+      "term": "Misrepresentation",
+      "definition": "A false statement or misleading omission made to induce another party's reliance.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Duress (contract law)",
+        "Undue influence",
+        "Mutual mistake"
+      ],
+      "sources": [
+        "usll-wex#sec.misrepresentation"
+      ]
+    },
+    {
+      "id": "mutual-mistake",
+      "term": "Mutual mistake",
+      "definition": "A shared false belief about a basic assumption that may make a contract voidable.",
+      "formula": "Restatement (Second) § 152",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [
+        "Bilateral mistake"
+      ],
+      "confusables": [
+        "Misrepresentation",
+        "Unconscionability",
+        "Duress (contract law)"
+      ],
+      "sources": [
+        "usll-wex#sec.mistake"
+      ]
+    },
+    {
+      "id": "parol-evidence-rule",
+      "term": "Parol evidence rule",
+      "definition": "A rule barring prior or contemporaneous agreements offered to contradict an integrated written contract.",
+      "formula": "UCC § 2-202",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Statute of frauds",
+        "Mutual mistake",
+        "Legality"
+      ],
+      "sources": [
+        "usll-wex#sec.parol_evidence_rule",
+        "usll-ucc-article-2#sec.2-202"
+      ]
+    },
+    {
+      "id": "statute-of-frauds",
+      "term": "Statute of frauds",
+      "definition": "A rule requiring a signed writing for land sales, one-year contracts, and goods priced at $500 or more.",
+      "formula": "UCC § 2-201",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Parol evidence rule",
+        "Legality",
+        "Consideration"
+      ],
+      "sources": [
+        "usll-wex#sec.statute_of_frauds",
+        "usll-ucc-article-2#sec.2-201"
+      ]
+    },
+    {
+      "id": "unconscionability",
+      "term": "Unconscionability",
+      "definition": "A defense of unfair bargaining combined with oppressive terms that lets a court refuse enforcement.",
+      "formula": "UCC § 2-302",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Duress (contract law)",
+        "Adhesion contract",
+        "Undue influence"
+      ],
+      "sources": [
+        "usll-wex#sec.unconscionability",
+        "usll-ucc-article-2#sec.2-302"
+      ]
+    },
+    {
+      "id": "undue-influence",
+      "term": "Undue influence",
+      "definition": "Excessive persuasion by a trusted party that overcomes free will and makes a contract voidable.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Defenses to formation",
+      "aliases": [],
+      "confusables": [
+        "Duress (contract law)",
+        "Misrepresentation",
+        "Unconscionability"
+      ],
+      "sources": [
+        "usll-wex#sec.undue_influence"
+      ]
+    },
+    {
+      "id": "anticipatory-repudiation",
+      "term": "Anticipatory repudiation",
+      "definition": "Under UCC Article 2, refusing performance before it is due in a way that impairs the contract's value.",
+      "formula": "UCC § 2-610",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [
+        "Anticipatory breach"
+      ],
+      "confusables": [
+        "Repudiation",
+        "Breach of contract",
+        "Material breach"
+      ],
+      "sources": [
+        "usll-ucc-article-2#sec.2-610",
+        "usll-wex#sec.anticipatory_breach"
+      ]
+    },
+    {
+      "id": "breach-of-contract",
+      "term": "Breach of contract",
+      "definition": "A party's failure to perform a promised duty without a legal excuse.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Material breach",
+        "Repudiation",
+        "Substantial performance"
+      ],
+      "sources": [
+        "usll-wex#sec.breach_of_contract"
+      ]
+    },
+    {
+      "id": "condition-precedent",
+      "term": "Condition precedent",
+      "definition": "An event that must occur before a party's duty to perform begins.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Condition subsequent",
+        "Breach of contract",
+        "Material breach"
+      ],
+      "sources": [
+        "usll-wex#sec.condition_precedent"
+      ]
+    },
+    {
+      "id": "condition-subsequent",
+      "term": "Condition subsequent",
+      "definition": "An event that, once it occurs, terminates a duty already owed under the contract.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Condition precedent",
+        "Material breach",
+        "Anticipatory repudiation"
+      ],
+      "sources": [
+        "usll-wex#sec.condition_subsequent"
+      ]
+    },
+    {
+      "id": "impracticability",
+      "term": "Impracticability",
+      "definition": "A defense excusing performance when an unforeseen event makes it excessively difficult or expensive.",
+      "formula": "UCC § 2-615",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [
+        "Commercial impracticability"
+      ],
+      "confusables": [
+        "Material breach",
+        "Mutual mistake",
+        "Duress (contract law)"
+      ],
+      "sources": [
+        "usll-wex#sec.impracticability",
+        "usll-ucc-article-2#sec.2-615"
+      ]
+    },
+    {
+      "id": "material-breach",
+      "term": "Material breach",
+      "definition": "A failure that defeats a contract's essential purpose and allows the injured party to end the contract.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Breach of contract",
+        "Substantial performance",
+        "Repudiation"
+      ],
+      "sources": [
+        "usll-wex#sec.substantial_performance",
+        "usll-wex#sec.partial_breach"
+      ]
+    },
+    {
+      "id": "perfect-tender-rule",
+      "term": "Perfect tender rule",
+      "definition": "Under UCC Article 2, a buyer may reject goods that fail in any respect to conform.",
+      "formula": "UCC § 2-601",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Substantial performance",
+        "Material breach",
+        "Impracticability"
+      ],
+      "sources": [
+        "usll-wex#sec.perfect_tender_rule",
+        "usll-ucc-article-2#sec.2-601"
+      ]
+    },
+    {
+      "id": "repudiation",
+      "term": "Repudiation",
+      "definition": "A party's clear statement or conduct showing an intention not to perform a contractual obligation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Anticipatory repudiation",
+        "Breach of contract",
+        "Material breach"
+      ],
+      "sources": [
+        "usll-wex#sec.repudiation"
+      ]
+    },
+    {
+      "id": "substantial-performance",
+      "term": "Substantial performance",
+      "definition": "Performance that fulfills a contract's core purpose despite minor deviations, leaving only a claim for damages.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Performance and breach",
+      "aliases": [],
+      "confusables": [
+        "Perfect tender rule",
+        "Material breach",
+        "Breach of contract"
+      ],
+      "sources": [
+        "usll-wex#sec.substantial_performance"
+      ]
+    },
+    {
+      "id": "consequential-damages",
+      "term": "Consequential damages",
+      "definition": "Losses from a breach that the breaching party had reason to know would follow it.",
+      "formula": "UCC § 2-715",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [
+        "Special damages"
+      ],
+      "confusables": [
+        "Expectation damages",
+        "Reliance damages",
+        "Liquidated damages"
+      ],
+      "sources": [
+        "usll-wex#sec.consequential_damages",
+        "usll-ucc-article-2#sec.2-715"
+      ]
+    },
+    {
+      "id": "expectation-damages",
+      "term": "Expectation damages",
+      "definition": "Damages that put the non-breaching party in as good a position as full performance would have.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [
+        "Expectancy damages"
+      ],
+      "confusables": [
+        "Reliance damages",
+        "Restitution",
+        "Consequential damages"
+      ],
+      "sources": [
+        "usll-wex#sec.expectation_damages"
+      ]
+    },
+    {
+      "id": "liquidated-damages",
+      "term": "Liquidated damages",
+      "definition": "A contract term fixing a reasonable sum for breach where actual loss would be hard to prove.",
+      "formula": "UCC § 2-718",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [],
+      "confusables": [
+        "Consequential damages",
+        "Expectation damages",
+        "Restitution"
+      ],
+      "sources": [
+        "usll-wex#sec.liquidated_damages",
+        "usll-ucc-article-2#sec.2-718"
+      ]
+    },
+    {
+      "id": "reliance-damages",
+      "term": "Reliance damages",
+      "definition": "Recovery of expenditures reasonably incurred in relying on a promise that was later broken.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [],
+      "confusables": [
+        "Expectation damages",
+        "Restitution",
+        "Consequential damages"
+      ],
+      "sources": [
+        "usll-wex#sec.reliance_damages",
+        "usll-wex#sec.breach_of_contract"
+      ]
+    },
+    {
+      "id": "rescission",
+      "term": "Rescission",
+      "definition": "A remedy canceling a contract and restoring both parties to their pre-agreement positions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [],
+      "confusables": [
+        "Restitution",
+        "Specific performance",
+        "Liquidated damages"
+      ],
+      "sources": [
+        "usll-wex#sec.rescission"
+      ]
+    },
+    {
+      "id": "restitution",
+      "term": "Restitution",
+      "definition": "A remedy restoring the value of benefits conferred on the other party to prevent unjust enrichment.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [],
+      "confusables": [
+        "Reliance damages",
+        "Expectation damages",
+        "Rescission"
+      ],
+      "sources": [
+        "usll-wex#sec.restitution"
+      ]
+    },
+    {
+      "id": "specific-performance",
+      "term": "Specific performance",
+      "definition": "A court order compelling the promised act when money damages cannot repair the harm.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Remedies",
+      "aliases": [],
+      "confusables": [
+        "Rescission",
+        "Restitution",
+        "Liquidated damages"
+      ],
+      "sources": [
+        "usll-wex#sec.specific_performance"
+      ]
+    }
+  ]
+}

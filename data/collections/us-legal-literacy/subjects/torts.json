@@ -1,0 +1,850 @@
+{
+  "version": 1,
+  "id": "torts",
+  "collectionId": "us-legal-literacy",
+  "section": "doctrines",
+  "name": "Torts",
+  "shortName": "Tort law",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#22a06b",
+  "dark": "#4bd399",
+  "units": [
+    {
+      "number": 1,
+      "title": "Negligence"
+    },
+    {
+      "number": 2,
+      "title": "Intentional torts"
+    },
+    {
+      "number": 3,
+      "title": "Strict liability and products liability"
+    },
+    {
+      "number": 4,
+      "title": "Damages"
+    },
+    {
+      "number": 5,
+      "title": "Defenses"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "breach-of-duty",
+      "term": "Breach of duty",
+      "definition": "A defendant's failure to conform to the standard of care that the law requires in the circumstances.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [
+        "breach of the duty of care"
+      ],
+      "confusables": [
+        "Duty of care",
+        "Negligence",
+        "negligence per se"
+      ],
+      "sources": [
+        "usll-wex#sec.breach-of-duty-of-care",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "cause-in-fact",
+      "term": "Cause in fact",
+      "definition": "Factual causation established by a but-for test linking the defendant's conduct to the plaintiff's harm.",
+      "formula": "but-for test",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [
+        "actual cause",
+        "factual causation"
+      ],
+      "confusables": [
+        "Proximate cause",
+        "Foreseeability",
+        "Breach of duty"
+      ],
+      "sources": [
+        "usll-wex#sec.cause-in-fact"
+      ]
+    },
+    {
+      "id": "duty-of-care",
+      "term": "Duty of care",
+      "definition": "An obligation to act reasonably to avoid harming others, forming the first element of a negligence claim.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [
+        "legal duty"
+      ],
+      "confusables": [
+        "Duty to rescue",
+        "Breach of duty",
+        "Reasonable person standard"
+      ],
+      "sources": [
+        "usll-wex#sec.duty-of-care",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "duty-to-rescue",
+      "term": "Duty to rescue",
+      "definition": "An obligation to help a person in peril that arises when one's own conduct created the danger.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [],
+      "confusables": [
+        "Duty of care",
+        "Good Samaritan rule",
+        "Self-defense"
+      ],
+      "sources": [
+        "usll-wex#sec.rescue-doctrine"
+      ]
+    },
+    {
+      "id": "foreseeability",
+      "term": "Foreseeability",
+      "definition": "A measure of whether a reasonable person could have predicted the harm resulting from the defendant's conduct.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [],
+      "confusables": [
+        "Reasonable person standard",
+        "Proximate cause",
+        "Cause in fact"
+      ],
+      "sources": [
+        "usll-wex#sec.foreseeability",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "negligence",
+      "term": "Negligence",
+      "definition": "A civil wrong in which a person fails to exercise the care a reasonable person would under similar circumstances.",
+      "formula": "duty → breach → causation → harm",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [],
+      "confusables": [
+        "Duty of care",
+        "Breach of duty",
+        "negligence per se"
+      ],
+      "sources": [
+        "usll-wex#sec.negligence",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "proximate-cause",
+      "term": "Proximate cause",
+      "definition": "A legally sufficient cause that ties the defendant's breach to harm within the range of foreseeability.",
+      "formula": "foreseeability or substantial factor",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [
+        "legal cause"
+      ],
+      "confusables": [
+        "Cause in fact",
+        "Foreseeability",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.proximate-cause"
+      ]
+    },
+    {
+      "id": "reasonable-person-standard",
+      "term": "Reasonable person standard",
+      "definition": "An objective test asking how a hypothetical person of ordinary prudence would act in the same situation.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [],
+      "confusables": [
+        "Duty of care",
+        "Foreseeability",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.reasonable-person",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "negligence-per-se",
+      "term": "negligence per se",
+      "definition": "Negligence established automatically by violating a statute designed to protect people from the type of harm suffered.",
+      "formula": "statute violation = breach",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [
+        "negligence in itself"
+      ],
+      "confusables": [
+        "Negligence",
+        "Breach of duty",
+        "Strict liability"
+      ],
+      "sources": [
+        "usll-wex#sec.negligence-per-se"
+      ]
+    },
+    {
+      "id": "res-ipsa-loquitur",
+      "term": "res ipsa loquitur",
+      "definition": "A presumption of negligence arising when an accident ordinarily occurs only through carelessness while the causing object was under the defendant's control.",
+      "formula": "accident + control + no plaintiff fault",
+      "unit": 1,
+      "unitTitle": "Negligence",
+      "aliases": [
+        "the thing speaks for itself"
+      ],
+      "confusables": [
+        "Negligence",
+        "negligence per se",
+        "Cause in fact"
+      ],
+      "sources": [
+        "usll-wex#sec.res-ipsa-loquitur",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "assault",
+      "term": "Assault",
+      "definition": "An intentional act that causes another person to reasonably apprehend imminent harmful or offensive contact.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Battery",
+        "False imprisonment",
+        "Intentional infliction of emotional distress"
+      ],
+      "sources": [
+        "usll-wex#sec.assault",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "battery",
+      "term": "Battery",
+      "definition": "An intentional harmful or offensive contact with a person without consent, needing no proof of actual loss.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Assault",
+        "Consent",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.battery"
+      ]
+    },
+    {
+      "id": "defamation",
+      "term": "Defamation",
+      "definition": "A false statement of fact published to a third party that harms the subject's reputation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Libel",
+        "Slander",
+        "Invasion of privacy"
+      ],
+      "sources": [
+        "usll-wex#sec.defamation",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "false-imprisonment",
+      "term": "False imprisonment",
+      "definition": "An intentional restraint that confines a person within a bounded area without consent or legal authority.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Battery",
+        "Consent",
+        "Assault"
+      ],
+      "sources": [
+        "usll-wex#sec.false-imprisonment"
+      ]
+    },
+    {
+      "id": "intentional-infliction-of-emotional-distress",
+      "term": "Intentional infliction of emotional distress",
+      "definition": "Outrageous conduct done intentionally or recklessly that causes another person severe emotional distress.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [
+        "IIED"
+      ],
+      "confusables": [
+        "Assault",
+        "Defamation",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.intentional-infliction-of-emotional-distress"
+      ]
+    },
+    {
+      "id": "intentional-tort",
+      "term": "Intentional tort",
+      "definition": "A civil wrong committed purposefully, requiring proof of intent rather than mere carelessness.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Negligence",
+        "Strict liability",
+        "Battery"
+      ],
+      "sources": [
+        "usll-wex#sec.intentional-tort",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "invasion-of-privacy",
+      "term": "Invasion of privacy",
+      "definition": "A tort protecting private life, encompassing intrusion on seclusion, public disclosure of private facts, false light, and appropriation.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Defamation",
+        "False imprisonment",
+        "Libel"
+      ],
+      "sources": [
+        "usll-wex#sec.invasion-of-privacy"
+      ]
+    },
+    {
+      "id": "libel",
+      "term": "Libel",
+      "definition": "Defamation expressed in written or otherwise recorded form rather than in speech.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Slander",
+        "Defamation",
+        "Invasion of privacy"
+      ],
+      "sources": [
+        "usll-wex#sec.defamation",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "slander",
+      "term": "Slander",
+      "definition": "Defamation communicated through spoken words rather than in a fixed or recorded form.",
+      "formula": "",
+      "unit": 2,
+      "unitTitle": "Intentional torts",
+      "aliases": [],
+      "confusables": [
+        "Libel",
+        "Defamation",
+        "Assault"
+      ],
+      "sources": [
+        "usll-wex#sec.defamation",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-1-intentional-torts-and-negligence"
+      ]
+    },
+    {
+      "id": "abnormally-dangerous-activity",
+      "term": "Abnormally dangerous activity",
+      "definition": "An uncommon activity creating a very significant risk of physical harm even when all parties exercise reasonable care.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [
+        "abnormally dangerous activity standard"
+      ],
+      "confusables": [
+        "Strict liability",
+        "Attractive nuisance",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.abnormally-dangerous-activity",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "attractive-nuisance",
+      "term": "Attractive nuisance",
+      "definition": "A dangerous artificial condition on land that draws trespassing children who cannot appreciate the risk.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [],
+      "confusables": [
+        "Abnormally dangerous activity",
+        "Strict liability",
+        "Products liability"
+      ],
+      "sources": [
+        "usll-wex#sec.attractive-nuisance",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "consumer-expectation-test",
+      "term": "Consumer expectation test",
+      "definition": "A design-defect standard finding no liability when an ordinary consumer would not expect the product to be defective.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [],
+      "confusables": [
+        "Risk-utility test",
+        "Design defect",
+        "Failure to warn"
+      ],
+      "sources": [
+        "usll-wex#sec.consumer-expectation-test"
+      ]
+    },
+    {
+      "id": "design-defect",
+      "term": "Design defect",
+      "definition": "A flaw inherent in a product's plan before manufacture, making the product unreasonably dangerous as designed.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [],
+      "confusables": [
+        "Manufacturing defect",
+        "Failure to warn",
+        "Products liability"
+      ],
+      "sources": [
+        "usll-wex#sec.design-defects",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "failure-to-warn",
+      "term": "Failure to warn",
+      "definition": "A product defect created by inadequate instructions or missing warnings about latent dangers.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [
+        "marketing defect"
+      ],
+      "confusables": [
+        "Design defect",
+        "Manufacturing defect",
+        "Products liability"
+      ],
+      "sources": [
+        "usll-wex#sec.defects-in-marketing",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "manufacturing-defect",
+      "term": "Manufacturing defect",
+      "definition": "A flaw confined to some units of a product line, arising during construction rather than in the design.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [],
+      "confusables": [
+        "Design defect",
+        "Failure to warn",
+        "Products liability"
+      ],
+      "sources": [
+        "usll-wex#sec.manufacturing-defects",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "products-liability",
+      "term": "Products liability",
+      "definition": "Responsibility of commercial sellers in a product's chain for injuries caused by a defective product they place in commerce.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [
+        "product liability"
+      ],
+      "confusables": [
+        "Strict liability",
+        "Manufacturing defect",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.products-liability",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "risk-utility-test",
+      "term": "Risk-utility test",
+      "definition": "A design-defect standard excusing a defendant when a product's usefulness outweighs its inherent risk of harm.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [],
+      "confusables": [
+        "Consumer expectation test",
+        "Design defect",
+        "Failure to warn"
+      ],
+      "sources": [
+        "usll-wex#sec.risk-utility-test"
+      ]
+    },
+    {
+      "id": "strict-liability",
+      "term": "Strict liability",
+      "definition": "Liability imposed without regard to the defendant's intent or care when the law deems the activity inherently risky.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Strict liability and products liability",
+      "aliases": [
+        "liability without fault"
+      ],
+      "confusables": [
+        "Negligence",
+        "Intentional tort",
+        "Products liability"
+      ],
+      "sources": [
+        "usll-wex#sec.strict-liability",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "compensatory-damages",
+      "term": "Compensatory damages",
+      "definition": "Money awarded equal to the plaintiff's proven loss, intended to restore rather than punish.",
+      "formula": "award = proven loss",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [
+        "actual damages"
+      ],
+      "confusables": [
+        "Nominal damages",
+        "Punitive damages",
+        "General damages"
+      ],
+      "sources": [
+        "usll-wex#sec.compensatory-damages"
+      ]
+    },
+    {
+      "id": "damages",
+      "term": "Damages",
+      "definition": "Money a court orders paid to make an injured party whole for a proven civil wrong.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [],
+      "confusables": [
+        "Compensatory damages",
+        "Punitive damages",
+        "Nominal damages"
+      ],
+      "sources": [
+        "usll-wex#sec.damages"
+      ]
+    },
+    {
+      "id": "general-damages",
+      "term": "General damages",
+      "definition": "Harm that flows directly and inevitably from the wrong, suffered by any injured party in that situation.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [],
+      "confusables": [
+        "Special damages",
+        "Compensatory damages",
+        "Nominal damages"
+      ],
+      "sources": [
+        "usll-wex#sec.general-damages"
+      ]
+    },
+    {
+      "id": "mitigation-of-damages",
+      "term": "Mitigation of damages",
+      "definition": "A doctrine barring recovery of losses the injured party could have avoided through reasonable efforts.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [
+        "doctrine of avoidable consequences"
+      ],
+      "confusables": [
+        "Comparative negligence",
+        "Damages",
+        "Compensatory damages"
+      ],
+      "sources": [
+        "usll-wex#sec.mitigation-of-damages"
+      ]
+    },
+    {
+      "id": "nominal-damages",
+      "term": "Nominal damages",
+      "definition": "A token sum, such as one dollar, that acknowledges a violated legal right with no measurable loss.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [],
+      "confusables": [
+        "Compensatory damages",
+        "Punitive damages",
+        "Special damages"
+      ],
+      "sources": [
+        "usll-wex#sec.nominal-damages"
+      ]
+    },
+    {
+      "id": "punitive-damages",
+      "term": "Punitive damages",
+      "definition": "Extra money awarded alongside compensatory damages to punish intentional or wanton misconduct and deter repetition.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [],
+      "confusables": [
+        "Compensatory damages",
+        "Treble damages",
+        "Nominal damages"
+      ],
+      "sources": [
+        "usll-wex#sec.punitive-damages"
+      ]
+    },
+    {
+      "id": "special-damages",
+      "term": "Special damages",
+      "definition": "Quantifiable losses with a set monetary cost, such as medical bills or property repair expenses.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [],
+      "confusables": [
+        "General damages",
+        "Compensatory damages",
+        "Treble damages"
+      ],
+      "sources": [
+        "usll-wex#sec.special-damages"
+      ]
+    },
+    {
+      "id": "treble-damages",
+      "term": "Treble damages",
+      "definition": "A statutory award of three times the proven actual damages, imposed for especially egregious conduct.",
+      "formula": "3 × actual damages",
+      "unit": 4,
+      "unitTitle": "Damages",
+      "aliases": [],
+      "confusables": [
+        "Punitive damages",
+        "Compensatory damages",
+        "Nominal damages"
+      ],
+      "sources": [
+        "usll-wex#sec.treble-damages",
+        "usll-wex#sec.damages"
+      ]
+    },
+    {
+      "id": "assumption-of-risk",
+      "term": "Assumption of risk",
+      "definition": "A common-law defense that bars recovery when a plaintiff voluntarily accepted the known danger, merged into comparative negligence in many jurisdictions.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Consent",
+        "Comparative negligence",
+        "Contributory negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.assumption-of-risk",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "comparative-negligence",
+      "term": "Comparative negligence",
+      "definition": "A rule reducing a plaintiff's recovery by the plaintiff's own share of fault instead of barring it outright, in pure or modified forms.",
+      "formula": "recovery × (1 − plaintiff fault)",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Contributory negligence",
+        "Last clear chance",
+        "Mitigation of damages"
+      ],
+      "sources": [
+        "usll-wex#sec.comparative-negligence",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "consent",
+      "term": "Consent",
+      "definition": "A voluntary agreement to another's proposed conduct, requiring capacity and an absence of coercion, fraud, or error.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Assumption of risk",
+        "Battery",
+        "False imprisonment"
+      ],
+      "sources": [
+        "usll-wex#sec.consent"
+      ]
+    },
+    {
+      "id": "contributory-negligence",
+      "term": "Contributory negligence",
+      "definition": "A common-law rule barring any recovery by a plaintiff who was even slightly negligent, retained in four states and the District of Columbia.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Comparative negligence",
+        "Assumption of risk",
+        "Last clear chance"
+      ],
+      "sources": [
+        "usll-wex#sec.contributory-negligence",
+        "usll-openstax-business-law-i-essentials-2e#sec.6-2-product-and-strict-liability"
+      ]
+    },
+    {
+      "id": "defense-of-others",
+      "term": "Defense of others",
+      "definition": "Reasonable force used to protect a third party from another person's threatened or attempted force.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Self-defense",
+        "Consent",
+        "Battery"
+      ],
+      "sources": [
+        "usll-wex#sec.defense-of-others"
+      ]
+    },
+    {
+      "id": "good-samaritan-rule",
+      "term": "Good Samaritan rule",
+      "definition": "A rule making a volunteer rescuer who takes charge of a helpless person liable for negligent care in the rescue.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Duty to rescue",
+        "Duty of care",
+        "Assumption of risk"
+      ],
+      "sources": [
+        "usll-wex#sec.good-samaritan-rule"
+      ]
+    },
+    {
+      "id": "last-clear-chance",
+      "term": "Last clear chance",
+      "definition": "A doctrine letting a negligent plaintiff recover when the defendant had the final opportunity to avoid the harm.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Contributory negligence",
+        "Comparative negligence",
+        "Negligence"
+      ],
+      "sources": [
+        "usll-wex#sec.last-clear-chance"
+      ]
+    },
+    {
+      "id": "self-defense",
+      "term": "Self-defense",
+      "definition": "Force reasonably believed necessary to repel an imminent unlawful attack, limited to a proportionate response.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Defense of others",
+        "Battery",
+        "Assault"
+      ],
+      "sources": [
+        "usll-wex#sec.self-defense"
+      ]
+    },
+    {
+      "id": "sovereign-immunity",
+      "term": "Sovereign immunity",
+      "definition": "A common-law doctrine preventing suits against the government unless it consents, with federal and state waivers available by statute.",
+      "formula": "",
+      "unit": 5,
+      "unitTitle": "Defenses",
+      "aliases": [],
+      "confusables": [
+        "Consent",
+        "Good Samaritan rule"
+      ],
+      "sources": [
+        "usll-wex#sec.sovereign-immunity"
+      ]
+    }
+  ]
+}

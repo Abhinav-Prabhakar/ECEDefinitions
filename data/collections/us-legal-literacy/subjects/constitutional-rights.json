@@ -1,0 +1,796 @@
+{
+  "version": 1,
+  "id": "constitutional-rights",
+  "collectionId": "us-legal-literacy",
+  "section": "foundations",
+  "name": "Constitutional Rights",
+  "shortName": "Constitutional rights",
+  "code": null,
+  "courseType": "core",
+  "status": "complete",
+  "color": "#eaa22b",
+  "dark": "#f3b552",
+  "units": [
+    {
+      "number": 1,
+      "title": "Bill of Rights fundamentals"
+    },
+    {
+      "number": 2,
+      "title": "First Amendment freedoms"
+    },
+    {
+      "number": 3,
+      "title": "Due process"
+    },
+    {
+      "number": 4,
+      "title": "Equal protection"
+    },
+    {
+      "number": 5,
+      "title": "Search, seizure, and criminal process rights"
+    },
+    {
+      "number": 6,
+      "title": "Incorporation and state action"
+    }
+  ],
+  "definitions": [
+    {
+      "id": "bill-of-rights",
+      "term": "Bill of Rights",
+      "definition": "The first ten constitutional amendments, which enumerate protections for speech, religion, jury trial, and limits on searches and punishment.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Bill of Rights fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Civil liberties",
+        "Judicial review",
+        "Unenumerated rights"
+      ],
+      "sources": [
+        "usll-wex#sec.bill-of-rights",
+        "usll-constitution-annotated#sec.intro.6-2"
+      ]
+    },
+    {
+      "id": "civil-liberties",
+      "term": "Civil liberties",
+      "definition": "Constitutional freedoms that limit how government may treat individuals, such as speech, religion, and the press.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Bill of Rights fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Bill of Rights",
+        "Civil rights",
+        "Due Process Clause"
+      ],
+      "sources": [
+        "usll-wex#sec.civil-liberties"
+      ]
+    },
+    {
+      "id": "cruel-and-unusual-punishment",
+      "term": "Cruel and unusual punishment",
+      "definition": "An Eighth Amendment punishment that is excessive relative to the offense or inflicted as deliberate suffering.",
+      "formula": "8th Amendment",
+      "unit": 1,
+      "unitTitle": "Bill of Rights fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Double jeopardy",
+        "Void for vagueness"
+      ],
+      "sources": [
+        "usll-wex#sec.cruel-and-unusual-punishment",
+        "usll-archives-bill-of-rights#sec.amendment-8"
+      ]
+    },
+    {
+      "id": "judicial-review",
+      "term": "Judicial review",
+      "definition": "The judiciary's power to examine legislative and executive acts and invalidate them as unconstitutional.",
+      "formula": "",
+      "unit": 1,
+      "unitTitle": "Bill of Rights fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Due Process Clause",
+        "Federalism",
+        "Bill of Rights"
+      ],
+      "sources": [
+        "usll-wex#sec.judicial-review"
+      ]
+    },
+    {
+      "id": "second-amendment",
+      "term": "Second Amendment",
+      "definition": "The provision recognizing an individual right to keep and bear arms for lawful purposes, subject to permissible regulation.",
+      "formula": "U.S. Const. amend. II",
+      "unit": 1,
+      "unitTitle": "Bill of Rights fundamentals",
+      "aliases": [
+        "right to bear arms"
+      ],
+      "confusables": [
+        "Bill of Rights",
+        "Civil liberties",
+        "Unenumerated rights"
+      ],
+      "sources": [
+        "usll-wex#sec.second-amendment",
+        "usll-archives-bill-of-rights#sec.amendment-2"
+      ]
+    },
+    {
+      "id": "unenumerated-rights",
+      "term": "Unenumerated rights",
+      "definition": "Rights retained by the people that the Constitution's list does not name, safeguarded by the Ninth Amendment.",
+      "formula": "9th Amendment",
+      "unit": 1,
+      "unitTitle": "Bill of Rights fundamentals",
+      "aliases": [],
+      "confusables": [
+        "Bill of Rights",
+        "Civil liberties",
+        "Second Amendment"
+      ],
+      "sources": [
+        "usll-constitution-annotated#sec.amdt9-1",
+        "usll-archives-bill-of-rights#sec.amendment-9"
+      ]
+    },
+    {
+      "id": "content-based-restriction",
+      "term": "Content-based restriction",
+      "definition": "A speech regulation that classifies expression by its message or subject matter, triggering the highest level of judicial scrutiny.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Prior restraint",
+        "Time, place, and manner restriction",
+        "Viewpoint discrimination"
+      ],
+      "sources": [
+        "usll-lii-constitution-conan#sec.overview-of-content-based-and-content-neutral-regulation-of-speech"
+      ]
+    },
+    {
+      "id": "establishment-clause",
+      "term": "Establishment Clause",
+      "definition": "The First Amendment provision barring government-established religion and any undue preference for religion or nonreligion.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Freedom of speech",
+        "Free Exercise Clause"
+      ],
+      "sources": [
+        "usll-wex#sec.establishment-clause",
+        "usll-constitution-annotated#sec.amdt1-2-1"
+      ]
+    },
+    {
+      "id": "free-exercise-clause",
+      "term": "Free Exercise Clause",
+      "definition": "The First Amendment clause reserving to individuals the right to practice the religious beliefs and rituals they choose.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Civil liberties",
+        "Establishment Clause",
+        "Freedom of speech"
+      ],
+      "sources": [
+        "usll-wex#sec.free-exercise-clause",
+        "usll-constitution-annotated#sec.amdt1-2-1"
+      ]
+    },
+    {
+      "id": "freedom-of-speech",
+      "term": "Freedom of speech",
+      "definition": "The First Amendment right to speak, write, and share ideas without government punishment, subject to recognized exceptions.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Content-based restriction",
+        "Freedom of the press",
+        "Viewpoint discrimination"
+      ],
+      "sources": [
+        "usll-wex#sec.freedom-of-speech"
+      ]
+    },
+    {
+      "id": "freedom-of-the-press",
+      "term": "Freedom of the press",
+      "definition": "The First Amendment right to publish and report information through any medium without government censorship.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Content-based restriction",
+        "Freedom of speech",
+        "Prior restraint"
+      ],
+      "sources": [
+        "usll-wex#sec.freedom-of-the-press"
+      ]
+    },
+    {
+      "id": "prior-restraint",
+      "term": "Prior restraint",
+      "definition": "A government restriction blocking expression before it happens, such as a license requirement or injunction, which courts disfavor strongly.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Content-based restriction",
+        "Freedom of the press",
+        "Time, place, and manner restriction"
+      ],
+      "sources": [
+        "usll-wex#sec.prior-restraint",
+        "usll-constitution-annotated#sec.amdt1-7-2-3"
+      ]
+    },
+    {
+      "id": "time-place-and-manner-restriction",
+      "term": "Time, place, and manner restriction",
+      "definition": "A neutral rule governing when, where, or how expression occurs that leaves open alternative channels of communication.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Content-based restriction",
+        "Prior restraint",
+        "Viewpoint discrimination"
+      ],
+      "sources": [
+        "usll-lii-constitution-conan#sec.content-neutral-laws-burdening-speech"
+      ]
+    },
+    {
+      "id": "viewpoint-discrimination",
+      "term": "Viewpoint discrimination",
+      "definition": "Government favoritism toward one perspective on a subject, treated as a particularly disfavored form of content discrimination.",
+      "formula": "U.S. Const. amend. I",
+      "unit": 2,
+      "unitTitle": "First Amendment freedoms",
+      "aliases": [],
+      "confusables": [
+        "Content-based restriction",
+        "Protected class",
+        "Time, place, and manner restriction"
+      ],
+      "sources": [
+        "usll-lii-constitution-conan#sec.viewpoint-discrimination-overview"
+      ]
+    },
+    {
+      "id": "due-process-clause",
+      "term": "Due Process Clause",
+      "definition": "The Fifth and Fourteenth Amendment guarantee that the government deprives no person of life, liberty, or property without due process of law.",
+      "formula": "U.S. Const. amend. XIV § 1",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [],
+      "confusables": [
+        "Procedural due process",
+        "Substantive due process",
+        "Void for vagueness"
+      ],
+      "sources": [
+        "usll-wex#sec.due-process",
+        "usll-constitution-annotated#sec.amdt5-5-1"
+      ]
+    },
+    {
+      "id": "due-process",
+      "term": "Due process",
+      "definition": "The requirement that government operates within established law and gives fair procedures whenever it acts against an individual.",
+      "formula": "U.S. Const. amends. V & XIV",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [],
+      "confusables": [
+        "Equal protection",
+        "Procedural due process",
+        "Substantive due process"
+      ],
+      "sources": [
+        "usll-wex#sec.due-process",
+        "usll-constitution-annotated#sec.amdt5-5-1"
+      ]
+    },
+    {
+      "id": "notice",
+      "term": "Notice",
+      "definition": "A due process requirement that a party receive meaningful warning of a proceeding that may affect their rights.",
+      "formula": "U.S. Const. amends. V & XIV",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [],
+      "confusables": [
+        "Procedural due process",
+        "Right to counsel",
+        "Void for vagueness"
+      ],
+      "sources": [
+        "usll-wex#sec.notice",
+        "usll-wex#sec.procedural-due-process"
+      ]
+    },
+    {
+      "id": "procedural-due-process",
+      "term": "Procedural due process",
+      "definition": "The constitutional demand for notice, a hearing, and a neutral decision-maker before the government deprives someone of protected interests.",
+      "formula": "U.S. Const. amends. V & XIV",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [],
+      "confusables": [
+        "Notice",
+        "Substantive due process",
+        "Void for vagueness"
+      ],
+      "sources": [
+        "usll-wex#sec.procedural-due-process",
+        "usll-constitution-annotated#sec.amdt5-5-1"
+      ]
+    },
+    {
+      "id": "right-to-privacy",
+      "term": "Right to privacy",
+      "definition": "A constitutional liberty against government intrusion into personal decisions, derived by courts from several amendments.",
+      "formula": "",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [],
+      "confusables": [
+        "Civil liberties",
+        "Substantive due process",
+        "Unenumerated rights"
+      ],
+      "sources": [
+        "usll-wex#sec.right-to-privacy"
+      ]
+    },
+    {
+      "id": "substantive-due-process",
+      "term": "Substantive due process",
+      "definition": "The doctrine shielding fundamental rights from government interference regardless of the procedures the government follows.",
+      "formula": "U.S. Const. amends. V & XIV",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [],
+      "confusables": [
+        "Due Process Clause",
+        "Fundamental right",
+        "Procedural due process"
+      ],
+      "sources": [
+        "usll-wex#sec.substantive-due-process",
+        "usll-constitution-annotated#sec.amdt5-5-1"
+      ]
+    },
+    {
+      "id": "void-for-vagueness",
+      "term": "Void for vagueness",
+      "definition": "A ruling invalidating a law whose text fails to give ordinary people clear notice of what conduct it forbids.",
+      "formula": "U.S. Const. amends. V & XIV",
+      "unit": 3,
+      "unitTitle": "Due process",
+      "aliases": [
+        "vagueness doctrine"
+      ],
+      "confusables": [
+        "Notice",
+        "Procedural due process"
+      ],
+      "sources": [
+        "usll-wex#sec.void-for-vagueness",
+        "usll-wex#sec.vagueness-doctrine"
+      ]
+    },
+    {
+      "id": "civil-rights",
+      "term": "Civil rights",
+      "definition": "Legal entitlements enacted by law that secure equal treatment and protection from discrimination.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Civil liberties",
+        "Equal protection",
+        "Protected class"
+      ],
+      "sources": [
+        "usll-wex#sec.civil-rights"
+      ]
+    },
+    {
+      "id": "equal-protection",
+      "term": "Equal protection",
+      "definition": "The requirement that government apply its laws fairly and treat people in similar situations alike without an unjustified distinction.",
+      "formula": "U.S. Const. amend. XIV § 1",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Civil rights",
+        "Due process",
+        "Strict scrutiny"
+      ],
+      "sources": [
+        "usll-wex#sec.equal-protection"
+      ]
+    },
+    {
+      "id": "fundamental-right",
+      "term": "Fundamental right",
+      "definition": "A right that, when burdened by government action, moves judicial review to the strict scrutiny standard.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Protected class",
+        "Strict scrutiny",
+        "Suspect classification"
+      ],
+      "sources": [
+        "usll-wex#sec.strict-scrutiny",
+        "usll-wex#sec.rational-basis-test"
+      ]
+    },
+    {
+      "id": "intermediate-scrutiny",
+      "term": "Intermediate scrutiny",
+      "definition": "A mid-level review requiring an important government interest pursued by means substantially related to that interest.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Equal protection",
+        "Rational basis test",
+        "Strict scrutiny"
+      ],
+      "sources": [
+        "usll-wex#sec.intermediate-scrutiny"
+      ]
+    },
+    {
+      "id": "protected-class",
+      "term": "Protected class",
+      "definition": "A group of people whom statutes shield from discrimination based on traits such as race, sex, religion, age, or disability.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Civil rights",
+        "Equal protection",
+        "Suspect classification"
+      ],
+      "sources": [
+        "usll-wex#sec.protected-class"
+      ]
+    },
+    {
+      "id": "rational-basis-test",
+      "term": "Rational basis test",
+      "definition": "The most permissive review, upholding a law with a legitimate purpose and a rational link between that purpose and its means.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [
+        "rational basis review"
+      ],
+      "confusables": [
+        "Fundamental right",
+        "Intermediate scrutiny",
+        "Strict scrutiny"
+      ],
+      "sources": [
+        "usll-wex#sec.rational-basis-test"
+      ]
+    },
+    {
+      "id": "strict-scrutiny",
+      "term": "Strict scrutiny",
+      "definition": "The most demanding review, which requires a narrowly tailored means serving a compelling government interest.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Equal protection",
+        "Intermediate scrutiny",
+        "Rational basis test"
+      ],
+      "sources": [
+        "usll-wex#sec.strict-scrutiny"
+      ]
+    },
+    {
+      "id": "suspect-classification",
+      "term": "Suspect classification",
+      "definition": "A classification targeting a historically disfavored group, such as race or national origin, that receives strict judicial scrutiny.",
+      "formula": "",
+      "unit": 4,
+      "unitTitle": "Equal protection",
+      "aliases": [],
+      "confusables": [
+        "Fundamental right",
+        "Intermediate scrutiny",
+        "Protected class"
+      ],
+      "sources": [
+        "usll-wex#sec.suspect-classification"
+      ]
+    },
+    {
+      "id": "double-jeopardy",
+      "term": "Double jeopardy",
+      "definition": "The Fifth Amendment protection against being prosecuted or punished twice for the same offense.",
+      "formula": "5th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [],
+      "confusables": [
+        "Habeas corpus",
+        "Right to counsel",
+        "Search and seizure"
+      ],
+      "sources": [
+        "usll-wex#sec.double-jeopardy"
+      ]
+    },
+    {
+      "id": "exclusionary-rule",
+      "term": "Exclusionary rule",
+      "definition": "A rule barring the government from introducing most evidence obtained in violation of the Constitution at trial.",
+      "formula": "4th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [],
+      "confusables": [
+        "Probable cause",
+        "Right to counsel",
+        "Search and seizure"
+      ],
+      "sources": [
+        "usll-wex#sec.exclusionary-rule"
+      ]
+    },
+    {
+      "id": "habeas-corpus",
+      "term": "Habeas corpus",
+      "definition": "A court order requiring a custodian to produce a detained person so a judge may determine whether the confinement is lawful.",
+      "formula": "U.S. Const. art. I § 9",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [
+        "writ of habeas corpus"
+      ],
+      "confusables": [
+        "Double jeopardy",
+        "Right to counsel",
+        "Search and seizure"
+      ],
+      "sources": [
+        "usll-wex#sec.habeas-corpus"
+      ]
+    },
+    {
+      "id": "miranda-warning",
+      "term": "Miranda warning",
+      "definition": "The advisement police give before custodial questioning, covering silence, counsel, and the use of statements as evidence.",
+      "formula": "5th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [
+        "Miranda rights"
+      ],
+      "confusables": [
+        "Probable cause",
+        "Right to counsel",
+        "Search and seizure"
+      ],
+      "sources": [
+        "usll-wex#sec.miranda-warning"
+      ]
+    },
+    {
+      "id": "probable-cause",
+      "term": "Probable cause",
+      "definition": "A fair probability, based on facts and circumstances, that a crime occurred or evidence exists in a particular place.",
+      "formula": "4th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [],
+      "confusables": [
+        "Search and seizure",
+        "Warrant"
+      ],
+      "sources": [
+        "usll-wex#sec.probable-cause",
+        "usll-constitution-annotated#sec.amdt4-4-1"
+      ]
+    },
+    {
+      "id": "right-to-counsel",
+      "term": "Right to counsel",
+      "definition": "A criminal defendant's Sixth Amendment right to a lawyer's assistance, including appointed counsel for those who cannot pay.",
+      "formula": "6th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [
+        "assistance of counsel"
+      ],
+      "confusables": [
+        "Habeas corpus",
+        "Miranda warning",
+        "Notice"
+      ],
+      "sources": [
+        "usll-wex#sec.right-to-counsel"
+      ]
+    },
+    {
+      "id": "search-and-seizure",
+      "term": "Search and seizure",
+      "definition": "Government examination of a person or property for evidence and the taking of items, which the Fourth Amendment requires to be reasonable.",
+      "formula": "4th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [],
+      "confusables": [
+        "Exclusionary rule",
+        "Probable cause",
+        "Warrant"
+      ],
+      "sources": [
+        "usll-wex#sec.search-and-seizure",
+        "usll-constitution-annotated#sec.amendment-4"
+      ]
+    },
+    {
+      "id": "warrant",
+      "term": "Warrant",
+      "definition": "A judge-issued authorization for an arrest, search, or seizure, supported by probable cause and a sworn description.",
+      "formula": "4th Amendment",
+      "unit": 5,
+      "unitTitle": "Search, seizure, and criminal process rights",
+      "aliases": [],
+      "confusables": [
+        "Probable cause",
+        "Search and seizure"
+      ],
+      "sources": [
+        "usll-wex#sec.warrant",
+        "usll-constitution-annotated#sec.amendment-4"
+      ]
+    },
+    {
+      "id": "federalism",
+      "term": "Federalism",
+      "definition": "A system dividing governing power between a national government and smaller units that each retain authority over local concerns.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Incorporation and state action",
+      "aliases": [],
+      "confusables": [
+        "Due Process Clause",
+        "State action",
+        "Incorporation doctrine"
+      ],
+      "sources": [
+        "usll-wex#sec.federalism"
+      ]
+    },
+    {
+      "id": "incorporation-doctrine",
+      "term": "Incorporation doctrine",
+      "definition": "A doctrine applying most Bill of Rights protections to the states through the Fourteenth Amendment's Due Process Clause.",
+      "formula": "U.S. Const. amend. XIV § 1",
+      "unit": 6,
+      "unitTitle": "Incorporation and state action",
+      "aliases": [],
+      "confusables": [
+        "Due Process Clause",
+        "Federalism",
+        "Selective incorporation"
+      ],
+      "sources": [
+        "usll-wex#sec.incorporation-doctrine"
+      ]
+    },
+    {
+      "id": "qualified-immunity",
+      "term": "Qualified immunity",
+      "definition": "A defense shielding government officials from damages suits unless they violate a clearly established statutory or constitutional right.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Incorporation and state action",
+      "aliases": [],
+      "confusables": [
+        "Civil rights",
+        "State action",
+        "Under color of law"
+      ],
+      "sources": [
+        "usll-wex#sec.qualified-immunity"
+      ]
+    },
+    {
+      "id": "selective-incorporation",
+      "term": "Selective incorporation",
+      "definition": "The Court's approach of applying individual Bill of Rights guarantees to the states piece by piece rather than wholesale.",
+      "formula": "U.S. Const. amend. XIV § 1",
+      "unit": 6,
+      "unitTitle": "Incorporation and state action",
+      "aliases": [],
+      "confusables": [
+        "Due Process Clause",
+        "Federalism",
+        "Incorporation doctrine"
+      ],
+      "sources": [
+        "usll-wex#sec.incorporation-doctrine"
+      ]
+    },
+    {
+      "id": "state-action",
+      "term": "State action",
+      "definition": "Conduct taken by the government, or private conduct so connected to the government that it counts as official action.",
+      "formula": "",
+      "unit": 6,
+      "unitTitle": "Incorporation and state action",
+      "aliases": [],
+      "confusables": [
+        "Civil rights",
+        "Federalism",
+        "Under color of law"
+      ],
+      "sources": [
+        "usll-wex#sec.state-action"
+      ]
+    },
+    {
+      "id": "under-color-of-law",
+      "term": "Under color of law",
+      "definition": "Conduct carried out under the appearance of legal authority, including official acts that exceed or misuse granted power.",
+      "formula": "42 U.S.C. § 1983",
+      "unit": 6,
+      "unitTitle": "Incorporation and state action",
+      "aliases": [],
+      "confusables": [
+        "Civil rights",
+        "Qualified immunity",
+        "State action"
+      ],
+      "sources": [
+        "usll-wex#sec.color-of-law"
+      ]
+    }
+  ]
+}
