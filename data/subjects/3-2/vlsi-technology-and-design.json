@@ -15,6 +15,7 @@
       "term": "VLSI design flow",
       "definition": "A systematic VLSI design methodology covering specification, design entry, synthesis, verification, layout and fabrication, aimed at minimising design cycle time and maximising chip quality and reliability.",
       "formula": "",
+      "diagram": "asic-flow",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -115,6 +116,7 @@
       "term": "Verilog built-in primitives",
       "definition": "Standard gate set such as and, nand, or, nor and not, provided as part of the Verilog language for switch- and gate-level modelling.",
       "formula": "",
+      "diagram": "logic-gates",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -126,6 +128,7 @@
       "term": "Verilog testbench",
       "definition": "A Verilog module used only for simulation and never synthesised; it instantiates the module under test and applies stimulus signals to verify its behaviour.",
       "formula": "",
+      "diagram": "verification-flow",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -137,6 +140,7 @@
       "term": "NMOS technology",
       "definition": "MOS technology in which n-channel MOSFETs are fabricated on a p-type substrate through epitaxy, oxidation, photolithography, etching, doping and metallisation.",
       "formula": "",
+      "diagram": "mosfet",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -148,6 +152,7 @@
       "term": "CMOS technology",
       "definition": "Technology that fabricates both NMOS and PMOS transistors on the same silicon wafer, giving low power dissipation per gate, high component density and fast switching.",
       "formula": "",
+      "diagram": "cmos-cross-section",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -159,6 +164,7 @@
       "term": "p-well process",
       "definition": "CMOS fabrication approach in which a deep p-well is implanted in an n-substrate, with the nMOS transistors formed inside this well.",
       "formula": "",
+      "diagram": "cmos-cross-section",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -170,6 +176,7 @@
       "term": "n-well process",
       "definition": "CMOS fabrication approach in which a deep n-doped region is diffused into a p-substrate to host pMOS transistors, using around eight masks.",
       "formula": "",
+      "diagram": "cmos-cross-section",
       "unit": 1,
       "unitTitle": "MOS/CMOS Fundamentals & Verilog Basics",
       "sources": [
@@ -235,7 +242,8 @@
       "id": "ids-vds-relationship",
       "term": "Ids–Vds relationship",
       "definition": "MOS transistor behaviour in which gate-induced channel charge Qc is moved from drain to source by Vds, so Ids depends on both Vgs and Vds.",
-      "formula": "",
+      "formula": "I_{DS}=\\mu_{n}C_{ox}\\frac{W}{L}\\left[(V_{GS}-V_{t})V_{DS}-\\frac{V_{DS}^{2}}{2}\\right]",
+      "diagram": "mosfet-curves",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -246,7 +254,7 @@
       "id": "threshold-voltage-vt",
       "term": "Threshold voltage (Vt)",
       "definition": "Minimum gate voltage needed to neutralise stored charges in the dielectric and invert the silicon beneath the gate, switching an enhancement-mode transistor on.",
-      "formula": "",
+      "formula": "V_{t}=V_{FB}+2\\phi_{F}+\\frac{Q_{B}}{C_{ox}}",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -257,7 +265,7 @@
       "id": "body-effect",
       "term": "Body effect",
       "definition": "Increase in threshold voltage of a MOS transistor as its source-to-substrate bias VSB rises, caused by depletion of charge carriers from the channel.",
-      "formula": "ΔVt = ±γ (√(2ΦF + |VSB|) − √(2ΦF))",
+      "formula": "\\Delta V_{t}=\\gamma\\left(\\sqrt{2\\phi_{F}+V_{SB}}-\\sqrt{2\\phi_{F}}\\right)",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -268,7 +276,7 @@
       "id": "figure-of-merit-w0",
       "term": "Figure of merit ω₀",
       "definition": "Parameter indicating the frequency response of a MOS circuit, given by the transconductance-to-gate-capacitance ratio; fast circuits need the highest possible gm.",
-      "formula": "ω₀ = gm / Cg",
+      "formula": "\\omega_{0}=\\frac{g_{m}}{C_{g}}",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -279,7 +287,7 @@
       "id": "latch-up",
       "term": "Latch-up",
       "definition": "Hazardous CMOS condition in which the parasitic two-transistor structure forms a self-sustaining low-resistance path between VDD and VSS; it can occur when β1 × β2 > 1.",
-      "formula": "β₁ × β₂ > 1",
+      "formula": "\\beta_{npn}\\beta_{pnp}>1",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -291,7 +299,7 @@
       "id": "pass-transistor",
       "term": "Pass transistor",
       "definition": "A MOS transistor used as a switch in series with lines carrying logic levels, like relay contacts, enabling compact switching-logic arrays.",
-      "formula": "",
+      "formula": "V_{\\text{out}}=V_{DD}-V_{tn}",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -313,7 +321,8 @@
       "id": "cmos-inverter",
       "term": "CMOS inverter",
       "definition": "An inverter with an NMOS pull-down and PMOS pull-up in series between VDD and VSS, giving restored logic levels and near-zero static power.",
-      "formula": "",
+      "formula": "V_{M}=\\frac{V_{DD}+V_{tn}+V_{tp}}{2}",
+      "diagram": "cmos-inverter",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -325,7 +334,8 @@
       "id": "nmos-saturation-region",
       "term": "NMOS saturation region",
       "definition": "Operating region in which the channel pinches off near the drain, so Ids becomes independent of Vds and the device acts like a current source.",
-      "formula": "",
+      "formula": "I_{DS}=\\frac{\\mu_{n}C_{ox}}{2}\\frac{W}{L}(V_{GS}-V_{t})^{2}",
+      "diagram": "mosfet-curves",
       "unit": 2,
       "unitTitle": "CMOS Electrical Properties & Verilog Modelling",
       "sources": [
@@ -380,7 +390,7 @@
       "id": "full-adder",
       "term": "Full adder",
       "definition": "Combinational circuit that adds two input bits and a carry-in to produce a sum and carry-out.",
-      "formula": "Sum = a ⊕ b ⊕ c; Cout = ab + bc + ca",
+      "formula": "S=a\\oplus b\\oplus c_{\\text{in}},\\quad C_{\\text{out}}=ab+bc_{\\text{in}}+ac_{\\text{in}}",
       "unit": 3,
       "unitTitle": "Combinational & Sequential Blocks",
       "sources": [
@@ -391,7 +401,7 @@
       "id": "3-to-8-decoder",
       "term": "3-to-8 decoder",
       "definition": "Logic block that converts a 3-bit input code into one of eight mutually exclusive one-hot output lines.",
-      "formula": "",
+      "formula": "\\sum_{i=0}^{7}Y_{i}=1",
       "unit": 3,
       "unitTitle": "Combinational & Sequential Blocks",
       "sources": [
@@ -402,7 +412,7 @@
       "id": "8x3-encoder",
       "term": "8×3 encoder",
       "definition": "Logic block that converts one of eight active input lines into a 3-bit binary output code.",
-      "formula": "",
+      "formula": "n=\\lceil\\log_{2}N\\rceil",
       "unit": 3,
       "unitTitle": "Combinational & Sequential Blocks",
       "sources": [
@@ -414,6 +424,7 @@
       "term": "Stick diagram",
       "definition": "A colour-coded cartoon of a layout capturing topology and layer information, showing components, vias and their relative placement.",
       "formula": "",
+      "diagram": "stick-diagram",
       "unit": 5,
       "unitTitle": "Circuit Design Processes & Layout",
       "sources": [
@@ -436,7 +447,8 @@
       "id": "lambda-based-design-rules",
       "term": "Lambda-based design rules",
       "definition": "Design rules expressed in a single parameter λ that set out mask dimensions in a process- and feature-size-independent way, valid over a range of λ values.",
-      "formula": "",
+      "formula": "L_{\\min}=2\\lambda",
+      "diagram": "cmos-layout",
       "unit": 5,
       "unitTitle": "Circuit Design Processes & Layout",
       "sources": [
@@ -447,7 +459,7 @@
       "id": "scaling-of-mos-circuits",
       "term": "Scaling of MOS circuits",
       "definition": "Shrinking transistor dimensions, interconnect and separations (typically 10–20% linearly) to get smaller, faster, lower-power chips; common models are constant-field and constant-voltage scaling.",
-      "formula": "",
+      "formula": "L'=\\frac{L}{S},\\quad V'=\\frac{V}{S},\\quad P'=\\frac{P}{S^{2}}",
       "unit": 5,
       "unitTitle": "Circuit Design Processes & Layout",
       "sources": [
@@ -459,7 +471,7 @@
       "id": "oxidation",
       "term": "Oxidation",
       "definition": "Fabrication step in which silicon reacts with oxygen at 1000–1200 °C in ultra-clean furnaces; the dry form uses O2 gas and the wet form uses steam.",
-      "formula": "",
+      "formula": "x_{ox}^{2}+Ax_{ox}=B(t+\\tau)",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -470,7 +482,7 @@
       "id": "lithography",
       "term": "Lithography",
       "definition": "Process of transferring a mask pattern to a layer on the chip by spinning photoresist, exposing it to light, developing and then etching, similar to a printing process.",
-      "formula": "",
+      "formula": "R=\\frac{k\\lambda}{NA}",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -481,7 +493,7 @@
       "id": "diffusion",
       "term": "Diffusion",
       "definition": "High-temperature fabrication step in which impurity atoms move from a high-concentration to a low-concentration region through the silicon crystal, setting the desired doping profile.",
-      "formula": "",
+      "formula": "J=-D\\frac{\\partial C}{\\partial x}",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -492,7 +504,7 @@
       "id": "ion-implantation",
       "term": "Ion implantation",
       "definition": "A fabrication step where dopant ions are accelerated and embedded in the crystal lattice, giving accurate reproducible doping.",
-      "formula": "",
+      "formula": "N(x)=\\frac{\\Phi}{\\sqrt{2\\pi}\\Delta R_{p}}\\exp\\left[-\\frac{(x-R_{p})^{2}}{2\\Delta R_{p}^{2}}\\right]",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -514,7 +526,7 @@
       "id": "probe-testing",
       "term": "Probe testing",
       "definition": "Wafer-level electrical check in which needles contact each die's bonding pads and the whole die is exercised; failed dice are marked with ink.",
-      "formula": "",
+      "formula": "Y=e^{-AD_{0}}",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -536,7 +548,7 @@
       "id": "mos-capacitor",
       "term": "MOS capacitor",
       "definition": "An integrated capacitor formed from the gate-to-source capacitance of a MOSFET, whose value depends on gate area.",
-      "formula": "",
+      "formula": "C=\\frac{\\varepsilon_{ox}A}{t_{ox}}",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -547,7 +559,7 @@
       "id": "interpoly-capacitor",
       "term": "Interpoly capacitor",
       "definition": "Near-ideal integrated capacitor formed between two polysilicon layers on thick field oxide, so parasitic effects are minimal but a second poly layer is required.",
-      "formula": "",
+      "formula": "C_{pp}=\\frac{\\varepsilon_{ox}WL}{t_{pp}}",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -558,7 +570,7 @@
       "id": "junction-capacitor",
       "term": "Junction capacitor",
       "definition": "Integrated component formed by a reverse-biased semiconductor boundary whose depletion region acts as the dielectric; used as a varactor and works only under reverse bias.",
-      "formula": "",
+      "formula": "C_{j}=\\frac{C_{j0}}{(1+V_{R}/V_{bi})^{m}}",
       "unit": 6,
       "unitTitle": "IC Technology & Fabrication Process",
       "sources": [
@@ -569,7 +581,7 @@
       "id": "sheet-resistance",
       "term": "Sheet Resistance",
       "definition": "Resistance of a square of thin uniform film, measured between opposite sides and expressed in ohms per square regardless of the square's size.",
-      "formula": "R = Rs·L/W",
+      "formula": "R=R_{s}\\frac{L}{W},\\quad R_{s}=\\frac{\\rho}{t}",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -580,7 +592,7 @@
       "id": "propagation-delay",
       "term": "Propagation Delay",
       "definition": "Time for a signal to reach its destination; for a logic gate, from the input crossing 50% of its level to the output crossing 50%.",
-      "formula": "",
+      "formula": "t_{pd}=\\frac{t_{pHL}+t_{pLH}}{2}",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -591,7 +603,7 @@
       "id": "rc-delay",
       "term": "RC Delay",
       "definition": "Gate delay set by the time constant of the driver's equivalent resistance and the total load capacitance, growing as either increases.",
-      "formula": "τ = R·C",
+      "formula": "t_{pd}=RC\\ln 2\\approx 0.69RC",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -602,7 +614,7 @@
       "id": "fan-out",
       "term": "Fan-Out",
       "definition": "Number of gate inputs driven by the output of one logic gate; each extra load adds capacitance that slows the output transition.",
-      "formula": "",
+      "formula": "N_{\\max}=\\frac{I_{OH}}{I_{IH}}",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -614,7 +626,7 @@
       "id": "buffer-tree",
       "term": "Buffer Tree",
       "definition": "Chain of successively larger buffers used to drive a very large load, instead of wiring one gate to many inputs, to limit total delay.",
-      "formula": "",
+      "formula": "f=\\left(\\frac{C_{L}}{C_{in}}\\right)^{1/N}",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -659,6 +671,7 @@
       "term": "FPGA",
       "definition": "Reprogrammable integrated circuit built from a grid of programmable logic blocks linked by configurable connections, usually loaded from SRAM at power-up.",
       "formula": "",
+      "diagram": "fpga",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -670,7 +683,7 @@
       "id": "lookup-table",
       "term": "Lookup Table",
       "definition": "Small programmable element inside a logic cell that implements a logic function of its inputs, typically four-input.",
-      "formula": "",
+      "formula": "M=2^{n}",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [
@@ -682,6 +695,7 @@
       "term": "Configurable Logic Block",
       "definition": "Basic building unit of a field-programmable array, holding a few logic cells that each combine a lookup table, full adder and flip-flop.",
       "formula": "",
+      "diagram": "fpga",
       "unit": 4,
       "unitTitle": "Delays and Programmable Logic Devices",
       "sources": [

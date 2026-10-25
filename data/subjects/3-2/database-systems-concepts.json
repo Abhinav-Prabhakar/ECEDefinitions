@@ -37,7 +37,7 @@
       "id": "schema",
       "term": "Schema",
       "definition": "Logical data model produced by logical design, expressed in a form that implements the data structures inside a database.",
-      "formula": "",
+      "formula": "\\mathcal{S}=\\{R_1,R_2,\\dots,R_n\\}",
       "unit": 1,
       "unitTitle": "Database Systems and ER Model",
       "sources": [
@@ -86,18 +86,20 @@
       "unitTitle": "Database Systems and ER Model",
       "sources": [
         "dbsc-wiki-er-model#entities-and-relationships"
-      ]
+      ],
+      "diagram": "er-diagram"
     },
     {
       "id": "relationship",
       "term": "Relationship",
       "definition": "Link capturing how entities are related to one another, usually expressed as a verb joining two or more nouns.",
-      "formula": "",
+      "formula": "\\mathrm{card}(R)\\in\\{1{:}1,1{:}N,N{:}1,M{:}N\\}",
       "unit": 1,
       "unitTitle": "Database Systems and ER Model",
       "sources": [
         "dbsc-wiki-er-model#entities-and-relationships"
-      ]
+      ],
+      "diagram": "er-diagram"
     },
     {
       "id": "entity-set",
@@ -136,7 +138,7 @@
       "id": "relation",
       "term": "Relation",
       "definition": "Set of tuples that all share the same header, which pairs attribute names with their data types.",
-      "formula": "",
+      "formula": "R\\subseteq D_1\\times D_2\\times\\cdots\\times D_n",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -147,7 +149,7 @@
       "id": "tuple",
       "term": "Tuple",
       "definition": "Partial function mapping attribute names to atomic values.",
-      "formula": "",
+      "formula": "t:A\\rightharpoonup V",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -169,7 +171,7 @@
       "id": "candidate-key",
       "term": "Candidate key",
       "definition": "Superkey that cannot be further subdivided to form another superkey.",
-      "formula": "",
+      "formula": "K\\subseteq R,\\ K\\to R,\\ \\nexists K'\\subset K:K'\\to R",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -180,7 +182,7 @@
       "id": "primary-key",
       "term": "Primary key",
       "definition": "The one candidate key chosen to identify tuples of a relation, the others being called alternate keys.",
-      "formula": "",
+      "formula": "\\mathrm{PK}\\in\\{K_1,\\dots,K_m\\}",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -191,7 +193,7 @@
       "id": "foreign-key",
       "term": "Foreign key",
       "definition": "Subset of attributes in one relation that corresponds with a key of another relation, whose values must match a tuple there.",
-      "formula": "",
+      "formula": "\\pi_{\\mathrm{FK}}(r_1)\\subseteq\\pi_{K}(r_2)",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -202,7 +204,7 @@
       "id": "relational-schema",
       "term": "Relational schema",
       "definition": "Header together with a predicate of constraints that every relation having that header must satisfy.",
-      "formula": "",
+      "formula": "R(A_1{:}D_1,\\dots,A_n{:}D_n)",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -213,7 +215,7 @@
       "id": "view",
       "term": "View",
       "definition": "Result set of a stored query that presents a limited perspective of the database to a user, computed dynamically as a virtual table.",
-      "formula": "",
+      "formula": "V=\\pi_{A}(\\sigma_{P}(R))",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -235,7 +237,7 @@
       "id": "selection",
       "term": "Selection",
       "definition": "Unary operation that keeps the subset of a relation's tuples satisfying a given condition.",
-      "formula": "",
+      "formula": "\\sigma_{P}(R)=\\{t\\in R\\mid P(t)\\}",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -246,7 +248,7 @@
       "id": "projection",
       "term": "Projection",
       "definition": "Operation that restricts all tuples of a relation to a named set of attributes, removing duplicates.",
-      "formula": "",
+      "formula": "\\pi_{A_1,\\dots,A_k}(R)=\\{t[A_1,\\dots,A_k]\\mid t\\in R\\}",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -257,7 +259,7 @@
       "id": "set-difference",
       "term": "Set difference",
       "definition": "Operation that removes from the first relation the tuples that are found in the second.",
-      "formula": "",
+      "formula": "R-S=\\{t\\mid t\\in R\\land t\\notin S\\}",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -268,7 +270,7 @@
       "id": "cartesian-product",
       "term": "Cartesian product",
       "definition": "Operation whose result size is the product of the sizes of its operands, pairing every tuple of one with every tuple of the other.",
-      "formula": "",
+      "formula": "|R\\times S|=|R|\\cdot|S|",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -279,7 +281,7 @@
       "id": "rename",
       "term": "Rename",
       "definition": "Operation producing a relation identical to the original except that a given attribute is called by a new name.",
-      "formula": "",
+      "formula": "\\rho_{S(A_1,\\dots,A_n)}(R)",
       "unit": 2,
       "unitTitle": "Relational Model and Relational Algebra",
       "sources": [
@@ -312,23 +314,25 @@
       "id": "join",
       "term": "Join",
       "definition": "Clause that combines columns from one or more tables into a new table by matching rows whose fields correspond.",
-      "formula": "",
+      "formula": "R\\bowtie_{\\theta}S=\\{t\\in R\\times S\\mid\\theta(t)\\}",
       "unit": 3,
       "unitTitle": "SQL",
       "sources": [
         "dbsc-wiki-join#overview"
-      ]
+      ],
+      "diagram": "sql-join"
     },
     {
       "id": "inner-join",
       "term": "Inner join",
       "definition": "Join that requires each row in the two joined tables to have matching column values.",
-      "formula": "",
+      "formula": "R\\bowtie S=\\sigma_{R.a=S.b}(R\\times S)",
       "unit": 3,
       "unitTitle": "SQL",
       "sources": [
         "dbsc-wiki-join#inner-join"
-      ]
+      ],
+      "diagram": "sql-join"
     },
     {
       "id": "left-outer-join",
@@ -356,7 +360,7 @@
       "id": "cross-join",
       "term": "Cross join",
       "definition": "Join that returns every possible pairing of rows from the joined tables.",
-      "formula": "",
+      "formula": "R\\bowtie_{\\text{true}}S=R\\times S",
       "unit": 3,
       "unitTitle": "SQL",
       "sources": [
@@ -378,7 +382,7 @@
       "id": "self-join",
       "term": "Self join",
       "definition": "Join of a table to itself, usually through aliases, so rows can be compared with other rows of the same table.",
-      "formula": "",
+      "formula": "\\rho_{S}(R)\\bowtie_{\\theta}R=\\sigma_{\\theta}(\\rho_{S}(R)\\times R)",
       "unit": 3,
       "unitTitle": "SQL",
       "sources": [
@@ -405,7 +409,8 @@
       "unitTitle": "Schema Refinement and Normal Forms",
       "sources": [
         "dbsc-wiki-normalization#overview"
-      ]
+      ],
+      "diagram": "normalization"
     },
     {
       "id": "update-anomaly",
@@ -433,7 +438,7 @@
       "id": "second-normal-form",
       "term": "Second normal form",
       "definition": "Level at which every non-candidate-key attribute depends on the whole candidate key.",
-      "formula": "",
+      "formula": "A\\ \\text{non-prime}\\Rightarrow\\nexists X\\subset K:X\\to A",
       "unit": 4,
       "unitTitle": "Schema Refinement and Normal Forms",
       "sources": [
@@ -444,7 +449,7 @@
       "id": "third-normal-form",
       "term": "Third normal form",
       "definition": "Level at which every non-trivial functional dependency either begins with a superkey or ends with a prime attribute.",
-      "formula": "",
+      "formula": "X\\to A\\ \\text{non-trivial}\\Rightarrow X\\to R\\ \\lor\\ A\\ \\text{prime}",
       "unit": 4,
       "unitTitle": "Schema Refinement and Normal Forms",
       "sources": [
@@ -455,7 +460,7 @@
       "id": "boyce-codd-normal-form",
       "term": "Boyce-Codd normal form",
       "definition": "Stricter form of the third normal form, in which every non-trivial functional dependency begins with a superkey.",
-      "formula": "",
+      "formula": "X\\to A\\ \\text{non-trivial}\\Rightarrow X\\to R",
       "unit": 4,
       "unitTitle": "Schema Refinement and Normal Forms",
       "sources": [
@@ -466,7 +471,7 @@
       "id": "fourth-normal-form",
       "term": "Fourth normal form",
       "definition": "Level at which every non-trivial multivalued dependency begins with a superkey.",
-      "formula": "",
+      "formula": "X\\twoheadrightarrow Y\\Rightarrow X\\to R",
       "unit": 4,
       "unitTitle": "Schema Refinement and Normal Forms",
       "sources": [
@@ -477,12 +482,13 @@
       "id": "transaction",
       "term": "Transaction",
       "definition": "Unit of work performed within a database management system, possibly involving multiple operations.",
-      "formula": "",
+      "formula": "T_i=o_{i1}o_{i2}\\cdots o_{ik}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
         "dbsc-wiki-transaction#overview"
-      ]
+      ],
+      "diagram": "transaction"
     },
     {
       "id": "atomicity",
@@ -499,7 +505,7 @@
       "id": "consistency",
       "term": "Consistency",
       "definition": "ACID property by which a transaction must conform to the existing constraints in the database.",
-      "formula": "",
+      "formula": "\\mathrm{DB}\\models\\mathcal{C}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -521,29 +527,31 @@
       "id": "durability",
       "term": "Durability",
       "definition": "ACID property by which a transaction's changes must be written to persistent storage.",
-      "formula": "",
+      "formula": "c_i\\Rightarrow\\text{changes}(T_i)\\in\\text{stable storage}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
         "dbsc-wiki-transaction#acid"
-      ]
+      ],
+      "diagram": "disk-layout"
     },
     {
       "id": "schedule",
       "term": "Schedule",
       "definition": "Abstract model describing the order of executions in a set of transactions running in the system.",
-      "formula": "",
+      "formula": "S=o_1o_2\\cdots o_n,\\ o_k\\in\\{r_i(X),w_i(X)\\}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
         "dbsc-wiki-serializability#schedule"
-      ]
+      ],
+      "diagram": "transaction"
     },
     {
       "id": "serial-schedule",
       "term": "Serial schedule",
       "definition": "Schedule in which the executed transactions are non-interleaved.",
-      "formula": "",
+      "formula": "S=T_{\\pi(1)}\\,T_{\\pi(2)}\\cdots T_{\\pi(n)}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -554,7 +562,7 @@
       "id": "conflict-serializability",
       "term": "Conflict serializability",
       "definition": "Property of a schedule that is conflict-equivalent to one or more serial schedules.",
-      "formula": "",
+      "formula": "G(S)\\ \\text{acyclic}\\iff S\\ \\text{conflict-serializable}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -565,7 +573,7 @@
       "id": "recoverable-schedule",
       "term": "Recoverable schedule",
       "definition": "Schedule in which transactions commit only after all transactions whose changes they read have committed.",
-      "formula": "",
+      "formula": "T_j\\ \\text{reads}\\ T_i\\Rightarrow c_i<_S c_j",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -587,7 +595,7 @@
       "id": "shared-lock",
       "term": "Shared lock",
       "definition": "Read lock that permits reading an object and may be held by several transactions at once if none holds a write lock.",
-      "formula": "",
+      "formula": "\\mathrm{comp}(S,S)=\\text{true},\\ \\mathrm{comp}(S,X)=\\text{false}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -598,7 +606,7 @@
       "id": "exclusive-lock",
       "term": "Exclusive lock",
       "definition": "Write lock required to write an object, which blocks other transactions from holding any lock on it.",
-      "formula": "",
+      "formula": "\\mathrm{comp}(X,S)=\\mathrm{comp}(X,X)=\\text{false}",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -609,7 +617,7 @@
       "id": "write-ahead-logging",
       "term": "Write-ahead logging",
       "definition": "Family of techniques that provide atomicity and durability by logging each change to disk before the data pages are modified.",
-      "formula": "",
+      "formula": "\\text{flush}(\\text{log})\\prec\\text{flush}(\\text{page})",
       "unit": 5,
       "unitTitle": "Transaction Management",
       "sources": [
@@ -631,18 +639,19 @@
       "id": "database-index",
       "term": "Database index",
       "definition": "Data structure that speeds up data retrieval operations on a database table, at the cost of extra writes and storage.",
-      "formula": "",
+      "formula": "T_{\\text{lookup}}=O(\\log_B n)",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
         "dbsc-wiki-index#overview"
-      ]
+      ],
+      "diagram": "b-tree"
     },
     {
       "id": "clustered-index",
       "term": "Clustered index",
       "definition": "Index that alters the table's data blocks into the same order as the index, so only one is allowed per table.",
-      "formula": "",
+      "formula": "\\text{order}_{\\text{phys}}(R)=\\text{order}(K)",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
@@ -675,7 +684,7 @@
       "id": "dense-index",
       "term": "Dense index",
       "definition": "File of key and pointer pairs with an entry for every record in the data file.",
-      "formula": "",
+      "formula": "|I|=|R|",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
@@ -686,7 +695,7 @@
       "id": "sparse-index",
       "term": "Sparse index",
       "definition": "File of key and pointer pairs with an entry for every block, rather than every record, of the data file.",
-      "formula": "",
+      "formula": "|I|=B(R)",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
@@ -697,7 +706,7 @@
       "id": "covering-index",
       "term": "Covering index",
       "definition": "Index that itself contains the required data fields, so a query can be answered without reading table rows.",
-      "formula": "",
+      "formula": "\\mathrm{cols}(Q)\\subseteq\\mathrm{cols}(I)",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
@@ -708,18 +717,19 @@
       "id": "b-tree",
       "term": "B+ tree",
       "definition": "Tree with a variable but often large number of children per node, keeping data in linked leaves below key-only interior nodes.",
-      "formula": "",
+      "formula": "h\\le\\log_{\\lceil m/2\\rceil}\\left(\\frac{n+1}{2}\\right)",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
         "dbsc-wiki-bplus#overview"
-      ]
+      ],
+      "diagram": "b-tree"
     },
     {
       "id": "branching-factor",
       "term": "Branching factor",
       "definition": "Measure of the capacity of interior nodes of a B+ tree, setting the maximum number of their direct children.",
-      "formula": "",
+      "formula": "m=\\left\\lfloor\\frac{B}{K+P}\\right\\rfloor",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
@@ -730,23 +740,25 @@
       "id": "hash-function",
       "term": "Hash function",
       "definition": "Function that maps the universe of keys to indices or slots within a table.",
-      "formula": "",
+      "formula": "h:U\\to\\{0,1,\\dots,m-1\\}",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
         "dbsc-wiki-hashtable#hash-function"
-      ]
+      ],
+      "diagram": "hash-table"
     },
     {
       "id": "hash-collision",
       "term": "Hash collision",
       "definition": "Situation in which a hash function generates the same index for more than one key.",
-      "formula": "",
+      "formula": "h(k_1)=h(k_2),\\ k_1\\neq k_2",
       "unit": 6,
       "unitTitle": "Storage and Indexing",
       "sources": [
         "dbsc-wiki-hashtable#collisions"
-      ]
+      ],
+      "diagram": "hash-table"
     }
   ]
 }

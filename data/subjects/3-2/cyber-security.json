@@ -19,24 +19,26 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.7"
-      ]
+      ],
+      "diagram": "cyber-attack"
     },
     {
       "id": "confidentiality",
       "term": "Confidentiality",
       "definition": "Preventing the disclosure of data to unauthorized parties while keeping shared information private and anonymous.",
-      "formula": "",
+      "formula": "H(M\\mid C)=H(M)",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.13"
-      ]
+      ],
+      "diagram": "encryption"
     },
     {
       "id": "integrity",
       "term": "Integrity",
       "definition": "Protection of information from modification or deletion by unauthorized parties.",
-      "formula": "",
+      "formula": "H(m')=H(m)",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
@@ -47,7 +49,7 @@
       "id": "availability",
       "term": "Availability",
       "definition": "Ensuring that authorized parties can access information and system resources whenever they are needed.",
-      "formula": "",
+      "formula": "A=\\frac{\\text{MTBF}}{\\text{MTBF}+\\text{MTTR}}",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
@@ -80,7 +82,7 @@
       "id": "risk",
       "term": "Risk",
       "definition": "Product of the probability of an attack and the potential loss that may result.",
-      "formula": "",
+      "formula": "R=P_{\\text{attack}}\\,L",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
@@ -162,7 +164,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.30"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "dos-attack",
@@ -195,7 +198,8 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.35"
-      ]
+      ],
+      "diagram": "ip-packet"
     },
     {
       "id": "security-policy",
@@ -206,13 +210,14 @@
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
         "cys-snist-cybersecurity-unit-1#slide.48"
-      ]
+      ],
+      "diagram": "firewall"
     },
     {
       "id": "non-repudiation",
       "term": "Non-repudiation",
       "definition": "Guarantee against denial by a party that it created or sent a particular message.",
-      "formula": "",
+      "formula": "\\text{Verify}_{\\text{PK}_A}(m,\\sigma)=1",
       "unit": 1,
       "unitTitle": "Introduction to Cyber Security",
       "sources": [
@@ -305,7 +310,8 @@
       "unitTitle": "Cyber Forensics",
       "sources": [
         "cys-snist-cybersecurity-unit-2#slide.17"
-      ]
+      ],
+      "diagram": "pki"
     },
     {
       "id": "admissibility-of-evidence",
@@ -360,7 +366,8 @@
       "unitTitle": "Cyber Security: Organizational Implications",
       "sources": [
         "cys-snist-cybersecurity-unit-4#slide.3"
-      ]
+      ],
+      "diagram": "cyber-attack"
     },
     {
       "id": "insider-threat",

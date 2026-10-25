@@ -74,7 +74,8 @@
       "unitTitle": "Introduction to Python",
       "sources": [
         "pp-unit-i-dr-pl#slide.26"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "if-statement",
@@ -212,7 +213,7 @@
       "id": "indexing",
       "term": "Indexing",
       "definition": "Accessing an element of a sequence by its position, starting at zero.",
-      "formula": "",
+      "formula": "s[i],\\ 0\\le i\\le n-1",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
@@ -223,7 +224,7 @@
       "id": "slicing",
       "term": "Slicing",
       "definition": "Extracting a substring or subsequence using the [start:end:step] operator.",
-      "formula": "",
+      "formula": "s[a:b]=\\{s_i\\mid 0\\le a\\le i<b\\le n\\}",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
@@ -239,7 +240,8 @@
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
         "pp-unit-ii-dr-pl#slide.13"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "tuple",
@@ -256,12 +258,13 @@
       "id": "dictionary",
       "term": "Dictionary",
       "definition": "Collection storing data in key:value pairs that is ordered, changeable and allows no duplicate keys.",
-      "formula": "",
+      "formula": "T_{\\text{avg}}=O(1),\\quad T_{\\text{worst}}=O(n)",
       "unit": 2,
       "unitTitle": "Strings, Collections, Modules and Exceptions",
       "sources": [
         "pp-unit-ii-dr-pl#slide.36"
-      ]
+      ],
+      "diagram": "hash-table"
     },
     {
       "id": "module",
@@ -487,7 +490,7 @@
       "id": "read",
       "term": "read()",
       "definition": "Method that returns up to a given number of characters or bytes, or the entire contents when no size is given.",
-      "formula": "f.read(size)",
+      "formula": "n=\\min(\\text{size},\\,N_{\\text{rem}})",
       "unit": 4,
       "unitTitle": "File Handling and Serialization",
       "sources": [
@@ -498,7 +501,7 @@
       "id": "seek",
       "term": "seek()",
       "definition": "Method that moves the current position to an offset measured from the start, the current position or the end.",
-      "formula": "f.seek(offset, whence)",
+      "formula": "p'=p_{\\text{base}}+\\text{offset}",
       "unit": 4,
       "unitTitle": "File Handling and Serialization",
       "sources": [
@@ -575,7 +578,7 @@
       "id": "root-window",
       "term": "Root window",
       "definition": "Top-level container created by calling Tk() that initializes the toolkit and parents every other interface element.",
-      "formula": "root = tk.Tk()",
+      "formula": "",
       "unit": 5,
       "unitTitle": "GUI Programming with Tkinter",
       "sources": [
@@ -586,7 +589,7 @@
       "id": "mainloop",
       "term": "mainloop()",
       "definition": "Method that starts the event-processing cycle, keeping the interface responsive to user input until the application quits.",
-      "formula": "root.mainloop()",
+      "formula": "",
       "unit": 5,
       "unitTitle": "GUI Programming with Tkinter",
       "sources": [
@@ -641,7 +644,7 @@
       "id": "event-binding",
       "term": "Event binding",
       "definition": "Association of a callback with an input pattern such as <Enter> or <Return>, so the function receives a notification object when triggered.",
-      "formula": "widget.bind(sequence, func)",
+      "formula": "",
       "unit": 5,
       "unitTitle": "GUI Programming with Tkinter",
       "sources": [
@@ -652,7 +655,7 @@
       "id": "ndarray",
       "term": "ndarray",
       "definition": "Homogeneous N-dimensional array type at the core of NumPy, with fixed total size and a rectangular, non-jagged shape.",
-      "formula": "",
+      "formula": "N_{\\text{elem}}=\\prod_{i=1}^{d}n_i",
       "unit": 6,
       "unitTitle": "NumPy, pandas and Matplotlib",
       "sources": [
@@ -663,7 +666,7 @@
       "id": "dtype",
       "term": "dtype",
       "definition": "Attribute recording the single data type shared by all elements of an array, such as int64 or float64.",
-      "formula": "",
+      "formula": "n\\in[-2^{63},\\,2^{63}-1]",
       "unit": 6,
       "unitTitle": "NumPy, pandas and Matplotlib",
       "sources": [
@@ -718,7 +721,7 @@
       "id": "nan",
       "term": "NaN",
       "definition": "Floating-point placeholder for absent values that pandas skips in computations by default and handles through dropna and fillna.",
-      "formula": "np.nan",
+      "formula": "",
       "unit": 6,
       "unitTitle": "NumPy, pandas and Matplotlib",
       "sources": [

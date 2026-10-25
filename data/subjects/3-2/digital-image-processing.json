@@ -15,7 +15,7 @@
       "id": "digital-image",
       "term": "Digital image",
       "definition": "Picture made of discrete elements, each holding a finite numeric intensity value.",
-      "formula": "",
+      "formula": "I(x,y)\\in\\{0,1,\\ldots,2^{b}-1\\}",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
@@ -38,7 +38,7 @@
       "id": "raster-image",
       "term": "Raster image",
       "definition": "Image stored as a fixed grid of rows and columns of picture elements, also called a bitmapped image.",
-      "formula": "",
+      "formula": "N_{\\text{pixels}}=M\\times N",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
@@ -50,7 +50,7 @@
       "id": "image-model",
       "term": "Image model",
       "definition": "Two-dimensional function of spatial coordinates x and y whose value at each point is the intensity or gray level.",
-      "formula": "",
+      "formula": "0\\le f(x,y)\\le L-1",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
@@ -61,103 +61,111 @@
       "id": "bit-depth",
       "term": "Bit depth",
       "definition": "Number of bits stored per picture element, which fixes how many distinct intensity or colour values it can represent.",
-      "formula": "",
+      "formula": "L=2^{b}",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
         "dip-wikipedia-pixel#para.21",
         "dip-wikipedia-quantization-signal-processing#para.11"
-      ]
+      ],
+      "diagram": "quantization"
     },
     {
       "id": "quantization",
       "term": "Quantization",
       "definition": "Mapping of values from a large, often continuous, set onto a smaller countable set of levels.",
-      "formula": "",
+      "formula": "Q(x)=\\Delta\\left\\lfloor\\frac{x}{\\Delta}+\\frac{1}{2}\\right\\rfloor",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
         "dip-wikipedia-quantization-signal-processing#para.2",
         "dip-wikipedia-digital-image#para.2"
-      ]
+      ],
+      "diagram": "quantization"
     },
     {
       "id": "image-sensor",
       "term": "Image sensor",
       "definition": "Device that converts light into digital data, from which cameras produce standard image files.",
-      "formula": "",
+      "formula": "I(x,y)=k\\int_{0}^{T}E(x,y,t)\\,dt",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
         "dip-wikipedia-digital-image-processing#para.4",
         "dip-wikipedia-digital-image-processing#para.7"
-      ]
+      ],
+      "diagram": "sampling"
     },
     {
       "id": "convolution",
       "term": "Convolution",
       "definition": "Operation in which each output pixel is a weighted sum of neighbouring input pixels, with weights taken from a small kernel.",
-      "formula": "",
+      "formula": "g(x,y)=\\sum_{m}\\sum_{n}f(x-m,y-n)\\,h(m,n)",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
         "dip-wikipedia-kernel-image-processing#para.5",
         "dip-wikipedia-kernel-image-processing#para.1"
-      ]
+      ],
+      "diagram": "convolution-2d"
     },
     {
       "id": "cross-correlation",
       "term": "Cross-correlation",
       "definition": "Similarity measure obtained by sliding a template over an image and summing products of overlapping values; higher means a better match.",
-      "formula": "",
+      "formula": "c(u,v)=\\sum_{x}\\sum_{y}f(x,y)\\,t(x-u,y-v)",
       "unit": 1,
       "unitTitle": "Digital Image Fundamentals",
       "sources": [
         "dip-wikipedia-template-matching#para.10",
         "dip-wikipedia-template-matching#para.11"
-      ]
+      ],
+      "diagram": "convolution-2d"
     },
     {
       "id": "discrete-cosine-transform",
       "term": "Discrete cosine transform",
       "definition": "Transform that rewrites a finite set of values as a combination of cosine waves at different frequencies, using only real numbers.",
-      "formula": "",
+      "formula": "C(u)=\\alpha(u)\\sum_{x=0}^{N-1}f(x)\\cos\\frac{(2x+1)u\\pi}{2N}",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
         "dip-wikipedia-discrete-cosine-transform#para.1",
         "dip-wikipedia-discrete-cosine-transform#para.2"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "energy-compaction",
       "term": "Energy compaction",
       "definition": "Property of concentrating most of a signal's information in a few low-frequency coefficients, enabling high compression with good quality.",
-      "formula": "",
+      "formula": "\\frac{\\sum_{k=0}^{K-1}|C_k|^2}{\\sum_{k=0}^{N-1}|C_k|^2}\\approx 1,\\quad K\\ll N",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
         "dip-wikipedia-discrete-cosine-transform#para.5",
         "dip-wikipedia-discrete-cosine-transform#para.13"
-      ]
+      ],
+      "diagram": "fourier"
     },
     {
       "id": "walsh-hadamard-transform",
       "term": "Walsh-Hadamard transform",
       "definition": "Orthogonal, symmetric, self-inverse linear operation on 2^m numbers that acts as a generalized Fourier transform using only plus and minus signs.",
-      "formula": "",
+      "formula": "W(u)=\\frac{1}{\\sqrt{N}}\\sum_{x=0}^{N-1}f(x)(-1)^{\\sum_{i}b_i(x)b_i(u)}",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
         "dip-wikipedia-hadamard-transform#para.1",
         "dip-wikipedia-hadamard-transform#para.15"
-      ]
+      ],
+      "diagram": "fft-stages"
     },
     {
       "id": "hadamard-matrix",
       "term": "Hadamard matrix",
       "definition": "Square matrix of size 2^m with entries of only +1 and -1, buildable recursively or by Kronecker products; its rows are Walsh functions.",
-      "formula": "",
+      "formula": "H_{m}H_{m}^{\\mathrm{T}}=2^{m}I_{2^{m}}",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
@@ -170,7 +178,7 @@
       "id": "haar-transform",
       "term": "Haar transform",
       "definition": "Wavelet transform, among the oldest, that compares a signal with shifted and stretched copies of the simplest box-shaped wavelet.",
-      "formula": "",
+      "formula": "c_{j,k}=\\int f(t)\\,2^{j/2}\\psi(2^{j}t-k)\\,dt",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
@@ -183,18 +191,19 @@
       "id": "karhunen-loeve-transform",
       "term": "Karhunen-Loeve transform",
       "definition": "Expansion in orthogonal functions that are eigenfunctions of the covariance, giving uncorrelated coefficients; also called the Hotelling or eigenvector transform.",
-      "formula": "",
+      "formula": "\\mathbf{C}_{x}\\mathbf{e}_{k}=\\lambda_{k}\\mathbf{e}_{k}",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
         "dip-wikipedia-karhunen-loeve-theorem#para.1"
-      ]
+      ],
+      "diagram": "eigen-directions"
     },
     {
       "id": "radon-transform",
       "term": "Radon transform",
       "definition": "Integral transform, introduced in 1917, that maps a function on the plane to its line integrals along every line.",
-      "formula": "",
+      "formula": "R(\\rho,\\theta)=\\iint f(x,y)\\,\\delta(\\rho-x\\cos\\theta-y\\sin\\theta)\\,dx\\,dy",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
@@ -205,7 +214,7 @@
       "id": "sinogram",
       "term": "Sinogram",
       "definition": "Collection of line-integral data from a Radon transform, named because an off-centre point source traces a sine-shaped curve.",
-      "formula": "",
+      "formula": "\\rho(\\theta)=x_{0}\\cos\\theta+y_{0}\\sin\\theta",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
@@ -216,7 +225,7 @@
       "id": "hough-transform",
       "term": "Hough transform",
       "definition": "Feature-extraction method that detects shapes by letting image points vote for the parameter values of candidate shapes.",
-      "formula": "",
+      "formula": "A(\\rho,\\theta)=\\sum_{i}\\delta(\\rho-x_{i}\\cos\\theta-y_{i}\\sin\\theta)",
       "unit": 2,
       "unitTitle": "Image Transforms",
       "sources": [
@@ -238,80 +247,87 @@
       "id": "image-histogram",
       "term": "Image histogram",
       "definition": "Count of how many pixels in an image take each intensity value.",
-      "formula": "",
+      "formula": "h(r_{k})=n_{k},\\quad k=0,1,\\ldots,L-1",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-histogram-equalization#para.28"
-      ]
+      ],
+      "diagram": "histogram"
     },
     {
       "id": "histogram-equalization",
       "term": "Histogram equalization",
       "definition": "Contrast-adjustment method that uses the cumulative distribution of intensities to spread the most common values across the full range.",
-      "formula": "",
+      "formula": "s_{k}=(L-1)\\sum_{j=0}^{k}p_{r}(r_{j})",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-histogram-equalization#para.1",
         "dip-wikipedia-histogram-equalization#para.11",
         "dip-wikipedia-histogram-equalization#para.12"
-      ]
+      ],
+      "diagram": "histogram"
     },
     {
       "id": "adaptive-histogram-equalization",
       "term": "Adaptive histogram equalization",
       "definition": "Variant that builds several sub-histograms to emphasise local contrast rather than overall global contrast.",
-      "formula": "",
+      "formula": "s(x,y)=(L-1)\\,\\text{CDF}_{w}\\left(f(x,y)\\right)",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-histogram-equalization#para.6"
-      ]
+      ],
+      "diagram": "histogram"
     },
     {
       "id": "spatial-filtering",
       "term": "Spatial filtering",
       "definition": "Processing in which each output pixel is a function of nearby input pixels, with a small kernel defining that function.",
-      "formula": "",
+      "formula": "g(x,y)=\\sum_{s}\\sum_{t}w(s,t)\\,f(x+s,y+t)",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-kernel-image-processing#para.1"
-      ]
+      ],
+      "diagram": "convolution-2d"
     },
     {
       "id": "smoothing-filter",
       "term": "Smoothing filter",
       "definition": "Kernel with uniform or bell-shaped weights that averages neighbouring pixels to soften an image.",
-      "formula": "",
+      "formula": "g(x,y)=\\frac{1}{mn}\\sum_{s=-a}^{a}\\sum_{t=-b}^{b}f(x+s,y+t)",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-kernel-image-processing#para.3"
-      ]
+      ],
+      "diagram": "gaussian"
     },
     {
       "id": "sharpening-filter",
       "term": "Sharpening filter",
       "definition": "Kernel with a large positive centre and negative neighbours that exaggerates local contrast.",
-      "formula": "",
+      "formula": "g(x,y)=f(x,y)+\\alpha\\left[f(x,y)-\\bar{f}(x,y)\\right]",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-kernel-image-processing#para.3"
-      ]
+      ],
+      "diagram": "filter-response"
     },
     {
       "id": "frequency-domain-filtering",
       "term": "Frequency-domain filtering",
       "definition": "Blurring or sharpening an image by masking chosen ranges of frequencies in its Fourier transform.",
-      "formula": "",
+      "formula": "G(u,v)=H(u,v)\\,F(u,v)",
       "unit": 3,
       "unitTitle": "Image Enhancement",
       "sources": [
         "dip-wikipedia-digital-image-processing#para.15"
-      ]
+      ],
+      "diagram": "filter-response"
     },
     {
       "id": "boundary-handling",
@@ -340,18 +356,19 @@
       "id": "degradation-model",
       "term": "Degradation model",
       "definition": "Observed signal expressed as the original convolved with a known system response plus independent additive noise.",
-      "formula": "",
+      "formula": "g(x,y)=h(x,y)*f(x,y)+n(x,y)",
       "unit": 4,
       "unitTitle": "Image Restoration",
       "sources": [
         "dip-wikipedia-wiener-deconvolution#para.4"
-      ]
+      ],
+      "diagram": "convolution-2d"
     },
     {
       "id": "deconvolution",
       "term": "Deconvolution",
       "definition": "Operation that undoes the effect of a known system response on a signal, at the risk of amplifying noise where the signal is weak.",
-      "formula": "",
+      "formula": "\\hat{f}(x,y)=h^{-1}(x,y)*g(x,y)",
       "unit": 4,
       "unitTitle": "Image Restoration",
       "sources": [
@@ -363,7 +380,7 @@
       "id": "inverse-filtering",
       "term": "Inverse filtering",
       "definition": "Restoration that divides out the system response; it is the limiting case of the Wiener filter when noise is zero.",
-      "formula": "",
+      "formula": "\\hat{F}(u,v)=\\frac{G(u,v)}{H(u,v)}",
       "unit": 4,
       "unitTitle": "Image Restoration",
       "sources": [
@@ -375,7 +392,7 @@
       "id": "wiener-filter",
       "term": "Wiener filter",
       "definition": "Frequency-domain restoration filter that minimises the impact of amplified noise at frequencies with poor signal-to-noise ratio.",
-      "formula": "",
+      "formula": "\\hat{F}(u,v)=\\frac{H^{*}(u,v)}{|H(u,v)|^{2}+S_{n}/S_{f}}\\,G(u,v)",
       "unit": 4,
       "unitTitle": "Image Restoration",
       "sources": [
@@ -386,7 +403,7 @@
       "id": "minimum-mean-square-error",
       "term": "Minimum mean square error",
       "definition": "Criterion choosing an estimate that minimises the expected squared difference between the true signal and the estimate.",
-      "formula": "",
+      "formula": "\\hat{f}=\\arg\\min_{\\hat{f}}\\mathbb{E}\\left[(f-\\hat{f})^{2}\\right]",
       "unit": 4,
       "unitTitle": "Image Restoration",
       "sources": [
@@ -398,7 +415,7 @@
       "id": "signal-to-noise-ratio",
       "term": "Signal-to-noise ratio",
       "definition": "Quotient of the wanted spectrum divided by the unwanted spectrum at each frequency, low where the wanted part is weak.",
-      "formula": "",
+      "formula": "\\text{SNR}(u,v)=\\frac{|F(u,v)|^{2}}{|N(u,v)|^{2}}",
       "unit": 4,
       "unitTitle": "Image Restoration",
       "sources": [
@@ -410,18 +427,19 @@
       "id": "edge-detection",
       "term": "Edge detection",
       "definition": "Family of methods for finding curves in an image where brightness changes sharply.",
-      "formula": "",
+      "formula": "|\\nabla f|=\\sqrt{f_{x}^{2}+f_{y}^{2}}",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
         "dip-wikipedia-edge-detection#para.1"
-      ]
+      ],
+      "diagram": "edge-detection"
     },
     {
       "id": "edge-linking",
       "term": "Edge linking",
       "definition": "Procedure that joins thin edge pixels into continuous curves, also called edge tracking.",
-      "formula": "",
+      "formula": "\\|\\mathbf{p}-\\mathbf{q}\\|\\le d_{\\max},\\quad |\\theta_{p}-\\theta_{q}|\\le\\Delta\\theta",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -432,7 +450,7 @@
       "id": "image-segmentation",
       "term": "Image segmentation",
       "definition": "Dividing a digital image into groups of pixels sharing a visual trait so that the image is easier to analyse.",
-      "formula": "",
+      "formula": "I=\\bigcup_{i}R_{i},\\quad R_{i}\\cap R_{j}=\\varnothing\\ (i\\neq j)",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -443,7 +461,7 @@
       "id": "region-growing",
       "term": "Region growing",
       "definition": "Segmentation that builds regions outward from starting points by adding neighbouring pixels whose values closely match the region.",
-      "formula": "",
+      "formula": "|f(q)-\\mu_{R}|\\le T",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -454,7 +472,7 @@
       "id": "region-splitting-and-merging",
       "term": "Region splitting and merging",
       "definition": "Segmentation that recursively divides non-uniform areas into quadrants, then combines adjacent uniform blocks into larger regions.",
-      "formula": "",
+      "formula": "\\max_{p\\in R}f(p)-\\min_{p\\in R}f(p)\\le T",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -465,7 +483,7 @@
       "id": "structuring-element",
       "term": "Structuring element",
       "definition": "Small predefined shape used as a probe, placed at different positions to reveal how it fits the shapes in an image.",
-      "formula": "",
+      "formula": "B_{z}=\\{b+z\\mid b\\in B\\}",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -476,7 +494,7 @@
       "id": "dilation",
       "term": "Dilation",
       "definition": "Union of copies of an image shifted by each point of the probe shape, which grows objects.",
-      "formula": "",
+      "formula": "A\\oplus B=\\{z\\mid (B)_{z}\\cap A\\neq\\varnothing\\}",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -487,7 +505,7 @@
       "id": "erosion",
       "term": "Erosion",
       "definition": "Set of positions where the probe shape, placed there, lies entirely inside the image, which shrinks objects.",
-      "formula": "",
+      "formula": "A\\ominus B=\\{z\\mid (B)_{z}\\subseteq A\\}",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -498,7 +516,7 @@
       "id": "opening",
       "term": "Opening",
       "definition": "Morphological operation of shrinking then growing with the same probe, which smooths outlines and removes thin protrusions.",
-      "formula": "",
+      "formula": "A\\circ B=(A\\ominus B)\\oplus B",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -510,7 +528,7 @@
       "id": "closing",
       "term": "Closing",
       "definition": "Morphological operation of growing then shrinking with the same probe, which fills small gaps and holes.",
-      "formula": "",
+      "formula": "A\\bullet B=(A\\oplus B)\\ominus B",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -521,7 +539,7 @@
       "id": "minimum-distance-classifier",
       "term": "Minimum distance classifier",
       "definition": "Model that gives an observation the label of the class whose average training vector lies closest to it.",
-      "formula": "",
+      "formula": "\\hat{\\omega}=\\arg\\min_{i}\\|\\mathbf{x}-\\boldsymbol{\\mu}_{i}\\|",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -533,7 +551,7 @@
       "id": "correlation-matching",
       "term": "Correlation matching",
       "definition": "Locating a template in an image by sliding it across every position and keeping the position with the highest sum of products.",
-      "formula": "",
+      "formula": "(\\hat{u},\\hat{v})=\\arg\\max_{u,v}\\sum_{x,y}f(x,y)\\,t(x-u,y-v)",
       "unit": 5,
       "unitTitle": "Image Segmentation and Recognition",
       "sources": [
@@ -546,7 +564,7 @@
       "id": "image-compression",
       "term": "Image compression",
       "definition": "Reducing the size of image data to cut storage and transmission cost.",
-      "formula": "",
+      "formula": "\\text{CR}=\\frac{n_{\\text{orig}}}{n_{\\text{comp}}}",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -558,7 +576,7 @@
       "id": "lossy-compression",
       "term": "Lossy compression",
       "definition": "Compression that discards some data to obtain much smaller files, suited to photographs where small losses are acceptable.",
-      "formula": "",
+      "formula": "\\text{MSE}=\\frac{1}{MN}\\sum_{x,y}\\left[f(x,y)-\\hat{f}(x,y)\\right]^{2}",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -570,7 +588,7 @@
       "id": "lossless-compression",
       "term": "Lossless compression",
       "definition": "Compression that preserves every original value, suited to archives, medical imaging and technical drawings.",
-      "formula": "",
+      "formula": "\\hat{f}(x,y)=f(x,y)",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -581,7 +599,7 @@
       "id": "huffman-coding",
       "term": "Huffman coding",
       "definition": "Method for building an optimal prefix code from symbol probabilities by repeatedly merging the two lowest-weight nodes of a tree.",
-      "formula": "",
+      "formula": "\\bar{L}=\\sum_{i=1}^{K}p_{i}\\ell_{i}",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -593,7 +611,7 @@
       "id": "run-length-encoding",
       "term": "Run-length encoding",
       "definition": "Lossless method that replaces each run of identical values with one copy of the value and a count of its repeats.",
-      "formula": "",
+      "formula": "\\text{CR}=\\frac{N}{2k}",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -604,7 +622,7 @@
       "id": "arithmetic-coding",
       "term": "Arithmetic coding",
       "definition": "Lossless entropy coder that represents a whole message as one fraction in [0, 1) by repeatedly subdividing an interval by symbol probabilities.",
-      "formula": "",
+      "formula": "l'=l+p_{<s}(u-l),\\quad u'=l+p_{\\le s}(u-l)",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -616,19 +634,20 @@
       "id": "vector-quantization",
       "term": "Vector quantization",
       "definition": "Technique that models probability densities with prototype vectors, sending the index of the nearest codeword instead of the values themselves.",
-      "formula": "",
+      "formula": "\\hat{\\mathbf{x}}=\\mathbf{c}_{k},\\quad k=\\arg\\min_{j}\\|\\mathbf{x}-\\mathbf{c}_{j}\\|",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
         "dip-wikipedia-vector-quantization#para.1",
         "dip-wikipedia-vector-quantization#para.14"
-      ]
+      ],
+      "diagram": "kmeans"
     },
     {
       "id": "block-truncation-coding",
       "term": "Block truncation coding",
       "definition": "Lossy method for grayscale images that reduces brightness levels in small blocks while preserving each block's mean and spread.",
-      "formula": "",
+      "formula": "a=\\bar{f}-\\sigma\\sqrt{q/p},\\quad b=\\bar{f}+\\sigma\\sqrt{p/q}",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [
@@ -640,7 +659,7 @@
       "id": "transform-coding",
       "term": "Transform coding",
       "definition": "Lossy approach that converts blocks of pixels, typically 8x8, into cosine-wave coefficients, then quantizes and entropy-codes them.",
-      "formula": "",
+      "formula": "\\hat{C}(u,v)=\\operatorname{round}\\left(\\frac{C(u,v)}{Q(u,v)}\\right)",
       "unit": 6,
       "unitTitle": "Image Compression",
       "sources": [

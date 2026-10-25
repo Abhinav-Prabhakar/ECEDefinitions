@@ -53,7 +53,8 @@
       "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
       "sources": [
         "ae-unit-1#slide.13"
-      ]
+      ],
+      "diagram": "business-model-canvas"
     },
     {
       "id": "lean-canvas",
@@ -64,7 +65,8 @@
       "unitTitle": "Fundamentals of Entrepreneurship & Refining Business Model and Product",
       "sources": [
         "ae-unit-1#slide.13"
-      ]
+      ],
+      "diagram": "business-model-canvas"
     },
     {
       "id": "freemium",
@@ -142,7 +144,8 @@
       "unitTitle": "Business Planning & Exploring Revenue",
       "sources": [
         "ae-unit-2#slide.10"
-      ]
+      ],
+      "diagram": "org-structure"
     },
     {
       "id": "people-planning",
@@ -175,13 +178,14 @@
       "unitTitle": "Business Planning & Exploring Revenue",
       "sources": [
         "ae-unit-2#slide.17"
-      ]
+      ],
+      "diagram": "supply-chain"
     },
     {
       "id": "revenue-stream",
       "term": "Revenue stream",
       "definition": "A distinct source of income that can be recurring, transaction-based or service revenue.",
-      "formula": "",
+      "formula": "R_{\\text{total}}=\\sum_{i=1}^{n}R_{i}",
       "unit": 2,
       "unitTitle": "Business Planning & Exploring Revenue",
       "sources": [
@@ -259,7 +263,7 @@
       "id": "angel-investor",
       "term": "Angel investor",
       "definition": "Affluent individual who provides capital for a business start-up, usually in exchange for convertible debt or ownership equity.",
-      "formula": "",
+      "formula": "s=\\frac{I}{V_{\\text{post}}}",
       "unit": 3,
       "unitTitle": "Funding the Growth & Building the A-Team",
       "sources": [
@@ -437,7 +441,7 @@
       "id": "customer-churn-rate",
       "term": "Customer churn rate",
       "definition": "Percentage of customers who have stopped making purchases over a certain period of time.",
-      "formula": "",
+      "formula": "\\text{Churn rate}=\\frac{\\text{customers lost}}{\\text{customers at start}}\\times 100\\%",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -448,7 +452,7 @@
       "id": "repeat-purchase-rate",
       "term": "Repeat purchase rate",
       "definition": "Percentage of customers who repeatedly buy products from a store.",
-      "formula": "",
+      "formula": "\\text{Repeat rate}=\\frac{\\text{repeat customers}}{\\text{total customers}}\\times 100\\%",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -459,7 +463,7 @@
       "id": "profitability-per-order",
       "term": "Profitability per order",
       "definition": "Measure of profit made on an individual purchase, directly proportional to the total profits made.",
-      "formula": "",
+      "formula": "\\text{Profit per order}=\\text{revenue per order}-\\text{cost per order}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -470,7 +474,7 @@
       "id": "purchase-frequency",
       "term": "Purchase frequency",
       "definition": "How many repeat purchases are made by the average shopper rather than by a specific one.",
-      "formula": "",
+      "formula": "\\text{Purchase frequency}=\\frac{\\text{orders}}{\\text{unique customers}}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -481,7 +485,7 @@
       "id": "time-between-purchases",
       "term": "Time between purchases",
       "definition": "Average interval between a customer's consecutive purchases, used to time offers that prompt the next sale.",
-      "formula": "",
+      "formula": "\\bar{t}=\\frac{1}{n-1}\\sum_{i=2}^{n}\\left(t_{i}-t_{i-1}\\right)",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -492,7 +496,7 @@
       "id": "customer-lifetime-value",
       "term": "Customer lifetime value",
       "definition": "Estimation of how much money an average consumer will generate for a company over a certain period of time.",
-      "formula": "",
+      "formula": "\\text{LTV}=\\frac{\\text{ARPU}}{\\text{churn rate}}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -503,7 +507,7 @@
       "id": "redemption-rate",
       "term": "Redemption rate",
       "definition": "Percentage of loyalty rewards that have been redeemed, reflecting rewards customers value enough to use their collected points.",
-      "formula": "",
+      "formula": "\\text{Redemption rate}=\\frac{\\text{rewards redeemed}}{\\text{rewards issued}}\\times 100\\%",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -514,7 +518,7 @@
       "id": "customer-acquisition-cost",
       "term": "Customer acquisition cost",
       "definition": "Sales and marketing costs involved in winning one new customer within a timeframe, used to judge profitability and efficiency of growing companies.",
-      "formula": "",
+      "formula": "\\text{CAC}=\\frac{\\text{sales and marketing spend}}{\\text{new customers acquired}}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -525,7 +529,7 @@
       "id": "ebit",
       "term": "EBIT",
       "definition": "Measure of a firm's profit that includes all incomes and expenses except interest expenses and income tax expenses.",
-      "formula": "",
+      "formula": "\\text{EBIT}=\\text{net profit}+\\text{interest}+\\text{tax}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -536,7 +540,7 @@
       "id": "economic-value-added",
       "term": "Economic value added",
       "definition": "Measure of financial performance based on residual wealth, found by deducting cost of capital from operating profit adjusted for cash taxes.",
-      "formula": "",
+      "formula": "\\text{EVA}=\\text{NOPAT}-\\text{WACC}\\times\\text{capital employed}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -547,7 +551,7 @@
       "id": "interest-cover",
       "term": "Interest cover",
       "definition": "Measure of how many times a company can pay its interest expenses from its earnings.",
-      "formula": "Operating profit / Interest expense",
+      "formula": "\\text{Interest cover}=\\frac{\\text{EBIT}}{\\text{interest expense}}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -558,7 +562,7 @@
       "id": "accounts-receivable-days",
       "term": "Accounts receivable days",
       "definition": "Number of days an invoice remains outstanding before it is collected, showing how long it takes to clear receivables.",
-      "formula": "",
+      "formula": "\\text{AR days}=\\frac{\\text{accounts receivable}}{\\text{revenue}}\\times 365",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
@@ -569,18 +573,19 @@
       "id": "net-cash-flow",
       "term": "Net cash flow",
       "definition": "Gain or loss of funds over a period after all debts have been paid; a surplus after operating costs is positive.",
-      "formula": "",
+      "formula": "\\text{Net cash flow}=\\text{cash inflows}-\\text{cash outflows}",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [
         "ae-unit-5#slide.22"
-      ]
+      ],
+      "diagram": "cash-flow"
     },
     {
       "id": "gross-profit-margin",
       "term": "Gross profit margin",
       "definition": "Metric of financial health calculated as the money left from product sales after subtracting the cost of goods sold.",
-      "formula": "",
+      "formula": "\\text{Gross margin}=\\frac{\\text{revenue}-\\text{COGS}}{\\text{revenue}}\\times 100\\%",
       "unit": 5,
       "unitTitle": "Measuring Progress and Legal Matters",
       "sources": [

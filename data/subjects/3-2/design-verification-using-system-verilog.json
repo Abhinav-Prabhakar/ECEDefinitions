@@ -59,7 +59,7 @@
       "id": "formal-verification",
       "term": "Formal verification",
       "definition": "Use of mathematical methods to prove or disprove that a design satisfies stated properties without test vectors, limited by state-space explosion.",
-      "formula": "",
+      "formula": "M\\models\\varphi",
       "unit": 1,
       "unitTitle": "Introduction to Functional Verification",
       "sources": [
@@ -70,12 +70,13 @@
       "id": "model-checking",
       "term": "Model checking",
       "definition": "Formal technique performing a systematic, exhaustive exploration of a mathematical model of a system; often automatic, but generally unable to scale to large systems.",
-      "formula": "",
+      "formula": "|S_{\\text{reach}}|\\le 2^{n}",
       "unit": 1,
       "unitTitle": "Introduction to Functional Verification",
       "sources": [
         "dvsv-wiki-formal-verification#model-checking"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "black-box-testing",
@@ -152,7 +153,8 @@
       "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
       "sources": [
         "dvsv-wiki-functional-verification#testbench"
-      ]
+      ],
+      "diagram": "verification-flow"
     },
     {
       "id": "stimulus-generator",
@@ -180,7 +182,7 @@
       "id": "scoreboard",
       "term": "Scoreboard",
       "definition": "Component that compares a design's inputs and outputs against an expected relationship, often defined by a predictor model, to judge conformance.",
-      "formula": "",
+      "formula": "D_{\\text{pending}}=N_{\\text{expected}}-N_{\\text{actual}}=0",
       "unit": 2,
       "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
       "sources": [
@@ -191,7 +193,7 @@
       "id": "code-coverage",
       "term": "Code coverage",
       "definition": "Metric of how thoroughly the HDL source is exercised, for example by statement, branch and toggle measures.",
-      "formula": "",
+      "formula": "\\text{Cov}_{\\text{code}}=\\frac{N_{\\text{hit}}}{N_{\\text{total}}}\\times 100\\%",
       "unit": 2,
       "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
       "sources": [
@@ -202,7 +204,7 @@
       "id": "functional-coverage",
       "term": "Functional coverage",
       "definition": "Metric showing whether the intended functionality described in the verification plan has actually been exercised.",
-      "formula": "",
+      "formula": "\\text{Cov}_{\\text{func}}=\\frac{N_{\\text{bins hit}}}{N_{\\text{bins}}}\\times 100\\%",
       "unit": 2,
       "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
       "sources": [
@@ -213,7 +215,7 @@
       "id": "coverage-closure",
       "term": "Coverage closure",
       "definition": "Reaching the predefined coverage goals, signalling that verification of the planned features is complete.",
-      "formula": "",
+      "formula": "\\text{Cov}_{\\text{func}}\\ge \\text{Cov}_{\\text{goal}}",
       "unit": 2,
       "unitTitle": "Overview of SoC Architectures and Functional Verification Environment",
       "sources": [
@@ -268,7 +270,7 @@
       "id": "queue",
       "term": "Queue",
       "definition": "Variable-size ordered collection that supports efficient insertion and removal at both ends.",
-      "formula": "",
+      "formula": "0\\le |q|\\le N_{\\max}",
       "unit": 3,
       "unitTitle": "SystemVerilog Language Concepts",
       "sources": [
@@ -301,12 +303,13 @@
       "id": "clocking-block",
       "term": "Clocking block",
       "definition": "Named group of signals sharing one clock, each sampled or driven at set times relative to the clock edge to avoid races with the design.",
-      "formula": "",
+      "formula": "t_{\\text{sample}}=t_{\\text{edge}}-\\delta_{\\text{in}},\\quad 0\\le\\delta_{\\text{in}}<T_{\\text{clk}}",
       "unit": 3,
       "unitTitle": "SystemVerilog Language Concepts",
       "sources": [
         "dvsv-cv-clocking-block#introduction"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "program-block",
@@ -323,7 +326,7 @@
       "id": "fork-join",
       "term": "fork...join",
       "definition": "Parallel construct in which the parent thread waits until every spawned thread has finished.",
-      "formula": "",
+      "formula": "t_{\\text{join}}=\\max(t_{1},\\dots,t_{n})",
       "unit": 3,
       "unitTitle": "SystemVerilog Language Concepts",
       "sources": [
@@ -334,7 +337,7 @@
       "id": "fork-join-any",
       "term": "fork...join_any",
       "definition": "Parallel construct in which the parent resumes once any one spawned thread finishes while the others keep running.",
-      "formula": "",
+      "formula": "t_{\\text{resume}}=\\min(t_{1},\\dots,t_{n})",
       "unit": 3,
       "unitTitle": "SystemVerilog Language Concepts",
       "sources": [
@@ -389,7 +392,7 @@
       "id": "constraint-block",
       "term": "Constraint block",
       "definition": "Named class member in curly braces whose active instances are solved together as one logical AND, with no priority or source order.",
-      "formula": "",
+      "formula": "C=\\bigwedge_{i=1}^{n}c_{i}",
       "unit": 4,
       "unitTitle": "Object Oriented Programming Concepts-I",
       "sources": [
@@ -400,7 +403,7 @@
       "id": "constrained-random-generation",
       "term": "Constrained random generation",
       "definition": "Stimulus technique that declares variables as randomisable with constraints, then calls a built-in method to produce legal random values.",
-      "formula": "",
+      "formula": "P(x=k)=\\frac{1}{b-a+1},\\quad a\\le k\\le b",
       "unit": 4,
       "unitTitle": "Object Oriented Programming Concepts-I",
       "sources": [
@@ -422,7 +425,7 @@
       "id": "solve-order",
       "term": "Solve order",
       "definition": "Construct controlling the sequence in which random variables are solved, instead of relying on source order, when one choice constrains another.",
-      "formula": "",
+      "formula": "P(x,y)=P(x)\\,P(y\\mid x)",
       "unit": 4,
       "unitTitle": "Object Oriented Programming Concepts-I",
       "sources": [
@@ -488,7 +491,7 @@
       "id": "semaphore",
       "term": "Semaphore",
       "definition": "Container holding a fixed number of keys that processes take to proceed and return when done, used for mutual exclusion over shared resources.",
-      "formula": "",
+      "formula": "K_{\\text{avail}}=K_{\\text{total}}-K_{\\text{taken}}\\ge 0",
       "unit": 5,
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
@@ -521,7 +524,7 @@
       "id": "concurrent-assertion",
       "term": "Concurrent assertion",
       "definition": "Check not tied to procedural execution that is evaluated over clock ticks and is required for formal verification.",
-      "formula": "",
+      "formula": "t_{k}=kT_{\\text{clk}},\\quad k=0,1,2,\\dots",
       "unit": 5,
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
@@ -532,12 +535,13 @@
       "id": "sequence",
       "term": "Sequence",
       "definition": "Assertion building block describing a scenario that unfolds over time, built with temporal operators such as the cycle-delay operator.",
-      "formula": "",
+      "formula": "t(s_{2})=t(s_{1})+nT_{\\text{clk}}",
       "unit": 5,
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
         "dvsv-wiki-systemverilog#assertions"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "property",
@@ -576,7 +580,7 @@
       "id": "cross-coverage",
       "term": "Cross coverage",
       "definition": "Coverage that tracks combinations of values across two or more coverpoints rather than each one alone.",
-      "formula": "",
+      "formula": "N_{\\text{cross}}=\\prod_{i=1}^{m}N_{i}",
       "unit": 5,
       "unitTitle": "Object Oriented Programming Concepts-II",
       "sources": [
@@ -614,7 +618,8 @@
       "unitTitle": "Advanced Testbench Design using SystemVerilog",
       "sources": [
         "dvsv-cv-testbench-example#driver"
-      ]
+      ],
+      "diagram": "verification-flow"
     },
     {
       "id": "monitor",
@@ -625,7 +630,8 @@
       "unitTitle": "Advanced Testbench Design using SystemVerilog",
       "sources": [
         "dvsv-cv-testbench-example#monitor"
-      ]
+      ],
+      "diagram": "verification-flow"
     },
     {
       "id": "test-environment",
@@ -636,7 +642,8 @@
       "unitTitle": "Advanced Testbench Design using SystemVerilog",
       "sources": [
         "dvsv-cv-testbench-example#environment"
-      ]
+      ],
+      "diagram": "verification-flow"
     },
     {
       "id": "test",
@@ -653,7 +660,7 @@
       "id": "reference-model",
       "term": "Reference model",
       "definition": "Model defining the expected input-output relationship of the design, against which the scoreboard judges whether the design meets its specification.",
-      "formula": "",
+      "formula": "y_{\\text{exp}}=f(x)",
       "unit": 6,
       "unitTitle": "Advanced Testbench Design using SystemVerilog",
       "sources": [
@@ -691,7 +698,8 @@
       "unitTitle": "Advanced Testbench Design using SystemVerilog",
       "sources": [
         "dvsv-wiki-uvm#agent"
-      ]
+      ],
+      "diagram": "verification-flow"
     },
     {
       "id": "sequencer",

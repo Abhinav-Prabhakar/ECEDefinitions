@@ -25,12 +25,13 @@
       "id": "pipelined-architecture",
       "term": "Pipelined architecture",
       "definition": "8086 architecture in which the BIU fetches instructions while the EU executes them, so the two operations overlap.",
-      "formula": "",
+      "formula": "T_{\\text{pipe}}=(n+k-1)T_{\\text{stage}}",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
         "mpmc-unit-1a#slide.10"
-      ]
+      ],
+      "diagram": "pipeline"
     },
     {
       "id": "execution-unit",
@@ -82,7 +83,7 @@
       "id": "carry-flag",
       "term": "Carry flag (CF)",
       "definition": "Set when addition generates a carry out of the MSB or subtraction requires a borrow.",
-      "formula": "",
+      "formula": "\\text{CF}=C_{\\text{out}}",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
@@ -93,7 +94,7 @@
       "id": "zero-flag",
       "term": "Zero flag (ZF)",
       "definition": "Set to 1 when the result of an operation is zero and cleared when the result is nonzero.",
-      "formula": "",
+      "formula": "\\text{ZF}=1\\iff R=0",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
@@ -104,7 +105,7 @@
       "id": "sign-flag",
       "term": "Sign flag (SF)",
       "definition": "Copies the MSB of the result, indicating whether the result is positive or negative.",
-      "formula": "",
+      "formula": "\\text{SF}=R_{\\text{MSB}}",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
@@ -115,7 +116,7 @@
       "id": "overflow-flag",
       "term": "Overflow flag (OF)",
       "definition": "Set when the carry entering the MSB differs from the carry leaving it, meaning the result exceeds available capacity.",
-      "formula": "",
+      "formula": "\\text{OF}=C_{\\text{in}}\\oplus C_{\\text{out}}",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
@@ -131,13 +132,14 @@
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
         "mpmc-unit-1a#slide.28"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "physical-address",
       "term": "Physical address",
       "definition": "20-bit actual address of a memory location, computed by a dedicated adder in the BIU from the segment and offset registers.",
-      "formula": "PA = 10H × segment address + offset",
+      "formula": "\\text{PA}=10\\text{H}\\times\\text{segment}+\\text{offset}",
       "unit": 1,
       "unitTitle": "8086 Microprocessor Architecture",
       "sources": [
@@ -204,7 +206,7 @@
       "id": "direct-addressing",
       "term": "Direct addressing",
       "definition": "Mode in which the memory address of the operand is specified directly in the instruction; e.g. MOV AX, [5000].",
-      "formula": "",
+      "formula": "\\text{EA}=\\text{disp}_{16}",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -215,7 +217,7 @@
       "id": "register-indirect-addressing",
       "term": "Register indirect addressing",
       "definition": "Mode in which the operand address is stored indirectly in an offset register such as BX, SI or DI; e.g. MOV AX, [BX].",
-      "formula": "",
+      "formula": "\\text{EA}=R,\\ R\\in\\{\\text{BX},\\text{BP},\\text{SI},\\text{DI}\\}",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -226,7 +228,7 @@
       "id": "based-indexed-addressing",
       "term": "Based indexed addressing",
       "definition": "Mode in which the physical address is formed by adding base register contents (BX/BP) to index register contents (SI/DI).",
-      "formula": "PA = 10H × DS + [BX] + [SI]",
+      "formula": "\\text{PA}=10\\text{H}\\times\\text{DS}+[\\text{BX}]+[\\text{SI}]",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -237,18 +239,19 @@
       "id": "push-instruction",
       "term": "PUSH",
       "definition": "Instruction that places the contents of a register or memory location onto the stack; SP is decremented by 2.",
-      "formula": "",
+      "formula": "\\text{SP}\\leftarrow\\text{SP}-2",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
         "mpmc-unit-1b#slide.15"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "pop-instruction",
       "term": "POP",
       "definition": "Copies a word from the top of the stack into the specified register or memory location; SP is incremented by 2.",
-      "formula": "",
+      "formula": "\\text{SP}\\leftarrow\\text{SP}+2",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -259,7 +262,7 @@
       "id": "cmp-instruction",
       "term": "CMP",
       "definition": "Subtracts the source operand from the destination only to update flags; the result is not stored anywhere.",
-      "formula": "",
+      "formula": "\\text{dest}-\\text{src}\\rightarrow\\text{flags}",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -270,7 +273,7 @@
       "id": "mul-instruction",
       "term": "MUL",
       "definition": "Unsigned multiplication of AL (or AX) with a byte (or word) operand; the result goes to AX (or DX:AX).",
-      "formula": "",
+      "formula": "\\text{AX}=\\text{AL}\\times\\text{src}_{8}",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -281,18 +284,19 @@
       "id": "int-n",
       "term": "INT N",
       "definition": "Software interrupt instruction with a type number 0–255 that calls the corresponding service routine; type 3 is the break-point interrupt.",
-      "formula": "",
+      "formula": "\\text{vector}=4N",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
         "mpmc-unit-1b#slide.82"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "loop-instruction",
       "term": "LOOP",
       "definition": "Executes a labelled block of code the number of times specified in CX, decrementing CX automatically at each iteration.",
-      "formula": "",
+      "formula": "\\text{CX}\\leftarrow\\text{CX}-1",
       "unit": 2,
       "unitTitle": "Instruction Set of 8086",
       "sources": [
@@ -391,29 +395,31 @@
       "id": "adc-0808",
       "term": "ADC 0808/0809",
       "definition": "8-bit CMOS successive-approximation ADC with an internal 3:8 analog multiplexer for eight analog inputs; conversion delay 100 µs at a 640 kHz clock.",
-      "formula": "",
+      "formula": "D=\\left\\lfloor\\frac{V_{\\text{in}}}{V_{\\text{FS}}}\\,2^{8}\\right\\rfloor",
       "unit": 4,
       "unitTitle": "Interfacing with 8086",
       "sources": [
         "mpmc-unit-2#slide.27"
-      ]
+      ],
+      "diagram": "adc-dac"
     },
     {
       "id": "ad-7523",
       "term": "AD7523 (DAC)",
       "definition": "16-pin 8-bit multiplying digital-to-analog converter containing an R-2R ladder network for D-A conversion.",
-      "formula": "",
+      "formula": "V_{\\text{out}}=-V_{\\text{ref}}\\frac{D}{2^{8}}",
       "unit": 4,
       "unitTitle": "Interfacing with 8086",
       "sources": [
         "mpmc-unit-2#slide.40"
-      ]
+      ],
+      "diagram": "adc-dac"
     },
     {
       "id": "stepper-motor",
       "term": "Stepper motor",
       "definition": "Device for accurate position control of rotating shafts that rotates in steps when a pulse sequence is applied to its windings.",
-      "formula": "Step angle x = 360°/rotor teeth",
+      "formula": "\\theta_{\\text{step}}=\\frac{360^{\\circ}}{N_{\\text{r}}}",
       "unit": 4,
       "unitTitle": "Interfacing with 8086",
       "sources": [
@@ -440,7 +446,8 @@
       "unitTitle": "Interfacing with 8086",
       "sources": [
         "mpmc-unit-2#slide.61"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "microcontroller",
@@ -451,7 +458,8 @@
       "unitTitle": "8051 Microcontroller",
       "sources": [
         "mpmc-unit-3#slide.2"
-      ]
+      ],
+      "diagram": "soc-blocks"
     },
     {
       "id": "8051",
@@ -502,7 +510,7 @@
       "id": "register-banks",
       "term": "Register banks",
       "definition": "Four groups of eight working locations R0–R7 in internal RAM, selected by PSW bits RS1 and RS0, permitting fast context switching in ISRs.",
-      "formula": "",
+      "formula": "\\text{addr}(R_{r})=8\\,n_{\\text{bank}}+r",
       "unit": 5,
       "unitTitle": "8051 Microcontroller",
       "sources": [
@@ -514,7 +522,7 @@
       "id": "dptr",
       "term": "DPTR",
       "definition": "16-bit data pointer register of the 8051 used to address external data memory.",
-      "formula": "",
+      "formula": "\\text{DPTR}=\\text{DPH}\\cdot2^{8}+\\text{DPL}",
       "unit": 5,
       "unitTitle": "8051 Microcontroller",
       "sources": [
@@ -525,7 +533,7 @@
       "id": "tmod",
       "term": "TMOD",
       "definition": "Timer mode register that selects timer or counter operation and the operating mode (0–3) for timer 0 and timer 1.",
-      "formula": "",
+      "formula": "N_{\\text{timer}}=t_{\\text{delay}}\\frac{f_{\\text{osc}}}{12}",
       "unit": 5,
       "unitTitle": "8051 Microcontroller",
       "sources": [
@@ -542,7 +550,8 @@
       "sources": [
         "mpmc-unit-3#slide.37",
         "mpmc-unit-3#slide.38"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "ie-register",
@@ -570,7 +579,7 @@
       "id": "baud-rate",
       "term": "Baud rate",
       "definition": "Rate at which data is sent over a serial link, in bits per second; at 9600 bits per second one bit takes 0.104 ms.",
-      "formula": "",
+      "formula": "\\text{baud}=\\frac{1}{T_{b}}",
       "unit": 6,
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [
@@ -592,12 +601,13 @@
       "id": "asynchronous-serial-communication",
       "term": "Asynchronous transmission",
       "definition": "Serial communication using independent clocks, with each byte framed by a start bit, data bits and a stop bit.",
-      "formula": "",
+      "formula": "T_{\\text{frame}}=(1+n_{d}+n_{p}+n_{s})T_{b}",
       "unit": 6,
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [
         "mpmc-unit-4#slide.23"
-      ]
+      ],
+      "diagram": "uart-frame"
     },
     {
       "id": "rs232",
@@ -630,7 +640,8 @@
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [
         "mpmc-unit-4#slide.29"
-      ]
+      ],
+      "diagram": "uart-frame"
     },
     {
       "id": "sbuf",
@@ -658,7 +669,7 @@
       "id": "pcon",
       "term": "PCON",
       "definition": "Power control register; its SMOD bit modifies the baud rate of serial communication, while other bits set power-down and idle modes.",
-      "formula": "",
+      "formula": "\\text{baud}=\\frac{2^{\\text{SMOD}}}{32}\\cdot\\frac{f_{\\text{osc}}}{12(256-\\text{TH1})}",
       "unit": 6,
       "unitTitle": "Peripherals and Serial Communication",
       "sources": [

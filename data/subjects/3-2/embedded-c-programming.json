@@ -93,18 +93,19 @@
       "id": "stack-pointer",
       "term": "Stack pointer",
       "definition": "Register incremented just before data is stored by a push, call or interrupt and initialised to 07H on reset.",
-      "formula": "",
+      "formula": "\\text{SP}_{n+1}=\\text{SP}_{n}+1,\\quad \\text{SP}_{\\text{reset}}=07\\text{H}",
       "unit": 2,
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.18"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "dynamic-ram",
       "term": "Dynamic RAM",
       "definition": "Read-write memory technology that stores information in a small capacitor, which discharges quickly and so must be refreshed frequently.",
-      "formula": "",
+      "formula": "t_{\\text{ref}}=\\frac{t_{\\text{ret}}}{N_{\\text{rows}}}",
       "unit": 2,
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
@@ -137,7 +138,7 @@
       "id": "bdata-area",
       "term": "BDATA area",
       "definition": "16-byte area of data memory that can also be accessed using bit addresses and is used to store bit-sized variables.",
-      "formula": "",
+      "formula": "A_{\\text{bit}}=8\\,(A_{\\text{byte}}-20\\text{H})+n,\\;0\\le n\\le 7",
       "unit": 2,
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
@@ -159,23 +160,25 @@
       "id": "timer",
       "term": "Timer",
       "definition": "16-bit counting register that can hold values between 0 and 65535 in decimal.",
-      "formula": "",
+      "formula": "N_{\\max}=2^{16}-1=65535",
       "unit": 2,
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.32"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "interrupt",
       "term": "Interrupt",
       "definition": "Hardware mechanism that notifies the processor that an internal or external event, such as timer overflow or serial data arrival, has occurred.",
-      "formula": "",
+      "formula": "3T_{\\text{mc}}\\le t_{\\text{lat}}\\le 8T_{\\text{mc}}",
       "unit": 2,
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.34"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "isr",
@@ -186,7 +189,8 @@
       "unitTitle": "Introducing the 8051 Microcontroller Family",
       "sources": [
         "ecp-unit-2#slide.37"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "switch-bounce",
@@ -227,7 +231,7 @@
       "id": "project-header",
       "term": "Project header",
       "definition": "Header file included in all projects that groups key information about the 8051 device used, such as oscillator frequency and type definitions.",
-      "formula": "",
+      "formula": "T_{\\text{mc}}=\\frac{12}{f_{\\text{osc}}}",
       "unit": 4,
       "unitTitle": "Adding Structure to the Code",
       "sources": [
@@ -272,30 +276,32 @@
       "id": "hardware-delay",
       "term": "Hardware delay",
       "definition": "Delay created with one of the on-chip timers of the 8051 family, allowing more accurate timing than software loops.",
-      "formula": "",
+      "formula": "t_{\\text{delay}}=N\\,T_{\\text{mc}}",
       "unit": 5,
       "unitTitle": "Meeting Real-Time Constraints",
       "sources": [
         "ecp-unit-5#p.9"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "timer-overflow",
       "term": "Timer overflow",
       "definition": "Event that occurs when a 16-bit timer is incremented past its maximum count of 65535.",
-      "formula": "",
+      "formula": "N_{\\text{ovf}}=2^{16}-N_{\\text{init}}",
       "unit": 5,
       "unitTitle": "Meeting Real-Time Constraints",
       "sources": [
         "ecp-unit-5#p.10",
         "ecp-unit-5#p.17"
-      ]
+      ],
+      "diagram": "counter-timing"
     },
     {
       "id": "tcon",
       "term": "TCON",
       "definition": "Special function register holding the timer run-control bits TR0 and TR1 and the external interrupt flags IE0 and IE1.",
-      "formula": "",
+      "formula": "\\text{TCON}=88\\text{H},\\;\\text{TR0}=2^{4}=10\\text{H},\\;\\text{TR1}=2^{6}=40\\text{H}",
       "unit": 5,
       "unitTitle": "Meeting Real-Time Constraints",
       "sources": [
@@ -307,7 +313,7 @@
       "id": "tmod",
       "term": "TMOD",
       "definition": "Special function register that selects the mode of operation of each timer using the M1 and M0 bits, with GATE and counter/timer controls.",
-      "formula": "",
+      "formula": "\\text{mode}_k=\\left\\lfloor\\frac{\\text{TMOD}}{2^{4k}}\\right\\rfloor\\;\\&\\;03\\text{H}",
       "unit": 5,
       "unitTitle": "Meeting Real-Time Constraints",
       "sources": [
@@ -341,7 +347,7 @@
       "id": "loop-timeout",
       "term": "Loop timeout",
       "definition": "Timeout built from a loop variable that keeps running until it reaches its maximum value of 65535 and overflows.",
-      "formula": "",
+      "formula": "t_{\\text{timeout}}=N_{\\text{loop}}\\,t_{\\text{loop}}",
       "unit": 5,
       "unitTitle": "Meeting Real-Time Constraints",
       "sources": [
@@ -352,7 +358,7 @@
       "id": "hardware-timeout",
       "term": "Hardware timeout",
       "definition": "Timeout created by using a timer, which allows precise timeout delays to be generated easily.",
-      "formula": "",
+      "formula": "t_{\\text{timeout}}=(2^{16}-N_{\\text{init}})\\,T_{\\text{mc}}",
       "unit": 5,
       "unitTitle": "Meeting Real-Time Constraints",
       "sources": [
@@ -363,7 +369,7 @@
       "id": "multi-state-task",
       "term": "Multi-state task",
       "definition": "Software architecture with a series of system states, each calling one or more functions, with rules defining the transitions between states.",
-      "formula": "",
+      "formula": "s_{n+1}=\\delta(s_{n},x_{n})",
       "unit": 6,
       "unitTitle": "Case Study: Intruder Alarm System",
       "sources": [

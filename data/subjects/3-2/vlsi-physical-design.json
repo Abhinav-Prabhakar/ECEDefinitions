@@ -20,7 +20,8 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.21"
-      ]
+      ],
+      "diagram": "asic-flow"
     },
     {
       "id": "rtl-verification",
@@ -42,7 +43,8 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.28"
-      ]
+      ],
+      "diagram": "asic-flow"
     },
     {
       "id": "design-for-testability",
@@ -64,13 +66,14 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.28"
-      ]
+      ],
+      "diagram": "chip-floorplan"
     },
     {
       "id": "clock-tree-synthesis",
       "term": "Clock tree synthesis",
       "definition": "Process of building the clock tree with inverters and buffers, balancing clock skew and minimising insertion delay to meet timing.",
-      "formula": "",
+      "formula": "t_{\\text{skew}}=\\max_{i}t_{\\text{ins},i}-\\min_{i}t_{\\text{ins},i}",
       "unit": 1,
       "unitTitle": "Introduction",
       "sources": [
@@ -86,7 +89,8 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.42"
-      ]
+      ],
+      "diagram": "asic-flow"
     },
     {
       "id": "full-custom-asic",
@@ -119,7 +123,8 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.47"
-      ]
+      ],
+      "diagram": "cmos-layout"
     },
     {
       "id": "standard-cells",
@@ -131,7 +136,8 @@
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.47",
         "vlsipd-unit-1-vlsipd#slide.48"
-      ]
+      ],
+      "diagram": "cmos-layout"
     },
     {
       "id": "mega-cells",
@@ -164,7 +170,8 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.50"
-      ]
+      ],
+      "diagram": "stick-diagram"
     },
     {
       "id": "masked-rom",
@@ -186,13 +193,14 @@
       "unitTitle": "Introduction",
       "sources": [
         "vlsipd-unit-1-vlsipd#slide.61"
-      ]
+      ],
+      "diagram": "fpga"
     },
     {
       "id": "clock-gating",
       "term": "Clock gating",
       "definition": "Inserting logic to disable the clock for idle modules, the most effective technique for reducing dynamic power.",
-      "formula": "",
+      "formula": "P_{\\text{dyn}}=\\alpha C_{L}V_{DD}^{2}f",
       "unit": 1,
       "unitTitle": "Introduction",
       "sources": [
@@ -220,13 +228,14 @@
       "unitTitle": "Design Standard Cell Libraries",
       "sources": [
         "vlsipd-unit-2-vlsipd#slide.5"
-      ]
+      ],
+      "diagram": "asic-flow"
     },
     {
       "id": "pitch",
       "term": "Pitch",
       "definition": "The distance between two adjacent tracks of the routing grid used for layout.",
-      "formula": "",
+      "formula": "p=w+s",
       "unit": 2,
       "unitTitle": "Design Standard Cell Libraries",
       "sources": [
@@ -237,7 +246,7 @@
       "id": "via",
       "term": "Via",
       "definition": "Structure used to connect two different metal layers, for example M1 and M2.",
-      "formula": "",
+      "formula": "R_{\\text{via}}=\\frac{\\rho h}{A_{\\text{via}}}",
       "unit": 2,
       "unitTitle": "Design Standard Cell Libraries",
       "sources": [
@@ -303,7 +312,7 @@
       "id": "antenna-effect",
       "term": "Antenna effect",
       "definition": "Rupture of a gate caused when stray charges accumulated in metal layers during fabrication exceed a threshold set by the metal-to-gate area ratio.",
-      "formula": "",
+      "formula": "\\text{AR}=\\frac{A_{\\text{metal}}}{A_{\\text{gate}}}",
       "unit": 2,
       "unitTitle": "Design Standard Cell Libraries",
       "sources": [
@@ -336,7 +345,7 @@
       "id": "sleep-transistors",
       "term": "Sleep transistors",
       "definition": "Devices used in power gating to shut off the supply entirely to idle blocks, the primary method for eliminating leakage power.",
-      "formula": "",
+      "formula": "P_{\\text{leak}}=V_{DD}I_{\\text{leak}}",
       "unit": 2,
       "unitTitle": "Design Standard Cell Libraries",
       "sources": [
@@ -347,7 +356,7 @@
       "id": "slack",
       "term": "Slack",
       "definition": "Difference between the required time and the arrival time of a signal along a timing path.",
-      "formula": "Slack = Required − Arrival",
+      "formula": "t_{\\text{slack}}=t_{\\text{required}}-t_{\\text{arrival}}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -369,7 +378,7 @@
       "id": "timing-path",
       "term": "Timing path",
       "definition": "Physical route that signals travel through the chip, analysed in STA by splitting the chip into four such routes.",
-      "formula": "",
+      "formula": "t_{\\text{path}}=\\sum_{i}t_{\\text{cell},i}+\\sum_{j}t_{\\text{wire},j}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -381,7 +390,7 @@
       "id": "timing-constraints",
       "term": "Timing constraints",
       "definition": "Mathematical rules imposed on timing paths to ensure the chip works at the desired speed, written in an SDC file.",
-      "formula": "",
+      "formula": "T_{\\text{clk}}\\ge t_{cq}+t_{\\text{comb}}+t_{su}-t_{\\text{skew}}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -393,7 +402,7 @@
       "id": "clock-skew",
       "term": "Clock skew",
       "definition": "Time difference between the clock edge arriving at the launch flip-flop and at the capture flip-flop.",
-      "formula": "",
+      "formula": "t_{\\text{skew}}=t_{\\text{capture}}-t_{\\text{launch}}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -404,7 +413,7 @@
       "id": "critical-path",
       "term": "Critical path",
       "definition": "Path between an input and an output with the maximum delay.",
-      "formula": "",
+      "formula": "T_{\\text{cp}}=\\max_{p\\in P}\\sum_{v\\in p}t_{v}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -415,7 +424,7 @@
       "id": "setup-violation",
       "term": "Setup violation",
       "definition": "Max time violation that occurs when a signal arrives too late and misses the time when it should advance.",
-      "formula": "",
+      "formula": "t_{cq}+t_{\\text{comb}}+t_{su}>T_{\\text{clk}}+t_{\\text{skew}}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -426,7 +435,7 @@
       "id": "hold-violation",
       "term": "Hold violation",
       "definition": "Min time violation that occurs when an input signal changes too soon after the clock's active transition.",
-      "formula": "",
+      "formula": "t_{cq}+t_{\\text{comb}}<t_{\\text{hold}}+t_{\\text{skew}}",
       "unit": 3,
       "unitTitle": "Static Timing Analysis",
       "sources": [
@@ -442,7 +451,8 @@
       "unitTitle": "Design Floor Planning - Power Planning",
       "sources": [
         "vlsipd-wiki-floorplan#overview"
-      ]
+      ],
+      "diagram": "chip-floorplan"
     },
     {
       "id": "macro-placement",
@@ -453,7 +463,8 @@
       "unitTitle": "Design Floor Planning - Power Planning",
       "sources": [
         "vlsipd-wiki-floorplan#macro-placement"
-      ]
+      ],
+      "diagram": "chip-floorplan"
     },
     {
       "id": "i-o-pad-placement",
@@ -464,7 +475,8 @@
       "unitTitle": "Design Floor Planning - Power Planning",
       "sources": [
         "vlsipd-wiki-floorplan#io-pads"
-      ]
+      ],
+      "diagram": "chip-floorplan"
     },
     {
       "id": "placement",
@@ -503,7 +515,7 @@
       "id": "total-wire-length",
       "term": "Total wire length",
       "definition": "Sum of the lengths of all the wires in the design, typically the primary objective of most placers.",
-      "formula": "",
+      "formula": "\\text{TWL}=\\sum_{n\\in N}\\left[(\\max x-\\min x)+(\\max y-\\min y)\\right]",
       "unit": 4,
       "unitTitle": "Design Floor Planning - Power Planning",
       "sources": [
@@ -514,7 +526,7 @@
       "id": "local-congestion",
       "term": "Local congestion",
       "definition": "Difference between the lengths of wires in a region and the length of routing tracks available in that region.",
-      "formula": "",
+      "formula": "C_{\\text{local}}=L_{\\text{wire}}-L_{\\text{track}}",
       "unit": 4,
       "unitTitle": "Design Floor Planning - Power Planning",
       "sources": [
@@ -547,7 +559,7 @@
       "id": "clock-jitter",
       "term": "Clock jitter",
       "definition": "Non-periodicity of the clock at a particular point in the network, since no clock signal is perfectly periodic.",
-      "formula": "",
+      "formula": "J_{\\text{pp}}=\\max_{i}T_{i}-\\min_{i}T_{i}",
       "unit": 5,
       "unitTitle": "Clock Tree Synthesis and Routing",
       "sources": [
@@ -613,7 +625,7 @@
       "id": "design-rule",
       "term": "Design rule",
       "definition": "Geometric constraint imposed on designers of circuit boards, semiconductor devices and integrated circuits to give margins for manufacturing variability.",
-      "formula": "",
+      "formula": "w\\ge w_{\\min},\\; s\\ge s_{\\min}",
       "unit": 6,
       "unitTitle": "Design Checks and Signoff",
       "sources": [
@@ -635,7 +647,7 @@
       "id": "antenna-rules",
       "term": "Antenna rules",
       "definition": "Complex rules that check ratios of areas of every layer of a net, relevant when intermediate layers are etched.",
-      "formula": "",
+      "formula": "\\frac{A_{m}}{A_{\\text{gate}}}\\le \\text{AR}_{\\max}",
       "unit": 6,
       "unitTitle": "Design Checks and Signoff",
       "sources": [
@@ -646,7 +658,7 @@
       "id": "electromigration",
       "term": "Electromigration",
       "definition": "Transport of material caused by the gradual movement of ions in a conductor as electrons transfer momentum to metal atoms.",
-      "formula": "",
+      "formula": "t_{50}=A J^{-n}e^{E_{a}/(kT)}",
       "unit": 6,
       "unitTitle": "Design Checks and Signoff",
       "sources": [
@@ -657,7 +669,7 @@
       "id": "ir-drop",
       "term": "IR drop",
       "definition": "Load-dependent voltage drop caused by the electrical resistance of a wire.",
-      "formula": "",
+      "formula": "V_{\\text{drop}}=IR",
       "unit": 6,
       "unitTitle": "Design Checks and Signoff",
       "sources": [

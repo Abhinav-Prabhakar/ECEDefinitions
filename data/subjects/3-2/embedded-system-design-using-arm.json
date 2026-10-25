@@ -38,13 +38,14 @@
       "id": "risc",
       "term": "RISC",
       "definition": "Processor architecture that uses a small, highly optimised instruction set instead of specialised instructions, shortening the clock cycles needed per instruction.",
-      "formula": "",
+      "formula": "\\text{CPI} = \\frac{\\text{cycles}}{\\text{instruction}} \\approx 1",
       "unit": 1,
       "unitTitle": "Introduction to Embedded System",
       "sources": [
         "esd-unit-i#slide.41",
         "esd-unit-i#slide.48"
-      ]
+      ],
+      "diagram": "pipeline"
     },
     {
       "id": "cpsr",
@@ -73,12 +74,13 @@
       "id": "irq-mode",
       "term": "IRQ mode",
       "definition": "Mode entered on a hardware interrupt request, for example when a disk tells the processor that data is ready to transfer.",
-      "formula": "",
+      "formula": "t_{\\text{lat}} = t_{\\text{sync}} + t_{\\text{vector}} + t_{\\text{save}}",
       "unit": 2,
       "unitTitle": "ARM Architecture",
       "sources": [
         "esd-unit-ii#slide.20"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "fiq-mode",
@@ -117,7 +119,7 @@
       "id": "program-counter",
       "term": "Program counter",
       "definition": "Special register R15, where any instruction writing to it as its destination register causes a program branch.",
-      "formula": "",
+      "formula": "\\text{PC} = \\text{addr}_{\\text{current}} + 8",
       "unit": 2,
       "unitTitle": "ARM Architecture",
       "sources": [
@@ -128,7 +130,7 @@
       "id": "link-register",
       "term": "Link register",
       "definition": "Special register R14 that saves the return address when a subroutine call is made.",
-      "formula": "",
+      "formula": "R_{14} \\leftarrow \\text{PC} - 4",
       "unit": 2,
       "unitTitle": "ARM Architecture",
       "sources": [
@@ -151,7 +153,7 @@
       "id": "halfword",
       "term": "Halfword",
       "definition": "Sixteen bits, or two bytes, in the 32-bit ARM architecture, where a full word means 32 bits.",
-      "formula": "",
+      "formula": "1\\ \\text{word} = 2\\ \\text{halfwords} = 4\\ \\text{bytes}",
       "unit": 2,
       "unitTitle": "ARM Architecture",
       "sources": [
@@ -162,18 +164,19 @@
       "id": "vector-table",
       "term": "Vector table",
       "definition": "Special memory address range to which the processor sets the program counter when an exception or interrupt occurs.",
-      "formula": "",
+      "formula": "\\text{PC} \\leftarrow 4n,\\quad n = 0,1,\\dots,7",
       "unit": 2,
       "unitTitle": "ARM Architecture",
       "sources": [
         "esd-unit-ii#slide.36"
-      ]
+      ],
+      "diagram": "interrupt-flow"
     },
     {
       "id": "barrel-shifter",
       "term": "Barrel shifter",
       "definition": "Feature of the ARM processor that shifts the 32-bit pattern in a source register left or right by a set number of positions before the ALU.",
-      "formula": "",
+      "formula": "x \\ll n \\equiv x \\cdot 2^{n}",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -195,7 +198,7 @@
       "id": "comparison-instructions",
       "term": "Comparison instructions",
       "definition": "Instructions that compare or test a register against a 32-bit value and update the status register flag bits according to the result.",
-      "formula": "",
+      "formula": "Z = 1 \\iff R_{n} = \\text{operand}_2",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -206,7 +209,7 @@
       "id": "branch-instruction",
       "term": "Branch instruction",
       "definition": "Instruction that changes the flow of execution or calls a routine, allowing subroutines and if-then-else structures.",
-      "formula": "",
+      "formula": "\\text{PC} \\leftarrow \\text{PC} + 8 + 4\\,\\text{offset}",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -217,7 +220,7 @@
       "id": "load-store-instruction",
       "term": "Load-store instruction",
       "definition": "Instruction that transfers data between memory and processor registers.",
-      "formula": "",
+      "formula": "\\text{address} = R_{n} \\pm \\text{offset}",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -228,7 +231,7 @@
       "id": "multiple-register-transfer",
       "term": "Multiple-register transfer",
       "definition": "Load-store form that moves several registers between memory and the processor with a single instruction.",
-      "formula": "",
+      "formula": "N_{\\text{bytes}} = 4\\,|\\text{register list}|",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -239,7 +242,7 @@
       "id": "swap-instruction",
       "term": "Swap instruction",
       "definition": "Instruction that exchanges the contents of memory with the contents of a register, reading and writing the location in the same bus operation.",
-      "formula": "",
+      "formula": "(R_{d},\\ \\text{mem}[A]) \\leftarrow (\\text{mem}[A],\\ R_{d})",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -250,18 +253,19 @@
       "id": "full-stack",
       "term": "Full stack",
       "definition": "Stack convention in which the stack pointer points to the last used, occupied location.",
-      "formula": "",
+      "formula": "\\text{SP} \\leftarrow \\text{SP} - 4,\\quad \\text{mem}[\\text{SP}] \\leftarrow R",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.29"
-      ]
+      ],
+      "diagram": "stack-queue"
     },
     {
       "id": "empty-stack",
       "term": "Empty stack",
       "definition": "Stack convention in which the stack pointer points to the first unused location.",
-      "formula": "",
+      "formula": "\\text{mem}[\\text{SP}] \\leftarrow R,\\quad \\text{SP} \\leftarrow \\text{SP} - 4",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
@@ -272,12 +276,13 @@
       "id": "atpcs",
       "term": "ATPCS",
       "definition": "ARM-defined standard that specifies stacks as full descending, so that LDMFD and STMFD provide the pop and push operations.",
-      "formula": "",
+      "formula": "\\Delta\\text{SP} = -4n",
       "unit": 3,
       "unitTitle": "ARM Programming Model – I",
       "sources": [
         "esd-unit-iii#slide.29"
-      ]
+      ],
+      "diagram": "memory-layout"
     },
     {
       "id": "software-interrupt-instruction",
@@ -316,7 +321,7 @@
       "id": "thumb-instruction-set",
       "term": "Thumb instruction set",
       "definition": "Subset of the 32-bit ARM instructions encoded into a 16-bit instruction set space.",
-      "formula": "",
+      "formula": "\\text{width}_{\\text{Thumb}} = 16\\ \\text{bits} = \\frac{1}{2}\\,\\text{ARM word}",
       "unit": 4,
       "unitTitle": "ARM Programming Model – II",
       "sources": [
@@ -327,12 +332,13 @@
       "id": "arm-thumb-interworking",
       "term": "ARM-Thumb interworking",
       "definition": "Method of linking ARM and Thumb code, in which calling a routine of the other kind requires the core to change state.",
-      "formula": "",
+      "formula": "\\text{T} \\leftarrow \\text{target}[0]",
       "unit": 4,
       "unitTitle": "ARM Programming Model – II",
       "sources": [
         "esd-unit-4#slide.8"
-      ]
+      ],
+      "diagram": "state-machine"
     },
     {
       "id": "low-registers",
@@ -360,7 +366,7 @@
       "id": "register-allocation",
       "term": "Register allocation",
       "definition": "Compiler's attempt to assign a processor register to each local variable used in a C function.",
-      "formula": "",
+      "formula": "|\\text{live}(p)| \\le N_{\\text{regs}}",
       "unit": 5,
       "unitTitle": "ARM Programming",
       "sources": [
@@ -382,7 +388,7 @@
       "id": "four-register-rule",
       "term": "Four-register rule",
       "definition": "Guideline that functions with four or fewer arguments are far more efficient to call than those with five or more.",
-      "formula": "",
+      "formula": "n_{\\text{stack args}} = \\max(0,\\ n_{\\text{args}} - 4)",
       "unit": 5,
       "unitTitle": "ARM Programming",
       "sources": [
@@ -393,7 +399,7 @@
       "id": "pointer-aliasing",
       "term": "Pointer aliasing",
       "definition": "Situation in which two pointers point to the same address, so writing through one changes the value read through the other.",
-      "formula": "",
+      "formula": "p = q \\implies {*}p \\equiv {*}q",
       "unit": 5,
       "unitTitle": "ARM Programming",
       "sources": [
@@ -404,7 +410,7 @@
       "id": "binary-point",
       "term": "Binary point",
       "definition": "Divider between the integer and fractional parts of a number, like the decimal point in a decimal system.",
-      "formula": "",
+      "formula": "x = M \\cdot 2^{-F}",
       "unit": 5,
       "unitTitle": "ARM Programming",
       "sources": [
@@ -415,12 +421,13 @@
       "id": "cache",
       "term": "Cache",
       "definition": "Small, fast array of memory placed between the processor core and main memory that stores portions of recently referenced main memory.",
-      "formula": "",
+      "formula": "t_{\\text{avg}} = h\\,t_{\\text{hit}} + (1-h)\\,t_{\\text{miss}}",
       "unit": 6,
       "unitTitle": "Memory Management",
       "sources": [
         "esd-unit-6#slide.3"
-      ]
+      ],
+      "diagram": "memory-hierarchy"
     },
     {
       "id": "l1-cache",
@@ -431,7 +438,8 @@
       "unitTitle": "Memory Management",
       "sources": [
         "esd-unit-6#slide.4"
-      ]
+      ],
+      "diagram": "memory-hierarchy"
     },
     {
       "id": "l2-cache",
@@ -459,12 +467,13 @@
       "id": "cache-line",
       "term": "Cache line",
       "definition": "Small block of data transferred between the slower main memory and the faster cache memory.",
-      "formula": "",
+      "formula": "b_{\\text{offset}} = \\log_{2} B_{\\text{line}}",
       "unit": 6,
       "unitTitle": "Memory Management",
       "sources": [
         "esd-unit-6#slide.5"
-      ]
+      ],
+      "diagram": "cache-map"
     },
     {
       "id": "temporal-locality",
@@ -514,7 +523,7 @@
       "id": "cache-hit",
       "term": "Cache hit",
       "definition": "Outcome of a cache lookup in which both the status check and the comparison succeed.",
-      "formula": "",
+      "formula": "\\text{hit} \\iff \\text{valid} \\land (\\text{tag}_{\\text{addr}} = \\text{tag}_{\\text{line}})",
       "unit": 6,
       "unitTitle": "Memory Management",
       "sources": [
@@ -536,12 +545,13 @@
       "id": "tag-field",
       "term": "Tag field",
       "definition": "Portion of the address that is compared to the cache-tag value found in the directory store.",
-      "formula": "",
+      "formula": "\\text{addr} = \\langle \\text{tag} \\mid \\text{index} \\mid \\text{offset} \\rangle",
       "unit": 6,
       "unitTitle": "Memory Management",
       "sources": [
         "esd-unit-6#slide.14"
-      ]
+      ],
+      "diagram": "cache-map"
     },
     {
       "id": "data-streaming",
@@ -580,12 +590,13 @@
       "id": "ways",
       "term": "Ways",
       "definition": "Smaller equal units into which cache memory is divided by a structural design change.",
-      "formula": "",
+      "formula": "S = \\frac{C}{B \\times W}",
       "unit": 6,
       "unitTitle": "Memory Management",
       "sources": [
         "esd-unit-6#slide.24"
-      ]
+      ],
+      "diagram": "cache-map"
     },
     {
       "id": "write-through",

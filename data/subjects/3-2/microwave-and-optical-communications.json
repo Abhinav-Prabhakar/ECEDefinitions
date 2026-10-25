@@ -14,40 +14,43 @@
       "id": "microwave",
       "term": "Microwave",
       "definition": "Electromagnetic waves with frequencies roughly in the 300 MHz to 300 GHz range.",
-      "formula": "",
+      "formula": "\\lambda=\\frac{c}{f}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
         "mwoc-unit-1a#p.8"
-      ]
+      ],
+      "diagram": "em-wave"
     },
     {
       "id": "waveguide",
       "term": "Waveguide",
       "definition": "A hollow metallic pipe or tube that guides electromagnetic waves by total internal reflection.",
-      "formula": "",
+      "formula": "\\lambda_{g}=\\frac{\\lambda_{0}}{\\sqrt{1-(f_{c}/f)^{2}}}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
         "mwoc-unit-1a#p.5"
-      ]
+      ],
+      "diagram": "waveguide"
     },
     {
       "id": "rectangular-waveguide",
       "term": "Rectangular waveguide",
       "definition": "Hollow metallic pipe of oblong cross-section used at microwave frequencies.",
-      "formula": "",
+      "formula": "f_{c,10}=\\frac{c}{2a}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
         "mwoc-unit-1a#p.6"
-      ]
+      ],
+      "diagram": "waveguide"
     },
     {
       "id": "circular-waveguide",
       "term": "Circular waveguide",
       "definition": "A hollow metallic tube with a uniform circular cross-section used to guide microwaves.",
-      "formula": "",
+      "formula": "f_{c,11}\\approx\\frac{0.293\\,c}{a}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -58,7 +61,7 @@
       "id": "coaxial-cable",
       "term": "Coaxial cable",
       "definition": "A cable with inner and outer conductors sharing a common axis used for high-frequency applications.",
-      "formula": "",
+      "formula": "Z_{0}=\\frac{1}{2\\pi}\\sqrt{\\frac{\\mu}{\\varepsilon}}\\ln\\frac{b}{a}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -69,7 +72,7 @@
       "id": "te-wave",
       "term": "TE wave",
       "definition": "Electromagnetic oscillation whose electric field is transverse to the direction of propagation.",
-      "formula": "",
+      "formula": "E_{z}=0,\\quad H_{z}\\neq 0",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -80,7 +83,7 @@
       "id": "tm-wave",
       "term": "TM wave",
       "definition": "Electromagnetic oscillation whose magnetic field is transverse to the direction of propagation.",
-      "formula": "",
+      "formula": "H_{z}=0,\\quad E_{z}\\neq 0",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -91,18 +94,19 @@
       "id": "dominant-mode",
       "term": "Dominant mode",
       "definition": "The propagation mode with the lowest cutoff frequency in a waveguide.",
-      "formula": "",
+      "formula": "\\frac{c}{2a}<f<\\min\\left(\\frac{c}{a},\\frac{c}{2b}\\right)",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
         "mwoc-unit-1a#p.60"
-      ]
+      ],
+      "diagram": "waveguide"
     },
     {
       "id": "cutoff-frequency",
       "term": "Cutoff frequency",
       "definition": "The minimum frequency below which a wave cannot propagate in a waveguide.",
-      "formula": "",
+      "formula": "f_{c}=\\frac{c}{2}\\sqrt{\\left(\\frac{m}{a}\\right)^{2}+\\left(\\frac{n}{b}\\right)^{2}}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -113,7 +117,7 @@
       "id": "phase-velocity",
       "term": "Phase velocity",
       "definition": "The rate at which the wave changes its phase in terms of the guide wavelength.",
-      "formula": "",
+      "formula": "v_{p}=\\frac{\\omega}{\\beta}=\\frac{c}{\\sqrt{1-(f_{c}/f)^{2}}}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -124,7 +128,7 @@
       "id": "group-velocity",
       "term": "Group velocity",
       "definition": "The speed at which the modulation envelope of a wave travels through a waveguide.",
-      "formula": "",
+      "formula": "v_{g}=\\frac{c^{2}}{v_{p}}=c\\sqrt{1-(f_{c}/f)^{2}}",
       "unit": 1,
       "unitTitle": "Microwaves and Waveguides",
       "sources": [
@@ -135,7 +139,7 @@
       "id": "microstrip-line",
       "term": "Microstrip line",
       "definition": "A conductor on a dielectric substrate with a ground plane used at microwave frequencies.",
-      "formula": "",
+      "formula": "Z_{0}=\\frac{120\\pi}{\\sqrt{\\varepsilon_{\\text{eff}}}\\left[\\frac{W}{h}+1.393+0.667\\ln\\left(\\frac{W}{h}+1.444\\right)\\right]}",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -146,18 +150,19 @@
       "id": "scattering-matrix",
       "term": "Scattering matrix",
       "definition": "A matrix relating reflected and incident wave amplitudes at the ports of a network.",
-      "formula": "",
+      "formula": "b_{i}=\\sum_{j=1}^{N}S_{ij}a_{j}",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
         "mwoc-unit-2#p.43"
-      ]
+      ],
+      "diagram": "s-parameters"
     },
     {
       "id": "h-plane-tee",
       "term": "H-plane tee",
       "definition": "A three-port waveguide junction formed by a slot cut along the width of the main guide.",
-      "formula": "",
+      "formula": "S_{13}=S_{23}",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -168,7 +173,7 @@
       "id": "magic-tee",
       "term": "Magic tee",
       "definition": "A four-port E-H plane tee junction used to split or combine microwave power.",
-      "formula": "",
+      "formula": "S_{13}=S_{23}=S_{14}=-S_{24}=\\frac{1}{\\sqrt{2}},\\;S_{34}=0",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -179,7 +184,7 @@
       "id": "directional-coupler",
       "term": "Directional coupler",
       "definition": "A four-port waveguide junction that couples power from a primary to a secondary guide.",
-      "formula": "",
+      "formula": "C=-20\\log_{10}|S_{31}|",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -190,7 +195,7 @@
       "id": "isolator",
       "term": "Isolator",
       "definition": "A nonreciprocal unidirectional ferrite device that allows transmission in one direction.",
-      "formula": "",
+      "formula": "I=-20\\log_{10}|S_{12}|",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -201,7 +206,7 @@
       "id": "circulator",
       "term": "Circulator",
       "definition": "A passive nonreciprocal multiport device that routes signals in a cyclic direction.",
-      "formula": "",
+      "formula": "S_{21}=S_{32}=S_{13}=1,\\quad S_{12}=S_{23}=S_{31}=0",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -212,7 +217,7 @@
       "id": "ferrite",
       "term": "Ferrite",
       "definition": "A nonmetallic material with high resistivity and strong magnetic properties.",
-      "formula": "",
+      "formula": "\\omega_{0}=\\gamma B_{0}",
       "unit": 2,
       "unitTitle": "Microstrip Lines and Waveguide Components",
       "sources": [
@@ -234,7 +239,7 @@
       "id": "velocity-modulation",
       "term": "Velocity modulation",
       "definition": "The process of varying electron velocity using an RF field in a microwave tube.",
-      "formula": "",
+      "formula": "v=v_{0}\\left(1+\\frac{V_{1}}{2V_{0}}\\sin\\omega t\\right)",
       "unit": 3,
       "unitTitle": "Microwave Tubes",
       "sources": [
@@ -245,7 +250,7 @@
       "id": "bunching",
       "term": "Bunching",
       "definition": "Grouping of electrons into clusters as they drift after velocity modulation.",
-      "formula": "",
+      "formula": "X=\\frac{\\beta L}{2}\\frac{V_{1}}{V_{0}}",
       "unit": 3,
       "unitTitle": "Microwave Tubes",
       "sources": [
@@ -256,18 +261,19 @@
       "id": "reentrant-cavity",
       "term": "Reentrant cavity",
       "definition": "A cavity resonator with a gap for interaction between the electron beam and RF field.",
-      "formula": "",
+      "formula": "f_{0}=\\frac{1}{2\\pi\\sqrt{LC}}",
       "unit": 3,
       "unitTitle": "Microwave Tubes",
       "sources": [
         "mwoc-unit-3a#p.28"
-      ]
+      ],
+      "diagram": "resonance-curve"
     },
     {
       "id": "two-cavity-klystron",
       "term": "Two-cavity klystron",
       "definition": "Amplifier with a buncher resonator and a catcher resonator.",
-      "formula": "",
+      "formula": "\\theta=\\frac{\\omega L}{v_{0}}",
       "unit": 3,
       "unitTitle": "Microwave Tubes",
       "sources": [
@@ -278,7 +284,7 @@
       "id": "reflex-klystron",
       "term": "Reflex klystron",
       "definition": "A single-cavity klystron oscillator that uses a reflector to bunch electrons.",
-      "formula": "",
+      "formula": "\\theta=2\\pi\\left(n+\\frac{3}{4}\\right)",
       "unit": 3,
       "unitTitle": "Microwave Tubes",
       "sources": [
@@ -289,7 +295,7 @@
       "id": "traveling-wave-tube",
       "term": "Traveling wave tube",
       "definition": "A wideband microwave amplifier using a slow wave structure for distributed interaction.",
-      "formula": "",
+      "formula": "v_{0}\\approx v_{p}",
       "unit": 4,
       "unitTitle": "Travelling Wave Tube and Magnetron",
       "sources": [
@@ -300,7 +306,7 @@
       "id": "slow-wave-structure",
       "term": "Slow wave structure",
       "definition": "A non-resonant transmission line that reduces wave velocity for beam interaction.",
-      "formula": "",
+      "formula": "v_{p}=\\frac{\\omega}{\\beta}<c",
       "unit": 4,
       "unitTitle": "Travelling Wave Tube and Magnetron",
       "sources": [
@@ -311,7 +317,7 @@
       "id": "m-type-tube",
       "term": "M-type tube",
       "definition": "A microwave tube with perpendicular DC electric and magnetic fields.",
-      "formula": "",
+      "formula": "\\mathbf{E}\\perp\\mathbf{B}",
       "unit": 4,
       "unitTitle": "Travelling Wave Tube and Magnetron",
       "sources": [
@@ -333,18 +339,19 @@
       "id": "optical-fiber",
       "term": "Optical fiber",
       "definition": "A thin strand of glass or plastic that guides light for communication.",
-      "formula": "",
+      "formula": "n_{1}>n_{2}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.1"
-      ]
+      ],
+      "diagram": "optical-fiber"
     },
     {
       "id": "refractive-index",
       "term": "Refractive index",
       "definition": "The ratio of the speed of light in vacuum to its speed in a material.",
-      "formula": "",
+      "formula": "n=\\frac{c}{v}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
@@ -355,29 +362,31 @@
       "id": "total-internal-reflection",
       "term": "Total internal reflection",
       "definition": "Complete reflection of light at an interface when incidence exceeds the critical angle.",
-      "formula": "",
+      "formula": "\\theta_{c}=\\sin^{-1}\\left(\\frac{n_{2}}{n_{1}}\\right)",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.8"
-      ]
+      ],
+      "diagram": "optical-fiber"
     },
     {
       "id": "numerical-aperture",
       "term": "Numerical aperture",
       "definition": "A measure of the light-gathering ability of an optical fiber.",
-      "formula": "",
+      "formula": "\\text{NA}=\\sqrt{n_{1}^{2}-n_{2}^{2}}=\\sin\\theta_{a}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.11"
-      ]
+      ],
+      "diagram": "fiber-na"
     },
     {
       "id": "single-mode-fiber",
       "term": "Single-mode fiber",
       "definition": "An optical fiber that allows only one electromagnetic mode to propagate.",
-      "formula": "",
+      "formula": "V=\\frac{2\\pi a}{\\lambda}\\sqrt{n_{1}^{2}-n_{2}^{2}}<2.405",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
@@ -388,7 +397,7 @@
       "id": "multimode-fiber",
       "term": "Multimode fiber",
       "definition": "An optical fiber that supports multiple propagation modes.",
-      "formula": "",
+      "formula": "V=\\frac{2\\pi a}{\\lambda}\\sqrt{n_{1}^{2}-n_{2}^{2}}>2.405",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
@@ -399,18 +408,19 @@
       "id": "step-index-fiber",
       "term": "Step-index fiber",
       "definition": "A fiber with uniform core index and an abrupt change at the cladding.",
-      "formula": "",
+      "formula": "\\Delta=\\frac{n_{1}-n_{2}}{n_{1}}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.17"
-      ]
+      ],
+      "diagram": "optical-fiber"
     },
     {
       "id": "graded-index-fiber",
       "term": "Graded-index fiber",
       "definition": "A fiber whose core refractive index varies radially from center to cladding.",
-      "formula": "",
+      "formula": "n(r)=n_{1}\\sqrt{1-2\\Delta\\left(\\frac{r}{a}\\right)^{2}}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
@@ -421,18 +431,19 @@
       "id": "led",
       "term": "Light emitting diode",
       "definition": "A forward-biased semiconductor p-n junction that emits light by recombination.",
-      "formula": "",
+      "formula": "E_{g}=h\\nu=\\frac{hc}{\\lambda}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.26"
-      ]
+      ],
+      "diagram": "led-recombination"
     },
     {
       "id": "laser-diode",
       "term": "Laser diode",
       "definition": "A coherent optical source based on stimulated emission in a semiconductor.",
-      "formula": "",
+      "formula": "\\Gamma g_{\\text{th}}=\\alpha_{i}+\\alpha_{m}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
@@ -443,29 +454,31 @@
       "id": "population-inversion",
       "term": "Population inversion",
       "definition": "A condition where more electrons occupy an excited state than the ground state.",
-      "formula": "",
+      "formula": "N_{2}>N_{1}",
       "unit": 5,
       "unitTitle": "Optical Fibers and Optical Sources",
       "sources": [
         "mwoc-unit-5#p.34"
-      ]
+      ],
+      "diagram": "laser-levels"
     },
     {
       "id": "attenuation",
       "term": "Attenuation",
       "definition": "The decay of signal strength as light travels along an optical fiber.",
-      "formula": "",
+      "formula": "\\alpha=\\frac{10}{L}\\log_{10}\\frac{P_{\\text{in}}}{P_{\\text{out}}}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
         "mwoc-unit-6#p.5"
-      ]
+      ],
+      "diagram": "attenuation"
     },
     {
       "id": "absorption",
       "term": "Absorption",
       "definition": "Conversion of optical energy into another form such as heat in the fiber.",
-      "formula": "",
+      "formula": "P=P_{0}e^{-\\alpha x}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -476,7 +489,7 @@
       "id": "scattering-loss",
       "term": "Scattering loss",
       "definition": "Loss caused by interaction of light with inhomogeneities in the fiber.",
-      "formula": "",
+      "formula": "\\alpha_{s}=N\\sigma_{s}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -487,7 +500,7 @@
       "id": "rayleigh-scattering",
       "term": "Rayleigh scattering",
       "definition": "Scattering by small-scale inhomogeneities produced during fiber fabrication.",
-      "formula": "",
+      "formula": "\\alpha_{R}\\propto\\frac{1}{\\lambda^{4}}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -498,7 +511,7 @@
       "id": "bending-loss",
       "term": "Bending loss",
       "definition": "Attenuation caused by bending an optical fiber during installation.",
-      "formula": "",
+      "formula": "\\alpha_{b}\\propto e^{-R/R_{c}}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -509,7 +522,7 @@
       "id": "dispersion",
       "term": "Dispersion",
       "definition": "The spreading of light pulses in time as they propagate along a fiber.",
-      "formula": "",
+      "formula": "\\Delta t=D\\,L\\,\\Delta\\lambda",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -520,7 +533,7 @@
       "id": "intramodal-dispersion",
       "term": "Intramodal dispersion",
       "definition": "Pulse broadening within a single mode of an optical fiber.",
-      "formula": "",
+      "formula": "D_{m}=D_{\\text{mat}}+D_{\\text{wg}}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -531,7 +544,7 @@
       "id": "intermodal-dispersion",
       "term": "Intermodal dispersion",
       "definition": "Pulse broadening between different modes in a multimode fiber.",
-      "formula": "",
+      "formula": "\\Delta T\\approx\\frac{L}{c}(n_{1}-n_{2})",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -542,7 +555,7 @@
       "id": "fusion-splice",
       "term": "Fusion splice",
       "definition": "A permanent joint formed by thermally bonding two fiber ends.",
-      "formula": "",
+      "formula": "L_{\\text{splice}}=-10\\log_{10}\\left(\\frac{P_{\\text{out}}}{P_{\\text{in}}}\\right)",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
@@ -553,7 +566,7 @@
       "id": "fiber-coupler",
       "term": "Fiber coupler",
       "definition": "A passive device that distributes light from one fiber to others.",
-      "formula": "",
+      "formula": "\\eta=\\frac{P_{2}}{P_{1}+P_{2}}",
       "unit": 6,
       "unitTitle": "Transmission Characteristics of Optical Fibre",
       "sources": [
